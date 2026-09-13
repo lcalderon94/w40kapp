@@ -2376,7 +2376,7 @@
         "names": []
       },
       "source": "The bearer's melee weapons have the **[LETHAL HITS]** ability, and improve the Strength and Armour Penetration characteristics of those weapons by 1.",
-      "target": null
+      "target": "Las armas de cuerpo a cuerpo del portador tienen la habilidad **[LETHAL HITS]** y mejoran en 1 las características de Fuerza y Penetración de Blindaje de esas armas."
     },
     {
       "id": "23ff01894d65f9dd",
@@ -2392,7 +2392,7 @@
         ]
       },
       "source": "Once per battle round, instead of making a Hit roll, a Wound roll or a saving throw for the bearer, the bearer can use this Crusade Relic: if it does, that dice roll is automatically an unmodified 6.",
-      "target": null
+      "target": "Una vez por ronda de batalla, en lugar de hacer una tirada para impactar, una tirada para herir o una tirada de salvación para el portador, el portador puede usar esta Crusade Relic: si lo hace, esa tirada de dado es automáticamente un 6 sin modificar."
     },
     {
       "id": "f5ddbe280f206497",
@@ -2408,7 +2408,7 @@
         ]
       },
       "source": "- This model has the Feel No Pain 5+ ability.\n- This model can never Fall Back.",
-      "target": null
+      "target": "- Esta miniatura tiene la habilidad Feel No Pain 5+.\n- Esta miniatura no puede replegarse nunca."
     },
     {
       "id": "fe2f17ea7a060503",
@@ -2425,7 +2425,7 @@
         ]
       },
       "source": "- This model has the Infiltrators and Scouts 6\" abilities.\n- This model has an Objective Control characteristic of 0.",
-      "target": null
+      "target": "- Esta miniatura tiene las habilidades Infiltrators y Scouts 6\".\n- Esta miniatura tiene una característica de Control de Objetivos de 0."
     },
     {
       "id": "79a0d2500d901026",
@@ -2439,7 +2439,7 @@
         "names": []
       },
       "source": "- This model is eligible to shoot and declare a charge in a turn in which it Advanced.\n- Each time this model fails an Out of Action test, subtract an additional 1 from the result.",
-      "target": null
+      "target": "- Esta miniatura es elegible para disparar y para declarar una carga en un turno en el que haya avanzado.\n- Cada vez que esta miniatura falla un test de Out of Action, resta 1 adicional al resultado."
     },
     {
       "id": "e206120dea1a7ba0",
@@ -2458,7 +2458,7 @@
         ]
       },
       "source": "**^^Psyker^^** model only. Psychic weapons equipped by this model have the **[SUSTAINED HITS 2]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Psyker^^**. Las armas Psychic equipadas por esta miniatura tienen la habilidad **[SUSTAINED HITS 2]**."
     },
     {
       "id": "1c5adf09d0f60491",
@@ -2474,7 +2474,7 @@
         ]
       },
       "source": "Each time your opponent targets a unit from their Crusade army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that usage of that Stratagem by 1CP.",
-      "target": null
+      "target": "Cada vez que tu oponente toma como objetivo a una unidad de su ejército de Crusade con un Stratagem, si esa unidad está a 12\" o menos de esta miniatura, incrementa en 1CP el coste de ese uso de ese Stratagem."
     },
     {
       "id": "df6e056c5fb18794",
@@ -2491,7 +2491,7 @@
         ]
       },
       "source": "If your Crusade army includes this model, after both players have deployed their armies, you can select this model's unit and/or one other **^^Space Wolves^^** unit from your Crusade army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye esta miniatura, después de que ambos jugadores hayan desplegado sus ejércitos, puedes seleccionar la unidad de esta miniatura y/o otra unidad **^^Space Wolves^^** de tu ejército de Crusade y volver a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas si lo deseas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "c386c10a1a17840b",
@@ -2505,7 +2505,7 @@
         "names": []
       },
       "source": "At the end of the battle, in the Determine Victor step, if this model is wholly within your opponent's deployment zone, roll one D6, adding 2 to the result if you won the battle: on a 4+, you gain 1RP.",
-      "target": null
+      "target": "Al final de la batalla, en el paso Determinar Vencedor, si esta miniatura está completamente dentro de la zona de despliegue de tu oponente, tira un D6, sumando 2 al resultado si has ganado la batalla: con un 4+, ganas 1RP."
     },
     {
       "id": "03d812c219692ed7",
@@ -2519,7 +2519,7 @@
         "names": []
       },
       "source": "Each time this model would gain 1XP as a result of Dealers of Death, it gains 2XP instead.",
-      "target": null
+      "target": "Cada vez que esta miniatura fuera a ganar 1XP como resultado de Dealers of Death, gana 2XP en su lugar."
     },
     {
       "id": "37e53c7b0c4c9bec",
@@ -2536,7 +2536,7 @@
         ]
       },
       "source": "Each time this model makes a melee attack that targets a **^^Monster^^** or **^^Beasts^^** unit, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad **^^Monster^^** o **^^Beasts^^**, puedes repetir la tirada para herir."
     },
     {
       "id": "6eb7303c59ab6b31",
@@ -2550,7 +2550,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, you can ignore any or all modifiers to that unit's Move characteristic, and you can ignore any or all modifiers to Advance and Charge rolls made for it.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, puedes ignorar cualquiera o todos los modificadores a la característica de Movimiento de esa unidad, y puedes ignorar cualquiera o todos los modificadores a las tiradas de avance y de carga realizadas para ella."
     },
     {
       "id": "e1cac8e6e214e800",
@@ -2566,7 +2566,7 @@
         ]
       },
       "source": "In the Select Crusade Blessings step, if your Crusade army includes this model and you are the Underdog, you can select one additional Crusade Blessing.",
-      "target": null
+      "target": "En el paso Seleccionar Crusade Blessings, si tu ejército de Crusade incluye esta miniatura y eres el Underdog, puedes seleccionar una Crusade Blessing adicional."
     },
     {
       "id": "f5e99127985d6ad1",
@@ -2580,7 +2580,7 @@
         "names": []
       },
       "source": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle-shock test, subtracting 1 from that test.",
-      "target": null
+      "target": "Al comienzo de la fase de Combate, cada unidad enemiga que esté a 6\" o menos de esta miniatura debe hacer un test de Battle-shock, restando 1 a ese test."
     },
     {
       "id": "4edfbfcaafded48e",
@@ -2596,7 +2596,7 @@
         ]
       },
       "source": "Model with one or more Battle Scars only. This model automatically passes Out of Action tests. If this model loses all of its Battle Scars, this Battle Honour is also lost.",
-      "target": null
+      "target": "Solo miniatura con uno o más Battle Scars. Esta miniatura supera automáticamente los tests de Out of Action. Si esta miniatura pierde todos sus Battle Scars, este Battle Honour también se pierde."
     },
     {
       "id": "722ec836ef64dd05",
@@ -2612,7 +2612,7 @@
         ]
       },
       "source": "**^^Wolf Priest^^** model only. While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Wolf Priest^^**. Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque de cuerpo a cuerpo, suma 1 a la tirada para impactar."
     },
     {
       "id": "7e5b4b5e35548f85",
@@ -2631,7 +2631,7 @@
         ]
       },
       "source": "**^^Wolf Priest^^** model only. At the end of the battle, if your Crusade army included this model and it was not destroyed during the battle, you can re-roll up to two failed Out of Action tests taken for **^^Adeptus Astartes Infantry^^** or *^^Adeptus Astartes Mounted^^** units from your Crusade army.",
-      "target": null
+      "target": "Solo miniatura **^^Wolf Priest^^**. Al final de la batalla, si tu ejército de Crusade incluía esta miniatura y no fue destruida durante la batalla, puedes repetir hasta dos tests de Out of Action fallidos realizados para unidades **^^Adeptus Astartes Infantry^^** o *^^Adeptus Astartes Mounted^^** de tu ejército de Crusade."
     },
     {
       "id": "ba6b31af48d06cf2",
@@ -2648,7 +2648,7 @@
         ]
       },
       "source": "When selecting Agendas for a battle, if your Crusade force is embarking on an Oathsworn Campaign, you can select on additional **^^Black Templars^^** Agenda for that battle in addition to any others being used in that battle. In addition, if you are using the Oaths of Crusade Bonus Agenda, if you are randomly generating that Bonus Agenda, you re-roll each D6 when determining Deeds, Foes, Passions and Conditions.",
-      "target": null
+      "target": "Al seleccionar Agendas para una batalla, si tu fuerza de Crusade se embarca en una Oathsworn Campaign, puedes seleccionar una Agenda **^^Black Templars^^** adicional para esa batalla además de cualquier otra que se use en esa batalla. Además, si estás usando la Bonus Agenda Oaths of Crusade, si generas aleatoriamente esa Bonus Agenda, repites cada D6 al determinar Deeds, Foes, Passions y Conditions."
     },
     {
       "id": "c75b376ed84fc7ab",
@@ -2669,7 +2669,7 @@
         ]
       },
       "source": "Select one Pistol weapon equipped by the bearer that has the word 'bolt' in its name, e.g. bolt pistol (excluding a weapon that has been upgraded with a Weapon Modification - if you cannot do so, you cannot select this Reclaimed Relic Battle Honour). That weapon is now a Crusade Relic; it has the **[PRECISION]** and **[IGNORES COVER]** abilities and improve its Damage and Armour Penetration characteristics by 1.",
-      "target": null
+      "target": "Selecciona un arma Pistol equipada por el portador que tenga la palabra 'bolt' en su nombre, p. ej. bolt pistol (excluida un arma que haya sido mejorada con una Weapon Modification - si no puedes hacerlo, no puedes seleccionar este Battle Honour Reclaimed Relic). Esa arma es ahora una Crusade Relic; tiene las habilidades **[PRECISION]** e **[IGNORES COVER]** y mejora en 1 sus características de Daño y Penetración de Blindaje."
     },
     {
       "id": "defc5032ce42dc4a",
@@ -2683,7 +2683,7 @@
         "names": []
       },
       "source": "Once per turn, the first time a saving throw is failed for the bearer, change the Damage characteristic of that attack to 0.",
-      "target": null
+      "target": "Una vez por turno, la primera vez que se falla una tirada de salvación para el portador, cambia la característica de Daño de ese ataque a 0."
     },
     {
       "id": "069f9103d7e235a4",
@@ -2697,7 +2697,7 @@
         "names": []
       },
       "source": "Once per battle, when you target the bearer's unit with the Grenade Stratagem, the bearer can use this Reclaimed Relic. If it does, when resolving that Stratagem, 1 mortal wound is inflicted for each roll of 3+ (instead of each roll of 4+), and after resolving that Stratagem, the enemy unit you selected for that Stratagem must take a Battle-shock test.",
-      "target": null
+      "target": "Una vez por batalla, cuando tomas como objetivo a la unidad del portador con el Stratagem Grenade, el portador puede usar esta Reclaimed Relic. Si lo hace, al resolver ese Stratagem se inflige 1 herida mortal por cada resultado de 3+ (en lugar de por cada resultado de 4+) y, después de resolver ese Stratagem, la unidad enemiga que seleccionaste para ese Stratagem debe hacer un test de Battle-shock."
     },
     {
       "id": "ffbbb864a9180527",
@@ -2715,7 +2715,7 @@
         ]
       },
       "source": "Select one power fist equipped by the bearer (excluding a weapon that has been upgraded with a Weapon Modification - if you cannot do so, you cannot select this Reclaimed Relic Battle Honour). That weapon is now a Crusade Relic. Each time the bearer's unit ends a Charge move, select one enemy unit within Engagement Range of the bearer and roll one D6: on a 2+, that enemy unit suffers D3+1 mortal wounds.",
-      "target": null
+      "target": "Selecciona un power fist equipado por el portador (excluida un arma que haya sido mejorada con una Weapon Modification - si no puedes hacerlo, no puedes seleccionar este Battle Honour Reclaimed Relic). Esa arma es ahora una Crusade Relic. Cada vez que la unidad del portador termina un movimiento de carga, selecciona una unidad enemiga que esté dentro del alcance de combate del portador y tira un D6: con un 2+, esa unidad enemiga sufre D3+1 heridas mortales."
     },
     {
       "id": "bf5a9c304f8b2ef0",
@@ -2734,7 +2734,7 @@
         ]
       },
       "source": "At the start of the battle, select one unit from your opponent's army. Each time a model in the bearer's unit makes a melee attack that targets that unit, that attack has the **[LETHAL HITS]** and **[PRECISION]** abilities. If that unit is destroyed during the battle by the bearer's unit and your Crusade force is embarked on an Oathsworn Campaign, you gain 1 additional Honour point.",
-      "target": null
+      "target": "Al comienzo de la batalla, selecciona una unidad del ejército de tu oponente. Cada vez que una miniatura de la unidad del portador realiza un ataque de cuerpo a cuerpo que toma como objetivo a esa unidad, ese ataque tiene las habilidades **[LETHAL HITS]** y **[PRECISION]**. Si esa unidad es destruida durante la batalla por la unidad del portador y tu fuerza de Crusade está embarcada en una Oathsworn Campaign, ganas 1 Honour point adicional."
     },
     {
       "id": "5c41c286869d901e",
@@ -2751,7 +2751,7 @@
         ]
       },
       "source": "Select one power weapon or master-crafted power weapon equipped by the bearer (excluding a weapon that has been upgraded with a Weapon Modification - if you cannot do so, you cannot select this Reclaimed Relic Battle Honour). That weapon is now a Crusade Relic. Each time the bearer's unit has fought, select one enemy unit (excluding **^^Vehicles^^**) hit by one or more of the bearer's melee attacks this phase. Until the end of the battle, that enemy unit is set ablaze. While a unit is set ablaze, at the start of each player's Command phase, roll one D6: on a 4+, that unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Selecciona un power weapon o un master-crafted power weapon equipado por el portador (excluida un arma que haya sido mejorada con una Weapon Modification - si no puedes hacerlo, no puedes seleccionar este Battle Honour Reclaimed Relic). Esa arma es ahora una Crusade Relic. Cada vez que la unidad del portador ha combatido, selecciona una unidad enemiga (excluyendo **^^Vehicles^^**) impactada por uno o más de los ataques de cuerpo a cuerpo del portador esta fase. Hasta el final de la batalla, esa unidad enemiga está en llamas. Mientras una unidad está en llamas, al comienzo de la fase de Mando de cada jugador, tira un D6: con un 4+, esa unidad sufre D3 heridas mortales."
     },
     {
       "id": "2a3d37a46e3a0a6e",
@@ -2765,7 +2765,7 @@
         "names": []
       },
       "source": "Enemy units that are set up on the battle as Reinforcements cannot be set up within 12\" of the bearer. Models in the bearer's unit can ignore any or all modifiers to their Leadership characteristic, and each time the bearer's unit takes a Battle-shock test, you can ignore any or all modifiers to that test.",
-      "target": null
+      "target": "Las unidades enemigas que se despliegan en la batalla como Refuerzos no pueden desplegarse a 12\" o menos del portador. Las miniaturas de la unidad del portador pueden ignorar cualquiera o todos los modificadores a su característica de Leadership y, cada vez que la unidad del portador hace un test de Battle-shock, puedes ignorar cualquiera o todos los modificadores a ese test."
     },
     {
       "id": "a36a1c07e9a9948e",
@@ -2780,7 +2780,7 @@
         "names": []
       },
       "source": "Models in the bearer's unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen una salvación invulnerable de 5+."
     },
     {
       "id": "919ac2a02cdf7181",
@@ -2794,7 +2794,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer's unit is destroyed, if that model has not fought this phase, roll one D6: on a 5+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador es destruida, si esa miniatura no ha combatido esta fase, tira un D6: con un 5+, no la retires del juego. La miniatura destruida puede combatir después de que la unidad atacante haya terminado de realizar sus ataques, y después se retira del juego."
     },
     {
       "id": "4d8539aba86507f3",
@@ -2808,7 +2808,7 @@
         "names": []
       },
       "source": "Add 1 to Charge rolls made for the bearer's unit. Each time the bearer's unit is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Strength characteristic of melee weapons equipped by models in that unit.",
-      "target": null
+      "target": "Suma 1 a las tiradas de carga realizadas para la unidad del portador. Cada vez que la unidad del portador es seleccionada para combatir, si esa unidad realizó un movimiento de carga este turno, hasta el final de la fase, suma 1 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "ec4d0ddb72ec2fd4",
@@ -2828,7 +2828,7 @@
         ]
       },
       "source": "Select one Torrent weapon equipped by the bearer (excluding a weapon that has been upgraded with a Weapon Modification - if you cannot do so, you cannot select this Reclaimed Relic Battle Honour). That weapon is now a Crusade Relic; it has the **[DEVASTATING WOUNDS]** ability and add 3 to its Attacks characteristic.",
-      "target": null
+      "target": "Selecciona un arma Torrent equipada por el portador (excluida un arma que haya sido mejorada con una Weapon Modification - si no puedes hacerlo, no puedes seleccionar este Battle Honour Reclaimed Relic). Esa arma es ahora una Crusade Relic; tiene la habilidad **[DEVASTATING WOUNDS]** y suma 3 a su característica de Ataques."
     },
     {
       "id": "8ba05ff0b4cdfde4",
@@ -2846,7 +2846,7 @@
         ]
       },
       "source": "This model has the Feel No Pain 6+ (this is improved to Feel No Pain 4+ against Psychic Attacks and mortal wounds).",
-      "target": null
+      "target": "Esta miniatura tiene la Feel No Pain 6+ (que mejora a Feel No Pain 4+ contra ataques psíquicos y heridas mortales)."
     },
     {
       "id": "7549bcaba16534d5",
@@ -2862,7 +2862,7 @@
         ]
       },
       "source": "Each time a **^^Character^^** model is destroyed by an attack made by this model, you gain 1CP.",
-      "target": null
+      "target": "Cada vez que una miniatura **^^Character^^** es destruida por un ataque realizado por esta miniatura, ganas 1CP."
     },
     {
       "id": "9e731341ced05ff4",
@@ -2881,7 +2881,7 @@
         ]
       },
       "source": "Each time this model's unit is selected to fight, select the **[LETHAL HITS]** or **[SUSTAINED HITS 1]** ability. Until the end of the phase, this model's Black Sword has that ability.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura es seleccionada para combatir, selecciona la habilidad **[LETHAL HITS]** o **[SUSTAINED HITS 1]**. Hasta el final de la fase, el Black Sword de esta miniatura tiene esa habilidad."
     },
     {
       "id": "b5f78a507ac389fd",
@@ -2897,7 +2897,7 @@
         ]
       },
       "source": "Each time this model's unit has fought, if one or more **^^Character^^** models were destroyed as a result of attacks made by this model this phase, until the end of the phase, while a friendly **^^Adeptus Astartes^^** unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura ha combatido, si una o más miniaturas **^^Character^^** fueron destruidas como resultado de ataques realizados por esta miniatura esta fase, hasta el final de la fase, mientras una unidad **^^Adeptus Astartes^^** amiga esté a 6\" o menos de esta miniatura, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "6763d1795387bad7",
@@ -2913,7 +2913,7 @@
         ]
       },
       "source": "This model has the Scouts 6\" ability, and you can re-roll Charge rolls made for this model's unit.",
-      "target": null
+      "target": "Esta miniatura tiene la habilidad Scouts 6\", y puedes repetir las tiradas de carga realizadas para la unidad de esta miniatura."
     },
     {
       "id": "f498b59a4745c992",
@@ -2929,7 +2929,7 @@
         ]
       },
       "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 6, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que esta unidad termina un movimiento de carga, selecciona una unidad enemiga que esté dentro de su alcance de combate y después tira un D6 por cada miniatura de esta unidad que esté dentro del alcance de combate de esa unidad enemiga: por cada 6, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "83932112e0357d03",
@@ -2945,7 +2945,7 @@
         ]
       },
       "source": "At the end of the battle, if this unit is not destroyed and it contains one or more Neophyte models and one or more other models (excluding **^^Characters^^**), it gains an additional D3XP.",
-      "target": null
+      "target": "Al final de la batalla, si esta unidad no está destruida y contiene una o más miniaturas Neophyte y una o más miniaturas de otro tipo (excluyendo **^^Characters^^**), gana D3XP adicionales."
     },
     {
       "id": "25b55e62d8f61ad2",
@@ -2961,7 +2961,7 @@
         ]
       },
       "source": "While this unit contains one or more Neophyte models, add 1 to Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Mientras esta unidad contiene una o más miniaturas Neophyte, suma 1 a las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "3269b4260592661c",
@@ -2975,7 +2975,7 @@
         "names": []
       },
       "source": "Each time an attack targets this unit, if this unit is Below Half-strength, subtract 1 from the Damage characteristic of that attack.",
-      "target": null
+      "target": "Cada vez que un ataque toma como objetivo a esta unidad, si esta unidad está Below Half-strength, resta 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "aa24fdd2e054282d",
@@ -2991,7 +2991,7 @@
         ]
       },
       "source": "While this model is leading a unit, each time a ranged attack targets that unit, that unit has the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que un ataque a distancia toma como objetivo a esa unidad, esa unidad tiene el beneficio de cobertura contra ese ataque."
     },
     {
       "id": "d637b707e33a0e9b",
@@ -3005,7 +3005,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, if that unit made a Charge move this turn, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque de cuerpo a cuerpo, si esa unidad realizó un movimiento de carga este turno, puedes repetir la tirada para impactar."
     },
     {
       "id": "65c239aefb60db02",
@@ -3022,7 +3022,7 @@
         ]
       },
       "source": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 5+ contra ataques psíquicos y heridas mortales."
     },
     {
       "id": "b388e5ecff0a1566",
@@ -3036,7 +3036,7 @@
         "names": []
       },
       "source": "Once per battle, in your Command phase, you can select one Vow that is not active for your army. Until the start of your next Command phase, that Vow applies to this model's unit in addition to the Vow selected at the start of the battle.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, puedes seleccionar un Vow que no esté activo para tu ejército. Hasta el comienzo de tu siguiente fase de Mando, ese Vow se aplica a la unidad de esta miniatura además del Vow seleccionado al comienzo de la batalla."
     },
     {
       "id": "60d0afdd2e5de01d",
@@ -3050,7 +3050,7 @@
         "names": []
       },
       "source": "Each time this model's unit makes a Charge move, until the end of the turn, add 2 to the Attacks characteristics and add 1 to the Strength characteristic of melee weapons equipped by this model.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura realiza un movimiento de carga, hasta el final del turno, suma 2 a las características de Ataques y suma 1 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por esta miniatura."
     },
     {
       "id": "98e6c1fb5cc09965",
@@ -3066,7 +3066,7 @@
         "names": []
       },
       "source": "Each time this unit makes a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento de carga, hasta el final del turno, las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "7d17b1f94de64e77",
@@ -3080,7 +3080,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a melee attack that targets a unit that is Below Half-strength, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad que está Below Half-strength, puedes repetir la tirada para herir."
     }
   ]
 }

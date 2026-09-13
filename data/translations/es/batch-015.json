@@ -2468,7 +2468,7 @@
         "names": []
       },
       "source": "This model’s unit is eligible to shoot and declare a Charge in a turn in which it Fell Back.",
-      "target": null
+      "target": "La unidad de esta miniatura es elegible para disparar y para declarar una carga en un turno en el que se haya replegado."
     },
     {
       "id": "27183c52c7e406d6",
@@ -2485,7 +2485,7 @@
         ]
       },
       "source": "Your army can only include one **^^Commissar Graves^^** or **^^Commissar Graves on Foot^^** unit.",
-      "target": null
+      "target": "Tu ejército solo puede incluir una unidad **^^Commissar Graves^^** o **^^Commissar Graves on Foot^^**."
     },
     {
       "id": "51001ea83256f92d",
@@ -2499,7 +2499,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, puede realizar un movimiento normal de hasta D6\". Si lo hace, hasta el final del turno, esta unidad no es elegible para declarar una carga."
     },
     {
       "id": "d07cc0d3ca9f2989",
@@ -2513,7 +2513,7 @@
         "names": []
       },
       "source": "While one or more units are embarked within this model, unless this model is Battle‑shocked, add 1 to this model’s Objective Control characteristic for every 3 models (rounding down) embarked within it.",
-      "target": null
+      "target": "Mientras una o más unidades están embarcadas en esta miniatura, a menos que esta miniatura esté Battle-shocked, suma 1 a la característica de Control de Objetivos de esta miniatura por cada 3 miniaturas (redondeando hacia abajo) embarcadas en ella."
     },
     {
       "id": "a36af23959c50267",
@@ -2531,7 +2531,7 @@
         ]
       },
       "source": "This model has a transport capacity of 12 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 12 miniaturas **^^Astra Militarum Infantry^^**. Cada miniatura **^^Ogryn^^** ocupa el espacio de 3 miniaturas. No puede transportar miniaturas **^^Artillery^^**."
     },
     {
       "id": "e1fa15f2f359c13a",
@@ -2545,7 +2545,7 @@
         "names": []
       },
       "source": "Each time an Order is issued to this unit, that Order affects this unit until a new Order is issued to this unit, or until this unit becomes Battle‑shocked, or until the battle ends (whichever happens first).",
-      "target": null
+      "target": "Cada vez que se da una Order a esta unidad, esa Order afecta a esta unidad hasta que se dé una nueva Order a esta unidad, o hasta que esta unidad pase a estar Battle-shocked, o hasta que termine la batalla (lo que ocurra primero)."
     },
     {
       "id": "883a2d099cfeeb82",
@@ -2561,7 +2561,7 @@
         ]
       },
       "source": "Each time you target the bearer’s unit with a Stratagem, roll one D6, adding 1 to the result if there are one or more friendly **^^Officer^^** models within 6\": on a 5+, you gain 1CP.",
-      "target": null
+      "target": "Cada vez que tomas como objetivo a la unidad del portador con un Stratagem, tira un D6, sumando 1 al resultado si hay una o más miniaturas **^^Officer^^** amigas a 6\" o menos: con un 5+, ganas 1CP."
     },
     {
       "id": "180ebb68f0c7bf4e",
@@ -2578,7 +2578,7 @@
         ]
       },
       "source": "At the start of the battle, you can set up one Vox‑relay Beacon token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. While a friendly **^^Astra Militarum Regiment^^** unit is within 6\" of that token, **^^Officer^^** units from your army can issue orders to that **^^Regiment^^** unit as if the **^^Officer^^** unit was within 6\" of it. At the end of every phase, If an enemy unit is within 1\" of a Vox‑relay Beacon token you set up, that token is removed from the battlefield.",
-      "target": null
+      "target": "Al comienzo de la batalla, puedes colocar una ficha de Vox-relay Beacon para esta unidad en cualquier lugar del campo de batalla que no esté en la zona de despliegue de tu oponente. Mientras una unidad **^^Astra Militarum Regiment^^** amiga esté a 6\" o menos de esa ficha, las unidades **^^Officer^^** de tu ejército pueden dar Orders a esa unidad **^^Regiment^^** como si la unidad **^^Officer^^** estuviera a 6\" o menos de ella. Al final de cada fase, si una unidad enemiga está a 1\" o menos de una ficha de Vox-relay Beacon que hayas colocado, esa ficha se retira del campo de batalla."
     },
     {
       "id": "148dab0638db0bf9",
@@ -2594,7 +2594,7 @@
         ]
       },
       "source": "At the start of a phase, you can use this ability. if you do, this model has 2+ InSv.",
-      "target": null
+      "target": "Al comienzo de una fase, puedes usar esta habilidad. Si lo haces, esta miniatura tiene 2+ InSv."
     },
     {
       "id": "b27dcb43ef4d20df",
@@ -2611,7 +2611,7 @@
         ]
       },
       "source": "This **OFFICER** can issue up to 2 Orders to **REGIMENT** units. This **OFFICER** can only issue the Duty and Honour!, Move! Move! Move!, and Take Cover! Orders.",
-      "target": null
+      "target": "Este **OFFICER** puede dar hasta 2 Orders a unidades **REGIMENT**. Este **OFFICER** solo puede dar las Orders Duty and Honour!, Move! Move! Move! y Take Cover!"
     },
     {
       "id": "dbf982486f342c25",
@@ -2625,7 +2625,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units:\n- **CADIAN SHOCK TROOPS**\n- **CATACHAN JUNGLE FIGHTERS**\n- **DEATH KORPS OF KRIEG**\n- **KASRKIN**\n- **TEMPESTUS SCIONS**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- **CADIAN SHOCK TROOPS**\n- **CATACHAN JUNGLE FIGHTERS**\n- **DEATH KORPS OF KRIEG**\n- **KASRKIN**\n- **TEMPESTUS SCIONS**"
     },
     {
       "id": "f00297ef07ec9836",
@@ -2641,7 +2641,7 @@
         ]
       },
       "source": "This model has Feel No Pain 4+ against **psychic attacks** and **mortal wounds**.",
-      "target": null
+      "target": "Esta miniatura tiene Feel No Pain 4+ contra **ataques psíquicos** y **heridas mortales**."
     },
     {
       "id": "cec67a70e9b3de92",
@@ -2655,7 +2655,7 @@
         "names": []
       },
       "source": "While a friendly **ASTRA MILITARUM** unit is within 6\" of this model, that unit can re-roll **battle-shock rolls**.",
-      "target": null
+      "target": "Mientras una unidad **ASTRA MILITARUM** amiga esté a 6\" o menos de esta miniatura, esa unidad puede repetir las **tiradas de Battle-shock**."
     },
     {
       "id": "b43c8695aabe3ba5",
@@ -2671,7 +2671,7 @@
         ]
       },
       "source": "In the Deploy Armies step, you must set this unit up on the battlefield, or embarked within a **TRANSPORT** unit that is set up on the battlefield. Abilities that allow you to redeploy a unit or place a unit in **strategic reserves** cannot affect this unit or a **TRANSPORT** unit this unit is embarked within.",
-      "target": null
+      "target": "En el paso Desplegar Ejércitos, debes desplegar esta unidad en el campo de batalla, o embarcada en una unidad **TRANSPORT** que se despliegue en el campo de batalla. Las habilidades que te permiten volver a desplegar una unidad o colocar una unidad en **reservas estratégicas** no pueden afectar a esta unidad ni a una unidad **TRANSPORT** en la que esta unidad esté embarcada."
     },
     {
       "id": "6101bf49e10c49ce",
@@ -2692,7 +2692,7 @@
         ]
       },
       "source": "Each time a model in a **^^Regiment^^** unit from your army makes a ranged attack that targets a visible unit (excluding **^^Monsters^^** and **^^Vehicles^^**) that attack has the **[LETHAL HITS]** ability.\n\nEach time a model in a **^^Squadron^^** unit from your army makes a ranged attack that targets a visible **^^Monster^^** or **^^Vehicle^^** unit, that attack has the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "Cada vez que una miniatura de una unidad **^^Regiment^^** de tu ejército realiza un ataque a distancia que toma como objetivo a una unidad visible (excluyendo **^^Monsters^^** y **^^Vehicles^^**) ese ataque tiene la habilidad **[LETHAL HITS]**.\n\nCada vez que una miniatura de una unidad **^^Squadron^^** de tu ejército realiza un ataque a distancia que toma como objetivo a una unidad **^^Monster^^** o **^^Vehicle^^** visible, ese ataque tiene la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "59c4f9230e0a1695",
@@ -2706,7 +2706,7 @@
         "names": []
       },
       "source": "- If a friendly **MILITARUM TEMPESTUS OFFICER** model is your **WARLORD**, friendly **TEMPESTUS SCIONS** units have:\n-- **BATTLELINE**.\n-- +1 **OC**.\n- When a friendly **MILITARUM TEMPESTUS** unit is **selected to shoot**, if that unit was set up this turn, that unit’s ranged attacks have +1 to **hit rolls**.",
-      "target": null
+      "target": "- Si una miniatura **MILITARUM TEMPESTUS OFFICER** amiga es tu **WARLORD**, las unidades **TEMPESTUS SCIONS** amigas tienen:\n-- **BATTLELINE**.\n-- +1 **OC**.\n- Cuando una unidad **MILITARUM TEMPESTUS** amiga es **seleccionada para disparar**, si esa unidad fue desplegada este turno, los ataques a distancia de esa unidad tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "5912766709ede1e0",
@@ -2727,7 +2727,7 @@
         ]
       },
       "source": "At the start of the battle round, select one of the following types of artillery support.\n\n- **Creeping Barrage:** Roll one D6 for each enemy unit that is more than 12\" from every model from your army that is on the battlefield: On a 5+, until the end of the battle round, that unit is shaken. While a unit is shaken, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it. The maximum number of units that can be shaken by this rule in each battle round depends on the battle size, as shown below.\n\n- **Incendiary Bombardment:** Select a number of enemy units more than 12\" from every model from your army that is on the battlefield. Until the end of the battle round, those enemy units are scattered. While a unit is scattered, it cannot have the Benefit of Cover. The maximum number of units you can select this way depends on the battle size, as shown below.\n\n- **Smoke Shells:** Select a number of units from your army. Until the end of the battle round, those units have the Stealth ability. The maximum number of units you can select in this way depends on the battle size, as shown below.\n\n**Battle Size - Maximum Number of Units**\nIncursion - 2\nStrike Force - 3\nOnslaught - 4",
-      "target": null
+      "target": "Al inicio de la ronda de batalla, selecciona uno de los siguientes tipos de apoyo de artillería.\n\n- **Creeping Barrage:** Tira un D6 por cada unidad enemiga que esté a más de 12\" de todas las miniaturas de tu ejército que estén en el campo de batalla: con un 5+, hasta el final de la ronda de batalla, esa unidad está sacudida. Mientras una unidad está sacudida, resta 2\" a su característica de Movimiento y resta 2 a las tiradas de carga hechas para ella. El número máximo de unidades que pueden quedar sacudidas por esta regla en cada ronda de batalla depende del tamaño de la partida, como se muestra a continuación.\n\n- **Incendiary Bombardment:** Selecciona un número de unidades enemigas que estén a más de 12\" de todas las miniaturas de tu ejército que estén en el campo de batalla. Hasta el final de la ronda de batalla, esas unidades enemigas están dispersadas. Mientras una unidad está dispersada, no puede tener el beneficio de cobertura. El número máximo de unidades que puedes seleccionar de este modo depende del tamaño de la partida, como se muestra a continuación.\n\n- **Smoke Shells:** Selecciona un número de unidades de tu ejército. Hasta el final de la ronda de batalla, esas unidades tienen la habilidad Stealth. El número máximo de unidades que puedes seleccionar de este modo depende del tamaño de la partida, como se muestra a continuación.\n\n**Tamaño de la partida - Número máximo de unidades**\nIncursion - 2\nStrike Force - 3\nOnslaught - 4"
     },
     {
       "id": "3e44ba75b97b6d6d",
@@ -2743,7 +2743,7 @@
         ]
       },
       "source": "Each time an **^^Astra Militarum^^** model from your army makes a ranged attack in a turn in which it disembarked from a **^^Transport^^**, add 1 to the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura **^^Astra Militarum^^** de tu ejército realiza un ataque a distancia en un turno en el que ha desembarcado de un **^^Transport^^**, suma 1 a la tirada para herir."
     },
     {
       "id": "63aa66ca74a9cdf8",
@@ -2760,7 +2760,7 @@
         ]
       },
       "source": "Each time a **^^Squadron^^** unit from your army Advances, do not make an Advance roll for it; until the end of the phase, add 6\" to the Move characteristics of models in that unit, and when making that Advance move, that unit can move within Engagement Range of enemy models but cannot end that move within Engagement Range of enemy models.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Squadron^^** de tu ejército avanza, no hagas una tirada de avance para ella; hasta el final de la fase, suma 6\" a las características de Movimiento de las miniaturas de esa unidad y, al realizar ese movimiento de avance, esa unidad puede moverse dentro del alcance de combate de miniaturas enemigas pero no puede terminar ese movimiento dentro del alcance de combate de miniaturas enemigas."
     },
     {
       "id": "9dc22d52cf0e7078",
@@ -2776,7 +2776,7 @@
         ]
       },
       "source": "Friendly **ASTRA MILITARUM** units (excluding **TITANIC** units) have **Stealth**.",
-      "target": null
+      "target": "Las unidades **ASTRA MILITARUM** amigas (excluyendo las unidades **TITANIC**) tienen **Stealth**."
     },
     {
       "id": "40d28fba3d41e68c",
@@ -2793,7 +2793,7 @@
         ]
       },
       "source": "Add 1 to the number of Orders each **^^Astra Militarum Officer^^** model from your army can issue, as stated on their datasheet.\n\nWhile an **^^Astra Militarum^^** unit from your army is affected by an Order, each time a model in that unit makes an attack, re‑roll a Hit roll of 1.",
-      "target": null
+      "target": "Suma 1 al número de Orders que puede dar cada miniatura **^^Astra Militarum Officer^^** de tu ejército, según se indica en su hoja de datos.\n\nMientras una unidad **^^Astra Militarum^^** de tu ejército está afectada por una Order, cada vez que una miniatura de esa unidad realiza un ataque, repite una tirada para impactar de 1."
     },
     {
       "id": "a3ae773501666583",
@@ -2832,7 +2832,7 @@
         ]
       },
       "source": "You can include up to one of the following units:\n- **^^Cadian Castellan^^**\n- **^^Cadian Command Squad^^**\n- **^^Gaunt's Ghosts^^**\n- **^^'Iron Hand' Straken^^**\n- **^^Platoon Command Squad^^**\n- **^^Sly Marbo^^**\n- **^^Ursula Creed^^**\n\nYou can include up to one of the following units:\n- **^^Commissar^^**\n- **^^Ogryn Bodyguard^^**\n- **^^Nork Deddog^^**\n- **^^Primaris Psyker^^**\n- **^^Regimental Enginseer^^**\n- **^^Regimental Preacher^^**\n- **^^Sergeant Harker^^**\n\nYou can include up to three of each of the following units:\n- **^^Cadian Shock Troops^^** (10 models)\n- **^^Catachan Jungle Fighters^^** (10 models)\n- **^^Death Korps of Krieg^^** (10 models)\n- **^^Infantry Squad^^** (10 models)\n\nYou can include up to one of each of the following units:\n- **^^Bullgryn Squad^^** (3 models)\n- **^^Kaskrin^^** (5 or 10 models)\n- **^^Ratling Snipers^^** (5 models)\n- **^^Ogryn Squad^^** (3 models)",
-      "target": null
+      "target": "Puedes incluir hasta una de las siguientes unidades:\n- **^^Cadian Castellan^^**\n- **^^Cadian Command Squad^^**\n- **^^Gaunt's Ghosts^^**\n- **^^'Iron Hand' Straken^^**\n- **^^Platoon Command Squad^^**\n- **^^Sly Marbo^^**\n- **^^Ursula Creed^^**\n\nPuedes incluir hasta una de las siguientes unidades:\n- **^^Commissar^^**\n- **^^Ogryn Bodyguard^^**\n- **^^Nork Deddog^^**\n- **^^Primaris Psyker^^**\n- **^^Regimental Enginseer^^**\n- **^^Regimental Preacher^^**\n- **^^Sergeant Harker^^**\n\nPuedes incluir hasta tres de cada una de las siguientes unidades:\n- **^^Cadian Shock Troops^^** (10 miniaturas)\n- **^^Catachan Jungle Fighters^^** (10 miniaturas)\n- **^^Death Korps of Krieg^^** (10 miniaturas)\n- **^^Infantry Squad^^** (10 miniaturas)\n\nPuedes incluir hasta una de cada una de las siguientes unidades:\n- **^^Bullgryn Squad^^** (3 miniaturas)\n- **^^Kaskrin^^** (5 o 10 miniaturas)\n- **^^Ratling Snipers^^** (5 miniaturas)\n- **^^Ogryn Squad^^** (3 miniaturas)"
     },
     {
       "id": "324002a543e5374f",
@@ -2862,7 +2862,7 @@
         ]
       },
       "source": "- The Master Vox wargear ability only allows the unit's **^^Officer^^** to issue Orders to units up to 12\" away, instead of up to 24\" away, but when doing so Walls and closed Hatchways are ignored.\n- The **^^Cadian Shock Troops^^** unit loses the Shock Troops ability.\n- The **^^Gaunt's Ghosts^^** unit loses the Covert Stealth Team ability.\n- The **^^Nork Deddog^^** model loses the Thunderous Head-butt ability.\n- The **^^Ratling Snipers^^** unit loses the Shoot Sharp and Scarper ability.\n- The **^^Sly Marbo^^** model loses the Like Fighting a Shadow ability.\n- The **^^Ursula Creed^^** model loses the Tactical Genius ability.",
-      "target": null
+      "target": "- La habilidad de equipo Master Vox solo permite al **^^Officer^^** de la unidad dar Orders a unidades que estén a hasta 12\" de distancia, en lugar de a hasta 24\", pero al hacerlo se ignoran los Walls y los Hatchways cerrados.\n- La unidad **^^Cadian Shock Troops^^** pierde la habilidad Shock Troops.\n- La unidad **^^Gaunt's Ghosts^^** pierde la habilidad Covert Stealth Team.\n- La miniatura **^^Nork Deddog^^** pierde la habilidad Thunderous Head-butt.\n- La unidad **^^Ratling Snipers^^** pierde la habilidad Shoot Sharp and Scarper.\n- La miniatura **^^Sly Marbo^^** pierde la habilidad Like Fighting a Shadow.\n- La miniatura **^^Ursula Creed^^** pierde la habilidad Tactical Genius."
     },
     {
       "id": "ca3a3a82b763ad19",
@@ -2878,7 +2878,7 @@
         ]
       },
       "source": "Units from your army with the Voice of Command ability retain that ability and gain this one.\n\nEach time an **^^Officer^^** model in this unit issues an Order, that Order can be issued to any one friendly **^^Astra Militarum^^** unit within range, regardless of any keywords that unit is normally required to have.",
-      "target": null
+      "target": "Las unidades de tu ejército con la habilidad Voice of Command conservan esa habilidad y ganan esta.\n\nCada vez que una miniatura **^^Officer^^** de esta unidad da una Order, esa Order puede darse a cualquier unidad **^^Astra Militarum^^** amiga que esté dentro del alcance, independientemente de las palabras clave que esa unidad deba tener normalmente."
     },
     {
       "id": "ed8704af7ab07666",
@@ -2902,7 +2902,7 @@
         ]
       },
       "source": "- In the Form Boarding Squads step, you must attach any **^^Loyal Protector^^** models in your Boarding Patrol to a **^^Command Squad^^** unit as specified in its Loyal Protector rule.\n- The following units do not split into separate units in the Form Boarding Squads step:\n-- **^^Cadian Shock Troops^^**\n-- **^^Catachan Jungle Fighters^^**\n-- **^^Death Korps of Krieg^^**\n-- **^^Infantry Squad^^**",
-      "target": null
+      "target": "- En el paso Formar Escuadras de Abordaje, debes adjuntar cualquier miniatura **^^Loyal Protector^^** de tu Boarding Patrol a una unidad **^^Command Squad^^** según se especifica en su regla Loyal Protector.\n- Las siguientes unidades no se dividen en unidades separadas en el paso Formar Escuadras de Abordaje:\n-- **^^Cadian Shock Troops^^**\n-- **^^Catachan Jungle Fighters^^**\n-- **^^Death Korps of Krieg^^**\n-- **^^Infantry Squad^^**"
     },
     {
       "id": "65375a23a02a3313",
@@ -2918,7 +2918,7 @@
         ]
       },
       "source": "Each time an **^^Astra Militarum^^** unit from your army is selected to shoot, you can select one other friendly **^^Astra Militarum^^** unit (excluding **^^Ogryn^^** units). Until the end of the phase, models in the attacking unit can ignore models in that friendly unit for the purposes of determining visibility.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Astra Militarum^^** de tu ejército es seleccionada para disparar, puedes seleccionar otra unidad **^^Astra Militarum^^** amiga (excluyendo las unidades **^^Ogryn^^**). Hasta el final de la fase, las miniaturas de la unidad atacante pueden ignorar a las miniaturas de esa unidad amiga a efectos de determinar la visibilidad."
     },
     {
       "id": "9b82b333541e7cb7",
@@ -2943,7 +2943,7 @@
         ]
       },
       "source": "You can include up to one of the following unit:\n- **^^Militarum Tempestus Command Squad^^**\n\nYou can include up to one of the following units:\n- **^^Commissar^^**\n- **^^Ogryn Bodyguard^^**\n- **^^Primaris Psyker^^**\n- **^^Regimental Enginseer^^**\n- **^^Regimental Preacher^^**\n\nYou can include up to three of each of the following units:\n- **^^Tempestus Scions^^** (5 or 10 models)\n\nYou can include up to one of the following units:\n- **^^Bullgryn Squad^^** (3 models)",
-      "target": null
+      "target": "Puedes incluir hasta una de las siguientes unidades:\n- **^^Militarum Tempestus Command Squad^^**\n\nPuedes incluir hasta una de las siguientes unidades:\n- **^^Commissar^^**\n- **^^Ogryn Bodyguard^^**\n- **^^Primaris Psyker^^**\n- **^^Regimental Enginseer^^**\n- **^^Regimental Preacher^^**\n\nPuedes incluir hasta tres de cada una de las siguientes unidades:\n- **^^Tempestus Scions^^** (5 o 10 miniaturas)\n\nPuedes incluir hasta una de las siguientes unidades:\n- **^^Bullgryn Squad^^** (3 miniaturas)"
     },
     {
       "id": "1d05ab9bd1703ddd",
@@ -2962,7 +2962,7 @@
         ]
       },
       "source": "- **^^Tempestus Scions^^** units can perform the Secure Site Tactical Manoeuvre as if they had the **^^Battleline^^** keyword.\n- The **^^Militarum Tempestus^^** unit loses the Deep Strike ability.",
-      "target": null
+      "target": "- Las unidades **^^Tempestus Scions^^** pueden realizar la Tactical Manoeuvre Secure Site como si tuvieran la palabra clave **^^Battleline^^**.\n- La unidad **^^Militarum Tempestus^^** pierde la habilidad Deep Strike."
     },
     {
       "id": "ff5f5a60ffc263af",
@@ -2979,7 +2979,7 @@
         ]
       },
       "source": "In the Form Boarding Squads step, you must attach a **^^Loyal Protector^^** model to a **^^Command Squad^^** unit as specified in its Loyal Protector rule.",
-      "target": null
+      "target": "En el paso Formar Escuadras de Abordaje, debes adjuntar una miniatura **^^Loyal Protector^^** a una unidad **^^Command Squad^^** según se especifica en su regla Loyal Protector."
     },
     {
       "id": "5295fefbaa30c69a",
@@ -2997,7 +2997,7 @@
         ]
       },
       "source": "Each time a **^^Militarum Tempestus^^** unit from your army is selected to shoot, if one or more models in that unit are within 1\" of an open Hatchway and every model in that unit is on the same side of that Hatchway, select one enemy unit on the opposite side of that Hatchway from that unit. Until the end of the phase, ranged weapons equipped by models in that unit have the **[LETHAL HITS]** ability while targeting that enemy unit.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Militarum Tempestus^^** de tu ejército es seleccionada para disparar, si una o más miniaturas de esa unidad están a 1\" o menos de una Hatchway abierta y todas las miniaturas de esa unidad están al mismo lado de esa Hatchway, selecciona una unidad enemiga que esté al lado opuesto de esa Hatchway respecto a esa unidad. Hasta el final de la fase, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad **[LETHAL HITS]** mientras tomen como objetivo a esa unidad enemiga."
     },
     {
       "id": "d6fc165a90827a57",
@@ -3017,7 +3017,7 @@
         ]
       },
       "source": "Each time an **^^Astra Militarum Titanic^^** or **^^Astra Militarum Squadron^^** unit from your army is selected to shoot, models in that unit can target enemy units within Engagement Range of that unit (including with Blast weapons), provided no other friendly units are also within Engagement Range of that enemy unit. When doing so, such models do not suffer the penalty to their Hit rolls for being within Engagement Range of one or more enemy units (excluding attacks made with Indirect Fire weapons).",
-      "target": null
+      "target": "Cada vez que una unidad **^^Astra Militarum Titanic^^** o **^^Astra Militarum Squadron^^** de tu ejército es seleccionada para disparar, las miniaturas de esa unidad pueden tomar como objetivo a unidades enemigas que estén dentro del alcance de combate de esa unidad (incluso con armas Blast), siempre que no haya otras unidades amigas también dentro del alcance de combate de esa unidad enemiga. Al hacerlo, esas miniaturas no sufren la penalización a sus tiradas para impactar por estar dentro del alcance de combate de una o más unidades enemigas (excluyendo los ataques realizados con armas Indirect Fire)."
     }
   ]
 }

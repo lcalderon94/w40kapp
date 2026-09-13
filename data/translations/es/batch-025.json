@@ -23,7 +23,7 @@
         ]
       },
       "source": "At the start of the first battle round, select one of the following Hyper-adaptations to be active for **^^Tyranids^^** units from your army until the end of the battle:\n\n**SWARMING INSTINCTS**\nEach time a **^^Tyranids^^** model with this Hyper-adaptation makes an attack that targets an enemy **^^Infantry^^** or **^^Swarm^^** unit, that attack has the **[SUSTAINED HITS 1]** ability.\n\n**HYPER-AGGRESSION**\nEach time a **^^Tyranids^^** model with this Hyper-adaptation makes an attack that targets an enemy **^^Monster^^** or **^^Vehicle^^** unit, that attack has the **[LETHAL HITS]** ability.\n\n**HIVE PREDATORS**\nEach time a **^^Tyranids^^** model with this Hyper-adaptation makes an attack that targets an enemy **^^Character^^** unit, if a Critical Hit is scored, that attack has the **[PRECISION]** ability.",
-      "target": null
+      "target": "Al comienzo de la primera ronda de batalla, selecciona una de las siguientes Hyper-adaptations para que esté activa para las unidades **^^Tyranids^^** de tu ejército hasta el final de la batalla:\n\n**SWARMING INSTINCTS**\nCada vez que una miniatura **^^Tyranids^^** con esta Hyper-adaptation realiza un ataque que tiene como objetivo una unidad **^^Infantry^^** o **^^Swarm^^** enemiga, ese ataque tiene la habilidad **[SUSTAINED HITS 1]**.\n\n**HYPER-AGGRESSION**\nCada vez que una miniatura **^^Tyranids^^** con esta Hyper-adaptation realiza un ataque que tiene como objetivo una unidad **^^Monster^^** o **^^Vehicle^^** enemiga, ese ataque tiene la habilidad **[LETHAL HITS]**.\n\n**HIVE PREDATORS**\nCada vez que una miniatura **^^Tyranids^^** con esta Hyper-adaptation realiza un ataque que tiene como objetivo una unidad **^^Character^^** enemiga, si se consigue un impacto crítico, ese ataque tiene la habilidad **[PRECISION]**."
     },
     {
       "id": "ba5e4169b507ef8b",
@@ -37,7 +37,7 @@
         "names": []
       },
       "source": "n your Command phase, each **HARVESTER** unit from your army can Regenerate one friendly **TYRANIDS** unit that is within 6\" of it. A unit can only be regenerated once per phase. Each time a unit regenerates, do one of the following:\n▪ One model in that unit regains up to D3+1 lost wounds.\n▪ One destroyed **INFANTRY** model (excluding **CHARACTERS**) is returned to that unit with its full wounds remaining. If that unit is an **ENDLESS MULTITUDE** unit, up to 3 destroyed models are returned instead.",
-      "target": null
+      "target": "En tu fase de Mando, cada unidad **HARVESTER** de tu ejército puede Regenerar a una unidad **TYRANIDS** amiga que esté a 6\" o menos de ella. Una unidad solo puede regenerarse una vez por fase. Cada vez que una unidad se regenera, haz una de las siguientes cosas:\n▪ Una miniatura de esa unidad recupera hasta D3+1 heridas perdidas.\n▪ Una miniatura **INFANTRY** destruida (excluyendo **CHARACTERS**) vuelve a esa unidad con todas sus heridas restantes. Si esa unidad es una unidad **ENDLESS MULTITUDE**, en su lugar vuelven hasta 3 miniaturas destruidas."
     },
     {
       "id": "1e03fc044f1e2a71",
@@ -51,7 +51,7 @@
         "names": []
       },
       "source": "Each time a **TYRANIDS MONSTER** model from your army makes an attack, add 1 to the Hit roll if that model’s unit is below its Starting Strength, and add 1 to the Wound roll as well if that model’s unit is Below Half‑strength. In addition, while a **TYRANIDS MONSTER** unit from your army (excluding Battle‑shocked units) is at its Starting Strength, add 2 to the Objective Control characteristic of models in that unit.",
-      "target": null
+      "target": "Cada vez que una miniatura **TYRANIDS MONSTER** de tu ejército realiza un ataque, suma 1 a la tirada para impactar si la unidad de esa miniatura está por debajo de su Starting Strength, y suma 1 también a la tirada para herir si la unidad de esa miniatura está Below Half‑strength. Además, mientras una unidad **TYRANIDS MONSTER** de tu ejército (excluyendo las unidades Battle‑shocked) esté en su Starting Strength, suma 2 a la característica de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "c1eba5fabdbdb2cb",
@@ -68,7 +68,7 @@
         ]
       },
       "source": "At the start of the battle round, you can select one of the Synaptic Imperatives shown below. Until the end of the battle round, that Synaptic Imperative is active for your army and while a **^^Tyranids^^** unit from your army is within Synapse Range of your army, it will benefit from it. Each Synaptic Imperative can only be selected once per battle.\n\n- **Synaptic Augmentation:** While this unit is within Synapse Range of your army, models in this unit have a 5+ invulnerable save.\n- **Surging Vitality:** While this unit is within Synapse Range of your army, add 1 to Advance and Charge rolls made for this unit.\n- **Goaded to Slaughter:** While this unit is within Synapse Range of your army, each time a model in this unit makes a melee attack, add 1 to the Hit roll",
-      "target": null
+      "target": "Al comienzo de la ronda de batalla, puedes seleccionar uno de los Synaptic Imperatives que se muestran a continuación. Hasta el final de la ronda de batalla, ese Synaptic Imperative está activo para tu ejército y, mientras una unidad **^^Tyranids^^** de tu ejército esté dentro del Synapse Range de tu ejército, se beneficiará de él. Cada Synaptic Imperative solo puede seleccionarse una vez por batalla.\n\n- **Synaptic Augmentation:** Mientras esta unidad esté dentro del Synapse Range de tu ejército, las miniaturas de esta unidad tienen una salvación invulnerable de 5+.\n- **Surging Vitality:** Mientras esta unidad esté dentro del Synapse Range de tu ejército, suma 1 a las tiradas de avance y de carga realizadas para esta unidad.\n- **Goaded to Slaughter:** Mientras esta unidad esté dentro del Synapse Range de tu ejército, cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo, suma 1 a la tirada para impactar"
     },
     {
       "id": "0c8adcfc20edbaab",
@@ -82,7 +82,7 @@
         "names": []
       },
       "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model from a friendly **ENDLESS MULTITUDE** unit was **destroyed** as a result of those attacks, that friendly unit can make a **surge move** of up to D6\".",
-      "target": null
+      "target": "En la fase de Disparo de tu oponente, cuando una unidad enemiga haya disparado, si una miniatura de una unidad **ENDLESS MULTITUDE** amiga fue **destruida** como resultado de esos ataques, esa unidad amiga puede realizar un **movimiento de arremetida** de hasta D6\"."
     },
     {
       "id": "5af1af0c0a6896f7",
@@ -100,7 +100,7 @@
         ]
       },
       "source": "**^^Deathleaper^^** loses Hunter Organism rule and can be your **^^Warlord^^**.",
-      "target": null
+      "target": "**^^Deathleaper^^** pierde la regla Hunter Organism y puede ser tu **^^Warlord^^**."
     },
     {
       "id": "9d6568cd7ccbfb78",
@@ -116,7 +116,7 @@
         ]
       },
       "source": "**^^Tyranids^^** units with this ability are eligible to charge in a turn in which they Fell Back. Vanguard Invader units with this ability are eligible to charge in a turn in which they Advanced.",
-      "target": null
+      "target": "Las unidades **^^Tyranids^^** con esta habilidad son elegibles para cargar en un turno en el que se hayan replegado. Las unidades Vanguard Invader con esta habilidad son elegibles para cargar en un turno en el que hayan avanzado."
     },
     {
       "id": "49069d9084d37a0f",
@@ -132,7 +132,7 @@
         ]
       },
       "source": "- Friendly **TYRANID WARRIORS WITH RANGED BIO‑WEAPONS/TYRANID WARRIORS WITH MELEE BIO‑WEAPONS** units have:\n-- **TYRANID WARRIORS**.\n-- **BATTLELINE**.\n- **TYRANID WARRIORS/TYRANID PRIME WITH LASH WHIP/WINGED TYRANID PRIME** models from your army have 5+ **InSv**.",
-      "target": null
+      "target": "- Las unidades **TYRANID WARRIORS WITH RANGED BIO‑WEAPONS/TYRANID WARRIORS WITH MELEE BIO‑WEAPONS** amigas tienen:\n-- **TYRANID WARRIORS**.\n-- **BATTLELINE**.\n- Las miniaturas **TYRANID WARRIORS/TYRANID PRIME WITH LASH WHIP/WINGED TYRANID PRIME** de tu ejército tienen 5+ **InSv**."
     },
     {
       "id": "01c7da878ceb0e9d",
@@ -153,7 +153,7 @@
         ]
       },
       "source": "**^^Mawloc^^** and **^^Trygon^^** units from your army have the Burrower keyword.\n\nIn the Muster Armies step, you can select up to 2 **^^Trygon^^** models from your army. The selected units gain the **^^Character^^** keyword.\n\n**Designer’s Note:** *This means that the selected models can be given Enhancements and one of them can be selected as your **^^Warlord^^**.*",
-      "target": null
+      "target": "Las unidades **^^Mawloc^^** y **^^Trygon^^** de tu ejército tienen la palabra clave Burrower.\n\nEn el paso Reunir Ejércitos, puedes seleccionar hasta 2 miniaturas **^^Trygon^^** de tu ejército. Las unidades seleccionadas ganan la palabra clave **^^Character^^**.\n\n**Nota del diseñador:** *Esto significa que a las miniaturas seleccionadas se les pueden dar Enhancements y una de ellas puede ser seleccionada como tu **^^Warlord^^**.*"
     },
     {
       "id": "c6aab23d25133071",
@@ -170,7 +170,7 @@
         ]
       },
       "source": "Each time a **^^Tyranids^^** model from your army makes an attack, re-roll a Hit roll of 1.\n\nEach time a **^^Burrower^^** unit from your army is set up on the battlefield from Reserves, place a circular 40mm Tunnel Marker anywhere on the battlefield within 1\" of that unit and more than 3\" horizontally away from all enemy units.\n\nIn the Reinforcements step of your Movement phase, when you set up a unit on the battlefield from Reserves, you can set that unit up wholly within 9\" of one of your Tunnel Markers and more than 6\" horizontally away from any enemy units.\n\nIf an enemy model (excluding **^^Aircraft^^**) ends any kind of move within 3\" of one of your Tunnel Markers, that Tunnel Marker is removed from the battlefield.",
-      "target": null
+      "target": "Cada vez que una miniatura **^^Tyranids^^** de tu ejército realiza un ataque, repite las tiradas para impactar de 1.\n\nCada vez que una unidad **^^Burrower^^** de tu ejército se despliega en el campo de batalla desde las Reservas, coloca un Tunnel Marker circular de 40mm en cualquier lugar del campo de batalla a 1\" o menos de esa unidad y a más de 3\" horizontalmente de todas las unidades enemigas.\n\nEn el paso de Refuerzos de tu fase de Movimiento, cuando despliegues una unidad en el campo de batalla desde las Reservas, puedes desplegar esa unidad completamente a 9\" o menos de uno de tus Tunnel Markers y a más de 6\" horizontalmente de cualquier unidad enemiga.\n\nSi una miniatura enemiga (excluyendo **^^Aircraft^^**) termina cualquier tipo de movimiento a 3\" o menos de uno de tus Tunnel Markers, ese Tunnel Marker se retira del campo de batalla."
     },
     {
       "id": "4204ca444a37b206",
@@ -188,7 +188,7 @@
         ]
       },
       "source": "The following units do not split into separate units in the Form Boarding Squads step:\n- ^^**Hormagaunts**^^\n- ^^**Neurogaunts**^^\n- ^^**Termagants**^^",
-      "target": null
+      "target": "Las siguientes unidades no se dividen en unidades separadas en el paso Formar Escuadras de Abordaje:\n- ^^**Hormagaunts**^^\n- ^^**Neurogaunts**^^\n- ^^**Termagants**^^"
     },
     {
       "id": "17038018e8e280f8",
@@ -212,7 +212,7 @@
         ]
       },
       "source": "You can include up to two of the following unit:\n- **^^Winged Tyranid Prime^^**\n\nYou can include up to two of the following units:\n- **^^Tyranid Warriors with Melee Bio-weapons^^** (3 models)\n- **^^Tyranid Warriors with Ranged Bio-weapons^^** (3 models)\n\nYou can include up to one of each of the following units:\n- **^^Hormagaunts^^** (10 models)\n- **^^Neurogaunts^^** (10 models)\n- **^^Ripper Swarms^^** (3 models)\n- **^^Termagants^^** (10 models)",
-      "target": null
+      "target": "Puedes incluir hasta dos de la siguiente unidad:\n- **^^Winged Tyranid Prime^^**\n\nPuedes incluir hasta dos de las siguientes unidades:\n- **^^Tyranid Warriors with Melee Bio-weapons^^** (3 miniaturas)\n- **^^Tyranid Warriors with Ranged Bio-weapons^^** (3 miniaturas)\n\nPuedes incluir hasta una de cada una de las siguientes unidades:\n- **^^Hormagaunts^^** (10 miniaturas)\n- **^^Neurogaunts^^** (10 miniaturas)\n- **^^Ripper Swarms^^** (3 miniaturas)\n- **^^Termagants^^** (10 miniaturas)"
     },
     {
       "id": "87367e1b4421e04b",
@@ -241,7 +241,7 @@
         ]
       },
       "source": "- **^^Endless Multitude^^** and **^^Ripper Swarms^^** units from your army are ignored for the purposes of determining visibility for friendly **^^Tyranids^^** models that do not have the **^^Endless Multitude^^** or **^^Ripper Swarms^^** keyword.\n- You can give the Tyranid Prime models in **^^Tyranid Warriors with Melee Bio-weapons^^**  and **^^Tyranid Warriors with Ranged Bio-weapons^^** units Enhancements as if they were **^^Character^^** models.\n- **^^Tyranid Warriors with Melee Bio-weapons^^** and **^^Tyranid Warriors with Ranged Bio-weapons^^** units can perform the Secure Site Tactical Manoeuvre as if they had the **^^Battleline^^** keyword.\n- **^^Endless Multitude^^** units cannot perform the Secure Site Tactical Manoeuvre.\n- The **^^Ripper Swarms^^** unit loses the Deep Strike ability.\n- The **^^Termagants^^** unit loses the Skulking Horrors ability.\n- The **^^Winged Tyranid Prime^^** model loses the Deep Strike ability.",
-      "target": null
+      "target": "- Las unidades **^^Endless Multitude^^** y **^^Ripper Swarms^^** de tu ejército se ignoran a efectos de determinar la visibilidad para las miniaturas **^^Tyranids^^** amigas que no tengan la palabra clave **^^Endless Multitude^^** o **^^Ripper Swarms^^**.\n- Puedes dar Enhancements a las miniaturas Tyranid Prime de las unidades **^^Tyranid Warriors with Melee Bio-weapons^^**  y **^^Tyranid Warriors with Ranged Bio-weapons^^** como si fueran miniaturas **^^Character^^**.\n- Las unidades **^^Tyranid Warriors with Melee Bio-weapons^^** y **^^Tyranid Warriors with Ranged Bio-weapons^^** pueden realizar la Tactical Manoeuvre Secure Site como si tuvieran la palabra clave **^^Battleline^^**.\n- Las unidades **^^Endless Multitude^^** no pueden realizar la Tactical Manoeuvre Secure Site.\n- La unidad **^^Ripper Swarms^^** pierde la habilidad Deep Strike.\n- La unidad **^^Termagants^^** pierde la habilidad Skulking Horrors.\n- La miniatura **^^Winged Tyranid Prime^^** pierde la habilidad Deep Strike."
     },
     {
       "id": "7e62dc0556c475ad",
@@ -257,7 +257,7 @@
         ]
       },
       "source": "When you unleash the Shadow in the Warp, subtract 1 from the Battle-shock test each enemy unit on the battlefield must take as a result. For each enemy unit that fails one of those tests, that enemy unit cannot Fire Overwatch this turn.",
-      "target": null
+      "target": "Cuando desates la Shadow in the Warp, resta 1 al test de Battle-shock que cada unidad enemiga del campo de batalla debe hacer como consecuencia. Por cada unidad enemiga que falle uno de esos tests, esa unidad enemiga no puede usar Fire Overwatch este turno."
     },
     {
       "id": "60d98ebe1cc0cb8c",
@@ -274,7 +274,7 @@
         ]
       },
       "source": "**^^Tyranids^^** models in this Detachment cannot be given Enhancements.",
-      "target": null
+      "target": "A las miniaturas **^^Tyranids^^** de este Detachment no se les pueden dar Enhancements."
     },
     {
       "id": "f9a3cf95f89bbca1",
@@ -290,7 +290,7 @@
         ]
       },
       "source": "Do not split ^^**Hormagaunts**^^ into separate units in the Form Boarding Squads step.",
-      "target": null
+      "target": "No dividas a ^^**Hormagaunts**^^ en unidades separadas en el paso Formar Escuadras de Abordaje."
     },
     {
       "id": "2ad4a89655645923",
@@ -310,7 +310,7 @@
         ]
       },
       "source": "You can include up to two of the following units (duplicates are not allowed):\n- **^^Deathleaper^^**\n- **^^Lictor^^**\n- **^^Neurolictor^^**\n\nYou can include up to two of each of the following units:\n- **^^Hormagaunts^^** (10 models)\n- **^^Raveners^^** (3 models)\n- **^^Von Ryan's Leaders^^** (3 models)",
-      "target": null
+      "target": "Puedes incluir hasta dos de las siguientes unidades (no se permiten duplicados):\n- **^^Deathleaper^^**\n- **^^Lictor^^**\n- **^^Neurolictor^^**\n\nPuedes incluir hasta dos de cada una de las siguientes unidades:\n- **^^Hormagaunts^^** (10 miniaturas)\n- **^^Raveners^^** (3 miniaturas)\n- **^^Von Ryan's Leaders^^** (3 miniaturas)"
     },
     {
       "id": "ca34fefafecd24b4",
@@ -332,7 +332,7 @@
         ]
       },
       "source": "- **^^Hormagaunts^^** units cannot perform the Secure Site Tactical Manoeuvre.\n- The **^^Lictor^^** model loses the Pheromone Trail ability.\n- The **^^Raveners^^** unit loses the Death From Below ability.\n- The **^^Von Ryan's Leapers^^** unit loses the Pouncing Leap ability.",
-      "target": null
+      "target": "- Las unidades **^^Hormagaunts^^** no pueden realizar la Tactical Manoeuvre Secure Site.\n- La miniatura **^^Lictor^^** pierde la habilidad Pheromone Trail.\n- La unidad **^^Raveners^^** pierde la habilidad Death From Below.\n- La unidad **^^Von Ryan's Leapers^^** pierde la habilidad Pouncing Leap."
     },
     {
       "id": "ae59659a960330f3",
@@ -348,7 +348,7 @@
         ]
       },
       "source": "Each time an enemy unit within Engagement Range of one or more **^^Tyranids^^** units from your army is select to Fall Back, after that enemy unit has made that Fall Back move, for each of those **^^Tyranids^^** units, if there are no other enemy units within Engagement Range of it, it can make a Normal move of up to 3\".",
-      "target": null
+      "target": "Cada vez que una unidad enemiga que esté dentro del alcance de combate de una o más unidades **^^Tyranids^^** de tu ejército es seleccionada para replegarse, después de que esa unidad enemiga haya realizado ese movimiento de repliegue, por cada una de esas unidades **^^Tyranids^^**, si no hay otras unidades enemigas dentro de su alcance de combate, puede realizar un movimiento normal de hasta 3\"."
     },
     {
       "id": "9d495fced98c494f",
@@ -369,7 +369,7 @@
         ]
       },
       "source": "You can include up to two of the following unit:\n- **^^Winged Tyranid Prime^^**\n\nYou can include up to three of each of the following units:\n- **^^Hormagaunts^^** (10 models)\n- **^^Neurogaunts^^** (10 models)\n- **^^Ripper Swarms^^** (3 models)\n- **^^Termagants^^** (10 models)",
-      "target": null
+      "target": "Puedes incluir hasta dos de la siguiente unidad:\n- **^^Winged Tyranid Prime^^**\n\nPuedes incluir hasta tres de cada una de las siguientes unidades:\n- **^^Hormagaunts^^** (10 miniaturas)\n- **^^Neurogaunts^^** (10 miniaturas)\n- **^^Ripper Swarms^^** (3 miniaturas)\n- **^^Termagants^^** (10 miniaturas)"
     },
     {
       "id": "7b16fb3c4582723f",
@@ -391,7 +391,7 @@
         ]
       },
       "source": "- The **^^Ripper Swarms^^** unit loses the Deep Strike ability.\n- The **^^Termagants^^** unit loses the Skulking Horrors ability.\n- The **^^Winged Tyranid Prime^^** model loses the Deep Strike ability.",
-      "target": null
+      "target": "- La unidad **^^Ripper Swarms^^** pierde la habilidad Deep Strike.\n- La unidad **^^Termagants^^** pierde la habilidad Skulking Horrors.\n- La miniatura **^^Winged Tyranid Prime^^** pierde la habilidad Deep Strike."
     },
     {
       "id": "14e9e164a19a57c1",
@@ -405,7 +405,7 @@
         "names": []
       },
       "source": "Each time a **^^Tyranids^^** unit from your army moves, models in that unit can move through friendly **^^Tyranids^^** models as if they were not there. In addition, each time a **^^Tyranids^^** unit from your army attempts to operate a closed Hatchway, if your opponent tries to prevent it, add 1 to your result of the roll-off.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Tyranids^^** de tu ejército se mueve, las miniaturas de esa unidad pueden moverse a través de miniaturas **^^Tyranids^^** amigas como si no estuvieran allí. Además, cada vez que una unidad **^^Tyranids^^** de tu ejército intenta operar una Hatchway cerrada, si tu oponente intenta impedirlo, suma 1 a tu resultado de la tirada enfrentada."
     },
     {
       "id": "fb696194fb6ca8f1",
@@ -421,7 +421,7 @@
         ]
       },
       "source": "- Friendly **DEATHLEAPER/LICTOR/NEUROLICTOR** units have Deep Strike.\n- Friendly **LICTOR/NEUROLICTOR** units’ attacks that target a **CHARACTER** unit can re‑roll **hit rolls** of 1.",
-      "target": null
+      "target": "- Las unidades **DEATHLEAPER/LICTOR/NEUROLICTOR** amigas tienen Deep Strike.\n- Los ataques de las unidades **LICTOR/NEUROLICTOR** amigas que tienen como objetivo una unidad **CHARACTER** pueden repetir las **tiradas para impactar** de 1."
     },
     {
       "id": "91131160a4205472",
@@ -437,7 +437,7 @@
         ]
       },
       "source": "Friendly **NORN EMISSARY/NORN ASSIMILATOR** units have the **Protean Purpose** ability.",
-      "target": null
+      "target": "Las unidades **NORN EMISSARY/NORN ASSIMILATOR** amigas tienen la habilidad **Protean Purpose**."
     },
     {
       "id": "3e285e98c081f19e",
@@ -460,7 +460,7 @@
         ]
       },
       "source": "- Melee weapons equipped by the bearer gain the **[DEVASTATING WOUNDS]** ability.\n- Each time the bearer fights, if one or more enemy models (excluding **^^Vehicle^^** models) are destroyed when resolving those attacks, after that fight is resolved you can select one friendly **^^Ripper Swarms^^** unit within 12\" of the bearer. If any of those destroyed enemy models had the **^^Monster^^** keyword, add D3 Ripper Swarm models to that **^^Ripper Swarms^^** unit instead.",
-      "target": null
+      "target": "- Las armas de cuerpo a cuerpo equipadas por el portador ganan la habilidad **[DEVASTATING WOUNDS]**.\n- Cada vez que el portador combate, si una o más miniaturas enemigas (excluyendo las miniaturas **^^Vehicle^^**) son destruidas al resolver esos ataques, después de que ese combate se resuelva puedes seleccionar una unidad **^^Ripper Swarms^^** amiga a 12\" o menos del portador. Si alguna de esas miniaturas enemigas destruidas tenía la palabra clave **^^Monster^^**, añade D3 miniaturas Ripper Swarm a esa unidad **^^Ripper Swarms^^** en su lugar."
     },
     {
       "id": "9aed3083e8617c76",
@@ -478,7 +478,7 @@
         ]
       },
       "source": "**^^Monster^^** model only. Select one of the bearer's melee weapons. That weapon gains the following ability:\n\n**Slayer Sabres:** Each time the bearer fights, after that fight is resolved, select one enemy unit hit by one or more attacks made with this weapon this phase, then roll one D6: on a 2+, that unit suffers D3 mortal wounds, or D6+1 mortal wounds instead if that unit has the **^^Psyker^^** keyword.",
-      "target": null
+      "target": "Solo miniatura **^^Monster^^**. Selecciona una de las armas de cuerpo a cuerpo del portador. Esa arma gana la siguiente habilidad:\n\n**Slayer Sabres:** Cada vez que el portador combate, después de que ese combate se resuelva, selecciona una unidad enemiga impactada por uno o más ataques realizados con esta arma esta fase y tira un D6: con un 2+, esa unidad sufre D3 heridas mortales, o D6+1 heridas mortales en su lugar si esa unidad tiene la palabra clave **^^Psyker^^**."
     },
     {
       "id": "33791009f786baaa",
@@ -495,7 +495,7 @@
         ]
       },
       "source": "- While the bearer is on the battlefield, once per battle, you can use the Shadow in the Warp ability one additional time.\n- While the bearer is on the battlefield, increase the range of friendly **^^Synapse^^** units' Synapse ability to 9\".",
-      "target": null
+      "target": "- Mientras el portador esté en el campo de batalla, una vez por batalla, puedes usar la habilidad Shadow in the Warp una vez adicional.\n- Mientras el portador esté en el campo de batalla, aumenta a 9\" el alcance de la habilidad Synapse de las unidades **^^Synapse^^** amigas."
     },
     {
       "id": "58b1ba2ec874c05a",
@@ -511,7 +511,7 @@
         ]
       },
       "source": "Model with one or more Psychic weapons only. Each time the bearer makes an attack with a Psychic weapon, you can re-roll the Hit roll and you can re-roll the Wound roll.",
-      "target": null
+      "target": "Solo miniatura con una o más armas Psychic. Cada vez que el portador realiza un ataque con un arma Psychic, puedes repetir la tirada para impactar y puedes repetir la tirada para herir."
     },
     {
       "id": "aaea6db635f7aa23",
@@ -528,7 +528,7 @@
         ]
       },
       "source": "**^^Psyker^^** model only. Each time an enemy unit loses a wound as the result of a Psychic Attack made by the bearer:\n- The bearer regains 1 lost wound.\n- Until the start of your Command phase, add 1 to the Strength of the bearer's melee weapons.",
-      "target": null
+      "target": "Solo miniatura **^^Psyker^^**. Cada vez que una unidad enemiga pierde una herida como resultado de un ataque psíquico realizado por el portador:\n- El portador recupera 1 herida perdida.\n- Hasta el comienzo de tu fase de Mando, suma 1 a la Fuerza de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "7d9d6c35d4615566",
@@ -546,7 +546,7 @@
         ]
       },
       "source": "- Each time a model in this unit makes a melee attack, you can ignore any or all Hit roll and Weapon Skill modifiers for that attack.\n- Each time a model in this unit makes a ranged attack, that attack has the **[IGNORES COVER]** ability.",
-      "target": null
+      "target": "- Cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo, puedes ignorar cualquiera o todos los modificadores a la tirada para impactar y a la Habilidad de Armas de ese ataque.\n- Cada vez que una miniatura de esta unidad realiza un ataque a distancia, ese ataque tiene la habilidad **[IGNORES COVER]**."
     },
     {
       "id": "83867c889c25b4a8",
@@ -562,7 +562,7 @@
         ]
       },
       "source": "While this unit is within 18\" of a friendly **^^Synapse^^** model, this unit counts as being within 6\" of that model for its Synapse ability.",
-      "target": null
+      "target": "Mientras esta unidad esté a 18\" o menos de una miniatura **^^Synapse^^** amiga, esta unidad cuenta como si estuviera a 6\" o menos de esa miniatura a efectos de su habilidad Synapse."
     },
     {
       "id": "32c9766297ced16c",
@@ -576,7 +576,7 @@
         "names": []
       },
       "source": "Each time a ranged attack is allocated to a model in this unit, add 1 to any armour saving throw made against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia se asigna a una miniatura de esta unidad, suma 1 a cualquier tirada de salvación por blindaje realizada contra ese ataque."
     },
     {
       "id": "8510e35c4f4c51df",
@@ -590,7 +590,7 @@
         "names": []
       },
       "source": "Each time you make an Advance or Charge roll for this unit, you can re-roll the result.",
-      "target": null
+      "target": "Cada vez que hagas una tirada de avance o de carga para esta unidad, puedes repetir el resultado."
     },
     {
       "id": "4bc9543b8083bcac",
@@ -604,7 +604,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a melee attack, if this unit made a Charge move this turn, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo, si esta unidad realizó un movimiento de carga este turno, suma 1 a la tirada para impactar."
     },
     {
       "id": "62320e0b9eba7c9d",
@@ -618,7 +618,7 @@
         "names": []
       },
       "source": "At the end of your Movement phase, select one enemy unit within 6\" of and visible to this unit. That enemy unit must take a Leadership test, subtracting 1 from the roll. If failed, until the start of your next Movement phase, that enemy unit cannot be select to Advance and its Move characteristic is reduced by 2\".",
-      "target": null
+      "target": "Al final de tu fase de Movimiento, selecciona una unidad enemiga que esté a 6\" o menos de esta unidad y sea visible para ella. Esa unidad enemiga debe hacer un test de Leadership, restando 1 a la tirada. Si lo falla, hasta el comienzo de tu siguiente fase de Movimiento, esa unidad enemiga no puede ser seleccionada para avanzar y su característica de Movimiento se reduce en 2\"."
     },
     {
       "id": "9b4aba5fc30f2339",
@@ -636,7 +636,7 @@
         ]
       },
       "source": "Each time a ranged Psychic Attack targets this unit, this unit has the Benefit of Cover and Feel No Pain 5+ ability against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque psíquico a distancia tiene como objetivo esta unidad, esta unidad tiene el beneficio de cobertura y la habilidad Feel No Pain 5+ contra ese ataque."
     },
     {
       "id": "961fca1020e2ef1c",
@@ -652,7 +652,7 @@
         "names": []
       },
       "source": "Add 1 to the Toughness characteristic of models in this unit.",
-      "target": null
+      "target": "Suma 1 a la característica de Resistencia de las miniaturas de esta unidad."
     },
     {
       "id": "a963fdeff01b6139",
@@ -666,7 +666,7 @@
         "names": []
       },
       "source": "Once per battle, this unit can use this ability when it is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.",
-      "target": null
+      "target": "Una vez por batalla, esta unidad puede usar esta habilidad cuando sea tomada como objetivo con un Stratagem. Si lo hace, reduce en 1CP el coste en CP de ese uso de ese Stratagem."
     },
     {
       "id": "f373c01674e3e453",
@@ -681,7 +681,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, one model in this unit regains 1 lost wound.",
-      "target": null
+      "target": "Al comienzo de tu fase de Mando, una miniatura de esta unidad recupera 1 herida perdida."
     },
     {
       "id": "9743fe518060290d",
@@ -695,7 +695,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any phase, you can select one **^^Tyranids^^** unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de cualquier fase, puedes seleccionar una unidad **^^Tyranids^^** que esté Battle-shocked y a 12\" o menos de esta miniatura. Esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "bff30b9bfb2dc0b6",
@@ -709,7 +709,7 @@
         "names": []
       },
       "source": "Each time this unit declares a charge, one of the targets of that charge must be the closest eligible enemy unit.",
-      "target": null
+      "target": "Cada vez que esta unidad declara una carga, uno de los objetivos de esa carga debe ser la unidad enemiga elegible más cercana."
     },
     {
       "id": "14a93ccdaa50cc01",
@@ -725,7 +725,7 @@
         ]
       },
       "source": "This unit is never considered to be within Synapse range of your army.",
-      "target": null
+      "target": "Nunca se considera que esta unidad esté dentro del Synapse Range de tu ejército."
     },
     {
       "id": "a562c00aa94c9c21",
@@ -739,7 +739,7 @@
         "names": []
       },
       "source": "This unit cannot be targeted with Stratagems.",
-      "target": null
+      "target": "Esta unidad no puede ser tomada como objetivo con Stratagems."
     },
     {
       "id": "f49eba2d319696a4",
@@ -753,7 +753,7 @@
         "names": []
       },
       "source": "Each time this unit is selected to shoot, models in this unit can only target the closest eligible enemy unit when resolving this unit's attacks.",
-      "target": null
+      "target": "Cada vez que esta unidad es seleccionada para disparar, las miniaturas de esta unidad solo pueden tomar como objetivo a la unidad enemiga elegible más cercana al resolver los ataques de esta unidad."
     },
     {
       "id": "71fbc7efeb36d744",
@@ -769,7 +769,7 @@
         ]
       },
       "source": "While this unit has this Battle Scar, it loses the Synapse ability.",
-      "target": null
+      "target": "Mientras esta unidad tenga esta Battle Scar, pierde la habilidad Synapse."
     },
     {
       "id": "2e6db6f4129650ce",
@@ -786,7 +786,7 @@
         ]
       },
       "source": "This unit cannot benefit from Stratagems or Detachment Rules that require the **^^Synapse^^** keyword.",
-      "target": null
+      "target": "Esta unidad no puede beneficiarse de Stratagems ni de Reglas de Detachment que requieran la palabra clave **^^Synapse^^**."
     },
     {
       "id": "ad050e795a67447c",
@@ -802,7 +802,7 @@
         ]
       },
       "source": "Reduce the range of this model's Synapse ability to 3\".",
-      "target": null
+      "target": "Reduce a 3\" el alcance de la habilidad Synapse de esta miniatura."
     },
     {
       "id": "89032e45cca01158",
@@ -818,7 +818,7 @@
         ]
       },
       "source": "While this unit has this Battle Scar, it is affected by your army's Shadow in the Warp ability (and thus must take a Battle-shock test when it is used).",
-      "target": null
+      "target": "Mientras esta unidad tenga esta Battle Scar, se ve afectada por la habilidad Shadow in the Warp de tu ejército (y por tanto debe hacer un test de Battle-shock cuando se use)."
     },
     {
       "id": "a221f9ccacd7e87c",
@@ -835,7 +835,7 @@
         "names": []
       },
       "source": "Each time a GENESTEALER CULTS unit from your army is set up on the battlefield as Reinforcements, until the end of your next Fight phase, weapons equipped by models in that unit have the [SUSTAINED HITS 1] and [IGNORES COVER] abilities",
-      "target": null
+      "target": "Cada vez que una unidad GENESTEALER CULTS de tu ejército se despliega en el campo de batalla como Refuerzos, hasta el final de tu siguiente fase de Combate, las armas equipadas por las miniaturas de esa unidad tienen las habilidades [SUSTAINED HITS 1] y [IGNORES COVER]"
     },
     {
       "id": "0d89f2b0b6a5928c",
@@ -851,7 +851,7 @@
         ]
       },
       "source": "For Each ACOLYTE HYBRIDS, HYBRID METAMORPHS, and NEOPHYTE HYBRID unit from your army, while one or more CHARACTER models are leading that unit, you can re-roll Advance and Charge rolls made for it. If that CHARACTER model is a MAGUS, PRIMUS, or ACOLYTE ICONWARD, that model has the Feel No Pain 3+ ability while leading that unit.",
-      "target": null
+      "target": "Por cada unidad ACOLYTE HYBRIDS, HYBRID METAMORPHS y NEOPHYTE HYBRID de tu ejército, mientras una o más miniaturas CHARACTER lideren esa unidad, puedes repetir las tiradas de avance y de carga realizadas para ella. Si esa miniatura CHARACTER es un MAGUS, un PRIMUS o un ACOLYTE ICONWARD, esa miniatura tiene la habilidad Feel No Pain 3+ mientras lidera esa unidad."
     },
     {
       "id": "2a9452137bd02002",
@@ -870,7 +870,7 @@
         ]
       },
       "source": "Add 1 to Charge rolls made for **^^Aberrants^^**, **^^Biophagus^^** and **^^Purestrain Genestealers^^** units from your army. In addition, each time such a unit is selected to fight, if it made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by the models in that unit.",
-      "target": null
+      "target": "Suma 1 a las tiradas de carga realizadas para las unidades **^^Aberrants^^**, **^^Biophagus^^** y **^^Purestrain Genestealers^^** de tu ejército. Además, cada vez que una de esas unidades es seleccionada para combatir, si realizó un movimiento de carga este turno, hasta el final de la fase, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "9101a24ec89cf421",
@@ -884,7 +884,7 @@
         "names": []
       },
       "source": "While a **GENESTEALER CULTS MOUNTED/VEHICLE** model from your army is not Battle‑shocked, add 1 to its Objective Control characteristic. In addition, at the end of your Command phase, if one or more **ATALAN JACKALS** units from your army are within range of an **objective** you control, that **objective** remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.",
-      "target": null
+      "target": "Mientras una miniatura **GENESTEALER CULTS MOUNTED/VEHICLE** de tu ejército no esté Battle‑shocked, suma 1 a su característica de Control de Objetivos. Además, al final de tu fase de Mando, si una o más unidades **ATALAN JACKALS** de tu ejército están dentro del alcance de un **objetivo** que controlas, ese **objetivo** permanece bajo tu control hasta que el Nivel de Control de tu oponente sobre ese marcador de objetivo sea mayor que el tuyo al final de una fase."
     },
     {
       "id": "4f397c4aa7bfb3d5",
@@ -901,7 +901,7 @@
         ]
       },
       "source": "You can include **^^Astra Militarum^^** units in your army, even though they do not have the **^^Genestealer Cult^^** Faction keyword. The combined points cost of such units you can include in your army is:\n\n- Incursion: Up to 500 pts\n- Strike Force: Up to 1000 pts\n- Onslaught: Up to 1500 pts\n\nA **GENESTEALER CULTS** model must be your **WARLORD**, and **ASTRA MILITARUM** models from your army lose the Voice of Command ability if they have it. You cannot include units with any of the following keywords in your army using this rule: **AIRCRAFT**; **COMMISSAR**; **EPIC HERO**; **MILITARUM TEMPESTUS**; **OGRYN**; **RATLING**; **TECH‑PRIEST ENGINSEER**; **MINISTORUM PRIEST**.",
-      "target": null
+      "target": "Puedes incluir unidades **^^Astra Militarum^^** en tu ejército, aunque no tengan la palabra clave de Facción **^^Genestealer Cult^^**. El coste combinado en puntos de dichas unidades que puedes incluir en tu ejército es:\n\n- Incursion: Hasta 500 pts\n- Strike Force: Hasta 1000 pts\n- Onslaught: Hasta 1500 pts\n\nUna miniatura **GENESTEALER CULTS** debe ser tu **WARLORD**, y las miniaturas **ASTRA MILITARUM** de tu ejército pierden la habilidad Voice of Command si la tienen. Usando esta regla no puedes incluir en tu ejército unidades con ninguna de las siguientes palabras clave: **AIRCRAFT**; **COMMISSAR**; **EPIC HERO**; **MILITARUM TEMPESTUS**; **OGRYN**; **RATLING**; **TECH‑PRIEST ENGINSEER**; **MINISTORUM PRIEST**."
     },
     {
       "id": "87132e1d63a60c3c",
@@ -917,7 +917,7 @@
         ]
       },
       "source": "Each time an **^^Astra Militarum^^** unit from your army is selected to shoot, you can select one enemy unit within 18\" of and visible to that unit. If you do, until the end of the phase, models in that **^^Astra Militarum^^** unit can only target that enemy unit (and only if it is an eligible target) and that enemy unit is caught in overlapping fire. While an enemy unit is caught in overlapping fire, each time a **^^Genestealer Cult^^** model from your army targets that enemy unit with a ranged attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Astra Militarum^^** de tu ejército es seleccionada para disparar, puedes seleccionar una unidad enemiga que esté a 18\" o menos de esa unidad y sea visible para ella. Si lo haces, hasta el final de la fase, las miniaturas de esa unidad **^^Astra Militarum^^** solo pueden tomar como objetivo a esa unidad enemiga (y solo si es un objetivo elegible) y esa unidad enemiga queda atrapada en fuego convergente. Mientras una unidad enemiga está atrapada en fuego convergente, cada vez que una miniatura **^^Genestealer Cult^^** de tu ejército toma como objetivo a esa unidad enemiga con un ataque a distancia, suma 1 a la tirada para impactar."
     },
     {
       "id": "5246d139f435d995",
@@ -933,7 +933,7 @@
         ]
       },
       "source": "You can include TYRANIDS VANGUARD INVADER units (excluding AIRCRAFT, BROODLORD and GENESTEALERS units) in your army. The combined points cost of such units depends on your battle size:\n\n■ Incursion: Up to 500 pts\n■ Strike Force: Up to 1000 pts\n■ Onslaught: Up to 1500 pts\n\nNo TYRANIDS models from your army can be your WARLORD.",
-      "target": null
+      "target": "Puedes incluir unidades TYRANIDS VANGUARD INVADER (excluyendo las unidades AIRCRAFT, BROODLORD y GENESTEALERS) en tu ejército. El coste combinado en puntos de dichas unidades depende del tamaño de la partida:\n\n■ Incursion: Hasta 500 pts\n■ Strike Force: Hasta 1000 pts\n■ Onslaught: Hasta 1500 pts\n\nNinguna miniatura TYRANIDS de tu ejército puede ser tu WARLORD."
     },
     {
       "id": "869815648b235d8f",
@@ -947,7 +947,7 @@
         "names": []
       },
       "source": "At the end of your Movement phase, for each TYRANIDS SYNAPSE unit from your army, you can select one friendly GENESTEALER CULTS unit (excluding PURESTRAIN GENESTEALER and PATRIARCH units) and one friendly TYRANIDS unit each within 9\" of and visible to that SYNAPSE unit. If you do, that GENESTEALER CULTS unit from your army suffers D3+1 mortal wounds and one model in the selected TYRANIDS unit regains up to that many lost wounds and until the start of your next Movement phase, each time a model in the selected TYRANIDS unit makes an attack, add 1 to the Hit roll.\n\nTYRANIDS units from your army have the following ability:\n\nCatalyst (Aura): While an enemy unit is within 6\" of this unit, each time a friendly GENESTEALER CULTS unit makes an attack that targets that enemy unit, add 1 to the Hit roll.",
-      "target": null
+      "target": "Al final de tu fase de Movimiento, por cada unidad TYRANIDS SYNAPSE de tu ejército, puedes seleccionar una unidad GENESTEALER CULTS amiga (excluyendo las unidades PURESTRAIN GENESTEALER y PATRIARCH) y una unidad TYRANIDS amiga, cada una a 9\" o menos de esa unidad SYNAPSE y visible para ella. Si lo haces, esa unidad GENESTEALER CULTS de tu ejército sufre D3+1 heridas mortales y una miniatura de la unidad TYRANIDS seleccionada recupera hasta esa misma cantidad de heridas perdidas y, hasta el comienzo de tu siguiente fase de Movimiento, cada vez que una miniatura de la unidad TYRANIDS seleccionada realiza un ataque, suma 1 a la tirada para impactar.\n\nLas unidades TYRANIDS de tu ejército tienen la siguiente habilidad:\n\nCatalyst (Aura): Mientras una unidad enemiga esté a 6\" o menos de esta unidad, cada vez que una unidad GENESTEALER CULTS amiga realiza un ataque que tiene como objetivo a esa unidad enemiga, suma 1 a la tirada para impactar."
     },
     {
       "id": "91eb09064b0751ac",
@@ -963,7 +963,7 @@
         ]
       },
       "source": "Do not split ^^**Neophyte Hybrids**^^ into separate units in the Form Boarding Squads step.",
-      "target": null
+      "target": "No dividas a ^^**Neophyte Hybrids**^^ en unidades separadas en el paso Formar Escuadras de Abordaje."
     },
     {
       "id": "939597df7ad501ed",
@@ -989,7 +989,7 @@
         ]
       },
       "source": "You can include up to one of the following units:\n- **^^Magus^^**\n- **^^Primus^^**\n\nYou can include up to two of the following units (duplicates are not allowed):\n- **^^Acolyte Iconward^^**\n- **^^Clamavus^^**\n- **^^Kelermorph^^**\n- **^^Locus^^**\n- **^^Sanctus^^**\n\nYou can include up to three of each of the following units:\n- **^^Acolyte Hybrids with Autopistols^^** (5 or 10 models)\n- **^^Neophyte Hybrids^^** (10 models)\n\nYou can include up to one of the following unit:\n- **^^Acolyte Hybrids with Hand Flamers^^** (5 or 10 models)",
-      "target": null
+      "target": "Puedes incluir hasta una de las siguientes unidades:\n- **^^Magus^^**\n- **^^Primus^^**\n\nPuedes incluir hasta dos de las siguientes unidades (no se permiten duplicados):\n- **^^Acolyte Iconward^^**\n- **^^Clamavus^^**\n- **^^Kelermorph^^**\n- **^^Locus^^**\n- **^^Sanctus^^**\n\nPuedes incluir hasta tres de cada una de las siguientes unidades:\n- **^^Acolyte Hybrids with Autopistols^^** (5 o 10 miniaturas)\n- **^^Neophyte Hybrids^^** (10 miniaturas)\n\nPuedes incluir hasta una de la siguiente unidad:\n- **^^Acolyte Hybrids with Hand Flamers^^** (5 o 10 miniaturas)"
     },
     {
       "id": "99cfd2958ec1e026",
@@ -1014,7 +1014,7 @@
         ]
       },
       "source": "- **^^Genestealer Cults^^** units lose the Deep Strike ability.\n- The **^^Acolyte Hybrids with Autopistols^^** unit loses the Claimed for the Cult ability.\n- The **^^Acolyte Iconward^^** model loses the Summon the Cult ability.\n- The **^^Neophyte Hybrids^^** unit loses the A Plan Generations in the Making ability.\n- The **^^Primus^^** model loses the Decoys and Misdirection ability.",
-      "target": null
+      "target": "- Las unidades **^^Genestealer Cults^^** pierden la habilidad Deep Strike.\n- La unidad **^^Acolyte Hybrids with Autopistols^^** pierde la habilidad Claimed for the Cult.\n- La miniatura **^^Acolyte Iconward^^** pierde la habilidad Summon the Cult.\n- La unidad **^^Neophyte Hybrids^^** pierde la habilidad A Plan Generations in the Making.\n- La miniatura **^^Primus^^** pierde la habilidad Decoys and Misdirection."
     },
     {
       "id": "c0c530caed7f046c",
@@ -1031,7 +1031,7 @@
         ]
       },
       "source": "At the end of your Shooting phase, you can select one **^^Genestealer Cults^^** unit from your army that is not within Engagement Range of one or more enemy units. If you do, that unit can attempt to operate one open Hatchway it is within 1\" of (if there is one), and can then make a Normal move of up to 3\" (regardless of whether it attempted to operate a Hatchway or not). Until the end of the turn, that unit is not eligible to declare a charge.",
-      "target": null
+      "target": "Al final de tu fase de Disparo, puedes seleccionar una unidad **^^Genestealer Cults^^** de tu ejército que no esté dentro del alcance de combate de una o más unidades enemigas. Si lo haces, esa unidad puede intentar operar una Hatchway abierta a 1\" o menos de ella (si la hay), y puede después realizar un movimiento normal de hasta 3\" (tanto si intentó operar una Hatchway como si no). Hasta el final del turno, esa unidad no es elegible para declarar una carga."
     },
     {
       "id": "94204186327a5d43",
@@ -1051,7 +1051,7 @@
         ]
       },
       "source": "You can include up to two of the following units (duplicates are not allowed):\n- **^^Abominant^^**\n- **^^Benefictus^^**\n- **^^Biophagus^^**\n\nYou can include up to two of the following unit:\n- **^^Aberrants^^** (5 or 10 models)\n\nYou can include up to one of the following unit:\n- **^^Hybrid Metamorphs^^** (5 or 10 models)",
-      "target": null
+      "target": "Puedes incluir hasta dos de las siguientes unidades (no se permiten duplicados):\n- **^^Abominant^^**\n- **^^Benefictus^^**\n- **^^Biophagus^^**\n\nPuedes incluir hasta dos de la siguiente unidad:\n- **^^Aberrants^^** (5 o 10 miniaturas)\n\nPuedes incluir hasta una de la siguiente unidad:\n- **^^Hybrid Metamorphs^^** (5 o 10 miniaturas)"
     },
     {
       "id": "5ab0af2c9731c236",
@@ -1070,7 +1070,7 @@
         ]
       },
       "source": "- **^^Genestealer Cults^^** units lose the Deep Strike ability.\n- The **^^Hybrid Metamorphs^^** unit loses the Brood Surge ability.",
-      "target": null
+      "target": "- Las unidades **^^Genestealer Cults^^** pierden la habilidad Deep Strike.\n- La unidad **^^Hybrid Metamorphs^^** pierde la habilidad Brood Surge."
     },
     {
       "id": "b3221c4be3ee3874",
@@ -1086,7 +1086,7 @@
         ]
       },
       "source": "Each time an enemy unit declares a charge that targets one or more **^^Genestealer Cults^^** units from your army, that enemy unit must take a Leadership test. If failed, until the end of the turn, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga declara una carga que tiene como objetivo a una o más unidades **^^Genestealer Cults^^** de tu ejército, esa unidad enemiga debe hacer un test de Leadership. Si lo falla, hasta el final del turno, cada vez que una miniatura de esa unidad enemiga realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "c0289c56b052a106",
@@ -1100,7 +1100,7 @@
         "names": []
       },
       "source": "Friendly **KELERMORPH/LOCUS/REDUCTUS SABOTEUR/SANCTUS** models have **KILLER**.\n- Friendly **KILLER** models’ attacks can:\n-- Re‑roll **hit rolls** of 1.\n-- Re‑roll **wound rolls** of 1.",
-      "target": null
+      "target": "Las miniaturas **KELERMORPH/LOCUS/REDUCTUS SABOTEUR/SANCTUS** amigas tienen **KILLER**.\n- Los ataques de las miniaturas **KILLER** amigas pueden:\n-- Repetir las **tiradas para impactar** de 1.\n-- Repetir las **tiradas para herir** de 1."
     },
     {
       "id": "bfce3c8d9a9d996b",
@@ -1114,7 +1114,7 @@
         "names": []
       },
       "source": "At the end of your opponent’s Fight phase, friendly **unengaged PURESTRAIN GENESTEALER** units can be placed in **strategic reserves**.\n\nThis **detachment** has the **PURESTRAIN** tag and cannot be taken with another **PURESTRAIN detachment**.",
-      "target": null
+      "target": "Al final de la fase de Combate de tu oponente, las unidades amigas **PURESTRAIN GENESTEALER sin trabar** pueden colocarse en **reservas estratégicas**.\n\nEste **detachment** tiene la etiqueta **PURESTRAIN** y no puede llevarse junto a otro **detachment PURESTRAIN**."
     },
     {
       "id": "ee40bfc51e67c1e0",
@@ -1128,7 +1128,7 @@
         "names": []
       },
       "source": "In your Command phase, if a friendly **NEOPHYTE HYBRIDS** unit is within a **terrain area**, that unit **heals** 3 wounds.\n\nThis **detachment** has the **HOSTS** tag and cannot be taken with another **HOSTS detachment**.",
-      "target": null
+      "target": "En tu fase de Mando, si una unidad **NEOPHYTE HYBRIDS** amiga está dentro de un **área de escenografía**, esa unidad **cura** 3 heridas.\n\nEste **detachment** tiene la etiqueta **HOSTS** y no puede llevarse junto a otro **detachment HOSTS**."
     },
     {
       "id": "decb7df01a0084fe",
@@ -1147,7 +1147,7 @@
         ]
       },
       "source": "**^^Psyker^^** only. Ranged weapons equipped by models in this unit have the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "Solo **^^Psyker^^**. Las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "b1cf8408973cb0c0",
@@ -1161,7 +1161,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent's Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, empeora en 1 la característica de Leadership de las miniaturas de esa unidad. Además, en el paso de Battle-shock de la fase de Mando de tu oponente, si una de esas unidades enemigas está por debajo de su Starting Strength, debe hacer un test de Battle-shock."
     },
     {
       "id": "cb8fdda6b9396c33",
@@ -1177,7 +1177,7 @@
         ]
       },
       "source": "Each time a melee attack made a model in this unit destroys an enemy **^^Character^^** model, you gain 1CP.",
-      "target": null
+      "target": "Cada vez que un ataque de cuerpo a cuerpo realizado por una miniatura de esta unidad destruye una miniatura **^^Character^^** enemiga, ganas 1CP."
     },
     {
       "id": "8bc6ba0c12e922ac",
@@ -1194,7 +1194,7 @@
         ]
       },
       "source": "**^^Psyker^^** only. If one or more models from your army with this ability are on the battlefield when you unleash the Shadow in the Warp, subtract 1 from the Battle-shock test each enemy unit on the battlefield must take as a result.",
-      "target": null
+      "target": "Solo **^^Psyker^^**. Si una o más miniaturas de tu ejército con esta habilidad están en el campo de batalla cuando desates la Shadow in the Warp, resta 1 al test de Battle-shock que cada unidad enemiga del campo de batalla debe hacer como consecuencia."
     },
     {
       "id": "eb07f1bd0c30c923",
@@ -1213,7 +1213,7 @@
         ]
       },
       "source": "Change this model's Move characteristic to 10\", add the **^^Vanguard Invader^^** keyword, and it gains the Deep Strike ability. If it is an **^^Infantry^^** model, replace the list of units this model can be attached to: **^^Raveners^^**.",
-      "target": null
+      "target": "Cambia la característica de Movimiento de esta miniatura a 10\", añade la palabra clave **^^Vanguard Invader^^** y gana la habilidad Deep Strike. Si es una miniatura **^^Infantry^^**, sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: **^^Raveners^^**."
     },
     {
       "id": "e004605ca6e612f0",
@@ -1232,7 +1232,7 @@
         ]
       },
       "source": "**^^Node Organism^^** only. Add the **^^Fly^^** keyword, and replace the list of units this model can be attached to: **^^Venomthropes^^**, **^^Zoanthropes^^**.",
-      "target": null
+      "target": "Solo **^^Node Organism^^**. Añade la palabra clave **^^Fly^^** y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: **^^Venomthropes^^**, **^^Zoanthropes^^**."
     },
     {
       "id": "296f21db6a5d4be4",
@@ -1249,7 +1249,7 @@
         ]
       },
       "source": "**^^Macro Organism^^** only. Change this model's Save characteristic to 2+, and change its Deadly Demise D3 ability to Deadly Demise D6.",
-      "target": null
+      "target": "Solo **^^Macro Organism^^**. Cambia la característica de Salvación de esta miniatura a 2+ y cambia su habilidad Deadly Demise D3 por Deadly Demise D6."
     },
     {
       "id": "bad8baef0392f617",
@@ -1269,7 +1269,7 @@
         ]
       },
       "source": "This model has a 4+ invulnerable save, add the **^^Psyker^^** and **^^Synapse^^** keywords, and it gains the Shadow in the Warp ability. If it is an **^^Infantry^^** model, add the following unit to the list of units this model can be attached to: **^^Neurogaunts^^**.",
-      "target": null
+      "target": "Esta miniatura tiene una salvación invulnerable de 4+, añade las palabras clave **^^Psyker^^** y **^^Synapse^^**, y gana la habilidad Shadow in the Warp. Si es una miniatura **^^Infantry^^**, añade la siguiente unidad a la lista de unidades a las que esta miniatura puede adjuntarse: **^^Neurogaunts^^**."
     },
     {
       "id": "c1172b38a899be74",
@@ -1292,7 +1292,7 @@
         ]
       },
       "source": "**^^Node Organism^^** only. Change this model's Move characteristic to 8\", add the **^^Vanguard Invader^^** keyword, and it gains the Fights First, Infiltrators, Lone Operative and Stealth abilities. Replace the list of units this model can be attached to: **^^Hormagaunts^^**, **^^Von Ryan's Leapers^^**.",
-      "target": null
+      "target": "Solo **^^Node Organism^^**. Cambia la característica de Movimiento de esta miniatura a 8\", añade la palabra clave **^^Vanguard Invader^^** y gana las habilidades Fights First, Infiltrators, Lone Operative y Stealth. Sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: **^^Hormagaunts^^**, **^^Von Ryan's Leapers^^**."
     },
     {
       "id": "91fbe0c699292b9c",
@@ -1314,7 +1314,7 @@
         ]
       },
       "source": "**^^Node Organism^^** or **^^Prime Organism^^** only. Change this model's Move characteristic to 12\", add the **^^Fly^^** and **^^Vanguard Invader^^** keywords, and it gains the Deep Strike ability. If it is an **^^Infantry^^** model, replace the list of units this model can be attached to: **^^Gargoyles^^**.",
-      "target": null
+      "target": "Solo **^^Node Organism^^** o **^^Prime Organism^^**. Cambia la característica de Movimiento de esta miniatura a 12\", añade las palabras clave **^^Fly^^** y **^^Vanguard Invader^^**, y gana la habilidad Deep Strike. Si es una miniatura **^^Infantry^^**, sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: **^^Gargoyles^^**."
     },
     {
       "id": "52668f8b1c76a13f",
@@ -1328,7 +1328,7 @@
         "names": []
       },
       "source": "**PURESTRAIN GENESTEALERS** unit only. This unit has:\n- +1 **T**.\n- 4+ **Sv**.\n- This unit’s melee attacks have +1 **S**.",
-      "target": null
+      "target": "Solo unidad **PURESTRAIN GENESTEALERS**. Esta unidad tiene:\n- +1 **T**.\n- 4+ **Sv**.\n- Los ataques de cuerpo a cuerpo de esta unidad tienen +1 a la **S**."
     },
     {
       "id": "6f092dadb2f4dfca",
@@ -1342,7 +1342,7 @@
         "names": []
       },
       "source": "**NEOPHYTE HYBRIDS** unit only. This unit has ‑3\" **detection range**.",
-      "target": null
+      "target": "Solo unidad **NEOPHYTE HYBRIDS**. Esta unidad tiene ‑3\" de **alcance de detección**."
     },
     {
       "id": "3cee8a7ddd9340d0",
@@ -1356,7 +1356,7 @@
         "names": []
       },
       "source": "**NEUROLICTOR/LICTOR/VON RYAN’S LEAPERS** unit only. In your opponent’s Movement phase, when an enemy unit ends a move within 8\" of this unit, this unit can make a **normal move** of up to D3+3\".",
-      "target": null
+      "target": "Solo unidad **NEUROLICTOR/LICTOR/VON RYAN’S LEAPERS**. En la fase de Movimiento de tu oponente, cuando una unidad enemiga termina un movimiento a 8\" o menos de esta unidad, esta unidad puede realizar un **movimiento normal** de hasta D3+3\"."
     },
     {
       "id": "76f80d2c958204a0",
@@ -1370,7 +1370,7 @@
         "names": []
       },
       "source": "**VON RYAN’S LEAPERS** unit only. This unit has ‑3\" **detection range**.",
-      "target": null
+      "target": "Solo unidad **VON RYAN’S LEAPERS**. Esta unidad tiene ‑3\" de **alcance de detección**."
     },
     {
       "id": "206b965c47c7fbde",
@@ -1386,7 +1386,7 @@
         "names": []
       },
       "source": "**NORN EMISSARY** unit only. This unit’s ranged attacks have **[ANTI‑CHARACTER 2+]**.",
-      "target": null
+      "target": "Solo unidad **NORN EMISSARY**. Los ataques a distancia de esta unidad tienen **[ANTI‑CHARACTER 2+]**."
     },
     {
       "id": "896a5638042e79a1",
@@ -1402,7 +1402,7 @@
         ]
       },
       "source": "**NORN ASSIMILATOR** unit only. This unit has 4+ **InSv**.",
-      "target": null
+      "target": "Solo unidad **NORN ASSIMILATOR**. Esta unidad tiene 4+ **InSv**."
     },
     {
       "id": "74ab67d3596e23ac",

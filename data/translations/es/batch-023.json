@@ -13,7 +13,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: \n\n■ ASSAULT INTERCESSOR SQUAD\n■ ASSAULT SQUAD\n■ BLADEGUARD VETERAN SQUAD\n■ COMMAND SQUAD\n■ COMPANY HEROES\n■ HELLBLASTER SQUAD\n■ INFERNUS SQUAD\n■ INTERCESSOR SQUAD\n■ STERNGUARD VETERAN SQUAD\n■ VANGUARD VETERAN SQUAD\n■ VICTRIX HONOUR GUARD\n■ WARDENS OF ULTRAMAR",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: \n\n■ ASSAULT INTERCESSOR SQUAD\n■ ASSAULT SQUAD\n■ BLADEGUARD VETERAN SQUAD\n■ COMMAND SQUAD\n■ COMPANY HEROES\n■ HELLBLASTER SQUAD\n■ INFERNUS SQUAD\n■ INTERCESSOR SQUAD\n■ STERNGUARD VETERAN SQUAD\n■ VANGUARD VETERAN SQUAD\n■ VICTRIX HONOUR GUARD\n■ WARDENS OF ULTRAMAR"
     },
     {
       "id": "b54e4d589257814d",
@@ -32,7 +32,7 @@
         ]
       },
       "source": "While this unit contains Ancient Gadriel, add 1 to the Objective Control characteristic of models in this unit. While this unit contains Ancient Gadriel and Captain Titus, improve the Leadership characteristic of models in this unit by 1 as well.",
-      "target": null
+      "target": "Mientras esta unidad contenga a Ancient Gadriel, suma 1 a la característica de Control de Objetivos de las miniaturas de esta unidad. Mientras esta unidad contenga a Ancient Gadriel y a Captain Titus, mejora además en 1 la característica de Leadership de las miniaturas de esta unidad."
     },
     {
       "id": "0f6f778e6d9dcc7d",
@@ -48,7 +48,7 @@
         ]
       },
       "source": "After both players have deployed their armies, if this unit is on the battlefield (or any Transport it\nis embarked within is on the battlefield), select up to three Adeptus Astartes units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, si esta unidad está en el campo de batalla (o si cualquier Transport en el que\nesté embarcada está en el campo de batalla), selecciona hasta tres unidades Adeptus Astartes de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "52e2d32cfab2b16a",
@@ -62,7 +62,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, VANGUARD VETERAN SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, VANGUARD VETERAN SQUAD"
     },
     {
       "id": "4ae55df29c0dde7d",
@@ -76,7 +76,7 @@
         "names": []
       },
       "source": "The bearer has a 4+ Invulnerable save.",
-      "target": null
+      "target": "El portador tiene una salvación invulnerable de 4+."
     },
     {
       "id": "308ee24983eab3f9",
@@ -93,7 +93,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and melee weapons equipped by models in that unit have the [LANCE] ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [ASSAULT] y las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad tienen la habilidad [LANCE]."
     },
     {
       "id": "6cc8710d2be0d1b1",
@@ -109,7 +109,7 @@
         ]
       },
       "source": "Each time this model destroys an enemy Character model, you gain 1CP",
-      "target": null
+      "target": "Cada vez que esta miniatura destruye una miniatura Character enemiga, ganas 1CP"
     },
     {
       "id": "ca45d9101251d84f",
@@ -123,7 +123,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, COMMAND SQUAD, COMPANY HEROES, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, TACTICAL SQUAD, VANGUARD VETERAN SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, COMMAND SQUAD, COMPANY HEROES, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, TACTICAL SQUAD, VANGUARD VETERAN SQUAD"
     },
     {
       "id": "aee039b5f5e72ce9",
@@ -140,7 +140,7 @@
         ]
       },
       "source": "If you include this model in your army, until the end of the battle, non-Character models in Outrider Squad units from your army have an Objective Control characteristic of 3 while they are not Battle-shocked.",
-      "target": null
+      "target": "Si incluyes esta miniatura en tu ejército, hasta el final de la batalla, las miniaturas que no sean Character de las unidades Outrider Squad de tu ejército tienen una característica de Control de Objetivos de 3 mientras no estén Battle-shocked."
     },
     {
       "id": "e0d3e2be99d6fab3",
@@ -154,7 +154,7 @@
         "names": []
       },
       "source": "This model’s unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back. If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead.",
-      "target": null
+      "target": "La unidad de esta miniatura es elegible para disparar y para declarar una carga en un turno en el que haya avanzado o se haya replegado. Si esa unidad ya es elegible para disparar y para declarar una carga en un turno en el que haya avanzado, en su lugar suma 1 a las tiradas de avance y de carga realizadas para esa unidad."
     },
     {
       "id": "f72e4bebd7edd05b",
@@ -168,7 +168,7 @@
         "names": []
       },
       "source": "Each time a model in this model’s unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through terrain features.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad de esta miniatura realiza un movimiento normal, de avance, de repliegue o de carga, puede moverse horizontalmente a través de elementos de escenografía."
     },
     {
       "id": "5e815425ea732151",
@@ -184,7 +184,7 @@
         ]
       },
       "source": "At the start of the battle, after both sides have deployed, but before the first turn begins, you must roll a number of 6 equal to the number of units in your Crusade army that harbouring a grudge against your opponent's Crusade army (each Attached unit harbouring a grudge counts as a single unit).\n\nFor each roll of 6, you can select one enemy unit that is on the battlefield to gain one Grudge token (you can select the same unit more than once).\n\nFor each roll of 1, you must instead select one unit from your Crusade army that is harbouring a grudge against your opponent's Crusade army and does not have a Grudge token to gain one Grudge token. While that unit has a Grudge token, you cannot select it as the target of a Stratagem, After that unit has shot or fought, remove that unit's Grudge token.",
-      "target": null
+      "target": "Al comienzo de la batalla, después de que ambos bandos hayan desplegado pero antes de que empiece el primer turno, debes tirar un número de D6 igual al número de unidades de tu ejército de Crusade que albergan un rencor contra el ejército de Crusade de tu oponente (cada unidad adjunta que alberga un rencor cuenta como una sola unidad).\n\nPor cada 6, puedes seleccionar una unidad enemiga que esté en el campo de batalla para que gane una ficha de Grudge (puedes seleccionar la misma unidad más de una vez).\n\nPor cada 1, en su lugar debes seleccionar una unidad de tu ejército de Crusade que albergue un rencor contra el ejército de Crusade de tu oponente y que no tenga ficha de Grudge para que gane una ficha de Grudge. Mientras esa unidad tenga una ficha de Grudge, no puedes seleccionarla como objetivo de un Stratagem, Después de que esa unidad haya disparado o combatido, retira la ficha de Grudge de esa unidad."
     },
     {
       "id": "be640b4015766297",
@@ -200,7 +200,7 @@
         ]
       },
       "source": "For each unit in your Crusade army that is harbour a grudge against your opponent's Crusade army, keep a tally of the number of enemy units destroyed by that unit. At the end of the battle, if that unit has a tally of 3 or more, unless that unit was that unit was destroyed during the battle it's grudge has been settled - the Grudge note for your opponent's Crusade army's Faction is remove from its Crusade card.",
-      "target": null
+      "target": "Por cada unidad de tu ejército de Crusade que alberga un rencor contra el ejército de Crusade de tu oponente, lleva la cuenta del número de unidades enemigas destruidas por esa unidad. Al final de la batalla, si esa unidad tiene una cuenta de 3 o más, a menos que esa unidad fuera destruida durante la batalla su rencor queda saldado: la anotación de Grudge correspondiente a la Faction del ejército de Crusade de tu oponente se retira de su Crusade card."
     },
     {
       "id": "3830addded8d17aa",
@@ -216,7 +216,7 @@
         ]
       },
       "source": "Each time a model (excluding a **^^Cog^^** model) in a unit from your Crusade army makes an attack, if that unit is harbouring a grudge against your opponent's Crusade army, re-roll a Hit roll of 1 if the target has 1-2 Grudge tokens, or you can re-roll the Hit roll instead if the target has 3 Grudge tokens.",
-      "target": null
+      "target": "Cada vez que una miniatura (excluidas las miniaturas **^^Cog^^**) de una unidad de tu ejército de Crusade realiza un ataque, si esa unidad alberga un rencor contra el ejército de Crusade de tu oponente, repite una tirada para impactar de 1 si el objetivo tiene 1-2 fichas de Grudge, o puedes repetir la tirada para impactar en su lugar si el objetivo tiene 3 fichas de Grudge."
     },
     {
       "id": "dda9cdb3b20e2f9f",
@@ -233,7 +233,7 @@
         ]
       },
       "source": "A unit from your Crusade army that is harbouring a grudge against opponent's Crusade army cannot Fall Back while it is within Engagement Range of one or more enemy units.",
-      "target": null
+      "target": "Una unidad de tu ejército de Crusade que alberga un rencor contra el ejército de Crusade de tu oponente no puede replegarse mientras esté dentro del alcance de combate de una o más unidades enemigas."
     },
     {
       "id": "24140421cc5db8a7",
@@ -249,7 +249,7 @@
         ]
       },
       "source": "In your Shooting phase, just after this unit is selected to shoot, this unit can use this ability. If it does, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**). Until the end of the phase, attacks made by models in this unit can only attack that enemy unit (and only if it is an eligible target) and, after resolving those attacks, if one or more of those attacks hit that enemy unit, until the start of your next Shooting phase, that enemy unit is assailed (this simply labels that unit for the purposes of this ability and some Enhancements or Stratagems). If that unit is already assailed, until the start of your next Shooting phase, it is also pinned. While a unit is pinned, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it.",
-      "target": null
+      "target": "En tu fase de Disparo, justo después de que esta unidad sea seleccionada para disparar, esta unidad puede usar esta habilidad. Si lo hace, selecciona una unidad enemiga (excluidos los ^^**Monsters^^** y los ^^**Vehicles^^**). Hasta el final de la fase, los ataques realizados por las miniaturas de esta unidad solo pueden atacar a esa unidad enemiga (y solo si es un objetivo elegible) y, tras resolver esos ataques, si uno o más de esos ataques impactaron en esa unidad enemiga, hasta el inicio de tu siguiente fase de Disparo esa unidad enemiga queda asaltada (esto simplemente marca a esa unidad a efectos de esta habilidad y de algunos Enhancements o Stratagems). Si esa unidad ya está asaltada, hasta el inicio de tu siguiente fase de Disparo también queda inmovilizada. Mientras una unidad está inmovilizada, resta 2\" a su característica de Movimiento y resta 2 a las tiradas de carga realizadas para ella."
     },
     {
       "id": "75bd7dd243a16a4a",
@@ -268,7 +268,7 @@
         ]
       },
       "source": "While a friendly ^^**Leagues of Votann Infantry^^** unit is wholly within 6\" of this ^^**Transport^^**, ranged weapons equipped by models in that ^^**Infantry^^** unit have the [^^**sustained hits 1^^**] ability.",
-      "target": null
+      "target": "Mientras una unidad amiga ^^**Leagues of Votann Infantry^^** esté completamente a 6\" o menos de este ^^**Transport^^**, las armas a distancia equipadas por las miniaturas de esa unidad ^^**Infantry^^** tienen la habilidad [^^**sustained hits 1^^**]."
     },
     {
       "id": "7e3c8cec88dc5bee",
@@ -285,7 +285,7 @@
         ]
       },
       "source": "If your Army Faction is ^^**Leagues of Votann^^**, ^^**Leagues of Votann^^** units from your army have one of two abilities: Hostile Acquisition or Fortify Takeover (see below). During the battle, which ability those ^^**Leagues of Votann^^** units have will change depending on how many Yield points (YP) you currently have:\n- At the start of the battle, your units have Hostile Acquisition until the start of your next Command phase.\n\n- At the end of your Command phase, if you have fewer than 7YP, your units have Hostile Acquisition until the start of your next Command phase.\n\n- At the end of your Command phase, if you have 7YP or more, your units have Fortify Takeover until the start of your next Command phase.\n\n**Hostile Acquisition**\n- Each time a model in this unit makes an attack that targets an enemy unit within range of one or more objective markers, add 1 to the Hit roll.\n\n- You can re‑roll Advance and Charge rolls made for this unit.\n\n**Fortify Takeover**\n- Each time a model in this unit makes an attack that targets an enemy unit, if this unit is within range of one or more objective markers you control, add 1 to the Hit roll.\n\n- Each time an attack targets this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic and this unit is not a Vehicle, subtract 1 from the Wound roll.\n\n\n**Yield Points**\nAt the end of each player’s Command phase, you gain 1YP if you control one or more objective markers within your deployment zone, and, from the second battle round onwards, you gain 1 additional YP for each of the following conditions you satisfy:\nYou control one or more objective markers not within your deployment zone.\nYou control two or more objective markers not within your deployment zone.\nYou control more objective markers than your opponent.\n\n\nIn your turn, YP gained in this way are always gained before checking which ability ^^**Leagues of Votann**^^ units from your army have.\n\n\nWhenever a rule allows you to spend YP, reduce the number of YP you have by that amount (your YP cannot go below 0), otherwise you cannot use that rule.",
-      "target": null
+      "target": "Si tu Army Faction es ^^**Leagues of Votann^^**, las unidades ^^**Leagues of Votann^^** de tu ejército tienen una de estas dos habilidades: Hostile Acquisition o Fortify Takeover (ver más abajo). Durante la batalla, cuál de ellas tienen esas unidades ^^**Leagues of Votann^^** cambia en función de cuántos puntos de Yield (YP) tengas en ese momento:\n- Al comienzo de la batalla, tus unidades tienen Hostile Acquisition hasta el inicio de tu siguiente fase de Mando.\n\n- Al final de tu fase de Mando, si tienes menos de 7YP, tus unidades tienen Hostile Acquisition hasta el inicio de tu siguiente fase de Mando.\n\n- Al final de tu fase de Mando, si tienes 7YP o más, tus unidades tienen Fortify Takeover hasta el inicio de tu siguiente fase de Mando.\n\n**Hostile Acquisition**\n- Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad enemiga que esté dentro del alcance de uno o más marcadores de objetivo, suma 1 a la tirada para impactar.\n\n- Puedes repetir las tiradas de avance y de carga realizadas para esta unidad.\n\n**Fortify Takeover**\n- Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad enemiga, si esta unidad está dentro del alcance de uno o más marcadores de objetivo que controles, suma 1 a la tirada para impactar.\n\n- Cada vez que un ataque toma como objetivo a esta unidad, si la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de esta unidad y esta unidad no es un Vehicle, resta 1 a la tirada para herir.\n\n\n**Puntos de Yield**\nAl final de la fase de Mando de cada jugador, ganas 1YP si controlas uno o más marcadores de objetivo dentro de tu zona de despliegue y, a partir de la segunda ronda de batalla, ganas 1YP adicional por cada una de las siguientes condiciones que cumplas:\nControlas uno o más marcadores de objetivo que no están dentro de tu zona de despliegue.\nControlas dos o más marcadores de objetivo que no están dentro de tu zona de despliegue.\nControlas más marcadores de objetivo que tu oponente.\n\n\nEn tu turno, los YP ganados de esta forma se ganan siempre antes de comprobar qué habilidad tienen las unidades ^^**Leagues of Votann**^^ de tu ejército.\n\n\nSiempre que una regla te permita gastar YP, reduce en esa cantidad el número de YP que tienes (tus YP no pueden bajar de 0); si no, no puedes usar esa regla."
     },
     {
       "id": "57194a3f0630ffc6",
@@ -299,7 +299,7 @@
         "names": []
       },
       "source": "Each time an attack made with this weapon targets an enemy unit that is not within 12\", an unmodified Hit roll of 4+ scores a Critical Hit.",
-      "target": null
+      "target": "Cada vez que un ataque realizado con esta arma toma como objetivo a una unidad enemiga que no esté a 12\" o menos, una tirada para impactar sin modificar de 4+ consigue un impacto crítico."
     },
     {
       "id": "358d875ceef2e278",
@@ -319,7 +319,7 @@
         ]
       },
       "source": "Each time a ^^**Leagues of Votann^^** model from your army makes an attack with a weapon that targets the closest eligible target or a target that is within Engagement Range of that model’s unit: \n- Re‑roll a Wound roll of 1. \n- If your unit is a ^^**Kâhl, Einhyr Hearthguard^^** or ^^**Ûthar the Destined^^** unit, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que una miniatura ^^**Leagues of Votann^^** de tu ejército realiza un ataque con un arma que toma como objetivo al objetivo elegible más cercano o a un objetivo que esté dentro del alcance de combate de la unidad de esa miniatura: \n- Repite una tirada para herir de 1. \n- Si tu unidad es una unidad ^^**Kâhl, Einhyr Hearthguard^^** o ^^**Ûthar the Destined^^**, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "3f722469cc7626c0",
@@ -336,7 +336,7 @@
         ]
       },
       "source": "^^**Leagues of Votann^^** units from your army have the following ability:\n\n**Guerrilla Adepts:** In your Shooting phase, just after this unit is selected to shoot, this unit can use this ability. If it does, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**). Until the end of the phase, attacks made by models in this unit can only attack that enemy unit (and only if it is an eligible target) and, after resolving those attacks, if one or more of those attacks hit that enemy unit, until the start of your next Shooting phase, that enemy unit is assailed (this simply labels that unit for the purposes of this ability and some Enhancements or Stratagems). If that unit is already assailed, until the start of your next Shooting phase, it is also pinned. While a unit is pinned, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it.",
-      "target": null
+      "target": "Las unidades ^^**Leagues of Votann^^** de tu ejército tienen la siguiente habilidad:\n\n**Guerrilla Adepts:** En tu fase de Disparo, justo después de que esta unidad sea seleccionada para disparar, esta unidad puede usar esta habilidad. Si lo hace, selecciona una unidad enemiga (excluidos los ^^**Monsters^^** y los ^^**Vehicles^^**). Hasta el final de la fase, los ataques realizados por las miniaturas de esta unidad solo pueden atacar a esa unidad enemiga (y solo si es un objetivo elegible) y, tras resolver esos ataques, si uno o más de esos ataques impactaron en esa unidad enemiga, hasta el inicio de tu siguiente fase de Disparo esa unidad enemiga queda asaltada (esto simplemente marca a esa unidad a efectos de esta habilidad y de algunos Enhancements o Stratagems). Si esa unidad ya está asaltada, hasta el inicio de tu siguiente fase de Disparo también queda inmovilizada. Mientras una unidad está inmovilizada, resta 2\" a su característica de Movimiento y resta 2 a las tiradas de carga realizadas para ella."
     },
     {
       "id": "6450bae8e591dedc",
@@ -350,7 +350,7 @@
         "names": []
       },
       "source": "Each time an enemy unit is destroyed, you gain 1YP.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga es destruida, ganas 1YP."
     },
     {
       "id": "85ddf984bf182024",
@@ -371,7 +371,7 @@
         ]
       },
       "source": "At the end of your Command phase, you gain 1YP for each objective marker you control that is not within your deployment zone and has one or more ^^**Iron-Master^^** and/or ^^**Memnyr Strategist^^** models from your army within range of it (to a maximum of 2YP gained from this Detachment rule per turn).\n\nIn your Shooting phase, each time a ^^**Brôkhyr, Ironkin Steeljacks^^** or ^^**Arkanyst Evaluator^^** unit from your army is selected to shoot, you can spend 1YP. If you do, until the end of the phase, each time a model in that unit makes an attack, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Al final de tu fase de Mando, ganas 1YP por cada marcador de objetivo que controles que no esté dentro de tu zona de despliegue y que tenga dentro de su alcance una o más miniaturas ^^**Iron-Master^^** y/o ^^**Memnyr Strategist^^** de tu ejército (hasta un máximo de 2YP ganados con esta regla de Detachment por turno).\n\nEn tu fase de Disparo, cada vez que una unidad ^^**Brôkhyr, Ironkin Steeljacks^^** o ^^**Arkanyst Evaluator^^** de tu ejército es seleccionada para disparar, puedes gastar 1YP. Si lo haces, hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque, repite una tirada para impactar de 1."
     },
     {
       "id": "60a7d352e8ccad86",
@@ -389,7 +389,7 @@
         ]
       },
       "source": "^^**Cthonian Beserks^^** units from your army have the Deep Strike ability.",
-      "target": null
+      "target": "Las unidades ^^**Cthonian Beserks^^** de tu ejército tienen la habilidad Deep Strike."
     },
     {
       "id": "ca757d506f18a3d9",
@@ -409,7 +409,7 @@
         ]
       },
       "source": "^^**Leagues of Votann Transport^^** units from your army have the following ability:\n\n**Firebase Control (Aura):** While a friendly ^^**Leagues of Votann Infantry^^** unit is wholly within 6\" of this ^^**Transport^^**, ranged weapons equipped by models in that ^^**Infantry^^** unit have the [^^**sustained hits 1^^**] ability.",
-      "target": null
+      "target": "Las unidades ^^**Leagues of Votann Transport^^** de tu ejército tienen la siguiente habilidad:\n\n**Firebase Control (Aura):** Mientras una unidad amiga ^^**Leagues of Votann Infantry^^** esté completamente a 6\" o menos de este ^^**Transport^^**, las armas a distancia equipadas por las miniaturas de esa unidad ^^**Infantry^^** tienen la habilidad [^^**sustained hits 1^^**]."
     },
     {
       "id": "a0f2defe9022511f",
@@ -423,7 +423,7 @@
         "names": []
       },
       "source": "Your ^^**Leagues of Votann^^** units do not have the Hostile Acquisition or Fortify Takeover abilities except as described in this rule. At the start of the battle, your ^^**Leagues of Votann^^** units have the Hostile Acquisition ability. At the end of your Command phase, you can spend 3YP. If you do, ^^**Leagues of Votann^^** units from your army lose the Hostile Acquisition ability and gain the Fortify Takeover ability, or vice versa.",
-      "target": null
+      "target": "Tus unidades ^^**Leagues of Votann^^** no tienen las habilidades Hostile Acquisition ni Fortify Takeover salvo como se describe en esta regla. Al comienzo de la batalla, tus unidades ^^**Leagues of Votann^^** tienen la habilidad Hostile Acquisition. Al final de tu fase de Mando, puedes gastar 3YP. Si lo haces, las unidades ^^**Leagues of Votann^^** de tu ejército pierden la habilidad Hostile Acquisition y ganan la habilidad Fortify Takeover, o viceversa."
     },
     {
       "id": "5b2f1dea320c64ac",
@@ -440,7 +440,7 @@
         ]
       },
       "source": "Friendly **^^Sagitaur^^** units have **Scouts 6\"**.",
-      "target": null
+      "target": "Las unidades **^^Sagitaur^^** amigas tienen **Scouts 6\"**."
     },
     {
       "id": "799213b8bacd2820",
@@ -454,7 +454,7 @@
         "names": []
       },
       "source": "Friendly **HERNKYN** units’ ranged attacks that target a unit within 12\" have +1 to **hit rolls**.",
-      "target": null
+      "target": "Los ataques a distancia de las unidades **HERNKYN** amigas que tomen como objetivo a una unidad a 12\" o menos tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "707a897915420dcc",
@@ -468,7 +468,7 @@
         "names": []
       },
       "source": "Friendly **KÂHL/EINHYR CHAMPION/EINHYR HEARTHGUARD/ÛTHAR THE DESTINED** units’ ranged attacks that target a unit within 9\" can re‑roll **wound rolls** of 1.",
-      "target": null
+      "target": "Los ataques a distancia de las unidades **KÂHL/EINHYR CHAMPION/EINHYR HEARTHGUARD/ÛTHAR THE DESTINED** amigas que tomen como objetivo a una unidad a 9\" o menos pueden repetir las **tiradas para herir** de 1."
     },
     {
       "id": "20a3caae1ec9883d",
@@ -482,7 +482,7 @@
         "names": []
       },
       "source": "Once per turn, you can spend 1YP to change one Hit roll, one Wound roll or one saving throw made for this model to an unmodified 6.",
-      "target": null
+      "target": "Una vez por turno, puedes gastar 1YP para cambiar una tirada para impactar, una tirada para herir o una tirada de salvación realizada para esta miniatura a un 6 sin modificar."
     },
     {
       "id": "daa255f4497d60c7",
@@ -496,7 +496,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: EINHYR HEARTHGUARD, HEARTHKYN WARRIORS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: EINHYR HEARTHGUARD, HEARTHKYN WARRIORS"
     },
     {
       "id": "3171ea77864155a1",
@@ -510,7 +510,7 @@
         "names": []
       },
       "source": "Once per battle round, when a friendly ^^**Leagues of Votann**^^ unit within 12\" of this model is targeted with a Stratagem, this model can use this ability. If it does, reduce the CP cost of that Stratagem by 1CP.",
-      "target": null
+      "target": "Una vez por ronda de batalla, cuando una unidad amiga ^^**Leagues of Votann**^^ que esté a 12\" o menos de esta miniatura es tomada como objetivo de un Stratagem, esta miniatura puede usar esta habilidad. Si lo hace, reduce en 1CP el coste en CP de ese Stratagem."
     },
     {
       "id": "f28a415ae5f392c5",
@@ -524,7 +524,7 @@
         "names": []
       },
       "source": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, until your opponent's Level of Control over that is greater than yours at the end of a phase.",
-      "target": null
+      "target": "Al final de tu fase de Mando, si esta unidad está dentro del alcance de un marcador de objetivo que controles, ese marcador de objetivo permanece bajo tu control, hasta que el Level of Control de tu oponente sobre él sea mayor que el tuyo al final de una fase."
     },
     {
       "id": "ee1531c616beba17",
@@ -553,7 +553,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen una salvación invulnerable de 5+."
     },
     {
       "id": "11a4da43cbb074dc",
@@ -567,7 +567,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: EINHYR HEARTHGUARD, HEARTHKYN WARRIORS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: EINHYR HEARTHGUARD, HEARTHKYN WARRIORS"
     },
     {
       "id": "474562ecbc10af30",
@@ -581,7 +581,7 @@
         "names": []
       },
       "source": "Once per phase, one model from your army with this ability can use it when its unit destroys an enemy unit. If it does, gain 1YP.",
-      "target": null
+      "target": "Una vez por fase, una miniatura de tu ejército con esta habilidad puede usarla cuando su unidad destruye una unidad enemiga. Si lo hace, ganas 1YP."
     },
     {
       "id": "8c95c8055662ce9e",
@@ -597,7 +597,7 @@
         ]
       },
       "source": "While the bearer is leading a unit, models in that unit have the Deep Strike ability.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen la habilidad Deep Strike."
     },
     {
       "id": "55571a9c9b7bf06d",
@@ -611,7 +611,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit: EINHYR HEARTHGUARD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad: EINHYR HEARTHGUARD"
     },
     {
       "id": "1e683cb8e85ff86a",
@@ -627,7 +627,7 @@
         ]
       },
       "source": "Each time this model ends a Charge move, you can select one enemy unit within Engagement Range of this model and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
-      "target": null
+      "target": "Cada vez que esta miniatura termina un movimiento de carga, puedes seleccionar una unidad enemiga que esté dentro del alcance de combate de esta miniatura y tirar un D6: con un 2-5, esa unidad enemiga sufre D3 heridas mortales; con un 6, esa unidad enemiga sufre D3+3 heridas mortales."
     },
     {
       "id": "44b703e1ee0baa22",
@@ -641,7 +641,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit: HEARTHKYN WARRIORS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad: HEARTHKYN WARRIORS"
     },
     {
       "id": "200697966b2229ce",
@@ -657,7 +657,7 @@
         ]
       },
       "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Leagues of Votann**^^ unit that is Battle-shocked and within 12\" of this unit's ^^**Grimnyr**^^ model. That unit is no longer Battle-shocked.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase, puedes seleccionar una unidad amiga ^^**Leagues of Votann**^^ que esté Battle-shocked y a 12\" o menos de la miniatura ^^**Grimnyr**^^ de esta unidad. Esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "a17835e342ce04eb",
@@ -675,7 +675,7 @@
         ]
       },
       "source": "If this unit’s Grimnyr model is ever destroyed, all of this unit’s remaining CORV models are also destroyed. While embarking within a ^^**Transport^^** and while embarked within a ^^**Transport^^**, each CORV model takes up the space of 0 models.’",
-      "target": null
+      "target": "Si la miniatura Grimnyr de esta unidad llega a ser destruida, todas las miniaturas CORV restantes de esta unidad también son destruidas. Al embarcar en un ^^**Transport^^** y mientras esté embarcada en un ^^**Transport^^**, cada miniatura CORV ocupa el espacio de 0 miniaturas.’"
     },
     {
       "id": "986fb72fef6b2d5e",
@@ -689,7 +689,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia, repite una tirada para herir de 1."
     },
     {
       "id": "16d246e1cb867be8",
@@ -707,7 +707,7 @@
         ]
       },
       "source": "While this unit is within 3\" of one or more friendly ^^**Leagues of Votann Vehicle**^^ or ^^**Ironkin Steeljacks**^^ units, if this unit is not an attached unit, it has the Lone Operative ability.",
-      "target": null
+      "target": "Mientras esta unidad esté a 3\" o menos de una o más unidades amigas ^^**Leagues of Votann Vehicle**^^ o ^^**Ironkin Steeljacks**^^, si esta unidad no es una unidad adjunta, tiene la habilidad Lone Operative."
     },
     {
       "id": "20e808daf0c09d2f",
@@ -721,7 +721,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units:BRÔKHYR THUNDERKYN, HEARTHKYN WARRIORS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:BRÔKHYR THUNDERKYN, HEARTHKYN WARRIORS"
     },
     {
       "id": "94cfa4fcb900521d",
@@ -738,7 +738,7 @@
         ]
       },
       "source": "If this unit’s Brôkhyr Iron‑master model is ever destroyed, all of this unit’s remaining E‑COG models are also destroyed. While embarking within a ^^**Transport^^** and while embarked within a ^^**Transport^^**, each E‑COG model takes up the space of 0 models.",
-      "target": null
+      "target": "Si la miniatura Brôkhyr Iron‑master de esta unidad llega a ser destruida, todas las miniaturas E‑COG restantes de esta unidad también son destruidas. Al embarcar en un ^^**Transport^^** y mientras esté embarcada en un ^^**Transport^^**, cada miniatura E‑COG ocupa el espacio de 0 miniaturas."
     },
     {
       "id": "584cf87efec8eac8",
@@ -757,7 +757,7 @@
         ]
       },
       "source": "At the end of your Movement phase, this model can repair one friendly ^^**Leagues of Votann Vehicle, Exoframe^^** or ^^**Ironkin Steeljacks^^** unit within 3\" of it. One model in that unit regains up to D3 lost wounds, or up to 3 lost wounds if this unit contains an Ironkin Assistant model. Each unit can only be repaired once per turn.",
-      "target": null
+      "target": "Al final de tu fase de Movimiento, esta miniatura puede reparar una unidad amiga ^^**Leagues of Votann Vehicle, Exoframe^^** o ^^**Ironkin Steeljacks^^** que esté a 3\" o menos de ella. Una miniatura de esa unidad recupera hasta D3 heridas perdidas, o hasta 3 heridas perdidas si esta unidad contiene una miniatura Ironkin Assistant. Cada unidad solo puede ser reparada una vez por turno."
     },
     {
       "id": "a16322834c2d1aff",
@@ -771,7 +771,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que toma como objetivo al objetivo elegible más cercano, repite una tirada para impactar de 1."
     },
     {
       "id": "9f2e3bd6db2017a6",
@@ -785,7 +785,7 @@
         "names": []
       },
       "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6, adding one to the result if units from your army have Fortify Takeover: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad es destruida por un ataque de cuerpo a cuerpo, si esa miniatura no ha combatido esta fase, tira un D6, sumando 1 al resultado si las unidades de tu ejército tienen Fortify Takeover: con un 4+, no la retires del juego. La miniatura destruida puede combatir después de que la unidad atacante haya terminado de realizar sus ataques, y entonces se retira del juego."
     },
     {
       "id": "b151eca170b2f467",
@@ -799,7 +799,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy unit (excluding ^^**Monsters**^^ and ^^**Vehicles^^**) that was hit by one or more of those attacks made with a mole grenade launcher. Until the start of your next Shooting phase, that enemy unit cannot be targeted with the Fire Overwatch Stratagem.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga (excluidos los ^^**Monsters**^^ y los ^^**Vehicles^^**) que haya sido impactada por uno o más de esos ataques realizados con un mole grenade launcher. Hasta el inicio de tu siguiente fase de Disparo, esa unidad enemiga no puede ser tomada como objetivo del Stratagem Fire Overwatch."
     },
     {
       "id": "ca91d08d730916e9",
@@ -815,7 +815,7 @@
         ]
       },
       "source": "At the end of your opponent’s turn, if this unit is wholly within 9\" of one or more battlefield edges and not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
-      "target": null
+      "target": "Al final del turno de tu oponente, si esta unidad está completamente a 9\" o menos de uno o más bordes del campo de batalla y no está dentro del alcance de combate de una o más unidades enemigas, puedes retirarla del campo de batalla y colocarla en reservas estratégicas."
     },
     {
       "id": "27c6f6569ea471c3",
@@ -829,7 +829,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer's unit makes a ranged attack, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque a distancia, repite una tirada para impactar de 1."
     },
     {
       "id": "bda46a204f0d8279",
@@ -843,7 +843,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer's unit makes a ranged attack, you can ignore any or all modifiers to the Hit roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque a distancia, puedes ignorar cualquiera o todos los modificadores a la tirada para impactar."
     },
     {
       "id": "401d67b2fa0de3c0",
@@ -857,7 +857,7 @@
         "names": []
       },
       "source": "In your Shooting phase, you can select one **visible** enemy unit within 12\" of this unit. That enemy unit is **spotted**: \n- While a unit is spotted, that unit has +3\" **detection range**.",
-      "target": null
+      "target": "En tu fase de Disparo, puedes seleccionar una unidad enemiga **visible** a 12\" o menos de esta unidad. Esa unidad enemiga queda **detectada**: \n- Mientras una unidad está detectada, esa unidad tiene +3\" de **alcance de detección**."
     },
     {
       "id": "9b7ac5eb7ba8e7c4",
@@ -873,7 +873,7 @@
         ]
       },
       "source": "Units can disembark from this ^^**Transport^^** after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn.",
-      "target": null
+      "target": "Las unidades pueden desembarcar de este ^^**Transport^^** después de que haya avanzado. Las unidades que lo hagan cuentan como si hubieran realizado un movimiento normal esa fase y no pueden declarar una carga en el mismo turno, pero por lo demás pueden actuar con normalidad durante el resto del turno."
     },
     {
       "id": "317c691768103011",
@@ -890,7 +890,7 @@
         ]
       },
       "source": "This model has a transport capacity of 6 **LEAGUES OF VOTANN INFANTRY **models. It cannot transport **ARTILLERY, EXOARMOUR, EXOFRAME** or **IRONKIN STEELJACKS** models.\n\nAt the start of the Declare Battle Formations step, you can select one ^^**Hearthkyn Warriors^^** unit from your army that has not been split. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this ^^**Transport^^**; the other can start the battle embarked within another ^^**Transport^^**, or it can be deployed as a separate unit.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 6 miniaturas **LEAGUES OF VOTANN INFANTRY**. No puede transportar miniaturas **ARTILLERY, EXOARMOUR, EXOFRAME** ni **IRONKIN STEELJACKS**.\n\nAl comienzo del paso Declarar Formaciones de Batalla, puedes seleccionar una unidad ^^**Hearthkyn Warriors^^** de tu ejército que no haya sido dividida. Si lo haces, esa unidad se divide en dos unidades, cada una con un número de miniaturas lo más igualado posible (al dividir una unidad de esta forma, anota qué miniaturas forman cada una de las dos nuevas unidades). Una de esas unidades debe comenzar la batalla embarcada en este ^^**Transport^^**; la otra puede comenzar la batalla embarcada en otro ^^**Transport^^**, o puede desplegarse como una unidad independiente."
     },
     {
       "id": "85d91ad177e0505b",
@@ -904,7 +904,7 @@
         "names": []
       },
       "source": "This unit has MOBILE.",
-      "target": null
+      "target": "Esta unidad tiene MOBILE."
     },
     {
       "id": "3b48f92f4f23affd",
@@ -920,7 +920,7 @@
         ]
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, that enemy unit cannot have the Benefit of Cover.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el inicio de tu siguiente fase de Disparo, esa unidad enemiga no puede tener el beneficio de cobertura."
     },
     {
       "id": "688ca9151071e5c9",
@@ -934,7 +934,7 @@
         "names": []
       },
       "source": "Each time this model makes a ranged attack, you can ignore any or all modifiers to the following: that attack's Ballistic Skill characteristic, the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque a distancia, puedes ignorar cualquiera o todos los modificadores a lo siguiente: la característica de Habilidad de Proyectiles de ese ataque, la tirada para impactar."
     },
     {
       "id": "74794af0d20be332",
@@ -948,7 +948,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 14 **LEAGUES OF VOTANN INFANTRY **models. Each **EXOARMOUR, EXOFRAME** or **IRONKIN STEELJACKS** model takes up the space of 2 models. It cannot transport **ARTILLERY** models.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 14 miniaturas **LEAGUES OF VOTANN INFANTRY**. Cada miniatura **EXOARMOUR, EXOFRAME** o **IRONKIN STEELJACKS** ocupa el espacio de 2 miniaturas. No puede transportar miniaturas **ARTILLERY**."
     },
     {
       "id": "cab6d7894942ebc5",
@@ -962,7 +962,7 @@
         "names": []
       },
       "source": "Each time an attack made with this weapon targets an enemy unit that is not within 12\", an unmodified successful Hit roll of 4+ scores a Critical Hit.",
-      "target": null
+      "target": "Cada vez que un ataque realizado con esta arma toma como objetivo a una unidad enemiga que no esté a 12\" o menos, una tirada para impactar sin modificar de 4+ que tenga éxito consigue un impacto crítico."
     },
     {
       "id": "f523b7c5483953ae",
@@ -978,7 +978,7 @@
         ]
       },
       "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”.'",
-      "target": null
+      "target": "En la fase de Movimiento de tu oponente, si una unidad enemiga termina un movimiento a 8” o menos de esta unidad, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, esta unidad puede realizar un movimiento normal de hasta D6”.'"
     },
     {
       "id": "acd6d59d7f9cbb9c",
@@ -992,7 +992,7 @@
         "names": []
       },
       "source": "This unit has -3\" **detection range**.",
-      "target": null
+      "target": "Esta unidad tiene -3\" de **alcance de detección**."
     },
     {
       "id": "c98c55dcbb97f717",
@@ -1008,7 +1008,7 @@
         ]
       },
       "source": "The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with its full wounds remaining.",
-      "target": null
+      "target": "La primera vez que esta miniatura es destruida, al final de la fase, tira un D6: con un 2+, vuelve a desplegar esta miniatura en el campo de batalla lo más cerca posible de donde fue destruida y fuera del alcance de combate de una o más unidades enemigas, con todas sus heridas restantes."
     },
     {
       "id": "a7ee9a8fa9732e07",
@@ -1022,7 +1022,7 @@
         "names": []
       },
       "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if this model lost one or more wounds as a result of those attacks, this unit can make a **surge move** of up to D6+2\".",
-      "target": null
+      "target": "En la fase de Disparo de tu oponente, cuando una unidad enemiga haya disparado, si esta miniatura perdió una o más heridas como resultado de esos ataques, esta unidad puede realizar un **movimiento de arremetida** de hasta D6+2\"."
     },
     {
       "id": "cf911becc15a28ea",
@@ -1036,7 +1036,7 @@
         "names": []
       },
       "source": "At the end of your Command phase, before you determine if units from your army have Hostile Acquisition or Fortify Takeover, for each objective marker you control that has one or more models with this ability in range of it, you can spend 1YP or gain 1YP.",
-      "target": null
+      "target": "Al final de tu fase de Mando, antes de determinar si las unidades de tu ejército tienen Hostile Acquisition o Fortify Takeover, por cada marcador de objetivo que controles que tenga dentro de su alcance una o más miniaturas con esta habilidad, puedes gastar 1YP o ganar 1YP."
     },
     {
       "id": "09f7009c1439f6bc",
@@ -1050,7 +1050,7 @@
         "names": []
       },
       "source": "Once per battle round, when you target this unit with the **Fire Overwatch/Heroic Intervention** stratagem, you can use this ability. If you do, that use of that stratagem is ‑1 CP.",
-      "target": null
+      "target": "Una vez por ronda de batalla, cuando tomas como objetivo a esta unidad con el stratagem **Fire Overwatch/Heroic Intervention**, puedes usar esta habilidad. Si lo haces, ese uso de ese stratagem cuesta ‑1 CP."
     },
     {
       "id": "8eac9f638f008466",
@@ -1064,7 +1064,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: IRONKIN STEELJACKS WITH HEAVY VOLKANITE DISINTEGRATORS, IRONKIN STEELJACKS WITH MELEE WEAPONS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: IRONKIN STEELJACKS WITH HEAVY VOLKANITE DISINTEGRATORS, IRONKIN STEELJACKS WITH MELEE WEAPONS"
     },
     {
       "id": "66e943d9fbd5e4e0",
@@ -1081,7 +1081,7 @@
         ]
       },
       "source": "While this model is within 3\" of one or more other friendly ^^**Leagues of Votann Infantry**^^ units (excluding units with the Lone Operative ability), this model has the Lone Operative ability.",
-      "target": null
+      "target": "Mientras esta miniatura esté a 3\" o menos de una o más unidades amigas ^^**Leagues of Votann Infantry**^^ (excluidas las unidades con la habilidad Lone Operative), esta miniatura tiene la habilidad Lone Operative."
     },
     {
       "id": "a6367662abf00f75",
@@ -1099,7 +1099,7 @@
         ]
       },
       "source": "Once per turn, in your Shooting phase, one model with this ability can choose to use it when it is selected to shoot. If it does, you must spend 1YP and, until the end of the phase, ranged weapons equipped by that model have the [^^**Sustained Hits 1**^^] ability and, after that model has shot this phase, if one or more enemy units were destroyed by those attacks, you can gain up to 2YP.",
-      "target": null
+      "target": "Una vez por turno, en tu fase de Disparo, una miniatura con esta habilidad puede elegir usarla cuando es seleccionada para disparar. Si lo hace, debes gastar 1YP y, hasta el final de la fase, las armas a distancia equipadas por esa miniatura tienen la habilidad [^^**Sustained Hits 1**^^] y, después de que esa miniatura haya disparado esta fase, si una o más unidades enemigas fueron destruidas por esos ataques, puedes ganar hasta 2YP."
     },
     {
       "id": "fbc5916623f40006",
@@ -1115,7 +1115,7 @@
         ]
       },
       "source": "Each time the bearer takes a Hazardous test for this weapon, subtract 2 from the result.",
-      "target": null
+      "target": "Cada vez que el portador hace un test de Hazardous para esta arma, resta 2 al resultado."
     },
     {
       "id": "d304b7a26d02ae6c",
@@ -1129,7 +1129,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, it can make a Normal Move of up to D6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, puede realizar un movimiento normal de hasta D6\". Si lo hace, hasta el final del turno, esta unidad no es elegible para declarar una carga."
     },
     {
       "id": "b84831eb09101947",
@@ -1145,7 +1145,7 @@
         ]
       },
       "source": "The bearer has the ^^**Smoke**^^ keyword.",
-      "target": null
+      "target": "El portador tiene la palabra clave ^^**Smoke**^^."
     },
     {
       "id": "94e56560e74d4dd5",
@@ -1159,7 +1159,7 @@
         "names": []
       },
       "source": "In your shooting phase, after this model has shot, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga (excluidos los ^^**Monsters^^** y los ^^**Vehicles^^**) impactada por uno o más de esos ataques. Hasta el inicio de tu siguiente turno, esa unidad enemiga queda suprimida. Mientras una unidad está suprimida, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "b16ad5ca8e53a991",
@@ -1177,7 +1177,7 @@
         ]
       },
       "source": "This model has a transport capacity of 5 ^^**Hernkyn Yaegir**^^ models.\n\nAt the start of the Declare Battle Formations step, you can select one ^^**Hernkyn Yaegir^^** unit from your army that has not been split. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this ^^**Transport^^**; the other can start the battle embarked within another ^^**Transport^^**, or it can be deployed as a separate unit.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 5 miniaturas ^^**Hernkyn Yaegir**^^.\n\nAl comienzo del paso Declarar Formaciones de Batalla, puedes seleccionar una unidad ^^**Hernkyn Yaegir^^** de tu ejército que no haya sido dividida. Si lo haces, esa unidad se divide en dos unidades, cada una con un número de miniaturas lo más igualado posible (al dividir una unidad de esta forma, anota qué miniaturas forman cada una de las dos nuevas unidades). Una de esas unidades debe comenzar la batalla embarcada en este ^^**Transport^^**; la otra puede comenzar la batalla embarcada en otro ^^**Transport^^**, o puede desplegarse como una unidad independiente."
     },
     {
       "id": "61eed6fa6f7d9582",
@@ -1191,7 +1191,7 @@
         "names": []
       },
       "source": "Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem. If units from your army have Fortify Takeover, hits are scored on unmodified Hit rolls of 4+ while resolving that Stratagem instead.",
-      "target": null
+      "target": "Cada vez que tomas como objetivo a esta unidad con el Stratagem Fire Overwatch, mientras resuelves ese Stratagem se consiguen impactos con tiradas para impactar sin modificar de 5+. Si las unidades de tu ejército tienen Fortify Takeover, mientras resuelves ese Stratagem se consiguen impactos con tiradas para impactar sin modificar de 4+ en su lugar."
     },
     {
       "id": "3ef3d44978774882",
@@ -1207,7 +1207,7 @@
         ]
       },
       "source": "Each time an enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) that is within Engagement Range of this unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga (excluidos los ^^**Monsters^^** y los ^^**Vehicles^^**) que esté dentro del alcance de combate de esta unidad se repliega, todas las miniaturas de esa unidad enemiga deben hacer un test de Desperate Escape. Al hacerlo, si esa unidad enemiga está Battle-shocked, resta 1 a cada uno de esos tests."
     },
     {
       "id": "7511a805057d5d48",
@@ -1225,7 +1225,7 @@
         ]
       },
       "source": "Each time a model in the bearer's unit makes an attack that targets an enemy unit within range of one or more objective markers, on a Critical Wound, that attack has the [Precision] ability.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque que toma como objetivo a una unidad enemiga que esté dentro del alcance de uno o más marcadores de objetivo, con una herida crítica ese ataque tiene la habilidad [Precision]."
     },
     {
       "id": "1af527717c83f1e1",
@@ -1239,7 +1239,7 @@
         "names": []
       },
       "source": "Up to twice per battle, in your Shooting phase, when this unit is selected to shoot, it can use this ability. If it does, until the end of the phase, each time a model in this unit makes an attack with its breacher ordnance, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Hasta dos veces por batalla, en tu fase de Disparo, cuando esta unidad es seleccionada para disparar, puede usar esta habilidad. Si lo hace, hasta el final de la fase, cada vez que una miniatura de esta unidad realiza un ataque con su breacher ordnance, puedes repetir la tirada para herir."
     },
     {
       "id": "1f9188667a9fb7df",
@@ -1253,7 +1253,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks made with its tremor shells. That unit must take a Battle-shock test, subtracting 1 from the result.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques realizados con sus tremor shells. Esa unidad debe hacer un test de Battle-shock, restando 1 al resultado."
     },
     {
       "id": "4ca3d53853b58d6b",
@@ -1269,7 +1269,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Hearthkyn Warriors**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Hearthkyn Warriors**^^"
     },
     {
       "id": "2404a921fc710436",
@@ -1283,7 +1283,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Leagues of Votann**^^ unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase, puedes seleccionar una unidad amiga ^^**Leagues of Votann**^^ que esté Battle-shocked y a 12\" o menos de esta miniatura. Esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "d790597823c92f80",
@@ -1301,7 +1301,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Einhyr Hearthguard, Hearthkyn Warriors**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Einhyr Hearthguard, Hearthkyn Warriors**^^"
     },
     {
       "id": "86ceb4ec137dcd24",
@@ -1315,7 +1315,7 @@
         "names": []
       },
       "source": "Once per phase, one model from your army with this ability can use it when its unit destroys an enemy unit. If it does, you gain 1YP.",
-      "target": null
+      "target": "Una vez por fase, una miniatura de tu ejército con esta habilidad puede usarla cuando su unidad destruye una unidad enemiga. Si lo hace, ganas 1YP."
     },
     {
       "id": "f7ee9d9b025071d3",
@@ -1335,7 +1335,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Ironkin Steeljacks with Heavy Volkanite Disintegrators, Ironkin Steeljacks with Melee Weapons**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Ironkin Steeljacks with Heavy Volkanite Disintegrators, Ironkin Steeljacks with Melee Weapons**^^"
     },
     {
       "id": "f364723c97c77b0e",
@@ -1350,7 +1350,7 @@
         "names": []
       },
       "source": "Each time this model makes an attack, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque, puedes repetir la tirada para impactar."
     },
     {
       "id": "cc9b5ee62be3838c",
@@ -1364,7 +1364,7 @@
         "names": []
       },
       "source": "You can target this model's unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Puedes tomar como objetivo a la unidad de esta miniatura con el Stratagem Heroic Intervention por 0CP, y puedes hacerlo incluso si ya has tomado como objetivo a otra unidad con ese Stratagem esta fase."
     },
     {
       "id": "dc3c89ad1853e6cf",
@@ -1378,7 +1378,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: CTHONIAN BESERKS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: CTHONIAN BESERKS"
     },
     {
       "id": "bd6a3b165b3fee5f",
@@ -1392,7 +1392,7 @@
         "names": []
       },
       "source": "Each time a ranged attack targets the bearer’s unit, if the attacking model is within 12\" of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1. If you spend 1YP, until the end of the phase, if the attacking model is within 18\" of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1 instead.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a la unidad del portador, si la miniatura atacante está a 12\" o menos de la unidad del portador, empeora en 1 la característica de Penetración de Blindaje de ese ataque. Si gastas 1YP, hasta el final de la fase, si la miniatura atacante está a 18\" o menos de la unidad del portador, empeora en 1 la característica de Penetración de Blindaje de ese ataque en su lugar."
     },
     {
       "id": "c894e46f00375da3",
@@ -1406,7 +1406,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer’s unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador es destruida por un ataque de cuerpo a cuerpo, si no ha combatido esta fase, tira un D6: con un 4+, no la retires del juego. La miniatura destruida puede combatir después de que la unidad atacante haya terminado de realizar sus ataques, y entonces se retira del juego."
     },
     {
       "id": "1b34304bac685b7a",
@@ -1420,7 +1420,7 @@
         "names": []
       },
       "source": "Add 2 to the bearer’s Wounds characteristic.",
-      "target": null
+      "target": "Suma 2 a la característica de Heridas del portador."
     },
     {
       "id": "0ff21722d840eb40",
@@ -1434,7 +1434,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after the bearer has shot, select one enemy unit (excluding TITANIC units) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que el portador haya disparado, selecciona una unidad enemiga (excluidas las unidades TITANIC) impactada por uno o más de esos ataques. Hasta el inicio de tu siguiente turno, esa unidad enemiga queda suprimida. Mientras una unidad está suprimida, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "e638f141d74a2835",

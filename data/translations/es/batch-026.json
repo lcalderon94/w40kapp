@@ -15,7 +15,7 @@
         ]
       },
       "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that unit cannot have the Benefit of Cover.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final de la fase, esa unidad no puede tener el beneficio de cobertura."
     },
     {
       "id": "93aa618c1ccdc599",
@@ -29,7 +29,7 @@
         "names": []
       },
       "source": "If your army includes this model, after both players have deployed their armies, select up to three ^^**NECRONS^^** units from your army and redeploy them. When doing so, any of those units can be placed in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Si tu ejército incluye esta miniatura, después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades ^^**NECRONS^^** de tu ejército y vuelve a desplegarlas. Al hacerlo, cualquiera de esas unidades puede colocarse en las reservas estratégicas, sin importar cuántas unidades haya ya en las reservas estratégicas."
     },
     {
       "id": "2eb65942f5cb23eb",
@@ -43,7 +43,7 @@
         "names": []
       },
       "source": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP.",
-      "target": null
+      "target": "Cada vez que tu oponente toma como objetivo una unidad de su ejército con un Stratagem, si esa unidad está a 12\" o menos de esta miniatura, aumenta en 1CP el coste de ese uso de ese Stratagem."
     },
     {
       "id": "364d87f7c0940f18",
@@ -57,7 +57,7 @@
         "names": []
       },
       "source": "At the end of the Fight phase, roll one D6 for each enemy unit within 6\" of this model: on a 4+, that enemy unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Al final de la fase de Combate, tira un D6 por cada unidad enemiga que esté a 6\" o menos de esta miniatura: con un 4+, esa unidad enemiga sufre D3 heridas mortales."
     },
     {
       "id": "c12db118b5fdabb5",
@@ -71,7 +71,7 @@
         "names": []
       },
       "source": "This model is eligible to declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Esta miniatura es elegible para declarar una carga en un turno en el que haya avanzado."
     },
     {
       "id": "70afdbe1a0e71b72",
@@ -85,7 +85,7 @@
         "names": []
       },
       "source": "At the start of your Shooting phase, select one enemy ^^**VEHICLE^^** unit within 12\" of this model and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds and this model regains up to that many lost wounds.",
-      "target": null
+      "target": "Al inicio de tu fase de Disparo, selecciona una unidad enemiga ^^**VEHICLE^^** que esté a 12\" o menos de esta miniatura y tira un D6: con un 2+, esa unidad enemiga sufre D3 heridas mortales y esta miniatura recupera hasta esa misma cantidad de heridas perdidas."
     },
     {
       "id": "1210f0ee85e1b506",
@@ -101,7 +101,7 @@
         ]
       },
       "source": "Once per turn, at the start of your opponent’s Shooting phase, select one enemy ^^**Vehicle^^** unit visible to the bearer. That unit must take a Leadership test. Until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll and, if that Leadership test was failed, subtract 1 from the Wound roll as well.",
-      "target": null
+      "target": "Una vez por turno, al inicio de la fase de Disparo de tu oponente, selecciona una unidad enemiga ^^**Vehicle^^** visible para el portador. Esa unidad debe hacer un test de Leadership. Hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar y, si ese test de Leadership se ha fallado, resta también 1 a la tirada para herir."
     },
     {
       "id": "8c964ab70b4dfe1c",
@@ -115,7 +115,7 @@
         "names": []
       },
       "source": "In your Movement phase, when this unit is selected to make an advance move, you can use this ability. If you do: \n- That advance move has no maximum distance. \n- This unit can move through all types of model (including enemy models and MONSTER/VEHICLE models). \n- After moving, this unit must be more than 8\" horizontally from all enemy units.",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando esta unidad es seleccionada para realizar un movimiento de avance, puedes usar esta habilidad. Si lo haces: \n- Ese movimiento de avance no tiene distancia máxima. \n- Esta unidad puede moverse a través de todo tipo de miniaturas (incluidas las miniaturas enemigas y las miniaturas MONSTER/VEHICLE). \n- Después de moverse, esta unidad debe estar a más de 8\" en horizontal de todas las unidades enemigas."
     },
     {
       "id": "3c701509048e8ccf",
@@ -131,7 +131,7 @@
         ]
       },
       "source": "This model cannot be given Enhancements.",
-      "target": null
+      "target": "A esta miniatura no se le pueden asignar Enhancements."
     },
     {
       "id": "45df0a2c4689235a",
@@ -147,7 +147,7 @@
         ]
       },
       "source": "In your turn, when this unit makes an ingress/advance move using its Transdimensional Displacement ability, this unit can end that move more than 6\" horizontally from all enemy units (instead of more than 8\"). When this unit ends that move within 8\" of an enemy unit, this unit is not eligible to declare a charge until the end of the turn.",
-      "target": null
+      "target": "En tu turno, cuando esta unidad realiza un movimiento de entrada/de avance usando su habilidad Transdimensional Displacement, esta unidad puede terminar ese movimiento a más de 6\" en horizontal de todas las unidades enemigas (en lugar de a más de 8\"). Cuando esta unidad termina ese movimiento a 8\" o menos de una unidad enemiga, esta unidad no es elegible para declarar una carga hasta el final del turno."
     },
     {
       "id": "f5987d7976bb05ab",
@@ -161,7 +161,7 @@
         "names": []
       },
       "source": "In your Command phase, select one friendly CANOPTEK SCARAB SWARM unit within 6\" of this unit. One destroyed model is returned to that CANOPTEK SCARAB SWARM unit for each SPYDER model in this unit.",
-      "target": null
+      "target": "En tu fase de Mando, selecciona una unidad amiga CANOPTEK SCARAB SWARM que esté a 6\" o menos de esta unidad. Se devuelve una miniatura destruida a esa unidad CANOPTEK SCARAB SWARM por cada miniatura SPYDER de esta unidad."
     },
     {
       "id": "01964c41e801f002",
@@ -177,7 +177,7 @@
         ]
       },
       "source": "While a friendly NECRONS VEHICLE unit is within 6\" of the bearer, models in that unit have the Feel No Pain 6+ ability.",
-      "target": null
+      "target": "Mientras una unidad amiga NECRONS VEHICLE está a 6\" o menos del portador, las miniaturas de esa unidad tienen la habilidad Feel No Pain 6+."
     },
     {
       "id": "6edfdf63b9993280",
@@ -193,7 +193,7 @@
         ]
       },
       "source": "At the start of the Fight phase, if this unit is within Engagement Range of one or more enemy units, you can select one model in this unit to destroy. If you do, select one enemy unit within Engagement Range of that model and roll one D6, adding 1 to the result if that unit is a VEHICLE. On a 2-5, that unit suffers D3 mortal wounds; on a 6+, that unit suffers 3 mortal wounds.",
-      "target": null
+      "target": "Al inicio de la fase de Combate, si esta unidad está dentro del alcance de combate de una o más unidades enemigas, puedes seleccionar una miniatura de esta unidad para destruirla. Si lo haces, selecciona una unidad enemiga que esté dentro del alcance de combate de esa miniatura y tira un D6, sumando 1 al resultado si esa unidad es un VEHICLE. Con un 2-5, esa unidad sufre D3 heridas mortales; con un 6+, esa unidad sufre 3 heridas mortales."
     },
     {
       "id": "98db504a1f294e95",
@@ -209,7 +209,7 @@
         ]
       },
       "source": "While an enemy unit is within Engagement Range of this unit, subtract 1 from the Objective Control  characteristic of models in that enemy unit (to a minimum of 1). While this unit is within 6\" of one or more friendly CRYPTEK models, the Objective Control characteristic of models in this unit is 1.",
-      "target": null
+      "target": "Mientras una unidad enemiga está dentro del alcance de combate de esta unidad, resta 1 a la característica de Control de Objetivos de las miniaturas de esa unidad enemiga (hasta un mínimo de 1). Mientras esta unidad está a 6\" o menos de una o más miniaturas amigas CRYPTEK, la característica de Control de Objetivos de las miniaturas de esta unidad es 1."
     },
     {
       "id": "0a117a613ee97096",
@@ -223,7 +223,7 @@
         "names": []
       },
       "source": "At the end of your opponent’s turn, if this unit is unengaged, you can use this ability. If you do: \n- Place this unit in strategic reserves. \n- This unit must make an ingress move in your next Movement phase (including in your first turn).",
-      "target": null
+      "target": "Al final del turno de tu oponente, si esta unidad está sin trabar, puedes usar esta habilidad. Si lo haces: \n- Coloca esta unidad en las reservas estratégicas. \n- Esta unidad debe realizar un movimiento de entrada en tu siguiente fase de Movimiento (incluso en tu primer turno)."
     },
     {
       "id": "f124477cdc8bf2c7",
@@ -241,7 +241,7 @@
         ]
       },
       "source": "Once per battle for each Plasmacyte this unit has, when this unit is selected to fight, you can use this ability. If you do, until the end of the phase, melee weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability.",
-      "target": null
+      "target": "Una vez por batalla por cada Plasmacyte que tenga esta unidad, cuando esta unidad es seleccionada para combatir, puedes usar esta habilidad. Si lo haces, hasta el final de la fase, las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad [DEVASTATING WOUNDS]."
     },
     {
       "id": "888988644fc84074",
@@ -255,7 +255,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, it can make a Normal Move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, puede realizar un movimiento normal de hasta 6\". Si lo hace, hasta el final del turno, esta unidad no es elegible para declarar una carga."
     },
     {
       "id": "75e865d468996cf3",
@@ -269,7 +269,7 @@
         "names": []
       },
       "source": "The bearer has a Save characteristic of 3+ and a Move characteristic of 8\".",
-      "target": null
+      "target": "El portador tiene una característica de Salvación de 3+ y una característica de Movimiento de 8\"."
     },
     {
       "id": "9d2f23e6d4706b1a",
@@ -285,7 +285,7 @@
         ]
       },
       "source": "The bearer has the Stealth ability.",
-      "target": null
+      "target": "El portador tiene la habilidad Stealth."
     },
     {
       "id": "b79b40ed876c21ff",
@@ -303,7 +303,7 @@
         ]
       },
       "source": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por el portador tienen la habilidad [IGNORES COVER]."
     },
     {
       "id": "3d70c5a3bacfc953",
@@ -319,7 +319,7 @@
         ]
       },
       "source": "When this unit activates its Reanimation Protocols, +1 to the roll.",
-      "target": null
+      "target": "Cuando esta unidad activa sus Reanimation Protocols, +1 a la tirada."
     },
     {
       "id": "9186df58332753b9",
@@ -333,7 +333,7 @@
         "names": []
       },
       "source": "You can re-roll Charge rolls made for this unit, and this unit is eligible to declare a charge in a turn in which it Fell Back.",
-      "target": null
+      "target": "Puedes repetir las tiradas de carga realizadas para esta unidad, y esta unidad es elegible para declarar una carga en un turno en el que se haya replegado."
     },
     {
       "id": "7a63d62a9108c247",
@@ -347,7 +347,7 @@
         "names": []
       },
       "source": "Each time this unit ends a Normal move, you can select one enemy unit it moved over during that move and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que esta unidad termina un movimiento normal, puedes seleccionar una unidad enemiga sobre la que se haya movido durante ese movimiento y tirar un D6 por cada miniatura de esta unidad: por cada 4+, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "fcf35eacbf82ef7e",
@@ -361,7 +361,7 @@
         "names": []
       },
       "source": "In your Shooting phase, each time you select a target for this model’s twin tesla destructor, roll one D6 for the target unit and one D6 for every other enemy unit within 3\" of the target unit. On a 5+, the unit being rolled for is struck by arcing energies; after resolving all of this model’s attacks against the target unit, each unit struck by arcing energies suffers D3 mortal wounds.",
-      "target": null
+      "target": "En tu fase de Disparo, cada vez que seleccionas un objetivo para el twin tesla destructor de esta miniatura, tira un D6 por la unidad objetivo y un D6 por cada otra unidad enemiga que esté a 3\" o menos de la unidad objetivo. Con un 5+, la unidad por la que se tira es alcanzada por arcos de energía; después de resolver todos los ataques de esta miniatura contra la unidad objetivo, cada unidad alcanzada por arcos de energía sufre D3 heridas mortales."
     },
     {
       "id": "d0d3918b6e7808d9",
@@ -377,7 +377,7 @@
         "names": []
       },
       "source": "In your Movement phase, if this model Remains Stationary, until the end of the turn, its doomsday cannon has the [DEVASTATING WOUNDS] ability.",
-      "target": null
+      "target": "En tu fase de Movimiento, si esta miniatura permanece inmóvil, hasta el final del turno su doomsday cannon tiene la habilidad [DEVASTATING WOUNDS]."
     },
     {
       "id": "ac17735ff129111c",
@@ -391,7 +391,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1. If the target of that attack is within range of an objective marker your opponent controls, you can re-roll the Hit roll instead.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que toma como objetivo a la unidad enemiga elegible más cercana, repite las tiradas para impactar de 1. Si el objetivo de ese ataque está dentro del alcance de un marcador de objetivo que controla tu oponente, puedes repetir la tirada para impactar en su lugar."
     },
     {
       "id": "76273389e18481ca",
@@ -405,7 +405,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack with an enmitic exterminator that targets a unit (excluding MONSTERS and VEHICLES), re-roll a Wound roll of 1. Each time a model in this unit makes an attack with a gauss destructor against a MONSTER or VEHICLE unit, re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque con un enmitic exterminator que toma como objetivo a una unidad (excluyendo MONSTERS y VEHICLES), repite las tiradas para herir de 1. Cada vez que una miniatura de esta unidad realiza un ataque con un gauss destructor contra una unidad MONSTER o VEHICLE, repite las tiradas para herir de 1."
     },
     {
       "id": "845e8b2c0900b27c",
@@ -419,7 +419,7 @@
         "names": []
       },
       "source": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+.",
-      "target": null
+      "target": "Cada vez que tomas como objetivo a esta unidad con el Stratagem Fire Overwatch, mientras resuelves ese Stratagem, se consiguen impactos con tiradas para impactar sin modificar de 5+."
     },
     {
       "id": "0465e321ec4ec19a",
@@ -435,7 +435,7 @@
         ]
       },
       "source": "Once per turn, just after an enemy unit finishes making its attacks, if one or more friendly NECRON WARRIORS units within 3\" of this model lost one or more wounds as a result of those attacks, this model can use this ability. If it does, select one of those NECRON WARRIORS units; that unit’s Reanimation Protocols activate. The same NECRON WARRIORS unit cannot be selected for this ability more than once per turn.",
-      "target": null
+      "target": "Una vez por turno, justo después de que una unidad enemiga termine de realizar sus ataques, si una o más unidades amigas NECRON WARRIORS que estén a 3\" o menos de esta miniatura han perdido una o más heridas como resultado de esos ataques, esta miniatura puede usar esta habilidad. Si lo hace, selecciona una de esas unidades NECRON WARRIORS; los Reanimation Protocols de esa unidad se activan. No se puede seleccionar la misma unidad NECRON WARRIORS para esta habilidad más de una vez por turno."
     },
     {
       "id": "705b756bcc3b6f83",
@@ -449,7 +449,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 10 NECRON WARRIOR models and 1 NECRONS INFANTRY CHARACTER model.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 10 miniaturas NECRON WARRIOR y 1 miniatura NECRONS INFANTRY CHARACTER."
     },
     {
       "id": "6959dcbeeb3342cb",
@@ -465,7 +465,7 @@
         ]
       },
       "source": "At the end of the Fight phase, if there are no models currently embarked within this **TRANSPORT**, you can select one friendly **NECRONS INFANTRY** unit wholly within 6\" of this **TRANSPORT**. Unless that unit is within Engagement Range of one or more enemy units, it can embark within this **TRANSPORT**.",
-      "target": null
+      "target": "Al final de la fase de Combate, si no hay ninguna miniatura embarcada en este **TRANSPORT**, puedes seleccionar una unidad amiga **NECRONS INFANTRY** que esté completamente a 6\" o menos de este **TRANSPORT**. A menos que esa unidad esté dentro del alcance de combate de una o más unidades enemigas, puede embarcar en este **TRANSPORT**."
     },
     {
       "id": "08902bd074714bb0",
@@ -479,7 +479,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 1 NECRONS INFANTRY unit.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 1 unidad NECRONS INFANTRY."
     },
     {
       "id": "73efddc22967e5fe",
@@ -493,7 +493,7 @@
         "names": []
       },
       "source": "This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
-      "target": null
+      "target": "Esta miniatura puede desplegarse en el paso de Refuerzos de tu primera, segunda o tercera fase de Movimiento, sin importar las reglas de misión."
     },
     {
       "id": "f21a9f22f3c5fd44",
@@ -507,7 +507,7 @@
         "names": []
       },
       "source": "Each time this model targets an enemy unit with its heavy death ray, your opponent must declare if that unit will stand firm or duck for cover:\n■ If it stands firm, when resolving attacks against that unit this phase, a successful unmodified Hit roll of 5+ scores a Critical Hit.\n■ If it ducks for cover, until the start of your next Shooting phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura toma como objetivo a una unidad enemiga con su heavy death ray, tu oponente debe declarar si esa unidad se mantendrá firme o se pondrá a cubierto:\n■ Si se mantiene firme, al resolver los ataques contra esa unidad esta fase, una tirada para impactar sin modificar de 5+ que tenga éxito consigue un impacto crítico.\n■ Si se pone a cubierto, hasta el inicio de tu siguiente fase de Disparo, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "bcdff027fa8809aa",
@@ -521,7 +521,7 @@
         "names": []
       },
       "source": "At the start of your opponent’s Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the end of the turn, halve the Move characteristic of models in that unit and halve Advance and Charge rolls made for that unit. In addition, if that unit can FLY, until the start of your next Movement phase, roll one D6 each time that unit ends any type of move: on a 4+, that unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Al inicio de la fase de Movimiento de tu oponente, puedes seleccionar una unidad enemiga que esté a 18\" o menos de esta miniatura y sea visible para ella. Hasta el final del turno, reduce a la mitad la característica de Movimiento de las miniaturas de esa unidad y reduce a la mitad las tiradas de avance y de carga realizadas para esa unidad. Además, si esa unidad puede FLY, hasta el inicio de tu siguiente fase de Movimiento, tira un D6 cada vez que esa unidad termine cualquier tipo de movimiento: con un 4+, esa unidad sufre D3 heridas mortales."
     },
     {
       "id": "b19ad001badf5125",
@@ -535,7 +535,7 @@
         "names": []
       },
       "source": "In your opponent’s Battle-shock step, if an enemy unit within 8\" of this unit is below starting strength, that enemy unit makes a battle‑shock roll.",
-      "target": null
+      "target": "En el paso de Battle-shock de tu oponente, si una unidad enemiga que esté a 8\" o menos de esta unidad está por debajo de su Starting Strength, esa unidad enemiga hace una tirada de battle‑shock."
     },
     {
       "id": "7316992adf3e7a65",
@@ -551,7 +551,7 @@
         ]
       },
       "source": "While this model has 1-8 wounds remaining, subtract 4 from its Objective Control characteristic and you can only select one of the C'tan Powers weapons in your Shooting phase, instead of two.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 8 heridas, resta 4 a su característica de Control de Objetivos y solo puedes seleccionar una de las armas C'tan Powers en tu fase de Disparo, en lugar de dos."
     },
     {
       "id": "b368b9321d1a8184",
@@ -565,7 +565,7 @@
         "names": []
       },
       "source": "In your Shooting phase, when this model is selected to shoot, first select up to 2 different C’tan Powers weapons. Until the end of the phase, this model is equipped with those weapons in addition to its other weapons (this model cannot make attacks with any other C’tan Powers weapon you did not select in this way this phase).",
-      "target": null
+      "target": "En tu fase de Disparo, cuando esta miniatura es seleccionada para disparar, selecciona primero hasta 2 armas C’tan Powers diferentes. Hasta el final de la fase, esta miniatura está equipada con esas armas además de con sus otras armas (esta miniatura no puede realizar ataques con ninguna otra arma C’tan Powers que no hayas seleccionado de esta forma esta fase)."
     },
     {
       "id": "6de3cdac0672be39",
@@ -579,7 +579,7 @@
         "names": []
       },
       "source": "In your movement phase (excluding the first battle round), you can select one friendly NECRONS INFANTRY unit that is either in strategic reserves or on the battlefield (if you select a unit on the battlefield, remove that unit from the battlefield and place it into strategic reserves). That unit can make an ingress move, and while making that ingress move, that unit must be set up wholly within 6\" of this unit and unengaged (instead of more than 8\" horizontally from all enemy units), even if that is within your opponent’s deployment zone. That unit cannot make a charge move this turn.",
-      "target": null
+      "target": "En tu fase de movimiento (excluyendo la primera ronda de batalla), puedes seleccionar una unidad amiga NECRONS INFANTRY que esté en las reservas estratégicas o en el campo de batalla (si seleccionas una unidad que esté en el campo de batalla, retira esa unidad del campo de batalla y colócala en las reservas estratégicas). Esa unidad puede realizar un movimiento de entrada y, al realizar ese movimiento de entrada, debe desplegarse completamente a 6\" o menos de esta unidad y sin trabar (en lugar de a más de 8\" en horizontal de todas las unidades enemigas), incluso si eso está dentro de la zona de despliegue de tu oponente. Esa unidad no puede realizar un movimiento de carga este turno."
     },
     {
       "id": "49c33ccf5fe84995",
@@ -595,7 +595,7 @@
         ]
       },
       "source": "While this unit’s Szarekh model has 1-6 wounds remaining, halve the Attacks characteristic of that model’s weapons, and each time this unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a la miniatura Szarekh de esta unidad le queden entre 1 y 6 heridas, reduce a la mitad la característica de Ataques de las armas de esa miniatura y, cada vez que esta unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "7239fcb8daf47abc",
@@ -611,7 +611,7 @@
         ]
       },
       "source": "At the start of the battle round, select one Triarch ability. Until the start of the next battle round, this unit has that ability.",
-      "target": null
+      "target": "Al inicio de la ronda de batalla, selecciona una habilidad Triarch. Hasta el inicio de la siguiente ronda de batalla, esta unidad tiene esa habilidad."
     },
     {
       "id": "657e4e698c0012a2",
@@ -627,7 +627,7 @@
         ]
       },
       "source": "While a friendly NECRONS unit is within 6\" of this unit's Szarekh model, improve that unit's Leadership characteristic by 1.",
-      "target": null
+      "target": "Mientras una unidad amiga NECRONS está a 6\" o menos de la miniatura Szarekh de esta unidad, mejora en 1 la característica de Leadership de esa unidad."
     },
     {
       "id": "2e872d0d12eed9e4",
@@ -644,7 +644,7 @@
         ]
       },
       "source": "While a friendly ^^**Necrons**^^ unit (excluding ^^**Monster^^** units) is within 6\" of this unit’s Szarekh model, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Mientras una unidad amiga ^^**Necrons**^^ (excluyendo las unidades ^^**Monster^^**) está a 6\" o menos de la miniatura Szarekh de esta unidad, cada vez que una miniatura de esa unidad realiza un ataque, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1."
     },
     {
       "id": "66942032c9836089",
@@ -661,7 +661,7 @@
         ]
       },
       "source": "While a friendly ^^**Necrons^^** (excluding ^^**Monster^^** units) unit is within 6\" of this unit’s Szarekh model, you can re-roll Charge rolls made for that unit and each time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack.",
-      "target": null
+      "target": "Mientras una unidad amiga ^^**Necrons^^** (excluyendo las unidades ^^**Monster^^**) está a 6\" o menos de la miniatura Szarekh de esta unidad, puedes repetir las tiradas de carga realizadas para esa unidad y, cada vez que una miniatura de esa unidad realiza un ataque de cuerpo a cuerpo, suma 1 a la característica de Fuerza de ese ataque."
     },
     {
       "id": "1b1bac65724af63a",
@@ -677,7 +677,7 @@
         ]
       },
       "source": "While a friendly NECRONS unit is within 6\" of this unit’s Szarekh model, add 2\" to the Move characteristic of models in that unit.",
-      "target": null
+      "target": "Mientras una unidad amiga NECRONS está a 6\" o menos de la miniatura Szarekh de esta unidad, suma 2\" a la característica de Movimiento de las miniaturas de esa unidad."
     },
     {
       "id": "7fdf5d4337cde324",
@@ -694,7 +694,7 @@
         ]
       },
       "source": "If this unit’s Szarekh model is destroyed, all of this unit’s remaining Triarchal Menhir models are also destroyed.",
-      "target": null
+      "target": "Si la miniatura Szarekh de esta unidad es destruida, todas las miniaturas Triarchal Menhir restantes de esta unidad también son destruidas."
     },
     {
       "id": "9605fc8d1e009c0f",
@@ -710,7 +710,7 @@
         ]
       },
       "source": "While a friendly NECRONS INFANTRY unit is within 6” of this FORTIFICATION, models in that unit have the Feel No Pain 6+ ability.",
-      "target": null
+      "target": "Mientras una unidad amiga NECRONS INFANTRY está a 6” o menos de esta FORTIFICATION, las miniaturas de esa unidad tienen la habilidad Feel No Pain 6+."
     },
     {
       "id": "fc28c84899b4e013",
@@ -726,7 +726,7 @@
         ]
       },
       "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia se asigna a una miniatura, si esa miniatura no es completamente visible para todas las miniaturas de la unidad atacante a causa de esta FORTIFICATION, esa miniatura tiene el beneficio de cobertura contra ese ataque."
     },
     {
       "id": "4ab6de9130718863",
@@ -742,7 +742,7 @@
         ]
       },
       "source": "When this unit is first set up on the battlefield, its models do not have to be set up in Unit Coherency. Instead, each model must be set up wholly within 12\" of one other model from its unit. From that point on, each model in this unit is treated as a separate unit.",
-      "target": null
+      "target": "Cuando esta unidad se despliega por primera vez en el campo de batalla, sus miniaturas no tienen que desplegarse en coherencia de unidad. En su lugar, cada miniatura debe desplegarse completamente a 12\" o menos de otra miniatura de su unidad. A partir de ese momento, cada miniatura de esta unidad se trata como una unidad independiente."
     },
     {
       "id": "48120854d2dde169",
@@ -756,7 +756,7 @@
         "names": []
       },
       "source": "Each time an attack targets this model, if this model is within range of an objective marker, worsen the Armour Penetration characteristic of that attack by 1. In addition, each time this model makes an attack that targets a unit within range of an objective marker, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que un ataque toma como objetivo a esta miniatura, si esta miniatura está dentro del alcance de un marcador de objetivo, empeora en 1 la característica de Penetración de Blindaje de ese ataque. Además, cada vez que esta miniatura realiza un ataque que toma como objetivo a una unidad que está dentro del alcance de un marcador de objetivo, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "13155ba4edde99c1",
@@ -773,7 +773,7 @@
         ]
       },
       "source": "While a friendly **^^Necrons^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.",
-      "target": null
+      "target": "Mientras una unidad amiga **^^Necrons^^** está a 6\" o menos del portador, las miniaturas de esa unidad tienen la habilidad Feel No Pain 5+ contra heridas mortales y ataques psíquicos."
     },
     {
       "id": "6f0c2e24fd9b8e43",
@@ -787,7 +787,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly NECRONS model makes an attack that targets that unit, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final de la fase, cada vez que una miniatura amiga NECRONS realiza un ataque que toma como objetivo a esa unidad, con una herida crítica, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "4cbfab68de77acd1",
@@ -801,7 +801,7 @@
         "names": []
       },
       "source": "Each time an enemy unit selects this model as the target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other reductions to that Charge roll).",
-      "target": null
+      "target": "Cada vez que una unidad enemiga selecciona esta miniatura como objetivo de una carga, resta 2 a la tirada de carga (esto no es acumulable con ninguna otra reducción a esa tirada de carga)."
     },
     {
       "id": "bd4a364b7f53b46a",
@@ -818,7 +818,7 @@
         ]
       },
       "source": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test.",
-      "target": null
+      "target": "Al inicio de la fase de Combate, cada unidad enemiga que esté dentro del alcance de combate de una o más unidades con esta habilidad debe hacer un test de Battle-shock."
     },
     {
       "id": "954c466734528e51",
@@ -834,7 +834,7 @@
         ]
       },
       "source": "Each time this model makes a Normal, Advance or Fall Back move, it can move over models (excluding ^^**Titanic**^^ models) and terrain features that are 4\" or less in height as if they were not there.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un movimiento normal, de avance o de repliegue, puede moverse por encima de miniaturas (excluidas las miniaturas ^^**Titanic**^^) y de elementos de escenografía que midan 4\" o menos de altura como si no estuvieran allí."
     },
     {
       "id": "933879672078b337",
@@ -850,7 +850,7 @@
         ]
       },
       "source": "While a friendly NECRONS unit is within 3\" of this Fortification, models in that unit have a 5+ invulnerable save against ranged attacks.",
-      "target": null
+      "target": "Mientras una unidad amiga NECRONS está a 3\" o menos de esta Fortification, las miniaturas de esa unidad tienen una salvación invulnerable de 5+ contra ataques a distancia."
     },
     {
       "id": "dd790ce7da3a4a85",
@@ -867,7 +867,7 @@
         ]
       },
       "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia se asigna a una miniatura, si esa miniatura no es completamente visible para todas las miniaturas de la unidad atacante a causa de esta Fortification, esa miniatura tiene el beneficio de cobertura contra ese ataque."
     },
     {
       "id": "efeffece305006a0",
@@ -883,7 +883,7 @@
         ]
       },
       "source": "Once per battle, at the end of your opponent’s turn, if this FORTIFICATION is not within Engagement Range of one or more enemy units, you can remove it from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models. If the battle ends and this FORTIFICATION is not on the battlefield, it is destroyed.",
-      "target": null
+      "target": "Una vez por batalla, al final del turno de tu oponente, si esta FORTIFICATION no está dentro del alcance de combate de una o más unidades enemigas, puedes retirarla del campo de batalla. En el paso de Refuerzos de tu siguiente fase de Movimiento, despliégala en cualquier lugar del campo de batalla que esté a más de 9\" en horizontal de todas las miniaturas enemigas. Si la batalla termina y esta FORTIFICATION no está en el campo de batalla, es destruida."
     },
     {
       "id": "8936c38bd9ed43ed",
@@ -897,7 +897,7 @@
         "names": []
       },
       "source": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que esta miniatura termina un movimiento normal, puedes seleccionar una unidad enemiga sobre la que se haya movido durante ese movimiento y tirar seis D6: por cada 3+, esa unidad sufre 1 herida mortal."
     },
     {
       "id": "7013ee92d3612363",
@@ -911,7 +911,7 @@
         "names": []
       },
       "source": "Each time this model's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. In addition, each time a model in that unit makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base).",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura avanza, no hagas una tirada de avance para ella. En su lugar, hasta el final de la fase, suma 6\" a la característica de Movimiento de las miniaturas de esa unidad. Además, cada vez que una miniatura de esa unidad realiza un movimiento normal, de avance o de repliegue, hasta que termine ese movimiento puede moverse horizontalmente a través de miniaturas y de elementos de escenografía (no puede terminar un movimiento encima de otra miniatura o de su peana)."
     },
     {
       "id": "27cc46234e51cb29",
@@ -928,7 +928,7 @@
         ]
       },
       "source": "While a friendly **^^Necrons^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks.",
-      "target": null
+      "target": "Mientras una unidad amiga **^^Necrons^^** está a 6\" o menos del portador, las miniaturas de esa unidad tienen la habilidad Feel No Pain 4+ contra ataques psíquicos."
     },
     {
       "id": "8f8dd0118f321d4f",
@@ -942,7 +942,7 @@
         "names": []
       },
       "source": "While an enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) is within 3\" of this unit, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras una unidad enemiga (excluyendo ^^**Monsters^^** y ^^**Vehicles^^**) está a 3\" o menos de esta unidad, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "848c45ce6d4cef9f",
@@ -958,7 +958,7 @@
         ]
       },
       "source": "Once per battle round, when a friendly ^^**Necrons^^** unit within 3\" of the bearer activates its Reanimation Protocols, the bearer can use this ability. If it does, that unit reanimates 1 additional wound.",
-      "target": null
+      "target": "Una vez por ronda de batalla, cuando una unidad amiga ^^**Necrons^^** que esté a 3\" o menos del portador activa sus Reanimation Protocols, el portador puede usar esta habilidad. Si lo hace, esa unidad reanima 1 herida adicional."
     },
     {
       "id": "510d0067a24d9b33",
@@ -975,7 +975,7 @@
         ]
       },
       "source": "At the start of the Fight phase, select one friendly ^^**Canoptek^^** unit within 3\" of the bearer’s unit. Until the end of the phase, improve the Weapon Skill characteristic of weapons equipped by models in that unit by 1.",
-      "target": null
+      "target": "Al inicio de la fase de Combate, selecciona una unidad amiga ^^**Canoptek^^** que esté a 3\" o menos de la unidad del portador. Hasta el final de la fase, mejora en 1 la característica de Habilidad de Armas de las armas equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "6278797c88d6c24d",
@@ -989,7 +989,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack that targets a unit within 12\", you can ignore any or all modifiers to the following: that attack’s Ballistic Skill characteristic; the Hit roll; the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que toma como objetivo a una unidad que está a 12\" o menos, puedes ignorar cualquiera de los siguientes modificadores o todos ellos: los de la característica de Habilidad de Proyectiles de ese ataque; los de la tirada para impactar; los de la tirada para herir."
     },
     {
       "id": "2649cbcfca72f7ac",
@@ -1008,7 +1008,7 @@
         ]
       },
       "source": "At the start of the Declare Battle Formations step, this unit can join one other unit from your army that is being led by a ^^**Cryptek^^** model (a unit cannot have more than one ^^**Tomb Crawlers^^** unit joined to it and cannot have both a ^^**Tomb Crawlers^^** and a ^^**Cryptothralls^^** unit joined to it). If it does, until the end of the battle, every model in this unit counts as being part of that Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly.",
-      "target": null
+      "target": "Al inicio del paso Declarar Formaciones de Batalla, esta unidad puede unirse a otra unidad de tu ejército que esté liderada por una miniatura ^^**Cryptek^^** (una unidad no puede tener más de una unidad ^^**Tomb Crawlers^^** unida a ella y no puede tener unidas a la vez una unidad ^^**Tomb Crawlers^^** y una unidad ^^**Cryptothralls^^**). Si lo hace, hasta el final de la batalla, cada miniatura de esta unidad cuenta como parte de esa unidad Bodyguard, y la Starting Strength de esa unidad Bodyguard aumenta en consecuencia."
     },
     {
       "id": "95f9d2b899802ee8",
@@ -1022,7 +1022,7 @@
         "names": []
       },
       "source": "In your Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the start of your next Movement phase that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for it.",
-      "target": null
+      "target": "En tu fase de Movimiento, puedes seleccionar una unidad enemiga que esté a 18\" o menos de esta miniatura y sea visible para ella. Hasta el inicio de tu siguiente fase de Movimiento, esa unidad enemiga queda inmovilizada. Mientras una unidad está inmovilizada, resta 2 a la característica de Movimiento de esa unidad y resta 2 a las tiradas de carga realizadas para ella."
     },
     {
       "id": "74b71f19a0117b9d",
@@ -1036,7 +1036,7 @@
         "names": []
       },
       "source": "While this model is within range of an objective marker you control, enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of this model.",
-      "target": null
+      "target": "Mientras esta miniatura está dentro del alcance de un marcador de objetivo que controlas, las unidades enemigas que se desplieguen en el campo de batalla desde las Reservas no pueden desplegarse a 12\" o menos de esta miniatura."
     },
     {
       "id": "d07e94d0076fca7a",
@@ -1050,7 +1050,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: CANOPTEK MACROCYTES, IMMORTALS, NECRON WARRIORS\n",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: CANOPTEK MACROCYTES, IMMORTALS, NECRON WARRIORS\n"
     },
     {
       "id": "9c4263e4cf8dfcfa",
@@ -1068,7 +1068,7 @@
         ]
       },
       "source": "If this model is attached to a ^^**Canoptek Macrocytes^^** unit during the Declare Battle Formations step, this model has the Scouts 8\" ability.",
-      "target": null
+      "target": "Si esta miniatura se adjunta a una unidad ^^**Canoptek Macrocytes^^** durante el paso Declarar Formaciones de Batalla, esta miniatura tiene la habilidad Scouts 8\"."
     },
     {
       "id": "648470ab37a529c2",
@@ -1085,7 +1085,7 @@
         ]
       },
       "source": "While this model is within 3\" of one or more other friendly ^^**Destroyer Cult^^** units, this model has the Lone Operative ability.",
-      "target": null
+      "target": "Mientras esta miniatura está a 3\" o menos de una o más unidades amigas ^^**Destroyer Cult^^**, esta miniatura tiene la habilidad Lone Operative."
     },
     {
       "id": "9f393c87669778bb",
@@ -1105,7 +1105,7 @@
         ]
       },
       "source": "While a friendly ^^**Necrons^^** unit (excluding ^^**Monster**^^ and ^^**Titanic^^** units) is within 6\" of this model, each time a model in that unit makes an attack, if that model has the ^^**Destroyer Cult^^** keyword or that enemy unit is the closest eligible target, that attack has the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Mientras una unidad amiga ^^**Necrons^^** (excluyendo las unidades ^^**Monster**^^ y ^^**Titanic^^**) está a 6\" o menos de esta miniatura, cada vez que una miniatura de esa unidad realiza un ataque, si esa miniatura tiene la palabra clave ^^**Destroyer Cult^^** o esa unidad enemiga es el objetivo elegible más cercano, ese ataque tiene la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "075978ed5bedd45e",
@@ -1121,7 +1121,7 @@
         ]
       },
       "source": "Each time this model destroys an enemy unit, select one other friendly ^^**Destroyer Cult^^** unit within 9\" of it. Until the end of the phase, each time a model in that unit makes an attack, re‑roll a Wound roll of 1.",
-      "target": null
+      "target": "Cada vez que esta miniatura destruye una unidad enemiga, selecciona otra unidad amiga ^^**Destroyer Cult^^** que esté a 9\" o menos de ella. Hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque, repite las tiradas para herir de 1."
     },
     {
       "id": "703db977b07c76d2",
@@ -1138,7 +1138,7 @@
         ]
       },
       "source": "While a friendly ^^**Necrons^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.",
-      "target": null
+      "target": "Mientras una unidad amiga ^^**Necrons^^** está a 6\" o menos del portador, las miniaturas de esa unidad tienen la habilidad Feel No Pain 5+ contra heridas mortales y ataques psíquicos."
     },
     {
       "id": "b93edb93233c6ce8",
@@ -1156,7 +1156,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Immortals, Lychguard, Necron Warriors**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Immortals, Lychguard, Necron Warriors**^^"
     },
     {
       "id": "a54d96dd263b0444",
@@ -1173,7 +1173,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Immortals, Necron Warriors**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Immortals, Necron Warriors**^^"
     },
     {
       "id": "4aab5dc85496b1d2",
@@ -1195,7 +1195,7 @@
         ]
       },
       "source": "One friendly **^^Monolith, Obelisk, Tesseract Vault**^^ or **^^Sentry Pylon**^^ model can start the battle on top of this Fortification’s ziggurat platform. While such a model is on this platform, that model's ranged weapons have the [HEAVY] ability. Any friendly model can be set up or end any type of move on the ramps or platform sections of this **^^Fortification**^^.",
-      "target": null
+      "target": "Una miniatura amiga **^^Monolith, Obelisk, Tesseract Vault**^^ o **^^Sentry Pylon**^^ puede empezar la batalla encima de la plataforma del zigurat de esta Fortification. Mientras una miniatura así está en esta plataforma, las armas a distancia de esa miniatura tienen la habilidad [HEAVY]. Cualquier miniatura amiga puede desplegarse o terminar cualquier tipo de movimiento en las rampas o en las secciones de plataforma de esta **^^Fortification**^^."
     },
     {
       "id": "a00c3225251fc96a",
@@ -1212,7 +1212,7 @@
         ]
       },
       "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this ^^**Fortification^^**, that model has the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia se asigna a una miniatura, si esa miniatura no es completamente visible para todas las miniaturas de la unidad atacante a causa de esta ^^**Fortification^^**, esa miniatura tiene el beneficio de cobertura contra ese ataque."
     },
     {
       "id": "65311655ea4f2893",
@@ -1226,7 +1226,7 @@
         "names": []
       },
       "source": "While this model has 1‑15 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 15 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "ed972240d7b4c212",
@@ -1242,7 +1242,7 @@
         ]
       },
       "source": "NECRONS model only. (Once per battle, per army) At the end of your opponent’s turn, if this unit is unengaged, you can use this ability. If you do: \n- Place this unit in strategic reserves. \n- This unit has Deep Strike until the start of your next Shooting phase. \n- This unit must make an ingress move in your next Movement phase (including in your first turn).",
-      "target": null
+      "target": "Solo miniatura NECRONS. (Una vez por batalla, por ejército) Al final del turno de tu oponente, si esta unidad está sin trabar, puedes usar esta habilidad. Si lo haces: \n- Coloca esta unidad en las reservas estratégicas. \n- Esta unidad tiene Deep Strike hasta el inicio de tu siguiente fase de Disparo. \n- Esta unidad debe realizar un movimiento de entrada en tu siguiente fase de Movimiento (incluso en tu primer turno)."
     },
     {
       "id": "c2bf78ab207210ab",
@@ -1258,7 +1258,7 @@
         ]
       },
       "source": "NECRONS model only. While the bearer is leading a unit, models in that unit have the Stealth ability.",
-      "target": null
+      "target": "Solo miniatura NECRONS. Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen la habilidad Stealth."
     },
     {
       "id": "05b41c5f9ff02a6a",
@@ -1272,7 +1272,7 @@
         "names": []
       },
       "source": "NECRONS model only. While a friendly NECRONS unit (excluding CHARACTER units) is within 6\" of the bearer, each time a model in that unit makes an attack, add 1 to the hit roll.",
-      "target": null
+      "target": "Solo miniatura NECRONS. Mientras una unidad amiga NECRONS (excluyendo las unidades CHARACTER) está a 6\" o menos del portador, cada vez que una miniatura de esa unidad realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "a530027a29d525a0",
@@ -1288,7 +1288,7 @@
         ]
       },
       "source": "NECRONS model only. While the bearer is on the battlefield or in Strategic Reserves, add 1 to the number of units from your army that you can select for the Hyperphasing rule.",
-      "target": null
+      "target": "Solo miniatura NECRONS. Mientras el portador está en el campo de batalla o en las reservas estratégicas, suma 1 al número de unidades de tu ejército que puedes seleccionar para la regla Hyperphasing."
     },
     {
       "id": "3bf8e39050818339",
@@ -1302,7 +1302,7 @@
         "names": []
       },
       "source": "NECRONS model only. In the Fight phase, each time a model in the bearer's unit is destroyed, if that model had not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Solo miniatura NECRONS. En la fase de Combate, cada vez que una miniatura de la unidad del portador es destruida, si esa miniatura no había combatido esta fase, tira un D6. Con un 4+, no retires del juego la miniatura destruida; puede combatir después de que la unidad de la miniatura atacante haya terminado de realizar sus ataques, y después se retira del juego."
     },
     {
       "id": "21d73123506a396f",
@@ -1316,7 +1316,7 @@
         "names": []
       },
       "source": "NECRONS model only. Each time a model in the bearer's unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Solo miniatura NECRONS. Cada vez que una miniatura de la unidad del portador realiza un ataque, con una herida crítica, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "2e72e7c4222495d3",
@@ -1332,7 +1332,7 @@
         ]
       },
       "source": "DESTROYER CULT model only. Each time an enemy unit within Engagement Range of the bearer's unit is selected to Fall Back, roll one D6. On a 3+, that unit cannot Fall Back and must Remain Stationary.",
-      "target": null
+      "target": "Solo miniatura DESTROYER CULT. Cada vez que una unidad enemiga que esté dentro del alcance de combate de la unidad del portador es seleccionada para replegarse, tira un D6. Con un 3+, esa unidad no puede replegarse y debe permanecer inmóvil."
     },
     {
       "id": "b33dabd5291e94aa",
@@ -1348,7 +1348,7 @@
         ]
       },
       "source": "DESTROYER CULT model only. At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle-shock test.",
-      "target": null
+      "target": "Solo miniatura DESTROYER CULT. Al inicio de la fase de Combate, cada unidad enemiga que esté dentro del alcance de combate del portador debe hacer un test de Battle-shock."
     },
     {
       "id": "582888b028838385",
@@ -1364,7 +1364,7 @@
         ]
       },
       "source": "CRYPTEK model only. Models in the bearer's unit have the Infiltrators ability.",
-      "target": null
+      "target": "Solo miniatura CRYPTEK. Las miniaturas de la unidad del portador tienen la habilidad Infiltrators."
     },
     {
       "id": "8fb0bd6d6dd3be28",
@@ -1380,7 +1380,7 @@
         ]
       },
       "source": "CRYPTEK model only. While the bearer is leading a unit, if that unit is wholly within your army's Power Matrix, each time a model in that unit makes an attack, re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Solo miniatura CRYPTEK. Mientras el portador lidera una unidad, si esa unidad está completamente dentro de la Power Matrix de tu ejército, cada vez que una miniatura de esa unidad realiza un ataque, repite las tiradas para herir de 1."
     },
     {
       "id": "56890a1356ebd6e6",
@@ -1394,7 +1394,7 @@
         "names": []
       },
       "source": "CRYPTEK model only. Each time your opponent gains a CP as a result of an ability, roll one D6: on a 2+, you also gain 1CP.",
-      "target": null
+      "target": "Solo miniatura CRYPTEK. Cada vez que tu oponente gana un CP como resultado de una habilidad, tira un D6: con un 2+, tú también ganas 1CP."
     },
     {
       "id": "098816968fa7ba7d",
@@ -1408,7 +1408,7 @@
         "names": []
       },
       "source": "CRYPTEK model only. Once per phase, when an enemy unit selects the bearer's unit as a target of a charge, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds, on a 6, that enemy unit suffers 3 mortal wounds.",
-      "target": null
+      "target": "Solo miniatura CRYPTEK. Una vez por fase, cuando una unidad enemiga selecciona la unidad del portador como objetivo de una carga, tira un D6: con un 2-5, esa unidad enemiga sufre D3 heridas mortales; con un 6, esa unidad enemiga sufre 3 heridas mortales."
     },
     {
       "id": "312b6bbe6ffdc894",
@@ -1422,7 +1422,7 @@
         "names": []
       },
       "source": "OVERLORD model only. Each time the bearer's unit destroys an enemy CHARACTER unit, your opponent loses 1CP if they have any.",
-      "target": null
+      "target": "Solo miniatura OVERLORD. Cada vez que la unidad del portador destruye una unidad enemiga CHARACTER, tu oponente pierde 1CP si tiene alguno."
     },
     {
       "id": "0c926d566be6ef19",
@@ -1439,7 +1439,7 @@
         "names": []
       },
       "source": "OVERLORD model only. The bearer's melee weapons have the [PRECISION] and [ANTI-INFANTRY 5+] abilities.",
-      "target": null
+      "target": "Solo miniatura OVERLORD. Las armas de cuerpo a cuerpo del portador tienen las habilidades [PRECISION] y [ANTI-INFANTRY 5+]."
     },
     {
       "id": "beae5c4cb0bec6f9",
@@ -1453,7 +1453,7 @@
         "names": []
       },
       "source": "OVERLORD model only. Each time a melee attack targets the bearer's unit, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Solo miniatura OVERLORD. Cada vez que un ataque de cuerpo a cuerpo toma como objetivo a la unidad del portador, resta 1 a la tirada para impactar."
     },
     {
       "id": "7ecf5c7b1e7f88c7",
@@ -1467,7 +1467,7 @@
         "names": []
       },
       "source": "OVERLORD model only. Each time a model in the bearer's unit makes an attack that targets an enemy unit within range of an objective marker, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Solo miniatura OVERLORD. Cada vez que una miniatura de la unidad del portador realiza un ataque que toma como objetivo a una unidad enemiga que está dentro del alcance de un marcador de objetivo, puedes repetir la tirada para impactar."
     },
     {
       "id": "e8fe1c4eddfa5d2a",
@@ -1483,7 +1483,7 @@
         ]
       },
       "source": "NECRONS model only. The bearer has the Feel No Pain 4+ ability.",
-      "target": null
+      "target": "Solo miniatura NECRONS. El portador tiene la habilidad Feel No Pain 4+."
     },
     {
       "id": "cbd596b6ae500bac",
@@ -1497,7 +1497,7 @@
         "names": []
       },
       "source": "NECRONS model only. Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1. If the bearer's unit was set up on the battlefield this turn, you can re-roll the Hit roll instead.",
-      "target": null
+      "target": "Solo miniatura NECRONS. Cada vez que una miniatura de la unidad del portador realiza un ataque, repite las tiradas para impactar de 1. Si la unidad del portador se desplegó en el campo de batalla este turno, puedes repetir la tirada para impactar en su lugar."
     },
     {
       "id": "a71119f9b91fcf9f",
@@ -1511,7 +1511,7 @@
         "names": []
       },
       "source": "NECRONS model only. Each time the bearer's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura NECRONS. Cada vez que la unidad del portador avanza, no hagas una tirada de avance para ella. En su lugar, hasta el final de la fase, suma 6\" a la característica de Movimiento de las miniaturas de la unidad del portador."
     },
     {
       "id": "7a4ffac99fb48a3c",
@@ -1527,7 +1527,7 @@
         ]
       },
       "source": "NECRONS model only. Models in the bearer's unit have the Deep Strike ability.",
-      "target": null
+      "target": "Solo miniatura NECRONS. Las miniaturas de la unidad del portador tienen la habilidad Deep Strike."
     },
     {
       "id": "9836a45d7278d753",
@@ -1543,7 +1543,7 @@
         ]
       },
       "source": "While a friendly ^^**Necrons**^^ unit (excluding ^^**Monster^^** and ^^**Titianic^^** units) is within 6\" of the bearer, each time a model in that unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.",
-      "target": null
+      "target": "Mientras una unidad amiga ^^**Necrons**^^ (excluyendo las unidades ^^**Monster^^** y ^^**Titianic^^**) está a 6\" o menos del portador, cada vez que una miniatura de esa unidad realiza un ataque, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1."
     },
     {
       "id": "55ab937632ca54a2",
@@ -1557,7 +1557,7 @@
         "names": []
       },
       "source": "In your Command phase, select one friendly NECRONS VEHICLE or NECRONS MOUNTED unit (excluding TITANIC units) within 6\" of the bearer. Until the start of your next Command phase, that unit is eligible to shoot in a turn in which it Fell Back.",
-      "target": null
+      "target": "En tu fase de Mando, selecciona una unidad amiga NECRONS VEHICLE o NECRONS MOUNTED (excluyendo las unidades TITANIC) que esté a 6\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, esa unidad es elegible para disparar en un turno en el que se haya replegado."
     },
     {
       "id": "0924ecbf596ea6c6",
@@ -1575,7 +1575,7 @@
         ]
       },
       "source": "In your Command phase, select one friendly **^^Necrons Vehicle^^** or **^^Necrons Mounted^^** unit (excluding Titanic units) within 6\" of the bearer. Until the start of your next Command phase, each time an attack is allocated to a model in that unit, subtract 1 from the Damage characteristic of that attack.",
-      "target": null
+      "target": "En tu fase de Mando, selecciona una unidad amiga **^^Necrons Vehicle^^** o **^^Necrons Mounted^^** (excluyendo las unidades Titanic) que esté a 6\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, cada vez que un ataque se asigna a una miniatura de esa unidad, resta 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "f7fe8b6f489f7478",
@@ -1591,7 +1591,7 @@
         ]
       },
       "source": "Add 6\" to the Range characteristic of ranged weapons equipped by models in the bearer’s unit.",
-      "target": null
+      "target": "Suma 6\" a la característica de Alcance de las armas a distancia equipadas por las miniaturas de la unidad del portador."
     },
     {
       "id": "0e9d9ee455aa27d7",
@@ -1611,7 +1611,7 @@
         ]
       },
       "source": "In your Shooting phase, each time the bearer’s unit is selected to shoot, when selecting an ability for the Technosorcerous Augmentations Detachment rule, you can also select from the following abilities: [ANTI‑MONSTER 5+], [ANTI‑VEHICLE 5+].",
-      "target": null
+      "target": "En tu fase de Disparo, cada vez que la unidad del portador es seleccionada para disparar, al seleccionar una habilidad para la regla de Detachment Technosorcerous Augmentations, también puedes elegir entre las siguientes habilidades: [ANTI‑MONSTER 5+], [ANTI‑VEHICLE 5+]."
     },
     {
       "id": "a3133e8e1d3abbf2",
@@ -1625,7 +1625,7 @@
         "names": []
       },
       "source": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6, adding 1 if it is within range of one or more objectives: on a 4+, you gain 1CP.",
-      "target": null
+      "target": "Cada vez que seleccionas la unidad del portador como objetivo de un Stratagem, tira un D6, sumando 1 si está dentro del alcance de uno o más objetivos: con un 4+, ganas 1CP."
     },
     {
       "id": "ca053ae6494b1233",
@@ -1641,7 +1641,7 @@
         ]
       },
       "source": "In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks (excluding ^^**Titanic^^** units); until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for that unit.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que el portador haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques (excluyendo las unidades ^^**Titanic^^**); hasta el inicio de tu siguiente turno, esa unidad enemiga queda inmovilizada. Mientras una unidad está inmovilizada, resta 2 a la característica de Movimiento de esa unidad y resta 2 a las tiradas de carga realizadas para esa unidad."
     },
     {
       "id": "fea619551dae8725",
@@ -1657,7 +1657,7 @@
         ]
       },
       "source": "The bearer has the ^^**Destroyer Cult^^** keyword. Add 2\" to the Move characteristic of models in the bearer’s unit and add 2 to the Attacks characteristic of melee weapons equipped by the bearer.",
-      "target": null
+      "target": "El portador tiene la palabra clave ^^**Destroyer Cult^^**. Suma 2\" a la característica de Movimiento de las miniaturas de la unidad del portador y suma 2 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por el portador."
     },
     {
       "id": "0e77443866ca9799",
@@ -1671,7 +1671,7 @@
         "names": []
       },
       "source": "The bearer has the **DESTROYER CULT** keyword. Add 3\" to the Move characteristic of the bearer.",
-      "target": null
+      "target": "El portador tiene la palabra clave **DESTROYER CULT**. Suma 3\" a la característica de Movimiento del portador."
     },
     {
       "id": "a2cb4ea3003d3fec",
@@ -1685,7 +1685,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer’s unit makes an attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "be5bdd73652daf65",
@@ -1702,7 +1702,7 @@
         ]
       },
       "source": "Each time an enemy unit is selected to shoot, after that unit has shot, if any models from the bearer’s unit were destroyed as a result of those attacks, the bearer’s unit can make a Surge move. To do so, roll one D6: the bearer’s unit can be moved a number of inches up to the result, but the bearer’s unit must finish that move as close as possible to the closest enemy unit (excluding ^^**Aircraft^^**). \nWhen doing so, those models can be moved within Engagement Range of that enemy unit. A unit cannot make a Surge move while it is Battle‑shocked.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga es seleccionada para disparar, después de que esa unidad haya disparado, si alguna miniatura de la unidad del portador fue destruida como resultado de esos ataques, la unidad del portador puede realizar un movimiento de arremetida. Para ello, tira un D6: la unidad del portador puede moverse un número de pulgadas de hasta el resultado, pero la unidad del portador debe terminar ese movimiento lo más cerca posible de la unidad enemiga más cercana (excluyendo ^^**Aircraft^^**). \nAl hacerlo, esas miniaturas pueden moverse dentro del alcance de combate de esa unidad enemiga. Una unidad no puede realizar un movimiento de arremetida mientras esté Battle‑shocked."
     },
     {
       "id": "a887a59ca14afb95",
@@ -1722,7 +1722,7 @@
         ]
       },
       "source": "When this unit is selected to shoot, if this unit was set up using a Monolith’s Eternity Gate ability this turn, this unit’s ranged attacks have: \n- [LETHAL HITS]. \n- Or: [SUSTAINED HITS 1].",
-      "target": null
+      "target": "Cuando esta unidad es seleccionada para disparar, si esta unidad se desplegó usando la habilidad Eternity Gate de un Monolith este turno, los ataques a distancia de esta unidad tienen: \n- [LETHAL HITS]. \n- O bien: [SUSTAINED HITS 1]."
     },
     {
       "id": "b8af2e4c94b79646",
@@ -1736,7 +1736,7 @@
         "names": []
       },
       "source": "At the start of the battle, select one objective marker in No Man's Land. While this model is within range of that objective marker, change its Objective Control characteristic to 4.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona un marcador de objetivo de Tierra de Nadie. Mientras esta miniatura está dentro del alcance de ese marcador de objetivo, cambia su característica de Control de Objetivos a 4."
     },
     {
       "id": "71bdf2bb642a853d",
@@ -1752,7 +1752,7 @@
         ]
       },
       "source": "At the end of the battle of the battle, if this model is part of your Crusade army and it gained 3 or more XP (excluding XP gained from Marked for Greatness), you gain 1RP.",
-      "target": null
+      "target": "Al final de la batalla, si esta miniatura forma parte de tu ejército de Crusade y ha ganado 3 o más XP (excluyendo el XP ganado con Marked for Greatness), ganas 1RP."
     },
     {
       "id": "6ecb4205f6557156",
@@ -1766,7 +1766,7 @@
         "names": []
       },
       "source": "Out of Action tests taken for this unit are automatically passed.",
-      "target": null
+      "target": "Los tests de Out of Action realizados para esta unidad se superan automáticamente."
     },
     {
       "id": "3ec59de6eeaaa3ee",
@@ -1783,7 +1783,7 @@
         ]
       },
       "source": "While this unit is within 6\" of one or more **^^Character^^** models from your Crusade army, each time a model in this unit makes an attack, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Mientras esta unidad está a 6\" o menos de una o más miniaturas **^^Character^^** de tu ejército de Crusade, cada vez que una miniatura de esta unidad realiza un ataque, repite las tiradas para impactar de 1."
     },
     {
       "id": "0389031c6a9f2498",
@@ -1799,7 +1799,7 @@
         ]
       },
       "source": "Each time you make a Reanimation Protocols roll for this unit, add 1 to the result.",
-      "target": null
+      "target": "Cada vez que haces una tirada de Reanimation Protocols para esta unidad, suma 1 al resultado."
     },
     {
       "id": "469546e9ef6b2420",
@@ -1813,7 +1813,7 @@
         "names": []
       },
       "source": "While this unit is Battle-shocked, halve the Objective Control characteristic of models in this unit instead of changing it to 0.",
-      "target": null
+      "target": "Mientras esta unidad está Battle-shocked, reduce a la mitad la característica de Control de Objetivos de las miniaturas de esta unidad en lugar de cambiarla a 0."
     },
     {
       "id": "a7a8ec9c37ad6d00",
@@ -1830,7 +1830,7 @@
         ]
       },
       "source": "Once per turn, one unit from your Crusade army with this Battle Trait can change the result of its Reanimation Protocols roll to 3.",
-      "target": null
+      "target": "Una vez por turno, una unidad de tu ejército de Crusade con este Battle Trait puede cambiar el resultado de su tirada de Reanimation Protocols a 3."
     },
     {
       "id": "bb478dcbae6dd4f6",
@@ -1846,7 +1846,7 @@
         ]
       },
       "source": "While a friendly ^^**Cryptek**^^ unit is on the battlefield, each time a model in this unit makes a melee attack, re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Mientras una unidad amiga ^^**Cryptek**^^ está en el campo de batalla, cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo, repite las tiradas para herir de 1."
     },
     {
       "id": "62842be392f548fb",
@@ -1864,7 +1864,7 @@
         ]
       },
       "source": "The bearer has the Deadly Demise D3 ability. In addition, select one of the bearer's melee weapons; add 2 to the Strength and Attacks characteristic of that weapon, and that weapon has the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "El portador tiene la habilidad Deadly Demise D3. Además, selecciona una de las armas de cuerpo a cuerpo del portador; suma 2 a las características de Fuerza y Ataques de esa arma, y esa arma tiene la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "1c16cb4a42e329bf",
@@ -1880,7 +1880,7 @@
         ]
       },
       "source": "While the bearer is leading a unit, each time that unit's Reanimation Protocols activate, it reanimates 3 wounds instead of D3 wounds.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, cada vez que se activan los Reanimation Protocols de esa unidad, reanima 3 heridas en lugar de D3 heridas."
     },
     {
       "id": "f0ef1fe1be0ae69e",
@@ -1896,7 +1896,7 @@
         ]
       },
       "source": "Once per battle, at the start of your Command phase, select one unit of your opponent's army. Until the start of your next Command phase, each time a model from your Crusade army makes an attack that targets that enemy unit, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de tu fase de Mando, selecciona una unidad del ejército de tu oponente. Hasta el inicio de tu siguiente fase de Mando, cada vez que una miniatura de tu ejército de Crusade realiza un ataque que toma como objetivo a esa unidad enemiga, puedes repetir la tirada para impactar."
     },
     {
       "id": "51ce9745e8ef0419",
@@ -1913,7 +1913,7 @@
         ]
       },
       "source": "- Add 1 to the Strength and Attacks characteristic of melee weapons equipped by this unit.\n- This unit has the Lone Operative ability and loses the Leader ability.",
-      "target": null
+      "target": "- Suma 1 a las características de Fuerza y Ataques de las armas de cuerpo a cuerpo equipadas por esta unidad.\n- Esta unidad tiene la habilidad Lone Operative y pierde la habilidad Leader."
     },
     {
       "id": "81ff5f619a9c0c8b",
@@ -1927,7 +1927,7 @@
         "names": []
       },
       "source": "- Each time a model in this unit makes an attack, you can re-roll the Hit roll.\n- Worsen the Leadership and Objective Control characteristics of this unit by 1.",
-      "target": null
+      "target": "- Cada vez que una miniatura de esta unidad realiza un ataque, puedes repetir la tirada para impactar.\n- Empeora en 1 las características de Leadership y de Control de Objetivos de esta unidad."
     },
     {
       "id": "266a64c1499ee7dc",
@@ -1941,7 +1941,7 @@
         "names": []
       },
       "source": "- Each time you target this unit with a Stratagem, reduce that Stratagem's cost by 1CP for that usage.\n- This cannot Fall Back or Advance.",
-      "target": null
+      "target": "- Cada vez que tomas como objetivo a esta unidad con un Stratagem, reduce en 1CP el coste de ese Stratagem para ese uso.\n- Esta unidad no puede replegarse ni avanzar."
     },
     {
       "id": "98809167a5e8ef0f",
@@ -1957,7 +1957,7 @@
         ]
       },
       "source": "- Add 1 to the Attacks characteristic of melee weapons equipped by models in this unit.\n- This unit cannot use its Reanimation Protocols ability.",
-      "target": null
+      "target": "- Suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad.\n- Esta unidad no puede usar su habilidad Reanimation Protocols."
     },
     {
       "id": "905f5f372e80228f",
@@ -1974,7 +1974,7 @@
         ]
       },
       "source": "Once per battle round, you can re-roll the roll for one unit in your Crusade army's Reanimation Protocols ability.",
-      "target": null
+      "target": "Una vez por ronda de batalla, puedes repetir la tirada de la habilidad Reanimation Protocols de una unidad de tu ejército de Crusade."
     },
     {
       "id": "cca4641d9a762861",
@@ -1990,7 +1990,7 @@
         ]
       },
       "source": "While a unit is Below Half-strength, add 1 to the result of that unit's Reanimation Protocols roll.",
-      "target": null
+      "target": "Mientras una unidad está Below Half-strength, suma 1 al resultado de la tirada de Reanimation Protocols de esa unidad."
     },
     {
       "id": "e535da10e04f8156",
@@ -2007,7 +2007,7 @@
         ]
       },
       "source": "Once per battle, after an enemy unit has caused a unit from your Crusade army to go below its Starting Strength, that unit can use its Reanimation Protocols ability.",
-      "target": null
+      "target": "Una vez por batalla, después de que una unidad enemiga haya hecho que una unidad de tu ejército de Crusade quede por debajo de su Starting Strength, esa unidad puede usar su habilidad Reanimation Protocols."
     },
     {
       "id": "768ef0cd6caff038",
@@ -2023,7 +2023,7 @@
         ]
       },
       "source": "At the start of the battle, select one ^^**Character^^** unit and add 1 to the Toughness characteristic of models in that unit until the end of the battle.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona una unidad ^^**Character^^** y suma 1 a la característica de Resistencia de las miniaturas de esa unidad hasta el final de la batalla."
     },
     {
       "id": "7bad16f6b86d1045",
@@ -2040,7 +2040,7 @@
         ]
       },
       "source": "At the start of the battle, select one ^^**Character^^** unit. Each time a Bodyguard model in that unit is destroyed by a melee attack, if that model has not fought that phase, roll one D6: on a 3+, do not remove it from play. The destroyed model can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona una unidad ^^**Character^^**. Cada vez que una miniatura Bodyguard de esa unidad es destruida por un ataque de cuerpo a cuerpo, si esa miniatura no ha combatido esa fase, tira un D6: con un 3+, no la retires del juego. La miniatura destruida puede combatir después de que la unidad de la miniatura atacante haya terminado de realizar sus ataques, y después se retira del juego."
     },
     {
       "id": "9554054b4ee9b059",
@@ -2056,7 +2056,7 @@
         ]
       },
       "source": "Once per battle round, you can target a **^^Necrons Character^^** unit from your army with the Command Re-roll Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Una vez por ronda de batalla, puedes tomar como objetivo a una unidad **^^Necrons Character^^** de tu ejército con el Stratagem Command Re-roll por 0CP, y puedes hacerlo incluso si ya has tomado como objetivo a otra unidad con ese Stratagem esta fase."
     },
     {
       "id": "e9a5265edcee63b3",
@@ -2072,7 +2072,7 @@
         ]
       },
       "source": "Once per turn, select one **^^Necrons^^** unit that was set up on the battlefield using the Deep Strike ability this turn. Until the end of the turn, each time a model in that unit makes an attack, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Una vez por turno, selecciona una unidad **^^Necrons^^** que se haya desplegado en el campo de batalla usando la habilidad Deep Strike este turno. Hasta el final del turno, cada vez que una miniatura de esa unidad realiza un ataque, puedes repetir la tirada para impactar."
     },
     {
       "id": "33c649a74fe6d4ba",
@@ -2091,7 +2091,7 @@
         ]
       },
       "source": "Before the start of the battle, select up to three **^^Necrons Infantry^^** units from your Crusade army. Those units have the Scouts 6\" ability, and while using that ability, they can **^^Fly^^**.",
-      "target": null
+      "target": "Antes del inicio de la batalla, selecciona hasta tres unidades **^^Necrons Infantry^^** de tu ejército de Crusade. Esas unidades tienen la habilidad Scouts 6\" y, mientras usan esa habilidad, pueden **^^Fly^^**."
     },
     {
       "id": "4c243192e3c36814",
@@ -2107,7 +2107,7 @@
         ]
       },
       "source": "Once per battle, in your Command phase, select one **^^Necrons^^** unit from your Crusade army. Until the end of the turn, add 2 to Advance and Charge roll made for that unit.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, selecciona una unidad **^^Necrons^^** de tu ejército de Crusade. Hasta el final del turno, suma 2 a las tiradas de avance y de carga realizadas para esa unidad."
     },
     {
       "id": "3b9ad0ebcf1478cc",
@@ -2123,7 +2123,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Deathmarks**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Deathmarks**^^"
     },
     {
       "id": "8a6cdb528243fa24",
@@ -2139,7 +2139,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Flayed Ones**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Flayed Ones**^^"
     },
     {
       "id": "ff9ef875c3c848e9",
@@ -2155,7 +2155,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Triarch Praetorians**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Triarch Praetorians**^^"
     },
     {
       "id": "2fb526dbff1c557a",
@@ -2172,7 +2172,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Ophydian Destroyers**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Ophydian Destroyers**^^"
     },
     {
       "id": "dca14a27dc545f9d",
@@ -2186,7 +2186,7 @@
         "names": []
       },
       "source": "Once per battle round, at the start of a phase during your turn, you can select one enemy unit within 18\" of this model. That unit must make a Battle-shock test, subtracting 1 from the test when it does so.",
-      "target": null
+      "target": "Una vez por ronda de batalla, al inicio de una fase durante tu turno, puedes seleccionar una unidad enemiga que esté a 18\" o menos de esta miniatura. Esa unidad debe hacer un test de Battle-shock, restando 1 al test al hacerlo."
     },
     {
       "id": "4e4b204b6d39c7f1",
@@ -2200,7 +2200,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack, an unmodified Hit roll of 5+ scores a Critical Hit.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia, una tirada para impactar sin modificar de 5+ consigue un impacto crítico."
     },
     {
       "id": "febad39db6634aec",
@@ -2214,7 +2214,7 @@
         "names": []
       },
       "source": "In your Shooting phase, select one enemy unit within 18\" of and visible to this model and roll 4 D6: for each 4+, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "En tu fase de Disparo, selecciona una unidad enemiga que esté a 18\" o menos de esta miniatura y sea visible para ella, y tira 4 D6: por cada 4+, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "1eb7bd039268abf6",
@@ -2228,7 +2228,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Necrons**^^ unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase, puedes seleccionar una unidad amiga ^^**Necrons**^^ que esté Battle-shocked y a 12\" o menos de esta miniatura. Esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "e674e478a677a77a",
@@ -2242,7 +2242,7 @@
         "names": []
       },
       "source": "Once per battle round, one unit from your army with this ability can be targeted with a Stratagem for 0CP, even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Una vez por ronda de batalla, una unidad de tu ejército con esta habilidad puede ser tomada como objetivo de un Stratagem por 0CP, incluso si ya has tomado como objetivo a otra unidad con ese Stratagem esta fase."
     },
     {
       "id": "233850ff3d9f490b",
@@ -2260,7 +2260,7 @@
         ]
       },
       "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [^^Lethal Hits^^] ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad tienen la habilidad [^^Lethal Hits^^]."
     },
     {
       "id": "9d92715851bc2011",
@@ -2276,7 +2276,7 @@
         "names": []
       },
       "source": "This unit’s ranged attacks have [ASSAULT].",
-      "target": null
+      "target": "Los ataques a distancia de esta unidad tienen [ASSAULT]."
     },
     {
       "id": "47ec78527ac7a330",
@@ -2294,7 +2294,7 @@
         ]
       },
       "source": "Friendly **ORKS** with this ability can:\n- Re-roll **advance rolls**.\n- Become **riled up**, as stated in other rules.\nWhile a unit is **riled up**:\n    - That unit has 5+ **InSv**.\n    - That unit's ranged attacks have **[ASSAULT]**.\n    - When that unit is selected to make an **advance move**, that **advance move** does not prevent that unit from being **eligible to declare a charge**.",
-      "target": null
+      "target": "Las unidades amigas **ORKS** con esta habilidad pueden:\n- Repetir las **tiradas de avance**.\n- Pasar a estar **riled up**, según indiquen otras reglas.\nMientras una unidad está **riled up**:\n    - Esa unidad tiene 5+ de **InSv**.\n    - Los ataques a distancia de esa unidad tienen **[ASSAULT]**.\n    - Cuando esa unidad es seleccionada para realizar un **movimiento de avance**, ese **movimiento de avance** no impide que esa unidad sea **elegible para declarar una carga**."
     },
     {
       "id": "b2c202f287b3b38e",
@@ -2310,7 +2310,7 @@
         ]
       },
       "source": "At the start of the Command phase, you can use this ability. If you do, friendly **ORKS** units with the **Waaagh!** ability are **riled up** until the end of the next turn.",
-      "target": null
+      "target": "Al inicio de la fase de Mando, puedes usar esta habilidad. Si lo haces, las unidades amigas **ORKS** con la habilidad **Waaagh!** están **riled up** hasta el final del siguiente turno."
     },
     {
       "id": "ea7610f6651a6897",
@@ -2324,7 +2324,7 @@
         "names": []
       },
       "source": "While this model has 1-7 wounds remaining, subtract 4 from this model’s Objective Control characteristic, and each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 7 heridas, resta 4 a la característica de Control de Objetivos de esta miniatura y, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "b370481fbb266533",
@@ -2341,7 +2341,7 @@
         ]
       },
       "source": "If a model from your army with the Leader ability can be attached to a **^^Warbikers^^** unit, it can be attached to this unit instead.",
-      "target": null
+      "target": "Si una miniatura de tu ejército con la habilidad Leader puede adjuntarse a una unidad **^^Warbikers^^**, puede adjuntarse a esta unidad en su lugar."
     },
     {
       "id": "861f8a6aa8b311e1",
