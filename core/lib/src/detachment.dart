@@ -22,3 +22,22 @@ class Detachment {
   /// Coste en puntos, si lo tiene. La mayoría son gratuitos.
   final int points;
 }
+
+/// Una mejora que se asigna a un personaje del ejército.
+///
+/// Cada detachment habilita las suyas, normalmente cuatro.
+class Enhancement {
+  Enhancement({
+    required this.id,
+    required this.name,
+    required this.points,
+    required this.description,
+  });
+
+  final String id;
+  final String name;
+  final int points;
+
+  /// El texto de la mejora, ya traducido.
+  final String? description;
+}

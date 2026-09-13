@@ -132,6 +132,97 @@ class Dataset {
     return detachments;
   }
 
+  /// Las mejoras que habilita un detachment, con su texto ya traducido.
+  ///
+  /// Una mejora se reconoce por llevar coste del tipo Enhancements, no por el nombre de su grupo,
+  /// que cambia de una facción a otra. Se le atribuye a un detachment cuando ella o el grupo que la
+  /// contiene se esconden con un modifier que nombra a ese detachment.
+  ///
+  /// Es un criterio que se queda corto antes que inventarse nada: si devuelve una mejora, es de ese
+  /// detachment, pero hay detachments cuyas mejoras no se localizan porque el dataset las engancha
+  /// por la unidad que puede llevarlas en vez de por el detachment. Ver [enhancementCoverage].
+  List<Enhancement> enhancementsOf(Faction faction, {required String detachmentId}) {
+    final enhancements = <Enhancement>[];
+    final seen = <String>{};
+    for (final catalogue in _linkedCatalogues(faction.node)) {
+      _collectEnhancements(catalogue, const {}, (entry, gates) {
+        if (!gates.contains(detachmentId)) return;
+        if (!seen.add(entry['id'] as String? ?? '')) return;
+        final profile = (entry['profiles'] as List? ?? const []).isEmpty
+            ? null
+            : Profile.fromNode((entry['profiles'] as List).first as Map<String, dynamic>);
+        enhancements.add(Enhancement(
+          id: entry['id'] as String? ?? '',
+          name: entry['name'] as String? ?? '',
+          points: _points(entry) ?? 0,
+          description: profile?.description,
+        ));
+      });
+    }
+    return enhancements;
+  }
+
+  /// Recorre un catálogo acumulando los detachments que nombra cada nivel al esconderse.
+  ///
+  /// El gate puede estar en la propia mejora o en el grupo que la contiene, así que se arrastra
+  /// hacia abajo lo que declaran los nodos por los que se pasa.
+  void _collectEnhancements(Object? node_, Set<String> inherited,
+      void Function(Map<String, dynamic>, Set<String>) found) {
+    if (node_ is Map<String, dynamic>) {
+      final gates = {...inherited, ..._hiddenGates(node_)};
+      if (_isEnhancement(node_)) found(node_, gates);
+      for (final value in node_.values) {
+        _collectEnhancements(value, gates, found);
+      }
+    } else if (node_ is List) {
+      for (final value in node_) {
+        _collectEnhancements(value, inherited, found);
+      }
+    }
+  }
+
+  static const _enhancementCostTypeId = 'f759-1bc4-cb3a-f0d2';
+
+  static bool _isEnhancement(Map<String, dynamic> entry) =>
+      (entry['costs'] as List? ?? const []).any((raw) =>
+          (raw as Map<String, dynamic>)['typeId'] == _enhancementCostTypeId &&
+          ((raw['value'] as num?) ?? 0) > 0);
+
+  /// Los identificadores que un nodo nombra en las condiciones de sus modifiers `hidden`.
+  Set<String> _hiddenGates(Map<String, dynamic> node_) {
+    final gates = <String>{};
+    for (final modifier in Modifier.allOf(node_)) {
+      if (modifier.field != 'hidden') continue;
+      for (final condition in modifier.allConditions) {
+        gates.add(condition.childId);
+      }
+    }
+    return gates;
+  }
+
+  /// Cuántos detachments de la facción tienen mejoras localizadas, y cuántos no.
+  ///
+  /// Sirve para saber de qué se puede fiar la interfaz antes de enseñar una lista vacía.
+  ({int withEnhancements, int total}) enhancementCoverage(Faction faction) {
+    final detachments = detachmentsOf(faction);
+    final resolved = detachments
+        .where((d) => enhancementsOf(faction, detachmentId: d.id).isNotEmpty)
+        .length;
+    return (withEnhancements: resolved, total: detachments.length);
+  }
+
+  /// La facción y todos los catálogos que enlaza, de donde salen sus opciones compartidas.
+  List<Map<String, dynamic>> _linkedCatalogues(Map<String, dynamic> catalogue, [Set<String>? seen]) {
+    final visited = seen ?? <String>{};
+    if (!visited.add(catalogue['id'] as String? ?? '')) return const [];
+    final catalogues = <Map<String, dynamic>>[catalogue];
+    for (final raw in (catalogue['catalogueLinks'] as List? ?? const [])) {
+      final target = node((raw as Map<String, dynamic>)['targetId'] as String? ?? '');
+      if (target != null) catalogues.addAll(_linkedCatalogues(target, visited));
+    }
+    return catalogues;
+  }
+
   static bool _isConfiguration(Map<String, dynamic> entry) =>
       (entry['categoryLinks'] as List? ?? const []).any((raw) =>
           (raw as Map<String, dynamic>)['primary'] == true && raw['name'] == 'Configuration');

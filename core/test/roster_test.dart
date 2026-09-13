@@ -143,4 +143,42 @@ void main() {
     // Aeldari y Drukhari los declaran de una forma que aún no se resuelve.
     expect(sinDetachments, hasLength(lessThanOrEqualTo(2)));
   });
+
+  test('un detachment resuelve sus mejoras con el texto traducido', () {
+    final detachment =
+        dataset.detachmentsOf(deathGuard).firstWhere((d) => d.name == 'Virulent Vectorium');
+    final enhancements = dataset.enhancementsOf(deathGuard, detachmentId: detachment.id);
+    expect(enhancements, hasLength(4), reason: 'un detachment de 11ª lleva cuatro mejoras');
+
+    final arma = enhancements.firstWhere((e) => e.name == 'Daemon Weapon of Nurgle');
+    expect(arma.points, 10);
+    expect(arma.description, contains('Cada vez'));
+  });
+
+  test('las mejoras de un detachment no se cuelan en otro', () {
+    final detachments = dataset.detachmentsOf(deathGuard);
+    final porDetachment = {
+      for (final d in detachments)
+        d.name: dataset.enhancementsOf(deathGuard, detachmentId: d.id).map((e) => e.id).toSet(),
+    };
+    final conMejoras = porDetachment.entries.where((e) => e.value.isNotEmpty).toList();
+    expect(conMejoras, hasLength(greaterThan(4)));
+    for (var i = 0; i < conMejoras.length; i++) {
+      for (var j = i + 1; j < conMejoras.length; j++) {
+        expect(conMejoras[i].value.intersection(conMejoras[j].value), isEmpty,
+            reason: '${conMejoras[i].key} y ${conMejoras[j].key} comparten mejoras');
+      }
+    }
+  });
+
+  test('la mayoría de los detachments resuelven sus mejoras', () {
+    var conMejoras = 0, total = 0;
+    for (final faction in dataset.factions) {
+      final cobertura = dataset.enhancementCoverage(faction);
+      conMejoras += cobertura.withEnhancements;
+      total += cobertura.total;
+    }
+    // El resto engancha sus mejoras por la unidad que puede llevarlas, no por el detachment.
+    expect(conMejoras / total, greaterThan(0.8));
+  });
 }
