@@ -245,7 +245,7 @@
         "names": []
       },
       "source": "Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of this unit.",
-      "target": null
+      "target": "Las unidades enemigas que se despliegan en el campo de batalla desde Reservas no pueden desplegarse a 12\" o menos de esta unidad."
     },
     {
       "id": "8cf4a820631bfb85",
@@ -375,7 +375,7 @@
         "names": []
       },
       "source": "The bearer has a 4+ invulnerable save",
-      "target": null
+      "target": "El portador tiene una salvación invulnerable de 4+"
     },
     {
       "id": "e92a9f8948a20d22",
@@ -468,7 +468,7 @@
         ]
       },
       "source": "The bearer has the Deep Strike ability.",
-      "target": null
+      "target": "El portador tiene la habilidad Deep Strike."
     },
     {
       "id": "582f39d0e19edba7",
@@ -1198,7 +1198,7 @@
         ]
       },
       "source": "This model has a transport capacity of 12 Adeptus Astartes Infantry models. Each Jump Pack, Wulfen, Gravis or Terminator model takes up the space of 2 models and each Centurion model takes up the space of 3 models.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 12 miniaturas Adeptus Astartes Infantry. Cada miniatura Jump Pack, Wulfen, Gravis o Terminator ocupa el espacio de 2 miniaturas y cada miniatura Centurion ocupa el espacio de 3 miniaturas."
     },
     {
       "id": "a5dd0bf993a2d99a",
@@ -1505,7 +1505,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: BIKE SQUAD, COMPANY VETERANS ON BIKES, OUTRIDER SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: BIKE SQUAD, COMPANY VETERANS ON BIKES, OUTRIDER SQUAD"
     },
     {
       "id": "d73491e56cb8c919",
@@ -2476,7 +2476,7 @@
         ]
       },
       "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que esta unidad termina un movimiento de carga, selecciona una unidad enemiga que esté dentro de su alcance de combate y después tira un D6 por cada miniatura de esta unidad que esté dentro del alcance de combate de esa unidad enemiga: por cada 4+, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "01a9960e182941e1",

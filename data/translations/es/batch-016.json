@@ -902,7 +902,7 @@
         "names": []
       },
       "source": "Each time you take a Battle-shock, Leadership or Desperate Escape test for this unit, add 1 to that test.",
-      "target": null
+      "target": "Cada vez que hagas un test de Battle-shock, de Leadership o de Desperate Escape para esta unidad, suma 1 a ese test."
     },
     {
       "id": "1c9a398c06e9dd4f",
@@ -984,7 +984,7 @@
         ]
       },
       "source": "Models in this unit have the Stealth ability.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Stealth."
     },
     {
       "id": "7d81f3f30dc4b2be",
@@ -1258,7 +1258,7 @@
         "names": []
       },
       "source": "Each time this unit is Marked for Greatness, it gains an additional 2XP.",
-      "target": null
+      "target": "Cada vez que esta unidad es Marked for Greatness, gana 2XP adicionales."
     },
     {
       "id": "81663a0910e467be",
@@ -2500,7 +2500,7 @@
         "names": []
       },
       "source": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.",
-      "target": null
+      "target": "Cada vez que una unidad desembarca de esta miniatura después de que esta haya realizado un movimiento normal, esa unidad sigue siendo elegible para declarar una carga este turno."
     },
     {
       "id": "a2c194ea8a6879bb",
@@ -2546,7 +2546,7 @@
         ]
       },
       "source": "At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3\" horizontally of that token and not within 8\" horizontally of any enemy models. That token is then removed.",
-      "target": null
+      "target": "Al comienzo de la batalla, puedes colocar un marcador de Teleport Homer para esta unidad en cualquier lugar del campo de batalla que no esté en la zona de despliegue de tu oponente. Si lo haces, una vez por batalla puedes seleccionar esta unidad con el Stratagem Rapid Ingress por 0CP, pero al resolver ese Stratagem debes desplegar esta unidad a 3\" o menos en horizontal de ese marcador y a más de 8\" en horizontal de cualquier miniatura enemiga. Ese marcador se retira entonces."
     },
     {
       "id": "35c9fc4cb791cc29",

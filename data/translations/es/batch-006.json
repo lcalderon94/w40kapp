@@ -456,7 +456,7 @@
         "names": []
       },
       "source": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.",
-      "target": null
+      "target": "Cada vez que una unidad desembarca de esta miniatura después de que esta haya realizado un movimiento normal, esa unidad sigue siendo elegible para declarar una carga este turno."
     },
     {
       "id": "3a9b7edb7f791f8d",
@@ -794,7 +794,7 @@
         "names": []
       },
       "source": "Each time this model ends a Normal move, you can select one enemy unit it moved across during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que esta miniatura termina un movimiento normal, puedes seleccionar una unidad enemiga por encima de la que se haya movido durante ese movimiento y tirar seis D6: por cada 3+, esa unidad sufre 1 herida mortal."
     },
     {
       "id": "428aa677c4c1485b",
@@ -810,7 +810,7 @@
         "names": []
       },
       "source": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque a distancia que toma como objetivo a una unidad que puede FLY, suma 1 a la tirada para impactar."
     },
     {
       "id": "3ffa90ce145e89f5",
@@ -1712,7 +1712,7 @@
         ]
       },
       "source": "Each time this unit makes a Normal, Advance or Fall Back move, it can move through models (excluding ^^**Titanic**^^ models) and terrain features. When doing so, it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento normal, de avance o de repliegue, puede moverse a través de miniaturas (excluidas las miniaturas ^^**Titanic**^^) y de elementos de escenografía. Al hacerlo, puede moverse dentro del alcance de combate de miniaturas enemigas, pero no puede terminar ese movimiento dentro de su alcance de combate, y cualquier test de Desperate Escape se supera automáticamente."
     },
     {
       "id": "2443321738702075",
@@ -2036,7 +2036,7 @@
         ]
       },
       "source": "Models in the bearer's unit have the Stealth ability.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen la habilidad Stealth."
     },
     {
       "id": "b6ad8580b861baa1",
@@ -2771,7 +2771,7 @@
         "names": []
       },
       "source": "Add 2 to this model's Wounds characteristic.",
-      "target": null
+      "target": "Suma 2 a la característica de Heridas de esta miniatura."
     },
     {
       "id": "181d3dd66684cbea",
@@ -3571,7 +3571,7 @@
         "names": []
       },
       "source": "Add 1 to Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Suma 1 a las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "8858d181eebe59fa",

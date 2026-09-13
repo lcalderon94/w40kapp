@@ -126,7 +126,7 @@
         "names": []
       },
       "source": "You can re-roll Charge rolls made for this unit.",
-      "target": null
+      "target": "Puedes repetir las tiradas de carga realizadas para esta unidad."
     },
     {
       "id": "c9e51ebe4f2d7d0b",
@@ -198,7 +198,7 @@
         ]
       },
       "source": "Ranged weapons equipped by models in this unit have the **[ASSAULT]** ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[ASSAULT]**."
     },
     {
       "id": "e3412e065a92a634",
@@ -312,7 +312,7 @@
         "names": []
       },
       "source": "This unit is eligible to declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Esta unidad es elegible para declarar una carga en un turno en el que haya avanzado."
     },
     {
       "id": "d5e6740690922f8a",
@@ -2576,7 +2576,7 @@
         "names": []
       },
       "source": "This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
-      "target": null
+      "target": "Esta unidad es elegible para disparar y para declarar una carga en un turno en el que se haya replegado."
     },
     {
       "id": "31c7e0ca29f88049",
@@ -3222,7 +3222,7 @@
         "names": []
       },
       "source": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 7 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "69c04b39e993b448",

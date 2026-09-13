@@ -146,7 +146,7 @@
         "names": []
       },
       "source": "This model has a 4+ invulnerable save.",
-      "target": null
+      "target": "Esta miniatura tiene una salvación invulnerable de 4+."
     },
     {
       "id": "6d4c94bf7bb0aa5c",
@@ -393,7 +393,7 @@
         "names": []
       },
       "source": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 5 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "fef12adb3aec55c0",
@@ -536,7 +536,7 @@
         "names": []
       },
       "source": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 4 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "75550e4965cfaa95",
@@ -1966,7 +1966,7 @@
         "names": []
       },
       "source": "This unit is eligible to shoot in a turn in which it Fell Back.",
-      "target": null
+      "target": "Esta unidad es elegible para disparar en un turno en el que se haya replegado."
     },
     {
       "id": "c6eff90440253cd6",
@@ -2079,7 +2079,7 @@
         "names": []
       },
       "source": "The bearer has a 4+ invulnerable save.",
-      "target": null
+      "target": "El portador tiene una salvación invulnerable de 4+."
     },
     {
       "id": "5804f8957265acd9",

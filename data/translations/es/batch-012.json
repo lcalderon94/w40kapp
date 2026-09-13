@@ -225,7 +225,7 @@
         "names": []
       },
       "source": "The bearer has a Wounds characteristic of 4.",
-      "target": null
+      "target": "El portador tiene una característica de Heridas de 4."
     },
     {
       "id": "b3198511c3bc2306",
@@ -1180,7 +1180,7 @@
         "names": []
       },
       "source": "You can target this unit with Stratagems even while it is Battle-shocked.",
-      "target": null
+      "target": "Puedes seleccionar esta unidad con Stratagems incluso mientras está Battle-shocked."
     },
     {
       "id": "b6afeb7a6fc5fbf9",
@@ -1866,7 +1866,7 @@
         "names": []
       },
       "source": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.",
-      "target": null
+      "target": "Cada vez que selecciones la unidad del portador como objetivo de un Stratagem, tira un D6: con un 5+, ganas 1CP."
     },
     {
       "id": "64fbdab9360f030a",

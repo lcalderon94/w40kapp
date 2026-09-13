@@ -12,6 +12,7 @@ Desde la raíz del repositorio:
 
 ```bash
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=extract
+mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=check
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=apply
 mvn -f pipeline/pom.xml test
 ```
@@ -29,7 +30,10 @@ data/bsdata/  ──extract──▶  data/translations/es/batch-NNN.json  ─�
    ejecutar tantas veces como haga falta.
 2. **Traducir** consiste en rellenar el campo `target` de cada unidad del lote. Es el paso que se
    hace con Claude, lote a lote.
-3. **`apply`** reinyecta las traducciones y escribe el dataset en español. Los textos sin traducir
+3. **`check`** revisa la memoria de traducción antes de aplicarla: avisa si una traducción ha
+   perdido por el camino alguna keyword entre corchetes del original, o si quedó igual que el
+   inglés. Termina con error si encuentra algo, para poder encadenarlo en un script.
+4. **`apply`** reinyecta las traducciones y escribe el dataset en español. Los textos sin traducir
    se quedan en inglés, así que se puede ir aplicando a medio camino.
 
 `extract` informa además de cuántas unidades quedan huérfanas: traducciones cuyo texto original ya

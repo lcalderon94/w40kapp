@@ -17,7 +17,7 @@
         ]
       },
       "source": "An Attached unit can only use one Psychic Fortitude at a time - while a Leader with one of these traits is attached to a Bodyguard unit with a different one of these traits, only one can be in effect; select which at the Declare Battle Formations step - that trait then applies to the Attached unit until either the Leader unit or the Bodyguard unit is destroyed, at which point the remaining unit's Psychic Fortitude comes into effect.",
-      "target": null
+      "target": "Una unidad adjunta solo puede usar un Psychic Fortitude a la vez: mientras una unidad líder con uno de estos rasgos esté adjunta a una unidad de guardaespaldas con otro rasgo distinto de estos, solo uno puede estar en efecto; selecciona cuál en el paso Declarar Formaciones de Batalla. Ese rasgo se aplica entonces a la unidad adjunta hasta que la unidad líder o la unidad de guardaespaldas sea destruida, momento en el que entra en efecto el Psychic Fortitude de la unidad restante."
     },
     {
       "id": "6c7eac0511f08581",

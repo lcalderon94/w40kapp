@@ -396,7 +396,7 @@
         "names": []
       },
       "source": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Puedes seleccionar esta unidad con el Stratagem Heroic Intervention por 0CP, y puedes hacerlo incluso si ya has seleccionado otra unidad con ese Stratagem esta fase."
     },
     {
       "id": "fac941b652ff267e",
@@ -1550,7 +1550,7 @@
         "names": []
       },
       "source": "Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.",
-      "target": null
+      "target": "Una vez por ronda de batalla, una unidad de tu ejército con esta habilidad puede usarla cuando su unidad sea seleccionada como objetivo de un Stratagem. Si lo hace, reduce en 1CP el coste en CP de ese uso de ese Stratagem."
     },
     {
       "id": "85daa0a522d89753",

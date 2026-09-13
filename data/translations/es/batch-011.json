@@ -2774,7 +2774,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, repite una tirada para impactar de 1."
     },
     {
       "id": "0f8b463455de0dea",
@@ -3265,7 +3265,7 @@
         "names": []
       },
       "source": "5+",
-      "target": null
+      "target": "5+"
     },
     {
       "id": "bcb659ae9dad887e",

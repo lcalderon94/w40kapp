@@ -1302,7 +1302,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit.",
-      "target": null
+      "target": "Mientras esta miniatura lidere una unidad, suma 1 a la característica de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "133d4e520bea03e2",
@@ -1511,7 +1511,7 @@
         ]
       },
       "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia se asigna a una miniatura, si esa miniatura no es completamente visible para todas las miniaturas de la unidad atacante a causa de esta FORTIFICATION, esa miniatura tiene el beneficio de cobertura frente a ese ataque."
     },
     {
       "id": "8aae10e86cbdddfa",
@@ -1853,7 +1853,7 @@
         "names": []
       },
       "source": "You can re-roll Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Puedes repetir las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "1ca4a2fbe4d3f768",
@@ -2103,7 +2103,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
-      "target": null
+      "target": "Mientras esta miniatura lidere una unidad, mejora en 1 la característica de Penetración de Blindaje de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "3f5399847597a230",
@@ -3148,7 +3148,7 @@
         "names": []
       },
       "source": "This model has a 5+ invulnerable save against ranged attacks.",
-      "target": null
+      "target": "Esta miniatura tiene una salvación invulnerable de 5+ contra ataques a distancia."
     },
     {
       "id": "82357ae21becefcd",

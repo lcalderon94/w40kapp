@@ -1406,7 +1406,7 @@
         "names": []
       },
       "source": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 4 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "d4be7e40765d7ffd",
@@ -1472,7 +1472,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
     },
     {
       "id": "8dd0c634de956cc2",
@@ -3247,7 +3247,7 @@
         ]
       },
       "source": "This unit has the Stealth ability.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Stealth."
     }
   ]
 }

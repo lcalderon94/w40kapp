@@ -1,6 +1,7 @@
 package es.warorgan.pipeline;
 
 import es.warorgan.pipeline.cli.ApplyCommand;
+import es.warorgan.pipeline.cli.CheckCommand;
 import es.warorgan.pipeline.cli.ExtractCommand;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -20,10 +21,12 @@ public class PipelineApplication implements ApplicationRunner {
 
     private final ExtractCommand extract;
     private final ApplyCommand apply;
+    private final CheckCommand check;
 
-    public PipelineApplication(ExtractCommand extract, ApplyCommand apply) {
+    public PipelineApplication(ExtractCommand extract, ApplyCommand apply, CheckCommand check) {
         this.extract = extract;
         this.apply = apply;
+        this.check = check;
     }
 
     public static void main(String[] args) {
@@ -39,8 +42,9 @@ public class PipelineApplication implements ApplicationRunner {
         switch (command) {
             case "extract" -> extract.run();
             case "apply" -> apply.run();
+            case "check" -> check.run();
             default -> throw new IllegalArgumentException(
-                    "Uso: extract | apply (recibido: '" + command + "')");
+                    "Uso: extract | apply | check (recibido: '" + command + "')");
         }
     }
 }
