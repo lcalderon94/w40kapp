@@ -20,7 +20,8 @@ import java.util.regex.Pattern;
 /**
  * Revisa la memoria de traducción. Sobre miles de unidades, perder un **[TORRENT]** al traducir no
  * se ve a simple vista y cambia lo que el jugador lee, así que se comprueba que toda keyword entre
- * corchetes del original siga presente en la traducción.
+ * corchetes del original siga presente en la traducción y que no cambie el número de saltos de
+ * línea, porque eso altera cómo se muestra el texto en la app.
  */
 @Component
 public class CheckCommand {
@@ -64,6 +65,13 @@ public class CheckCommand {
                 }
                 if (unit.target().equals(unit.source()) && PROSA.matcher(unit.source()).find()) {
                     problems.add("  lote %03d  %s  sin traducir (target = source)".formatted(batch.batch(), unit.id()));
+                }
+
+                long sourceLines = unit.source().chars().filter(c -> c == '\n').count();
+                long targetLines = unit.target().chars().filter(c -> c == '\n').count();
+                if (sourceLines != targetLines) {
+                    problems.add("  lote %03d  %s  saltos de línea %d -> %d".formatted(
+                            batch.batch(), unit.id(), sourceLines, targetLines));
                 }
 
                 Set<String> lostNames = glossary.matchesIn(unit.source());

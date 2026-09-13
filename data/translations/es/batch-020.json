@@ -13,7 +13,7 @@
         "names": []
       },
       "source": "Each time an ^^**Adeptus Astartes**^^ unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 2 to the Strength characteristic and add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.",
-      "target": null
+      "target": "Cada vez que una unidad ^^**Adeptus Astartes**^^ de tu ejército es seleccionada para combatir, si esa unidad realizó un movimiento de carga este turno, hasta el final de la fase, suma 2 a la característica de Fuerza y suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "6c3d5c40c7c848fc",
@@ -31,7 +31,7 @@
         ]
       },
       "source": "Ranged weapons equipped by **^^Adeptus Astartes^^** models from your army have the **[HEAVY]** ability. If such a weapon already has this ability, each time an attack is made with that weapon, if the attacking model's unit Remained Stationary this turn, add 1 to the Wound roll.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas **^^Adeptus Astartes^^** de tu ejército tienen la habilidad **[HEAVY]**. Si un arma ya tiene esta habilidad, cada vez que se realiza un ataque con esa arma, si la unidad de la miniatura atacante permaneció inmóvil este turno, suma 1 a la tirada para herir."
     },
     {
       "id": "d334e6ab3ae1d89d",
@@ -45,7 +45,7 @@
         "names": []
       },
       "source": "Once per phase for each ^^**Adeptus Astartes^^** unit in your army, you can re-roll one Hit roll, one Wound roll, or one Damage roll made for a model in that unit.",
-      "target": null
+      "target": "Una vez por fase por cada unidad ^^**Adeptus Astartes^^** de tu ejército, puedes repetir una tirada para impactar, una tirada para herir o una tirada de daño realizada para una miniatura de esa unidad."
     },
     {
       "id": "121f881e3bbc1155",
@@ -63,7 +63,7 @@
         ]
       },
       "source": "Ranged weapons equipped by Adeptus Astartes models from your army have the [ASSAULT] ability, and each time an attack made such a weapon targets a unit within 12\", add 1 to the Strength characteristic of that attack.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas Adeptus Astartes de tu ejército tienen la habilidad [ASSAULT] y, cada vez que un ataque realizado con esa arma toma como objetivo a una unidad a 12\" o menos, suma 1 a la característica de Fuerza de ese ataque."
     },
     {
       "id": "49653048fa64c3c3",
@@ -77,7 +77,7 @@
         "names": []
       },
       "source": "^^**Adeptus Astartes**^^ units from your army are eligible to declare a charge in a turn in which they Advanced or Fell Back.",
-      "target": null
+      "target": "Las unidades ^^**Adeptus Astartes**^^ de tu ejército son elegibles para declarar una carga en un turno en el que hayan avanzado o se hayan replegado."
     },
     {
       "id": "acc16aee9636fc32",
@@ -91,7 +91,7 @@
         "names": []
       },
       "source": "Each time a ranged attack targets an ADEPTUS ASTARTES unit from your army, unless the attacking model is within 12\", the target has the benefit of cover.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a una unidad ADEPTUS ASTARTES de tu ejército, salvo que la miniatura atacante esté a 12\" o menos, el objetivo tiene el beneficio de cobertura."
     },
     {
       "id": "578046d1cf3dfb33",
@@ -107,7 +107,7 @@
         ]
       },
       "source": "Once per battle, in your Command phase, you can use this ability. If you do, until the start of your next Command phase, each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll as well.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, puedes usar esta habilidad. Si lo haces, hasta el inicio de tu siguiente fase de Mando, cada vez que una miniatura de tu ejército con la habilidad Oath of Moment realiza un ataque que toma como objetivo a tu objetivo de Oath of Moment, también puedes repetir la tirada para herir."
     },
     {
       "id": "9252ae42e17d6f88",
@@ -124,7 +124,7 @@
         ]
       },
       "source": "At the start of your Movement phase, select one of the following:\n- Defensive Footing: Select one objective marker you control. Until the start of your next Movement phase, that objective marker is your Vowed objective marker.\n- Aggressive Push: Select one or more objective markers you do not control. Until the start of your next Movement phase, each of those objective markers is one of your Vowed objective markers. If a rule refers to a unit or model being within range of your Vowed objective marker, that rule takes effect if that unit or model is within range of one or more of your Vowed objective markers.\n\nEach time a Deathwing Infantry unit from your army makes an attack that targets a unit within range of one or more of your Vowed objective markers, add 1 to the Wound roll.",
-      "target": null
+      "target": "Al inicio de tu fase de Movimiento, selecciona una de las siguientes opciones:\n- Defensive Footing: selecciona un marcador de objetivo que controles. Hasta el inicio de tu siguiente fase de Movimiento, ese marcador de objetivo es tu marcador de objetivo Vowed.\n- Aggressive Push: selecciona uno o más marcadores de objetivo que no controles. Hasta el inicio de tu siguiente fase de Movimiento, cada uno de esos marcadores de objetivo es uno de tus marcadores de objetivo Vowed. Si una regla se refiere a que una unidad o una miniatura esté dentro del alcance de tu marcador de objetivo Vowed, esa regla se aplica si esa unidad o miniatura está dentro del alcance de uno o más de tus marcadores de objetivo Vowed.\n\nCada vez que una unidad Deathwing Infantry de tu ejército realiza un ataque que toma como objetivo a una unidad que está dentro del alcance de uno o más de tus marcadores de objetivo Vowed, suma 1 a la tirada para herir."
     },
     {
       "id": "6c3857c17db4a4ce",
@@ -140,7 +140,7 @@
         "names": []
       },
       "source": "Friendly ADEPTUS ASTARTES have:\n\n\n▪ This unit’s ranged attacks have [ASSAULT].\n▪ When this unit is selected to make a fall‑back move, that fall‑back move does not prevent this unit from being eligible to shoot.\n\n\nFriendly ADEPTUS ASTARTES MOUNTED have:\n▪ This unit’s ranged attacks have [ASSAULT].\n▪ When this unit is selected to make an advance move, that advance move does not prevent this unit from being eligible to declare a charge.\n▪ When this unit is selected to make a fall‑back move, that fall‑back move does not prevent this unit from being eligible to shoot and eligible to declare a charge.\n\n\n\n\nOUTRIDER SQUAD units from your army gain the BATTLELINE keyword.",
-      "target": null
+      "target": "Las unidades ADEPTUS ASTARTES amigas tienen:\n\n\n▪ Los ataques a distancia de esta unidad tienen [ASSAULT].\n▪ Cuando esta unidad es seleccionada para realizar un movimiento de repliegue, ese movimiento de repliegue no impide que esta unidad sea elegible para disparar.\n\n\nLas unidades ADEPTUS ASTARTES MOUNTED amigas tienen:\n▪ Los ataques a distancia de esta unidad tienen [ASSAULT].\n▪ Cuando esta unidad es seleccionada para realizar un movimiento de avance, ese movimiento de avance no impide que esta unidad sea elegible para declarar una carga.\n▪ Cuando esta unidad es seleccionada para realizar un movimiento de repliegue, ese movimiento de repliegue no impide que esta unidad sea elegible para disparar ni para declarar una carga.\n\n\n\n\nLas unidades OUTRIDER SQUAD de tu ejército ganan la palabra clave BATTLELINE."
     },
     {
       "id": "a4caff66a7a968c8",
@@ -156,7 +156,7 @@
         ]
       },
       "source": "Each time a ^^**Death Company**^^ model from your army makes a melee attack, re-roll a Wound roll of 1 if that model's unit is below Starting Strength; if that model's unit is Below Half-strength, you can re-roll the Wound roll instead.",
-      "target": null
+      "target": "Cada vez que una miniatura ^^**Death Company**^^ de tu ejército realiza un ataque de cuerpo a cuerpo, repite las tiradas para herir de 1 si la unidad de esa miniatura está por debajo de su Starting Strength; si la unidad de esa miniatura está Below Half-strength, en su lugar puedes repetir la tirada para herir."
     },
     {
       "id": "6c2d0b11fc50f1f4",
@@ -175,7 +175,7 @@
         ]
       },
       "source": "At the end of your opponent's turn, you can select a number of ^^**Adeptus Astartes Jump Pack^^** units from your army (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:\n\nIncursion - Up to 1 unit\nStrike Force - Up to 2 units\nOnslaught - Up to 3 units\n\n▪ Place those units in strategic reserves.\n▪ Those units must make an ingress move in your next Movement phase (including in your first turn)",
-      "target": null
+      "target": "Al final del turno de tu oponente, puedes seleccionar un número de unidades ^^**Adeptus Astartes Jump Pack^^** de tu ejército (excluyendo las unidades que estén dentro del alcance de combate de una o más unidades enemigas). El número máximo de unidades que puedes seleccionar depende del tamaño de la partida, como sigue:\n\nIncursion - Hasta 1 unidad\nStrike Force - Hasta 2 unidades\nOnslaught - Hasta 3 unidades\n\n▪ Coloca esas unidades en las reservas estratégicas.\n▪ Esas unidades deben realizar un movimiento de entrada en tu siguiente fase de Movimiento (incluido en tu primer turno)"
     },
     {
       "id": "7832b06df0237e37",
@@ -193,7 +193,7 @@
         ]
       },
       "source": "- Each time an enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) within Engagement Range of one or more ^^**Ravenwing^^** units from your army Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of those tests. \n- Each time a ^^**Deathwing^^** unit from your army declares a charge, if one or more targets of that charge are within Engagement Range of one or more ^^**Ravenwing^^**  units from your army, add 2 to the Charge roll.",
-      "target": null
+      "target": "- Cada vez que una unidad enemiga (excluyendo ^^**Monsters^^** y ^^**Vehicles^^**) que esté dentro del alcance de combate de una o más unidades ^^**Ravenwing^^** de tu ejército se repliega, todas las miniaturas de esa unidad enemiga deben hacer un test de Desperate Escape. Al hacerlo, si esa unidad enemiga está Battle-shocked, resta 1 a cada uno de esos tests. \n- Cada vez que una unidad ^^**Deathwing^^** de tu ejército declara una carga, si uno o más objetivos de esa carga están dentro del alcance de combate de una o más unidades ^^**Ravenwing^^**  de tu ejército, suma 2 a la tirada de carga."
     },
     {
       "id": "99b4cec030f84e10",
@@ -210,7 +210,7 @@
         ]
       },
       "source": "At the start of the battle round, select one of the following Psychic Disciplines abilities. Friendly ^^**Adeptus Astartes Psyker**^^ units have that ability until the end of the battle round.\n\n\n▪ Biomancy Discipline: This unit has +2\" M.\n▪ Divination Discipline: This unit’s attacks can:\n      ▫ Re‑roll hit rolls of 1.\n      ▫ Re‑roll wound rolls of 1.\n▪ Pyromancy Discipline: This unit’s ranged attacks that target an enemy unit within 12\" of this unit have +1 AP.\n▪ Telekinesis Discipline: Ranged attacks that target this unit have ‑1 S.\n▪ Telepathy Discipline: This unit’s attacks can ignore modifiers to BS, WS and hit rolls.",
-      "target": null
+      "target": "Al inicio de la ronda de batalla, selecciona una de las siguientes habilidades de Psychic Disciplines. Las unidades ^^**Adeptus Astartes Psyker**^^ amigas tienen esa habilidad hasta el final de la ronda de batalla.\n\n\n▪ Biomancy Discipline: esta unidad tiene +2\" M.\n▪ Divination Discipline: los ataques de esta unidad pueden:\n      ▫ Repetir las tiradas para impactar de 1.\n      ▫ Repetir las tiradas para herir de 1.\n▪ Pyromancy Discipline: los ataques a distancia de esta unidad que tomen como objetivo a una unidad enemiga a 12\" o menos de esta unidad tienen +1 AP.\n▪ Telekinesis Discipline: los ataques a distancia que tomen como objetivo a esta unidad tienen -1 S.\n▪ Telepathy Discipline: los ataques de esta unidad pueden ignorar los modificadores a BS, WS y a las tiradas para impactar."
     },
     {
       "id": "dfbf050f1a8deca8",
@@ -227,7 +227,7 @@
         ]
       },
       "source": "Friendly CHAPLAIN units have 5+ InSv against ranged attacks.\n\n\nRestrictions: Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
-      "target": null
+      "target": "Las unidades CHAPLAIN amigas tienen 5+ InSv contra los ataques a distancia.\n\n\nRestricciones: tu ejército puede incluir unidades BLACK TEMPLARS, pero no puede incluir unidades ADEPTUS ASTARTES de ningún otro Capítulo."
     },
     {
       "id": "caee50ff231080c3",
@@ -243,7 +243,7 @@
         ]
       },
       "source": "Friendly ADEPTUS ASTARTES INFANTRY CHARACTER units have the following ability:\n\n\nCountercharge: (Once per battle round, per unit) You can target this unit with the Heroic Intervention stratagem, regardless of any other uses of that stratagem this phase. If you do:\n\n\n▪ That use does not prevent any uses of that stratagem on other units this phase.\n\n\nRestrictions: Your army can include SPACE WOLVES units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": "Las unidades ADEPTUS ASTARTES INFANTRY CHARACTER amigas tienen la siguiente habilidad:\n\n\nCountercharge: (una vez por ronda de batalla, por unidad) Puedes seleccionar esta unidad como objetivo del stratagem Heroic Intervention, independientemente de cualquier otro uso de ese stratagem esta fase. Si lo haces:\n\n\n▪ Ese uso no impide ningún uso de ese stratagem sobre otras unidades esta fase.\n\n\nRestricciones: tu ejército puede incluir unidades SPACE WOLVES, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "4bdaf64a51da6479",
@@ -260,7 +260,7 @@
         ]
       },
       "source": "At the start of the first battle round, select two of the Angelic Legacy abilities listed below. Until the end of the battle, those Angelic Legacy abilities are active and their effects apply to all Adeptus  Astartes Character units from your army.\n\n\nSanguinary Grace: This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.\n\n\nCarmine Wrath: Each time a model in this unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.\n\n\nTheir Appointed Hour: You can re‑roll Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona dos de las habilidades de Angelic Legacy indicadas a continuación. Hasta el final de la batalla, esas habilidades de Angelic Legacy están activas y sus efectos se aplican a todas las unidades Adeptus  Astartes Character de tu ejército.\n\n\nSanguinary Grace: esta unidad es elegible para disparar y para declarar una carga en un turno en el que se haya replegado.\n\n\nCarmine Wrath: cada vez que una miniatura de esta unidad realiza un ataque, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1.\n\n\nTheir Appointed Hour: puedes repetir las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "85e80858772b852f",
@@ -277,7 +277,7 @@
         ]
       },
       "source": "At the start of the first battle round, select two of the Angelic Legacy abilities listed below. Until the end of the battle, those Angelic Legacy abilities are active and their effects apply to all ^^**Adeptus Astartes Character**^^ units from your army.\n\n**Sanguinary Grace**: This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.\n\n**Carmine Wrath**: Each time a model in this unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.\n\n**Their Appointed Hour**: You can re‑roll Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona dos de las habilidades de Angelic Legacy indicadas a continuación. Hasta el final de la batalla, esas habilidades de Angelic Legacy están activas y sus efectos se aplican a todas las unidades ^^**Adeptus Astartes Character**^^ de tu ejército.\n\n**Sanguinary Grace**: esta unidad es elegible para disparar y para declarar una carga en un turno en el que se haya replegado.\n\n**Carmine Wrath**: cada vez que una miniatura de esta unidad realiza un ataque, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1.\n\n**Their Appointed Hour**: puedes repetir las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "617a0547afd0d762",
@@ -294,7 +294,7 @@
         ]
       },
       "source": "Each time an attack targets an ^^**Adeptus Astartes Infantry^^** or ^^**Adeptus Astartes Mounted^^** unit from your army, if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Cada vez que un ataque toma como objetivo a una unidad ^^**Adeptus Astartes Infantry^^** o ^^**Adeptus Astartes Mounted^^** de tu ejército, si la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de esa unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "0805c57332d7c1f0",
@@ -314,7 +314,7 @@
         ]
       },
       "source": "Each time a model in a ^^**Space Wolves**^^ unit from your army makes a melee attack that targets an enemy unit, if that enemy unit is within Engagement Range of one or more other ^^**Adeptus Astartes**^^ units from your army, or if the attacking unit contains more models than that enemy unit.\n\n\n■ Add 1 to the Hit roll.\n■ If your Saga is completed(see below), add 1 to the Wound roll as well.\n\n\nSaga of the Hunter\n\n\nAt the start of the first battle round your Quarry tally is 0. Each time an ADEPTUS ASTARTES unit from your army fights, after all those attacks have been resolved, add 1 to your Quarry tally for each enemy unit destroyed by those attacks. \n\n\nOnce your Quarry tally is equal to or greater than the number shown in the table below(depending on the battle size), you Saga is completed. \n\n\nIncursion - 2\nStrike Force - 3\nOnslaught - 4",
-      "target": null
+      "target": "Cada vez que una miniatura de una unidad ^^**Space Wolves**^^ de tu ejército realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad enemiga, si esa unidad enemiga está dentro del alcance de combate de una o más unidades ^^**Adeptus Astartes**^^ de tu ejército, o si la unidad atacante contiene más miniaturas que esa unidad enemiga.\n\n\n■ Suma 1 a la tirada para impactar.\n■ Si tu Saga está completada (ver más abajo), suma también 1 a la tirada para herir.\n\n\nSaga of the Hunter\n\n\nAl inicio de la primera ronda de batalla, tu recuento de Quarry es 0. Cada vez que una unidad ADEPTUS ASTARTES de tu ejército combate, después de resolver todos esos ataques, suma 1 a tu recuento de Quarry por cada unidad enemiga destruida por esos ataques. \n\n\nUna vez que tu recuento de Quarry sea igual o mayor que el número indicado en la tabla siguiente (según el tamaño de la partida), tu Saga está completada. \n\n\nIncursion - 2\nStrike Force - 3\nOnslaught - 4"
     },
     {
       "id": "7dfffb7b72465af8",
@@ -333,7 +333,7 @@
         ]
       },
       "source": "Each time an **^^Adeptus Astartes^^** unit from your army is selected to shoot or fight, apply one of the following when resolving those attacks\n\n\n■ If you Saga is completed (see below), you can re-roll one Hit roll, one Wound roll, and one Damage roll. \n■ Otherwise, if that unit is a **^^Space Wolves Character^^** unit, you can re-roll one Hit roll, one Wound roll, or one Damage roll. \n\n\nSaga of the Bold\nEach time a **^^Space Wolves Character^^** unit from your army does one of the following, that unit achieves a Boast. Once three or more different Boasts have been achieved by units from your army, your saga is completed\n\n\n■ Your Hide as a Trophy: That unit destroys your Oath of Moment target\n■ Slay Them All: That unit destroys your Oath of Moment target, and that is the second Oath of Moment target destroyed by that unit in this battle. \n■ Overrun Their Position: At the end of either player's turn, that unit is wholly within your opponent's deployment zone. \n■ Hold the Line: From the second battle round onwards, at the end of your Command phase, that unit is within range of an objective marker you control that is not within your deployment zone.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Adeptus Astartes^^** de tu ejército es seleccionada para disparar o para combatir, aplica una de las siguientes opciones al resolver esos ataques\n\n\n■ Si tu Saga está completada (ver más abajo), puedes repetir una tirada para impactar, una tirada para herir y una tirada de daño. \n■ En caso contrario, si esa unidad es una unidad **^^Space Wolves Character^^**, puedes repetir una tirada para impactar, una tirada para herir o una tirada de daño. \n\n\nSaga of the Bold\nCada vez que una unidad **^^Space Wolves Character^^** de tu ejército hace una de las siguientes cosas, esa unidad consigue un Boast. Una vez que las unidades de tu ejército hayan conseguido tres o más Boasts diferentes, tu saga está completada\n\n\n■ Your Hide as a Trophy: esa unidad destruye tu objetivo de Oath of Moment\n■ Slay Them All: esa unidad destruye tu objetivo de Oath of Moment, y ese es el segundo objetivo de Oath of Moment destruido por esa unidad en esta batalla. \n■ Overrun Their Position: al final del turno de cualquiera de los dos jugadores, esa unidad está completamente dentro de la zona de despliegue de tu oponente. \n■ Hold the Line: a partir de la segunda ronda de batalla, al final de tu fase de Mando, esa unidad está dentro del alcance de un marcador de objetivo que controlas y que no está dentro de tu zona de despliegue."
     },
     {
       "id": "f638dd4bad0f69b0",
@@ -354,7 +354,7 @@
         ]
       },
       "source": "Each time an ^^**Adeptus Astartes**^^ model from your army makes an attack, if that attack targets a **^^Character, Monster**^^ or **^^Vehicle**^^ unit or if your Saga is completed(see below), that attack has the [LETHAL HITS] ability.\n\nSaga of the Beastslayer\nAt the start of the first battle round, your Beastslayer tally is 0, and you determine your Beastslayer target by halving the number of units from your opponent's army (including those embarked within **^^Transports**^^) that have one or more of the following keywords (rounding up): **^^Character, Monster, Vehicle**^^.\n\nEach time an **^^Adeptus Astartes**^^ unit from your army shoots or fights, after all of those attacks have been resolved, add 1 to your Beastslayer tally for each enemy unit with one or more of the keywords destroyed by those attacks: **^^Character, Monster, Vehicle**^^.\n\nOnce your Beastslayer tally is equal to or greater than your Beastslayer target your Saga is completed.",
-      "target": null
+      "target": "Cada vez que una miniatura ^^**Adeptus Astartes**^^ de tu ejército realiza un ataque, si ese ataque toma como objetivo a una unidad **^^Character, Monster**^^ o **^^Vehicle**^^ o si tu Saga está completada (ver más abajo), ese ataque tiene la habilidad [LETHAL HITS].\n\nSaga of the Beastslayer\nAl inicio de la primera ronda de batalla, tu recuento de Beastslayer es 0, y determinas tu objetivo de Beastslayer dividiendo a la mitad (redondeando hacia arriba) el número de unidades del ejército de tu oponente (incluidas las embarcadas en **^^Transports**^^) que tengan una o más de las siguientes palabras clave: **^^Character, Monster, Vehicle**^^.\n\nCada vez que una unidad **^^Adeptus Astartes^^** de tu ejército dispara o combate, después de resolver todos esos ataques, suma 1 a tu recuento de Beastslayer por cada unidad enemiga con una o más de estas palabras clave destruida por esos ataques: **^^Character, Monster, Vehicle**^^.\n\nUna vez que tu recuento de Beastslayer sea igual o mayor que tu objetivo de Beastslayer, tu Saga está completada."
     },
     {
       "id": "58e5b1605c6de50c",
@@ -368,7 +368,7 @@
         "names": []
       },
       "source": "You can re-roll Advance and Charge rolls made for ^^**Adeptus Astartes^^** unit from your army.",
-      "target": null
+      "target": "Puedes repetir las tiradas de avance y de carga realizadas para una unidad ^^**Adeptus Astartes^^** de tu ejército."
     },
     {
       "id": "22c7bf581e2da86c",
@@ -384,7 +384,7 @@
         ]
       },
       "source": "- Each time an attack targets an ^^**Ancient**^^ unit from your army, if that unit is within range of one or more objective markers and the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll. \n\n\n- Each time a friendly CRUSADER SQUAD unit makes a surge move, instead of selecting a surge target, you can can select the closest objective to that unit. When that unit makes that surge move, each model in that unit must end that surge move as close as possible to that objective instead.",
-      "target": null
+      "target": "- Cada vez que un ataque toma como objetivo a una unidad ^^**Ancient**^^ de tu ejército, si esa unidad está dentro del alcance de uno o más marcadores de objetivo y la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de esa unidad, resta 1 a la tirada para herir. \n\n\n- Cada vez que una unidad CRUSADER SQUAD amiga realiza un movimiento de arremetida, en lugar de seleccionar un objetivo de arremetida, puedes seleccionar el objetivo más cercano a esa unidad. Cuando esa unidad realice ese movimiento de arremetida, cada miniatura de esa unidad debe terminar ese movimiento de arremetida lo más cerca posible de ese objetivo."
     },
     {
       "id": "c226412548f89f81",
@@ -400,7 +400,7 @@
         ]
       },
       "source": "- Each time an ^^**Adeptus Astartes**^^ unit from your army declares a charge, if it disembarked from a ^^**Transport**^^ this turn, after selecting the targets of that charge, select one of those targets; that enemy unit must take a Battle-shock test. \n\n\n- Each time an ^^**Adeptus Astartes**^^ unit from your army makes a melee attack, if it disembarked from a ^^**Transport**^^ this turn, add 1 to the Hit roll.",
-      "target": null
+      "target": "- Cada vez que una unidad ^^**Adeptus Astartes**^^ de tu ejército declara una carga, si desembarcó de un ^^**Transport**^^ este turno, después de seleccionar los objetivos de esa carga, selecciona uno de esos objetivos; esa unidad enemiga debe hacer un test de Battle-shock. \n\n\n- Cada vez que una unidad ^^**Adeptus Astartes**^^ de tu ejército realiza un ataque de cuerpo a cuerpo, si desembarcó de un ^^**Transport**^^ este turno, suma 1 a la tirada para impactar."
     },
     {
       "id": "22f816a1c5c3ff2f",
@@ -422,7 +422,7 @@
         ]
       },
       "source": "Ranged weapons equipped by Adeptus Astartes models from your army have the [ASSAULT] ability, and each time an attack made such a weapon targets a unit within 12\", add 1 to the Strength characteristic of that attack.\n\n\n**Seeker's Companions**\n\n\nIf your army includes Vulkan He'stan, during your turn, each Infernus Squad unit from your army is eligible to do one of the following\n- Start to perform an Action in a turn in which it Advanced\n\n- Shoot in a turn in which it started to perform an Action",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas Adeptus Astartes de tu ejército tienen la habilidad [ASSAULT] y, cada vez que un ataque realizado con esa arma toma como objetivo a una unidad a 12\" o menos, suma 1 a la característica de Fuerza de ese ataque.\n\n\n**Seeker's Companions**\n\n\nSi tu ejército incluye a Vulkan He'stan, durante tu turno, cada unidad Infernus Squad de tu ejército es elegible para hacer una de las siguientes cosas\n- Empezar a realizar una Acción en un turno en el que haya avanzado\n\n- Disparar en un turno en el que haya empezado a realizar una Acción"
     },
     {
       "id": "7de316e88b1c0e79",
@@ -439,7 +439,7 @@
         ]
       },
       "source": "Each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll a Wound roll of 1.\n\n\nEach time a model in a ^^**Darnath Lysander**^^ unit from your army makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de tu ejército con la habilidad Oath of Moment realiza un ataque que toma como objetivo a tu objetivo de Oath of Moment, puedes repetir una tirada para herir de 1.\n\n\nCada vez que una miniatura de una unidad ^^**Darnath Lysander**^^ de tu ejército realiza un ataque que toma como objetivo a tu objetivo de Oath of Moment, puedes repetir la tirada para herir."
     },
     {
       "id": "0ae70f7a54f06f82",
@@ -453,7 +453,7 @@
         "names": []
       },
       "source": "Each time a ranged attack targets an ADEPTUS ASTARTES unit from your army, unless the attacking model is within 12\", the target has the benefit of cover.\n\n**Unparalled Tactician**\n\nOnce per battle round, if an **^^Aethon^^** Shaan model from your army is on the battlefield, you can use the Into Darkness Stratagem for 0CP.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a una unidad ADEPTUS ASTARTES de tu ejército, salvo que la miniatura atacante esté a 12\" o menos, el objetivo tiene el beneficio de cobertura.\n\n**Unparalled Tactician**\n\nUna vez por ronda de batalla, si una miniatura **^^Aethon^^** Shaan de tu ejército está en el campo de batalla, puedes usar el Stratagem Into Darkness por 0CP."
     },
     {
       "id": "38ff658762813762",
@@ -470,7 +470,7 @@
         ]
       },
       "source": "Each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re‑roll a Wound roll of 1.\n\n\n**RECALCULATING**\n\nOnce per battle round, after your Oath of Moment target is destroyed, if a ^^**Caanok Var**^^ model from your army is on the battlefield, select one enemy unit visible to that model. That enemy unit becomes your Oath of Moment target until you select a new one.",
-      "target": null
+      "target": "Cada vez que una miniatura de tu ejército con la habilidad Oath of Moment realiza un ataque que toma como objetivo a tu objetivo de Oath of Moment, puedes repetir una tirada para herir de 1.\n\n\n**RECALCULATING**\n\nUna vez por ronda de batalla, después de que tu objetivo de Oath of Moment sea destruido, si una miniatura ^^**Caanok Var**^^ de tu ejército está en el campo de batalla, selecciona una unidad enemiga visible para esa miniatura. Esa unidad enemiga pasa a ser tu objetivo de Oath of Moment hasta que selecciones uno nuevo."
     },
     {
       "id": "303c33809b640729",
@@ -487,7 +487,7 @@
         ]
       },
       "source": "^^**Adeptus Astartes**^^ units from your army are eligible to declare a charge in a turn in which they Advanced or Fell Back.\n\n**Wrath of the First Khan**\n\nAt the end of the Fight phase, if a **^^Suboden Khan^^** unit from your army destroyed one or more enemy units this phase and is not within Engagement Range of one or more enemy units, that unit can make a Normal move of up to 6\".",
-      "target": null
+      "target": "Las unidades ^^**Adeptus Astartes**^^ de tu ejército son elegibles para declarar una carga en un turno en el que hayan avanzado o se hayan replegado.\n\n**Wrath of the First Khan**\n\nAl final de la fase de Combate, si una unidad **^^Suboden Khan^^** de tu ejército destruyó una o más unidades enemigas esta fase y no está dentro del alcance de combate de una o más unidades enemigas, esa unidad puede realizar un movimiento normal de hasta 6\"."
     },
     {
       "id": "043de95a2969a2b5",
@@ -504,7 +504,7 @@
         ]
       },
       "source": "At the start of up to three of your Command phases, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all ^^**Adeptus Astartes^^** units from your army. You cannot select a Combat Doctrine you have already selected this battle, unless a friendly **^^Marneus Calgar^^** model is on the battlefield.\n\n**DEVASTATOR DOCTRINE**\nThis unit is eligible to shoot in a turn in which it Advanced.\n\n**TACTICAL DOCTRINE**\nThis unit is eligible to shoot and declare a charge in a turn in which it Fell Back.\n\n**ASSAULT DOCTRINE**\nThis unit is eligible to declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Al inicio de hasta tres de tus fases de Mando, puedes seleccionar una de las Combat Doctrines indicadas a continuación. Hasta el inicio de tu siguiente fase de Mando, esa Combat Doctrine está activa y sus efectos se aplican a todas las unidades ^^**Adeptus Astartes^^** de tu ejército. No puedes seleccionar una Combat Doctrine que ya hayas seleccionado esta batalla, salvo que una miniatura **^^Marneus Calgar^^** amiga esté en el campo de batalla.\n\n**DEVASTATOR DOCTRINE**\nEsta unidad es elegible para disparar en un turno en el que haya avanzado.\n\n**TACTICAL DOCTRINE**\nEsta unidad es elegible para disparar y para declarar una carga en un turno en el que se haya replegado.\n\n**ASSAULT DOCTRINE**\nEsta unidad es elegible para declarar una carga en un turno en el que haya avanzado."
     },
     {
       "id": "8860044cd71b822d",
@@ -527,7 +527,7 @@
         ]
       },
       "source": "At the start of your Command phase, you can select one of the Hunting Packs listed below. Until the start of your next Command phase, that Hunting Pack is active and its effects apply to all |^^**Adeptus Astartes**^^ units from your army. You can only select each Hunting Pack once per battle.\n\n- Encircling Jaws: This unit can re-roll Advance rolls and Charge rolls.\n\n- Hunter’s Eye: Each time a model in this unit makes a ranged attack, add 1 to the Hit roll.\n\n- Ferocious Strike: Each time this unit is selected to fight, select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase, weapons equipped by models in this unit have the selected ability.\n\n\n**Howling Onslaught**\n\nOnce per battle, when selecting a Hunting Pack for the Master of Wolves Detachment rule (see above), if a ^^**Logan Grimnar**^^ model from your army is on the battlefield, you can select a Hunting Pack you have already selected this battle",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, puedes seleccionar uno de los Hunting Packs indicados a continuación. Hasta el inicio de tu siguiente fase de Mando, ese Hunting Pack está activo y sus efectos se aplican a todas las unidades |^^**Adeptus Astartes**^^ de tu ejército. Solo puedes seleccionar cada Hunting Pack una vez por batalla.\n\n- Encircling Jaws: esta unidad puede repetir las tiradas de avance y las tiradas de carga.\n\n- Hunter’s Eye: cada vez que una miniatura de esta unidad realiza un ataque a distancia, suma 1 a la tirada para impactar.\n\n- Ferocious Strike: cada vez que esta unidad es seleccionada para combatir, selecciona la habilidad [LETHAL HITS] o la habilidad [SUSTAINED HITS 1]. Hasta el final de la fase, las armas equipadas por las miniaturas de esta unidad tienen la habilidad seleccionada.\n\n\n**Howling Onslaught**\n\nUna vez por batalla, al seleccionar un Hunting Pack para la regla de Detachment Master of Wolves (ver arriba), si una miniatura ^^**Logan Grimnar**^^ de tu ejército está en el campo de batalla, puedes seleccionar un Hunting Pack que ya hayas seleccionado esta batalla"
     },
     {
       "id": "95c7043a0dee0850",
@@ -541,7 +541,7 @@
         "names": []
       },
       "source": "Each time an ^^**Adeptus Astartes^^** model from your army makes a melee attack, re-roll a Wound roll of 1.\n\n\nEach time an ^^**Adeptus Astartes^^** unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. If your unit is Battle-shocked, add 2 to the Attacks characteristic of melee weapons equipped by models in that unit instead.",
-      "target": null
+      "target": "Cada vez que una miniatura ^^**Adeptus Astartes^^** de tu ejército realiza un ataque de cuerpo a cuerpo, repite las tiradas para herir de 1.\n\n\nCada vez que una unidad ^^**Adeptus Astartes^^** de tu ejército es seleccionada para combatir, si esa unidad realizó un movimiento de carga este turno, hasta el final de la fase, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad. Si tu unidad está Battle-shocked, en su lugar suma 2 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "8062a8c7761e38b5",
@@ -557,7 +557,7 @@
         ]
       },
       "source": "^^**Adeptus Astartes Battleline^^** units from your army:\n\n- Are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.\n\n- Are eligible to start to perform an Action in a turn in which they Advanced or Fell Back.\n\nEach time an ^^**Adeptus Astartes Battleline^^** unit from your army is selected to attack, after resolving those attacks, select one enemy unit hit by one or more of those attacks. Until the end of the turn, that enemy unit is auspex scanned. Each time an ^^**Adeptus Astartes^^** model from your army makes an attack that targets an auspex scanned unit, re‑roll a Hit roll of 1.",
-      "target": null
+      "target": "Las unidades ^^**Adeptus Astartes Battleline^^** de tu ejército:\n\n- Son elegibles para disparar y para declarar una carga en un turno en el que hayan avanzado o se hayan replegado.\n\n- Son elegibles para empezar a realizar una Acción en un turno en el que hayan avanzado o se hayan replegado.\n\nCada vez que una unidad ^^**Adeptus Astartes Battleline^^** de tu ejército es seleccionada para atacar, después de resolver esos ataques, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final del turno, esa unidad enemiga está auspex scanned. Cada vez que una miniatura ^^**Adeptus Astartes^^** de tu ejército realiza un ataque que toma como objetivo a una unidad auspex scanned, repite las tiradas para impactar de 1."
     },
     {
       "id": "4f7877f3b49cd8c5",
@@ -576,7 +576,7 @@
         ]
       },
       "source": "At the start of the Declare Battle Formations step, select a number of ^^**Adeptus Astartes^^** units (excluding ^^**Titanic^^** units) from your army based on the battle size, as shown below. Models in those units have the Deep Strike ability.\n\nIncursion - 2 Units\nStrike Force - 3 Units\nOnslaught - 4 Units\n\nEach time an ^^**Adeptus Astartes^^** model from your army makes an attack, if it was set up on the battlefield this turn, re‑roll a Wound roll of 1. If it disembarked from a Drop Pod this turn, re‑roll a Hit roll of 1 as well.",
-      "target": null
+      "target": "Al inicio del paso Declarar Formaciones de Batalla, selecciona un número de unidades ^^**Adeptus Astartes^^** (excluyendo las unidades ^^**Titanic^^**) de tu ejército según el tamaño de la partida, como se indica a continuación. Las miniaturas de esas unidades tienen la habilidad Deep Strike.\n\nIncursion - 2 unidades\nStrike Force - 3 unidades\nOnslaught - 4 unidades\n\nCada vez que una miniatura ^^**Adeptus Astartes^^** de tu ejército realiza un ataque, si fue desplegada en el campo de batalla este turno, repite las tiradas para herir de 1. Si desembarcó de una Drop Pod este turno, repite también las tiradas para impactar de 1."
     },
     {
       "id": "9ea1e79d16e48d24",
@@ -592,7 +592,7 @@
         ]
       },
       "source": "- Each time an ^^**Adeptus Astartes^^** model from your army makes a melee attack that targets a unit within range of an\nobjective marker, improve the Armour Penetration characteristic of that attack by 1.\n\n- Each time an attack targets an ^^**Adeptus Astartes^^** unit from your army, if your unit is within range of an objective\nmarker that you controlled at the start of the phase and if the Strength characteristic of that attack is greater\nthan the Toughness characteristic of your unit or your unit has the ^^**Titus^^** keyword, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "- Cada vez que una miniatura ^^**Adeptus Astartes^^** de tu ejército realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad que está dentro del alcance de un\nmarcador de objetivo, mejora en 1 la característica de Penetración de Blindaje de ese ataque.\n\n- Cada vez que un ataque toma como objetivo a una unidad ^^**Adeptus Astartes^^** de tu ejército, si tu unidad está dentro del alcance de un marcador de objetivo\nque controlabas al inicio de la fase y si la característica de Fuerza de ese ataque es mayor\nque la característica de Resistencia de tu unidad o tu unidad tiene la palabra clave ^^**Titus^^**, resta 1 a la tirada para herir."
     },
     {
       "id": "ba6263d5b6e829b4",
@@ -606,7 +606,7 @@
         "names": []
       },
       "source": "Each time an ^^**Adeptus Astartes**^^ model from your army makes an attack, if that model’s unit is within a terrain feature, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. \n\n\n^^**Adeptus Astartes**^^ units from your army gain the ^^**Entrenched**^^ keyword while all of the following are true: \n- That unit is within a terrain feature.\n- That unit was not set up on the battlefield this turn.\n- No model in that unit has moved more than 3” this turn.",
-      "target": null
+      "target": "Cada vez que una miniatura ^^**Adeptus Astartes**^^ de tu ejército realiza un ataque, si la unidad de esa miniatura está dentro de un elemento de escenografía, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1. \n\n\nLas unidades ^^**Adeptus Astartes**^^ de tu ejército ganan la palabra clave ^^**Entrenched**^^ mientras se cumpla todo lo siguiente: \n- Esa unidad está dentro de un elemento de escenografía.\n- Esa unidad no fue desplegada en el campo de batalla este turno.\n- Ninguna miniatura de esa unidad se ha movido más de 3” este turno."
     },
     {
       "id": "f1195e4db8baf132",
@@ -626,7 +626,7 @@
         ]
       },
       "source": "Each time a Tank Ace unit from your army (see below) Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. Each time a Tank Ace unit from your\narmy shoots in your Shooting phase, if that unit did not Advance this turn, you can re‑roll the Damage roll.\n\n\nAdeptus Astartes Vehicle units from your army (excluding Fortifications, Drop Pods, Walkers and units that can Fly)\nhave the Tank Ace keyword. In the Muster Armies step, you can select up to three Tank Ace units from your\narmy to gain the Character keyword. \n\n\nDesigner’s Note: This means that the selected units can be given  enhancements, and one of them can be selected as your Warlord.",
-      "target": null
+      "target": "Cada vez que una unidad Tank Ace de tu ejército (ver más abajo) avanza, no hagas una tirada de avance para ella. En su lugar, hasta el final de la fase, suma 6\" a la característica de Movimiento de las miniaturas de esa unidad. Cada vez que una unidad Tank Ace de tu\nejército dispara en tu fase de Disparo, si esa unidad no avanzó este turno, puedes repetir la tirada de daño.\n\n\nLas unidades Adeptus Astartes Vehicle de tu ejército (excluyendo las Fortifications, las Drop Pods, los Walkers y las unidades que puedan Fly)\ntienen la palabra clave Tank Ace. En el paso Reunir Ejércitos, puedes seleccionar hasta tres unidades Tank Ace de tu\nejército para que ganen la palabra clave Character. \n\n\nNota del diseñador: esto significa que a las unidades seleccionadas se les pueden dar  Enhancements, y una de ellas puede ser seleccionada como tu Warlord."
     },
     {
       "id": "abc04afb52d58a44",
@@ -640,7 +640,7 @@
         "names": []
       },
       "source": "▪ Friendly LAND SPEEDER/STORM SPEEDER HAILSTRIKE/STORM SPEEDER HAMMERSTRIKE/STORM SPEEDER THUNDERSTRIKE units have SPEEDER.\n\n\n▪ In your first Movement phase, friendly SPEEDER units can make\nan ingress move.",
-      "target": null
+      "target": "▪ Las unidades LAND SPEEDER/STORM SPEEDER HAILSTRIKE/STORM SPEEDER HAMMERSTRIKE/STORM SPEEDER THUNDERSTRIKE amigas tienen SPEEDER.\n\n\n▪ En tu primera fase de Movimiento, las unidades SPEEDER amigas pueden realizar\nun movimiento de entrada."
     },
     {
       "id": "ecc99d051143b4a7",
@@ -654,7 +654,7 @@
         "names": []
       },
       "source": "Friendly PHOBOS/SCOUT SQUAD units have the following ability:\n\n\nTranshuman Perception: In your Shooting phase, this unit can select one visible enemy unit within 12\". That enemy unit is detected:\n\n\n▪ While a unit is detected, that unit has +3\" detection range.",
-      "target": null
+      "target": "Las unidades PHOBOS/SCOUT SQUAD amigas tienen la siguiente habilidad:\n\n\nTranshuman Perception: en tu fase de Disparo, esta unidad puede seleccionar una unidad enemiga visible a 12\" o menos. Esa unidad enemiga queda detectada:\n\n\n▪ Mientras una unidad está detectada, esa unidad tiene +3\" de alcance de detección."
     },
     {
       "id": "af1991e5004251b6",
@@ -671,7 +671,7 @@
         ]
       },
       "source": "▪ When a friendly EMPEROR’S CHAMPION unit is selected to fight, that model’s melee attacks can:\n     ▫ Re-roll one hit roll.\n     ▫ Re-roll one wound roll.\n▪ Enhancements selected from this detachment do not count towards the total number of enhancements in your army.\n\n\nRestrictions: Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
-      "target": null
+      "target": "▪ Cuando una unidad EMPEROR’S CHAMPION amiga es seleccionada para combatir, los ataques de cuerpo a cuerpo de esa miniatura pueden:\n     ▫ Repetir una tirada para impactar.\n     ▫ Repetir una tirada para herir.\n▪ Los Enhancements seleccionados de este detachment no cuentan para el número total de Enhancements de tu ejército.\n\n\nRestricciones: tu ejército puede incluir unidades BLACK TEMPLARS, pero no puede incluir unidades ADEPTUS ASTARTES de ningún otro Capítulo."
     },
     {
       "id": "32d8dc5f6f6c1eca",
@@ -687,7 +687,7 @@
         ]
       },
       "source": "Friendly SWORD BRETHREN SQUAD units have +1 OC.\n\n\nRestrictions: Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
-      "target": null
+      "target": "Las unidades SWORD BRETHREN SQUAD amigas tienen +1 OC.\n\n\nRestricciones: tu ejército puede incluir unidades BLACK TEMPLARS, pero no puede incluir unidades ADEPTUS ASTARTES de ningún otro Capítulo."
     },
     {
       "id": "37f4f1a0ea601e6e",
@@ -703,7 +703,7 @@
         ]
       },
       "source": "When a friendly SANGUINARY GUARD unit is selected to make a fall‑back move, that move does not prevent that unit from being eligible to shoot/eligible to declare a charge.\n\n\nRestrictions: Your army can include BLOOD ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": "Cuando una unidad SANGUINARY GUARD amiga es seleccionada para realizar un movimiento de repliegue, ese movimiento no impide que esa unidad sea elegible para disparar ni para declarar una carga.\n\n\nRestricciones: tu ejército puede incluir unidades BLOOD ANGELS, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "c89e30f0b8a37f29",
@@ -719,7 +719,7 @@
         ]
       },
       "source": "Friendly BLOOD ANGELS INFANTRY CHARACTER units (excluding COMMANDER DANTE units) have +1 to advance rolls and charge rolls. This detachment has the GRACE tag and cannot be taken with another GRACE detachment.\n\n\nRestrictions: Your army can include BLOOD ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": "Las unidades BLOOD ANGELS INFANTRY CHARACTER amigas (excluyendo las unidades COMMANDER DANTE) tienen +1 a las tiradas de avance y a las tiradas de carga. Este detachment tiene la etiqueta GRACE y no puede llevarse junto a otro detachment GRACE.\n\n\nRestricciones: tu ejército puede incluir unidades BLOOD ANGELS, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "02ae8eb7fed66cab",
@@ -735,7 +735,7 @@
         ]
       },
       "source": "When a friendly DEATH COMPANY unit is selected to make an advance move, you can use this ability. If you do:\n\n\n▪ That unit suffers D3+1 mortal wounds.\n▪ That move does not prevent that unit from being eligible to declare a charge.\n\n\nThis detachment has the DOOMED tag and cannot be taken with another DOOMED detachment.\n\n\nRestrictions: Your army can include BLOOD ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": "Cuando una unidad DEATH COMPANY amiga es seleccionada para realizar un movimiento de avance, puedes usar esta habilidad. Si lo haces:\n\n\n▪ Esa unidad sufre D3+1 heridas mortales.\n▪ Ese movimiento no impide que esa unidad sea elegible para declarar una carga.\n\n\nEste detachment tiene la etiqueta DOOMED y no puede llevarse junto a otro detachment DOOMED.\n\n\nRestricciones: tu ejército puede incluir unidades BLOOD ANGELS, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "f8bcd30aaeb1a76b",
@@ -752,7 +752,7 @@
         ]
       },
       "source": "▪ Friendly ADEPTUS ASTARTES units’ weapon profiles with ‘Plasma’ in their names are plasma weapon profiles.\n▪ Plasma weapon profiles have +1 S.\n\nRestrictions: Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
-      "target": null
+      "target": "▪ Los perfiles de arma de las unidades ADEPTUS ASTARTES amigas que tengan ‘Plasma’ en su nombre son perfiles de arma plasma.\n▪ Los perfiles de arma plasma tienen +1 S.\n\nRestricciones: tu ejército puede incluir unidades DARK ANGELS, pero no puede incluir unidades ADEPTUS ASTARTES de ningún otro Capítulo."
     },
     {
       "id": "95ca4b55ec4c3645",
@@ -770,7 +770,7 @@
         ]
       },
       "source": "Friendly RAVENWING FLY units’ ranged attacks have [IGNORES COVER].\n\n\nRestrictions: Your army can include DARK ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": "Los ataques a distancia de las unidades RAVENWING FLY amigas tienen [IGNORES COVER].\n\n\nRestricciones: tu ejército puede incluir unidades DARK ANGELS, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "378525e5dd38ee42",
@@ -786,7 +786,7 @@
         ]
       },
       "source": "▪ In the Fight phase, when a friendly CHAPLAIN unit destroys an enemy unit, enemy units within 6\" of that CHAPLAIN unit make a battle-shock roll.\n\n\n▪ Friendly CHAPLAIN units have the following ability:\nSower of Dread (Aura): While an enemy unit is within 6\" of this unit, that enemy unit has -1 Ld.\n\n\nRestrictions: Your army can include DARK ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": "▪ En la fase de Combate, cuando una unidad CHAPLAIN amiga destruye una unidad enemiga, las unidades enemigas a 6\" o menos de esa unidad CHAPLAIN hacen una tirada de Battle-shock.\n\n\n▪ Las unidades CHAPLAIN amigas tienen la siguiente habilidad:\nSower of Dread (Aura): mientras una unidad enemiga esté a 6\" o menos de esta unidad, esa unidad enemiga tiene -1 Ld.\n\n\nRestricciones: tu ejército puede incluir unidades DARK ANGELS, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "f945355b629ebfeb",
@@ -802,7 +802,7 @@
         ]
       },
       "source": "Friendly ADEPTUS ASTARTES TERMINATOR units have +1 to charge rolls.\n\n\nRestrictions: Your army can include SPACE WOLVES units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": "Las unidades ADEPTUS ASTARTES TERMINATOR amigas tienen +1 a las tiradas de carga.\n\n\nRestricciones: tu ejército puede incluir unidades SPACE WOLVES, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "20ab38b48984c1cf",
@@ -818,7 +818,7 @@
         ]
       },
       "source": " When a friendly GREY HUNTER unit starts an action, that action does not prevent this unit from being eligible to shoot.\n\n\n▪ In the Declare Battle Formations step,  each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units)\n\n\nRestrictions: Your army can include SPACE WOLVES units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
-      "target": null
+      "target": " Cuando una unidad GREY HUNTER amiga empieza una acción, esa acción no impide que esta unidad sea elegible para disparar.\n\n\n▪ En el paso Declarar Formaciones de Batalla,  cada una con el mismo número de miniaturas en la medida de lo posible (al dividir una unidad de este modo, anota qué miniaturas forman cada una de las dos nuevas unidades)\n\n\nRestricciones: tu ejército puede incluir unidades SPACE WOLVES, pero no\npuede incluir unidades ADEPTUS ASTARTES de ningún\notro Capítulo."
     },
     {
       "id": "d8045c12907c543c",
@@ -832,7 +832,7 @@
         "names": []
       },
       "source": "In a turn a friendly ADEPTUS ASTARTES FLY INFANTRY unit made an ingress/charge move, that unit’s attacks can re-roll hit rolls of 1.",
-      "target": null
+      "target": "En un turno en el que una unidad ADEPTUS ASTARTES FLY INFANTRY amiga haya realizado un movimiento de entrada o de carga, los ataques de esa unidad pueden repetir las tiradas para impactar de 1."
     },
     {
       "id": "2ec8b5b6ce18e847",
