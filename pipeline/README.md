@@ -14,6 +14,7 @@ Desde la raíz del repositorio:
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=extract
 mvn -f pipeline/pom.xml spring-boot:run "-Dspring-boot.run.arguments=import .entregas"
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=check
+mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=audit
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=apply
 mvn -f pipeline/pom.xml test
 ```
@@ -43,6 +44,14 @@ data/bsdata/  ──extract──▶  data/translations/es/batch-NNN.json  ─�
    inglés. Termina con error si encuentra algo, para poder encadenarlo en un script.
 5. **`apply`** reinyecta las traducciones y escribe el dataset en español. Los textos sin traducir
    se quedan en inglés, así que se puede ir aplicando a medio camino.
+
+**`audit`** es aparte del ciclo de traducción: comprueba que el dataset siga sirviendo para
+construir listas. Que toda referencia entre ficheros resuelva, que cada facción jugable resuelva su
+lista de unidades —incluidas las que hereda por `importRootEntries`, sin las cuales los capítulos de
+Space Marines se quedan a cero— y que cada unidad tenga coste en puntos en algún punto de su árbol.
+Conviene pasarlo tras refrescar desde upstream: una referencia rota no se ve leyendo el JSON pero
+deja la app inservible. Lo que comprueba está detallado en
+[`data/README.md`](../data/README.md#cómo-se-lee-este-dataset-para-construir-listas).
 
 `extract` informa además de cuántas unidades quedan huérfanas: traducciones cuyo texto original ya
 no existe porque upstream lo cambió. No se borran solas.

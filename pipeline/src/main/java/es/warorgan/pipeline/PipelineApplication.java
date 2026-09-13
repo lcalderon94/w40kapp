@@ -1,6 +1,7 @@
 package es.warorgan.pipeline;
 
 import es.warorgan.pipeline.cli.ApplyCommand;
+import es.warorgan.pipeline.cli.AuditCommand;
 import es.warorgan.pipeline.cli.CheckCommand;
 import es.warorgan.pipeline.cli.ExtractCommand;
 import es.warorgan.pipeline.cli.ImportCommand;
@@ -24,13 +25,15 @@ public class PipelineApplication implements ApplicationRunner {
     private final ApplyCommand apply;
     private final CheckCommand check;
     private final ImportCommand importer;
+    private final AuditCommand audit;
 
     public PipelineApplication(ExtractCommand extract, ApplyCommand apply, CheckCommand check,
-                               ImportCommand importer) {
+                               ImportCommand importer, AuditCommand audit) {
         this.extract = extract;
         this.apply = apply;
         this.check = check;
         this.importer = importer;
+        this.audit = audit;
     }
 
     public static void main(String[] args) {
@@ -47,9 +50,10 @@ public class PipelineApplication implements ApplicationRunner {
             case "extract" -> extract.run();
             case "apply" -> apply.run();
             case "check" -> check.run();
+            case "audit" -> audit.run();
             case "import" -> importer.run(commands.subList(1, commands.size()));
             default -> throw new IllegalArgumentException(
-                    "Uso: extract | import <ruta> | check | apply (recibido: '" + command + "')");
+                    "Uso: extract | import <ruta> | check | audit | apply (recibido: '" + command + "')");
         }
     }
 }
