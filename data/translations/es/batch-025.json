@@ -51,7 +51,7 @@
         "names": []
       },
       "source": "Each time a **TYRANIDS MONSTER** model from your army makes an attack, add 1 to the Hit roll if that model’s unit is below its Starting Strength, and add 1 to the Wound roll as well if that model’s unit is Below Half‑strength. In addition, while a **TYRANIDS MONSTER** unit from your army (excluding Battle‑shocked units) is at its Starting Strength, add 2 to the Objective Control characteristic of models in that unit.",
-      "target": "Cada vez que una miniatura **TYRANIDS MONSTER** de tu ejército realiza un ataque, suma 1 a la tirada para impactar si la unidad de esa miniatura está por debajo de su Starting Strength, y suma 1 también a la tirada para herir si la unidad de esa miniatura está Below Half‑strength. Además, mientras una unidad **TYRANIDS MONSTER** de tu ejército (excluyendo las unidades Battle‑shocked) esté en su Starting Strength, suma 2 a la característica de Control de Objetivos de las miniaturas de esa unidad."
+      "target": "Cada vez que una miniatura **TYRANIDS MONSTER** de tu ejército realiza un ataque, suma 1 a la tirada para impactar si la unidad de esa miniatura está por debajo de su Starting Strength, y suma 1 también a la tirada para herir si la unidad de esa miniatura está Below Half-strength. Además, mientras una unidad **TYRANIDS MONSTER** de tu ejército (excluyendo las unidades Battle-shocked) esté en su Starting Strength, suma 2 a la característica de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "c1eba5fabdbdb2cb",
@@ -132,7 +132,7 @@
         ]
       },
       "source": "- Friendly **TYRANID WARRIORS WITH RANGED BIO‑WEAPONS/TYRANID WARRIORS WITH MELEE BIO‑WEAPONS** units have:\n-- **TYRANID WARRIORS**.\n-- **BATTLELINE**.\n- **TYRANID WARRIORS/TYRANID PRIME WITH LASH WHIP/WINGED TYRANID PRIME** models from your army have 5+ **InSv**.",
-      "target": "- Las unidades **TYRANID WARRIORS WITH RANGED BIO‑WEAPONS/TYRANID WARRIORS WITH MELEE BIO‑WEAPONS** amigas tienen:\n-- **TYRANID WARRIORS**.\n-- **BATTLELINE**.\n- Las miniaturas **TYRANID WARRIORS/TYRANID PRIME WITH LASH WHIP/WINGED TYRANID PRIME** de tu ejército tienen 5+ **InSv**."
+      "target": "- Las unidades **TYRANID WARRIORS WITH RANGED BIO-WEAPONS/TYRANID WARRIORS WITH MELEE BIO-WEAPONS** amigas tienen:\n-- **TYRANID WARRIORS**.\n-- **BATTLELINE**.\n- Las miniaturas **TYRANID WARRIORS/TYRANID PRIME WITH LASH WHIP/WINGED TYRANID PRIME** de tu ejército tienen 5+ **InSv**."
     },
     {
       "id": "01c7da878ceb0e9d",
@@ -884,7 +884,7 @@
         "names": []
       },
       "source": "While a **GENESTEALER CULTS MOUNTED/VEHICLE** model from your army is not Battle‑shocked, add 1 to its Objective Control characteristic. In addition, at the end of your Command phase, if one or more **ATALAN JACKALS** units from your army are within range of an **objective** you control, that **objective** remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.",
-      "target": "Mientras una miniatura **GENESTEALER CULTS MOUNTED/VEHICLE** de tu ejército no esté Battle‑shocked, suma 1 a su característica de Control de Objetivos. Además, al final de tu fase de Mando, si una o más unidades **ATALAN JACKALS** de tu ejército están dentro del alcance de un **objetivo** que controlas, ese **objetivo** permanece bajo tu control hasta que el Nivel de Control de tu oponente sobre ese marcador de objetivo sea mayor que el tuyo al final de una fase."
+      "target": "Mientras una miniatura **GENESTEALER CULTS MOUNTED/VEHICLE** de tu ejército no esté Battle-shocked, suma 1 a su característica de Control de Objetivos. Además, al final de tu fase de Mando, si una o más unidades **ATALAN JACKALS** de tu ejército están dentro del alcance de un **objetivo** que controlas, ese **objetivo** permanece bajo tu control hasta que el Nivel de Control de tu oponente sobre ese marcador de objetivo sea mayor que el tuyo al final de una fase."
     },
     {
       "id": "4f397c4aa7bfb3d5",
@@ -901,7 +901,7 @@
         ]
       },
       "source": "You can include **^^Astra Militarum^^** units in your army, even though they do not have the **^^Genestealer Cult^^** Faction keyword. The combined points cost of such units you can include in your army is:\n\n- Incursion: Up to 500 pts\n- Strike Force: Up to 1000 pts\n- Onslaught: Up to 1500 pts\n\nA **GENESTEALER CULTS** model must be your **WARLORD**, and **ASTRA MILITARUM** models from your army lose the Voice of Command ability if they have it. You cannot include units with any of the following keywords in your army using this rule: **AIRCRAFT**; **COMMISSAR**; **EPIC HERO**; **MILITARUM TEMPESTUS**; **OGRYN**; **RATLING**; **TECH‑PRIEST ENGINSEER**; **MINISTORUM PRIEST**.",
-      "target": "Puedes incluir unidades **^^Astra Militarum^^** en tu ejército, aunque no tengan la palabra clave de Facción **^^Genestealer Cult^^**. El coste combinado en puntos de dichas unidades que puedes incluir en tu ejército es:\n\n- Incursion: Hasta 500 pts\n- Strike Force: Hasta 1000 pts\n- Onslaught: Hasta 1500 pts\n\nUna miniatura **GENESTEALER CULTS** debe ser tu **WARLORD**, y las miniaturas **ASTRA MILITARUM** de tu ejército pierden la habilidad Voice of Command si la tienen. Usando esta regla no puedes incluir en tu ejército unidades con ninguna de las siguientes palabras clave: **AIRCRAFT**; **COMMISSAR**; **EPIC HERO**; **MILITARUM TEMPESTUS**; **OGRYN**; **RATLING**; **TECH‑PRIEST ENGINSEER**; **MINISTORUM PRIEST**."
+      "target": "Puedes incluir unidades **^^Astra Militarum^^** en tu ejército, aunque no tengan la palabra clave de Facción **^^Genestealer Cult^^**. El coste combinado en puntos de dichas unidades que puedes incluir en tu ejército es:\n\n- Incursion: Hasta 500 pts\n- Strike Force: Hasta 1000 pts\n- Onslaught: Hasta 1500 pts\n\nUna miniatura **GENESTEALER CULTS** debe ser tu **WARLORD**, y las miniaturas **ASTRA MILITARUM** de tu ejército pierden la habilidad Voice of Command si la tienen. Usando esta regla no puedes incluir en tu ejército unidades con ninguna de las siguientes palabras clave: **AIRCRAFT**; **COMMISSAR**; **EPIC HERO**; **MILITARUM TEMPESTUS**; **OGRYN**; **RATLING**; **TECH-PRIEST ENGINSEER**; **MINISTORUM PRIEST**."
     },
     {
       "id": "87132e1d63a60c3c",
@@ -1342,7 +1342,7 @@
         "names": []
       },
       "source": "**NEOPHYTE HYBRIDS** unit only. This unit has ‑3\" **detection range**.",
-      "target": "Solo unidad **NEOPHYTE HYBRIDS**. Esta unidad tiene ‑3\" de **alcance de detección**."
+      "target": "Solo unidad **NEOPHYTE HYBRIDS**. Esta unidad tiene -3\" de **alcance de detección**."
     },
     {
       "id": "3cee8a7ddd9340d0",
@@ -1370,7 +1370,7 @@
         "names": []
       },
       "source": "**VON RYAN’S LEAPERS** unit only. This unit has ‑3\" **detection range**.",
-      "target": "Solo unidad **VON RYAN’S LEAPERS**. Esta unidad tiene ‑3\" de **alcance de detección**."
+      "target": "Solo unidad **VON RYAN’S LEAPERS**. Esta unidad tiene -3\" de **alcance de detección**."
     },
     {
       "id": "206b965c47c7fbde",
@@ -1620,7 +1620,7 @@
         ]
       },
       "source": "- Add 2 to the Strength characteristic of weapons equipped by ^^**Destroyer Cult^^** models from your army. \n- The first time each turn that a ^^**Destroyer Cult^^** unit from your army makes attacks that destroy a unit or cause it to become Below Half‑strength, after that unit has finished resolving its attacks, until the end of the turn, add 2 to the Strength characteristic of weapons equipped by friendly ^^**Necrons^^** models (excluding ^^**Destroyer Cult, Monster^^** and ^^**Titanic^^** models).",
-      "target": "- Suma 2 a la característica de Fuerza de las armas equipadas por las miniaturas ^^**Destroyer Cult^^** de tu ejército. \n- La primera vez en cada turno que una unidad ^^**Destroyer Cult^^** de tu ejército realiza ataques que destruyen una unidad o hacen que quede Below Half‑strength, después de que esa unidad haya terminado de resolver sus ataques, hasta el final del turno, suma 2 a la característica de Fuerza de las armas equipadas por las miniaturas ^^**Necrons^^** amigas (excluyendo las miniaturas ^^**Destroyer Cult, Monster^^** y ^^**Titanic^^**)."
+      "target": "- Suma 2 a la característica de Fuerza de las armas equipadas por las miniaturas ^^**Destroyer Cult^^** de tu ejército. \n- La primera vez en cada turno que una unidad ^^**Destroyer Cult^^** de tu ejército realiza ataques que destruyen una unidad o hacen que quede Below Half-strength, después de que esa unidad haya terminado de resolver sus ataques, hasta el final del turno, suma 2 a la característica de Fuerza de las armas equipadas por las miniaturas ^^**Necrons^^** amigas (excluyendo las miniaturas ^^**Destroyer Cult, Monster^^** y ^^**Titanic^^**)."
     },
     {
       "id": "b61616de791dcec9",

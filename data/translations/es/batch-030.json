@@ -16,7 +16,7 @@
         ]
       },
       "source": "Each time a model in this unit makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, re-roll a Wound of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo una unidad **^^Monster^^** o **^^Vehicle^^**, repite las tiradas para herir de 1."
     },
     {
       "id": "536a4f6b2f29612c",
@@ -30,7 +30,7 @@
         "names": []
       },
       "source": "Each time this unit makes a Normal or Advance move, it can move over terrain features that are 4\" or less in height as if they were not there.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento normal o de avance, puede moverse a través de elementos de escenografía de 4\" o menos de altura como si no estuvieran ahí."
     },
     {
       "id": "de4d0f8d1a66848a",
@@ -44,7 +44,7 @@
         "names": []
       },
       "source": "Once per battle, when attack is allocated to a model in this unit, you can change the Damage characteristic of that attack to 0.",
-      "target": null
+      "target": "Una vez por batalla, cuando se asigna un ataque a una miniatura de esta unidad, puedes cambiar a 0 la característica de Daño de ese ataque."
     },
     {
       "id": "5813867fccb46e5f",
@@ -61,7 +61,7 @@
         ]
       },
       "source": "Each time a model in this unit makes an attack that targets an **^^Infantry^^** or **^^Mounted^^** unit, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo una unidad **^^Infantry^^** o **^^Mounted^^**, repite las tiradas para impactar de 1."
     },
     {
       "id": "101b78aeb27b2766",
@@ -77,7 +77,7 @@
         ]
       },
       "source": "Models in this unit have the Infiltrators ability.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Infiltrators."
     },
     {
       "id": "2ca7c1f695038ed9",
@@ -91,7 +91,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack that targets a unit that is within range of an objective marker, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo una unidad que esté dentro del alcance de un marcador de objetivo, repite las tiradas para impactar de 1."
     },
     {
       "id": "a7273021a2413db6",
@@ -107,7 +107,7 @@
         ]
       },
       "source": "This unit gains the **^^Grenades^^** keyword. If it already has that keyword, once per battle, you can target this unit with the Grenade Stratagem for 0CP.",
-      "target": null
+      "target": "Esta unidad gana la palabra clave **^^Grenades^^**. Si ya tiene esa palabra clave, una vez por batalla puedes seleccionar esta unidad como objetivo del Stratagem Grenade por 0CP."
     },
     {
       "id": "9f319a58b94d8052",
@@ -123,7 +123,7 @@
         ]
       },
       "source": "At the start of the Fight phase, select one enemy unit with Engagement Range of this unit. That enemy unit must take a Battle-shock test.",
-      "target": null
+      "target": "Al inicio de la fase de Combate, selecciona una unidad enemiga que esté dentro del alcance de combate de esta unidad. Esa unidad enemiga debe realizar un test de Battle-shock."
     },
     {
       "id": "d46d3b098d51aa8b",
@@ -137,7 +137,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que tiene como objetivo al objetivo elegible más cercano, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "80e8ceeb676126fb",
@@ -153,7 +153,7 @@
         "names": []
       },
       "source": "Each time this unit ends a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Cada vez que esta unidad termina un movimiento de carga, hasta el final del turno, las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "8f87c7da7d6caaaf",
@@ -170,7 +170,7 @@
         ]
       },
       "source": "Once per battle, when this unit is set up on the battlefield using the Deep Strike ability, it can perform a Precision Insertion. If it does, this unit can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge. Each time this unit performs a Surgical Deep Strike, add 2 to the Deep Strike test.\n\n**Designer's Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*",
-      "target": null
+      "target": "Una vez por batalla, cuando esta unidad se despliega en el campo de batalla usando la habilidad Deep Strike, puede realizar una Precision Insertion. Si lo hace, esta unidad puede desplegarse en cualquier lugar del campo de batalla que esté a más de 6\" en horizontal de todas las unidades enemigas pero, hasta el final del turno, no es elegible para declarar una carga. Cada vez que esta unidad realiza un Surgical Deep Strike, suma 2 al test de Deep Strike.\n\n**Nota del diseñador:** *Solo se benefician de este Battle Trait las unidades que se despliegan usando la habilidad Deep Strike.*"
     },
     {
       "id": "501a924c1257963d",
@@ -184,7 +184,7 @@
         "names": []
       },
       "source": "Each time an attack with a Damage characteristic of 1 is allocated to a model in this unit, worsen the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que se asigna a una miniatura de esta unidad un ataque con una característica de Daño de 1, empeora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "6188f859716544dd",
@@ -198,7 +198,7 @@
         "names": []
       },
       "source": "Add 2 to the Wounds characteristic of models in this unit.",
-      "target": null
+      "target": "Suma 2 a la característica de Heridas de las miniaturas de esta unidad."
     },
     {
       "id": "78e9b747ed273890",
@@ -212,7 +212,7 @@
         "names": []
       },
       "source": "You can ignore any or all modifiers to this unit's Move characteristic. In addition, each time this unit makes a Normal move, models in this unit can move through terrain, but if any do so, after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.",
-      "target": null
+      "target": "Puedes ignorar cualquier modificador o todos los modificadores a la característica de Movimiento de esta unidad. Además, cada vez que esta unidad realiza un movimiento normal, sus miniaturas pueden moverse a través de la escenografía pero, si alguna lo hace, después de que esta unidad se haya movido, tira un D6: con un 1-3, esta unidad queda Battle-shocked."
     },
     {
       "id": "461cd22cb94df2a7",
@@ -230,7 +230,7 @@
         ]
       },
       "source": "Each time a model in this unit makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, re-roll a Hit roll of 1. If that attack targets a **^^Titanic^^** unit, you can re-roll the Hit roll instead.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo una unidad **^^Monster^^** o **^^Vehicle^^**, repite las tiradas para impactar de 1. Si ese ataque tiene como objetivo una unidad **^^Titanic^^**, puedes repetir la tirada para impactar en su lugar."
     },
     {
       "id": "6d7fcafecfa74fe5",
@@ -247,7 +247,7 @@
         ]
       },
       "source": "Once per battle, at the start of any phase, this unit can use this Battle Trait. If it does, until the end of the phase, models in this unit have the Feel No Pain 5+ ability. If this unit is Below Half-strength when this Battle Trait is used, then until the end of the phase, models in this unit have the Feel No Pain 4+ ability instead.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase, esta unidad puede usar este Battle Trait. Si lo hace, hasta el final de la fase, las miniaturas de esta unidad tienen la habilidad Feel No Pain 5+. Si esta unidad está Below Half-strength cuando se usa este Battle Trait, entonces, hasta el final de la fase, las miniaturas de esta unidad tienen la habilidad Feel No Pain 4+ en su lugar."
     },
     {
       "id": "110c8d5697a9ba67",
@@ -263,7 +263,7 @@
         ]
       },
       "source": "While this unit is wholly within your deployment zone, improve the Leadership and Objective Control characteristics of models in this unit by 1. Each time an enemy unit performs a Surgical Deep Strike within 9\" of this unit, subtract 1 from that unit's Deep Strike test result.",
-      "target": null
+      "target": "Mientras esta unidad esté completamente dentro de tu zona de despliegue, mejora en 1 las características de Liderazgo y de Control de Objetivos de las miniaturas de esta unidad. Cada vez que una unidad enemiga realiza un Surgical Deep Strike a 9\" o menos de esta unidad, resta 1 al resultado del test de Deep Strike de esa unidad."
     },
     {
       "id": "76955ed82a663e90",
@@ -279,7 +279,7 @@
         ]
       },
       "source": "In the Declare Battle Formations step, you can spend 1 Requisition point; if you do, then until the end of the battle, this unit has the Deep Strike ability and each time this unit performs a Surgical Deep Strike, add 1 to its Deep Strike test.",
-      "target": null
+      "target": "En el paso Declarar Formaciones de Batalla, puedes gastar 1 punto de Requisition; si lo haces, hasta el final de la batalla, esta unidad tiene la habilidad Deep Strike y, cada vez que esta unidad realiza un Surgical Deep Strike, suma 1 a su test de Deep Strike."
     },
     {
       "id": "57a0186fde92304a",
@@ -293,7 +293,7 @@
         "names": []
       },
       "source": "Once per battle, in your Command phase, this unit can use this Battle Trait. If it does, until the end of the turn, this unit is eligible to shoot, declare a charge and perform an Action in a turn in which it Fell Back. In addition, this unit is eligible to perform an Action while it is Battle-shocked.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, esta unidad puede usar este Battle Trait. Si lo hace, hasta el final del turno, esta unidad es elegible para disparar, declarar una carga y realizar una Acción en un turno en el que se haya replegado. Además, esta unidad es elegible para realizar una Acción mientras está Battle-shocked."
     },
     {
       "id": "7aed6a6c08f86178",
@@ -307,7 +307,7 @@
         "names": []
       },
       "source": "You can re-roll Advance rolls for this unit and this unit is eligible to perform an Action in a turn in which they Advanced. In addition, if this unit is selected to Advance, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.",
-      "target": null
+      "target": "Puedes repetir las tiradas de avance de esta unidad y esta unidad es elegible para realizar una Acción en un turno en el que haya avanzado. Además, si esta unidad es seleccionada para avanzar, hasta el final del turno, las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a esta unidad."
     },
     {
       "id": "bf158779c62d8a23",
@@ -321,7 +321,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack that targets a unit is within range of an objective marker, re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo una unidad que esté dentro del alcance de un marcador de objetivo, repite las tiradas para herir de 1."
     },
     {
       "id": "4bfe080195e9ef42",
@@ -337,7 +337,7 @@
         ]
       },
       "source": "This unit has the Scouts 6\" ability.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Scouts 6\"."
     },
     {
       "id": "b29d62e58e41a200",
@@ -351,7 +351,7 @@
         "names": []
       },
       "source": "Each time a ranged attack is allocated to a model in this unit, provided this unit did not Remain Stationary in your previous turn, worsen the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que se asigna un ataque a distancia a una miniatura de esta unidad, siempre que esta unidad no haya permanecido inmóvil en tu turno anterior, empeora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "93d2b92188e9f5f7",
@@ -365,7 +365,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll. In addition, each time a model in this unit makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo una unidad enemiga que está por debajo de su Starting Strength, suma 1 a la tirada para impactar. Además, cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo una unidad enemiga que está Below Half-strength, suma 1 a la tirada para herir."
     },
     {
       "id": "2a2e6c747d57df62",
@@ -379,7 +379,7 @@
         "names": []
       },
       "source": "Each time this unit Advances, do not make Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
-      "target": null
+      "target": "Cada vez que esta unidad avanza, no realices una tirada de avance para ella. En su lugar, hasta el final de la fase, suma 6\" a la característica de Movimiento de las miniaturas de esta unidad."
     },
     {
       "id": "09b79ab2ffb70c5a",
@@ -395,7 +395,7 @@
         ]
       },
       "source": "Once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP. If this unit performs a Surgical Deep Strike when doing so, before any Deep Strike tests are made, roll one D6 for each enemy unit within 6\" of your unit: on a 4+, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Una vez por batalla, puedes seleccionar esta unidad como objetivo del Stratagem Rapid Ingress por 0CP. Si esta unidad realiza un Surgical Deep Strike al hacerlo, antes de realizar ningún test de Deep Strike, tira un D6 por cada unidad enemiga que esté a 6\" o menos de tu unidad: con un 4+, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "f0de26809a19893e",
@@ -409,7 +409,7 @@
         "names": []
       },
       "source": "Once per battle, at the end of your opponent's Fight phase, you can remove this unit from the battlefield and place it into Strategic Reserves.",
-      "target": null
+      "target": "Una vez por batalla, al final de la fase de Combate de tu oponente, puedes retirar esta unidad del campo de batalla y colocarla en las reservas estratégicas."
     },
     {
       "id": "0c7a7578f4a9f3df",
@@ -425,7 +425,7 @@
         ]
       },
       "source": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and each time you do so, until the end of the turn, this unit has the Fights First ability.",
-      "target": null
+      "target": "Puedes seleccionar esta unidad como objetivo del Stratagem Heroic Intervention por 0CP y, cada vez que lo hagas, hasta el final del turno, esta unidad tiene la habilidad Fights First."
     },
     {
       "id": "5c3f760e2b0cc580",
@@ -441,7 +441,7 @@
         ]
       },
       "source": "Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of the turn, each time a model in this unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1. Each time this unit performs a Surgical Deep Strike, you can re-roll the Deep Strike test.\n\n**Designer's Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*",
-      "target": null
+      "target": "Cada vez que esta unidad se despliega en el campo de batalla usando la habilidad Deep Strike, hasta el final del turno, cada vez que una miniatura de esta unidad realiza un ataque, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1. Cada vez que esta unidad realiza un Surgical Deep Strike, puedes repetir el test de Deep Strike.\n\n**Nota del diseñador:** *Solo se benefician de este Battle Trait las unidades que se despliegan usando la habilidad Deep Strike.*"
     },
     {
       "id": "a28efe8fd5f7b1cc",
@@ -458,7 +458,7 @@
         ]
       },
       "source": "Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of your next turn, this unit has the Stealth ability and enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.\n\n**Designer's Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*",
-      "target": null
+      "target": "Cada vez que esta unidad se despliega en el campo de batalla usando la habilidad Deep Strike, hasta el final de tu siguiente turno, esta unidad tiene la habilidad Stealth y las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a esta unidad.\n\n**Nota del diseñador:** *Solo se benefician de este Battle Trait las unidades que se despliegan usando la habilidad Deep Strike.*"
     },
     {
       "id": "53a5714baa30b301",
@@ -474,7 +474,7 @@
         ]
       },
       "source": "After both players have deployed their armies, select one unit from your Crusade army and redeploy it. When doing so, you can set that unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona una unidad de tu ejército de Crusade y vuelve a desplegarla. Al hacerlo, si quieres puedes desplegar esa unidad en las reservas estratégicas, sin importar cuántas unidades haya ya en las reservas estratégicas."
     },
     {
       "id": "8e051d24b6c1a669",
@@ -492,7 +492,7 @@
         ]
       },
       "source": "Non-**^^Psyker^^** model only. Models in the bearer's unit have the Feel No Pain 4+ ability against Psychic Attacks.",
-      "target": null
+      "target": "Solo miniatura no **^^Psyker^^**. Las miniaturas de la unidad del portador tienen la habilidad Feel No Pain 4+ contra los ataques psíquicos."
     },
     {
       "id": "aac898033cbbb205",
@@ -508,7 +508,7 @@
         ]
       },
       "source": "Models in the bearer's unit have the Deep Strike ability. In addition, you can target the bearer's unit with the Rapid Ingress Stratagem for 0CP, and when resolving that Stratagem, you can set up that unit anywhere on the battlefield that is more than 6\" horizontally away from all enemy units and within range of an objective marker. Until the end of the turn, that unit is not eligible to declare a charge.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen la habilidad Deep Strike. Además, puedes seleccionar la unidad del portador como objetivo del Stratagem Rapid Ingress por 0CP y, al resolver ese Stratagem, puedes desplegar esa unidad en cualquier lugar del campo de batalla que esté a más de 6\" en horizontal de todas las unidades enemigas y dentro del alcance de un marcador de objetivo. Hasta el final del turno, esa unidad no es elegible para declarar una carga."
     },
     {
       "id": "de935bba0558f13f",
@@ -524,7 +524,7 @@
         ]
       },
       "source": "Models in the bearer's unit have the Stealth ability. In addition, each time the bearer's unit is selected as a target of a charge, subtract 2 from the Charge roll.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen la habilidad Stealth. Además, cada vez que la unidad del portador es seleccionada como objetivo de una carga, resta 2 a la tirada de carga."
     },
     {
       "id": "332ef1b686a80b36",
@@ -542,7 +542,7 @@
         ]
       },
       "source": "At the start of your Command phase, the bearer regains up to D3 lost wounds. Once per battle, at the start of your Command phase, if your Crusade army is in the Balanced Strategic Footing, the bearer can activate this Crusade Relic. If it does, select one enemy unit within Engagement Range of the bearer. That enemy unit suffers a number of mortal wounds equal to the number of wounds the bearer has regained as a result of this Crusade Relic during the battle.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, el portador recupera hasta D3 heridas perdidas. Una vez por batalla, al inicio de tu fase de Mando, si tu ejército de Crusade está en la Balanced Strategic Footing, el portador puede activar esta Crusade Relic. Si lo hace, selecciona una unidad enemiga que esté dentro del alcance de combate del portador. Esa unidad enemiga sufre un número de heridas mortales igual al número de heridas que el portador haya recuperado gracias a esta Crusade Relic durante la batalla."
     },
     {
       "id": "fb1231ab24806262",
@@ -559,7 +559,7 @@
         ]
       },
       "source": "Improve the Strength, Damage and Armour Penetration characteristics of the bearer's melee weapons by 1. Once per battle, in your Charge phase, if your Crusade army is in the Aggressive Strategic Footing, the bearer can activate this Crusade Relic. If it does, until the end of the phase, add 2 to Charge rolls made for the bearer's unit.",
-      "target": null
+      "target": "Mejora en 1 las características de Fuerza, Daño y Penetración de Blindaje de las armas de cuerpo a cuerpo del portador. Una vez por batalla, en tu fase de Carga, si tu ejército de Crusade está en la Aggressive Strategic Footing, el portador puede activar esta Crusade Relic. Si lo hace, hasta el final de la fase, suma 2 a las tiradas de carga realizadas para la unidad del portador."
     },
     {
       "id": "0de87dbcda4b8ca6",
@@ -576,7 +576,7 @@
         ]
       },
       "source": "Add 1 to the Toughness and Wounds characteristic of the bearer. Once per battle, when an attack targets the bearer's unit, if your Crusade army is in the Defensive Strategic Footing, the bearer can activate this Crusade Relic. If it does, until the end of the phase, each time an attack is allocated to a model in the bearer's unit, subtract 1 from the Damage characteristic of that attack.",
-      "target": null
+      "target": "Suma 1 a las características de Resistencia y Heridas del portador. Una vez por batalla, cuando un ataque tiene como objetivo la unidad del portador, si tu ejército de Crusade está en la Defensive Strategic Footing, el portador puede activar esta Crusade Relic. Si lo hace, hasta el final de la fase, cada vez que se asigna un ataque a una miniatura de la unidad del portador, resta 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "1ccd046df8ab5ac0",
@@ -590,7 +590,7 @@
         "names": []
       },
       "source": "Improve the Toughness and Save characteristics of the bearer by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Resistencia y Salvación del portador."
     },
     {
       "id": "989a4f61cf9f64bf",
@@ -606,7 +606,7 @@
         ]
       },
       "source": "After you win a battle, if the bearer is on the battlefield, you gain an additional 2 Blackstone Fragments.",
-      "target": null
+      "target": "Después de que ganes una batalla, si el portador está en el campo de batalla, ganas 2 Blackstone Fragments adicionales."
     },
     {
       "id": "2ab81adc0e455ce2",
@@ -628,7 +628,7 @@
         ]
       },
       "source": "Select one weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications table), then select one of the abilities below for that weapon to gain. That weapon is now a Crusade Relic; note this on the bearer's Crusade card and give the weapon a suitable name.\n- **[LETHAL HITS]**\n- **[PRECISION]**\n- **[SUSTAINED HITS 1]**",
-      "target": null
+      "target": "Selecciona un arma equipada por el portador (excluyendo un arma que haya sido sustituida por un Enhancement o mejorada mediante la tabla de Weapon Modifications) y, después, selecciona una de las habilidades siguientes para que esa arma la gane. Esa arma es ahora una Crusade Relic; anótalo en la Crusade card del portador y dale al arma un nombre adecuado.\n- **[LETHAL HITS]**\n- **[PRECISION]**\n- **[SUSTAINED HITS 1]**"
     },
     {
       "id": "1caca8c948363dc0",
@@ -644,7 +644,7 @@
         ]
       },
       "source": "While the bearer is on the battlefield, you can use the New Orders Stratagem for 0CP.",
-      "target": null
+      "target": "Mientras el portador esté en el campo de batalla, puedes usar el Stratagem New Orders por 0CP."
     },
     {
       "id": "f81b1aed8a950f62",
@@ -658,7 +658,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, before drawing cards from your Secondary Mission deck, if the bearer is on the battlefield, you can look at the top card of your Secondary Mission deck, then you can return that card to the bottom of your Secondary Mission deck.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, antes de robar cartas de tu mazo de Secondary Mission, si el portador está en el campo de batalla, puedes mirar la carta superior de tu mazo de Secondary Mission y, después, puedes devolver esa carta al fondo de tu mazo de Secondary Mission."
     },
     {
       "id": "36455fba7c350afd",
@@ -674,7 +674,7 @@
         ]
       },
       "source": "At the start of the first battle round, if the bearer is in your Crusade army, you can remove up to three Secondary Mission cards from your Secondary Mission deck and discard them, If you do, you can must then reshuffle your Secondary Mission deck.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, si el portador está en tu ejército de Crusade, puedes retirar hasta tres cartas de Secondary Mission de tu mazo de Secondary Mission y descartarlas. Si lo haces, debes barajar de nuevo tu mazo de Secondary Mission."
     },
     {
       "id": "3db63fa8829ddd53",
@@ -692,7 +692,7 @@
         ]
       },
       "source": "**^^Infantry^^** model only. The first time the bearer is destroyed, you can choose to roll one D6 at the end of the phase instead of using any rules that are triggered when a model is destroyed. If you do, on a 4+, set the bearer back up on the battlefield as close as possible to where they were destroyed and more than 1\" away from all enemy models, with D3 wounds remaining. If the bearer was part of an Attached unit when it was destroyed, and its Bodyguard unit is still on the battlefield when the bearer is set back up, it must be placed in Unit Coherency with that unit again to form an Attached unit. You do not need to take an Out of Action test for the bearer at the end of the battle unless it is destroyed again.",
-      "target": null
+      "target": "Solo miniatura **^^Infantry^^**. La primera vez que el portador es destruido, puedes optar por tirar un D6 al final de la fase en lugar de usar cualquier regla que se active cuando una miniatura es destruida. Si lo haces, con un 4+, vuelve a desplegar al portador en el campo de batalla lo más cerca posible del lugar donde fue destruido y a más de 1\" de todas las miniaturas enemigas, con D3 heridas restantes. Si el portador formaba parte de una unidad adjunta cuando fue destruido y su unidad de guardaespaldas sigue en el campo de batalla cuando el portador vuelve a desplegarse, debe colocarse de nuevo en coherencia de unidad con esa unidad para formar una unidad adjunta. No necesitas realizar un test de Out of Action para el portador al final de la batalla a menos que sea destruido de nuevo."
     },
     {
       "id": "35fb7f5cfb917cc2",
@@ -706,7 +706,7 @@
         "names": []
       },
       "source": "Once per battle round, if the bearer is on the battlefield when you use a Strategic Ploy Stratagem, you can use that Stratagem without spending any CP.",
-      "target": null
+      "target": "Una vez por ronda de batalla, si el portador está en el campo de batalla cuando usas un Stratagem de tipo Strategic Ploy, puedes usar ese Stratagem sin gastar CP."
     },
     {
       "id": "b2506bc0174810da",
@@ -723,7 +723,7 @@
         ]
       },
       "source": "Cannot be taken by **^^Psyker^^** models. Each time a Psychic Attack targets the bearer's unit, subtract 1 from that attack's Hit roll.",
-      "target": null
+      "target": "No puede ser tomada por miniaturas **^^Psyker^^**. Cada vez que un ataque psíquico tiene como objetivo la unidad del portador, resta 1 a la tirada para impactar de ese ataque."
     },
     {
       "id": "18fb6d4b7e1b29e5",
@@ -739,7 +739,7 @@
         ]
       },
       "source": "Unless the bearer is part of an Attached unit at the start of the battle, it has the Lone Operative ability.",
-      "target": null
+      "target": "A menos que el portador forme parte de una unidad adjunta al inicio de la batalla, tiene la habilidad Lone Operative."
     },
     {
       "id": "afe824bcff40f31a",
@@ -757,7 +757,7 @@
         ]
       },
       "source": "At the start of your opponent's Movement phase, for each enemy unit (excluding **^^Imperium^^** and **^^Chaos^^** units) within Engagement Range of the bearer, roll one D6: on a 4+. until the end of the phase, that unit cannot be selected to Fall Back.",
-      "target": null
+      "target": "Al inicio de la fase de Movimiento de tu oponente, por cada unidad enemiga (excluyendo las unidades **^^Imperium^^** y **^^Chaos^^**) que esté dentro del alcance de combate del portador, tira un D6: con un 4+. hasta el final de la fase, esa unidad no puede ser seleccionada para replegarse."
     },
     {
       "id": "5e96f92e7d94ec31",
@@ -774,7 +774,7 @@
         ]
       },
       "source": "**^^Psyker^^** model only. Each time the bearer makes a Psychic Attack, add 1 to that attack's Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Psyker^^**. Cada vez que el portador realiza un ataque psíquico, suma 1 a la tirada para herir de ese ataque."
     },
     {
       "id": "1625d49233599e34",
@@ -788,7 +788,7 @@
         "names": []
       },
       "source": "Each time the bearer makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base). If doing so when making a Fall Back move, models in this unit do not need to take a Desperate Escape test. After it has finished moving, select one enemy unit it moved across (if any) and roll one D6: on a 2+, that unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Cada vez que el portador realiza un movimiento normal, de avance o de repliegue, hasta que ese movimiento termine, puede moverse en horizontal a través de miniaturas y elementos de escenografía (no puede terminar un movimiento encima de otra miniatura o de su peana). Si lo hace al realizar un movimiento de repliegue, las miniaturas de esta unidad no necesitan realizar un test de Desperate Escape. Después de que haya terminado de moverse, selecciona una unidad enemiga por encima de la que se haya movido (si la hay) y tira un D6: con un 2+, esa unidad sufre D3 heridas mortales."
     },
     {
       "id": "5d543138c141f650",
@@ -802,7 +802,7 @@
         "names": []
       },
       "source": "The bearer can only shoot with this weapon once per battle. When an attack is made with this weapon, if a hit is scored roll one D6 for each unit within 6\" of the target unit (excluding the target unit itself): on a 4+, the unit being rolled for suffers D3 mortal wounds. The target unit then suffers 3D3 mortal wounds.",
-      "target": null
+      "target": "El portador solo puede disparar con esta arma una vez por batalla. Cuando se realiza un ataque con esta arma, si se consigue un impacto, tira un D6 por cada unidad que esté a 6\" o menos de la unidad objetivo (excluyendo la propia unidad objetivo): con un 4+, la unidad por la que estás tirando sufre D3 heridas mortales. Después, la unidad objetivo sufre 3D3 heridas mortales."
     },
     {
       "id": "5157a7306830821e",
@@ -816,7 +816,7 @@
         "names": []
       },
       "source": "Each time the bearer makes a melee attack, invulnerable saving throws cannot be made against that attack.",
-      "target": null
+      "target": "Cada vez que el portador realiza un ataque de cuerpo a cuerpo, no se pueden realizar tiradas de salvación invulnerable contra ese ataque."
     },
     {
       "id": "6bb96fc23d34e5d1",
@@ -830,7 +830,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, select one friendly model on the battlefield (excluding the bearer) and then select one Aura ability that selected model has. Until the start of your next Command phase, the bearer has that Aura ability.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, selecciona una miniatura amiga que esté en el campo de batalla (excluyendo al portador) y, después, selecciona una habilidad de Aura que tenga esa miniatura seleccionada. Hasta el inicio de tu siguiente fase de Mando, el portador tiene esa habilidad de Aura."
     },
     {
       "id": "c03305ecb16c141f",
@@ -844,7 +844,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, if the bearer is within range of an objective marker that you control, roll one D6: on a 4+, you gain 1CP.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, si el portador está dentro del alcance de un marcador de objetivo que controles, tira un D6: con un 4+, ganas 1CP."
     },
     {
       "id": "937a6ad539a67e8a",
@@ -858,7 +858,7 @@
         "names": []
       },
       "source": "Add 1 to armour saving throws made for the bearer.",
-      "target": null
+      "target": "Suma 1 a las tiradas de salvación por blindaje realizadas para el portador."
     },
     {
       "id": "fe3414e95ce2c7a2",
@@ -876,7 +876,7 @@
         ]
       },
       "source": "Select one weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). Make a note on the bearer's Crusade card of this weapon and give it a suitable name. That weapon is now a Crusade Relic and each time the bearer makes an attack with it, on a Critical Hit, the target suffers 1 mortal wound in addition to any normal damage.",
-      "target": null
+      "target": "Selecciona un arma con la que esté equipado el portador (excluyendo un arma que haya sido sustituida por un Enhancement o mejorada mediante el Battle Trait Weapon Modifications). Anota esta arma en la Crusade card del portador y dale un nombre adecuado. Esa arma es ahora una Crusade Relic y, cada vez que el portador realiza un ataque con ella, con un impacto crítico el objetivo sufre 1 herida mortal además de cualquier daño normal."
     },
     {
       "id": "9fd7b98507350171",
@@ -892,7 +892,7 @@
         ]
       },
       "source": "Each time the bearer's unit ends Charge moved, select one enemy unit within Engagement Range of the bearer. Until the end of the turn, each time a model in that enemy unit makes an attack, subtract 1 from that attack's Hit roll.",
-      "target": null
+      "target": "Cada vez que la unidad del portador termina un movimiento de carga, selecciona una unidad enemiga que esté dentro del alcance de combate del portador. Hasta el final del turno, cada vez que una miniatura de esa unidad enemiga realiza un ataque, resta 1 a la tirada para impactar de ese ataque."
     },
     {
       "id": "daa7b1b5a35559d6",
@@ -912,7 +912,7 @@
         ]
       },
       "source": "**^^Psyker^^** model only. Add 6\" to the Range characteristic of the bearer's ranged **[PSYCHIC]** weapons. If the bearer has Psychic ability that instructs you to select one or more units within a specified range, you can increase the range of that ability by 6\". If the bearer has a Psychic Aura ability, increase the range of that ability by an additional 3\".",
-      "target": null
+      "target": "Solo miniatura **^^Psyker^^**. Suma 6\" a la característica de Alcance de las armas a distancia **[PSYCHIC]** del portador. Si el portador tiene una habilidad psíquica que te indique seleccionar una o más unidades a un alcance determinado, puedes aumentar en 6\" el alcance de esa habilidad. Si el portador tiene una habilidad psíquica de Aura, aumenta en 3\" adicionales el alcance de esa habilidad."
     },
     {
       "id": "c0c904f9c263aab8",
@@ -926,7 +926,7 @@
         "names": []
       },
       "source": "Once per battle, in your Command phase, if the bearer is on the battlefield, you can use this ability. Select one point on the battlefield and place a marker on that point. At the start of your next Command phase, roll six D6 for each unit within 6\" of the centre of that marker, adding 2 to the roll for each unit within 3\" of the centre of that marker: for each 4+, that unit suffers 1 mortal wound. The marker is then removed.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, si el portador está en el campo de batalla, puedes usar esta habilidad. Selecciona un punto del campo de batalla y coloca un marcador en ese punto. Al inicio de tu siguiente fase de Mando, tira seis D6 por cada unidad que esté a 6\" o menos del centro de ese marcador, sumando 2 a la tirada por cada unidad que esté a 3\" o menos del centro de ese marcador: por cada 4+, esa unidad sufre 1 herida mortal. Después se retira el marcador."
     },
     {
       "id": "0c40a6c8659aa314",
@@ -940,7 +940,7 @@
         "names": []
       },
       "source": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of the bearer.",
-      "target": null
+      "target": "Las unidades enemigas que se despliegan en el campo de batalla como Refuerzos no pueden desplegarse a 12\" o menos del portador."
     },
     {
       "id": "ed6f177b7f96cdfd",
@@ -957,7 +957,7 @@
         ]
       },
       "source": "Once per battle, at the end of your opponent's Shooting phase, if the bearer's unit is not within Engagement Range of one or more enemy units, and if it was targeted by one or more attacks during that phase, you can remove the bearer's unit from the battlefield and place it into Strategic Reserves. If you do, when you next set up the bearer's unit from Strategic Reserves, models in that have the Deep Strike ability until the end of that phase.",
-      "target": null
+      "target": "Una vez por batalla, al final de la fase de Disparo de tu oponente, si la unidad del portador no está dentro del alcance de combate de una o más unidades enemigas y fue objetivo de uno o más ataques durante esa fase, puedes retirar la unidad del portador del campo de batalla y colocarla en las reservas estratégicas. Si lo haces, la próxima vez que despliegues la unidad del portador desde las reservas estratégicas, sus miniaturas tienen la habilidad Deep Strike hasta el final de esa fase."
     },
     {
       "id": "6bc3603c8c9fff5b",
@@ -976,7 +976,7 @@
         ]
       },
       "source": "Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic and:\n- Each time an attack is made with it, you can re-roll the Wound roll.\n- Once per battle, at the start of the Fight phase, the bearer can unleash the power stored in that weapon. When they do, until the end of the turn, that weapon has the **[DEVASTATING WOUNDS]** ability and its Strength and Attacks characteristics are increased by a number equal to the current battle round number.",
-      "target": null
+      "target": "Selecciona un arma de cuerpo a cuerpo equipada por el portador (excluyendo un arma que haya sido sustituida por un Enhancement o una Crusade Relic, o mejorada con cualquier Battle Trait). Esa arma es ahora una Crusade Relic y:\n- Cada vez que se realiza un ataque con ella, puedes repetir la tirada para herir.\n- Una vez por batalla, al inicio de la fase de Combate, el portador puede desatar el poder almacenado en esa arma. Cuando lo hace, hasta el final del turno, esa arma tiene la habilidad **[DEVASTATING WOUNDS]** y sus características de Fuerza y Ataques aumentan en un número igual al número de la ronda de batalla actual."
     },
     {
       "id": "73b03a19fc75ed78",
@@ -993,7 +993,7 @@
         ]
       },
       "source": "The bearer has the Lone Operative and Stealth abilities. While the bearer is leading a unit, models in that unit have the Stealth ability and that unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
-      "target": null
+      "target": "El portador tiene las habilidades Lone Operative y Stealth. Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen la habilidad Stealth y esa unidad solo puede ser seleccionada como objetivo de un ataque a distancia si la miniatura atacante está a 18\" o menos."
     },
     {
       "id": "b18a59523e8517b3",
@@ -1007,7 +1007,7 @@
         "names": []
       },
       "source": "At the end of your opponent's Movement phase, you can select one enemy unit that was set up one the battlefield within 12\" of the bearer's unit during this phase; the bearer's unit can then either:\n- Shoot, but when resolving those attacks the bearer's unit can only target that enemy unit (and only if it is an eligible target).\n- Declare a charge against that unit (note that even if this charge is successful, the bearer's unit does not received any Charge bonus this turn).",
-      "target": null
+      "target": "Al final de la fase de Movimiento de tu oponente, puedes seleccionar una unidad enemiga que se haya desplegado en el campo de batalla a 12\" o menos de la unidad del portador durante esta fase; la unidad del portador puede entonces:\n- Disparar, pero al resolver esos ataques la unidad del portador solo puede tomar como objetivo a esa unidad enemiga (y solo si es un objetivo elegible).\n- Declarar una carga contra esa unidad (ten en cuenta que, aunque esta carga tenga éxito, la unidad del portador no recibe ninguna bonificación de carga este turno)."
     },
     {
       "id": "c1b1705447c3d99e",
@@ -1021,7 +1021,7 @@
         "names": []
       },
       "source": "At the start of your first Command phase, if the bearer is on the battlefield, you gain 1CP. At the end of the battle, if the bearer is on the battlefield, you gain 1 Strategic Asset point (SAP).",
-      "target": null
+      "target": "Al inicio de tu primera fase de Mando, si el portador está en el campo de batalla, ganas 1CP. Al final de la batalla, si el portador está en el campo de batalla, ganas 1 Strategic Asset point (SAP)."
     },
     {
       "id": "17708ed7cdec6043",
@@ -1035,7 +1035,7 @@
         "names": []
       },
       "source": "Models in the bearer's unit have a 5+ invulnerable save against ranged attacks and each time a ranged attack is allocated to a model in the bearer's unit, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen una salvación invulnerable de 5+ contra los ataques a distancia y, cada vez que se asigna un ataque a distancia a una miniatura de la unidad del portador, con una tirada de salvación sin modificar de 6, la unidad atacante sufre 1 herida mortal después de que haya terminado de realizar sus ataques."
     },
     {
       "id": "786459344c3593a8",
@@ -1052,7 +1052,7 @@
         ]
       },
       "source": "Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic and, in your Fight phase, after the bearer has fought, select one enemy unit hit by one or more of those attacks made with this weapon. Until the end of the battle, that enemy unit is poisoned. At the start of each player's Command phase, roll one D6 for each poisoned enemy unit on the battlefield: on a 1, the poison wears off and the unit is no longer poisoned; on a 2-3, that enemy unit suffers 1 mortal wound; on a 4+, that enemy unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Selecciona un arma de cuerpo a cuerpo equipada por el portador (excluyendo un arma que haya sido sustituida por un Enhancement o una Crusade Relic, o mejorada con cualquier Battle Trait). Esa arma es ahora una Crusade Relic y, en tu fase de Combate, después de que el portador haya combatido, selecciona una unidad enemiga impactada por uno o más de esos ataques realizados con esta arma. Hasta el final de la batalla, esa unidad enemiga está envenenada. Al inicio de la fase de Mando de cada jugador, tira un D6 por cada unidad enemiga envenenada que haya en el campo de batalla: con un 1, el veneno se disipa y la unidad deja de estar envenenada; con un 2-3, esa unidad enemiga sufre 1 herida mortal; con un 4+, esa unidad enemiga sufre D3 heridas mortales."
     },
     {
       "id": "a194ff10376e2019",
@@ -1066,7 +1066,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, if the bearer is within range of an objective marker you control, you can choose one of the following:\n- Remove 1 Warp counter that the bearer's unit has. If you do, gain 1CP.\n- Take a Leadership test for this model. If that test is passed, gain 1CP.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, si el portador está dentro del alcance de un marcador de objetivo que controles, puedes elegir una de las siguientes opciones:\n- Retirar 1 ficha de Warp que tenga la unidad del portador. Si lo haces, ganas 1CP.\n- Realizar un test de Liderazgo para esta miniatura. Si se supera ese test, ganas 1CP."
     },
     {
       "id": "2838a455a3ce89ed",
@@ -1082,7 +1082,7 @@
         ]
       },
       "source": "The bearer has the Deep Strike ability. While the bearer is leading a unit, models in that unit have the Deep Strike ability.",
-      "target": null
+      "target": "El portador tiene la habilidad Deep Strike. Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen la habilidad Deep Strike."
     },
     {
       "id": "7c8af5e7512ad4b8",
@@ -1101,7 +1101,7 @@
         ]
       },
       "source": "Select one melee weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). That weapon is now a Crusade Relic and it has the **[ANTI-UNBOUND ADVERSARIES 4+** and **[DEVASTATING WOUNDS]** abilities.",
-      "target": null
+      "target": "Selecciona un arma de cuerpo a cuerpo con la que esté equipado el portador (excluyendo un arma que haya sido sustituida por un Enhancement o mejorada mediante el Battle Trait Weapon Modifications). Esa arma es ahora una Crusade Relic y tiene las habilidades **[ANTI-UNBOUND ADVERSARIES 4+** y **[DEVASTATING WOUNDS]**."
     },
     {
       "id": "e4666fecf417c9f7",
@@ -1118,7 +1118,7 @@
         ]
       },
       "source": "The bearer has the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks. In addition, once per battle, just after rolling to generate an Anomaly, you can remove one Warp counter the bearer has. If you do, you can change one of the dice that were part of that roll to a dice result of your choosing (changing the anomaly generated).",
-      "target": null
+      "target": "El portador tiene la habilidad Feel No Pain 5+ contra las heridas mortales y los ataques psíquicos. Además, una vez por batalla, justo después de tirar para generar una Anomaly, puedes retirar una ficha de Warp que tenga el portador. Si lo haces, puedes cambiar uno de los dados que formaban parte de esa tirada por el resultado que elijas (cambiando así la anomalía generada)."
     },
     {
       "id": "c7a30a5fda1f19f3",
@@ -1137,7 +1137,7 @@
         ]
       },
       "source": "Each time a **^^Beast^^** or **^^Monster^^** unit targets the bearer's unit, before making any attacks, that **^^Beast^^** or **^^Monster^^** unit must take a Battle-shock test. Each time a model in that **^^Beast^^** or **^^Monster^^** unit makes an attack that targets the bearer's unit, subtract 1 from the Hit roll and, if that test was failed, subtract 1 from the Wound roll as well. In addition, once per battle, in your Command phase, you can select one **^^Unbound Adversaries^^** unit within 18\" of the bearer. If you do, until the start of your next Command phase, that **^^Unbound Adversaries^^** unit loses the **^^Unbound Adversaries^^** keyword and is part of your Crusade army.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Beast^^** o **^^Monster^^** toma como objetivo la unidad del portador, antes de realizar ningún ataque, esa unidad **^^Beast^^** o **^^Monster^^** debe realizar un test de Battle-shock. Cada vez que una miniatura de esa unidad **^^Beast^^** o **^^Monster^^** realiza un ataque que tiene como objetivo la unidad del portador, resta 1 a la tirada para impactar y, si ese test se falló, resta 1 también a la tirada para herir. Además, una vez por batalla, en tu fase de Mando, puedes seleccionar una unidad **^^Unbound Adversaries^^** que esté a 18\" o menos del portador. Si lo haces, hasta el inicio de tu siguiente fase de Mando, esa unidad **^^Unbound Adversaries^^** pierde la palabra clave **^^Unbound Adversaries^^** y forma parte de tu ejército de Crusade."
     },
     {
       "id": "ba134446b14de7f0",
@@ -1155,7 +1155,7 @@
         ]
       },
       "source": "When the bearer's unit is destroyed, roll on D6 for every enemy unit within 6\": on a 4+, that enemy unit suffers D3 mortal wounds. Then, if the bearer's unit had one or more Warp counters when it was destroyed, you can set up one unit of **^^Unbound Adversaries^^** on the battlefield as close as possible to where the bearer's model was destroyed and not within Engagement Range of any enemy units. The Power Level of this unit is equal to the number of Warp counters the bearer's unit had.",
-      "target": null
+      "target": "Cuando la unidad del portador es destruida, tira un D6 por cada unidad enemiga que esté a 6\" o menos: con un 4+, esa unidad enemiga sufre D3 heridas mortales. Después, si la unidad del portador tenía una o más fichas de Warp cuando fue destruida, puedes desplegar una unidad de **^^Unbound Adversaries^^** en el campo de batalla lo más cerca posible del lugar donde fue destruida la miniatura del portador y fuera del alcance de combate de cualquier unidad enemiga. El Power Level de esta unidad es igual al número de fichas de Warp que tenía la unidad del portador."
     },
     {
       "id": "1c376220cb59a70b",
@@ -1175,7 +1175,7 @@
         ]
       },
       "source": "**^^Psyker^^** model only. The bearer's Psychic weapons gain the **[SUSTAINED HITS 2]** ability. In addition, at the end of the Set Warp Events step, if the bearer is in your Crusade army, you can choose to increase or decrease the intensity of the Warp Events use in that battle by 1 (to a minimum of 1 and a maximum of 3).",
-      "target": null
+      "target": "Solo miniatura **^^Psyker^^**. Las armas psíquicas del portador ganan la habilidad **[SUSTAINED HITS 2]**. Además, al final del paso Establecer Warp Events, si el portador está en tu ejército de Crusade, puedes elegir aumentar o reducir en 1 la intensidad de los Warp Events usados en esa batalla (hasta un mínimo de 1 y un máximo de 3)."
     },
     {
       "id": "0a69b89847ec89ec",
@@ -1194,7 +1194,7 @@
         ]
       },
       "source": "**^^Infantry^^** or **^^Mounted^^** model only. Select one melee weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). That weapon is now a Crusade Relic and you add 1 to the Attacks, Strength and Damage characteristic of that weapon. In addition, each time the bearer is selected to fight, you can first remove up to 3 Warp counters from the bearer's unit. For each Warp counter removed this way, until the end of the phase, add an additional 1 to the Attacks and Strength characteristics of that weapon.",
-      "target": null
+      "target": "Solo miniatura **^^Infantry^^** o **^^Mounted^^**. Selecciona un arma de cuerpo a cuerpo con la que esté equipado el portador (excluyendo un arma que haya sido sustituida por un Enhancement o mejorada mediante el Battle Trait Weapon Modifications). Esa arma es ahora una Crusade Relic y sumas 1 a las características de Ataques, Fuerza y Daño de esa arma. Además, cada vez que el portador es seleccionado para combatir, primero puedes retirar hasta 3 fichas de Warp de la unidad del portador. Por cada ficha de Warp retirada de esta forma, hasta el final de la fase, suma 1 adicional a las características de Ataques y Fuerza de esa arma."
     },
     {
       "id": "300cf47a5a2ab6ac",
@@ -1211,7 +1211,7 @@
         ]
       },
       "source": "**^^Psyker^^** model only. Each time the bearer makes a Psychic Attack, re-roll a Wound roll of 1. While the bearer's unit has one or more Warp counters, each time the bearer makes a Psychic Attack, you can re-roll the Wound roll instead.",
-      "target": null
+      "target": "Solo miniatura **^^Psyker^^**. Cada vez que el portador realiza un ataque psíquico, repite las tiradas para herir de 1. Mientras la unidad del portador tenga una o más fichas de Warp, cada vez que el portador realiza un ataque psíquico, puedes repetir la tirada para herir en su lugar."
     },
     {
       "id": "3249a6bef3f4a161",
@@ -1225,7 +1225,7 @@
         "names": []
       },
       "source": "Add 2 to the bearer's Wounds characteristic. In addition, in your Command phase, you can remove one Warp counter the bearer's unit has. If you do, the bearer regains up to D3 lost wounds.",
-      "target": null
+      "target": "Suma 2 a la característica de Heridas del portador. Además, en tu fase de Mando, puedes retirar una ficha de Warp que tenga la unidad del portador. Si lo haces, el portador recupera hasta D3 heridas perdidas."
     },
     {
       "id": "6e3e38d6de5f293c",
@@ -1239,7 +1239,7 @@
         "names": []
       },
       "source": "Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack. This is not cumulative with any other modifiers that worsen the Damage characteristic of an attack.",
-      "target": null
+      "target": "Cada vez que se asigna un ataque al portador, resta 1 a la característica de Daño de ese ataque. Esto no es acumulable con ningún otro modificador que empeore la característica de Daño de un ataque."
     },
     {
       "id": "5b12e116a5deb1b8",
@@ -1257,7 +1257,7 @@
         ]
       },
       "source": "Each time a **^^Beast^^** or **^^Monster^^** model makes an attack that targets the bearer's unit, subtract 1 from the Wound roll. If the attacking model is an **^^Unbound Adversaries^^** unit, subtract 1 from the Hit roll as well.",
-      "target": null
+      "target": "Cada vez que una miniatura **^^Beast^^** o **^^Monster^^** realiza un ataque que tiene como objetivo la unidad del portador, resta 1 a la tirada para herir. Si la miniatura atacante es una unidad **^^Unbound Adversaries^^**, resta 1 también a la tirada para impactar."
     },
     {
       "id": "f25e838f447788ce",
@@ -1274,7 +1274,7 @@
         ]
       },
       "source": "Each time a model in this unit makes an attack against a **^^Monster^^** or **^^Vehicle^^** unit, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque contra una unidad **^^Monster^^** o **^^Vehicle^^**, repite las tiradas para impactar de 1."
     },
     {
       "id": "d786b60d3797ee97",
@@ -1291,7 +1291,7 @@
         ]
       },
       "source": "Each time a **^^Monster^^** or **^^Vehicle^^** unit makes an attack against this unit, worsen the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Monster^^** o **^^Vehicle^^** realiza un ataque contra esta unidad, empeora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "da477799217ac07b",
@@ -1309,7 +1309,7 @@
         ]
       },
       "source": "While this unit is within Engagement Range of any enemy **^^Monster^^** or **^^Vehicle^^** models, it automatically passes Battle-shock and Leadership tests.",
-      "target": null
+      "target": "Mientras esta unidad esté dentro del alcance de combate de cualquier miniatura enemiga **^^Monster^^** o **^^Vehicle^^**, supera automáticamente los tests de Battle-shock y de Liderazgo."
     },
     {
       "id": "77f56760f2ae0553",
@@ -1326,7 +1326,7 @@
         ]
       },
       "source": "In your Shooting phase, each time this unit is selected to shoot, after resolving its attacks, select one **^^Monster^^** or **^^Vehicle^^** unit that lost one or more wounds as a result of those attacks. Until the start of your next Shooting phase, subtract 2\" from the Move characteristic of models in that **^^Monster^^** or **^^Vehicle^^** unit and subtract 2 from Charge rolls made for that unit.",
-      "target": null
+      "target": "En tu fase de Disparo, cada vez que esta unidad es seleccionada para disparar, después de resolver sus ataques, selecciona una unidad **^^Monster^^** o **^^Vehicle^^** que haya perdido una o más heridas como consecuencia de esos ataques. Hasta el inicio de tu siguiente fase de Disparo, resta 2\" a la característica de Movimiento de las miniaturas de esa unidad **^^Monster^^** o **^^Vehicle^^** y resta 2 a las tiradas de carga realizadas para esa unidad."
     },
     {
       "id": "cbfcf0e1d52483af",
@@ -1345,7 +1345,7 @@
         ]
       },
       "source": "Weapons equipped by models in this unit have the **[ANTI-MONSTER 4+]** and **[ANTI-VEHICLE 4+]** abilities.",
-      "target": null
+      "target": "Las armas equipadas por las miniaturas de esta unidad tienen las habilidades **[ANTI-MONSTER 4+]** y **[ANTI-VEHICLE 4+]**."
     },
     {
       "id": "b8ca2213e83a6435",
@@ -1363,7 +1363,7 @@
         ]
       },
       "source": "Each time a **^^Monster^^** or **^^Vehicle^^** unit makes an attack against this unit, models in this unit have the Feel No Pain 5+ ability against that attack.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Monster^^** o **^^Vehicle^^** realiza un ataque contra esta unidad, las miniaturas de esta unidad tienen la habilidad Feel No Pain 5+ contra ese ataque."
     },
     {
       "id": "99cc1c9553e48f57",
@@ -1377,7 +1377,7 @@
         "names": []
       },
       "source": "Each time a model in this unit destroys an enemy unit, subtract 2 from that enemy unit's Out of Action test for this battle.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad destruye una unidad enemiga, resta 2 al test de Out of Action de esa unidad enemiga para esta batalla."
     },
     {
       "id": "fa375e1a23ff4b57",
@@ -1391,7 +1391,7 @@
         "names": []
       },
       "source": "Each time a ranged attack is made against this unit, if the Strength characteristic of that attack is greater than this unit's Toughness characteristic, subtract 1 from that attack's Wound roll.",
-      "target": null
+      "target": "Cada vez que se realiza un ataque a distancia contra esta unidad, si la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de esta unidad, resta 1 a la tirada para herir de ese ataque."
     },
     {
       "id": "4e83f3449f8422fb",
@@ -1407,7 +1407,7 @@
         ]
       },
       "source": "While an enemy unit is within Engagement Range of this unit:\n- Subtract 1 from the Leadership characteristic of models in that enemy unit.\n- Each time that unit takes a Battle-shock test, the Insane Bravery Stratagem cannot be used.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté dentro del alcance de combate de esta unidad:\n- Resta 1 a la característica de Liderazgo de las miniaturas de esa unidad enemiga.\n- Cada vez que esa unidad realiza un test de Battle-shock, no se puede usar el Stratagem Insane Bravery."
     },
     {
       "id": "3555a977b87bb7b7",
@@ -1421,7 +1421,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a melee attack, if a Critical Wound is rolled, the target suffers 1 mortal wound in addition to any normal damage.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo, si se obtiene una herida crítica, el objetivo sufre 1 herida mortal además de cualquier daño normal."
     },
     {
       "id": "ab91254b56156534",
@@ -1437,7 +1437,7 @@
         ]
       },
       "source": "This unit has the Fights First ability.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Fights First."
     },
     {
       "id": "a5d5b98eea5b702f",
@@ -1455,7 +1455,7 @@
         ]
       },
       "source": "Melee weapons models in this unit are equipped with have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Las armas de cuerpo a cuerpo con las que están equipadas las miniaturas de esta unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "aa44033652ce0827",
@@ -1469,7 +1469,7 @@
         "names": []
       },
       "source": "Each time this unit makes a Normal, Advance or Fall Back move, until that move is finished, models in this unit can move horizontally through models and terrain features (they cannot finish a move on top of another model or its base). If doing so when making a Fall Back move, models in this unit do not need to take a Desperate Escape test.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento normal, de avance o de repliegue, hasta que ese movimiento termine, las miniaturas de esta unidad pueden moverse en horizontal a través de miniaturas y elementos de escenografía (no pueden terminar un movimiento encima de otra miniatura o de su peana). Si lo hacen al realizar un movimiento de repliegue, las miniaturas de esta unidad no necesitan realizar un test de Desperate Escape."
     },
     {
       "id": "3e06b1afddc0cdd6",
@@ -1487,7 +1487,7 @@
         ]
       },
       "source": "Each time this unit is selected to fight in the Fight phase, before making any attacks, it can stomp. If it does so, select one enemy unit (excluding **^^Monster^^** and **^^Vehicle^^** units) within Engagement Range of it and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.",
-      "target": null
+      "target": "Cada vez que esta unidad es seleccionada para combatir en la fase de Combate, antes de realizar ningún ataque, puede pisotear. Si lo hace, selecciona una unidad enemiga (excluyendo las unidades **^^Monster^^** y **^^Vehicle^^**) que esté dentro de su alcance de combate y tira un D6: con un 2-5, esa unidad enemiga sufre D3 heridas mortales; con un 6, esa unidad enemiga sufre 3 heridas mortales."
     },
     {
       "id": "f5f97cebd1485f67",
@@ -1506,7 +1506,7 @@
         ]
       },
       "source": "At the start of the battle, if the bearer is your **^^Warlord^^**, until the end of the battle, it gains the ability below that corresponds with the Strategic Footing you selected in the Select Strategic Footing step:\n- **Aggressive:** Models in the bearer's unit have the Scouts 6\" ability.\n- **Balanced:** The bearer has the Lone Operative ability.\n- **Defensive:** Models in the bearer's unit have the Stealth ability.",
-      "target": null
+      "target": "Al inicio de la batalla, si el portador es tu **^^Warlord^^**, hasta el final de la batalla gana la habilidad de abajo que se corresponda con la Strategic Footing que seleccionaste en el paso Seleccionar Strategic Footing:\n- **Aggressive:** Las miniaturas de la unidad del portador tienen la habilidad Scouts 6\".\n- **Balanced:** El portador tiene la habilidad Lone Operative.\n- **Defensive:** Las miniaturas de la unidad del portador tienen la habilidad Stealth."
     },
     {
       "id": "15791e38c8152843",
@@ -1520,7 +1520,7 @@
         "names": []
       },
       "source": "While the bearer is within range of an objective marker, if the bearer's unit is Battle-shocked, change the Objective Control characteristic of models in that unit to 1, instead of 0.",
-      "target": null
+      "target": "Mientras el portador esté dentro del alcance de un marcador de objetivo, si la unidad del portador está Battle-shocked, cambia a 1 la característica de Control de Objetivos de las miniaturas de esa unidad, en lugar de a 0."
     },
     {
       "id": "943483e36e2542d5",
@@ -1537,7 +1537,7 @@
         ]
       },
       "source": "If the bearer is your **^^Warlord^^**, at the end of the battle, roll one D6, adding 2 to the roll if you won the battle. On a 6+, you gain 3 Blackstone Fragments.",
-      "target": null
+      "target": "Si el portador es tu **^^Warlord^^**, al final de la batalla, tira un D6 y suma 2 al resultado si ganaste la batalla. Con un 6+, ganas 3 Blackstone Fragments."
     },
     {
       "id": "00b1a3a4501dad02",
@@ -1553,7 +1553,7 @@
         ]
       },
       "source": "Each time a melee attack is allocated to the bearer, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks. If that attack was made with a Psychic weapon, this effect applies on an unmodified saving throw of 5+ instead.",
-      "target": null
+      "target": "Cada vez que se asigna un ataque de cuerpo a cuerpo al portador, con una tirada de salvación sin modificar de 6, la unidad atacante sufre 1 herida mortal después de que haya terminado de realizar sus ataques. Si ese ataque se realizó con un arma psíquica, este efecto se aplica con una tirada de salvación sin modificar de 5+ en su lugar."
     },
     {
       "id": "2d66ea07efad8cd0",
@@ -1567,7 +1567,7 @@
         "names": []
       },
       "source": "At the start of the battle, select one objective marker. While the bearer is on the battlefield, friendly units within range of that objective marker have a 5+ invulnerable save.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona un marcador de objetivo. Mientras el portador esté en el campo de batalla, las unidades amigas que estén dentro del alcance de ese marcador de objetivo tienen una salvación invulnerable de 5+."
     },
     {
       "id": "044c8649489ffb4a",
@@ -1585,7 +1585,7 @@
         ]
       },
       "source": "Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications table). That weapon is now a Crusade Relic; note this on the bearer's Crusade card and give the weapon a suitable name. Once per battle, in the Fight phase, the bearer can activate this Crusade Relic. If it does, until the end of the phase, each time an attack is made with that weapon, invulnerable saving throws cannot be made against that attack.",
-      "target": null
+      "target": "Selecciona un arma de cuerpo a cuerpo equipada por el portador (excluyendo un arma que haya sido sustituida por un Enhancement o mejorada mediante la tabla de Weapon Modifications). Esa arma es ahora una Crusade Relic; anótalo en la Crusade card del portador y dale al arma un nombre adecuado. Una vez por batalla, en la fase de Combate, el portador puede activar esta Crusade Relic. Si lo hace, hasta el final de la fase, cada vez que se realiza un ataque con esa arma, no se pueden realizar tiradas de salvación invulnerable contra ese ataque."
     },
     {
       "id": "d804dc085a5d6c43",
@@ -1603,7 +1603,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the Determine Attacker and Defender step, you can re-roll your dice when determining who will be the Attacker and who will be the Defender.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, en el paso Determinar Atacante y Defensor puedes repetir tu tirada de dados al determinar quién será el Atacante y quién el Defensor."
     },
     {
       "id": "670c1fc3fc2ba300",
@@ -1619,7 +1619,7 @@
         ]
       },
       "source": "At the declare Battle-formations step, select one Battle Trait. Until the end of the battle, this **^^Epic Hero^^** model, and any unit they join, are considered to have this Battle Trait.",
-      "target": null
+      "target": "En el paso Declarar Formaciones de Batalla, selecciona un Battle Trait. Hasta el final de la batalla, se considera que esta miniatura **^^Epic Hero^^**, y cualquier unidad a la que se una, tienen este Battle Trait."
     },
     {
       "id": "0ba80e12abaa5f03",
@@ -1639,7 +1639,7 @@
         ]
       },
       "source": "While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. In addition, if your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle you can select one additional unit from your Crusade army to be Marked for Greatness.",
-      "target": null
+      "target": "Mientras una miniatura **^^Epic Hero^^** con esta Crusade Ability lidera una unidad, puedes ignorar cualquier Battle Scar o todas las Battle Scars que tenga esa unidad de guardaespaldas. Además, si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, al final de la batalla puedes seleccionar una unidad adicional de tu ejército de Crusade para que esté Marked for Greatness."
     },
     {
       "id": "2ab9894c9c991956",
@@ -1657,7 +1657,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, during the Determine Victor step, if you were the Victor of that battle, after gaining the Victor Bonus for that Crusade Mission, you gain that Victor bonus a second time.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, durante el paso Determinar Vencedor, si fuiste el Vencedor de esa batalla, después de obtener el Victor Bonus de esa Crusade Mission, obtienes ese Victor bonus una segunda vez."
     },
     {
       "id": "474b907cabe6b338",
@@ -1677,7 +1677,7 @@
         ]
       },
       "source": "During the battle, if one or more enemy **^^Character^^** models are destroyed by an attack made by an **^^Epic Hero^^** model (or a model in a unit it is attached to) with this Crusade Ability from your Crusade army, then at the Update Crusade Cards step, all units in your Crusade army gain an additional 1XP. If one of those destroyed enemy **^^Character^^** models was the enemy **^^Warlord^^**, you also gain 1 Strategic Asset Point.",
-      "target": null
+      "target": "Durante la batalla, si una o más miniaturas **^^Character^^** enemigas son destruidas por un ataque realizado por una miniatura **^^Epic Hero^^** (o por una miniatura de una unidad a la que esté adjunta) con esta Crusade Ability de tu ejército de Crusade, entonces, en el paso Actualizar Cartas de Crusade, todas las unidades de tu ejército de Crusade ganan 1XP adicional. Si una de esas miniaturas **^^Character^^** enemigas destruidas era el **^^Warlord^^** enemigo, ganas además 1 Strategic Asset Point."
     },
     {
       "id": "c01431bc9367e554",
@@ -1695,7 +1695,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with Crusade Ability, during the Update Crusade Cards step you can re-roll failed Out of Action tests for units in your Crusade army.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, durante el paso Actualizar Cartas de Crusade puedes repetir los tests de Out of Action fallados de las unidades de tu ejército de Crusade."
     },
     {
       "id": "1b09b275553a65ad",
@@ -1712,7 +1712,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade ability, then at the Select Crusade Blessings step, roll one D6: on 4+ select one of the following:\n- If you are the Underdog, you can select one additional Crusade Blessing.\n- If you are not the Underdog, you can select one Crusade Blessing, instead.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, en el paso Seleccionar Crusade Blessings, tira un D6: con un 4+, selecciona una de las siguientes opciones:\n- Si eres el Underdog, puedes seleccionar una Crusade Blessing adicional.\n- Si no eres el Underdog, puedes seleccionar una Crusade Blessing en su lugar."
     },
     {
       "id": "1a665112300ef960",
@@ -1731,7 +1731,7 @@
         ]
       },
       "source": "At the Declare Battle Formations step, select one of the following:\n- While this model is leading a unit, weapons equipped by models in that unit the **[ANTI-UNBOUND ADVERSARIES 4+]** ability.\n- Select one Armageddon Battle Trait (this must be a Battle Trait they could have if they were not an **^^Epic Hero^^**). Until the end of the battle, this **^^Epic Hero^^** model, and any unit they join, have this Battle Trait.",
-      "target": null
+      "target": "En el paso Declarar Formaciones de Batalla, selecciona una de las siguientes opciones:\n- Mientras esta miniatura lidera una unidad, las armas equipadas por las miniaturas de esa unidad tienen la habilidad **[ANTI-UNBOUND ADVERSARIES 4+]**.\n- Selecciona un Battle Trait de Armageddon (debe ser un Battle Trait que pudieran tener si no fueran un **^^Epic Hero^^**). Hasta el final de la batalla, esta miniatura **^^Epic Hero^^**, y cualquier unidad a la que se una, tienen este Battle Trait."
     },
     {
       "id": "a64a93b767a3823a",
@@ -1751,7 +1751,7 @@
         ]
       },
       "source": "While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle, you can select one additional unit from your Crusade army to be Marked for Greatness.",
-      "target": null
+      "target": "Mientras una miniatura **^^Epic Hero^^** con esta Crusade Ability lidera una unidad, puedes ignorar cualquier Battle Scar o todas las Battle Scars que tenga esa unidad de guardaespaldas. Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, al final de la batalla puedes seleccionar una unidad adicional de tu ejército de Crusade para que esté Marked for Greatness."
     },
     {
       "id": "956852f8ca81b807",
@@ -1769,7 +1769,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, during the Determine Victor step, if you were the victor of that battle and if that **^^Epic Hero^^** is on the battlefield, you gain the Victor bonus a second time.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, durante el paso Determinar Vencedor, si fuiste el vencedor de esa batalla y esa miniatura **^^Epic Hero^^** está en el campo de batalla, obtienes el Victor bonus una segunda vez."
     },
     {
       "id": "2b4ee5f09c5d49ef",
@@ -1789,7 +1789,7 @@
         ]
       },
       "source": "During the battle, if one or more enemy **^^Character^^** models are destroyed by an attack made by an **^^Epic Hero^^** model (or a model in a unit it is attached to) with this Crusade Ability from your Crusade army, then at the Update Crusade Cards step, all units in your Crusade army gain an additional 1XP. If one of those destroyed enemy **^^Character^^** models was the enemy **^^Warlord^^**, you also gain 1 strategic point.",
-      "target": null
+      "target": "Durante la batalla, si una o más miniaturas **^^Character^^** enemigas son destruidas por un ataque realizado por una miniatura **^^Epic Hero^^** (o por una miniatura de una unidad a la que esté adjunta) con esta Crusade Ability de tu ejército de Crusade, entonces, en el paso Actualizar Cartas de Crusade, todas las unidades de tu ejército de Crusade ganan 1XP adicional. Si una de esas miniaturas **^^Character^^** enemigas destruidas era el **^^Warlord^^** enemigo, ganas además 1 punto estratégico."
     },
     {
       "id": "4c50c9a83c01f3f3",
@@ -1807,7 +1807,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with Crusade Ability, you can re-roll failed Out of Action tests for units in your Crusade army.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, puedes repetir los tests de Out of Action fallados de las unidades de tu ejército de Crusade."
     },
     {
       "id": "10eaec0388f64313",
@@ -1824,7 +1824,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade ability, then at the Select Crusade Blessings step, select one of the following:\n- If you are the Underdog, roll one D6: on a 4+, you can select one additional Crusade Blessing.\n- If you are not the Underdog, roll one D6: on a 6 you can select one Crusade Blessing, instead.",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, en el paso Seleccionar Crusade Blessings, selecciona una de las siguientes opciones:\n- Si eres el Underdog, tira un D6: con un 4+, puedes seleccionar una Crusade Blessing adicional.\n- Si no eres el Underdog, tira un D6: con un 6, puedes seleccionar una Crusade Blessing en su lugar."
     },
     {
       "id": "25bfd6f4f7eaace5",
@@ -1842,7 +1842,7 @@
         ]
       },
       "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, select one of the following:\n- At the Determine Attacker and Defender step, you can re-roll your dice when determining who will be the Attacker and who will be the Defender.\n- At the end of the Set Warp Events step, roll one D6: on a 4+ you can choose to increase or decrease the intensity of the Warp Events used in that battle by 1 (to a minimum of 1 and a maximum of 3).",
-      "target": null
+      "target": "Si tu ejército de Crusade incluye una o más miniaturas **^^Epic Hero^^** con esta Crusade Ability, selecciona una de las siguientes opciones:\n- En el paso Determinar Atacante y Defensor, puedes repetir tu tirada de dados al determinar quién será el Atacante y quién el Defensor.\n- Al final del paso Establecer Warp Events, tira un D6: con un 4+, puedes elegir aumentar o reducir en 1 la intensidad de los Warp Events usados en esa batalla (hasta un mínimo de 1 y un máximo de 3)."
     },
     {
       "id": "7b61fd7fd9a28837",
@@ -1856,7 +1856,7 @@
         "names": []
       },
       "source": "Each time the bearer makes a melee attack, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Cada vez que el portador realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para herir."
     },
     {
       "id": "86fd30d2d6dee922",
@@ -1870,7 +1870,7 @@
         "names": []
       },
       "source": "The bearer's unit can attempt to operate a Hatchway at the start or end of the Move Units step of your Movement phase. The bearer's unit cannot attempt to operate more than one Hatchway per turn.",
-      "target": null
+      "target": "La unidad del portador puede intentar accionar una Hatchway al inicio o al final del paso Mover Unidades de tu fase de Movimiento. La unidad del portador no puede intentar accionar más de una Hatchway por turno."
     },
     {
       "id": "d40dcb82f3632cb6",
@@ -1884,7 +1884,7 @@
         "names": []
       },
       "source": "Once per battle round, the bearer can be targeted with the Battlefield Command Stratagem for 0CP, even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Una vez por ronda de batalla, se puede seleccionar al portador como objetivo del Stratagem Battlefield Command por 0CP, incluso si ya has seleccionado otra unidad como objetivo de ese Stratagem en esta fase."
     },
     {
       "id": "dcdc2c3ffff687f9",
@@ -1898,7 +1898,7 @@
         "names": []
       },
       "source": "You start the battle with 2CP.",
-      "target": null
+      "target": "Empiezas la batalla con 2CP."
     },
     {
       "id": "711fc24fc16661b1",
@@ -1915,7 +1915,7 @@
         ]
       },
       "source": "When you select this Enhancement, select one ranged weapon equipped by the bearer (excluding Torrent weapons) and make a note of this on your Army Roster. Add 1 to the Strength and Damage characteristics of that weapon.",
-      "target": null
+      "target": "Cuando seleccionas este Enhancement, selecciona un arma a distancia equipada por el portador (excluyendo las armas Torrent) y anótalo en tu Army Roster. Suma 1 a las características de Fuerza y Daño de esa arma."
     },
     {
       "id": "c72c9b01fa3ab2d3",
@@ -1931,7 +1931,7 @@
         ]
       },
       "source": "In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1\" of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, each enemy unit that is on the opposite side of and visible to that Weakened Wall is stunned. Each time a unit is stunned, until the end of the turn, that unit cannot fire Overwatch and each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando el portador es seleccionado para moverse, al inicio o al final de ese movimiento, si el portador está a 1\" o menos de un Weakened Wall que no haya sido derribado, puede usar este Enhancement. Si lo hace, cada unidad enemiga que esté al lado opuesto de ese Weakened Wall y sea visible a través de él queda aturdida. Cada vez que una unidad queda aturdida, hasta el final del turno, esa unidad no puede disparar Overwatch y, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "c26650f82bbb9549",
@@ -1947,7 +1947,7 @@
         ]
       },
       "source": "In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1\" of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, that Weakened Wall's Vulnerable Section is destroyed. In addition, each unit that is on the opposite side of that Weakened Wall and is visible to and within 6\" of it suffers 1 mortal wound.",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando el portador es seleccionado para moverse, al inicio o al final de ese movimiento, si el portador está a 1\" o menos de un Weakened Wall que no haya sido derribado, puede usar este Enhancement. Si lo hace, la Vulnerable Section de ese Weakened Wall queda destruida. Además, cada unidad que esté al lado opuesto de ese Weakened Wall, sea visible a través de él y esté a 6\" o menos de él sufre 1 herida mortal."
     },
     {
       "id": "2cdba8dadb3f9c2a",
@@ -1963,7 +1963,7 @@
         ]
       },
       "source": "In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1\" of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, select one enemy unit that is on the opposite side of and visible to that Weakened Wall. Until the end of the turn, each time a friendly model makes an attack against that enemy unit, add 1 to the Hit roll and add 1 to the Wound roll.",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando el portador es seleccionado para moverse, al inicio o al final de ese movimiento, si el portador está a 1\" o menos de un Weakened Wall que no haya sido derribado, puede usar este Enhancement. Si lo hace, selecciona una unidad enemiga que esté al lado opuesto de ese Weakened Wall y sea visible a través de él. Hasta el final del turno, cada vez que una miniatura amiga realiza un ataque contra esa unidad enemiga, suma 1 a la tirada para impactar y suma 1 a la tirada para herir."
     },
     {
       "id": "fa463ade8c2099df",
@@ -1977,7 +1977,7 @@
         "names": []
       },
       "source": "Once per turn, at the start of your Command phase, Movement phase, Shooting phase, or Charge phase, or the Fight phase, you can select one enemy unit within 18\" of this model. That unit must take a Battle-shock test, subtracting 1 from the test when it does so if it has one or more Warp counters.",
-      "target": null
+      "target": "Una vez por turno, al inicio de tu fase de Mando, fase de Movimiento, fase de Disparo o fase de Carga, o de la fase de Combate, puedes seleccionar una unidad enemiga que esté a 18\" o menos de esta miniatura. Esa unidad debe realizar un test de Battle-shock, restando 1 al test al hacerlo si tiene una o más fichas de Warp."
     },
     {
       "id": "b30dbe77f17403c1",
@@ -1993,7 +1993,7 @@
         ]
       },
       "source": "Models in this unit have a 6+ invulnerable save. While this unit has one or more Warp counters, models in this unit have a 5+ invulnerable save (excluding against Psychic Attacks).",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen una salvación invulnerable de 6+. Mientras esta unidad tenga una o más fichas de Warp, las miniaturas de esta unidad tienen una salvación invulnerable de 5+ (excepto contra los ataques psíquicos)."
     },
     {
       "id": "f779dd39b62b7ad2",
@@ -2007,7 +2007,7 @@
         "names": []
       },
       "source": "Each time this unit is Marked for Greatness, it gains an additional 2XP. In addition, once per battle, in your Command phase, you can add or remove one Warp counter to/from this unit.",
-      "target": null
+      "target": "Cada vez que esta unidad es Marked for Greatness, gana 2XP adicionales. Además, una vez por batalla, en tu fase de Mando, puedes añadir o retirar una ficha de Warp a/de esta unidad."
     },
     {
       "id": "2419a2aab610e706",
@@ -2023,7 +2023,7 @@
         ]
       },
       "source": "This unit has the Stealth ability and if this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Stealth y, si esta unidad está en las reservas estratégicas, considera el número de la ronda de batalla como uno más que el número de la ronda de batalla actual a la hora de determinar cuándo y dónde se despliega."
     },
     {
       "id": "e1a6150e72de66bf",
@@ -2039,7 +2039,7 @@
         ]
       },
       "source": "Once per battle, in your Command phase, this unit can use this Battle Trait. When it does, if it is Battle-shocked, it is no longer Battle-shocked and, until the end of the turn, this unit is eligible to perform an Action in a turn in which it Fell Back and/or while within Engagement Range of one or more enemy units.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, esta unidad puede usar este Battle Trait. Cuando lo hace, si está Battle-shocked, deja de estar Battle-shocked y, hasta el final del turno, esta unidad es elegible para realizar una Acción en un turno en el que se haya replegado o mientras esté dentro del alcance de combate de una o más unidades enemigas."
     },
     {
       "id": "06c6cf65f36e585c",
@@ -2055,7 +2055,7 @@
         ]
       },
       "source": "Each time a model in this unit makes an attack that targets the closest eligible target, you can re-roll a Wound roll of 1. If the target of that is an **^^Unbound Adversaries^^** unit, and it is the closest eligible target, you can re-roll the Wound roll instead.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo al objetivo elegible más cercano, puedes repetir las tiradas para herir de 1. Si el objetivo de ese ataque es una unidad **^^Unbound Adversaries^^** y es el objetivo elegible más cercano, puedes repetir la tirada para herir en su lugar."
     },
     {
       "id": "5fefff3a273f69b5",
@@ -2073,7 +2073,7 @@
         ]
       },
       "source": "Models in this unit have the Feel No Pain 6+ ability against Psychic Attacks and mortal wounds. While this unit has one or more Warp counters, models in this unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 6+ contra los ataques psíquicos y las heridas mortales. Mientras esta unidad tenga una o más fichas de Warp, las miniaturas de esta unidad tienen la habilidad Feel No Pain 5+ contra los ataques psíquicos y las heridas mortales."
     },
     {
       "id": "6b5bda493b96ab59",
@@ -2092,7 +2092,7 @@
         ]
       },
       "source": "Ranged Weapons equipped by models in this unit have the **[ASSAULT]** ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[ASSAULT]**."
     },
     {
       "id": "94cda04b0caab71a",
@@ -2106,7 +2106,7 @@
         "names": []
       },
       "source": "You can ignore any or all modifiers to this unit's Move characteristic. In addition, each time this unit makes a Normal move, its models can move through sections of terrain features more than 2\" in height, but if any do so, just after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.",
-      "target": null
+      "target": "Puedes ignorar cualquier modificador o todos los modificadores a la característica de Movimiento de esta unidad. Además, cada vez que esta unidad realiza un movimiento normal, sus miniaturas pueden moverse a través de secciones de elementos de escenografía de más de 2\" de altura pero, si alguna lo hace, justo después de que esta unidad se haya movido, tira un D6: con un 1-3, esta unidad queda Battle-shocked."
     },
     {
       "id": "5db44245cc2ad505",
@@ -2123,7 +2123,7 @@
         ]
       },
       "source": "Each time this unit targets an **^^Unbound Adversaries^^** unit, you can re-roll the Hit roll. In addition, at the Update Crusade Cards step, if this unit would gain XP from Dealers in Death, it gains 1 additional XP.",
-      "target": null
+      "target": "Cada vez que esta unidad toma como objetivo una unidad **^^Unbound Adversaries^^**, puedes repetir la tirada para impactar. Además, en el paso Actualizar Cartas de Crusade, si esta unidad fuera a ganar XP por Dealers in Death, gana 1XP adicional."
     },
     {
       "id": "cbdb16aa5a28b2da",
@@ -2137,7 +2137,7 @@
         "names": []
       },
       "source": "Each time this unit makes a Normal, Advance or Charge move, its models can move through sections of terrain features more than 2\" in height, but if any do so, just after this unit has moved, roll one D6: on a 1, this unit suffers D3 mortal wounds and is Battle-shocked; on a 2-3 this unit is Battle-shocked.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento normal, de avance o de carga, sus miniaturas pueden moverse a través de secciones de elementos de escenografía de más de 2\" de altura pero, si alguna lo hace, justo después de que esta unidad se haya movido, tira un D6: con un 1, esta unidad sufre D3 heridas mortales y queda Battle-shocked; con un 2-3, esta unidad queda Battle-shocked."
     },
     {
       "id": "2453dac60ba58e63",
@@ -2151,7 +2151,7 @@
         "names": []
       },
       "source": "After both players have deployed their armies, you can redeploy this unit. When doing so, you can set this unit up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, puedes volver a desplegar esta unidad. Al hacerlo, puedes desplegar esta unidad en las reservas estratégicas, sin importar cuántas unidades haya ya en las reservas estratégicas."
     },
     {
       "id": "08b345a7bbdf7fb4",
@@ -2167,7 +2167,7 @@
         ]
       },
       "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit, adding 1 to the result if this unit has 1 or more Warp counters: for each 5+, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que esta unidad termina un movimiento de carga, selecciona una unidad enemiga que esté dentro de su alcance de combate y, después, tira un D6 por cada miniatura de esta unidad que esté dentro del alcance de combate de esa unidad enemiga, sumando 1 al resultado si esta unidad tiene 1 o más fichas de Warp: por cada 5+, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "444e9b8e47c11921",
@@ -2181,7 +2181,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this unit, worsen the Leadership and Objective characteristics of models in that unit by 1 (to a minimum of 1).",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta unidad, empeora en 1 las características de Liderazgo y de Objetivos de las miniaturas de esa unidad (hasta un mínimo de 1)."
     },
     {
       "id": "2fb5923661e425b7",
@@ -2198,7 +2198,7 @@
         ]
       },
       "source": "At the start of the Deploy Crusade Armies step, you can spend 1RP; if you do, until the end of the battle, each model in this unit has the Infiltrators ability.",
-      "target": null
+      "target": "Al inicio del paso Desplegar Ejércitos de Crusade, puedes gastar 1RP; si lo haces, hasta el final de la batalla, cada miniatura de esta unidad tiene la habilidad Infiltrators."
     },
     {
       "id": "f93133dcbe426794",
@@ -2214,7 +2214,7 @@
         ]
       },
       "source": "Add 1 to the Strength characteristic of Psychic weapons equipped by models in this unit. While this unit has one or more Warp counters, add 2 to the Strength characteristic of Psychic weapons equipped by models in this unit instead.",
-      "target": null
+      "target": "Suma 1 a la característica de Fuerza de las armas psíquicas equipadas por las miniaturas de esta unidad. Mientras esta unidad tenga una o más fichas de Warp, suma 2 a la característica de Fuerza de las armas psíquicas equipadas por las miniaturas de esta unidad en su lugar."
     },
     {
       "id": "79dc2473438ba55e",
@@ -2228,7 +2228,7 @@
         "names": []
       },
       "source": "You can re-roll Advance and Charge rolls for this unit. In addition, each time this unit is selected to Advance, you can remove one Warp counter from it. If you do, then until the end of the turn, this unit is not eligible to declare a charge (even if another rule would let it Advance and Charge in the same turn), but you do not make an Advance roll; instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
-      "target": null
+      "target": "Puedes repetir las tiradas de avance y de carga de esta unidad. Además, cada vez que esta unidad es seleccionada para avanzar, puedes retirar una ficha de Warp de ella. Si lo haces, hasta el final del turno, esta unidad no es elegible para declarar una carga (aunque otra regla le permitiría avanzar y cargar en el mismo turno), pero no realizas una tirada de avance; en su lugar, hasta el final de la fase, suma 6\" a la característica de Movimiento de las miniaturas de esta unidad."
     },
     {
       "id": "5d15fefe87f76d6d",
@@ -2244,7 +2244,7 @@
         ]
       },
       "source": "Each time an attack targets this unit (excluding Psychic Attacks), if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Cada vez que un ataque tiene como objetivo esta unidad (excluyendo los ataques psíquicos), si la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de esta unidad, resta 1 a la tirada para herir."
     }
   ]
 }

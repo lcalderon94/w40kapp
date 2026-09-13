@@ -19,7 +19,7 @@
         ]
       },
       "source": "**^^Kinband Champion^^** only. Change this model's Move characteristic to 12\", its Toughness characteristic to 5, its Save characteristic to 5+, its Wounds characteristic to 6, and it is equipped with 1 kalamandra's bite in addition to the weapons you choose in Step 4. Remove the **^^Infantry^^** keyword, add the **^^Mounted^^** keyword and it gains the Lone Operative ability.",
-      "target": null
+      "target": "Solo **^^Kinband Champion^^**. Cambia la característica de Movimiento de esta miniatura a 12\", su característica de Resistencia a 5, su característica de Salvación a 5+ y su característica de Heridas a 6, y va equipada con 1 kalamandra's bite además de las armas que elijas en el Paso 4. Elimina la palabra clave **^^Infantry^^**, añade la palabra clave **^^Mounted^^** y gana la habilidad Lone Operative."
     },
     {
       "id": "8653169e2477c3b3",
@@ -41,7 +41,7 @@
         ]
       },
       "source": "**^^Kinband Champion^^** only. Change this model's Toughness characteristic to 6, its Save characteristic to 5+ and its Wounds characteristic to 7, and it is equipped with 1 Rampager fists in addition to the weapons you choose in Step 4. Remove the **^^Infantry^^** keyword, add the **^^Mounted^^** keyword, and replace the list of units this model can be attached to: **^^Krootox Rampagers^^**, **^^Krootox Riders^^**.",
-      "target": null
+      "target": "Solo **^^Kinband Champion^^**. Cambia la característica de Resistencia de esta miniatura a 6, su característica de Salvación a 5+ y su característica de Heridas a 7, y va equipada con 1 Rampager fists además de las armas que elijas en el Paso 4. Elimina la palabra clave **^^Infantry^^**, añade la palabra clave **^^Mounted^^** y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: **^^Krootox Rampagers^^**, **^^Krootox Riders^^**."
     },
     {
       "id": "0454064229230b57",
@@ -59,7 +59,7 @@
         ]
       },
       "source": "**^^Shas'nel^^** only. Change this model's Move characteristic to 7\", it gains the Scouts 7\" ability, and replace the list of units this model can be attached to: **^^Pathfinder Team^^**.",
-      "target": null
+      "target": "Solo **^^Shas'nel^^**. Cambia la característica de Movimiento de esta miniatura a 7\", gana la habilidad Scouts 7\" y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: **^^Pathfinder Team^^**."
     },
     {
       "id": "a15d074c64033985",
@@ -73,7 +73,7 @@
         "names": []
       },
       "source": "**GHOSTKEEL BATTLESUIT/PATHFINDER TEAM/STEALTH BATTLESUITS** unit only. When this unit is **selected to shoot**, you can select one enemy unit within 24\" of this unit. That enemy unit has +9\" **detection range** until this unit has shot.",
-      "target": null
+      "target": "Solo unidad **GHOSTKEEL BATTLESUIT/PATHFINDER TEAM/STEALTH BATTLESUITS**. Cuando esta unidad es **seleccionada para disparar**, puedes seleccionar una unidad enemiga que esté a 24\" o menos de esta unidad. Esa unidad enemiga tiene +9\" de **alcance de detección** hasta que esta unidad haya disparado."
     },
     {
       "id": "472884f8e400e425",
@@ -87,7 +87,7 @@
         "names": []
       },
       "source": "**STEALTH BATTLESUITS** unit only. This unit has -3\" **detection range**.",
-      "target": null
+      "target": "Solo unidad **STEALTH BATTLESUITS**. Esta unidad tiene -3\" de **alcance de detección**."
     },
     {
       "id": "e3aefe85eb9f468c",
@@ -101,7 +101,7 @@
         "names": []
       },
       "source": "Each time this unit or an enemy unit ends a move, for each model in this unit within 3\" of one or more enemy units, select one of those enemy units. That model in this unit is destroyed, then roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6 that enemy unit suffers D6 mortal wounds.",
-      "target": null
+      "target": "Cada vez que esta unidad o una unidad enemiga termina un movimiento, por cada miniatura de esta unidad que esté a 3\" o menos de una o más unidades enemigas, selecciona una de esas unidades enemigas. Esa miniatura de esta unidad es destruida y, a continuación, tira un D6: con un 2-5, esa unidad enemiga sufre D3 heridas mortales; con un 6, esa unidad enemiga sufre D6 heridas mortales."
     },
     {
       "id": "d6d8ce7d42201774",
@@ -115,7 +115,7 @@
         "names": []
       },
       "source": "Enemy units cannot start or end an Advance move within 6\" of this unit.",
-      "target": null
+      "target": "Las unidades enemigas no pueden empezar ni terminar un movimiento de avance a 6\" o menos de esta unidad."
     },
     {
       "id": "7229d31823d04110",
@@ -131,7 +131,7 @@
         ]
       },
       "source": "At the start of the first battle round, select one of the following:\n- Select one enemy unit. Until the end of the battle, each time this model makes an attack that targets that unit you can re-roll the Hit roll and you can re-roll the Wound roll\n- Select one objective marker. Until the end of the battle, while this model is within range of that objective marker, it has the Feel No Pain 5+ ability and an Objective Control characteristic of 15.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona una de las siguientes opciones:\n- Selecciona una unidad enemiga. Hasta el final de la batalla, cada vez que esta miniatura realiza un ataque que toma como objetivo a esa unidad, puedes repetir la tirada para impactar y puedes repetir la tirada para herir\n- Selecciona un marcador de objetivo. Hasta el final de la batalla, mientras esta miniatura esté dentro del alcance de ese marcador de objetivo, tiene la habilidad Feel No Pain 5+ y una característica de Control de Objetivos de 15."
     },
     {
       "id": "e57f9de338af395a",
@@ -145,7 +145,7 @@
         "names": []
       },
       "source": "Each time this unit or an enemy unit ends a move, for each model in this unit that is within 3\" of one or more enemy units, select one of those enemy units. That model in this unit is destroyed, then roll one D6: on a 2-5, that enemy unit suffers 1 mortal wound; on a 6, that enemy unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Cada vez que esta unidad o una unidad enemiga termina un movimiento, por cada miniatura de esta unidad que esté a 3\" o menos de una o más unidades enemigas, selecciona una de esas unidades enemigas. Esa miniatura de esta unidad es destruida y, a continuación, tira un D6: con un 2-5, esa unidad enemiga sufre 1 herida mortal; con un 6, esa unidad enemiga sufre D3 heridas mortales."
     },
     {
       "id": "6aabb9b59537e902",
@@ -159,7 +159,7 @@
         "names": []
       },
       "source": "In your Command phase, you can select one friendly TERMAGANTS unit within 6\" of this model and return up to D3+3 destroyed TERMAGANT models to that unit. A TERMAGANTS unit cannot be selected for this ability more than once per phase.",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar una unidad TERMAGANTS amiga que esté a 6\" o menos de esta miniatura y devolver a esa unidad hasta D3+3 miniaturas TERMAGANT destruidas. Una unidad TERMAGANTS no puede ser seleccionada para esta habilidad más de una vez por fase."
     },
     {
       "id": "a7350464b9385bf1",
@@ -175,7 +175,7 @@
         "names": []
       },
       "source": "While a friendly TERMAGANTS unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability.",
-      "target": null
+      "target": "Mientras una unidad TERMAGANTS amiga esté a 6\" o menos de esta miniatura, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [LETHAL HITS]."
     },
     {
       "id": "cd4c3ee039e49e37",
@@ -189,7 +189,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, si esta miniatura está en el campo de batalla, ganas 1CP"
     },
     {
       "id": "9127918ff9f3adc4",
@@ -203,7 +203,7 @@
         "names": []
       },
       "source": "Once per turn, when your opponent targets a unit from their army within 12\" of this model with a **stratagem**, you can use this ability. If you do increase the CP cost of that use of that **stratagem** by 1CP.",
-      "target": null
+      "target": "Una vez por turno, cuando tu oponente toma como objetivo de un **stratagem** a una unidad de su ejército que esté a 12\" o menos de esta miniatura, puedes usar esta habilidad. Si lo haces, aumenta en 1CP el coste en CP de ese uso de ese **stratagem**."
     },
     {
       "id": "9c19a031126db63e",
@@ -220,7 +220,7 @@
         ]
       },
       "source": "While a friendly **TYRANIDS** unit is within 9\" of this model, that unit is within your army’s Synapse Range.",
-      "target": null
+      "target": "Mientras una unidad **TYRANIDS** amiga esté a 9\" o menos de esta miniatura, esa unidad está dentro del Synapse Range de tu ejército."
     },
     {
       "id": "c485de3a525c3932",
@@ -236,7 +236,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n- **^^Tyrant Guard^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **^^Tyrant Guard^^**"
     },
     {
       "id": "9d5a04396088a737",
@@ -252,7 +252,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, weapons equipped by models in that unit have the **[DEVASTATING WOUNDS]** ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las armas equipadas por las miniaturas de esa unidad tienen la habilidad **[DEVASTATING WOUNDS]**."
     },
     {
       "id": "fbd9d8cff776d818",
@@ -268,7 +268,7 @@
         ]
       },
       "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. Until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Al inicio de la fase de Combate, selecciona una unidad enemiga que esté dentro del alcance de combate de esta miniatura. Hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "3ce3a58d3e5c528f",
@@ -284,7 +284,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n- **^^Genestealers^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **^^Genestealers^^**"
     },
     {
       "id": "1b85bf4421e2256d",
@@ -298,7 +298,7 @@
         "names": []
       },
       "source": "At the start of each player’s Command phase, this model regains up to D3 lost wounds.",
-      "target": null
+      "target": "Al inicio de la fase de Mando de cada jugador, esta miniatura recupera hasta D3 heridas perdidas."
     },
     {
       "id": "2a2c27339fec973a",
@@ -314,7 +314,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n- **^^Carnifexes^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **^^Carnifexes^^**"
     },
     {
       "id": "f4967078f05fec03",
@@ -328,7 +328,7 @@
         "names": []
       },
       "source": "In the Fight phase, when this unit is **selected to fight** or when an enemy unit targets this unit, you can select one of the following:\n▪ This unit’s melee attacks have +1 **S**.\n▪ <ins>Or</ins>: This unit has +1 **T**.",
-      "target": null
+      "target": "En la fase de Combate, cuando esta unidad es **seleccionada para combatir** o cuando una unidad enemiga la toma como objetivo, puedes seleccionar una de las siguientes opciones:\n▪ Los ataques de cuerpo a cuerpo de esta unidad tienen +1 **S**.\n▪ <ins>O bien</ins>: Esta unidad tiene +1 **T**."
     },
     {
       "id": "806994134a34718f",
@@ -344,7 +344,7 @@
         ]
       },
       "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6\".",
-      "target": null
+      "target": "En la fase de Movimiento de tu oponente, si una unidad enemiga termina un movimiento a 8\" o menos de esta unidad, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, esta unidad puede realizar un movimiento normal de hasta D6\"."
     },
     {
       "id": "b967f8cefebefbfd",
@@ -361,7 +361,7 @@
         ]
       },
       "source": "Each time an enemy unit (excluding Titanic units) within Engagement Range of one or more units from your army with this ability is selected to Fall Back, you can roll one D6: on a 3+, that enemy unit must Remain Stationary instead.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga (excluyendo unidades Titanic) que esté dentro del alcance de combate de una o más unidades de tu ejército con esta habilidad es seleccionada para replegarse, puedes tirar un D6: con un 3+, esa unidad enemiga debe permanecer inmóvil en su lugar."
     },
     {
       "id": "5c902503b0fef417",
@@ -378,7 +378,7 @@
         ]
       },
       "source": "While a **^^Character^^** model is leading this unit, that **^^Character^^** has the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Mientras una miniatura **^^Character^^** lidere esta unidad, ese **^^Character^^** tiene la habilidad Feel No Pain 5+."
     },
     {
       "id": "ccfcf939170902f1",
@@ -392,7 +392,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll. If the target is Battle-shocked, add 1 to the Wound roll as well.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque, suma 1 a la tirada para impactar. Si el objetivo está Battle-shocked, suma también 1 a la tirada para herir."
     },
     {
       "id": "e836f3e042df9008",
@@ -408,7 +408,7 @@
         ]
       },
       "source": "If one or more Neurotyrants from your army are on the battlefield when you unleash the Shadow in the Warp, subtract 1 from the Battle-shock test each enemy unit on the battlefield must take as a result.",
-      "target": null
+      "target": "Si una o más Neurotyrants de tu ejército están en el campo de batalla cuando desatas la Shadow in the Warp, resta 1 al test de Battle-shock que, como consecuencia, debe hacer cada unidad enemiga que esté en el campo de batalla."
     },
     {
       "id": "c0762c2d5da7a4b9",
@@ -425,7 +425,7 @@
         ]
       },
       "source": "In your Command phase, you can select up to two friendly **^^Tyranids^^** units within 18\" of this model’s unit. Until the start of your next Command phase, the selected units are always considered to be within Synapse Range of your army.\n\n**Designer's Note:** *Place a Neuroloid token next to each select unit to remind you.*",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar hasta dos unidades **^^Tyranids^^** amigas que estén a 18\" o menos de la unidad de esta miniatura. Hasta el inicio de tu siguiente fase de Mando, las unidades seleccionadas se consideran siempre dentro del Synapse Range de tu ejército.\n\n**Nota del diseñador:** *Coloca una ficha de Neuroloid junto a cada unidad seleccionada para recordarlo.*"
     },
     {
       "id": "3e2d0818c67d23af",
@@ -443,7 +443,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n- **^^Neurogaunts^^**\n- **^^Tyrant Guard^^**\n- **^^Zoanthropes^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- **^^Neurogaunts^^**\n- **^^Tyrant Guard^^**\n- **^^Zoanthropes^^**"
     },
     {
       "id": "2a2c00c447ff4fad",
@@ -457,7 +457,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this model, each time a model in that unit makes an attack, subtract 1 from the Hit roll, and, if that enemy unit is Below Half-strength, subtract 1 from the Wound roll as well.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar y, si esa unidad enemiga está Below Half-strength, resta también 1 a la tirada para herir."
     },
     {
       "id": "5e4a518b79eddb88",
@@ -473,7 +473,7 @@
         ]
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final de la fase, esa unidad enemiga no puede tener el beneficio de cobertura."
     },
     {
       "id": "c86719f297daf877",
@@ -487,7 +487,7 @@
         "names": []
       },
       "source": "Each time this model is selected to fight, after resolving its attacks, if one or more enemy units were destroyed by those attacks, each enemy unit within 6\" of this model must take a Battle-shock test.",
-      "target": null
+      "target": "Cada vez que esta miniatura es seleccionada para combatir, después de resolver sus ataques, si una o más unidades enemigas fueron destruidas por esos ataques, cada unidad enemiga que esté a 6\" o menos de esta miniatura debe hacer un test de Battle-shock."
     },
     {
       "id": "82346b1767699ec9",
@@ -503,7 +503,7 @@
         ]
       },
       "source": "Friendly **TYRANIDS** units within 6\" of this unit have **Stealth**.",
-      "target": null
+      "target": "Las unidades **TYRANIDS** amigas que estén a 6\" o menos de esta unidad tienen **Stealth**."
     },
     {
       "id": "0790fac93afa8cfb",
@@ -521,7 +521,7 @@
         ]
       },
       "source": "While this unit is within Synapse Range of your friendly **^^Tyranids^^** unit (excluding **^^Neurogaunt^^** units), it has the **^^Synapse^^** keyword.",
-      "target": null
+      "target": "Mientras esta unidad esté dentro del Synapse Range de una unidad **^^Tyranids^^** amiga tuya (excluyendo unidades **^^Neurogaunt^^**), tiene la palabra clave **^^Synapse^^**."
     },
     {
       "id": "b57d17d8ad9e8a13",
@@ -537,7 +537,7 @@
         ]
       },
       "source": "While an enemy unit is within 6\" of this unit, if it contains a Neurothrope, each time that enemy unit fails a Battle-shock test, it suffers D3 mortal wounds and one model in this unit regains up to D3 lost wounds.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta unidad, si esta contiene un Neurothrope, cada vez que esa unidad enemiga falla un test de Battle-shock, sufre D3 heridas mortales y una miniatura de esta unidad recupera hasta D3 heridas perdidas."
     },
     {
       "id": "03938f06a94f0c73",
@@ -551,7 +551,7 @@
         "names": []
       },
       "source": "While a friendly TYRANIDS unit is within 6\" of this unit, models in that unit have a 6+ invulnerable save.",
-      "target": null
+      "target": "Mientras una unidad TYRANIDS amiga esté a 6\" o menos de esta unidad, las miniaturas de esa unidad tienen una salvación invulnerable de 6+."
     },
     {
       "id": "d63c59792611b83b",
@@ -565,7 +565,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly TYRANIDS model makes an attack that targets that unit, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final de la fase, cada vez que una miniatura TYRANIDS amiga realiza un ataque que toma como objetivo a esa unidad, repite las tiradas para impactar de 1."
     },
     {
       "id": "a44392c12cb89df7",
@@ -579,7 +579,7 @@
         "names": []
       },
       "source": "Once per turn, in your Shooting Phase, when selected to shoot, one unit with this ability can use it instead of making any attacks with its ranged weapons. If it does, you can add one new **SPORE MINES** unit to your army and set it up anywhere on the battlefield that is wholly within 48\" of this unit and more than 8\" horizontally away from all enemy units. That **SPORE MINES** unit contains 1 model for each model in this unit.",
-      "target": null
+      "target": "Una vez por turno, en tu fase de Disparo, cuando es seleccionada para disparar, una unidad con esta habilidad puede usarla en lugar de realizar ataques con sus armas a distancia. Si lo hace, puedes añadir a tu ejército una nueva unidad **SPORE MINES** y desplegarla en cualquier lugar del campo de batalla que esté completamente a 48\" o menos de esta unidad y a más de 8\" en horizontal de todas las unidades enemigas. Esa unidad **SPORE MINES** contiene 1 miniatura por cada miniatura de esta unidad."
     },
     {
       "id": "f5b88f6c60930366",
@@ -593,7 +593,7 @@
         "names": []
       },
       "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit lost a wound as a result of those attacks, this unit can make a **surge move** of up to D6+2\".",
-      "target": null
+      "target": "En la fase de Disparo de tu oponente, cuando una unidad enemiga haya disparado, si una miniatura de esta unidad perdió una herida como resultado de esos ataques, esta unidad puede realizar un **movimiento de arremetida** de hasta D6+2\"."
     },
     {
       "id": "12dd995b8bf3b432",
@@ -607,7 +607,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this model has shot, select one unit hit by one or more of those attacks. That unit must take a Battle-shock test, subtracting 1 from that test.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad impactada por uno o más de esos ataques. Esa unidad debe hacer un test de Battle-shock, restando 1 a ese test."
     },
     {
       "id": "76b2ae8405d0f968",
@@ -621,7 +621,7 @@
         "names": []
       },
       "source": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if this unit is within range of an objective marker that you control.",
-      "target": null
+      "target": "Cada vez que seleccionas esta unidad como objetivo del Stratagem Fire Overwatch, mientras resuelves ese Stratagem se consiguen impactos con tiradas para impactar sin modificar de 5+, o con tiradas para impactar sin modificar de 4+ en su lugar si esta unidad está dentro del alcance de un marcador de objetivo que controles."
     },
     {
       "id": "ea005dcf547e3002",
@@ -635,7 +635,7 @@
         "names": []
       },
       "source": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque a distancia que toma como objetivo a una unidad que puede FLY, suma 1 a la tirada para impactar."
     },
     {
       "id": "4afec1ad9b128e4d",
@@ -651,7 +651,7 @@
         ]
       },
       "source": "At the end of your opponent’s Fight phase, you can do one of the following:\n- Select one **visible** enemy unit (excluding **Lone Operative** units) within 24\" of this unit and roll six D6 for that unit: for each 3+, that unit suffers 1 **mortal wound**.\n- Add a new **SPORE MINES** unit containing D3 models to your army and set it up anywhere on the battlefield that is within 6\" of this model and more than 8\" horizontally away from all enemy units. You cannot select this option for more than one model per turn.",
-      "target": null
+      "target": "Al final de la fase de Combate de tu oponente, puedes hacer una de las siguientes cosas:\n- Selecciona una unidad enemiga **visible** (excluyendo unidades **Lone Operative**) que esté a 24\" o menos de esta unidad y tira seis D6 para esa unidad: por cada 3+, esa unidad sufre 1 **herida mortal**.\n- Añade a tu ejército una nueva unidad **SPORE MINES** que contenga D3 miniaturas y despliégala en cualquier lugar del campo de batalla que esté a 6\" o menos de esta miniatura y a más de 8\" en horizontal de todas las unidades enemigas. No puedes seleccionar esta opción para más de una miniatura por turno."
     },
     {
       "id": "7818e71c09e1d63e",
@@ -665,7 +665,7 @@
         "names": []
       },
       "source": "Once per turn, in your shooting phase, when selected to shoot, one unit with this ability can use it instead of making any attacks with it's ranged weapons. If it does, you can add one new **MUCOLID SPORES** containing 1 model to your army and set it up anywhere on the battlefield that is wholly within 18\" of this model and more than 8\" horizontally away from all enemy units.",
-      "target": null
+      "target": "Una vez por turno, en tu fase de disparo, cuando es seleccionada para disparar, una unidad con esta habilidad puede usarla en lugar de realizar ataques con sus armas a distancia. Si lo hace, puedes añadir a tu ejército una nueva **MUCOLID SPORES** que contenga 1 miniatura y desplegarla en cualquier lugar del campo de batalla que esté completamente a 18\" o menos de esta miniatura y a más de 8\" en horizontal de todas las unidades enemigas."
     },
     {
       "id": "8140ee33f56b8462",
@@ -679,7 +679,7 @@
         "names": []
       },
       "source": "You can target this model with the Fire Overwatch stratagem for 0CP, and can do so even if you have already targeted a different unit with that stratagem this turn. This model can only be targeted with that Stratagem once per turn",
-      "target": null
+      "target": "Puedes seleccionar esta miniatura como objetivo del stratagem Fire Overwatch por 0CP, y puedes hacerlo aunque ya hayas seleccionado otra unidad como objetivo de ese stratagem este turno. Esta miniatura solo puede ser seleccionada como objetivo de ese Stratagem una vez por turno"
     },
     {
       "id": "b4becd189e3670d0",
@@ -693,7 +693,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly **TYRANIDS** unit makes a melee attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final del turno, cada vez que una unidad **TYRANIDS** amiga realiza un ataque de cuerpo a cuerpo que toma como objetivo a esa unidad enemiga, mejora en 1 la característica de Penetración de Blindaje de ese ataque. La misma unidad enemiga solo puede verse afectada por esta habilidad una vez por turno."
     },
     {
       "id": "84042ec1ba3853db",
@@ -707,7 +707,7 @@
         "names": []
       },
       "source": "Each time this model makes a melee attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half strength, add 1 to the Wound roll as well.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad que está por debajo de su Starting Strength, suma 1 a la tirada para impactar. Si ese objetivo está además Below Half-strength, suma también 1 a la tirada para herir."
     },
     {
       "id": "49571031b80edc3c",
@@ -721,7 +721,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy INFANTRY unit hit by one or more of those attacks. Until the end of your opponent’s next turn, that enemy unit is disrupted. While a unit is disrupted, subtract 2 from its Move characteristic, and subtract 2 from Advance and Charge rolls made for it.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad INFANTRY enemiga impactada por uno o más de esos ataques. Hasta el final del siguiente turno de tu oponente, esa unidad enemiga queda desorganizada. Mientras una unidad está desorganizada, resta 2 a su característica de Movimiento y resta 2 a las tiradas de avance y de carga que se hagan para ella."
     },
     {
       "id": "6f4bc538309df376",
@@ -737,7 +737,7 @@
         ]
       },
       "source": "In your Shooting phase, after this model has shot, select one enemy unit (excluding Titanic units) that was hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga (excluyendo unidades Titanic) que fuera impactada por uno o más de esos ataques. Hasta el inicio de tu siguiente turno, mientras esta miniatura esté en el campo de batalla, esa unidad enemiga queda suprimida. Mientras una unidad está suprimida, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "7a9075fa2c5c20ad",
@@ -751,7 +751,7 @@
         "names": []
       },
       "source": "This model is eligible to declare a charge in a turn in which it Fell Back.",
-      "target": null
+      "target": "Esta miniatura es elegible para declarar una carga en un turno en el que se haya replegado."
     },
     {
       "id": "de70e36afe471012",
@@ -765,7 +765,7 @@
         "names": []
       },
       "source": "Each time this model is selected to shoot, you can use this ability. If you do, until the end of the phase, each time this model makes an attack, add 1 to the Wound roll. After resolving those attacks, roll one D6: on a 2+, this model suffers D3 mortal wounds.",
-      "target": null
+      "target": "Cada vez que esta miniatura es seleccionada para disparar, puedes usar esta habilidad. Si lo haces, hasta el final de la fase, cada vez que esta miniatura realiza un ataque, suma 1 a la tirada para herir. Después de resolver esos ataques, tira un D6: con un 2+, esta miniatura sufre D3 heridas mortales."
     },
     {
       "id": "b6b0856925d13a4a",
@@ -779,7 +779,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 20 GARGOYLES models and 1 WINGED TYRANID PRIME model.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 20 miniaturas GARGOYLES y 1 miniatura WINGED TYRANID PRIME."
     },
     {
       "id": "a724875fe0fd6485",
@@ -793,7 +793,7 @@
         "names": []
       },
       "source": "Each time this model makes an attack that targets a unit that is Battle-shocked, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque que toma como objetivo a una unidad que está Battle-shocked, suma 1 a la tirada para impactar."
     },
     {
       "id": "41160ba9453e2256",
@@ -807,7 +807,7 @@
         "names": []
       },
       "source": "Each time this model makes a Normal, Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un movimiento normal, de avance o de repliegue, puede moverse por encima de miniaturas (excluyendo miniaturas TITANIC) y de elementos de escenografía que midan 4\" o menos de altura como si no estuvieran allí."
     },
     {
       "id": "6bf69993c54954e0",
@@ -821,7 +821,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 20 TYRANIDS INFANTRY models. Each model with a Wounds characteristic of more than 1 takes up the space of 3 models. This model cannot transport models that can FLY.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 20 miniaturas TYRANIDS INFANTRY. Cada miniatura con una característica de Heridas superior a 1 ocupa el espacio de 3 miniaturas. Esta miniatura no puede transportar miniaturas que puedan FLY."
     },
     {
       "id": "1426073bd5baf6b6",
@@ -835,7 +835,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target is within range of one or more objective markers, re-roll a Wound roll 1 as well.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, repite las tiradas para impactar de 1. Si el objetivo está dentro del alcance de uno o más marcadores de objetivo, repite también las tiradas para herir de 1."
     },
     {
       "id": "3c7be4e5c4fad794",
@@ -851,7 +851,7 @@
         ]
       },
       "source": "Each time this model fights, after it has resolved its attacks, if one or more enemy models (excluding Vehicle models) were destroyed as the result of those attacks, this model regains up to D3 mortal wounds.",
-      "target": null
+      "target": "Cada vez que esta miniatura combate, después de haber resuelto sus ataques, si una o más miniaturas enemigas (excluyendo miniaturas Vehicle) fueron destruidas como resultado de esos ataques, esta miniatura recupera hasta D3 heridas mortales."
     },
     {
       "id": "dc0a04dcc591beb0",
@@ -867,7 +867,7 @@
         ]
       },
       "source": "While an enemy unit is within Engagement Range of one or more units with this ability, halve the Objective Control characteristic of models in that enemy unit.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté dentro del alcance de combate de una o más unidades con esta habilidad, divide a la mitad la característica de Control de Objetivos de las miniaturas de esa unidad enemiga."
     },
     {
       "id": "f90bd639373fed35",
@@ -881,7 +881,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, the range of that unit's Foul Spores Aura ability is increased to 9\".",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, el alcance de la habilidad Foul Spores Aura de esa unidad aumenta a 9\"."
     },
     {
       "id": "fd9b0d84c3e73683",
@@ -899,7 +899,7 @@
         "names": []
       },
       "source": "Each time this model's unit is selected to fight, select one of the following abilities to apply to all melee weapons equipped by models in that unit until the end of the phase:\n- **[SUSTAINED HITS 1]**\n- **[LANCE]**\n- **[LETHAL HITS]**",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura es seleccionada para combatir, selecciona una de las siguientes habilidades para aplicarla a todas las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad hasta el final de la fase:\n- **[SUSTAINED HITS 1]**\n- **[LANCE]**\n- **[LETHAL HITS]**"
     },
     {
       "id": "299f3b739291a24d",
@@ -915,7 +915,7 @@
         ]
       },
       "source": "This model can be attached to the following unit: \n- **^^Venomthropes^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad: \n- **^^Venomthropes^^**"
     },
     {
       "id": "bcf8baad2887715f",
@@ -931,7 +931,7 @@
         ]
       },
       "source": "Once per turn, when an enemy unit within Engagement Range of this unit is chosen to Fall Back, roll one D6; on a 2+, that unit suffers D6 mortal wounds.",
-      "target": null
+      "target": "Una vez por turno, cuando una unidad enemiga que esté dentro del alcance de combate de esta unidad es elegida para replegarse, tira un D6; con un 2+, esa unidad sufre D6 heridas mortales."
     },
     {
       "id": "16e856bcd8f78504",
@@ -945,7 +945,7 @@
         "names": []
       },
       "source": "When this unit **declares a charge**, if an enemy **MONSTER/VEHICLE** unit is within 12\" of this unit and was hit by an attack made by this weapon this turn, you can use this ability. If you do:\n- This unit has +2 to **charge rolls** until the end of the phase.\n- This unit must end that **charge move engaged** with that **MONSTER/VEHICLE** unit.",
-      "target": null
+      "target": "Cuando esta unidad **declara una carga**, si una unidad **MONSTER/VEHICLE** enemiga está a 12\" o menos de esta unidad y fue impactada por un ataque realizado con esta arma este turno, puedes usar esta habilidad. Si lo haces:\n- Esta unidad tiene +2 a las **tiradas de carga** hasta el final de la fase.\n- Esta unidad debe terminar ese **movimiento de carga trabada** con esa unidad **MONSTER/VEHICLE**."
     },
     {
       "id": "459337f09f8e2152",
@@ -961,7 +961,7 @@
         ]
       },
       "source": "This model has the Feel No Pain 4+ ability against Mortal Wounds.",
-      "target": null
+      "target": "Esta miniatura tiene la habilidad Feel No Pain 4+ contra heridas mortales."
     },
     {
       "id": "dcfa3a504b38ac36",
@@ -978,7 +978,7 @@
         "names": []
       },
       "source": "While a friendly **TYRANIDS** unit is within 6\" of this model, ranged weapons equipped by models in that unit have the **[ASSAULT]** and **[LETHAL HITS]** abilities.",
-      "target": null
+      "target": "Mientras una unidad **TYRANIDS** amiga esté a 6\" o menos de esta miniatura, las armas a distancia equipadas por las miniaturas de esa unidad tienen las habilidades **[ASSAULT]** y **[LETHAL HITS]**."
     },
     {
       "id": "d73bf80ed26af5ff",
@@ -996,7 +996,7 @@
         ]
       },
       "source": "Weapons equipped by models in this model’s unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Las armas equipadas por las miniaturas de la unidad de esta miniatura tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "6bea5fc17fe98ebe",
@@ -1010,7 +1010,7 @@
         "names": []
       },
       "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit was **destroyed** by those attacks, this unit can make a **surge move** of up to D6\".",
-      "target": null
+      "target": "En la fase de Disparo de tu oponente, cuando una unidad enemiga haya disparado, si una miniatura de esta unidad fue **destruida** por esos ataques, esta unidad puede realizar un **movimiento de arremetida** de hasta D6\"."
     },
     {
       "id": "df3ec67d058c192e",
@@ -1030,7 +1030,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n- **^^Hormagaunts^^**\n- **^^Termagants^^**\n- **^^Tyranid Warriors with Melee Bio-weapons^^**\n- **^^Tyranid Warriors with Ranged Bio-weapons^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **^^Hormagaunts^^**\n- **^^Termagants^^**\n- **^^Tyranid Warriors with Melee Bio-weapons^^**\n- **^^Tyranid Warriors with Ranged Bio-weapons^^**"
     },
     {
       "id": "00ed003f34c42b29",
@@ -1046,7 +1046,7 @@
         ]
       },
       "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia se asigna a una miniatura, si esa miniatura no es completamente visible para todas las miniaturas de la unidad atacante a causa de esta FORTIFICATION, esa miniatura tiene el beneficio de cobertura contra ese ataque."
     },
     {
       "id": "d13d14480b480ff3",
@@ -1060,7 +1060,7 @@
         "names": []
       },
       "source": "Friendly INFANTRY models can be set up or end any type of move on top of the roof section of this FORTIFICATION.",
-      "target": null
+      "target": "Las miniaturas INFANTRY amigas pueden desplegarse o terminar cualquier tipo de movimiento encima de la sección de tejado de esta FORTIFICATION."
     },
     {
       "id": "dbab796b8e2b97dd",
@@ -1074,7 +1074,7 @@
         "names": []
       },
       "source": "When this FORTIFICATION is first set up on the battlefield, each gate section can be set up with its gate open or closed. In your Command phase, you can open or close the gate of each of this model’s gate sections. While a gate is open, models can move and draw line of sight through it as if it were not there.",
-      "target": null
+      "target": "Cuando esta FORTIFICATION se despliega por primera vez en el campo de batalla, cada sección de puerta puede desplegarse con su puerta abierta o cerrada. En tu fase de Mando, puedes abrir o cerrar la puerta de cada una de las secciones de puerta de esta miniatura. Mientras una puerta está abierta, las miniaturas pueden moverse y trazar línea de visión a través de ella como si no estuviera allí."
     },
     {
       "id": "6ef3677a187e6daa",
@@ -1088,7 +1088,7 @@
         "names": []
       },
       "source": "Friendly INFANTRY models can be set up or end any type of move on top of the flat battlement sections of this FORTIFICATION.",
-      "target": null
+      "target": "Las miniaturas INFANTRY amigas pueden desplegarse o terminar cualquier tipo de movimiento encima de las secciones planas de almenas de esta FORTIFICATION."
     },
     {
       "id": "71de1a171a39bdca",
@@ -1104,7 +1104,7 @@
         ]
       },
       "source": "When this FORTIFICATION is set up, all parts of it must be set up within 1\" of another part. While an INFANTRY model has the Benefit of Cover as a result of this FORTIFICATION (see below), that model has a 4+ invulnerable save.",
-      "target": null
+      "target": "Cuando se despliega esta FORTIFICATION, todas sus partes deben desplegarse a 1\" o menos de otra parte. Mientras una miniatura INFANTRY tenga el beneficio de cobertura a causa de esta FORTIFICATION (ver más abajo), esa miniatura tiene una salvación invulnerable de 4+."
     },
     {
       "id": "631415879fc99403",
@@ -1118,7 +1118,7 @@
         "names": []
       },
       "source": "Friendly INFANTRY models can be set up or end any type of move on top of the flat platform section of this FORTIFICATION.",
-      "target": null
+      "target": "Las miniaturas INFANTRY amigas pueden desplegarse o terminar cualquier tipo de movimiento encima de la sección plana de plataforma de esta FORTIFICATION."
     },
     {
       "id": "0ab2a57b0b64cdb9",
@@ -1134,7 +1134,7 @@
         ]
       },
       "source": "You can only include this FORTIFICATION in your army in games of Onslaught size or greater.",
-      "target": null
+      "target": "Solo puedes incluir esta FORTIFICATION en tu ejército en partidas de tamaño Onslaught o superior."
     },
     {
       "id": "7af06f9e70f7871a",
@@ -1148,7 +1148,7 @@
         "names": []
       },
       "source": "Each time an enemy unit is selected to shoot or fight, after it has finished making its attacks, if one or more of those attacks targeted this model and this model is not destroyed, this model can fight as if it were the Fight phase",
-      "target": null
+      "target": "Cada vez que una unidad enemiga es seleccionada para disparar o para combatir, después de que haya terminado de realizar sus ataques, si uno o más de esos ataques tomaron como objetivo a esta miniatura y esta miniatura no ha sido destruida, esta miniatura puede combatir como si fuera la fase de Combate"
     },
     {
       "id": "787760bc480c3561",
@@ -1165,7 +1165,7 @@
         ]
       },
       "source": "Twice per battle, at the end of your opponent’s turn, if this model is not within Engagement Range of one or more enemy units, you can remove this model from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that\nis more than 9\" horizontally away from all enemy models. If the battle ends and this unit is not on the battlefield, it is destroyed. \n\nDesigner’s Note: Place two Borewyrm Infestation tokens next to this model, removing one each time this ability has been used.",
-      "target": null
+      "target": "Dos veces por batalla, al final del turno de tu oponente, si esta miniatura no está dentro del alcance de combate de una o más unidades enemigas, puedes retirar esta miniatura del campo de batalla. En el paso de Refuerzos de tu siguiente fase de Movimiento, despliégala en cualquier lugar del campo de batalla que\nesté a más de 9\" en horizontal de todas las miniaturas enemigas. Si la batalla termina y esta unidad no está en el campo de batalla, es destruida. \n\nNota del diseñador: Coloca dos fichas de Borewyrm Infestation junto a esta miniatura y retira una cada vez que se haya usado esta habilidad."
     },
     {
       "id": "300b0dbf4cb407be",
@@ -1179,7 +1179,7 @@
         "names": []
       },
       "source": "This FORTIFICATION has a transport capacity of 15 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
-      "target": null
+      "target": "Esta FORTIFICATION tiene una capacidad de transporte de 15 miniaturas INFANTRY. Cada miniatura con una característica de Heridas de 3 o más ocupa el espacio de 2 miniaturas. No puede transportar miniaturas que no sean CHARACTER con una característica de Heridas de 4 o más."
     },
     {
       "id": "a1b0d524504ecc23",
@@ -1197,7 +1197,7 @@
         ]
       },
       "source": "This Fortification has a transport capacity of 15 Infantry models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-Character models with a Wounds characteristic of 4 or more",
-      "target": null
+      "target": "Esta Fortification tiene una capacidad de transporte de 15 miniaturas Infantry. Cada miniatura con una característica de Heridas de 3 o más ocupa el espacio de 2 miniaturas. No puede transportar miniaturas que no sean Character con una característica de Heridas de 4 o más"
     },
     {
       "id": "acb58e75caaa37ac",
@@ -1211,7 +1211,7 @@
         "names": []
       },
       "source": "This FORTIFICATION has a transport capacity of 20 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
-      "target": null
+      "target": "Esta FORTIFICATION tiene una capacidad de transporte de 20 miniaturas INFANTRY. Cada miniatura con una característica de Heridas de 3 o más ocupa el espacio de 2 miniaturas. No puede transportar miniaturas que no sean CHARACTER con una característica de Heridas de 4 o más."
     },
     {
       "id": "fb792a269309028d",
@@ -1225,7 +1225,7 @@
         "names": []
       },
       "source": "While a model is on top of the tower roof of this FORTIFICATION, improve the Armour Penetration characteristic of ranged weapons equipped by that model by 1.",
-      "target": null
+      "target": "Mientras una miniatura esté encima del tejado de la torre de esta FORTIFICATION, mejora en 1 la característica de Penetración de Blindaje de las armas a distancia equipadas por esa miniatura."
     },
     {
       "id": "924e8883d4df4cba",
@@ -1241,7 +1241,7 @@
         ]
       },
       "source": "While a friendly **^^Spindle Drones^^** unit is within 6\" of this model, each time a model in that unit makes an attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Mientras una unidad **^^Spindle Drones^^** amiga esté a 6\" o menos de esta miniatura, cada vez que una miniatura de esa unidad realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "2eb6e57bcf041ec1",
@@ -1257,7 +1257,7 @@
         ]
       },
       "source": "In your Shooting phase, just after selecting a target for this model’s Aquila macro-cannon, the target unit and every other enemy INFANTRY unit within 3\" of that unit must take a Battle-shock test.",
-      "target": null
+      "target": "En tu fase de Disparo, justo después de seleccionar un objetivo para el Aquila macro-cannon de esta miniatura, la unidad objetivo y todas las demás unidades INFANTRY enemigas que estén a 3\" o menos de esa unidad deben hacer un test de Battle-shock."
     },
     {
       "id": "7b8402bd439a6ea5",
@@ -1271,7 +1271,7 @@
         "names": []
       },
       "source": "This FORTIFICATION has a transport capacity of 30 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
-      "target": null
+      "target": "Esta FORTIFICATION tiene una capacidad de transporte de 30 miniaturas INFANTRY. Cada miniatura con una característica de Heridas de 3 o más ocupa el espacio de 2 miniaturas. No puede transportar miniaturas que no sean CHARACTER con una característica de Heridas de 4 o más."
     },
     {
       "id": "401dfeec62213f9c",
@@ -1287,7 +1287,7 @@
         ]
       },
       "source": "Each time this FORTIFICATION suffers a mortal wound as the result of a failed Hazardous test, roll one D6: on a 4+, that wound is not lost.",
-      "target": null
+      "target": "Cada vez que esta FORTIFICATION sufre una herida mortal como resultado de un test de Hazardous fallado, tira un D6: con un 4+, esa herida no se pierde."
     },
     {
       "id": "fe0b063712fe0cd4",
@@ -1305,7 +1305,7 @@
         ]
       },
       "source": "Friendly Infantry models and friendly units that can Fly can be set up or end any type of move on top of the platform section of this Fortification. While such a model is on the platform section of this Fortification, that model has a 5+ invulnerable save against ranged attacks",
-      "target": null
+      "target": "Las miniaturas Infantry amigas y las unidades amigas que puedan Fly pueden desplegarse o terminar cualquier tipo de movimiento encima de la sección de plataforma de esta Fortification. Mientras una miniatura así esté en la sección de plataforma de esta Fortification, esa miniatura tiene una salvación invulnerable de 5+ contra ataques a distancia"
     },
     {
       "id": "2f0b7601653070c3",
@@ -1322,7 +1322,7 @@
         ]
       },
       "source": "At the end of your Movement phase, if there is a friendly Aircraft model on top of this Fortification, that Aircraft regains up to D3 lost wounds",
-      "target": null
+      "target": "Al final de tu fase de Movimiento, si hay una miniatura Aircraft amiga encima de esta Fortification, ese Aircraft recupera hasta D3 heridas perdidas"
     },
     {
       "id": "1b273a94733f90ae",
@@ -1336,7 +1336,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, suma 1 a la tirada para impactar si esta unidad está por debajo de su Starting Strength, y suma también 1 a la tirada para herir si esta unidad está Below Half-strength"
     },
     {
       "id": "c46e59b3e51ea6e4",
@@ -1350,7 +1350,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this model, each time that unit takes a Battle-shock or Leadership test, subtract 1 from that test.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, cada vez que esa unidad hace un test de Battle-shock o de Leadership, resta 1 a ese test."
     },
     {
       "id": "1f8f2d2afa9ea890",
@@ -1366,7 +1366,7 @@
         ]
       },
       "source": "Each time this model makes a ranged attack that targets the closest enemy unit:\n- If that attack is made with a Punisher gatling cannon and the target is not a MONSTER or VEHICLE, add 1 to the Hit roll.\n- If that attack is made with a battle cannon and the target is a MONSTER or VEHICLE, add 1 to the Hit roll.\n- If that attack is made with a quad-lascannon and the target can FLY, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque a distancia que toma como objetivo a la unidad enemiga más cercana:\n- Si ese ataque se realiza con un Punisher gatling cannon y el objetivo no es un MONSTER ni un VEHICLE, suma 1 a la tirada para impactar.\n- Si ese ataque se realiza con un battle cannon y el objetivo es un MONSTER o un VEHICLE, suma 1 a la tirada para impactar.\n- Si ese ataque se realiza con un quad-lascannon y el objetivo puede FLY, suma 1 a la tirada para impactar."
     },
     {
       "id": "02da3fe77b75d40e",
@@ -1380,7 +1380,7 @@
         "names": []
       },
       "source": "While a friendly model is wholly within 6\" of this FORTIFICATION, that model has a 4+ invulnerable save against ranged attacks.",
-      "target": null
+      "target": "Mientras una miniatura amiga esté completamente a 6\" o menos de esta FORTIFICATION, esa miniatura tiene una salvación invulnerable de 4+ contra ataques a distancia."
     },
     {
       "id": "b7abcbac9371cca5",
@@ -1394,7 +1394,7 @@
         "names": []
       },
       "source": "In your Shooting phase, each time you select a target for this model’s vortex missile battery, roll one D6 for the target unit and one D6 for every other enemy unit within 3\" of the target unit. On a 4+, the unit being rolled for is struck by the vortex; after resolving all of this model’s attacks against the target unit, each unit struck by the vortex suffers D3 mortal wounds.",
-      "target": null
+      "target": "En tu fase de Disparo, cada vez que seleccionas un objetivo para la vortex missile battery de esta miniatura, tira un D6 para la unidad objetivo y un D6 para cada una de las demás unidades enemigas que estén a 3\" o menos de la unidad objetivo. Con un 4+, la unidad para la que se tira es alcanzada por el vórtice; después de resolver todos los ataques de esta miniatura contra la unidad objetivo, cada unidad alcanzada por el vórtice sufre D3 heridas mortales."
     },
     {
       "id": "331eff4225853907",
@@ -1410,7 +1410,7 @@
         ]
       },
       "source": "Each time an attack is allocated to this Fortification, subtract 1 from the Damage characteristic of that attack.",
-      "target": null
+      "target": "Cada vez que un ataque se asigna a esta Fortification, resta 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "75ce3e88baf39561",
@@ -1428,7 +1428,7 @@
         ]
       },
       "source": "This Fortification has a transport capacity of 11 Infantry models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-Character models with a Wounds characteristic of 4 or more",
-      "target": null
+      "target": "Esta Fortification tiene una capacidad de transporte de 11 miniaturas Infantry. Cada miniatura con una característica de Heridas de 3 o más ocupa el espacio de 2 miniaturas. No puede transportar miniaturas que no sean Character con una característica de Heridas de 4 o más"
     },
     {
       "id": "d970a6c5c0a0a11c",
@@ -1445,7 +1445,7 @@
         ]
       },
       "source": "In your Command phase, if one or more Character models are embarked within this Fortification, roll one D6: on a 5+, you gain 1CP",
-      "target": null
+      "target": "En tu fase de Mando, si una o más miniaturas Character están embarcadas en esta Fortification, tira un D6: con un 5+, ganas 1CP"
     },
     {
       "id": "ce8ece34febc4d12",
@@ -1459,7 +1459,7 @@
         "names": []
       },
       "source": "While this model has 1-30 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 30 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "70d7c323b88e49bc",
@@ -1473,7 +1473,7 @@
         "names": []
       },
       "source": "When this FORTIFICATION is set up, all parts of it must be set up in contact with another part.",
-      "target": null
+      "target": "Cuando se despliega esta FORTIFICATION, todas sus partes deben desplegarse en contacto con otra parte."
     },
     {
       "id": "708ed2989326851b",
@@ -1487,7 +1487,7 @@
         "names": []
       },
       "source": "This FORTIFICATION has a transport capacity of 65 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
-      "target": null
+      "target": "Esta FORTIFICATION tiene una capacidad de transporte de 65 miniaturas INFANTRY. Cada miniatura con una característica de Heridas de 3 o más ocupa el espacio de 2 miniaturas. No puede transportar miniaturas que no sean CHARACTER con una característica de Heridas de 4 o más."
     },
     {
       "id": "07096b88e8f080e7",
@@ -1501,7 +1501,7 @@
         "names": []
       },
       "source": "Friendly INFANTRY models can be set up or end any type of move on top of the roof section of this FORTIFICATION. Any friendly model can be set up or end any type of move on the ramp or platform section of this FORTIFICATION.",
-      "target": null
+      "target": "Las miniaturas INFANTRY amigas pueden desplegarse o terminar cualquier tipo de movimiento encima de la sección de tejado de esta FORTIFICATION. Cualquier miniatura amiga puede desplegarse o terminar cualquier tipo de movimiento en la sección de rampa o de plataforma de esta FORTIFICATION."
     },
     {
       "id": "36fb4f6d2197f24a",
@@ -1515,7 +1515,7 @@
         "names": []
       },
       "source": "While this model has 1-15 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 15 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "a3272b01bf3fab80",
@@ -1529,7 +1529,7 @@
         "names": []
       },
       "source": "This FORTIFICATION has a transport capacity of 60 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
-      "target": null
+      "target": "Esta FORTIFICATION tiene una capacidad de transporte de 60 miniaturas INFANTRY. Cada miniatura con una característica de Heridas de 3 o más ocupa el espacio de 2 miniaturas. No puede transportar miniaturas que no sean CHARACTER con una característica de Heridas de 4 o más."
     },
     {
       "id": "599f7cba24e02940",
@@ -1545,7 +1545,7 @@
         ]
       },
       "source": "In the Create the Battlefield and Place Objective Markers step, set this model up in one of the Sentry Gun positions (marked D1 on the mission map).",
-      "target": null
+      "target": "En el paso Crear el Campo de Batalla y Colocar Marcadores de Objetivo, despliega esta miniatura en una de las posiciones de Sentry Gun (marcadas como D1 en el mapa de misión)."
     },
     {
       "id": "15a57cef392061f9",
@@ -1561,7 +1561,7 @@
         ]
       },
       "source": "Each time a model from your army makes a ranged attack that targets an enemy unit that is within 9\" of and visible to any Searchlights from your army, re-roll a Hit of 1 and, if the model making that attack is a Sentry Gun, add 1 to the Hit roll as well.",
-      "target": null
+      "target": "Cada vez que una miniatura de tu ejército realiza un ataque a distancia que toma como objetivo a una unidad enemiga que esté a 9\" o menos de cualquier Searchlight de tu ejército y sea visible para él, repite las tiradas para impactar de 1 y, si la miniatura que realiza ese ataque es un Sentry Gun, suma también 1 a la tirada para impactar."
     },
     {
       "id": "cdd49b6bc0699d4a",
@@ -1577,7 +1577,7 @@
         ]
       },
       "source": "This model is a terrain feature and counts as a Wall.",
-      "target": null
+      "target": "Esta miniatura es un elemento de escenografía y cuenta como un Wall."
     },
     {
       "id": "ec7e3e5d2cea0436",
@@ -1593,7 +1593,7 @@
         ]
       },
       "source": "In the Create the Battlefield and Place Objective Markers step, set this terrain feature up in one of the Searchlight positions (marked D2 on the mission map) that does not already contain a Searchlight.",
-      "target": null
+      "target": "En el paso Crear el Campo de Batalla y Colocar Marcadores de Objetivo, despliega este elemento de escenografía en una de las posiciones de Searchlight (marcadas como D2 en el mapa de misión) que no contenga ya un Searchlight."
     },
     {
       "id": "31b92303994b69f3",
@@ -1607,7 +1607,7 @@
         "names": []
       },
       "source": "This model cannot attempt to operate Hatchways and cannot perform Tactical Manoeuvres.",
-      "target": null
+      "target": "Esta miniatura no puede intentar operar Hatchways ni puede realizar Tactical Manoeuvres."
     },
     {
       "id": "998148265b48430a",
@@ -1621,7 +1621,7 @@
         "names": []
       },
       "source": "In the Deploy Armies step, when setting up a unit from your army within an Entry Zone, you can set this model up alongside that unit as if it was part of it, using the same Entry Zone.",
-      "target": null
+      "target": "En el paso Desplegar Ejércitos, cuando despliegues una unidad de tu ejército dentro de una Entry Zone, puedes desplegar esta miniatura junto a esa unidad como si formara parte de ella, usando la misma Entry Zone."
     },
     {
       "id": "b6f6321777b6e785",
@@ -1637,7 +1637,7 @@
         ]
       },
       "source": "When the bearer is destroyed (other than through triggering its bomb, as described below), roll one D6 before removing it from play: on a 6 it explodes, and each other unit within 3\" of and visible to the bearer suffers 1 mortal wound.\n\nIn your Command phase, the bearer can trigger its bombs. If it does:\n- Open each Hatchway that is within 3\" of the bearer. Your opponent cannot attempt to prevent those Hatchways from opening, and those Hatchways cannot be closed again.\n- Roll one D6 for each other unit within 3\" of and visible to the bearer: on a 2+, that unit suffers 1 mortal wound. The bearer is then destroyed.",
-      "target": null
+      "target": "Cuando el portador es destruido (salvo que sea por detonar su bomba, como se describe más abajo), tira un D6 antes de retirarlo del juego: con un 6 explota, y cada una de las demás unidades que esté a 3\" o menos del portador y sea visible para él sufre 1 herida mortal.\n\nEn tu fase de Mando, el portador puede detonar sus bombas. Si lo hace:\n- Abre cada Hatchway que esté a 3\" o menos del portador. Tu oponente no puede intentar impedir que esas Hatchways se abran, y esas Hatchways no pueden volver a cerrarse.\n- Tira un D6 por cada una de las demás unidades que esté a 3\" o menos del portador y sea visible para él: con un 2+, esa unidad sufre 1 herida mortal. El portador es destruido a continuación."
     },
     {
       "id": "80cc10ad979e275d",
@@ -1651,7 +1651,7 @@
         "names": []
       },
       "source": "Each time the bearer ends a Normal move, you can open one Hatchway that is within 1\" of it. Your opponent cannot attempt to prevent that Hatchway from opening.",
-      "target": null
+      "target": "Cada vez que el portador termina un movimiento normal, puedes abrir una Hatchway que esté a 1\" o menos de él. Tu oponente no puede intentar impedir que esa Hatchway se abra."
     },
     {
       "id": "6d062e866dc33cfd",
@@ -1668,7 +1668,7 @@
         ]
       },
       "source": "While an enemy unit is only within Engagement Range of one or more ^^**Fortifications**^^ from your army:\n- That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll.\n- Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so.",
-      "target": null
+      "target": "Mientras una unidad enemiga solo esté dentro del alcance de combate de una o más ^^**Fortifications**^^ de tu ejército:\n- Esa unidad puede seguir siendo seleccionada como objetivo de ataques a distancia, pero cada vez que se realiza uno de esos ataques, a menos que se realice con una Pistol, resta 1 a la tirada para impactar.\n- Las miniaturas de esa unidad no necesitan hacer tests de Desperate Escape por replegarse mientras están Battle-shocked, salvo aquellas que vayan a moverse por encima de miniaturas enemigas al hacerlo."
     },
     {
       "id": "2144de6458c2632f",
@@ -1682,7 +1682,7 @@
         "names": []
       },
       "source": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP.",
-      "target": null
+      "target": "Cada vez que tu oponente toma como objetivo de un Stratagem a una unidad de su ejército, si esa unidad está a 12\" o menos de esta miniatura, aumenta en 1CP el coste de ese uso de ese Stratagem."
     },
     {
       "id": "58ebe32341277cce",
@@ -1696,7 +1696,7 @@
         "names": []
       },
       "source": "This model has a 4+ invulnerable save against melee attacks.",
-      "target": null
+      "target": "Esta miniatura tiene una salvación invulnerable de 4+ contra ataques de cuerpo a cuerpo."
     },
     {
       "id": "5d106c885571681d",
@@ -1710,7 +1710,7 @@
         "names": []
       },
       "source": "Models in this unit have a 4+ invulnerable save against melee attacks.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen una salvación invulnerable de 4+ contra ataques de cuerpo a cuerpo."
     },
     {
       "id": "90000dc733f54ec9",
@@ -2340,7 +2340,7 @@
         "names": []
       },
       "source": "Each time a Critical Wound is scored for an attack made with this weapon, that attack has the **[PRECISION]** ability.",
-      "target": null
+      "target": "Cada vez que se consigue una herida crítica con un ataque realizado con esta arma, ese ataque tiene la habilidad **[PRECISION]**."
     },
     {
       "id": "46d2a88f1965f065",
@@ -2354,7 +2354,7 @@
         "names": []
       },
       "source": "Each time this unit takes a Battle-shock, Leadership, Desperate Escape or Out of Action test, subtract 1 from that test.",
-      "target": null
+      "target": "Cada vez que esta unidad hace un test de Battle-shock, de Leadership, de Desperate Escape o de Out of Action, resta 1 a ese test."
     },
     {
       "id": "298c261b8c253b12",
@@ -2368,7 +2368,7 @@
         "names": []
       },
       "source": "This unit cannot Advance and you must subtract 1\" from the Move characteristic of models in this unit.",
-      "target": null
+      "target": "Esta unidad no puede avanzar y debes restar 1\" a la característica de Movimiento de las miniaturas de esta unidad."
     },
     {
       "id": "16e4b02cb52483c4",
@@ -2382,7 +2382,7 @@
         "names": []
       },
       "source": "Each time a Critical Hit is scored against this unit, that attack automatically wounds this unit.",
-      "target": null
+      "target": "Cada vez que se consigue un impacto crítico contra esta unidad, ese ataque hiere automáticamente a esta unidad."
     },
     {
       "id": "0be24506093e3564",
@@ -2396,7 +2396,7 @@
         "names": []
       },
       "source": "You cannot use any Stratagems to affect this unit and this unit cannot be Marked for Greatness.",
-      "target": null
+      "target": "No puedes usar ningún Stratagem que afecte a esta unidad y esta unidad no puede ser Marked for Greatness."
     },
     {
       "id": "5ea66ff4047b64b9",
@@ -2410,7 +2410,7 @@
         "names": []
       },
       "source": "Subtract 1 from the Objective Control characteristic of models in this unit and this unit never receives a Charge bonus.",
-      "target": null
+      "target": "Resta 1 a la característica de Control de Objetivos de las miniaturas de esta unidad y esta unidad nunca recibe la bonificación de carga."
     },
     {
       "id": "8e20bf63c1a836fb",
@@ -2424,7 +2424,7 @@
         "names": []
       },
       "source": "This unit cannot form an Attached unit, it is unaffected by the Aura abilities of friendly units, and it cannot be Marked for Greatness.",
-      "target": null
+      "target": "Esta unidad no puede formar una unidad adjunta, no se ve afectada por las habilidades de Aura de unidades amigas y no puede ser Marked for Greatness."
     },
     {
       "id": "77bb408c72c747d7",
@@ -2442,7 +2442,7 @@
         ]
       },
       "source": "All melee weapon equipped by **^^Character^^** models in this unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Todas las armas de cuerpo a cuerpo equipadas por las miniaturas **^^Character^^** de esta unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "31019fd076d8c9d9",
@@ -2458,7 +2458,7 @@
         ]
       },
       "source": "This unit has the Scouts 9\" ability.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Scouts 9\"."
     },
     {
       "id": "94d6d8b3bced74f6",
@@ -2475,7 +2475,7 @@
         ]
       },
       "source": "**^^Character^^** models in this unit have the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Las miniaturas **^^Character^^** de esta unidad tienen la habilidad Feel No Pain 5+."
     },
     {
       "id": "6f4aeb0b0db5572a",
@@ -2489,7 +2489,7 @@
         "names": []
       },
       "source": "Each time you take a Battle-shock or Leadership test for this unit, you can re-roll that test.",
-      "target": null
+      "target": "Cada vez que haces un test de Battle-shock o de Leadership para esta unidad, puedes repetir ese test."
     },
     {
       "id": "8422c4bc7c3f53b6",
@@ -2505,7 +2505,7 @@
         ]
       },
       "source": "Models in this unit can make attacks with ranged weapons even when their unit is within Engagement Range of enemy units, but they can only make such attacks against enemy units that they are within Engagement Range of. In such circumstances, those models can target an enemy unit even if other friendly units are within Engagement Range of the same enemy unit.",
-      "target": null
+      "target": "Las miniaturas de esta unidad pueden realizar ataques con armas a distancia incluso cuando su unidad está dentro del alcance de combate de unidades enemigas, pero solo pueden realizar esos ataques contra unidades enemigas dentro de cuyo alcance de combate se encuentren. En esas circunstancias, esas miniaturas pueden tomar como objetivo a una unidad enemiga aunque otras unidades amigas estén dentro del alcance de combate de esa misma unidad enemiga."
     },
     {
       "id": "8d6f11d9a44465af",
@@ -2519,7 +2519,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this unit, worsen the Leadership characteristic of models in that enemy unit by 1.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta unidad, empeora en 1 la característica de Leadership de las miniaturas de esa unidad enemiga."
     },
     {
       "id": "02341ff8e75e7d4a",
@@ -2535,7 +2535,7 @@
         ]
       },
       "source": "Models in this unit do not suffer the penalty to Hit rolls for making ranged attacks while their unit is within Engagement Range of one or more enemy units.",
-      "target": null
+      "target": "Las miniaturas de esta unidad no sufren la penalización a las tiradas para impactar por realizar ataques a distancia mientras su unidad está dentro del alcance de combate de una o más unidades enemigas."
     },
     {
       "id": "726e9daf6a944134",
@@ -2549,7 +2549,7 @@
         "names": []
       },
       "source": "Each time an attack with a Strength characteristic of 7 or less is allocated to a model in this unit, worsen the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que un ataque con una característica de Fuerza de 7 o menos se asigna a una miniatura de esta unidad, empeora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "cbdc26e40ea72b1e",
@@ -2565,7 +2565,7 @@
         ]
       },
       "source": "Models in this unit have the Feel No Pain 6+ ability.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 6+."
     },
     {
       "id": "99d97dcd90c3ec05",
@@ -2579,7 +2579,7 @@
         "names": []
       },
       "source": "Add 1 to the Objective Control characteristic of all models in this unit.",
-      "target": null
+      "target": "Suma 1 a la característica de Control de Objetivos de todas las miniaturas de esta unidad."
     },
     {
       "id": "b7a7b0001c7bf522",
@@ -2595,7 +2595,7 @@
         ]
       },
       "source": "At the start of the battle, select one enemy unit (regardless of how many units in your Crusade army have this Battle Trait). Until the end of the battle, each time a model in this unit makes an attack against that enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona una unidad enemiga (independientemente de cuántas unidades de tu ejército de Crusade tengan este Battle Trait). Hasta el final de la batalla, cada vez que una miniatura de esta unidad realiza un ataque contra esa unidad enemiga, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1."
     },
     {
       "id": "784cdb443a44fa65",
@@ -2611,7 +2611,7 @@
         "names": []
       },
       "source": "Each time this unit Advances, until the end of the turn all ranged weapons equipped by models in this unit have the **[ASSAULT]** ability.",
-      "target": null
+      "target": "Cada vez que esta unidad avanza, hasta el final del turno todas las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[ASSAULT]**."
     },
     {
       "id": "599f3663a4f7839a",
@@ -2625,7 +2625,7 @@
         "names": []
       },
       "source": "If this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.",
-      "target": null
+      "target": "Si esta unidad está en reservas estratégicas, cuenta el número de la ronda de batalla como uno más alto que el número de la ronda de batalla actual a efectos de determinar cuándo y dónde se despliega."
     },
     {
       "id": "9048f5dee76cfd53",
@@ -2641,7 +2641,7 @@
         ]
       },
       "source": "Each time a model in this unit destroys an enemy unit, add twice as many marks to its Tyrannic War Veteran tally as normal.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad destruye una unidad enemiga, añade a su recuento de Tyrannic War Veteran el doble de marcas de lo normal."
     },
     {
       "id": "f9986762f61813e4",
@@ -2659,7 +2659,7 @@
         ]
       },
       "source": "Select any one of the Battle Honours from the Monster Hunters upgrade path for this unit to gain, regardless of the ones it has already unlocked. The Battle Honour you select does not increase this unit's Crusade points total and does not count as an additional Battle Honour when determining the maximum number of Battle Honours this unit can have.",
-      "target": null
+      "target": "Selecciona cualquiera de las Battle Honours de la vía de mejora Monster Hunters para que esta unidad la gane, sin importar cuáles haya desbloqueado ya. La Battle Honour que selecciones no aumenta el total de puntos de Crusade de esta unidad y no cuenta como una Battle Honour adicional al determinar el número máximo de Battle Honours que esta unidad puede tener."
     },
     {
       "id": "958d45f02bd08c58",
@@ -2675,7 +2675,7 @@
         ]
       },
       "source": "This unit has the Infiltrators ability.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Infiltrators."
     },
     {
       "id": "4a8b409d5e3a1dfb",
@@ -2691,7 +2691,7 @@
         ]
       },
       "source": "Add 3 to the Objective Control characteristic of one **^^Character^^** model in this unit.",
-      "target": null
+      "target": "Suma 3 a la característica de Control de Objetivos de una miniatura **^^Character^^** de esta unidad."
     },
     {
       "id": "3c0ffc8ef0df7a13",
@@ -2707,7 +2707,7 @@
         ]
       },
       "source": "While this unit is within range of an objective marker, it has the Stealth ability.",
-      "target": null
+      "target": "Mientras esta unidad esté dentro del alcance de un marcador de objetivo, tiene la habilidad Stealth."
     },
     {
       "id": "0c6df8da98e31a90",
@@ -2723,7 +2723,7 @@
         ]
       },
       "source": "Add 1 to the Wounds characteristic of one **^^Character^^** model in this unit.",
-      "target": null
+      "target": "Suma 1 a la característica de Heridas de una miniatura **^^Character^^** de esta unidad."
     },
     {
       "id": "1df09f70c73c90d7",
@@ -2739,7 +2739,7 @@
         ]
       },
       "source": "Each time a **^^Character^^** model in this unit makes a melee attack that targets a **^^Character^^** unit, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Cada vez que una miniatura **^^Character^^** de esta unidad realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad **^^Character^^**, puedes repetir la tirada para impactar."
     },
     {
       "id": "a2611f7258015403",
@@ -2753,7 +2753,7 @@
         "names": []
       },
       "source": "Add 2 to the Objective Control characteristic of one model in this unit.",
-      "target": null
+      "target": "Suma 2 a la característica de Control de Objetivos de una miniatura de esta unidad."
     }
   ]
 }

@@ -535,7 +535,7 @@
         "names": []
       },
       "source": "In your opponent’s Battle-shock step, if an enemy unit within 8\" of this unit is below starting strength, that enemy unit makes a battle‑shock roll.",
-      "target": "En el paso de Battle-shock de tu oponente, si una unidad enemiga que esté a 8\" o menos de esta unidad está por debajo de su Starting Strength, esa unidad enemiga hace una tirada de battle‑shock."
+      "target": "En el paso de Battle-shock de tu oponente, si una unidad enemiga que esté a 8\" o menos de esta unidad está por debajo de su Starting Strength, esa unidad enemiga hace una tirada de Battle-shock."
     },
     {
       "id": "7316992adf3e7a65",
@@ -1702,7 +1702,7 @@
         ]
       },
       "source": "Each time an enemy unit is selected to shoot, after that unit has shot, if any models from the bearer’s unit were destroyed as a result of those attacks, the bearer’s unit can make a Surge move. To do so, roll one D6: the bearer’s unit can be moved a number of inches up to the result, but the bearer’s unit must finish that move as close as possible to the closest enemy unit (excluding ^^**Aircraft^^**). \nWhen doing so, those models can be moved within Engagement Range of that enemy unit. A unit cannot make a Surge move while it is Battle‑shocked.",
-      "target": "Cada vez que una unidad enemiga es seleccionada para disparar, después de que esa unidad haya disparado, si alguna miniatura de la unidad del portador fue destruida como resultado de esos ataques, la unidad del portador puede realizar un movimiento de arremetida. Para ello, tira un D6: la unidad del portador puede moverse un número de pulgadas de hasta el resultado, pero la unidad del portador debe terminar ese movimiento lo más cerca posible de la unidad enemiga más cercana (excluyendo ^^**Aircraft^^**). \nAl hacerlo, esas miniaturas pueden moverse dentro del alcance de combate de esa unidad enemiga. Una unidad no puede realizar un movimiento de arremetida mientras esté Battle‑shocked."
+      "target": "Cada vez que una unidad enemiga es seleccionada para disparar, después de que esa unidad haya disparado, si alguna miniatura de la unidad del portador fue destruida como resultado de esos ataques, la unidad del portador puede realizar un movimiento de arremetida. Para ello, tira un D6: la unidad del portador puede moverse un número de pulgadas de hasta el resultado, pero la unidad del portador debe terminar ese movimiento lo más cerca posible de la unidad enemiga más cercana (excluyendo ^^**Aircraft^^**). \nAl hacerlo, esas miniaturas pueden moverse dentro del alcance de combate de esa unidad enemiga. Una unidad no puede realizar un movimiento de arremetida mientras esté Battle-shocked."
     },
     {
       "id": "a887a59ca14afb95",
@@ -2487,7 +2487,7 @@
         "names": []
       },
       "source": "**ORKS PSYKER** units with this ability have a **psyker level** of 1 or higher, specified in that unit's abilities. Each **psychic ability** has a **psychic level** of 1 or higher, specified in that ability's name.\nIn a battle round, a friendly **ORKS PSYKER** unit can use a number of **psychic abilities** whose total **psychic level** does not exceed that **PSYKER** unit's **psyker level**.",
-      "target": "Las unidades **ORKS PSYKER** con esta habilidad tienen un **nivel de psyker** de 1 o superior, indicado en las habilidades de esa unidad. Cada **habilidad psíquica** tiene un **nivel psíquico** de 1 o superior, indicado en el nombre de esa habilidad.\nEn una ronda de batalla, una unidad amiga **ORKS PSYKER** puede usar un número de **habilidades psíquicas** cuyo **nivel psíquico** total no supere el **nivel de psyker** de esa unidad **PSYKER**."
+      "target": "Las unidades **ORKS PSYKER** con esta habilidad tienen un **nivel de psyker** de 1 o superior, indicado en las habilidades de esa unidad. Cada **habilidad Psychic** tiene un **nivel psíquico** de 1 o superior, indicado en el nombre de esa habilidad.\nEn una ronda de batalla, una unidad amiga **ORKS PSYKER** puede usar un número de **habilidades Psychic** cuyo **nivel psíquico** total no supere el **nivel de psyker** de esa unidad **PSYKER**."
     },
     {
       "id": "f7500cb9a2b0ac13",
@@ -3259,7 +3259,7 @@
         ]
       },
       "source": "This model has the **psychic abilities** listed in the Psychic Abilities section.",
-      "target": "Esta miniatura tiene las **habilidades psíquicas** que se indican en la sección Psychic Abilities."
+      "target": "Esta miniatura tiene las **habilidades Psychic** que se indican en la sección Psychic Abilities."
     },
     {
       "id": "0ee6f7bf8250f2db",

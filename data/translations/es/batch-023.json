@@ -184,7 +184,7 @@
         ]
       },
       "source": "At the start of the battle, after both sides have deployed, but before the first turn begins, you must roll a number of 6 equal to the number of units in your Crusade army that harbouring a grudge against your opponent's Crusade army (each Attached unit harbouring a grudge counts as a single unit).\n\nFor each roll of 6, you can select one enemy unit that is on the battlefield to gain one Grudge token (you can select the same unit more than once).\n\nFor each roll of 1, you must instead select one unit from your Crusade army that is harbouring a grudge against your opponent's Crusade army and does not have a Grudge token to gain one Grudge token. While that unit has a Grudge token, you cannot select it as the target of a Stratagem, After that unit has shot or fought, remove that unit's Grudge token.",
-      "target": "Al comienzo de la batalla, después de que ambos bandos hayan desplegado pero antes de que empiece el primer turno, debes tirar un número de D6 igual al número de unidades de tu ejército de Crusade que albergan un rencor contra el ejército de Crusade de tu oponente (cada unidad adjunta que alberga un rencor cuenta como una sola unidad).\n\nPor cada 6, puedes seleccionar una unidad enemiga que esté en el campo de batalla para que gane una ficha de Grudge (puedes seleccionar la misma unidad más de una vez).\n\nPor cada 1, en su lugar debes seleccionar una unidad de tu ejército de Crusade que albergue un rencor contra el ejército de Crusade de tu oponente y que no tenga ficha de Grudge para que gane una ficha de Grudge. Mientras esa unidad tenga una ficha de Grudge, no puedes seleccionarla como objetivo de un Stratagem, Después de que esa unidad haya disparado o combatido, retira la ficha de Grudge de esa unidad."
+      "target": "Al comienzo de la batalla, después de que ambos bandos hayan desplegado pero antes de que empiece el primer turno, debes tirar un número de D6 igual al número de unidades de tu ejército de Crusade que albergan un Grudge contra el ejército de Crusade de tu oponente (cada unidad adjunta que alberga un Grudge cuenta como una sola unidad).\n\nPor cada 6, puedes seleccionar una unidad enemiga que esté en el campo de batalla para que gane una ficha de Grudge (puedes seleccionar la misma unidad más de una vez).\n\nPor cada 1, en su lugar debes seleccionar una unidad de tu ejército de Crusade que albergue un Grudge contra el ejército de Crusade de tu oponente y que no tenga ficha de Grudge para que gane una ficha de Grudge. Mientras esa unidad tenga una ficha de Grudge, no puedes seleccionarla como objetivo de un Stratagem, Después de que esa unidad haya disparado o combatido, retira la ficha de Grudge de esa unidad."
     },
     {
       "id": "be640b4015766297",
@@ -200,7 +200,7 @@
         ]
       },
       "source": "For each unit in your Crusade army that is harbour a grudge against your opponent's Crusade army, keep a tally of the number of enemy units destroyed by that unit. At the end of the battle, if that unit has a tally of 3 or more, unless that unit was that unit was destroyed during the battle it's grudge has been settled - the Grudge note for your opponent's Crusade army's Faction is remove from its Crusade card.",
-      "target": "Por cada unidad de tu ejército de Crusade que alberga un rencor contra el ejército de Crusade de tu oponente, lleva la cuenta del número de unidades enemigas destruidas por esa unidad. Al final de la batalla, si esa unidad tiene una cuenta de 3 o más, a menos que esa unidad fuera destruida durante la batalla su rencor queda saldado: la anotación de Grudge correspondiente a la Faction del ejército de Crusade de tu oponente se retira de su Crusade card."
+      "target": "Por cada unidad de tu ejército de Crusade que alberga un Grudge contra el ejército de Crusade de tu oponente, lleva la cuenta del número de unidades enemigas destruidas por esa unidad. Al final de la batalla, si esa unidad tiene una cuenta de 3 o más, a menos que esa unidad fuera destruida durante la batalla su Grudge queda saldado: la anotación de Grudge correspondiente a la Faction del ejército de Crusade de tu oponente se retira de su Crusade card."
     },
     {
       "id": "3830addded8d17aa",
@@ -216,7 +216,7 @@
         ]
       },
       "source": "Each time a model (excluding a **^^Cog^^** model) in a unit from your Crusade army makes an attack, if that unit is harbouring a grudge against your opponent's Crusade army, re-roll a Hit roll of 1 if the target has 1-2 Grudge tokens, or you can re-roll the Hit roll instead if the target has 3 Grudge tokens.",
-      "target": "Cada vez que una miniatura (excluidas las miniaturas **^^Cog^^**) de una unidad de tu ejército de Crusade realiza un ataque, si esa unidad alberga un rencor contra el ejército de Crusade de tu oponente, repite una tirada para impactar de 1 si el objetivo tiene 1-2 fichas de Grudge, o puedes repetir la tirada para impactar en su lugar si el objetivo tiene 3 fichas de Grudge."
+      "target": "Cada vez que una miniatura (excluidas las miniaturas **^^Cog^^**) de una unidad de tu ejército de Crusade realiza un ataque, si esa unidad alberga un Grudge contra el ejército de Crusade de tu oponente, repite una tirada para impactar de 1 si el objetivo tiene 1-2 fichas de Grudge, o puedes repetir la tirada para impactar en su lugar si el objetivo tiene 3 fichas de Grudge."
     },
     {
       "id": "dda9cdb3b20e2f9f",
@@ -233,7 +233,7 @@
         ]
       },
       "source": "A unit from your Crusade army that is harbouring a grudge against opponent's Crusade army cannot Fall Back while it is within Engagement Range of one or more enemy units.",
-      "target": "Una unidad de tu ejército de Crusade que alberga un rencor contra el ejército de Crusade de tu oponente no puede replegarse mientras esté dentro del alcance de combate de una o más unidades enemigas."
+      "target": "Una unidad de tu ejército de Crusade que alberga un Grudge contra el ejército de Crusade de tu oponente no puede replegarse mientras esté dentro del alcance de combate de una o más unidades enemigas."
     },
     {
       "id": "24140421cc5db8a7",
@@ -738,7 +738,7 @@
         ]
       },
       "source": "If this unit’s Brôkhyr Iron‑master model is ever destroyed, all of this unit’s remaining E‑COG models are also destroyed. While embarking within a ^^**Transport^^** and while embarked within a ^^**Transport^^**, each E‑COG model takes up the space of 0 models.",
-      "target": "Si la miniatura Brôkhyr Iron‑master de esta unidad llega a ser destruida, todas las miniaturas E‑COG restantes de esta unidad también son destruidas. Al embarcar en un ^^**Transport^^** y mientras esté embarcada en un ^^**Transport^^**, cada miniatura E‑COG ocupa el espacio de 0 miniaturas."
+      "target": "Si la miniatura Brôkhyr Iron-master de esta unidad llega a ser destruida, todas las miniaturas E-COG restantes de esta unidad también son destruidas. Al embarcar en un ^^**Transport^^** y mientras esté embarcada en un ^^**Transport^^**, cada miniatura E-COG ocupa el espacio de 0 miniaturas."
     },
     {
       "id": "584cf87efec8eac8",
@@ -857,7 +857,7 @@
         "names": []
       },
       "source": "In your Shooting phase, you can select one **visible** enemy unit within 12\" of this unit. That enemy unit is **spotted**: \n- While a unit is spotted, that unit has +3\" **detection range**.",
-      "target": "En tu fase de Disparo, puedes seleccionar una unidad enemiga **visible** a 12\" o menos de esta unidad. Esa unidad enemiga queda **detectada**: \n- Mientras una unidad está detectada, esa unidad tiene +3\" de **alcance de detección**."
+      "target": "En tu fase de Disparo, puedes seleccionar una unidad enemiga **visible** a 12\" o menos de esta unidad. Esa unidad enemiga queda **Spotted**: \n- Mientras una unidad está Spotted, esa unidad tiene +3\" de **alcance de detección**."
     },
     {
       "id": "9b7ac5eb7ba8e7c4",
@@ -1050,7 +1050,7 @@
         "names": []
       },
       "source": "Once per battle round, when you target this unit with the **Fire Overwatch/Heroic Intervention** stratagem, you can use this ability. If you do, that use of that stratagem is ‑1 CP.",
-      "target": "Una vez por ronda de batalla, cuando tomas como objetivo a esta unidad con el stratagem **Fire Overwatch/Heroic Intervention**, puedes usar esta habilidad. Si lo haces, ese uso de ese stratagem cuesta ‑1 CP."
+      "target": "Una vez por ronda de batalla, cuando tomas como objetivo a esta unidad con el stratagem **Fire Overwatch/Heroic Intervention**, puedes usar esta habilidad. Si lo haces, ese uso de ese stratagem cuesta -1 CP."
     },
     {
       "id": "8eac9f638f008466",

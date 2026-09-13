@@ -32,7 +32,7 @@
         "names": []
       },
       "source": "The bearer harbours a grudge against every Faction, and these grudges can never be settled (ignore any rules that would apply when a grudge is settled).",
-      "target": "El portador guarda un grudge contra todas las Facciones, y esos grudges nunca pueden saldarse (ignora cualquier regla que se aplicaría al saldar un grudge)."
+      "target": "El portador guarda un Grudge contra todas las Facciones, y esos Grudges nunca pueden saldarse (ignora cualquier regla que se aplicaría al saldar un Grudge)."
     },
     {
       "id": "3ce21c1f380aa9c7",
@@ -1199,7 +1199,7 @@
         ]
       },
       "source": "If your Army Faction is **TYRANIDS**, while a **TYRANIDS** unit from your army is within 6\" of one or more friendly **SYNAPSE** models, that **TYRANIDS** unit is said to be within Synapse Range of that model and of your army. While a **TYRANIDS** unit from your army is within Synapse Range of your army:\n▪ Each time that unit takes a Battle‑shock test, take that test on 3D6 instead of 2D6.\n▪ Each time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack.",
-      "target": "Si tu Army Faction es **TYRANIDS**, mientras una unidad **TYRANIDS** de tu ejército esté a 6\" o menos de una o más miniaturas **SYNAPSE** amigas, se dice que esa unidad **TYRANIDS** está dentro del Synapse Range de esa miniatura y de tu ejército. Mientras una unidad **TYRANIDS** de tu ejército esté dentro del Synapse Range de tu ejército:\n▪ Cada vez que esa unidad hace un test de Battle‑shock, haz ese test con 3D6 en lugar de con 2D6.\n▪ Cada vez que una miniatura de esa unidad realiza un ataque de cuerpo a cuerpo, suma 1 a la característica de Fuerza de ese ataque."
+      "target": "Si tu Army Faction es **TYRANIDS**, mientras una unidad **TYRANIDS** de tu ejército esté a 6\" o menos de una o más miniaturas **SYNAPSE** amigas, se dice que esa unidad **TYRANIDS** está dentro del Synapse Range de esa miniatura y de tu ejército. Mientras una unidad **TYRANIDS** de tu ejército esté dentro del Synapse Range de tu ejército:\n▪ Cada vez que esa unidad hace un test de Battle-shock, haz ese test con 3D6 en lugar de con 2D6.\n▪ Cada vez que una miniatura de esa unidad realiza un ataque de cuerpo a cuerpo, suma 1 a la característica de Fuerza de ese ataque."
     },
     {
       "id": "6dfe994384871b04",
@@ -1215,7 +1215,7 @@
         ]
       },
       "source": "If your Army Faction is **TYRANIDS**, once per battle, in either player’s Command phase, if one or more units from your army with this ability are on the battlefield, you can unleash the Shadow in the Warp. When you do, each enemy unit on the battlefield must take a Battle‑shock test. Each time an enemy unit takes such a Battle‑shock test, if it is within 6\" of one or more **SYNAPSE** units from your army, subtract 1 from that test.",
-      "target": "Si tu Army Faction es **TYRANIDS**, una vez por batalla, en la fase de Mando de cualquiera de los jugadores, si una o más unidades de tu ejército con esta habilidad están en el campo de batalla, puedes desatar la Shadow in the Warp. Cuando lo haces, cada unidad enemiga que esté en el campo de batalla debe hacer un test de Battle‑shock. Cada vez que una unidad enemiga hace uno de esos tests de Battle‑shock, si está a 6\" o menos de una o más unidades **SYNAPSE** de tu ejército, resta 1 a ese test."
+      "target": "Si tu Army Faction es **TYRANIDS**, una vez por batalla, en la fase de Mando de cualquiera de los jugadores, si una o más unidades de tu ejército con esta habilidad están en el campo de batalla, puedes desatar la Shadow in the Warp. Cuando lo haces, cada unidad enemiga que esté en el campo de batalla debe hacer un test de Battle-shock. Cada vez que una unidad enemiga hace uno de esos tests de Battle-shock, si está a 6\" o menos de una o más unidades **SYNAPSE** de tu ejército, resta 1 a ese test."
     },
     {
       "id": "ed96abcea99e4308",
@@ -1559,7 +1559,7 @@
         "names": []
       },
       "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n▪ That use is ‑1 CP.\n▪ That use does not prevent any uses of that **stratagem** on other units this phase.",
-      "target": "Puedes seleccionar esta unidad como objetivo del **stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **stratagem** durante esta fase. Si lo haces:\n▪ Ese uso cuesta ‑1 CP.\n▪ Ese uso no impide ningún otro uso de ese **stratagem** en otras unidades durante esta fase."
+      "target": "Puedes seleccionar esta unidad como objetivo del **stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **stratagem** durante esta fase. Si lo haces:\n▪ Ese uso cuesta -1 CP.\n▪ Ese uso no impide ningún otro uso de ese **stratagem** en otras unidades durante esta fase."
     },
     {
       "id": "930447eba87ca3bd",
@@ -1877,7 +1877,7 @@
         ]
       },
       "source": "**TYRANIDS** model only. While the bearer is within 6\" of one or more friendly **HARVESTER** units, when you target this unit with the **Heroic Intervention stratagem**, that use is ‑1 CP. In addition, while the bearer is within 6\" of one or more friendly **HARVESTER** units, models in the bearer's unit have the Fights First ability.",
-      "target": "Solo miniatura **TYRANIDS**. Mientras el portador esté a 6\" o menos de una o más unidades **HARVESTER** amigas, cuando selecciones esta unidad como objetivo del **stratagem Heroic Intervention**, ese uso cuesta ‑1 CP. Además, mientras el portador esté a 6\" o menos de una o más unidades **HARVESTER** amigas, las miniaturas de la unidad del portador tienen la habilidad Fights First."
+      "target": "Solo miniatura **TYRANIDS**. Mientras el portador esté a 6\" o menos de una o más unidades **HARVESTER** amigas, cuando selecciones esta unidad como objetivo del **stratagem Heroic Intervention**, ese uso cuesta -1 CP. Además, mientras el portador esté a 6\" o menos de una o más unidades **HARVESTER** amigas, las miniaturas de la unidad del portador tienen la habilidad Fights First."
     },
     {
       "id": "828359471dc77490",
@@ -2281,7 +2281,7 @@
         ]
       },
       "source": "**ABOMINANT**, **BIOPHAGUS** or **PATRIARCH** model only.\n- Models in the bearer's unit have the Infiltrators ability.\n- You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n-- That use is ‑1 CP.\n-- That use does not prevent any uses of that **stratagem** on other units this phase.",
-      "target": "Solo miniatura **ABOMINANT**, **BIOPHAGUS** o **PATRIARCH**.\n- Las miniaturas de la unidad del portador tienen la habilidad Infiltrators.\n- Puedes seleccionar esta unidad como objetivo del **stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **stratagem** durante esta fase. Si lo haces:\n-- Ese uso cuesta ‑1 CP.\n-- Ese uso no impide ningún otro uso de ese **stratagem** en otras unidades durante esta fase."
+      "target": "Solo miniatura **ABOMINANT**, **BIOPHAGUS** o **PATRIARCH**.\n- Las miniaturas de la unidad del portador tienen la habilidad Infiltrators.\n- Puedes seleccionar esta unidad como objetivo del **stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **stratagem** durante esta fase. Si lo haces:\n-- Ese uso cuesta -1 CP.\n-- Ese uso no impide ningún otro uso de ese **stratagem** en otras unidades durante esta fase."
     },
     {
       "id": "5d01bc5f57b06f3e",
@@ -2367,7 +2367,7 @@
         "names": []
       },
       "source": "**GENESTEALER CULTS INFANTRY** model only. When you target this unit with the **Heroic Intervention stratagem**, that use is ‑1 CP.",
-      "target": "Solo miniatura **GENESTEALER CULTS INFANTRY**. Cuando seleccionas esta unidad como objetivo del **stratagem Heroic Intervention**, ese uso cuesta ‑1 CP."
+      "target": "Solo miniatura **GENESTEALER CULTS INFANTRY**. Cuando seleccionas esta unidad como objetivo del **stratagem Heroic Intervention**, ese uso cuesta -1 CP."
     },
     {
       "id": "741b627b880551ec",
