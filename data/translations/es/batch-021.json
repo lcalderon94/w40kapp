@@ -15,7 +15,7 @@
         ]
       },
       "source": "**^^Space Wolves^^** model only. Add 2 to the Strength characteristic of melee weapons equipped by the bearer. If the bearer's unit has achieved one or more Boasts, add 1 to the Damage characteristic as well.",
-      "target": null
+      "target": "Solo miniatura **^^Space Wolves^^**. Suma 2 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por el portador. Si la unidad del portador ha conseguido uno o más Boasts, suma también 1 a la característica de Daño."
     },
     {
       "id": "8608e5c390bf3799",
@@ -31,7 +31,7 @@
         ]
       },
       "source": "**^^Space Wolves^^** model only. At the start of the Fight phase, if there are more enemy models than friendly models wholly within 6\" of the bearer, until the end of the phase, add 2 to the Attacks characteristic of melee weapons equipped by the bearer. If the bearer's unit has achieved one or more Boasts, add 3 to the Attacks characteristic instead.",
-      "target": null
+      "target": "Solo miniatura **^^Space Wolves^^**. Al comienzo de la fase de Combate, si hay más miniaturas enemigas que miniaturas amigas completamente dentro de 6\" del portador, hasta el final de la fase, suma 2 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por el portador. Si la unidad del portador ha conseguido uno o más Boasts, suma 3 a la característica de Ataques en su lugar."
     },
     {
       "id": "b67d00aa93adda9a",
@@ -45,7 +45,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. Each time a SPACE WOLVES CHARACTER unit from your army achieves a Boast, if the bearer is on the battlefield, you gain 1 CP",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Cada vez que una unidad SPACE WOLVES CHARACTER de tu ejército consigue un Boast, si el portador está en el campo de batalla, ganas 1 CP"
     },
     {
       "id": "ab51034a19b60c9b",
@@ -59,7 +59,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. (Once per battle, per army) When this model is destroyed, at the end of the phase, roll one D6:\n\n\n▪ On a 2+, set up this model on the battlefield, unengaged and as close as possible to where it was destroyed. This model is not part of an attached unit and its unit has a starting strength of 1. This model has 3 wounds remaining",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. (Una vez por batalla, por ejército) Cuando esta miniatura es destruida, al final de la fase, tira un D6:\n\n\n▪ Con un 2+, despliega esta miniatura en el campo de batalla, sin trabar y lo más cerca posible del lugar donde fue destruida. Esta miniatura no forma parte de una unidad adjunta y su unidad tiene una Starting Strength de 1. A esta miniatura le quedan 3 heridas"
     },
     {
       "id": "082f2f4f035111eb",
@@ -73,7 +73,7 @@
         "names": []
       },
       "source": "SPACE WOLVES model only. Add 2\" to the Move characteristic of the bearer",
-      "target": null
+      "target": "Solo miniatura SPACE WOLVES. Suma 2\" a la característica de Movimiento del portador"
     },
     {
       "id": "8d2d6262ac808e33",
@@ -87,7 +87,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. After both players have deployed their armies, select up to three THUNDERWOLF CAVALRY, WULFEN and/or BLOOD CLAWS units from your army and redeploy them. When doing so you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades THUNDERWOLF CAVALRY, WULFEN y/o BLOOD CLAWS de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en las reservas estratégicas si lo deseas, independientemente de cuántas unidades haya ya en las reservas estratégicas"
     },
     {
       "id": "22ad7969aff365a0",
@@ -101,7 +101,7 @@
         "names": []
       },
       "source": "SPACE WOLVES model only. Once per battle, at the start of the Fight phase, if the bearer is leading a BLOOD CLAWS unit, the bearer can use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
-      "target": null
+      "target": "Solo miniatura SPACE WOLVES. Una vez por batalla, al comienzo de la fase de Combate, si el portador está liderando una unidad BLOOD CLAWS, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, mejora en 1 la característica de Penetración de Blindaje de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "51a566f03a154a5a",
@@ -115,7 +115,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. Each time an attack is made by a CHARACTER, MONSTER, or VEHICLE model that targets the bearer's unit, reduce the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Cada vez que una miniatura CHARACTER, MONSTER o VEHICLE realiza un ataque que toma como objetivo a la unidad del portador, reduce en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "da64e5905b9adfac",
@@ -129,7 +129,7 @@
         "names": []
       },
       "source": "CHAPLAIN or JUDICIAR model only. Improve the Armour Penetration characteristic of melee weapons equipped by models in the bearer's unit by 1",
-      "target": null
+      "target": "Solo miniatura CHAPLAIN o JUDICIAR. Mejora en 1 la característica de Penetración de Blindaje de las armas de cuerpo a cuerpo equipadas por las miniaturas de la unidad del portador"
     },
     {
       "id": "90d3be8c81b1c218",
@@ -143,7 +143,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES INFANTRY model only. Add 1 to the Advance rolls made for the bearer's unit. If the mission pack you are playing features Actions, the bearer's unit is eligible to start to perform an Action in a turn in which it Advanced.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES INFANTRY. Suma 1 a las tiradas de avance realizadas para la unidad del portador. Si el paquete de misiones que estás jugando incluye Acciones, la unidad del portador es elegible para empezar a realizar una Acción en un turno en el que haya avanzado."
     },
     {
       "id": "1ade86c4f9c7876b",
@@ -157,7 +157,7 @@
         "names": []
       },
       "source": "CHAPLAIN or JUDICIAR model only. Each time a model in the bearer's unit makes a melee attack, you can re-roll the hit roll.",
-      "target": null
+      "target": "Solo miniatura CHAPLAIN o JUDICIAR. Cada vez que una miniatura de la unidad del portador realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para impactar."
     },
     {
       "id": "01757dbb6445c091",
@@ -173,7 +173,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES model only. Models in the bearer's unit have the Scouts 6\" ability.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Las miniaturas de la unidad del portador tienen la habilidad Scouts 6\"."
     },
     {
       "id": "f36e149719d26cd2",
@@ -187,7 +187,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. Model's in the bearer's unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Las miniaturas de la unidad del portador tienen una salvación invulnerable de 5+."
     },
     {
       "id": "31a5108ef52488c3",
@@ -201,7 +201,7 @@
         "names": []
       },
       "source": "ANCIENT model only. Each time an enemy unit selects the bearer's unit as a target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other negative modifiers to that Charge roll)",
-      "target": null
+      "target": "Solo miniatura ANCIENT. Cada vez que una unidad enemiga selecciona a la unidad del portador como objetivo de una carga, resta 2 a la tirada de carga (esto no es acumulable con ningún otro modificador negativo a esa tirada de carga)"
     },
     {
       "id": "8e921676d12b33fe",
@@ -217,7 +217,7 @@
         ]
       },
       "source": "CRUSADE ANCIENT model only. While the bearer is leading a unit, each time you roll one D6 for the bearer's Vengeful Exhortation ability, add 1 to the result.",
-      "target": null
+      "target": "Solo miniatura CRUSADE ANCIENT. Mientras el portador está liderando una unidad, cada vez que tiras un D6 para la habilidad Vengeful Exhortation del portador, suma 1 al resultado."
     },
     {
       "id": "0be53cec55a6589b",
@@ -233,7 +233,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES model only. Models in the bearer's unit have the Deep Strike ability",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Las miniaturas de la unidad del portador tienen la habilidad Deep Strike"
     },
     {
       "id": "2c980f755d861791",
@@ -249,7 +249,7 @@
         ]
       },
       "source": "**^^Adeptus Astartes^^** model only. Add 2 the Strength characteristic of melee weapons equipped by the bearer. Each time a melee attack made by the bearer is allocated to an enemy model, if the bearer disembarked from a **^^Transport^^** this turn, add 1 to the Damage characteristic of that attack.",
-      "target": null
+      "target": "Solo miniatura **^^Adeptus Astartes^^**. Suma 2 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por el portador. Cada vez que un ataque de cuerpo a cuerpo realizado por el portador se asigna a una miniatura enemiga, si el portador desembarcó de un **^^Transport^^** este turno, suma 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "b3b3b10da9fcbf40",
@@ -265,7 +265,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES model only. Each time the bearer's unit declares a charge, if an enemy unit takes a Battle-shock test as a result of the Shock and Awe detachment rule, subtract 1 from that Battle-shock test.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Cada vez que la unidad del portador declara una carga, si una unidad enemiga hace un test de Battle-shock como consecuencia de la regla de Detachment Shock and Awe, resta 1 a ese test de Battle-shock."
     },
     {
       "id": "8f1fd4d4833550c4",
@@ -281,7 +281,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES model only. At the start of your shooting phase, select one enemy unit within 12\" of and visible to the bearer. Until the end of the phase, models in that unit cannot have the Benefit of Cover.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Al comienzo de tu fase de Disparo, selecciona una unidad enemiga que esté a 12\" o menos del portador y sea visible para él. Hasta el final de la fase, las miniaturas de esa unidad no pueden tener el beneficio de cobertura."
     },
     {
       "id": "97261c72c6e03cb3",
@@ -297,7 +297,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a DEDICATED TRANSPORT, that DEDICATED TRANSPORT has the Scouts 9\" ability.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. En el paso Declarar Formaciones de Batalla, si el portador empieza la batalla embarcado en un DEDICATED TRANSPORT, ese DEDICATED TRANSPORT tiene la habilidad Scouts 9\"."
     },
     {
       "id": "ee52bfd292d766ab",
@@ -313,7 +313,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Add 1 to the attacks characteristics of Torrent weapons equipped by models in the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Suma 1 a las características de Ataques de las armas Torrent equipadas por las miniaturas de la unidad del portador."
     },
     {
       "id": "204db69a4b642686",
@@ -330,7 +330,7 @@
         ]
       },
       "source": "Adeptus Astartes Terminator model only. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Terminator. La primera vez que el portador es destruido, tira un D6 al final de la fase. Con un 2+, vuelve a desplegar al portador en el campo de batalla, lo más cerca posible de donde fue destruido y fuera del alcance de combate de cualquier unidad enemiga, con 3 heridas restantes."
     },
     {
       "id": "913f6eedd0413123",
@@ -346,7 +346,7 @@
         ]
       },
       "source": "Adeptus Astartes Ancient model only. Each time an attack targets the bearer’s unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of the bearer’s unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Ancient. Cada vez que un ataque toma como objetivo a la unidad del portador, si la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de la unidad del portador, resta 1 a la tirada para herir."
     },
     {
       "id": "5fbde9e6da5cd455",
@@ -363,7 +363,7 @@
         ]
       },
       "source": "Adeptus Astartes Infantry model only. While the bearer is leading a unit, models in that unit have the\nInfiltrators ability.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Infantry. Mientras el portador está liderando una unidad, las miniaturas de esa unidad tienen la\nhabilidad Infiltrators."
     },
     {
       "id": "2a043aa100aa9a4b",
@@ -380,7 +380,7 @@
         ]
       },
       "source": "Phobos model only. The bearer has the following ability:\n\n\nLord of Deceit (Aura): Each time your opponent targets a unit from their army with a Stratagem, if that\nunit is within 12\" of this model, increase the cost of that usage of that Stratagem by 1CP.",
-      "target": null
+      "target": "Solo miniatura Phobos. El portador tiene la siguiente habilidad:\n\n\nLord of Deceit (Aura): Cada vez que tu oponente toma como objetivo a una unidad de su ejército con un Stratagem, si esa\nunidad está a 12\" o menos de esta miniatura, incrementa en 1CP el coste de ese uso de ese Stratagem."
     },
     {
       "id": "30a7a4bd5737f9db",
@@ -397,7 +397,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. The bearer has the Stealth and Lone Operative abilities.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. El portador tiene las habilidades Stealth y Lone Operative."
     },
     {
       "id": "1173c4327c565913",
@@ -411,7 +411,7 @@
         "names": []
       },
       "source": "^^**Adeptus Astartes**^^ model only. In your Movement phase, if the bearer’s unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
-      "target": null
+      "target": "Solo miniatura ^^**Adeptus Astartes**^^. En tu fase de Movimiento, si la unidad del portador está en las reservas estratégicas, a efectos de desplegar esa unidad en el campo de batalla, trata el número de la ronda de batalla actual como si fuera uno más alto de lo que realmente es."
     },
     {
       "id": "f52bdbc5e189d4c6",
@@ -425,7 +425,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Add 1 to the Attacks characteristic of the bearer’s melee weapons. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by all other models in the bearer’s unit as well.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo del portador. Una vez por batalla, al comienzo de cualquier fase, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, suma también 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por todas las demás miniaturas de la unidad del portador."
     },
     {
       "id": "cabae88589922258",
@@ -439,7 +439,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While an enemy unit (excluding Monsters and Vehicles) is within 6\" of\nthe bearer, each time that unit fails a Battle‑shock test, one model in that unit is destroyed (chosen by\nits controlling player). Once per battle, when such an enemy unit fails a Battle‑shock test, you can choose for D3 models in that unit to be destroyed in this way instead.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mientras una unidad enemiga (excluidas las unidades Monsters y Vehicles) está a 6\" o menos\ndel portador, cada vez que esa unidad falla un test de Battle‑shock, una miniatura de esa unidad es destruida (la elige\nsu jugador). Una vez por batalla, cuando una unidad enemiga de ese tipo falla un test de Battle‑shock, puedes elegir que D3 miniaturas de esa unidad sean destruidas de este modo en su lugar."
     },
     {
       "id": "28a4333103e2eee5",
@@ -453,7 +453,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Improve the Objective Control characteristic of the bearer by 1. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Objective Control characteristic of all other models in the bearer’s unit as well.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mejora en 1 la característica de Control de Objetivos del portador. Una vez por batalla, al comienzo de cualquier fase, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, suma también 1 a la característica de Control de Objetivos de todas las demás miniaturas de la unidad del portador."
     },
     {
       "id": "b611b0cdb60a6b50",
@@ -470,7 +470,7 @@
         ]
       },
       "source": "Adeptus Astartes Terminator model only. While the bearer is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Terminator. Mientras el portador está liderando una unidad, en tu fase de Mando, puedes devolver a esa unidad 1 miniatura Bodyguard destruida."
     },
     {
       "id": "d7789677c648938a",
@@ -484,7 +484,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Improve the Strength and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer ends a Charge move, until the end of the turn, improve the Strength and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mejora en 1 las características de Fuerza y de Penetración de Blindaje de las armas de cuerpo a cuerpo del portador. Cada vez que el portador termina un movimiento de carga, hasta el final del turno, mejora en 2 las características de Fuerza y de Penetración de Blindaje de las armas de cuerpo a cuerpo del portador en su lugar."
     },
     {
       "id": "a131bf524f32393e",
@@ -498,7 +498,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, you can re‑roll Advance rolls made for that unit.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mientras el portador está liderando una unidad, puedes repetir las tiradas de avance realizadas para esa unidad."
     },
     {
       "id": "db9c0cea1e0ebd57",
@@ -517,7 +517,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Ranged weapons equipped by models in the bearer’s unit have the [SUSTAINED HITS 1] and [IGNORES COVER] abilities.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Las armas a distancia equipadas por las miniaturas de la unidad del portador tienen las habilidades [SUSTAINED HITS 1] e [IGNORES COVER]."
     },
     {
       "id": "54f5cfb9dead75d9",
@@ -533,7 +533,7 @@
         ]
       },
       "source": "Adeptus Astartes Mounted model only. If the bearer’s unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Mounted. Si la unidad del portador está en las reservas estratégicas, a efectos de desplegar esa unidad en el campo de batalla, trata el número de la ronda de batalla actual como si fuera uno más alto de lo que realmente es."
     },
     {
       "id": "324edacb32b67f6f",
@@ -547,7 +547,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. At the start of your Command phase, if the bearer is on the battlefield, it\ncan use this Enhancement. If it does, until the start of your next Command phase, the Tactical  doctrine is active for this unit (instead of any other Combat Doctrine you select to be active for your army, and even if there is no Combat Doctrine active for your army).",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Al comienzo de tu fase de Mando, si el portador está en el campo de batalla,\npuede usar este Enhancement. Si lo hace, hasta el comienzo de tu siguiente fase de Mando, la Tactical doctrine está activa para esta unidad (en lugar de cualquier otra Combat Doctrine que selecciones como activa para tu ejército, e incluso si no hay ninguna Combat Doctrine activa para tu ejército)."
     },
     {
       "id": "bf8747679f75e320",
@@ -563,7 +563,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability. In addition, while the bearer’s unit is under the effects of the Devastator Doctrine, you can reroll Advance rolls made for that unit.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mientras el portador está liderando una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [SUSTAINED HITS 1]. Además, mientras la unidad del portador está bajo los efectos de la Devastator Doctrine, puedes repetir las tiradas de avance realizadas para esa unidad."
     },
     {
       "id": "c12765b2cdb70c41",
@@ -582,7 +582,7 @@
         ]
       },
       "source": "Adeptus Astartes Terminator Captain model only. Once per battle round, from the second battle round\nonwards, you can target the bearer’s unit with the Rapid Ingress or Heroic Intervention Stratagem for\n0CP, and can do so even if you have already targeted a different unit with that Stratagem this turn.\n\n\nIn the Declare Battle Formations step, the bearer can be attached to a Wolf Guard Terminators unit.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Terminator Captain. Una vez por ronda de batalla, a partir de la segunda ronda de\nbatalla, puedes tomar como objetivo a la unidad del portador con el Stratagem Rapid Ingress o Heroic Intervention por\n0CP, y puedes hacerlo incluso si ya has tomado como objetivo a otra unidad con ese Stratagem este turno.\n\n\nEn el paso Declarar Formaciones de Batalla, el portador puede adjuntarse a una unidad Wolf Guard Terminators."
     },
     {
       "id": "6ee37da155a8a9f6",
@@ -596,7 +596,7 @@
         "names": []
       },
       "source": "Wolf priest model only. At the start of the Fight phase, you can select one enemy unit within 6\" of the\nbearer. That unit must take a Battle-shock, subtracting 1 from the result.",
-      "target": null
+      "target": "Solo miniatura Wolf priest. Al comienzo de la fase de Combate, puedes seleccionar una unidad enemiga que esté a 6\" o menos del\nportador. Esa unidad debe hacer un test de Battle-shock, restando 1 al resultado."
     },
     {
       "id": "ecded3addafb2dd5",
@@ -610,7 +610,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. After both players have deployed their armies, select up to three Adeptus Astartes units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades Adeptus Astartes de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en las reservas estratégicas, independientemente de cuántas unidades haya ya en las reservas estratégicas."
     },
     {
       "id": "64e0d83268645004",
@@ -630,7 +630,7 @@
         ]
       },
       "source": "Wolf Guard Battle Leader model only. While the bearer is leading a unit, weapons equipped by models in that unit have the [LANCE] ability.",
-      "target": null
+      "target": "Solo miniatura Wolf Guard Battle Leader. Mientras el portador está liderando una unidad, las armas equipadas por las miniaturas de esa unidad tienen la habilidad [LANCE]."
     },
     {
       "id": "37d01b7153021c03",
@@ -647,7 +647,7 @@
         ]
       },
       "source": "Chaplain model only. Models in the bearer’s unit have the Scouts 6\" ability. Each time you take a\nBattle-shock test for an Adeptus Astartes unit within 6\" of the bearer, you can re-roll the result",
-      "target": null
+      "target": "Solo miniatura Chaplain. Las miniaturas de la unidad del portador tienen la habilidad Scouts 6\". Cada vez que haces un\ntest de Battle-shock para una unidad Adeptus Astartes que esté a 6\" o menos del portador, puedes repetir el resultado"
     },
     {
       "id": "36e980aff89ec472",
@@ -661,7 +661,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use\nthis Enhancement. If it does, until the end of the phase, models in the bearer’s unit have the Fights\nFirst ability.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Una vez por batalla, al comienzo de la fase de Combate, el portador puede usar\neste Enhancement. Si lo hace, hasta el final de la fase, las miniaturas de la unidad del portador tienen la habilidad Fights\nFirst."
     },
     {
       "id": "37f2c57bb8445adb",
@@ -675,7 +675,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While a friendly Death Company unit is within 6\" of the bearer, add 1 to\nthe Strength characteristic of weapons equipped by models in that unit.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mientras una unidad Death Company amiga está a 6\" o menos del portador, suma 1 a\nla característica de Fuerza de las armas equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "6d52c0afa20074af",
@@ -695,7 +695,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Each time the bearer makes a melee attack that targets a Character,\nMonster or Vehicle unit, that attack has the [SUSTAINED HITS 2] ability.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Cada vez que el portador realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad Character,\nMonster o Vehicle, ese ataque tiene la habilidad [SUSTAINED HITS 2]."
     },
     {
       "id": "b183a8ad0ca19b42",
@@ -714,7 +714,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Ranged weapons equipped by the bearer and Battleline models in the\nbearer’s unit have the [PRECISION] ability",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Las armas a distancia equipadas por el portador y por las miniaturas Battleline de la\nunidad del portador tienen la habilidad [PRECISION]"
     },
     {
       "id": "36709be0dd8c818b",
@@ -730,7 +730,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, the bearer has the Battleline keyword.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mientras el portador está liderando una unidad, el portador tiene la palabra clave Battleline."
     },
     {
       "id": "0dfc45b61f50418c",
@@ -746,7 +746,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Improve the Armour Penetration characteristic of melee weapons equipped by the bearer and Battleline models in the bearer’s unit by 1.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Mejora en 1 la característica de Penetración de Blindaje de las armas de cuerpo a cuerpo equipadas por el portador y por las miniaturas Battleline de la unidad del portador."
     },
     {
       "id": "150003e43f0aa0ce",
@@ -762,7 +762,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Each time you select the bearer’s unit as the target of a Stratagem, roll one D6, adding 1 if the bearer’s unit has the Battleline keyword: on a 4+, you gain 1CP.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Cada vez que seleccionas a la unidad del portador como objetivo de un Stratagem, tira un D6, sumando 1 si la unidad del portador tiene la palabra clave Battleline: con un 4+, ganas 1CP."
     },
     {
       "id": "0847843f17412ea6",
@@ -776,7 +776,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. You can re‑roll Charge rolls made for the bearer’s unit in a turn in which it was set up on the battlefield.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Puedes repetir las tiradas de carga realizadas para la unidad del portador en un turno en el que haya sido desplegada en el campo de batalla."
     },
     {
       "id": "eaaaf3ef68985135",
@@ -790,7 +790,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. After both players have deployed their armies, select up to three Adeptus Astartes units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades Adeptus Astartes de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en las reservas estratégicas si lo deseas, independientemente de cuántas unidades haya ya en las reservas estratégicas."
     },
     {
       "id": "b2a46fad8ab56a0c",
@@ -807,7 +807,7 @@
         ]
       },
       "source": "Adeptus Astartes Terminator model only. Once per battle, at the end of your opponent’s Fight\nphase, if the bearer’s unit is not within Engagement Range of one or more enemy units, the bearer\ncan use this Enhancement. If it does, remove the bearer’s unit from the battlefield and place it into\nStrategic Reserves.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Terminator. Una vez por batalla, al final de la fase de Combate de tu\noponente, si la unidad del portador no está dentro del alcance de combate de una o más unidades enemigas, el portador\npuede usar este Enhancement. Si lo hace, retira la unidad del portador del campo de batalla y colócala en las\nreservas estratégicas."
     },
     {
       "id": "a143dfe2a52be73c",
@@ -821,7 +821,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Models in the bearer’s unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Las miniaturas de la unidad del portador tienen una salvación invulnerable de 5+."
     },
     {
       "id": "a45a2c8af4976f6a",
@@ -835,7 +835,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. In the Battle‑shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 9\" of the bearer, that enemy unit must take a Battle‑shock test.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. En el paso de Battle‑shock de la fase de Mando de tu oponente, si una unidad enemiga que está por debajo de su Starting Strength está a 9\" o menos del portador, esa unidad enemiga debe hacer un test de Battle‑shock."
     },
     {
       "id": "109b2f39fcc42978",
@@ -849,7 +849,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Each time the bearer’s unit declares a charge, if one or more targets of that charge are within range of an objective marker, you can re‑roll the Charge roll.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Cada vez que la unidad del portador declara una carga, si uno o más objetivos de esa carga están dentro del alcance de un marcador de objetivo, puedes repetir la tirada de carga."
     },
     {
       "id": "1652d7ba013e4d5f",
@@ -863,7 +863,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Each time the bearer makes an attack that targets an enemy unit, if the\ntarget is within range of an objective marker, you can re‑roll the Hit roll and you can re‑roll the Wound roll.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Cada vez que el portador realiza un ataque que toma como objetivo a una unidad enemiga, si el\nobjetivo está dentro del alcance de un marcador de objetivo, puedes repetir la tirada para impactar y puedes repetir la tirada para herir."
     },
     {
       "id": "72ce6df2b1fb7ed0",
@@ -879,7 +879,7 @@
         ]
       },
       "source": "The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
-      "target": null
+      "target": "La primera vez que el portador es destruido, tira un D6 al final de la fase. Con un 2+, vuelve a desplegar al portador en el campo de batalla, lo más cerca posible de donde fue destruido y fuera del alcance de combate de cualquier unidad enemiga, con todas sus heridas restantes."
     },
     {
       "id": "bce23a3b02ada77b",
@@ -893,7 +893,7 @@
         "names": []
       },
       "source": "Each time the bearer’s unit makes a Fall Back move, select one of the following to apply to that unit until the end of the turn: \n- That unit is eligible to perform an Action in a turn in which it Fell Back. \n- That unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
-      "target": null
+      "target": "Cada vez que la unidad del portador realiza un movimiento de repliegue, selecciona una de las siguientes opciones, que se aplica a esa unidad hasta el final del turno: \n- Esa unidad es elegible para realizar una Acción en un turno en el que se haya replegado. \n- Esa unidad es elegible para disparar y para declarar una carga en un turno en el que se haya replegado."
     },
     {
       "id": "4ed46725ba927744",
@@ -907,7 +907,7 @@
         "names": []
       },
       "source": "After both players have deployed their armies, select up to three ^^**Adeptus Astartes**^^ units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades ^^**Adeptus Astartes**^^ de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en las reservas estratégicas, independientemente de cuántas unidades haya ya en las reservas estratégicas."
     },
     {
       "id": "2fc7717429e3147f",
@@ -924,7 +924,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. If you control an objective marker at the end of your Command phase,\nand the bearer’s unit (or any Heavy Transport it is embarked within) is within range of that objective\nmarker, that objective marker remains under your control until your opponent’s Level of Control over\nthat objective marker is greater than yours at the end of a phase.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Si controlas un marcador de objetivo al final de tu fase de Mando,\ny la unidad del portador (o cualquier Heavy Transport en el que esté embarcada) está dentro del alcance de ese\nmarcador de objetivo, ese marcador de objetivo permanece bajo tu control hasta que el Nivel de Control de tu\noponente sobre ese marcador de objetivo sea mayor que el tuyo al final de una fase."
     },
     {
       "id": "7ac27ed644216656",
@@ -941,7 +941,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. If the bearer starts the battle embarked within a Transport, that transport\nhas the Scouts 6\" ability",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Si el portador empieza la batalla embarcado en un Transport, ese Transport\ntiene la habilidad Scouts 6\""
     },
     {
       "id": "cd7ac3d4cd809bce",
@@ -961,7 +961,7 @@
         ]
       },
       "source": "Adeptus Astartes Terminator or Gravis model only. In your Shooting phase, each time the bearer’s unit is selected to shoot, if it disembarked from a Transport this turn, until the end of the phase, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes Terminator o Gravis. En tu fase de Disparo, cada vez que la unidad del portador es seleccionada para disparar, si desembarcó de un Transport este turno, hasta el final de la fase, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "149b771d5ca8363a",
@@ -977,7 +977,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Once per turn, in your Movement phase, the bearer can use this\nEnhancement. If it does, select one friendly Adeptus Astartes Transport that is in Strategic Reserves. Until the end of the phase, for the purposes of setting up that Transport on the battlefield, treat the current battle round number as being one higher than it actually is.",
-      "target": null
+      "target": "Solo miniatura Adeptus Astartes. Una vez por turno, en tu fase de Movimiento, el portador puede usar este\nEnhancement. Si lo hace, selecciona un Adeptus Astartes Transport amigo que esté en las reservas estratégicas. Hasta el final de la fase, a efectos de desplegar ese Transport en el campo de batalla, trata el número de la ronda de batalla actual como si fuera uno más alto de lo que realmente es."
     },
     {
       "id": "59434ee4122f6bbf",
@@ -994,7 +994,7 @@
         ]
       },
       "source": "PHOBOS model only. This model has:\n\n\n▪ Lone Operative.\n▪ Stealth.",
-      "target": null
+      "target": "Solo miniatura PHOBOS. Esta miniatura tiene:\n\n\n▪ Lone Operative.\n▪ Stealth."
     },
     {
       "id": "e03c25adba74f0ef",
@@ -1011,7 +1011,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES PSYKER model only. This model’s [PSYCHIC] attacks:\n\n\n▪ Have [ANTI: non‑MONSTER/VEHICLE 5+].\n▪ Can re‑roll damage rolls.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES PSYKER. Los ataques [PSYCHIC] de esta miniatura:\n\n\n▪ Tienen [ANTI: non‑MONSTER/VEHICLE 5+].\n▪ Pueden repetir las tiradas de daño."
     },
     {
       "id": "338c687a5d31b911",
@@ -1025,7 +1025,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. This unit has ‑3\" detection range",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES. Esta unidad tiene ‑3\" de alcance de detección"
     },
     {
       "id": "594b63456f885308",
@@ -1042,7 +1042,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES JUMP PACK model only. When this unit is selected to fight, this unit’s melee attacks have:\n\n\n▪ [LETHAL HITS].\n▪ Or: [SUSTAINED HITS 1].",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES JUMP PACK. Cuando esta unidad es seleccionada para combatir, los ataques de cuerpo a cuerpo de esta unidad tienen:\n\n\n▪ [LETHAL HITS].\n▪ O bien: [SUSTAINED HITS 1]."
     },
     {
       "id": "709fd7182b7488df",
@@ -1056,7 +1056,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES JUMP PACK model only. (Once per battle, per army) When this unit is selected to fight you can use this ability. If you do, this model’s melee attacks have +1 D.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES JUMP PACK. (Una vez por batalla, por ejército) Cuando esta unidad es seleccionada para combatir, puedes usar esta habilidad. Si lo haces, los ataques de cuerpo a cuerpo de esta miniatura tienen +1 de D."
     },
     {
       "id": "012db62cb11f5e20",
@@ -1070,7 +1070,7 @@
         "names": []
       },
       "source": "DEATH COMPANY model only. When you target this unit with the Heroic Intervention stratagem, that use is ‑1 CP.",
-      "target": null
+      "target": "Solo miniatura DEATH COMPANY. Cuando tomas como objetivo a esta unidad con el Stratagem Heroic Intervention, ese uso cuesta ‑1 CP."
     },
     {
       "id": "a14425c6be764578",
@@ -1084,7 +1084,7 @@
         "names": []
       },
       "source": "DEATH COMPANY model only. This model’s melee attacks have +2 A",
-      "target": null
+      "target": "Solo miniatura DEATH COMPANY. Los ataques de cuerpo a cuerpo de esta miniatura tienen +2 de A"
     },
     {
       "id": "81ee4efb37f79ae4",
@@ -1098,7 +1098,7 @@
         "names": []
       },
       "source": "CHAPLAIN model only. This unit has +1 to charge rolls",
-      "target": null
+      "target": "Solo miniatura CHAPLAIN. Esta unidad tiene +1 a las tiradas de carga"
     },
     {
       "id": "e132c3909fe9fa11",
@@ -1114,7 +1114,7 @@
         "names": []
       },
       "source": "CHAPLAIN model only. This unit’s ranged attacks have [IGNORES COVER].",
-      "target": null
+      "target": "Solo miniatura CHAPLAIN. Los ataques a distancia de esta unidad tienen [IGNORES COVER]."
     },
     {
       "id": "ea3139d85d8f960a",
@@ -1134,7 +1134,7 @@
         ]
       },
       "source": "EMPEROR’S CHAMPION model only. At the start of the first battle round, you can select up to three of the following abilities. This model has those abilities until the end of the battle:\n\n▪ Instrument of the God‑Emperor (Once per battle, per army):\n   In the Fight phase, when this unit is selected to fight, if this unit is engaged with an enemy CHARACTER unit, you can use this ability. If you do, this model’s melee attacks have [DEVASTATING WOUNDS].\n\n▪ Foreseen Paths of the Unholy: This unit has ‑3\" detection range.\n\n▪ Vision of Momentous Brutality: This model’s melee attacks have +2 A.\n\n▪ Augury of Retribution: Melee attacks that target this unit have [HAZARDOUS].\n\n▪ Omen of Sacred Intervention: When you target this unit with the Heroic Intervention stratagem, that use is ‑1 CP.\n\n▪ Harbinger of Judgement: When an enemy unit (excluding MONSTER/VEHICLE units) engaged with this model is selected to make a fall‑back move, roll one D6:\n    ▫ On a 2+, that enemy unit suffers D6 mortal wounds.",
-      "target": null
+      "target": "Solo miniatura EMPEROR’S CHAMPION. Al comienzo de la primera ronda de batalla, puedes seleccionar hasta tres de las siguientes habilidades. Esta miniatura tiene esas habilidades hasta el final de la batalla:\n\n▪ Instrument of the God‑Emperor (Una vez por batalla, por ejército):\n   En la fase de Combate, cuando esta unidad es seleccionada para combatir, si esta unidad está trabada con una unidad CHARACTER enemiga, puedes usar esta habilidad. Si lo haces, los ataques de cuerpo a cuerpo de esta miniatura tienen [DEVASTATING WOUNDS].\n\n▪ Foreseen Paths of the Unholy: Esta unidad tiene ‑3\" de alcance de detección.\n\n▪ Vision of Momentous Brutality: Los ataques de cuerpo a cuerpo de esta miniatura tienen +2 de A.\n\n▪ Augury of Retribution: Los ataques de cuerpo a cuerpo que toman como objetivo a esta unidad tienen [HAZARDOUS].\n\n▪ Omen of Sacred Intervention: Cuando tomas como objetivo a esta unidad con el Stratagem Heroic Intervention, ese uso cuesta ‑1 CP.\n\n▪ Harbinger of Judgement: Cuando una unidad enemiga (excluidas las unidades MONSTER/VEHICLE) trabada con esta miniatura es seleccionada para realizar un movimiento de repliegue, tira un D6:\n     ▫ Con un 2+, esa unidad enemiga sufre D6 heridas mortales."
     },
     {
       "id": "922439ad11b055de",
@@ -1148,7 +1148,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES FLY INFANTRY model only. When this unit ends an ingress move, select up to one enemy unit within 9\" of this unit. That enemy unit makes a battle-shock roll, with -1 to that\nbattle-shock roll.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES FLY INFANTRY. Cuando esta unidad termina un movimiento de entrada, selecciona hasta una unidad enemiga que esté a 9\" o menos de esta unidad. Esa unidad enemiga hace una tirada de Battle-shock, con -1 a esa\ntirada de Battle-shock."
     },
     {
       "id": "60a2ea8992e446a1",
@@ -1162,7 +1162,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES FLY INFANTRY model only. This model has the following weapon:",
-      "target": null
+      "target": "Solo miniatura ADEPTUS ASTARTES FLY INFANTRY. Esta miniatura tiene el arma siguiente:"
     },
     {
       "id": "39001c2f3d62a563",
@@ -1176,7 +1176,7 @@
         "names": []
       },
       "source": "Improve the Ballistic Skill characteristics of ranged weapons equipped by models in this unit by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Habilidad de Proyectiles de las armas a distancia equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "97459150d8dccc29",
@@ -1193,7 +1193,7 @@
         ]
       },
       "source": "Models in this unit have the Feel No Pain 5+ ability against Psychic Attacks.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 5+ contra los ataques psíquicos."
     },
     {
       "id": "a67bd4dee883b598",
@@ -1209,7 +1209,7 @@
         ]
       },
       "source": "Improve the Weapon Skill characteristics of melee weapons equipped by models in this unit by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Habilidad de Armas de las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "b7fdd1f97414872a",
@@ -1223,7 +1223,7 @@
         "names": []
       },
       "source": "At the end of the battle, if this unit is not destroyed, it gains an additional 1XP.",
-      "target": null
+      "target": "Al final de la batalla, si esta unidad no está destruida, gana 1XP adicional."
     },
     {
       "id": "6732d35253150d17",
@@ -1239,7 +1239,7 @@
         ]
       },
       "source": "Select one model in this unit (if this unit contains a unit champion, such as a Space Marine Sergeant, you must select that model). Add 1 to the Attacks characteristic of the selected model's melee weapons and, unless the selected model is a **^^Character^^**, add 1 to its Wounds characteristic.",
-      "target": null
+      "target": "Selecciona una miniatura de esta unidad (si esta unidad contiene un campeón de unidad, como un Space Marine Sergeant, debes seleccionar esa miniatura). Suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo de la miniatura seleccionada y, salvo que la miniatura seleccionada sea un **^^Character^^**, suma 1 a su característica de Heridas."
     },
     {
       "id": "780b6b0aa86c1b8f",
@@ -1253,7 +1253,7 @@
         "names": []
       },
       "source": "This unit can still be selected as the target of a Stratagem while it is Battle-shocked. In addition, each time an Out of Action test is failed for this unit, you can re-roll that test.",
-      "target": null
+      "target": "Esta unidad puede seguir siendo seleccionada como objetivo de un Stratagem mientras está Battle-shocked. Además, cada vez que se falla un test de Out of Action para esta unidad, puedes repetir ese test."
     },
     {
       "id": "d1cf15c8c3a4f663",
@@ -1269,7 +1269,7 @@
         ]
       },
       "source": "Each time this unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un ataque que toma como objetivo a una unidad **^^Character^^**, suma 1 a la tirada para impactar."
     },
     {
       "id": "51e3ccb80507c76a",
@@ -1283,7 +1283,7 @@
         "names": []
       },
       "source": "Once per turn, in your opponent's Charge phase, after an enemy unit has selected this unit as a target for its charge but before it makes a Charge move, this unit can choose to retreat. If it does, it can make a Normal move of up to 3\". The charging unit can then select new targets for that charge.",
-      "target": null
+      "target": "Una vez por turno, en la fase de Carga de tu oponente, después de que una unidad enemiga haya seleccionado a esta unidad como objetivo de su carga pero antes de que realice un movimiento de carga, esta unidad puede elegir retirarse. Si lo hace, puede realizar un movimiento normal de hasta 3\". La unidad que carga puede entonces seleccionar nuevos objetivos para esa carga."
     },
     {
       "id": "5a23ad10461258dc",
@@ -1299,7 +1299,7 @@
         ]
       },
       "source": "Each time a ranged attack targets this unit, it has the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a esta unidad, tiene el beneficio de cobertura contra ese ataque."
     },
     {
       "id": "4176cb8199e554bb",
@@ -1313,7 +1313,7 @@
         "names": []
       },
       "source": "While this unit is Below Half-strength, you can re-roll Battle-shock tests taken for it.",
-      "target": null
+      "target": "Mientras esta unidad está Below Half-strength, puedes repetir los tests de Battle-shock realizados para ella."
     },
     {
       "id": "6e728217459a000b",
@@ -1329,7 +1329,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of the Fight phase, this unit can use this ability. If it does, until the end of the turn, weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de la fase de Combate, esta unidad puede usar esta habilidad. Si lo hace, hasta el final del turno, las armas equipadas por las miniaturas de esta unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "d5ca7bbd81c794ee",
@@ -1343,7 +1343,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of your Command phase, this unit can use this ability. If it does, until the start of your next Command phase, add 1 to the Objective Control characteristic of models in this unit.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de tu fase de Mando, esta unidad puede usar esta habilidad. Si lo hace, hasta el comienzo de tu siguiente fase de Mando, suma 1 a la característica de Control de Objetivos de las miniaturas de esta unidad."
     },
     {
       "id": "a10cb6279451945d",
@@ -1357,7 +1357,7 @@
         "names": []
       },
       "source": "Each time this model makes a Charge move, select one melee weapon it is equipped with; until the end of the turn, add 2 to the Strength characteristic of that weapon.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un movimiento de carga, selecciona un arma de cuerpo a cuerpo que lleve equipada; hasta el final del turno, suma 2 a la característica de Fuerza de esa arma."
     },
     {
       "id": "5e04699324a8f589",
@@ -1373,7 +1373,7 @@
         ]
       },
       "source": "This model does not suffer the penalty to its Hit rolls for firing at enemy units that are within Engagement Range of it.",
-      "target": null
+      "target": "Esta miniatura no sufre la penalización a sus tiradas para impactar por disparar a unidades enemigas que están dentro de su alcance de combate."
     },
     {
       "id": "1ada962fb5c94162",
@@ -1389,7 +1389,7 @@
         ]
       },
       "source": "**^^Ancient^^** model only. While the bearer is leading a unit, add 1 to the Strength characteristic of melee weapons equipped by models in that unit.",
-      "target": null
+      "target": "Solo miniatura **^^Ancient^^**. Mientras el portador está liderando una unidad, suma 1 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "7d3a474ee9bdd7fd",
@@ -1406,7 +1406,7 @@
         ]
       },
       "source": "Select one ranged weapon equipped by the bearer; that weapon is now a Crusade Relic. Once per battle, when the bearer shoots with that weapon, you can choose for it to fire a vortex bolt instead of shooting with that weapon normally. If it does, resolve that shooting using the Vortex bolt profile.",
-      "target": null
+      "target": "Selecciona un arma a distancia equipada por el portador; esa arma es ahora una Crusade Relic. Una vez por batalla, cuando el portador dispara con esa arma, puedes elegir que dispare un vortex bolt en lugar de disparar con esa arma normalmente. Si lo hace, resuelve ese disparo usando el perfil Vortex bolt."
     },
     {
       "id": "ad63b035325b26aa",
@@ -1423,7 +1423,7 @@
         ]
       },
       "source": "Once per battle, in your Command phase, the bearer can unveil the Relic of the Primarch. If it does, until the start of your next Command phase, the bearer has the following ability:\n\n**Relic of the Primarch (Aura)**\n- While a friendly **^^Adeptus Astartes^^** unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.\n- If the bearer is destroyed, after remove it from play set up one new object marker as close as possible to the bearer's last location; this represents the Relic of the Primarch. You immediately gain the Recover the Relic Agenda in addition to any other Agendas being used for the battle.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, el portador puede desvelar la Relic of the Primarch. Si lo hace, hasta el comienzo de tu siguiente fase de Mando, el portador tiene la siguiente habilidad:\n\n**Relic of the Primarch (Aura)**\n- Mientras una unidad **^^Adeptus Astartes^^** amiga está a 6\" o menos de esta miniatura, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad.\n- Si el portador es destruido, después de retirarlo del juego despliega un nuevo marcador de objetivo lo más cerca posible de la última posición del portador; este representa la Relic of the Primarch. Ganas inmediatamente la Agenda Recover the Relic además de cualesquiera otras Agendas que se estén usando en la batalla."
     },
     {
       "id": "42b0b67a8887cf80",
@@ -1441,7 +1441,7 @@
         ]
       },
       "source": "At  the end of the battle, if you control the Relic of the Primarch objective marker, you can select one unit from your Crusade army that is within 3\" of that objective marker; that unit gains 3XP. If you do not control that objective marker at the end of the battle, you lose 10VP (to a minimum of 0).",
-      "target": null
+      "target": "Al final de la batalla, si controlas el marcador de objetivo Relic of the Primarch, puedes seleccionar una unidad de tu ejército de Crusade que esté a 3\" o menos de ese marcador de objetivo; esa unidad gana 3XP. Si no controlas ese marcador de objetivo al final de la batalla, pierdes 10VP (hasta un mínimo de 0)."
     },
     {
       "id": "7a052632f20a6921",
@@ -1457,7 +1457,7 @@
         ]
       },
       "source": "During the Declare Battle Formations step, if this model is attached a unit, until the end of the battle, that unit has the Deep Strike ability.",
-      "target": null
+      "target": "Durante el paso Declarar Formaciones de Batalla, si esta miniatura está adjunta a una unidad, hasta el final de la batalla, esa unidad tiene la habilidad Deep Strike."
     },
     {
       "id": "06a3e94b18d3c9a4",
@@ -1471,7 +1471,7 @@
         "names": []
       },
       "source": "Add 1 to the bearer's Toughness and Wounds characteristics.",
-      "target": null
+      "target": "Suma 1 a las características de Resistencia y de Heridas del portador."
     },
     {
       "id": "56041e620e9c6721",
@@ -1487,7 +1487,7 @@
         ]
       },
       "source": "- The bearer has a 4+ invulnerable save.\n- The bearer has the Feel No Pain 4+ ability against mortal wounds.",
-      "target": null
+      "target": "- El portador tiene una salvación invulnerable de 4+.\n- El portador tiene la habilidad Feel No Pain 4+ contra las heridas mortales."
     },
     {
       "id": "6ebb866ceade184b",
@@ -1504,7 +1504,7 @@
         ]
       },
       "source": "Each time this model makes a melee attack, you can re-roll the Hit roll. If the target of that attack is a **^^Monster^^** or **^^Vehicle^^** unit, you can re-roll the Wound roll as well.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para impactar. Si el objetivo de ese ataque es una unidad **^^Monster^^** o **^^Vehicle^^**, puedes repetir también la tirada para herir."
     },
     {
       "id": "c138cfff18cf8226",
@@ -1520,7 +1520,7 @@
         ]
       },
       "source": "Once per battle, after you have selected your Oath of Moment target, select a second enemy unit. Until the start of your next Command phase, that second enemy unit also counts as your Oath of Moment target.",
-      "target": null
+      "target": "Una vez por batalla, después de haber seleccionado tu objetivo de Oath of Moment, selecciona una segunda unidad enemiga. Hasta el comienzo de tu siguiente fase de Mando, esa segunda unidad enemiga también cuenta como tu objetivo de Oath of Moment."
     },
     {
       "id": "61371de3f61c5af7",
@@ -1534,7 +1534,7 @@
         "names": []
       },
       "source": "Once per battle, in your Command phase, this model can use this ability. If it does, until the end of the turn, add 2 to the Damage characteristic of weapons equipped by this model.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final del turno, suma 2 a la característica de Daño de las armas equipadas por esta miniatura."
     },
     {
       "id": "4478fde2ae8196da",
@@ -1551,7 +1551,7 @@
         ]
       },
       "source": "At the end of the battle, if your Crusade army included this model and it was not destroyed during the battle, you can ignore up to two failed Out of Action tests taken for **^^Infantry^^** units from your Crusade army - those tests are treated as having been passed instead.",
-      "target": null
+      "target": "Al final de la batalla, si tu ejército de Crusade incluía esta miniatura y no fue destruida durante la batalla, puedes ignorar hasta dos tests de Out of Action fallidos realizados para unidades **^^Infantry^^** de tu ejército de Crusade - esos tests se consideran superados en su lugar."
     },
     {
       "id": "8e700510e8436d51",
@@ -1569,7 +1569,7 @@
         ]
       },
       "source": "**^^Tacticus Apothecary^^** model only. While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Solo miniatura **^^Tacticus Apothecary^^**. Mientras esta miniatura está liderando una unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 5+."
     },
     {
       "id": "29e90337bffe2cfa",
@@ -1585,7 +1585,7 @@
         ]
       },
       "source": "Once per battle, at the start of the battle round, this model can use this ability. If it does, until the end of the turn, this model has the following ability:\n\n**Wise Orator (Aura):** Each time a friendly **^^Adeptus Astartes^^** unit within 6\" of this model makes a melee attack, add 1 to the Wound roll.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de la ronda de batalla, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final del turno, esta miniatura tiene la siguiente habilidad:\n\n**Wise Orator (Aura):** Cada vez que una unidad **^^Adeptus Astartes^^** amiga que esté a 6\" o menos de esta miniatura realiza un ataque de cuerpo a cuerpo, suma 1 a la tirada para herir."
     },
     {
       "id": "e2bc8bc854176b8e",
@@ -1599,7 +1599,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 2 to the Attacks, Strength and Damage characteristics of melee weapons equipped by this model.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de la fase de Combate, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final de la fase, suma 2 a las características de Ataques, Fuerza y Daño de las armas de cuerpo a cuerpo equipadas por esta miniatura."
     },
     {
       "id": "efa955b89c77da7e",
@@ -1616,7 +1616,7 @@
         ]
       },
       "source": "Each time this model uses its Blessing of the Omnissiah ability, the selected **^^Vehicle^^** regains up to D3+3 lost wounds instead of up to D3.",
-      "target": null
+      "target": "Cada vez que esta miniatura usa su habilidad Blessing of the Omnissiah, el **^^Vehicle^^** seleccionado recupera hasta D3+3 heridas perdidas en lugar de hasta D3."
     },
     {
       "id": "cbf89a139721f528",
@@ -1633,7 +1633,7 @@
         ]
       },
       "source": "Each time this model uses its Blessing of the Omnissiah ability, until the start of your next Command phase, the selected **^^Vehicle^^** has a 4+ invulnerable save (in addition to that ability's other effects).",
-      "target": null
+      "target": "Cada vez que esta miniatura usa su habilidad Blessing of the Omnissiah, hasta el comienzo de tu siguiente fase de Mando, el **^^Vehicle^^** seleccionado tiene una salvación invulnerable de 4+ (además de los otros efectos de esa habilidad)."
     },
     {
       "id": "4495e8128c8f9444",
@@ -1647,7 +1647,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of either player's Command phase, this unit can use this ability. If it does, until the end of the turn, add 1 to the Attacks characteristic of weapons equipped by models in this unit.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de la fase de Mando de cualquiera de los jugadores, esta unidad puede usar esta habilidad. Si lo hace, hasta el final del turno, suma 1 a la característica de Ataques de las armas equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "e0ee92a6f51520d5",
@@ -1663,7 +1663,7 @@
         ]
       },
       "source": "While a **^^Character^^** model is leading this unit, add 1 to the Toughness characteristic of models in that unit.",
-      "target": null
+      "target": "Mientras una miniatura **^^Character^^** está liderando esta unidad, suma 1 a la característica de Resistencia de las miniaturas de esa unidad."
     },
     {
       "id": "a161f4be9f0877b2",
@@ -1681,7 +1681,7 @@
         ]
       },
       "source": "Once per battle, at the start of any phase, this unit can use this ability. If it does, until the start of your next turn, this model has the following ability:\n\n**Empyric Castellan (Aura, Psychic):** While an **^^Adeptus Astartes^^** unit from your army is within 6\" of this model, models in that unit have a 4+ invulnerable save.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de cualquier fase, esta unidad puede usar esta habilidad. Si lo hace, hasta el comienzo de tu siguiente turno, esta miniatura tiene la siguiente habilidad:\n\n**Empyric Castellan (Aura, Psychic):** Mientras una unidad **^^Adeptus Astartes^^** de tu ejército está a 6\" o menos de esta miniatura, las miniaturas de esa unidad tienen una salvación invulnerable de 4+."
     },
     {
       "id": "65db3e5ff88029d9",
@@ -1695,7 +1695,7 @@
         "names": []
       },
       "source": "At the start of your Shooting phase, you can select one enemy unit within 12\" of and visible to this model and roll one D6: one a 3-5, that unit suffers D6 mortal wounds; on a 6, that unit suffers D6 mortal wounds and, until the start of your next turn, halve that unit's Move characteristic and halve the result of Charge rolls and Advance rolls made for that unit.",
-      "target": null
+      "target": "Al comienzo de tu fase de Disparo, puedes seleccionar una unidad enemiga que esté a 12\" o menos de esta miniatura y sea visible para ella y tirar un D6: con un 3-5, esa unidad sufre D6 heridas mortales; con un 6, esa unidad sufre D6 heridas mortales y, hasta el comienzo de tu siguiente turno, reduce a la mitad la característica de Movimiento de esa unidad y reduce a la mitad el resultado de las tiradas de carga y de las tiradas de avance realizadas para esa unidad."
     },
     {
       "id": "0eaa8decce8d47f2",
@@ -1711,7 +1711,7 @@
         ]
       },
       "source": "Once per battle, at the start of your Command phase, this model can use this ability. If it does, until the end of the turn, this model has the following ability:\n\n**Steadfast Example (Aura):** While an **^^Adeptus Astartes^^** unit from your army is within 6\" of this model, add 1 to the Objective Control characteristic of models in that unit.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de tu fase de Mando, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final del turno, esta miniatura tiene la siguiente habilidad:\n\n**Steadfast Example (Aura):** Mientras una unidad **^^Adeptus Astartes^^** de tu ejército está a 6\" o menos de esta miniatura, suma 1 a la característica de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "d7d24baf6e1de02f",
@@ -1727,7 +1727,7 @@
         ]
       },
       "source": "While this model is leading a unit, each time a Bodyguard model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Mientras esta miniatura está liderando una unidad, cada vez que una miniatura Bodyguard de esa unidad es destruida por un ataque de cuerpo a cuerpo, si esa miniatura no ha combatido esta fase, tira un D6: con un 2+, no la retires del juego. La miniatura destruida puede combatir después de que la unidad de la miniatura atacante haya terminado de realizar sus ataques, y después se retira del juego."
     },
     {
       "id": "105c99a59ecb7d9c",
@@ -1741,7 +1741,7 @@
         "names": []
       },
       "source": "Each time this model is selected to shoot, you can re-roll one Hit roll or one Wound roll when resolving those attacks.",
-      "target": null
+      "target": "Cada vez que esta miniatura es seleccionada para disparar, puedes repetir una tirada para impactar o una tirada para herir al resolver esos ataques."
     },
     {
       "id": "8123248406259cf5",
@@ -1755,7 +1755,7 @@
         "names": []
       },
       "source": "At the start of each player's turn, one model in this unit regains 1 lost wound.",
-      "target": null
+      "target": "Al comienzo del turno de cada jugador, una miniatura de esta unidad recupera 1 herida perdida."
     },
     {
       "id": "fbb325364b410ee2",
@@ -1786,7 +1786,7 @@
         ]
       },
       "source": "If this unit is equipped with a Watcher in the Dark, it can use that Watcher in the Dark's ability twice per battle instead of only once.",
-      "target": null
+      "target": "Si esta unidad está equipada con un Watcher in the Dark, puede usar la habilidad de ese Watcher in the Dark dos veces por batalla en lugar de solo una."
     },
     {
       "id": "13db5594f3aea6db",
@@ -1800,7 +1800,7 @@
         "names": []
       },
       "source": "Each time a ranged attack targets this unit, if this unit Advanced in your previous Movement phase, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a esta unidad, si esta unidad avanzó en tu fase de Movimiento anterior, resta 1 a la tirada para impactar."
     },
     {
       "id": "2802406c008acd8b",
@@ -1814,7 +1814,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack, you can ignore any or all modifiers to that attack's Ballistic Skill characteristic and/or to the Hit roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia, puedes ignorar cualquiera de los modificadores a la característica de Habilidad de Proyectiles de ese ataque y/o a la tirada para impactar, o todos ellos."
     },
     {
       "id": "188f1376bb582053",
@@ -1830,7 +1830,7 @@
         ]
       },
       "source": "While this unit is within range of an objective marker, it has the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Mientras esta unidad está dentro del alcance de un marcador de objetivo, tiene la habilidad Feel No Pain 5+."
     },
     {
       "id": "6dfaf9bff6551d02",
@@ -1844,7 +1844,7 @@
         "names": []
       },
       "source": "Once per battle, you can target this unit with the Fire Overwatch or Heroic Intervention Stratagem for 0CP.",
-      "target": null
+      "target": "Una vez por batalla, puedes tomar como objetivo a esta unidad con el Stratagem Fire Overwatch o Heroic Intervention por 0CP."
     },
     {
       "id": "2cb95a7739dde626",
@@ -1860,7 +1860,7 @@
         ]
       },
       "source": "Once per battle, at the start of any phase, the bearer can use this ability. If it does, until the end of the phase, the bearer has the Feel No Pain 4+ ability against mortal wounds and a 2+ invulnerable save.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de cualquier fase, el portador puede usar esta habilidad. Si lo hace, hasta el final de la fase, el portador tiene la habilidad Feel No Pain 4+ contra las heridas mortales y una salvación invulnerable de 2+."
     },
     {
       "id": "42ff1a26992178ed",
@@ -1874,7 +1874,7 @@
         "names": []
       },
       "source": "- Add 1 to bearer's Move, Toughness and Wounds characteristics and add 1 to the Strength and Attacks characteristics of the bearer's melee weapons.\n- While the bearer is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "- Suma 1 a las características de Movimiento, Resistencia y Heridas del portador y suma 1 a las características de Fuerza y Ataques de las armas de cuerpo a cuerpo del portador.\n- Mientras el portador está liderando una unidad, cada vez que una miniatura de esa unidad realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "4e16abff12dd2e86",
@@ -1890,7 +1890,7 @@
         ]
       },
       "source": "**^^Ravenwing^^** model only. The bearer's unit can ignore any or all modifiers to its Move characteristic and to Advance and Charge rolls made for it.",
-      "target": null
+      "target": "Solo miniatura **^^Ravenwing^^**. La unidad del portador puede ignorar cualquiera de los modificadores a su característica de Movimiento y a las tiradas de avance y de carga realizadas para ella, o todos ellos."
     },
     {
       "id": "d2df808fc124b83f",
@@ -1909,7 +1909,7 @@
         ]
       },
       "source": "Select one ranged weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or upgraded using the Weapons Modifications Battle Honour). That weapon is now a Crusade Relic; improve its Strength, Armour Penetration and Damage characteristics by 1, and that weapon has the **[HAZARDOUS]** ability.",
-      "target": null
+      "target": "Selecciona un arma a distancia equipada por el portador (excluida un arma que haya sido reemplazada por un Enhancement o mejorada mediante el Battle Honour Weapons Modifications). Esa arma es ahora una Crusade Relic; mejora en 1 sus características de Fuerza, Penetración de Blindaje y Daño, y esa arma tiene la habilidad **[HAZARDOUS]**."
     },
     {
       "id": "8336411b37293a28",
@@ -1931,7 +1931,7 @@
         ]
       },
       "source": "**^^Chaplain^^** model only. To be eligible for this Crusade Relic, a **^^Chaplain^^** model must have participated in a battle in which you successfully completed the Capture the Fallen Bonus Agenda (see the Hunt the Fallen Oathsworn Campaign). Each time the bearer makes a melee attack that targets a **^^Character^^** unit, you can re-roll the Hit roll. In addition, if that **^^Character^^** unit is a **^^Chaos^^** or **^^Fallen^^** unit, the bearer's melee weapons have the **[LETHAL HITS]** ability for that attack.",
-      "target": null
+      "target": "Solo miniatura **^^Chaplain^^**. Para poder optar a esta Crusade Relic, una miniatura **^^Chaplain^^** debe haber participado en una batalla en la que completaras con éxito la Bonus Agenda Capture the Fallen (consulta la Hunt the Fallen Oathsworn Campaign). Cada vez que el portador realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad **^^Character^^**, puedes repetir la tirada para impactar. Además, si esa unidad **^^Character^^** es una unidad **^^Chaos^^** o **^^Fallen^^**, las armas de cuerpo a cuerpo del portador tienen la habilidad **[LETHAL HITS]** para ese ataque."
     },
     {
       "id": "4aaa94993d076b20",
@@ -1947,7 +1947,7 @@
         ]
       },
       "source": "At the end of each battle, if your Crusade army for this battle included this model, your Crusade force gains D3 Honour points.",
-      "target": null
+      "target": "Al final de cada batalla, si tu ejército de Crusade para esa batalla incluía esta miniatura, tu fuerza de Crusade gana D3 Honour points."
     },
     {
       "id": "ad91db52724b60b2",
@@ -1964,7 +1964,7 @@
         ]
       },
       "source": "**^^Captain^^** model only. Once per battle, after selecting your Oath of Moment target, you can use this ability. If you do, until the start of your next Command phase, each time this model's unit makes a melee attack that targets your Oath of Moment target, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Captain^^**. Una vez por batalla, después de seleccionar tu objetivo de Oath of Moment, puedes usar esta habilidad. Si lo haces, hasta el comienzo de tu siguiente fase de Mando, cada vez que la unidad de esta miniatura realiza un ataque de cuerpo a cuerpo que toma como objetivo a tu objetivo de Oath of Moment, puedes repetir la tirada para herir."
     },
     {
       "id": "0652dba6da58b95a",
@@ -1980,7 +1980,7 @@
         ]
       },
       "source": "**^^Sanguinary Priest^^** model only. Once per battle, when this model's unit is select to fight, you can use this ability. If you do, until the end of the phase, add 1 to the Attacks characteristic of melee weapon equipped by models in that unit.",
-      "target": null
+      "target": "Solo miniatura **^^Sanguinary Priest^^**. Una vez por batalla, cuando la unidad de esta miniatura es seleccionada para combatir, puedes usar esta habilidad. Si lo haces, hasta el final de la fase, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "088dcd733c354397",
@@ -1998,7 +1998,7 @@
         ]
       },
       "source": "**^^Chaplain^^** model only. During the Declare Battle Formations step, if this model is attached to a **^^Death Company^^** unit, select one of the **^^Death Company^^** Battle Scars; until the end of the battle, that unit has that Battle Scar in addition to any others it has.",
-      "target": null
+      "target": "Solo miniatura **^^Chaplain^^**. Durante el paso Declarar Formaciones de Batalla, si esta miniatura está adjunta a una unidad **^^Death Company^^**, selecciona una de las Battle Scars de **^^Death Company^^**; hasta el final de la batalla, esa unidad tiene esa Battle Scar además de cualesquiera otras que tenga."
     },
     {
       "id": "696c23f794b4d6de",
@@ -2012,7 +2012,7 @@
         "names": []
       },
       "source": "Once per Fight phase, instead of making a Hit roll, Wound roll or saving throw for this model, it can use this ability. If it does, that dice roll is automatically an unmodified 6.",
-      "target": null
+      "target": "Una vez por fase de Combate, en lugar de hacer una tirada para impactar, una tirada para herir o una tirada de salvación para esta miniatura, puede usar esta habilidad. Si lo hace, esa tirada de dado es automáticamente un 6 sin modificar."
     },
     {
       "id": "e8a16bdffa614d66",
@@ -2028,7 +2028,7 @@
         ]
       },
       "source": "Models in this model's unit have the Feel No Pain 6+ ability and you can target this model's unit with Stratagems even while it is Battle-shocked.",
-      "target": null
+      "target": "Las miniaturas de la unidad de esta miniatura tienen la habilidad Feel No Pain 6+ y puedes tomar como objetivo a la unidad de esta miniatura con Stratagems incluso mientras está Battle-shocked."
     },
     {
       "id": "66cac478a17a4703",
@@ -2046,7 +2046,7 @@
         "names": []
       },
       "source": "At the start of the Fight phase, select one of the following abilities:\n- **[LETHAL HITS]**\n- **[PRECISION]**\n- **[SUSTAINED HITS 1]**\nUntil the end of the phase, this model's melee weapons have that ability.",
-      "target": null
+      "target": "Al comienzo de la fase de Combate, selecciona una de las siguientes habilidades:\n- **[LETHAL HITS]**\n- **[PRECISION]**\n- **[SUSTAINED HITS 1]**\nHasta el final de la fase, las armas de cuerpo a cuerpo de esta miniatura tienen esa habilidad."
     },
     {
       "id": "a7f0459a770bcaa4",
@@ -2060,7 +2060,7 @@
         "names": []
       },
       "source": "Add 1\" to the Move characteristic of models in this unit and add 1 to Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Suma 1\" a la característica de Movimiento de las miniaturas de esta unidad y suma 1 a las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "5f850cce938a2ee0",
@@ -2074,7 +2074,7 @@
         "names": []
       },
       "source": "If this unit starts the battle in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
-      "target": null
+      "target": "Si esta unidad empieza la batalla en las reservas estratégicas, puede desplegarse en el paso de Refuerzos de tu primera, segunda o tercera fase de Movimiento, sin importar las reglas de misión."
     },
     {
       "id": "2b2ef7913886347e",
@@ -2088,7 +2088,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack, if a Critical Wound is scored, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, si se obtiene una herida crítica, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "0d5f084b4bf099f8",
@@ -2102,7 +2102,7 @@
         "names": []
       },
       "source": "Each time this unit makes a Charge move, until the end of the turn, each time a model in this unit makes a melee attack, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento de carga, hasta el final del turno, cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para impactar."
     },
     {
       "id": "32bb64521f901a96",
@@ -2116,7 +2116,7 @@
         "names": []
       },
       "source": "Once per battle, you can target this unit with either the Heroic Intervention or Counter-offensive Stratagems for 0CP.",
-      "target": null
+      "target": "Una vez por batalla, puedes tomar como objetivo a esta unidad con el Stratagem Heroic Intervention o Counter-offensive por 0CP."
     },
     {
       "id": "d92c4221274035dc",
@@ -2130,7 +2130,7 @@
         "names": []
       },
       "source": "In the Battle-shock step of your opponent's Command phase, if an enemy unit that is below its Starting Strength is within 3\" of the bearer, that enemy unit must take a Battle-shock test. If that enemy unit is also Below Half-strength, it must subtract 1 from that test when doing so.",
-      "target": null
+      "target": "En el paso de Battle-shock de la fase de Mando de tu oponente, si una unidad enemiga que está por debajo de su Starting Strength está a 3\" o menos del portador, esa unidad enemiga debe hacer un test de Battle-shock. Si esa unidad enemiga está además Below Half-strength, debe restar 1 a ese test al hacerlo."
     },
     {
       "id": "7446a3b0dcdcb3e8",
@@ -2146,7 +2146,7 @@
         ]
       },
       "source": "**^^Jump Pack^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer's unit. Each time a ranged attack targets the bearer's unit, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Jump Pack^^**. Las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a la unidad del portador. Cada vez que un ataque a distancia toma como objetivo a la unidad del portador, resta 1 a la tirada para impactar."
     },
     {
       "id": "d4c13179448af6e4",
@@ -2162,7 +2162,7 @@
         "names": []
       },
       "source": "Improve the Armour Penetration characteristic of the bearer's melee weapons by 2, and those weapons have the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "Mejora en 2 la característica de Penetración de Blindaje de las armas de cuerpo a cuerpo del portador, y esas armas tienen la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "9d1796f2d30f58a3",
@@ -2180,7 +2180,7 @@
         ]
       },
       "source": "**^^Sanguinary Priest^^** model only. While the bearer is leading a unit, each time that unit makes a Charge move, until the end of the turn, melee weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Sanguinary Priest^^**. Mientras el portador está liderando una unidad, cada vez que esa unidad realiza un movimiento de carga, hasta el final del turno, las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "40e3e2a81f35b798",
@@ -2197,7 +2197,7 @@
         ]
       },
       "source": "**^^Psyker^^** model only. Each time the bearer makes a Psychic Attack, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Psyker^^**. Cada vez que el portador realiza un ataque psíquico, puedes repetir la tirada para herir."
     },
     {
       "id": "03a990d8baac384c",
@@ -2213,7 +2213,7 @@
         ]
       },
       "source": "Each time a model in this unit makes an attack, you can ignore any or all modifiers to the Weapon Skill, Ballistic Skill and/or Hit roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, puedes ignorar cualquiera de los modificadores a la Habilidad de Armas, a la Habilidad de Proyectiles y/o a la tirada para impactar, o todos ellos."
     },
     {
       "id": "1efb84d96e8247c8",
@@ -2231,7 +2231,7 @@
         ]
       },
       "source": "The bearer's melee weapons have the **[PRECISION]** ability and each time the bearer makes a melee attack that targets a **^^Character^^** unit, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Las armas de cuerpo a cuerpo del portador tienen la habilidad **[PRECISION]** y, cada vez que el portador realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad **^^Character^^**, puedes repetir la tirada para impactar."
     },
     {
       "id": "f0ddec5180b2fe78",
@@ -2250,7 +2250,7 @@
         ]
       },
       "source": "The bearer has the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks. While the bearer is leading a unit, Bodyguard models in that unit have the Feel No Pain 6+ ability against mortal wounds and Psychic Attacks.",
-      "target": null
+      "target": "El portador tiene la habilidad Feel No Pain 4+ contra las heridas mortales y los ataques psíquicos. Mientras el portador está liderando una unidad, las miniaturas Bodyguard de esa unidad tienen la habilidad Feel No Pain 6+ contra las heridas mortales y los ataques psíquicos."
     },
     {
       "id": "6984d5e2b579718b",
@@ -2264,7 +2264,7 @@
         "names": []
       },
       "source": "Each time the bearer's unit makes a Charge move, until the end of the turn, add 1 to the Attacks characteristic and add 2 to the Strength characteristic of melee weapons equipped by the bearer.",
-      "target": null
+      "target": "Cada vez que la unidad del portador realiza un movimiento de carga, hasta el final del turno, suma 1 a la característica de Ataques y suma 2 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por el portador."
     },
     {
       "id": "525dd9191844dde8",
@@ -2278,7 +2278,7 @@
         "names": []
       },
       "source": "Add 2 to the Strength characteristic of melee weapons equipped by models in this unit.",
-      "target": null
+      "target": "Suma 2 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "5c1549a6438a7d8e",
@@ -2292,7 +2292,7 @@
         "names": []
       },
       "source": "Each time this unit declares a charge, if it was set up on the battlefield from Strategic Reserves this turn, you can re-roll the Charge roll.",
-      "target": null
+      "target": "Cada vez que esta unidad declara una carga, si fue desplegada en el campo de batalla desde las reservas estratégicas este turno, puedes repetir la tirada de carga."
     },
     {
       "id": "6ae2a98427a41085",
@@ -2306,7 +2306,7 @@
         "names": []
       },
       "source": "Each time this unit is Marked for Greatness, it gains 5XP instead of 3XP.",
-      "target": null
+      "target": "Cada vez que esta unidad es Marked for Greatness, gana 5XP en lugar de 3XP."
     },
     {
       "id": "4f9a6780e71d7638",
@@ -2323,7 +2323,7 @@
         ]
       },
       "source": "Each time the bearer makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, add 1 to the Wound roll and add 1 to the Damage characteristic of that attack.",
-      "target": null
+      "target": "Cada vez que el portador realiza un ataque que toma como objetivo a una unidad **^^Monster^^** o **^^Vehicle^^**, suma 1 a la tirada para herir y suma 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "6687b8edd4996004",
@@ -2339,7 +2339,7 @@
         ]
       },
       "source": "The bearer has a 4+ invulnerable save. Once per battle, at the start of any phase, the bearer can use this Crusade Relic: if it does, until the end of the phase, the bearer has a 2+ invulnerable save.",
-      "target": null
+      "target": "El portador tiene una salvación invulnerable de 4+. Una vez por batalla, al comienzo de cualquier fase, el portador puede usar esta Crusade Relic: si lo hace, hasta el final de la fase, el portador tiene una salvación invulnerable de 2+."
     },
     {
       "id": "f067216fbd330805",
@@ -2360,7 +2360,7 @@
         ]
       },
       "source": "Add 2 to the Attacks and Strength characteristics of the bearer's melee weapons. While the bearer is leading a unit, melee weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability. If the bearer is a **^^Wolf Guard Battle Leader^^**, while the bearer is leading a unit, melee weapons equipped by models in that unit have the **[SUSTAINED HITS 2]** ability instead.",
-      "target": null
+      "target": "Suma 2 a las características de Ataques y Fuerza de las armas de cuerpo a cuerpo del portador. Mientras el portador está liderando una unidad, las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad tienen la habilidad **[SUSTAINED HITS 1]**. Si el portador es un **^^Wolf Guard Battle Leader^^**, mientras el portador está liderando una unidad, las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad tienen la habilidad **[SUSTAINED HITS 2]** en su lugar."
     },
     {
       "id": "e7d1d88d7b1ff0e4",

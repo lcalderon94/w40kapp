@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -60,6 +61,7 @@ public class CheckCommand {
                 translated++;
                 Set<String> missing = RuleKeywords.in(unit.source());
                 missing.removeAll(RuleKeywords.in(unit.target()));
+                missing.removeIf(keyword -> !esKeywordDelJuego(keyword));
                 if (!missing.isEmpty()) {
                     problems.add("  lote %03d  %s  falta %s".formatted(batch.batch(), unit.id(), missing));
                 }
@@ -94,6 +96,18 @@ public class CheckCommand {
             problems.forEach(System.out::println);
             throw new IllegalStateException("La memoria de traducción tiene " + problems.size() + " incidencia(s)");
         }
+    }
+
+    /**
+     * Distingue una keyword del juego de una acotación entre corchetes. {@code [SUSTAINED HITS 2]} y
+     * {@code [Lethal Hits]} van capitalizadas; {@code [whichever applies]} es prosa del redactor y sí
+     * se traduce.
+     */
+    private static boolean esKeywordDelJuego(String keyword) {
+        String contenido = keyword.substring(1, keyword.length() - 1);
+        return Arrays.stream(contenido.split("[^\\p{L}]+"))
+                .filter(palabra -> !palabra.isEmpty())
+                .allMatch(palabra -> Character.isUpperCase(palabra.charAt(0)));
     }
 
     /** Nombres de las reglas del game system, que son el glosario que la app enlaza, más los extra. */

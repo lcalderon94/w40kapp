@@ -848,7 +848,7 @@
         ]
       },
       "source": "**^^Adeptus Astartes^^** model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. El portador tiene una característica de Salvación de 2+ y la habilidad Feel No Pain 5+."
     },
     {
       "id": "71db12e550f6512d",
@@ -864,7 +864,7 @@
         ]
       },
       "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is under the effects of the Assault Doctrine, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. Suma 1 a las características de Ataques y Fuerza de las armas de cuerpo a cuerpo del portador. Mientras el portador esté bajo los efectos de la Assault Doctrine, suma 2 a las características de Ataques y Fuerza de las armas de cuerpo a cuerpo del portador en su lugar."
     },
     {
       "id": "b09514ae666d7551",
@@ -880,7 +880,7 @@
         ]
       },
       "source": "Captain model only. At the start of your Command phase, if the bearer is on the battlefield, instead of selecting a Combat Doctrine to be active for your army, you can select the Tactical Doctrine. If you do, until the start of your next Command phase, that doctrine is active for the bearer’s unit only, even if you have already selected that doctrine to be active for your army this battle.",
-      "target": null
+      "target": "Solo para miniaturas Captain. Al inicio de tu fase de Mando, si el portador está en el campo de batalla, en lugar de seleccionar una Combat Doctrine para que esté activa para tu ejército, puedes seleccionar la Tactical Doctrine. Si lo haces, hasta el inicio de tu siguiente fase de Mando, esa doctrina está activa solo para la unidad del portador, aunque ya hayas seleccionado esa doctrina para que esté activa para tu ejército en esta batalla."
     },
     {
       "id": "e072a139a77a0d97",
@@ -896,7 +896,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability. In addition, while the bearer’s unit is under the effects of the Devastator Doctrine, , you can reroll Advance rolls made for that unit.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras el portador lidere una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [SUSTAINED HITS 1]. Además, mientras la unidad del portador esté bajo los efectos de la Devastator Doctrine, puedes repetir las tiradas de avance realizadas para esa unidad."
     },
     {
       "id": "e1b84e029c23c082",
@@ -912,7 +912,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Cada vez que una unidad enemiga (excluyendo Monsters y Vehicles) que esté dentro del alcance de combate de la unidad del portador es seleccionada para replegarse, las miniaturas de esa unidad enemiga deben hacer tests de Desperate Escape como si su unidad estuviera Battle-shocked. Al hacerlo, si esa unidad enemiga también está Battle-shocked por otros medios, resta 1 a cada uno de esos tests de Desperate Escape."
     },
     {
       "id": "9fa113bdc0faabf7",
@@ -928,7 +928,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Una vez por batalla, al inicio de la fase de Combate, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, las miniaturas de la unidad del portador tienen la habilidad Fights First"
     },
     {
       "id": "a3bd33d6c46f4ab0",
@@ -944,7 +944,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer's melee weapons have the [SUSTAINED HITS 3] ability.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Una vez por batalla, al inicio de la fase de Combate, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, las armas de cuerpo a cuerpo del portador tienen la habilidad [SUSTAINED HITS 3]."
     },
     {
       "id": "05b7e05b54919c3d",
@@ -958,7 +958,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Once per battle round, just after making a Hit roll, a Wound roll or a saving throw for the bearer, you can treat the result as a unmodified 6 instead.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Una vez por ronda de batalla, justo después de hacer una tirada para impactar, una tirada para herir o una tirada de salvación para el portador, puedes tratar el resultado como un 6 sin modificar en su lugar."
     },
     {
       "id": "812bfac0f408dc4d",
@@ -972,7 +972,7 @@
         "names": []
       },
       "source": "**^^Adeptus Astartes^^** model only. Improve the Strength, Damage and Armour Penetration characteristics of the bearer’s melee weapons by 1. At the end of the Fight phase, if one or more enemy models were destroyed as a result of a melee attack made by the bearer this phase, until the end of the battle, improve the Strength, Damage and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. Mejora en 1 las características de Fuerza, Daño y Penetración de Blindaje de las armas de cuerpo a cuerpo del portador. Al final de la fase de Combate, si una o más miniaturas enemigas fueron destruidas como resultado de un ataque de cuerpo a cuerpo realizado por el portador esta fase, hasta el final de la batalla, mejora en 2 las características de Fuerza, Daño y Penetración de Blindaje de las armas de cuerpo a cuerpo del portador en su lugar."
     },
     {
       "id": "8c90bc9ad29b222f",
@@ -988,7 +988,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES model only. Models in the bearer’s unit have the Deep Strike ability. In addition, you can target the bearer’s unit with the Rapid Ingress Stratagem for 0CP.",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES. Las miniaturas de la unidad del portador tienen la habilidad Deep Strike. Además, puedes seleccionar la unidad del portador como objetivo del Stratagem Rapid Ingress por 0CP."
     },
     {
       "id": "b6bfb008175f75b5",
@@ -1002,7 +1002,7 @@
         "names": []
       },
       "source": "WATCH MASTER or TECHMARINE model only. At the start of your opponent’s Shooting phase, select one enemy VEHICLE unit (excluding TITANIC units) within 12\" of and visible to the bearer. That model must take a Leadership test. If that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; if that test is failed, that unit is not eligible to shoot this phase.",
-      "target": null
+      "target": "Solo para miniaturas WATCH MASTER o TECHMARINE. Al inicio de la fase de Disparo de tu oponente, selecciona una unidad VEHICLE enemiga (excluyendo unidades TITANIC) que esté a 12\" o menos del portador y sea visible para él. Esa miniatura debe hacer un test de Leadership. Si se supera ese test, hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar; si se falla ese test, esa unidad no es elegible para disparar esta fase."
     },
     {
       "id": "34f834b88593cb5e",
@@ -1018,7 +1018,7 @@
         ]
       },
       "source": "WATCH MASTER or CAPTAIN model only. Once per battle, after you have selected your Oath of Moment target, the bearer can use this Enhancement. If it does, select a second enemy unit to be an Oath of Moment target. \n\n\n**Designer’s Note:** *This means that each time a model with the Oath of Moment ability makes an attack that targets either of your Oath of Moment targets, you can re-roll the Hit roll.*",
-      "target": null
+      "target": "Solo para miniaturas WATCH MASTER o CAPTAIN. Una vez por batalla, después de haber seleccionado tu objetivo de Oath of Moment, el portador puede usar este Enhancement. Si lo hace, selecciona una segunda unidad enemiga como objetivo de Oath of Moment. \n\n\n**Nota del diseñador:** *Esto significa que cada vez que una miniatura con la habilidad Oath of Moment realiza un ataque que toma como objetivo a cualquiera de tus objetivos de Oath of Moment, puedes repetir la tirada para impactar.*"
     },
     {
       "id": "077d5f2408a7f66a",
@@ -1032,7 +1032,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. (Once per battle, per army) When this model is destroyed, at the end of the phase, roll one D6:\n▪ On a 2+, set up this model on the battlefield, unengaged and as close as possible to where it was destroyed. This model is not part of an attached unit and its unit has a starting strength of 1. This model has 3 wounds remaining, or its full wounds remaining if this model was battle-shocked when it was destroyed",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES. (Una vez por batalla, por ejército) Cuando esta miniatura es destruida, al final de la fase, tira un D6:\n▪ Con un 2+, despliega esta miniatura en el campo de batalla, sin trabar y lo más cerca posible del lugar donde fue destruida. Esta miniatura no forma parte de una unidad adjunta y su unidad tiene una Starting Strength de 1. A esta miniatura le quedan 3 heridas, o todas sus heridas si esta miniatura estaba Battle-shocked cuando fue destruida"
     },
     {
       "id": "458c9a2725ad5fc5",
@@ -1046,7 +1046,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Battle-shocked and below its Starting Strength.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras el portador lidere una unidad, cada vez que una miniatura de esa unidad realiza un ataque, suma 1 a la tirada para impactar si esa unidad está por debajo de su Starting Strength, y suma 1 también a la tirada para herir si esa unidad está Battle-shocked y por debajo de su Starting Strength."
     },
     {
       "id": "17a0d6640315404c",
@@ -1060,7 +1060,7 @@
         "names": []
       },
       "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons. While the bearer is Battle-shocked, add 2 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons instead.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. Suma 1 a las características de Ataques, Fuerza y Daño de las armas de cuerpo a cuerpo del portador. Mientras el portador esté Battle-shocked, suma 2 a las características de Ataques, Fuerza y Daño de las armas de cuerpo a cuerpo del portador en su lugar."
     },
     {
       "id": "3f8cb28e48982876",
@@ -1078,7 +1078,7 @@
         ]
       },
       "source": "Ancient model only. While the bearer is leading a unit, models in that unit have the Feel No Pain 6+ ability. While that unit\nis Battle-shocked, models in that unit have the Feel No Pain 4+ ability instead.",
-      "target": null
+      "target": "Solo para miniaturas Ancient. Mientras el portador lidere una unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 6+. Mientras esa unidad\nesté Battle-shocked, las miniaturas de esa unidad tienen la habilidad Feel No Pain 4+ en su lugar."
     },
     {
       "id": "1b2b5061d97c33fd",
@@ -1095,7 +1095,7 @@
         ]
       },
       "source": "Phobos model only. In your Shooting phase, after the bearer's unit has shot, if that unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does until the end of the turn, that unit is not eligible to delcare a charge. This cannot allow the bearer's unit to move more than once in your Shooting phase.",
-      "target": null
+      "target": "Solo para miniaturas Phobos. En tu fase de Disparo, después de que la unidad del portador haya disparado, si esa unidad no está dentro del alcance de combate de una o más unidades enemigas, puede realizar un movimiento normal de hasta 6\". Si lo hace, hasta el final del turno esa unidad no es elegible para declarar una carga. Esto no permite que la unidad del portador se mueva más de una vez en tu fase de Disparo."
     },
     {
       "id": "f71cea183e75b429",
@@ -1113,7 +1113,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. The bearer has the Stealth and Lone Operative Abilities",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. El portador tiene las habilidades Stealth y Lone Operative"
     },
     {
       "id": "35976b06d01a1293",
@@ -1129,7 +1129,7 @@
         ]
       },
       "source": "Phobos model only.  Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP",
-      "target": null
+      "target": "Solo para miniaturas Phobos.  Cada vez que tu oponente selecciona como objetivo de un Stratagem a una unidad de su ejército, si esa unidad está a 12\" o menos de esta miniatura, aumenta en 1CP el coste de ese uso de ese Stratagem"
     },
     {
       "id": "23473dff93d5a4f0",
@@ -1147,7 +1147,7 @@
         ]
       },
       "source": "Adpetus Astartes Infantry model only. While the bearer is leading a unit, models in that unit have the Infiltrators Ability",
-      "target": null
+      "target": "Solo para miniaturas Adpetus Astartes Infantry. Mientras el portador lidere una unidad, las miniaturas de esa unidad tienen la habilidad Infiltrators"
     },
     {
       "id": "791831e4949296ae",
@@ -1161,7 +1161,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, that unit is eligible to shoot in a turn in which it fell back",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras el portador lidere una unidad, esa unidad es elegible para disparar en un turno en el que se haya replegado"
     },
     {
       "id": "3063b73c28791d55",
@@ -1177,7 +1177,7 @@
         ]
       },
       "source": "Adeptus Astartes Mounted model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1. Each time the bearer ends a Charge move, until the end of the turn, improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 2 instead.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes Mounted. Mejora en 1 las características de Fuerza y Penetración de Blindaje de las armas de cuerpo a cuerpo del portador. Cada vez que el portador termina un movimiento de carga, hasta el final del turno, mejora en 2 las características de Fuerza y Penetración de Blindaje de las armas de cuerpo a cuerpo del portador en su lugar."
     },
     {
       "id": "942982280a9ea30f",
@@ -1191,7 +1191,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, you can re-roll Advance rolls made for that unit.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras el portador lidere una unidad, puedes repetir las tiradas de avance realizadas para esa unidad."
     },
     {
       "id": "e670890edfbc04c8",
@@ -1207,7 +1207,7 @@
         ]
       },
       "source": "Adeptus Astartes Mounted model only. If the bearer's unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round as being one higher than it actually is",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes Mounted. Si la unidad del portador está en las reservas estratégicas, a efectos de desplegar esa unidad en el campo de batalla, considera que la ronda de batalla actual es una más alta de lo que realmente es"
     },
     {
       "id": "625961e47deacef1",
@@ -1224,7 +1224,7 @@
         ]
       },
       "source": "**^^Techmarine^^** model only. Once per battle round, when a saving throw is failed for a friendly **^^Adeptus Astartes Vehicle^^** model within 6\" of the bearer, you can change the Damage characteristic of that attack to 0.",
-      "target": null
+      "target": "Solo para miniaturas **^^Techmarine^^**. Una vez por ronda de batalla, cuando se falla una tirada de salvación para una miniatura **^^Adeptus Astartes Vehicle^^** amiga que esté a 6\" o menos del portador, puedes cambiar la característica de Daño de ese ataque a 0."
     },
     {
       "id": "085053b40a4f2508",
@@ -1238,7 +1238,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE within 6\" of the bearer. Until the start of your next Command phase, that VEHICLE is eligible to shoot even if it Fell Back or Advanced this turn.",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES. En tu fase de Mando, selecciona un ADEPTUS ASTARTES VEHICLE que esté a 6\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, ese VEHICLE es elegible para disparar aunque se haya replegado o haya avanzado este turno."
     },
     {
       "id": "6deb185d77ca52c0",
@@ -1256,7 +1256,7 @@
         ]
       },
       "source": "TECHMARINE model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE model within 6\" of the bearer. Until the start of your next Command phase, weapons equipped by that VEHICLE have the [Lethal Hits] ability.",
-      "target": null
+      "target": "Solo para miniaturas TECHMARINE. En tu fase de Mando, selecciona una miniatura ADEPTUS ASTARTES VEHICLE que esté a 6\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, las armas equipadas por ese VEHICLE tienen la habilidad [Lethal Hits]."
     },
     {
       "id": "90f2bf1e53feb295",
@@ -1272,7 +1272,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. The bearer has the Feel No Pain 4+ ability.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. El portador tiene la habilidad Feel No Pain 4+."
     },
     {
       "id": "34507e7f725d881f",
@@ -1289,7 +1289,7 @@
         "names": []
       },
       "source": "**^^Adeptus Astartes^^** model only. Each time an attack is allocated the bearer, subtract 1 from the Damage characteristic of that attack. If that attack was made with a **[MELTA]** or **[TORRENT]** weapon, change the Damage characteristic of that attack to 1 instead.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. Cada vez que se asigna un ataque al portador, resta 1 a la característica de Daño de ese ataque. Si ese ataque se realizó con un arma **[MELTA]** o **[TORRENT]**, cambia la característica de Daño de ese ataque a 1 en su lugar."
     },
     {
       "id": "e6a7469b2f01f799",
@@ -1305,7 +1305,7 @@
         ]
       },
       "source": "Tacticus model only. While the bearer is leading a unit, models in that unit can ignore any or all modifiers to their characteristics and/or to any roll or test made for them (excluding modifiers to saving throws).",
-      "target": null
+      "target": "Solo para miniaturas Tacticus. Mientras el portador lidere una unidad, las miniaturas de esa unidad pueden ignorar cualquiera de los modificadores a sus características y/o a cualquier tirada o test realizado para ellas, o todos ellos (excluyendo los modificadores a las tiradas de salvación)."
     },
     {
       "id": "5ab3db76b76ae73d",
@@ -1319,7 +1319,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, once per turn after making a Hit roll or a saving throw for a model in that unit, you can change the result of that roll to an umodified 6.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras el portador lidere una unidad, una vez por turno, después de hacer una tirada para impactar o una tirada de salvación para una miniatura de esa unidad, puedes cambiar el resultado de esa tirada a un 6 sin modificar."
     },
     {
       "id": "e335f6a127184720",
@@ -1335,7 +1335,7 @@
         ]
       },
       "source": "**^^Adeptus Astartes Infantry^^** model only. Add 3 to the Strength characteristic of the bearer's melee weapons.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes Infantry^^**. Suma 3 a la característica de Fuerza de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "01044f374a5dcf23",
@@ -1351,7 +1351,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras el portador lidere una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [IGNORES COVER]."
     },
     {
       "id": "415685700492a9a4",
@@ -1368,7 +1368,7 @@
         ]
       },
       "source": "Captain model only. Once per battle, at the start of your Shooting phase, you can select one point on the battlefield and place a marker on that point. At the start of your next Shooting phase, place another marker on the battlefield within 12\" of the center of the first marker, then draw a straight line between the center of each of these markers. Roll one D6 for each unit that line passes over or through: on a 3+ that unit suffers D3 mortal wounds. Both markers are then removed.",
-      "target": null
+      "target": "Solo para miniaturas Captain. Una vez por batalla, al inicio de tu fase de Disparo, puedes seleccionar un punto del campo de batalla y colocar un marcador en ese punto. Al inicio de tu siguiente fase de Disparo, coloca otro marcador en el campo de batalla a 12\" o menos del centro del primer marcador y, a continuación, traza una línea recta entre el centro de cada uno de esos marcadores. Tira un D6 por cada unidad por la que pase esa línea: con un 3+, esa unidad sufre D3 heridas mortales. Después se retiran ambos marcadores."
     },
     {
       "id": "77369a595a192aab",
@@ -1385,7 +1385,7 @@
         ]
       },
       "source": "Gravis Model only. The first time the bearer is destroyed, roll on D6 at the end of the phase. On a 2+ set the bearer back on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
-      "target": null
+      "target": "Solo para miniaturas Gravis. La primera vez que el portador es destruido, tira un D6 al final de la fase. Con un 2+, vuelve a desplegar al portador en el campo de batalla, lo más cerca posible del lugar donde fue destruido y no dentro del alcance de combate de ninguna unidad enemiga, con todas sus heridas."
     },
     {
       "id": "70923667817a853f",
@@ -1401,7 +1401,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. While the bearer is leading a unit, models in that unit have the Feel No Pain 6+ ability while they are within an objective you control and, while that unit is Battle-shocked, halve the Objective Control characteristic of models in that unit instead of changing it to 0",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras el portador lidere una unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 6+ mientras estén dentro del alcance de un objetivo que controles y, mientras esa unidad esté Battle-shocked, reduce a la mitad la característica de Control de Objetivos de las miniaturas de esa unidad en lugar de cambiarla a 0"
     },
     {
       "id": "9ddf924d079ca780",
@@ -1415,7 +1415,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While an enemy unit (excluding Monsters and Vehicles) is within 6\" of the bearer, each time that unit fails a Battle-Shock test, one model in that unit is destroyed (chosen by it's controlling player.) Once per battle, when such an enemy unit fails a Battle-Shock test, you can choose for D3 models in that unit to be destroyed in this way instead.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Mientras una unidad enemiga (excluyendo Monsters y Vehicles) esté a 6\" o menos del portador, cada vez que esa unidad falla un test de Battle-shock, una miniatura de esa unidad es destruida (la elige su jugador controlador). Una vez por batalla, cuando una unidad enemiga de ese tipo falla un test de Battle-shock, puedes elegir que sean D3 miniaturas de esa unidad las destruidas de este modo en su lugar."
     },
     {
       "id": "40f20122f1194330",
@@ -1432,7 +1432,7 @@
         ]
       },
       "source": "Adeptus Astartes Terminator model only. The bearer has the Feel No Pain 5+ ability. Once per battle, after the bearer's unit is selected as the target of one or more attacks, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes Terminator. El portador tiene la habilidad Feel No Pain 5+. Una vez por batalla, después de que la unidad del portador sea seleccionada como objetivo de uno o más ataques, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, las miniaturas de la unidad del portador tienen la habilidad Feel No Pain 5+."
     },
     {
       "id": "9e2183f94ab2d666",
@@ -1448,7 +1448,7 @@
         ]
       },
       "source": "Adeptus Astartes Terminator model only. Improve the Objective Control characteristic of the bearer by 1. Once per battle, at the start of any phase the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Objective Control characteristic of all other models in the bearer's unit as well.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes Terminator. Mejora en 1 la característica de Control de Objetivos del portador. Una vez por batalla, al inicio de cualquier fase, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, suma 1 también a la característica de Control de Objetivos de todas las demás miniaturas de la unidad del portador."
     },
     {
       "id": "52d7188a6a101226",
@@ -1462,7 +1462,7 @@
         "names": []
       },
       "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks characteristic of the bearer's melee weapons. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by all other models in the bearer's unit.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. Suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo del portador. Una vez por batalla, al inicio de cualquier fase, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por todas las demás miniaturas de la unidad del portador."
     },
     {
       "id": "c1239d61576290a3",
@@ -1479,7 +1479,7 @@
         ]
       },
       "source": "RAVENWING model only. Melee weapons equipped by the bearer have the Precision ability.",
-      "target": null
+      "target": "Solo para miniaturas RAVENWING. Las armas de cuerpo a cuerpo equipadas por el portador tienen la habilidad Precision."
     },
     {
       "id": "5b6b4c8dedeb5e67",
@@ -1493,7 +1493,7 @@
         "names": []
       },
       "source": "RAVENWING model only. You can re‑roll Advance and Charge rolls made for the bearer’s unit.",
-      "target": null
+      "target": "Solo para miniaturas RAVENWING. Puedes repetir las tiradas de avance y de carga realizadas para la unidad del portador."
     },
     {
       "id": "f6da8043b88a53be",
@@ -1507,7 +1507,7 @@
         "names": []
       },
       "source": "RAVENWING model only. If the bearer's unit starts the battle in Strategic Reserves, its points value does not count towards the combined points limit for units from your army that are in Strategic Reserve, and for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
-      "target": null
+      "target": "Solo para miniaturas RAVENWING. Si la unidad del portador empieza la batalla en las reservas estratégicas, su valor en puntos no cuenta para el límite de puntos combinado de las unidades de tu ejército que están en las reservas estratégicas y, a efectos de desplegar esa unidad en el campo de batalla, considera que el número de la ronda de batalla actual es uno más alto de lo que realmente es."
     },
     {
       "id": "a7ebedf854fbade3",
@@ -1523,7 +1523,7 @@
         ]
       },
       "source": "RAVENWING model only. Models in the bearer's unit have the Scouts 9\" ability.",
-      "target": null
+      "target": "Solo para miniaturas RAVENWING. Las miniaturas de la unidad del portador tienen la habilidad Scouts 9\"."
     },
     {
       "id": "5aab127f71df082e",
@@ -1539,7 +1539,7 @@
         ]
       },
       "source": "Deathwing model only. Each time you target the bearer's unit with a Stratagem, roll one D6, adding 1 if the bearer is within range of your Vowed objective marker: on a 5+ you gain 1CP.",
-      "target": null
+      "target": "Solo para miniaturas Deathwing. Cada vez que seleccionas la unidad del portador como objetivo de un Stratagem, tira un D6, sumando 1 si el portador está dentro del alcance de tu marcador de objetivo Vowed: con un 5+, ganas 1CP."
     },
     {
       "id": "6ebc1f782cf3e296",
@@ -1558,7 +1558,7 @@
         ]
       },
       "source": "**^^Deathwing^^** model only. Melee weapons equipped by the bearer have the **[LETHAL HITS]** ability, and each time the bearer makes a melee attack, if it is within range of your Vowed objective marker, a Critical Hit is scored on an unmodified Hit roll of 5+.",
-      "target": null
+      "target": "Solo para miniaturas **^^Deathwing^^**. Las armas de cuerpo a cuerpo equipadas por el portador tienen la habilidad **[LETHAL HITS]** y, cada vez que el portador realiza un ataque de cuerpo a cuerpo, si está dentro del alcance de tu marcador de objetivo Vowed, una tirada para impactar sin modificar de 5+ consigue un impacto crítico."
     },
     {
       "id": "8d753198f9beaecd",
@@ -1574,7 +1574,7 @@
         ]
       },
       "source": "Deathwing model only. Each time the bearer's unit Pile In or Consolidates, models in that unit can move an additional 3\".",
-      "target": null
+      "target": "Solo para miniaturas Deathwing. Cada vez que la unidad del portador realiza un movimiento de aproximación o de consolidación, las miniaturas de esa unidad pueden moverse 3\" adicionales."
     },
     {
       "id": "919012e636aec93d",
@@ -1591,7 +1591,7 @@
         ]
       },
       "source": "Deathwing model with the Deep Strike ability only. The bearer's unit can set up using the Deep Strike ability in the Reinforcement step of your first, second or third Movement phase, regardless of any mission rules.",
-      "target": null
+      "target": "Solo para miniaturas Deathwing con la habilidad Deep Strike. La unidad del portador puede desplegarse usando la habilidad Deep Strike en el paso de Refuerzos de tu primera, segunda o tercera fase de Movimiento, sin importar las reglas de misión."
     },
     {
       "id": "c64d21ea36776879",
@@ -1608,7 +1608,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. The bearer’s melee weapons have the [ANTI-CHAOS 5+] and [LANCE] abilities.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Las armas de cuerpo a cuerpo del portador tienen las habilidades [ANTI-CHAOS 5+] y [LANCE]."
     },
     {
       "id": "8f5b346a9a66c3e3",
@@ -1624,7 +1624,7 @@
         ]
       },
       "source": "Adeptus Astartes Jump Pack model only. Improve the Armour Penetration characteristic of the bearer’s weapons by 1, and the bearer has a Save characteristic of 2+.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes Jump Pack. Mejora en 1 la característica de Penetración de Blindaje de las armas del portador, y el portador tiene una característica de Salvación de 2+."
     },
     {
       "id": "a54b531ae1c96fe8",
@@ -1640,7 +1640,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES JUMP PACK model only. In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to 6\"",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES JUMP PACK. En la fase de Movimiento de tu oponente, si una unidad enemiga termina un movimiento a 8” o menos de esta unidad, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, esta unidad puede realizar un movimiento normal de hasta 6\""
     },
     {
       "id": "63d2f5b344278ebf",
@@ -1657,7 +1657,7 @@
         ]
       },
       "source": "Adeptus Astartes Jump Pack model only. In the Battle-shock step of your opponent's Command phase, each enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer must take a Battle-shock test.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes Jump Pack. En el paso de Battle-shock de la fase de Mando de tu oponente, cada unidad enemiga (excluyendo Monsters y Vehicles) que esté dentro del alcance de combate del portador debe hacer un test de Battle-shock."
     },
     {
       "id": "d9abd37a1623cb51",
@@ -1674,7 +1674,7 @@
         ]
       },
       "source": "Death Company model only. The first time the bearer is destroyed, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining.",
-      "target": null
+      "target": "Solo para miniaturas Death Company. La primera vez que el portador es destruido, al final de la fase, tira un D6: con un 2+, vuelve a desplegar al portador en el campo de batalla lo más cerca posible del lugar donde fue destruido y no dentro del alcance de combate de ninguna unidad enemiga, con 3 heridas restantes."
     },
     {
       "id": "4306742ea1b68f86",
@@ -1691,7 +1691,7 @@
         ]
       },
       "source": "Death Company model only. Once per battle at the end of the Fight phase, if the bearer is within Engagement Range of three or more enemy models. the bearer can fight one additional time.",
-      "target": null
+      "target": "Solo para miniaturas Death Company. Una vez por batalla, al final de la fase de Combate, si el portador está dentro del alcance de combate de tres o más miniaturas enemigas, el portador puede combatir una vez adicional."
     },
     {
       "id": "5f9c56b611dba835",
@@ -1709,7 +1709,7 @@
         ]
       },
       "source": "Death Company Model only. Once per battle, at the start of the Fight Phase, if the bearer is within Engagement Range of one or more enemy Character units, you can select one of those Character units and roll six D6: for each 4+, one Character model in that unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Solo para miniaturas Death Company. Una vez por batalla, al inicio de la fase de Combate, si el portador está dentro del alcance de combate de una o más unidades Character enemigas, puedes seleccionar una de esas unidades Character y tirar seis D6: por cada 4+, una miniatura Character de esa unidad sufre 1 herida mortal."
     },
     {
       "id": "66bfdad2701e36d7",
@@ -1725,7 +1725,7 @@
         ]
       },
       "source": "Death Company model only. If the bearer is destroyed, until the end of your next turn, each time a friendly Death Company model make an attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Solo para miniaturas Death Company. Si el portador es destruido, hasta el final de tu siguiente turno, cada vez que una miniatura Death Company amiga realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "9505a6b94ffe5d8e",
@@ -1739,7 +1739,7 @@
         "names": []
       },
       "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Damage characteristic of the bearer’s melee weapons.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. Suma 1 a la característica de Daño de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "db9282f7c3f48fc1",
@@ -1755,7 +1755,7 @@
         ]
       },
       "source": "Ravenwing model only. The bearer’s unit is eligible to shoot and declare a charge in a turn in which it Fell Back and you can re‑roll Desperate Escape tests taken for models in the bearer’s unit.",
-      "target": null
+      "target": "Solo para miniaturas Ravenwing. La unidad del portador es elegible para disparar y para declarar una carga en un turno en el que se haya replegado, y puedes repetir los tests de Desperate Escape realizados para las miniaturas de la unidad del portador."
     },
     {
       "id": "140bd6b51b3121bd",
@@ -1773,7 +1773,7 @@
         ]
       },
       "source": "Captain, Chaplain or Lieutenant model only. While the bearer’s unit is not Battle‑shocked, add 1 to the Objective Control characteristic of models in the bearer’s unit.",
-      "target": null
+      "target": "Solo para miniaturas Captain, Chaplain o Lieutenant. Mientras la unidad del portador no esté Battle-shocked, suma 1 a la característica de Control de Objetivos de las miniaturas de la unidad del portador."
     },
     {
       "id": "33d95bb282865b6d",
@@ -1790,7 +1790,7 @@
         ]
       },
       "source": "Deathwing model only. Once per battle, at the end of your opponent’s turn, if the bearer’s unit is not within Engagement Range of one or more enemy units, the bearer can use this Enhancement. If it does, remove the bearer’s unit from the battlefield and place it into Strategic Reserves.",
-      "target": null
+      "target": "Solo para miniaturas Deathwing. Una vez por batalla, al final del turno de tu oponente, si la unidad del portador no está dentro del alcance de combate de una o más unidades enemigas, el portador puede usar este Enhancement. Si lo hace, retira la unidad del portador del campo de batalla y colócala en las reservas estratégicas."
     },
     {
       "id": "4eda98d59a592911",
@@ -1804,7 +1804,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES PSYKER model only (excluding TERMINATOR models). (Once per turn per unit) In your opponent’s Movement phase, when an enemy unit ends a move within 8\" of this unit, if\nthis unit is unengaged, this unit can make a normal move of: \n\n\n▪ Up to D6\".\n▪ Or: If this unit has the Divination Discipline ability, up to 6\".",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES PSYKER (excluyendo miniaturas TERMINATOR). (Una vez por turno por unidad) En la fase de Movimiento de tu oponente, cuando una unidad enemiga termina un movimiento a 8\" o menos de esta unidad, si\nesta unidad está sin trabar, esta unidad puede realizar un movimiento normal de: \n\n\n▪ Hasta D6\".\n▪ O bien: si esta unidad tiene la habilidad Divination Discipline, hasta 6\"."
     },
     {
       "id": "93ee1c954bd5f437",
@@ -1818,7 +1818,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES PSYKER model only.\n\n\n▪ When this unit is selected to make an advance move, that move does not prevent this unit from being eligible to declare a charge.\n\n\n▪ When this unit is selected to make a fall‑back move, if this unit has the Biomancy Discipline ability, that move does not prevent this unit from being eligible to declare a charge.",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES PSYKER.\n\n\n▪ Cuando esta unidad es seleccionada para realizar un movimiento de avance, ese movimiento no impide que esta unidad sea elegible para declarar una carga.\n\n\n▪ Cuando esta unidad es seleccionada para realizar un movimiento de repliegue, si esta unidad tiene la habilidad Biomancy Discipline, ese movimiento no impide que esta unidad sea elegible para declarar una carga."
     },
     {
       "id": "6d69a25f645a6a6b",
@@ -1832,7 +1832,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES PSYKER model only.\n\n\n▪ Enemy units cannot target this unit with snap shooting attacks.\n▪ If this unit has the Telepathy Discipline ability, this unit has ‑3\" detection range.",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES PSYKER.\n\n\n▪ Las unidades enemigas no pueden tomar como objetivo a esta unidad con ataques de snap shooting.\n▪ Si esta unidad tiene la habilidad Telepathy Discipline, esta unidad tiene -3\" de alcance de detección."
     },
     {
       "id": "9fb5081da30caa9c",
@@ -1849,7 +1849,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES PSYKER model only. This unit’s ranged attacks have:\n\n\n▪ [LETHAL HITS].\n▪ If this unit has the Pyromancy Discipline ability, [SUSTAINED HITS 1].",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES PSYKER. Los ataques a distancia de esta unidad tienen:\n\n\n▪ [LETHAL HITS].\n▪ Si esta unidad tiene la habilidad Pyromancy Discipline, [SUSTAINED HITS 1]."
     },
     {
       "id": "7718a6f18e9a0a4e",
@@ -1865,7 +1865,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES PSYKER model only.\n▪ If this unit has the Telekinesis Discipline ability, this unit has Deep Strike.\n▪ At the end of your opponent’s Fight phase, if this unit is unengaged, you can use this ability. If you do:\n     ▫ Place this unit in strategic reserves.\n     ▫ This unit can make an ingress move in your next Movement phase (including in your first turn)",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES PSYKER.\n▪ Si esta unidad tiene la habilidad Telekinesis Discipline, esta unidad tiene Deep Strike.\n▪ Al final de la fase de Combate de tu oponente, si esta unidad está sin trabar, puedes usar esta habilidad. Si lo haces:\n      ▫ Coloca esta unidad en las reservas estratégicas.\n      ▫ Esta unidad puede realizar un movimiento de entrada en tu siguiente fase de Movimiento (incluido en tu primer turno)"
     },
     {
       "id": "3bc7f79750f53521",
@@ -1883,7 +1883,7 @@
         ]
       },
       "source": "Chaplain model only. The bearer’s melee weapons have the [DEVASTATING WOUNDS] ability.",
-      "target": null
+      "target": "Solo para miniaturas Chaplain. Las armas de cuerpo a cuerpo del portador tienen la habilidad [DEVASTATING WOUNDS]."
     },
     {
       "id": "54978c38257208ba",
@@ -1900,7 +1900,7 @@
         "names": []
       },
       "source": "EXECRATOR model only. When this unit is selected to fight, this model’s melee attacks have:\n\n\n▪ [CLEAVE 1].\n▪ Or: [PRECISION].",
-      "target": null
+      "target": "Solo para miniaturas EXECRATOR. Cuando esta unidad es seleccionada para combatir, los ataques de cuerpo a cuerpo de esta miniatura tienen:\n\n\n▪ [CLEAVE 1].\n▪ O bien: [PRECISION]."
     },
     {
       "id": "d4bcbef54363807d",
@@ -1914,7 +1914,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES INFANTRY model only.\n\n\n▪ This model has +2 W.\n▪ This model’s melee attacks have +1 S",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES INFANTRY.\n\n\n▪ Esta miniatura tiene +2 W.\n▪ Los ataques de cuerpo a cuerpo de esta miniatura tienen +1 S"
     },
     {
       "id": "adf4dadcda242ed1",
@@ -1928,7 +1928,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES INFANTRY model only. This unit can re‑roll advance rolls and countercharge rolls.",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES INFANTRY. Esta unidad puede repetir las tiradas de avance y las tiradas de Countercharge."
     },
     {
       "id": "08b1bb97f7623aac",
@@ -1944,7 +1944,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. Models in the bearer’s unit have the Scouts 6\" ability",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Las miniaturas de la unidad del portador tienen la habilidad Scouts 6\""
     },
     {
       "id": "3bc7cbdabf5c4117",
@@ -1958,7 +1958,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. Once per battle, in your Command phase, the bearer can use this\nEnhancement. When it does, until the start of your next Command phase, all Angelic Legacy abilities\n(see left) are active for the bearer’s unit, instead of only two of them.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. Una vez por batalla, en tu fase de Mando, el portador puede usar este\nEnhancement. Cuando lo hace, hasta el inicio de tu siguiente fase de Mando, todas las habilidades de Angelic Legacy\n(ver a la izquierda) están activas para la unidad del portador, en lugar de solo dos de ellas."
     },
     {
       "id": "9d49e3e32245b36d",
@@ -1974,7 +1974,7 @@
         ]
       },
       "source": "Adeptus Astartes Infantry model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes Infantry. Las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a la unidad del portador."
     },
     {
       "id": "763d9faaba0b5484",
@@ -1990,7 +1990,7 @@
         ]
       },
       "source": "Adeptus Astartes model only. The first time the bearer is destroyed, roll one D6 at the end of the phase: on a 2+, set the bearer back up on the battlefield as close as possible to where it was  destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining",
-      "target": null
+      "target": "Solo para miniaturas Adeptus Astartes. La primera vez que el portador es destruido, tira un D6 al final de la fase: con un 2+, vuelve a desplegar al portador en el campo de batalla lo más cerca posible del lugar donde fue  destruido y no dentro del alcance de combate de una o más unidades enemigas, con 3 heridas restantes"
     },
     {
       "id": "c8a29cf8393d4683",
@@ -2007,7 +2007,7 @@
         ]
       },
       "source": "**^^Deathwing**^^ model with the Deep Strike ability only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
-      "target": null
+      "target": "Solo para miniaturas **^^Deathwing**^^ con la habilidad Deep Strike. La unidad del portador puede desplegarse usando la habilidad Deep Strike en el paso de Refuerzos de tu primera, segunda o tercera fase de Movimiento, sin importar las reglas de misión."
     },
     {
       "id": "246bb8dc96d493a6",
@@ -2021,7 +2021,7 @@
         "names": []
       },
       "source": "**^^Adeptus Astartes**^^ model only. While a friendly **^^Adeptus Astartes**^^ unit is within 6\" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes**^^. Mientras una unidad **^^Adeptus Astartes**^^ amiga esté a 6\" o menos de esta miniatura, puedes repetir los tests de Battle-shock y de Leadership realizados para esa unidad."
     },
     {
       "id": "68ea7c93c9bd5307",
@@ -2037,7 +2037,7 @@
         ]
       },
       "source": "**^^Ravenwing**^^ model only. You can re-roll Advance and Charge rolls made for the bearer’s unit.",
-      "target": null
+      "target": "Solo para miniaturas **^^Ravenwing**^^. Puedes repetir las tiradas de avance y de carga realizadas para la unidad del portador."
     },
     {
       "id": "852d21b1b7794d9a",
@@ -2051,7 +2051,7 @@
         "names": []
       },
       "source": "^^**Adeptus Astartes**^^ model only. Improve the Strength characteristic of melee weapons equipped by the bearer by 2, and improve the Armour Penetration and Damage characteristics of those weapons by 1.",
-      "target": null
+      "target": "Solo para miniaturas ^^**Adeptus Astartes**^^. Mejora en 2 la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por el portador, y mejora en 1 las características de Penetración de Blindaje y Daño de esas armas."
     },
     {
       "id": "f1b42298dded88a0",
@@ -2067,7 +2067,7 @@
         ]
       },
       "source": "SPACE WOLVES model only. Model's in the bearer's unit have the Scouts 7\" ability.",
-      "target": null
+      "target": "Solo para miniaturas SPACE WOLVES. Las miniaturas de la unidad del portador tienen la habilidad Scouts 7\"."
     },
     {
       "id": "69cd8ed2830a5fad",
@@ -2083,7 +2083,7 @@
         ]
       },
       "source": "ADEPTUS ASTARTES model only. The bearer has the Feel No Pain 4+ ability.",
-      "target": null
+      "target": "Solo para miniaturas ADEPTUS ASTARTES. El portador tiene la habilidad Feel No Pain 4+."
     },
     {
       "id": "b7a5021381e33985",
@@ -2097,7 +2097,7 @@
         "names": []
       },
       "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks characteristic of melee weapons equipped by the bearer. Each time the bearer ends a Charge move, until the end of the turn, add an additional 1 to the Attacks characteristic of those weapons.",
-      "target": null
+      "target": "Solo para miniaturas **^^Adeptus Astartes^^**. Suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por el portador. Cada vez que el portador termina un movimiento de carga, hasta el final del turno, suma 1 adicional a la característica de Ataques de esas armas."
     },
     {
       "id": "07e45a850fd310e4",
@@ -2115,7 +2115,7 @@
         ]
       },
       "source": "SPACE WOLVES model only. In your Command phase, select one friendly SPACE WOLVES unit within 9\" of the bearer. Until the start of your next Command phase, teeth and claws and Tyrnak and Fenrir weapons equipped by models in that unit have the [LETHAL HITS] ability.",
-      "target": null
+      "target": "Solo para miniaturas SPACE WOLVES. En tu fase de Mando, selecciona una unidad SPACE WOLVES amiga que esté a 9\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, las armas teeth and claws, Tyrnak y Fenrir equipadas por las miniaturas de esa unidad tienen la habilidad [LETHAL HITS]."
     }
   ]
 }

@@ -1574,7 +1574,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. While the bearer is on your defensive line and there are no enemy units on your defensive line, add the bearer's Objective Control characteristic to that of each model affected by the bearer's Bondsman ability.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Mientras el portador esté en tu línea defensiva y no haya unidades enemigas en tu línea defensiva, suma la característica de Control de Objetivos del portador a la de cada miniatura afectada por la habilidad Bondsman del portador."
     },
     {
       "id": "11c995802592ef0c",
@@ -1588,7 +1588,7 @@
         "names": []
       },
       "source": "**^^Imperial Knights^^** model only. Each time the bearer makes a melee attack, if the bearer is on your defensive line, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Cada vez que el portador realiza un ataque de cuerpo a cuerpo, si el portador está en tu línea defensiva, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1."
     },
     {
       "id": "2744ed939a7568f0",
@@ -1604,7 +1604,7 @@
         "names": []
       },
       "source": "**^^Imperial Knights^^** model only. Each time the bearer makes a ranged attack, while the bearer is on your defensive line, weapons equipped by the bearer have the **[IGNORES COVER]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Cada vez que el portador realiza un ataque a distancia, mientras el portador esté en tu línea defensiva, las armas equipadas por el portador tienen la habilidad **[IGNORES COVER]**."
     },
     {
       "id": "97351e48af3ee0a8",
@@ -1621,7 +1621,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. When the bearer is selected to fight, after resolving its attacks, if one or more enemy units were destroyed by those attacks, the bearer can use this Enhancement. If it does, this Enhancement is expended, then select one enemy unit that is not within Engagement Range of any units from your army and is within 12\" of and visible to the bearer. Roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Cuando el portador es seleccionado para combatir, después de resolver sus ataques, si una o más unidades enemigas fueron destruidas por esos ataques, el portador puede usar este Enhancement. Si lo hace, este Enhancement queda gastado y, después, selecciona una unidad enemiga que no esté dentro del alcance de combate de ninguna unidad de tu ejército y que esté a 12\" o menos del portador y sea visible para él. Tira seis D6: por cada 4+, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "c8aa561bc5dba4f5",
@@ -1637,7 +1637,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. When the bearer ends a Charge move, it can use this Enhancement. If it does, this Enhancement is expended, the each enemy unit within Engagement Range of the bearer must take a Battle-shock test, subtracting 1 from the result.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Cuando el portador termina un movimiento de carga, puede usar este Enhancement. Si lo hace, este Enhancement queda gastado y cada unidad enemiga que esté dentro del alcance de combate del portador debe hacer un test de Battle-shock, restando 1 al resultado."
     },
     {
       "id": "64f81f3d294b5702",
@@ -1653,7 +1653,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. In your Shooting phase, when the bearer is selected to shoot, it can use this Enhancement. If it does, this Enhancement is expended, then until the end of the phase, each time it makes an attack that targets a unit that can **^^Fly^^**, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. En tu fase de Disparo, cuando el portador es seleccionado para disparar, puede usar este Enhancement. Si lo hace, este Enhancement queda gastado y, hasta el final de la fase, cada vez que realiza un ataque que toma como objetivo a una unidad que puede **^^Fly^^**, puedes repetir la tirada para impactar."
     },
     {
       "id": "fb1c64f1e2320db7",
@@ -1669,7 +1669,7 @@
         "names": []
       },
       "source": "**^^Imperial Knights^^** model only. When the bearer is selected to fight, it can use this Enhancement. If it does, this Enhancement is expended, then until the end of the phase, melee equipped by the bearer have the **[SUSTAINED HITS 2]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Cuando el portador es seleccionado para combatir, puede usar este Enhancement. Si lo hace, este Enhancement queda gastado y, hasta el final de la fase, las armas de cuerpo a cuerpo equipadas por el portador tienen la habilidad **[SUSTAINED HITS 2]**."
     },
     {
       "id": "836b1d7abbf55937",
@@ -1686,7 +1686,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, once per turn, you can target one of those **^^Armiger^^** models with the Counter-offensive Stratagem for 0CP.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Mientras dos o más miniaturas **^^Armiger^^** estén bajo los efectos de la habilidad Bondsman del portador, una vez por turno, puedes tomar como objetivo a una de esas miniaturas **^^Armiger^^** con el Stratagem Counter-offensive por 0CP."
     },
     {
       "id": "f7c89c5051c0810c",
@@ -1703,7 +1703,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, each time each of those **^^Armiger^^** models makes an attack, you can re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Mientras dos o más miniaturas **^^Armiger^^** estén bajo los efectos de la habilidad Bondsman del portador, cada vez que cada una de esas miniaturas **^^Armiger^^** realiza un ataque, puedes repetir las tiradas para impactar de 1."
     },
     {
       "id": "1f70568358a65813",
@@ -1722,7 +1722,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, melee weapons equipped by those **^^Armiger^^** models have the **[PRECISION]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Mientras dos o más miniaturas **^^Armiger^^** estén bajo los efectos de la habilidad Bondsman del portador, las armas de cuerpo a cuerpo equipadas por esas miniaturas **^^Armiger^^** tienen la habilidad **[PRECISION]**."
     },
     {
       "id": "17df2c377121980c",
@@ -1739,7 +1739,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, each time one of those **^^Armiger^^** models makes a melee attack, you can ignore any or all modifiers to the Hit roll and/or the Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Mientras dos o más miniaturas **^^Armiger^^** estén bajo los efectos de la habilidad Bondsman del portador, cada vez que una de esas miniaturas **^^Armiger^^** realiza un ataque de cuerpo a cuerpo, puedes ignorar cualquiera o todos los modificadores a la tirada para impactar y/o a la tirada para herir."
     },
     {
       "id": "7079dfbf0c66173f",
@@ -1753,7 +1753,7 @@
         "names": []
       },
       "source": "**^^Imperial Knights^^** model only. The bearer has a 5+ invulnerable save.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. El portador tiene una salvación invulnerable de 5+."
     },
     {
       "id": "faf095c2e60c76f7",
@@ -1769,7 +1769,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. (Once per battle, per army) At the end of your opponent’s turn, if this unit is unengaged, you can use this ability. If you do:\n- Place this unit in **strategic reserves**.\n- This unit has **Deep Strike** until the start of your next Shooting phase.\n- This unit must make an **ingress move** in your next Movement phase (including in your first turn).",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. (Una vez por batalla, por ejército) Al final del turno de tu oponente, si esta unidad está sin trabar, puedes usar esta habilidad. Si lo haces:\n- Coloca esta unidad en **reservas estratégicas**.\n- Esta unidad tiene **Deep Strike** hasta el inicio de tu siguiente fase de Disparo.\n- Esta unidad debe realizar un **movimiento de entrada** en tu siguiente fase de Movimiento (incluido en tu primer turno)."
     },
     {
       "id": "4ca32edc21602c47",
@@ -1783,7 +1783,7 @@
         "names": []
       },
       "source": "**^^Imperial Knights^^** model only. Improve the Attacks characteristic of melee weapons equipped by the bearer by 2, and each time the bearer makes a melee attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Mejora en 2 la característica de Ataques de las armas de cuerpo a cuerpo equipadas por el portador y, cada vez que el portador realiza un ataque de cuerpo a cuerpo, suma 1 a la tirada para impactar."
     },
     {
       "id": "69d4824b86bea95b",
@@ -1801,7 +1801,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** model only. Ranged weapons equipped by the bearer have the **[IGNORES COVER]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Imperial Knights^^**. Las armas a distancia equipadas por el portador tienen la habilidad **[IGNORES COVER]**."
     },
     {
       "id": "d949387b261888e7",
@@ -1815,7 +1815,7 @@
         "names": []
       },
       "source": "**IMPERIAL KNIGHTS DOMINUS** model only. This model has +1 **T**.",
-      "target": null
+      "target": "Solo miniatura **IMPERIAL KNIGHTS DOMINUS**. Esta miniatura tiene +1 **T**."
     },
     {
       "id": "0b779b1fc9eaa4d4",
@@ -1829,7 +1829,7 @@
         "names": []
       },
       "source": "**IMPERIAL KNIGHTS DOMINUS** model only. This unit can re‑roll rolls to determine the **A** of a weapon.",
-      "target": null
+      "target": "Solo miniatura **IMPERIAL KNIGHTS DOMINUS**. Esta unidad puede repetir las tiradas para determinar la **A** de un arma."
     },
     {
       "id": "754e462a9746429c",
@@ -1845,7 +1845,7 @@
         "names": []
       },
       "source": "Each time an **IMPERIAL KNIGHTS** unit from your army Advances, until the end of the turn, ranged weapons equipped by **IMPERIAL KNIGHTS** models from your army have the **[ASSAULT]** ability.",
-      "target": null
+      "target": "Cada vez que una unidad **IMPERIAL KNIGHTS** de tu ejército Avanza, hasta el final del turno, las armas a distancia equipadas por las miniaturas **IMPERIAL KNIGHTS** de tu ejército tienen la habilidad **[ASSAULT]**."
     },
     {
       "id": "ec39b7bab963247e",
@@ -1859,7 +1859,7 @@
         "names": []
       },
       "source": "In your Command phase, you can select one friendly **IMPERIAL KNIGHTS** model within 3\" of this model that has not been selected by this ability this phase. If you do, that model **heals** D3 wounds.",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar una miniatura **IMPERIAL KNIGHTS** amiga que esté a 3\" o menos de esta miniatura y que no haya sido seleccionada por esta habilidad esta fase. Si lo haces, esa miniatura **recupera** D3 heridas."
     },
     {
       "id": "d3027bae0a4e441b",
@@ -1875,7 +1875,7 @@
         "names": []
       },
       "source": "While a friendly **ADEPTUS MECHANICUS** unit is within 6\" of this model, that **ADEPTUS MECHANICUS** unit’s ranged attacks have:\n- +1 **BS**.\n- **[HEAVY]**",
-      "target": null
+      "target": "Mientras una unidad **ADEPTUS MECHANICUS** amiga esté a 6\" o menos de esta miniatura, los ataques a distancia de esa unidad **ADEPTUS MECHANICUS** tienen:\n- +1 **BS**.\n- **[HEAVY]**"
     },
     {
       "id": "0512d3e8c49908cb",
@@ -1892,7 +1892,7 @@
         ]
       },
       "source": "Friendly **IMPERIAL KNIGHTS** models have the **Assisted Targeting (Aura)** ability.\n\nFriendly **TECH-PRIEST** models have the **Sacristan Pledge** ability:",
-      "target": null
+      "target": "Las miniaturas **IMPERIAL KNIGHTS** amigas tienen la habilidad **Assisted Targeting (Aura)**.\n\nLas miniaturas **TECH-PRIEST** amigas tienen la habilidad **Sacristan Pledge**:"
     },
     {
       "id": "aafa61e79c671b5c",
@@ -1906,7 +1906,7 @@
         "names": []
       },
       "source": "You can include **TECH-PRIEST DOMINUS/TECH-PRIEST MANIPULUS/MARSHAL/RANGERS/VANGUARD** units in your army. The combined points value of such units cannot exceed 500 points.",
-      "target": null
+      "target": "Puedes incluir unidades **TECH-PRIEST DOMINUS/TECH-PRIEST MANIPULUS/MARSHAL/RANGERS/VANGUARD** en tu ejército. El valor total en puntos de dichas unidades no puede superar los 500 puntos."
     },
     {
       "id": "d19c80c51ee1e224",
@@ -1922,7 +1922,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack that targets a visible enemy unit, you can ignore any or all modifiers to the Hit roll, and weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad enemiga visible, puedes ignorar cualquiera o todos los modificadores a la tirada para impactar, y las armas equipadas por las miniaturas de esta unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "30710a3e034de52b",
@@ -1938,7 +1938,7 @@
         ]
       },
       "source": "At the start of the first battle round, select two objectives to be your foundations. Place a circular 40mm foundation marker in each one. When you draw a line from any part of one your foundation markers to any part of the other, if any part of a model’s base (or any part of a model’s hull, for a model without a base) crosses that line, that model’s unit is said to be on your defensive line.\n\nWhile an **IMPERIAL KNIGHTS** unit from your army is on your defensive line, that unit has the Against the Horde ability.\n",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona dos objetivos para que sean tus cimientos. Coloca en cada uno un marcador de cimiento circular de 40mm. Cuando traces una línea desde cualquier parte de uno de tus marcadores de cimiento hasta cualquier parte del otro, si alguna parte de la peana de una miniatura (o cualquier parte del casco de una miniatura, en el caso de una miniatura sin peana) cruza esa línea, se dice que la unidad de esa miniatura está en tu línea defensiva.\n\nMientras una unidad **IMPERIAL KNIGHTS** de tu ejército esté en tu línea defensiva, esa unidad tiene la habilidad Against the Horde.\n"
     },
     {
       "id": "d98c5941df17af2f",
@@ -1956,7 +1956,7 @@
         ]
       },
       "source": "At the start of your turn, if your current Oath is fulfilled, determine an additional Oath, with the exception that you cannot select a Deed or Quality you have already selected (if you are randomly selecting the Deed and/or Quality and roll any result that you have already selected, select a Deed or Quality you have not already selected instead). If you cannot determine an additional Oath because you have already selected each Deed and each Quality, do not determine an additional Oath.\n\nThe Qualities from Oaths you have fulfilled continue to apply to all models in your army with the Code Chivalric ability. When the Deed for an additional Oath is completed, you instead gain 1CP, regardless of how you selected the Deed or Quality.",
-      "target": null
+      "target": "Al inicio de tu turno, si tu Oath actual está cumplido, determina un Oath adicional, con la excepción de que no puedes seleccionar un Deed o una Quality que ya hayas seleccionado (si estás seleccionando el Deed y/o la Quality al azar y obtienes cualquier resultado que ya hayas seleccionado, selecciona en su lugar un Deed o una Quality que no hayas seleccionado ya). Si no puedes determinar un Oath adicional porque ya has seleccionado todos los Deed y todas las Quality, no determines un Oath adicional.\n\nLas Quality de los Oath que hayas cumplido se siguen aplicando a todas las miniaturas de tu ejército con la habilidad Code Chivalric. Cuando se completa el Deed de un Oath adicional, ganas 1CP en su lugar, independientemente de cómo hayas seleccionado el Deed o la Quality."
     },
     {
       "id": "e4753068f67e116e",
@@ -1972,7 +1972,7 @@
         ]
       },
       "source": "The Enhancements for this detachment can become expended. You cannot use such Enhancements while they are expended. Each time you fulfil your Oath, each expended Enhancement is no longer expended.",
-      "target": null
+      "target": "Los Enhancements de este detachment pueden quedar gastados. No puedes usar dichos Enhancements mientras estén gastados. Cada vez que cumples tu Oath, cada Enhancement gastado deja de estar gastado."
     },
     {
       "id": "4e384a5d8ec08048",
@@ -1989,7 +1989,7 @@
         ]
       },
       "source": "Each time a model from your army uses its Bondsman ability, if no other model from your army has used that Bondsman ability that turn, you can select up to three friendly **^^Armiger^^** models (instead of one) within 12\" of that model, or within 15\" of that model while your army is Honoured (you still cannot select a model that is already being affected by a Bondsman ability). Until the start of your next Command phase, those models are affected by that Bondsman ability.",
-      "target": null
+      "target": "Cada vez que una miniatura de tu ejército usa su habilidad Bondsman, si ninguna otra miniatura de tu ejército ha usado esa habilidad Bondsman ese turno, puedes seleccionar hasta tres miniaturas **^^Armiger^^** amigas (en lugar de una) que estén a 12\" o menos de esa miniatura, o a 15\" o menos de esa miniatura mientras tu ejército esté Honoured (sigues sin poder seleccionar una miniatura que ya esté siendo afectada por una habilidad Bondsman). Hasta el inicio de tu siguiente fase de Mando, esas miniaturas están afectadas por esa habilidad Bondsman."
     },
     {
       "id": "d8c5d9c30554af22",
@@ -2006,7 +2006,7 @@
         ]
       },
       "source": "**^^Armiger^^** models from your army gain the **^^Battleline^^** keyword.",
-      "target": null
+      "target": "Las miniaturas **^^Armiger^^** de tu ejército ganan la palabra clave **^^Battleline^^**."
     },
     {
       "id": "0891e8c53d142e8f",
@@ -2022,7 +2022,7 @@
         ]
       },
       "source": "**^^Imperial Knights^^** models from your army have the Feel No Pain 6+ ability. In addition, at the start of your Command phase, each **^^Imperial Knights^^** model from your army regains 1 lost wound.",
-      "target": null
+      "target": "Las miniaturas **^^Imperial Knights^^** de tu ejército tienen la habilidad Feel No Pain 6+. Además, al inicio de tu fase de Mando, cada miniatura **^^Imperial Knights^^** de tu ejército recupera 1 herida perdida."
     },
     {
       "id": "18796fc68b0cd1a4",
@@ -2036,7 +2036,7 @@
         "names": []
       },
       "source": "Friendly **IMPERIAL KNIGHTS DOMINUS** units’ attacks that target a unit in a **terrain area** have +1 to **hit rolls**.",
-      "target": null
+      "target": "Los ataques de las unidades **IMPERIAL KNIGHTS DOMINUS** amigas que toman como objetivo a una unidad en un **área de escenografía** tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "62b87322f44eabe7",
@@ -2054,7 +2054,7 @@
         ]
       },
       "source": "While a friendly **ARMIGER** unit is affected by a **Bondsman** ability, that unit’s ranged attacks have **[IGNORES COVER]**.\n\nThis **detachment** has the **ARMIGERS** tag and cannot be taken with another **ARMIGERS detachment**.",
-      "target": null
+      "target": "Mientras una unidad **ARMIGER** amiga esté afectada por una habilidad **Bondsman**, los ataques a distancia de esa unidad tienen **[IGNORES COVER]**.\n\nEste **detachment** tiene la etiqueta **ARMIGERS** y no puede llevarse junto a otro **detachment ARMIGERS**."
     },
     {
       "id": "b2cba751b978c3e8",
@@ -2068,7 +2068,7 @@
         "names": []
       },
       "source": "**TECH-PRIEST** model only. When using this model’s **Sacristan Pledge** ability, the selected **IMPERIAL KNIGHTS** model **heals** 2 additional wounds.",
-      "target": null
+      "target": "Solo miniatura **TECH-PRIEST**. Al usar la habilidad **Sacristan Pledge** de esta miniatura, la miniatura **IMPERIAL KNIGHTS** seleccionada **recupera** 2 heridas adicionales."
     },
     {
       "id": "017822a88f84f70c",
@@ -2082,7 +2082,7 @@
         "names": []
       },
       "source": "**IMPERIAL KNIGHTS** model only. While a friendly **ADEPTUS MECHANICUS** unit is within 6\" of this model, that **ADEPTUS MECHANICUS** unit’s melee attacks have +1 **WS** and **AP**.",
-      "target": null
+      "target": "Solo miniatura **IMPERIAL KNIGHTS**. Mientras una unidad **ADEPTUS MECHANICUS** amiga esté a 6\" o menos de esta miniatura, los ataques de cuerpo a cuerpo de esa unidad **ADEPTUS MECHANICUS** tienen +1 a **WS** y **AP**."
     },
     {
       "id": "0948d51cc31755c8",
@@ -2096,7 +2096,7 @@
         "names": []
       },
       "source": "While this unit is not Battle-shocked, add 3 to its Objective Control characteristic.",
-      "target": null
+      "target": "Mientras esta unidad no esté Battle-shocked, suma 3 a su característica de Control de Objetivos."
     },
     {
       "id": "f5636a0cde53a9d7",
@@ -2110,7 +2110,7 @@
         "names": []
       },
       "source": "While this unit is not Battle-shocked, add 1 to its Objective Control characteristic.",
-      "target": null
+      "target": "Mientras esta unidad no esté Battle-shocked, suma 1 a su característica de Control de Objetivos."
     },
     {
       "id": "c0fb529d872149f5",
@@ -2124,7 +2124,7 @@
         "names": []
       },
       "source": "While this unit is not Battle-shocked, add 5 to its Objective Control characteristic.",
-      "target": null
+      "target": "Mientras esta unidad no esté Battle-shocked, suma 5 a su característica de Control de Objetivos."
     },
     {
       "id": "fb0939712f47d703",
@@ -2140,7 +2140,7 @@
         "names": []
       },
       "source": "At the start of the first battle round, select one enemy unit. Until the end of the battle, each time this unit makes an attack that targets that enemy unit, add 1 to the Damage characteristic of that attack and that attack has the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona una unidad enemiga. Hasta el final de la batalla, cada vez que esta unidad realiza un ataque que toma como objetivo a esa unidad enemiga, suma 1 a la característica de Daño de ese ataque y ese ataque tiene la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "158a6b8a25b2d68c",
@@ -2154,7 +2154,7 @@
         "names": []
       },
       "source": "At the start of the first battle round, select one enemy unit. Until the end of the battle, each time this unit makes an attack that targets that enemy unit, add 1 to the Damage characteristic of that attack.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona una unidad enemiga. Hasta el final de la batalla, cada vez que esta unidad realiza un ataque que toma como objetivo a esa unidad enemiga, suma 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "55d9dd01bf76e220",
@@ -2170,7 +2170,7 @@
         "names": []
       },
       "source": "At the start of the first battle round, select one enemy unit. Until the end of the battle, each time this unit makes an attack that targets that enemy unit, add 1 to the Damage characteristic of that attack and that attack has the **[SUSTAINED HITS D3]** ability.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona una unidad enemiga. Hasta el final de la batalla, cada vez que esta unidad realiza un ataque que toma como objetivo a esa unidad enemiga, suma 1 a la característica de Daño de ese ataque y ese ataque tiene la habilidad **[SUSTAINED HITS D3]**."
     },
     {
       "id": "d194cfe8d0c52861",
@@ -2189,7 +2189,7 @@
         ]
       },
       "source": "Pilot of a **^^Titanic^^** unit only. Each time this unit its Bondsman ability, it can select a friendly **^^Armiger^^** that is within 24\" of and visible to this unit.",
-      "target": null
+      "target": "Solo piloto de una unidad **^^Titanic^^**. Cada vez que esta unidad usa su habilidad Bondsman, puede seleccionar un **^^Armiger^^** amigo que esté a 24\" o menos de esta unidad y sea visible para ella."
     },
     {
       "id": "12eaef15ea352d84",
@@ -2208,7 +2208,7 @@
         ]
       },
       "source": "Pilot of a **^^Titanic^^** unit only. Each time this unit its Bondsman ability, it can select a friendly **^^Armiger^^** that is within 18\" of and visible to this unit.",
-      "target": null
+      "target": "Solo piloto de una unidad **^^Titanic^^**. Cada vez que esta unidad usa su habilidad Bondsman, puede seleccionar un **^^Armiger^^** amigo que esté a 18\" o menos de esta unidad y sea visible para ella."
     },
     {
       "id": "3657b340b3a02f02",
@@ -2227,7 +2227,7 @@
         ]
       },
       "source": "Pilot of a **^^Titanic^^** unit only. Each time this unit its Bondsman ability, it can select a friendly **^^Armiger^^** that is anywhere on the battlefield and visible to this unit.",
-      "target": null
+      "target": "Solo piloto de una unidad **^^Titanic^^**. Cada vez que esta unidad usa su habilidad Bondsman, puede seleccionar un **^^Armiger^^** amigo que esté en cualquier lugar del campo de batalla y sea visible para esta unidad."
     },
     {
       "id": "bfd0d2b2d5ff2261",
@@ -2243,7 +2243,7 @@
         ]
       },
       "source": "At the end of each battle, if this unit gains any XP, you can select up to two other **^^Imperial Knights^^** units from your Crusade army that survived that battle. The selected unit gains 1XP.",
-      "target": null
+      "target": "Al final de cada batalla, si esta unidad gana algo de XP, puedes seleccionar hasta otras dos unidades **^^Imperial Knights^^** de tu ejército de Crusade que hayan sobrevivido a esa batalla. La unidad seleccionada gana 1XP."
     },
     {
       "id": "c2137954656f886f",
@@ -2259,7 +2259,7 @@
         ]
       },
       "source": "At the end of each battle, if this unit gains any XP, you can select one other **^^Imperial Knights^^** unit from your Crusade army that survived that battle. The selected unit gains 1XP.",
-      "target": null
+      "target": "Al final de cada batalla, si esta unidad gana algo de XP, puedes seleccionar otra unidad **^^Imperial Knights^^** de tu ejército de Crusade que haya sobrevivido a esa batalla. La unidad seleccionada gana 1XP."
     },
     {
       "id": "ababafbc4cf98609",
@@ -2275,7 +2275,7 @@
         ]
       },
       "source": "At the end of each battle, if this unit gains any XP, you can select up to three other **^^Imperial Knights^^** units from your Crusade army that survived that battle. The selected unit gains 1XP.",
-      "target": null
+      "target": "Al final de cada batalla, si esta unidad gana algo de XP, puedes seleccionar hasta otras tres unidades **^^Imperial Knights^^** de tu ejército de Crusade que hayan sobrevivido a esa batalla. La unidad seleccionada gana 1XP."
     },
     {
       "id": "603f946af4dbe28b",
@@ -2291,7 +2291,7 @@
         ]
       },
       "source": "After both players have deployed their armies, you can redeploy this unit and one friendly **^^Imperial Knights Armiger^^** unit.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, puedes volver a desplegar esta unidad y una unidad **^^Imperial Knights Armiger^^** amiga."
     },
     {
       "id": "a7c8ca402972558e",
@@ -2305,7 +2305,7 @@
         "names": []
       },
       "source": "After both players have deployed their armies, you can redeploy this unit.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, puedes volver a desplegar esta unidad."
     },
     {
       "id": "fa144393169bd119",
@@ -2319,7 +2319,7 @@
         "names": []
       },
       "source": "After both players have deployed their armies, you can redeploy this unit and one friendly **^^Imperial Knights^^** unit.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, puedes volver a desplegar esta unidad y una unidad **^^Imperial Knights^^** amiga."
     },
     {
       "id": "bd37a9945ea83669",
@@ -2335,7 +2335,7 @@
         ]
       },
       "source": "Once per battle, at the start of your Shooting phase, select one enemy unit within 18\" of and visible to this unit. Until the end of the phase, each time an **^^Imperial Knights^^** unit from your Crusade army makes an attack that targets that unit, you can re-roll a Hit roll of 1 and you can re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de tu fase de Disparo, selecciona una unidad enemiga que esté a 18\" o menos de esta unidad y sea visible para ella. Hasta el final de la fase, cada vez que una unidad **^^Imperial Knights^^** de tu ejército de Crusade realiza un ataque que toma como objetivo a esa unidad, puedes repetir las tiradas para impactar de 1 y puedes repetir las tiradas para herir de 1."
     },
     {
       "id": "e86a1f85fa5cbf98",
@@ -2351,7 +2351,7 @@
         ]
       },
       "source": "Once per battle, at the start of your Shooting phase, select one enemy unit within 18\" of and visible to this unit. Until the end of the phase, each time an **^^Imperial Knights^^** unit from your Crusade army makes an attack that targets that unit, you can re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de tu fase de Disparo, selecciona una unidad enemiga que esté a 18\" o menos de esta unidad y sea visible para ella. Hasta el final de la fase, cada vez que una unidad **^^Imperial Knights^^** de tu ejército de Crusade realiza un ataque que toma como objetivo a esa unidad, puedes repetir las tiradas para impactar de 1."
     },
     {
       "id": "8b90eed60a61fec9",
@@ -2367,7 +2367,7 @@
         ]
       },
       "source": "Once per turn, at the start of your Shooting phase, select one enemy unit within 18\" of and visible to this unit. Until the end of the phase, each time an **^^Imperial Knights^^** unit from your Crusade army makes an attack that targets that unit, you can re-roll a Hit roll of 1 and you can re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Una vez por turno, al inicio de tu fase de Disparo, selecciona una unidad enemiga que esté a 18\" o menos de esta unidad y sea visible para ella. Hasta el final de la fase, cada vez que una unidad **^^Imperial Knights^^** de tu ejército de Crusade realiza un ataque que toma como objetivo a esa unidad, puedes repetir las tiradas para impactar de 1 y puedes repetir las tiradas para herir de 1."
     },
     {
       "id": "67689eba0464ca00",
@@ -2381,7 +2381,7 @@
         "names": []
       },
       "source": "Add 2\" to this unit's Move characteristic. This unit is eligible to shoot in a turn in which it Advanced.",
-      "target": null
+      "target": "Suma 2\" a la característica de Movimiento de esta unidad. Esta unidad es elegible para disparar en un turno en el que haya Avanzado."
     },
     {
       "id": "f3b7192faa94c0a9",
@@ -2395,7 +2395,7 @@
         "names": []
       },
       "source": "Add 2\" to this unit's Move characteristic.",
-      "target": null
+      "target": "Suma 2\" a la característica de Movimiento de esta unidad."
     },
     {
       "id": "53012ad171c5da5b",
@@ -2409,7 +2409,7 @@
         "names": []
       },
       "source": "Add 2\" to this unit's Move characteristic. This unit is eligible to shoot and declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Suma 2\" a la característica de Movimiento de esta unidad. Esta unidad es elegible para disparar y para declarar una carga en un turno en el que haya Avanzado."
     },
     {
       "id": "9bb1a6134790f5b5",
@@ -2423,7 +2423,7 @@
         "names": []
       },
       "source": "In your Command phase, you can select one friendly **^^Imperial Knights^^** model within 6\" of this unit. That friendly model regains up to 3 lost wounds.",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar una miniatura **^^Imperial Knights^^** amiga que esté a 6\" o menos de esta unidad. Esa miniatura amiga recupera hasta 3 heridas perdidas."
     },
     {
       "id": "e2a8a4e2f39e6246",
@@ -2437,7 +2437,7 @@
         "names": []
       },
       "source": "In your Command phase, you can select one friendly **^^Imperial Knights^^** model within 6\" of this unit. That friendly model regains up to D3 lost wounds.",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar una miniatura **^^Imperial Knights^^** amiga que esté a 6\" o menos de esta unidad. Esa miniatura amiga recupera hasta D3 heridas perdidas."
     },
     {
       "id": "9d91e828e42e3bd9",
@@ -2451,7 +2451,7 @@
         "names": []
       },
       "source": "In your Command phase, you can select one friendly **^^Imperial Knights^^** model within 6\" of this unit. That friendly model regains up to D3+3 lost wounds.",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar una miniatura **^^Imperial Knights^^** amiga que esté a 6\" o menos de esta unidad. Esa miniatura amiga recupera hasta D3+3 heridas perdidas."
     },
     {
       "id": "ac74324aa911c5fc",
@@ -2467,7 +2467,7 @@
         ]
       },
       "source": "While this Chivalric Quest is active, at the end of each battle, add 1 to its tally for each objective marker you control. For each of those objective markers that is within your opponent's deployment zone, you gain 1 additional tally mark.",
-      "target": null
+      "target": "Mientras esta Chivalric Quest esté activa, al final de cada batalla, suma 1 a su recuento por cada marcador de objetivo que controles. Por cada uno de esos marcadores de objetivo que esté dentro de la zona de despliegue de tu oponente, obtienes 1 marca de recuento adicional."
     },
     {
       "id": "0d7385888735a33c",
@@ -2484,7 +2484,7 @@
         ]
       },
       "source": "While this Chivalric Quest is active, at the end of each battle, add 1 to its tally for each of the following conditions you satisfy: one or more **^^Imperial Knights^^** from your Crusade army are within 6\" of the centre of the battlefield; no enemy units are within 6\" of the centre of the battlefield; one or more **^^Imperial Knights^^** units from your Crusade army are wholly within your opponent's deployment zone.",
-      "target": null
+      "target": "Mientras esta Chivalric Quest esté activa, al final de cada batalla, suma 1 a su recuento por cada una de las siguientes condiciones que cumplas: uno o más **^^Imperial Knights^^** de tu ejército de Crusade están a 6\" o menos del centro del campo de batalla; no hay unidades enemigas a 6\" o menos del centro del campo de batalla; una o más unidades **^^Imperial Knights^^** de tu ejército de Crusade están completamente dentro de la zona de despliegue de tu oponente."
     },
     {
       "id": "aa31b18ec16f5730",
@@ -2503,7 +2503,7 @@
         ]
       },
       "source": "While this Chivalric Quest is active, add 1 to its tally each time a **^^Character^^** unit is destroyed by an attack made by an **^^Imperial Knights^^** model from your Crusade force. For each of those destroyed units that was your opponent's **^^Warlord^^**, you gain 1 additional tally mark.",
-      "target": null
+      "target": "Mientras esta Chivalric Quest esté activa, suma 1 a su recuento cada vez que una unidad **^^Character^^** es destruida por un ataque realizado por una miniatura **^^Imperial Knights^^** de tu fuerza de Crusade. Por cada una de esas unidades destruidas que fuera el **^^Warlord^^** de tu oponente, obtienes 1 marca de recuento adicional."
     },
     {
       "id": "fc4eae6ee7cbd8ec",
@@ -2523,7 +2523,7 @@
         ]
       },
       "source": "While this Chivalric Quest is active, add 1 to its tally each time a **^^Monster^^** or **^^Vehicle^^** unit is destroyed by an attack made by an **^^Imperial Knights^^** model from your Crusade force. For each of those destroyed units that was **^^Titanic^^**, you gain 1 additional tally mark.",
-      "target": null
+      "target": "Mientras esta Chivalric Quest esté activa, suma 1 a su recuento cada vez que una unidad **^^Monster^^** o **^^Vehicle^^** es destruida por un ataque realizado por una miniatura **^^Imperial Knights^^** de tu fuerza de Crusade. Por cada una de esas unidades destruidas que fuera **^^Titanic^^**, obtienes 1 marca de recuento adicional."
     },
     {
       "id": "18517fa9a39e13d1",
@@ -2537,7 +2537,7 @@
         "names": []
       },
       "source": "This unit is not eligible to Fall Back.",
-      "target": null
+      "target": "Esta unidad no es elegible para realizar un movimiento de repliegue."
     },
     {
       "id": "22accd0ef2645615",
@@ -2553,7 +2553,7 @@
         ]
       },
       "source": "This unit cannot use or be affected by Bondsman abilities.",
-      "target": null
+      "target": "Esta unidad no puede usar habilidades Bondsman ni verse afectada por ellas."
     },
     {
       "id": "cc36c4dbb2e18f5e",
@@ -2567,7 +2567,7 @@
         "names": []
       },
       "source": "Subtract 2 from this unit's Objective Control characteristic and worsen its Leadership characteristic by 1.",
-      "target": null
+      "target": "Resta 2 a la característica de Control de Objetivos de esta unidad y empeora en 1 su característica de Leadership."
     },
     {
       "id": "b4645fc5b2bc5442",
@@ -2581,7 +2581,7 @@
         "names": []
       },
       "source": "The bearer has a 5+ invulnerable save against melee attacks.",
-      "target": null
+      "target": "El portador tiene una salvación invulnerable de 5+ contra ataques de cuerpo a cuerpo."
     },
     {
       "id": "f6b940946fa9b06d",
@@ -2599,7 +2599,7 @@
         ]
       },
       "source": "Melee weapons equipped by the bearer have the **[DEVASTATING WOUNDS]** ability.",
-      "target": null
+      "target": "Las armas de cuerpo a cuerpo equipadas por el portador tienen la habilidad **[DEVASTATING WOUNDS]**."
     },
     {
       "id": "b2e05a9fba1089b1",
@@ -2618,7 +2618,7 @@
         ]
       },
       "source": "If the bearer is equipped with one or more Questoris heavy stubbers or Questoris multi-lasers, those weapons have the **[PRECISION]** and **[IGNORES COVER]** abilities, and each time an attack is made with one of those weapons, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Si el portador está equipado con uno o más Questoris heavy stubbers o Questoris multi-lasers, esas armas tienen las habilidades **[PRECISION]** e **[IGNORES COVER]**, y cada vez que se realiza un ataque con una de esas armas, puedes repetir la tirada para impactar."
     },
     {
       "id": "ae46b5b61a70e540",
@@ -2635,7 +2635,7 @@
         ]
       },
       "source": "Each time the bearer uses its Bondsman ability, you can select one other friendly **^^Armiger^^** model within 9\" of the **^^Armiger^^** you selected with that ability; that other model is also affected by that Bondsman ability.",
-      "target": null
+      "target": "Cada vez que el portador usa su habilidad Bondsman, puedes seleccionar otra miniatura **^^Armiger^^** amiga que esté a 9\" o menos del **^^Armiger^^** que seleccionaste con esa habilidad; esa otra miniatura también está afectada por esa habilidad Bondsman."
     },
     {
       "id": "87a75bc8d48e8719",
@@ -2651,7 +2651,7 @@
         ]
       },
       "source": "In your Command phase, the bearer can activate this Crusade Relic. If it does, the bearer suffers D3 mortal wounds, then select one of the following effects (if you select the third effect, you must also select one weapon equipped by the bearer):\n\n\n- Until the start of your next Command phase, add 2\" to the bearer's Move characteristic.\n- Until the start of your next Command phase, add 2 to Advance and Charge rolls made for the bearer.\n- Until the start of your next Command phase, each time the bearer makes an attack with the selected weapon, add 1 to the Wound roll.",
-      "target": null
+      "target": "En tu fase de Mando, el portador puede activar esta Crusade Relic. Si lo hace, el portador sufre D3 heridas mortales y, después, selecciona uno de los siguientes efectos (si seleccionas el tercer efecto, debes seleccionar también un arma equipada por el portador):\n\n\n- Hasta el inicio de tu siguiente fase de Mando, suma 2\" a la característica de Movimiento del portador.\n- Hasta el inicio de tu siguiente fase de Mando, suma 2 a las tiradas de avance y de carga realizadas para el portador.\n- Hasta el inicio de tu siguiente fase de Mando, cada vez que el portador realiza un ataque con el arma seleccionada, suma 1 a la tirada para herir."
     },
     {
       "id": "f4ea37aafa66058f",
@@ -2665,7 +2665,7 @@
         "names": []
       },
       "source": "**ARMIGER** unit only. This unit has **MOBILE**.",
-      "target": null
+      "target": "Solo unidad **ARMIGER**. Esta unidad tiene **MOBILE**."
     },
     {
       "id": "c1a7c7cf4bf10101",
@@ -2679,7 +2679,7 @@
         "names": []
       },
       "source": "**ARMIGER** unit only. When you target this unit with the **Fire Overwatch/Heroic Intervention stratagem**, that use is ‑1 **CP**.",
-      "target": null
+      "target": "Solo unidad **ARMIGER**. Cuando tomas como objetivo a esta unidad con el **stratagem Fire Overwatch/Heroic Intervention**, ese uso cuesta -1 **CP**."
     },
     {
       "id": "5385d1e5e57a7620",
@@ -2695,7 +2695,7 @@
         ]
       },
       "source": "While this model is within 3\" of one or more friendly Adeptus Astartes Vehicle units, it has the Lone Operative ability.",
-      "target": null
+      "target": "Mientras esta miniatura esté a 3\" o menos de una o más unidades Adeptus Astartes Vehicle amigas, tiene la habilidad Lone Operative."
     },
     {
       "id": "f287517d7a1fe1ec",
@@ -2712,7 +2712,7 @@
         ]
       },
       "source": "In your Command phase, select one friendly Adeptus Astartes Vehicle model within 3\" of this model. That model regains up to 3 lost wounds and, until the start of your next Command phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. You cannot select a unit for this ability that has already been selected for the Blessing of the Omnissiah ability this phase, and vice versa.",
-      "target": null
+      "target": "En tu fase de Mando, selecciona una miniatura Adeptus Astartes Vehicle amiga que esté a 3\" o menos de esta miniatura. Esa miniatura recupera hasta 3 heridas perdidas y, hasta el inicio de tu siguiente fase de Mando, cada vez que esa miniatura Vehicle realiza un ataque, suma 1 a la tirada para impactar. No puedes seleccionar para esta habilidad una unidad que ya haya sido seleccionada para la habilidad Blessing of the Omnissiah esta fase, y viceversa."
     },
     {
       "id": "14cc0fb23fccb601",
@@ -2730,7 +2730,7 @@
         ]
       },
       "source": "If you include this model in your army, until the end of the battle, non-Character models in Heavy\nIntercessor Squad units from your army have an Objective Control characteristic of 3 while they are\nnot Battle-shocked.",
-      "target": null
+      "target": "Si incluyes esta miniatura en tu ejército, hasta el final de la batalla, las miniaturas que no sean Character de las unidades Heavy\nIntercessor Squad de tu ejército tienen una característica de Control de Objetivos de 3 mientras\nno estén Battle-shocked."
     },
     {
       "id": "2b6d993accba7b88",
@@ -2750,7 +2750,7 @@
         ]
       },
       "source": "Each time a model in this model’s unit makes an attack that targets a Monster or Vehicle unit, that\nattack has the [LETHAL HITS] ability. Each time a model in this model’s unit makes an attack that targets any other unit, that attack has the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad de esta miniatura realiza un ataque que toma como objetivo a una unidad Monster o Vehicle, ese\nataque tiene la habilidad [LETHAL HITS]. Cada vez que una miniatura de la unidad de esta miniatura realiza un ataque que toma como objetivo a cualquier otra unidad, ese ataque tiene la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "b213e7c5585dfbac",
@@ -2767,7 +2767,7 @@
         ]
       },
       "source": "■ At the start of the Declare Battle Formations step, you can select one Adeptus Astartes Infantry unit from your army. Until the end of the battle, that unit gains the Scouts 6\" ability.\n\n\n■ After both players have deployed their armies, you can select one Adeptus Astartes unit from your army and redeploy it. When doing so, you can set that unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "■ Al inicio del paso Declarar Formaciones de Batalla, puedes seleccionar una unidad Adeptus Astartes Infantry de tu ejército. Hasta el final de la batalla, esa unidad gana la habilidad Scouts 6\".\n\n\n■ Después de que ambos jugadores hayan desplegado sus ejércitos, puedes seleccionar una unidad Adeptus Astartes de tu ejército y volver a desplegarla. Al hacerlo, puedes desplegar esa unidad en reservas estratégicas si lo deseas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "1d5d399416464558",
@@ -2781,7 +2781,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: \n\n\n■ TERMINATOR ASSAULT SQUAD\n■ TERMINATOR SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: \n\n\n■ TERMINATOR ASSAULT SQUAD\n■ TERMINATOR SQUAD"
     },
     {
       "id": "c1a21dc73f96be40",
@@ -2795,7 +2795,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, models  in this unit cannot be targeted by ranged attacks unless the attacking model is within 12\".",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las miniaturas de esta unidad no pueden ser tomadas como objetivo por ataques a distancia salvo que la miniatura atacante esté a 12\" o menos."
     },
     {
       "id": "5e4e783c2e96fc82",
@@ -2811,7 +2811,7 @@
         ]
       },
       "source": "At the end of your opponent’s turn, if this model’s unit is not within Engagement Range of any enemy models, you can remove it from the battlefield and place it into Strategic Reserves.",
-      "target": null
+      "target": "Al final del turno de tu oponente, si la unidad de esta miniatura no está dentro del alcance de combate de ninguna miniatura enemiga, puedes retirarla del campo de batalla y colocarla en las reservas estratégicas."
     },
     {
       "id": "a360a892b14119f1",
@@ -2825,7 +2825,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units:\n\n■ ASSAULT INTERCESSORS WITH JUMP PACKS\n■ VANGUARD VETERAN SQUAD WITH JUMP PACKS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n\n■ ASSAULT INTERCESSORS WITH JUMP PACKS\n■ VANGUARD VETERAN SQUAD WITH JUMP PACKS"
     },
     {
       "id": "6d031d68b9fbd8c8",
@@ -2843,7 +2843,7 @@
         ]
       },
       "source": "If you include this model in your army, until the end of the battle, non-Character models in Assault\nIntercessors with Jump Packs units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked.",
-      "target": null
+      "target": "Si incluyes esta miniatura en tu ejército, hasta el final de la batalla, las miniaturas que no sean Character de las unidades Assault\nIntercessors with Jump Packs de tu ejército tienen una característica de Control de Objetivos de 2 mientras no estén Battle-shocked."
     },
     {
       "id": "c9a310e2f52c18ac",
@@ -2863,7 +2863,7 @@
         ]
       },
       "source": "At the start of the Declare Battle Formations step, if your army includes Aethon Shaan and Kayvaan\nShrike, until the end of the battle, your Kayvaan Shrike unit loses its Lone Operative ability and it\nreplaces its Chapter Master keyword with Captain.",
-      "target": null
+      "target": "Al inicio del paso Declarar Formaciones de Batalla, si tu ejército incluye a Aethon Shaan y a Kayvaan\nShrike, hasta el final de la batalla, tu unidad Kayvaan Shrike pierde su habilidad Lone Operative y\nsustituye su palabra clave Chapter Master por Captain."
     },
     {
       "id": "9541e541d5b299a4",
@@ -2877,7 +2877,7 @@
         "names": []
       },
       "source": "In your Command phase, you can select one unit from your opponent’s army. Until the start of your next Command phase, each time an Adeptus Astartes unit from your army declares a charge while it is within 12\" of that enemy unit, you can re-roll the Charge roll, but it must declare that enemy unit as a target of that charge (if possible).",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar una unidad del ejército de tu oponente. Hasta el inicio de tu siguiente fase de Mando, cada vez que una unidad Adeptus Astartes de tu ejército declara una carga mientras está a 12\" o menos de esa unidad enemiga, puedes repetir la tirada de carga, pero debe declarar a esa unidad enemiga como objetivo de esa carga (si es posible)."
     },
     {
       "id": "327ab04d82208a18",
@@ -2891,7 +2891,7 @@
         "names": []
       },
       "source": "You can target this model’s unit with the Rapid Ingress and Heroic Intervention Stratagems for 0CP,\neven if you have already used that Stratagem on a different unit this phase.",
-      "target": null
+      "target": "Puedes tomar como objetivo a la unidad de esta miniatura con los Stratagems Rapid Ingress y Heroic Intervention por 0CP,\nincluso si ya has usado ese Stratagem en otra unidad esta fase."
     },
     {
       "id": "b47da1c3aa522bb4",
@@ -2905,7 +2905,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para herir."
     },
     {
       "id": "67166a153914be87",
@@ -2921,7 +2921,7 @@
         ]
       },
       "source": "While an enemy unit is within Engagement Range of this model, halve the Objective Control characteristic of models in that enemy unit",
-      "target": null
+      "target": "Mientras una unidad enemiga esté dentro del alcance de combate de esta miniatura, divide a la mitad la característica de Control de Objetivos de las miniaturas de esa unidad enemiga"
     },
     {
       "id": "567fcf88dcbfc2cf",
@@ -2935,7 +2935,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units:\n\n■ ASSAULT INTERCESSOR SQUAD\n■ BLADEGUARD VETERAN SQUAD\n■ COMPANY HEROES\n■ INFERNUS SQUAD\n■ INTERCESSOR SQUAD\n■ STERNGUARD VETERAN SQUAD\n■ TACTICAL SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n\n■ ASSAULT INTERCESSOR SQUAD\n■ BLADEGUARD VETERAN SQUAD\n■ COMPANY HEROES\n■ INFERNUS SQUAD\n■ INTERCESSOR SQUAD\n■ STERNGUARD VETERAN SQUAD\n■ TACTICAL SQUAD"
     },
     {
       "id": "5fd1bc0350571c71",
@@ -2952,7 +2952,7 @@
         ]
       },
       "source": "In your Shooting phase, select one enemy unit within 24\" of and visible to this model. Until the end of the phase, each time a friendly Adeptus Astartes model makes a ranged attack with a Torrent or Melta weapon that targets that enemy unit, you can re-roll the Wound roll",
-      "target": null
+      "target": "En tu fase de Disparo, selecciona una unidad enemiga que esté a 24\" o menos de esta miniatura y sea visible para ella. Hasta el final de la fase, cada vez que una miniatura Adeptus Astartes amiga realiza un ataque a distancia con un arma Torrent o Melta que toma como objetivo a esa unidad enemiga, puedes repetir la tirada para herir"
     },
     {
       "id": "40b86a8520a11cfb",
@@ -2968,7 +2968,7 @@
         ]
       },
       "source": "The first time this model is set up on the battlefield, select one objective marker on the battlefield. While this model is within range of that objective marker, it has an Objective Control characteristic of 10, a Leadership characteristic of 5+ and the Feel No Pain 4+ ability.",
-      "target": null
+      "target": "La primera vez que esta miniatura es desplegada en el campo de batalla, selecciona un marcador de objetivo del campo de batalla. Mientras esta miniatura esté dentro del alcance de ese marcador de objetivo, tiene una característica de Control de Objetivos de 10, una característica de Leadership de 5+ y la habilidad Feel No Pain 4+."
     }
   ]
 }
