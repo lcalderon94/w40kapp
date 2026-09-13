@@ -28,13 +28,36 @@ Future<void> main(List<String> args) async {
   print('${chosen.name}: ${units.length} unidades, $withPoints con puntos');
   print('');
 
-  for (final unit in units.take(8)) {
+  for (final unit in units.take(5)) {
     final points = unit.points == null ? 'sin puntos' : '${unit.points} pts';
     print('  ${unit.name}  ·  $points  ·  ${unit.role ?? 'sin rol'}');
     final ability = unit.abilities.isEmpty ? null : unit.abilities.first;
     if (ability != null) {
       final text = ability.description!.replaceAll('\n', ' ');
-      print('      ${ability.name}: ${text.length > 110 ? '${text.substring(0, 110)}…' : text}');
+      print('      ${ability.name}: ${text.length > 100 ? '${text.substring(0, 100)}…' : text}');
+    }
+  }
+
+  // Una lista de ejemplo, para ver el coste y la validación funcionando.
+  final roster = Roster(faction: chosen, pointsLimit: 500, name: 'Ejemplo');
+  for (final unit in units.where((u) => u.points != null).take(3)) {
+    roster.add(dataset.selectionFor(unit));
+  }
+  print('');
+  print('${roster.name}: ${roster.points}/${roster.pointsLimit} pts '
+      '(quedan ${roster.pointsRemaining})');
+  for (final unit in roster.units) {
+    final detail = unit.children.isEmpty
+        ? ''
+        : '  (${unit.children.map((c) => '${c.count}× ${c.name}').join(', ')})';
+    print('  ${unit.name}  ${unit.points} pts$detail');
+  }
+  final violations = roster.validate();
+  if (violations.isEmpty) {
+    print('  Lista legal');
+  } else {
+    for (final violation in violations) {
+      print('  Incumple · $violation');
     }
   }
 }

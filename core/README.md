@@ -43,11 +43,32 @@ Las tres cosas que hace y que no son evidentes leyendo el JSON:
 suma de todo lo seleccionado, y eso ya depende de las opciones del jugador. Esa parte, junto con la
 evaluación de `constraints`, es del constructor de listas, no de esta capa.
 
+## Construir una lista
+
+```dart
+final roster = Roster(faction: faccion, pointsLimit: 2000);
+roster.add(dataset.selectionFor(unidad));      // la unidad con sus mínimos ya puestos
+print('${roster.points}/${roster.pointsLimit}');
+for (final incumplimiento in roster.validate()) print(incumplimiento);
+```
+
+`selectionFor` no añade la unidad suelta: despliega los mínimos que exige. Los Poxwalkers cuestan 65
+en la unidad y llevan diez miniaturas a 0, y el Myphitic Blight-hauler cuesta 0 en la unidad y 95 en
+la suya; sumando el árbol los dos salen bien.
+
+`validate` cubre el límite de puntos, los mínimos y máximos de cada opción, los de su grupo —«entre
+10 y 20 Poxwalkers», que se comprueban sumando los hermanos que salen del mismo grupo— y los que
+limitan cuántas veces puede repetirse una unidad en el ejército. Cuando el dataset trae su propio
+mensaje de error, se usa ese.
+
 ## Estado
 
-Cubre la lectura del dataset. Falta lo que va encima: construir un roster, sumar su coste y evaluar
-las restricciones de legalidad. `Constraint` ya expone `type`, `field`, `scope` y el `message` que
-trae el propio dataset, que es lo que necesita ese intérprete.
+Se lee el dataset y se construyen y validan listas. Lo que falta para la paridad con WarOrgan:
+
+- **`modifiers`**: cambian coste y restricciones según el contexto (una unidad de 20 Poxwalkers no
+  cuesta lo mismo que una de 10). Es lo siguiente en importancia, porque afecta a los puntos.
+- **Detachments**: elegir uno y aplicar sus límites y sus Enhancements.
+- **Límites por rol** del destacamento, que viven en las `categoryEntries` de `forceEntries`.
 
 ## Entorno
 

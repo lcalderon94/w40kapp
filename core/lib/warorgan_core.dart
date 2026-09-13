@@ -4,3 +4,4 @@ library;
 
 export 'src/dataset.dart';
 export 'src/model.dart';
+export 'src/roster.dart';

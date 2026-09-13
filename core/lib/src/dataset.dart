@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'model.dart';
+import 'roster.dart';
 
 /// El dataset de BattleScribe ya traducido, cargado y resuelto.
 ///
@@ -150,6 +151,91 @@ class Dataset {
       }
     }
     return null;
+  }
+
+  /// Construye la selección de partida de una unidad: la unidad con los mínimos que exige.
+  ///
+  /// No basta con añadir la unidad suelta. Los Poxwalkers cuestan 65 puntos pero su grupo obliga a
+  /// meter diez miniaturas, y hay unidades que dejan todo su coste en la miniatura, así que sin
+  /// desplegar los mínimos el precio sale mal.
+  Selection selectionFor(UnitEntry unit) {
+    final entry = node(unit.id);
+    if (entry == null) throw ArgumentError('No existe la entrada ${unit.id}');
+    return _selectionFrom(entry, groupId: null, groupName: null, groupConstraints: const []);
+  }
+
+  Selection _selectionFrom(
+    Map<String, dynamic> entry, {
+    required String? groupId,
+    required String? groupName,
+    required List<Constraint> groupConstraints,
+    int count = 1,
+  }) {
+    final constraints = [
+      for (final raw in (entry['constraints'] as List? ?? const []))
+        Constraint.fromNode(raw as Map<String, dynamic>),
+    ];
+    final selection = Selection(
+      entryId: entry['id'] as String? ?? '',
+      name: entry['name'] as String? ?? '',
+      type: entry['type'] as String? ?? '',
+      pointsEach: _points(entry) ?? 0,
+      count: count,
+      groupId: groupId,
+      groupName: groupName,
+      constraints: constraints,
+      groupConstraints: groupConstraints,
+    );
+
+    for (final child in _childEntries(entry)) {
+      final minimum = _minimumSelections(child);
+      if (minimum > 0) {
+        selection.children.add(_selectionFrom(child,
+            groupId: null, groupName: null, groupConstraints: const [], count: minimum));
+      }
+    }
+
+    for (final raw in (entry['selectionEntryGroups'] as List? ?? const [])) {
+      final group = raw as Map<String, dynamic>;
+      final groupRules = [
+        for (final c in (group['constraints'] as List? ?? const []))
+          Constraint.fromNode(c as Map<String, dynamic>),
+      ];
+      for (final option in _childEntries(group)) {
+        final minimum = _minimumSelections(option);
+        if (minimum > 0) {
+          selection.children.add(_selectionFrom(option,
+              groupId: group['id'] as String?,
+              groupName: group['name'] as String?,
+              groupConstraints: groupRules,
+              count: minimum));
+        }
+      }
+    }
+
+    return selection;
+  }
+
+  /// Las entradas hijas de un nodo, estén incrustadas o lleguen por enlace.
+  Iterable<Map<String, dynamic>> _childEntries(Map<String, dynamic> node_) sync* {
+    for (final raw in (node_['selectionEntries'] as List? ?? const [])) {
+      yield raw as Map<String, dynamic>;
+    }
+    for (final raw in (node_['entryLinks'] as List? ?? const [])) {
+      final target = node((raw as Map<String, dynamic>)['targetId'] as String? ?? '');
+      if (target != null) yield target;
+    }
+  }
+
+  int _minimumSelections(Map<String, dynamic> entry) {
+    for (final raw in (entry['constraints'] as List? ?? const [])) {
+      final constraint = raw as Map<String, dynamic>;
+      if (constraint['type'] == 'min' && constraint['field'] == 'selections') {
+        final value = constraint['value'];
+        if (value is num) return value.round();
+      }
+    }
+    return 0;
   }
 
   /// Los perfiles de una entrada, incluidos los que llegan por enlace.
