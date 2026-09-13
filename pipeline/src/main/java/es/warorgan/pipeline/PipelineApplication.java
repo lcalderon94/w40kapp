@@ -3,6 +3,7 @@ package es.warorgan.pipeline;
 import es.warorgan.pipeline.cli.ApplyCommand;
 import es.warorgan.pipeline.cli.CheckCommand;
 import es.warorgan.pipeline.cli.ExtractCommand;
+import es.warorgan.pipeline.cli.ImportCommand;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -22,11 +23,14 @@ public class PipelineApplication implements ApplicationRunner {
     private final ExtractCommand extract;
     private final ApplyCommand apply;
     private final CheckCommand check;
+    private final ImportCommand importer;
 
-    public PipelineApplication(ExtractCommand extract, ApplyCommand apply, CheckCommand check) {
+    public PipelineApplication(ExtractCommand extract, ApplyCommand apply, CheckCommand check,
+                               ImportCommand importer) {
         this.extract = extract;
         this.apply = apply;
         this.check = check;
+        this.importer = importer;
     }
 
     public static void main(String[] args) {
@@ -43,8 +47,9 @@ public class PipelineApplication implements ApplicationRunner {
             case "extract" -> extract.run();
             case "apply" -> apply.run();
             case "check" -> check.run();
+            case "import" -> importer.run(commands.subList(1, commands.size()));
             default -> throw new IllegalArgumentException(
-                    "Uso: extract | apply | check (recibido: '" + command + "')");
+                    "Uso: extract | import <ruta> | check | apply (recibido: '" + command + "')");
         }
     }
 }
