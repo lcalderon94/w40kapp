@@ -13,7 +13,7 @@
         "names": []
       },
       "source": "When a friendly **RANGERS/SHROUD RUNNERS** unit is **selected to shoot**, enemy units have +6\" **detection range** until that friendly unit has shot.",
-      "target": null
+      "target": "Cuando una unidad **RANGERS/SHROUD RUNNERS** amiga es **seleccionada para disparar**, las unidades enemigas tienen +6\" de **alcance de detección** hasta que esa unidad amiga haya disparado."
     },
     {
       "id": "373ce785833a01ab",
@@ -29,7 +29,7 @@
         ]
       },
       "source": "Friendly **HARLEQUINS** units have **Stealth**.\n\nThis **detachment** has the **ACROBATIC** tag and cannot be taken with another **ACROBATIC detachment**.",
-      "target": null
+      "target": "Las unidades **HARLEQUINS** amigas tienen **Stealth**.\n\nEste **detachment** tiene la etiqueta **ACROBATIC** y no puede llevarse junto a otro **detachment ACROBATIC**."
     },
     {
       "id": "e371d8680d023a1f",
@@ -45,7 +45,7 @@
         "names": []
       },
       "source": "Friendly **WYCH CULT** units' melee attacks have **[LETHAL HITS: non-MONSTER/VEHICLE]**.\n\nThis **detachment** has the **WYCH CULT** tag and cannot be taken with another **WYCH CULT detachment**.",
-      "target": null
+      "target": "Los ataques de cuerpo a cuerpo de las unidades **WYCH CULT** amigas tienen **[LETHAL HITS: non-MONSTER/VEHICLE]**.\n\nEste **detachment** tiene la etiqueta **WYCH CULT** y no puede llevarse junto a otro **detachment WYCH CULT**."
     },
     {
       "id": "457442c69e91bfc1",
@@ -61,7 +61,7 @@
         "names": []
       },
       "source": "Friendly **BLADES FOR HIRE/KABAL** units’ ranged attacks have **[SUSTAINED HITS 1: non-MONSTER/VEHICLE]**.\n\nThis **detachment** has the **KABAL** tag and cannot be taken with another **KABAL detachment**.",
-      "target": null
+      "target": "Los ataques a distancia de las unidades **BLADES FOR HIRE/KABAL** amigas tienen **[SUSTAINED HITS 1: non-MONSTER/VEHICLE]**.\n\nEste **detachment** tiene la etiqueta **KABAL** y no puede llevarse junto a otro **detachment KABAL**."
     },
     {
       "id": "2140bc21b1523069",
@@ -75,7 +75,7 @@
         "names": []
       },
       "source": "Attacks that target friendly **CRONOS/TALOS** units with a **S** greater than that unit’s **T** have ‑1 to **wound rolls**.\n\n\nThis **detachment** has the **COVENS** tag and cannot be taken with another **COVENS detachment**.",
-      "target": null
+      "target": "Los ataques que tienen como objetivo a unidades **CRONOS/TALOS** amigas y cuya **S** es mayor que la **T** de esa unidad tienen ‑1 a las **tiradas para herir**.\n\n\nEste **detachment** tiene la etiqueta **COVENS** y no puede llevarse junto a otro **detachment COVENS**."
     },
     {
       "id": "2edea315ccb83e69",
@@ -92,7 +92,7 @@
         ]
       },
       "source": "Each time you roll to inflict wounds using this unit’s Eviscerating Fly-by ability, you can re-roll one D6 for each model in this unit equipped with cluster caltrops.",
-      "target": null
+      "target": "Cada vez que tires para infligir heridas con la habilidad Eviscerating Fly-by de esta unidad, puedes repetir un D6 por cada miniatura de esta unidad equipada con cluster caltrops."
     },
     {
       "id": "09a410ce8826c410",
@@ -110,7 +110,7 @@
         ]
       },
       "source": "The bearer’s melee weapons have an Armour Penetration characteristic of -2 and the ^^**[Lethal Hits]**^^ ability.",
-      "target": null
+      "target": "Las armas de cuerpo a cuerpo del portador tienen una característica de Penetración de Blindaje de -2 y la habilidad ^^**[Lethal Hits]**^^."
     },
     {
       "id": "598f33f51e44268d",
@@ -146,7 +146,7 @@
         ]
       },
       "source": "Ranged weapons equipped by models in this unit (excluding **^^Support Weapon^^** models) have the **[IGNORES COVER]** ability, and each time a model in this unit (excluding **^^Support Weapon^^** models) makes a ranged attack, you can ignore any or all modifiers to that attack's Ballistic Skill characteristic and/or any or all modifiers to the Hit roll.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas de esta unidad (excluidas las miniaturas **^^Support Weapon^^**) tienen la habilidad **[IGNORES COVER]**, y cada vez que una miniatura de esta unidad (excluidas las miniaturas **^^Support Weapon^^**) realiza un ataque a distancia, puedes ignorar cualquiera o todos los modificadores a la característica de Habilidad de Proyectiles de ese ataque y/o cualquiera o todos los modificadores a la tirada para impactar."
     },
     {
       "id": "12a2a22ce0384d88",
@@ -164,7 +164,7 @@
         ]
       },
       "source": "Psychic weapons equipped by models in this unit have the **[SUSTAINED HITS 2]** ability.",
-      "target": null
+      "target": "Las armas Psychic equipadas por las miniaturas de esta unidad tienen la habilidad **[SUSTAINED HITS 2]**."
     },
     {
       "id": "1a219394bfbff00e",
@@ -178,7 +178,7 @@
         "names": []
       },
       "source": "Each time a model in this unit is destroyed by a ranged attack, roll one D6: on a 3+, do not remove it from play. The destroyed model can shoot after the attacking unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad es destruida por un ataque a distancia, tira un D6: con un 3+, no la retires del juego. La miniatura destruida puede disparar después de que la unidad atacante haya terminado de realizar sus ataques, y se retira del juego a continuación."
     },
     {
       "id": "8b48b6238ff211b6",
@@ -214,7 +214,7 @@
         ]
       },
       "source": "This unit has the **^^Smoke^^** keyword, and you can target it with the Smokescreen Stratagem for 0CP.",
-      "target": null
+      "target": "Esta unidad tiene la keyword **^^Smoke^^**, y puedes seleccionarla como objetivo del Stratagem Smokescreen por 0CP."
     },
     {
       "id": "145f5be0036d499b",
@@ -228,7 +228,7 @@
         "names": []
       },
       "source": "Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem. If this unit, is within range of one or more objective markers, hits are scored on unmodified Hit rolls of 4+ instead.",
-      "target": null
+      "target": "Cada vez que seleccionas esta unidad como objetivo del Stratagem Fire Overwatch, mientras resuelves ese Stratagem se consiguen impactos con tiradas para impactar sin modificar de 5+. Si esta unidad está dentro del alcance de uno o más marcadores de objetivo, se consiguen impactos con tiradas para impactar sin modificar de 4+ en su lugar."
     },
     {
       "id": "49cc70df2c0f3ab1",
@@ -244,7 +244,7 @@
         "names": []
       },
       "source": "Add 1 to the Objective Control characteristic of models in this unit.",
-      "target": null
+      "target": "Suma 1 a la característica de Control de Objetivos de las miniaturas de esta unidad."
     },
     {
       "id": "10a641508a1ee40d",
@@ -263,7 +263,7 @@
         ]
       },
       "source": "Ranged weapons equipped by models in this unit have the **[HEAVY]** ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[HEAVY]**."
     },
     {
       "id": "cc5d36a2ddc505f3",
@@ -280,7 +280,7 @@
         ]
       },
       "source": "Each time a melee attack made by a model in this unit is allocated to a **^^Monster^^** or **^^Vehicle^^** model, add 1 to the Damage characteristic of that attack.",
-      "target": null
+      "target": "Cada vez que un ataque de cuerpo a cuerpo realizado por una miniatura de esta unidad se asigna a una miniatura **^^Monster^^** o **^^Vehicle^^**, suma 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "d21421b359bc5613",
@@ -296,7 +296,7 @@
         ]
       },
       "source": "Models in this unit have the Scouts 8\" ability.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Scouts 8\"."
     },
     {
       "id": "3b962e189ef91e2b",
@@ -330,7 +330,7 @@
         ]
       },
       "source": "Add 6\" to the Range characteristic of ranged weapons equipped by models in this unit. For each of those weapons with the **[TORRENT]**, add 3\" to the Range characteristic of that weapon instead.",
-      "target": null
+      "target": "Suma 6\" a la característica de Alcance de las armas a distancia equipadas por las miniaturas de esta unidad. Para cada una de esas armas con **[TORRENT]**, suma 3\" a la característica de Alcance de esa arma en su lugar."
     },
     {
       "id": "b5a06ebb1358f3a2",
@@ -344,7 +344,7 @@
         "names": []
       },
       "source": "Each time a ranged attack targets this unit, if the Strength characteristic of that attack is greater than this unit's Toughness characteristic, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a esta unidad, si la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de esta unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "abc9ae2bd07cbf63",
@@ -358,7 +358,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack that targets an enemy unit within half range, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que toma como objetivo a una unidad enemiga a media distancia o menos, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "10541c6b85121565",
@@ -372,7 +372,7 @@
         "names": []
       },
       "source": "Each time a melee attack targets this unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Cada vez que un ataque de cuerpo a cuerpo toma como objetivo a esta unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "ce650638044ee9ab",
@@ -388,7 +388,7 @@
         ]
       },
       "source": "**^^Autarch^^** model only. Each time a ranged attack targets the bearer's unit, subtract 1 from the Hit roll and subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Autarch^^**. Cada vez que un ataque a distancia toma como objetivo a la unidad del portador, resta 1 a la tirada para impactar y resta 1 a la tirada para herir."
     },
     {
       "id": "ee7cffd2dd9453f6",
@@ -404,7 +404,7 @@
         ]
       },
       "source": "**^^Harlequins^^** model only. The bearer has the Twisted Phantasm (Aura) ability.",
-      "target": null
+      "target": "Solo miniatura **^^Harlequins^^**. El portador tiene la habilidad Twisted Phantasm (Aura)."
     },
     {
       "id": "9f298c6d2e9cea78",
@@ -418,7 +418,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this model, each time your opponent targets that unit with a Stratagem, increase the cost of that usage of that Stratagem to 1CP.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, cada vez que tu oponente seleccione esa unidad como objetivo de un Stratagem, aumenta el coste de ese uso de ese Stratagem a 1CP."
     },
     {
       "id": "aedcc647d16da1cd",
@@ -432,7 +432,7 @@
         "names": []
       },
       "source": "**^^Harlequins^^** model only. The bearer's unit is eligible to declare a charge in a turn in which it Advanced or Fell Back. In addition, add 2 to Advance and Charge rolls made for the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura **^^Harlequins^^**. La unidad del portador es elegible para declarar una carga en un turno en el que haya avanzado o se haya replegado. Además, suma 2 a las tiradas de avance y de carga realizadas para la unidad del portador."
     },
     {
       "id": "a35e68d2333b98e9",
@@ -451,7 +451,7 @@
         "names": []
       },
       "source": "**^^Asuryani^^** model only. The bearer's melee weapons have the **[ANTI-BEASTS 3+]]**, **[ANTI-INFANTRY 3+]]**, **[ANTI-MOUNTED 3+]]** and **[DEVASTATING WOUNDS]]** abilities. In addition, at the end of the Fight phase, if the bearer destroyed one or more enemy models that phase (excluding **^^Vehicles^^**), the bearer regains up to D3 lost wounds.",
-      "target": null
+      "target": "Solo miniatura **^^Asuryani^^**. Las armas de cuerpo a cuerpo del portador tienen las habilidades **[ANTI-BEASTS 3+]]**, **[ANTI-INFANTRY 3+]]**, **[ANTI-MOUNTED 3+]]** y **[DEVASTATING WOUNDS]]**. Además, al final de la fase de Combate, si el portador destruyó una o más miniaturas enemigas esa fase (excluidos los **^^Vehicles^^**), el portador recupera hasta D3 heridas perdidas."
     },
     {
       "id": "55f35c7ec34a6792",
@@ -465,7 +465,7 @@
         "names": []
       },
       "source": "**^^Harlequins^^** model only. Each time the bearer is selected to fight, after resolving those attacks, each enemy unit within 6\" of the bearer's unit must take a Battle-shock test, subtracting 1 from that test.",
-      "target": null
+      "target": "Solo miniatura **^^Harlequins^^**. Cada vez que el portador es seleccionado para combatir, tras resolver esos ataques, cada unidad enemiga a 6\" o menos de la unidad del portador debe hacer un test de Battle-shock, restando 1 a ese test."
     },
     {
       "id": "36f7662eca173a33",
@@ -481,7 +481,7 @@
         ]
       },
       "source": "**^^Aeldari^^** model only. At the end of your Movement phase, select one enemy unit within 18\" of and visible to the bearer. Until the end of your next Movement phase, each time a friendly **^^Aeldari^^** model makes an attack that targets that unit, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Aeldari^^**. Al final de tu fase de Movimiento, selecciona una unidad enemiga a 18\" o menos del portador y visible para él. Hasta el final de tu siguiente fase de Movimiento, cada vez que una miniatura **^^Aeldari^^** amiga realiza un ataque que toma como objetivo a esa unidad, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "47ff65779264d704",
@@ -498,7 +498,7 @@
         ]
       },
       "source": "**^^Autarch^^** model only. At the start of the battle round, if the bearer is on the battlefield, you gain 1 additional Battle Focus token.",
-      "target": null
+      "target": "Solo miniatura **^^Autarch^^**. Al inicio de la ronda de batalla, si el portador está en el campo de batalla, ganas 1 ficha de Battle Focus adicional."
     },
     {
       "id": "5cd84b6af17fe85f",
@@ -512,7 +512,7 @@
         "names": []
       },
       "source": "**AELDARI PSYKER** model only. At the start of your Shooting phase, select one **visible** friendly **AELDARI VEHICLE** unit within 6\" of this model. That **VEHICLE** unit’s ranged attacks have +1 to **hit rolls**.",
-      "target": null
+      "target": "Solo miniatura **AELDARI PSYKER**. Al inicio de tu fase de Disparo, selecciona una unidad **AELDARI VEHICLE** amiga **visible** a 6\" o menos de esta miniatura. Los ataques a distancia de esa unidad **VEHICLE** tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "600c8e159ce05529",
@@ -528,7 +528,7 @@
         ]
       },
       "source": "**AELDARI PSYKER** model only.\n- While this model is within 3\" of a friendly **AELDARI VEHICLE** unit, this model has **Lone Operative**.\n- In your Movement phase, at the start or end of this unit’s move, you can select one friendly **AELDARI VEHICLE** model within 3\" of this model. That **VEHICLE** model **heals** D3 wounds.",
-      "target": null
+      "target": "Solo miniatura **AELDARI PSYKER**.\n- Mientras esta miniatura esté a 3\" o menos de una unidad **AELDARI VEHICLE** amiga, esta miniatura tiene **Lone Operative**.\n- En tu fase de Movimiento, al inicio o al final del movimiento de esta unidad, puedes seleccionar una miniatura **AELDARI VEHICLE** amiga a 3\" o menos de esta miniatura. Esa miniatura **VEHICLE** **recupera** D3 heridas."
     },
     {
       "id": "349d04ea9c7e9c6e",
@@ -547,7 +547,7 @@
         ]
       },
       "source": "**^^Autarch^^** or **^^Autarch Wayleaper^^** model only. Add 1 to the Damage characteristics of melee weapons equipped by the bearer, and those weapons have the **[PRECISION]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Autarch^^** o **^^Autarch Wayleaper^^**. Suma 1 a las características de Daño de las armas de cuerpo a cuerpo equipadas por el portador, y esas armas tienen la habilidad **[PRECISION]**."
     },
     {
       "id": "177bc4a6b850f297",
@@ -566,7 +566,7 @@
         ]
       },
       "source": "^^**Autarch^^** or ^^**Autarch Wayleaper^^** model only. While the bearer is leading an ^^**Aspect Warriors^^** unit, each time that unit is selected to shoot or fight, until the end of the phase, models in that unit gain both of the abilities from the Path of the Warrior Detachment rule.",
-      "target": null
+      "target": "Solo miniatura ^^**Autarch^^** o ^^**Autarch Wayleaper^^**. Mientras el portador lidere una unidad ^^**Aspect Warriors^^**, cada vez que esa unidad es seleccionada para disparar o para combatir, hasta el final de la fase, las miniaturas de esa unidad ganan ambas habilidades de la regla de Detachment Path of the Warrior."
     },
     {
       "id": "f398d7827dbeb8c4",
@@ -583,7 +583,7 @@
         ]
       },
       "source": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, each time a ranged attack targets that unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Solo miniatura Autarch o Autarch Wayleaper. Mientras el portador lidere una unidad Aspect Warriors, cada vez que un ataque a distancia toma como objetivo a esa unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "ebeabb17ccc3cb49",
@@ -600,7 +600,7 @@
         ]
       },
       "source": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, add 1 to the Objective Control characteristic of models in that unit.",
-      "target": null
+      "target": "Solo miniatura Autarch o Autarch Wayleaper. Mientras el portador lidere una unidad Aspect Warriors, suma 1 a la característica de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "7d9808454c4c4c4c",
@@ -620,7 +620,7 @@
         ]
       },
       "source": "Farseer model only. The bearer's Eldritch Storm weapon has the [Devastating Wounds] ability.",
-      "target": null
+      "target": "Solo miniatura Farseer. El arma Eldritch Storm del portador tiene la habilidad [Devastating Wounds]."
     },
     {
       "id": "aee71d66aed10e89",
@@ -636,7 +636,7 @@
         ]
       },
       "source": "Warlock model only. In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
-      "target": null
+      "target": "Solo miniatura Warlock. En tu fase de Disparo, después de que el portador haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Esa unidad debe hacer un test de Battle-shock."
     },
     {
       "id": "d3dec5ca8be00b32",
@@ -652,7 +652,7 @@
         ]
       },
       "source": "**^^Archon^^** model only. Add 2 to the Attacks characteristic of the bearer's melee weapons.",
-      "target": null
+      "target": "Solo miniatura **^^Archon^^**. Suma 2 a la característica de Ataques de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "dc03a914e0e3a423",
@@ -668,7 +668,7 @@
         ]
       },
       "source": "Succubus model only. Each time the bearer makes a melee attack, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Solo miniatura Succubus. Cada vez que el portador realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para herir."
     },
     {
       "id": "4d64450f7285d114",
@@ -685,7 +685,7 @@
         ]
       },
       "source": "Troupe Master model only. Each time the bearer's unit ends a Charge move, select one enemy unit within Engagement Range of the bearer's unit, then roll one D6 for each model in the bearer's unit that is within Engagment Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
-      "target": null
+      "target": "Solo miniatura Troupe Master. Cada vez que la unidad del portador termina un movimiento de carga, selecciona una unidad enemiga dentro del alcance de combate de la unidad del portador y, a continuación, tira un D6 por cada miniatura de la unidad del portador que esté dentro del alcance de combate de esa unidad enemiga: por cada 4+, esa unidad enemiga sufre 1 herida mortal (hasta un máximo de 6 heridas mortales)."
     },
     {
       "id": "b33d04f1b55a2970",
@@ -701,7 +701,7 @@
         ]
       },
       "source": "Harlequins model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer's unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
-      "target": null
+      "target": "Solo miniatura Harlequins. Cada vez que una unidad enemiga (excluidos Monsters y Vehicles) que esté dentro del alcance de combate de la unidad del portador se repliega, todas las miniaturas de esa unidad enemiga deben hacer un test de Desperate Escape. Al hacerlo, si esa unidad enemiga está Battle-shocked, resta 1 a cada uno de esos tests."
     },
     {
       "id": "73687aa0396b2d22",
@@ -717,7 +717,7 @@
         ]
       },
       "source": "Death Jester model only. Each time the bearer makes an attack that targets a unit that is below Half-strength, each successful Hit scores a Critical Hit.",
-      "target": null
+      "target": "Solo miniatura Death Jester. Cada vez que el portador realiza un ataque que toma como objetivo a una unidad que está Below Half-strength, cada impacto conseguido cuenta como un impacto crítico."
     },
     {
       "id": "efbcfdf49019072c",
@@ -734,7 +734,7 @@
         ]
       },
       "source": "Shadowseer model only. While the bearer is leading a unit, models in that unit have the Infiltrators ability.",
-      "target": null
+      "target": "Solo miniatura Shadowseer. Mientras el portador lidere una unidad, las miniaturas de esa unidad tienen la habilidad Infiltrators."
     },
     {
       "id": "ef71141b7bef3e37",
@@ -748,7 +748,7 @@
         "names": []
       },
       "source": "Asuryani model only. The bearer has an Objective Control characteristic of 5.",
-      "target": null
+      "target": "Solo miniatura Asuryani. El portador tiene una característica de Control de Objetivos de 5."
     },
     {
       "id": "af07f64b26dc33db",
@@ -765,7 +765,7 @@
         ]
       },
       "source": "Asuryani model only. In the Deploy Armies step, select up to two Guardians units from your army. Models in the selected units have the Infiltrators ability.",
-      "target": null
+      "target": "Solo miniatura Asuryani. En el paso Desplegar Ejércitos, selecciona hasta dos unidades Guardians de tu ejército. Las miniaturas de las unidades seleccionadas tienen la habilidad Infiltrators."
     },
     {
       "id": "fcb29264deb589ef",
@@ -782,7 +782,7 @@
         ]
       },
       "source": "Asuryani model only. While the bearer is leading a Dire Avengers or Guardians unit, once per battle round, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP, and while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if the bearer's unit is within range of an objective marker you control.",
-      "target": null
+      "target": "Solo miniatura Asuryani. Mientras el portador lidere una unidad Dire Avengers o Guardians, una vez por ronda de batalla puedes seleccionar la unidad del portador con el Stratagem Fire Overwatch por 0CP y, mientras resuelves ese Stratagem, se consiguen impactos con tiradas para impactar sin modificar de 5+, o con tiradas para impactar sin modificar de 4+ en su lugar si la unidad del portador está dentro del alcance de un marcador de objetivo que controlas."
     },
     {
       "id": "41571cb671f3d1e1",
@@ -796,7 +796,7 @@
         "names": []
       },
       "source": "**ASURYANI** model only. While the bearer is leading a **STORM GUARDIANS** unit, each time you roll to determine the number of attacks made with a flamer equipped by a model in that unit, you can re‑roll the result, and each time you make a Damage roll for a model equipped with a fusion gun in that unit, you can re‑roll the result.",
-      "target": null
+      "target": "Solo miniatura **ASURYANI**. Mientras el portador lidere una unidad **STORM GUARDIANS**, cada vez que tires para determinar el número de ataques realizados con un flamer equipado por una miniatura de esa unidad, puedes repetir el resultado, y cada vez que hagas una tirada de daño para una miniatura de esa unidad equipada con una fusion gun, puedes repetir el resultado."
     },
     {
       "id": "038b48e9a7076c58",
@@ -813,7 +813,7 @@
         ]
       },
       "source": "**^^Haemonculus^^** model only. Once per battle, in your Shooting phase, the bearer can use this Enhancement. If it does, you can spend 1 Pain token. Then, each enemy unit within 12\" of the bearer must take a Battle-shock test, subtracting 1 from that test if you spent 1 Pain token. Each time a **^^Psyker^^** unit fails that test, it suffers 3 mortal wounds.",
-      "target": null
+      "target": "Solo miniatura **^^Haemonculus^^**. Una vez por batalla, en tu fase de Disparo, el portador puede usar este Enhancement. Si lo hace, puedes gastar 1 ficha de Pain. A continuación, cada unidad enemiga a 12\" o menos del portador debe hacer un test de Battle-shock, restando 1 a ese test si has gastado 1 ficha de Pain. Cada vez que una unidad **^^Psyker^^** falla ese test, sufre 3 heridas mortales."
     },
     {
       "id": "065bea82de396276",
@@ -829,7 +829,7 @@
         ]
       },
       "source": "**^^Succubus^^** model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer's unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
-      "target": null
+      "target": "Solo miniatura **^^Succubus^^**. Mejora en 1 las características de Ataques y de Penetración de Blindaje de las armas de cuerpo a cuerpo del portador. Cada vez que la unidad del portador es seleccionada para combatir, puedes gastar 1 ficha de Pain; si lo haces, hasta el final de la fase, mejora en 2 las características de Ataques y de Penetración de Blindaje de las armas de cuerpo a cuerpo del portador en su lugar."
     },
     {
       "id": "72d222cc34ed578a",
@@ -846,7 +846,7 @@
         ]
       },
       "source": "**^^Archon^^** model only. At the start of your Command phase, if the bearer is on the battlefield, you can do one of the following:\nSpend 1 Pain token and gain 1CP.\nRoll one D6: on a 4+, you gain 1CP.",
-      "target": null
+      "target": "Solo miniatura **^^Archon^^**. Al inicio de tu fase de Mando, si el portador está en el campo de batalla, puedes hacer una de las siguientes cosas:\nGastar 1 ficha de Pain y ganar 1CP.\nTirar un D6: con un 4+, ganas 1CP."
     },
     {
       "id": "9fbd28b887126dae",
@@ -860,7 +860,7 @@
         "names": []
       },
       "source": "**^^Drukhari^^** model only. The bearer's unit is always Empowered - you do not need to spend any Pain tokens to activate that unit's Pain abilities",
-      "target": null
+      "target": "Solo miniatura **^^Drukhari^^**. La unidad del portador siempre está Empowered: no necesitas gastar fichas de Pain para activar las habilidades Pain de esa unidad"
     },
     {
       "id": "5735622b250aafc8",
@@ -878,7 +878,7 @@
         ]
       },
       "source": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a ^^**Dedicated Transport**^^, that ^^**Dedicated Transport**^^ has the Scouts 9\" ability.",
-      "target": null
+      "target": "Solo miniatura ^^**Harlequins**^^ o ^^**Drukhari**^^. En el paso Declarar Formaciones de Batalla, si el portador empieza la batalla embarcado en un ^^**Dedicated Transport**^^, ese ^^**Dedicated Transport**^^ tiene la habilidad Scouts 9\"."
     },
     {
       "id": "2be9c3b7bd75e834",
@@ -894,7 +894,7 @@
         ]
       },
       "source": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. Models in the bearer’s unit have the Deep Strike ability. Each time the bearer’s unit is set up on the battlefield using the Deep Strike ability, if that unit is currently losing the wager, until the end of the turn, you can re‑roll Charge rolls made for that unit.",
-      "target": null
+      "target": "Solo miniatura ^^**Harlequins**^^ o ^^**Drukhari**^^. Las miniaturas de la unidad del portador tienen la habilidad Deep Strike. Cada vez que la unidad del portador se despliega en el campo de batalla usando la habilidad Deep Strike, si esa unidad está perdiendo la apuesta en ese momento, hasta el final del turno puedes repetir las tiradas de carga realizadas para esa unidad."
     },
     {
       "id": "249f023025d0776b",
@@ -911,7 +911,7 @@
         ]
       },
       "source": "^^**Harlequins**^^ model only. Models in the bearer’s unit have the Stealth and Infiltrators abilities.",
-      "target": null
+      "target": "Solo miniatura ^^**Harlequins**^^. Las miniaturas de la unidad del portador tienen las habilidades Stealth e Infiltrators."
     },
     {
       "id": "1fac5d94e2cb9e70",
@@ -925,7 +925,7 @@
         "names": []
       },
       "source": "^^**Drukhari**^^ model only. In your Command phase, you can do one of the following:\n■ If your ^^**Drukhari**^^ units are currently losing the wager, you can gain 1 Pain token. If you do, ^^**Drukhari**^^ units from your army are now winning the wager.\n■ If your ^^**Drukhari**^^ units are currently winning the wager, you can discard 1 Pain token. If you do, ^^**Harlequins**^^ units from your army are now winning the wager.",
-      "target": null
+      "target": "Solo miniatura ^^**Drukhari**^^. En tu fase de Mando, puedes hacer una de las siguientes cosas:\n■ Si tus unidades ^^**Drukhari**^^ están perdiendo la apuesta en ese momento, puedes ganar 1 ficha de Pain. Si lo haces, las unidades ^^**Drukhari**^^ de tu ejército pasan a ganar la apuesta.\n■ Si tus unidades ^^**Drukhari**^^ están ganando la apuesta en ese momento, puedes descartar 1 ficha de Pain. Si lo haces, las unidades ^^**Harlequins**^^ de tu ejército pasan a ganar la apuesta."
     },
     {
       "id": "4063a70bed62d9c2",
@@ -941,7 +941,7 @@
         ]
       },
       "source": "Asuryani Psyker model only. In your Command phase, you can add 1 to or subtract 1 from the value of one Fate dice in your Fate dice pool.",
-      "target": null
+      "target": "Solo miniatura Asuryani Psyker. En tu fase de Mando, puedes sumar 1 o restar 1 al valor de un Fate dice de tu reserva de Fate dice."
     },
     {
       "id": "18408f22c14f1d92",
@@ -961,7 +961,7 @@
         ]
       },
       "source": "**^^Asuryani Psyker^^** model only. Models in the bearer's unit have the Feel No Pain 4+ ability against mortal wounds, Psychic Attacks and Critical Wounds caused by attacks with the **[DEVASTATING WOUNDS]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Asuryani Psyker^^**. Las miniaturas de la unidad del portador tienen la habilidad Feel No Pain 4+ contra heridas mortales, ataques psíquicos y heridas críticas causadas por ataques con la habilidad **[DEVASTATING WOUNDS]**."
     },
     {
       "id": "fd1be6f34f6056d0",
@@ -979,7 +979,7 @@
         ]
       },
       "source": "Asuryani Psyker model only. Add 12\" to the Range characteristic of ranged Psychic weapons equipped by the bearer.",
-      "target": null
+      "target": "Solo miniatura Asuryani Psyker. Suma 12\" a la característica de Alcance de las armas Psychic a distancia equipadas por el portador."
     },
     {
       "id": "b27c9584f6959708",
@@ -995,7 +995,7 @@
         ]
       },
       "source": "Asuryani Psyker model only. Once per turn, when your opponent targets a unit from their army within 12\" of the bearer with a Stratagem, the bearer can use this Enhancement. If it does, increase the CP cost of that usage of that Stratagem by 1CP.",
-      "target": null
+      "target": "Solo miniatura Asuryani Psyker. Una vez por turno, cuando tu oponente seleccione como objetivo de un Stratagem a una unidad de su ejército que esté a 12\" o menos del portador, el portador puede usar este Enhancement. Si lo hace, aumenta en 1CP el coste en CP de ese uso de ese Stratagem."
     },
     {
       "id": "70ce6b2550e3c6fb",
@@ -1013,7 +1013,7 @@
         ]
       },
       "source": "^^**Drukhari**^^ model only. While the bearer’s unit is wholly within 6\" of a friendly ^^**Drukhari Transport**^^:\nModels in the bearer’s unit have the  Stealth ability\nEach time a ranged attack targets the bearer's unit, models in that unit have the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Solo miniatura ^^**Drukhari**^^. Mientras la unidad del portador esté totalmente a 6\" o menos de un ^^**Drukhari Transport**^^ amigo:\nLas miniaturas de la unidad del portador tienen la habilidad  Stealth\nCada vez que un ataque a distancia toma como objetivo a la unidad del portador, las miniaturas de esa unidad tienen el beneficio de cobertura frente a ese ataque."
     },
     {
       "id": "3762ad24ce592304",
@@ -1029,7 +1029,7 @@
         ]
       },
       "source": "^^**Drukhari**^^ model only. Each time you spend 1 Pain token to Empower the bearer’s unit in the Shooting phase, select one friendly ^^**Drukhari Transport**^^ within 6\" of the bearer’s unit; until the end of the phase, each time that ^^**Transport**^^ makes an attack, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Solo miniatura ^^**Drukhari**^^. Cada vez que gastas 1 ficha de Pain para Empower a la unidad del portador en la fase de Disparo, selecciona un ^^**Drukhari Transport**^^ amigo a 6\" o menos de la unidad del portador; hasta el final de la fase, cada vez que ese ^^**Transport**^^ realiza un ataque, puedes repetir la tirada para impactar."
     },
     {
       "id": "f9483f15dd70603b",
@@ -1043,7 +1043,7 @@
         "names": []
       },
       "source": "^^**Drukhari**^^ model only. Each time the bearer’s unit destroys an enemy unit in the Fight phase, if that enemy unit was within range of one or more objective markers when the bearer’s unit was selected to fight, you gain 1 additional Pain token.",
-      "target": null
+      "target": "Solo miniatura ^^**Drukhari**^^. Cada vez que la unidad del portador destruye una unidad enemiga en la fase de Combate, si esa unidad enemiga estaba dentro del alcance de uno o más marcadores de objetivo cuando la unidad del portador fue seleccionada para combatir, ganas 1 ficha de Pain adicional."
     },
     {
       "id": "0b1f1ae6a41f406f",
@@ -1059,7 +1059,7 @@
         ]
       },
       "source": "^^**Drukhari**^^ model only. Each time the bearer’s unit disembarks from a ^^**Transport**^^, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
-      "target": null
+      "target": "Solo miniatura ^^**Drukhari**^^. Cada vez que la unidad del portador desembarca de un ^^**Transport**^^, hasta el final del turno las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a la unidad del portador."
     },
     {
       "id": "59d6fe1a29b7f112",
@@ -1077,7 +1077,7 @@
         ]
       },
       "source": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, add 1 to the Objective Control characteristic of Infanty models in that unit and add 3 to the Objective Control characteristic of Monster models in that unit.",
-      "target": null
+      "target": "Solo miniatura Spiritseer. En tu fase de Mando, selecciona una unidad Wraith Construct amiga a 12\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, suma 1 a la característica de Control de Objetivos de las miniaturas Infantry de esa unidad y suma 3 a la característica de Control de Objetivos de las miniaturas Monster de esa unidad."
     },
     {
       "id": "522a5baeaf3b5c91",
@@ -1098,7 +1098,7 @@
         ]
       },
       "source": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer (excluding Titanic units). Until the start of your next Command phase, each time a model in that unit makes an attack, on a Critical Wound, that attack has the [Precision] ability.",
-      "target": null
+      "target": "Solo miniatura Spiritseer. En tu fase de Mando, selecciona una unidad Wraith Construct amiga a 12\" o menos del portador (excluidas las unidades Titanic). Hasta el inicio de tu siguiente fase de Mando, cada vez que una miniatura de esa unidad realiza un ataque, con una herida crítica ese ataque tiene la habilidad [Precision]."
     },
     {
       "id": "435b3d3ea72974c2",
@@ -1116,7 +1116,7 @@
         ]
       },
       "source": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, each time a ranged attack targets that unit, unless the attacking model is within 18, models in that unit have the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Solo miniatura Spiritseer. En tu fase de Mando, selecciona una unidad Wraith Construct amiga a 12\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, cada vez que un ataque a distancia toma como objetivo a esa unidad, salvo que la miniatura atacante esté a 18\" o menos, las miniaturas de esa unidad tienen el beneficio de cobertura frente a ese ataque."
     },
     {
       "id": "752abf0c79215d6b",
@@ -1132,7 +1132,7 @@
         ]
       },
       "source": "**SPIRITSEER** model only. In your opponent's Movement phase, if an enemy unit ends a move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to 6\".",
-      "target": null
+      "target": "Solo miniatura **SPIRITSEER**. En la fase de Movimiento de tu oponente, si una unidad enemiga termina un movimiento a 8\" o menos de esta unidad y esta unidad no está dentro del alcance de combate de una o más unidades enemigas, esta unidad puede hacer un movimiento normal de hasta 6\"."
     },
     {
       "id": "08fe7918d15756e9",
@@ -1149,7 +1149,7 @@
         ]
       },
       "source": "^^Asuryani^^ ^^Psyker^^ model only. Add 1 to the Damage characteristic of ranged Psychic weapons equipped by the bearer.",
-      "target": null
+      "target": "Solo miniatura ^^Asuryani^^ ^^Psyker^^. Suma 1 a la característica de Daño de las armas Psychic a distancia equipadas por el portador."
     },
     {
       "id": "db9d98d90f06d295",
@@ -1165,7 +1165,7 @@
         ]
       },
       "source": "^^Asuryani^^ model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one of more enemy units, with its full wounds remaining.",
-      "target": null
+      "target": "Solo miniatura ^^Asuryani^^. La primera vez que el portador es destruido, retíralo del juego y después, al final de la fase, tira un D6: con un 2+, vuelve a desplegar al portador en el campo de batalla lo más cerca posible del lugar donde fue destruido y fuera del alcance de combate de una o más unidades enemigas, con todas sus heridas restantes."
     },
     {
       "id": "3c0974d9c2c5839f",
@@ -1179,7 +1179,7 @@
         "names": []
       },
       "source": "^^Asuryani^^ model only. Once per battle round, you can target the bearer's unit with the Command Re-roll Stratagem for 0CP.",
-      "target": null
+      "target": "Solo miniatura ^^Asuryani^^. Una vez por ronda de batalla, puedes seleccionar la unidad del portador con el Stratagem Command Re-roll por 0CP."
     },
     {
       "id": "875cda15687d95b0",
@@ -1196,7 +1196,7 @@
         ]
       },
       "source": "^^Asuryani^^ model only. At the start of the battle round, if the bearer is on the battlefield (or any Transport it is embarked within is on the battlefield), you receive 1 additional Battle Focus token.",
-      "target": null
+      "target": "Solo miniatura ^^Asuryani^^. Al inicio de la ronda de batalla, si el portador está en el campo de batalla (o si cualquier Transport en el que esté embarcado está en el campo de batalla), recibes 1 ficha de Battle Focus adicional."
     },
     {
       "id": "14d7521f5b70f7eb",
@@ -1213,7 +1213,7 @@
         ]
       },
       "source": "**^^Asuryani Mounted^^** model only. Models in the bearer's unit have the Scouts 9\" ability.",
-      "target": null
+      "target": "Solo miniatura **^^Asuryani Mounted^^**. Las miniaturas de la unidad del portador tienen la habilidad Scouts 9\"."
     },
     {
       "id": "a2ec33874a320df4",
@@ -1229,7 +1229,7 @@
         ]
       },
       "source": "Asuryani Mounted model only. Each time an attack targets the bearer's unit, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Solo miniatura Asuryani Mounted. Cada vez que un ataque toma como objetivo a la unidad del portador, resta 1 a la tirada para impactar."
     },
     {
       "id": "727106048c1e48a8",
@@ -1253,7 +1253,7 @@
         ]
       },
       "source": "Asuryani Mounted Psyker model only. Psychic weapons equipped by the bearer have the [Anti-Monster 2+] and [Anti-Vehicle 2+] abilities.",
-      "target": null
+      "target": "Solo miniatura Asuryani Mounted Psyker. Las armas Psychic equipadas por el portador tienen las habilidades [Anti-Monster 2+] y [Anti-Vehicle 2+]."
     },
     {
       "id": "362aa30f5db9e7cd",
@@ -1269,7 +1269,7 @@
         ]
       },
       "source": "Asuryani Mounted model only. In your Command phase, roll one D6, adding 1 to the result if the bearer is not within your deployment zone, and adding an additional 1 to the result if the bearer is within your opponent's deployment zone: on a 5+, you gain 1CP.",
-      "target": null
+      "target": "Solo miniatura Asuryani Mounted. En tu fase de Mando, tira un D6, sumando 1 al resultado si el portador no está dentro de tu zona de despliegue y sumando 1 adicional al resultado si el portador está dentro de la zona de despliegue de tu oponente: con un 5+, ganas 1CP."
     },
     {
       "id": "63af1e1788a4c799",
@@ -1286,7 +1286,7 @@
         ]
       },
       "source": "^^**Haemonculus**^^ model only. Each time the bearer uses its Fleshcraft ability, you can return up to D3+3 destroyed Bodyguard models to the bearer's unit instead of D3+1.",
-      "target": null
+      "target": "Solo miniatura ^^**Haemonculus**^^. Cada vez que el portador usa su habilidad Fleshcraft, puedes devolver hasta D3+3 miniaturas Bodyguard destruidas a la unidad del portador en lugar de D3+1."
     },
     {
       "id": "4b41b98210ad31d6",
@@ -1308,7 +1308,7 @@
         ]
       },
       "source": "^^**Haemonculus**^^ model only. The bearer's weapons have the ^^**[Anti-Beast 2+]**^^ and ^^**[Anti-Monster 4+]**^^ abilities.",
-      "target": null
+      "target": "Solo miniatura ^^**Haemonculus**^^. Las armas del portador tienen las habilidades ^^**[Anti-Beast 2+]**^^ y ^^**[Anti-Monster 4+]**^^."
     },
     {
       "id": "28a703c67a8f0418",
@@ -1324,7 +1324,7 @@
         ]
       },
       "source": "^^**Haemonculus**^^ model only. Add 1 to the bearer's Wounds characteristic and add 1 to the Toughness characteristic of models in the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura ^^**Haemonculus**^^. Suma 1 a la característica de Heridas del portador y suma 1 a la característica de Resistencia de las miniaturas de la unidad del portador."
     },
     {
       "id": "2dbd582a9ca2b1ea",
@@ -1340,7 +1340,7 @@
         ]
       },
       "source": "^^**Haemonculus**^^ model only. Add 3\" to the range of the bearer's Fear Incarnate ability, and each time a friendly ^^**Drukhari**^^ within 9\" of the bearer fails a Battle-shock test or is destroyed, roll one D6; on a 4+, you gain 1 Pain token.",
-      "target": null
+      "target": "Solo miniatura ^^**Haemonculus**^^. Suma 3\" al alcance de la habilidad Fear Incarnate del portador y, cada vez que una unidad ^^**Drukhari**^^ amiga a 9\" o menos del portador falle un test de Battle-shock o sea destruida, tira un D6; con un 4+, ganas 1 ficha de Pain."
     },
     {
       "id": "049c1f5c8b7adec8",
@@ -1356,7 +1356,7 @@
         ]
       },
       "source": "^^**Archon**^^ model only. The bearer has a Save characteristic of 3+. At the start of either player's Command phase, you can spend 1 Pain token; if you do, the bearer regains all of its lost wounds.",
-      "target": null
+      "target": "Solo miniatura ^^**Archon**^^. El portador tiene una característica de Salvación de 3+. Al inicio de la fase de Mando de cualquiera de los jugadores, puedes gastar 1 ficha de Pain; si lo haces, el portador recupera todas sus heridas perdidas."
     },
     {
       "id": "fd1b4fe448f848ab",
@@ -1373,7 +1373,7 @@
         ]
       },
       "source": "^^**Archon**^^ model only. Models in the bearer's unit have the Deep Strike ability, and you can target the bearer's unit with the Rapid Ingress Stratagem for 0CP.",
-      "target": null
+      "target": "Solo miniatura ^^**Archon**^^. Las miniaturas de la unidad del portador tienen la habilidad Deep Strike, y puedes seleccionar la unidad del portador con el Stratagem Rapid Ingress por 0CP."
     },
     {
       "id": "16c0090a5e395358",
@@ -1392,7 +1392,7 @@
         ]
       },
       "source": "^^**Archon**^^ model only. At the start of the Declare Battle Formations step, select up to three ^^**Kabalite Warriors**^^ and/or ^^**Hand of the Archon**^^ units from your army; those units gain the Infiltrators ability.",
-      "target": null
+      "target": "Solo miniatura ^^**Archon**^^. Al inicio del paso Declarar Formaciones de Batalla, selecciona hasta tres unidades ^^**Kabalite Warriors**^^ y/o ^^**Hand of the Archon**^^ de tu ejército; esas unidades ganan la habilidad Infiltrators."
     },
     {
       "id": "c369774afed8de22",
@@ -1408,7 +1408,7 @@
         ]
       },
       "source": "^^**Archon**^^ models only. While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1.",
-      "target": null
+      "target": "Solo miniaturas ^^**Archon**^^. Mientras el portador lidere una unidad, mejora en 1 las características de Leadership y de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "3b97ee82f7c2b5e8",
@@ -1425,7 +1425,7 @@
         ]
       },
       "source": "^^**Succubus**^^ model only. At the start of your Command phase, after selecting which Combat Drugs will be active for your army, roll one D6 and consult the Combat Drugs list. The result rolled applies to the bearer's unit until the start of your next Command phase in addition to any other Combat Drugs that are active for your army. If you randomly select one that is already active for your army, it has no additional effect.",
-      "target": null
+      "target": "Solo miniatura ^^**Succubus**^^. Al inicio de tu fase de Mando, después de seleccionar qué Combat Drugs estarán activas para tu ejército, tira un D6 y consulta la lista de Combat Drugs. El resultado obtenido se aplica a la unidad del portador hasta el inicio de tu siguiente fase de Mando, además de cualquier otra Combat Drug que esté activa para tu ejército. Si seleccionas aleatoriamente una que ya está activa para tu ejército, no tiene ningún efecto adicional."
     },
     {
       "id": "bb072486698abed3",
@@ -1442,7 +1442,7 @@
         ]
       },
       "source": "^^** Succubus**^^ model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
-      "target": null
+      "target": "Solo miniatura ^^** Succubus**^^. Una vez por batalla, al inicio de la fase de Combate, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase las miniaturas de la unidad del portador tienen la habilidad Fights First."
     },
     {
       "id": "0b40dca33eedbaff",
@@ -1458,7 +1458,7 @@
         ]
       },
       "source": "^^**Succubus**^^ model only. Enemy units cannot use the Fire Overwatch stratagem to shoot at the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura ^^**Succubus**^^. Las unidades enemigas no pueden usar el stratagem Fire Overwatch para disparar a la unidad del portador."
     },
     {
       "id": "ef93d4041de3d500",
@@ -1474,7 +1474,7 @@
         ]
       },
       "source": "^^**Succubus**^^ model only. Improve the Armour Penetration and Damage characteristics of the bearer's melee weapons by 1.",
-      "target": null
+      "target": "Solo miniatura ^^**Succubus**^^. Mejora en 1 las características de Penetración de Blindaje y de Daño de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "0ed41f13f62666c4",
@@ -1491,7 +1491,7 @@
         ]
       },
       "source": "^^**Harlequins**^^ model only (excluding ^^**Solitaire**^^ models). Models in the bearer’s unit have the Scouts 6\" ability.",
-      "target": null
+      "target": "Solo miniatura ^^**Harlequins**^^ (excluidas las miniaturas ^^**Solitaire**^^). Las miniaturas de la unidad del portador tienen la habilidad Scouts 6\"."
     },
     {
       "id": "2db2e6f56c5331db",
@@ -1508,7 +1508,7 @@
         ]
       },
       "source": "^^**Death Jester**^^ model only. When using the bearer’s Cruel Amusement ability, you can select two of the abilities for its shrieker cannon to gain, instead of one.",
-      "target": null
+      "target": "Solo miniatura ^^**Death Jester**^^. Al usar la habilidad Cruel Amusement del portador, puedes seleccionar dos de las habilidades que gana su shrieker cannon en lugar de una."
     },
     {
       "id": "b71c3dd553afc9dc",
@@ -1524,7 +1524,7 @@
         ]
       },
       "source": "^^**Shadowseer**^^ model only. After both players have deployed their armies, select up to three Harlequins units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Solo miniatura ^^**Shadowseer**^^. Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades Harlequins de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas, sin importar cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "74a416b0c722b345",
@@ -1540,7 +1540,7 @@
         ]
       },
       "source": "^^**Troupe Master**^^ model only. Add 3 to the Strength and add 1 to the Attacks characteristics of the bearer’s melee weapons.",
-      "target": null
+      "target": "Solo miniatura ^^**Troupe Master**^^. Suma 3 a la característica de Fuerza y 1 a la característica de Ataques de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "58db799808cad50e",
@@ -1558,7 +1558,7 @@
         ]
       },
       "source": "^^**Prince Yriel**^^ unit only. Each time you spend a Battle Focus token to enable this unit to perform an Agile Manoeuvre, roll one D6: on a 3+, you gain 1 Battle Focus token.",
-      "target": null
+      "target": "Solo unidad ^^**Prince Yriel**^^. Cada vez que gastas una ficha de Battle Focus para permitir que esta unidad realice una Agile Manoeuvre, tira un D6: con un 3+, ganas 1 ficha de Battle Focus."
     },
     {
       "id": "9b7731617270da57",
@@ -1577,7 +1577,7 @@
         ]
       },
       "source": "^^**Anhrathe**^^ unit only. Melee weapons equipped by models in this unit have the ^^**[LANCE]**^^ ability.",
-      "target": null
+      "target": "Solo unidad ^^**Anhrathe**^^. Las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad ^^**[LANCE]**^^."
     },
     {
       "id": "a0f3dc7ca7d743ea",
@@ -1597,7 +1597,7 @@
         ]
       },
       "source": "^^**Anhrathe**^^ unit only. Ranged weapons equipped by models in this unit have the ^^**[ANTI‑MONSTER 5+]**^^ and ^^**[ANTI‑VEHICLE 5+]**^^ abilities.",
-      "target": null
+      "target": "Solo unidad ^^**Anhrathe**^^. Las armas a distancia equipadas por las miniaturas de esta unidad tienen las habilidades ^^**[ANTI‑MONSTER 5+]**^^ y ^^**[ANTI‑VEHICLE 5+]**^^."
     },
     {
       "id": "1e4c85e7ebb2601b",
@@ -1617,7 +1617,7 @@
         ]
       },
       "source": "^^**Anhrathe Infantry**^^ unit only. This unit can perform the Fade Back Agile Manoeuvre without spending a Battle Focus token to do so. It can do so even if other units have done so in the same phase, and doing so does not prevent other units from performing the same Agile Manoeuvre in the same phase.",
-      "target": null
+      "target": "Solo unidad ^^**Anhrathe Infantry**^^. Esta unidad puede realizar la Agile Manoeuvre Fade Back sin gastar una ficha de Battle Focus para ello. Puede hacerlo incluso si otras unidades ya lo han hecho en la misma fase, y hacerlo no impide que otras unidades realicen esa misma Agile Manoeuvre en la misma fase."
     },
     {
       "id": "234dc1a7638db9be",
@@ -1633,7 +1633,7 @@
         ]
       },
       "source": "^^**Anhrathe**^^ unit only. While an enemy unit is within 3” of this unit, subtract 1 from the Objective Control characteristic of models in that unit (to a minimum of 1).",
-      "target": null
+      "target": "Solo unidad ^^**Anhrathe**^^. Mientras una unidad enemiga esté a 3” o menos de esta unidad, resta 1 a la característica de Control de Objetivos de las miniaturas de esa unidad (hasta un mínimo de 1)."
     },
     {
       "id": "688643b01e36f92d",
@@ -1651,7 +1651,7 @@
         ]
       },
       "source": "^^**Anhrathe**^^ unit only. Models in this unit have the Deep Strike ability. In addition, once per battle, at the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, it can use this ability. If it does, remove this unit from the battlefield and place it into Strategic Reserves.",
-      "target": null
+      "target": "Solo unidad ^^**Anhrathe**^^. Las miniaturas de esta unidad tienen la habilidad Deep Strike. Además, una vez por batalla, al final del turno de tu oponente, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, puede usar esta habilidad. Si lo hace, retira esta unidad del campo de batalla y colócala en reservas estratégicas."
     },
     {
       "id": "5ac4c9a88750df59",
@@ -1669,7 +1669,7 @@
         ]
       },
       "source": "^^**Anhrathe Character**^^ unit only. At the start of the battle, select one ^^**Character**^^ model in this unit. That model has the following ability: \n\n**Lord of Deceit (Aura):** Once per turn, when your opponent targets a unit from their army within 12\" of this model with a stratagem, you can use this ability. If you do, increase the CP cost of that use of that stratagem by 1CP.",
-      "target": null
+      "target": "Solo unidad ^^**Anhrathe Character**^^. Al inicio de la batalla, selecciona una miniatura ^^**Character**^^ de esta unidad. Esa miniatura tiene la siguiente habilidad: \n\n**Lord of Deceit (Aura):** Una vez por turno, cuando tu oponente seleccione como objetivo de un stratagem a una unidad de su ejército que esté a 12\" o menos de esta miniatura, puedes usar esta habilidad. Si lo haces, aumenta en 1CP el coste en CP de ese uso de ese stratagem."
     },
     {
       "id": "1ee2aa4dea7f56da",
@@ -1686,7 +1686,7 @@
         ]
       },
       "source": "^^**Anhrathe Infantry**^^ unit only. Models in this unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Solo unidad ^^**Anhrathe Infantry**^^. Las miniaturas de esta unidad tienen una salvación invulnerable de 5+."
     },
     {
       "id": "bc37ac492d498d62",
@@ -1700,7 +1700,7 @@
         "names": []
       },
       "source": "**TROUPE MASTER** model only. This unit can re‑roll charge rolls.",
-      "target": null
+      "target": "Solo miniatura **TROUPE MASTER**. Esta unidad puede repetir las tiradas de carga."
     },
     {
       "id": "83d77dbc36eae456",
@@ -1716,7 +1716,7 @@
         ]
       },
       "source": "**SHADOWSEER** model only. This unit has **Infiltrators**.",
-      "target": null
+      "target": "Solo miniatura **SHADOWSEER**. Esta unidad tiene **Infiltrators**."
     },
     {
       "id": "499a0bb6842eddbb",
@@ -1732,7 +1732,7 @@
         ]
       },
       "source": "**HARLEQUINS** model only. This unit has **Scouts 6\"**.",
-      "target": null
+      "target": "Solo miniatura **HARLEQUINS**. Esta unidad tiene **Scouts 6\"**."
     },
     {
       "id": "44e38948ace95e8a",
@@ -1746,7 +1746,7 @@
         "names": []
       },
       "source": "**SUCCUBUS** model only. This unit has +1 **T**.",
-      "target": null
+      "target": "Solo miniatura **SUCCUBUS**. Esta unidad tiene +1 **T**."
     },
     {
       "id": "bd9a4b9ef80f2e94",
@@ -1760,7 +1760,7 @@
         "names": []
       },
       "source": "**SUCCUBUS** model only. Enemy units cannot target this unit with **snap shooting** attacks.",
-      "target": null
+      "target": "Solo miniatura **SUCCUBUS**. Las unidades enemigas no pueden tomar como objetivo a esta unidad con ataques de **snap shooting**."
     },
     {
       "id": "065df5559409533a",
@@ -1774,7 +1774,7 @@
         "names": []
       },
       "source": "**ARCHON** model only. This unit has:\n- +1 **Ld** and **OC**.",
-      "target": null
+      "target": "Solo miniatura **ARCHON**. Esta unidad tiene:\n- +1 **Ld** y **OC**."
     },
     {
       "id": "6ae4366ca24892a7",
@@ -1790,7 +1790,7 @@
         "names": []
       },
       "source": "**ARCHON** model only. This unit’s attacks have **[PRECISION]**.",
-      "target": null
+      "target": "Solo miniatura **ARCHON**. Los ataques de esta unidad tienen **[PRECISION]**."
     },
     {
       "id": "6ca5f00ff958ad1d",
@@ -1804,7 +1804,7 @@
         "names": []
       },
       "source": "**HAEMONCULUS** model only. Attacks that target this unit with a **S** greater than your unit’s **T** have ‑1 to **wound rolls**.",
-      "target": null
+      "target": "Solo miniatura **HAEMONCULUS**. Los ataques que toman como objetivo a esta unidad y cuya **S** es mayor que la **T** de tu unidad tienen ‑1 a las **tiradas para herir**."
     },
     {
       "id": "2659933cf0d04d92",
@@ -1820,7 +1820,7 @@
         ]
       },
       "source": "You can re-roll Advance rolls made for this unit and, in your Movement phase, each time a model in it moves, it can move through enemy models (excluding **^^Monsters^^** and **^^Vehicles^^**). When doing so, it can move within Engagement Range of such models but cannot end that move within Engagement Range of them and any Desperate Escape test is automatically passed.",
-      "target": null
+      "target": "Puedes repetir las tiradas de avance realizadas para esta unidad y, en tu fase de Movimiento, cada vez que una miniatura de esta unidad se mueve, puede moverse a través de miniaturas enemigas (excluidos los **^^Monsters^^** y **^^Vehicles^^**). Al hacerlo, puede moverse dentro del alcance de combate de esas miniaturas, pero no puede terminar ese movimiento dentro de su alcance de combate, y cualquier test de Desperate Escape se supera automáticamente."
     },
     {
       "id": "a775ae0d893cf3a8",
@@ -1836,7 +1836,7 @@
         ]
       },
       "source": "Once per turn, at the end of your Movement phase, one unit from your Crusade army with this ability can use it. If it does, roll one D6: on a 1, that unit suffers D3 mortal wounds; on a 2+, remove that unit from the battlefield and set it up again anywhere on the battlefield that is more than 9\" horizontally away from all enemy units. Each unit can only use this ability once per battle.",
-      "target": null
+      "target": "Una vez por turno, al final de tu fase de Movimiento, una unidad de tu ejército de Crusade con esta habilidad puede usarla. Si lo hace, tira un D6: con un 1, esa unidad sufre D3 heridas mortales; con un 2+, retira esa unidad del campo de batalla y vuelve a desplegarla en cualquier lugar del campo de batalla que esté a más de 9\" en horizontal de todas las unidades enemigas. Cada unidad solo puede usar esta habilidad una vez por batalla."
     },
     {
       "id": "a5c1bf5baad12d48",
@@ -1855,7 +1855,7 @@
         ]
       },
       "source": "Psychic weapons equipped by models in this unit unit have the **[ANTI-MONSTER 3+]** and **[ANTI-VEHICLE 3+]** abilities.",
-      "target": null
+      "target": "Las armas Psychic equipadas por las miniaturas de esta unidad tienen las habilidades **[ANTI-MONSTER 3+]** y **[ANTI-VEHICLE 3+]**."
     },
     {
       "id": "0f92ae6a3c45fbbd",
@@ -1873,7 +1873,7 @@
         ]
       },
       "source": "Ranged weapons equipped by models in this unit have the **[PRECISION]** ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[PRECISION]**."
     },
     {
       "id": "e8434ec929bfa180",
@@ -1891,7 +1891,7 @@
         ]
       },
       "source": "Each time an enemy unit within Engagement Range of this unit is selected to Fall Back, roll one D6, subtracting 2 if that unit is a **^^Monster^^** or **^^Vehicle^^**: on a 2+, that unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga que esté dentro del alcance de combate de esta unidad es seleccionada para replegarse, tira un D6, restando 2 si esa unidad es un **^^Monster^^** o un **^^Vehicle^^**: con un 2+, esa unidad sufre D3 heridas mortales."
     },
     {
       "id": "21d0559b45b21dcd",
@@ -1907,7 +1907,7 @@
         ]
       },
       "source": "Each time a ranged attack targets this unit, if this unit is within range or one or more objective markers, models in this unit have the Benefit of Cover against this attack.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a esta unidad, si esta unidad está dentro del alcance de uno o más marcadores de objetivo, las miniaturas de esta unidad tienen el beneficio de cobertura frente a ese ataque."
     },
     {
       "id": "865af7c329ffb678",
@@ -1923,7 +1923,7 @@
         "names": []
       },
       "source": "Each time a melee attack targets this unit, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Cada vez que un ataque de cuerpo a cuerpo toma como objetivo a esta unidad, resta 1 a la tirada para impactar."
     },
     {
       "id": "dd0fdab1d00adea0",
@@ -1937,7 +1937,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, puede hacer un movimiento normal de hasta D6\". Si lo hace, hasta el final del turno esta unidad no es elegible para declarar una carga."
     },
     {
       "id": "19df64d8b965b85b",
@@ -1951,7 +1951,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Esa unidad enemiga debe hacer un test de Battle-shock."
     },
     {
       "id": "9e1ccf0e700a5428",
@@ -1971,7 +1971,7 @@
         ]
       },
       "source": "At the start of the first battle round, before any moves are made using the Scouts ability, one unit from your Crusade army with this ability can use it. If it does, you can select up to two friendly **^^Aeldari Infantry^^** units within 6\" of that unit that do not have the Scouts ability. Until the end of the battle, all models in the selected units have the Scouts 6\" ability.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, antes de que se realice ningún movimiento con la habilidad Scouts, una unidad de tu ejército de Crusade con esta habilidad puede usarla. Si lo hace, puedes seleccionar hasta dos unidades **^^Aeldari Infantry^^** amigas a 6\" o menos de esa unidad que no tengan la habilidad Scouts. Hasta el final de la batalla, todas las miniaturas de las unidades seleccionadas tienen la habilidad Scouts 6\"."
     },
     {
       "id": "8562013b0d1820a0",
@@ -1985,7 +1985,7 @@
         "names": []
       },
       "source": "In your Command phase, if this unit is within range of one or more objective markers you control and it is not Battle-shocked, roll one D6: on a 3+, you gain 1CP.",
-      "target": null
+      "target": "En tu fase de Mando, si esta unidad está dentro del alcance de uno o más marcadores de objetivo que controlas y no está Battle-shocked, tira un D6: con un 3+, ganas 1CP."
     },
     {
       "id": "16e8ae3914c34a43",
@@ -2002,7 +2002,7 @@
         ]
       },
       "source": "After both players have deployed their armies, one unit from your Crusade army with this ability can use it. If it does, select up to two **^^Aeldari^^** units from your Crusade army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, una unidad de tu ejército de Crusade con esta habilidad puede usarla. Si lo hace, selecciona hasta dos unidades **^^Aeldari^^** de tu ejército de Crusade y vuelve a desplegarlas. Al hacerlo, si lo deseas puedes desplegar esas unidades en reservas estratégicas, sin importar cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "f6439454c39d5a84",
@@ -2021,7 +2021,7 @@
         ]
       },
       "source": "In the Declare Battle Formations step, you can select one **^^Drukhari Vehicle^^** or **^^Drukhari Mounted^^** unit from your Crusade army. Until the end of the battle, that unit has the Scouts 6\" ability.",
-      "target": null
+      "target": "En el paso Declarar Formaciones de Batalla, puedes seleccionar una unidad **^^Drukhari Vehicle^^** o **^^Drukhari Mounted^^** de tu ejército de Crusade. Hasta el final de la batalla, esa unidad tiene la habilidad Scouts 6\"."
     },
     {
       "id": "d54e5f7fc3276666",
@@ -2039,7 +2039,7 @@
         ]
       },
       "source": "At the start of the Declare Battle Formations step, select one **^^Drukhari^^** unit from your Crusade army (you cannot select an **^^Epic Hero^^** or a unit that has the Weapon Modification Battle Honour). Until the end of the battle, one weapon equipped by one model in that unit has the Weapon Modification Battle Honour.",
-      "target": null
+      "target": "Al inicio del paso Declarar Formaciones de Batalla, selecciona una unidad **^^Drukhari^^** de tu ejército de Crusade (no puedes seleccionar un **^^Epic Hero^^** ni una unidad que tenga el Battle Honour Weapon Modification). Hasta el final de la batalla, un arma equipada por una miniatura de esa unidad tiene el Battle Honour Weapon Modification."
     },
     {
       "id": "2153e85320ae0be9",
@@ -2058,7 +2058,7 @@
         ]
       },
       "source": "While your **^^Ascendant Lord^^** is leading a unit, weapons equipped by models in that unit have the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "Mientras tu **^^Ascendant Lord^^** lidere una unidad, las armas equipadas por las miniaturas de esa unidad tienen la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "60b6130ea4cba361",
@@ -2074,7 +2074,7 @@
         ]
       },
       "source": "In the Update Crusade Cards step, if a **^^Drukhari^^** unit from your Crusade army would gain XP from Dealers of Death, it gains 1 additional XP.",
-      "target": null
+      "target": "En el paso Actualizar Cartas de Crusade, si una unidad **^^Drukhari^^** de tu ejército de Crusade fuera a ganar XP por Dealers of Death, gana 1 XP adicional."
     },
     {
       "id": "99564c03733086ca",
@@ -2091,7 +2091,7 @@
         ]
       },
       "source": "In the Update Crusade Cards step, if a **^^Scourges^^** unit from your Crusade army would gain XP from Battle Experience, it gains 1 additional XP.",
-      "target": null
+      "target": "En el paso Actualizar Cartas de Crusade, si una unidad **^^Scourges^^** de tu ejército de Crusade fuera a ganar XP por Battle Experience, gana 1 XP adicional."
     },
     {
       "id": "21e23ccdc84fae9c",
@@ -2112,7 +2112,7 @@
         ]
       },
       "source": "In the Declare Battle Formations step, your **^^Ascendant Lord^^** can be attached to an **^^Incubi^^** unit (if your **^^Ascendant Lord^^** is an **^^Archon^^**, while it is leading an **^^Incubi^^** unit, your **^^Ascendant Lord^^** has the Feel No Pain 5+ ability). If your **^^Ascendant Lord^^** is attached to an **^^Incubi^^** unit, at the end of the battle, unless all of those Bodyguard models have been destroyed, you can re-roll all Leadership tests required as the result of Assassination Attempts during that battle's Rival Activities.",
-      "target": null
+      "target": "En el paso Declarar Formaciones de Batalla, tu **^^Ascendant Lord^^** puede adjuntarse a una unidad **^^Incubi^^** (si tu **^^Ascendant Lord^^** es un **^^Archon^^**, mientras lidere una unidad **^^Incubi^^**, tu **^^Ascendant Lord^^** tiene la habilidad Feel No Pain 5+). Si tu **^^Ascendant Lord^^** está adjunto a una unidad **^^Incubi^^**, al final de la batalla, salvo que todas esas miniaturas Bodyguard hayan sido destruidas, puedes repetir todos los tests de Leadership requeridos como resultado de Assassination Attempts durante las Rival Activities de esa batalla."
     },
     {
       "id": "4c2cb4d98d452d30",
@@ -2128,7 +2128,7 @@
         ]
       },
       "source": "After each battle, in the Update Crusade Cards step, roll one D6, adding 1 to the result if you were the victor: on a 4+, you gain 1 additional RP.",
-      "target": null
+      "target": "Después de cada batalla, en el paso Actualizar Cartas de Crusade, tira un D6, sumando 1 al resultado si has sido el vencedor: con un 4+, ganas 1 RP adicional."
     },
     {
       "id": "3879a582fe82cb2a",
@@ -2144,7 +2144,7 @@
         ]
       },
       "source": "At the start of the Select Crusade Blessings step, roll one D6, adding 2 to the result if you are the Underdog: on a 6+, you can use one additional Crusade Blessing this battle (even if you are not the Underdog).",
-      "target": null
+      "target": "Al inicio del paso Seleccionar Crusade Blessings, tira un D6, sumando 2 al resultado si eres el Underdog: con un 6+, puedes usar una Crusade Blessing adicional en esta batalla (incluso si no eres el Underdog)."
     },
     {
       "id": "566d37ad5aa4cb56",
@@ -2162,7 +2162,7 @@
         ]
       },
       "source": "Once at the end of each battle, you can re-roll one Out of Action test taken for one **^^Drukhari Infantry^^** or **^^Drukhari Monster^^** unit from your Crusade army.",
-      "target": null
+      "target": "Una vez al final de cada batalla, puedes repetir un test de Out of Action realizado para una unidad **^^Drukhari Infantry^^** o **^^Drukhari Monster^^** de tu ejército de Crusade."
     },
     {
       "id": "154dc10f94db3a6a",
@@ -2179,7 +2179,7 @@
         ]
       },
       "source": "Each time a Rival Lord makes an Activity roll, you can subtract 1 from the result.",
-      "target": null
+      "target": "Cada vez que un Rival Lord hace una tirada de Activity, puedes restar 1 al resultado."
     },
     {
       "id": "679ef95a085ec166",
@@ -2193,7 +2193,7 @@
         "names": []
       },
       "source": "At the start of the Select Agendas step, roll one D6: on a 4+, you can select one additional Drukhari Agenda to use in that battle.",
-      "target": null
+      "target": "Al inicio del paso Seleccionar Agendas, tira un D6: con un 4+, puedes seleccionar una Agenda Drukhari adicional para usarla en esa batalla."
     },
     {
       "id": "4626275f3e5bfe27",
@@ -2212,7 +2212,7 @@
         ]
       },
       "source": "Each time your **^^Ascendant Lord^^** attempts a Hostile Takeover, add 1 to its D6 result and, if that **^^Ascendant Lord^^** claims a territory as a result, increase your Crusade force's Supply Limit by 50 points.",
-      "target": null
+      "target": "Cada vez que tu **^^Ascendant Lord^^** intenta un Hostile Takeover, suma 1 a su resultado del D6 y, si ese **^^Ascendant Lord^^** reclama un territorio como consecuencia, aumenta en 50 puntos el Supply Limit de tu fuerza de Crusade."
     },
     {
       "id": "e1655bc4e3be1ebe",
@@ -2230,7 +2230,7 @@
         ]
       },
       "source": "This Rival Lord's Power is 1 greater than the number of districts they control.",
-      "target": null
+      "target": "El Power de este Rival Lord es 1 mayor que el número de distritos que controla."
     },
     {
       "id": "2c76700336d017a6",
@@ -2247,7 +2247,7 @@
         ]
       },
       "source": "Each time you roll an Ominous Plotting result for this Rival Lord on the Rival Activity table, treat that result as Districts Raided instead.",
-      "target": null
+      "target": "Cada vez que obtienes un resultado de Ominous Plotting para este Rival Lord en la tabla de Rival Activity, trata ese resultado como Districts Raided en su lugar."
     },
     {
       "id": "571d7deb56e560e2",
@@ -2264,7 +2264,7 @@
         ]
       },
       "source": "Generate one additional starting territory for this Rival Lord.",
-      "target": null
+      "target": "Genera un territorio inicial adicional para este Rival Lord."
     },
     {
       "id": "d1b547b478dabba0",
@@ -2282,7 +2282,7 @@
         ]
       },
       "source": "At the end of the battle, if your **^^Ascendant Lord^^** fails an Out of Action test, roll one additional time on the Rival Activity table for this Rival Lord.",
-      "target": null
+      "target": "Al final de la batalla, si tu **^^Ascendant Lord^^** falla un test de Out of Action, tira una vez más en la tabla de Rival Activity para este Rival Lord."
     },
     {
       "id": "c8737fd8906fc5e6",
@@ -2299,7 +2299,7 @@
         ]
       },
       "source": "Each time you roll an Ominous Plotting result for this Rival Lord on the Rival Activity table, treat that result as Assassination Attempt instead.",
-      "target": null
+      "target": "Cada vez que obtienes un resultado de Ominous Plotting para este Rival Lord en la tabla de Rival Activity, trata ese resultado como Assassination Attempt en su lugar."
     },
     {
       "id": "361658f3507bb8c7",
@@ -2316,7 +2316,7 @@
         ]
       },
       "source": "Each time you roll an Ominous Plotting result for this Rival Lord on the Rival Activity table, treat that result as Under New Management instead.",
-      "target": null
+      "target": "Cada vez que obtienes un resultado de Ominous Plotting para este Rival Lord en la tabla de Rival Activity, trata ese resultado como Under New Management en su lugar."
     },
     {
       "id": "6c686494021fbb14",
@@ -2333,7 +2333,7 @@
         ]
       },
       "source": "**^^Haemonculus^^** model only.\n- The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.\n- You can re-roll Out of Action tests taken for the bearer, but you cannot target the bearer's unit with the Postmortality Stratagem.",
-      "target": null
+      "target": "Solo miniatura **^^Haemonculus^^**.\n- La primera vez que el portador es destruido, tira un D6 al final de la fase. Con un 2+, vuelve a desplegar al portador en el campo de batalla, lo más cerca posible del lugar donde fue destruido y fuera del alcance de combate de cualquier unidad enemiga, con todas sus heridas restantes.\n- Puedes repetir los tests de Out of Action realizados para el portador, pero no puedes seleccionar la unidad del portador con el Stratagem Postmortality."
     },
     {
       "id": "0f318be41b0676cb",
@@ -2349,7 +2349,7 @@
         ]
       },
       "source": "**^^Archon^^** model only. The bearer has a Save characteristic of 3+ and each time a melee attack targets the bearer's unit, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Archon^^**. El portador tiene una característica de Salvación de 3+ y, cada vez que un ataque de cuerpo a cuerpo toma como objetivo a la unidad del portador, resta 1 a la tirada para impactar."
     },
     {
       "id": "96839966eeb18dec",
@@ -2367,7 +2367,7 @@
         ]
       },
       "source": "**^^Succubus^^** model only. The bearer's melee weapons have the **[TWIN-LINKED]** ability and add 1 to the Damage characteristic of those weapons.",
-      "target": null
+      "target": "Solo miniatura **^^Succubus^^**. Las armas de cuerpo a cuerpo del portador tienen la habilidad **[TWIN-LINKED]**, y suma 1 a la característica de Daño de esas armas."
     },
     {
       "id": "5229d3bb57935f3b",
@@ -2384,7 +2384,7 @@
         ]
       },
       "source": "- The bearer has a 4+ invulnerable save. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.\n- Once per battle, in your opponent's Shooting phase or the Fight phase, just after an enemy unit has shot or fought, if the bearer's unit was the target of one or more of those attacks, the bearer can use this Crusade Relic. If it does, remove the bearer's unit from the battlefield and set it back up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units.\n\n**Designer's Note:** *If an **^^Archon^^** has this Crusade Relic, it will have a 4+ invulnerable save after the first time you fail an invulnerable saving throw for it.*",
-      "target": null
+      "target": "- El portador tiene una salvación invulnerable de 4+. Mientras el portador lidere una unidad, las miniaturas de esa unidad tienen una salvación invulnerable de 5+.\n- Una vez por batalla, en la fase de Disparo de tu oponente o en la fase de Combate, justo después de que una unidad enemiga haya disparado o combatido, si la unidad del portador fue objetivo de uno o más de esos ataques, el portador puede usar esta Crusade Relic. Si lo hace, retira la unidad del portador del campo de batalla y vuelve a desplegarla en cualquier lugar del campo de batalla que esté a más de 6\" en horizontal de todas las unidades enemigas.\n\n**Nota del diseñador:** *Si un **^^Archon^^** tiene esta Crusade Relic, tendrá una salvación invulnerable de 4+ después de la primera vez que falles una tirada de salvación invulnerable con él.*"
     },
     {
       "id": "76a867f5be7d5581",
@@ -2399,7 +2399,7 @@
         "names": []
       },
       "source": "Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of the bearer.",
-      "target": null
+      "target": "Las unidades enemigas que se despliegan en el campo de batalla desde Reservas no pueden desplegarse a 12\" o menos del portador."
     },
     {
       "id": "73346b6ee20b3981",
@@ -2416,7 +2416,7 @@
         ]
       },
       "source": "Models in the bearer's unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen la habilidad Feel No Pain 5+ contra heridas mortales y ataques psíquicos."
     },
     {
       "id": "251975f8f98ae731",
@@ -2435,7 +2435,7 @@
         ]
       },
       "source": "Assault weapons equipped by models in this unit have the **[RAPID FIRE 1]** ability. All other ranged weapons equipped by models in this unit have the **[ASSAULT]** ability.",
-      "target": null
+      "target": "Las armas Assault equipadas por las miniaturas de esta unidad tienen la habilidad **[RAPID FIRE 1]**. Todas las demás armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[ASSAULT]**."
     },
     {
       "id": "edfb99285bc668ca",
@@ -2453,7 +2453,7 @@
         ]
       },
       "source": "**^^Kabalite Warriors^^** or **^^Hand of the Archon^^** unit only. Improve the Leadership characteristic of models in this unit by 1 and improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.",
-      "target": null
+      "target": "Solo unidad **^^Kabalite Warriors^^** o **^^Hand of the Archon^^**. Mejora en 1 la característica de Leadership de las miniaturas de esta unidad y mejora en 1 la característica de Habilidad de Proyectiles de las armas a distancia equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "3641d54fc498ee36",
@@ -2469,7 +2469,7 @@
         ]
       },
       "source": "**^^Wychs^^** unit only. Improve the Leadership characteristic of models in this unit by 1 and improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.",
-      "target": null
+      "target": "Solo unidad **^^Wychs^^**. Mejora en 1 la característica de Leadership de las miniaturas de esta unidad y mejora en 1 la característica de Habilidad de Armas de las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "9726aae584e6a36d",
@@ -2485,7 +2485,7 @@
         ]
       },
       "source": "**^^Wracks^^** unit only. Improve the Leadership and Save characteristics of models in this unit by 1.",
-      "target": null
+      "target": "Solo unidad **^^Wracks^^**. Mejora en 1 las características de Leadership y de Salvación de las miniaturas de esta unidad."
     },
     {
       "id": "b16b8a729c1898a1",
@@ -2499,7 +2499,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this unit, each time that enemy unit fails a Battle-shock test, it suffers D3 mortal wounds (a unit cannot suffer more than 3 mortal wounds per turn as a result of this Battle Trait).",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta unidad, cada vez que esa unidad enemiga falle un test de Battle-shock, sufre D3 heridas mortales (una unidad no puede sufrir más de 3 heridas mortales por turno como consecuencia de este Battle Trait)."
     },
     {
       "id": "208c95968b013aed",
@@ -2515,7 +2515,7 @@
         "names": []
       },
       "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, ranged weapons equipped by models in this unit have the **[HAZARDOUS]** ability and each time an attack is made with such a weapon, add 1 to the Damage characteristic of that attack.",
-      "target": null
+      "target": "En tu fase de Disparo, cuando seleccionas esta unidad para disparar, puedes gastar 1 ficha de Pain para Empower a esta unidad. Mientras esté Empowered, las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[HAZARDOUS]** y, cada vez que se realiza un ataque con un arma de ese tipo, suma 1 a la característica de Daño de ese ataque."
     },
     {
       "id": "ae722b277a6837d3",
@@ -2530,7 +2530,7 @@
         "names": []
       },
       "source": "Each time an attack with an unmodified Damage characteristic of 1 is allocated to a model in this unit, add 1 to any armour saving throw made against that attack.",
-      "target": null
+      "target": "Cada vez que un ataque con una característica de Daño sin modificar de 1 se asigna a una miniatura de esta unidad, suma 1 a cualquier tirada de salvación por blindaje realizada contra ese ataque."
     },
     {
       "id": "8a71a292107d5f61",
@@ -2544,7 +2544,7 @@
         "names": []
       },
       "source": "Once per battle, after you spend 1 Pain token to Empower this unit, you can this Battle Trait. If you do, you gain 1 Pain token.",
-      "target": null
+      "target": "Una vez por batalla, después de gastar 1 ficha de Pain para Empower a esta unidad, puedes usar este Battle Trait. Si lo haces, ganas 1 ficha de Pain."
     },
     {
       "id": "e0d394024e4a51b1",
@@ -2560,7 +2560,7 @@
         "names": []
       },
       "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, ranged weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "En tu fase de Disparo, cuando seleccionas esta unidad para disparar, puedes gastar 1 ficha de Pain para Empower a esta unidad. Mientras esté Empowered, las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "742ed7a23866527b",
@@ -2590,7 +2590,7 @@
         "names": []
       },
       "source": "Add 1\" to the Move characteristic of models in this unit. Add 1 to the Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Suma 1\" a la característica de Movimiento de las miniaturas de esta unidad. Suma 1 a las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "5aed3dcb2ddd9976",
@@ -2604,7 +2604,7 @@
         "names": []
       },
       "source": "In your Shooting phase or the Fight phase, when you select this unit to shoot or fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll.",
-      "target": null
+      "target": "En tu fase de Disparo o en la fase de Combate, cuando seleccionas esta unidad para disparar o para combatir, puedes gastar 1 ficha de Pain para Empower a esta unidad. Mientras esté Empowered, cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad enemiga que está por debajo de sus efectivos iniciales, suma 1 a la tirada para impactar."
     },
     {
       "id": "05b9454ad25bea84",
@@ -2618,7 +2618,7 @@
         "names": []
       },
       "source": "After both players have deployed their armies, you can redeploy this unit. When doing so, you can set this unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Después de que ambos jugadores hayan desplegado sus ejércitos, puedes volver a desplegar esta unidad. Al hacerlo, si lo deseas puedes desplegar esta unidad en reservas estratégicas, sin importar cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "4db11a90db0456d5",
@@ -2634,7 +2634,7 @@
         ]
       },
       "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
-      "target": null
+      "target": "Cada vez que esta unidad termina un movimiento de carga, selecciona una unidad enemiga que esté dentro de su alcance de combate y, a continuación, tira un D6 por cada miniatura de esta unidad que esté dentro del alcance de combate de esa unidad enemiga: por cada 4+, esa unidad enemiga sufre 1 herida mortal (hasta un máximo de 6 heridas mortales)."
     },
     {
       "id": "e03f11ec25fef2b8",
@@ -2650,7 +2650,7 @@
         "names": []
       },
       "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, ranged weapons equipped by models in this unit have the **[IGNORES COVER]** ability.",
-      "target": null
+      "target": "En tu fase de Disparo, cuando seleccionas esta unidad para disparar, puedes gastar 1 ficha de Pain para Empower a esta unidad. Mientras esté Empowered, las armas a distancia equipadas por las miniaturas de esta unidad tienen la habilidad **[IGNORES COVER]**."
     },
     {
       "id": "b0fc43fd99385c7b",
@@ -2664,7 +2664,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\".",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad hace un movimiento de aproximación o de consolidación, puede moverse hasta 6\" en lugar de hasta 3\"."
     },
     {
       "id": "1947f08e4a4b6320",
@@ -2682,7 +2682,7 @@
         ]
       },
       "source": "In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a melee attack that targets an **^^Infantry^^** unit, that attack has the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "En la fase de Combate, cuando seleccionas esta unidad para combatir, puedes gastar 1 ficha de Pain para Empower a esta unidad. Mientras esté Empowered, cada vez que una miniatura de esta unidad realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad **^^Infantry^^**, ese ataque tiene la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "d0ba3fe6e3b86006",
@@ -2699,7 +2699,7 @@
         ]
       },
       "source": "(^^**ARCHTORMENTOR**^^ only): Change this model’s Move characteristic to 16\", its Toughness characteristic to 4, and its Wounds characteristic to 5. Add the **^^Fly^^** and **^^Mounted^^** keywords, and replace the list of units this model can be attached to: ^^**REAVERS**^^.",
-      "target": null
+      "target": "(Solo ^^**ARCHTORMENTOR**^^): Cambia la característica de Movimiento de esta miniatura a 16\", su característica de Resistencia a 4 y su característica de Heridas a 5. Añade las keywords **^^Fly^^** y **^^Mounted^^**, y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: ^^**REAVERS**^^."
     },
     {
       "id": "c20f71207a01888d",
@@ -2715,7 +2715,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Reavers",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Reavers"
     },
     {
       "id": "0350c9b999c11353",
@@ -2732,7 +2732,7 @@
         ]
       },
       "source": "(^^**ARCHTORMENTOR**^^ only): Change this model’s Move characteristic to 7\", and its Leadership characteristic to 6+. Remove the **^^Wych Cult^^** keyword, add the **^^Kabal^^** keyword, and replace the list of units this model can be attached to: ^^**HAND OF THE ARCHON, INCUBI, KABALITE WARRIORS**^^.",
-      "target": null
+      "target": "(Solo ^^**ARCHTORMENTOR**^^): Cambia la característica de Movimiento de esta miniatura a 7\" y su característica de Leadership a 6+. Elimina la keyword **^^Wych Cult^^**, añade la keyword **^^Kabal^^** y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: ^^**HAND OF THE ARCHON, INCUBI, KABALITE WARRIORS**^^."
     },
     {
       "id": "bb151eb422b45baf",
@@ -2750,7 +2750,7 @@
         ]
       },
       "source": "Change this model’s Move characteristic to 14\", add the **^^Fly^^** and **^^Jump Pack^^** keywords, and it gains the Deep Strike ability. Replace the list of units this model can be attached to: ^^**SCOURGES WITH HEAVY WEAPONS, SCOURGES WITH SHARDCARBINES**^^.",
-      "target": null
+      "target": "Cambia la característica de Movimiento de esta miniatura a 14\", añade las keywords **^^Fly^^** y **^^Jump Pack^^**, y gana la habilidad Deep Strike. Sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: ^^**SCOURGES WITH HEAVY WEAPONS, SCOURGES WITH SHARDCARBINES**^^."
     },
     {
       "id": "7fee0d366f0cd517",
@@ -2769,7 +2769,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Scourges with Heavy Weapons\n■ Scourges with Shardcarbines",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Scourges with Heavy Weapons\n■ Scourges with Shardcarbines"
     },
     {
       "id": "8a42e5e7fff7245b",
@@ -2787,7 +2787,7 @@
         ]
       },
       "source": "(^^**ARCHTORMENTOR**^^ only): Change this model’s Move characteristic to 14\", its Toughness characteristic to 4, and its Wounds characteristic to 5. Add the **^^Fly^^** and **^^Mounted^^** keywords, it gains the Deep Strike ability, and replace the list of units this model can be attached to: ^^**HELLIONS**^^.",
-      "target": null
+      "target": "(Solo ^^**ARCHTORMENTOR**^^): Cambia la característica de Movimiento de esta miniatura a 14\", su característica de Resistencia a 4 y su característica de Heridas a 5. Añade las keywords **^^Fly^^** y **^^Mounted^^**, gana la habilidad Deep Strike y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por: ^^**HELLIONS**^^."
     },
     {
       "id": "d4bd82b9ad1e60c5",
@@ -2803,7 +2803,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Hellions",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Hellions"
     },
     {
       "id": "145d93bf04c65794",
@@ -2817,7 +2817,7 @@
         "names": []
       },
       "source": "This unit is always Empowered — you do not need to spend any Pain tokens to activate this unit’s Pain abilities.",
-      "target": null
+      "target": "Esta unidad siempre está Empowered: no necesitas gastar fichas de Pain para activar las habilidades Pain de esta unidad."
     },
     {
       "id": "b17b4663d47268bc",
@@ -2831,7 +2831,7 @@
         "names": []
       },
       "source": "Each time this unit disembarks from a ^^**TRANSPORT**^^, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.",
-      "target": null
+      "target": "Cada vez que esta unidad desembarca de un ^^**TRANSPORT**^^, hasta el final del turno las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a esta unidad."
     },
     {
       "id": "b89c43f7ebfe9832",
@@ -2846,7 +2846,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent’s Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, empeora en 1 la característica de Leadership de las miniaturas de esa unidad. Además, en el paso de Battle-shock de la fase de Mando de tu oponente, si una de esas unidades enemigas está por debajo de sus efectivos iniciales, debe hacer un test de Battle-shock."
     },
     {
       "id": "798cde16237fccca",
@@ -2860,7 +2860,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\".",
-      "target": null
+      "target": "Mientras esta miniatura lidere una unidad, cada vez que una miniatura de esa unidad hace un movimiento de aproximación o de consolidación, puede moverse hasta 6\" en lugar de hasta 3\"."
     },
     {
       "id": "b11b31a275f04a48",
@@ -2874,7 +2874,7 @@
         "names": []
       },
       "source": "Each time an enemy unit is destroyed by this model’s unit, gain 1 Pain Token.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura destruye una unidad enemiga, ganas 1 ficha de Pain."
     },
     {
       "id": "7709361faee40a7e",
@@ -2890,7 +2890,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the ^^**[SUSTAINED HITS 1]**^^ ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidere una unidad, las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad tienen la habilidad ^^**[SUSTAINED HITS 1]**^^."
     },
     {
       "id": "e9ecb83c9b4a7dd6",
@@ -2904,7 +2904,7 @@
         "names": []
       },
       "source": "Each time this model makes an attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that target is Below Half-strength, you can re-roll the Wound roll as well.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque que toma como objetivo a una unidad que está por debajo de sus efectivos iniciales, puedes repetir la tirada para impactar. Si ese objetivo está Below Half-strength, también puedes repetir la tirada para herir."
     },
     {
       "id": "5f57417f4ed7c8f7",
@@ -2922,7 +2922,7 @@
         ]
       },
       "source": "(^^**INFANTRY**^^ only):\nThis model gains the Infiltrators and Stealth abilities, and replace the list of units this model can be attached to:\n• Rangers",
-      "target": null
+      "target": "(Solo ^^**INFANTRY**^^):\nEsta miniatura gana las habilidades Infiltrators y Stealth, y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por:\n• Rangers"
     },
     {
       "id": "cf26edf80ce2a283",
@@ -2938,7 +2938,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Rangers",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Rangers"
     },
     {
       "id": "7b7fb56fa3657847",
@@ -2957,7 +2957,7 @@
         ]
       },
       "source": "(^^**INFANTRY**^^ only):\nThis model gains the Scouts 7\" ability, adds the ^^**ANHRATHE**^^ keyword, and replace the list of units this model can be attached to:\n• Corsair Voidreavers\n• Corsair Voidscarred",
-      "target": null
+      "target": "(Solo ^^**INFANTRY**^^):\nEsta miniatura gana la habilidad Scouts 7\", añade la keyword ^^**ANHRATHE**^^, y sustituye la lista de unidades a las que esta miniatura puede adjuntarse por:\n• Corsair Voidreavers\n• Corsair Voidscarred"
     },
     {
       "id": "5a06d465d9d95da4",
@@ -2975,7 +2975,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Corsair Voidreavers\n■ Corsair Voidscarred",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Corsair Voidreavers\n■ Corsair Voidscarred"
     },
     {
       "id": "06020883d1c7ca2d",
@@ -2995,7 +2995,7 @@
         ]
       },
       "source": "(^^**INFANTRY**^^ only):\nChange this model’s Save characteristic to 3+. Add the following units to the list of units this model can be attached to:\n• Dark Reapers\n• Dire Avengers\n• Fire Dragons\n• Howling Banshees\n• Striking Scorpions",
-      "target": null
+      "target": "(Solo ^^**INFANTRY**^^):\nCambia la característica de Salvación de esta miniatura a 3+. Añade las siguientes unidades a la lista de unidades a las que esta miniatura puede adjuntarse:\n• Dark Reapers\n• Dire Avengers\n• Fire Dragons\n• Howling Banshees\n• Striking Scorpions"
     },
     {
       "id": "cb8d0caeddfca19c",
@@ -3019,7 +3019,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Guardian Defenders\n■ Storm Guardian\n■ Warlock Conclave\n■ Dark Reapers\n■ Dire Avengers\n■ Fire Dragons\n■ Howling Banshees\n■ Striking Scorpions",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Guardian Defenders\n■ Storm Guardian\n■ Warlock Conclave\n■ Dark Reapers\n■ Dire Avengers\n■ Fire Dragons\n■ Howling Banshees\n■ Striking Scorpions"
     },
     {
       "id": "c47bdfbc950c5ea8",
@@ -3033,7 +3033,7 @@
         "names": []
       },
       "source": "The model gains the ^^**PSYKER**^^ keyword.",
-      "target": null
+      "target": "La miniatura gana la keyword ^^**PSYKER**^^."
     },
     {
       "id": "d323f2aa707e2300",
@@ -3049,7 +3049,7 @@
         ]
       },
       "source": "(^^**MOUNTED**^^ only):\nChange this model’s Save characteristic to 3+. Add the following unit to the list of units this model can be attached to:\n• Shining Spears",
-      "target": null
+      "target": "(Solo ^^**MOUNTED**^^):\nCambia la característica de Salvación de esta miniatura a 3+. Añade la siguiente unidad a la lista de unidades a las que esta miniatura puede adjuntarse:\n• Shining Spears"
     },
     {
       "id": "a3a9504bb44d7122",
@@ -3067,7 +3067,7 @@
         ]
       },
       "source": "(^^**INFANTRY**^^ only):\nChange this model’s Move characteristic to 14\", its Save characteristic to 3+, it gains the Deep Strike ability, and add the ^^**FLY**^^ and ^^**JUMP PACK**^^ keywords.\nReplace the list of units this model can be attached to:\n• Swooping Hawks\n• Warp Spiders",
-      "target": null
+      "target": "(Solo ^^**INFANTRY**^^):\nCambia la característica de Movimiento de esta miniatura a 14\" y su característica de Salvación a 3+, gana la habilidad Deep Strike y añade las keywords ^^**FLY**^^ y ^^**JUMP PACK**^^.\nSustituye la lista de unidades a las que esta miniatura puede adjuntarse por:\n• Swooping Hawks\n• Warp Spiders"
     },
     {
       "id": "530315167f76f13a",
@@ -3084,7 +3084,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n■ Swooping Hawks\n■ Warp Spiders",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n■ Swooping Hawks\n■ Warp Spiders"
     },
     {
       "id": "d25d8c5bc772ca1d",
@@ -3098,7 +3098,7 @@
         "names": []
       },
       "source": "(^^**PSYKER**^^ only):\nEach time a model in this unit makes an attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "(Solo ^^**PSYKER**^^):\nCada vez que una miniatura de esta unidad realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "6f06fbf4216d71f9",
@@ -3114,7 +3114,7 @@
         ]
       },
       "source": "(^^**INFANTRY**^^ and ^^**MOUNTED **^^ only):\nThis model has the Lone Operative ability.",
-      "target": null
+      "target": "(Solo ^^**INFANTRY**^^ y ^^**MOUNTED **^^):\nEsta miniatura tiene la habilidad Lone Operative."
     },
     {
       "id": "60ab0a035eae85d1",
@@ -3130,7 +3130,7 @@
         ]
       },
       "source": "You can re-roll Advance rolls made for this model’s unit, and you can re-roll any rolls made for that unit while it is performing an Agile Manoeuvre.",
-      "target": null
+      "target": "Puedes repetir las tiradas de avance realizadas para la unidad de esta miniatura, y puedes repetir cualquier tirada realizada para esa unidad mientras está realizando una Agile Manoeuvre."
     },
     {
       "id": "ecc16e281737f18c",
@@ -3146,7 +3146,7 @@
         ]
       },
       "source": "(^^**PSYKER**^^ only):\nEach time a ranged attack targets this unit, models in that unit have the Benefit of Cover.",
-      "target": null
+      "target": "(Solo ^^**PSYKER**^^):\nCada vez que un ataque a distancia toma como objetivo a esta unidad, las miniaturas de esa unidad tienen el beneficio de cobertura."
     },
     {
       "id": "dfd41151d6e07429",
@@ -3160,7 +3160,7 @@
         "names": []
       },
       "source": "**RANGERS** unit only. This unit’s ranged attacks do not prevent this unit from being **hidden**.",
-      "target": null
+      "target": "Solo unidad **RANGERS**. Los ataques a distancia de esta unidad no impiden que esta unidad esté **oculta**."
     },
     {
       "id": "12b663616dcb04b3",
@@ -3174,7 +3174,7 @@
         "names": []
       },
       "source": "**RANGERS/SHROUD RUNNERS** unit only. This unit’s ranged attacks that target a **CHARACTER** unit have +1 **AP**.",
-      "target": null
+      "target": "Solo unidad **RANGERS/SHROUD RUNNERS**. Los ataques a distancia de esta unidad que toman como objetivo a una unidad **CHARACTER** tienen +1 de **AP**."
     },
     {
       "id": "fabe212ae6d6ed38",
@@ -3190,7 +3190,7 @@
         ]
       },
       "source": "**TROUPE** unit only. This unit has **Fights First**.",
-      "target": null
+      "target": "Solo unidad **TROUPE**. Esta unidad tiene **Fights First**."
     },
     {
       "id": "98e950bff8b33ebf",
@@ -3206,7 +3206,7 @@
         ]
       },
       "source": "**CRONOS/TALOS** unit only. This unit has **5+ InSv**.",
-      "target": null
+      "target": "Solo unidad **CRONOS/TALOS**. Esta unidad tiene **5+ InSv**."
     },
     {
       "id": "089ffb0690908411",
@@ -3236,7 +3236,7 @@
         "names": []
       },
       "source": "While this model has 1-8 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Mientras a esta miniatura le queden entre 1 y 8 heridas, cada vez que esta miniatura realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "866d7f7d2d140544",
@@ -3250,7 +3250,7 @@
         "names": []
       },
       "source": "Each time this model makes a Normal or Advance move, it can move over friendly MONSTER and VEHICLE models and terrain features that are 4\" or less in height as if they were not there.",
-      "target": null
+      "target": "Cada vez que esta miniatura hace un movimiento normal o de avance, puede moverse sobre miniaturas MONSTER y VEHICLE amigas y sobre elementos de escenografía de 4\" o menos de altura como si no estuvieran allí."
     },
     {
       "id": "87de0a1f18f6309c",
@@ -3267,7 +3267,7 @@
         ]
       },
       "source": "While a friendly ^^Slaanesh Legiones Daemonica^^ unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
-      "target": null
+      "target": "Mientras una unidad ^^Slaanesh Legiones Daemonica^^ amiga esté a 6\" o menos de esta miniatura, esa unidad está dentro de la Shadow of Chaos de tu ejército."
     },
     {
       "id": "db4a101c2697bdca",
@@ -3284,7 +3284,7 @@
         ]
       },
       "source": "While a friendly NURGLE LEGIONES DAEMONICA unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
-      "target": null
+      "target": "Mientras una unidad NURGLE LEGIONES DAEMONICA amiga esté a 6\" o menos de esta miniatura, esa unidad está dentro de la Shadow of Chaos de tu ejército."
     },
     {
       "id": "0d3d3f1ffef0af9a",
@@ -3301,7 +3301,7 @@
         ]
       },
       "source": "While a friendly TZEENTCH LEGIONES DAEMONICA unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
-      "target": null
+      "target": "Mientras una unidad TZEENTCH LEGIONES DAEMONICA amiga esté a 6\" o menos de esta miniatura, esa unidad está dentro de la Shadow of Chaos de tu ejército."
     },
     {
       "id": "c813cda3436b976a",
@@ -3318,7 +3318,7 @@
         ]
       },
       "source": "While a friendly ^^Khorne Legiones Daemonica^^ unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
-      "target": null
+      "target": "Mientras una unidad ^^Khorne Legiones Daemonica^^ amiga esté a 6\" o menos de esta miniatura, esa unidad está dentro de la Shadow of Chaos de tu ejército."
     },
     {
       "id": "2b8430520a8574c1",
@@ -3335,7 +3335,7 @@
         ]
       },
       "source": "Each time this unit ends a Charge move, you can declare it will perform a Seductive Gambit. If you do, until the end of the turn, this unit does not have the Fights First ability, but instead, each time a model in this unit makes an attack, you can re‑roll the Hit roll and you can re‑roll a Wound roll of 1.",
-      "target": null
+      "target": "Cada vez que esta unidad termina un movimiento de carga, puedes declarar que va a realizar un Seductive Gambit. Si lo haces, hasta el final del turno esta unidad no tiene la habilidad Fights First pero, en su lugar, cada vez que una miniatura de esta unidad realiza un ataque, puedes repetir la tirada para impactar y puedes repetir una tirada para herir de 1."
     },
     {
       "id": "2eafecf9343dbfa6",
@@ -3350,7 +3350,7 @@
         "names": []
       },
       "source": "This unit is eligible to shoot and declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Esta unidad es elegible para disparar y para declarar una carga en un turno en el que haya avanzado."
     },
     {
       "id": "5453432636b81e85",
@@ -3366,7 +3366,7 @@
         ]
       },
       "source": " This unit has **Stealth**. Each time a melee attack targets this unit, subtract 1 from the Hit roll.",
-      "target": null
+      "target": " Esta unidad tiene **Stealth**. Cada vez que un ataque de cuerpo a cuerpo toma como objetivo a esta unidad, resta 1 a la tirada para impactar."
     },
     {
       "id": "cfca21e7a41d68b7",
@@ -3380,7 +3380,7 @@
         "names": []
       },
       "source": "Each time an attack targets this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Cada vez que un ataque toma como objetivo a esta unidad, si la característica de Fuerza de ese ataque es mayor que la característica de Resistencia de esta unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "254f1443903cd497",
@@ -3395,7 +3395,7 @@
         "names": []
       },
       "source": "Enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.",
-      "target": null
+      "target": "Las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a esta unidad."
     },
     {
       "id": "bd7c48f5abf0ee34",
@@ -3414,7 +3414,7 @@
         ]
       },
       "source": "- This unit has the Dark Pacts army rule, and can use it as described in _Codex: Chaos Space Marines_, even though your Army Faction is not Heretic Astartes. If this unit is Be’lakor, it automatically passes the Leadership test required for Dark Pacts. \n- Shadow Legion Heretic Astartes models in this unit have the Deep Strike ability.",
-      "target": null
+      "target": "- Esta unidad tiene la regla de ejército Dark Pacts y puede usarla tal y como se describe en _Codex: Chaos Space Marines_, aunque tu Army Faction no sea Heretic Astartes. Si esta unidad es Be’lakor, supera automáticamente el test de Leadership requerido para Dark Pacts. \n- Las miniaturas Shadow Legion Heretic Astartes de esta unidad tienen la habilidad Deep Strike."
     },
     {
       "id": "c329141c2d60db33",
@@ -3430,7 +3430,7 @@
         ]
       },
       "source": "If your Army Faction is LEGIONES DAEMONICA, certain areas of the battlefield are considered to be within your army’s Shadow of Chaos, as follows: \n■ Your deployment zone is always within your army’s Shadow of Chaos.\n■ At the start of any phase, if you control at least half of the objective markers within No Man’s Land, until the end of that phase, No Man’s Land is within your army’s Shadow of Chaos.\n■ At the start of any phase, if you control at least half of the objective markers within your opponent’s deployment zone, until the end of that phase, your opponent’s deployment zone is within your army’s Shadow of Chaos.\n\nDAEMONIC MANIFESTATION\nWhile a friendly LEGIONES DAEMONICA unit is within your army’s Shadow of Chaos, each time that unit makes a battle-shock roll, that unit has +1 to that battle-shock roll and, if that roll is successful, one model in that unit heals D3 wounds (if that unit is a BATTLELINE unit and that roll is successful, up to D3 destroyed models (excluding CHARACTER models) can be returned to that unit instead).\n\nDAEMONIC TERROR\nWhile an enemy unit is within your army’s Shadow of Chaos and/or it is within 6\" of one or more BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE or SKARBRAND units from your army, each time that unit takes a Battle-shock test, subtract 1 from that test and, if that test is failed, that enemy unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Si tu Army Faction es LEGIONES DAEMONICA, ciertas zonas del campo de batalla se consideran dentro de la Shadow of Chaos de tu ejército, del siguiente modo: \n■ Tu zona de despliegue siempre está dentro de la Shadow of Chaos de tu ejército.\n■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivo de Tierra de Nadie, hasta el final de esa fase Tierra de Nadie está dentro de la Shadow of Chaos de tu ejército.\n■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivo de la zona de despliegue de tu oponente, hasta el final de esa fase la zona de despliegue de tu oponente está dentro de la Shadow of Chaos de tu ejército.\n\nDAEMONIC MANIFESTATION\nMientras una unidad LEGIONES DAEMONICA amiga esté dentro de la Shadow of Chaos de tu ejército, cada vez que esa unidad hace una tirada de battle-shock, esa unidad tiene +1 a esa tirada de battle-shock y, si esa tirada tiene éxito, una miniatura de esa unidad recupera D3 heridas (si esa unidad es una unidad BATTLELINE y esa tirada tiene éxito, en su lugar pueden devolverse a esa unidad hasta D3 miniaturas destruidas (excluidas las miniaturas CHARACTER)).\n\nDAEMONIC TERROR\nMientras una unidad enemiga esté dentro de la Shadow of Chaos de tu ejército y/o esté a 6\" o menos de una o más unidades BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE o SKARBRAND de tu ejército, cada vez que esa unidad haga un test de Battle-shock, resta 1 a ese test y, si ese test se falla, esa unidad enemiga sufre D3 heridas mortales."
     },
     {
       "id": "75540bd719893a54",
@@ -3451,7 +3451,7 @@
         ]
       },
       "source": "Each time a LEGIONES DAEMONICA unit from your army is set up on the battlefield using the Deep Strike ability, if it is set up wholly within your army’s Shadow of Chaos, and/or if it is set up wholly within 6\" of one or more friendly BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE or SKARBRAND units with which it shares the KHORNE, TZEENTCH, NURGLE or SLAANESH keyword, it can be set up anywhere that is more than 6\" horizontally away from all enemy models, instead of more than 9\".",
-      "target": null
+      "target": "Cada vez que una unidad LEGIONES DAEMONICA de tu ejército se despliega en el campo de batalla usando la habilidad Deep Strike, si se despliega totalmente dentro de la Shadow of Chaos de tu ejército, y/o si se despliega totalmente a 6\" o menos de una o más unidades BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE o SKARBRAND amigas con las que comparta la keyword KHORNE, TZEENTCH, NURGLE o SLAANESH, puede desplegarse en cualquier lugar que esté a más de 6\" en horizontal de todas las miniaturas enemigas, en lugar de a más de 9\"."
     },
     {
       "id": "559bd3c731228c47",
@@ -3467,7 +3467,7 @@
         ]
       },
       "source": "LEGIONES DAEMONICA SLAANESH units from your army are eligible to declare a charge in a turn in which they Fell Back.",
-      "target": null
+      "target": "Las unidades LEGIONES DAEMONICA SLAANESH de tu ejército son elegibles para declarar una carga en un turno en el que se hayan replegado."
     }
   ]
 }

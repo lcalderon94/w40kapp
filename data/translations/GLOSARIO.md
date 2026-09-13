@@ -17,6 +17,15 @@ como término:
   Battle-shock, Marked for Greatness, Desperate Escape, Leadership, Rapid Ingress, Teleport Homer
 - Siglas de características y recursos: `M`, `T`, `Sv`, `W`, `LD`, `OC`, `A`, `S`, `AP`, `D`, `BS`,
   `WS`, `CP`, `XP`, `D6`, `D3`
+- **Todo el vocabulario de Crusade**, que forma familia y se deja entera en inglés: Starting
+  Strength, Below Half-strength, Out of Action, Battle Honour, Battle Trait, Battle Scar, Crusade
+  Relic, Requisitions, Order of Battle, Chaos Boon, Marked for Greatness, RP, XP
+- Estados y mecánicas de facción con nombre propio: Empowered, Ascendant, Afflicted, Dark Pact,
+  Combat Drugs, Fate dice, Shadow of Chaos, Hunt Tactic, Contagion Range, Army Faction
+
+Ojo a un matiz: `Leader`, `Support` y `Bodyguard` **en mayúscula** nombran la regla («the Leader
+ability») y se quedan en inglés; en minúscula son el rol de la unidad («a leader unit») y se
+traducen: unidad líder, de apoyo, de guardaespaldas.
 
 **Se traduce** todo lo demás, incluida la terminología de reglas escrita como prosa corriente.
 
@@ -68,8 +77,7 @@ como término:
 | Toughness | Resistencia |
 | Save characteristic | característica de Salvación |
 | Ballistic Skill / Weapon Skill | Habilidad de Proyectiles / Habilidad de Armas |
-| Starting Strength | Fuerza Inicial |
-| Below Half-strength | por debajo de media fuerza |
+| Psychic attack | ataque psíquico (minúscula: así lo define la regla Psychic) |
 | Reinforcements | Refuerzos |
 | Faction keyword | palabra clave de Facción |
 | *X* token (Pain, Flux, Battle Focus…) | ficha de *X* — «ficha», nunca «token», y el nombre de la mecánica en inglés |

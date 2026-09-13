@@ -12,7 +12,7 @@ Desde la raíz del repositorio:
 
 ```bash
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=extract
-mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=import,.entregas
+mvn -f pipeline/pom.xml spring-boot:run "-Dspring-boot.run.arguments=import .entregas"
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=check
 mvn -f pipeline/pom.xml spring-boot:run -Dspring-boot.run.arguments=apply
 mvn -f pipeline/pom.xml test

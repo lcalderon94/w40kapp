@@ -15,6 +15,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 /**
  * Revisa la memoria de traducción. Sobre miles de unidades, perder un **[TORRENT]** al traducir no
@@ -28,6 +29,9 @@ public class CheckCommand {
     private static final List<String> EXTRA_GLOSSARY = List.of(
             "Battle-shock", "Battle-shocked", "Marked for Greatness", "Desperate Escape",
             "Rapid Ingress", "Teleport Homer", "Psychic Fortitude");
+
+    /** Una palabra en minúscula delata prosa: un texto que es solo un nombre propio no cambia al traducirse. */
+    private static final Pattern PROSA = Pattern.compile("\\b\\p{Ll}{3,}");
 
     private final BsDataCatalog catalog;
     private final TranslatableScanner scanner;
@@ -58,7 +62,7 @@ public class CheckCommand {
                 if (!missing.isEmpty()) {
                     problems.add("  lote %03d  %s  falta %s".formatted(batch.batch(), unit.id(), missing));
                 }
-                if (unit.target().equals(unit.source()) && unit.source().matches(".*\\p{L}{3}.*")) {
+                if (unit.target().equals(unit.source()) && PROSA.matcher(unit.source()).find()) {
                     problems.add("  lote %03d  %s  sin traducir (target = source)".formatted(batch.batch(), unit.id()));
                 }
 
