@@ -61,10 +61,22 @@ Los **modifiers de coste** se aplican al recalcular: el dataset da 65 puntos a l
 en un modifier que pasen a 130 al superar las diez miniaturas, así que sin evaluarlos una unidad de
 veinte costaría lo mismo que una de diez.
 
-`detachmentsOf` da los detachments de la facción con su regla ya traducida. Cuelgan de la entrada
-de configuración, en un grupo que unas facciones llevan incrustado y otras enlazan, y las hereda
-quien no los declara: por eso los capítulos de Space Marines tienen los cinco del codex. Resuelven
-34 de las 36 facciones; Aeldari y Drukhari los declaran de otra forma que aún no se sigue.
+`detachmentsOf` da los detachments de la facción con su regla ya traducida, y resuelve las 36. Los
+declara la entrada de configuración, en un grupo que unas facciones llevan incrustado y otras
+enlazan, y los hereda quien no los declara: por eso los capítulos de Space Marines tienen los del
+codex común.
+
+Un mismo grupo puede servir a **varias facciones a la vez**, y entonces no todo lo que contiene es
+de todas: los veinticuatro de la librería de Aeldari se reparten entre Aeldari (15) y Drukhari (9),
+y los cincuenta y ocho del codex de Space Marines entre los doce capítulos. Lo que los separa es un
+modifier que esconde cada uno según cuál sea el catálogo principal, así que **hay que evaluarlo**:
+sin hacerlo los Ultramarines ofrecerían el Inner Circle Task Force de los Dark Angels. Son
+condiciones `instanceOf` y `notInstanceOf` sobre `primary-catalogue`, las dos documentadas, y
+ninguna de las 265 opciones de detachment las mete en un grupo, así que cada una decide por sí sola.
+
+El mismo grupo mezcla además los dos **modos de juego**, y los reparte igual pero con ámbito
+`force`: los normales se esconden en Boarding Actions y los quince del modo se esconden fuera de
+él. `detachmentsOf` da los de una partida normal, y con `boardingActions: true` los del modo.
 
 `enhancementsOf` da las mejoras que habilita un detachment, con su texto traducido. Lo que
 identifica a una mejora no es el coste del tipo Enhancements ni el nombre de su grupo —hay
@@ -73,11 +85,15 @@ un detachment**: es una opción con coste en puntos que el dataset esconde salvo
 ese detachment. El gate puede estar en la propia mejora o en cualquier nodo que la contenga, y las
 mejoras pueden vivir en un catálogo enlazado.
 
-Cubre 900 de los 936 detachments, y 662 dan exactamente las cuatro que corresponden en 11ª edición.
+Cubre **546 de los 547** detachments jugables; el único que se queda fuera es el Contagion Engines
+de la Death Guard. El dataset los gradúa por Detachment Points, y sobre los de tamaño completo —los
+de 2 y 3 puntos— la resolución es exacta: **377 de 378 dan las cuatro mejoras** que corresponden en
+11ª edición, y la excepción es el Lords of Dread de los Chaos Knights, que devuelve seis. Los de 1
+punto son los pequeños y llevan una o dos por diseño, no por quedarse corto el criterio.
+
 El criterio se queda corto antes que inventarse nada: **si devuelve una mejora, es de ese
-detachment** —ninguna aparece en dos, y hay un test que lo comprueba—. Los 36 restantes no atan
-ninguna mejora a su detachment en el dataset; `enhancementCoverage` dice de cuáles fiarse antes de
-enseñar una lista vacía.
+detachment** —ninguna aparece en dos, y hay un test que lo comprueba—. `enhancementCoverage` dice
+de cuáles fiarse antes de enseñar una lista vacía.
 
 `validate` cubre el límite de puntos, que se haya elegido detachment, los mínimos y máximos de cada opción, los de su grupo —«entre
 10 y 20 Poxwalkers», que se comprueban sumando los hermanos que salen del mismo grupo— y los que
@@ -117,9 +133,10 @@ Lo que falta para la paridad con WarOrgan:
 - **`localConditionGroups`**, lo de arriba: bloqueado hasta que BSData publique el esquema, o hasta
   poder contrastar la semántica contra una fuente de puntos fiable.
 - **Modifiers sobre restricciones**, que cambian los límites en vez del coste.
-- **Las mejoras de 36 detachments** que el dataset no ata a ninguno; habría que mirarlos uno a uno
-  o esperar a que upstream los complete.
-- **Los detachments de Aeldari y Drukhari**, que no cuelgan de la entrada de configuración.
+- **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da
+  exactamente cuatro.
+- **Boarding Actions**: los detachments ya se separan, pero el resto del modo (fuerzas, límites,
+  unidades propias) no está.
 - **Límites por rol** del destacamento, que viven en las `categoryEntries` de `forceEntries`.
 
 ## Entorno

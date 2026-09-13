@@ -104,17 +104,26 @@ class Dataset {
 
   /// Los detachments de una facción, con su regla ya traducida.
   ///
-  /// Cuelgan de la entrada de configuración, en un grupo llamado `Detachment` que unas facciones
-  /// llevan incrustado y otras enlazan a un grupo compartido.
-  List<Detachment> detachmentsOf(Faction faction) {
+  /// Cuelgan de la entrada de configuración, en un grupo que unas facciones llevan incrustado y
+  /// otras enlazan a un grupo compartido, y que el dataset llama `Detachment` o `Detachments`.
+  ///
+  /// Un mismo grupo puede servir a varias facciones y a varios modos de juego, y entonces no todo
+  /// lo que contiene es de todos: se descarta lo que el propio dataset esconde. Ver
+  /// [_hiddenForCatalogue] y [_isBoardingActions].
+  ///
+  /// Con [boardingActions] se piden los de ese modo en vez de los de una partida normal.
+  List<Detachment> detachmentsOf(Faction faction, {bool boardingActions = false}) {
+    final catalogueId = faction.node['id'] as String? ?? '';
     final detachments = <Detachment>[];
     final seen = <String>{};
     for (final link in _rootLinks(faction.node)) {
       final entry = node(link['targetId'] as String? ?? '');
       if (entry == null || !_isConfiguration(entry)) continue;
       for (final group in _groupsOf(entry)) {
-        if (group['name'] != 'Detachment') continue;
+        if (!_isDetachmentGroup(group)) continue;
         for (final option in _childEntries(group)) {
+          if (_hiddenForCatalogue(option, catalogueId)) continue;
+          if (_isBoardingActions(option) != boardingActions) continue;
           if (!seen.add(option['id'] as String? ?? '')) continue;
           final rule = (option['rules'] as List? ?? const []).isEmpty
               ? null
@@ -224,6 +233,61 @@ class Dataset {
       if (target != null) catalogues.addAll(_linkedCatalogues(target, visited));
     }
     return catalogues;
+  }
+
+  static bool _isDetachmentGroup(Map<String, dynamic> group) {
+    final name = group['name'];
+    return name == 'Detachment' || name == 'Detachments';
+  }
+
+  /// La categoría que marca una fuerza de Boarding Actions, el modo de juego a bordo de una nave.
+  ///
+  /// El identificador está fijo aquí porque lo está en el dataset, igual que el del coste en
+  /// puntos. Hay un test que comprueba que sigue nombrando esa categoría, para que un cambio de
+  /// upstream rompa en vez de dejar de filtrar sin avisar.
+  static const boardingActionsCategoryId = '1d6e-2579-8e7f-1ed4';
+
+  /// Si este detachment es de Boarding Actions y no de una partida normal.
+  ///
+  /// El dataset mete los dos en el mismo grupo y los reparte con un modifier de ámbito `force`:
+  /// los normales se esconden **en** Boarding Actions (`instanceOf`) y los del modo se esconden
+  /// **fuera** de él (`notInstanceOf`). Son los catorce que no llevan mejoras, así que sin separar
+  /// unos de otros una lista normal ofrece detachments que en ella no se pueden jugar.
+  static bool _isBoardingActions(Map<String, dynamic> entry) {
+    for (final modifier in Modifier.allOf(entry)) {
+      if (modifier.field != 'hidden' || modifier.type != 'set' || modifier.value != true) continue;
+      for (final condition in modifier.conditions) {
+        if (condition.scope != 'force') continue;
+        if (condition.childId != boardingActionsCategoryId) continue;
+        if (condition.type == 'notInstanceOf') return true;
+      }
+    }
+    return false;
+  }
+
+  /// Si el dataset esconde esta opción cuando el catálogo principal es [catalogueId].
+  ///
+  /// Hay grupos de detachments que sirven a varias facciones a la vez: los de Aeldari y Drukhari
+  /// son los mismos veinticuatro de la librería compartida, y los de los doce capítulos de Space
+  /// Marines los cincuenta y ocho del codex común. Lo que reparte unos y otros es un modifier que
+  /// los esconde según cuál sea el catálogo principal, y sin evaluarlo los Ultramarines ofrecerían
+  /// el Inner Circle Task Force de los Dark Angels y los Aeldari saldrían a jugar con detachments
+  /// Drukhari.
+  ///
+  /// Se miran solo las condiciones sueltas del modifier porque son las únicas que hay: ninguna de
+  /// las 265 opciones de detachment del dataset mete estas condiciones en un grupo, así que cada
+  /// una decide por sí sola y no hace falta interpretar ningún `and` ni `or`.
+  static bool _hiddenForCatalogue(Map<String, dynamic> entry, String catalogueId) {
+    for (final modifier in Modifier.allOf(entry)) {
+      if (modifier.field != 'hidden' || modifier.type != 'set' || modifier.value != true) continue;
+      for (final condition in modifier.conditions) {
+        if (condition.scope != 'primary-catalogue') continue;
+        final isThisCatalogue = condition.childId == catalogueId;
+        if (condition.type == 'instanceOf' && isThisCatalogue) return true;
+        if (condition.type == 'notInstanceOf' && !isThisCatalogue) return true;
+      }
+    }
+    return false;
   }
 
   static bool _isConfiguration(Map<String, dynamic> entry) =>

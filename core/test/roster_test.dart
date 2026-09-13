@@ -149,11 +149,40 @@ void main() {
     expect(roster.validate(), isEmpty);
   });
 
-  test('casi todas las facciones resuelven detachments', () {
+  test('las 36 facciones resuelven detachments', () {
     final sinDetachments =
         dataset.factions.where((f) => dataset.detachmentsOf(f).isEmpty).map((f) => f.name);
-    // Aeldari y Drukhari los declaran de una forma que aún no se resuelve.
-    expect(sinDetachments, hasLength(lessThanOrEqualTo(2)));
+    expect(sinDetachments, isEmpty);
+  });
+
+  test('un grupo compartido reparte sus detachments entre las facciones que lo usan', () {
+    // Aeldari y Drukhari sacan los suyos del mismo grupo de veinticuatro de la librería. Lo que
+    // los separa es un modifier que esconde cada uno según el catálogo principal, así que sin
+    // evaluarlo los Aeldari saldrían a jugar con detachments Drukhari.
+    final aeldari = dataset.factionNamed('Xenos - Aeldari');
+    final drukhari = dataset.factionNamed('Xenos - Drukhari');
+    final deAeldari = dataset.detachmentsOf(aeldari).map((d) => d.name).toSet();
+    final deDrukhari = dataset.detachmentsOf(drukhari).map((d) => d.name).toSet();
+
+    expect(deAeldari, contains('Warhost'));
+    expect(deDrukhari, contains('Realspace Raiders'));
+    expect(deAeldari.intersection(deDrukhari), isEmpty);
+    expect(deAeldari.length + deDrukhari.length, 24, reason: 'se reparten el grupo entero');
+  });
+
+  test('cada capítulo de Space Marines se queda con los suyos', () {
+    final scars = dataset.factionNamed('Imperium - Adeptus Astartes - White Scars');
+    final darkAngels = dataset.factionNamed('Imperium - Adeptus Astartes - Dark Angels');
+    final deScars = dataset.detachmentsOf(scars).map((d) => d.name).toSet();
+    final deDarkAngels = dataset.detachmentsOf(darkAngels).map((d) => d.name).toSet();
+
+    expect(deScars, contains('Gladius Task Force'), reason: 'los del codex los tienen los dos');
+    expect(deDarkAngels, contains('Gladius Task Force'));
+
+    expect(deDarkAngels, contains('Inner Circle Task Force'));
+    expect(deScars, isNot(contains('Inner Circle Task Force')));
+    expect(deScars, contains('Spearpoint Task Force'));
+    expect(deDarkAngels, isNot(contains('Spearpoint Task Force')));
   });
 
   test('un detachment resuelve sus mejoras con el texto traducido', () {
@@ -190,7 +219,52 @@ void main() {
       conMejoras += cobertura.withEnhancements;
       total += cobertura.total;
     }
-    // Los 36 que faltan no atan ninguna mejora a su detachment en el dataset.
-    expect(conMejoras / total, greaterThan(0.94));
+    // Solo se queda fuera el Contagion Engines de la Death Guard.
+    expect(total - conMejoras, 1);
+  });
+
+  test('una lista normal no ofrece detachments de Boarding Actions', () {
+    // El dataset mete los dos modos en el mismo grupo. Los quince de Boarding Actions no llevan
+    // mejoras y no se pueden jugar en una partida normal, así que ahí no tienen que salir.
+    expect(dataset.node(Dataset.boardingActionsCategoryId)?['name'], 'Boarding Actions',
+        reason: 'si upstream cambia el identificador, el filtro deja de filtrar en silencio');
+
+    final orkos = dataset.factionNamed('Xenos - Orks');
+    final normales = dataset.detachmentsOf(orkos).map((d) => d.name).toSet();
+    final abordaje = dataset.detachmentsOf(orkos, boardingActions: true).map((d) => d.name).toSet();
+
+    expect(normales, contains('Green Tide'));
+    expect(normales, isNot(contains('Ramship Raiders')));
+    expect(abordaje, contains('Ramship Raiders'));
+    expect(normales.intersection(abordaje), isEmpty);
+
+    final todosAbordaje = dataset.factions
+        .expand((f) => dataset.detachmentsOf(f, boardingActions: true))
+        .length;
+    expect(todosAbordaje, 15);
+  });
+
+  test('los detachments de tamaño completo dan sus cuatro mejoras', () {
+    // El dataset gradúa los detachments por Detachment Points: los de 2 y 3 son los de una
+    // partida normal y llevan cuatro mejoras, y los de 1 son los pequeños, que llevan una o dos.
+    // Sobre los completos la resolución tiene que ser exacta, no aproximada.
+    const detachmentPointsCostTypeId = '82ae-1066-5107-6ae0';
+    var completos = 0, conCuatro = 0;
+    for (final faction in dataset.factions) {
+      for (final detachment in dataset.detachmentsOf(faction)) {
+        final costs = dataset.node(detachment.id)!['costs'] as List? ?? const [];
+        final points = costs
+            .cast<Map<String, dynamic>>()
+            .where((c) => c['typeId'] == detachmentPointsCostTypeId)
+            .map((c) => ((c['value'] as num?) ?? 0).round());
+        if (points.isEmpty || points.first < 2) continue;
+        completos++;
+        if (dataset.enhancementsOf(faction, detachmentId: detachment.id).length == 4) {
+          conCuatro++;
+        }
+      }
+    }
+    expect(completos, greaterThan(300));
+    expect(conCuatro / completos, greaterThan(0.99));
   });
 }
