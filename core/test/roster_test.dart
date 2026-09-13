@@ -84,4 +84,37 @@ void main() {
     }
     expect(built, greaterThan(6000));
   });
+
+  test('el coste sube al pasar del tamaño mínimo de unidad', () {
+    final poxwalkers = unitNamed('Poxwalkers');
+    final roster = Roster(faction: deathGuard, pointsLimit: 1000)..add(poxwalkers);
+    expect(roster.points, 65, reason: 'diez miniaturas');
+
+    poxwalkers.children.firstWhere((c) => c.type == 'model').count = 20;
+    expect(roster.points, 130, reason: 'veinte miniaturas: lo dobla un modifier');
+
+    poxwalkers.children.firstWhere((c) => c.type == 'model').count = 10;
+    expect(roster.points, 65, reason: 'y vuelve a bajar al deshacer');
+  });
+
+  test('el modifier no se aplica si su condición no se cumple', () {
+    final poxwalkers = unitNamed('Poxwalkers');
+    final roster = Roster(faction: deathGuard, pointsLimit: 1000)..add(poxwalkers);
+    poxwalkers.children.firstWhere((c) => c.type == 'model').count = 11;
+    expect(roster.points, 130);
+    poxwalkers.children.firstWhere((c) => c.type == 'model').count = 10;
+    expect(roster.points, 65);
+  });
+
+  test('no aplica los modifiers cuya condición no sabe evaluar', () {
+    // El +10 del Foetid Bloat-drone depende de un localConditionGroup, que cuenta instancias
+    // repetidas de la misma unidad con comparaciones (`before`, `instanceOf`) que esta capa no
+    // implementa. Ante la duda se deja el precio base y se cuenta el modifier omitido, en vez de
+    // aplicarlo a ciegas y dar un precio que parece bueno y no lo es.
+    final drone = unitNamed('Foetid Bloat-drone');
+    final roster = Roster(faction: deathGuard, pointsLimit: 1000)..add(drone);
+    expect(roster.points, 100);
+    roster.applyModifiers();
+    expect(roster.skippedModifiers, greaterThan(0));
+  });
 }

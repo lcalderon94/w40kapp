@@ -56,17 +56,35 @@ for (final incumplimiento in roster.validate()) print(incumplimiento);
 en la unidad y llevan diez miniaturas a 0, y el Myphitic Blight-hauler cuesta 0 en la unidad y 95 en
 la suya; sumando el árbol los dos salen bien.
 
+Los **modifiers de coste** se aplican al recalcular: el dataset da 65 puntos a los Poxwalkers y deja
+en un modifier que pasen a 130 al superar las diez miniaturas, así que sin evaluarlos una unidad de
+veinte costaría lo mismo que una de diez.
+
 `validate` cubre el límite de puntos, los mínimos y máximos de cada opción, los de su grupo —«entre
 10 y 20 Poxwalkers», que se comprueban sumando los hermanos que salen del mismo grupo— y los que
 limitan cuántas veces puede repetirse una unidad en el ejército. Cuando el dataset trae su propio
 mensaje de error, se usa ese.
 
+## Qué pasa cuando el motor no entiende una condición
+
+No la aplica, y lo cuenta en `Roster.skippedModifiers`. Es deliberado: un precio calculado con una
+condición mal interpretada parece correcto y no lo es, que en una app de listas es peor que
+quedarse corto.
+
+Hoy quedan fuera 1.816 modifiers de coste, que afectan al 27,8 % de las unidades. Todos son la
+misma construcción, `localConditionGroups`: cuentan instancias repetidas de la misma unidad dentro
+del padre (`atLeast` 1 a 3) con dos comparaciones propias, `before` e `instanceOf`. Como necesitan
+una instancia previa para dispararse, **el precio de una lista sin unidades repetidas es exacto**;
+la desviación aparece al meter varias copias de la misma unidad en un destacamento.
+
 ## Estado
 
-Se lee el dataset y se construyen y validan listas. Lo que falta para la paridad con WarOrgan:
+Se lee el dataset, se construyen y validan listas, y se aplican los modifiers de coste evaluables.
+Lo que falta para la paridad con WarOrgan:
 
-- **`modifiers`**: cambian coste y restricciones según el contexto (una unidad de 20 Poxwalkers no
-  cuesta lo mismo que una de 10). Es lo siguiente en importancia, porque afecta a los puntos.
+- **`localConditionGroups`**, lo de arriba: implementarlos exige la semántica exacta de `before` e
+  `instanceOf`, que conviene sacar de la especificación de BattleScribe y no deducirla.
+- **Modifiers sobre restricciones**, que cambian los límites en vez del coste.
 - **Detachments**: elegir uno y aplicar sus límites y sus Enhancements.
 - **Límites por rol** del destacamento, que viven en las `categoryEntries` de `forceEntries`.
 

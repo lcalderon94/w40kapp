@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'model.dart';
+import 'modifiers.dart';
 import 'roster.dart';
 
 /// El dataset de BattleScribe ya traducido, cargado y resuelto.
@@ -11,9 +12,6 @@ import 'roster.dart';
 /// no puede listar sus unidades.
 class Dataset {
   Dataset._(this._nodesById, this._roots);
-
-  /// Identificador del tipo de coste en puntos, declarado en el fichero del sistema de juego.
-  static const pointsCostTypeId = '51b2-306e-1021-d207';
 
   final Map<String, Map<String, dynamic>> _nodesById;
   final List<Map<String, dynamic>> _roots;
@@ -179,18 +177,23 @@ class Dataset {
       entryId: entry['id'] as String? ?? '',
       name: entry['name'] as String? ?? '',
       type: entry['type'] as String? ?? '',
-      pointsEach: _points(entry) ?? 0,
+      basePointsEach: _points(entry) ?? 0,
       count: count,
       groupId: groupId,
       groupName: groupName,
       constraints: constraints,
       groupConstraints: groupConstraints,
+      modifiers: Modifier.allOf(entry),
+      categoryIds: [
+        for (final raw in (entry['categoryLinks'] as List? ?? const []))
+          if ((raw as Map<String, dynamic>)['targetId'] is String) raw['targetId'] as String,
+      ],
     );
 
     for (final child in _childEntries(entry)) {
       final minimum = _minimumSelections(child);
       if (minimum > 0) {
-        selection.children.add(_selectionFrom(child,
+        selection.addChild(_selectionFrom(child,
             groupId: null, groupName: null, groupConstraints: const [], count: minimum));
       }
     }
@@ -204,7 +207,7 @@ class Dataset {
       for (final option in _childEntries(group)) {
         final minimum = _minimumSelections(option);
         if (minimum > 0) {
-          selection.children.add(_selectionFrom(option,
+          selection.addChild(_selectionFrom(option,
               groupId: group['id'] as String?,
               groupName: group['name'] as String?,
               groupConstraints: groupRules,
