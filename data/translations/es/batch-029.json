@@ -1727,7 +1727,7 @@
         "names": []
       },
       "source": "**[PISTOL]** and **[CLOSE-QUARTERS]** are identical for all rules purposes. \n\nUnits containing one or more models with a **[CLOSE-QUARTERS]** weapon can shoot using **close-quarters shooting** (10.06). When using another **shooting type**, for each model in that unit (excluding **MONSTER/VEHICLE** models), you can only select one of the following to make attacks with: \n- One or more of its **[CLOSE-QUARTERS]** weapons. \n- One or more of its other ranged weapons.",
-      "target": null
+      "target": "**[PISTOL]** y **[CLOSE-QUARTERS]** son idénticas a todos los efectos de reglas.\n\nLas unidades que contengan una o más miniaturas con un arma **[CLOSE-QUARTERS]** pueden disparar usando **disparo a corta distancia** (10.06). Al usar otro **tipo de disparo**, por cada miniatura de esa unidad (excluyendo las miniaturas **MONSTER/VEHICLE**), solo puedes seleccionar una de las siguientes opciones para realizar ataques:\n- Una o más de sus armas **[CLOSE-QUARTERS]**.\n- Una o más de sus otras armas a distancia."
     },
     {
       "id": "9136f2f38830efae",
@@ -1745,7 +1745,7 @@
         ]
       },
       "source": "Each time a unit is **selected to shoot** or **selected to fight**, after that unit has resolved all of its attacks, make a number of **hazard rolls** (06.03) for that unit equal to the number of **[HAZARDOUS]** weapons you selected in the Select Weapons step.",
-      "target": null
+      "target": "Cada vez que una unidad es **seleccionada para disparar** o **seleccionada para combatir**, después de que esa unidad haya resuelto todos sus ataques, realiza para esa unidad un número de **tiradas de riesgo** (06.03) igual al número de armas **[HAZARDOUS]** que seleccionaste en el paso Seleccionar Armas."
     },
     {
       "id": "f646302e03395f6c",
@@ -1759,7 +1759,7 @@
         "names": []
       },
       "source": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it. Unless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it.",
-      "target": null
+      "target": "Antes de la batalla, en el paso Reunir Ejércitos, por cada unidad líder y cada unidad de apoyo de tu ejército, puedes seleccionar una unidad de guardaespaldas amiga a la que esa unidad pueda liderar. Esa unidad liderará entonces a esa unidad de guardaespaldas durante la batalla y formará una unidad adjunta con ella. Salvo que se indique lo contrario, cada unidad de guardaespaldas solo puede tener adjuntas una unidad líder y una unidad de apoyo."
     },
     {
       "id": "08e27a2531d5332e",
@@ -1778,7 +1778,7 @@
         ]
       },
       "source": "Each time an attack made with a **[DEVASTATING WOUNDS]** weapon results in a **critical wound**, the attack sequence for that attack ends and the target unit suffers a number of **mortal wounds** equal to the **D** characteristic of that weapon. These are inflicted after resolving any normal damage inflicted by those attacks. \n**Mortal wounds** inflicted by **[DEVASTATING WOUNDS]** weapons can damage a maximum of one model for each **critical wound**; any remaining **mortal wounds** inflicted by that attack are lost. \n***Example:** An attack made with a **[DEVASTATING WOUNDS]** weapon with a **D** characteristic of 3 results in a **critical wound** against an Intercessor Squad, so inflicts 3 **mortal wounds**. The first 2 **mortal wounds** are sufficient to **destroy** 1 Intercessor model, so the remaining **mortal wound** is lost.*",
-      "target": null
+      "target": "Cada vez que un ataque realizado con un arma **[DEVASTATING WOUNDS]** produce una **herida crítica**, la secuencia de ataque de ese ataque termina y la unidad objetivo sufre un número de **heridas mortales** igual a la característica **D** de esa arma. Estas se infligen después de resolver el daño normal infligido por esos ataques.\nLas **heridas mortales** infligidas por armas **[DEVASTATING WOUNDS]** pueden dañar como máximo a una miniatura por cada **herida crítica**; cualquier **herida mortal** restante infligida por ese ataque se pierde.\n***Ejemplo:** Un ataque realizado con un arma **[DEVASTATING WOUNDS]** con una característica **D** de 3 produce una **herida crítica** contra una Intercessor Squad, por lo que inflige 3 **heridas mortales**. Las 2 primeras **heridas mortales** bastan para **destruir** 1 miniatura Intercessor, así que la **herida mortal** restante se pierde.*"
     },
     {
       "id": "2ca9fb4ef1eda5d0",
@@ -1794,7 +1794,7 @@
         "names": []
       },
       "source": "Units containing one or more models with an **[ASSAULT]** weapon can shoot using **assault shooting** (10.05).",
-      "target": null
+      "target": "Las unidades que contengan una o más miniaturas con un arma **[ASSAULT]** pueden disparar usando **disparo de asalto** (10.05)."
     },
     {
       "id": "ace7fbdf09bdd24b",
@@ -1812,7 +1812,7 @@
         ]
       },
       "source": "Each time a unit containing one or more models with an **[EXTRA ATTACKS]** weapon fights, those models will make attacks with those weapons in addition to any others. In the Select Weapons step (04.01), for each of those models, you must select: \n- All of that model’s **[EXTRA ATTACKS]** weapons. \n- One of that model’s other melee weapons, if possible.",
-      "target": null
+      "target": "Cada vez que combate una unidad que contenga una o más miniaturas con un arma **[EXTRA ATTACKS]**, esas miniaturas realizarán ataques con esas armas además de con cualquier otra. En el paso Seleccionar Armas (04.01), por cada una de esas miniaturas, debes seleccionar:\n- Todas las armas **[EXTRA ATTACKS]** de esa miniatura.\n- Una de las otras armas de cuerpo a cuerpo de esa miniatura, si es posible."
     },
     {
       "id": "5b8f069c8243fc72",
@@ -1850,7 +1850,7 @@
         ]
       },
       "source": "This ability always takes the form **[ANTI-X Y+]**. Each time an attack is made with an **[ANTI]** weapon, if the target unit has the keyword denoted by **X**, an unmodified **wound roll** of **Y+** is a **critical wound**.\n***Example:** An attack made with an **[ANTI-VEHICLE 4+]** weapon against a ^^**Vehicle**^^ unit will result in a **critical wound** on an unmodified **wound roll** of 4+, while an attack made with an **[ANTI-PSYKER 2+]** weapon against a ^^**Psyker**^^ unit will result in a **critical wound** on an unmodified **wound roll** of 2+.*",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **[ANTI-X Y+]**. Cada vez que se realiza un ataque con un arma **[ANTI]**, si la unidad objetivo tiene la palabra clave indicada por **X**, una **tirada para herir** sin modificar de **Y+** es una **herida crítica**.\n***Ejemplo:** Un ataque realizado con un arma **[ANTI-VEHICLE 4+]** contra una unidad ^^**Vehicle**^^ producirá una **herida crítica** con una **tirada para herir** sin modificar de 4+, mientras que un ataque realizado con un arma **[ANTI-PSYKER 2+]** contra una unidad ^^**Psyker**^^ producirá una **herida crítica** con una **tirada para herir** sin modificar de 2+.*"
     },
     {
       "id": "5442146072e94181",
@@ -1868,7 +1868,7 @@
         "names": []
       },
       "source": "This ability always takes the form **[SUSTAINED HITS X]**. Each time an attack made with a **[SUSTAINED HITS]** weapon results in a **critical hit**, that attack results in a number of additional hits on the target as denoted by **X**.\n***Example:** An attack made with a **[SUSTAINED HITS 2]** weapon results in a **critical hit**. That attack therefore hits the target three times (once from the **critical hit**, and twice more from the **[SUSTAINED HITS 2]** ability).*",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **[SUSTAINED HITS X]**. Cada vez que un ataque realizado con un arma **[SUSTAINED HITS]** produce un **impacto crítico**, ese ataque produce sobre el objetivo un número de impactos adicionales igual al indicado por **X**.\n***Ejemplo:** Un ataque realizado con un arma **[SUSTAINED HITS 2]** produce un **impacto crítico**. Ese ataque impacta por tanto tres veces en el objetivo (una por el **impacto crítico** y dos más por la habilidad **[SUSTAINED HITS 2]**).*"
     },
     {
       "id": "ae3e796ef39f2589",
@@ -1884,7 +1884,7 @@
         "names": []
       },
       "source": "In your Shooting phase, each time an attack is made with a **[HEAVY]** weapon, add 1 to the **hit roll** if all of the following apply to the attacking unit: \n- That unit is **unengaged**. \n- That unit was not set up on the battlefield this turn. \n- No model in that unit has moved more than 3\" this turn.",
-      "target": null
+      "target": "En tu fase de Disparo, cada vez que se realiza un ataque con un arma **[HEAVY]**, suma 1 a la **tirada para impactar** si se cumple todo lo siguiente respecto a la unidad atacante:\n- Esa unidad está **sin trabar**.\n- Esa unidad no fue desplegada en el campo de batalla este turno.\n- Ninguna miniatura de esa unidad se ha movido más de 3\" este turno."
     },
     {
       "id": "6993d62fef33ff52",
@@ -1902,7 +1902,7 @@
         "names": []
       },
       "source": "This ability always takes the form **[MELTA X]**. Each time a model makes an attack with a **[MELTA]** weapon, if the target unit was within half range of that weapon in the Select Targets step, until the attacking unit’s attacks have been resolved, add **X** to that weapon’s **D** characteristic. \n***Example:** A model targets a unit that is within half range of a **[MELTA 2]** weapon with a **D** characteristic of D6. While resolving those attacks, that weapon has a **D** characteristic of **D6+2**.*",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **[MELTA X]**. Cada vez que una miniatura realiza un ataque con un arma **[MELTA]**, si la unidad objetivo estaba a media distancia o menos de esa arma en el paso Seleccionar Objetivos, hasta que se hayan resuelto los ataques de la unidad atacante, suma **X** a la característica **D** de esa arma.\n***Ejemplo:** Una miniatura toma como objetivo a una unidad que está a media distancia o menos de un arma **[MELTA 2]** con una característica **D** de D6. Mientras se resuelven esos ataques, esa arma tiene una característica **D** de **D6+2**.*"
     },
     {
       "id": "a438efb7ebab76d3",
@@ -1936,7 +1936,7 @@
         "names": []
       },
       "source": "Each time you gather attack dice for a **[BLAST]** weapon, add one additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down). If this ability takes the form **[BLAST X]**, each time you gather **attack dice** for such a weapon, add **X** additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down) instead. \n***Example:** If a **[BLAST 2]** weapon with an **A** characteristic of 3 targets a unit containing 12 models, you would gather four additional **attack dice** for that weapon (for a total of seven for that weapon).*",
-      "target": null
+      "target": "Cada vez que reúnas **dados de ataque** para un arma **[BLAST]**, añade un **dado de ataque** adicional por cada cinco miniaturas que hubiera en la unidad objetivo en el paso Seleccionar Objetivos (redondeando hacia abajo). Si esta habilidad adopta la forma **[BLAST X]**, cada vez que reúnas **dados de ataque** para un arma así, añade en su lugar **X** **dados de ataque** adicionales por cada cinco miniaturas que hubiera en la unidad objetivo en el paso Seleccionar Objetivos (redondeando hacia abajo).\n***Ejemplo:** Si un arma **[BLAST 2]** con una característica **A** de 3 toma como objetivo a una unidad que contiene 12 miniaturas, reunirías cuatro **dados de ataque** adicionales para esa arma (siete en total para esa arma).*"
     },
     {
       "id": "fa7af1715d32cd41",
@@ -1952,7 +1952,7 @@
         "names": []
       },
       "source": "While resolving attacks made with one or more **[PRECISION]** weapons, at the start of the Allocation Order step (05.03), if the target unit contains one or more **CHARACTER** models **visible** to one or more of the attacking models, the active player can select one allocation group that contains one of those **visible CHARACTER** models. If they do, until those attacks are resolved, or until that **CHARACTER** group is **destroyed** (whichever happens first), that **CHARACTER** group is the current allocation group.",
-      "target": null
+      "target": "Mientras se resuelven ataques realizados con una o más armas **[PRECISION]**, al comienzo del paso Orden de Asignación (05.03), si la unidad objetivo contiene una o más miniaturas **CHARACTER** **visibles** para una o más de las miniaturas atacantes, el jugador activo puede seleccionar un grupo de asignación que contenga una de esas miniaturas **CHARACTER visibles**. Si lo hace, hasta que esos ataques se resuelvan, o hasta que ese grupo **CHARACTER** sea **destruido** (lo que ocurra primero), ese grupo **CHARACTER** es el grupo de asignación actual."
     },
     {
       "id": "5cf3b430a7a216b2",
@@ -1968,7 +1968,7 @@
         "names": []
       },
       "source": "Units containing one or more models with an **[INDIRECT FIRE]** weapon can shoot using indirect shooting (10.07).",
-      "target": null
+      "target": "Las unidades que contengan una o más miniaturas con un arma **[INDIRECT FIRE]** pueden disparar usando disparo indirecto (10.07)."
     },
     {
       "id": "a5b87a328e8bdff0",
@@ -1984,7 +1984,7 @@
         "names": []
       },
       "source": "Each time an attack is made with a **[LANCE]** weapon, if the attacking model’s unit made a **charge move** this turn, add 1 to the **wound roll**.",
-      "target": null
+      "target": "Cada vez que se realiza un ataque con un arma **[LANCE]**, si la unidad de la miniatura atacante realizó un **movimiento de carga** este turno, suma 1 a la **tirada para herir**."
     },
     {
       "id": "14e1e1ee1f25ccb5",
@@ -2001,7 +2001,7 @@
         "names": []
       },
       "source": "Each time an attack made with a **[LETHAL HITS]** weapon results in a **critical hit**, you can choose for that attack to automatically wound the target. \n***Designer’s Note:** Choosing to automatically wound the target means that no **wound roll** is made for that attack. You may decide against this, as it means that attack cannot result in a **critical wound** and so cannot trigger other abilities such as [DEVASTATING WOUNDS].*",
-      "target": null
+      "target": "Cada vez que un ataque realizado con un arma **[LETHAL HITS]** produce un **impacto crítico**, puedes elegir que ese ataque hiera automáticamente al objetivo.\n***Nota del diseñador:** Elegir herir automáticamente al objetivo significa que no se hace **tirada para herir** para ese ataque. Puedes decidir no hacerlo, ya que implica que ese ataque no puede producir una **herida crítica** y, por tanto, no puede activar otras habilidades como [DEVASTATING WOUNDS].*"
     },
     {
       "id": "40f29111e9d66c9e",
@@ -2037,7 +2037,7 @@
         "names": []
       },
       "source": "This ability always takes the form **[RAPID FIRE X]**. Each time you gather **attack dice** for a **[RAPID FIRE]** weapon, add **X** additional **attack dice** if the target unit was within half range of that weapon in the Select Targets step. \n***Example:** If a **[RAPID FIRE 1]** weapon with an **A** characteristic of 1 targets a unit that is within half range, you would gather one additional **attack dice** for that weapon (for a total of two for that weapon).*",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **[RAPID FIRE X]**. Cada vez que reúnas **dados de ataque** para un arma **[RAPID FIRE]**, añade **X** **dados de ataque** adicionales si la unidad objetivo estaba a media distancia o menos de esa arma en el paso Seleccionar Objetivos.\n***Ejemplo:** Si un arma **[RAPID FIRE 1]** con una característica **A** de 1 toma como objetivo a una unidad que está a media distancia o menos, reunirías un **dado de ataque** adicional para esa arma (dos en total para esa arma).*"
     },
     {
       "id": "ec011ccdf1d74e8f",
@@ -2070,7 +2070,7 @@
         ]
       },
       "source": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **Scouts X\"**. En el paso Resolver Habilidades Previas a la Batalla, si todas las miniaturas de una unidad tienen esta habilidad, puedes hacer una de las siguientes cosas:\n- Si esa unidad está en **reservas estratégicas**, puedes desplegarla en cualquier lugar que esté completamente dentro de tu zona de despliegue.\n- Si esa unidad está completamente dentro de tu zona de despliegue, puede realizar un **movimiento de exploración**.\n- Si esa unidad está embarcada en un **DEDICATED TRANSPORT** que está completamente dentro de tu zona de despliegue, y si todas las miniaturas embarcadas en ese **DEDICATED TRANSPORT** tienen la habilidad Scouts, ese **DEDICATED TRANSPORT** puede realizar un **movimiento de exploración**."
     },
     {
       "id": "a38c1fea40ae417e",
@@ -2084,7 +2084,7 @@
         "names": []
       },
       "source": "During deployment, if every model in a unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from your opponent’s deployment zone and all enemy units.",
-      "target": null
+      "target": "Durante el despliegue, si todas las miniaturas de una unidad tienen esta habilidad, puede desplegarse en cualquier lugar del campo de batalla que esté a más de 8\" en horizontal de la zona de despliegue de tu oponente y de todas las unidades enemigas."
     },
     {
       "id": "3055ea39c8b2d83e",
@@ -2098,7 +2098,7 @@
         "names": []
       },
       "source": "Each time this unit makes an **ingress move** (20.04), if every model in this unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from all enemy units, even if that is within your opponent’s deployment zone.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un **movimiento de entrada** (20.04), si todas las miniaturas de esta unidad tienen esta habilidad, puede desplegarse en cualquier lugar del campo de batalla que esté a más de 8\" en horizontal de todas las unidades enemigas, incluso si eso está dentro de la zona de despliegue de tu oponente."
     },
     {
       "id": "0b5e420dcaa66168",
@@ -2116,7 +2116,7 @@
         ]
       },
       "source": "This ability always takes the form **Deadly Demise X**. Each time a model in this unit is **destroyed**, after the units embarked within it (if any) have made their **emergency disembark moves**, roll one D6. On a 6, that model suffers a **deadly demise**; each unit within 6\" of that model suffers a number of **mortal wounds** denoted by **X** (if this is a random number, roll separately for each unit within 6\"). \n***Example:** An Impulsor with a unit of Intercessors embarked within it is **destroyed** by ranged attacks. First, any unresolved attacks made by the attacking unit are resolved. Then the Intercessors make an **emergency disembark move**. Then the roll is made for the **Deadly Demise** ability, and on a 6, that ability is resolved. Finally, the Impulsor is removed from the battlefield.*",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **Deadly Demise X**. Cada vez que una miniatura de esta unidad es **destruida**, después de que las unidades embarcadas en ella (si las hay) hayan realizado sus **movimientos de desembarco de emergencia**, tira un D6. Con un 6, esa miniatura sufre un **deadly demise**; cada unidad a 6\" o menos de esa miniatura sufre un número de **heridas mortales** indicado por **X** (si es un número aleatorio, tira por separado para cada unidad a 6\" o menos).\n***Ejemplo:** Un Impulsor con una unidad de Intercessors embarcada en él es **destruido** por ataques a distancia. Primero se resuelven los ataques pendientes de la unidad atacante. Después, los Intercessors realizan un **movimiento de desembarco de emergencia**. A continuación se hace la tirada de la habilidad **Deadly Demise** y, con un 6, esa habilidad se resuelve. Por último, el Impulsor se retira del campo de batalla.*"
     },
     {
       "id": "31df3ac008cf7983",
@@ -2130,7 +2130,7 @@
         "names": []
       },
       "source": "If every model in a unit has this ability, each time a ranged attack targets that unit, that unit has the **benefit of cover** against that attack (13.08).",
-      "target": null
+      "target": "Si todas las miniaturas de una unidad tienen esta habilidad, cada vez que un ataque a distancia toma como objetivo a esa unidad, esa unidad tiene el **beneficio de cobertura** frente a ese ataque (13.08)."
     },
     {
       "id": "2ccb6d75983975d1",
@@ -2144,7 +2144,7 @@
         "names": []
       },
       "source": "Each time a unit with this ability makes a **normal**, **advance** or **fall-back move**: \n- Models in that unit can move through models (including **MONSTER/VEHICLE** models, but excluding **TITANIC** models) and can move horizontally through sections of **terrain features** that are 4\" or less in height. \n- Before moving that unit, you can select for all models in that unit to have the **MOBILE** keyword until that move ends. If you do, when that move ends, roll one D6: on a 1, that unit is battle-shocked. \n***Designer’s Note:** Gaining the **MOBILE** keyword for the duration of a move will enable models in that unit to move horizontally through **dense terrain features** (13.06).*\n",
-      "target": null
+      "target": "Cada vez que una unidad con esta habilidad realiza un movimiento **normal**, de **avance** o de **repliegue**:\n- Las miniaturas de esa unidad pueden moverse a través de otras miniaturas (incluidas las miniaturas **MONSTER/VEHICLE**, pero excluidas las **TITANIC**) y pueden moverse en horizontal a través de secciones de **elementos de escenografía** de 4\" o menos de altura.\n- Antes de mover esa unidad, puedes elegir que todas sus miniaturas tengan la palabra clave **MOBILE** hasta que termine ese movimiento. Si lo haces, cuando termine ese movimiento, tira un D6: con un 1, esa unidad queda conmocionada.\n***Nota del diseñador:** Obtener la palabra clave **MOBILE** mientras dura un movimiento permitirá a las miniaturas de esa unidad moverse en horizontal a través de **elementos de escenografía densa** (13.06).*"
     },
     {
       "id": "24e4e6ed949c476f",
@@ -2162,7 +2162,7 @@
         ]
       },
       "source": "Unless part of an **attached** unit, this unit is not **visible** to enemy models unless they are within 12\" of this unit, and it cannot be targeted by **[INDIRECT FIRE]** weapons unless the attacking model is within 12\" of this unit. \nIf this ability takes the form **Lone Operative X\"**, unless part of an **attached** unit, this unit is not **visible** to enemy models unless they are within **X\"** of this unit, and it cannot be targeted by **[INDIRECT FIRE]** weapons unless the attacking model is within **X\"** of this unit.",
-      "target": null
+      "target": "Salvo que forme parte de una unidad **adjunta**, esta unidad no es **visible** para las miniaturas enemigas a menos que estén a 12\" o menos de esta unidad, y no puede ser tomada como objetivo por armas **[INDIRECT FIRE]** a menos que la miniatura atacante esté a 12\" o menos de esta unidad.\nSi esta habilidad adopta la forma **Lone Operative X\"**, salvo que forme parte de una unidad **adjunta**, esta unidad no es **visible** para las miniaturas enemigas a menos que estén a **X\"** o menos de esta unidad, y no puede ser tomada como objetivo por armas **[INDIRECT FIRE]** a menos que la miniatura atacante esté a **X\"** o menos de esta unidad."
     },
     {
       "id": "18d222d612fed90a",
@@ -2192,7 +2192,7 @@
         ]
       },
       "source": "While every model in a unit has this ability, that unit is a **Fights First** unit. \nSee the Resolve Fights First Combats step in the Fight phase (12.04).",
-      "target": null
+      "target": "Mientras todas las miniaturas de una unidad tengan esta habilidad, esa unidad es una unidad **Fights First**.\nConsulta el paso Resolver Combates de Fights First en la fase de Combate (12.04)."
     },
     {
       "id": "ab151e4ee8796bbe",
@@ -2208,7 +2208,7 @@
         "names": []
       },
       "source": "Each time an attack is made with a **[PSYCHIC]** weapon, you can ignore any or all modifiers to that attack’s **BS** or **WS** characteristic and any or all modifiers to the **hit roll**. Attacks made with **[PSYCHIC]** weapons are known as **psychic attacks** (this can be important for the triggering of other rules).",
-      "target": null
+      "target": "Cada vez que se realiza un ataque con un arma **[PSYCHIC]**, puedes ignorar cualquiera de los modificadores, o todos, a la característica **BS** o **WS** de ese ataque, y cualquiera de los modificadores, o todos, a la **tirada para impactar**. Los ataques realizados con armas **[PSYCHIC]** se conocen como **ataques psíquicos** (esto puede ser importante para activar otras reglas)."
     },
     {
       "id": "04d8743dc18a4619",
@@ -2226,7 +2226,7 @@
         ]
       },
       "source": "This ability always takes the form **Firing Deck X**. In your Shooting phase, each time this **TRANSPORT** is **selected to shoot**, if one or more units are embarked within it, resolve the following sequence: \n1. Select up to **X** models embarked within this **TRANSPORT** (excluding models whose units have already been **selected to shoot** this phase). \n2. For each selected model, select one of its ranged weapons (excluding **[ONE SHOT]** weapons). \n3. Until this **TRANSPORT** has resolved all of its attacks, it has all of those selected weapons in addition to its other weapons. \n4. Until the end of the turn, units embarked within this **TRANSPORT** are not eligible to shoot. ",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **Firing Deck X**. En tu fase de Disparo, cada vez que este **TRANSPORT** es **seleccionado para disparar**, si hay una o más unidades embarcadas en él, resuelve la siguiente secuencia:\n1. Selecciona hasta **X** miniaturas embarcadas en este **TRANSPORT** (excluyendo las miniaturas cuyas unidades ya hayan sido **seleccionadas para disparar** esta fase).\n2. Por cada miniatura seleccionada, selecciona una de sus armas a distancia (excluyendo las armas **[ONE SHOT]**).\n3. Hasta que este **TRANSPORT** haya resuelto todos sus ataques, dispone de todas esas armas seleccionadas además de sus otras armas.\n4. Hasta el final del turno, las unidades embarcadas en este **TRANSPORT** no son elegibles para disparar."
     },
     {
       "id": "defa41f8cfb08782",
@@ -2242,7 +2242,7 @@
         "names": []
       },
       "source": "Each weapon with this ability can only be selected to make attacks with once per battle. \nIf a **destroyed** model is returned to a unit, all of its **[ONE SHOT]** weapons that have already been selected to make attacks with during the battle cannot be selected to make attacks with again. \nIf a new unit is added to an army, all **[ONE SHOT]** weapons in that unit can be selected to make attacks with once per battle.",
-      "target": null
+      "target": "Cada arma con esta habilidad solo puede ser seleccionada para realizar ataques una vez por batalla.\nSi una miniatura **destruida** vuelve a una unidad, todas sus armas **[ONE SHOT]** que ya hayan sido seleccionadas para realizar ataques durante la batalla no pueden volver a ser seleccionadas para realizar ataques.\nSi se añade una unidad nueva a un ejército, todas las armas **[ONE SHOT]** de esa unidad pueden ser seleccionadas para realizar ataques una vez por batalla."
     },
     {
       "id": "6e0a9772e7f95db9",
@@ -2260,7 +2260,7 @@
         ]
       },
       "source": "A **^^Character^^** created using Crucible rules has the Crucible ability. Your army may include up to three units with the Crucible ability and these units cannot be given Enhancements.",
-      "target": null
+      "target": "Un **^^Character^^** creado con las reglas de Crucible tiene la habilidad Crucible. Tu ejército puede incluir hasta tres unidades con la habilidad Crucible, y a estas unidades no se les pueden asignar Enhancements."
     },
     {
       "id": "57f1bc1c6ff9bb27",
@@ -2278,7 +2278,7 @@
         "names": []
       },
       "source": "This ability always takes the form **[CLEAVE X]**. Each time you gather **attack dice** for a **[CLEAVE]** weapon, if you only selected one target for all of that weapon’s attacks, add **X** additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down). \n***Example: If a **[CLEAVE 1]** weapon with an **A** characteristic of 3 targets one unit containing 16 models, you would gather three additional **attack dice** for that weapon (for a total of six for that weapon).*",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **[CLEAVE X]**. Cada vez que reúnas **dados de ataque** para un arma **[CLEAVE]**, si seleccionaste un único objetivo para todos los ataques de esa arma, añade **X** **dados de ataque** adicionales por cada cinco miniaturas que hubiera en la unidad objetivo en el paso Seleccionar Objetivos (redondeando hacia abajo).\n***Ejemplo:** Si un arma **[CLEAVE 1]** con una característica **A** de 3 toma como objetivo a una unidad que contiene 16 miniaturas, reunirías tres **dados de ataque** adicionales para esa arma (seis en total para esa arma).*"
     },
     {
       "id": "ca99753f8cd29474",
@@ -2294,7 +2294,7 @@
         "names": []
       },
       "source": "Units containing one or more models with a **[CLOSE-QUARTERS]** weapon can shoot using **close-quarters shooting** (10.06). When using another **shooting type**, for each model in that unit (excluding **MONSTER/VEHICLE** models), you can only select one of the following to make attacks with: \n- One or more of its **[CLOSE-QUARTERS]** weapons. \n- One or more of its other ranged weapons.",
-      "target": null
+      "target": "Las unidades que contengan una o más miniaturas con un arma **[CLOSE-QUARTERS]** pueden disparar usando **disparo a corta distancia** (10.06). Al usar otro **tipo de disparo**, por cada miniatura de esa unidad (excluyendo las miniaturas **MONSTER/VEHICLE**), solo puedes seleccionar una de las siguientes opciones para realizar ataques:\n- Una o más de sus armas **[CLOSE-QUARTERS]**.\n- Una o más de sus otras armas a distancia."
     },
     {
       "id": "a850cb074c0328d7",
@@ -2308,7 +2308,7 @@
         "names": []
       },
       "source": "Before the battle, in the Muster Armies step, for each **leader** and **support** unit in your army, you can select one friendly **bodyguard** unit that unit can lead. That unit will then lead that **bodyguard** unit for the battle and form an **attached** unit with it. \nUnless otherwise stated, each **bodyguard** unit can only have one **leader** unit and one **support** unit attached to it.",
-      "target": null
+      "target": "Antes de la batalla, en el paso Reunir Ejércitos, por cada unidad **líder** y cada unidad de **apoyo** de tu ejército, puedes seleccionar una unidad de **guardaespaldas** amiga a la que esa unidad pueda liderar. Esa unidad liderará entonces a esa unidad de **guardaespaldas** durante la batalla y formará una unidad **adjunta** con ella.\nSalvo que se indique lo contrario, cada unidad de **guardaespaldas** solo puede tener adjuntas una unidad **líder** y una unidad de **apoyo**."
     },
     {
       "id": "169ff2cc946f9374",
@@ -2324,7 +2324,7 @@
         ]
       },
       "source": "This ability always takes the form **Damaged X**. While a model's remaining wounds are equal to or less than **X**, that model is **damaged**:\n- While a model is **damaged**, that model's attacks have -1 to **hit rolls**.",
-      "target": null
+      "target": "Esta habilidad siempre adopta la forma **Damaged X**. Mientras las heridas restantes de una miniatura sean iguales o inferiores a **X**, esa miniatura está **dañada**:\n- Mientras una miniatura está **dañada**, sus ataques tienen -1 a las **tiradas para impactar**."
     },
     {
       "id": "cd347f857f124f92",
