@@ -141,6 +141,80 @@ class Dataset {
     return detachments;
   }
 
+  /// Los tipos de fuerza que declara el sistema de juego.
+  ///
+  /// Son cuatro y una lista es de uno solo, así que saber cuál es contesta por sí mismo las
+  /// condiciones `instanceOf` que preguntan por ellos, que si no habría que dejar sin evaluar.
+  late final List<Force> forces = [
+    for (final root in _roots)
+      for (final raw in (root['forceEntries'] as List? ?? const []))
+        Force(
+          id: (raw as Map<String, dynamic>)['id'] as String? ?? '',
+          name: raw['name'] as String? ?? '',
+        ),
+  ];
+
+  /// La fuerza de una partida normal, que es la que se asume mientras no se diga otra cosa.
+  late final Force standardForce = forces.firstWhere((f) => f.name == 'Army Roster',
+      orElse: () => Force(id: '', name: 'Army Roster'));
+
+  /// Los tamaños de partida que ofrece el sistema de juego, con su límite de puntos.
+  ///
+  /// El límite no se saca del nombre sino del propio dataset: la entrada «Points limit» lleva un
+  /// modifier de `defaultAmount` por tamaño, y la condición de cada uno dice a cuál corresponde.
+  late final List<BattleSize> battleSizes = _readBattleSizes();
+
+  List<BattleSize> _readBattleSizes() {
+    final entry = _battleSizeEntry;
+    if (entry == null) return const [];
+
+    final limits = <String, int>{};
+    for (final node_ in _descendants(entry)) {
+      for (final modifier in Modifier.allOf(node_)) {
+        if (modifier.field != 'defaultAmount') continue;
+        final limit = int.tryParse('${modifier.value}');
+        if (limit == null) continue;
+        for (final condition in modifier.conditions) {
+          limits[condition.childId] = limit;
+        }
+      }
+    }
+
+    return [
+      for (final group in _groupsOf(entry))
+        if (group['name'] == 'Battle Size')
+          for (final option in _childEntries(group))
+            BattleSize(
+              id: option['id'] as String? ?? '',
+              name: option['name'] as String? ?? '',
+              pointsLimit: limits[option['id']] ?? 0,
+            ),
+    ];
+  }
+
+  Map<String, dynamic>? get _battleSizeEntry {
+    for (final root in _roots) {
+      for (final raw in (root['sharedSelectionEntries'] as List? ?? const [])) {
+        final entry = raw as Map<String, dynamic>;
+        if (entry['name'] == 'Battle Size') return entry;
+      }
+    }
+    return null;
+  }
+
+  Iterable<Map<String, dynamic>> _descendants(Object? node_) sync* {
+    if (node_ is Map<String, dynamic>) {
+      yield node_;
+      for (final value in node_.values) {
+        yield* _descendants(value);
+      }
+    } else if (node_ is List) {
+      for (final value in node_) {
+        yield* _descendants(value);
+      }
+    }
+  }
+
   /// Las mejoras que habilita un detachment, con su texto ya traducido.
   ///
   /// Una mejora es una opción con coste en puntos que el dataset esconde salvo que se haya elegido
@@ -376,11 +450,14 @@ class Dataset {
     required String? groupId,
     required String? groupName,
     required List<Constraint> groupConstraints,
+    Map<String, dynamic>? link,
+    List<Modifier> groupModifiers = const [],
     int count = 1,
   }) {
     final constraints = [
-      for (final raw in (entry['constraints'] as List? ?? const []))
-        Constraint.fromNode(raw as Map<String, dynamic>),
+      for (final node_ in [entry, if (link != null) link])
+        for (final raw in (node_['constraints'] as List? ?? const []))
+          Constraint.fromNode(raw as Map<String, dynamic>),
     ];
     final selection = Selection(
       entryId: entry['id'] as String? ?? '',
@@ -392,18 +469,23 @@ class Dataset {
       groupName: groupName,
       constraints: constraints,
       groupConstraints: groupConstraints,
-      modifiers: Modifier.allOf(entry),
+      modifiers: [Modifier.allOf(entry), if (link != null) Modifier.allOf(link)].expand((m) => m).toList(),
+      groupModifiers: groupModifiers,
       categoryIds: [
         for (final raw in (entry['categoryLinks'] as List? ?? const []))
           if ((raw as Map<String, dynamic>)['targetId'] is String) raw['targetId'] as String,
       ],
     );
 
-    for (final child in _childEntries(entry)) {
-      final minimum = _minimumSelections(child);
+    for (final child in _childLinks(entry)) {
+      final minimum = _minimumSelections(child.entry);
       if (minimum > 0) {
-        selection.addChild(_selectionFrom(child,
-            groupId: null, groupName: null, groupConstraints: const [], count: minimum));
+        selection.addChild(_selectionFrom(child.entry,
+            groupId: null,
+            groupName: null,
+            groupConstraints: const [],
+            link: child.link,
+            count: minimum));
       }
     }
 
@@ -413,13 +495,16 @@ class Dataset {
         for (final c in (group['constraints'] as List? ?? const []))
           Constraint.fromNode(c as Map<String, dynamic>),
       ];
-      for (final option in _childEntries(group)) {
-        final minimum = _minimumSelections(option);
+      final groupChanges = Modifier.allOf(group);
+      for (final option in _childLinks(group)) {
+        final minimum = _minimumSelections(option.entry);
         if (minimum > 0) {
-          selection.addChild(_selectionFrom(option,
+          selection.addChild(_selectionFrom(option.entry,
               groupId: group['id'] as String?,
               groupName: group['name'] as String?,
               groupConstraints: groupRules,
+              groupModifiers: groupChanges,
+              link: option.link,
               count: minimum));
         }
       }
@@ -429,13 +514,24 @@ class Dataset {
   }
 
   /// Las entradas hijas de un nodo, estén incrustadas o lleguen por enlace.
-  Iterable<Map<String, dynamic>> _childEntries(Map<String, dynamic> node_) sync* {
+  Iterable<Map<String, dynamic>> _childEntries(Map<String, dynamic> node_) =>
+      _childLinks(node_).map((child) => child.entry);
+
+  /// Igual, pero conservando el enlace por el que se llega a cada una.
+  ///
+  /// El enlace no es un puntero y ya: es donde el dataset **ajusta lo compartido a este sitio**.
+  /// La misma entrada «Reaver Wargear» permite una opción en general y dos cuando se llega a ella
+  /// desde según qué miniatura, y quien lo dice es un modifier del enlace sobre una restricción.
+  /// Resolver solo el destino se lleva por delante ese ajuste.
+  Iterable<({Map<String, dynamic> entry, Map<String, dynamic>? link})> _childLinks(
+      Map<String, dynamic> node_) sync* {
     for (final raw in (node_['selectionEntries'] as List? ?? const [])) {
-      yield raw as Map<String, dynamic>;
+      yield (entry: raw as Map<String, dynamic>, link: null);
     }
     for (final raw in (node_['entryLinks'] as List? ?? const [])) {
-      final target = node((raw as Map<String, dynamic>)['targetId'] as String? ?? '');
-      if (target != null) yield target;
+      final link = raw as Map<String, dynamic>;
+      final target = node(link['targetId'] as String? ?? '');
+      if (target != null) yield (entry: target, link: link);
     }
   }
 

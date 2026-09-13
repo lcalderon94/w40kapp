@@ -46,8 +46,10 @@ evaluación de `constraints`, es del constructor de listas, no de esta capa.
 ## Construir una lista
 
 ```dart
-final roster = Roster(faction: faccion, pointsLimit: 2000)
-  ..detachment = dataset.detachmentsOf(faccion).first;
+final tamano = dataset.battleSizes.firstWhere((b) => b.pointsLimit == 2000);
+final roster = Roster(faction: faccion, pointsLimit: tamano.pointsLimit)
+  ..detachment = dataset.detachmentsOf(faccion).first
+  ..battleSize = tamano;
 roster.add(dataset.selectionFor(unidad));      // la unidad con sus mínimos ya puestos
 print('${roster.points}/${roster.pointsLimit}');
 for (final incumplimiento in roster.validate()) print(incumplimiento);
@@ -95,10 +97,33 @@ El criterio se queda corto antes que inventarse nada: **si devuelve una mejora, 
 detachment** —ninguna aparece en dos, y hay un test que lo comprueba—. `enhancementCoverage` dice
 de cuáles fiarse antes de enseñar una lista vacía.
 
-`validate` cubre el límite de puntos, que se haya elegido detachment, los mínimos y máximos de cada opción, los de su grupo —«entre
-10 y 20 Poxwalkers», que se comprueban sumando los hermanos que salen del mismo grupo— y los que
-limitan cuántas veces puede repetirse una unidad en el ejército. Cuando el dataset trae su propio
-mensaje de error, se usa ese.
+`validate` cubre el límite de puntos, que se haya elegido detachment, los mínimos y máximos de cada
+opción, los de su grupo —«entre 10 y 20 Poxwalkers», que se comprueban sumando los hermanos que
+salen del mismo grupo— y los que limitan cuántas veces puede repetirse una unidad en el ejército.
+
+Y los cubre con el **límite efectivo, no con el declarado**, que rara vez son el mismo número. Hay
+2.533 modifiers que cambian una restricción de selecciones, y la mitad larga miran el tamaño de la
+partida: 4.544 de las 6.149 unidades se pueden repetir tres veces en Strike Force y solo dos en
+Incursion. Es la regla de las tres copias escalada por tamaño, y el dataset la escribe como un
+`set 2` sobre la restricción, no dentro de ella. Sin aplicarlo, una lista de 1000 puntos se valida
+con los límites de una de 2000.
+
+Por eso el roster necesita saber **de qué partida se trata**:
+
+- `battleSize`, uno de los tres que da `dataset.battleSizes`, cada uno con su límite de puntos
+  sacado del propio dataset. Sin él esos límites no se comprueban: contestar «no es Incursion» sin
+  saberlo dejaría puesto el límite grande en una lista que a lo mejor es pequeña.
+- `force`, el tipo de lista. Por defecto Army Roster, la partida normal. En Crusade el máximo de
+  Poxwalkers se dobla a seis, y quien lo dice es una condición `instanceOf` sobre el tipo de
+  fuerza: en general `instanceOf` pregunta si una selección desciende de una entrada y no se sabe
+  contestar, pero los tipos de fuerza son cuatro y una lista es de uno solo, así que ahí sí.
+
+También cuentan los ajustes que vienen **por el enlace**. Una entrada compartida no se usa igual en
+todas partes, y el enlace es donde el dataset la ajusta a su sitio: trae sus propias restricciones y
+sus propios modifiers. Resolviendo solo el destino, la opción se valida con los límites genéricos.
+
+Cuando el dataset trae su propio mensaje de error se usa ese, salvo si el límite efectivo ha
+cambiado: el mensaje lleva el número declarado escrito dentro y diría otra cosa que el aviso.
 
 ## Qué pasa cuando el motor no entiende una condición
 
@@ -106,9 +131,16 @@ No la aplica, y lo cuenta en `Roster.skippedModifiers`. Es deliberado: un precio
 condición mal interpretada parece correcto y no lo es, que en una app de listas es peor que
 quedarse corto.
 
-Hoy quedan fuera 1.816 modifiers de coste, que afectan al 27,8 % de las unidades. Todos son la
-misma construcción, `localConditionGroups`: cuentan instancias repetidas de la misma unidad dentro
-del padre (`atLeast` 1 a 3) con dos comparaciones propias, `before` e `instanceOf`.
+Con las restricciones hace lo mismo: si no sabe calcular el límite efectivo, **no comprueba la
+restricción** en vez de comprobarla contra el número declarado. Dar por ilegal una lista que no lo
+es sería peor que no avisar. Queda contado en `Roster.uncheckedConstraints`, y
+`selectionsWithUncheckedConstraints` dice en qué selecciones. Son pocas: 76 restricciones en 72 de
+las 6.149 unidades, y casi todas por condiciones que cuentan **fuerzas** —cuántos destacamentos de
+tal tipo hay en el roster—, que esta capa no modela porque solo maneja una.
+
+En el coste quedan fuera 1.838 modifiers, que afectan al 28,2 % de las unidades. Todos son la misma
+construcción, `localConditionGroups`: cuentan instancias repetidas de la misma unidad dentro del
+padre (`atLeast` 1 a 3) con dos comparaciones propias, `before` e `instanceOf`.
 
 **No se implementan porque no existe especificación.** `localConditionGroup` no aparece en ningún
 esquema publicado de BattleScribe: ni en el [2.03][esquema] que el propio dataset declara usar, ni
@@ -127,17 +159,18 @@ avisar en ellas y no sobre la lista entera.
 
 ## Estado
 
-Se lee el dataset, se construyen y validan listas, y se aplican los modifiers de coste evaluables.
-Lo que falta para la paridad con WarOrgan:
+Se lee el dataset, se construyen y validan listas, y se aplican los modifiers evaluables: los de
+coste y los que cambian las restricciones. Lo que falta para la paridad con WarOrgan:
 
 - **`localConditionGroups`**, lo de arriba: bloqueado hasta que BSData publique el esquema, o hasta
   poder contrastar la semántica contra una fuente de puntos fiable.
-- **Modifiers sobre restricciones**, que cambian los límites en vez del coste.
 - **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da
   exactamente cuatro.
 - **Boarding Actions**: los detachments ya se separan, pero el resto del modo (fuerzas, límites,
   unidades propias) no está.
 - **Límites por rol** del destacamento, que viven en las `categoryEntries` de `forceEntries`.
+- **Varias fuerzas en un roster**, que es lo que dejaría comprobar las 76 restricciones que hoy se
+  quedan sin mirar.
 
 ## Entorno
 

@@ -61,17 +61,81 @@ void main() {
     expect(violations.map((v) => v.message).join(' '), contains('mínimo 10'));
   });
 
-  test('avisa cuando una unidad se repite más veces de las permitidas', () {
-    final unit = deathGuard.units.firstWhere((u) => u.name == 'Poxwalkers');
-    final limit = unit.constraints.firstWhere(
-        (c) => c.isMax && c.field == 'selections' && c.scope == 'force');
-    final roster = Roster(faction: deathGuard, pointsLimit: 5000);
-    for (var i = 0; i <= limit.value; i++) {
+  /// Una lista con [copies] copias de la unidad, del tamaño de partida indicado.
+  Roster rosterWith(String unitName, int copies, {BattleSize? size}) {
+    final unit = deathGuard.units.firstWhere((u) => u.name == unitName);
+    final roster = Roster(faction: deathGuard, pointsLimit: 5000)
+      ..detachment = dataset.detachmentsOf(deathGuard).first
+      ..battleSize = size;
+    for (var i = 0; i < copies; i++) {
       roster.add(dataset.selectionFor(unit));
     }
-    final violations = roster.validate();
+    return roster;
+  }
+
+  BattleSize sizeOf(int pointsLimit) =>
+      dataset.battleSizes.firstWhere((b) => b.pointsLimit == pointsLimit);
+
+  test('avisa cuando una unidad se repite más veces de las permitidas', () {
+    final violations = rosterWith('Poxwalkers', 4, size: sizeOf(2000)).validate();
     expect(violations, isNotEmpty);
-    expect(violations.map((v) => v.message).join(' '), contains('máximo ${limit.value}'));
+    expect(violations.map((v) => v.message).join(' '), contains('máximo 3'));
+  });
+
+  test('el tamaño de la partida cambia cuántas veces se puede repetir una unidad', () {
+    // El límite que declara el dataset es 3, pero un modifier lo baja a 2 en Incursion. Es la
+    // regla de las tres copias escalada por tamaño, y afecta a 4.544 de las 6.149 unidades: sin
+    // aplicar el modifier, una lista de 1000 puntos se validaría con los límites de una de 2000.
+    expect(rosterWith('Poxwalkers', 3, size: sizeOf(2000)).validate(), isEmpty);
+
+    final incursion = rosterWith('Poxwalkers', 3, size: sizeOf(1000)).validate();
+    expect(incursion.map((v) => v.message).join(' '), contains('máximo 2'));
+    expect(rosterWith('Poxwalkers', 2, size: sizeOf(1000)).validate(), isEmpty);
+  });
+
+  test('sin tamaño de partida el límite no se comprueba, y se dice', () {
+    // Contestar «no es Incursion» sin saberlo dejaría puesto el límite de Strike Force en una
+    // lista que a lo mejor es de 1000 puntos. Se prefiere no comprobar y avisar de que no se ha
+    // comprobado.
+    final roster = rosterWith('Poxwalkers', 4);
+    expect(roster.validate(), isEmpty);
+    expect(roster.uncheckedConstraints, greaterThan(0));
+    expect(roster.selectionsWithUncheckedConstraints.map((s) => s.name), contains('Poxwalkers'));
+  });
+
+  test('el tipo de lista contesta las condiciones que preguntan por él', () {
+    // El máximo de Poxwalkers se dobla en Crusade. La condición es un `instanceOf` sobre el tipo
+    // de fuerza, que en general no se sabe evaluar, pero los tipos son cuatro y una lista es de
+    // uno: preguntarle a la lista de cuál es tiene respuesta exacta.
+    final crusade = dataset.forces.firstWhere((f) => f.name == 'Crusade Force');
+    final roster = rosterWith('Poxwalkers', 6, size: sizeOf(2000))..force = crusade;
+    expect(roster.validate(), isEmpty, reason: 'en Crusade el máximo se dobla a 6');
+    expect(roster.uncheckedConstraints, 0);
+
+    final normal = rosterWith('Poxwalkers', 6, size: sizeOf(2000));
+    expect(normal.validate(), isNotEmpty);
+  });
+
+  test('el enlace aporta sus propias restricciones a la selección', () {
+    // Una entrada compartida se ajusta en el sitio donde se usa, y el ajuste vive en el enlace:
+    // sus restricciones y sus modifiers. Resolviendo solo el destino se pierde y la opción se
+    // valida con los límites genéricos.
+    final aeldari = dataset.factionNamed('Xenos - Aeldari');
+    final scorpion = aeldari.units.firstWhere((u) => u.name == 'Scorpion [Legends]');
+    final armas = dataset
+        .selectionFor(scorpion)
+        .descendantsAndSelf
+        .firstWhere((s) => s.name == 'Heavy Weapons [Legends]');
+
+    final propias = (dataset.node(armas.entryId)!['constraints'] as List).length;
+    expect(armas.constraints, hasLength(greaterThan(propias)));
+    expect(armas.modifiers.any((m) => armas.constraints.any((c) => c.id == m.field)), isTrue,
+        reason: 'y los modifiers que las cambian');
+  });
+
+  test('los tres tamaños de partida traen su límite de puntos', () {
+    expect(dataset.battleSizes.map((b) => b.pointsLimit), [1000, 2000, 3000]);
+    expect(dataset.battleSizes.first.name, contains('Incursion'));
   });
 
   test('cualquier unidad de cualquier facción se puede seleccionar sin romperse', () {

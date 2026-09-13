@@ -39,13 +39,17 @@ Future<void> main(List<String> args) async {
   }
 
   // Una lista de ejemplo, para ver el coste y la validación funcionando.
-  final roster = Roster(faction: chosen, pointsLimit: 500, name: 'Ejemplo');
+  final battleSize = dataset.battleSizes.firstWhere((b) => b.pointsLimit == 1000);
+  final detachments = dataset.detachmentsOf(chosen);
+  final roster = Roster(faction: chosen, pointsLimit: battleSize.pointsLimit, name: 'Ejemplo')
+    ..battleSize = battleSize;
+  if (detachments.isNotEmpty) roster.detachment = detachments.first;
   for (final unit in units.where((u) => u.points != null).take(3)) {
     roster.add(dataset.selectionFor(unit));
   }
   print('');
-  print('${roster.name}: ${roster.points}/${roster.pointsLimit} pts '
-      '(quedan ${roster.pointsRemaining})');
+  print('${roster.name} · ${battleSize.name} · ${roster.detachment?.name ?? 'sin detachment'}');
+  print('${roster.points}/${roster.pointsLimit} pts (quedan ${roster.pointsRemaining})');
   for (final unit in roster.units) {
     final detail = unit.children.isEmpty
         ? ''
@@ -59,5 +63,9 @@ Future<void> main(List<String> args) async {
     for (final violation in violations) {
       print('  Incumple · $violation');
     }
+  }
+  if (roster.uncheckedConstraints > 0) {
+    final afectadas = roster.selectionsWithUncheckedConstraints.map((s) => s.name).toSet();
+    print('  ${roster.uncheckedConstraints} restricciones sin comprobar en ${afectadas.join(', ')}');
   }
 }

@@ -2,9 +2,6 @@ import 'detachment.dart';
 import 'model.dart';
 import 'modifiers.dart';
 
-/// Identificador del tipo de coste en puntos, declarado en el fichero del sistema de juego.
-const pointsCostTypeId = '51b2-306e-1021-d207';
-
 /// Una selección dentro de una lista: una unidad, una de sus miniaturas o una opción de equipo.
 ///
 /// El coste de una lista es la suma de este árbol, no el precio de la unidad. Los Poxwalkers
@@ -23,12 +20,14 @@ class Selection {
     List<Constraint>? constraints,
     List<Constraint>? groupConstraints,
     List<Modifier>? modifiers,
+    List<Modifier>? groupModifiers,
     List<String>? categoryIds,
   })  : pointsEach = basePointsEach,
         children = children ?? [],
         constraints = constraints ?? const [],
         groupConstraints = groupConstraints ?? const [],
         modifiers = modifiers ?? const [],
+        groupModifiers = groupModifiers ?? const [],
         categoryIds = categoryIds ?? const [] {
     for (final child in this.children) {
       child.parent = this;
@@ -53,6 +52,12 @@ class Selection {
   /// esa unidad en concreto en vez de poner en duda la lista entera.
   int unresolvedCostModifiers = 0;
 
+  /// Restricciones de esta selección cuyo límite efectivo no se ha podido calcular.
+  ///
+  /// Mayor que cero significa que esa restricción no se ha comprobado: el dataset la cambia con un
+  /// modifier que el motor no sabe evaluar, y comprobar el número declarado daría un aviso falso.
+  int uncheckedConstraints = 0;
+
   int count;
 
   /// Grupo de opciones del que sale esta selección, si sale de uno.
@@ -66,6 +71,9 @@ class Selection {
   final List<Constraint> constraints;
   final List<Constraint> groupConstraints;
   final List<Modifier> modifiers;
+
+  /// Los modifiers del grupo de opciones, que son los que cambian sus restricciones.
+  final List<Modifier> groupModifiers;
 
   /// Categorías a las que pertenece. Las condiciones de los modifiers cuentan por categoría.
   final List<String> categoryIds;
@@ -114,6 +122,22 @@ class Roster {
   /// El detachment elegido. Un ejército necesita uno, y es lo que decide sus reglas.
   Detachment? detachment;
 
+  /// El tamaño de la partida.
+  ///
+  /// No es lo mismo que [pointsLimit], aunque cada tamaño traiga el suyo: **cambia las reglas de
+  /// construcción**. Muchas unidades se pueden repetir tres veces en Strike Force y solo dos en
+  /// Incursion, y eso lo decide un modifier sobre la restricción que mira cuál se ha elegido. Sin
+  /// tamaño esos modifiers no se pueden evaluar y esos límites se quedan sin comprobar.
+  BattleSize? battleSize;
+
+  /// El tipo de lista. Por defecto una partida normal, que es lo que asume el constructor.
+  ///
+  /// Hay reglas que solo valen en algunos: el máximo de Poxwalkers se dobla en Crusade, y las
+  /// unidades de Boarding Actions se recortan a la mitad.
+  Force? force;
+
+  Force get _force => force ?? faction.dataset.standardForce;
+
   /// Coste de la lista, con los modifiers de coste ya aplicados.
   int get points {
     applyModifiers();
@@ -138,7 +162,7 @@ class Roster {
       for (final modifier in selection.modifiers) {
         if (modifier.field != pointsCostTypeId) continue;
         if (!Modifier.numericTypes.contains(modifier.type)) continue;
-        if (!modifier.isEvaluable) {
+        if (!_canEvaluate(modifier)) {
           skippedModifiers++;
           selection.unresolvedCostModifiers++;
           continue;
@@ -166,9 +190,54 @@ class Roster {
   Iterable<Selection> get selectionsWithUnresolvedCost =>
       _all.where((s) => s.unresolvedCostModifiers > 0);
 
-  Iterable<Selection> get _all => units.expand((u) => u.descendantsAndSelf);
+  Iterable<Selection> get _all => [...units.expand((u) => u.descendantsAndSelf), ..._configuration];
+
+  /// Las selecciones de configuración de la lista: el tamaño de partida y el detachment.
+  ///
+  /// En el dataset son selecciones como cualquier otra, solo que sin puntos, y las condiciones de
+  /// los modifiers preguntan por ellas: «máximo 2 si la partida es Incursion», «esta unidad solo
+  /// con tal detachment». Si no están en el ámbito, esas condiciones cuentan cero y salen falsas.
+  List<Selection> get _configuration {
+    final key = '\${battleSize?.id}|\${detachment?.id}';
+    if (_configurationKey == key) return _configurationCache;
+    _configurationKey = key;
+    return _configurationCache = [
+      for (final id in [battleSize?.id, detachment?.id])
+        if (id != null)
+          Selection(entryId: id, name: '', type: 'upgrade', basePointsEach: 0),
+    ];
+  }
+
+  String? _configurationKey;
+  List<Selection> _configurationCache = const [];
+
+  /// Si el motor puede evaluar este modifier. Amplía [Modifier.isEvaluable] con lo que sabe la
+  /// lista y no puede saber una condición suelta: de qué tipo es la fuerza.
+  bool _canEvaluate(Modifier modifier) => modifier.isEvaluableWith(
+      (c) => (c.isSupported || _isForceTypeQuestion(c)) && !_asksForUnknownBattleSize(c));
+
+  /// Si la condición pregunta por el tamaño de la partida y la lista todavía no tiene ninguno.
+  ///
+  /// Sin tamaño no se puede contestar, y contestar «no» sería peor que no contestar: dejaría el
+  /// límite de Strike Force puesto en una lista que a lo mejor es de Incursion.
+  bool _asksForUnknownBattleSize(Condition condition) =>
+      battleSize == null && faction.dataset.battleSizes.any((b) => b.id == condition.childId);
+
+  /// Si la condición pregunta de qué tipo es la lista: Army Roster, Boarding Actions, Crusade.
+  ///
+  /// `instanceOf` en general pregunta si una selección desciende de una entrada, que es otra cosa
+  /// y no se sigue. Pero cuando lo que nombra es uno de los cuatro tipos de fuerza que declara el
+  /// sistema, la pregunta es «¿de qué clase es esta lista?», y eso tiene respuesta exacta.
+  bool _isForceTypeQuestion(Condition condition) =>
+      (condition.type == 'instanceOf' || condition.type == 'notInstanceOf') &&
+      faction.dataset.forces.any((f) => f.id == condition.childId);
 
   bool _holds(Condition condition, Selection target) {
+    if (_isForceTypeQuestion(condition)) {
+      final isThisForce = condition.childId == _force.id;
+      return condition.type == 'instanceOf' ? isThisForce : !isThisForce;
+    }
+
     // Solo se saben contar selecciones y puntos; otros tipos de coste aún no se siguen.
     if (condition.field != 'selections' && condition.field != pointsCostTypeId) return false;
 
@@ -191,7 +260,9 @@ class Roster {
         return expand(target.parent?.children ?? const []);
       case 'force':
       case 'roster':
-        return expand(units);
+        // Incluye la configuración: el tamaño de partida y el detachment son selecciones de la
+        // lista, y la mitad de las condiciones de ámbito roster preguntan justo por ellos.
+        return expand([...units, ..._configuration]);
       default:
         // El ámbito es el id de un grupo de opciones o de otra entrada.
         final inGroup = target.descendantsAndSelf.where((s) => s.groupId == condition.scope);
@@ -215,6 +286,10 @@ class Roster {
   /// límites por rol del destacamento.
   List<Violation> validate() {
     final violations = <Violation>[];
+    uncheckedConstraints = 0;
+    for (final selection in _all) {
+      selection.uncheckedConstraints = 0;
+    }
     final total = points;
 
     if (total > pointsLimit) {
@@ -236,7 +311,7 @@ class Roster {
       for (final constraint in child.constraints) {
         if (constraint.field != 'selections') continue;
         if (constraint.scope != 'parent' && constraint.scope != 'self') continue;
-        _check(child, child.count, constraint, violations, child.name);
+        _check(child, child.count, constraint, child.modifiers, violations, child.name);
       }
     }
 
@@ -251,7 +326,7 @@ class Roster {
       final total = siblings.fold(0, (sum, s) => sum + s.count);
       for (final constraint in siblings.first.groupConstraints) {
         if (constraint.field != 'selections') continue;
-        _check(siblings.first, total, constraint, violations,
+        _check(siblings.first, total, constraint, siblings.first.groupModifiers, violations,
             siblings.first.groupName ?? siblings.first.name);
       }
     }
@@ -271,19 +346,57 @@ class Roster {
       for (final constraint in unit.constraints) {
         if (constraint.field != 'selections') continue;
         if (constraint.scope != 'force' && constraint.scope != 'roster') continue;
-        _check(unit, counts[unit.entryId] ?? 0, constraint, violations, unit.name);
+        _check(unit, counts[unit.entryId] ?? 0, constraint, unit.modifiers, violations, unit.name);
       }
     }
   }
 
-  void _check(Selection selection, int actual, Constraint constraint, List<Violation> violations,
-      String subject) {
-    final broken = constraint.isMax ? actual > constraint.value : actual < constraint.value;
+  void _check(Selection selection, int actual, Constraint constraint, List<Modifier> modifiers,
+      List<Violation> violations, String subject) {
+    final limit = _effectiveLimit(constraint, selection, modifiers);
+    if (limit == null) return;
+
+    final broken = constraint.isMax ? actual > limit : actual < limit;
     if (!broken) return;
-    final message = constraint.message ??
-        (constraint.isMax
-            ? 'como máximo ${constraint.value}, hay $actual'
-            : 'mínimo ${constraint.value}, hay $actual');
+    // El mensaje del dataset lleva el número declarado escrito. Si el efectivo es otro, no vale.
+    final message = (limit == constraint.value ? constraint.message : null) ??
+        (constraint.isMax ? 'como máximo $limit, hay $actual' : 'mínimo $limit, hay $actual');
     violations.add(Violation(selection, '$subject: $message'));
   }
+
+  /// El límite que de verdad tiene una restricción, con los modifiers que la cambian aplicados.
+  ///
+  /// El número que declara el dataset no siempre es el que vale. Son 2.533 los modifiers que
+  /// cambian una restricción de selecciones, y la mitad larga miran el tamaño de la partida: la
+  /// mayoría de las unidades se pueden repetir tres veces en Strike Force y solo dos en Incursion,
+  /// y quien lo dice es un `set 2` sobre la restricción, no la restricción.
+  ///
+  /// Devuelve `null` cuando hay un modifier que no se sabe evaluar. Entonces la restricción **no
+  /// se comprueba**, en vez de comprobarse contra el número declarado: dar por ilegal una lista
+  /// que no lo es sería peor que no avisar, y queda contado en [uncheckedConstraints].
+  int? _effectiveLimit(Constraint constraint, Selection target, List<Modifier> modifiers) {
+    var limit = constraint.value.round();
+    for (final modifier in modifiers) {
+      if (modifier.field != constraint.id) continue;
+      if (!Modifier.numericTypes.contains(modifier.type)) continue;
+      if (!_canEvaluate(modifier)) {
+        uncheckedConstraints++;
+        target.uncheckedConstraints++;
+        return null;
+      }
+      if (!modifier.appliesWhen((c) => _holds(c, target))) continue;
+      limit = modifier.applyTo(limit);
+    }
+    return limit;
+  }
+
+  /// Restricciones que [validate] ha dejado sin comprobar por no saber calcular su límite.
+  ///
+  /// Se cuenta desde cero en cada [validate]. Si no es cero, la lista puede tener incumplimientos
+  /// que no se han visto; [selectionsWithUncheckedConstraints] dice en cuáles.
+  int uncheckedConstraints = 0;
+
+  /// Las selecciones con alguna restricción sin comprobar, para poder señalarlas en la interfaz.
+  Iterable<Selection> get selectionsWithUncheckedConstraints =>
+      _all.where((s) => s.uncheckedConstraints > 0);
 }

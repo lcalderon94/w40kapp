@@ -1,3 +1,6 @@
+/// Identificador del tipo de coste en puntos, declarado en el fichero del sistema de juego.
+const pointsCostTypeId = '51b2-306e-1021-d207';
+
 /// Una condición para que un modifier se aplique.
 ///
 /// Cuenta algo dentro de un ámbito y lo compara con un valor: «cuántas miniaturas hay en este
@@ -16,11 +19,30 @@ class Condition {
   final String type;
 
   /// Tipos de comparación que esta capa sabe evaluar.
+  ///
+  /// Faltan `instanceOf` y `notInstanceOf`, que no cuentan nada: preguntan si la selección
+  /// desciende de una entrada concreta, que es otra cosa y aún no se sigue.
   static const supportedTypes = {
     'atLeast', 'atMost', 'equalTo', 'notEqualTo', 'greaterThan', 'lessThan'
   };
 
-  bool get isSupported => supportedTypes.contains(type);
+  /// Nombres reservados de ámbito que esta capa no sabe recorrer.
+  ///
+  /// El esquema reserva unos cuantos nombres y deja que cualquier otro valor sea el id de un grupo
+  /// o de una entrada. Los que no están aquí sí se recorren, así que hay que enumerar los que no:
+  /// si no, un ámbito como `ancestor` se tomaría por un identificador, no encontraría nada, contaría
+  /// cero y la condición saldría falsa sin que nadie se entere.
+  static const unsupportedScopes = {
+    'ancestor', 'root-entry', 'unit', 'model', 'model-or-unit', 'primary-catalogue',
+  };
+
+  /// Lo que esta capa sabe contar: selecciones y puntos. Los demás tipos de coste, no.
+  static const supportedFields = {'selections', pointsCostTypeId};
+
+  bool get isSupported =>
+      supportedTypes.contains(type) &&
+      supportedFields.contains(field) &&
+      !unsupportedScopes.contains(scope);
 
   /// `selections` para contar selecciones, o el id de un tipo de coste para sumarlo.
   final String field;
@@ -75,10 +97,14 @@ class ConditionGroup {
   /// preferible dejar el precio base a inventarse uno.
   final bool hasLocalGroups;
 
-  bool get isSupported =>
-      !hasLocalGroups &&
-      conditions.every((c) => c.isSupported) &&
-      groups.every((g) => g.isSupported);
+  bool get isSupported => isSupportedWith((c) => c.isSupported);
+
+  /// Igual, pero preguntando a [supports] por cada condición.
+  ///
+  /// Sirve para que quien evalúa pueda añadir lo que sepa contestar por su cuenta sin que esta
+  /// clase tenga que saberlo: el roster, por ejemplo, sabe de qué tipo es la fuerza.
+  bool isSupportedWith(bool Function(Condition) supports) =>
+      !hasLocalGroups && conditions.every(supports) && groups.every((g) => g.isSupportedWith(supports));
 
   factory ConditionGroup.fromNode(Map<String, dynamic> node) => ConditionGroup(
         type: node['type'] as String? ?? 'and',
@@ -183,8 +209,11 @@ class Modifier {
   }
 
   /// Si el motor entiende todas sus condiciones. Cuando no, el modifier se deja sin aplicar.
-  bool get isEvaluable =>
-      conditions.every((c) => c.isSupported) && conditionGroups.every((g) => g.isSupported);
+  bool get isEvaluable => isEvaluableWith((c) => c.isSupported);
+
+  /// Igual, pero preguntando a [supports] por cada condición. Ver [ConditionGroup.isSupportedWith].
+  bool isEvaluableWith(bool Function(Condition) supports) =>
+      conditions.every(supports) && conditionGroups.every((g) => g.isSupportedWith(supports));
 
   bool appliesWhen(bool Function(Condition) test) {
     if (!conditions.every(test)) return false;
