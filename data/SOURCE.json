@@ -1,0 +1,427 @@
+{
+  "source": {
+    "repository": "https://github.com/BSData/wh40k-11e",
+    "commit": "a9fd7b49aab8d55e74561be6e3a51464e96254e3",
+    "commitDate": "2026-09-12T13:53:05+01:00",
+    "retrievedAt": "2026-09-13T00:04:05Z"
+  },
+  "gameSystem": "Warhammer 40,000",
+  "edition": "11",
+  "fileCount": 46,
+  "files": [
+    {
+      "file": "Aeldari - Aeldari Library.json",
+      "kind": "library",
+      "name": "Aeldari - Aeldari Library",
+      "id": "dfcf-1214-b57-2205",
+      "revision": 2,
+      "bytes": 4471055,
+      "sha256": "883938323131d8b474865c9fe715c17461975c5764e5a173f42f272d3eaec648"
+    },
+    {
+      "file": "Aeldari - Craftworlds.json",
+      "kind": "catalogue",
+      "name": "Xenos - Aeldari",
+      "id": "34a5-8c7e-f468-82d1",
+      "revision": 2,
+      "bytes": 18780,
+      "sha256": "a3df5ff95c52c5b3e54335af8d4eeaca5fee3c379506f44beac70dc28a51c094"
+    },
+    {
+      "file": "Aeldari - Drukhari.json",
+      "kind": "catalogue",
+      "name": "Xenos - Drukhari",
+      "id": "38de-521f-1ce0-44a0",
+      "revision": 2,
+      "bytes": 9081,
+      "sha256": "57601e25a0437ac399f40755b8513e369f825bb811c1b0320d11b41da555770a"
+    },
+    {
+      "file": "Chaos - Chaos Daemons Library.json",
+      "kind": "library",
+      "name": "Chaos - Daemons Library",
+      "id": "b45c-af22-788a-dfd6",
+      "revision": 16,
+      "bytes": 1799239,
+      "sha256": "bf6b6ffe22b587402e12bc8dd427f7631acb73e80d3030909018b8ea9563e2e4"
+    },
+    {
+      "file": "Chaos - Chaos Daemons.json",
+      "kind": "catalogue",
+      "name": "Chaos - Chaos Daemons",
+      "id": "d265-877b-e03d-30ca",
+      "revision": 2,
+      "bytes": 62802,
+      "sha256": "ad1ee23054991cdd2159ac502e319bdb7a10a76ef48ebc73cf892c1074b8815a"
+    },
+    {
+      "file": "Chaos - Chaos Knights Library.json",
+      "kind": "library",
+      "name": "Chaos - Chaos Knights Library",
+      "id": "8106-aad2-918a-9ac",
+      "revision": 9,
+      "bytes": 852302,
+      "sha256": "1093e2eae7d3d6c53dac71fa5cfa330934cc000a95e3ae4838ba31c24d00abf5"
+    },
+    {
+      "file": "Chaos - Chaos Knights.json",
+      "kind": "catalogue",
+      "name": "Chaos - Chaos Knights",
+      "id": "46d8-abc8-ef3a-9f85",
+      "revision": 2,
+      "bytes": 44963,
+      "sha256": "407399614f411ccb8a41f35482af69d97910fcaf84fb1740e028d5a67882a51d"
+    },
+    {
+      "file": "Chaos - Chaos Space Marines.json",
+      "kind": "catalogue",
+      "name": "Chaos - Chaos Space Marines",
+      "id": "c8da-e875-58f7-f6d6",
+      "revision": 15,
+      "bytes": 3612834,
+      "sha256": "0adfd2756e012847ab53c79dbde11a27d6cfba083b887931fdbab50fc68983bb"
+    },
+    {
+      "file": "Chaos - Death Guard.json",
+      "kind": "catalogue",
+      "name": "Chaos - Death Guard",
+      "id": "5108-f98-63c2-53cb",
+      "revision": 13,
+      "bytes": 1700161,
+      "sha256": "62df17caa7a689f7e43adf5fc1e33c3e2db0acea44235642d85704a265168328"
+    },
+    {
+      "file": "Chaos - Emperor's Children.json",
+      "kind": "catalogue",
+      "name": "Chaos - Emperor's Children",
+      "id": "03fe-a162-4c02-f07b",
+      "revision": 10,
+      "bytes": 1041689,
+      "sha256": "55fd6733081e6ba758db8eed28fa6528842a8f1b9a667b005d0129f4943e6187"
+    },
+    {
+      "file": "Chaos - Thousand Sons.json",
+      "kind": "catalogue",
+      "name": "Chaos - Thousand Sons",
+      "id": "1069-10ff-3ba9-873b",
+      "revision": 13,
+      "bytes": 1519167,
+      "sha256": "53dbe5f0f375921b00765d5628e7153dd30fc949945fcb75da7fa096cb65038c"
+    },
+    {
+      "file": "Chaos - Titanicus Traitoris.json",
+      "kind": "catalogue",
+      "name": "Chaos - Titanicus Traitoris",
+      "id": "880c-c7e-4a43-a0c1",
+      "revision": 2,
+      "bytes": 5772,
+      "sha256": "c01e5ee58248a9c057c6de196912f1d3e618aa322cbd21ee1679577d082bc602"
+    },
+    {
+      "file": "Chaos - World Eaters.json",
+      "kind": "catalogue",
+      "name": "Chaos - World Eaters",
+      "id": "df9a-59b2-f464-59ad",
+      "revision": 11,
+      "bytes": 1357253,
+      "sha256": "4625d77e173aaca35028e4f5f3fc77a7df473dd12e4001644bfa90d93d4ffbe9"
+    },
+    {
+      "file": "Genestealer Cults.json",
+      "kind": "catalogue",
+      "name": "Xenos - Genestealer Cults",
+      "id": "3bdf-a114-5035-c6ac",
+      "revision": 3,
+      "bytes": 1279581,
+      "sha256": "53ffaa793fa8895a9af89d8ece088e639d104ecfe5bdd7b074d7a925f32bc6a8"
+    },
+    {
+      "file": "Imperium - Adepta Sororitas.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adepta Sororitas",
+      "id": "b39e-4401-8f3e-fdf7",
+      "revision": 19,
+      "bytes": 1417619,
+      "sha256": "ba17adfdbbba1a8e87387e7fae0d0e4676a04d9ff18db8392f847c090543da72"
+    },
+    {
+      "file": "Imperium - Adeptus Custodes.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Custodes",
+      "id": "1f19-6509-d906-ca10",
+      "revision": 16,
+      "bytes": 1121460,
+      "sha256": "48869e686b4967c7b57da4dc50e4e631d2e3135f140ac2eb302923d281c50130"
+    },
+    {
+      "file": "Imperium - Adeptus Mechanicus.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Mechanicus",
+      "id": "77b9-2f66-3f9b-5cf3",
+      "revision": 16,
+      "bytes": 1439862,
+      "sha256": "577f2db9ccc7f8a00491859e952a63129475bc5e525bc7d697f5053caeab737d"
+    },
+    {
+      "file": "Imperium - Adeptus Titanicus.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Titanicus",
+      "id": "bdc0-c0d-72d7-87e2",
+      "revision": 2,
+      "bytes": 5709,
+      "sha256": "ac6550daf34110f986a60ae5b2d62efe887f286f3e02b9335423c4223eac696e"
+    },
+    {
+      "file": "Imperium - Agents of the Imperium.json",
+      "kind": "catalogue",
+      "name": "Imperium - Agents of the Imperium",
+      "id": "b00-cd86-4b4c-97ba",
+      "revision": 14,
+      "bytes": 1991174,
+      "sha256": "625235640aedd2f3cc02de5851e711eac489d73409eb9370c10f60c49b7adbcc"
+    },
+    {
+      "file": "Imperium - Astra Militarum - Library.json",
+      "kind": "library",
+      "name": "Imperium - Astra Militarum - Library",
+      "id": "5a44-f048-114b-e3ff",
+      "revision": 3,
+      "bytes": 3713059,
+      "sha256": "a13ab0ca129fee9dbe922c71654822ccf0e4cce08a6bc587f6b45b635a7c7fd6"
+    },
+    {
+      "file": "Imperium - Astra Militarum.json",
+      "kind": "catalogue",
+      "name": "Imperium - Astra Militarum",
+      "id": "b0ae-12a5-c84-ea45",
+      "revision": 2,
+      "bytes": 62452,
+      "sha256": "5a14247906cecf493f331d72143e68586f5c6143ecbf6a2ee6ec75550ffbcf59"
+    },
+    {
+      "file": "Imperium - Black Templars.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Black Templars",
+      "id": "36d3-36bc-68dd-40ac",
+      "revision": 4,
+      "bytes": 512869,
+      "sha256": "79f3e585bb928caf41ff1ab8e462c323b3f0662dddda3485330d1f4a8a7135e3"
+    },
+    {
+      "file": "Imperium - Blood Angels.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Blood Angels",
+      "id": "4ef9-15ce-e3e6-36de",
+      "revision": 4,
+      "bytes": 551027,
+      "sha256": "61e2f12009ba1adac42bab53a9f75476ec7c1a7d7d6a6f61cba2f0cb080a8040"
+    },
+    {
+      "file": "Imperium - Dark Angels.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Dark Angels",
+      "id": "470a-6daa-9014-12df",
+      "revision": 6,
+      "bytes": 470611,
+      "sha256": "cf8e0b7e59f330d2321386016beb3665ae3d162c89d5f508187eff1a77cf17b3"
+    },
+    {
+      "file": "Imperium - Deathwatch.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Deathwatch",
+      "id": "f89b-84e0-6e3b-f1e2",
+      "revision": 9,
+      "bytes": 577487,
+      "sha256": "33a38116738750f709b93e23ab8f4d9ae7abdd5baec7ec42e1e39864ed6b75af"
+    },
+    {
+      "file": "Imperium - Grey Knights.json",
+      "kind": "catalogue",
+      "name": "Imperium - Grey Knights",
+      "id": "50c4-3e83-fe54-97c4",
+      "revision": 2,
+      "bytes": 1188015,
+      "sha256": "ce3759977b17cc82c63845977ea5fd3f2387474f72a55126571ae74a575e46f2"
+    },
+    {
+      "file": "Imperium - Imperial Fists.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Imperial Fists",
+      "id": "5d6e-fd3-330a-11dd",
+      "revision": 3,
+      "bytes": 35160,
+      "sha256": "152c436f2c809b8530396d6f2b119f387cbba90d7141f0343a68a49a4f20304a"
+    },
+    {
+      "file": "Imperium - Imperial Knights - Library.json",
+      "kind": "library",
+      "name": "Imperium - Imperial Knights - Library",
+      "id": "1b6d-dc06-5db9-c7d1",
+      "revision": 3,
+      "bytes": 839102,
+      "sha256": "f2a4d485740c74a6d3b0f5cf7ddb3e18f173f244f1f18fda7c362cb374139f77"
+    },
+    {
+      "file": "Imperium - Imperial Knights.json",
+      "kind": "catalogue",
+      "name": "Imperium - Imperial Knights",
+      "id": "25dd-7aa0-6bf4-f2d5",
+      "revision": 2,
+      "bytes": 9079,
+      "sha256": "e583c50328068ef84efcdda416ff85fecbb7a22c5f5cedc67a35a40b9fc61f2b"
+    },
+    {
+      "file": "Imperium - Iron Hands.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Iron Hands",
+      "id": "f27e-18c0-b73e-748e",
+      "revision": 3,
+      "bytes": 26014,
+      "sha256": "afd8d26030f43383f3953232d71ada86030e296ba85d4bc001ed9925e77e7773"
+    },
+    {
+      "file": "Imperium - Raven Guard.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Raven Guard",
+      "id": "6e59-e1ee-47ad-6ce5",
+      "revision": 4,
+      "bytes": 23702,
+      "sha256": "3e78786dc40d3818d611571065e4fa059ee5240bcb76079461f17a429c8a51ad"
+    },
+    {
+      "file": "Imperium - Salamanders.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Salamanders",
+      "id": "2261-79a5-19d9-1668",
+      "revision": 5,
+      "bytes": 28956,
+      "sha256": "42805569c40837b3d85a00b5a88c6e717e3594cd93776f17732a032f1dd12bc0"
+    },
+    {
+      "file": "Imperium - Space Marines.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Space Marines",
+      "id": "e0af-67df-9d63-8fb7",
+      "revision": 15,
+      "bytes": 5195354,
+      "sha256": "2aa9f853fb7e493e70436e6e5dbccbb6f51a2ce4a868b1927011c962d019e9b8"
+    },
+    {
+      "file": "Imperium - Space Wolves.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Space Wolves",
+      "id": "94bb-3284-ee14-57a1",
+      "revision": 10,
+      "bytes": 1068027,
+      "sha256": "dda72e4bdd385af7d323a19682fe2140d265597ee03594850f317eb1767160e8"
+    },
+    {
+      "file": "Imperium - Ultramarines.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - Ultramarines",
+      "id": "4029-9237-e8db-af55",
+      "revision": 4,
+      "bytes": 250785,
+      "sha256": "79f890745090fa10fc35dc565e5eea2ef0d8fa2bf4c4fca9fe3d9c3a146167c7"
+    },
+    {
+      "file": "Imperium - White Scars.json",
+      "kind": "catalogue",
+      "name": "Imperium - Adeptus Astartes - White Scars",
+      "id": "67c1-fc13-f9a1-cbbf",
+      "revision": 4,
+      "bytes": 28263,
+      "sha256": "26c51efb03fe55f5af3538787b37f8c71f834d77341f27d65d01e061a9b5eacf"
+    },
+    {
+      "file": "Leagues of Votann.json",
+      "kind": "catalogue",
+      "name": "Xenos - Leagues of Votann",
+      "id": "f616-3f08-ee8e-3349",
+      "revision": 7,
+      "bytes": 1273581,
+      "sha256": "7fc52c3b39e683a9edf10c8a71855dedd4ecd78d0025031bf76ad86a60f3845b"
+    },
+    {
+      "file": "Library - Astartes Heresy Legends.json",
+      "kind": "library",
+      "name": "Library - Astartes Heresy Legends",
+      "id": "ac3b-689c-4ad4-70cb",
+      "revision": 1,
+      "bytes": 925356,
+      "sha256": "f74496b230c349761301744f73d6765d5f9ead6cb343ffd64251b7444f31002f"
+    },
+    {
+      "file": "Library - Titans.json",
+      "kind": "library",
+      "name": "Library - Titans",
+      "id": "7481-280e-b55e-7867",
+      "revision": 2,
+      "bytes": 140962,
+      "sha256": "340f95929a6e17670af80095cfec253d9663de255f563eed9536948f53057408"
+    },
+    {
+      "file": "Library - Tyranids.json",
+      "kind": "library",
+      "name": "Library - Tyranids",
+      "id": "374d-45f0-5832-001e",
+      "revision": 2,
+      "bytes": 966234,
+      "sha256": "fa04570820a1e7e9786adee356c2076be59010c82a4828b9d97024c64acf7cd3"
+    },
+    {
+      "file": "Necrons.json",
+      "kind": "catalogue",
+      "name": "Xenos - Necrons",
+      "id": "b654-a18a-ea1-3bf2",
+      "revision": 22,
+      "bytes": 1575639,
+      "sha256": "c18606dcb5686abd1b032a334f344421bd4955af96afbdf4d705db8c871a977b"
+    },
+    {
+      "file": "Orks.json",
+      "kind": "catalogue",
+      "name": "Xenos - Orks",
+      "id": "a55f-b7b3-6c65-a05f",
+      "revision": 3,
+      "bytes": 2154581,
+      "sha256": "059e61c2a1973538ae3262ba665dc133e3dc9a0704d3ecd33734d2a512add825"
+    },
+    {
+      "file": "T'au Empire.json",
+      "kind": "catalogue",
+      "name": "Xenos - T'au Empire",
+      "id": "d81a-61dd-6d27-a3ce",
+      "revision": 3,
+      "bytes": 2193594,
+      "sha256": "76f2555e3490901c9a6f1f53cb33c554feb723d4b71380476d97d0f4ec9aa9dc"
+    },
+    {
+      "file": "Tyranids.json",
+      "kind": "catalogue",
+      "name": "Xenos - Tyranids",
+      "id": "b984-7317-81cc-20f",
+      "revision": 2,
+      "bytes": 834545,
+      "sha256": "85abfa1da282b9dcc87cb3c58458c50303c3b7f7c57f2a76690002aa1fbeaca8"
+    },
+    {
+      "file": "Unaligned Forces.json",
+      "kind": "library",
+      "name": "Unaligned Forces",
+      "id": "581a-46b9-5b86-44b7",
+      "revision": 2,
+      "bytes": 235326,
+      "sha256": "142d634cf5087a60e8e30f86f5f7e81a9ad7173c8fd73da5a3a9045eee6f3d48"
+    },
+    {
+      "file": "Warhammer 40,000.json",
+      "kind": "gameSystem",
+      "name": "Warhammer 40,000 11th Edition",
+      "id": "sys-352e-adc2-7639-d610",
+      "revision": 14,
+      "bytes": 961623,
+      "sha256": "b5bbf28416120bd533adf177dc54a494ddc334ed1c5b7ba0a34882a82ebfcf28"
+    }
+  ]
+}
