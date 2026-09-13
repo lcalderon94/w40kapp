@@ -93,6 +93,14 @@ class ConditionGroup {
         ],
       );
 
+  /// Todas las condiciones del grupo y de los que anida.
+  Iterable<Condition> get allConditions sync* {
+    yield* conditions;
+    for (final group in groups) {
+      yield* group.allConditions;
+    }
+  }
+
   bool evaluate(bool Function(Condition) test) {
     final results = [
       ...conditions.map(test),
@@ -164,6 +172,14 @@ class Modifier {
       }
     }
     return modifiers;
+  }
+
+  /// Todas las condiciones del modifier, estén sueltas o dentro de un grupo.
+  Iterable<Condition> get allConditions sync* {
+    yield* conditions;
+    for (final group in conditionGroups) {
+      yield* group.allConditions;
+    }
   }
 
   /// Si el motor entiende todas sus condiciones. Cuando no, el modifier se deja sin aplicar.

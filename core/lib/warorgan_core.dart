@@ -3,6 +3,7 @@
 library;
 
 export 'src/dataset.dart';
+export 'src/detachment.dart';
 export 'src/model.dart';
 export 'src/modifiers.dart';
 export 'src/roster.dart';

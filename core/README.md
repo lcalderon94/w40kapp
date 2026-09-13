@@ -46,7 +46,8 @@ evaluación de `constraints`, es del constructor de listas, no de esta capa.
 ## Construir una lista
 
 ```dart
-final roster = Roster(faction: faccion, pointsLimit: 2000);
+final roster = Roster(faction: faccion, pointsLimit: 2000)
+  ..detachment = dataset.detachmentsOf(faccion).first;
 roster.add(dataset.selectionFor(unidad));      // la unidad con sus mínimos ya puestos
 print('${roster.points}/${roster.pointsLimit}');
 for (final incumplimiento in roster.validate()) print(incumplimiento);
@@ -60,7 +61,12 @@ Los **modifiers de coste** se aplican al recalcular: el dataset da 65 puntos a l
 en un modifier que pasen a 130 al superar las diez miniaturas, así que sin evaluarlos una unidad de
 veinte costaría lo mismo que una de diez.
 
-`validate` cubre el límite de puntos, los mínimos y máximos de cada opción, los de su grupo —«entre
+`detachmentsOf` da los detachments de la facción con su regla ya traducida. Cuelgan de la entrada
+de configuración, en un grupo que unas facciones llevan incrustado y otras enlazan, y las hereda
+quien no los declara: por eso los capítulos de Space Marines tienen los cinco del codex. Resuelven
+34 de las 36 facciones; Aeldari y Drukhari los declaran de otra forma que aún no se sigue.
+
+`validate` cubre el límite de puntos, que se haya elegido detachment, los mínimos y máximos de cada opción, los de su grupo —«entre
 10 y 20 Poxwalkers», que se comprueban sumando los hermanos que salen del mismo grupo— y los que
 limitan cuántas veces puede repetirse una unidad en el ejército. Cuando el dataset trae su propio
 mensaje de error, se usa ese.
@@ -85,7 +91,13 @@ Lo que falta para la paridad con WarOrgan:
 - **`localConditionGroups`**, lo de arriba: implementarlos exige la semántica exacta de `before` e
   `instanceOf`, que conviene sacar de la especificación de BattleScribe y no deducirla.
 - **Modifiers sobre restricciones**, que cambian los límites en vez del coste.
-- **Detachments**: elegir uno y aplicar sus límites y sus Enhancements.
+- **Qué Enhancements habilita cada detachment.** Se intentó y se retiró: el dataset los esconde con
+  modifiers `hidden` cuyas condiciones mezclan dos preguntas distintas —qué detachment los habilita
+  y qué personaje puede llevarlos— y los declara en sitios distintos según la facción, unos en los
+  grupos compartidos del catálogo y otros anidados dentro de la unidad. Tres lecturas distintas del
+  gating dieron tres resultados incorrectos (desde 27 mejoras por detachment hasta 693 detachments
+  sin ninguna), así que se prefiere no ofrecer el dato a ofrecerlo mal.
+- **Los detachments de Aeldari y Drukhari**, que no cuelgan de la entrada de configuración.
 - **Límites por rol** del destacamento, que viven en las `categoryEntries` de `forceEntries`.
 
 ## Entorno

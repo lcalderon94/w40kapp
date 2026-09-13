@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'detachment.dart';
 import 'model.dart';
 import 'modifiers.dart';
 import 'roster.dart';
@@ -74,28 +75,78 @@ class Dataset {
   /// unidades propias.
   List<UnitEntry> unitsOf(Faction faction) {
     final units = <UnitEntry>[];
-    final seenCatalogues = <String>{};
-    final seenEntries = <String>{};
+    final seen = <String>{};
+    for (final link in _rootLinks(faction.node)) {
+      final target = node(link['targetId'] as String? ?? '');
+      if (target == null) continue;
+      if (target['type'] != 'unit' && target['type'] != 'model') continue;
+      if (!seen.add(target['id'] as String? ?? '')) continue;
+      units.add(_toUnit(target));
+    }
+    return units;
+  }
 
-    void collect(Map<String, dynamic> catalogue) {
-      if (!seenCatalogues.add(catalogue['id'] as String? ?? '')) return;
-      for (final raw in (catalogue['entryLinks'] as List? ?? const [])) {
-        final target = node((raw as Map<String, dynamic>)['targetId'] as String? ?? '');
-        if (target == null) continue;
-        if (target['type'] != 'unit' && target['type'] != 'model') continue;
-        if (!seenEntries.add(target['id'] as String? ?? '')) continue;
-        units.add(_toUnit(target));
-      }
-      for (final raw in (catalogue['catalogueLinks'] as List? ?? const [])) {
-        final link = raw as Map<String, dynamic>;
-        if (link['importRootEntries'] != true) continue;
-        final target = node(link['targetId'] as String? ?? '');
-        if (target != null) collect(target);
+  /// Las entradas raíz de una facción: las suyas más las que hereda por `importRootEntries`.
+  List<Map<String, dynamic>> _rootLinks(Map<String, dynamic> catalogue, [Set<String>? seen]) {
+    final visited = seen ?? <String>{};
+    if (!visited.add(catalogue['id'] as String? ?? '')) return const [];
+    final links = <Map<String, dynamic>>[
+      for (final raw in (catalogue['entryLinks'] as List? ?? const [])) raw as Map<String, dynamic>,
+    ];
+    for (final raw in (catalogue['catalogueLinks'] as List? ?? const [])) {
+      final link = raw as Map<String, dynamic>;
+      if (link['importRootEntries'] != true) continue;
+      final target = node(link['targetId'] as String? ?? '');
+      if (target != null) links.addAll(_rootLinks(target, visited));
+    }
+    return links;
+  }
+
+  /// Los detachments de una facción, con su regla ya traducida.
+  ///
+  /// Cuelgan de la entrada de configuración, en un grupo llamado `Detachment` que unas facciones
+  /// llevan incrustado y otras enlazan a un grupo compartido.
+  List<Detachment> detachmentsOf(Faction faction) {
+    final detachments = <Detachment>[];
+    final seen = <String>{};
+    for (final link in _rootLinks(faction.node)) {
+      final entry = node(link['targetId'] as String? ?? '');
+      if (entry == null || !_isConfiguration(entry)) continue;
+      for (final group in _groupsOf(entry)) {
+        if (group['name'] != 'Detachment') continue;
+        for (final option in _childEntries(group)) {
+          if (!seen.add(option['id'] as String? ?? '')) continue;
+          final rule = (option['rules'] as List? ?? const []).isEmpty
+              ? null
+              : (option['rules'] as List).first as Map<String, dynamic>;
+          detachments.add(Detachment(
+            id: option['id'] as String? ?? '',
+            name: option['name'] as String? ?? '',
+            ruleName: rule?['name'] as String?,
+            rule: rule?['description'] as String?,
+            points: _points(option) ?? 0,
+          ));
+        }
       }
     }
+    return detachments;
+  }
 
-    collect(faction.node);
-    return units;
+  static bool _isConfiguration(Map<String, dynamic> entry) =>
+      (entry['categoryLinks'] as List? ?? const []).any((raw) =>
+          (raw as Map<String, dynamic>)['primary'] == true && raw['name'] == 'Configuration');
+
+  /// Los grupos de opciones de un nodo, estén incrustados o lleguen por enlace.
+  Iterable<Map<String, dynamic>> _groupsOf(Map<String, dynamic> node_) sync* {
+    for (final raw in (node_['selectionEntryGroups'] as List? ?? const [])) {
+      yield raw as Map<String, dynamic>;
+    }
+    for (final raw in (node_['entryLinks'] as List? ?? const [])) {
+      final link = raw as Map<String, dynamic>;
+      if (link['type'] != 'selectionEntryGroup') continue;
+      final target = node(link['targetId'] as String? ?? '');
+      if (target != null) yield target;
+    }
   }
 
   UnitEntry _toUnit(Map<String, dynamic> entry) {

@@ -1,3 +1,4 @@
+import 'detachment.dart';
 import 'model.dart';
 import 'modifiers.dart';
 
@@ -104,10 +105,13 @@ class Roster {
   String name;
   final List<Selection> units = [];
 
+  /// El detachment elegido. Un ejército necesita uno, y es lo que decide sus reglas.
+  Detachment? detachment;
+
   /// Coste de la lista, con los modifiers de coste ya aplicados.
   int get points {
     applyModifiers();
-    return units.fold(0, (total, unit) => total + unit.points);
+    return units.fold(detachment?.points ?? 0, (total, unit) => total + unit.points);
   }
 
   int get pointsRemaining => pointsLimit - points;
@@ -196,6 +200,9 @@ class Roster {
 
     if (total > pointsLimit) {
       violations.add(Violation(null, 'La lista suma $total puntos y el límite es $pointsLimit'));
+    }
+    if (detachment == null) {
+      violations.add(Violation(null, 'Falta elegir un detachment'));
     }
 
     for (final unit in units) {

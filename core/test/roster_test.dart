@@ -34,6 +34,7 @@ void main() {
 
   test('el coste de la lista es la suma de lo seleccionado', () {
     final roster = Roster(faction: deathGuard, pointsLimit: 1000)
+      ..detachment = dataset.detachmentsOf(deathGuard).first
       ..add(unitNamed('Poxwalkers'))
       ..add(unitNamed('Myphitic Blight-hauler'));
     expect(roster.points, 160);
@@ -42,7 +43,9 @@ void main() {
   });
 
   test('avisa cuando la lista se pasa del límite de puntos', () {
-    final roster = Roster(faction: deathGuard, pointsLimit: 100)..add(unitNamed('Poxwalkers'))
+    final roster = Roster(faction: deathGuard, pointsLimit: 100)
+      ..detachment = dataset.detachmentsOf(deathGuard).first
+      ..add(unitNamed('Poxwalkers'))
       ..add(unitNamed('Myphitic Blight-hauler'));
     final violations = roster.validate();
     expect(violations, hasLength(1));
@@ -116,5 +119,28 @@ void main() {
     expect(roster.points, 100);
     roster.applyModifiers();
     expect(roster.skippedModifiers, greaterThan(0));
+  });
+
+  test('cada facción resuelve sus detachments con la regla traducida', () {
+    final detachments = dataset.detachmentsOf(deathGuard);
+    expect(detachments, hasLength(greaterThan(5)));
+    final conRegla = detachments.where((d) => d.rule != null);
+    expect(conRegla, isNotEmpty);
+    expect(conRegla.first.rule, isNot(contains('Each time')));
+  });
+
+  test('una lista sin detachment no es legal', () {
+    final roster = Roster(faction: deathGuard, pointsLimit: 1000)..add(unitNamed('Poxwalkers'));
+    expect(roster.validate().map((v) => v.message), contains('Falta elegir un detachment'));
+
+    roster.detachment = dataset.detachmentsOf(deathGuard).first;
+    expect(roster.validate(), isEmpty);
+  });
+
+  test('casi todas las facciones resuelven detachments', () {
+    final sinDetachments =
+        dataset.factions.where((f) => dataset.detachmentsOf(f).isEmpty).map((f) => f.name);
+    // Aeldari y Drukhari los declaran de una forma que aún no se resuelve.
+    expect(sinDetachments, hasLength(lessThanOrEqualTo(2)));
   });
 }
