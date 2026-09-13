@@ -1,0 +1,2956 @@
+{
+  "batch": 1,
+  "units": [
+    {
+      "id": "d5babca5bdfea292",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader",
+          "Bodyguard"
+        ]
+      },
+      "source": "All **^^Drukhari^^** units have a Pain ability, tagged with the word 'Pain'. Pain abilities only apply to a unit while it is Empowered. If your Army Faction is **^^Drukhari^^**, you can Empower units from your army with Pain abilities by spending Pain tokens (see below).\n\n**GAINING PAIN TOKENS**\n\nIf your Army Faction is **^^Drukhari^^**, you gain Pain tokens as follows:\n■ 1 Pain token at the start of your Command phase.\n■ 1 Pain token each time an enemy unit is destroyed.\n■ 1 Pain token each time an enemy unit fails a Battle-shock test.\n\nEach time you gain a Pain token, keep it to one side – this is your Pain token pool. Each time you spend a Pain token, reduce your Pain token pool by the same amount.\n\n**EMPOWERED THROUGH PAIN**\n\nEach Pain ability will state when you can spend Pain tokens to Empower that unit. When you do, until the end of the phase, that unit is Empowered and all Pain abilities it has take effect. While an Attached unit is Empowered, the Pain abilities of all Leader and Bodyguard units in that unit take effect - you do not need to spend additional Pain tokens to activate each of those Pain abilities.",
+      "target": null
+    },
+    {
+      "id": "d86e3eee7ffa1bd8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battle Focus",
+          "Onslaught",
+          "Agile"
+        ]
+      },
+      "source": "If your Army Faction is **^^Asuryani^^**, at the start of the battle round, you receive a number of Battle Focus tokens based on the battle size, as shown below:\n\n■ Incursion - 2\n■ Strike Force - 4\n■ Onslaught - 6\n\nEach time one of the triggers shown in the Agile Manoeuvres section of your codex occurs, you can spend one Battle focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.",
+      "target": null
+    },
+    {
+      "id": "0cbfd10bba4e5d77",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Onslaught",
+          "Enhancements"
+        ]
+      },
+      "source": "If your Army Faction is **DRUKHARI**, you can include **HARLEQUINS** and **ANHRATHE** units in your army, even though they do not have the **DRUKHARI** Faction keyword. The combined points value of **HARLEQUINS** and/or **ANHRATHE** units you can include in your army depends on the battle size, as follows:\n- Incursion: Up to 250 pts\n- Strike Force: Up to 500 pts\n- Onslaught: Up to 750 pts\nNo **HARLEQUINS** or **ANHRATHE** models included in your army in this way can be your WARLORD, and they cannot be given Enhancements.",
+      "target": null
+    },
+    {
+      "id": "481118f6ef71b108",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ynnari"
+        ]
+      },
+      "source": "When mustering you army, you can include Harlequins units in your army, even though they do not have the Asuryani Faction keyword. Unless otherwise stated, you cannot select Harlequins or Ynnari as your Army Faction.",
+      "target": null
+    },
+    {
+      "id": "c5bc78daf743f4b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guardian Defenders",
+          "Defenders",
+          "Support Weapon",
+          "Weapon",
+          "Guardians",
+          "Transport"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, this model can join one Guardian Defenders unit from your army (a unit cannot have more than one Support Weapon model joined to it). This model then counts as part of that Guardians unit for the rest of the battle, and that unit's Starting Strength is increased accordingly.\n\nThis model, and any unit it is joined to, cannot embark within a Transport.",
+      "target": null
+    },
+    {
+      "id": "42a85fbb34ec6f87",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this model's unit, it that unit contains one or more other models, until that attack is resolved, this model has a Toughness characteristic of 3.",
+      "target": null
+    },
+    {
+      "id": "a77f0c48d79b77c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer's unit makes a Normal, Advance, Fall Back or Charge move, ignore any vertical distance when determining the total distance the bearer can be moved during that move.",
+      "target": null
+    },
+    {
+      "id": "77dd5078d7f6418a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Unless otherwise stated, you cannot include more than one of this model in your army.",
+      "target": null
+    },
+    {
+      "id": "c5f97b43cd920be1",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Adeptus Mechanicus",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "6d4c94bf7bb0aa5c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI‑INFANTRY 5+]",
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Once per battle, when this model is selected to shoot, it can use this ability. If it does, until the end of the phase, its Bloody Twins weapon has a Damage characteristic of 3 and the **[ANTI‑INFANTRY 5+]** and **[DEVASTATING WOUNDS]** abilities.",
+      "target": null
+    },
+    {
+      "id": "e328cbd25289d5ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, in your Shooting phase, after that unit has shot, it can make a Normal move of up to 6\". If it does, until the end of the turn, that unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "e6f9ace38c0d0ca0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dire Avengers"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Dire Avengers^^**",
+      "target": null
+    },
+    {
+      "id": "9d8cf916721361be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one model from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "c3b874c9be433ff8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Corsair Cloud Dancer Band",
+          "Windriders"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Corsair Cloud Dancer Band^^**\n- **^^Windriders^^**\n",
+      "target": null
+    },
+    {
+      "id": "278e0f87156a6cc8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time that unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit",
+      "target": null
+    },
+    {
+      "id": "6f537ee77f649bf0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Agile"
+        ]
+      },
+      "source": "While this model is leading a unit, you can re-roll Advance rolls made for that unit, and you can re-roll any rolls made for that unit while it is performing an Agile Manoeuvre.",
+      "target": null
+    },
+    {
+      "id": "ffd35e7a95220347",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one model from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "8d29b92c9113b50a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Reapers",
+          "Dire Avengers",
+          "Fire Dragons",
+          "Guardian Defenders",
+          "Defenders",
+          "Howling Banshees",
+          "Storm Guardians",
+          "Guardians",
+          "Striking Scorpions"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Dark Reapers^^**\n- **^^Dire Avengers^^**\n- **^^Fire Dragons^^**\n- **^^Guardian Defenders^^**\n- **^^Howling Banshees^^**\n- **^^Storm Guardians^^**\n- **^^Striking Scorpions^^**",
+      "target": null
+    },
+    {
+      "id": "7e81d6d7b7a320a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Howling Banshees",
+          "Fights First",
+          "Striking Scorpions",
+          "Infiltrators",
+          "Scouts 7\"",
+          "Stealth"
+        ]
+      },
+      "source": "While this model is leading a Howling Banshees unit, it has the Fights First ability.\nWhile this model is leading a Striking Scorpions unit, it has the Infiltrators, Scouts 7\" and Stealth abilities.",
+      "target": null
+    },
+    {
+      "id": "90d45674650ffbe9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battle Focus",
+          "Agile"
+        ]
+      },
+      "source": "While this model is leading a unit, each time you spend a Battle Focus token to enable that unit to perform an Agile Manoeuvre, roll one D6: on a 3+ you gain 1 Battle Focus token.",
+      "target": null
+    },
+    {
+      "id": "fcbf00d4a8921acc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Swooping Hawks",
+          "Warp Spiders"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Swooping Hawks**^^\n- **^^Warp Spiders**^^",
+      "target": null
+    },
+    {
+      "id": "f3139dda8427df70",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to this model, halve the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "92a443b5f1142b54",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aeldari"
+        ]
+      },
+      "source": "While a friendly ^^Aeldari^^ unit is within 6\" of this model, add 1 to Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "59b4c593cb8789fd",
+      "kind": "characteristic:Description",
+      "occurrences": 20,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "fef12adb3aec55c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Swooping Hawks"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Swooping Hawks",
+      "target": null
+    },
+    {
+      "id": "98d8f9f439274ff7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is set-up on the battlefield, until the end of the turn, each time this model makes a ranged attack, a successful unmodified Hit roll scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "721781b3ea7391dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Deep Strike"
+        ]
+      },
+      "source": "While this model is leading a unit, at the end of your opponent’s turn, if that unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves. In addition, while this model is leading a unit, when that unit is set up on the battlefield using the Deep Strike ability, in your Movement phase, it can use this ability. If it does, that unit can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy models, but until the end of the turn, it is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "dd95d3dee1ea1389",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "055145d0c10f7354",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "At the start of the battle, select one unit from your opponent’s army. Each time a model in this unit makes an attack that targets that unit, that attack has the [LETHAL HITS] and [PRECISION] abilities.",
+      "target": null
+    },
+    {
+      "id": "4d3041c3eed9a1fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, the first time a saving throw is failed for the bearer’s unit, change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "ed79c5e643dc6c4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in the bearer’s unit have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "ba27a1f81c7b7f7b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly"
+        ]
+      },
+      "source": "Each time this model makes a ranged attack that targets a unit that can Fly, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "469029fe0d7496ce",
+      "kind": "characteristic:Description",
+      "occurrences": 20,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Adepta Sororitas",
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "75550e4965cfaa95",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, you can ignore any or all modifiers to that attack’s Ballistic Skill characteristic and any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3ff7c7d5e642344f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit (excluding Monsters and Vehicles) hit by one or more of those attacks. That enemy unit must take a Battle-shock test. If one or more of those attacks destroyed a model in that enemy unit, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "88e4a57afbafc41f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]",
+          "[PRECISION]",
+          "[SUSTAINED HITS 3]"
+        ],
+        "names": [
+          "Shrieker Cannon"
+        ]
+      },
+      "source": "In your Shooting phase, each time this model is selected to shoot, select one of the abilities below. Until the end of the phase, this model’s Shrieker Cannon has that ability:\n■ [IGNORES COVER]\n■ [PRECISION]\n■ [SUSTAINED HITS 3]",
+      "target": null
+    },
+    {
+      "id": "e8210fcf17e5fca0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits 1]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the [Sustained Hits 1] ability while targeting an enemy unit within half range.",
+      "target": null
+    },
+    {
+      "id": "f53bf62cce84ea84",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Dark Angels"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "6e4d8b9f84f271b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aeldari"
+        ]
+      },
+      "source": "At the end of your Movement phase, select one enemy unit within 18\" of and visible to this model. Until the start of your next Command phase, each time a friendly ^^Aeldari^^ model makes an attack that targets that enemy unit, add 1 to the Wound roll",
+      "target": null
+    },
+    {
+      "id": "af85d46314b4c3f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **GUARDIAN DEFENDERS**\n- **STORM GUARDIANS**\n- **WARLOCK CONCLAVE**\n\nIf this model is not already attached to a unit, you can attach this model to a unit, even if one **WARLOCKS** unit has already been attached to it.",
+      "target": null
+    },
+    {
+      "id": "5bfdab4a6d32266e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll",
+      "target": null
+    },
+    {
+      "id": "fba43a62f6f0dd4a",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 6 **AELDARI INFANTRY** models. Each **WRAITH CONSTRUCT** model takes the space of 2 models. It cannot transport **JUMP PACK** models or **YNNARI** models (excluding **ASURYANI**, **YVRAINE** and **THE VISARCH** models).",
+      "target": null
+    },
+    {
+      "id": "47310d989db1fc8e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Support Weapon",
+          "Weapon"
+        ]
+      },
+      "source": "While this model is leading a unit, once per phase you can change the result of one Hit roll, one Wound roll, or one Damage roll made for a model in that unit (excluding ^^Support Weapon^^ models) to an unmodified 6.",
+      "target": null
+    },
+    {
+      "id": "0d4183a1ca98233e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aeldari"
+        ]
+      },
+      "source": "At the end of your Movement phase, select one enemy unit within 18\" of and visible to this model. Until the start of your next Command phase, each time a friendly Aeldari model makes an attack that targets that enemy unit, add 1 to the Hit roll. Each unit can only be selected for this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "41dcbdb0bab0fa72",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: **GUARDIAN DEFENDERS**, **STORM GUARDIANS**, **WARLOCK CONCLAVE**.",
+      "target": null
+    },
+    {
+      "id": "72270d8d40bd5339",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, once per phase you can change the result of one Hit roll, one Wound roll, or one Damage roll made for a model in that unit to an unmodified 6.",
+      "target": null
+    },
+    {
+      "id": "1f8149300ef75ffe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, select one enemy unit within 18\" of and visible to this model. Until the start of your next Command phase, each time a model in that unit makes an attack, subtract 1 from the Wound roll. Each unit can only be selected for this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "9666c089e3c80757",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlock Skyrunners",
+          "Windriders"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Warlock Skyrunners^^**\n- **^^Windriders^^**",
+      "target": null
+    },
+    {
+      "id": "e46cb1d98e17990c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "In your Shooting phase, each time a model in this unit makes a ranged attack that targets a ^^Monster^^ or ^^Vehicle^^ unit, you can re-roll the Hit roll, you can re-roll the Wound roll and you can re-roll the Damage roll.",
+      "target": null
+    },
+    {
+      "id": "f935c9510dbe8c44",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is selected to shoot, you can re-roll one Hit roll and you can re-roll one Wound roll when resolving those attacks.",
+      "target": null
+    },
+    {
+      "id": "720adf6351c822c3",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When selecting targets for this weapon, you can measure range and determine visibility from another friendly FIRE PRISM model that is visible to the bearer. When doing so, this weapon has an Attacks characteristic of 1.",
+      "target": null
+    },
+    {
+      "id": "ae87c1c5314475e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Melta"
+        ]
+      },
+      "source": "While this model is leading a unit, add 6\" to the Range characteristic of Melta weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "b65a97976eea31cd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time this model is destroyed, at the end of the phase, roll one D6. On a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with its full wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "b24329862a521197",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fire Dragons"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Fire Dragons",
+      "target": null
+    },
+    {
+      "id": "4c9929ee9e22a148",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fade Back",
+          "Agile",
+          "Battle Focus"
+        ]
+      },
+      "source": "This unit can perform the Fade Back Agile Manoeuvre without spending a Battle Focus token to do so. It can do so even if other units have done so in the same phase, and doing so does not prevent other units from performing the same Agile Manoeuvre in the same phase.",
+      "target": null
+    },
+    {
+      "id": "f76aa64be92f9bd6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guardian Defender",
+          "Heavy Weapon Platform",
+          "Weapon"
+        ]
+      },
+      "source": "When the last Guardian Defender model in this unit is destroyed, any remaining Heavy Weapon Platform models in this unit are also destroyed.",
+      "target": null
+    },
+    {
+      "id": "fca94f010399c562",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 9\" of this model, subtract 1 from Battle-shock and Leadership tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "9ff2b470786feb11",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "cf76ff027fef42ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to declare a charge in a turn in which it Advanced or Fell Back",
+      "target": null
+    },
+    {
+      "id": "31fd81b66b146161",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "e143a1523e10ebcc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model’s unit can only be selected as the target of a ranged attack if the attacking model is within 12\".",
+      "target": null
+    },
+    {
+      "id": "52cee9aacb5a2f59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rangers"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Rangers",
+      "target": null
+    },
+    {
+      "id": "de3a2798da397888",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Howling Banshees"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Howling Banshees",
+      "target": null
+    },
+    {
+      "id": "499d2fd591bd65b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time that unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit and each time a model in that unit makes an Advance move, ignore any vertical distance when determining the total distance that model can be moved during that move.",
+      "target": null
+    },
+    {
+      "id": "498fc1d1c5ed09e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a ^^Character^^ unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d84cd40dc3fdb8ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Striking Scorpions"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Striking Scorpions",
+      "target": null
+    },
+    {
+      "id": "2bfc8e97f7f621f2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "69daad2cc6de2dd0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack, if it made a Charge move this turn, a successful unmodified Hit roll of 4+ scores a Critical Hit",
+      "target": null
+    },
+    {
+      "id": "36ad021d6d1fd849",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Melee weapons",
+          "Titanic"
+        ]
+      },
+      "source": "Melee weapons equipped by the bearer have the **[DEVASTATING WOUNDS]** ability when targeting units without the **^^Titanic^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "4f1bc315cf2efaac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Reapers"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Dark Reapers",
+      "target": null
+    },
+    {
+      "id": "088643b56273e9ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, in your Shooting phase, after selecting targets for that unit's attacks, if every attack targets the same unit, roll one D6 for the target unit and one D6 for every other enemy unit within 3\" of the target unit. On a 5+, the unit being rolled for is struck by explosive debris; after resolving all of that unit's attacks against the target unit, each unit struck by explosive debris suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "6571cfff68216b83",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test, subtracting 1 from the result.",
+      "target": null
+    },
+    {
+      "id": "8b3cbbdfc8994c31",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its doomweaver scored a hit against an enemy unit, until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit's Move characteristic and subtract 2 from Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "1304396252564d89",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6\".",
+      "target": null
+    },
+    {
+      "id": "17f5687d4bb77eee",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Troupe"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Troupe",
+      "target": null
+    },
+    {
+      "id": "054b809810d2bc80",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "4c3f5723a0e790c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Hazardous]"
+        ],
+        "names": [
+          "Melee weapons",
+          "Hazardous"
+        ]
+      },
+      "source": "Melee weapons equipped by enemy models have the [Hazardous] ability while targeting this model's unit.",
+      "target": null
+    },
+    {
+      "id": "4fd436eef921177e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a Normal, Advance, Fall Back or Charge move, ignore any vertical distance when determining the total distance models in this unit can be moved during that move.",
+      "target": null
+    },
+    {
+      "id": "c2968e27284a9e02",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks made with a long rifle. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "33918c05bbda50a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Melee"
+        ]
+      },
+      "source": "- This unit has **Stealth**.\n- Melee attacks that target this unit have ‑1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "2b276f8630bf57f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Solitaire"
+        ]
+      },
+      "source": "Once per battle, in your Movement phase, before this model makes a Normal move it can use this ability. If it does, until the end of\nthe turn, add 2D6\" to this model’s Move characteristic and add 3 to the\nAttacks characteristic of this model’s Solitaire weapons.",
+      "target": null
+    },
+    {
+      "id": "9513b430c4b59f94",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "264ad00fe3edc447",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits 1]"
+        ],
+        "names": [
+          "Wraith Construct",
+          "Titanic",
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "Once per turn, in your Movement phase, when this model starts or ends a move, select one friendly Wraith Construct unit within 6\" of this model (excluding Titanic units) and one enemy unit visible to this model. Until the start of your next Movement phase, weapons equipped by models in that friendly unit have the [Sustained Hits 1] ability while targeting that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "6ec75b82e437b6cd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wraith Construct"
+        ]
+      },
+      "source": "In your Command phase, select one friendly Wraith Construct unit within 6\" of this model. If one or more models in that unit are destroyed, you can return one destroyed model to that unit. Otherwise, one model in that unit regains up to D3 lost wounds. Each unit can only be selected for this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "fe614455f5fdcd61",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wraith Construct",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly Wraith Construct units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "86e1696f796b5550",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Infantry",
+          "Range"
+        ]
+      },
+      "source": "At the end of the Fight phase, if there are no models currently embarked within this **^^Transport^^**, you can select one friendly **^^Harlequins Infantry^^** unit that has 6 or fewer models that is wholly within 6\" of this **^^Transport^^**. Unless that unit is within Engagement Range of one or more enemy units, it can embark within this **^^Transport^^**. That unit can embark within this **TRANSPORT** in a turn it disembarked from this **TRANSPORT**.",
+      "target": null
+    },
+    {
+      "id": "0501f0ac3b395d57",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "This model has a transport capacity of 6 Harlequins Infantry models.",
+      "target": null
+    },
+    {
+      "id": "ab03a3ee115b8258",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.",
+      "target": null
+    },
+    {
+      "id": "d968daf77bfb8c39",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Storm Guardian"
+        ]
+      },
+      "source": "When the last Storm Guardian model in this unit is destroyed, any remaining Serpent’s Scale Platform models in this unit are also destroyed.",
+      "target": null
+    },
+    {
+      "id": "fcf4a2b462fba2f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in the bearer’s unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "55f674f20930c259",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, if it made a Charge move this turn, an unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "96de764c8af497ce",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic"
+        ]
+      },
+      "source": "Each time this model makes an attack with its D-Cannon, re-roll a Damage roll of 1. If that attack targets a Titanic unit, you can re-roll the Damage roll instead.",
+      "target": null
+    },
+    {
+      "id": "4a1a16e39f04c0b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Swooping Hawks",
+          "Grenades"
+        ]
+      },
+      "source": "Once per turn, in your Movement phase, when this unit is set-up on the battlefield or ends a Normal, Advance or Fall Back move, it can use this ability. If it does, select one enemy unit within 8\" of and visible to this unit and roll one D6 for each ^^Swooping Hawks^^ model in this unit. For each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds). Each time this unit uses this ability , until the end of the turn, you cannot target this unit with the Grenades Stratagem.",
+      "target": null
+    },
+    {
+      "id": "27cf626f8f46ef70",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "ccdda87873987388",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While this model is leading a unit, other Character models attached to that unit have the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "193ec9e00a2ddf8a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Yvraine",
+          "Bodyguard",
+          "Leader"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **CORSAIR REAVER BAND**\n- **CORSAIR VOIDREAVERS**\n- **CORSAIR VOIDSCARRED**\n- **GUARDIAN DEFENDERS**\n- **STORM GUARDIANS**\n- **YNNARI KABALITE WARRIORS**\n- **YNNARI WYCHES**\n\nYou can attach this unit to one of the above units, even if Yvraine has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+      "target": null
+    },
+    {
+      "id": "8f18d7cc927d095a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "The Visarch",
+          "Epic Hero",
+          "Ynnari"
+        ]
+      },
+      "source": "If your army includes The Visarch, it cannot include any Epic Hero units (excluding Ynnari units). If your army includes any Epic Hero units (excluding Ynnari units), it cannot include The Visarch.",
+      "target": null
+    },
+    {
+      "id": "90026f4bcc397379",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aeldari",
+          "Range"
+        ]
+      },
+      "source": "Once in each of your opponent's turns, if this model is on the battlefield when another friendly Aeldari unit is destroyed, just after removing the last model in that unit, you can remove this model from the battlefield and set it up as close as possible to where that destroyed model was destroyed and not within Engagement Range of one or more enemy units. Doing so does not prevent this model from being eligible to move.",
+      "target": null
+    },
+    {
+      "id": "994011d897fd778c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model destroys an enemy unit it regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "73b1b058bee7205c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "The Yncarne",
+          "Epic Hero",
+          "Ynnari"
+        ]
+      },
+      "source": "If your army includes The Yncarne, it cannot include any Epic Hero units (excluding Ynnari units). If your army includes any Epic Hero units (excluding Ynnari units), it cannot include The Yncarne.",
+      "target": null
+    },
+    {
+      "id": "ad40c39b85a508b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grace"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one of the following abilities for this unit to gain until the end of the phase:\n■ Hero's Prowess: Each time a model in this unit makes an attack, re-roll a Hit roll of 1.\n■ Villain's Doom: Each time a model in this unit makes an attack, add 1 to the Wound roll.\n■ Trickster's Grace: Each time an attack targets this unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "7ad8973225bc920b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a Pile In or Consolidate move, it can move up to 6\" instead of 3\". In addition, it does not need to end that move closer to the closest enemy model, provided it ends as close as possible to the closest enemy unit.",
+      "target": null
+    },
+    {
+      "id": "573a40bd3535000a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack you can re-roll a Hit roll of 1 and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "62f0e86fb4056d99",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "763c569caf92cf6e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guardian Defenders",
+          "Defenders",
+          "Storm Guardians",
+          "Guardians",
+          "Autarch",
+          "Farseer",
+          "Bodyguard",
+          "Leader"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Guardian Defenders^^**\n- **^^Storm Guardians^^**\n\nYou can attach this model to a unit, even if one **^^Autarch^^** or **^^Farseer^^** model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+      "target": null
+    },
+    {
+      "id": "794322df53e8f98d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit declares a charge, if one or more units with this ability are selected as a target of that charge, subtract 2 from the Charge roll.",
+      "target": null
+    },
+    {
+      "id": "26f932703092b8d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Destructor",
+          "Aeldari",
+          "Psyker"
+        ]
+      },
+      "source": "Each time this model is selected to shoot, until the end of the phase, add 1 to the Attacks and Strength characteristics of its Destructor weapon for each other friendly ^^Aeldari Psyker ^^ model within 6\" of this model (to a maximum of +2).",
+      "target": null
+    },
+    {
+      "id": "fa61db33a2d9e720",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Farseer"
+        ]
+      },
+      "source": "While a ^^Farseer^^ model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "4e0c6e124276743e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlock",
+          "Destructor",
+          "Aeldari",
+          "Psyker"
+        ]
+      },
+      "source": "Each time this unit is selected to shoot, for each ^^Warlock^^ model in this unit, until the end of the phase, add 1 to the Attacks and Strength characteristics of that model's Destructor weapon for each other friendly ^^Aeldari Psyker^^ model within 6\" of this model (to a maximum of +2).",
+      "target": null
+    },
+    {
+      "id": "d3195e3667269fe1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guardian Defenders",
+          "Defenders",
+          "Storm Guardians",
+          "Guardians"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Guardian Defenders^^**\n- **^^Storm Guardians^^**",
+      "target": null
+    },
+    {
+      "id": "d3970b0e32cd4de9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, each time this unit is selected to make a Normal move, it can use this ability. If it does, until the end of the turn, this unit is not eligible to declare a charge and models in it have a Move characteristic of 24\". Each time this unit uses this ability, at the end of the phase, roll one D6 for each model in this unit: for each 1, this unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "5f19cc50422fd372",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets this model, if the Strength characteristic of that attack is greater than the Toughness characteristic of this model, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "0357d114ba9cd7b4",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 **ASURYANI INFANTRY** models. Each **WRAITH CONSTRUCT** model takes the space of 2 models. It cannot transport **JUMP PACK** models or **YNNARI** models (excluding **ASURYANI**, **YVRAINE** and **THE VISARCH** models).",
+      "target": null
+    },
+    {
+      "id": "572107a3360740de",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "d7b1d38be0d50c37",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time a friendly AELDARI unit arrives from Strategic Reserves, you can choose to set it up anywhere on the battlefield that is wholly within 6\" of this FORTIFICATION. If you do, that AELDARI unit can be set up within 9\" of enemy models, and can be set up within Engagement Range of enemy models. If an AELDARI unit is set up within Engagement Range of any enemy models in this way, it counts as having made a Charge move this turn and is eligible to fight this turn.",
+      "target": null
+    },
+    {
+      "id": "f17c07a07fad32a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification"
+        ]
+      },
+      "source": "Both Wraithbone Arches of this Fortification must be set up with their upper points no more than 1\" apart and with both statues facing in fully opposite directions so that an arch is formed, as shown on the right. Both arches are then treated as a single model for all rules purposes.",
+      "target": null
+    },
+    {
+      "id": "764832c925bbb6f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, re-roll a Hit roll of 1. If the target of that attack is the closest eligible target, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "3046dbd3e08e1bfa",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-6 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "bd4a70db9f919f55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic",
+          "Range"
+        ]
+      },
+      "source": "Each time this model makes a Normal, Advance or Fall Back move, it can move through models (excluding Titanic models) and sections of terrain features that are 4\" or less in height. When doing so:\nIt can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them.\nIt can also move through sections of terrain features that are more than 4\" in height, but if it does, after it has moved, roll one D6: on a 1, this model is battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "c136ae7458f8b96b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Heavy Wraithcannon",
+          "Wraithcannon",
+          "Suncannon"
+        ]
+      },
+      "source": "Each time this model's Heavy Wraithcannon or Suncannon targets a unit within half range, you can re-roll the dice to determine the number of attacks made.",
+      "target": null
+    },
+    {
+      "id": "18eb81cd2c107eb0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Monster",
+          "Mounted",
+          "Vehicle"
+        ]
+      },
+      "source": "At the start of the battle, select one of the following keywords: Infantry, Monster, Mounted, Vehicle. Each time this model makes an attack that targets a unit with the selected keyword, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "a7b5a2feb92f0b0f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aeldari",
+          "Psyker",
+          "Weapon"
+        ]
+      },
+      "source": "While this model is within 12\" of one or more friendly Aeldari Psyker models, improve the Ballistic Skill and Weapon Skill characteristics of weapons equipped by this model by 1 and it has a Leadership characteristic of 6+.",
+      "target": null
+    },
+    {
+      "id": "96df54244db5c204",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "c6eff90440253cd6",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aeldari",
+          "Psyker"
+        ]
+      },
+      "source": "While this unit is within 12\" of one or more friendly Aeldari Psyker models, models in this unit have a Leadership characteristic of 6+ and each time a model in this unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "cb621a7f42a7b6f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. Until the end of the phase, each time a friendly **AELDARI** model makes an attack that targets that unit, you can re‑roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "3fb511e550f42317",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard",
+          "Support Weapon",
+          "Weapon"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, roll one D6: on a 2+, D3+1 destroyed Bodyguard models (excluding Support Weapon models) are returned to that unit with their full wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "f30d1ea767c2cd61",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **CORSAIR REAVER BAND**\n- **CORSAIR VOIDREAVERS**\n- **CORSAIR VOIDSCARRED**\n- **GUARDIAN DEFENDERS**\n- **STORM GUARDIANS**\n- **YNNARI INCUBI**\n- **YNNARI KABALITE WARRIORS**\n- **YNNARI WYCHES**",
+      "target": null
+    },
+    {
+      "id": "40513ed16ffc2dc3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Yvraine",
+          "Epic Hero",
+          "Ynnari"
+        ]
+      },
+      "source": "If your army includes Yvraine, it cannot include any Epic Hero units (excluding Ynnari units). If your army includes any Epic Hero units (excluding Ynnari units), it cannot include Yvraine.",
+      "target": null
+    },
+    {
+      "id": "bb53920f02b715b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 3+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "63aef24e7fc3fbdc",
+      "kind": "characteristic:Description",
+      "occurrences": 30,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Agents of the Imperium",
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "5804f8957265acd9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **COURT OF THE ARCHON**\n- **HAND OF THE ARCHON**\n- **INCUBI**\n- **KABALITE WARRIORS**",
+      "target": null
+    },
+    {
+      "id": "fa3f6bab44aa9ef6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Drukhari**^^ unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "ce8fec3f55c463d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one model from your army with this ability can use it when its unit is targeted with a stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "5a04ae4fce4914ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting or the Fight phase, when you select this model's unit to shoot or fight, you can spend 1 Pain token to Empower that unit. While that unit is Empowered, each time a model in that unit makes an attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "dfa6588fbfde7579",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "While this model has an **InSv**, this unit cannot re‑roll **save rolls**. When this model loses a wound (excluding from **mortal wounds**), this model has no **InSv** until the end of the battle.",
+      "target": null
+    },
+    {
+      "id": "8db10f0d56390825",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Attacks and Strength characteristics of the bearer's melee weapons. The first time the bearer makes a melee attack that destroys an enemy model, after all the bearer's attacks have been resolved, until the end of the battle, add an additional 1 to the Attacks and Strength characteristics of the bearer's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "9f19032334166ede",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Beastmaster"
+        ]
+      },
+      "source": "While this unit contains a Beastmaster model, you can re-roll Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "9753fc69829757c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Beastmaster",
+          "Beast"
+        ]
+      },
+      "source": "In the Fight phase, when you select this unit to fight, you can spend 1 of your Pain tokens to Empower this unit. While this unit is Empowered, if it contains a ^^**Beastmaster**^^ model, each time a ^^**Beast**^^ model in this unit makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "9a01354c993c5d25",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Lhamaean",
+          "Medusae",
+          "Sslyth",
+          "Ur-ghul",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While a ^^**Character**^^ model is leading a unit that contains one or more Lhamaean, Medusae, Sslyth and/or Ur-ghul models, that ^^**Character**^^ model has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "6c9dc393f97c35a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Lhamaean",
+          "Medusae",
+          "Sslyth",
+          "Ur-ghul",
+          "Fights First"
+        ]
+      },
+      "source": "At the start of your Shooting phase or at the start of the Fight phase, you can spend 1 Pain token to Empower this unit. While this unit is Empowered:\n■ If it contains one or more Lhamaean models, melee weapons equipped by models in this unit have the ^^**[LETHAL HITS]**^^ ability.\n■ If it contains one or more Medusae models, ranged weapons equipped by models in this unit have the ^^**[IGNORES COVER]**^^ ability.\n■ If it contains one or more Sslyth models, each time a melee attack targets this unit, subtract 1 from the Wound roll.\n■ If this unit contains one or more Ur-ghul models, this unit has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "d3ad1c9d65d7f095",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon",
+          "Kabalite Warriors",
+          "Hand of the Archon",
+          "Court of the Archon"
+        ]
+      },
+      "source": "This unit can be led by an ^^**Archon**^^. Alternatively, in the Declare Battle Formations step, this unit can join one ^^**Kabalite Warriors**^^ or ^^**Hand of the Archon**^^ unit from your army that is being led by an ^^**Archon**^^ (a unit cannot have more than one ^^**Court of the Archon**^^ unit joined to it). If it does, until the end of the battle, every model in this unit counts as part of that ^^**Kabalite Warriors**^^ or ^^**Hand of the Archon**^^ unit, and its Starting Strength is increased accordingly.",
+      "target": null
+    },
+    {
+      "id": "d9b7cca72a47ea54",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you spend 1 Pain token to Empower a friendly unit within 9\" of this unit, roll one D6, adding 1 to the result if one or more models in this unit are not equipped with a spirit vortex: on a 5+, you gain 1 Pain token.\n\n\n**Designer's Note:** Pain tokens you spend for reasons other than Empowering a unit do not trigger this ability.",
+      "target": null
+    },
+    {
+      "id": "3124d8f2b0e879c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase or the Fight phase, when you select this unit to shoot or fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time this unit shoots or fights, after it has resolved its attacks, if one or more enemy models were destroyed as a result of those attacks, one model in this unit regains up to 3 lost wounds (if all models in this unit have their starting number of wounds and this unit is below its Starting Strength, 1 model is returned to this unit with 3 wounds remaining).",
+      "target": null
+    },
+    {
+      "id": "da93720f46a52251",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Incubi"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Incubi",
+      "target": null
+    },
+    {
+      "id": "7777c6963c0b8495",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, when you select this model's unit to fight, you can spend 1 Pain token to Empower that unit. While that unit is Empowered, each time a model in that unit makes a melee attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "aef8132330104b7d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a Pile-In or Consolidation move, it can move up to 6\" instead of up to 3\".",
+      "target": null
+    },
+    {
+      "id": "f90891aebef699be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model make an attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that target is Below Half-Strength, you can re-roll the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "2006421c04c191dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Venom",
+          "Grotesque"
+        ]
+      },
+      "source": "This unit cannot embark within a ^^**Venom**^^, but it can embark within other ^^**Drukhari Transports**^^; when doing so, each ^^**Grotesque**^^ model takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "08b78d22b0df998f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "In the Fight phase, when you select this unit to fight, you can spend 1 of your Pain tokens to Empower this unit. While Empowered, melee weapons equipped by models in this unit have a Strength characteristic of 8 and the ^^**[LETHAL HITS]**^^ ability.",
+      "target": null
+    },
+    {
+      "id": "a74fde26f6b9ead7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "c21a8d2c6e2d874c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wracks"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Wracks",
+      "target": null
+    },
+    {
+      "id": "9bfd30c61bbc24d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent's Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "59a3a1e02d7d5ce6",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, if one or more models from your army with this ability are on the battlefield, roll one D6: on a 4+, you gain 1 Pain token.",
+      "target": null
+    },
+    {
+      "id": "8a399b66f96ccea3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "In your Command phase, you can spend 1 Pain token to Empower this model's unit. Each time you do, you can return up to D3+1 destroyed Bodyguard models to that unit.",
+      "target": null
+    },
+    {
+      "id": "f0cfd0a920ed203f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, add 1 to the Attacks and Strength characteristics of this unit's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "96016d59c9220519",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”.",
+      "target": null
+    },
+    {
+      "id": "8d5e29ac81f83dc3",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Smoke",
+          "Grenades"
+        ]
+      },
+      "source": "The bearer’s unit has the ^^**Smoke**^^ and ^^**Grenades**^^ keywords.",
+      "target": null
+    },
+    {
+      "id": "742fc9bf797ad3f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test. Each time a model in this unit makes a melee attack that targets a Battle-shocked unit, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3ab4ec3c8ce0e529",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Devastating Wounds]"
+        ],
+        "names": [
+          "Infantry",
+          "Devastating Wounds"
+        ]
+      },
+      "source": "In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a melee attack that targets an ^^**Infantry**^^ unit, that attack has the ^^**[Devastating Wounds]**^^ ability.",
+      "target": null
+    },
+    {
+      "id": "0ba979f3e2fead9b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Incubi Shrine",
+          "Klaivex",
+          "Incubi"
+        ]
+      },
+      "source": "Once per battle for each Incubi Shrine token this unit has, you can change the result of one Hit roll or one Wound roll made for a Klaivex or Incubi model in this unit to an unmodified 6.",
+      "target": null
+    },
+    {
+      "id": "3362618e2c9daec6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under you control, until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.",
+      "target": null
+    },
+    {
+      "id": "19af36861ca98791",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase or the Fight phase, when you select this unit to shoot or fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target is within range of an objective marker, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "36586df814f968d8",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer's unit is not Battle-shocked, add 1 to the bearer's Objective Control characteristic.",
+      "target": null
+    },
+    {
+      "id": "dd0988b7d8320b4c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wyches"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Wyches",
+      "target": null
+    },
+    {
+      "id": "96e1ca3c131c9394",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, when you select this model's unit to fight, you can spend 1 Pain token to Empower that unit. While that unit is Empowered, each time a model in that unit makes a melee attack, improve the Strength and Armour Penetration characteristics of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "952c54bdd83b1ee2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, this model has a 3+ invulnerable save and change the Attacks characteristic of melee weapons equipped by this model to 12.",
+      "target": null
+    },
+    {
+      "id": "178b0310a512a838",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "a9cf24c2ae65f901",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent’s Fight phase, if this unit is not within Engagement Range of one or more enemy units, you can spend 1 Pain token to Empower this unit. Each time you do, remove this unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "9b17ecf54778eba4",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit cannot be targeted by ranged attacks unless the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "276e959cb4a18460",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While one or more ^^**Drukhari**^^ units are embarked within this model, you can re-roll Advance and Charge rolls made for this model.",
+      "target": null
+    },
+    {
+      "id": "d94e00c00fad50eb",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Jump Pack"
+        ]
+      },
+      "source": "This model has a transport capacity of 11 ^^**Drukhari Infantry **^^ models (excluding ^^**Jump Pack**^^ models).",
+      "target": null
+    },
+    {
+      "id": "b7fb9b5154a1275c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Anti"
+        ]
+      },
+      "source": "In your Shooting phase, when you select this model to shoot, you can spend 1 Pain token to Empower this model. While Empowered, if one or more units are embarked within this model, each time this model makes an attack with a ranged weapon that has the ^^**Anti**^^ ability, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "9073fc06d6bccb40",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vanguard of the Dark City"
+        ]
+      },
+      "source": "At the start of your Command phase, select one of the abilities in the Vanguard of the Dark City section for this model. Until the start of your next Command phase, this model has that ability.",
+      "target": null
+    },
+    {
+      "id": "f252e145c6e431d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kabalite Warriors"
+        ]
+      },
+      "source": "At the end of your Command phase, if this model is within range of an objective marker you control, and if one or more ^^**Kabalite Warriors**^^ units are embarked within it, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.",
+      "target": null
+    },
+    {
+      "id": "430d039296a7c277",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wyches"
+        ]
+      },
+      "source": "Each time a ^^**Wyches**^^ unit disembarks from this model (excluding Emergency Disembarkations), models in that ^^**Wyches**^^ unit must be setup wholly within 6\" of this model.",
+      "target": null
+    },
+    {
+      "id": "6b785c6669520cc3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wracks",
+          "Bladevanes and chainsnares"
+        ]
+      },
+      "source": "While one or more ^^**Wracks**^^ units are embarked within this model, for each ^^**Wracks**^^ model embarked within this model, add 1 to the Attacks characteristic of this model's Bladevanes and chainsnares.",
+      "target": null
+    },
+    {
+      "id": "ac21ac023eeb36a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit that is at its Starting Strength, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b3b7360c32dceb50",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when you select this model to shoot, you can spend 1 Pain token to Empower this model. While Empowered, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "c2382d15548aae7a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly"
+        ]
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets an enemy unit (excluding units that can ^^**Fly**^^), add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "e2881f1dbc714a17",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, after this unit has shot, select one enemy unit (excluding ^^**Monsters**^^ and ^^**Vehicles**^^) hit by one or more of those attacks; until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit's Move characteristic and subtract 2 from Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "f903204b6963c3fc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this unit ends a Normal or Advance move, you can select one enemy unit (excluding ^^**Monster **^^and ^^**Vehicle**^^ units) that it moved over during that move, then roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "7600aefb885edba4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when you select this unit to Advance, you can spend 1 Pain token to Empower this unit. While Empowered, each time this unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 8\" to the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "93df727ef7aba789",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "ed6fa450514f5e0b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a range attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "0d82ae75486f9837",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase when you select this model's unit to Advance, or in your Charge phase before you make a Charge roll for this model's unit, you can spend 1 Pain token to Empower that unit. While that unit is Empowered, you can re-roll Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "caedeca61b6eaf2a",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    }
+  ]
+}

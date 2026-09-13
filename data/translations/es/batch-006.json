@@ -1,0 +1,3698 @@
+{
+  "batch": 6,
+  "units": [
+    {
+      "id": "1909d66d910e14a3",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: ACCURSED CULTISTS, CULTIST MOB, CULTIST MOB WITH FIREARMS, NEGAVOLT CULTISTS",
+      "target": null
+    },
+    {
+      "id": "69b7235fa7bf8d94",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is leading a unit and contains a CULT DEMAGOGUE model, models in that unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "3767f7e73577e203",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Command phase, if this unit contains a CULT DEMAGOGUE model, it can use this ability. If it does, until the end of the turn, this unit can declare a charge in a turn in which it Advanced and each time a model in this unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "34d451b597799740",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Pacts"
+        ]
+      },
+      "source": "Each time the bearer’s unit takes a Leadership test for the Dark Pacts ability, you can re-roll that test.",
+      "target": null
+    },
+    {
+      "id": "fd3b20edc41911d2",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Emperor's Children",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit targets an enemy unit with a melee attack, re-roll a Wound roll of 1. If that enemy unit is within range of an objective marker, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "b4ee861d07f68b0d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.",
+      "target": null
+    },
+    {
+      "id": "e2dd0fcc16a4f96a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent's Shooting phase, when an enemy unit has shot, if a model from this unit was **destroyed** as a result of those attacks, this unit can make a **surge move** of up to D6\".",
+      "target": null
+    },
+    {
+      "id": "aa3b1d8b225d60f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a Dark Pact, until the end of the phase, each time a model in this unit makes an attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b1b408b6078777b0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a melee attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that unit is Below Half-strength, you can re-roll the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "129a450bf7cad42f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model destroys an enemy CHARACTER model, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "f18ed24d55f645ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Once per battle, when this unit makes a Dark Pact, until the end of the phase, weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "3a91b9e95f85f31a",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back.",
+      "target": null
+    },
+    {
+      "id": "66116b2c3e7cba6c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of the Fight phase, if one or more attacks made by this model that phase destroyed one or more enemy units, until the end of the battle, add 1 to the Attacks characteristic of this model’s weapons.",
+      "target": null
+    },
+    {
+      "id": "20ad47d57c1e9945",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, if this unit made a Charge move this turn, improve the Strength characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "dc2c3dd829409e9b",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this unit, each time that enemy unit takes a Battle-shock or Leadership test, subtract 1 from the result.",
+      "target": null
+    },
+    {
+      "id": "66c4e5509602a6be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "3bf611ad97045857",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of the Fight phase, if this unit destroyed one or more enemy units this phase and is not within Engagement Range of one or more enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "508a55bd3869f432",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack with a ranged weapon, you can ignore any or all modifiers to the Hit roll and any or all modifiers to the Ballistic Skill characteristic of that weapon.",
+      "target": null
+    },
+    {
+      "id": "53831dd58b67f939",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[INDIRECT FIRE]"
+        ],
+        "names": []
+      },
+      "source": "(Once per battle, per unit): In your Shooting phase, when this unit is **selected to shoot**, you can use this ability. If you do, this unit's ranged attacks have **[INDIRECT FIRE]**.",
+      "target": null
+    },
+    {
+      "id": "3331923467c0d4af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification"
+        ]
+      },
+      "source": "While a friendly HERETIC ASTARTES unit is within 9\" of this Fortification, improve that unit's Leadership characteristic by 1.",
+      "target": null
+    },
+    {
+      "id": "a60abd75734379d5",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Astra Militarum - Library",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "df116f78b409f095",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Daemon",
+          "Vehicle"
+        ]
+      },
+      "source": "While a friendly ^^**Daemon Vehicle^^** unit is within 6\" of this model, add 2 to the Strength characteristic of weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "07b4131e0da99e93",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": []
+      },
+      "source": "Each time an enemy unit within 18\" of this model targets this model, subtract 1 from the Hit roll and, until the end of the phase, that enemy unit’s ranged weapons have the [HAZARDOUS] ability.",
+      "target": null
+    },
+    {
+      "id": "715b7bde02a588b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Daemon",
+          "Vehicle",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ^^**Daemon Vehicle^^** units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "40f77f0239c45637",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is within range of an **objective**, this unit has +1 **Sv** against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "3a73549afba604ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit begins the game in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. If this unit is in Strategic Reserves, for the purposes of setting it up on the battlefield, treat the current battle round number as being one higher than it actually is.",
+      "target": null
+    },
+    {
+      "id": "ba788cfc429e711b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can be attached to the following unit: TRAITOR GUARDSMAN SQUAD",
+      "target": null
+    },
+    {
+      "id": "cbf594fd531f74a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "Once per turn, while this unit is leading a unit and contains a TRAITOR ENFORCER model, you can target that unit with the Fire Overwatch Stratagem for 0CP, and can do so even if you have already targeted a different unit from your army with that Stratagem this phase. Each time you use this ability, one Bodyguard model in that unit is destroyed.",
+      "target": null
+    },
+    {
+      "id": "d4cc9daae5b104df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ogryn",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While this unit contains a Traitor Ogryn model, CHARACTER models in this unit have the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "bd7a70ca145ad71d",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard",
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.",
+      "target": null
+    },
+    {
+      "id": "3a9b7edb7f791f8d",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Obliterator",
+          "Jump Pack",
+          "Possessed",
+          "Mutilators",
+          "Terminator"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 ^^**Heretic Astartes Infantry**^^ (excluding ^^**Obliterator^^** and ^^**Jump Pack^^** models). Each ^^**Possessed, Mutilators^^** and ^^**Terminator^^** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "df0ae4ed9d12118f",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a ranged attack made by this model is allocated to a **^^Monster^^** or **^^Vehicle^^** model, you can re-roll the Damage roll.",
+      "target": null
+    },
+    {
+      "id": "940cd5a802810493",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack made by this model targets an enemy INFANTRY unit, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "028ada3b4efdb107",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "When making ranged attacks with its demolisher cannon, this model can target enemy units within Engagement Range of it (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units.",
+      "target": null
+    },
+    {
+      "id": "d2b11ed20a6fe80a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]",
+          "[HAZARDOUS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model is selected to shoot, it can use this ability. If it does, until the end of the phase, its ranged weapons have the [DEVASTATING WOUNDS] and [HAZARDOUS] abilities.",
+      "target": null
+    },
+    {
+      "id": "3efff4af705c544f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly HERETIC ASTARTES unit is within 6\" of this model, each time that unit makes a Dark Pact, until the end of the phase, its weapons gain both abilities conferred by that pact (instead of only one).",
+      "target": null
+    },
+    {
+      "id": "7b5eee6055f5c224",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is equipped with 2 melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristics of those 2 weapons.",
+      "target": null
+    },
+    {
+      "id": "08be89726356a774",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a unit that can FLY, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "2d61b5374ab51859",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can ignore any or all modifiers to this model's Move characteristic and to Advance and Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "2cb5764d4f3e840a",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Adeptus Custodes",
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, this model regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "f17f7d929af376a3",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator",
+          "Jump Pack",
+          "Mutilators",
+          "Obliterators",
+          "Possessed"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 ^^**Heretic Astartes Infantry**^^ models. It cannot transport ^^**Terminator, Jump Pack, Mutilators, Obliterators**^^ or ^^**Possessed**^^ models.",
+      "target": null
+    },
+    {
+      "id": "41442ec9f0ca22a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, after this model has finished making its attacks, if this model destroyed one or more enemy units this phase, each enemy unit within 6\" of this model must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "9f1d51b6a2f7957e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-8 wounds remaining, subtract 4 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "533a324215a16823",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit (excluding VEHICLES) is within 3\" of this unit, subtract 1 from the Objective Control characteristic of models in that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "1efb9906f1e914ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Surge",
+          "Aircraft",
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Shooting phase, each time an enemy unit has shot, if any models from this unit were destroyed as a result of those attacks, this unit can make a Blood Surge move. To do so, roll one D6 and add 2 to the roll: models in this unit move a number of inches up to this result, but this unit must finish that move as close as possible to the closest enemy unit (excluding ^^**Aircraft^^**). When doing so, those models can be moved within Engagement Range of that enemy unit. This unit cannot make a Blood Surge move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Blood Surge move per phase.",
+      "target": null
+    },
+    {
+      "id": "bad62916687e0ce2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "Each time the bearer's unit destroys an enemy unit, you gain one Bloodshed point. Each time you make a Blessings of Khorne roll, roll one additional D6 for each Bloodshed point you have, after which, all your Bloodshed points are lost.",
+      "target": null
+    },
+    {
+      "id": "b5ce60479be034d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1. If the target of that attack is within range of an objective marker you do not control, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "3b72cde576046301",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[Ignores Cover]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Ignores Cover",
+          "Cover"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit (excluding ^^**Characters^^**) have the [Ignores Cover] ability.",
+      "target": null
+    },
+    {
+      "id": "c9fef7ec6624b085",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, each time this unit is selected to shoot, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next turn, that unit is Afflicted.",
+      "target": null
+    },
+    {
+      "id": "24437da395c870c2",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of the bearer, worsen the Leadership characteristic of models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "0553f2fddeb25f7b",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model ends a Normal move, you can select one enemy unit it moved across during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "428aa677c4c1485b",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3ffa90ce145e89f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: CHOSEN, LEGIONARIES\n",
+      "target": null
+    },
+    {
+      "id": "c282e73b96d0ca61",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "2217370e5f830bcc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, after a Hit roll, a Wound roll or a saving throw is made for this model, you can change the result of that roll to a 6.",
+      "target": null
+    },
+    {
+      "id": "625595fc40e085e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: CHOSEN, LEGIONARIES",
+      "target": null
+    },
+    {
+      "id": "126eb175590251fc",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "0de73142ac1fe29c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, each time that unit takes a Battle-shock test, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "79abcf178706cd50",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: CHOSEN, LEGIONARIES\n",
+      "target": null
+    },
+    {
+      "id": "a21e757669d6e78a",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, this model regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "080f7049ae2d2ea3",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability against mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "f218b245311a2358",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: CHAOS BIKERS\n",
+      "target": null
+    },
+    {
+      "id": "57ccf88c12824f5b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "5d8d067787cd92f4",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: CHAOS BIKERS",
+      "target": null
+    },
+    {
+      "id": "b4241349b472ef11",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding MONSTERS and VEHICLES) within Engagement Range of this model’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests.",
+      "target": null
+    },
+    {
+      "id": "b0b9d38ae0deda76",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, change the Move characteristic of models in that unit to 14\".",
+      "target": null
+    },
+    {
+      "id": "dd5065cb9324f338",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Space Marines",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models in that unit have a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "58bd7ab5870677f3",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit (excluding MONSTERS and VEHICLES) is within 6\" of this unit, each time a model in that unit makes a melee attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "e4c1d4be2133d99d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "While this model is leading a unit, you can target that unit with the Insane Bravery Stratagem for 0CP, and can do so even if another unit from your army has already been targeted with that Stratagem this phase. Each time you use this ability, one Bodyguard model in that unit is destroyed.",
+      "target": null
+    },
+    {
+      "id": "9bae8c24fea022fa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model's unit is eligible to declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "624140c05c675401",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: RENEGADE HEAVY WEAPONS SQUAD, TRAITOR GUARDSMEN SQUAD",
+      "target": null
+    },
+    {
+      "id": "64c6b1628b24ff3c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+.",
+      "target": null
+    },
+    {
+      "id": "f827528ad0656238",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Heavy Weapons Team",
+          "Weapons Team"
+        ]
+      },
+      "source": "For the purposes of embarking within TRANSPORTS, each Renegade Heavy Weapons Team model counts as two models.",
+      "target": null
+    },
+    {
+      "id": "5cbefcfeea92b85b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to a model in this unit, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "0c4e7e5724ab4b15",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Renegade Plague Ogryn",
+          "Ogryn"
+        ]
+      },
+      "source": "For the purposes of embarking within TRANSPORTS, each Renegade Plague Ogryn model counts as one TERMINATOR model.",
+      "target": null
+    },
+    {
+      "id": "60380b3f1ab58caf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "You can re-roll charge rolls made for this unit, and each time this unit makes a Charge move, select one enemy unit and roll one D6 for each model in this unit that is within Engagement Range of that unit: for each 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "ebecd28cffc8cc91",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "701dfbbcd65694dc",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ogryn"
+        ]
+      },
+      "source": "For the purposes of embarking within TRANSPORTS, each Renegade Ogryn Brute model counts as one TERMINATOR model.",
+      "target": null
+    },
+    {
+      "id": "d0221357ba5ea232",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "f087dbe683835c04",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your opponent’s Shooting phase, you can roll one D6: on a 1, this PSYKER’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, models in this PSYKER’s unit have a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "6b5df64b55d1e138",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "fb492ae209ad6d3b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a unit from your army with the Leader ability can be attached to a CULTIST MOB, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "a586dfb9b8f5e418",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a454a7e1957b7e80",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time this model's unit makes a Dark Pact, until the end of the phase, each time this model makes a Psychic Attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "99d0e3ce6099611f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ogryn Pack Master",
+          "Chaos Mauler Hound"
+        ]
+      },
+      "source": "While this unit contains an Ogryn Pack Master model, you can re-roll Charge rolls made for this unit, and each time a Chaos Mauler Hound model in this unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "d946ac13ba348696",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability.",
+      "target": null
+    },
+    {
+      "id": "31731a0a1c0ff973",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit, re-roll a Hit roll of 1 and, if that unit is within range of an objective marker you do not control, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "06a3a650354eb890",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is made with this weapon, if the target is more than 12\" from the bearer, an unmodified successful Hit roll of 4+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "e9e83713cf5caa53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: RAPTORS",
+      "target": null
+    },
+    {
+      "id": "95a3704f6822ffcb",
+      "kind": "modifier:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "WARP TALONS",
+      "target": null
+    },
+    {
+      "id": "edf25af8068cd655",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time that unit Piles In or Consolidates, each model in that unit can move up to 6\" instead of up to 3\".",
+      "target": null
+    },
+    {
+      "id": "daac97c9ed22a84c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, you can re-roll Leadership tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "9eacdf067cf9fb7d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy INFANTRY unit hit by one or more of those attacks. That unit must make a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "933a5929b1161bc3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this unit is within range of an objective marker  you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.",
+      "target": null
+    },
+    {
+      "id": "79e4e24424fe3c26",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll. If that enemy unit is Below Half-strength, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "32e21aaf7feb49e2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a CHARACTER UNIT unit from your army with the Leader ability (excluding EPIC HEROES) can be attached to a LEGIONARIES unit, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "53533ebdf673244a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Enemy units (excluding MONSTERS and VEHICLES) cannot be targeted with Stratagems while they are within Engagement Range of the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "911c7069a6924c65",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, each time a Battle-shock or Leadership test is taken for that enemy unit, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "8ae7a656da8ff804",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "After both players have deployed their armies, if this unit is on the battlefield (or any ^^**Transport**^^ it is embarked within is on the battlefield) select up to three ^^**Heretic Astartes**^^ units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "65f9b05af0295baf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, after this unit ends a Normal move, you can select one visible enemy unit within 12\" of it and roll one D6: on a 2+, that enemy unit suffers D3+1 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "af82bc093dbe35ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can be attached to the following units: CHOSEN, LEGIONARIES, RED CORSAIRS RAIDERS",
+      "target": null
+    },
+    {
+      "id": "df04f6799b82d5c3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Garreon the Corpsemaster",
+          "Character",
+          "Infantry"
+        ]
+      },
+      "source": "While this unit's Garreon the Corpsemaster model is on the battlefield, in your Command phase, select one of the following: you can return one destroyed model (excluding ^^**Character**^^ models) to this unit, or, if one or more ^^**Heretic Astartes Infantry**^^ units from your army are below Starting Strength and within 3\" of this unit, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "d5a6e09affad1009",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The first time this unit destroys an enemy unit, until the end of the battle, while this unit is not Battle-shocked, add 1 to the Objective Control characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "11ef98f20dacfe25",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Leader",
+          "Legionaries"
+        ]
+      },
+      "source": "If a ^^**Character**^^ unit from your army with the Leader ability can be attached to a ^^**Legionaries**^^ unit, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "a721d0965ed0bd4e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model's unit ends a Charge move, until the end of the turn, add 1 to the Strength characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "6884d7118e617fd1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit declares a Charge that targets one or more units that are within range of one or more objective markers, you can re-roll the Charge roll.",
+      "target": null
+    },
+    {
+      "id": "5d7e18aece1494b9",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chosen",
+          "Havocs",
+          "Legionaries",
+          "Nemesis Claw",
+          "Raiders"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Chosen, Havocs, Legionaries, Nemesis Claw, Raiders**^^",
+      "target": null
+    },
+    {
+      "id": "b3cf20df95ea0e4f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack, a successful unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "fcb3c6e15640bbeb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^PSYCHIC^^]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model is selected to shoot or fight, after resolving its attacks, select one enemy unit hit by one or more of those attacks that had the [^^PSYCHIC^^] ability. That unit must take a Leadership test. If it fails, it suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "71af246586b476b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ^^**Heretic Astartes Infantry**^^ units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "af8ecbdd57736b89",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard",
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic",
+          "Range"
+        ]
+      },
+      "source": "Each time this unit makes a Normal, Advance or Fall Back move, it can move through models (excluding ^^**Titanic**^^ models) and terrain features. When doing so, it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.",
+      "target": null
+    },
+    {
+      "id": "2443321738702075",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a Dark Pact, until the end of the phase, each time this model makes an attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "b7a95a9469c79aa6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets the closest eligible enemy unit, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "64e0c8caedea3743",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the battle, select one unit in your opponent’s army to be this model’s hated foe. Each time this model makes an attack that targets its hated foe, you can re-roll the Wound roll. Each time this model’s hated foe is destroyed, you can select a new unit from your opponent’s army to be its hated foe.",
+      "target": null
+    },
+    {
+      "id": "64da7e6a9aaab15f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: CHAOS TERMINATOR SQUAD, MUTILATORS, OBLITERATORS",
+      "target": null
+    },
+    {
+      "id": "c6f685b370862245",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. Each time the bearer’s unit makes a Dark Pact and does not fail the resulting Leadership test, roll one D3; until the end of the phase, add the result to the Attacks and Strength characteristics of the bearer’s melee weapons instead.",
+      "target": null
+    },
+    {
+      "id": "36cfcc2e5c389f6b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer’s unit makes a Dark Pact and does not fail the resulting Leadership test, if the result of that test was 8 or more, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "dff3a4bf078fb541",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of the Fight phase, roll one D6 for every enemy unit within 3\" of the bearer, adding 1 to the result if the bearer’s unit made a Dark Pact that phase and did not fail the resulting Leadership test: on a 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "7e9cfea11043a00a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 5+ ability. Each time the bearer shoots or fights, if the bearer’s unit made a Dark Pact this phase and did not fail the resulting Leadership test, after the bearer has resolved those attacks, select one enemy unit that was hit by one or more of those attacks; that enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "aa66c62642311380",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes an attack that targets your focus of hatred, an unmodified successful wound roll of 5+ scores a Critical Wound.",
+      "target": null
+    },
+    {
+      "id": "97227ef5e691fb08",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer’s unit is eligible to shoot and declare a charge in a turn in which it Fell Back. Each time a model in the bearer’s unit makes an attack that targets your focus of hatred, if the bearer’s unit Fell Back this turn, add 1 to the Hit roll, and each time you select your focus of hatred as a target of that unit’s charge, add 1 to the Charge roll.",
+      "target": null
+    },
+    {
+      "id": "bf660502745a8fe5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is on the battlefield, each time your focus of hatred is destroyed, roll one D6; on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "e6900fdc3e6e6fd4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, you can re-roll one Hit roll, one Wound roll or one saving throw made for the bearer.",
+      "target": null
+    },
+    {
+      "id": "e9430bb67563195f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Leader"
+        ]
+      },
+      "source": "In the Declare Battle Formations step, you can set up the bearer in Reserves instead of setting it up on the battlefield. If you do, in one of your Movement phases, you can select one model in a friendly **LEGIONARIES** or **CHOSEN** unit that has two or more models remaining and is on the battlefield (excluding Attached units).. The selected model is destroyed (ignoring any rules that are triggered when a model is destroyed) and the bearer is set up as close as possible to where that model was destroyed and only within Engagement Range of any units if the destroyed model was in Engagement Range of those units. The bearer now attaches to that unit as its Leader.",
+      "target": null
+    },
+    {
+      "id": "8dbc23e8e23281d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "Improve the Armour Penetration characteristic of the bearer's melee weapons by 1, and the bearer's melee weapons have the [PRECISION] ability.",
+      "target": null
+    },
+    {
+      "id": "8381889ae9532acf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Lone Operative"
+        ]
+      },
+      "source": "The bearer has the Stealth and Lone Operative abilities.",
+      "target": null
+    },
+    {
+      "id": "24616591078e033c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, you can select one other HERETIC ASTARTES INFANTRY CHARACTER model from your army (excluding EPIC HEROES). Until the start of your next Command phase, the bearer gains the PSYKER keyword, and replace the bearer's datasheet abilities with the datasheet abilities of the CHARACTER you selected.",
+      "target": null
+    },
+    {
+      "id": "4db56465922af24c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if the bearer is on the battlefield, roll one D6, adding one to the result if the bearer is wholly within 12\" of your opponent's deployment zone; on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "786c12444cc687c2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes a melee attack, if the bearer is wholly within 12\" of your opponent's deployment zone, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "096d2250ba493b89",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "Models in the bearer's unit have the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "f3bdecfd0cde2e31",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance rolls made for the bearer's unit, and the bearer's unit is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "6b062b85cb58b665",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, after the bearer has made its attacks, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "4330659801f3dc44",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Space Marines",
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "b6ad8580b861baa1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "In your Command phase, select one friendly HERETIC ASTARTES VEHICLE unit within 12\" of the bearer. Until the start of your next Command phase, that unit has the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "beacf1c1b04ce6c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if the bearer is on the battlefield, roll one D6, adding 1 to the result for each Battle-shocked enemy unit that is on the battlefield: on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "ed9262961c7c1727",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, when a saving throw is failed for the bearer's unit, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "37c8e6564ec4dbe6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes an attack while within range of an objective marker, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "11aff3ad85ca9980",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "3353490b505cd95c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-VEHICLE 4+]",
+          "[ANTI-FORTIFICATION 4+]"
+        ],
+        "names": []
+      },
+      "source": "The bearer's weapons have the [ANTI-VEHICLE 4+] and [ANTI-FORTIFICATION 4+] abilities.",
+      "target": null
+    },
+    {
+      "id": "05b0a09efa7ab7d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can return up to D3 destroyed DAMNED models (excluding CHARACTER models) to the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "2e7aabdce9231455",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer's unit is below its Starting Strength, add 1 to the Strength characteristic of melee weapons equipped by DAMNED models in that unit, and while that unit is Below Half-Strength, add 1 to the Attacks characteristic of those weapons as well.",
+      "target": null
+    },
+    {
+      "id": "e85fdd82f179fd30",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If every other model in the bearer's unit (excluding Dark Disciples) is DAMNED, you can re-roll Advance and Charge rolls made for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "df31d6a158a612ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts"
+        ]
+      },
+      "source": "While the bearer is leading a unit with the Scouts 6” ability, every model in the bearer’s unit has the Scouts 6” ability.",
+      "target": null
+    },
+    {
+      "id": "371e0e88347dd778",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent's turn, if the bearer's unit is not within Engagement Range of one or more enemy units, you can remove the bearer's unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "ff997462d2016555",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 4\" to the bearer's Move characteristic.",
+      "target": null
+    },
+    {
+      "id": "f8afe23c3102d893",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is on the battlefield, each time an enemy unit within 12\" of the bearer is destroyed, roll one D6; on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "a1681ef99b83219c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a HERETIC ASTARTES DAEMON VEHICLE from your army invokes its contract while within 3\" of the bearer:\n- If it suffers one or more mortal wounds as a result of that Dark Pact, add 1 to the number of mortal wounds it suffers.\n- Until the end of the phase, each time a model in that unit makes an attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "ca1441ddc243e0c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "HERETIC ASTARTES model (excluding DAMNED models) only. The bearer’s melee weapons have the [PRECISION] ability.",
+      "target": null
+    },
+    {
+      "id": "802b171ecbb360c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "CHAOS LORD model only. Add 1 to the bearer’s Wounds characteristic and the bearer has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "f0ab6c7c05c73d2e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "HERETIC ASTARTES INFANTRY model (excluding DAMNED models) only. Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of the bearer.",
+      "target": null
+    },
+    {
+      "id": "dc7c58e67f5e77ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Damned"
+        ]
+      },
+      "source": "**^^Heretic Astartes Infantry^^** model (excluding **^^Damned^^** models) only. Add 1 to the Damage characteristic of melee weapons equipped by the bearer. Each time the bearer makes a melee attack, you can re‑roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "897e307cd075e490",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": []
+      },
+      "source": "- This model has PSYKER. \n- This model’s weapons have [PSYCHIC].",
+      "target": null
+    },
+    {
+      "id": "5f0e69a5becfd64a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": []
+      },
+      "source": "This model’s melee attacks have [LANCE].",
+      "target": null
+    },
+    {
+      "id": "0acf13088a3b58f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Stealth ability.\n\nWhile the bearer’s unit is within range of one or more objective markers you control, that unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "2c48e5d40181350e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent’s Fight phase, if the bearer’s unit is not within Engagement Range of one or more enemy units, you can remove the bearer’s unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "e11671730b62385d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "Models in the bearer’s unit have the Scouts 6\" ability.\n",
+      "target": null
+    },
+    {
+      "id": "c01a18a63ba8d027",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle‑shock test, subtracting 1 from the result.",
+      "target": null
+    },
+    {
+      "id": "7c9d5bee45b8d015",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tyrannical Motivation",
+          "Detachment"
+        ]
+      },
+      "source": "The bearer’s unit has both abilities from the Tyrannical Motivation Detachment rule.",
+      "target": null
+    },
+    {
+      "id": "f54006768c88265e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "Each time the bearer’s unit is set up after disembarking from a ^^**Transport**^^ that has made a Normal move this turn, the bearer’s unit is still eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "b4d5a5bbf9fb2185",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Each time the bearer’s unit is set up on the battlefield, each enemy unit within 6” of the bearer’s unit (or within 12” if the bearer’s unit was set up using the Deep Strike ability) takes a Battle‑shock test.",
+      "target": null
+    },
+    {
+      "id": "652bff5291b4959f",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "The bearer has the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "8a7d000ad263f714",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vendetta"
+        ]
+      },
+      "source": "Once per battle round, after your Vendetta target is destroyed, if the bearer is on the battlefield, you can select one enemy unit visible to the bearer. That enemy unit becomes your Vendetta target until you select a new one.",
+      "target": null
+    },
+    {
+      "id": "6b6e8832989092cf",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Space Marines",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "5b7b7b78a5f49438",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In a turn in which the bearer’s unit chose to Default to Doctrine, until the end of the turn, each time a model in this unit makes an attack, you can re‑roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a574dfc424a78819",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to Advance and Charge rolls made for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "634140af6519d0bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, you can target the bearer’s unit with the Rapid Ingress Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "c320171c008cec8b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer’s unit is set up on the battlefield, until the end of the turn, you can re‑roll Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "879b585c6912b277",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
+      "target": null
+    },
+    {
+      "id": "e2524c506d52a715",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Attacks, Strength and Armour Penetration characteristics of the bearer’s weapons by 1. In addition, each time the bearer’s unit is set up on the battlefield from Reserves, until the end of the turn, improve the Damage characteristic of the bearer’s weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "f86631f96833e0c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if the bearer is on the battlefield, roll one D6, adding 1 to the result if the bearer is within range of an objective marker you control: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "8d286fb5b9dab51e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Soul Forge"
+        ]
+      },
+      "source": "Models in the bearer’s unit have the ^^**Soul Forge**^^ keyword.",
+      "target": null
+    },
+    {
+      "id": "8dd9031320a43269",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes an attack, an unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "74941d30100d6d83",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warpsmith",
+          "Master of Mechanisms",
+          "Enrage Machine Spirits"
+        ]
+      },
+      "source": "Add 3” to the range of the bearer’s Warpsmith, Master of Mechanisms and Enrage Machine Spirits abilities.",
+      "target": null
+    },
+    {
+      "id": "d97bd04957bf57ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- This model has DAEMON. \n- This model’s melee attacks have +1 A.",
+      "target": null
+    },
+    {
+      "id": "fc2b045d1b74cf07",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Pacts"
+        ]
+      },
+      "source": "- When this unit uses its **Dark Pacts** ability, this unit can re‑roll **Leadership rolls**.\n- In your Shooting phase, when this unit has shot, if this unit used its **Dark Pacts** ability and if those attacks **destroyed** an enemy model, this unit **heals** 3 wounds.",
+      "target": null
+    },
+    {
+      "id": "690fe2c22bf18401",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "This unit has 5+ InSv.",
+      "target": null
+    },
+    {
+      "id": "30e4ac9cdbb71beb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the Strength characteristic of this model's hellforged weapons.",
+      "target": null
+    },
+    {
+      "id": "50bb17e133830519",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to this model's Toughness characteristic.",
+      "target": null
+    },
+    {
+      "id": "ed94f7ad046c49a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to this model's Move characteristic.",
+      "target": null
+    },
+    {
+      "id": "75e92431249b8020",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 3 to the Attacks characteristic of this model's infernal cannon.",
+      "target": null
+    },
+    {
+      "id": "93716b95d74c0f00",
+      "kind": "characteristic:Description",
+      "occurrences": 6,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to this model's Wounds characteristic.",
+      "target": null
+    },
+    {
+      "id": "181d3dd66684cbea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Heretic Astartes Vehicle",
+          "Vehicle"
+        ]
+      },
+      "source": "At the end of the battle, if this model was part of your Crusade army and is not destroyed, you can ignore one failed Out of Action test taken for a **^^Heretic Astartes Vehicle^^** unit from your Crusade army - that test is passed instead.",
+      "target": null
+    },
+    {
+      "id": "be9ace8c95b93f52",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Heretic Astartes Vehicle",
+          "Vehicle"
+        ]
+      },
+      "source": "While a friendly **^^Heretic Astartes Vehicle^^** unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "a7115cdfc04b3dfb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Ballistic Skill of ranged weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "95d723e9fa93c7a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is Marked for Greatness, it gains 3 additional XP.",
+      "target": null
+    },
+    {
+      "id": "430321c70b86ad13",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "While a **^^Heretic Astartes Character^^** is leading this unit, add 1 to the Objective Control characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "5ec9c82acf460eb8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "Improve the Weapon Skill of melee weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "203393f04de84981",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Unit Champion",
+          "Champion"
+        ]
+      },
+      "source": "Select one model in this unit (if this unit has a Unit Champion, you must select that model). Add 1 to the Attacks characteristic of that model's melee weapons and add 1 to that model's Wounds characteristic.",
+      "target": null
+    },
+    {
+      "id": "bfbb37357b2e1a75",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of the battle, if this unit is not destroyed, it gains 1 additional XP.",
+      "target": null
+    },
+    {
+      "id": "382ab172ef568738",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "While a **^^Heretic Astartes Character^^** is leading this unit, each time a model in this unit makes an attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "7e5144d15ae9944d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, you can target this unit with the Insane Bravery Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "0b04545759166b4d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "Improve the Ballistic Skill of this unit's ranged weapons by 1, and improve the Weapon Skill of this unit's melee weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "3204336be6d10ac2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, this model regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "865b3956311a533d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, you can target this model with the Tank Shock Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "1dd1b05c357b8dfd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "Once per battle, at the start of the Fight phase, the bearer can use this ability. If it does, until the end of the phase, the bearer's unit has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "34bff5dc43272294",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "**^^Infantry^^** model only:\n- Add 1 to the bearer's Toughness and Wounds characteristics.\n- Add 2 to the Strength and Attacks characteristics of melee weapons equipped by the bearer.\n- The bearer's unit cannot make Fall Back moves.",
+      "target": null
+    },
+    {
+      "id": "7321791b60b2dfb1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Infantry Psyker^^** model only:\n- Each time the bearer makes an attack with a Psychic weapon, add 1 the Wound roll.\n- Improve the Armour Penetration and Damage characteristics of Psychic weapons equipped by the bearer by 1.",
+      "target": null
+    },
+    {
+      "id": "764a13890c547981",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of the bearer and roll one D6: on a 2+, that unit suffers D3 mortal wounds and, at the end of the battle, that unit must take an Out of Action test even if it was not destroyed (if it was destroyed, subtract 2 from its Out of Action test).",
+      "target": null
+    },
+    {
+      "id": "981ba23d8b40d9d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "**^^Infantry^^** model only. Each time the bearer makes a melee attack, you can re-roll the Hit roll. If the target of that attack is Below Half-strength, you can re-roll the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "8cec497f8f6a3587",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "42c81ad0ccd1e6e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cult Demagogue",
+          "Demagogue"
+        ]
+      },
+      "source": "**^^Cult Demagogue^^** model only:\n- Models in the bearer's unit have a 4+ invulnerable save.\n- Add 1 to the Objective Control characteristic of models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "e828cd198d4fae5e",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Emperor's Children",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance and Charge rolls made for this model's unit.",
+      "target": null
+    },
+    {
+      "id": "6f68768e3f319a34",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard",
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to Advance and Charge rolls made for this model's unit.",
+      "target": null
+    },
+    {
+      "id": "dec2a445c114aff5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to this model's Wounds characteristic.",
+      "target": null
+    },
+    {
+      "id": "51f0ace3cf7dacf9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons equipped by this model have the **[LANCE]** ability.",
+      "target": null
+    },
+    {
+      "id": "df95d65468010c3e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, you can re-roll one Hit roll, one Wound roll, one Damage roll or one saving throw made for this model.",
+      "target": null
+    },
+    {
+      "id": "d5e669416d097002",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Attacks characteristic of melee weapons equipped by this model.",
+      "target": null
+    },
+    {
+      "id": "d7bbaf046871f685",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Armour Penetration characteristic of melee weapons equipped by this model by 1.",
+      "target": null
+    },
+    {
+      "id": "e68e2e7beebb8e6d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Once per battle, at the start of your opponent's Shooting phase, this model can use this ability. If it does, until the end of the phase, this model's unit has the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "3636ceac820d1fef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "Slaanesh"
+        ]
+      },
+      "source": "The bearer gains the **^^Slaanesh^^** keyword. In the Fight phase, if the bearer's unit makes a Dark Pact, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by the bearer and those weapons gain the **[LANCE]** ability.",
+      "target": null
+    },
+    {
+      "id": "7062659414144482",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne"
+        ]
+      },
+      "source": "The bearer gains the **^^Khorne^^** keyword. In the Fight phase, if the bearer's unit makes a Dark Pact, until the end of the phase, add 3 to the Strength characteristic of melee weapons equipped by the bearer and add 1 to the Damage characteristic of melee weapons equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "ab24ed9c610b8907",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch"
+        ]
+      },
+      "source": "The bearer gains the **^^Tzeentch^^** keyword. In the Fight phase, if the bearer's unit makes a Dark Pact, until the end of the phase, each time the bearer makes an attack, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "9858929cfcee0b35",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-INFANTRY 3+]"
+        ],
+        "names": [
+          "Nurgle"
+        ]
+      },
+      "source": "The bearer gains the **^^Nurgle^^** keyword. In the Fight phase, if the bearer's unit makes a Dark Pact, until the end of the phase, melee weapons equipped by the bearer have the **[ANTI-INFANTRY 3+]** ability.",
+      "target": null
+    },
+    {
+      "id": "92947c197e4670b0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ascension to Daemonhood"
+        ]
+      },
+      "source": "After each battle, you can purchase one of the following Requisitions once, and when you do, reduce the cost by 1RP: Renowned Heroes, Ascension to Daemonhood.",
+      "target": null
+    },
+    {
+      "id": "737964a4ee2347e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Order of Battle",
+          "Warband Champion",
+          "Champion",
+          "Character"
+        ]
+      },
+      "source": "After losing a battle, in the Update Crusade Cards step, roll one D6. On a 1, a rival declares a challenge - select one other **^^Heretic Astartes Characters^^** model from your Order of Battle (excluding **^^Epic Heroes^^**) to be the rival (if there a no others, nothing happens). Then, roll one D6 for your **^^Warband Champion^^** and one D6 for that selected **^^Character^^** - the model you roll highest for gain 3XP, and the other model is treated as having failed an Out of Action test.",
+      "target": null
+    },
+    {
+      "id": "018f1bc76cd39b08",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Warband Champion",
+          "Champion",
+          "Battle Honours"
+        ]
+      },
+      "source": "After each battle, in the Update Crusade Cards step, if your **^^Warband Champion^^** model destroyed one or more enemy units during that battle, roll one D6. On a 6, your **^^Warband Champion^^** gains one Battle Honour of your choice, and change the Leadership characteristic of that model to 5+. Your **^^Warband Champion^^** can gain a maximum of 3 Battle Honours using this Favoured Reward.",
+      "target": null
+    },
+    {
+      "id": "519b60582681159b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ascension to Daemonhood"
+        ]
+      },
+      "source": "The RP cost of the following Requisitions is increased by 1RP: Renowned Heroes, Ascension to Daemonhood.",
+      "target": null
+    },
+    {
+      "id": "13eca5b3ab4e8522",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Supply Limit",
+          "Legendary Veterans"
+        ]
+      },
+      "source": "After each battle, you can purchase one of the following Requisitions once, and when you do, reduce the cost by 1RP: Increase Supply Limit, Legendary Veterans, Repair and Recuperate",
+      "target": null
+    },
+    {
+      "id": "7409fcd6600f876d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Order of Battle"
+        ]
+      },
+      "source": "After the battle, in the Update Order of Battle step, roll one D6: on a 1, reduce your Requisition points total by D3; on a 6 you gain 1RP.",
+      "target": null
+    },
+    {
+      "id": "59ed2069303de263",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Warband Champion",
+          "Champion",
+          "Weapon"
+        ]
+      },
+      "source": "After each battle, in the Update Crusade Cards step, you can select one unit from your Crusade army (excluding your **^^Warband Champion^^**) that destroyed one or more enemy units during that battle, then roll one D6. On a 6, that unit gains one Battle Trait or Weapon Enhancement Battle Honour of your choice. No unit from your Crusade force can gain more than 1 Battle Honour using this Favoured Reward.",
+      "target": null
+    },
+    {
+      "id": "382a81a2a8d0ef4b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Supply Limit",
+          "Legendary Veterans"
+        ]
+      },
+      "source": "The RP cost of the following Requisitions is increased by 1RP: Increase Supply Limit, Legendary Veterans, Repair and Recuperate.",
+      "target": null
+    },
+    {
+      "id": "95c27bceb477948a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Gods",
+          "Mortal Empowerment"
+        ]
+      },
+      "source": "After each battle, you can purchase one of the following Requisitions once, and when you do, reduce the cost by 1RP: Sacrifice to the Dark Gods, Mortal Empowerment.",
+      "target": null
+    },
+    {
+      "id": "92dca53d01673d28",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "During each battle, each time a unit from your Crusade army makes a Dark Pack, subtract 1 from the resulting Leadership test, and if a unit from your Crusade army destroys one or more enemy units in a phase in which it made a Dark Pact, that unit gains 1XP.",
+      "target": null
+    },
+    {
+      "id": "cefd9b52c8eecf2d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Chaos",
+          "Character",
+          "Unit Champion",
+          "Champion",
+          "Chaos Boons"
+        ]
+      },
+      "source": "After each battle, in the Update Crusade Cards step, you can select one unit from your Crusade army that destroyed one or more enemy units during that battle, then roll one D6. On a 6, that unit gains one Chaos Boon. If that unit is not a **^^Character^^** unit but it contains a Unit Champion, that Unit Champion gains that Chaos Boon, even though normally only **^^Character^^** units can gain Chaos Boons.",
+      "target": null
+    },
+    {
+      "id": "4969d53599507814",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Gods",
+          "Mortal Empowerment"
+        ]
+      },
+      "source": "The RP cost of the following Requisitions is increased by 1RP: Sacrifice to the Dark Gods, Mortal Empowerment.",
+      "target": null
+    },
+    {
+      "id": "f1a13a2cc54ea0e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos Bikers"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Chaos Bikers**^^.",
+      "target": null
+    },
+    {
+      "id": "a93a7536b6cc120d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Possessed"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Possessed**^^.",
+      "target": null
+    },
+    {
+      "id": "e1840e17860211fe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Raptors"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Raptors**^^.",
+      "target": null
+    },
+    {
+      "id": "e95feff294700ff6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos Terminator Squad",
+          "Terminator Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Chaos Terminator Squad**^^.",
+      "target": null
+    },
+    {
+      "id": "4d20e7cfad829868",
+      "kind": "characteristic:Description",
+      "occurrences": 7,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Imperium - Adepta Sororitas",
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to Advance and Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "8858d181eebe59fa",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Space Marines",
+        "Chaos - Emperor's Children",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "6dbae2ab7c7a6c84",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one unit from your army with this ability can be targeted with a Stratagem for 0CP, even if a different unit from your army has been targeted with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "5fad0fa8394deeca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Heretic Astartes Vehicle",
+          "Vehicle"
+        ]
+      },
+      "source": "In your Command phase, select one friendly ^^**Heretic Astartes Vehicle**^^ model within 3\" of this model. That ^^**Vehicle**^^ model regains up to D3 lost wounds and, until the start of your next Command phase, each time that ^^**Vehicle**^^ makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per Command phase.",
+      "target": null
+    },
+    {
+      "id": "d8235b4e3443ef99",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b1c828afa6729442",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "a94dba19b01c8da0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Contagion Range of this model, at the end of the turn, roll one D6: on a 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "a5280c8d94f05281",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: PLAGUE MARINES",
+      "target": null
+    },
+    {
+      "id": "96133154a5445178",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "If your Army Faction is DEATH GUARD, while an enemy unit is within Contagion Range of one or more ^^**Death Guard^^** units from your army, it is Afflicted.\n\nCONTAGION RANGE\n1st Battle Round: Contagion Range = 3\"\n2nd Battle Round: Contagion Range = 6\"\n3rd Battle Round Onwards: Contagion Range = 9\"\n\nContagion Range cannot be greater than 12\" after modifiers.\n\n**AFFLICTED**\n\nDuring the Declare Battle Formations step, select one of the Plagues below. Until the end of the battle, while an enemy unit is Afflicted, subtract 1 from the Toughness characteristic of models in that unit, and that unit has the effect of your chosen Plague.\n\n**Skullsquirm Blight**\n- Each time a model in this unit makes a ranged attack, enemy units have the benefit of cover against that attack.\n- Each time a model in this unit makes a melee attack, subtract 1 from the Hit roll.\n\n**Rattlejoint Ague**\nWorsen the Save characteristic of models in this unit by 1.\n\n**Scabrous Soulrot**\nWorsen the Move, Leadership and Objective Control characteristics of models in this unit by 1 (this rule can only worsen a model's Objective Control characteristic to a minimum of 1).",
+      "target": null
+    }
+  ]
+}

@@ -1,0 +1,3273 @@
+{
+  "batch": 7,
+  "units": [
+    {
+      "id": "b38f5988d9bc5d09",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "In the **Declare Battle Formations** step, you can select up to two friendly **PLAGUE MARINES** units. Those units have **Infiltrators**. \n\nThis detachment has the FLYBLOWN tag and cannot be taken with another FLYBLOWN detachment.",
+      "target": null
+    },
+    {
+      "id": "fc13fd3f654c7a8f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if a friendly DEATH GUARD unit is controlling an objective, that objective is secured. Until you lose control of that objective, while an enemy unit is within range of that objective, that enemy unit is Afflicted.",
+      "target": null
+    },
+    {
+      "id": "f5e3e85c0644192d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Poxwalkers",
+          "Onslaught",
+          "Battleline"
+        ]
+      },
+      "source": "In your Command phase in each of the following battle rounds, depending on your chosen battle size, add a new ^^**Poxwalkers**^^ unit with a Starting Strength of 10 to your army, in Strategic Reserves.\n\n\nIncursion - Battle Rounds 2,3\nStrike Force - Battle Rounds 2,3,4\nOnslaught - Battle Round 2,3,4,5\n\n\n^^**Poxwalkers**^^ unit from your army gain the ^^**Battleline**^^ keyword.",
+      "target": null
+    },
+    {
+      "id": "4e9979b8be9a3ed9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent's Command phase, roll 2D6 for each Afflicted enemy unit, subtracting 1 from the result if that unit is Below Half-strength. If the result is 6 or less, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "b4b2fa6682afda4d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Unit",
+          "Onslaught"
+        ]
+      },
+      "source": "At the start of the battle round, select a number of enemy units more than 12\" away from every model in your army that is on the battle field. Until the end of the battle round, those enemy units are Afflicted. The maximum number of units you can select in this way depends on the battle size, as shown below.\n\n\nIncursion - 1 Unit\nStrike Force - 2 Units\nOnslaught - 3 Units",
+      "target": null
+    },
+    {
+      "id": "64b62698fdf56fa1",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Nurgle"
+        ]
+      },
+      "source": "At the start of the battle round, you can select one of the Plagues listed in Nurgle's Gift. Until the end of the battle, that is your chosen Plague instead of any previously chosen Plague.",
+      "target": null
+    },
+    {
+      "id": "31e72ecaba093043",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Nurgle",
+          "Range"
+        ]
+      },
+      "source": "While a ^^**Plague Legions^^** unit from your army is within 7\" of one or more ^^**Death Guard^^** units from your army, that ^^**Plague Legions^^** unit has the Nurgle's Gift ability.\n\n\nWhile a ^^**Death Guard^^** unit from your army is within 7\" of one or more ^^**Plague Legions^^** units from your army, add 3\" to that ^^**Death Guard^^** unit's Contagion Range.",
+      "target": null
+    },
+    {
+      "id": "1d3eb5a743f837d2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "Friendly FOETID BLOAT‑DRONE/FOETID BLOAT‑DRONE WITH HEAVY BLIGHT LAUNCHER/HELBRUTE/MYPHITIC BLIGHT‑HAULER units have CONTAGION ENGINE. \n- Friendly CONTAGION ENGINE units’ ranged attacks have [ASSAULT]. \n\n\nThis detachment has the ENGINES tag and cannot be taken with another ENGINES detachment.",
+      "target": null
+    },
+    {
+      "id": "b2efa488acd4bfd1",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Friendly **DEATH GUARD CHARACTER** units have +3\" to their **Contagion Range** (to a maximum of 12\").",
+      "target": null
+    },
+    {
+      "id": "17cfae1b6f166b55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ^^**Death Guard Infantry^^** units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "e037067c70b8d428",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per Battle Round, one model from your army with this ability can use it when a friendly ^^**Death Guard^^** unit within 12\" of that model is targeted with a Stratagem. If it does, reduce the CP cost of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "2e7cd4cad404a46d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "While a friendly ^^**Death Guard^^** unit is within 6\" of this model, each time a ranged attack targets that unit, models in that unit have the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "a4ff5cc582898450",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it. That unit must take a Battle-shock test, subtracting 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "e326924bb8ae7ad1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit (excluding ^^*Monsters^^** and ^^**Vehicles^^**) is within 6\" of this model, each time that unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those Desperate Escape tests.",
+      "target": null
+    },
+    {
+      "id": "eae0aaf7b7ed30ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: BLIGHTLORD TERMINATORS, DEATHSHROUD TERMINATORS, POXWALKERS",
+      "target": null
+    },
+    {
+      "id": "d2dca8b19f868206",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a melee attack targets that unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "0a405f13f34a7787",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Lone Operative"
+        ]
+      },
+      "source": "In your Shooting phase, you can select one enemy unit within 18\" of and visible to this ^^**Psyker^^** (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12\" of this ^^**Psyker^^** and roll one D6: on a 1, this ^^**Psyker^^**'s unit suffers D3 mortal wounds; on a 2-5, that enemy unit suffers D6 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "8e73bf8af05fcb2d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: BLIGHTLORD TERMINATORS, DEATHSHROUD TERMINATORS",
+      "target": null
+    },
+    {
+      "id": "a3153b8e105277dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a ranged attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "9bf2c853400113d4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blast"
+        ]
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 30\" of and visible to this model. Until the end of the phase, each time a friendly ^^**Death Guard^^** unit makes a ranged attack that targets that unit, re-roll a Hit roll of 1 (if that attack is made with a Blast weapon, you can re-roll the Hit roll instead).",
+      "target": null
+    },
+    {
+      "id": "d4782f1011a3aec8",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: BLIGHTLORD TERMINATORS, DEATHSHROUD TERMINATORS",
+      "target": null
+    },
+    {
+      "id": "870e4b89f4104646",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits 1]",
+          "[Lance]"
+        ],
+        "names": [
+          "Sustained Hits 1",
+          "Lance"
+        ]
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the **[Sustained Hits 1]** and **[Lance]** abilties.",
+      "target": null
+    },
+    {
+      "id": "a0825f5121477c59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time a model with this ability is destroyed in a battle round, roll one D6 at the end of the phase. On a 2+, set that model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining. Each model can only be set up in this way once per battle.",
+      "target": null
+    },
+    {
+      "id": "ca8da95af0e4edaf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Fight phase, you can roll one D6: on a 1, this PSYKER’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, each time an attack is allocated to a model in this PSYKER’s unit, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "e325b09ebef255f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Once per battle, after selecting targets for a Psychic weapon equipped by this model, until the end of the phase, improve the Strength and Damage characteristics of that weapon by 2.",
+      "target": null
+    },
+    {
+      "id": "abd1d54f48427e88",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits 1]"
+        ],
+        "names": [
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack which targets a unit which is Afflicted, that attack has the [Sustained Hits 1] ability.",
+      "target": null
+    },
+    {
+      "id": "5b76555a852986f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Plague Wind"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy ^^**Infantry^^** unit hit by one or more of those attacks made with its Plague Wind. Until the end of your opponent's next turn, that unit is enfeebled. While a unit is enfeebled, subtract 2\" from the Move characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "814b93d79401fbaf",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: PLAGUE MARINES, POXWALKERS",
+      "target": null
+    },
+    {
+      "id": "f7b829b4e2f461da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "When this unit’s attacks target a unit within **Contagion Range** of a friendly unit, those attacks can re‑roll **wound rolls** of 1.",
+      "target": null
+    },
+    {
+      "id": "a2fbc14c2e1c29a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has ‑3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "3cd4e074c9f87b31",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Poxwalker",
+          "Monster",
+          "Vehicle",
+          "Typhus"
+        ]
+      },
+      "source": "Each time a ^^**Poxwalker^^** model in this unit makes an attack that destroys an enemy model (excluding ^^**Monster^^** and ^^**Vehicle^^** models), after this unit has resolved its attacks, you can return one destroyed ^^**Poxwalker^^** model to this unit.\n\nWhile ^^**Typhus^^** is leading this unit, enemy models destroyed as a result of ^^**Typhus^^**’ Eater Plague ability count as enemy models destroyed by an attack made by a ^^**Poxwalker^^** model in this unit for the purposes of this ability.",
+      "target": null
+    },
+    {
+      "id": "273b577a14a09e3f",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, add 1\" to the Move characteristic of models in that unit and you can re-roll Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "3ea348e7039e7c42",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "In the Battle-shock step of your opponent's Command phase, if an enemy unit that is below its Starting Strength is within 9\" of this model, that enemy unit must take a Battle-shock test, subtracting 1 from that test if it is a ^^**Psyker^^** unit.",
+      "target": null
+    },
+    {
+      "id": "4c06d90251a728ec",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy models cannot start or end an Advance move within 9\" of this model.",
+      "target": null
+    },
+    {
+      "id": "2ba5ce17afbc98e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "In the Fight phase, you can select one model from your army with this ability to use this ability. If you do, until the end of that phase, that model's unit has the Fights First ability. Each model can only be selected for this ability once per battle.",
+      "target": null
+    },
+    {
+      "id": "21153ac22417093d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The first time this model's unit destroys an enemy unit as a result of a melee attack, until the end of the battle, add 6 to the Objective Control characteristic of this model.",
+      "target": null
+    },
+    {
+      "id": "42828671f7402ed8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lethal Hits]"
+        ],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the [Lethal Hits] ability. In addition, each time a model in that unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only on a 6.",
+      "target": null
+    },
+    {
+      "id": "46768e9bfc2263ae",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack's Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "0879a14c28a52b9b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, if this model is on the battlefield, roll 2D6: on a 7+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "ce705264190c12bb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit.",
+      "target": null
+    },
+    {
+      "id": "8d10cca79feeeda4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. Until the end of the phase, each time this model makes an attack that targets that unit, an unmodified Hit roll of 5+ scores a Critical Hit. If that unit is below Half-strength, an unmodified Hit roll of 4+ scores a Critical Hit instead.",
+      "target": null
+    },
+    {
+      "id": "ad94a60b36ef2c57",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While a ^^**Character^^** model is leading this unit, that ^^**Character^^** model has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "aa907b1f154111ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "In your Movement phase, when this unit is set up on the battlefield using the Deep Strike ability, it can be set up anywhere on the battlefield that is more than 6\" horizontally away from all Afflicted enemy units, and more than 8\" horizontally away from any other enemy units.",
+      "target": null
+    },
+    {
+      "id": "9d1a3abf4af100a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an Afflicted unit, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "84a3f8b8ab3d2b6c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is equipped with two melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristic of those two weapons.",
+      "target": null
+    },
+    {
+      "id": "2a63088a28fb5db4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "If this unit has a Starting Strength of 5 or more, or if a ^^**Character^^** is leading this unit, then each time a model in this unit makes a ranged attack that targets an Afflicted unit, improve the Strength and Armour Penetration characteristics of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "8ddf6e21e754b666",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a melee attack is allocated to a model in this unit, after the attacking unit has finished making its attacks, roll one D6 (to a maximum of six D6 per attacking unit): for each 4+, the attacking unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "c77a58af3e2ea2b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "In your Shooting phase, each time a model in this unit makes a attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "0f41513ebea18a7a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "8bac70719be31389",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plagueburst mortar"
+        ]
+      },
+      "source": "In your Shooting phase, each time you select a target for this model's Plagueburst mortar, roll one D6 for the target unit and every other enemy unit within 3\" of the target unit, adding 1 to that roll if the unit being rolled for is Afflicted. On a 6+, the unit being rolled for is struck by spores; after resolving all of this model's attacks against the target unit, each unit struck by spores suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "746dfb19a3f9691a",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator"
+        ]
+      },
+      "source": "This model has a transport capacity of 14 ^^**Death Guard Infantry^^** models. Each ^^**Terminator^^** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "9912b8d4ce567b70",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle",
+          "Roll"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy ^^**Monster^^** or ^^**Vehicle^^** unit hit by one or more of those attacks. Roll one D6, adding 1 to the result if that unit is Afflicted; on a 5+, that unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "c71c5e0c5bad4155",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) hit by one or more of those attacks. Until the end of the phase, each time a friending ^^**Death Guard^^** unit makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per phase.",
+      "target": null
+    },
+    {
+      "id": "9750944e2f6eee9e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this ^^**Transport**^^ this turn makes an attack that targets that unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "ca0ed5d035f3fb37",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 ^^**Death Guard Infantry**^^ models. It cannot transport ^^**Terminator**^^ models.",
+      "target": null
+    },
+    {
+      "id": "ce910aeacbf59068",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, roll one D6 for each enemy unit within 6\" of this model, adding 1 to the result if that unit is Afflicted; on a 3+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "b44e8e7dab347256",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lord of the Death Guard"
+        ]
+      },
+      "source": "Once per turn, this model can use one of the Lord of the Death Guard abilties.",
+      "target": null
+    },
+    {
+      "id": "353bcd20183dc6d9",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Just after an enemy unit ends a Normal, Advance or Fall Back move within 8\" of a friendly ^^**Death Guard**^^ unit that is within 6\" of this model, if that ^^**Death Guard**^^ unit is not within Engagement Range of one or more enemy unit, it can make a Normal move of up to 5\".",
+      "target": null
+    },
+    {
+      "id": "0ff77e195152d008",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, when a friendly ^^**Death Guard**^^ unit within 6\" of this model is selected as the target of an attack, this model can use this ability. If it does, until the end of the phase, each time a model in that ^^**Death Guard**^^ unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; that destroyed model can fight after the attacking unit has finished its attacks, and it is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "b91dc3373ed05009",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent's Shooting phase, when a friendly ^^**Death Guard**^^ unit within 6\" of this model is selected as the target of an attack, this model can use this ability. If it does, after the attacking unit has finished making its attacks, that ^^**Death Guard**^^ unit can shoot as if it were your Shooting phase, but when resolving those attacks, worsen the BS characteristic of that attack by 1 and it can only target that enemy unit (and only if it is an eligible target).",
+      "target": null
+    },
+    {
+      "id": "a445ee52a517eab4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Death Guard^^** unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "7cd657de1d94da68",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this **^^Fortification^^**, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "13f62cecb45d7f9e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification"
+        ]
+      },
+      "source": "Both parts of this ^^**Fortification**^^ must be deployed within 1\" of each other. Both parts are then treated as a single model for all rules purposes.",
+      "target": null
+    },
+    {
+      "id": "e15bd44674d1b4e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ CHOSEN\n■ LEGIONARIES\n■ PLAGUE MARINES",
+      "target": null
+    },
+    {
+      "id": "bfb00a7efcdd74e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ PLAGUE MARINES",
+      "target": null
+    },
+    {
+      "id": "742e4f425d4a14bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time this unit makes a Charge move, until the end of the turn, weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "2efcb905fa12bb1a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons in the bearer's unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "abaa8d807f52c15f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: PLAGUE MARINES",
+      "target": null
+    },
+    {
+      "id": "e0f5b806a423f479",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Add 3\" to the range of this model's Contagion Range.",
+      "target": null
+    },
+    {
+      "id": "c765c42a44493263",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit cannot be targeted by ranged attacks unless the attacking unit is within 18\".",
+      "target": null
+    },
+    {
+      "id": "40e01e49c5f5420e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly ^^Plague Legions^^ unit is within 6\" of this model, add 1 to the Toughness characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "7789d769304e679f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, you can select one enemy unit within 12\" of this model. Until the start of your next Movement phase, that unit is rotted. While a unit is rotted, subtract 1 from the Toughness characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "0545a139da3cf566",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plaguebearers",
+          "Plaguebearer"
+        ]
+      },
+      "source": "Each time a model is destroyed by this weapon, you can select one friendly ^^**Plaguebearers**^^ unit within 12\" of the bearer and return 1 destroyed Plaguebearer model to that unit.",
+      "target": null
+    },
+    {
+      "id": "1bef8c852e4113c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Fight phase, you can select one enemy unit within 24\" of and visible to this model. Until the end of the phase, each time an attack made by a ^^**Plague Legions^^** model is allocated to a model in that unit, add 1 to the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "5a7c80aeef660d9b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, each time this model makes an attack that destroys an enemy unit, before removing the last model in that unit from play, roll a D6, adding 1 to the result if that unit is Afflicted; on a 5+, each enemy unit within 6\" of that model is Afflicted until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "47101c378b4d1303",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits 1]"
+        ],
+        "names": [
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit that is Afflicted, that attack has the [Sustained Hits 1] ability.",
+      "target": null
+    },
+    {
+      "id": "26f8dbabf24ea056",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plague Marines",
+          "Poxwalkers"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Plague Marines, Poxwalkers**^^",
+      "target": null
+    },
+    {
+      "id": "a4ef6b43146878dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plague Marines",
+          "Poxwalkers"
+        ]
+      },
+      "source": "This unit can be attached to the following units: ^^**Plague Marines, Poxwalkers**^^",
+      "target": null
+    },
+    {
+      "id": "81e4a275c29e105e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "bd2f99162a696356",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Nurgle",
+          "Range"
+        ]
+      },
+      "source": "(Once per battle, per army) In your Command phase, you can use this ability. If you do, select one of the **Plagues** listed in **Nurgle’s Gift** (see Codex: Death Guard). Enemy units within **Contagion Range** of this unit also have the effect of that **Plague** in addition to your army’s chosen **Plague** until the end of the battle.",
+      "target": null
+    },
+    {
+      "id": "8e46843be8a2ddca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Attacks that target this unit with a **S** greater than this unit’s **T** have ‑1 to **wound rolls**.",
+      "target": null
+    },
+    {
+      "id": "a2fb5ba44238084e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "6cd8013a73f5305f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Devastating Wounds"
+        ]
+      },
+      "source": "Add 1 to the Strength and Attacks characteristics of the bearer's melee weapons, and the bearer's melee weapons have the Devastating Wounds abilty.",
+      "target": null
+    },
+    {
+      "id": "39c6359e5068384b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Poxwalkers"
+        ]
+      },
+      "source": "If the bearer is leading a ^^**Poxwalkers**^^ unit, and is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round as the third battle round.",
+      "target": null
+    },
+    {
+      "id": "70a00ad70ddb0fe1",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Chaos - Death Guard",
+        "Imperium - Space Marines",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "3414fa51c9cd34b0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[Ignores Cover]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Ignores Cover",
+          "Cover"
+        ]
+      },
+      "source": "Ranged weapons equipped by model's in the bearer's unit have the [Ignores Cover] ability while targeting an Afflicted enemy unit.",
+      "target": null
+    },
+    {
+      "id": "0c2a293482bb090a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Poxwalkers"
+        ]
+      },
+      "source": "While the bearer is leading a ^^**Poxwalkers**^^ unit, add 1 to the Toughness characteristic of ^^**Poxwalkers**^^ models in that unit.",
+      "target": null
+    },
+    {
+      "id": "6601669ece5524ad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Poxwalkers"
+        ]
+      },
+      "source": "While the bearer is leading a ^^**Poxwalkers**^^ unit, add 1 to the Objective Control characteristic of models in that unit, and each time that unit takes a Battle-shock or Leadership test, add 1 to that test.",
+      "target": null
+    },
+    {
+      "id": "df3b0f594d03a7f3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Poxwalkers",
+          "Plague Wind",
+          "Bodyguard"
+        ]
+      },
+      "source": "While the bearer is leading a ^^**Poxwalkers**^^ unit, add 1 to the Damage characteristic of the bearer's Plague Wind weapon. Each time the bearer makes one or more attacks with a Plague Wind weapon, after the bearer's unit has resolved its attacks, D3 Bodyguard models from the bearer's unit are destroyed.",
+      "target": null
+    },
+    {
+      "id": "41716a30b0376256",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer's unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "19a73178cfba17c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, add 1\" to the Movement characteristics of models in that unit and you can re-roll Advance rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "a1374bc807aa3521",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent's turn, if the bearer's unit is not within Engagement Range of one or more enemy units, you can remove it from the battle field and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "cb0c1f07a65a55f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, models in that unit cannot be targeted by ranged attacks unless the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "1fe7ccb8dbf3cdb0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer's unit is within range of an objective marker you control, each time a model in the bearer's unit makes an attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "2322a5c6de09d5ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Plague Wind"
+        ]
+      },
+      "source": "At the start of your Shooting phase, until the end of the phase, add 12\" to the Range characteristics of the bearer's Plague Wind weapon.",
+      "target": null
+    },
+    {
+      "id": "e3a5bc379a9cccd5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "01c8e4a511abdb6e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Lone Operative"
+        ]
+      },
+      "source": "While the bearer is within 3\" of one or more friendly ^^**Death Guard Vehicle**^^ units, the bearer has the Lone Operative ability, and each time one of those ^^**Vehicle**^^ units makes a ranged attack that targets an enemy unit visible to the bearer, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "f6639ad78fdebe9f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Once per battle, after the bearer's unit has fought, if one or more ^^**Character**^^ models were destroyed by those attacks, select one Plague. Until the end of the battle, if an enemy unit is Afflicted, that unit has the effect of the selected Plague in addition to any other.",
+      "target": null
+    },
+    {
+      "id": "8feae62b49b45e82",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is enfeebled by the bearer's Pestilent Fallout ability, that unit is also Afflicted.",
+      "target": null
+    },
+    {
+      "id": "e35d91c120d34a89",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tainted Narthecium",
+          "Narthecium"
+        ]
+      },
+      "source": "Each time the bearer uses its Tainted Narthecium ability, you can return up to D3 destroyed models to the bearer's unit (instead of 1).",
+      "target": null
+    },
+    {
+      "id": "1ac19a7ac64706a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In the Declare Battle Formations step, select one Plague. Until the end of the battle, while an enemy is within Contagion Range of the bearer, that enemy unit has the effect of that Plague in addition to any other.",
+      "target": null
+    },
+    {
+      "id": "0340faeae7c3d313",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Each time a ^^**Plague Legions^^** unit from your army is set up on the battle field using the Deep Strike ability, if it is set up wholly within 12\" of the bearer, it can be set up anywhere that is more than 6\" horizontally away from any enemy models, instead of more than 8\".",
+      "target": null
+    },
+    {
+      "id": "a8c49beec2da6b00",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the Attacks characteristic of the bearer's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "d42525189cc593ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Battle-shock step of your opponent's Command phase, each enemy unit within 6\" of the bearer that is below its Starting Strength must take a Battle-shock test, subtracting 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "5792bc24d68efbfe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battleline"
+        ]
+      },
+      "source": "Each time a ^^**Plague Legions^^** unit within 12\" of the bearer takes a Battle-shock test, add 1 to that test and, if that test is passed, one model in that unit regains up to D3 lost wounds (if that unit is a ^^**Battleline^^** unit and that test is passed, up to D3 destroyed models can be returned to that unit instead).",
+      "target": null
+    },
+    {
+      "id": "ad4b4fb4228d5d43",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time a model in this unit makes a Normal, Advance or Fall Back move, it can move through enemy models. When doing so, it can move within Engagement Range of such models but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.",
+      "target": null
+    },
+    {
+      "id": "87f03a384d2a525c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, you can ignore any or all modifiers to the Hit roll, to the Wound roll and to the Armour Penetration characteristic.",
+      "target": null
+    },
+    {
+      "id": "357dc153b305a9dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when this unit is selected to make a Normal, Advance or Fall Back move, is set up on the battlefield, or declares a charge it can use this Battle Trait. Until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.",
+      "target": null
+    },
+    {
+      "id": "6db304007e918b59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 5+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "70c42f83e61cc2c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Ballistic Skill characteristic of ranged weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "b185610e2cd1fbb6",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Death Guard",
+        "Necrons",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "40ca420edfc4a329",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Death Guard",
+        "Chaos - Emperor's Children",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem.",
+      "target": null
+    },
+    {
+      "id": "0e893a8a70e34c73",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a melee attack is allocated to this unit, after the attacking unit has finished making its attacks, roll one D6 (to a maximum of six D6 per attacking unit): for each 5+, the attacking unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "1f3f05d54cb130bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Roll"
+        ]
+      },
+      "source": "Each time this unit ends a Fall Back move, select one enemy unit that was within Engagement Range of this unit at the start of the phase. Roll three D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "50105ee274f925f7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Nurgle",
+          "Daemon"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one visible enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly **^^Nurgle Daemon^^** model makes an attack that targets that unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "8db51fa7b634267d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this unit, if the Strength characteristic of that attack is greater than this unit's Toughness characteristic, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "9e5754fa3db93d72",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Lethal Hits"
+        ]
+      },
+      "source": "Add 6\" to the Range characteristic of ranged Lethal Hits weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "5f890ee0f0e6a00a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise"
+        ]
+      },
+      "source": "The bearer has the Deadly Demise D3 ability. In addition, at the end of the battle, if the bearer's unit is wholly within your opponent's deployment zone, when you next follow the Path of Contagion, you can skip the Counteragents step.",
+      "target": null
+    },
+    {
+      "id": "004e83f35784463b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic"
+        ]
+      },
+      "source": "Once per battle, when you target the bearer's unit with the Grenade Stratagem, the bearer can use this Crusade Relic. If they do, until that Stratagem has been resolved, add 2 to the result of each dice you roll for that Stratagem.",
+      "target": null
+    },
+    {
+      "id": "c52ff4b497035985",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Range"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 5+ ability. In addition, add 6\" to the Contagion Range of models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "8800973582ac52ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise",
+          "Crusade Relic"
+        ]
+      },
+      "source": "Each time a friendly model with the Deadly Demise ability within 9\" of the bearer is destroyed, the bearer can use this Crusade Relic. If it does, add 2 to the roll to determine whether mortal wounds are inflicted by that model's Deadly Demise ability. You cannot target that model with the Putrid Detonation Stratagem.",
+      "target": null
+    },
+    {
+      "id": "d7ffaa014b1f7dc2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit within 9\" of the bearer's unit fails a Battle-shock test, roll one D6: on a 4+, you gain 1 Requisition point.",
+      "target": null
+    },
+    {
+      "id": "7db865bb97e4c22b",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Death Guard",
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Save characteristic of 2+.",
+      "target": null
+    },
+    {
+      "id": "41b2080912244794",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Models in this model's unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "c34c44f225d8d98e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1\" to the Move characteristic of models in this model's unit.",
+      "target": null
+    },
+    {
+      "id": "17a5387fddcda330",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Add 6\" to this model's Contagion Range.",
+      "target": null
+    },
+    {
+      "id": "1755aa65f20a4313",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "This model has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "3f84007e2ca1719a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an Afflicted unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "cf47d03ce2b3a9f8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Crusade",
+          "Daemon"
+        ]
+      },
+      "source": "Each time you add a **^^Vehicle^^** unit to your Crusade force, add the **^^Daemon^^** keyword to that unit's keywords (if it does not already have it) and that unit gains 6XP (immediately gaining the Blooded Rank); select one Battle Honour for it as normal.",
+      "target": null
+    },
+    {
+      "id": "c6b4e3759e787bd3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each Crusade battle, you can ignore your first Out of Action test.",
+      "target": null
+    },
+    {
+      "id": "d5d136ecfc158981",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each Crusade battle, roll one D6, adding 1 to the result if you won the battle. On a 6+, select one additional unit to be Marked for Greatness.",
+      "target": null
+    },
+    {
+      "id": "6dabbb0cdf68b1ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Battleline"
+        ]
+      },
+      "source": "After each Crusade battle, each **^^Battleline^^** unit that was part of your Crusade army and survived the battle gains 2XP.",
+      "target": null
+    },
+    {
+      "id": "6240a79c51fbb25e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Crusade",
+          "Weapon Modifications"
+        ]
+      },
+      "source": "When a unit from your Crusade force gains the Weapon Modifications Battle Honour, you can choose for that weapon to gain **[LETHAL HITS]** instead of randomly generating Weapon Modifications for that weapon.",
+      "target": null
+    },
+    {
+      "id": "90b1b67e1e01d4a1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each Crusade battle, roll one D6: on a 4+, you gain 1 additional Requisition point.",
+      "target": null
+    },
+    {
+      "id": "488c8a4634a38a84",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lethal Hits",
+          "Poxwalkers",
+          "Crusade",
+          "Battle Honours"
+        ]
+      },
+      "source": "If one or more units were destroyed by attacks made with Lethal Hits weapons while your Pathogen is active, the first **^^Poxwalkers^^** unit added to your Crusade force after this battle gains 6XP (immediately gaining the Blooded rank); select one Battle Honour for it as normal (even though **^^Poxwalkers^^** units cannot normally gain XP or Battle Honours).",
+      "target": null
+    },
+    {
+      "id": "fca4f43554aaae92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "Each time this model makes an attack with a Lethal Hits weapon, a unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "967246b83a621554",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "Subtract 3 from the Strength characteristic of Lethal Hits weapons equipped by this model.",
+      "target": null
+    },
+    {
+      "id": "e4e591beff2d0e51",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "In your Shooting phase, after this model's unit has shot, if this model made one or more attacks with a Lethal Hits weapon, select one enemy unit hit by one or more of those attacks. Until the end of the battle, that enemy unit is Afflicted. Only one model in each unit can use this ability per turn.",
+      "target": null
+    },
+    {
+      "id": "5ca60d82e95b05a3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "Subtract 1 from the Attacks characteristic of ranged Lethal Hits weapons equipped by this model.",
+      "target": null
+    },
+    {
+      "id": "d10189db6a8c8eda",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "Lethal Hits weapons equipped by this model have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "07314d70c738833d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "Each time this model makes an attack with a Lethal Hits weapon, you cannot re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "fe450a6876b9609c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "In the Fight phase, after this model's unit has fought, if this model made one or more attacks with a Lethal Hits weapon, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test. Only one model in each unit can use this ability per turn.",
+      "target": null
+    },
+    {
+      "id": "173b0e6a0410c383",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blightlord Terminators",
+          "Terminators",
+          "Deathshroud Terminators"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Blightlord Terminators, Deathshroud Terminators**^^",
+      "target": null
+    },
+    {
+      "id": "c24aead721c29b7c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lethal Hits]"
+        ],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the [Lethal Hits] ability. In addition, each time a model in that unit makes an attack, a Critical hit is scored on an unmodified Hit roll of 5+, instead of only 6.",
+      "target": null
+    },
+    {
+      "id": "7a5c1a5d583a2597",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit cannot be targeted by ranged attacks unless the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "4ec1f6eecd5048a2",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Death Guard",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return one destroyed Bodyguard model to that unit.",
+      "target": null
+    },
+    {
+      "id": "6545fcbe36f6d930",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "In the Battle-shock step of your opponent's Command phase, if an enemy unit that is below its Starting Strength is within 9\" of one or more models with this ability, that enemy unit must take a Battle-shock test, subtracting 1 from that test if it is a ^^**Psyker**^^ unit.",
+      "target": null
+    },
+    {
+      "id": "046d69b3667a7c5f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits 1]",
+          "[Lance]"
+        ],
+        "names": [
+          "Sustained Hits 1",
+          "Lance"
+        ]
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [Sustained Hits 1] and [Lance] abilities.",
+      "target": null
+    },
+    {
+      "id": "c57ffd1104b05f60",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has **MOBILE**.",
+      "target": null
+    },
+    {
+      "id": "f87957d17f2fa48d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit has fought, one model in this unit **heals** D3 wounds.",
+      "target": null
+    },
+    {
+      "id": "1be3defff7e145f2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Legions of Excess",
+          "Onslaught",
+          "Warlord"
+        ]
+      },
+      "source": "You can include **^^Legions of Excess**^^ units in your army, even though they do not have the ^^**Emperor's Children**^^ Faction keyword. The combined points cost of such units you can include in your army is:\n- **Incursion**: Up to 500pts\n\n- **Strike Force**: Up to 1000pts\n- **Onslaught**: Up to 1500pts\n\n\nNo **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.",
+      "target": null
+    },
+    {
+      "id": "575f181a92da6fd0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "If your Army Faction is **^^Emperor's Children^^**, this unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back, but when doing so:\n- It cannot target a unit it was within Engagement Range of at the start of the turn\n- It cannot target a unit that was the target of another unit's charge or attack this phase.",
+      "target": null
+    },
+    {
+      "id": "b3e0e1d1320064e5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: FLAWLESS BLADES",
+      "target": null
+    },
+    {
+      "id": "a324d7a3215c4d22",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "At the start of the Fight phase, if this model is not leading a unit, until the end of the phase, it has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "99debcf227dcfbf4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Monster",
+          "Walker"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a **^^Character, Monster^^** or **^^Walker^^** unit, you can re-roll the Hit roll and re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "8333da62e5bd02f2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model makes an attack that targets this unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "0a3e79a2525c27a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "This model has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "a4ea46fbde811946",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Imperium - Blood Angels"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, each time that unit is selected to Fall Back, it must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead.",
+      "target": null
+    },
+    {
+      "id": "ca77ec67326f1c53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase and the Fight phase, after this model has finished making its attacks, select one enemy unit hit by one or more of those attacks. Until the end of the battle, that enemy unit is poisoned. At the start of each player's Command phase, roll one D6 for each poisoned enemy unit on the battlefield: on a 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "2edd1c14ad50ea7c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Daemon Prince of Slaanesh",
+          "Prince of Slaanesh",
+          "Slaanesh"
+        ]
+      },
+      "source": "At the start of your opponent's Command phase, select one of the abilities in the Daemon Prince of Slaanesh section. Until the start of your opponent's next Command phase, this model has that ability.",
+      "target": null
+    },
+    {
+      "id": "e88ffa1b1df47bb7",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Imperium - Adeptus Mechanicus",
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "If this model is in your army, it must be your **^^Warlord^^**.",
+      "target": null
+    },
+    {
+      "id": "f0d95df44df5a9ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a Normal, Advance or Fall Back move, it can move over sections of terrain features that are 4\" or less in height.",
+      "target": null
+    },
+    {
+      "id": "b8750be124fd7a8e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the **^^[LETHAL HITS]^^** ability.",
+      "target": null
+    },
+    {
+      "id": "4fe44662b6e2714f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does so, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "c60e48910cf646cb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battleline",
+          "Infiltrators",
+          "Scouts 6\""
+        ]
+      },
+      "source": "If this model is attached to an **^^Emperor's Children Battleline^^** unit during the Declare Battle Formations step, this model has the Infiltrators and Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "fb6ff6b1e5c3a9bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: INFRACTORS, TORMENTORS",
+      "target": null
+    },
+    {
+      "id": "4d9cf7d1ceb61d59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: CHAOS TERMINATORS, NOISE MARINES",
+      "target": null
+    },
+    {
+      "id": "3fb4fd0d571b6038",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "2e1817e442d59a2f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "In your Shooting phase, after this model's unit has shot, select one enemy **^^Infantry^^** unit hit by one or more of those attacks and roll three D6: for each 4+, that enemy unit suffers 1 mortal wound. If an enemy suffers one or more mortal wounds as a result of this ability, it must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "519a6745afccc3a1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: INFRACTORS, NOISE MARINES, TORMENTORS",
+      "target": null
+    },
+    {
+      "id": "61452fbc19a87d9e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "While this model is leading a unit, each time a ranged attack targets that unit, models in it have the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "b734ac5f9ab4e2b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Agonising Energies"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one INFANTRY unit hit by one or more of those attacks made with its Agonising Energies. Until the start of your next turn, that unit is wracked with agonies. While a unit is wracked with agonies, subtract 2\" from its Move characteristic and subtract 2 from charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "de0f6d5fccfede25",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Slaanesh",
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly **^^Slaanesh Infantry^^**, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "72b89edd5aa7f296",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Slaanesh"
+        ]
+      },
+      "source": "While a friendly **^^Slaanesh^^** unit is within 6\" of this model, if that unit made a Charge move this turn, improve the Armour Penetration characteristic of melee weapons equipped by that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "6093398da2860af5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. This model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "318941b42038a2d3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6 for each of this model's remaining wounds: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
+      "target": null
+    },
+    {
+      "id": "b9b595b9ce07546c",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Imperium - Adeptus Custodes",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "39388fff1412b450",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase.",
+      "target": null
+    },
+    {
+      "id": "f82033c237af5c32",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Shooting phase or the Fight phase, if the bearer's unit destroyed one or more enemy units this phase, the bearer's unit takes a Leadership test. If that test is passed, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "4344bb28472cc3a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is selected to fight, it can call upon daemonic patrons. If it does, until the end of the phase, each time a model in this unit makes an attack. an unmodified Wound roll of 3+ scores a Critical Wound. At the end of the Fight phase, if this unit called upon daemonic patrons this phase and no enemy models were destroyed by attacks made by models in this unit this phase, one model in this unit is destroyed.",
+      "target": null
+    },
+    {
+      "id": "329162895ca50340",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": " This unit has +2\" **M**.",
+      "target": null
+    },
+    {
+      "id": "4d62fe98cc177171",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units cannot target this unit with **snap shooting** attacks.",
+      "target": null
+    },
+    {
+      "id": "18b9d9978516dd1a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, you can use this ability. If you do, select one enemy unit hit by those ranged attacks. Until the end of the turn, when this unit **declares a charge**: \n- This unit can re-roll that **charge roll**. \n- This unit must end that **charge move engaged** with that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "3df87f64d7c5b996",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "This unit's attacks have [SUSTAINED HITS 1].",
+      "target": null
+    },
+    {
+      "id": "c74ed0dd213a6b26",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to 6”.",
+      "target": null
+    },
+    {
+      "id": "44e38f47ca5fed8d",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator",
+          "Flawless Blade"
+        ]
+      },
+      "source": "This model has a transport capacity of 14 **^^Emperor's Children Infantry^^** models. Each **^^Terminator^^** and ^^**Flawless Blade^^** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "87d538aaf1372d3e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model ends a Normal move, you can select one enemy unit that it moved over during that move and roll two D6, adding 1 to each result if that enemy unit can ^^FLY^^: for each 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "fd710a4abe94914c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack, if it is below its Starting Strength, add 1 to the Hit roll. If this model is also Below Half-Strength, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "f7a8021ea00d7384",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Units can disembark from this **^^Vehicle**^^ after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally.",
+      "target": null
+    },
+    {
+      "id": "63d4178e4f40e909",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator",
+          "Flawless Blade"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 **^^Emperor's Children Infantry^^**models (excluding ^^**Terminator**^^ and ^^**Flawless Blade**^^ models).",
+      "target": null
+    },
+    {
+      "id": "a50f3280b0b8f5c2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Warlord"
+        ]
+      },
+      "source": "^^**Emperor's Children Character**^^ units from your army can ignore any or all modifiers to their Move characteristic and any or all modifiers to Advance and Charge rolls made for them.\n\nAt the start of the battle, your **^^Warlord^^**'s unit is your army's Favoured Champions. The first time in each player's turn that an **^^Emperor's Children Character**^^ unit from your army destroys an enemy unit, after resolving all of its attacks, that **^^Character**^^ unit becomes your army's Favoured Champions, replacing the old one.\n\nEach time a model in your army's Favoured Champions unit makes an attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "523a773a9b6a2f2c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Lethal Hits^^]",
+          "[^^Sustained Hits 1^^]"
+        ],
+        "names": [
+          "Lethal Hits",
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "Each time an ^^**Emperor's Children**^^ unit from your army is selected to fight, if it made a Charge move this turn, select one of the abilities below. While resolving those attacks, melee weapons equipped by models in that unit have the ability:\n- [^^Lethal Hits^^]\n- [^^Sustained Hits 1^^]",
+      "target": null
+    },
+    {
+      "id": "9ee7b903cfc1cbcb",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "Each time an ^^**Emperor's Children^^** model from your army makes an attack, if it is a ^^**Transport^^** model or disembarked from a ^^**Transport^^** this turn, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "f4a994ae41c9906f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Lethal Hits^^]",
+          "[^^Sustained Hits 1^^]"
+        ],
+        "names": [
+          "Warlord",
+          "Slaanesh",
+          "Melee weapons",
+          "Lethal Hits",
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "At the start of the battle round, if your **^^Warlord^^** is on the battlefield, you must pledge a number to Slaanesh representing how many enemy units will be destroyed this battle round. At the end of the battle round, if the number of enemy units destroyed this battle round is greater than or equal to your pledge, you gain a number of Pact points equal to your pledge. Otherwise, you do not gain any Pact points this battle round and your **^^Warlord**^^ model suffers D3 mortal wounds.\n\n**^^Emperor's Children^^** units from your army gain a bonus depending on how many Pact points you have gained during the battle, as shown below (these are all cumulative).\n\n1+: Each time a model in this unit makes an attack, re-roll a Hit roll of 1.\n3+: Each time a model in this unit makes an attack, re-roll a Wound roll of 1.\n5+: Melee weapons equipped by models in this unit have the [^^Lethal Hits^^] and [^^Sustained Hits 1^^]] abilities.\n7+: Each time a model in this unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+.",
+      "target": null
+    },
+    {
+      "id": "dd3460cf9294dc59",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance rolls made for **^^Emperor's Children^^** units from your army.",
+      "target": null
+    },
+    {
+      "id": "24f3f71a360a9610",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Sustained Hits 1^^]"
+        ],
+        "names": [
+          "Legions of Excess",
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "- While an ^^**Emperor's Children^^** unit from your army is within 6\" of one or more friendly ^^**Legions of Excess**^^ units, it is Empowered.\n- While a ^^**Legions of Excess**^^ unit from your army is within 6\" of one or more friendly  ^^**Emperor's Children^^** units, it is Empowered.\n\nWhile a unit from your army is Empowered, weapons equipped by models in that unit have the [^^Sustained Hits 1^^] ability. If such a weapon already has that ability, each time an attack is made with that weapon, an unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "a21631811b8ab8d7",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sensational Performance",
+          "Range"
+        ]
+      },
+      "source": "^^**Emperor’s Children^^** units from your army have the following ability: \n**Sensational Performance**: Each time this unit is selected to fight, if this unit made a Charge move this turn, it can use this ability. If it does, until the end of the phase: \n- This unit cannot target a unit it was within Engagement Range of at the start of the turn. \n- This unit cannot target a unit that was the target of another unit’s attack this phase. \n- Improve the Strength and Armour Penetration characteristics of this unit’s melee weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "6eba93de7015daa8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fulgrim",
+          "Prideful"
+        ]
+      },
+      "source": "Once per battle round, when you target a ^^**Fulgrim^^** unit from your army with the Sinuous Breach or Prideful Superiority Stratagem, you can reduce the CP cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "d23208bb298c89af",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When a friendly **EMPEROR’S CHILDREN TERMINATOR** unit is set up, that unit has +1 to **charge rolls** until the end of the turn.",
+      "target": null
+    },
+    {
+      "id": "e8944f11d8b56961",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When a friendly **EMPEROR’S CHILDREN BATTLELINE** unit is selected to make an **advance/fall‑back move**, that unit’s attacks have +1 **S** until the end of the turn. \nThis **detachment** has the **HOST** tag and cannot be taken with another **HOST detachment**.",
+      "target": null
+    },
+    {
+      "id": "c2c7259fd822e61a",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "Friendly **FLAWLESS BLADES** units have **Fights First**.",
+      "target": null
+    },
+    {
+      "id": "dedd05f56cfb2b89",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the first battle round, select one enemy unit to be this model's quarry. Each time this model makes a melee attack that targets its quarry, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's quarry is destroyed, select one new enemy unit to be this model's quarry.",
+      "target": null
+    },
+    {
+      "id": "0fea54511ffa30c4",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Library - Astartes Heresy Legends",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "868536e909380410",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Legions of Excess"
+        ]
+      },
+      "source": "While a friendly ^^**Legions of Excess**^^ unit is within 6\" of this model, improve the Armour Penetration of melee weapons in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "25b3bc08584c28d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Save characteristic of 3+.",
+      "target": null
+    },
+    {
+      "id": "143d049c99b8a107",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit in Engagement Range of one or more units from your army with this ability must take a Battle-shock test, subtracting 1 from that test if that enemy unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "704f5207033ffb01",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in the bearer's unit have a Leadership characteristic of 6+.",
+      "target": null
+    }
+  ]
+}

@@ -1,0 +1,3145 @@
+{
+  "batch": 14,
+  "units": [
+    {
+      "id": "a6c7b01bb709f8e9",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack does not have the IMPERIUM or CHAOS keywords, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "4fa4e4ff75e8c651",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, each enemy unit within Engagement Range of this unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "2919449f28039541",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Teleport Homer"
+        ]
+      },
+      "source": "At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3\" of that token and not within 9\" of any enemy models. That token is then removed.",
+      "target": null
+    },
+    {
+      "id": "601f9d45d80c327b",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a CHARACTER from your army with the Leader ability can be attached to a DEATHWATCH KILL TEAM, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "d70d63c518591747",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit that is Below Half-strength, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "81fe4fafd16bfa18",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a CHARACTER from your army with the Leader ability can be attached to an DEATHWATCH KILL TEAM, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "dc358ff429918d54",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit cannot embark within an IMPERIAL RHINO.",
+      "target": null
+    },
+    {
+      "id": "6b2825e1895c55b4",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Astra Militarum - Library",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "a535c782bbba92cf",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If a CHARACTER unit from your army can be attached to a DEATHWATCH KILL TEAM, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "1d10d6925f58e3d7",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Move characteristic of 10\" and can move over models and terrain features as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "024e809717420911",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Chaplain Cassius"
+        ]
+      },
+      "source": "While this unit contains Chaplain Cassius, melee weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "21be169c2be0b66c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Battle-shock tests for this unit.",
+      "target": null
+    },
+    {
+      "id": "1852b92ab91dc788",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Move characteristic of 12\" and can move over models and terrain as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "4882d484e0bec17b",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "Models in the bearer’s unit have the Feel No Pain 4+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "9f59892e3b7769e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit that is not Below Half-strength, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "c447393f378381b3",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Dark Angels",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "4+",
+      "target": null
+    },
+    {
+      "id": "dad53d983000e4fb",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Move characteristic of 12\" and can move over models and terrain features as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "cc8fba3b28a87bde",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent’s turn, if this unit is more than 6\" away from all enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves. It will arrive back on the battlefield in the Reinforcements step of your next Movement phase.",
+      "target": null
+    },
+    {
+      "id": "e12f09afcefc8f75",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "Models in the bearer’s unit have the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "813246ccc5daf0d5",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch",
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "88ea68c0b95abb17",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "64a49a9a2bbef62e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 1 wound remaining.",
+      "target": null
+    },
+    {
+      "id": "7bd74e04660efbfb",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: AQUILA KILL TEAM, DEATHWATCH KILL TEAM, DEATHWATCH TERMINATOR SQUAD, FORTIS KILL TEAM, INDOMITOR KILL TEAM, PROTEUS KILL TEAM, SPECTRUS KILL TEAM",
+      "target": null
+    },
+    {
+      "id": "39b9da483c0464c0",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back.",
+      "target": null
+    },
+    {
+      "id": "89975212a14933de",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ministorum Priest"
+        ]
+      },
+      "source": "While this unit contains a **^^Ministorum Priest**^^, each time a model in this unit makes a melee attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "a14343200f32eab9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, you can target this unit with the Command Re-roll Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "123f0a030246ad1e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ministorum Priest",
+          "Inquisitor",
+          "Leader",
+          "Sisters of Battle Squad",
+          "Scouts 6\""
+        ]
+      },
+      "source": "If a ^^**Ministorum Priest^^** or ^^**Inquisitor^^** model from your army with the Leader ability can be attached to a ^^**Sisters of Battle Squad^^**, it can be attached to this unit instead. If a ^^**Ministorum Priest^^** or ^^**Inquisitor^^** model from your army is attached to this unit during the Declare Battle Formations step, that model gains the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "296f9bfbee831b92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Leadership characteristic of models in the bearer’s unit by 1.",
+      "target": null
+    },
+    {
+      "id": "c337c0ff41ebacca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "While this unit is leading a unit, each time a Psychic Attack targets that unit, subtract 1 from the Hit roll and subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "b08f627a464a0f9d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Inquisitor Ostromandeus",
+          "Ostromandeus"
+        ]
+      },
+      "source": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this unit’s Inquisitor Ostromandeus model, increase the cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "0076fb5bc6643ffe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "e248a2f85e87888a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, you can select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) within 12\" of the bearer. That unit must take a Battle-shock test; if that test is failed, until the end of your next turn, that unit cannot have the Benefit of Cover. \n**Designer’s Note**: *Place a vox‑skull token next to the unit, removing it once this ability has been used.*",
+      "target": null
+    },
+    {
+      "id": "482ce469d13ecc18",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperium",
+          "Chaos"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack does not have the ^^**Imperium^^** or ^^**Chaos^^** keywords, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "257247566e49dfdd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Deathwatch Kill Team",
+          "Kill Team"
+        ]
+      },
+      "source": "If a ^^**Character^^** unit from your army can be attached to a ^^**Deathwatch Kill Team^^** unit, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "8ef99307cb1a23e6",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Gravis Veteran",
+          "Gravis"
+        ]
+      },
+      "source": "Each time an attack targets this unit, if it contains models with different Toughness characteristics, until the attacking unit has finished making its attacks, use the Toughness characteristic of the majority of the models in that unit when determining what roll is required for that attack to successfully wound. If two or more Toughness characteristics are tied for majority, use the highest value. \nFor the purposes of determining which models in this unit can embark within a ^^**Transport^^**, Gravis Veteran models take up the space of 2 models, but can otherwise embark within any ^^**Transport^^** their unit can embark within, even though similar models in other units have the ^^**Gravis^^** keyword. \n**Designer’s Note**: *While the abstractions in the above rule cause some models to behave differently to similar models in other units, they are designed to minimise complicated Transport rules.*",
+      "target": null
+    },
+    {
+      "id": "e9eb00147bfaca70",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Bodyguard"
+        ]
+      },
+      "source": "While this model is leading a unit, it can embark within any ^^**Transport**^^ that its Bodyguard unit can embark within.",
+      "target": null
+    },
+    {
+      "id": "915876c1ab27a42f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can returned 1 destroyed model (excluding ^^**Character**^^ models) to that unit.",
+      "target": null
+    },
+    {
+      "id": "0487eaa15537a81f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwatch Kill Team",
+          "Kill Team"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Deathwatch Kill Team^^**",
+      "target": null
+    },
+    {
+      "id": "c04cee30edc1cb9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly unit is within 6\" of this model, improve the Leadership characteristic of models in that unit by 1. While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "23ade926feabfa85",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperium",
+          "Infantry",
+          "Battleline"
+        ]
+      },
+      "source": "After this unit has shot, you can select one enemy unit hit by those attacks. Until the end of the phase, each time an ^^**Agents of the Imperium^^** or ^^**Imperium Infantry Battleline^^** model from your army makes an attack that targets that enemy unit, you can re‑roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "09c9e03b4778fd1c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, if this model scored a hit with its Jindarii tox‑cycler, until the end of the battle, add 2 to the Strength and Damage characteristics of that weapon (to a maximum Damage characteristic of 6).",
+      "target": null
+    },
+    {
+      "id": "0e654b7af4a7fffc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-INFANTRY 2+]",
+          "[ANTI-MONSTER 4+]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons equipped by the bearer have the [ANTI-INFANTRY 2+] and [ANTI-MONSTER 4+] abilities",
+      "target": null
+    },
+    {
+      "id": "ba689d4486844e85",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "da033e665c1d47d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Deep Strike ability. In addition, you can target the bearer's unit with the Rapid Ingress Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "8f7cad65fbbbbb48",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your opponent's Shooting phase, select one enemy VEHICLE unit (excluding TITANIC units) within 12\" of and visible to the bearer. That unit must take a Leadership test. If that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll. If that test is failed, that unit is not eligible to shoot this phase.",
+      "target": null
+    },
+    {
+      "id": "f45114eded64c895",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, select up to 3 AGENTS OF THE IMPERIUM units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "8a19bb85cadcbf67",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of the bearer, each time it is selected to Fall Back it must first take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead.",
+      "target": null
+    },
+    {
+      "id": "24a01c9f6dced977",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, each time a model in that unit makes an attack that targets a PSYKER unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "6cd220528e4e3fa1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]",
+          "[MELTA 1]",
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "The bearer's ranged weapons have the [DEVASTATING WOUNDS], [MELTA 1] and [PRECISION] abilities.",
+      "target": null
+    },
+    {
+      "id": "2a62c5757d658493",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the bearer's Leadership and Wounds characteristics by 1. Once per battle, at the start of any phase, you can select one friendly Battle-shocked unit within 12\" of the bearer. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "4c876b077b412b02",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-DAEMON 3+]"
+        ],
+        "names": []
+      },
+      "source": "Add 1 to the Attacks characteristic of the bearer's melee weapons, and those weapons have the **[ANTI-DAEMON 3+]** ability.",
+      "target": null
+    },
+    {
+      "id": "4d2efbf27d0459fc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 9\" of the bearer, worsen the Leadership characteristic of models in that unit by 1. In addition, while an enemy DAEMON unit is within 9\" of the bearer, each time a model in that DAEMON unit makes an attack, subtract 1 from the Hit roll and subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "a435d016093624c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, if the bearer is on the battlefield, you can use the Rapid Ingress Stratagem for 0CP. When doing so, you must target a GREY KNIGHTS TERMINATOR SQUAD unit from your army, and when using the Stratagem, that unit can be set up on the battlefield anywhere that is more than 6\" from all enemy units.",
+      "target": null
+    },
+    {
+      "id": "1072b5e98f94e1a3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time the bearer is selected to fight, roll three D6; for each 4+, one enemy unit within Engagement Range of the bearer suffers 1 mortal wound. Mortal wounds inflicted by this Enhancement are allocated as if they have the [PRECISION] ability.",
+      "target": null
+    },
+    {
+      "id": "0e40c97eb40b06b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, you can select up to three AGENTS OF THE IMPERIUM INFANTRY units from your army (excluding GREY KNIGHTS TERMINATOR SQUAD units) - those units gain the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "335183e83e8d551d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Close-quarters"
+        ]
+      },
+      "source": "Once per battle round, you can target the bearer's unit with the Violent Acquisition, Masters of the Void or Close-quarters Barrage Stratagems for 0CP.",
+      "target": null
+    },
+    {
+      "id": "6c634d81705abb95",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, you can select up to three VOIDFARERS units from your army - those units gain the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "742bceeca18e51b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Inquisitor",
+          "Radical",
+          "Warlord",
+          "Puritan"
+        ]
+      },
+      "source": "This model's weapons have the **[DEVASTATING WOUNDS]** ability and, if this model is an **^^Inquisitor^^**, it gains the **^^Radical^^** keyword. In addition, if this model is your **^^Warlord^^**, at the end of the battle, you gain 1 additional Intrigue point. If this model gains the **^^Puritan^^** keyword for any reason, it immediately loses this Battle Trait and the **^^Radical^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "dcb6749786181828",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battle Honours"
+        ]
+      },
+      "source": "At the end of the battle, you can remove one or more Battle Honours that this unit has (except for this one). For each Battle Honour removed, you can immediately select a new Battle Honour for this unit.",
+      "target": null
+    },
+    {
+      "id": "d6dcdec888814ccc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Imperium",
+          "Chaos"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit that does not have either the **^^Imperium^^** or **^^Chaos^^** keywords, that attack has the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "63782cbbc2716bf7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "This unit has the Infiltrators ability. At the end of a battle, if one or more units with this Battle Trait are wholly within 6\" of your opponent's battlefield edge, you gain 1 Influence points.",
+      "target": null
+    },
+    {
+      "id": "59bb0b7d8f43694e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time a model in this unit makes a melee attack re-roll a Hit roll of 1. At the end of the battle, if one or more enemy **^^Character^^** models were destroyed by melee attacks during that battle, and one or more units with this Battle Trait were on the battlefield at the end of the battle, you gain 1 Investigation point.",
+      "target": null
+    },
+    {
+      "id": "1fc8d6e4d9f768c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators",
+          "Scouts 6\"",
+          "Deep Strike"
+        ]
+      },
+      "source": "During the Declare Battle Formations step, select either the Infiltrators, Scouts 6\" or Deep Strike ability. Until the end of the battle, this unit has the selected ability.",
+      "target": null
+    },
+    {
+      "id": "3631ed372f35fb4f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Each time this unit is Marked for Greatness, it gains an additional 2XP. For each unit from your Crusade army with this Battle Trait that is on the battlefield at the end of the battle, roll one D6: for each 6, you gain either 1 Intrigue point or 1 Influence point.",
+      "target": null
+    },
+    {
+      "id": "cea8eb483efd0f7a",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "Models in this unit have the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "5de46ec513e3f987",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to shoot or declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "30d326688d032718",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit (excluding **^^Monsters^^** or **^^Vehicles^^**) is within Engagement Range of one or more units with this Battle Trait, each time a model in that enemy unit makes a melee attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "70a80ebe002da31e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Objective Control characteristic of models in this unit. At the end of the battle, if one or more units with this Battle Trait are within range of an objective marker you control, roll one D6, adding 1 to the result if that objective marker is within your opponent's deployment zone. On a 4+, you gain 1RP (you cannot gain more than 1RP per battle as a result of this battle trait, no matter how many units have it).",
+      "target": null
+    },
+    {
+      "id": "98f097a557915dc1",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "964157ae907316f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, you can target this unit with the Fire Overwatch or Heroic Intervention Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "c9a3f5e8885cbd08",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord",
+          "Crusade"
+        ]
+      },
+      "source": "If this model is your **^^Warlord^^**, you can use one Crusade Blessing even if you are not the Underdog.",
+      "target": null
+    },
+    {
+      "id": "6cbb52a446e3bef2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Character"
+        ]
+      },
+      "source": "At the start of the battle, select one unit from your opponent's Crusade army. Each time a model in this **^^Character^^**'s unit makes an attack that targets that unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "f81223ff32fc71e3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "Improve the Attacks, Damage and Weapon Skill characteristics of this model's melee weapons by 1. This model's melee weapons gain the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "5a15f9dcf95633f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "While this model is leading a unit, models in this unit have the Stealth ability. At the end of the battle, if this model's unit is wholly within your opponent's deployment zone, roll one D6: on a 4+, you gain 1 Investigation point.",
+      "target": null
+    },
+    {
+      "id": "dca041c0be42b0ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Inquisitor",
+          "Puritan",
+          "Warlord",
+          "Radical"
+        ]
+      },
+      "source": "This model has the Feel No Pain 4+ ability and, if this model is an **^^Inquisitor^^**, it has the **^^Puritan^^** keyword. In addition, if this model is your **^^Warlord^^**, at the end of the battle, you gain 1 additional Influence point. If this model gains the **^^Radical^^** keyword for any reason, it immediately loses this Battle Trait and the **^^Puritan^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "4cd98bec64ad3da7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Puritan",
+          "Range"
+        ]
+      },
+      "source": "**^^Puritan^^** model only. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining. All enemy units within 6\" of the bearer must then take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "a26f14e9d7dd8403",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]",
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Radical"
+        ]
+      },
+      "source": "**^^Radical^^** model only. Improve the Attacks, Damage and Strength characteristics of the bearer's melee weapons by 1. Each time the bearer is selected to fight, it can unleash the full power of the blade. If it does, until that fight has been resolved, the bearer's melee weapons have the **[HAZARDOUS]** and **[DEVASTATING WOUNDS]** abilities as well.",
+      "target": null
+    },
+    {
+      "id": "8e5ca12e47614cb0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer's unit cannot be selected as the target of ranged attacks unless the firing model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "fe983849101e77bb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "The bearer's unit has a 4+ invulnerable save against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "8fee2785f29b2309",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer's unit is eligible to shoot or declare a charge in a turn in which it Advanced or Fell Back.",
+      "target": null
+    },
+    {
+      "id": "82fab19010ebf82e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, you can re-roll one Hit roll, one Wound roll or one saving throw made for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "953a1cd79dcc7fb7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the bearer's Leadership, Objective Control, Save, Toughness and Wounds characteristics by 1.",
+      "target": null
+    },
+    {
+      "id": "cb59f01fa897c518",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic",
+          "Weapon Modifications",
+          "Crusade"
+        ]
+      },
+      "source": "Select one weapon equipped by the bearer (excluding weapons replaced by an Enhancement or Crusade Relic, and weapons that already have Weapon Modifications), then roll two D6 (re-rolling any duplicates) and consult the Weapon Modifications table in the main Crusade rules to randomly determine two effects it gains.",
+      "target": null
+    },
+    {
+      "id": "0cf354919bc39490",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic"
+        ]
+      },
+      "source": "At the start of the battle, roll three D6 (re-rolling any duplicates), then consult the table below to determine the three effects this Crusade Relic confers upon the bearer until the end of the battle.",
+      "target": null
+    },
+    {
+      "id": "b255fd153f46c29d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]",
+          "[LETHAL HITS]",
+          "[PRECISION]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time the bearer is selected to fight, select one of the following abilities to apply to the bearer's melee weapons until the end of the phase:\n- **[LANCE]**\n- **[LETHAL HITS]**\n- **[PRECISION]**\n- **[SUSTAINED HITS 1]**",
+      "target": null
+    },
+    {
+      "id": "689cd07ff036d20d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Crusade Relic"
+        ]
+      },
+      "source": "Each time the bearer is selected to shoot, after selecting targets for all of its ranged weapons, select one enemy unit targeted by one or more of the bearer's attacks and roll three D6: for each 4+, that unit suffers 1 mortal wound. Mortal wounds inflicted by this Crusade Relic can be allocated as if they had the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "df6b0c4767efd48b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Supply Limit",
+          "Crusade Relic",
+          "Weapon"
+        ]
+      },
+      "source": "If the bearer is on the battlefield at the end of the battle, increase your Crusade force's Supply Limit by 50 points. At the end of battle, you can select one model from your Crusade force that has one Crusade Relic or one weapon that has a Weapon Modification. If you do, you can remove that Battle Honour from that model - you can either replace that Battle Honour with a different Crusade Relic that model can have or you can gain 1RP.",
+      "target": null
+    },
+    {
+      "id": "a893db032387e68b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "If the bearer is your **^^Warlord^^**, start the battle with 1CP. If the bearer is on the battlefield at the end of the battle and you won that battle, roll one D6: on a 4+, you gain 1RP.",
+      "target": null
+    },
+    {
+      "id": "4f93623114fe57b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Imperium",
+          "Requisitioned",
+          "Retinue",
+          "Character"
+        ]
+      },
+      "source": "If the bearer is included in a Crusade army whose Army Faction is not **^^Agents of the Imperium^^**, the maximum number of **^^Requisitioned^^**, **^^Retinue^^** and **^^Agents of the Imperium Character^^** units that can be included in that army is increased by 1. Each time you start a Shadow Operation, you start with 1 Influence point.",
+      "target": null
+    },
+    {
+      "id": "745caaa8a992c6fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative",
+          "Infiltrators",
+          "Stealth"
+        ]
+      },
+      "source": "The bearer's unit has the Lone Operative, Infiltrators and Stealth abilities. Each time you start a Shadow Operation, you start with 1 Intrigue point.",
+      "target": null
+    },
+    {
+      "id": "e575c9b4d1d893c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you start a Shadow Operation, you start with 1 Investigation point. Each time you roll on the Plot Twist table, you can re-roll the result.",
+      "target": null
+    },
+    {
+      "id": "4c01c5c4d3e0b143",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Radical",
+          "Deep Strike",
+          "Threat",
+          "Puritan"
+        ]
+      },
+      "source": "**^^Radical^^** model only. The bearer's unit has the Deep Strike ability. Once per Shadow Operation, when you attempt to Thwart a Threat through Intrigue, you can re-roll that test. If the bearer loses the **^^Radical^^** keyword or gains the **^^Puritan^^** keyword by any means, it immediately loses this Battle Honour.",
+      "target": null
+    },
+    {
+      "id": "e4232bc9924abbf4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Puritan",
+          "Threat",
+          "Radical"
+        ]
+      },
+      "source": "**^^Puritan^^** model only. Improve the bearer's Leadership and Wounds characteristics by 1. Once per Shadow Operation when you attempt to Thwart a Threat through Influence, you can re-roll that test. If the bearer loses the **^^Puritan^^** keyword or gains the **^^Radical^^** keyword by any means, it immediately loses this Battle Honour.",
+      "target": null
+    },
+    {
+      "id": "eb1d26461d6965fe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Exaction Squad",
+          "Imperium",
+          "Battleline",
+          "Imperial Navy Breachers",
+          "Breachers",
+          "Inquisitorial Agents",
+          "Sisters of Battle Squad",
+          "Subductor Squad",
+          "Vigilant Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Exaction Squad, Imperium Battleline, Imperial Navy Breachers, Inquisitorial Agents, Sisters of Battle Squad, Subductor Squad, Vigilant Squad**^^",
+      "target": null
+    },
+    {
+      "id": "6095a60634680a5a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Exaction Squad",
+          "Grey Knights Terminator Squad",
+          "Terminator Squad",
+          "Imperium",
+          "Battleline",
+          "Imperial Navy Breachers",
+          "Breachers",
+          "Inquisitorial Agents",
+          "Subductor Squad",
+          "Vigilant Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Exaction Squad, Grey Knights Terminator Squad, Imperium Battleline, Imperial Navy Breachers, Inquisitorial Agents, Subductor Squad, Vigilant Squad**^^",
+      "target": null
+    },
+    {
+      "id": "21d5a74979914135",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwatch Kill Team",
+          "Kill Team",
+          "Exaction Squad",
+          "Imperium",
+          "Battleline",
+          "Imperial Navy Breachers",
+          "Breachers",
+          "Inquisitorial Agents",
+          "Subductor Squad",
+          "Vigilant Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Deathwatch Kill Team, Exaction Squad, Imperium Battleline, Imperial Navy Breachers, Inquisitorial Agents, Subductor Squad, Vigilant Squad**^^",
+      "target": null
+    },
+    {
+      "id": "89bb8672784579c3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperial Navy Breachers",
+          "Breachers",
+          "Voidsmen-at-Arms",
+          "Arms"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Imperial Navy Breachers, Voidsmen-at-Arms**^^",
+      "target": null
+    },
+    {
+      "id": "4e8475c86d0cb1c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kill Team",
+          "Fly",
+          "Gravis",
+          "Terminator"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Kill Team**^^ (excluding ^^**Fly, Gravis**^^ and ^^**Terminator**^^)",
+      "target": null
+    },
+    {
+      "id": "33ed6833b4de9b27",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "97ae1da1a431c9dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits 1]"
+        ],
+        "names": [
+          "Melee weapons",
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "Melee weapons equipped by models in this unit have the [Sustained Hits 1] ability.",
+      "target": null
+    },
+    {
+      "id": "9f3a4bb09481ea7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lethal Hits]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Lethal Hits"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the [Lethal Hits] ability.",
+      "target": null
+    },
+    {
+      "id": "87ef2da7fe0abdfc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "This model has the ^^**Psyker**^^ keyword. Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model.",
+      "target": null
+    },
+    {
+      "id": "0ccbcab2a766970a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit that is below Half-Strength, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "49dda5616b4c9eb0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While one or more **^^Officer^^** models are in the same unit as this model, those **^^Officer^^** models have the Feel No Pain 4+ ability",
+      "target": null
+    },
+    {
+      "id": "23fbe117c5afbed2",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Astra Militarum - Library",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-8 wounds remaining, subtract 4 from its Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "cd5c18808913ee8e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Astra Militarum - Library",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-7 wounds remaining, subtract 4 from its Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "dab516f4c82a1533",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader",
+          "Command Squad",
+          "Bodyguard"
+        ]
+      },
+      "source": "*This unit can have up to two Leader units attached to it, provided no more than one of those units is a **^^Command Squad^^** unit. If it does, and this Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.*",
+      "target": null
+    },
+    {
+      "id": "0aaa207886ec7797",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Firing Deck"
+        ]
+      },
+      "source": "While embarked within a **^^Transport^^**, each model takes up the space of 2 models, and each weapon equipped by these models is considered to be 2 models' weapons for the purposes of the Firing Deck ability.",
+      "target": null
+    },
+    {
+      "id": "ef09c823e9a49cda",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **designated**:\n▪ While a unit is **designated**, that unit has +3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "b33b3cf8090c05ff",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Orders",
+          "Transport",
+          "Weapon",
+          "Rapid Fire"
+        ]
+      },
+      "source": "If your Army Faction is **^^Astra Militarum^^**, **^^Officer^^** models with this ability can issue Orders. Each **^^Officer^^**'s datasheet will specify how many Orders it can issue and which units are eligible to receive those Orders. Each time an **^^Officer^^** model issues an Order, select one of the Orders below, then select one eligible friendly unit within 6\" of that **^^Officer^^** model to issue it to. **^^Officer^^** models can issue Orders in your Command phase and at the end of a phase in which they disembarked from a **^^Transport^^** or were set up on the battlefield.\n\nUntil the start of your next Command phase, the unit you selected is affected by that Order. Unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.\n\n\nOnly **^^Astra Militarum^^** models gain the benefit of an Order issued to their unit.\n\n**MOVE! MOVE! MOVE!**\nAdd 3\" to the Move characteristic of models in this unit.\n\n**FIX BAYONETS!**\nImprove the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.\n\n**TAKE AIM!**\nImprove the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.\n\n**FIRST RANK, FIRE! SECOND RANK, FIRE!**\nImprove the Attacks characteristic of Rapid Fire weapons equipped by models in this unit by 1.\n\n**TAKE COVER!**\nImprove the Save characteristic of models in this unit by 1 (this cannot improve a model’s Save to better than 3+).\n\n**DUTY AND HONOUR!**\nImprove the Leadership and Objective Control characteristics of models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "9e2fd7510fb2a3c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Fortification"
+        ]
+      },
+      "source": "Friendly **^^Astra Militarum Infantry**^^ models can be set up or end any type of move on top of the platform section of this **^^Fortification^^**.",
+      "target": null
+    },
+    {
+      "id": "9a12df0b12ed9aea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this **^^Fortification^^**, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "d66043f0c29eb546",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Cover"
+        ]
+      },
+      "source": "While an **^^Astra Militarum Infantry^^** model has the Benefit of Cover as a result of this terrain feature, that model has a 4+ invulnerable save",
+      "target": null
+    },
+    {
+      "id": "fef2e2fb9f5270b0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this model is set up, it will consist of 1 platform section, up to 5 shield sections, up to 2 broken shield sections and up to 2 end sections. All sections must be connected to each other to form a continuous defence line; the 2 broken shield sections can be placed either at the end of the defence line, or in the middle of it such that both are within ½\" of each other (in this case, these 2 sections count as being connected to each other). All of the sections that have been set up are then treated as a single model for all rules purposes.",
+      "target": null
+    },
+    {
+      "id": "fc666a284df69ac1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "7573e48f428a79b0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Baneblade",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to an **^^Astra Militarum^^** model from your army, if that model is not fully visible to every model in the attacking unit because of this **^^Baneblade^^** model, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "72dafb66f88dbc76",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "In your Shooting phase, just after selecting a target for this model’s tremor cannon, the target unit and every other enemy **^^Infantry^^** unit within 3\" of that unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "4faa28147a4cf6ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Ogryn",
+          "Artillery"
+        ]
+      },
+      "source": "This model has a transport capacity of 26 **^^Astra Militarum Infantry models^^**. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models.",
+      "target": null
+    },
+    {
+      "id": "a311f46c9dcec9d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise"
+        ]
+      },
+      "source": "Each time an attack made with this model’s quake cannon destroys an enemy model that has the Deadly Demise ability, that model’s Deadly Demise ability inflicts mortal wounds on a D6 roll of 3+ instead of on a 6.",
+      "target": null
+    },
+    {
+      "id": "2b2fb0783a778339",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its earthshaker cannon scored a hit against an enemy **INFANTRY** unit, until the start of your next Shooting phase, that unit is shaken. While a unit is shaken, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "89590647f8d0f669",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to a model in this unit, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "b73b1fdd6e7046c1",
+      "kind": "characteristic:Orders",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Orders",
+          "Regiment"
+        ]
+      },
+      "source": "This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units.",
+      "target": null
+    },
+    {
+      "id": "533e034f8c6d9e5b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability",
+      "target": null
+    },
+    {
+      "id": "a5d37b82fd794778",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "8f6d213cc21d6c7f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cadian Shock Troops",
+          "Shock Troops",
+          "Kasrkin"
+        ]
+      },
+      "source": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Kasrkin^^**",
+      "target": null
+    },
+    {
+      "id": "e34de162ae8216d8",
+      "kind": "characteristic:Orders",
+      "occurrences": 4,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Regiment"
+        ]
+      },
+      "source": "This unit’s **^^Officer^^** can issue 1 Order to a **^^Regiment^^** unit.",
+      "target": null
+    },
+    {
+      "id": "d2df8a8606586bdb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit contains an **OFFICER** model and this unit is within range of an objective, this unit can re-roll battle‑shock rolls.",
+      "target": null
+    },
+    {
+      "id": "d2de0f2d0c262f22",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cadian Shock Troops",
+          "Shock Troops"
+        ]
+      },
+      "source": "This model can be attached to the following unit: **^^Cadian Shock Troops^^**",
+      "target": null
+    },
+    {
+      "id": "98769156ac246b1e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, if this unit made a Charge move or was charged this turn, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "f0af450d61b88969",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Transport",
+          "Orders"
+        ]
+      },
+      "source": "In your Command phase, one **^^Officer^^** model embarked within this **^^Transport^^** can issue Orders even though it is not on the battlefield. When doing so, measure distances to and from this *^^Transport^^**.",
+      "target": null
+    },
+    {
+      "id": "5057757acdd86a62",
+      "kind": "characteristic:Capacity",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Ogryn",
+          "Artillery"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models.",
+      "target": null
+    },
+    {
+      "id": "48359b49985aa9dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "Once per battle round, at the start of any phase, you can select one friendly **^^Astra Militarum Infantry^^** unit that is Battle-shocked and within 12\" of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "af16f70491d86a21",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer"
+        ]
+      },
+      "source": "While another **^^Officer^^** model is in the same unit as this model, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "afffbec04eaea16e",
+      "kind": "characteristic:Orders",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Regiment",
+          "Orders"
+        ]
+      },
+      "source": "This **^^Officer^^** can issue 1 Order to a **^^Regiment^^** unit. This **^^Officer^^** can only issue the Duty and Honour! and Fix Bayonets! Orders.",
+      "target": null
+    },
+    {
+      "id": "f9f16fb2ac48afbb",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **CADIAN SHOCK TROOPS**\n- **CATACHAN JUNGLE FIGHTERS**\n- **DEATH KORPS GRENADIER SQUAD**\n- **DEATH KORPS OF KRIEG**\n- **KASRKIN**\n- **KRIEG COMBAT ENGINEERS**\n- **TEMPESTUS SCIONS**",
+      "target": null
+    },
+    {
+      "id": "040f1bffb81a4914",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathstrike"
+        ]
+      },
+      "source": "In your Shooting phase, each time this model is selected to shoot, if it has not shot with its  Deathstrike missile this battle, you can do one of the following in addition to resolving this model’s ranged attacks:\n\n- **Designate Target:** If this model does not have a Deathstrike Target marker on the battlefield, place a Deathstrike Target marker for this model anywhere on the battlefield.\n\n- **Adjust Target:** If this model has a Deathstrike Target marker on the battlefield, move that marker to anywhere else on the battlefield.",
+      "target": null
+    },
+    {
+      "id": "9343803e6cf3a684",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathstrike Missile",
+          "Deathstrike"
+        ]
+      },
+      "source": "The bearer can only shoot with this weapon in your Shooting phase, and only if it Remained Stationary this turn and you did not use its Deathstrike Missile ability to Designate Target or Adjust Target this phase. When the bearer shoots with this weapon, do not select a target. Instead, resolve this weapon’s attacks, rolling for each unit within 6\" of the centre of its Deathstrike Target marker individually",
+      "target": null
+    },
+    {
+      "id": "9c84c254229a80fa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this model’s magma cannon targets a **^^Monster^^** or **^^Vehicle^^** unit, that target is always considered to be within half range of that weapon.",
+      "target": null
+    },
+    {
+      "id": "4bf3fd865e20a8ca",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Ogryn",
+          "Artillery"
+        ]
+      },
+      "source": "This model has a transport capacity of 26 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models.",
+      "target": null
+    },
+    {
+      "id": "01fdd600f0bd4ee9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Heavy weapons"
+        ]
+      },
+      "source": "While this unit is being affected by an Order, provided it Remained Stationary this turn, all Heavy weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability",
+      "target": null
+    },
+    {
+      "id": "119f4827d507f855",
+      "kind": "characteristic:Orders",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Orders",
+          "Regiment",
+          "Gaunt’s Ghosts"
+        ]
+      },
+      "source": "This unit’s **^^Officer^^** can issue up to 2 Orders to **^^Regiment^^** or **^^Gaunt’s Ghosts^^** units.",
+      "target": null
+    },
+    {
+      "id": "461572af5c02cd70",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "At the end of your opponent’s turn, if this unit is **unengaged**, you can use this ability. If you do:\n- Place this unit in **strategic reserves**.\n- This unit has **Deep Strike** until the start of your next Shooting phase.\n- This unit must make an **ingress move** in your next Movement phase (including in your first turn).",
+      "target": null
+    },
+    {
+      "id": "87c934cfe08addb5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Models in this unit have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "e2c24133749e39c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Platoon"
+        ]
+      },
+      "source": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or on unmodified Hit rolls of 4+ instead if this unit is within 6\" of one or more friendly **^^Platoon^^** units.",
+      "target": null
+    },
+    {
+      "id": "c61f210b12701aab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "This model does not suffer the penalty to its Hit rolls for making ranged attacks while enemy units are within Engagement Range of it.",
+      "target": null
+    },
+    {
+      "id": "4861d9898e62ebf6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the start of your next Shooting phase, that unit is scattered. While a unit is scattered, it cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "03878e6cfbf4a50e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a unit that can **^^Fly^^**, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "9812cd74c1b41ec3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack, if it made a Charge move this turn, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "e7eaee5a5a484c2a",
+      "kind": "characteristic:Orders",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Orders",
+          "Regiment"
+        ]
+      },
+      "source": "This **^^Officer^^** can issue up to 2 Orders to **^^Regiment^^** units.",
+      "target": null
+    },
+    {
+      "id": "629c5a56f047e89b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Catachan Jungle Fighters",
+          "Jungle Fighters"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Catachan Jungle Fighters**^^",
+      "target": null
+    },
+    {
+      "id": "e773f3c18b149781",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Orders",
+          "Officer"
+        ]
+      },
+      "source": "Once per battle round, at the start of any phase, you can select one Order to affect this unit until the start of your next Command phase, in addition to any other Orders issued to this unit by an **^^Officer^^** model this turn.",
+      "target": null
+    },
+    {
+      "id": "cf26584025b3e083",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, you can select one enemy unit within 3\" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a **^^Vehicle^^** unit.",
+      "target": null
+    },
+    {
+      "id": "1286174c531b77b9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit, re-roll a Hit roll of 1 and, if that unit is within range of an objective marker you do not control, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "c47a74b918602d91",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "When making ranged attacks with its demolisher battle cannon, this model can target enemy units within Engagement Range of it (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units.",
+      "target": null
+    },
+    {
+      "id": "398057c6b41debbe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack targets this model, if this model has the Benefit of Cover against that attack, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "4a734395bd809cf8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack with its executioner plasma cannon that targets a unit that is Below Half-strength, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "67dac3d18201d83f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with its exterminator autocannon. Until the end of the phase, each time a friendly **^^Astra Militarum^^** unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per phase.",
+      "target": null
+    },
+    {
+      "id": "701cd80c4d028aaa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model makes an attack with its punisher gatling cannon that targets an enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**), that attack has the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "667b32bf2c845f7d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this model makes a ranged attack with its vanquisher battle cannon that targets a **^^Monster^^** or **^^Vehicle^^** unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c1f868034dcdcf72",
+      "kind": "characteristic:Orders",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Orders"
+        ]
+      },
+      "source": "This **OFFICER** can issue up to 3 Orders to:\n- **REGIMENT** units\n- **SQUADRON** units\n- **TITANIC** units",
+      "target": null
+    },
+    {
+      "id": "524ede7d40b421e3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, If this model is on the battlefield, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "2ba1d6898fda9e10",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, select up to three **^^Astra Militarum^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "16f1b2b77bdca868",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **ATTILAN ROUGH RIDERS**\n- **CADIAN SHOCK TROOPS**\n- **CATACHAN JUNGLE FIGHTERS**\n- **DEATH KORPS GRENADIER SQUAD**\n- **DEATH KORPS OF KRIEG**\n- **DEATH RIDERS**\n- **KASRKIN**\n- **KRIEG COMBAT ENGINEERS**",
+      "target": null
+    },
+    {
+      "id": "eb15b41940afe129",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**) that was hit by one or more of those attacks made with this model's storm eagle rockets. Until the start of your next Shooting phase, that enemy unit is staggered. While a unit is staggered, subtract 1 from the Objective Control characteristic of models in that unit (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "d84357cf2b51e85d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tempestus Scions"
+        ]
+      },
+      "source": "This unit can be attached to the following unit:\n- **^^Tempestus Scions^^**",
+      "target": null
+    },
+    {
+      "id": "a11d3a38f30d818d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Tempestor Prime"
+        ]
+      },
+      "source": "While this unit contains a Tempestor Prime, ranged weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "678ed24718069a76",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tempestus Scions"
+        ]
+      },
+      "source": "At the start of your Command phase, if the bearer's unit is below its Starting Strength, you can return up to D3 destroyed Tempestus Scions models to this unit.",
+      "target": null
+    },
+    {
+      "id": "e15c639927a74ada",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Orders"
+        ]
+      },
+      "source": "While the bearer is leading a unit, that unit can be affected by up to two different Orders at the same time.",
+      "target": null
+    },
+    {
+      "id": "a813cc7d02efb5d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tech-Priest Enginseer",
+          "Enginseer",
+          "Weapon",
+          "Munitorum Servitor"
+        ]
+      },
+      "source": "While a friendly **^^Tech-Priest Enginseer^^** model is leading this unit, improve the Ballistic Skill and Weapon Skill characteristics of ranged and melee weapons equipped by **^^Munitorum Servitor^^** models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "ecfd3239a83331e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enginseer",
+          "Munitorum Servitors",
+          "Servitors",
+          "Bodyguard"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, this unit can join one other unit from your army that is being led by a **^^Regimental Enginseer^^** (a unit cannot have more than one **^^Munitorum Servitors^^** unit joined to it). If it does, until the end of the battle, every model in this unit counts as being part of that Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly.",
+      "target": null
+    },
+    {
+      "id": "98127f356c2a5533",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model’s unit is selected to fight, you can select one enemy unit within Engagement Range of this model and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "dd4f0fff11e60b46",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Command Squad",
+          "Loyal Protector",
+          "Transport",
+          "Warlord"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, this model must join one **^^Command Squad^^** unit from your army (a **^^Command Squad^^** cannot have more than one **^^Loyal Protector^^** model joined to it). This model then counts as part of that **^^Command Squad^^** for the rest of the battle, and its Starting Strength is increased accordingly. If it is not possible to join this model to a **^^Command Squad^^**, it does not take part in the battle and counts as having been destroyed. \n\nWhile this model is joined to a unit, it can embark within any **^^Transport^^** that unit can embark within, and takes up the space of 3 models.\n\nThis model cannot be selected as your **^^Warlord^^**.",
+      "target": null
+    },
+    {
+      "id": "0d35b74c29c97dd8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Command Squad",
+          "Loyal Protector",
+          "Transport",
+          "Enhancements"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, this model must join one **^^Command Squad^^** unit from your army (a **^^Command Squad^^** cannot have more than one **^^Loyal Protector^^** model joined to it). This model then counts as part of that **^^Command Squad^^** for the rest of the battle, and its Starting Strength is increased accordingly. If it is not possible to join this model to a **^^Command Squad^^**, it does not take part in the battle and counts as having been destroyed. \n\nWhile this model is joined to a unit, it can embark within any **^^Transport^^** that unit can embark within, and takes up the space of 3 models.\n\nThis model cannot be selected as your **WARLORD** and cannot be given Enhancements",
+      "target": null
+    },
+    {
+      "id": "e1ab04c2bbb5dc88",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Astra Militarum - Library",
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Wounds characteristic of 7.",
+      "target": null
+    },
+    {
+      "id": "91d5c9afbf0422d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "1f39863b4ae3955a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "At the start of your opponent’s Shooting phase, you can roll one D6: on a 1, this **^^Psyker^^**’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, models in this **^^Psyker^^**’s unit have a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "d2330be6f97ade00",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Astra Militarum - Library",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "8d1bc9c08066c975",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Master of Ordnance",
+          "Blast",
+          "Artillery"
+        ]
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 30\" of and visible to this unit’s Master of Ordnance model that has not already been selected for this ability this phase. Until the end of the phase, Blast weapons equipped by friendly **^^Astra Militarum Artillery^^** models have the **[SUSTAINED HITS 1]** ability when targeting that unit",
+      "target": null
+    },
+    {
+      "id": "3ee20e02aa9a288b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer of the Fleet",
+          "Aircraft"
+        ]
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 30\" of and visible to this unit’s Officer of the Fleet model. Until the end of the phase, each time a friendly **^^Astra Militarum Aircraft^^** model makes a ranged attack that targets that unit, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "9ff48f366f71b131",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Astropath"
+        ]
+      },
+      "source": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this unit’s Astropath model.",
+      "target": null
+    },
+    {
+      "id": "28a87b2c17bd5b33",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Command Squad",
+          "Transport"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, this unit must join one **^^Command Squad^^** unit from your army (a **^^Command Squad^^** unit cannot have more than one **^^Regimental Attaché^^** unit joined to it). For the rest of the battle, every model in this unit counts as part of that **^^Command Squad^^** unit, and its Starting Strength is increased accordingly. If it is not possible to join a **^^Regimental Attaché^^** unit to a **^^Command Squad^^** in this way, it does not take part in the battle and counts as having been destroyed.\n\n\nWhile this unit is joined to a unit, it can embark within any **^^Transport^^** that unit can embark within.",
+      "target": null
+    },
+    {
+      "id": "5e24fb5ba1c6110e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Enginseer"
+        ]
+      },
+      "source": "If a friendly **^^Astra Militarum Vehicle^^** model is destroyed within 12\" of this model, until the end of the battle, this model’s Enginseer axe has an Attacks characteristic of 6.",
+      "target": null
+    },
+    {
+      "id": "87f2e0490fa63484",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "In your Command phase, select one friendly **^^Astra Militarum Vehicle^^** model within 3\" of this model. That **^^Vehicle^^** model regains up to D3 lost wounds and, until the start of your next Command phase, that **^^Vehicle^^** model has a 4+ invulnerable save. Each model can only be selected for this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "98da69eb4727e063",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly **^^Astra Militarum Vehicle^^** units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "c1cbdf8b7da75e08",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cadian Shock Troops",
+          "Shock Troops",
+          "Catachan Jungle Fighters",
+          "Jungle Fighters",
+          "Death Korps of Krieg",
+          "Krieg",
+          "Kasrkin",
+          "Krieg Combat Engineers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Cadian Shock Troops^^**\n- **^^Catachan Jungle Fighters^^**\n- **^^Death Korps of Krieg^^**\n- **^^Kasrkin^^**\n- **^^Krieg Combat Engineers^^**",
+      "target": null
+    },
+    {
+      "id": "93aaf6ea9c01791e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when an attack is allocated to this model, you change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "0a25c7d3738d8e53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 18\" of and visible to this unit. Until the end of the phase, each time a friendly **^^Astra Militarum^^** model makes an attack that targets that unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "00ea9e75c4b9a067",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a ranged attack targets that unit, if the attacking model is more than 12\" away, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "e74715b1c4230ebc",
+      "kind": "characteristic:Orders",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officer",
+          "Catachan"
+        ]
+      },
+      "source": "This **^^Officer^^** can issue 1 Order to a **^^Catachan Jungle Fighters^^** unit",
+      "target": null
+    },
+    {
+      "id": "2243f504b4ecd54b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **CATACHAN JUNGLE FIGHTERS**",
+      "target": null
+    },
+    {
+      "id": "ce835ba269d51db3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 3]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Payback"
+        ]
+      },
+      "source": "Once per battle, when this model is selected to shoot, it can use this ability. If it does, until the end of the phase, its Payback weapon has an Attacks characteristic of 6 and the **[SUSTAINED HITS 3]** ability instead of the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    }
+  ]
+}

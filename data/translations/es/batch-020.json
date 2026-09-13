@@ -1,0 +1,2121 @@
+{
+  "batch": 20,
+  "units": [
+    {
+      "id": "7bd19ae59da41b0f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an ^^**Adeptus Astartes**^^ unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 2 to the Strength characteristic and add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "6c3d5c40c7c848fc",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[HEAVY]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by **^^Adeptus Astartes^^** models from your army have the **[HEAVY]** ability. If such a weapon already has this ability, each time an attack is made with that weapon, if the attacking model's unit Remained Stationary this turn, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d334e6ab3ae1d89d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per phase for each ^^**Adeptus Astartes^^** unit in your army, you can re-roll one Hit roll, one Wound roll, or one Damage roll made for a model in that unit.",
+      "target": null
+    },
+    {
+      "id": "121f881e3bbc1155",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by Adeptus Astartes models from your army have the [ASSAULT] ability, and each time an attack made such a weapon targets a unit within 12\", add 1 to the Strength characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "49653048fa64c3c3",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "^^**Adeptus Astartes**^^ units from your army are eligible to declare a charge in a turn in which they Advanced or Fell Back.",
+      "target": null
+    },
+    {
+      "id": "acc16aee9636fc32",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets an ADEPTUS ASTARTES unit from your army, unless the attacking model is within 12\", the target has the benefit of cover.",
+      "target": null
+    },
+    {
+      "id": "578046d1cf3dfb33",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Oath of Moment"
+        ]
+      },
+      "source": "Once per battle, in your Command phase, you can use this ability. If you do, until the start of your next Command phase, each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "9252ae42e17d6f88",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwing",
+          "Infantry"
+        ]
+      },
+      "source": "At the start of your Movement phase, select one of the following:\n- Defensive Footing: Select one objective marker you control. Until the start of your next Movement phase, that objective marker is your Vowed objective marker.\n- Aggressive Push: Select one or more objective markers you do not control. Until the start of your next Movement phase, each of those objective markers is one of your Vowed objective markers. If a rule refers to a unit or model being within range of your Vowed objective marker, that rule takes effect if that unit or model is within range of one or more of your Vowed objective markers.\n\nEach time a Deathwing Infantry unit from your army makes an attack that targets a unit within range of one or more of your Vowed objective markers, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "6c3857c17db4a4ce",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "Friendly ADEPTUS ASTARTES have:\n\n\n▪ This unit’s ranged attacks have [ASSAULT].\n▪ When this unit is selected to make a fall‑back move, that fall‑back move does not prevent this unit from being eligible to shoot.\n\n\nFriendly ADEPTUS ASTARTES MOUNTED have:\n▪ This unit’s ranged attacks have [ASSAULT].\n▪ When this unit is selected to make an advance move, that advance move does not prevent this unit from being eligible to declare a charge.\n▪ When this unit is selected to make a fall‑back move, that fall‑back move does not prevent this unit from being eligible to shoot and eligible to declare a charge.\n\n\n\n\nOUTRIDER SQUAD units from your army gain the BATTLELINE keyword.",
+      "target": null
+    },
+    {
+      "id": "a4caff66a7a968c8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Company"
+        ]
+      },
+      "source": "Each time a ^^**Death Company**^^ model from your army makes a melee attack, re-roll a Wound roll of 1 if that model's unit is below Starting Strength; if that model's unit is Below Half-strength, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "6c2d0b11fc50f1f4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Jump Pack",
+          "Range",
+          "Up to 2",
+          "Onslaught"
+        ]
+      },
+      "source": "At the end of your opponent's turn, you can select a number of ^^**Adeptus Astartes Jump Pack^^** units from your army (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:\n\nIncursion - Up to 1 unit\nStrike Force - Up to 2 units\nOnslaught - Up to 3 units\n\n▪ Place those units in strategic reserves.\n▪ Those units must make an ingress move in your next Movement phase (including in your first turn)",
+      "target": null
+    },
+    {
+      "id": "7832b06df0237e37",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Ravenwing",
+          "Deathwing"
+        ]
+      },
+      "source": "- Each time an enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) within Engagement Range of one or more ^^**Ravenwing^^** units from your army Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of those tests. \n- Each time a ^^**Deathwing^^** unit from your army declares a charge, if one or more targets of that charge are within Engagement Range of one or more ^^**Ravenwing^^**  units from your army, add 2 to the Charge roll.",
+      "target": null
+    },
+    {
+      "id": "99b4cec030f84e10",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic",
+          "Psyker"
+        ]
+      },
+      "source": "At the start of the battle round, select one of the following Psychic Disciplines abilities. Friendly ^^**Adeptus Astartes Psyker**^^ units have that ability until the end of the battle round.\n\n\n▪ Biomancy Discipline: This unit has +2\" M.\n▪ Divination Discipline: This unit’s attacks can:\n      ▫ Re‑roll hit rolls of 1.\n      ▫ Re‑roll wound rolls of 1.\n▪ Pyromancy Discipline: This unit’s ranged attacks that target an enemy unit within 12\" of this unit have +1 AP.\n▪ Telekinesis Discipline: Ranged attacks that target this unit have ‑1 S.\n▪ Telepathy Discipline: This unit’s attacks can ignore modifiers to BS, WS and hit rolls.",
+      "target": null
+    },
+    {
+      "id": "dfbf050f1a8deca8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv",
+          "Chapter"
+        ]
+      },
+      "source": "Friendly CHAPLAIN units have 5+ InSv against ranged attacks.\n\n\nRestrictions: Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+      "target": null
+    },
+    {
+      "id": "caee50ff231080c3",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "Friendly ADEPTUS ASTARTES INFANTRY CHARACTER units have the following ability:\n\n\nCountercharge: (Once per battle round, per unit) You can target this unit with the Heroic Intervention stratagem, regardless of any other uses of that stratagem this phase. If you do:\n\n\n▪ That use does not prevent any uses of that stratagem on other units this phase.\n\n\nRestrictions: Your army can include SPACE WOLVES units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "4bdaf64a51da6479",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Grace"
+        ]
+      },
+      "source": "At the start of the first battle round, select two of the Angelic Legacy abilities listed below. Until the end of the battle, those Angelic Legacy abilities are active and their effects apply to all Adeptus  Astartes Character units from your army.\n\n\nSanguinary Grace: This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.\n\n\nCarmine Wrath: Each time a model in this unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.\n\n\nTheir Appointed Hour: You can re‑roll Advance and Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "85e80858772b852f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Grace"
+        ]
+      },
+      "source": "At the start of the first battle round, select two of the Angelic Legacy abilities listed below. Until the end of the battle, those Angelic Legacy abilities are active and their effects apply to all ^^**Adeptus Astartes Character**^^ units from your army.\n\n**Sanguinary Grace**: This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.\n\n**Carmine Wrath**: Each time a model in this unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.\n\n**Their Appointed Hour**: You can re‑roll Advance and Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "617a0547afd0d762",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Mounted"
+        ]
+      },
+      "source": "Each time an attack targets an ^^**Adeptus Astartes Infantry^^** or ^^**Adeptus Astartes Mounted^^** unit from your army, if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "0805c57332d7c1f0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Space Wolves",
+          "Range",
+          "Saga of the Hunter",
+          "Hunter",
+          "Onslaught"
+        ]
+      },
+      "source": "Each time a model in a ^^**Space Wolves**^^ unit from your army makes a melee attack that targets an enemy unit, if that enemy unit is within Engagement Range of one or more other ^^**Adeptus Astartes**^^ units from your army, or if the attacking unit contains more models than that enemy unit.\n\n\n■ Add 1 to the Hit roll.\n■ If your Saga is completed(see below), add 1 to the Wound roll as well.\n\n\nSaga of the Hunter\n\n\nAt the start of the first battle round your Quarry tally is 0. Each time an ADEPTUS ASTARTES unit from your army fights, after all those attacks have been resolved, add 1 to your Quarry tally for each enemy unit destroyed by those attacks. \n\n\nOnce your Quarry tally is equal to or greater than the number shown in the table below(depending on the battle size), you Saga is completed. \n\n\nIncursion - 2\nStrike Force - 3\nOnslaught - 4",
+      "target": null
+    },
+    {
+      "id": "7dfffb7b72465af8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Space Wolves",
+          "Character",
+          "Saga of the Bold",
+          "Oath of Moment"
+        ]
+      },
+      "source": "Each time an **^^Adeptus Astartes^^** unit from your army is selected to shoot or fight, apply one of the following when resolving those attacks\n\n\n■ If you Saga is completed (see below), you can re-roll one Hit roll, one Wound roll, and one Damage roll. \n■ Otherwise, if that unit is a **^^Space Wolves Character^^** unit, you can re-roll one Hit roll, one Wound roll, or one Damage roll. \n\n\nSaga of the Bold\nEach time a **^^Space Wolves Character^^** unit from your army does one of the following, that unit achieves a Boast. Once three or more different Boasts have been achieved by units from your army, your saga is completed\n\n\n■ Your Hide as a Trophy: That unit destroys your Oath of Moment target\n■ Slay Them All: That unit destroys your Oath of Moment target, and that is the second Oath of Moment target destroyed by that unit in this battle. \n■ Overrun Their Position: At the end of either player's turn, that unit is wholly within your opponent's deployment zone. \n■ Hold the Line: From the second battle round onwards, at the end of your Command phase, that unit is within range of an objective marker you control that is not within your deployment zone.",
+      "target": null
+    },
+    {
+      "id": "f638dd4bad0f69b0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Character",
+          "Monster",
+          "Vehicle",
+          "Saga of the Beastslayer"
+        ]
+      },
+      "source": "Each time an ^^**Adeptus Astartes**^^ model from your army makes an attack, if that attack targets a **^^Character, Monster**^^ or **^^Vehicle**^^ unit or if your Saga is completed(see below), that attack has the [LETHAL HITS] ability.\n\nSaga of the Beastslayer\nAt the start of the first battle round, your Beastslayer tally is 0, and you determine your Beastslayer target by halving the number of units from your opponent's army (including those embarked within **^^Transports**^^) that have one or more of the following keywords (rounding up): **^^Character, Monster, Vehicle**^^.\n\nEach time an **^^Adeptus Astartes**^^ unit from your army shoots or fights, after all of those attacks have been resolved, add 1 to your Beastslayer tally for each enemy unit with one or more of the keywords destroyed by those attacks: **^^Character, Monster, Vehicle**^^.\n\nOnce your Beastslayer tally is equal to or greater than your Beastslayer target your Saga is completed.",
+      "target": null
+    },
+    {
+      "id": "58e5b1605c6de50c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance and Charge rolls made for ^^**Adeptus Astartes^^** unit from your army.",
+      "target": null
+    },
+    {
+      "id": "22c7bf581e2da86c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ancient"
+        ]
+      },
+      "source": "- Each time an attack targets an ^^**Ancient**^^ unit from your army, if that unit is within range of one or more objective markers and the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll. \n\n\n- Each time a friendly CRUSADER SQUAD unit makes a surge move, instead of selecting a surge target, you can can select the closest objective to that unit. When that unit makes that surge move, each model in that unit must end that surge move as close as possible to that objective instead.",
+      "target": null
+    },
+    {
+      "id": "c226412548f89f81",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "- Each time an ^^**Adeptus Astartes**^^ unit from your army declares a charge, if it disembarked from a ^^**Transport**^^ this turn, after selecting the targets of that charge, select one of those targets; that enemy unit must take a Battle-shock test. \n\n\n- Each time an ^^**Adeptus Astartes**^^ unit from your army makes a melee attack, if it disembarked from a ^^**Transport**^^ this turn, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "22f816a1c5c3ff2f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Seeker",
+          "Companions",
+          "Vulkan He'stan",
+          "Infernus Squad"
+        ]
+      },
+      "source": "Ranged weapons equipped by Adeptus Astartes models from your army have the [ASSAULT] ability, and each time an attack made such a weapon targets a unit within 12\", add 1 to the Strength characteristic of that attack.\n\n\n**Seeker's Companions**\n\n\nIf your army includes Vulkan He'stan, during your turn, each Infernus Squad unit from your army is eligible to do one of the following\n- Start to perform an Action in a turn in which it Advanced\n\n- Shoot in a turn in which it started to perform an Action",
+      "target": null
+    },
+    {
+      "id": "7de316e88b1c0e79",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Oath of Moment",
+          "Darnath Lysander"
+        ]
+      },
+      "source": "Each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll a Wound roll of 1.\n\n\nEach time a model in a ^^**Darnath Lysander**^^ unit from your army makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "0ae70f7a54f06f82",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets an ADEPTUS ASTARTES unit from your army, unless the attacking model is within 12\", the target has the benefit of cover.\n\n**Unparalled Tactician**\n\nOnce per battle round, if an **^^Aethon^^** Shaan model from your army is on the battlefield, you can use the Into Darkness Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "38ff658762813762",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Oath of Moment",
+          "Caanok Var"
+        ]
+      },
+      "source": "Each time a model from your army with the Oath of Moment ability makes an attack that targets your Oath of Moment target, you can re‑roll a Wound roll of 1.\n\n\n**RECALCULATING**\n\nOnce per battle round, after your Oath of Moment target is destroyed, if a ^^**Caanok Var**^^ model from your army is on the battlefield, select one enemy unit visible to that model. That enemy unit becomes your Oath of Moment target until you select a new one.",
+      "target": null
+    },
+    {
+      "id": "303c33809b640729",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Suboden Khan",
+          "Range"
+        ]
+      },
+      "source": "^^**Adeptus Astartes**^^ units from your army are eligible to declare a charge in a turn in which they Advanced or Fell Back.\n\n**Wrath of the First Khan**\n\nAt the end of the Fight phase, if a **^^Suboden Khan^^** unit from your army destroyed one or more enemy units this phase and is not within Engagement Range of one or more enemy units, that unit can make a Normal move of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "043de95a2969a2b5",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Combat Doctrines",
+          "Marneus Calgar"
+        ]
+      },
+      "source": "At the start of up to three of your Command phases, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all ^^**Adeptus Astartes^^** units from your army. You cannot select a Combat Doctrine you have already selected this battle, unless a friendly **^^Marneus Calgar^^** model is on the battlefield.\n\n**DEVASTATOR DOCTRINE**\nThis unit is eligible to shoot in a turn in which it Advanced.\n\n**TACTICAL DOCTRINE**\nThis unit is eligible to shoot and declare a charge in a turn in which it Fell Back.\n\n**ASSAULT DOCTRINE**\nThis unit is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "8860044cd71b822d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Hunter",
+          "Onslaught",
+          "Master of Wolves",
+          "Detachment",
+          "Logan Grimnar"
+        ]
+      },
+      "source": "At the start of your Command phase, you can select one of the Hunting Packs listed below. Until the start of your next Command phase, that Hunting Pack is active and its effects apply to all |^^**Adeptus Astartes**^^ units from your army. You can only select each Hunting Pack once per battle.\n\n- Encircling Jaws: This unit can re-roll Advance rolls and Charge rolls.\n\n- Hunter’s Eye: Each time a model in this unit makes a ranged attack, add 1 to the Hit roll.\n\n- Ferocious Strike: Each time this unit is selected to fight, select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase, weapons equipped by models in this unit have the selected ability.\n\n\n**Howling Onslaught**\n\nOnce per battle, when selecting a Hunting Pack for the Master of Wolves Detachment rule (see above), if a ^^**Logan Grimnar**^^ model from your army is on the battlefield, you can select a Hunting Pack you have already selected this battle",
+      "target": null
+    },
+    {
+      "id": "95c7043a0dee0850",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an ^^**Adeptus Astartes^^** model from your army makes a melee attack, re-roll a Wound roll of 1.\n\n\nEach time an ^^**Adeptus Astartes^^** unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. If your unit is Battle-shocked, add 2 to the Attacks characteristic of melee weapons equipped by models in that unit instead.",
+      "target": null
+    },
+    {
+      "id": "8062a8c7761e38b5",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battleline"
+        ]
+      },
+      "source": "^^**Adeptus Astartes Battleline^^** units from your army:\n\n- Are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.\n\n- Are eligible to start to perform an Action in a turn in which they Advanced or Fell Back.\n\nEach time an ^^**Adeptus Astartes Battleline^^** unit from your army is selected to attack, after resolving those attacks, select one enemy unit hit by one or more of those attacks. Until the end of the turn, that enemy unit is auspex scanned. Each time an ^^**Adeptus Astartes^^** model from your army makes an attack that targets an auspex scanned unit, re‑roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "4f7877f3b49cd8c5",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic",
+          "Deep Strike",
+          "Onslaught",
+          "Drop Pod"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, select a number of ^^**Adeptus Astartes^^** units (excluding ^^**Titanic^^** units) from your army based on the battle size, as shown below. Models in those units have the Deep Strike ability.\n\nIncursion - 2 Units\nStrike Force - 3 Units\nOnslaught - 4 Units\n\nEach time an ^^**Adeptus Astartes^^** model from your army makes an attack, if it was set up on the battlefield this turn, re‑roll a Wound roll of 1. If it disembarked from a Drop Pod this turn, re‑roll a Hit roll of 1 as well.",
+      "target": null
+    },
+    {
+      "id": "9ea1e79d16e48d24",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titus"
+        ]
+      },
+      "source": "- Each time an ^^**Adeptus Astartes^^** model from your army makes a melee attack that targets a unit within range of an\nobjective marker, improve the Armour Penetration characteristic of that attack by 1.\n\n- Each time an attack targets an ^^**Adeptus Astartes^^** unit from your army, if your unit is within range of an objective\nmarker that you controlled at the start of the phase and if the Strength characteristic of that attack is greater\nthan the Toughness characteristic of your unit or your unit has the ^^**Titus^^** keyword, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "ba6263d5b6e829b4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an ^^**Adeptus Astartes**^^ model from your army makes an attack, if that model’s unit is within a terrain feature, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. \n\n\n^^**Adeptus Astartes**^^ units from your army gain the ^^**Entrenched**^^ keyword while all of the following are true: \n- That unit is within a terrain feature.\n- That unit was not set up on the battlefield this turn.\n- No model in that unit has moved more than 3” this turn.",
+      "target": null
+    },
+    {
+      "id": "f1195e4db8baf132",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tank Ace",
+          "Vehicle",
+          "Fly",
+          "Character",
+          "Warlord"
+        ]
+      },
+      "source": "Each time a Tank Ace unit from your army (see below) Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. Each time a Tank Ace unit from your\narmy shoots in your Shooting phase, if that unit did not Advance this turn, you can re‑roll the Damage roll.\n\n\nAdeptus Astartes Vehicle units from your army (excluding Fortifications, Drop Pods, Walkers and units that can Fly)\nhave the Tank Ace keyword. In the Muster Armies step, you can select up to three Tank Ace units from your\narmy to gain the Character keyword. \n\n\nDesigner’s Note: This means that the selected units can be given  enhancements, and one of them can be selected as your Warlord.",
+      "target": null
+    },
+    {
+      "id": "abc04afb52d58a44",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "▪ Friendly LAND SPEEDER/STORM SPEEDER HAILSTRIKE/STORM SPEEDER HAMMERSTRIKE/STORM SPEEDER THUNDERSTRIKE units have SPEEDER.\n\n\n▪ In your first Movement phase, friendly SPEEDER units can make\nan ingress move.",
+      "target": null
+    },
+    {
+      "id": "ecc99d051143b4a7",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly PHOBOS/SCOUT SQUAD units have the following ability:\n\n\nTranshuman Perception: In your Shooting phase, this unit can select one visible enemy unit within 12\". That enemy unit is detected:\n\n\n▪ While a unit is detected, that unit has +3\" detection range.",
+      "target": null
+    },
+    {
+      "id": "af1991e5004251b6",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhancements",
+          "Chapter"
+        ]
+      },
+      "source": "▪ When a friendly EMPEROR’S CHAMPION unit is selected to fight, that model’s melee attacks can:\n     ▫ Re-roll one hit roll.\n     ▫ Re-roll one wound roll.\n▪ Enhancements selected from this detachment do not count towards the total number of enhancements in your army.\n\n\nRestrictions: Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+      "target": null
+    },
+    {
+      "id": "32d8dc5f6f6c1eca",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "Friendly SWORD BRETHREN SQUAD units have +1 OC.\n\n\nRestrictions: Your army can include BLACK TEMPLARS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+      "target": null
+    },
+    {
+      "id": "37f4f1a0ea601e6e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "When a friendly SANGUINARY GUARD unit is selected to make a fall‑back move, that move does not prevent that unit from being eligible to shoot/eligible to declare a charge.\n\n\nRestrictions: Your army can include BLOOD ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "c89e30f0b8a37f29",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "Friendly BLOOD ANGELS INFANTRY CHARACTER units (excluding COMMANDER DANTE units) have +1 to advance rolls and charge rolls. This detachment has the GRACE tag and cannot be taken with another GRACE detachment.\n\n\nRestrictions: Your army can include BLOOD ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "02ae8eb7fed66cab",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "When a friendly DEATH COMPANY unit is selected to make an advance move, you can use this ability. If you do:\n\n\n▪ That unit suffers D3+1 mortal wounds.\n▪ That move does not prevent that unit from being eligible to declare a charge.\n\n\nThis detachment has the DOOMED tag and cannot be taken with another DOOMED detachment.\n\n\nRestrictions: Your army can include BLOOD ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "f8bcd30aaeb1a76b",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plasma",
+          "Chapter"
+        ]
+      },
+      "source": "▪ Friendly ADEPTUS ASTARTES units’ weapon profiles with ‘Plasma’ in their names are plasma weapon profiles.\n▪ Plasma weapon profiles have +1 S.\n\nRestrictions: Your army can include DARK ANGELS units, but it cannot include any ADEPTUS ASTARTES units drawn from any other Chapter.",
+      "target": null
+    },
+    {
+      "id": "95ca4b55ec4c3645",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "Friendly RAVENWING FLY units’ ranged attacks have [IGNORES COVER].\n\n\nRestrictions: Your army can include DARK ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "378525e5dd38ee42",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "▪ In the Fight phase, when a friendly CHAPLAIN unit destroys an enemy unit, enemy units within 6\" of that CHAPLAIN unit make a battle-shock roll.\n\n\n▪ Friendly CHAPLAIN units have the following ability:\nSower of Dread (Aura): While an enemy unit is within 6\" of this unit, that enemy unit has -1 Ld.\n\n\nRestrictions: Your army can include DARK ANGELS units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "f945355b629ebfeb",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": "Friendly ADEPTUS ASTARTES TERMINATOR units have +1 to charge rolls.\n\n\nRestrictions: Your army can include SPACE WOLVES units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "20ab38b48984c1cf",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chapter"
+        ]
+      },
+      "source": " When a friendly GREY HUNTER unit starts an action, that action does not prevent this unit from being eligible to shoot.\n\n\n▪ In the Declare Battle Formations step,  each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units)\n\n\nRestrictions: Your army can include SPACE WOLVES units, but it\ncannot include any ADEPTUS ASTARTES units drawn from any\nother Chapter.",
+      "target": null
+    },
+    {
+      "id": "d8045c12907c543c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In a turn a friendly ADEPTUS ASTARTES FLY INFANTRY unit made an ingress/charge move, that unit’s attacks can re-roll hit rolls of 1.",
+      "target": null
+    },
+    {
+      "id": "2ec8b5b6ce18e847",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "**^^Adeptus Astartes^^** model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "71db12e550f6512d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Assault"
+        ]
+      },
+      "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is under the effects of the Assault Doctrine, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.",
+      "target": null
+    },
+    {
+      "id": "b09514ae666d7551",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Captain"
+        ]
+      },
+      "source": "Captain model only. At the start of your Command phase, if the bearer is on the battlefield, instead of selecting a Combat Doctrine to be active for your army, you can select the Tactical Doctrine. If you do, until the start of your next Command phase, that doctrine is active for the bearer’s unit only, even if you have already selected that doctrine to be active for your army this battle.",
+      "target": null
+    },
+    {
+      "id": "e072a139a77a0d97",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability. In addition, while the bearer’s unit is under the effects of the Devastator Doctrine, , you can reroll Advance rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "e1b84e029c23c082",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Adeptus Astartes model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests.",
+      "target": null
+    },
+    {
+      "id": "9fa113bdc0faabf7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability",
+      "target": null
+    },
+    {
+      "id": "a3bd33d6c46f4ab0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 3]"
+        ],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer's melee weapons have the [SUSTAINED HITS 3] ability.",
+      "target": null
+    },
+    {
+      "id": "05b7e05b54919c3d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. Once per battle round, just after making a Hit roll, a Wound roll or a saving throw for the bearer, you can treat the result as a unmodified 6 instead.",
+      "target": null
+    },
+    {
+      "id": "812bfac0f408dc4d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adeptus Astartes^^** model only. Improve the Strength, Damage and Armour Penetration characteristics of the bearer’s melee weapons by 1. At the end of the Fight phase, if one or more enemy models were destroyed as a result of a melee attack made by the bearer this phase, until the end of the battle, improve the Strength, Damage and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
+      "target": null
+    },
+    {
+      "id": "8c90bc9ad29b222f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "ADEPTUS ASTARTES model only. Models in the bearer’s unit have the Deep Strike ability. In addition, you can target the bearer’s unit with the Rapid Ingress Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "b6bfb008175f75b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "WATCH MASTER or TECHMARINE model only. At the start of your opponent’s Shooting phase, select one enemy VEHICLE unit (excluding TITANIC units) within 12\" of and visible to the bearer. That model must take a Leadership test. If that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; if that test is failed, that unit is not eligible to shoot this phase.",
+      "target": null
+    },
+    {
+      "id": "34f834b88593cb5e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Oath of Moment"
+        ]
+      },
+      "source": "WATCH MASTER or CAPTAIN model only. Once per battle, after you have selected your Oath of Moment target, the bearer can use this Enhancement. If it does, select a second enemy unit to be an Oath of Moment target. \n\n\n**Designer’s Note:** *This means that each time a model with the Oath of Moment ability makes an attack that targets either of your Oath of Moment targets, you can re-roll the Hit roll.*",
+      "target": null
+    },
+    {
+      "id": "077d5f2408a7f66a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES model only. (Once per battle, per army) When this model is destroyed, at the end of the phase, roll one D6:\n▪ On a 2+, set up this model on the battlefield, unengaged and as close as possible to where it was destroyed. This model is not part of an attached unit and its unit has a starting strength of 1. This model has 3 wounds remaining, or its full wounds remaining if this model was battle-shocked when it was destroyed",
+      "target": null
+    },
+    {
+      "id": "458c9a2725ad5fc5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. While the bearer is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Battle-shocked and below its Starting Strength.",
+      "target": null
+    },
+    {
+      "id": "17a0d6640315404c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons. While the bearer is Battle-shocked, add 2 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons instead.",
+      "target": null
+    },
+    {
+      "id": "3f8cb28e48982876",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ancient",
+          "Feel No Pain 6+",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Ancient model only. While the bearer is leading a unit, models in that unit have the Feel No Pain 6+ ability. While that unit\nis Battle-shocked, models in that unit have the Feel No Pain 4+ ability instead.",
+      "target": null
+    },
+    {
+      "id": "1b2b5061d97c33fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Phobos",
+          "Range"
+        ]
+      },
+      "source": "Phobos model only. In your Shooting phase, after the bearer's unit has shot, if that unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does until the end of the turn, that unit is not eligible to delcare a charge. This cannot allow the bearer's unit to move more than once in your Shooting phase.",
+      "target": null
+    },
+    {
+      "id": "f71cea183e75b429",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Lone Operative",
+          "Abilities"
+        ]
+      },
+      "source": "Adeptus Astartes model only. The bearer has the Stealth and Lone Operative Abilities",
+      "target": null
+    },
+    {
+      "id": "35976b06d01a1293",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Phobos"
+        ]
+      },
+      "source": "Phobos model only.  Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP",
+      "target": null
+    },
+    {
+      "id": "23473dff93d5a4f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Infiltrators",
+          "Ability"
+        ]
+      },
+      "source": "Adpetus Astartes Infantry model only. While the bearer is leading a unit, models in that unit have the Infiltrators Ability",
+      "target": null
+    },
+    {
+      "id": "791831e4949296ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. While the bearer is leading a unit, that unit is eligible to shoot in a turn in which it fell back",
+      "target": null
+    },
+    {
+      "id": "3063b73c28791d55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mounted"
+        ]
+      },
+      "source": "Adeptus Astartes Mounted model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1. Each time the bearer ends a Charge move, until the end of the turn, improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 2 instead.",
+      "target": null
+    },
+    {
+      "id": "942982280a9ea30f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. While the bearer is leading a unit, you can re-roll Advance rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "e670890edfbc04c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mounted"
+        ]
+      },
+      "source": "Adeptus Astartes Mounted model only. If the bearer's unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round as being one higher than it actually is",
+      "target": null
+    },
+    {
+      "id": "625961e47deacef1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Techmarine",
+          "Vehicle"
+        ]
+      },
+      "source": "**^^Techmarine^^** model only. Once per battle round, when a saving throw is failed for a friendly **^^Adeptus Astartes Vehicle^^** model within 6\" of the bearer, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "085053b40a4f2508",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE within 6\" of the bearer. Until the start of your next Command phase, that VEHICLE is eligible to shoot even if it Fell Back or Advanced this turn.",
+      "target": null
+    },
+    {
+      "id": "6deb185d77ca52c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lethal Hits]"
+        ],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "TECHMARINE model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE model within 6\" of the bearer. Until the start of your next Command phase, weapons equipped by that VEHICLE have the [Lethal Hits] ability.",
+      "target": null
+    },
+    {
+      "id": "90f2bf1e53feb295",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Adeptus Astartes model only. The bearer has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "34507e7f725d881f",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[MELTA]",
+          "[TORRENT]"
+        ],
+        "names": []
+      },
+      "source": "**^^Adeptus Astartes^^** model only. Each time an attack is allocated the bearer, subtract 1 from the Damage characteristic of that attack. If that attack was made with a **[MELTA]** or **[TORRENT]** weapon, change the Damage characteristic of that attack to 1 instead.",
+      "target": null
+    },
+    {
+      "id": "e6a7469b2f01f799",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tacticus"
+        ]
+      },
+      "source": "Tacticus model only. While the bearer is leading a unit, models in that unit can ignore any or all modifiers to their characteristics and/or to any roll or test made for them (excluding modifiers to saving throws).",
+      "target": null
+    },
+    {
+      "id": "5ab3db76b76ae73d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. While the bearer is leading a unit, once per turn after making a Hit roll or a saving throw for a model in that unit, you can change the result of that roll to an umodified 6.",
+      "target": null
+    },
+    {
+      "id": "e335f6a127184720",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "**^^Adeptus Astartes Infantry^^** model only. Add 3 to the Strength characteristic of the bearer's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "01044f374a5dcf23",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "415685700492a9a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Captain",
+          "Roll"
+        ]
+      },
+      "source": "Captain model only. Once per battle, at the start of your Shooting phase, you can select one point on the battlefield and place a marker on that point. At the start of your next Shooting phase, place another marker on the battlefield within 12\" of the center of the first marker, then draw a straight line between the center of each of these markers. Roll one D6 for each unit that line passes over or through: on a 3+ that unit suffers D3 mortal wounds. Both markers are then removed.",
+      "target": null
+    },
+    {
+      "id": "77369a595a192aab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gravis",
+          "Range"
+        ]
+      },
+      "source": "Gravis Model only. The first time the bearer is destroyed, roll on D6 at the end of the phase. On a 2+ set the bearer back on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "70923667817a853f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "Adeptus Astartes model only. While the bearer is leading a unit, models in that unit have the Feel No Pain 6+ ability while they are within an objective you control and, while that unit is Battle-shocked, halve the Objective Control characteristic of models in that unit instead of changing it to 0",
+      "target": null
+    },
+    {
+      "id": "9ddf924d079ca780",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. While an enemy unit (excluding Monsters and Vehicles) is within 6\" of the bearer, each time that unit fails a Battle-Shock test, one model in that unit is destroyed (chosen by it's controlling player.) Once per battle, when such an enemy unit fails a Battle-Shock test, you can choose for D3 models in that unit to be destroyed in this way instead.",
+      "target": null
+    },
+    {
+      "id": "40f20122f1194330",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Terminator",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Adeptus Astartes Terminator model only. The bearer has the Feel No Pain 5+ ability. Once per battle, after the bearer's unit is selected as the target of one or more attacks, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "9e2183f94ab2d666",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Terminator"
+        ]
+      },
+      "source": "Adeptus Astartes Terminator model only. Improve the Objective Control characteristic of the bearer by 1. Once per battle, at the start of any phase the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Objective Control characteristic of all other models in the bearer's unit as well.",
+      "target": null
+    },
+    {
+      "id": "52d7188a6a101226",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks characteristic of the bearer's melee weapons. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by all other models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "c1239d61576290a3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Melee weapons",
+          "Precision"
+        ]
+      },
+      "source": "RAVENWING model only. Melee weapons equipped by the bearer have the Precision ability.",
+      "target": null
+    },
+    {
+      "id": "5b6b4c8dedeb5e67",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "RAVENWING model only. You can re‑roll Advance and Charge rolls made for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "f6da8043b88a53be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "RAVENWING model only. If the bearer's unit starts the battle in Strategic Reserves, its points value does not count towards the combined points limit for units from your army that are in Strategic Reserve, and for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
+      "target": null
+    },
+    {
+      "id": "a7ebedf854fbade3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 9\""
+        ]
+      },
+      "source": "RAVENWING model only. Models in the bearer's unit have the Scouts 9\" ability.",
+      "target": null
+    },
+    {
+      "id": "5aab127f71df082e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwing"
+        ]
+      },
+      "source": "Deathwing model only. Each time you target the bearer's unit with a Stratagem, roll one D6, adding 1 if the bearer is within range of your Vowed objective marker: on a 5+ you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "6ebc1f782cf3e296",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Deathwing",
+          "Melee weapons"
+        ]
+      },
+      "source": "**^^Deathwing^^** model only. Melee weapons equipped by the bearer have the **[LETHAL HITS]** ability, and each time the bearer makes a melee attack, if it is within range of your Vowed objective marker, a Critical Hit is scored on an unmodified Hit roll of 5+.",
+      "target": null
+    },
+    {
+      "id": "8d753198f9beaecd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwing"
+        ]
+      },
+      "source": "Deathwing model only. Each time the bearer's unit Pile In or Consolidates, models in that unit can move an additional 3\".",
+      "target": null
+    },
+    {
+      "id": "919012e636aec93d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwing",
+          "Deep Strike"
+        ]
+      },
+      "source": "Deathwing model with the Deep Strike ability only. The bearer's unit can set up using the Deep Strike ability in the Reinforcement step of your first, second or third Movement phase, regardless of any mission rules.",
+      "target": null
+    },
+    {
+      "id": "c64d21ea36776879",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-CHAOS 5+]",
+          "[LANCE]"
+        ],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. The bearer’s melee weapons have the [ANTI-CHAOS 5+] and [LANCE] abilities.",
+      "target": null
+    },
+    {
+      "id": "8f5b346a9a66c3e3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Jump Pack"
+        ]
+      },
+      "source": "Adeptus Astartes Jump Pack model only. Improve the Armour Penetration characteristic of the bearer’s weapons by 1, and the bearer has a Save characteristic of 2+.",
+      "target": null
+    },
+    {
+      "id": "a54b531ae1c96fe8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "ADEPTUS ASTARTES JUMP PACK model only. In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to 6\"",
+      "target": null
+    },
+    {
+      "id": "63d2f5b344278ebf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Jump Pack",
+          "Range"
+        ]
+      },
+      "source": "Adeptus Astartes Jump Pack model only. In the Battle-shock step of your opponent's Command phase, each enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "d9abd37a1623cb51",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Company",
+          "Range"
+        ]
+      },
+      "source": "Death Company model only. The first time the bearer is destroyed, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "4306742ea1b68f86",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Company",
+          "Range"
+        ]
+      },
+      "source": "Death Company model only. Once per battle at the end of the Fight phase, if the bearer is within Engagement Range of three or more enemy models. the bearer can fight one additional time.",
+      "target": null
+    },
+    {
+      "id": "5f9c56b611dba835",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Company",
+          "Range",
+          "Character"
+        ]
+      },
+      "source": "Death Company Model only. Once per battle, at the start of the Fight Phase, if the bearer is within Engagement Range of one or more enemy Character units, you can select one of those Character units and roll six D6: for each 4+, one Character model in that unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "66bfdad2701e36d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Company"
+        ]
+      },
+      "source": "Death Company model only. If the bearer is destroyed, until the end of your next turn, each time a friendly Death Company model make an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "9505a6b94ffe5d8e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Damage characteristic of the bearer’s melee weapons.",
+      "target": null
+    },
+    {
+      "id": "db9282f7c3f48fc1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ravenwing"
+        ]
+      },
+      "source": "Ravenwing model only. The bearer’s unit is eligible to shoot and declare a charge in a turn in which it Fell Back and you can re‑roll Desperate Escape tests taken for models in the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "140bd6b51b3121bd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Captain",
+          "Chaplain",
+          "Lieutenant"
+        ]
+      },
+      "source": "Captain, Chaplain or Lieutenant model only. While the bearer’s unit is not Battle‑shocked, add 1 to the Objective Control characteristic of models in the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "33d95bb282865b6d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwing",
+          "Range"
+        ]
+      },
+      "source": "Deathwing model only. Once per battle, at the end of your opponent’s turn, if the bearer’s unit is not within Engagement Range of one or more enemy units, the bearer can use this Enhancement. If it does, remove the bearer’s unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "4eda98d59a592911",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES PSYKER model only (excluding TERMINATOR models). (Once per turn per unit) In your opponent’s Movement phase, when an enemy unit ends a move within 8\" of this unit, if\nthis unit is unengaged, this unit can make a normal move of: \n\n\n▪ Up to D6\".\n▪ Or: If this unit has the Divination Discipline ability, up to 6\".",
+      "target": null
+    },
+    {
+      "id": "93ee1c954bd5f437",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES PSYKER model only.\n\n\n▪ When this unit is selected to make an advance move, that move does not prevent this unit from being eligible to declare a charge.\n\n\n▪ When this unit is selected to make a fall‑back move, if this unit has the Biomancy Discipline ability, that move does not prevent this unit from being eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "6d69a25f645a6a6b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES PSYKER model only.\n\n\n▪ Enemy units cannot target this unit with snap shooting attacks.\n▪ If this unit has the Telepathy Discipline ability, this unit has ‑3\" detection range.",
+      "target": null
+    },
+    {
+      "id": "9fb5081da30caa9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES PSYKER model only. This unit’s ranged attacks have:\n\n\n▪ [LETHAL HITS].\n▪ If this unit has the Pyromancy Discipline ability, [SUSTAINED HITS 1].",
+      "target": null
+    },
+    {
+      "id": "7718a6f18e9a0a4e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "ADEPTUS ASTARTES PSYKER model only.\n▪ If this unit has the Telekinesis Discipline ability, this unit has Deep Strike.\n▪ At the end of your opponent’s Fight phase, if this unit is unengaged, you can use this ability. If you do:\n     ▫ Place this unit in strategic reserves.\n     ▫ This unit can make an ingress move in your next Movement phase (including in your first turn)",
+      "target": null
+    },
+    {
+      "id": "3bc7f79750f53521",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Chaplain"
+        ]
+      },
+      "source": "Chaplain model only. The bearer’s melee weapons have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "54978c38257208ba",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[CLEAVE 1]",
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "EXECRATOR model only. When this unit is selected to fight, this model’s melee attacks have:\n\n\n▪ [CLEAVE 1].\n▪ Or: [PRECISION].",
+      "target": null
+    },
+    {
+      "id": "d4bcbef54363807d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES INFANTRY model only.\n\n\n▪ This model has +2 W.\n▪ This model’s melee attacks have +1 S",
+      "target": null
+    },
+    {
+      "id": "adf4dadcda242ed1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES INFANTRY model only. This unit can re‑roll advance rolls and countercharge rolls.",
+      "target": null
+    },
+    {
+      "id": "08b1bb97f7623aac",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "Adeptus Astartes model only. Models in the bearer’s unit have the Scouts 6\" ability",
+      "target": null
+    },
+    {
+      "id": "3bc7cbdabf5c4117",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Adeptus Astartes model only. Once per battle, in your Command phase, the bearer can use this\nEnhancement. When it does, until the start of your next Command phase, all Angelic Legacy abilities\n(see left) are active for the bearer’s unit, instead of only two of them.",
+      "target": null
+    },
+    {
+      "id": "9d49e3e32245b36d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "Adeptus Astartes Infantry model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "763d9faaba0b5484",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Adeptus Astartes model only. The first time the bearer is destroyed, roll one D6 at the end of the phase: on a 2+, set the bearer back up on the battlefield as close as possible to where it was  destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining",
+      "target": null
+    },
+    {
+      "id": "c8a29cf8393d4683",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathwing",
+          "Deep Strike"
+        ]
+      },
+      "source": "**^^Deathwing**^^ model with the Deep Strike ability only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
+      "target": null
+    },
+    {
+      "id": "246bb8dc96d493a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adeptus Astartes**^^ model only. While a friendly **^^Adeptus Astartes**^^ unit is within 6\" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "68ea7c93c9bd5307",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ravenwing"
+        ]
+      },
+      "source": "**^^Ravenwing**^^ model only. You can re-roll Advance and Charge rolls made for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "852d21b1b7794d9a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "^^**Adeptus Astartes**^^ model only. Improve the Strength characteristic of melee weapons equipped by the bearer by 2, and improve the Armour Penetration and Damage characteristics of those weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "f1b42298dded88a0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 7\""
+        ]
+      },
+      "source": "SPACE WOLVES model only. Model's in the bearer's unit have the Scouts 7\" ability.",
+      "target": null
+    },
+    {
+      "id": "69cd8ed2830a5fad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "ADEPTUS ASTARTES model only. The bearer has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "b7a5021381e33985",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks characteristic of melee weapons equipped by the bearer. Each time the bearer ends a Charge move, until the end of the turn, add an additional 1 to the Attacks characteristic of those weapons.",
+      "target": null
+    },
+    {
+      "id": "07e45a850fd310e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Tyrnak and Fenrir"
+        ]
+      },
+      "source": "SPACE WOLVES model only. In your Command phase, select one friendly SPACE WOLVES unit within 9\" of the bearer. Until the start of your next Command phase, teeth and claws and Tyrnak and Fenrir weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "target": null
+    }
+  ]
+}

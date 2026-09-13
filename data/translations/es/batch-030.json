@@ -1,0 +1,2250 @@
+{
+  "batch": 30,
+  "units": [
+    {
+      "id": "b77e666ca4eba210",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, re-roll a Wound of 1.",
+      "target": null
+    },
+    {
+      "id": "536a4f6b2f29612c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a Normal or Advance move, it can move over terrain features that are 4\" or less in height as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "de4d0f8d1a66848a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when attack is allocated to a model in this unit, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "5813867fccb46e5f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Mounted"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets an **^^Infantry^^** or **^^Mounted^^** unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "101b78aeb27b2766",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "Models in this unit have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "2ca7c1f695038ed9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit that is within range of an objective marker, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "a7273021a2413db6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grenades"
+        ]
+      },
+      "source": "This unit gains the **^^Grenades^^** keyword. If it already has that keyword, once per battle, you can target this unit with the Grenade Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "9f319a58b94d8052",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit with Engagement Range of this unit. That enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "d46d3b098d51aa8b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "80e8ceeb676126fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time this unit ends a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "8f87c7da7d6caaaf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike",
+          "Precision Insertion"
+        ]
+      },
+      "source": "Once per battle, when this unit is set up on the battlefield using the Deep Strike ability, it can perform a Precision Insertion. If it does, this unit can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge. Each time this unit performs a Surgical Deep Strike, add 2 to the Deep Strike test.\n\n**Designer's Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*",
+      "target": null
+    },
+    {
+      "id": "501a924c1257963d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack with a Damage characteristic of 1 is allocated to a model in this unit, worsen the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "6188f859716544dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the Wounds characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "78e9b747ed273890",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can ignore any or all modifiers to this unit's Move characteristic. In addition, each time this unit makes a Normal move, models in this unit can move through terrain, but if any do so, after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "461cd22cb94df2a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle",
+          "Titanic"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, re-roll a Hit roll of 1. If that attack targets a **^^Titanic^^** unit, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "6d7fcafecfa74fe5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, this unit can use this Battle Trait. If it does, until the end of the phase, models in this unit have the Feel No Pain 5+ ability. If this unit is Below Half-strength when this Battle Trait is used, then until the end of the phase, models in this unit have the Feel No Pain 4+ ability instead.",
+      "target": null
+    },
+    {
+      "id": "110c8d5697a9ba67",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "While this unit is wholly within your deployment zone, improve the Leadership and Objective Control characteristics of models in this unit by 1. Each time an enemy unit performs a Surgical Deep Strike within 9\" of this unit, subtract 1 from that unit's Deep Strike test result.",
+      "target": null
+    },
+    {
+      "id": "76955ed82a663e90",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "In the Declare Battle Formations step, you can spend 1 Requisition point; if you do, then until the end of the battle, this unit has the Deep Strike ability and each time this unit performs a Surgical Deep Strike, add 1 to its Deep Strike test.",
+      "target": null
+    },
+    {
+      "id": "57a0186fde92304a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Command phase, this unit can use this Battle Trait. If it does, until the end of the turn, this unit is eligible to shoot, declare a charge and perform an Action in a turn in which it Fell Back. In addition, this unit is eligible to perform an Action while it is Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "7aed6a6c08f86178",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance rolls for this unit and this unit is eligible to perform an Action in a turn in which they Advanced. In addition, if this unit is selected to Advance, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.",
+      "target": null
+    },
+    {
+      "id": "bf158779c62d8a23",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit is within range of an objective marker, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "4bfe080195e9ef42",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "This unit has the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "b29d62e58e41a200",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack is allocated to a model in this unit, provided this unit did not Remain Stationary in your previous turn, worsen the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "93d2b92188e9f5f7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll. In addition, each time a model in this unit makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "2a2e6c747d57df62",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit Advances, do not make Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "09b79ab2ffb70c5a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP. If this unit performs a Surgical Deep Strike when doing so, before any Deep Strike tests are made, roll one D6 for each enemy unit within 6\" of your unit: on a 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "f0de26809a19893e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the end of your opponent's Fight phase, you can remove this unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "0c7a7578f4a9f3df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and each time you do so, until the end of the turn, this unit has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "5c3f760e2b0cc580",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of the turn, each time a model in this unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1. Each time this unit performs a Surgical Deep Strike, you can re-roll the Deep Strike test.\n\n**Designer's Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*",
+      "target": null
+    },
+    {
+      "id": "a28efe8fd5f7b1cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike",
+          "Stealth"
+        ]
+      },
+      "source": "Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of your next turn, this unit has the Stealth ability and enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.\n\n**Designer's Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*",
+      "target": null
+    },
+    {
+      "id": "53a5714baa30b301",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After both players have deployed their armies, select one unit from your Crusade army and redeploy it. When doing so, you can set that unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "8e051d24b6c1a669",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "Non-**^^Psyker^^** model only. Models in the bearer's unit have the Feel No Pain 4+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "aac898033cbbb205",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Deep Strike ability. In addition, you can target the bearer's unit with the Rapid Ingress Stratagem for 0CP, and when resolving that Stratagem, you can set up that unit anywhere on the battlefield that is more than 6\" horizontally away from all enemy units and within range of an objective marker. Until the end of the turn, that unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "de935bba0558f13f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Stealth ability. In addition, each time the bearer's unit is selected as a target of a charge, subtract 2 from the Charge roll.",
+      "target": null
+    },
+    {
+      "id": "332ef1b686a80b36",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Crusade Relic",
+          "Range"
+        ]
+      },
+      "source": "At the start of your Command phase, the bearer regains up to D3 lost wounds. Once per battle, at the start of your Command phase, if your Crusade army is in the Balanced Strategic Footing, the bearer can activate this Crusade Relic. If it does, select one enemy unit within Engagement Range of the bearer. That enemy unit suffers a number of mortal wounds equal to the number of wounds the bearer has regained as a result of this Crusade Relic during the battle.",
+      "target": null
+    },
+    {
+      "id": "fb1231ab24806262",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Crusade Relic"
+        ]
+      },
+      "source": "Improve the Strength, Damage and Armour Penetration characteristics of the bearer's melee weapons by 1. Once per battle, in your Charge phase, if your Crusade army is in the Aggressive Strategic Footing, the bearer can activate this Crusade Relic. If it does, until the end of the phase, add 2 to Charge rolls made for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "0de87dbcda4b8ca6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Crusade Relic"
+        ]
+      },
+      "source": "Add 1 to the Toughness and Wounds characteristic of the bearer. Once per battle, when an attack targets the bearer's unit, if your Crusade army is in the Defensive Strategic Footing, the bearer can activate this Crusade Relic. If it does, until the end of the phase, each time an attack is allocated to a model in the bearer's unit, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "1ccd046df8ab5ac0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Toughness and Save characteristics of the bearer by 1.",
+      "target": null
+    },
+    {
+      "id": "989a4f61cf9f64bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blackstone Fragments"
+        ]
+      },
+      "source": "After you win a battle, if the bearer is on the battlefield, you gain an additional 2 Blackstone Fragments.",
+      "target": null
+    },
+    {
+      "id": "2ab81adc0e455ce2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[PRECISION]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Weapon Modifications",
+          "Crusade Relic",
+          "Crusade"
+        ]
+      },
+      "source": "Select one weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications table), then select one of the abilities below for that weapon to gain. That weapon is now a Crusade Relic; note this on the bearer's Crusade card and give the weapon a suitable name.\n- **[LETHAL HITS]**\n- **[PRECISION]**\n- **[SUSTAINED HITS 1]**",
+      "target": null
+    },
+    {
+      "id": "1caca8c948363dc0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Orders"
+        ]
+      },
+      "source": "While the bearer is on the battlefield, you can use the New Orders Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "f81b1aed8a950f62",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, before drawing cards from your Secondary Mission deck, if the bearer is on the battlefield, you can look at the top card of your Secondary Mission deck, then you can return that card to the bottom of your Secondary Mission deck.",
+      "target": null
+    },
+    {
+      "id": "36455fba7c350afd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the first battle round, if the bearer is in your Crusade army, you can remove up to three Secondary Mission cards from your Secondary Mission deck and discard them, If you do, you can must then reshuffle your Secondary Mission deck.",
+      "target": null
+    },
+    {
+      "id": "3db63fa8829ddd53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Bodyguard",
+          "Unit"
+        ]
+      },
+      "source": "**^^Infantry^^** model only. The first time the bearer is destroyed, you can choose to roll one D6 at the end of the phase instead of using any rules that are triggered when a model is destroyed. If you do, on a 4+, set the bearer back up on the battlefield as close as possible to where they were destroyed and more than 1\" away from all enemy models, with D3 wounds remaining. If the bearer was part of an Attached unit when it was destroyed, and its Bodyguard unit is still on the battlefield when the bearer is set back up, it must be placed in Unit Coherency with that unit again to form an Attached unit. You do not need to take an Out of Action test for the bearer at the end of the battle unless it is destroyed again.",
+      "target": null
+    },
+    {
+      "id": "35fb7f5cfb917cc2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, if the bearer is on the battlefield when you use a Strategic Ploy Stratagem, you can use that Stratagem without spending any CP.",
+      "target": null
+    },
+    {
+      "id": "b2506bc0174810da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "Cannot be taken by **^^Psyker^^** models. Each time a Psychic Attack targets the bearer's unit, subtract 1 from that attack's Hit roll.",
+      "target": null
+    },
+    {
+      "id": "18fb6d4b7e1b29e5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "Unless the bearer is part of an Attached unit at the start of the battle, it has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "afe824bcff40f31a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperium",
+          "Chaos",
+          "Range"
+        ]
+      },
+      "source": "At the start of your opponent's Movement phase, for each enemy unit (excluding **^^Imperium^^** and **^^Chaos^^** units) within Engagement Range of the bearer, roll one D6: on a 4+. until the end of the phase, that unit cannot be selected to Fall Back.",
+      "target": null
+    },
+    {
+      "id": "5e96f92e7d94ec31",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Psyker^^** model only. Each time the bearer makes a Psychic Attack, add 1 to that attack's Wound roll.",
+      "target": null
+    },
+    {
+      "id": "1625d49233599e34",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base). If doing so when making a Fall Back move, models in this unit do not need to take a Desperate Escape test. After it has finished moving, select one enemy unit it moved across (if any) and roll one D6: on a 2+, that unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "5d543138c141f650",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer can only shoot with this weapon once per battle. When an attack is made with this weapon, if a hit is scored roll one D6 for each unit within 6\" of the target unit (excluding the target unit itself): on a 4+, the unit being rolled for suffers D3 mortal wounds. The target unit then suffers 3D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "5157a7306830821e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes a melee attack, invulnerable saving throws cannot be made against that attack.",
+      "target": null
+    },
+    {
+      "id": "6bb96fc23d34e5d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, select one friendly model on the battlefield (excluding the bearer) and then select one Aura ability that selected model has. Until the start of your next Command phase, the bearer has that Aura ability.",
+      "target": null
+    },
+    {
+      "id": "c03305ecb16c141f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if the bearer is within range of an objective marker that you control, roll one D6: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "937a6ad539a67e8a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to armour saving throws made for the bearer.",
+      "target": null
+    },
+    {
+      "id": "fe3414e95ce2c7a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon Modifications",
+          "Crusade",
+          "Crusade Relic"
+        ]
+      },
+      "source": "Select one weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). Make a note on the bearer's Crusade card of this weapon and give it a suitable name. That weapon is now a Crusade Relic and each time the bearer makes an attack with it, on a Critical Hit, the target suffers 1 mortal wound in addition to any normal damage.",
+      "target": null
+    },
+    {
+      "id": "9fd7b98507350171",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time the bearer's unit ends Charge moved, select one enemy unit within Engagement Range of the bearer. Until the end of the turn, each time a model in that enemy unit makes an attack, subtract 1 from that attack's Hit roll.",
+      "target": null
+    },
+    {
+      "id": "daa7b1b5a35559d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": [
+          "Psyker",
+          "Range",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Psyker^^** model only. Add 6\" to the Range characteristic of the bearer's ranged **[PSYCHIC]** weapons. If the bearer has Psychic ability that instructs you to select one or more units within a specified range, you can increase the range of that ability by 6\". If the bearer has a Psychic Aura ability, increase the range of that ability by an additional 3\".",
+      "target": null
+    },
+    {
+      "id": "c0c904f9c263aab8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Command phase, if the bearer is on the battlefield, you can use this ability. Select one point on the battlefield and place a marker on that point. At the start of your next Command phase, roll six D6 for each unit within 6\" of the centre of that marker, adding 2 to the roll for each unit within 3\" of the centre of that marker: for each 4+, that unit suffers 1 mortal wound. The marker is then removed.",
+      "target": null
+    },
+    {
+      "id": "0c40a6c8659aa314",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of the bearer.",
+      "target": null
+    },
+    {
+      "id": "ed6f177b7f96cdfd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Deep Strike"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent's Shooting phase, if the bearer's unit is not within Engagement Range of one or more enemy units, and if it was targeted by one or more attacks during that phase, you can remove the bearer's unit from the battlefield and place it into Strategic Reserves. If you do, when you next set up the bearer's unit from Strategic Reserves, models in that have the Deep Strike ability until the end of that phase.",
+      "target": null
+    },
+    {
+      "id": "6bc3603c8c9fff5b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Crusade Relic",
+          "Battle Traits"
+        ]
+      },
+      "source": "Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic and:\n- Each time an attack is made with it, you can re-roll the Wound roll.\n- Once per battle, at the start of the Fight phase, the bearer can unleash the power stored in that weapon. When they do, until the end of the turn, that weapon has the **[DEVASTATING WOUNDS]** ability and its Strength and Attacks characteristics are increased by a number equal to the current battle round number.",
+      "target": null
+    },
+    {
+      "id": "73b03a19fc75ed78",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative",
+          "Stealth"
+        ]
+      },
+      "source": "The bearer has the Lone Operative and Stealth abilities. While the bearer is leading a unit, models in that unit have the Stealth ability and that unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "b18a59523e8517b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent's Movement phase, you can select one enemy unit that was set up one the battlefield within 12\" of the bearer's unit during this phase; the bearer's unit can then either:\n- Shoot, but when resolving those attacks the bearer's unit can only target that enemy unit (and only if it is an eligible target).\n- Declare a charge against that unit (note that even if this charge is successful, the bearer's unit does not received any Charge bonus this turn).",
+      "target": null
+    },
+    {
+      "id": "c1b1705447c3d99e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your first Command phase, if the bearer is on the battlefield, you gain 1CP. At the end of the battle, if the bearer is on the battlefield, you gain 1 Strategic Asset point (SAP).",
+      "target": null
+    },
+    {
+      "id": "17708ed7cdec6043",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in the bearer's unit have a 5+ invulnerable save against ranged attacks and each time a ranged attack is allocated to a model in the bearer's unit, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks.",
+      "target": null
+    },
+    {
+      "id": "786459344c3593a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic",
+          "Battle Traits"
+        ]
+      },
+      "source": "Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic and, in your Fight phase, after the bearer has fought, select one enemy unit hit by one or more of those attacks made with this weapon. Until the end of the battle, that enemy unit is poisoned. At the start of each player's Command phase, roll one D6 for each poisoned enemy unit on the battlefield: on a 1, the poison wears off and the unit is no longer poisoned; on a 2-3, that enemy unit suffers 1 mortal wound; on a 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "a194ff10376e2019",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if the bearer is within range of an objective marker you control, you can choose one of the following:\n- Remove 1 Warp counter that the bearer's unit has. If you do, gain 1CP.\n- Take a Leadership test for this model. If that test is passed, gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "2838a455a3ce89ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "The bearer has the Deep Strike ability. While the bearer is leading a unit, models in that unit have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "7c8af5e7512ad4b8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Weapon Modifications",
+          "Crusade Relic"
+        ]
+      },
+      "source": "Select one melee weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). That weapon is now a Crusade Relic and it has the **[ANTI-UNBOUND ADVERSARIES 4+** and **[DEVASTATING WOUNDS]** abilities.",
+      "target": null
+    },
+    {
+      "id": "e4666fecf417c9f7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Psychic"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks. In addition, once per battle, just after rolling to generate an Anomaly, you can remove one Warp counter the bearer has. If you do, you can change one of the dice that were part of that roll to a dice result of your choosing (changing the anomaly generated).",
+      "target": null
+    },
+    {
+      "id": "c7a30a5fda1f19f3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Beast",
+          "Monster",
+          "Unbound Adversaries",
+          "Crusade"
+        ]
+      },
+      "source": "Each time a **^^Beast^^** or **^^Monster^^** unit targets the bearer's unit, before making any attacks, that **^^Beast^^** or **^^Monster^^** unit must take a Battle-shock test. Each time a model in that **^^Beast^^** or **^^Monster^^** unit makes an attack that targets the bearer's unit, subtract 1 from the Hit roll and, if that test was failed, subtract 1 from the Wound roll as well. In addition, once per battle, in your Command phase, you can select one **^^Unbound Adversaries^^** unit within 18\" of the bearer. If you do, until the start of your next Command phase, that **^^Unbound Adversaries^^** unit loses the **^^Unbound Adversaries^^** keyword and is part of your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "ba134446b14de7f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Unbound Adversaries",
+          "Range",
+          "Power"
+        ]
+      },
+      "source": "When the bearer's unit is destroyed, roll on D6 for every enemy unit within 6\": on a 4+, that enemy unit suffers D3 mortal wounds. Then, if the bearer's unit had one or more Warp counters when it was destroyed, you can set up one unit of **^^Unbound Adversaries^^** on the battlefield as close as possible to where the bearer's model was destroyed and not within Engagement Range of any enemy units. The Power Level of this unit is equal to the number of Warp counters the bearer's unit had.",
+      "target": null
+    },
+    {
+      "id": "1c376220cb59a70b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 2]"
+        ],
+        "names": [
+          "Psyker",
+          "Psychic",
+          "Crusade"
+        ]
+      },
+      "source": "**^^Psyker^^** model only. The bearer's Psychic weapons gain the **[SUSTAINED HITS 2]** ability. In addition, at the end of the Set Warp Events step, if the bearer is in your Crusade army, you can choose to increase or decrease the intensity of the Warp Events use in that battle by 1 (to a minimum of 1 and a maximum of 3).",
+      "target": null
+    },
+    {
+      "id": "0a69b89847ec89ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Mounted",
+          "Weapon Modifications",
+          "Crusade Relic"
+        ]
+      },
+      "source": "**^^Infantry^^** or **^^Mounted^^** model only. Select one melee weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). That weapon is now a Crusade Relic and you add 1 to the Attacks, Strength and Damage characteristic of that weapon. In addition, each time the bearer is selected to fight, you can first remove up to 3 Warp counters from the bearer's unit. For each Warp counter removed this way, until the end of the phase, add an additional 1 to the Attacks and Strength characteristics of that weapon.",
+      "target": null
+    },
+    {
+      "id": "300cf47a5a2ab6ac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Psyker^^** model only. Each time the bearer makes a Psychic Attack, re-roll a Wound roll of 1. While the bearer's unit has one or more Warp counters, each time the bearer makes a Psychic Attack, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "3249a6bef3f4a161",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the bearer's Wounds characteristic. In addition, in your Command phase, you can remove one Warp counter the bearer's unit has. If you do, the bearer regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "6e3e38d6de5f293c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack. This is not cumulative with any other modifiers that worsen the Damage characteristic of an attack.",
+      "target": null
+    },
+    {
+      "id": "5b12e116a5deb1b8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Beast",
+          "Monster",
+          "Unbound Adversaries"
+        ]
+      },
+      "source": "Each time a **^^Beast^^** or **^^Monster^^** model makes an attack that targets the bearer's unit, subtract 1 from the Wound roll. If the attacking model is an **^^Unbound Adversaries^^** unit, subtract 1 from the Hit roll as well.",
+      "target": null
+    },
+    {
+      "id": "f25e838f447788ce",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack against a **^^Monster^^** or **^^Vehicle^^** unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "d786b60d3797ee97",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a **^^Monster^^** or **^^Vehicle^^** unit makes an attack against this unit, worsen the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "da477799217ac07b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "While this unit is within Engagement Range of any enemy **^^Monster^^** or **^^Vehicle^^** models, it automatically passes Battle-shock and Leadership tests.",
+      "target": null
+    },
+    {
+      "id": "77f56760f2ae0553",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "In your Shooting phase, each time this unit is selected to shoot, after resolving its attacks, select one **^^Monster^^** or **^^Vehicle^^** unit that lost one or more wounds as a result of those attacks. Until the start of your next Shooting phase, subtract 2\" from the Move characteristic of models in that **^^Monster^^** or **^^Vehicle^^** unit and subtract 2 from Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "cbfcf0e1d52483af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-MONSTER 4+]",
+          "[ANTI-VEHICLE 4+]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by models in this unit have the **[ANTI-MONSTER 4+]** and **[ANTI-VEHICLE 4+]** abilities.",
+      "target": null
+    },
+    {
+      "id": "b8ca2213e83a6435",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Each time a **^^Monster^^** or **^^Vehicle^^** unit makes an attack against this unit, models in this unit have the Feel No Pain 5+ ability against that attack.",
+      "target": null
+    },
+    {
+      "id": "99cc1c9553e48f57",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit destroys an enemy unit, subtract 2 from that enemy unit's Out of Action test for this battle.",
+      "target": null
+    },
+    {
+      "id": "fa375e1a23ff4b57",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack is made against this unit, if the Strength characteristic of that attack is greater than this unit's Toughness characteristic, subtract 1 from that attack's Wound roll.",
+      "target": null
+    },
+    {
+      "id": "4e83f3449f8422fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Engagement Range of this unit:\n- Subtract 1 from the Leadership characteristic of models in that enemy unit.\n- Each time that unit takes a Battle-shock test, the Insane Bravery Stratagem cannot be used.",
+      "target": null
+    },
+    {
+      "id": "3555a977b87bb7b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, if a Critical Wound is rolled, the target suffers 1 mortal wound in addition to any normal damage.",
+      "target": null
+    },
+    {
+      "id": "ab91254b56156534",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "This unit has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "a5d5b98eea5b702f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons models in this unit are equipped with have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "aa44033652ce0827",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a Normal, Advance or Fall Back move, until that move is finished, models in this unit can move horizontally through models and terrain features (they cannot finish a move on top of another model or its base). If doing so when making a Fall Back move, models in this unit do not need to take a Desperate Escape test.",
+      "target": null
+    },
+    {
+      "id": "3e06b1afddc0cdd6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle",
+          "Range"
+        ]
+      },
+      "source": "Each time this unit is selected to fight in the Fight phase, before making any attacks, it can stomp. If it does so, select one enemy unit (excluding **^^Monster^^** and **^^Vehicle^^** units) within Engagement Range of it and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "f5f97cebd1485f67",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord",
+          "Scouts 6\"",
+          "Lone Operative",
+          "Stealth"
+        ]
+      },
+      "source": "At the start of the battle, if the bearer is your **^^Warlord^^**, until the end of the battle, it gains the ability below that corresponds with the Strategic Footing you selected in the Select Strategic Footing step:\n- **Aggressive:** Models in the bearer's unit have the Scouts 6\" ability.\n- **Balanced:** The bearer has the Lone Operative ability.\n- **Defensive:** Models in the bearer's unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "15791e38c8152843",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is within range of an objective marker, if the bearer's unit is Battle-shocked, change the Objective Control characteristic of models in that unit to 1, instead of 0.",
+      "target": null
+    },
+    {
+      "id": "943483e36e2542d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord",
+          "Blackstone Fragments"
+        ]
+      },
+      "source": "If the bearer is your **^^Warlord^^**, at the end of the battle, roll one D6, adding 2 to the roll if you won the battle. On a 6+, you gain 3 Blackstone Fragments.",
+      "target": null
+    },
+    {
+      "id": "00b1a3a4501dad02",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time a melee attack is allocated to the bearer, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks. If that attack was made with a Psychic weapon, this effect applies on an unmodified saving throw of 5+ instead.",
+      "target": null
+    },
+    {
+      "id": "2d66ea07efad8cd0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the battle, select one objective marker. While the bearer is on the battlefield, friendly units within range of that objective marker have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "044c8649489ffb4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon Modifications",
+          "Crusade Relic",
+          "Crusade"
+        ]
+      },
+      "source": "Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications table). That weapon is now a Crusade Relic; note this on the bearer's Crusade card and give the weapon a suitable name. Once per battle, in the Fight phase, the bearer can activate this Crusade Relic. If it does, until the end of the phase, each time an attack is made with that weapon, invulnerable saving throws cannot be made against that attack.",
+      "target": null
+    },
+    {
+      "id": "d804dc085a5d6c43",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero",
+          "Ability"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the Determine Attacker and Defender step, you can re-roll your dice when determining who will be the Attacker and who will be the Defender.",
+      "target": null
+    },
+    {
+      "id": "670c1fc3fc2ba300",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Epic Hero"
+        ]
+      },
+      "source": "At the declare Battle-formations step, select one Battle Trait. Until the end of the battle, this **^^Epic Hero^^** model, and any unit they join, are considered to have this Battle Trait.",
+      "target": null
+    },
+    {
+      "id": "0ba80e12abaa5f03",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Epic Hero",
+          "Crusade",
+          "Battle Scars",
+          "Bodyguard",
+          "Ability"
+        ]
+      },
+      "source": "While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. In addition, if your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle you can select one additional unit from your Crusade army to be Marked for Greatness.",
+      "target": null
+    },
+    {
+      "id": "2ab9894c9c991956",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero",
+          "Ability"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, during the Determine Victor step, if you were the Victor of that battle, after gaining the Victor Bonus for that Crusade Mission, you gain that Victor bonus a second time.",
+      "target": null
+    },
+    {
+      "id": "474b907cabe6b338",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Epic Hero",
+          "Crusade",
+          "Ability",
+          "Warlord"
+        ]
+      },
+      "source": "During the battle, if one or more enemy **^^Character^^** models are destroyed by an attack made by an **^^Epic Hero^^** model (or a model in a unit it is attached to) with this Crusade Ability from your Crusade army, then at the Update Crusade Cards step, all units in your Crusade army gain an additional 1XP. If one of those destroyed enemy **^^Character^^** models was the enemy **^^Warlord^^**, you also gain 1 Strategic Asset Point.",
+      "target": null
+    },
+    {
+      "id": "c01431bc9367e554",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero",
+          "Ability"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with Crusade Ability, during the Update Crusade Cards step you can re-roll failed Out of Action tests for units in your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "1b09b275553a65ad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade ability, then at the Select Crusade Blessings step, roll one D6: on 4+ select one of the following:\n- If you are the Underdog, you can select one additional Crusade Blessing.\n- If you are not the Underdog, you can select one Crusade Blessing, instead.",
+      "target": null
+    },
+    {
+      "id": "1a665112300ef960",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-UNBOUND ADVERSARIES 4+]"
+        ],
+        "names": [
+          "Armageddon",
+          "Epic Hero"
+        ]
+      },
+      "source": "At the Declare Battle Formations step, select one of the following:\n- While this model is leading a unit, weapons equipped by models in that unit the **[ANTI-UNBOUND ADVERSARIES 4+]** ability.\n- Select one Armageddon Battle Trait (this must be a Battle Trait they could have if they were not an **^^Epic Hero^^**). Until the end of the battle, this **^^Epic Hero^^** model, and any unit they join, have this Battle Trait.",
+      "target": null
+    },
+    {
+      "id": "a64a93b767a3823a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Epic Hero",
+          "Crusade",
+          "Battle Scars",
+          "Bodyguard",
+          "Ability"
+        ]
+      },
+      "source": "While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle, you can select one additional unit from your Crusade army to be Marked for Greatness.",
+      "target": null
+    },
+    {
+      "id": "956852f8ca81b807",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero",
+          "Ability"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, during the Determine Victor step, if you were the victor of that battle and if that **^^Epic Hero^^** is on the battlefield, you gain the Victor bonus a second time.",
+      "target": null
+    },
+    {
+      "id": "2b4ee5f09c5d49ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Epic Hero",
+          "Crusade",
+          "Ability",
+          "Warlord"
+        ]
+      },
+      "source": "During the battle, if one or more enemy **^^Character^^** models are destroyed by an attack made by an **^^Epic Hero^^** model (or a model in a unit it is attached to) with this Crusade Ability from your Crusade army, then at the Update Crusade Cards step, all units in your Crusade army gain an additional 1XP. If one of those destroyed enemy **^^Character^^** models was the enemy **^^Warlord^^**, you also gain 1 strategic point.",
+      "target": null
+    },
+    {
+      "id": "4c50c9a83c01f3f3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero",
+          "Ability"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with Crusade Ability, you can re-roll failed Out of Action tests for units in your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "10eaec0388f64313",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade ability, then at the Select Crusade Blessings step, select one of the following:\n- If you are the Underdog, roll one D6: on a 4+, you can select one additional Crusade Blessing.\n- If you are not the Underdog, roll one D6: on a 6 you can select one Crusade Blessing, instead.",
+      "target": null
+    },
+    {
+      "id": "25bfd6f4f7eaace5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero",
+          "Ability"
+        ]
+      },
+      "source": "If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, select one of the following:\n- At the Determine Attacker and Defender step, you can re-roll your dice when determining who will be the Attacker and who will be the Defender.\n- At the end of the Set Warp Events step, roll one D6: on a 4+ you can choose to increase or decrease the intensity of the Warp Events used in that battle by 1 (to a minimum of 1 and a maximum of 3).",
+      "target": null
+    },
+    {
+      "id": "7b61fd7fd9a28837",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes a melee attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "86fd30d2d6dee922",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer's unit can attempt to operate a Hatchway at the start or end of the Move Units step of your Movement phase. The bearer's unit cannot attempt to operate more than one Hatchway per turn.",
+      "target": null
+    },
+    {
+      "id": "d40dcb82f3632cb6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, the bearer can be targeted with the Battlefield Command Stratagem for 0CP, even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "dcdc2c3ffff687f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You start the battle with 2CP.",
+      "target": null
+    },
+    {
+      "id": "711fc24fc16661b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Torrent",
+          "Army Roster"
+        ]
+      },
+      "source": "When you select this Enhancement, select one ranged weapon equipped by the bearer (excluding Torrent weapons) and make a note of this on your Army Roster. Add 1 to the Strength and Damage characteristics of that weapon.",
+      "target": null
+    },
+    {
+      "id": "c72c9b01fa3ab2d3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wall"
+        ]
+      },
+      "source": "In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1\" of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, each enemy unit that is on the opposite side of and visible to that Weakened Wall is stunned. Each time a unit is stunned, until the end of the turn, that unit cannot fire Overwatch and each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "c26650f82bbb9549",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wall"
+        ]
+      },
+      "source": "In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1\" of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, that Weakened Wall's Vulnerable Section is destroyed. In addition, each unit that is on the opposite side of that Weakened Wall and is visible to and within 6\" of it suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "2cdba8dadb3f9c2a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wall"
+        ]
+      },
+      "source": "In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1\" of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, select one enemy unit that is on the opposite side of and visible to that Weakened Wall. Until the end of the turn, each time a friendly model makes an attack against that enemy unit, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "fa463ade8c2099df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, at the start of your Command phase, Movement phase, Shooting phase, or Charge phase, or the Fight phase, you can select one enemy unit within 18\" of this model. That unit must take a Battle-shock test, subtracting 1 from the test when it does so if it has one or more Warp counters.",
+      "target": null
+    },
+    {
+      "id": "b30dbe77f17403c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have a 6+ invulnerable save. While this unit has one or more Warp counters, models in this unit have a 5+ invulnerable save (excluding against Psychic Attacks).",
+      "target": null
+    },
+    {
+      "id": "f779dd39b62b7ad2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is Marked for Greatness, it gains an additional 2XP. In addition, once per battle, in your Command phase, you can add or remove one Warp counter to/from this unit.",
+      "target": null
+    },
+    {
+      "id": "2419a2aab610e706",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "This unit has the Stealth ability and if this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.",
+      "target": null
+    },
+    {
+      "id": "e1a6150e72de66bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, in your Command phase, this unit can use this Battle Trait. When it does, if it is Battle-shocked, it is no longer Battle-shocked and, until the end of the turn, this unit is eligible to perform an Action in a turn in which it Fell Back and/or while within Engagement Range of one or more enemy units.",
+      "target": null
+    },
+    {
+      "id": "06c6cf65f36e585c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Unbound Adversaries"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets the closest eligible target, you can re-roll a Wound roll of 1. If the target of that is an **^^Unbound Adversaries^^** unit, and it is the closest eligible target, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "5fefff3a273f69b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+",
+          "Psychic",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 6+ ability against Psychic Attacks and mortal wounds. While this unit has one or more Warp counters, models in this unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "6b5bda493b96ab59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Ranged Weapons",
+          "Weapons"
+        ]
+      },
+      "source": "Ranged Weapons equipped by models in this unit have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "94cda04b0caab71a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can ignore any or all modifiers to this unit's Move characteristic. In addition, each time this unit makes a Normal move, its models can move through sections of terrain features more than 2\" in height, but if any do so, just after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "5db44245cc2ad505",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Unbound Adversaries",
+          "Crusade"
+        ]
+      },
+      "source": "Each time this unit targets an **^^Unbound Adversaries^^** unit, you can re-roll the Hit roll. In addition, at the Update Crusade Cards step, if this unit would gain XP from Dealers in Death, it gains 1 additional XP.",
+      "target": null
+    },
+    {
+      "id": "cbdb16aa5a28b2da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a Normal, Advance or Charge move, its models can move through sections of terrain features more than 2\" in height, but if any do so, just after this unit has moved, roll one D6: on a 1, this unit suffers D3 mortal wounds and is Battle-shocked; on a 2-3 this unit is Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "2453dac60ba58e63",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, you can redeploy this unit. When doing so, you can set this unit up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "08b345a7bbdf7fb4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit, adding 1 to the result if this unit has 1 or more Warp counters: for each 5+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "444e9b8e47c11921",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this unit, worsen the Leadership and Objective characteristics of models in that unit by 1 (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "2fb5923661e425b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Infiltrators"
+        ]
+      },
+      "source": "At the start of the Deploy Crusade Armies step, you can spend 1RP; if you do, until the end of the battle, each model in this unit has the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "f93133dcbe426794",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Add 1 to the Strength characteristic of Psychic weapons equipped by models in this unit. While this unit has one or more Warp counters, add 2 to the Strength characteristic of Psychic weapons equipped by models in this unit instead.",
+      "target": null
+    },
+    {
+      "id": "79dc2473438ba55e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance and Charge rolls for this unit. In addition, each time this unit is selected to Advance, you can remove one Warp counter from it. If you do, then until the end of the turn, this unit is not eligible to declare a charge (even if another rule would let it Advance and Charge in the same turn), but you do not make an Advance roll; instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "5d15fefe87f76d6d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time an attack targets this unit (excluding Psychic Attacks), if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.",
+      "target": null
+    }
+  ]
+}

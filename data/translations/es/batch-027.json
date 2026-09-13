@@ -1,0 +1,3366 @@
+{
+  "batch": 27,
+  "units": [
+    {
+      "id": "09023d58059ac371",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- This unit's ranged attacks can re-roll **hit rolls** of 1.\n- This unit's ranged attacks that target a unit within range of an **objective** can re-roll **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "6fb68fdbccfe6fdb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, select one friendly **ORKS INFANTRY** unit within 6\" of this model, and select one of the following:\n- That unit **heals** 3 wounds.\n- <ins>Or:</ins> If all models in that unit have their starting number of wounds, **revive** one **CHARACTER** model in that unit.",
+      "target": null
+    },
+    {
+      "id": "fda65bdd8ef76252",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit is selected to make a **fall-back move**, that **fall-back move** does not prevent this unit from being **eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "0e0b0de9be5fbd2e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **BOYZ**\n- **BURNA BOYZ**\n- **LOOTAS**\n- **NOBZ**\n- **TANKBUSTAS**",
+      "target": null
+    },
+    {
+      "id": "0ad3bcc26c81e97d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, if this unit is **riled up**, this unit has +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "07cfa46db9a03a7b",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Attacks that target this unit have -1 **AP**.",
+      "target": null
+    },
+    {
+      "id": "911f99bf3d4a89ac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **ORKS VEHICLE** model (excluding **AIRCRAFT/TITANIC** models) within 3\" of this model:\n- That **VEHICLE** model **heals** D3 wounds.\n- That **VEHICLE** model's attacks have +1 to **hit rolls** until the start of your next Movement phase.",
+      "target": null
+    },
+    {
+      "id": "0ff59011e15579cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "This unit's ranged attacks have **[IGNORES COVER]**.",
+      "target": null
+    },
+    {
+      "id": "4c0b280f5ec8c3c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **BOYZ**\n- **FLASH GITZ**\n- **MEK GUNZ**\n- **NOBZ**\n- **TANKBUSTAS**",
+      "target": null
+    },
+    {
+      "id": "46e0b353dac35089",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mek Gunz",
+          "Gunz",
+          "Bubblechukka",
+          "Kustom Mega-kannon",
+          "Kannon",
+          "Mek Gun"
+        ]
+      },
+      "source": "In your Shooting phase, when this unit has shot, if all ranged weapons equipped by each Mek Gunz model in this unit are the same, select one enemy unit hit by those attacks. That enemy unit has the ability below that matches that weapon's name until the start of your next turn:\n- **Bubblechukka:** This unit is **wobbled**. While a **wobbled** unit is attacking, its targets have the **benefit of cover** against those attacks.\n- **Kustom Mega-kannon:** This unit is zapped. While a unit is **zapped**, that unit has -1 **Ld**.\n- **Smash Gun:** This unit is **smashed**. While a unit is **smashed**, that unit has -2\" **M**.\n- **Tracktor Kannon:** This unit is **grounded**. While a unit is **grounded**, it cannot **take to the skies**.\n*Place five Grot Crew tokens next to each Mek Gun model, removing one each time its Mek Gun model loses a wound (a Mek Gun model itself is considered to represent its final wound).*",
+      "target": null
+    },
+    {
+      "id": "7005f5f842bbbd89",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, this unit's ranged attacks can re-roll **hit rolls** of 1.",
+      "target": null
+    },
+    {
+      "id": "41593979c39a7a88",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 12 **ORKS INFANTRY** models. In cannot transport **GHAZGHKULL THRAKA** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "ab52eccf13b8124e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "While this unit is within 3\" of a friendly **BEAST SNAGGA** unit (excluding **MONSTER CHARACER** units), this unit has **Lone Operative**.",
+      "target": null
+    },
+    {
+      "id": "0bf404d3f1c707f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, when this model is **destroyed**, if this unit has not been **selected to fight** this phase, roll one D6:\n- On a 2+, do not remove this model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), this model is removed from the battlefield.",
+      "target": null
+    },
+    {
+      "id": "a5f5aac4bdefa413",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's melee attacks that target a **MONSTER/VEHICLE** unit can re-roll **wounds rolls**.",
+      "target": null
+    },
+    {
+      "id": "148aff9f555be5e0",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has +1 to **charge rolls**.",
+      "target": null
+    },
+    {
+      "id": "6107893512adc5ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: \n- **BOYZ**\n- **NOBZ**\n",
+      "target": null
+    },
+    {
+      "id": "21b226b017cb8a61",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when this unit is **selected to shoot**, you can use this ability. If you do, this unit's ranged attacks have +1 to **hit rolls**.\n*Place any number of Ammo Runt tokens next to the unit, removing them when this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "7212a076f5bac4f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While making a **charge move**, this unit can move through models (excluding **MONSTER/VEHICLE** models).",
+      "target": null
+    },
+    {
+      "id": "ce2073c09b5c002c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kustom Krumpa"
+        ]
+      },
+      "source": "Attacks made with this model's Kustom Krumpa weapon can re-roll **hit rolls** and **wound rolls**.",
+      "target": null
+    },
+    {
+      "id": "c0e69a21bef1ea32",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, select one friendly **BEAST SNAGGA** unit within 6\" of this unit. That unit **heals** 3 wounds.\n*Place a Grot Orderly token next to the unit, removing it when this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "cbb08a022b63e745",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is attached to a **MOUNTED** unit, this model:\n- Does not have **INFANTRY**.\n- Has **MOBILE** and **MOUNTED**.\n- Has +4\" **M**.",
+      "target": null
+    },
+    {
+      "id": "ca1257002fdad809",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **BEAST SNAGGA BOYZ**\n- **SQUIGHOG BOYZ**",
+      "target": null
+    },
+    {
+      "id": "deac6c7fce384de5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Attacks that target this unit with a **S** greater than this unit's **T** have -1 to **wound rolls**.",
+      "target": null
+    },
+    {
+      "id": "1e360ee53c5bb820",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, this unit **heals** 3 wounds.",
+      "target": null
+    },
+    {
+      "id": "d349061e92325e16",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crude Surgery"
+        ]
+      },
+      "source": "When this model uses its **Crude Surgery** ability, you can add D3 to the number of wounds **healed**.\n*Place a Grot Orderly token next to the unit, removing it when this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "a115903b1a1c83a3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **BOYZ**\n- **BREAKA BOYZ**\n- **FLASH GITZ**\n- **NOBZ**\n- **TANKBUSTAS**",
+      "target": null
+    },
+    {
+      "id": "634774925eacd10e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Squig Launchas"
+        ]
+      },
+      "source": "In your Shooting phase, when this unit has shot, select one enemy unit (excluding **MONSTER/VEHICLE** units) hit by this unit's Squig Launchas weapons. That enemy unit is **covered in Squigs** until the start of your next turn:\n- While a unit is **covered in Squigs**, that unit's attacks have -1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "d19e721e384e5f68",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit made a **charge move** this turn, this unit's attacks have +1 **D**.",
+      "target": null
+    },
+    {
+      "id": "38e82e3c2bc37c1f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is **riled up**.",
+      "target": null
+    },
+    {
+      "id": "2dc6821b16c66123",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when a unit embarked within this unit is selected to make a **disembark move**, that unit is **riled up** until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "507492a71347dc2f",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 22 **ORKS INFANTRY** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models. Each **GHAZGHKULL THRAKA** model takes up the space of 4 models.",
+      "target": null
+    },
+    {
+      "id": "84c3fa451ccc0831",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": []
+      },
+      "source": "When this unit is **selected to fight**, if this unit made a **charge move** this turn, you can use this ability. If you do, this unit's melee attacks have:\n- +1 **A** and **S**.\n- **[HAZARDOUS]**.",
+      "target": null
+    },
+    {
+      "id": "b0334ca705f07b70",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when this unit has shot, select one enemy unit hit by those attacks. That unit makes a **battle-shock roll**, with -1 to that **battle-shock roll**.",
+      "target": null
+    },
+    {
+      "id": "d9f8d7aa40adfd76",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "In your Shooting phase, when this unit is **selected to shoot**, you can select one enemy **MONSTER/VEHICLE** unit within 24\" of this unit. If you do, this unit's attacks that target that unit have:\n- +1 **AP**.\n- **[LETHAL HITS]**.",
+      "target": null
+    },
+    {
+      "id": "a761dbe9ea54a821",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent's Movement phase, when an enemy unit ends a move within 8\" of this model, units embarked within this model can make a **disembark move** using the **rapid disembark mode**.",
+      "target": null
+    },
+    {
+      "id": "f8b38ae3e4915fdf",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 12 **ORKS INFANTRY** models. It cannot transport **GHAZGHKULL THRAKA/JUMP PACK** models. Each **MEGA ARMOUR** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "10ded83b69cb2d05",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit made a **charge move** this turn, this unit's melee attacks have:\n- +1 **S** and **D**.",
+      "target": null
+    },
+    {
+      "id": "182a46b50d3853a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit made a **charge move** this turn, this model's melee attacks have:\n- +3 **A**.\n- +2 **S**.",
+      "target": null
+    },
+    {
+      "id": "6c27619a3681668e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when this unit is **selected to shoot**, you can use this ability. If you do, this model's ranged attacks have +1 to **hit rolls**.\n*Place a Boss' Ammo Runt token next to the unit, removing it when this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "64e6296980165c8e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **BOYZ**\n- **BREAKA BOYZ**\n- **NOBZ**",
+      "target": null
+    },
+    {
+      "id": "1bbf331728bf6ec6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit ends a **charge move**, you can select one enemy unit **engaged** with this unit. If you do, roll one D6 for each model in this unit **engaged** with that enemy unit:\n- For each 3+, that enemy unit suffers 1 **mortal wound**.",
+      "target": null
+    },
+    {
+      "id": "d7a77d2049ff1878",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **MEGANOBZ**",
+      "target": null
+    },
+    {
+      "id": "eadcdc9cd4be7b3d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, this unit's ranged attacks that target a **MONSTER/VEHICLE** unit have +1 to **wound rolls**.",
+      "target": null
+    },
+    {
+      "id": "5646b51480f22515",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "Models in this unit:\n- Have 5+ **InSv**.\n- Do not have **SMOKE**.",
+      "target": null
+    },
+    {
+      "id": "b7b7723cec3e13d5",
+      "kind": "characteristic:Descriptions",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "In your Movement phase, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- On a 1, this unit is **battle-shocked**.\n- Place this unit in **strategic reserves**.\n- This unit has **Deep Strike**.",
+      "target": null
+    },
+    {
+      "id": "674d3f45c35a4630",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **BEAST SNAGGA BOYZ**\n\n- **BOYZ**\n",
+      "target": null
+    },
+    {
+      "id": "ad81fa06b397557e",
+      "kind": "characteristic:Descriptions",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": []
+      },
+      "source": "In the Fight phase, when this unit is **selected to fight**, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- On a 1, this unit is **battle-shocked**.\n- This unit's melee attacks can re-roll wound rolls of 1.\n- This unit's melee attacks have **[PSYCHIC]**.",
+      "target": null
+    },
+    {
+      "id": "109f69a13d16fc0e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scavenged Shivs"
+        ]
+      },
+      "source": "- This unit is **riled up**.\n- This unit's Scavenged Shivs weapons have +1 **A**, **WS** and **S**.",
+      "target": null
+    },
+    {
+      "id": "b07943f9e6b2fd1b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gretchin"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Gretchin^^**",
+      "target": null
+    },
+    {
+      "id": "d2b2956876a38ffe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit is set up, all parts of it must be set up in a single group, in which each part is within 1\" of another part.\nAt the end of the Movement phase, each friendly **ORKS VEHICLE** within 6\" of this unit **heals** D3 wounds. Each friendly **ORKS VEHICLE** unit can only be affected by this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "c9ddc500482343a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[CLOSE-QUARTERS]"
+        ],
+        "names": []
+      },
+      "source": "While an enemy unit is **engaged** with only **FORTIFICATION** units:\n- That enemy unit can be selected as a target of ranged attacks.\n- When shooting that enemy unit, those ranged attacks have -1 to **hit rolls** (excluding **[CLOSE-QUARTERS]** attacks).\n- When that enemy unit is selected to make a **fall-back move**, if that enemy unit is only **engaged** with **FORTIFICATION** units, and that enemy unit is not **battle-shocked**, **hazard rolls** made for that enemy unit are automatically passed.",
+      "target": null
+    },
+    {
+      "id": "62417a810f07610a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent's Movement phase, when an enemy unit ends a move within 8\" of this unit, if this unit is **unengaged**, this unit can make a **normal move** of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "fa20a5e2ad4445e4",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a Normal, Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "e059def70dd5a534",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "This model does not suffer the penalty to its Hit rolls for making ranged attacks while enemy units are within Engagement Range of it.",
+      "target": null
+    },
+    {
+      "id": "3d7a7a0e19f01b58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-10 wounds remaining, subtract 6 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "de05c63842080164",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 20 ORKS INFANTRY models. Each MEGA ARMOUR or JUMP PACK model takes up the space of 2 models. GHAZGHKULL THRAKA takes up the space of 18 models. If this model is equipped with a supa-kannon, it has a transport capacity of 15 ORKS INFANTRY models.",
+      "target": null
+    },
+    {
+      "id": "40fbf97f1cc81d3f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tank Kannon",
+          "Kannon"
+        ]
+      },
+      "source": "In your Shooting phase, when this unit has shot, you can select one enemy unit hit by this unit's Tank Kannon attacks. If you do, enemy units (excluding **MONSTER/VEHICLE** units) within 3\" of that enemy unit make a **battle-shock roll**.",
+      "target": null
+    },
+    {
+      "id": "d3bb9e66e29b8960",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Mega Armour",
+          "Jump Pack",
+          "Ghazghkull Thraka"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 Orks Infantry models. Each Mega Armour, Jump Pack model takes up the space of 2 models. Each Ghazghkull Thraka model takes up the space of 4 models.",
+      "target": null
+    },
+    {
+      "id": "e961d90a66f0e93a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When an attack targets a friendly **ORKS** unit that is not **fully visible** to the attacking model because of this unit, the target has the **benefit of cover** against that attack.",
+      "target": null
+    },
+    {
+      "id": "25d3a6316156d443",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit ends a **charge move**, you can select one enemy unit **engaged**with this unit. If you do, roll one D6:\n- On a 2-5, that enemy unit suffers D3 **mortal wounds**.\n- On a 6, that enemy unit suffers 3 **mortal wounds**.",
+      "target": null
+    },
+    {
+      "id": "0d6beefbabdce346",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Ghazghkull Thraka",
+          "Mega Armour",
+          "Jump Pack"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 Orks Infantry models. It cannot transport Ghazghkull Thraka models. Each Mega Armour, Jump Pack model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "e37deecaccfdba0f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **WARBIKERS**\n",
+      "target": null
+    },
+    {
+      "id": "da87681e565560c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "While each model in this unit is within 3\" of a friendly **SPEED FREEKS** unit (excluding **WARTRAKK** units), this unit has **Lone Operative**.",
+      "target": null
+    },
+    {
+      "id": "82097e5d4f47a486",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "In your Shooting phase, when this unit has shot, select one enemy unit hit by those attacks. That enemy unit is **busted** until the end of the turn:\n- Friendly **SPEED FREEKS** units' attacks that target a **busted** unit have **[LETHAL HITS]**.",
+      "target": null
+    },
+    {
+      "id": "93c27a2e18d01533",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, you can select one **visible** enemy unit (excluding **MONSTER/VEHICLE** units) within 6\" of this unit:\n- That enemy unit cannot be targeted with the **Fire Overwatch stratagem** until the end of the turn.",
+      "target": null
+    },
+    {
+      "id": "f778f56eff6920de",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lifta-droppa",
+          "Deadly Demise"
+        ]
+      },
+      "source": "In your Shooting phase, when this unit's Lifta-droppa destroys an enemy **MONSTER/VEHICLE** model with **Deadly Demise**, that enemy model suffers a **Deadly Demise** on a roll of 3+, instead of a 6.",
+      "target": null
+    },
+    {
+      "id": "31e90cfa441d8c3f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model ends a Normal, Advance, Fall Back or Charge move, select one enemy unit within 3\" of this model and roll six D6: for each 4+, that enemy unit suffers 1 mortal wound. That enemy unit must then take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "1a4d1e6353dd7495",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Thievin’ Scavengers"
+        ]
+      },
+      "source": "While a GRETCHIN unit is within 6\" of this model, that unit’s Thievin’ Scavengers ability is successful on D6 rolls of 2+, instead of rolls of 4+.",
+      "target": null
+    },
+    {
+      "id": "4183f01ae3eb84f8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when this unit is selected to make an **advance move**, you can use this ability. If you do:\n- This unit can change that **advance roll** to a 6.\n- This unit can move through all types of model.\n- When this unit ends that **advance move**, make a **hazard roll** for each model in this unit.",
+      "target": null
+    },
+    {
+      "id": "b467765fffa1f014",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **BOYZ**\n- **BREAKA BOYZ**\n- **FLASH GITZ**\n- **MEK GUNZ**\n- **NOBZ**\n- **TANKBUSTAS**",
+      "target": null
+    },
+    {
+      "id": "eef1e65dad25856f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, models in that unit have a 4+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "804158f64df1653d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grenades"
+        ]
+      },
+      "source": "Once in each of your Shooting phases, you can target this unit with the Grenades stratagem for 0CP. After resolving this stratagem, this unit can make a Normal move of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "0edfc20030a43b97",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise"
+        ]
+      },
+      "source": "When this model is destroyed, its Deadly Demise ability inflicts mortal wounds on a D6 roll of 2+ instead of on a 6.",
+      "target": null
+    },
+    {
+      "id": "1d03757685839dde",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once in each of your Shooting phases, you can target this unit with the Grenade Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "76ce6f17d192e67c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve this model's Leadership characteristic by 1 for every 5 models in this unit.",
+      "target": null
+    },
+    {
+      "id": "b02f6b898fa52499",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Boyz",
+          "Nobz"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Boyz^^**\n- **^^Nobz^^**",
+      "target": null
+    },
+    {
+      "id": "0b6047a80c67ec6f",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stormboyz"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Stormboyz^^**",
+      "target": null
+    },
+    {
+      "id": "bd439766eb17d50c",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Squighog Boyz",
+          "Boyz"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Squighog Boyz^^**",
+      "target": null
+    },
+    {
+      "id": "a0bf313562e68eae",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Burna Boyz",
+          "Boyz",
+          "Flash Gitz",
+          "Kommandos",
+          "Lootas",
+          "Mek Gunz",
+          "Gunz",
+          "Tankbustas"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Burna Boyz^^**\n- **^^Flash Gitz^^**\n- **^^Kommandos^^**\n- **^^Lootas^^**\n- **^^Mek Gunz^^**\n- **^^Tankbustas^^**",
+      "target": null
+    },
+    {
+      "id": "2f7faef63fb8dbe6",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warbikers"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Warbikers^^**",
+      "target": null
+    },
+    {
+      "id": "fd677e8f06a1b3cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time this model attacks with a Psychic weapon, until the end of the phase, improve the Attacks, Strength and Damage characteristics of that weapon by 1 for every 5 models in this unit. While this unit contains 10 or more models, those weapons have the **[HAZARDOUS]** ability.",
+      "target": null
+    },
+    {
+      "id": "ed0d147be1c19ca1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Boyz",
+          "Nobz",
+          "Gretchin"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Boyz^^**\n- **^^Nobz^^**\n- **^^Gretchin^^**",
+      "target": null
+    },
+    {
+      "id": "f59b555bda649e22",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators",
+          "Stealth"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Infiltrators and Stealth abilities.",
+      "target": null
+    },
+    {
+      "id": "194558e6da239364",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gretchin"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Gretchin^^**",
+      "target": null
+    },
+    {
+      "id": "e0aadfbf26e40551",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit is selected to make an **advance/fall-back move**, that move does not prevent this unit from being **eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "e266e544e6117f29",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when this unit is **selected to move**, if this unit is **unengaged**, this unit can make a **pulse jet move**.",
+      "target": null
+    },
+    {
+      "id": "6c2905ee4bb3291e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, if this unit is **unengaged**, you can place this unit in **strategic reserves**.",
+      "target": null
+    },
+    {
+      "id": "071e4cb9cfe2b40e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Throttlerokkit Shokka Engine"
+        ]
+      },
+      "source": "In your Command phase, select one Throttlerokkit Shokka Engine ability. This unit has that ability until the start of your next Command phase.",
+      "target": null
+    },
+    {
+      "id": "6967257591ee7635",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: \n- **BOYZ**\n- **BREAKA BOYZ**\n- **NOBZ**",
+      "target": null
+    },
+    {
+      "id": "3c3fade3c75ce99a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "If this unit is **riled up**, this unit's ranged attacks have **[SUSTAINED HITS 1]**.",
+      "target": null
+    },
+    {
+      "id": "4bbc3cb54a77e284",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blitzkannon"
+        ]
+      },
+      "source": "In your Shooting phase, if this unit's Blitzkannon weapon targets a unit (excluding **MONSTER/VEHICLE** units), that weapon has +6 **A**.",
+      "target": null
+    },
+    {
+      "id": "4b75c48a5be9e823",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "- This unit has **Deep Strike**\n- This unit's ranged attacks have **[IGNORES COVER]**.",
+      "target": null
+    },
+    {
+      "id": "7101a5e04111eb06",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent's Movement phase, when an enemy unit ends a move within 8\" of this unit, if this unit is **unengaged**, this unit can:\n- Make a **normal move** of up to D6\".\n- <ins>Or:</ins> If this unit is **riled up**, make a **normal move** of up to 5\".",
+      "target": null
+    },
+    {
+      "id": "985389d65d47a540",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gretchin"
+        ]
+      },
+      "source": "When this unit becomes **battle-shocked**, if this unit contains 4+ Gretchin models, you can roll one D3:\n- That number of Gretchin models in this unit are **destroyed**.\n- That unit is no longer **battle-shocked**.",
+      "target": null
+    },
+    {
+      "id": "6ea4ad5afdfccbfb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: \n- **GRETCHIN**\n",
+      "target": null
+    },
+    {
+      "id": "2d0b7a7fef59965c",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 12 **ORKS INFANTRY** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models. Each **GHAZGHKULL THRAKA** model takes up the space of 4 models.",
+      "target": null
+    },
+    {
+      "id": "df8063739c336722",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS** model only. (Once per battle, per army) In your Movement phase, you can use this ability. If you do, this unit is **riled up** until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "c36a23bd4dda57ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS** model only. If this unit made a **charge move** this turn, this model's melee attacks have +1 **AP**.",
+      "target": null
+    },
+    {
+      "id": "6582d115677c81c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS** model only. When this unit is selected to make a **fall-back move**, that **fall-back move** does not prevent this unit from being **eligible to shoot/declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "f1a8fdd3de2c3a79",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS** model only. This unit has +2\" **M**.",
+      "target": null
+    },
+    {
+      "id": "dda7de344ea1ae0d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BEASTBOSS ON SQUIGOSAUR** model only. This model has +1 **T**.",
+      "target": null
+    },
+    {
+      "id": "6d6246fd8a58f762",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BEAST SNAGGA** model only. When this unit is selected to make a **fall-back move**, that **fall-back move** does not prevent this unit from being **eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "693951ac090c75d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BIG MEK/MEK** model only. This model has +2\" **M**.",
+      "target": null
+    },
+    {
+      "id": "411c9db8f8c02a3e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "**BIG MEK** model only. While this model is within 3\" of a friendly **ORKS WALKER** unit (excluding **BIG MEK** units):\n- This model has **Lone Operative**.\n- In your Shooting phase, you can select one friendly **ORKS WALKER** unit within 3\" of this model. That unit's attacks can re-roll **hit rolls** of 1 until the end of the turn.",
+      "target": null
+    },
+    {
+      "id": "59afe559ab5818f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS INFANTRY** model only. This model's melee attacks have:\n- +1 **A**.\n- <ins>Or:</ins> If this unit has 11+, +2 **A**.",
+      "target": null
+    },
+    {
+      "id": "ee46fe8a6292cace",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "**MEGA ARMOUR** model only. This unit (excluding **VEHICLE** units) has **Deep Strike**.",
+      "target": null
+    },
+    {
+      "id": "bb52a647402a297d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**DEFFKILLA WARTRIKE** model only. This unit can re-roll **charge rolls**.",
+      "target": null
+    },
+    {
+      "id": "714c032e8dcd35ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators",
+          "Stealth"
+        ]
+      },
+      "source": "**BIG MEK/WARBOSS INFANTRY* model only. While this unit is part of an attached unit, this model has:\n- **Infiltrators**.\n- **Stealth**.",
+      "target": null
+    },
+    {
+      "id": "861c8bb9ac9250e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer attempts to operate a closed Hatchway, your opponent cannot try to prevent it. In addition, each time the bearer opens a Hatchway, each enemy unit within 6\" of that Hatchway and wholly on the opposite side of it from the bearer must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "73c37035b60a3ef4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Meganobz",
+          "Deep Strike"
+        ]
+      },
+      "source": "In the Deploy Armies step, select one **^^Meganobz^^** unit from your army. Until the end of the battle, models in that unit have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "0bd7fb8a0bfa5a76",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warboss",
+          "Nobz",
+          "Meganobz"
+        ]
+      },
+      "source": "**^^Warboss^^** model only. In your Command phase, you can select one **^^Nobz^^** or **^^Meganobz^^** unit from your army (excluding Battle-shocked units) that is within 6\" of the bearer and is within range of an objective marker. If there are no enemy models within range of that objective marker, it is Secured by your army.",
+      "target": null
+    },
+    {
+      "id": "daac1a784c1f7421",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]",
+          "[SUPA-HAZARDOUS]"
+        ],
+        "names": []
+      },
+      "source": "**ORKS INFANTRY** model only (excluding **WEIRDBOY** models). This model’s ranged attacks have:\n- **[ANTI-INFANTRY 4+}**\n\n- **[DEVASTATING WOUNDS]**.\n- **[SUPA-HAZARDOUS]**.",
+      "target": null
+    },
+    {
+      "id": "c9b397e8db84df7c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUPA-HAZARDOUS]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Each time a unit is selected to shoot, after that unit has resolved all of its attacks, make two **hazard rolls** for that unit for each **[SUPA-HAZARDOUS]** weapon you selected in the Select Weapons step.",
+      "target": null
+    },
+    {
+      "id": "7355e3b6f919f851",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[TORRENT]"
+        ],
+        "names": []
+      },
+      "source": "**BIG MEK/BIGBOSS/WARBOSS** model only. This unit's ranged attacks (excluding **[TORRENT]** attacks) have +3\" **R**.",
+      "target": null
+    },
+    {
+      "id": "cfd8334893ddb14d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BIG MEK/WARBOSS INFANTRY** model only. When both players have deployed their armies, you can redeploy up to three friendly **ORKS INFANTRY** units. When doing so, you can set those units up in **strategic reserves**, regardless of how many units are already in **strategic reserves**.",
+      "target": null
+    },
+    {
+      "id": "aeea6f8d1cbdb336",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BIG MEK** model only. This unit is **riled up**.",
+      "target": null
+    },
+    {
+      "id": "73aa3f1811c760d4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**WARBOSS** model only. This model's melee attacks have +1 **D**.",
+      "target": null
+    },
+    {
+      "id": "77a274306d17d2a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**INFANTRY WARBOSS** model only. (Once per battle, per army) At the end of phase in which this model is **destroyed**, roll one D6:\n- On a 2+, set this model back up on the battlefield as close as possible to where it was **destroyed**, **unengaged**, with 3 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "3f2ec5d14a6278af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "**WARBOSS** model only. A **TRANSPORT** unit (excluding **WALKER** units) this unit is embarked within has:\n- +2\" **M**.\n- 5+ **InSv**.",
+      "target": null
+    },
+    {
+      "id": "bc8e8ae9074795ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**WARBOSS** model only. This model can re-roll **hit rolls** of 1.",
+      "target": null
+    },
+    {
+      "id": "8b343080b393d8a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**WARBOSS** model only. (Once per battle, per army) At the end of your opponent's Movement phase, if this unit is **unengaged**, this unit can make a **normal move** of:\n- Up to D6\".\n- If this unit is **riled up**, you can re-roll that D6.",
+      "target": null
+    },
+    {
+      "id": "ec3157d24c5e9f72",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise"
+        ]
+      },
+      "source": "**ORKS PSYKER** model only. This model:\n- Has **psyker level 2**.\n- Has **Deadly Demise D6**.\n- Can re-roll **psychic rolls**.",
+      "target": null
+    },
+    {
+      "id": "dcf4fb9929b078bc",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Friendly **ORKS** units' melee attacks have **[SUSTAINED HITS 1]**.",
+      "target": null
+    },
+    {
+      "id": "15d04cff39a79723",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **BEAST SNAGGA** units' attacks that targets a **MONSTER/VEHICLE** unit have +1 **AP**.",
+      "target": null
+    },
+    {
+      "id": "1fe6399e18eeffa0",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "+1 **A**",
+      "target": null
+    },
+    {
+      "id": "8b21407aaf92cd21",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "+2 **S**",
+      "target": null
+    },
+    {
+      "id": "699537156bf381c2",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "+1 **AP**",
+      "target": null
+    },
+    {
+      "id": "63d452c5abd3bd38",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase or the Fight phase, when a friendly **ORKS WALKER** unit (excluding **TITANIC** units) is **selected to attack**, you can use this ability. If you do, roll either one D6 or two D6 (keep re-rolling duplicate results). This unit's attacks have the relevant rule(s).\n\nIf you rolled two D6, when this unit has attacked, this unit makes one **hazard roll**.",
+      "target": null
+    },
+    {
+      "id": "3d388825d94ced54",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]",
+          "[LETHAL HITS: non-MONSTER/VEHICLE]"
+        ],
+        "names": []
+      },
+      "source": "- Friendly **BOYZ** units' melee attacks have **[SUSTAINED HITS 1]**.\n- If a friendly **ORKS INFANTRY** unit made a **charge move** this turn, that unit's melee attacks have **[LETHAL HITS: non-MONSTER/VEHICLE]**.",
+      "target": null
+    },
+    {
+      "id": "59bdb9fb0d0306c6",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Friendly **MEGANOBZ/NOBZ** units' melee attacks have **[SUSTAINED HITS 1]**.",
+      "target": null
+    },
+    {
+      "id": "1d994d9de5899416",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "- Friendly **WARBIKERS** units have **BATTLELINE**.\n- When a friendly **SPEED FREEKS** unit is selected to make an **advance/fall-back move**:\n    - That unit's ranged attacks have **[ASSAULT]** until the end of the turn.\n    - That move does not prevent that unit from being **eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "fca267c0053dfefb",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **STORMBOYZ** units have **BATTLELINE**.\n- When a friendly **BOYZ/KOMMANDOS/STORMBOYZ** unit is selected to make an **fall‑back move**, that **fall-back move** does not prevent that unit from being **eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "ba8293c611a303b4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Beastboss",
+          "Big Mek",
+          "Mek",
+          "Big Mek with Shokk Attack Gun",
+          "Shokk Attack Gun",
+          "Boss Snikrot",
+          "Infantry",
+          "Warboss",
+          "Painboss",
+          "Painboy",
+          "Weirdboy",
+          "Zodgrod Wortsnagga",
+          "Beast Snagga Boyz",
+          "Boyz",
+          "Burna Boyz",
+          "Flash Gitz",
+          "Gretchin",
+          "Kommandos",
+          "Nobz",
+          "Stormboyz"
+        ]
+      },
+      "source": "You can include up to two of the following units (duplicates are not allowed):\n- **^^Beastboss^^**\n- **^^Big Mek^^**\n- **^^Big Mek with Shokk Attack Gun^^**\n- **^^Boss Snikrot^^**\n- **^^Infantry Warboss^^**\n- **^^Mek^^**\n- **^^Painboss^^**\n- **^^Painboy^^**\n- **^^Weirdboy^^**\n- **^^Wurrboy^^**\n- **^^Zodgrod Wortsnagga^^**\n\nYou can include up to three of each of the following units:\n- **^^Beast Snagga Boyz^^** (10 models)\n- **^^Boyz^^** (10 models)\n\nYou can include up to one of each of the following units:\n- **^^Burna Boyz^^** (5 or 10 models)\n- **^^Flash Gitz^^** (5 or 10 models)\n- **^^Gretchin^^** (11 models)\n- **^^Kommandos^^** (10 models)\n- **^^Nobz^^** (5 models)\n- **^^Stormboyz^^** (5 or 10 models)",
+      "target": null
+    },
+    {
+      "id": "4ae079645a4cf5fa",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Big Mek",
+          "Mek",
+          "Shokk-boosta",
+          "Boss Snikrot",
+          "Infiltrator",
+          "Boyz",
+          "Kommandos",
+          "Stormboyz",
+          "Deep Strike",
+          "Full Throttle",
+          "Weirdboy",
+          "Waaagh!",
+          "Zodgrod Wortsnagga"
+        ]
+      },
+      "source": "- The **^^Big Mek^^** model loses the Shokk-boosta ability.\n- The **^^Boss Snikrot^^** model loses the Kunnin' Infiltrator ability.\n- The **^^Boyz^^** unit loses the Get Da Good Bitz ability.\n- The **^^Kommandos^^** unit loses the Sneaky Gitz and Bomb Squig abilities.\n- The **^^Stormboyz^^** unit loses the Deep Strike and Full Throttle abilities.\n- The **^^Weirdboy^^** model loses the Waaagh! Energy and Da Jump abilities.\n- The **^^Wurrboy^^** model loses the Unstable Oracle ability.\n- The **^^Zodgrod Wortsnagga^^** model loses the Special Dose ability.",
+      "target": null
+    },
+    {
+      "id": "5b8b18a553c9ee3c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gretchin",
+          "Kommandos"
+        ]
+      },
+      "source": "- Do not split **^^Gretchin^^** units into separate units in the Form Boarding Squads step.\n- When splitting a **^^Kommandos^^** unit, select on of the resulting Boarding Squads to gain the Distraction Grot token (if equipped with one). The Boarding Squad without the Distraction Grot token loses the Distraction Grot ability.",
+      "target": null
+    },
+    {
+      "id": "b8b33d7a671739da",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grots"
+        ]
+      },
+      "source": "Each time an attack targets an **^^Orks^^** unit from your army (excluding **^^Grots^^** units), if the Strength characteristic of that attack is greater than the Toughness characteristic of that **^^Orks^^** unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "35cc86914d8a71e5",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Big Mek in Mega Armour",
+          "Mek",
+          "Mega Armour",
+          "Infantry",
+          "Warboss",
+          "Warboss in Mega Armour",
+          "Meganobz",
+          "Nobz"
+        ]
+      },
+      "source": "You can include up to two of the following units (duplicates are not allowed):\n- **^^Big Mek in Mega Armour^^**\n- **^^Infantry Warboss^^** (excluding **^^Warboss in Mega Armour^^**)\n- **^^Warboss in Mega Armour^^**\n\nYou can include up to two of each of the following units:\n- **^^Meganobz^^** (3 models)\n- **^^Nobz^^** (5 or 10 models)",
+      "target": null
+    },
+    {
+      "id": "e507af2810b6f614",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Big Mek in Mega Armour",
+          "Mek",
+          "Mega Armour",
+          "Meganobz"
+        ]
+      },
+      "source": "- The **^^Big Mek in Mega Armour^^** model loses the Fix Dat Armour Up ability.\n- The **^^Meganobz^^** unit loses the Krumpin' Time ability.",
+      "target": null
+    },
+    {
+      "id": "b37acb45bafbf7c3",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, Desperate Escape tests taken for **^^Orks^^** models from your army are automatically passed and each time an **^^Orks^^** unit from your army makes a Normal, Advance or Fall Back move, it can move through other models as if they were not there, provided those other models have a lower Toughness characteristic than it.",
+      "target": null
+    },
+    {
+      "id": "caaa20398cf4b30f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- Friendly **WAGON** units can re-roll **charge rolls**.\n- When a friendly **WAGON** unit is selected to make an **advance move**, that unit can change **advance rolls** to a 6.",
+      "target": null
+    },
+    {
+      "id": "5082d0cfcfde3f6b",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- Friendly **GRETCHIN** units have **BATTLELINE**.\n- When a friendly **GRETCHIN** unit is selected to make an **advance/fall-back move**, that move does not prevent this unit from being **eligible to start an action**.",
+      "target": null
+    },
+    {
+      "id": "2dbdc7dae59fafa1",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "Friendly **ORKS INFANTRY** units’ ranged attacks have **[ASSAULT]**.\n- While this unit is **riled up**, +3\" **R**.",
+      "target": null
+    },
+    {
+      "id": "55b54fa60e1df36d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when a friendly **BREAKA BOYZ/FLASH GITZ/TANKBUSTAS** unit is **selected to shoot**, if any of the following apply, that unit's attacks can re-roll **hit rolls** of 1:\n- That unit is within range of an **objective**.\n- The target of that attack is within range of an **objective**.",
+      "target": null
+    },
+    {
+      "id": "9ad71bf9ef4def7e",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "The target unit has 4+ **InSv** until your unit has shot.",
+      "target": null
+    },
+    {
+      "id": "6f9cce9282c40817",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Select one other enemy unit within 3\" of the target. That unit suffers D3 **mortal wounds**.",
+      "target": null
+    },
+    {
+      "id": "56d9c68c1db61cb4",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Those attacks have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "dab25df76b722714",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The target unit has **FLY**, and cannot have the **benefit of cover**, until your unit has shot.",
+      "target": null
+    },
+    {
+      "id": "32b0698f75e50255",
+      "kind": "characteristic:Button Effect",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The target unit has -1 **T** until your unit has shot.",
+      "target": null
+    },
+    {
+      "id": "639bbd1b6d893789",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when all of a friendly **BIG MEK/MEK GUNS/MORKANAUT/WAZBOM BLASTAJET** unit's ranged attacks target a single enemy unit: roll one D6:\n\n",
+      "target": null
+    },
+    {
+      "id": "8cd79d929242d5ff",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- Friendly **ORKS AIRCRAFT** do not count towards the combined points value of your **strategic reserves** units.\n- While a friendly **ORKS AIRCRAFT/DEFFKOPTAS** unit is **riled up**, this unit's ranged attacks have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "b3465691d915aec1",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When a friendly **WARBOSS** model is **destroyed**, if this unit has not been **selected to fight** this phase, roll one D6, with +1 to the roll if your unit is **riled up**:\n- On a 3+, do not remove this **WARBOSS** model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), this **WARBOSS** model is removed from the battlefield.",
+      "target": null
+    },
+    {
+      "id": "e93b8b2cada6cf49",
+      "kind": "characteristic:Descriptions",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "At the start of the Fight phase, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- On a 1, this unit is **battle-shocked**.\n- This unit has **Fights First**.",
+      "target": null
+    },
+    {
+      "id": "485dd4a20ed3ba39",
+      "kind": "characteristic:Descriptions",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- One a 1, this unit is **battle-shocked**.\n- Select one enemy unit (excluding **MONSTER/VEHICLE** units) within 12\" of this unit. That enemy unit makes a **battle-shock roll**, with -1 from that **battle-shock roll** for every 10 models in this unit.",
+      "target": null
+    },
+    {
+      "id": "5c7e1784fcbe45ca",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": []
+      },
+      "source": "Friendly **ORKS PSYKER** models' **[PSYCHIC]** attacks have:\n- +1 **S**.\n- +1 **S** for every 5 models in this unit (or embarked within this model).\n\n\nFriendly **ORKS PSYKER** models have the **Roar of Mork** and **Visions of Violence psychic abilities** ",
+      "target": null
+    },
+    {
+      "id": "367dbc383557a9be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Mek",
+          "Range",
+          "Crusade Relic"
+        ]
+      },
+      "source": "**^^Mek^^** model only.\n\n■ Add 1 to the Ballistic Skill and Strength characteristics of the bearer's ranged weapons.\n■ Add 6\" to the Range characteristic of the bearer's ranged weapons.\n\nEach time the bearer's unit is selected to shoot, if that unit is not within Engagement Range of one or more enemy units, the bearer can use this Crusade Relic. If it does, roll one D6:\n\n■ On a 1, the bearer's unit cannot make ranged attacks this phase.\n■ On a 2-3, until the end of the phase, the bearer's ranged weapons have the **[HAZARDOUS]** ability.\n■ On a 4+, until the end of the phase, the bearer's ranged weapons have the **[SUSTAINED HITS 1]** ability, and ranged attacks made by the bearer score a Critical Hit on a successful unmodified Hit roll of 5+.",
+      "target": null
+    },
+    {
+      "id": "510268563b5158e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weirdboy",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Weirdboy^^** or **^^Wurrboy^^** model only. Each time the bearer makes a Psychic Attack, add 1 to the Hit roll and if that attack destroys one or more enemy models, the bearer regains up to 2 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "1d709a65a059c39e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Infantry",
+          "Waaagh!boss",
+          "Mounted",
+          "Extra Attacks",
+          "Waaagh!"
+        ]
+      },
+      "source": "**^^Infantry Waaagh!boss**^^ or **^^Mounted Waaagh!boss**^^ model only. Select one melee weapon equipped by the bearer (excluding Extra Attacks weapons). Add 1 to the Strength and Armour Penetration characteristics of that weapon. In addition, each time you call a Waaagh!, if the bearer is on the battlefield, melee weapons equipped by friendly **^^Orks^^** models have the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "a7fd049e8d302368",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Leadership characteristic of the bearer by 1. Once the bearer has participated in at least three battles during which its unit destroyed one or more **^^Adeptus Astartes^^** units, the bearer gains the 'Elmet Rack ability.",
+      "target": null
+    },
+    {
+      "id": "08890cf241f49474",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model's unit takes a Battle-shock or Leadership test, you can ignore any or all modifiers to that test.",
+      "target": null
+    },
+    {
+      "id": "b4bb798040502014",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Mounted"
+        ]
+      },
+      "source": "**^^Infantry^^* or **^^Mounted^^** model only.\n\n■ Add 1 to the bearer's Wounds characteristic.\n■ Each time an attack is allocated to the bearer, worsen the Armour Penetration of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "692891bfee6dea1e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[MELTA 3]"
+        ],
+        "names": []
+      },
+      "source": "Select one ranged weapon equipped by the bearer. That weapon gains the **[MELTA 3]** ability.",
+      "target": null
+    },
+    {
+      "id": "00c96b27e2b25580",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mounted",
+          "Waaagh!boss",
+          "Fights First"
+        ]
+      },
+      "source": "**^^Mounted Waaagh!boss**^^ model only. Add 2\" to the Move characteristic of models in the bearer's unit, and models in the bearer's unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "26ff138169055936",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "At the start of the Fight phase, you can select one enemy **^^Infantry^^** unit within Engagement Rage of the bearer and roll one D6: on a 2+, that enemy unit suffers 3 mortal wounds and must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "57899e45b9c5c8cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Select one melee weapon equipped by the bearer. That weapon gains the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "9cb536b2df0356ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "- The bearer has a 4+ invulnerable save.\n- Add 1 to the bearer's Wounds characteristic.\n- Each time the bearer's unit ends a Charge move, select one enemy unit within Engagement Range of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "b4f2ea7058550bd1",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Orks",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "2b30178b8798ce9d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "d48ec7f473d6d068",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of the battle, if this model part of your Crusade army and is not destroyed, you can ignore one failed Out of Action test taken for an ORKS VEHICLE unit from your Crusade army - that test is treated as having been passed instead.",
+      "target": null
+    },
+    {
+      "id": "c376834a9b4f47d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Shooting phase, when this unit is selected to shoot, it can use this ability. If it does, after it has shot, select one enemy unit hit by one or more of those attacks; that enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "ecb4f254742d4623",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Waaagh!"
+        ]
+      },
+      "source": "While the Waaagh! is active for your army, each time a model in this unit makes a melee attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "d2be08c66134800f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the Heroic Intervention Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "3d177f324d0eac46",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Engagement Range of one or more units with this ability, worsen that unit's Leadership characteristic by 1.",
+      "target": null
+    },
+    {
+      "id": "ffd8aa957a360b4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of your Command phase, this unit can use this ability. If it does, until the end of the turn, add 1 to the Objective Control characteristics of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "43ea08b6b8c3971b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of the battle, if this model was part of your Crusade army and is not destroyed, you can ignore one failed Out of Action test taken for an ORKS unit from your Crusade army (excluding VEHICLES) - that test is treated as having been passed instead.",
+      "target": null
+    },
+    {
+      "id": "70eed8a4470521d8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit gains the SMOKE keyword and, once per battle, you can target this unit with the Smokescreen Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "6907beffb3dcaf32",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- Add 2\" to the Move characteristic of models in this unit.\n- Once per battle, you can target this unit with the Smokescreen Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "e0b848c9dc4ec19c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Trukk",
+          "Battlewagon"
+        ]
+      },
+      "source": "**^^Trukk^^** or **^^Battlewagon^^** model only. Add 1 to the Toughness characteristic of this model, and this model has a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "08b2ec09da728eb3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]",
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "Each time this unit is selected to shoot, you can roll one D6; on a 1, until the end of the phase, ranged weapons equipped by models in this unit have the [HAZARDOUS] ability; on a 2-5, until the end of the phase, improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1; on a 6, until the end of the phase, improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1 and those weapons have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "887bb39420dd89bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, each time an enemy unit is selected to fight, if this unit was selected as the target of one or more of the attack unit's attacks, after those attacks have been resolved, roll one D6: on a 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "63e0a386b071a6a1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Walker",
+          "Killa Kans"
+        ]
+      },
+      "source": "**^^Walker^^** model only (excluding **^^Killa Kans^^**).\n\n- Add 2\" to this model's Move characteristic.\n- Add 1 to Advance and Charge rolls made for this model.",
+      "target": null
+    },
+    {
+      "id": "1e23c70f926d33e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hordeboss",
+          "Jump Pack",
+          "Fly",
+          "Deep Strike",
+          "Stormboyz"
+        ]
+      },
+      "source": "**^^Hordeboss^^** only. Change this model's Move characteristic to 12\", add the **^^Jump Pack^^** and **^^Fly^^** keywords, and it gains the Deep Strike ability. Replace the list of units this model can be attached to: **^^Stormboyz^^**",
+      "target": null
+    },
+    {
+      "id": "51234259ae272fbb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hordeboss",
+          "Warphead",
+          "Infantry",
+          "Mounted",
+          "Warbikers"
+        ]
+      },
+      "source": "**^^Hordeboss^^** or **^^Warphead^^** only. Change this model's Move characteristic to 12\", its Toughness and Wounds characteristic to 6, its Save characteristic to 4+, and it is equipped with 1 twin dakkagun in addition to the weapons you choose in Step 4. Remove the **^^Infantry^^** keyword, add the **^^Mounted^^**keyword, and replace the list of units this model can be attached to: **^^Warbikers^^**.",
+      "target": null
+    },
+    {
+      "id": "cbff82de8ecc026b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hordeboss",
+          "Mek",
+          "Burna Boyz",
+          "Boyz",
+          "Flash Gitz",
+          "Kommandos",
+          "Mek Gunz",
+          "Gunz",
+          "Tankbustas"
+        ]
+      },
+      "source": "**^^Hordeboss^^** only. Add the **^^Mek^^** keyword. Replace the list of units this model can be attached to: **^^Burna Boyz^^**, **^^Flash Gitz^^**, **^^Kommandos^^**, **^^Lootaz^^**, **^^Mek Gunz^^**, **^^Tankbustas^^**.",
+      "target": null
+    },
+    {
+      "id": "3ba12f7bfdd71d42",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hordeboss",
+          "Warphead",
+          "Infantry",
+          "Mounted",
+          "Beast Snagga",
+          "Squighog Boyz",
+          "Boyz"
+        ]
+      },
+      "source": "**^^Hordeboss^^** or **^^Warphead^^** only. Change this model's Move characteristic to 10\", its Toughness characteristic  to 7, its Save characteristic to 4+, its Wounds characteristic to 6, and it is equipped with 1 squig jaws in addition to the weapons you choose in Step 4. Remove the **^^Infantry^^** keyword, add the **^^Mounted^^** and **^^Beast Snagga^^** keywords, and replace the list of units this model can be attached to: **^^Squighog Boyz^^**.",
+      "target": null
+    },
+    {
+      "id": "1759a0fd195111a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select on enemy unit hit by one or more of those attacks; that unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "03975b9cc4963fa2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hordeboss",
+          "Upstart Gretchin",
+          "Gretchin",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "**^^Hordeboss^^** or **^^Upstart Gretchin^^** only. While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "ee4fe8c6b2f3c18d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hordeboss"
+        ]
+      },
+      "source": "**^^Hordeboss^^** only. While the bearer is leading a unit, models in that unit have a 4+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "231f65ddb1465e22",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Upstart Gretchin",
+          "Gretchin"
+        ]
+      },
+      "source": "**^^Upstart Gretchin^^** only. While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "9e3a086c14d081dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hordeboss"
+        ]
+      },
+      "source": "**^^Hordeboss^^** only. While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "149bccdf7d6234f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warphead",
+          "Psyker"
+        ]
+      },
+      "source": "**^^Warphead^^** only. In your opponent's Command phase, you can select one enemy unit within 18\" of and visible to this Psyker and roll one D6: on a 1, this unit suffers D3 mortal wounds; on a 2+, until the start of your opponent's next Command phase, that enemy unit is confrazzled. While a unit is confrazzled, each time a Battle-shock or Leadership test is taken for it, subtract 2 from that test.",
+      "target": null
+    },
+    {
+      "id": "be53e1e708d660bd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**NOBZ** unit only. When an enemy unit **engaged** with this unit is selected to make a **fall-back move**:\n- That enemy unit must select the **desperate escape** mode.\n- If this unit is **riled up**, that enemy unit has -1 to the **hazard rolls** made for that **desperate escape**.",
+      "target": null
+    },
+    {
+      "id": "7ec4109816aadf54",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BOYZ** unit only. This unit has 4+ **Sv**.",
+      "target": null
+    },
+    {
+      "id": "74368865a9b7d17d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "**GRETCHIN** unit only. While this unit is not embarked, this unit has Scouts 6\".",
+      "target": null
+    },
+    {
+      "id": "10b55c47679c007b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**GRETCHIN** unit only. This unit has -3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "b8570d93cc68a797",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS: non-MONSTER/VEHICLE]"
+        ],
+        "names": []
+      },
+      "source": "**KOMMANDOS/STORMBOYZ** unit only. This unit's melee attacks have **[LETHAL HITS: non-MONSTER/VEHICLE]**.",
+      "target": null
+    },
+    {
+      "id": "f82ce513424894e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[RAPID FIRE 1]"
+        ],
+        "names": [
+          "Snazzgun"
+        ]
+      },
+      "source": "**FLASH GITZ** unit only. This unit's Snazzgun weapons have **[RAPID FIRE 1]**.",
+      "target": null
+    },
+    {
+      "id": "0acccf9449b9fb17",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BIG MEK WITH SHOKK ATTACK GUN** model only. When this unit has shot, select one enemy unit hit by those attacks. That unit is **infested with Snotlings** until the start of your next turn.\n- While an enemy unit is **infested with Snotlings**, that unit has -1 to **leadership rolls**.",
+      "target": null
+    },
+    {
+      "id": "ad69740a58fd9d18",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[TORRENT]"
+        ],
+        "names": [
+          "Shokk Attack Gun"
+        ]
+      },
+      "source": "**BIG MEK WITH SHOKK ATTACK GUN** model only. In your Shooting phase, when this unit is **selected to shoot**, you can roll one D6:\n- On a 1, this model's Shokk Attack Gun weapon has **[TORRENT]**, and when this unit has shot, this model is **destroyed**.\n- On a 2-5, this model's Shokk Attack Gun weapon has +1 **A**.\n- One a 6, this model's Shokk Attack Gun wepon has **SUSTAINED HITS 2]**.",
+      "target": null
+    },
+    {
+      "id": "a84b74eff297efef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "**WAGON** unit only. While a **BIG MEK** model is embarked within this unit:\n- This unit's ranged attacks have **[IGNORES COVER]**.\n- If this unit is **riled up**, this unit's ranged attacks have **[SUSTAINED HITS 1]**.",
+      "target": null
+    },
+    {
+      "id": "200df88816c06b42",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**WAGON** unit only. While a **WARBOSS** model is embarked within this unit, this unit has that **WARBOSS** model's **Intimidating Motivation/Keep Huntin'** ability.",
+      "target": null
+    },
+    {
+      "id": "40e924e52fe98592",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**SPEED FREEKS** unit only (excluding **AIRCRAFT** units). When an attack targets a unit that is not **fully visible** to the attacking model because of a model in this unit, the target has the **benefit of cover** against that attack.",
+      "target": null
+    },
+    {
+      "id": "9a04ba756d94dabd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS AIRCRAFT** unit only. In your first Movement phase, this unit can make an **ingress move**.",
+      "target": null
+    },
+    {
+      "id": "987b7af36a4eeef9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS AIRCRAFT** unit only.\n- This unit has **CHARACTER**.\n- When this unit ends an **ingress move**, each friendly **ORKS AIRCRAFT/DEFFKOPTAS** unit within 6\" of this unit is **riled up** until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "b6b9891b09b5a2f0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Markerlight"
+        ]
+      },
+      "source": "If your Army Faction is **T’AU EMPIRE**, at the start of your Shooting phase you can select units from your army with this ability to become Observer units.\n\nDuring your Shooting phase, for each Observer unit from your army that has not been selected to shoot this phase and is eligible to shoot (excluding **FORTIFICATION** and Battle-shocked units) select one enemy unit that is visible to be marked as their Spotted unit until the end of the phase. Each enemy unit can only be marked as a Spotted unit once per phase.\n\nUnits from your army with the For the Greater Good ability (excluding Observer units) are Guided units while targeting one or more Spotted units.\n\nUntil the end of the phase, each time a model from your army in a Guided unit makes an attack that targets a Spotted unit, improve the Ballistic Skill characteristic of that attack by 1 and, if the Spotted unit was marked by an Observer unit that has the Markerlight keyword, that attack has the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "41d616e341c56b4e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes a ranged attack, you can ignore any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "23ce272e31d91f4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer’s unit is eligible to shoot in a turn in which it Fell Back, but when doing so only models equipped with this wargear can make ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "0cd8f8de1794cd04",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is selected to shoot, you can re-roll one Hit roll or you can re-roll one Wound roll when resolving those attacks.",
+      "target": null
+    },
+    {
+      "id": "4c6293c7e4fd74d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **prey‑marked**:\n- While a unit is **prey‑marked**, that unit has +3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "aa646a6b1f0e9332",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When a friendly **KROOT/VESPID STINGWINGS** unit within 6\" of this unit has shot, those attacks do not prevent that unit from being **hidden**.",
+      "target": null
+    },
+    {
+      "id": "4ec3e014dd394c6b",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "T'au Empire"
+        ]
+      },
+      "source": "Units from your army with the For the Greater Good ability lose that ability and **^^T'au Empire^^** units from your army gain this one.\n\nEach time a model in this unit makes a ranged attack, it can ignore other models in this unit for the purposes of determining visibility. In addition, this unit is eligible to perform the Set Overwatch Tactical Manoeuvre in a turn in which it Advanced or Fell Back.",
+      "target": null
+    },
+    {
+      "id": "33c4ab9a6f6d2d27",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model makes a ranged attack that targets the bearer’s unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d980f5a7de3c96cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Markerlight"
+        ]
+      },
+      "source": "The bearer’s unit has the **^^Markerlight^^** keyword and can act as an Observer unit for another unit even if it Advanced this turn.",
+      "target": null
+    },
+    {
+      "id": "79028c999004901e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the bearer’s Wounds characteristic.",
+      "target": null
+    },
+    {
+      "id": "faa9d2be6a6a8796",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "564511c799aa71fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly **^^T’au Empire^^** unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "d7482044cd542d0e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets the bearer, subtract 1 from the Wound roll.",
+      "target": null
+    }
+  ]
+}

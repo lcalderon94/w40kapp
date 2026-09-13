@@ -1,0 +1,2658 @@
+{
+  "batch": 13,
+  "units": [
+    {
+      "id": "b815553e6c345105",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your Shooting phase, after the bearer’s unit has shot, if it is not within Engagement Range of one or more enemy units, that unit can make a Normal move of up to 6\". If it does, until the end of the turn, that unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "f5939b3be7a5c84a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rad-bombardment",
+          "Detachment"
+        ]
+      },
+      "source": "From the second battle round onwards, when resolving the Fallout effect of the Rad-bombardment Detachment rule, if the bearer is on the battlefield, roll one D6 for each enemy unit within 6\" of your opponent’s deployment zone, in addition to those that are within your opponent’s deployment zone.",
+      "target": null
+    },
+    {
+      "id": "6907ca4461af10c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "While the bearer is leading a unit, models in that unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "376f05e3525803ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "ef43b4c811bd3c7f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-INFANTRY 2+]",
+          "[ANTI-MONSTER 4+]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by the bearer have the [ANTI-INFANTRY 2+] and [ANTI-MONSTER 4+] abilities.",
+      "target": null
+    },
+    {
+      "id": "98ad22772b284572",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if the bearer is within range of your Acquisition objective marker, roll one D6: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "16fc8c77d9d731c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit that is within range of your Acquisition objective marker, models in that unit have a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "f0c22da0e859d12e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, each time a model in that unit makes an attack that targets a unit within range of your Acquisition objective marker, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "0cdd211a78210924",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit that is within range of your Acquisition objective marker, once per phase, you can change the result of one Hit roll, one Wound roll or one saving throw made for that unit to an unmodified 6.",
+      "target": null
+    },
+    {
+      "id": "2a5be4df31971c52",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Leadership characteristic of 6+ and, once per battle, at the start of any phase, you can select one friendly CULT MECHANICUS unit that is Battle-shocked and within 12\" of the bearer. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "67ce16679c6b8f6f",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Adeptus Mechanicus",
+        "Imperium - Agents of the Imperium",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to the bearer, change the Damage characteristic of that attack to 1.",
+      "target": null
+    },
+    {
+      "id": "865bd9ac51b6c4ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Benediction of the Omnissiah"
+        ]
+      },
+      "source": "Once per battle, at the start of your Command phase, you can select the Benediction of the Omnissiah you did not select at the start of the first battle round. Until the start of your next Command phase, that Benediction of the Omnissiah is active for the bearer’s unit in addition to the one that is currently active for your army.",
+      "target": null
+    },
+    {
+      "id": "2d9aa704ae528db3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "The bearer’s unit has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "ea20188a7b188fb5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Legio Cybernetica",
+          "Vehicle"
+        ]
+      },
+      "source": "Once per battle round, when a saving throw made for a friendly **^^Legio Cybernetica^^** or **^^Adeptus Mechanicus Vehicle^^** model within 12\" of the bearer is failed, the bearer can use this Enhancement. If they do, change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "5d6424c1f179d337",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Once per turn, at the start of your opponent’s Shooting phase, select one enemy Vehicle unit within 12\" of and visible to the bearer. That unit must take a Leadership test: if that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; if that test is failed, that unit is not eligible to shoot this phase.",
+      "target": null
+    },
+    {
+      "id": "06a44ff52bc94497",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise"
+        ]
+      },
+      "source": "Once per turn, when a friendly LEGIO CYBERNETICA or ADEPTUS MECHANICUS VEHICLE model with the Deadly Demise ability that is within 12\" of the bearer is destroyed, the bearer can use this Enhancement. If it does, do not roll to determine whether any mortal wounds are inflicted as a result of that model’s Deadly Demise ability. Instead, mortal wounds are automatically inflicted.",
+      "target": null
+    },
+    {
+      "id": "cdce816c5c63a784",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-VEHICLE 4+]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by the bearer have the [ANTI-VEHICLE 4+] ability.",
+      "target": null
+    },
+    {
+      "id": "1a3e8f4997a2b500",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kastelan Robots",
+          "Noospheric Transference",
+          "Detachment"
+        ]
+      },
+      "source": "CYBERNETICA DATASMITH model only. When the bearer is attached to a Kastelan Robots unit, until the end of the battle, models in that unit gain the Halo Override keyword. That unit cannot be selected when selecting units as part of the Noospheric Transference Detachment rule.",
+      "target": null
+    },
+    {
+      "id": "b7c8332c732e6e7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS MECHANICUS model only (excluding CYBERNETICA DATASMITH models). The Conqueror Imperative and Protector Imperative are both active for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "bab7b2c6eba53e43",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hazardous"
+        ]
+      },
+      "source": "ADEPTUS MECHANICUS model only. Add 6\" to the range characteristic of ranged weapons equipped by models in the bearer’s unit and, each time a Hazardous test is taken for that unit, you can re‑roll the result.",
+      "target": null
+    },
+    {
+      "id": "914b6f4983f86ec4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tech-Priest Dominus",
+          "Dominus",
+          "Tech-Priest Manipulus",
+          "Manipulus"
+        ]
+      },
+      "source": "**^^Tech-Priest Dominus^^** or **^^Tech-Priest Manipulus^^** model only. Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 to the Damage characteristic of the bearer’s melee weapons.",
+      "target": null
+    },
+    {
+      "id": "78616f710a38fc04",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "This unit has Infiltrators.",
+      "target": null
+    },
+    {
+      "id": "7d007c9b6a0bc100",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the first battle round, if this unit is an attached unit, this unit has **MOBILE** until the end of the battle.",
+      "target": null
+    },
+    {
+      "id": "d4983eb67333bb1a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "This unit has **Stealth**.",
+      "target": null
+    },
+    {
+      "id": "f0f3c834e625f7e3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Skitarii Marshal",
+          "Marshal"
+        ]
+      },
+      "source": "**^^Skitarii Marshal^^** model only. The Conqueror Imperative and Protector Imperative are both active for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "bcb0df61b0f7cf5d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Skitarii"
+        ]
+      },
+      "source": "**^^Tech‑Priest^^** model only. Models in the bearer’s unit have the **^^Skitarii^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "3415e75cc2377f20",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "**^^Adeptus Mechanicus^^** model only. Add 6\" to the Range characteristic of ranged weapons equipped by models in the bearer’s unit, and add 1 to the Strength characteristic of those weapons.",
+      "target": null
+    },
+    {
+      "id": "a04a13acb3f35982",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Skitarii Marshal",
+          "Marshal"
+        ]
+      },
+      "source": "**^^Skitarii Marshal^^** model only. Add 2 to the Attacks characteristic of melee weapons equipped by the bearer, and improve the Armour Penetration and Damage characteristics of those weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "17fe0257d86059cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Vehicle"
+        ]
+      },
+      "source": "At the end of the battle, if this unit was part of your Crusade army and was not destroyed during the battle, you can ignore one failed Out of Action test taken for an **^^Adeptus Mechanicus Vehicle^^** unit from your Crusade army – that test is treated as having been passed.",
+      "target": null
+    },
+    {
+      "id": "be8602eaf485dd9e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, in your opponent's Charge phase, just after an enemy unit selects this unit as the target of a charge, roll one D6: on a 3+, that enemy unit suffers D3 mortal wounds and must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "3433b184b4adb53e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Archeotech"
+        ]
+      },
+      "source": "At the end of a battle you won, if this unit was in your Crusade army, roll one D6: on a 6, your Crusade force gains 1 Archeotech Part.",
+      "target": null
+    },
+    {
+      "id": "ec793a719e70e42f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "This unit has the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "ffc357d0d7ec3cf7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "c675ab096eae197f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Smoke",
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle round, one **^^Adeptus Mechanicus Smoke^^** unit from your army that is within 12\" of this unit can be targeted with the Smokescreen Stratagem for 0CP, even if a different unit from your Crusade army has already been targeted with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "c412543055a72df4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Deep Strike"
+        ]
+      },
+      "source": "At the end of your Movement phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves. If you do, until the end of your next turn, this unit has the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "0937f714860279db",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this model's unit with a Stratagem, roll one D6, adding 1 to the result if that unit is equipped with an enhanced data-tether: on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "2c939e9a2ad57f15",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle round, when an enemy unit ends a Charge move within Engagement Range of this unit, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "a5d3c9a49afd42d8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battleline",
+          "Kataphron"
+        ]
+      },
+      "source": "This unit has a 4+ invulnerable save. If this unit is a **^^Battleline^^** or **^^Kataphron^^** unit, it has a 5+ invulnerable save instead.",
+      "target": null
+    },
+    {
+      "id": "0762f8f274fcca3f",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Adeptus Mechanicus",
+        "Imperium - Space Marines",
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Strength characteristic of melee weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "70288be5d37edc1f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Movement characteristic of models in this unit and add 1 to Advance rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "753968ee0d850e64",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can ignore any or all modifiers to this unit's characteristics and/or to any roll or test made for it (excluding modifiers to saving throws).",
+      "target": null
+    },
+    {
+      "id": "3104bbf08f12bda7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Skitarii"
+        ]
+      },
+      "source": "**^^Skitarii^^** model only. At the start of the battle, select one enemy unit. Each time a model in the bearer's unit makes an attack that targets that enemy unit, re-roll a Hit roll 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "81db06b007696195",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise",
+          "Range"
+        ]
+      },
+      "source": "Once per battle, when a different friendly **^^Adeptus Mechanicus^^** model within 6\" of the bearer is destroyed, you can roll one D6 at the end of the phase instead of triggering any rules that are triggered when a model is destroyed (e.g. Deadly Demise). On a 3+, set that model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with up to 6 wounds remaining (this cannot allow a model to return with more wounds than its Wounds characteristic).",
+      "target": null
+    },
+    {
+      "id": "c69c229a90055e42",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, add 1 to Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "827e6adaa5186c20",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, while the bearer is leading a unit, you can target that unit with the Fire Overwatch Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "62d87ae5cd393230",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Save and Wounds characteristics of this model by 1.",
+      "target": null
+    },
+    {
+      "id": "cadb438aee48f5e2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Weapon"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model and roll one D6: on a 4+, until the end of the turn, reduce the Weapon Skill characteristic of melee weapons equipped by that enemy unit by 1.",
+      "target": null
+    },
+    {
+      "id": "22711802fa26892c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your opponent's Charge phase, just after this model's unit has been selected as a target of an enemy unit's charge, this model can use this ability. If it does, until the end of the phase, subtract 2 from Charge rolls made for that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "4594e5402d18d1f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Strength and Armour Penetration characteristics of ranged weapons equipped by this model by 1.",
+      "target": null
+    },
+    {
+      "id": "0344ef814b2541bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons equipped by this model have the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "8847454e92a879f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus^^** units (excluding **^^Vehicles^^**) from your Crusade army. Once per battle per selected unit, you can target that unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "9529e7166539d21c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select one enemy unit. Each time an **^^Adeptus Mechanicus^^** unit from your Crusade army makes a ranged attack that targets that enemy unit, you can ignore any or all modifiers to the Hit roll, the Wound roll and the Ballistic Skill characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "f6532156cd00b676",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select one enemy unit. Each time an **^^Adeptus Mechanicus^^** unit from your Crusade army makes a melee attack that targets that enemy unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "bbdf06770b01834a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus^^** units from your Crusade army, then select one objective marker that is not in your deployment zone. While a unit you selected for this ability is within range of that objective market, improve the Leadership and Objective Control characteristics of models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "2d002bb79e0903ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus Infantry^^** units from your Crusade army. Each time an enemy unit makes a ranged attack that targets one of those units, until the end of the phase, models in the targeted unit have a 5+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "3d6762a25a09e8f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus Infantry^^** units from your Crusade army. Until the end of the battle, add 1 to Advance and Charge rolls made for those units.",
+      "target": null
+    },
+    {
+      "id": "590273ae8756cd90",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Archeotech"
+        ]
+      },
+      "source": "Add 2 to the bearer's Objective Control characteristic, and at the end of your Command phase, if the bearer is within range of an objective marker that is not in your deployment zone, you gain 1CP. In addition, at the end of the battle, if the bearer was in your Crusade army and you won that battle, roll one D6: on a 4+, your Crusade force acquires one Archeotech Part.",
+      "target": null
+    },
+    {
+      "id": "a86f14688298b885",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with this weapon. Until the start of your next turn, worsen the Weapon Skill characteristic of melee weapons equipped by models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "f46aa726af9c0361",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Once per battle, at the end of your Movement phase, select one enemy **^^Vehicle^^** unit within 18\" of and visible to the bearer. Until the start of your next Movement phase, subtract 2 from the Attacks characteristic of ranged weapons equipped by models in that unit, and each time that unit ends a Normal, Advance, Fall Back or Charge move, it suffers D6 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "76562f3e26d212da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Serberys Raiders",
+          "Raiders",
+          "Serberys Sulphurhounds"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Serberys Raiders, Serberys Sulphurhounds**^^",
+      "target": null
+    },
+    {
+      "id": "e171ec6ff074af12",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kastelan Robots",
+          "Cybernetica Datasmith",
+          "Bodyguard",
+          "Leader",
+          "Infantry",
+          "Doctrina Imperatives"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Kastelan Robots**^^\n\n\nYou can attach this model to a ^^**Kastelan Robots**^^ unit, even if one or more ^^**Cybernetica Datasmith**^^ models have been attached to it. In such cases, if that Bodyguard unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths. While attached to a ^^**Kastelan Robots**^^ unit, this model loses the ^^**Infantry**^^ keyword and models in that unit have the Doctrina Imperatives Faction ability.",
+      "target": null
+    },
+    {
+      "id": "cc0867c92824d42e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pteraxii Skystalkers",
+          "Skystalkers",
+          "Pteraxii Sterylizors",
+          "Sterylizors"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Pteraxii Skystalkers, Pteraxii Sterylizors**^^",
+      "target": null
+    },
+    {
+      "id": "cb88629ae8f1b969",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sicarian Infiltrators",
+          "Infiltrators",
+          "Sicarian Ruststalkers",
+          "Ruststalkers"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Sicarian Infiltrators, Sicarian Ruststalkers**^^",
+      "target": null
+    },
+    {
+      "id": "a3da00ca35d70757",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "In your Command phase, select one friendly ^^**Adeptus Mechanicus**^^ model within 3\" of this model. That model regains up to D3 lost wounds and, if it is a ^^**Vehicle**^^ model, until the start of your next Command phase, that model has the Feel No Pain 5+ ability. Each model can only be selected for this ability once per Command phase.",
+      "target": null
+    },
+    {
+      "id": "80dfc5723a98ff04",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Unit",
+          "Cover"
+        ]
+      },
+      "source": "BOMBARDMENT\nAt the start of the first battle round, for each enemy unit within your opponent’s deployment zone, your opponent must decide whether that unit will take cover or stand firm. You then roll one D6 for each of those enemy units and apply the relevant result below:\n- Unit Standing Firm: On a 3+, that unit suffers D3 mortal wounds.\n- Unit Taking Cover: That unit is battle-shocked. On a 5+, that unit suffers D3 mortal wounds.\n\nFALLOUT\nAt the start of your Command phase during the second, third, fourth and fifth battle rounds, roll one D6 for each enemy unit within your opponent’s deployment zone. On a 3+, that unit suffers 1 mortal wound and must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "d4f91a99ea904c39",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Friendly SKITARII INFANTRY, SKITARII MOUNTED and IRONSTRIDER BALLISTARII units have Stealth.",
+      "target": null
+    },
+    {
+      "id": "3e8bb1dbdbb173d1",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, select one objective marker. Until the start of your next Command phase, that objective marker is your Acquisition objective marker. Each time an ADEPTUS MECHANICUS model from your army makes an attack, if that model’s  unit is within range of your Acquisition objective marker, or if the target of that attack is within range of your Acquisition objective marker, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "449963ceb8dcde85",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cult Mechanicus"
+        ]
+      },
+      "source": "At the start of the first battle round, select one of the following Benedictions of the Omnissiah to be active for **^^Cult Mechanicus^^** units from your army until the end of the battle:\n\nPanegyric Procession:\n\nEach time a **^^Cult Mechanicus^^** model from your army makes a ranged attack that targets a unit within half range, improve the Armour Penetration characteristic of that attack by 1.\n\nCitation in Savagery:\n\nEach time a **^^Cult Mechanicus^^** unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Strength and Attacks characteristics of melee weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "1445c40f88d28331",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Legio Cybernetica"
+        ]
+      },
+      "source": "Add 2\" to the Move characteristic of models in ^^**Legio Cybernetica**^^ units from your army. In addition, unless that unit is Battle‑shocked, add 1 to the Objective Control characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "8c8a2c18483991f2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "In your Command phase, select one or more ADEPTUS MECHANICUS units from your army (including units that are embarked within TRANSPORTS). The maximum number of units you can select depends on the battle size, as follows:\n\n\nINCURSION: 1 UNIT\nSTRIKE FORCE: 2 UNITS\nONSLAUGHT: 3 UNITS\n\nUntil the start of your next Command phase, those units gain the HALO OVERRIDE keyword. Then, select one of the Override abilities below. Until the start of your next Command phase, units from your army with the HALO OVERRIDE keyword have the selected Override ability:\n\nElectromotive Energisation\nAdd 2\" to the Move characteristic of models in this unit.\n\nMicroactuator Bracing\nAdd 1 to the Toughness characteristic of models in this unit.\n\nPredation Protocols\nThis unit is eligible to declare a charge in a turn in which it Advanced.\n\nMuted Servomotors\nModels in this unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "aad6d45f757a9bb2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Skitarii"
+        ]
+      },
+      "source": "Each time a model in a **^^Skitarii^^** unit from your army makes an attack: \n- If the Protector Imperative is active for that unit, re‑roll a Hit roll of 1.\n- If the Conqueror Imperative is active for that unit, re‑roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "5228c5e619388ff6",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhanced Augurs"
+        ]
+      },
+      "source": "- Friendly **PTERAXII/INFILTRATORS/RANGERS/SERBERYS RAIDERS/ SERBERYS SULPHURHOUNDS** units have **RECON AUGURY**. \n- Friendly **RECON AUGURY** units have the following ability: **Enhanced Augurs**: In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **analysed**: \n- While a unit is **analysed**, that unit has +3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "62352e60cebaabaf",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv",
+          "Feel No Pain 5+",
+          "Baffling Data Screed"
+        ]
+      },
+      "source": "Friendly TECH-PRIEST models have: \n- 4+ InSv. \n- Feel No Pain 5+. \n\nFriendly TECH-PRIEST models have the following ability:\n**Baffling Data Screed**: In your Shooting phase, when this unit is **selected to shoot**, if this unit is not **battle-shocked**, you can use this ability. If you do, roll one D6: \n- On a 2+, select one enemy **VEHICLE** unit within 12\" of this unit. That enemy unit makes a **battle-shock roll**, with -1 to that **battle-shock roll**. A unit cannot be selected for this ability more than once per turn. \n- Or: On 2+, those ranged attacks do not prevent this unit from being **hidden**.",
+      "target": null
+    },
+    {
+      "id": "34b1bba8cd1b7cd7",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "- Friendly CORPUSCARII units’ ranged attacks have [LETHAL HITS]. \n- When a friendly FULGURITE unit has fought, that unit heals D3 wounds. \nThis detachment has the DATA-PSALM tag and cannot be taken with another DATA-PSALM detachment.",
+      "target": null
+    },
+    {
+      "id": "c6577b8dca80ec4c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Titanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Detachment Rules",
+          "Warlord",
+          "Character",
+          "Take and Hold"
+        ]
+      },
+      "source": "When mustering your army, if your Army Faction is **^^Adeptus Titanicus^^**, ignore the Select Detachment Rules step. In the Select Warlord step, select one **^^Adeptus Titanicus^^** model from your army to be your **^^Warlord^^**, even though that model does not have the **^^Character^^** keyword. Your army has the Take and Hold force disposition.",
+      "target": null
+    },
+    {
+      "id": "5a1265c7ce76597a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "If your army contains one or more models with this ability, during the Declare Battle Formations step, select one of those units. While the selected unit is leading a unit, models in that unit have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "28f81b204f301589",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If your army includes one or more units with this ability, after both players have deployed their armies, select up to D3 IMPERIUM BATTLELINE units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "2b1e3e1008d1311c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Bodyguard"
+        ]
+      },
+      "source": "While this model is leading a unit, it can embark within any ^^**Transport^^** that its Bodyguard unit can embark within.",
+      "target": null
+    },
+    {
+      "id": "9de3d4843f85c8bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this model’s unit with a Stratagem, roll one D6: on a 3+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "2aeb097d5b80dad7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model cannot be selected as your WARLORD. If your army faction is AGENTS OF THE IMPERIUM, then during the Declare Battle Formations step, you can replace this model with a different OFFICIO ASSASSINORUM model, provided that the points value of the new model does not exceed the points value of the model it replaced. Your army cannot include duplicates of the same model (i.e. after replacing this model with this rule, your army cannot have more than 1 VINDICARE ASSASSIN, it cannot have more than 1 CULEXUS ASSASSIN, it cannot have more than 1 EVERSOR ASSASSIN and it cannot have more than 1 CALLIDUS ASSASSIN).",
+      "target": null
+    },
+    {
+      "id": "af738594206fec19",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "If your army contains one or more units with this ability, during the Declare Battle Formations step, select one of those units. While the selected unit is leading a unit, models in that unit have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "1f35c2271b102026",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperium",
+          "Battleline"
+        ]
+      },
+      "source": "If your army includes one or more units with this ability, after both players have deployed their armies, select up to D3 ^^**Imperium Battleline^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "d7efcc2afdae4d83",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Onslaught"
+        ]
+      },
+      "source": "If your army Faction is not AGENTS OF THE IMPERIUM, but every model in your army has the IMPERIUM keyword, you can include AGENTS OF THE IMPERIUM units in your army even if they do not have the Faction keyword you selected in the Select Army Faction step. In this case, the maximum number of AGENTS OF THE IMPERIUM units you can include in your army depends on the battle size, as shown below.\n\nIncursion: 1 RETINUE, 1 CHARACTER, 1 REQUISITIONED\nStrike Force: 2 RETINUE, 2 CHARACTER, 1 REQUISITIONED\nOnslaught: 3 RETINUE, 3 CHARACTER, 2 REQUISITIONED\n\n\nNote that you can include AGENTS OF THE IMPERIUM DEDICATED TRANSPORT units in such an army as normal, but each unit must start the battle with one or more units embarked within it, or it cannot be deployed for that battle and will count as having been destroyed during the first battle round.",
+      "target": null
+    },
+    {
+      "id": "9be736fcc3f2b0af",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kill Team Terminator",
+          "Terminator",
+          "Kill Team Outrider",
+          "Outrider",
+          "Kill Team Biker",
+          "Infantry",
+          "Mounted",
+          "Jump Pack",
+          "Transport",
+          "Cover"
+        ]
+      },
+      "source": "Each time an attack targets this unit, if it contains models with different Toughness characteristics, until the attacking unit has finished making its attacks, use the Toughness characteristic of the majority of the models in that unit when determining what roll is required for that attack to successfully wound. If two or more Toughness characteristics are tied for majority, use the highest value. \nFor the purposes of determining which models in this unit can embark within a TRANSPORT, Kill Team Terminator models, Kill Team Outrider models, Kill Team Biker models and models equipped with a jump pack each take up the space of 2 models, but can otherwise embark within any TRANSPORT their unit can embark within, even though similar models in other units have the TERMINATOR, MOUNTED or JUMP PACK keywords. \nFor the purposes of interacting with terrain features, all models in units with this ability are considered Infantry models, even though similar models in other units may have the Mounted or Jump Pack keywords. \n**Designer’s Note**: *While the abstractions in the above rule cause some models to behave differently to similar models in other units, they are designed to minimise complicated movement, Transport and Benefit of Cover rules.*",
+      "target": null
+    },
+    {
+      "id": "5c3a372a2bc0375d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when selecting targets for this model’s exitus rifle, it can fire a shieldbreaker round. If it does, until the end of the phase, each time this model makes an attack with that weapon, add 1 to the Wound roll and any successful Wound roll scores a Critical Wound.",
+      "target": null
+    },
+    {
+      "id": "070a8f63464a829b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "When this unit is **selected to shoot**, until this unit has shot: \n- Enemy units do not have Lone Operative. \n- Hidden enemy units have +15\" detection range.'",
+      "target": null
+    },
+    {
+      "id": "51506e84e1368b4e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI‑MONSTER 4+]",
+          "[ANTI‑VEHICLE 4+]"
+        ],
+        "names": []
+      },
+      "source": "This model’s exitus rifle has the [ANTI‑MONSTER 4+] and [ANTI‑VEHICLE 4+] abilities.",
+      "target": null
+    },
+    {
+      "id": "72ec27074c70036e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain",
+          "Psychic"
+        ]
+      },
+      "source": "This model has the Feel No Pain 2+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "53cccb9643c2033b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any Command phase, this model can use this ability. If it does, each enemy unit within 9\" of this model must take a Battle-shock test, subtracting 1 from that test (or subtracting 2 if that unit is a PSYKER).",
+      "target": null
+    },
+    {
+      "id": "29d34923b921d9c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can perform an etheric emergence. If it does, this model can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "9219560d72f1d474",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "Each time you select a **^^Psyker^^** unit as the target for this weapon, until those attacks are resolved, change the Attacks characteristic of this weapon to 6.",
+      "target": null
+    },
+    {
+      "id": "6102f6a1ec7f60a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grenades"
+        ]
+      },
+      "source": "Each time this model is targeted with the Grenades Stratagem, 1 mortal wound is inflicted for each D6 roll of 3+ instead of for each 4+",
+      "target": null
+    },
+    {
+      "id": "d8a2c17ebf90bb61",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model is eligible to shoot and declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "fb6cd97d9ea30289",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Movement phase, this model can use this ability before it makes a Normal move. If it does, until the end of the turn, add 6\" to this model's Movement characteristic and add 3 to the Attacks characteristic of this model's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "8a2f050de5109e4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, you can target this model with the Heroic Intervention or Counter‑offensive Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.",
+      "target": null
+    },
+    {
+      "id": "7eb23ef9c3aa3a0f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when your opponent targets a unit from their army within 12” of this model with a **stratagem**, this model can use this ability. If you do increase the CP cost of that use of that **stratagem** by 1CP.",
+      "target": null
+    },
+    {
+      "id": "084a41ca93255f30",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- At the end of the Fight phase, if this unit is engaged, this unit can make a fall-back move of up to D6\". \n- At the end of your opponent’s turn, if this unit is more than 3\" from all enemy units, you can use this ability. If you do: \n- Place this unit in strategic reserves. \n- This unit must make an ingress move in your next Movement phase (including in your first turn).",
+      "target": null
+    },
+    {
+      "id": "146d880091a1a3b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Twice per battle, in your Movement phase, you can select one other friendly INFANTRY model that is on the battlefield and not within Engagement Range of one or more enemy units. The selected model is destroyed (ignoring any rules that are triggered when a model is destroyed) and this model is removed from the battlefield and set up again as close as possible to where that destroyed model was and not within Engagement Range of one or more enemy units. This ability cannot be used more than once in the same battle round.",
+      "target": null
+    },
+    {
+      "id": "53c7d8ae245ab61c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS",
+      "target": null
+    },
+    {
+      "id": "e21dea2e1cc566f8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If your army contains one or more models with this ability, after both players have deployed their armies, select up to D3 IMPERIUM BATTLELINE units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserve, regardless of how many units are already in Strategic Reserve.",
+      "target": null
+    },
+    {
+      "id": "079b0fd046112110",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if the bearer's unit is below its Starting Strength, you can return up to D3 destroyed models (excluding CHARACTERS) to the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "61f0c1a8e395f834",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, that attack has the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "df3ac6d25aa718db",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each VOIDFARERS CHARACTER unit you include in your army, you can include one VOIDSMEN-AT-ARMS unit in your army that does not count towards the number of RETINUE units your army can include.",
+      "target": null
+    },
+    {
+      "id": "13d63de7c945164b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "48766dd64f5b5e19",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, when you select this unit as the target of the Grenade Stratagem, you can target one enemy unit visible to and within 18\" of this unit that is not within Engagement Range of any units from your army, instead of one within 8\".",
+      "target": null
+    },
+    {
+      "id": "7d748c21b4d65ef1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[Ignores Cover]"
+        ],
+        "names": [
+          "Ignores Cover",
+          "Cover"
+        ]
+      },
+      "source": "Once per battle, when this unit is selected to shoot, until the end of the phase, ranged weapons equipped by this unit gain the [Ignores Cover] ability.",
+      "target": null
+    },
+    {
+      "id": "510f622298d6c863",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "dbea4f42388e5fe3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any Command phase, you can select one objective marker within 6\" of the bearer. All enemy units (excluding MONSTERS and VEHICLES) within range of that objective marker must take a Battle-shock test. Each objective marker can only be targeted by this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "0912dbe721aee69a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lethal Hits]",
+          "[Precision]"
+        ],
+        "names": [
+          "Lethal Hits",
+          "Precision"
+        ]
+      },
+      "source": "At the start of the battle, select one unit from your opponent's army. Each time a model in this unit makes an attack that targets that unit, that attack has the [Lethal Hits] and [Precision] abilities.",
+      "target": null
+    },
+    {
+      "id": "de8f6d02212848a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if the bearer's unit is below its Starting Strength, you can return up to D3 destroyed Exaction Vigilants to this unit.",
+      "target": null
+    },
+    {
+      "id": "7eb74cd48c48bc51",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "92bbbaea40b301df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets a unit that is Below Half-strength, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "01e2954da9e85e68",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack that targets an enemy unit that does not have the IMPERIUM or CHAOS keywords, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "ae215cfdca85406e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, this PSYKER can use this ability. If it does, roll one D6: on a 1, this PSYKER’s unit suffers D3 mortal wounds; on a 2+, until the start of your next Command phase, this PSYKER’s unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "82df026effd6a9b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: AQUILA KILL TEAM,  BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "6a3ff20cd938da6f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have a 6+ invulnerable save, and 4+ invulnerable save against Psychic Attacks and attacks made by DAEMON models.",
+      "target": null
+    },
+    {
+      "id": "9f00a29684b187f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time your opponent gains a CP as the result of an ability, roll one D6: on a 2+, you also gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "5a7f54c7de82ae68",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "bf832cc259f44570",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Command phase, you can select one enemy unit within 18\" of the bearer. Until the start of your next Command phase, that unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "62829b3ac9d8b30c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-PSYKER 4+]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ANTI-PSYKER 4+] ability.",
+      "target": null
+    },
+    {
+      "id": "c0b0a9e2033f715e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack that targets a unit that is Below Half-strength, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "13235150e4cf60c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "ef90c75cb350a0ad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperium",
+          "Infantry",
+          "Battleline",
+          "Scouts 6\""
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, you can select up to 3 ^^**Agents of the Imperium Infantry^^** units from your army, or one ^^**Imperium Battleline^^** unit from your army - those units gain the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "3a304abf6f141f69",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly unit is within 6\" of this model, improve the Leadership characteristic of models in that unit by 1. While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "640843001a56d6d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: AQUILA KILL TEAM, BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "b935bc9fe746ec80",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models in that unit have a 6+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "e825f00f58accca9",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has the PSYKER keyword.",
+      "target": null
+    },
+    {
+      "id": "321222b608a13eb6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: DAEMONHOST, DEATHWATCH KILL TEAM, DEATHWATCH TERMINATOR SQUAD, EXACTION SQUAD, FORTIS KILL TEAM, IMPERIAL NAVY BREACHERS, INDOMITOR KILL TEAM, INQUISITORIAL AGENTS, PROTEUS KILL TEAM, SPECTRUS KILL TEAM, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "522935daf90fad54",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Daemonhost"
+        ]
+      },
+      "source": "While this model is leading a unit, double the Attacks characteristic of weapons equipped by Daemonhost models in that unit.",
+      "target": null
+    },
+    {
+      "id": "569a8cee5e4d35ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your opponent’s Shooting phase, select one enemy INFANTRY unit that is within 12\" of and visible to this model and roll one D6: on a 1, this model suffers D3 mortal wounds; on a 2-5, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; on a 6, until the end of the phase, that unit is not eligible to shoot.",
+      "target": null
+    },
+    {
+      "id": "2738546df6e7c8ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this model, if this model is not within Engagement Range of one or more enemy units, it can make a Normal move.",
+      "target": null
+    },
+    {
+      "id": "0908832c4a10c0ed",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS",
+      "target": null
+    },
+    {
+      "id": "f26b8e6ec4470083",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test, subtracting 1 from the result when doing so.",
+      "target": null
+    },
+    {
+      "id": "643878604051e410",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: DEATHWATCH KILL TEAM, DEATHWATCH TERMINATOR SQUAD, EXACTION SQUAD, FORTIS KILL TEAM, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INDOMITOR KILL TEAM, INQUISITORIAL AGENTS, PROTEUS KILL TEAM, SISTERS OF BATTLE SQUAD, SPECTRUS KILL TEAM, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "9f210b9768517f54",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]",
+          "[LETHAL HITS]",
+          "[PRECISION]"
+        ],
+        "names": [
+          "Mission Tactics",
+          "Deathwatch"
+        ]
+      },
+      "source": "At the start of your Command phase, you can select one of the Mission Tactics found below. Until the start of your next Command phase, that Mission Tactic is active and its effects apply to all ^^Deathwatch^^ units in your army. Each Mission Tactic can only be selected once per battle.\n\n\n**Furor Tactics**\nWhile this Mission Tactic is active, weapons equipped by ^^Deathwatch^^ units from your army have the [SUSTAINED HITS 1] ability.\n\n\n**Malleus Tactics**\nWhile this Mission Tactic is active, weapons equipped by ^^Deathwatch^^ units from your army have the [LETHAL HITS] ability.\n\n\n**Purgatus Tactics**\nWhile this Mission Tactic is active, each time a ^^Deathwatch^^ model from your army makes an attack, on a Critical Wound, that attack has the [PRECISION] ability.",
+      "target": null
+    },
+    {
+      "id": "8445fcf20349213d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Adeptus Arbites",
+          "Inquisitor",
+          "Inquisitorial Agents",
+          "Ordo Hereticus",
+          "Chaos"
+        ]
+      },
+      "source": "Ranged weapons equipped by ^^Adeptus Arbites, Inquisitor, Inquisitorial Agents^^ and ^^Ordo Hereticus^^ models from your army have the [IGNORES COVER] ability.\n\n\nEach time an ^^Adeptus Arbites, Inquisitor, Inquisitorial Agents^^ or ^^Ordo Hereticus^^ model from your army makes an attack that targets a ^^Chaos^^ unit containing 5 or more models, that attack has the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "aef47260a68c5c9d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Inquisitor",
+          "Inquisitorial Agents",
+          "Ordo Malleus",
+          "Daemon"
+        ]
+      },
+      "source": "Each time an ^^Inquisitor, Inquisitorial Agents^^ or ^^Ordo Malleus^^ model from your army makes an attack, re-roll a Hit roll of 1 and, if the target is a ^^Daemon^^ unit, re-roll a Wound roll of 1 as well.",
+      "target": null
+    },
+    {
+      "id": "c9832ea94541bfb9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "At All Costs",
+          "Imperium"
+        ]
+      },
+      "source": "At the start of your Command phase, you can select one of the following to apply:\n\n\n**Eliminate At All Costs**\nSelect one enemy unit on the battlefield. Until the start of your next Command phase, each time an ^^Agents of the Imperium^^ model from your army makes an attack that targets that enemy unit, add 1 to the Hit roll.\n\n\n**Acquire At All Costs**\nSelect one objective marker on the battlefield. Until the start of your next Command phase, while an ^^Agents of the Imperium^^ unit from your army is within range of that objective marker, improve the Leadership and Objective Control characteristics of models in that unit by 1 and models in that unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "7b9332456d55e33e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Officio Assassinorum",
+          "Overkill",
+          "Soulless Horror",
+          "Shieldbreaker",
+          "Extremis"
+        ]
+      },
+      "source": "^^Officio Assassinorum^^ units from your army can use the Overkill, Soulless Horror and Shieldbreaker abilities twice per battle, instead of once per battle (but cannot use such an ability more than once in the same battle round). \n\nWhen mustering your army, each ^^Officio Assassinorum^^ unit from your army has the relevant Extremis ability, and you must increase the points cost of each of those units by the amount shown. If this causes your army to exceed the points limit for the battle you are playing, you cannot include that unit in your army.",
+      "target": null
+    },
+    {
+      "id": "5877897e0b406f6b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to this model. That enemy unit must take a Battle-shock test, subtracting 2 from the result if it is an INFANTRY unit; if the test is failed, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "5af371356b076a98",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model.",
+      "target": null
+    },
+    {
+      "id": "fb0d05609898a55c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS",
+      "target": null
+    },
+    {
+      "id": "73d184b9dd1dbd54",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "9220f043ce47f7dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD",
+      "target": null
+    },
+    {
+      "id": "056d879f7e3a4d17",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an INQUISITOR model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "5269329b082955cd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each INQUISITOR unit you include in your army, you can include one INQUISITORIAL AGENTS unit in your army that does not count towards the number of RETINUE units your army can include.",
+      "target": null
+    },
+    {
+      "id": "7278ff5a4846a164",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tome-skull"
+        ]
+      },
+      "source": "Once per battle for each Tome-skull this unit is equipped with, at the start of any phase, you can select one other friendly AGENTS OF THE IMPERIUM unit that is Battle-shocked and within 6\" of this unit or one enemy unit within 6\" of this unit. If you select a friendly unit, that unit is no longer Battle-shocked. If you select an enemy unit, it must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "0c19844190f06d55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "If one or more INQUISITOR units are attached to this unit during the Declare Battle Formations step, models in those units have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "ab55546d2972b438",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this unit makes a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "9ea6bb07f7250627",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can return 1 destroyed model (excluding CHARACTERS) to the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "666117db9ace0b5b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Units can disembark from this TRANSPORT after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally.",
+      "target": null
+    },
+    {
+      "id": "5e7a69e0546469dd",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 13 INQUISITOR INFANTRY and INQUISITORIAL AGENT models. It cannot transport TERMINATOR models.",
+      "target": null
+    },
+    {
+      "id": "4c04786fc0f140a0",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 AGENTS OF THE IMPERIUM INFANTRY models. It cannot transport TERMINATOR or OFFICIO ASSASSINORUM models.",
+      "target": null
+    },
+    {
+      "id": "02689717096d5785",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models in range of it, until your opponent controls it at the start or end of any turn.",
+      "target": null
+    },
+    {
+      "id": "45cbfea5b2ef4e4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, you can target this unit with the Command Re-roll Stratagem for 0CP and can do so if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "c393f1750fd24963",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Leadership characteristic of models in the bearer's unit by 1.",
+      "target": null
+    },
+    {
+      "id": "2a6a839feadd4986",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 6 ORDO HERETICUS INFANTRY models.\n\nAt the start of the Declare Battle Formations step, you can select one SISTERS OF BATTLE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit.",
+      "target": null
+    },
+    {
+      "id": "106df7a4d34e0417",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Each time this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "743c9a3d7eec4acb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an INQUISITOR model is leading a unit that contains one or more DAEMONHOST models, models in this unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "52f346006e5a5ce5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an INQUISITOR model is leading a unit that includes one or more DAEMONHOST models, the Objective Control characteristic of DAEMONHOST models in that unit is 1.",
+      "target": null
+    },
+    {
+      "id": "30d8b959a0f1316a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each unique pairing of 1 INQUISITORIAL AGENTS unit and 1 DAEMONHOST unit occuring in your army, increase the maximum number of RETINUE units permitted in your army by 1. At the start of the Declare Battle Formations step, this unit can join one INQUISITORIAL AGENTS unit from your army that is being led by an INQUISITOR model (a unit cannot have more than one DAEMONHOST unit joined to it). If it does, until the end of the battle, every model in this unit counts as being part of that Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly.",
+      "target": null
+    },
+    {
+      "id": "a594cd810f1e0d26",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "e7985d51634a2dfd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: INQUISITORIAL AGENTS",
+      "target": null
+    },
+    {
+      "id": "b3a043f4082ccf7f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each unique pairing of 1 INQUISITORIAL AGENTS unit and 1 JOKAERO WEAPONSMITH unit occuring in your army, increase the maximum number of CHARACTER units permitted in your army by 1.",
+      "target": null
+    },
+    {
+      "id": "ce863e709bffa07b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "This model cannot be selected to be your Warlord. While an INQUISITOR model is leading a unit that includes one or more JOKAERO WEAPONSMITH models, the Objective Control characteristic of JOKAERO WEAPONSMITH models in that unit is 1.",
+      "target": null
+    },
+    {
+      "id": "4de630d3c9489af4",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 5+, that unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "aa253dcf9a45c9f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 DEATHWATCH INFANTRY models.",
+      "target": null
+    },
+    {
+      "id": "6885a0bef1727126",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "ffbccafe2c6ae2fc",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Agents of the Imperium",
+        "Imperium - Deathwatch"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has the SMOKE keyword.",
+      "target": null
+    }
+  ]
+}

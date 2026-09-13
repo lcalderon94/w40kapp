@@ -1,0 +1,2759 @@
+{
+  "batch": 29,
+  "units": [
+    {
+      "id": "d9015b6cf2a601b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kinband Champion",
+          "Champion",
+          "Infantry",
+          "Mounted",
+          "Lone Operative"
+        ]
+      },
+      "source": "**^^Kinband Champion^^** only. Change this model's Move characteristic to 12\", its Toughness characteristic to 5, its Save characteristic to 5+, its Wounds characteristic to 6, and it is equipped with 1 kalamandra's bite in addition to the weapons you choose in Step 4. Remove the **^^Infantry^^** keyword, add the **^^Mounted^^** keyword and it gains the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "8653169e2477c3b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kinband Champion",
+          "Champion",
+          "Rampager fists",
+          "Infantry",
+          "Mounted",
+          "Krootox Rampagers",
+          "Krootox Riders"
+        ]
+      },
+      "source": "**^^Kinband Champion^^** only. Change this model's Toughness characteristic to 6, its Save characteristic to 5+ and its Wounds characteristic to 7, and it is equipped with 1 Rampager fists in addition to the weapons you choose in Step 4. Remove the **^^Infantry^^** keyword, add the **^^Mounted^^** keyword, and replace the list of units this model can be attached to: **^^Krootox Rampagers^^**, **^^Krootox Riders^^**.",
+      "target": null
+    },
+    {
+      "id": "0454064229230b57",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shas'nel",
+          "Scouts 7\"",
+          "Pathfinder Team"
+        ]
+      },
+      "source": "**^^Shas'nel^^** only. Change this model's Move characteristic to 7\", it gains the Scouts 7\" ability, and replace the list of units this model can be attached to: **^^Pathfinder Team^^**.",
+      "target": null
+    },
+    {
+      "id": "a15d074c64033985",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**GHOSTKEEL BATTLESUIT/PATHFINDER TEAM/STEALTH BATTLESUITS** unit only. When this unit is **selected to shoot**, you can select one enemy unit within 24\" of this unit. That enemy unit has +9\" **detection range** until this unit has shot.",
+      "target": null
+    },
+    {
+      "id": "472884f8e400e425",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**STEALTH BATTLESUITS** unit only. This unit has -3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "e3aefe85eb9f468c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit or an enemy unit ends a move, for each model in this unit within 3\" of one or more enemy units, select one of those enemy units. That model in this unit is destroyed, then roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6 that enemy unit suffers D6 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "d6d8ce7d42201774",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units cannot start or end an Advance move within 6\" of this unit.",
+      "target": null
+    },
+    {
+      "id": "7229d31823d04110",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "At the start of the first battle round, select one of the following:\n- Select one enemy unit. Until the end of the battle, each time this model makes an attack that targets that unit you can re-roll the Hit roll and you can re-roll the Wound roll\n- Select one objective marker. Until the end of the battle, while this model is within range of that objective marker, it has the Feel No Pain 5+ ability and an Objective Control characteristic of 15.",
+      "target": null
+    },
+    {
+      "id": "e57f9de338af395a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit or an enemy unit ends a move, for each model in this unit that is within 3\" of one or more enemy units, select one of those enemy units. That model in this unit is destroyed, then roll one D6: on a 2-5, that enemy unit suffers 1 mortal wound; on a 6, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "6aabb9b59537e902",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one friendly TERMAGANTS unit within 6\" of this model and return up to D3+3 destroyed TERMAGANT models to that unit. A TERMAGANTS unit cannot be selected for this ability more than once per phase.",
+      "target": null
+    },
+    {
+      "id": "a7350464b9385bf1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "While a friendly TERMAGANTS unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "cd4c3ee039e49e37",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP",
+      "target": null
+    },
+    {
+      "id": "9127918ff9f3adc4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when your opponent targets a unit from their army within 12\" of this model with a **stratagem**, you can use this ability. If you do increase the CP cost of that use of that **stratagem** by 1CP.",
+      "target": null
+    },
+    {
+      "id": "9c19a031126db63e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse",
+          "Range"
+        ]
+      },
+      "source": "While a friendly **TYRANIDS** unit is within 9\" of this model, that unit is within your army’s Synapse Range.",
+      "target": null
+    },
+    {
+      "id": "c485de3a525c3932",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tyrant Guard"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Tyrant Guard^^**",
+      "target": null
+    },
+    {
+      "id": "9d5a04396088a737",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "fbd9d8cff776d818",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. Until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3ce3a58d3e5c528f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealers"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Genestealers^^**",
+      "target": null
+    },
+    {
+      "id": "1b85bf4421e2256d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of each player’s Command phase, this model regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "2a2c27339fec973a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Carnifexes"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Carnifexes^^**",
+      "target": null
+    },
+    {
+      "id": "f4967078f05fec03",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, when this unit is **selected to fight** or when an enemy unit targets this unit, you can select one of the following:\n▪ This unit’s melee attacks have +1 **S**.\n▪ <ins>Or</ins>: This unit has +1 **T**.",
+      "target": null
+    },
+    {
+      "id": "806994134a34718f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6\".",
+      "target": null
+    },
+    {
+      "id": "b967f8cefebefbfd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic",
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding Titanic units) within Engagement Range of one or more units from your army with this ability is selected to Fall Back, you can roll one D6: on a 3+, that enemy unit must Remain Stationary instead.",
+      "target": null
+    },
+    {
+      "id": "5c902503b0fef417",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "While a **^^Character^^** model is leading this unit, that **^^Character^^** has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "ccfcf939170902f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll. If the target is Battle-shocked, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "e836f3e042df9008",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadow in the Warp"
+        ]
+      },
+      "source": "If one or more Neurotyrants from your army are on the battlefield when you unleash the Shadow in the Warp, subtract 1 from the Battle-shock test each enemy unit on the battlefield must take as a result.",
+      "target": null
+    },
+    {
+      "id": "c0762c2d5da7a4b9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse",
+          "Range"
+        ]
+      },
+      "source": "In your Command phase, you can select up to two friendly **^^Tyranids^^** units within 18\" of this model’s unit. Until the start of your next Command phase, the selected units are always considered to be within Synapse Range of your army.\n\n**Designer's Note:** *Place a Neuroloid token next to each select unit to remind you.*",
+      "target": null
+    },
+    {
+      "id": "3e2d0818c67d23af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Neurogaunts",
+          "Tyrant Guard",
+          "Zoanthropes"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Neurogaunts^^**\n- **^^Tyrant Guard^^**\n- **^^Zoanthropes^^**",
+      "target": null
+    },
+    {
+      "id": "2a2c00c447ff4fad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, each time a model in that unit makes an attack, subtract 1 from the Hit roll, and, if that enemy unit is Below Half-strength, subtract 1 from the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "5e4a518b79eddb88",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "c86719f297daf877",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is selected to fight, after resolving its attacks, if one or more enemy units were destroyed by those attacks, each enemy unit within 6\" of this model must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "82346b1767699ec9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Friendly **TYRANIDS** units within 6\" of this unit have **Stealth**.",
+      "target": null
+    },
+    {
+      "id": "0790fac93afa8cfb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse",
+          "Range",
+          "Neurogaunt"
+        ]
+      },
+      "source": "While this unit is within Synapse Range of your friendly **^^Tyranids^^** unit (excluding **^^Neurogaunt^^** units), it has the **^^Synapse^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "b57d17d8ad9e8a13",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Neurothrope"
+        ]
+      },
+      "source": "While an enemy unit is within 6\" of this unit, if it contains a Neurothrope, each time that enemy unit fails a Battle-shock test, it suffers D3 mortal wounds and one model in this unit regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "03938f06a94f0c73",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly TYRANIDS unit is within 6\" of this unit, models in that unit have a 6+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "d63c59792611b83b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly TYRANIDS model makes an attack that targets that unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "a44392c12cb89df7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, in your Shooting Phase, when selected to shoot, one unit with this ability can use it instead of making any attacks with its ranged weapons. If it does, you can add one new **SPORE MINES** unit to your army and set it up anywhere on the battlefield that is wholly within 48\" of this unit and more than 8\" horizontally away from all enemy units. That **SPORE MINES** unit contains 1 model for each model in this unit.",
+      "target": null
+    },
+    {
+      "id": "f5b88f6c60930366",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit lost a wound as a result of those attacks, this unit can make a **surge move** of up to D6+2\".",
+      "target": null
+    },
+    {
+      "id": "12dd995b8bf3b432",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one unit hit by one or more of those attacks. That unit must take a Battle-shock test, subtracting 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "76b2ae8405d0f968",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if this unit is within range of an objective marker that you control.",
+      "target": null
+    },
+    {
+      "id": "ea005dcf547e3002",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "4afec1ad9b128e4d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "At the end of your opponent’s Fight phase, you can do one of the following:\n- Select one **visible** enemy unit (excluding **Lone Operative** units) within 24\" of this unit and roll six D6 for that unit: for each 3+, that unit suffers 1 **mortal wound**.\n- Add a new **SPORE MINES** unit containing D3 models to your army and set it up anywhere on the battlefield that is within 6\" of this model and more than 8\" horizontally away from all enemy units. You cannot select this option for more than one model per turn.",
+      "target": null
+    },
+    {
+      "id": "7818e71c09e1d63e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, in your shooting phase, when selected to shoot, one unit with this ability can use it instead of making any attacks with it's ranged weapons. If it does, you can add one new **MUCOLID SPORES** containing 1 model to your army and set it up anywhere on the battlefield that is wholly within 18\" of this model and more than 8\" horizontally away from all enemy units.",
+      "target": null
+    },
+    {
+      "id": "8140ee33f56b8462",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this model with the Fire Overwatch stratagem for 0CP, and can do so even if you have already targeted a different unit with that stratagem this turn. This model can only be targeted with that Stratagem once per turn",
+      "target": null
+    },
+    {
+      "id": "b4becd189e3670d0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly **TYRANIDS** unit makes a melee attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "84042ec1ba3853db",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half strength, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "49571031b80edc3c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy INFANTRY unit hit by one or more of those attacks. Until the end of your opponent’s next turn, that enemy unit is disrupted. While a unit is disrupted, subtract 2 from its Move characteristic, and subtract 2 from Advance and Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "6f4bc538309df376",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit (excluding Titanic units) that was hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "7a9075fa2c5c20ad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model is eligible to declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "de70e36afe471012",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is selected to shoot, you can use this ability. If you do, until the end of the phase, each time this model makes an attack, add 1 to the Wound roll. After resolving those attacks, roll one D6: on a 2+, this model suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "b6b0856925d13a4a",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 20 GARGOYLES models and 1 WINGED TYRANID PRIME model.",
+      "target": null
+    },
+    {
+      "id": "a724875fe0fd6485",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a unit that is Battle-shocked, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "41160ba9453e2256",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a Normal, Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "6bf69993c54954e0",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 20 TYRANIDS INFANTRY models. Each model with a Wounds characteristic of more than 1 takes up the space of 3 models. This model cannot transport models that can FLY.",
+      "target": null
+    },
+    {
+      "id": "1426073bd5baf6b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target is within range of one or more objective markers, re-roll a Wound roll 1 as well.",
+      "target": null
+    },
+    {
+      "id": "3c7be4e5c4fad794",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this model fights, after it has resolved its attacks, if one or more enemy models (excluding Vehicle models) were destroyed as the result of those attacks, this model regains up to D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "dc0a04dcc591beb0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Engagement Range of one or more units with this ability, halve the Objective Control characteristic of models in that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "f90bd639373fed35",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, the range of that unit's Foul Spores Aura ability is increased to 9\".",
+      "target": null
+    },
+    {
+      "id": "fd9b0d84c3e73683",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]",
+          "[LANCE]",
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model's unit is selected to fight, select one of the following abilities to apply to all melee weapons equipped by models in that unit until the end of the phase:\n- **[SUSTAINED HITS 1]**\n- **[LANCE]**\n- **[LETHAL HITS]**",
+      "target": null
+    },
+    {
+      "id": "299f3b739291a24d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Venomthropes"
+        ]
+      },
+      "source": "This model can be attached to the following unit: \n- **^^Venomthropes^^**",
+      "target": null
+    },
+    {
+      "id": "bcf8baad2887715f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per turn, when an enemy unit within Engagement Range of this unit is chosen to Fall Back, roll one D6; on a 2+, that unit suffers D6 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "16e856bcd8f78504",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit **declares a charge**, if an enemy **MONSTER/VEHICLE** unit is within 12\" of this unit and was hit by an attack made by this weapon this turn, you can use this ability. If you do:\n- This unit has +2 to **charge rolls** until the end of the phase.\n- This unit must end that **charge move engaged** with that **MONSTER/VEHICLE** unit.",
+      "target": null
+    },
+    {
+      "id": "459337f09f8e2152",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "This model has the Feel No Pain 4+ ability against Mortal Wounds.",
+      "target": null
+    },
+    {
+      "id": "dcfa3a504b38ac36",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]",
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "While a friendly **TYRANIDS** unit is within 6\" of this model, ranged weapons equipped by models in that unit have the **[ASSAULT]** and **[LETHAL HITS]** abilities.",
+      "target": null
+    },
+    {
+      "id": "d73bf80ed26af5ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by models in this model’s unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "6bea5fc17fe98ebe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit was **destroyed** by those attacks, this unit can make a **surge move** of up to D6\".",
+      "target": null
+    },
+    {
+      "id": "df3ec67d058c192e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hormagaunts",
+          "Termagants",
+          "Tyranid Warriors with Melee Bio-weapons",
+          "Melee",
+          "Tyranid Warriors with Ranged Bio-weapons"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Hormagaunts^^**\n- **^^Termagants^^**\n- **^^Tyranid Warriors with Melee Bio-weapons^^**\n- **^^Tyranid Warriors with Ranged Bio-weapons^^**",
+      "target": null
+    },
+    {
+      "id": "00ed003f34c42b29",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "d13d14480b480ff3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly INFANTRY models can be set up or end any type of move on top of the roof section of this FORTIFICATION.",
+      "target": null
+    },
+    {
+      "id": "dbab796b8e2b97dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this FORTIFICATION is first set up on the battlefield, each gate section can be set up with its gate open or closed. In your Command phase, you can open or close the gate of each of this model’s gate sections. While a gate is open, models can move and draw line of sight through it as if it were not there.",
+      "target": null
+    },
+    {
+      "id": "6ef3677a187e6daa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly INFANTRY models can be set up or end any type of move on top of the flat battlement sections of this FORTIFICATION.",
+      "target": null
+    },
+    {
+      "id": "71de1a171a39bdca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "When this FORTIFICATION is set up, all parts of it must be set up within 1\" of another part. While an INFANTRY model has the Benefit of Cover as a result of this FORTIFICATION (see below), that model has a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "631415879fc99403",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly INFANTRY models can be set up or end any type of move on top of the flat platform section of this FORTIFICATION.",
+      "target": null
+    },
+    {
+      "id": "0ab2a57b0b64cdb9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Onslaught"
+        ]
+      },
+      "source": "You can only include this FORTIFICATION in your army in games of Onslaught size or greater.",
+      "target": null
+    },
+    {
+      "id": "7af06f9e70f7871a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit is selected to shoot or fight, after it has finished making its attacks, if one or more of those attacks targeted this model and this model is not destroyed, this model can fight as if it were the Fight phase",
+      "target": null
+    },
+    {
+      "id": "787760bc480c3561",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Borewyrm Infestation"
+        ]
+      },
+      "source": "Twice per battle, at the end of your opponent’s turn, if this model is not within Engagement Range of one or more enemy units, you can remove this model from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that\nis more than 9\" horizontally away from all enemy models. If the battle ends and this unit is not on the battlefield, it is destroyed. \n\nDesigner’s Note: Place two Borewyrm Infestation tokens next to this model, removing one each time this ability has been used.",
+      "target": null
+    },
+    {
+      "id": "300b0dbf4cb407be",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This FORTIFICATION has a transport capacity of 15 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
+      "target": null
+    },
+    {
+      "id": "a1b0d524504ecc23",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Infantry",
+          "Character"
+        ]
+      },
+      "source": "This Fortification has a transport capacity of 15 Infantry models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-Character models with a Wounds characteristic of 4 or more",
+      "target": null
+    },
+    {
+      "id": "acb58e75caaa37ac",
+      "kind": "characteristic:Capacity",
+      "occurrences": 2,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This FORTIFICATION has a transport capacity of 20 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
+      "target": null
+    },
+    {
+      "id": "fb792a269309028d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is on top of the tower roof of this FORTIFICATION, improve the Armour Penetration characteristic of ranged weapons equipped by that model by 1.",
+      "target": null
+    },
+    {
+      "id": "924e8883d4df4cba",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Spindle Drones"
+        ]
+      },
+      "source": "While a friendly **^^Spindle Drones^^** unit is within 6\" of this model, each time a model in that unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "2eb6e57bcf041ec1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aquila macro-cannon"
+        ]
+      },
+      "source": "In your Shooting phase, just after selecting a target for this model’s Aquila macro-cannon, the target unit and every other enemy INFANTRY unit within 3\" of that unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "7b8402bd439a6ea5",
+      "kind": "characteristic:Capacity",
+      "occurrences": 2,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This FORTIFICATION has a transport capacity of 30 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
+      "target": null
+    },
+    {
+      "id": "401dfeec62213f9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hazardous"
+        ]
+      },
+      "source": "Each time this FORTIFICATION suffers a mortal wound as the result of a failed Hazardous test, roll one D6: on a 4+, that wound is not lost.",
+      "target": null
+    },
+    {
+      "id": "fe0b063712fe0cd4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Fly",
+          "Fortification"
+        ]
+      },
+      "source": "Friendly Infantry models and friendly units that can Fly can be set up or end any type of move on top of the platform section of this Fortification. While such a model is on the platform section of this Fortification, that model has a 5+ invulnerable save against ranged attacks",
+      "target": null
+    },
+    {
+      "id": "2f0b7601653070c3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aircraft",
+          "Fortification"
+        ]
+      },
+      "source": "At the end of your Movement phase, if there is a friendly Aircraft model on top of this Fortification, that Aircraft regains up to D3 lost wounds",
+      "target": null
+    },
+    {
+      "id": "1b273a94733f90ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength",
+      "target": null
+    },
+    {
+      "id": "c46e59b3e51ea6e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, each time that unit takes a Battle-shock or Leadership test, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "1f8f2d2afa9ea890",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Punisher gatling cannon"
+        ]
+      },
+      "source": "Each time this model makes a ranged attack that targets the closest enemy unit:\n- If that attack is made with a Punisher gatling cannon and the target is not a MONSTER or VEHICLE, add 1 to the Hit roll.\n- If that attack is made with a battle cannon and the target is a MONSTER or VEHICLE, add 1 to the Hit roll.\n- If that attack is made with a quad-lascannon and the target can FLY, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "02da3fe77b75d40e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly model is wholly within 6\" of this FORTIFICATION, that model has a 4+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "b7abcbac9371cca5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, each time you select a target for this model’s vortex missile battery, roll one D6 for the target unit and one D6 for every other enemy unit within 3\" of the target unit. On a 4+, the unit being rolled for is struck by the vortex; after resolving all of this model’s attacks against the target unit, each unit struck by the vortex suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "331eff4225853907",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification"
+        ]
+      },
+      "source": "Each time an attack is allocated to this Fortification, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "75ce3e88baf39561",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Infantry",
+          "Character"
+        ]
+      },
+      "source": "This Fortification has a transport capacity of 11 Infantry models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-Character models with a Wounds characteristic of 4 or more",
+      "target": null
+    },
+    {
+      "id": "d970a6c5c0a0a11c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Fortification"
+        ]
+      },
+      "source": "In your Command phase, if one or more Character models are embarked within this Fortification, roll one D6: on a 5+, you gain 1CP",
+      "target": null
+    },
+    {
+      "id": "ce8ece34febc4d12",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-30 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "70d7c323b88e49bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this FORTIFICATION is set up, all parts of it must be set up in contact with another part.",
+      "target": null
+    },
+    {
+      "id": "708ed2989326851b",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This FORTIFICATION has a transport capacity of 65 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
+      "target": null
+    },
+    {
+      "id": "07096b88e8f080e7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly INFANTRY models can be set up or end any type of move on top of the roof section of this FORTIFICATION. Any friendly model can be set up or end any type of move on the ramp or platform section of this FORTIFICATION.",
+      "target": null
+    },
+    {
+      "id": "36fb4f6d2197f24a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-15 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a3272b01bf3fab80",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This FORTIFICATION has a transport capacity of 60 INFANTRY models. Each model with a Wounds characteristic of 3 or more takes up the space of 2 models. It cannot transport non-CHARACTER models with a Wounds characteristic of 4 or more.",
+      "target": null
+    },
+    {
+      "id": "599f7cba24e02940",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sentry Gun"
+        ]
+      },
+      "source": "In the Create the Battlefield and Place Objective Markers step, set this model up in one of the Sentry Gun positions (marked D1 on the mission map).",
+      "target": null
+    },
+    {
+      "id": "15a57cef392061f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sentry Gun"
+        ]
+      },
+      "source": "Each time a model from your army makes a ranged attack that targets an enemy unit that is within 9\" of and visible to any Searchlights from your army, re-roll a Hit of 1 and, if the model making that attack is a Sentry Gun, add 1 to the Hit roll as well.",
+      "target": null
+    },
+    {
+      "id": "cdd49b6bc0699d4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wall"
+        ]
+      },
+      "source": "This model is a terrain feature and counts as a Wall.",
+      "target": null
+    },
+    {
+      "id": "ec7e3e5d2cea0436",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Searchlight"
+        ]
+      },
+      "source": "In the Create the Battlefield and Place Objective Markers step, set this terrain feature up in one of the Searchlight positions (marked D2 on the mission map) that does not already contain a Searchlight.",
+      "target": null
+    },
+    {
+      "id": "31b92303994b69f3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model cannot attempt to operate Hatchways and cannot perform Tactical Manoeuvres.",
+      "target": null
+    },
+    {
+      "id": "998148265b48430a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Deploy Armies step, when setting up a unit from your army within an Entry Zone, you can set this model up alongside that unit as if it was part of it, using the same Entry Zone.",
+      "target": null
+    },
+    {
+      "id": "b6f6321777b6e785",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Roll"
+        ]
+      },
+      "source": "When the bearer is destroyed (other than through triggering its bomb, as described below), roll one D6 before removing it from play: on a 6 it explodes, and each other unit within 3\" of and visible to the bearer suffers 1 mortal wound.\n\nIn your Command phase, the bearer can trigger its bombs. If it does:\n- Open each Hatchway that is within 3\" of the bearer. Your opponent cannot attempt to prevent those Hatchways from opening, and those Hatchways cannot be closed again.\n- Roll one D6 for each other unit within 3\" of and visible to the bearer: on a 2+, that unit suffers 1 mortal wound. The bearer is then destroyed.",
+      "target": null
+    },
+    {
+      "id": "80cc10ad979e275d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer ends a Normal move, you can open one Hatchway that is within 1\" of it. Your opponent cannot attempt to prevent that Hatchway from opening.",
+      "target": null
+    },
+    {
+      "id": "6d062e866dc33cfd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Pistol"
+        ]
+      },
+      "source": "While an enemy unit is only within Engagement Range of one or more ^^**Fortifications**^^ from your army:\n- That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll.\n- Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so.",
+      "target": null
+    },
+    {
+      "id": "2144de6458c2632f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "58ebe32341277cce",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a 4+ invulnerable save against melee attacks.",
+      "target": null
+    },
+    {
+      "id": "5d106c885571681d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in this unit have a 4+ invulnerable save against melee attacks.",
+      "target": null
+    },
+    {
+      "id": "90000dc733f54ec9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[PISTOL]",
+          "[CLOSE-QUARTERS]"
+        ],
+        "names": []
+      },
+      "source": "**[PISTOL]** and **[CLOSE-QUARTERS]** are identical for all rules purposes. \n\nUnits containing one or more models with a **[CLOSE-QUARTERS]** weapon can shoot using **close-quarters shooting** (10.06). When using another **shooting type**, for each model in that unit (excluding **MONSTER/VEHICLE** models), you can only select one of the following to make attacks with: \n- One or more of its **[CLOSE-QUARTERS]** weapons. \n- One or more of its other ranged weapons.",
+      "target": null
+    },
+    {
+      "id": "9136f2f38830efae",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Each time a unit is **selected to shoot** or **selected to fight**, after that unit has resolved all of its attacks, make a number of **hazard rolls** (06.03) for that unit equal to the number of **[HAZARDOUS]** weapons you selected in the Select Weapons step.",
+      "target": null
+    },
+    {
+      "id": "f646302e03395f6c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it. Unless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it.",
+      "target": null
+    },
+    {
+      "id": "08e27a2531d5332e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Intercessor Squad",
+          "Intercessor"
+        ]
+      },
+      "source": "Each time an attack made with a **[DEVASTATING WOUNDS]** weapon results in a **critical wound**, the attack sequence for that attack ends and the target unit suffers a number of **mortal wounds** equal to the **D** characteristic of that weapon. These are inflicted after resolving any normal damage inflicted by those attacks. \n**Mortal wounds** inflicted by **[DEVASTATING WOUNDS]** weapons can damage a maximum of one model for each **critical wound**; any remaining **mortal wounds** inflicted by that attack are lost. \n***Example:** An attack made with a **[DEVASTATING WOUNDS]** weapon with a **D** characteristic of 3 results in a **critical wound** against an Intercessor Squad, so inflicts 3 **mortal wounds**. The first 2 **mortal wounds** are sufficient to **destroy** 1 Intercessor model, so the remaining **mortal wound** is lost.*",
+      "target": null
+    },
+    {
+      "id": "2ca9fb4ef1eda5d0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "Units containing one or more models with an **[ASSAULT]** weapon can shoot using **assault shooting** (10.05).",
+      "target": null
+    },
+    {
+      "id": "ace7fbdf09bdd24b",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[EXTRA ATTACKS]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Each time a unit containing one or more models with an **[EXTRA ATTACKS]** weapon fights, those models will make attacks with those weapons in addition to any others. In the Select Weapons step (04.01), for each of those models, you must select: \n- All of that model’s **[EXTRA ATTACKS]** weapons. \n- One of that model’s other melee weapons, if possible.",
+      "target": null
+    },
+    {
+      "id": "5b8f069c8243fc72",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[TWIN-LINKED]"
+        ],
+        "names": []
+      },
+      "source": "Each time an attack is made with a **[TWIN-LINKED]** weapon, you can re-roll the **wound roll**.",
+      "target": "Cada vez que se realiza un ataque con un arma **[TWIN-LINKED]**, puedes repetir la **tirada para herir**."
+    },
+    {
+      "id": "03971f58da442637",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-X Y+]",
+          "[ANTI]",
+          "[ANTI-VEHICLE 4+]",
+          "[ANTI-PSYKER 2+]"
+        ],
+        "names": [
+          "Vehicle",
+          "Psyker"
+        ]
+      },
+      "source": "This ability always takes the form **[ANTI-X Y+]**. Each time an attack is made with an **[ANTI]** weapon, if the target unit has the keyword denoted by **X**, an unmodified **wound roll** of **Y+** is a **critical wound**.\n***Example:** An attack made with an **[ANTI-VEHICLE 4+]** weapon against a ^^**Vehicle**^^ unit will result in a **critical wound** on an unmodified **wound roll** of 4+, while an attack made with an **[ANTI-PSYKER 2+]** weapon against a ^^**Psyker**^^ unit will result in a **critical wound** on an unmodified **wound roll** of 2+.*",
+      "target": null
+    },
+    {
+      "id": "5442146072e94181",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS X]",
+          "[SUSTAINED HITS]",
+          "[SUSTAINED HITS 2]"
+        ],
+        "names": []
+      },
+      "source": "This ability always takes the form **[SUSTAINED HITS X]**. Each time an attack made with a **[SUSTAINED HITS]** weapon results in a **critical hit**, that attack results in a number of additional hits on the target as denoted by **X**.\n***Example:** An attack made with a **[SUSTAINED HITS 2]** weapon results in a **critical hit**. That attack therefore hits the target three times (once from the **critical hit**, and twice more from the **[SUSTAINED HITS 2]** ability).*",
+      "target": null
+    },
+    {
+      "id": "ae3e796ef39f2589",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[HEAVY]"
+        ],
+        "names": []
+      },
+      "source": "In your Shooting phase, each time an attack is made with a **[HEAVY]** weapon, add 1 to the **hit roll** if all of the following apply to the attacking unit: \n- That unit is **unengaged**. \n- That unit was not set up on the battlefield this turn. \n- No model in that unit has moved more than 3\" this turn.",
+      "target": null
+    },
+    {
+      "id": "6993d62fef33ff52",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[MELTA X]",
+          "[MELTA]",
+          "[MELTA 2]"
+        ],
+        "names": []
+      },
+      "source": "This ability always takes the form **[MELTA X]**. Each time a model makes an attack with a **[MELTA]** weapon, if the target unit was within half range of that weapon in the Select Targets step, until the attacking unit’s attacks have been resolved, add **X** to that weapon’s **D** characteristic. \n***Example:** A model targets a unit that is within half range of a **[MELTA 2]** weapon with a **D** characteristic of D6. While resolving those attacks, that weapon has a **D** characteristic of **D6+2**.*",
+      "target": null
+    },
+    {
+      "id": "a438efb7ebab76d3",
+      "kind": "rule",
+      "occurrences": 8,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain"
+        ]
+      },
+      "source": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+      "target": "Esta habilidad siempre adopta la forma **Feel No Pain X+**. Cada vez que una miniatura con esta habilidad fuera a perder una herida, tira un D6: con un resultado de **X+**, esa herida no se pierde."
+    },
+    {
+      "id": "7c7cf9ee66c4cf13",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[BLAST]",
+          "[BLAST X]",
+          "[BLAST 2]"
+        ],
+        "names": []
+      },
+      "source": "Each time you gather attack dice for a **[BLAST]** weapon, add one additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down). If this ability takes the form **[BLAST X]**, each time you gather **attack dice** for such a weapon, add **X** additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down) instead. \n***Example:** If a **[BLAST 2]** weapon with an **A** characteristic of 3 targets a unit containing 12 models, you would gather four additional **attack dice** for that weapon (for a total of seven for that weapon).*",
+      "target": null
+    },
+    {
+      "id": "fa7af1715d32cd41",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "While resolving attacks made with one or more **[PRECISION]** weapons, at the start of the Allocation Order step (05.03), if the target unit contains one or more **CHARACTER** models **visible** to one or more of the attacking models, the active player can select one allocation group that contains one of those **visible CHARACTER** models. If they do, until those attacks are resolved, or until that **CHARACTER** group is **destroyed** (whichever happens first), that **CHARACTER** group is the current allocation group.",
+      "target": null
+    },
+    {
+      "id": "5cf3b430a7a216b2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[INDIRECT FIRE]"
+        ],
+        "names": []
+      },
+      "source": "Units containing one or more models with an **[INDIRECT FIRE]** weapon can shoot using indirect shooting (10.07).",
+      "target": null
+    },
+    {
+      "id": "a5b87a328e8bdff0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": []
+      },
+      "source": "Each time an attack is made with a **[LANCE]** weapon, if the attacking model’s unit made a **charge move** this turn, add 1 to the **wound roll**.",
+      "target": null
+    },
+    {
+      "id": "14e1e1ee1f25ccb5",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Each time an attack made with a **[LETHAL HITS]** weapon results in a **critical hit**, you can choose for that attack to automatically wound the target. \n***Designer’s Note:** Choosing to automatically wound the target means that no **wound roll** is made for that attack. You may decide against this, as it means that attack cannot result in a **critical wound** and so cannot trigger other abilities such as [DEVASTATING WOUNDS].*",
+      "target": null
+    },
+    {
+      "id": "40f29111e9d66c9e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Each time an attack is made with an **[IGNORES COVER]** weapon, the target cannot have the **benefit of cover** against that attack (13.08), including from rules that give a model or unit the **benefit of cover** (e.g. **Stealth**).",
+      "target": "Cada vez que se realiza un ataque con un arma **[IGNORES COVER]**, el objetivo no puede recibir el **beneficio de cobertura** frente a ese ataque (13.08), ni siquiera por reglas que otorguen a una miniatura o unidad el **beneficio de cobertura** (p. ej. **Stealth**)."
+    },
+    {
+      "id": "fdef1b38efc7bf32",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[RAPID FIRE X]",
+          "[RAPID FIRE]",
+          "[RAPID FIRE 1]"
+        ],
+        "names": []
+      },
+      "source": "This ability always takes the form **[RAPID FIRE X]**. Each time you gather **attack dice** for a **[RAPID FIRE]** weapon, add **X** additional **attack dice** if the target unit was within half range of that weapon in the Select Targets step. \n***Example:** If a **[RAPID FIRE 1]** weapon with an **A** characteristic of 1 targets a unit that is within half range, you would gather one additional **attack dice** for that weapon (for a total of two for that weapon).*",
+      "target": null
+    },
+    {
+      "id": "ec011ccdf1d74e8f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[TORRENT]"
+        ],
+        "names": []
+      },
+      "source": "Each time an attack is made with a **[TORRENT]** weapon, that attack automatically hits the target.",
+      "target": "Cada vez que se realiza un ataque con un arma **[TORRENT]**, ese ataque impacta automáticamente en el objetivo."
+    },
+    {
+      "id": "a4774f8e625f39cb",
+      "kind": "rule",
+      "occurrences": 6,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts",
+          "Abilities"
+        ]
+      },
+      "source": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+      "target": null
+    },
+    {
+      "id": "a38c1fea40ae417e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "During deployment, if every model in a unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from your opponent’s deployment zone and all enemy units.",
+      "target": null
+    },
+    {
+      "id": "3055ea39c8b2d83e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes an **ingress move** (20.04), if every model in this unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from all enemy units, even if that is within your opponent’s deployment zone.",
+      "target": null
+    },
+    {
+      "id": "0b5e420dcaa66168",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise",
+          "Impulsor",
+          "Intercessors"
+        ]
+      },
+      "source": "This ability always takes the form **Deadly Demise X**. Each time a model in this unit is **destroyed**, after the units embarked within it (if any) have made their **emergency disembark moves**, roll one D6. On a 6, that model suffers a **deadly demise**; each unit within 6\" of that model suffers a number of **mortal wounds** denoted by **X** (if this is a random number, roll separately for each unit within 6\"). \n***Example:** An Impulsor with a unit of Intercessors embarked within it is **destroyed** by ranged attacks. First, any unresolved attacks made by the attacking unit are resolved. Then the Intercessors make an **emergency disembark move**. Then the roll is made for the **Deadly Demise** ability, and on a 6, that ability is resolved. Finally, the Impulsor is removed from the battlefield.*",
+      "target": null
+    },
+    {
+      "id": "31df3ac008cf7983",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If every model in a unit has this ability, each time a ranged attack targets that unit, that unit has the **benefit of cover** against that attack (13.08).",
+      "target": null
+    },
+    {
+      "id": "2ccb6d75983975d1",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a unit with this ability makes a **normal**, **advance** or **fall-back move**: \n- Models in that unit can move through models (including **MONSTER/VEHICLE** models, but excluding **TITANIC** models) and can move horizontally through sections of **terrain features** that are 4\" or less in height. \n- Before moving that unit, you can select for all models in that unit to have the **MOBILE** keyword until that move ends. If you do, when that move ends, roll one D6: on a 1, that unit is battle-shocked. \n***Designer’s Note:** Gaining the **MOBILE** keyword for the duration of a move will enable models in that unit to move horizontally through **dense terrain features** (13.06).*\n",
+      "target": null
+    },
+    {
+      "id": "24e4e6ed949c476f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[INDIRECT FIRE]"
+        ],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "Unless part of an **attached** unit, this unit is not **visible** to enemy models unless they are within 12\" of this unit, and it cannot be targeted by **[INDIRECT FIRE]** weapons unless the attacking model is within 12\" of this unit. \nIf this ability takes the form **Lone Operative X\"**, unless part of an **attached** unit, this unit is not **visible** to enemy models unless they are within **X\"** of this unit, and it cannot be targeted by **[INDIRECT FIRE]** weapons unless the attacking model is within **X\"** of this unit.",
+      "target": null
+    },
+    {
+      "id": "18d222d612fed90a",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit **takes to the skies** (21.03), do not subtract 2\" from the **maximum distance**.",
+      "target": "Cada vez que esta unidad **alza el vuelo** (21.03), no restes 2\" a la **distancia máxima**."
+    },
+    {
+      "id": "114b34e80e1b1517",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "While every model in a unit has this ability, that unit is a **Fights First** unit. \nSee the Resolve Fights First Combats step in the Fight phase (12.04).",
+      "target": null
+    },
+    {
+      "id": "ab151e4ee8796bbe",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": []
+      },
+      "source": "Each time an attack is made with a **[PSYCHIC]** weapon, you can ignore any or all modifiers to that attack’s **BS** or **WS** characteristic and any or all modifiers to the **hit roll**. Attacks made with **[PSYCHIC]** weapons are known as **psychic attacks** (this can be important for the triggering of other rules).",
+      "target": null
+    },
+    {
+      "id": "04d8743dc18a4619",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ONE SHOT]"
+        ],
+        "names": [
+          "Firing Deck"
+        ]
+      },
+      "source": "This ability always takes the form **Firing Deck X**. In your Shooting phase, each time this **TRANSPORT** is **selected to shoot**, if one or more units are embarked within it, resolve the following sequence: \n1. Select up to **X** models embarked within this **TRANSPORT** (excluding models whose units have already been **selected to shoot** this phase). \n2. For each selected model, select one of its ranged weapons (excluding **[ONE SHOT]** weapons). \n3. Until this **TRANSPORT** has resolved all of its attacks, it has all of those selected weapons in addition to its other weapons. \n4. Until the end of the turn, units embarked within this **TRANSPORT** are not eligible to shoot. ",
+      "target": null
+    },
+    {
+      "id": "defa41f8cfb08782",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ONE SHOT]"
+        ],
+        "names": []
+      },
+      "source": "Each weapon with this ability can only be selected to make attacks with once per battle. \nIf a **destroyed** model is returned to a unit, all of its **[ONE SHOT]** weapons that have already been selected to make attacks with during the battle cannot be selected to make attacks with again. \nIf a new unit is added to an army, all **[ONE SHOT]** weapons in that unit can be selected to make attacks with once per battle.",
+      "target": null
+    },
+    {
+      "id": "6e0a9772e7f95db9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Crucible",
+          "Enhancements"
+        ]
+      },
+      "source": "A **^^Character^^** created using Crucible rules has the Crucible ability. Your army may include up to three units with the Crucible ability and these units cannot be given Enhancements.",
+      "target": null
+    },
+    {
+      "id": "57f1bc1c6ff9bb27",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[CLEAVE X]",
+          "[CLEAVE]",
+          "[CLEAVE 1]"
+        ],
+        "names": []
+      },
+      "source": "This ability always takes the form **[CLEAVE X]**. Each time you gather **attack dice** for a **[CLEAVE]** weapon, if you only selected one target for all of that weapon’s attacks, add **X** additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down). \n***Example: If a **[CLEAVE 1]** weapon with an **A** characteristic of 3 targets one unit containing 16 models, you would gather three additional **attack dice** for that weapon (for a total of six for that weapon).*",
+      "target": null
+    },
+    {
+      "id": "ca99753f8cd29474",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[CLOSE-QUARTERS]"
+        ],
+        "names": []
+      },
+      "source": "Units containing one or more models with a **[CLOSE-QUARTERS]** weapon can shoot using **close-quarters shooting** (10.06). When using another **shooting type**, for each model in that unit (excluding **MONSTER/VEHICLE** models), you can only select one of the following to make attacks with: \n- One or more of its **[CLOSE-QUARTERS]** weapons. \n- One or more of its other ranged weapons.",
+      "target": null
+    },
+    {
+      "id": "a850cb074c0328d7",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Before the battle, in the Muster Armies step, for each **leader** and **support** unit in your army, you can select one friendly **bodyguard** unit that unit can lead. That unit will then lead that **bodyguard** unit for the battle and form an **attached** unit with it. \nUnless otherwise stated, each **bodyguard** unit can only have one **leader** unit and one **support** unit attached to it.",
+      "target": null
+    },
+    {
+      "id": "169ff2cc946f9374",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Damaged"
+        ]
+      },
+      "source": "This ability always takes the form **Damaged X**. While a model's remaining wounds are equal to or less than **X**, that model is **damaged**:\n- While a model is **damaged**, that model's attacks have -1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "cd347f857f124f92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "Each time a Critical Wound is scored for an attack made with this weapon, that attack has the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "46d2a88f1965f065",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit takes a Battle-shock, Leadership, Desperate Escape or Out of Action test, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "298c261b8c253b12",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit cannot Advance and you must subtract 1\" from the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "16e4b02cb52483c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a Critical Hit is scored against this unit, that attack automatically wounds this unit.",
+      "target": null
+    },
+    {
+      "id": "0be24506093e3564",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You cannot use any Stratagems to affect this unit and this unit cannot be Marked for Greatness.",
+      "target": null
+    },
+    {
+      "id": "5ea66ff4047b64b9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Subtract 1 from the Objective Control characteristic of models in this unit and this unit never receives a Charge bonus.",
+      "target": null
+    },
+    {
+      "id": "8e20bf63c1a836fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit cannot form an Attached unit, it is unaffected by the Aura abilities of friendly units, and it cannot be Marked for Greatness.",
+      "target": null
+    },
+    {
+      "id": "77bb408c72c747d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "All melee weapon equipped by **^^Character^^** models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "31019fd076d8c9d9",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 9\""
+        ]
+      },
+      "source": "This unit has the Scouts 9\" ability.",
+      "target": null
+    },
+    {
+      "id": "94d6d8b3bced74f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "**^^Character^^** models in this unit have the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "6f4aeb0b0db5572a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you take a Battle-shock or Leadership test for this unit, you can re-roll that test.",
+      "target": null
+    },
+    {
+      "id": "8422c4bc7c3f53b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Models in this unit can make attacks with ranged weapons even when their unit is within Engagement Range of enemy units, but they can only make such attacks against enemy units that they are within Engagement Range of. In such circumstances, those models can target an enemy unit even if other friendly units are within Engagement Range of the same enemy unit.",
+      "target": null
+    },
+    {
+      "id": "8d6f11d9a44465af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this unit, worsen the Leadership characteristic of models in that enemy unit by 1.",
+      "target": null
+    },
+    {
+      "id": "02341ff8e75e7d4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Models in this unit do not suffer the penalty to Hit rolls for making ranged attacks while their unit is within Engagement Range of one or more enemy units.",
+      "target": null
+    },
+    {
+      "id": "726e9daf6a944134",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack with a Strength characteristic of 7 or less is allocated to a model in this unit, worsen the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "cbdc26e40ea72b1e",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "99d97dcd90c3ec05",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Objective Control characteristic of all models in this unit.",
+      "target": null
+    },
+    {
+      "id": "b7a7b0001c7bf522",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select one enemy unit (regardless of how many units in your Crusade army have this Battle Trait). Until the end of the battle, each time a model in this unit makes an attack against that enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "784cdb443a44fa65",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "Each time this unit Advances, until the end of the turn all ranged weapons equipped by models in this unit have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "599f3663a4f7839a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.",
+      "target": null
+    },
+    {
+      "id": "9048f5dee76cfd53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tyrannic War Veteran"
+        ]
+      },
+      "source": "Each time a model in this unit destroys an enemy unit, add twice as many marks to its Tyrannic War Veteran tally as normal.",
+      "target": null
+    },
+    {
+      "id": "f9986762f61813e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battle Honours",
+          "Monster Hunters",
+          "Crusade"
+        ]
+      },
+      "source": "Select any one of the Battle Honours from the Monster Hunters upgrade path for this unit to gain, regardless of the ones it has already unlocked. The Battle Honour you select does not increase this unit's Crusade points total and does not count as an additional Battle Honour when determining the maximum number of Battle Honours this unit can have.",
+      "target": null
+    },
+    {
+      "id": "958d45f02bd08c58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "This unit has the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "4a8b409d5e3a1dfb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Add 3 to the Objective Control characteristic of one **^^Character^^** model in this unit.",
+      "target": null
+    },
+    {
+      "id": "3c0ffc8ef0df7a13",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "While this unit is within range of an objective marker, it has the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "0c6df8da98e31a90",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Add 1 to the Wounds characteristic of one **^^Character^^** model in this unit.",
+      "target": null
+    },
+    {
+      "id": "1df09f70c73c90d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time a **^^Character^^** model in this unit makes a melee attack that targets a **^^Character^^** unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a2611f7258015403",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the Objective Control characteristic of one model in this unit.",
+      "target": null
+    }
+  ]
+}

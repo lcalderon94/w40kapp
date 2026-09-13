@@ -1,0 +1,3195 @@
+{
+  "batch": 22,
+  "units": [
+    {
+      "id": "b9933701da5f111a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaplain",
+          "Crusade"
+        ]
+      },
+      "source": "**^^Chaplain^^** model only. You can re-roll Battle-shock tests taken for the bearer's unit. In addition, in the Select Crusade Blessings step, roll one D6, add 2 to the result if you are the Underdog: on a 6+, you can use one additional Crusade Blessing this battle (even if you are not the Underdog).",
+      "target": null
+    },
+    {
+      "id": "8f1b31af42061652",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "The bearer has the Scouts 6\" ability. While the bearer is leading a unit, models in that unit have the Scouts 6\" ability and that unit can declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "a45cf3896c65d21d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Crusade Relic",
+          "Battle Traits",
+          "Crusade",
+          "Fights First"
+        ]
+      },
+      "source": "Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic; note this on the bearer's Crusade card. That weapon has the **[DEVASTATING WOUNDS]** ability and improve the Strength, Armour Penetration and Damage characteristics of that weapon by 1. In addition, once per battle, at the start of the Fight phase, the bearer can use this Crusade Relic. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "83cdc3e066908c8b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Crusade Relic",
+          "Battle Traits",
+          "Crusade"
+        ]
+      },
+      "source": "Select one weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic; note this on the bearer's Crusade card. That weapon has the **[LETHAL HITS]** ability and each time an attack is made with that weapon, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "67d5db0b47e182cd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Death Company",
+          "Scouts 6\""
+        ]
+      },
+      "source": "- Unless this unit starts the battle embarked within a **^^Transport^^**, all **^^Death Company^^** models in this unit have the Scouts 6\" ability.\n- At the start of every Command phase, this unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "60de2d2156862292",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Company",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "- **^^Death Company^^** models in this unit have the Feel No Pain 5+ ability.\n- This unit fails Out of Action tests on rolls of 1-3.",
+      "target": null
+    },
+    {
+      "id": "500c76ba0dabceb4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Company"
+        ]
+      },
+      "source": "- Each time this unit makes a Charge move, until the end of the turn, add 1 to the Attacks characteristic of melee weapons equipped by **^^Death Company^^** models in this unit.\n- This unit can never Fall Back, even within 12\" of one or more friendly **^^Chaplains^^**.",
+      "target": null
+    },
+    {
+      "id": "a58669c376eadbb1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, you can re-roll one Hit roll, one Wound roll, or one saving throw made for this model.",
+      "target": null
+    },
+    {
+      "id": "28a93663f9dcf6c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Army",
+          "Crusade",
+          "Warlord"
+        ]
+      },
+      "source": "- Each time you lose a battle while this model is part of your Crusade Army, make a note of your opponent's Faction keyword on this model's Crusade Card. That keyword is one of this model's Learned Foes.\n- At the start of the first battle round, if this model is your **^^Warlord^^** and your opponent's Faction keyword matches one of this model's Learned Foes, roll one D6: on a 2+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "569c2d01ee8fb97b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and you can do so even if you have already used that Stratagem on a different unit this phase.",
+      "target": null
+    },
+    {
+      "id": "47f30d03e89e1eb4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, if this unit is within range of an objective marker, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "70e2dd052fd73b9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have a 4+ invulnerable save against Psychic attacks.",
+      "target": null
+    },
+    {
+      "id": "9e4de76822567554",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "In your Command phase, you can select one friendly **^^Adeptus Astartes^^** unit within 18\" of this **^^Psyker^^** and roll one D6: on a 1, this **^^Psyker^^**'s unit suffers D3 mortal wounds; on a 2+, until the start of your next Command phase, add 1 to the Objective Control characteristic of models in that friendly unit.",
+      "target": null
+    },
+    {
+      "id": "caf4d7eee83b86d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "If this model is alive at the end of the battle and was part of an Attached unit at the start of the battle, its Bodyguard unit gains D3+1 XP.",
+      "target": null
+    },
+    {
+      "id": "df7ffcbb66e0a837",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle, in your Command phase, if your Crusade force is embarked on an Oathsworn Campaign, you can change your Bonus Oathsworn Agenda for a different one from the table associated with your Oathsworn Campaign. When doing so, you do not lose any Honour points you have already gained from your current Bonus Agenda.",
+      "target": null
+    },
+    {
+      "id": "f0916e758c3e9cec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "**^^Psyker^^** model only. Add 1 to the Strength and Damage characteristics of **[PSYCHIC]** weapons the bearer is equipped with.",
+      "target": null
+    },
+    {
+      "id": "58fb5e9c7e3bfde1",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines",
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Add 6\" to the Range characteristic of ranged weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "fe3b5ab6df6bff21",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets a unit within 12\", you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "030a82d8418c9b32",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Marines",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1\" to the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "75cb1e0ec1017c99",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets a **^^Character^^** unit, on a Critical Hit, that attach has the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "7d7d2210942ba9dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "Once per battle, at the start of the Fight phase this unit can use this Battle Honour. If it does, until the end of the phase, models in this unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "42884c5a4d9f38c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Once per turn when an attack is allocated to the bearer, it can use this Crusade Relic. If it does, it has the Feel No Pain 4+ ability against that attack.",
+      "target": null
+    },
+    {
+      "id": "fdf3cf1a26abcc4d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Tacticus",
+          "Jump Pack",
+          "Fly",
+          "Gravis",
+          "Deep Strike",
+          "Inceptor Squad"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 10\", its Toughness characteristic to 6 and its Wounds characteristic to 5. Remove the **^^Tacticus^^** keyword, add the **^^Jump Pack^^**, **^^Fly^^** and **^^Gravis^^** keywords, it gains the Deep Strike ability and replace the list of units this model can be attached to: **^^Inceptor Squad^^**.",
+      "target": null
+    },
+    {
+      "id": "d9a2e6237c35765d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Fly",
+          "Jump Pack",
+          "Deep Strike",
+          "Assault Intercessors with Jump Packs",
+          "Intercessors",
+          "Vanguard Veteran Squad with Jump Packs"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 12\", add the **^^Fly^^** and **^^Jump Pack^^** keywords, it gains the Deep Strike ability and replace the list of units this model can be attached to: **^^Assault Intercessors with Jump Packs^^**, **^^Vanguard Veteran Squad with Jump Packs^^**.",
+      "target": null
+    },
+    {
+      "id": "77a9b86e24aeee8d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Tacticus",
+          "Gravis",
+          "Fly"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 5\", its Toughness characteristic to 6 and its Wounds characteristic to 5. Remove the **^^Tacticus^^** keyword, add the **^^Gravis^^** keyword and replace the list of units this model can be attached to: **^^Gravis^^** (excluding **^^Fly^^**).",
+      "target": null
+    },
+    {
+      "id": "935c7cf48adb0607",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Infiltrators",
+          "Stealth",
+          "Tacticus",
+          "Phobos",
+          "Eliminator Squad",
+          "Incursor Squad",
+          "Infiltrator Squad",
+          "Reiver Squad",
+          "Scout Squad"
+        ]
+      },
+      "source": "**^^Infantry^^** only. This model gains the Infiltrators and Stealth abilities, remove the **^^Tacticus^^** keyword, add the **^^Phobos^^** keyword, and replace the list of units this model can be attached to: **^^Eliminator Squad^^**, **^^Incursor Squad^^**, **^^Infiltrator Squad^^**, **^^Reiver Squad^^**, **^^Scout Squad^^**.",
+      "target": null
+    },
+    {
+      "id": "75bb65b0a4d16073",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Tacticus",
+          "Mounted",
+          "Outrider Squad"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 12\", its Toughness characteristic to 5 and its Wounds characteristic to 5. Remove the **^^Infantry^^** and **^^Tacticus^^** keywords, add the **^^Mounted^^** keyword, it is equipped with 1 twin bolt rifle in addition to the weapons you choose in the next step, and replace the list of units this model can be attached to: **^^Outrider Squad^^**.",
+      "target": null
+    },
+    {
+      "id": "7b25e1bd09ed3f1c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Tacticus",
+          "Terminator",
+          "Deep Strike",
+          "Terminator Assault Squad",
+          "Assault Squad",
+          "Terminator Squad"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 5\", its Toughness characteristic to 5, its Save characteristic to 2+, and its Wounds characteristic to 5. Remove the **^^Tacticus^^** keyword, add the **^^Terminator^^** keyword, it has a 4+ invulnerable save, it gains the Deep Strike ability, and replace the list of units this model can be attached to: **^^Terminator Assault Squad^^**, **^^Terminator Squad^^**.",
+      "target": null
+    },
+    {
+      "id": "0c40f023b8765a1f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Tacticus",
+          "Mounted",
+          "Astartes grenade launcher",
+          "Outrider Squad",
+          "Ravenwing Black Knights"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 12\", its Toughness characteristic to 5 and its Wounds characteristic to 5. Remove the **^^Infantry^^** and **^^Tacticus^^** keywords, add the **^^Mounted^^** keyword, and it has a 5+ invulnerable save, it is equipped with 1 plasma talon or 1 Astartes grenade launcher in addition to the weapons you choose in Step 4, and change the list of units this model can be attached to: **^^Outrider Squad^^**, **^^Ravenwing Black Knights^^**.",
+      "target": null
+    },
+    {
+      "id": "28bda23db9221e9a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Feel No Pain 6+",
+          "Chaplain",
+          "Death Company",
+          "Death Company Marines",
+          "Death Company Marines with Bolt Rifles"
+        ]
+      },
+      "source": "**^^Infantry^^** only. This model gains the Feel No Pain 6+ ability and unless it's unit is within 12\" of one or more friendly **^^Chaplain^^** models, it cannot be selected to Fall Back and its Objective Control characteristic is 0. Add the **^^Death Company^^** keyword, and change the list of units this model can be attached to: ^^**Death Company Marines^^**, ^^**Death Company Marines with Bolt Rifles^^**.",
+      "target": null
+    },
+    {
+      "id": "a2af6ab41db29a6e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Deep Strike",
+          "Feel No Pain 6+",
+          "Chaplain",
+          "Death Company",
+          "Fly",
+          "Jump Pack",
+          "Death Company Marines with Jump Packs"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 12\", it gains the Deep Strike and Feel No Pain 6+ abilities, and unless it's unit is within 12\" of one or more friendly **^^Chaplain^^** models, it cannot be selected to Fall Back and its Objective Control characteristic is 0. Add the **^^Death Company^^**, **^^Fly^^** and **^^Jump Pack^^** keywords, and change the list of units this model can be attached to: ^^**Death Company Marines with Jump Packs^^**.",
+      "target": null
+    },
+    {
+      "id": "071f0ddda7ddb6e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Champion of the Chapter",
+          "Chapter",
+          "Deep Strike",
+          "Fly",
+          "Jump Pack",
+          "Sanguinary Guard"
+        ]
+      },
+      "source": "**^^Champion of the Chapter^^** only. Change this model's Move characteristic to 12\", it gains the Deep Strike ability. Add the **^^Fly^^** and **^^Jump Pack^^** keywords, and change the list of units this model can be attached to: ^^**Sanguinary Guard^^**.",
+      "target": null
+    },
+    {
+      "id": "daddc71915c3b1c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dreadnought",
+          "Feel No Pain 6+",
+          "Chaplain",
+          "Death Company"
+        ]
+      },
+      "source": "**^^Dreadnought^^** only. This model gains the Feel No Pain 6+ ability and unless it's unit is within 12\" of one or more friendly **^^Chaplain^^** models, it cannot be selected to Fall Back and its Objective Control characteristic is 0. Add the **^^Death Company^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "bb5ffe28afd951a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dreadnought",
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Dreadnought^^** only. Add the **^^Psyker^^** keyword, and you can choose one additional ranged weapon for your model to be equipped with, which must be a Psychic weapon.",
+      "target": null
+    },
+    {
+      "id": "0be93c478892abce",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Champion of the Chapter",
+          "Chapter",
+          "Tacticus",
+          "Wulfen",
+          "Wulfen with Storm Shields"
+        ]
+      },
+      "source": "**^^Champion of the Chapter^^** only. Change this model's Move characteristic to 9\", change its Toughness characteristic to 6, and change its Save characteristic to 4+. Remove the **^^Tacticus^^** keyword, add the **^^Wulfen^^** keyword and replace the list of units this model can be attached to: **^^Wulfen^^**, **^^Wulfen with Storm Shields^^**.",
+      "target": null
+    },
+    {
+      "id": "8a7a0410890c0261",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Tacticus",
+          "Terminator",
+          "Deep Strike",
+          "Wolf Guard Terminators",
+          "Terminators"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 5\", its Toughness characteristic to 5, its Save characteristic to 2+, and its Wounds characteristic to 5. Remove the **^^Tacticus^^** keyword, add the **^^Terminator^^** keyword, it has a 4+ invulnerable save, it gains the Deep Strike ability, and replace the list of units this model can be attached to: **^^Wolf Guard Terminators^^**.",
+      "target": null
+    },
+    {
+      "id": "6f8d1d32e9819f96",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Champion of the Chapter",
+          "Chapter",
+          "Infantry",
+          "Tacticus",
+          "Mounted",
+          "Thunderwolf Cavalry"
+        ]
+      },
+      "source": "**^^Champion of the Chapter^^** only. Change this model's Move characteristic to 12\", its Toughness characteristic to 6, and its Wounds characteristic to 7. Remove the **^^Infantry^^** and **^^Tacticus^^** keywords and add the **^^Mounted^^** keyword. It is equipped with 1 teeth and claws in addition to the weapons you choose in Step 4, and replace the list of units this model can be attached to: **^^Thunderwolf Cavalry^^**.",
+      "target": null
+    },
+    {
+      "id": "3148a1496c292f8c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Blood Claws",
+          "Claws",
+          "Grey Hunters",
+          "Wolf Guard Headtakers",
+          "Headtakers"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 7\", and add the list of units this model can be attached to: **^^Blood Claws^^**, **^^Grey Hunters^^**, **^^Wolf Guard Headtakers^^**.",
+      "target": null
+    },
+    {
+      "id": "ffdf221f7e077779",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks",
+      "target": null
+    },
+    {
+      "id": "858d6a5b7ae23402",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "In your Command phase, you can select one friendly Adeptus Astartes Vehicle model within 3\" of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "5d07b6cc9f9bf812",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return 1 destroyed model (excluding Character models) to that unit.",
+      "target": null
+    },
+    {
+      "id": "81d48ee69e6cd25d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lethal Hits]"
+        ],
+        "names": [
+          "Weapons",
+          "Lethal Hits"
+        ]
+      },
+      "source": "Weapons equipped by models in this unit have the [Lethal Hits] ability.",
+      "target": null
+    },
+    {
+      "id": "d11d95dcbd7d12bd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "1a191858af106e55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, you can select one enemy unit within 18\" of this model. That enemy unit must take a Battle-Shock test.",
+      "target": null
+    },
+    {
+      "id": "f8a7fcf6b3b317d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "0e2baeeaec3010d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Scouts 6\""
+        ]
+      },
+      "source": "While this model is leading a unit, unless that unit starts the battle embarked within a Transport, models in that unit have the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "97d86a194e5a731e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a 4+ Invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "5c5c16230407a65c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per phase, when an attack is allocated to this model, and the saving throw is failed, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "311d685eea2d5ae0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model's unit has fought, if one or more enemy units were destroyed as a result of those attacks, each enemy unit within 6\" of this model must take a Battle-Shock test.",
+      "target": null
+    },
+    {
+      "id": "37b5d4d00c165e6e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit is eligible to declare a chare in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "9c7705910f63dac2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time that unit is selected to fight, take a Leadership test for that unit: if passed, until the end of the phase, each time a model in that unit makes an attack, you can re-roll the Hit roll; if failed, until the end of the phase, each time a model in that unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "1fd451f9911dff31",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Adeptus Astartes Vehicle model only. The bearer has a 5+ invulnerable save and, at the end of your\nCommand phase, the bearer regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "a4067e6e900312ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Adeptus Astartes Vehicle model only. Once per phase, you can re‑roll one Hit roll, one Wound roll\nand one Damage roll for the bearer.",
+      "target": null
+    },
+    {
+      "id": "5fd066e855aefe30",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Adeptus Astartes Vehicle model only. Ranged weapons equipped by the bearer have the\n[SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "acb677b412e5e177",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Adeptus Astartes Vehicle model only. In your Shooting phase, while a friendly Adeptus Astartes\nVehicle unit is within 6\" of the bearer, ranged weapons equipped by models in that unit have the\n[ASSAULT] ability",
+      "target": null
+    },
+    {
+      "id": "fae6e8d62f5ec116",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "SPEEDER unit only. This unit can re-roll:\n\n\n▪ Damage rolls.\n▪ Rolls to determine the A of a weapon.",
+      "target": null
+    },
+    {
+      "id": "2422b54bf2d21bd5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "SPEEDER unit only. This unit’s ranged attacks have [IGNORES COVER]",
+      "target": null
+    },
+    {
+      "id": "e3025ee91adfb768",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES unit only. This unit’s plasma attacks have +6\" R.",
+      "target": null
+    },
+    {
+      "id": "0b783ed9c1884b5b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "RAVENWING FLY unit only. In your first Movement phase, this unit can make an ingress move.",
+      "target": null
+    },
+    {
+      "id": "0fac90f611a8d540",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTUS ASTARTES TERMINATOR model only. This unit has +1 OC.",
+      "target": null
+    },
+    {
+      "id": "cbd301e9b97627c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Charge phase, this model can use this ability. If it does, until the end of the turn, you can re-roll Charge rolls made for ADEPTUS ASTARTES units from your army and, until the end of the turn, each time an ADEPTUS ASTARTES model from your army makes a melee attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "7e72b9a1fca3fa7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model destroys an enemy unit, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "de51dae11d7be510",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, once per battle, when a Battle-shock test is taken for that unit, you can re-roll that test.",
+      "target": null
+    },
+    {
+      "id": "add328142434c34f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhancements"
+        ]
+      },
+      "source": "This model cannot be your WARLORD and cannot be given Enhancements.",
+      "target": null
+    },
+    {
+      "id": "2ffd59de19ae536a",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is within 6\" of one or more friendly SPACE WOLVES CHARACTER models (Excluding WULFEN models) or within 12\" of one or more friendly WOLF PRIEST models, if it is not Battle-shocked, add 1 to the Objective Control characteristic of INFANTRY models in it and add 3 to the Objective Control characteristic of VEHICLE models in it.",
+      "target": null
+    },
+    {
+      "id": "0ec9d4049d656dd7",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wolf Guard Terminators",
+          "Terminators"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Wolf Guard Terminators",
+      "target": null
+    },
+    {
+      "id": "90fa1a4bc65a9c0d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Space Wolves"
+        ]
+      },
+      "source": "Once per battle round, in your Movement phase, you can select one friendly Space Wolves unit that is in Reserves. If you do, until the end of the phase, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
+      "target": null
+    },
+    {
+      "id": "c47dc7211558b6cb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when your opponent targets a unit from their army within 12” of this model with a stratagem, you can use this ability. If you do increase the CP cost of that use of that stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "96656c3523d7b1e3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Terminator",
+          "Infantry"
+        ]
+      },
+      "source": "This model can embark within friendly Adeptus Astartes Transport models that can transport Terminator models. When doing, it takes up the space of 4 Infantry models",
+      "target": null
+    },
+    {
+      "id": "39c32b82f340d23e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Thunderwolf Cavalry"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n\n■ Thunderwolf Cavalry",
+      "target": null
+    },
+    {
+      "id": "08c67b9ece5449ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Logan Grimnar",
+          "Logan"
+        ]
+      },
+      "source": "Your army cannot contain both Logan Grimnar and Logan Grimnar on Stormrider",
+      "target": null
+    },
+    {
+      "id": "dca306a9e106f7df",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Claws",
+          "Claws",
+          "Grey Hunters",
+          "Wolf Guard Headtakers",
+          "Headtakers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Wolf Guard Headtakers",
+      "target": null
+    },
+    {
+      "id": "b0589b29ad2daea5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and each time that unit advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit",
+      "target": null
+    },
+    {
+      "id": "607b571816e58a87",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Living Lightning",
+          "Range"
+        ]
+      },
+      "source": "In your Shooting phase, after this model's unit has shot, select one enemy unit, (excluding MONSTERS and VEHICLES) hit by one or more of those attacks made with this model's Living Lightning weapon. Until the start of your next turn, that enemy is stormwracked. While a unit is stormwracked, subtract 6\" from the Range characteristic of ranged weapons equipped by models in that unit (to a minimum of 12\")",
+      "target": null
+    },
+    {
+      "id": "5595b4a384cfc96f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to this model, if the Strength characteristic of that attack is greater than this model's Toughness characteristic, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "43a9ee72d82aa70d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if this model is on the battlefield, you gain 1 CP",
+      "target": null
+    },
+    {
+      "id": "f564a2b1ad81d3e5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6, on a 4+, do not remove the destroyed model from play. The destroyed model can fight after the attacking unit has finished making its attacks, and then is removed from play",
+      "target": null
+    },
+    {
+      "id": "eef72736aa0311dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack that targets a CHARACTER unit, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c79eb2cb0a191876",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Detachment"
+        ]
+      },
+      "source": "At the start of the battle, select one of the following keywords to be this model's Slayer's Oath: CHARACTER, VEHICLE or MONSTER. The first time this model's unit destroys a unit with this model's Slayer's Oath keyword, if your Detachment has a Saga, until the end of the battle, this model's unit receives the benefits of that Detachment rule as if that Saga had been completed.",
+      "target": null
+    },
+    {
+      "id": "9ea90ec38d25895e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll. If that attack targets a unit that has this model's Slayer's Oath keyword (see above), add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "b4820c21e927f1e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Claws",
+          "Claws",
+          "Wolf Guard Headtakers",
+          "Headtakers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Wolf Guard Headtakers",
+      "target": null
+    },
+    {
+      "id": "e519293c435a1f52",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a BLOOD CLAWS unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll. While this model is leading a WOLF GUARD HEADTAKERS UNIT, that unit is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "2c5b8e0ac65823d0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Frostfang"
+        ]
+      },
+      "source": "Each time this model ends a Charge move, until the end of the turn, add 2 to the Attacks characteristics of this model’s Frostfang.",
+      "target": null
+    },
+    {
+      "id": "e972ec476ef7311b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Claws",
+          "Claws",
+          "Grey Hunters",
+          "Wolf Guard"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Wolf Guard",
+      "target": null
+    },
+    {
+      "id": "5c3b2e249a19587d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "cce544919eebd564",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, you can select one enemy INFANTRY unit within 12\" of and visible to this model. That enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "30bdea9994815bae",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Thunderwolf Cavalry"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Thunderwolf Cavalry",
+      "target": null
+    },
+    {
+      "id": "e3911232ea0015af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time that unit makes a Charge move, until the end of the turn, crushing teeth and claws equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "955b01096287b519",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per phase, when resolving an attack made against this model, after you make a saving throw for this model, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "5d07bc5ebcd46ae1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fenrisian Wolves",
+          "Thunderwolf Cavalry"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Fenrisian Wolves\n■ Thunderwolf Cavalry",
+      "target": null
+    },
+    {
+      "id": "637ff67a828aab3e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "4010c6fcf81a9988",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy units suffers D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "b740604a0a33a570",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Relic Terminator Squad",
+          "Terminator Squad",
+          "Terminator Assault Squad",
+          "Assault Squad",
+          "Wolf Guard Terminators",
+          "Terminators",
+          "Captain",
+          "Chapter Master",
+          "Bodyguard",
+          "Leader"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Relic Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad\n■ Wolf Guard Terminators\n\nYou can attach this model to one of the above units even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+      "target": null
+    },
+    {
+      "id": "d1f30dba218da376",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While this model is attached to a unit that contains another CHARACTER model, all CHARACTER models in that unit have the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "287704ffda521b0d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to Advance and Charge rolls made for this model’s unit.",
+      "target": null
+    },
+    {
+      "id": "e693fb96aaf1ae45",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Thunderwolf Cavalry"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n\n■ Thunderwolf Cavalry\n",
+      "target": null
+    },
+    {
+      "id": "84d43b170b092c97",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, in your opponent’s Shooting phase, after an enemy unit has finished making its attacks, if this model’s unit was targeted by one or more of those attacks, this model’s unit can make a Normal move of up to D6\", but must end that move as close as possible to the closest enemy unit. When doing so, models in this model’s unit can be moved within Engagement Range of that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "9f88d97a9f41f570",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target is within range of an objective marker, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "c1289c227c8dad8b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a CHARACTER model is leading this unit, each time a model in this unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "7d98044531060747",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a CHARACTER unit from your army with the Leader ability can be attached to an STERNGUARD VETERAN SQUAD or VANGUARD VETERAN SQUAD, it can instead be attached to this unit.",
+      "target": null
+    },
+    {
+      "id": "01298fb4fd4de107",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "51db91ed4ace2eba",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, roll one D6: on a 4+, the attacking unit suffers D6 mortal wounds and is Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "5c0a3c227126d42b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Claws",
+          "Claws"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n\n■ Blood Claws",
+      "target": null
+    },
+    {
+      "id": "68f9f2b4114e7651",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Space Wolves",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model cannot be your WARLORD.",
+      "target": null
+    },
+    {
+      "id": "dfb283f35ffdb893",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "WOLF GUARD TERMINATORS unit only. This unit has +1 T",
+      "target": null
+    },
+    {
+      "id": "0597c4f1effe0795",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "bf8b6edb02847c30",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "In your Shooting phase, you can select one enemy unit within 12\" of this unit (if a LIEUTENANT IN REIVER ARMOUR is leading this unit, you can select one enemy unit within 18\" instead). That unit must take a Battle-shock test, subtracting 1 from the result if it is a PSYKER unit. If that test is failed, in addition to being Battle-shocked, that unit is Stunned until the start of your next Shooting phase. While a unit is Stunned, each time a model in that unit makes a Psychic Attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "5422a924c058708b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have a 6+ invulnerable save. This invulnerable save is improved to 4+ against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "13a3244583a820e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a CHARACTER unit from your army with the Leader ability can be attached to a REIVER SQUAD, it can instead be attached to this unit.",
+      "target": null
+    },
+    {
+      "id": "6bc88a8e3a63ce55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit, (excluding MONSTERS and VEHICLES) within Engagement Range of this unit Falls Back, all that models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from those tests.",
+      "target": null
+    },
+    {
+      "id": "bb43dd11fd76d6cb",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes a melee attack, re-roll a hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "ec42183c829596a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bestial Rage",
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit is selected to shoot, after that unit has shot, if this model lost one or more wounds as a result of those attacks, this model can make a Bestial Rage move. To do so, roll one D6, adding 2 to the result: this model can be moved a number of inches up to the result, but must finish that move as close as possible to the closest enemy unit(excluding AIRCRAFT). When doing so, this model can be moved within Engagement Range of that enemy unit. Each model can only make one Bestial Rage move per phase.",
+      "target": null
+    },
+    {
+      "id": "e561a4541d1c1caf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is equipped with two melee weapons, those weapon profiles have the TWIN-LINKED ability.",
+      "target": null
+    },
+    {
+      "id": "8ed6f55b85cbd8e2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, each time an attack targets a friendly WULFEN unit within 6\" of this model, if a model in that unit is destroyed as a result of that attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "0cc06c90858746c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wolf Guard"
+        ]
+      },
+      "source": "Each time a model in this unit makes a melee attack with its Wolf Guard weapon, if it made a Charge move this turn, add 1 to the Damage characteristic of that attack",
+      "target": null
+    },
+    {
+      "id": "ccf783c75d70e236",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, it can make a Normal move of up to D6\"",
+      "target": null
+    },
+    {
+      "id": "4bf6b7abfedb5980",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is within 6\" of one or more SPACE WOLVES CHARACTER models (excluding WULFEN models), if this unit is not Battle-shocked, models in it have an Objective Control characteristic of 1",
+      "target": null
+    },
+    {
+      "id": "0ea5af3aa44356ba",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Charge rolls made for this unit. Each time this unit makes a Charge move, until the end of the turn, each time a model in this unit makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "060d41c7c4b23ef8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a CHARACTER unit from your army with the Leader ability can be attached to an ASSAULT INTERCESSOR SQUAD WITH JUMP PACKS or ASSAULT SQUAD WITH JUMP PACKS, it can instead be attached to this unit.",
+      "target": null
+    },
+    {
+      "id": "db6630984a186d50",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Long Fang Pack Leader",
+          "Pack Leader",
+          "Leader"
+        ]
+      },
+      "source": "Each time this unit Remains Stationary, if it includes a Long Fang Pack Leader, you can select one enemy unit that is visible to that model. Until the end of the turn, each time a model in this unit makes a ranged attack that targets that enemy unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "e93de5dc89101aab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a CHARACTER unit from your army with the Leader ability can be attached to a DEVASTATOR SQUAD, it can instead be attached to this unit.",
+      "target": null
+    },
+    {
+      "id": "759f1c2c4855df38",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, after making a Hit roll for a model in this unit, you can change that roll to an unmodified 6.",
+      "target": null
+    },
+    {
+      "id": "ab1cfe6de65affe6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, if an enemy MONSTER or VEHICLE unit was hit by one or more of those attacks made with this model’s helfrost destructor, until the end of your opponent’s next turn, that enemy unit is Frozen. While a unit is Frozen, subtract 2 from that unit’s Move characteristic, and  subtract 2 from Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "0ca426060b6888cb",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 6 ADEPTUS ASTARTES INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "b89e9eac77f236ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If a unit disembarks from this TRANSPORT before it moves, until the end of the turn, that unit is eligible to charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "8cd3b966c7fc8346",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 16 ADEPTUS ASTARTES INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "8be49e21f7b3b81d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Claws",
+          "Claws",
+          "Grey Hunters",
+          "Long Fangs"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Long Fangs\n",
+      "target": null
+    },
+    {
+      "id": "5cb1a00fd0ecb741",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Skyclaws"
+        ]
+      },
+      "source": "This model can be attached to the following unit: Skyclaws\n\n\n",
+      "target": null
+    },
+    {
+      "id": "cf80f74952f5b925",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ADEPTUS ASTARTES VEHICLE units, this model has the Lone Operative ability",
+      "target": null
+    },
+    {
+      "id": "b512ca05cefacbcd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [
+          "[RAPID FIRE 1]"
+        ],
+        "names": [
+          "Blessing of the Omnissiah"
+        ]
+      },
+      "source": "In your Command phase, you can select one friendly ADEPTUS ASTARTES VEHICLE model within 3\" of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, select one ranged weapon equipped by that model to have the [RAPID FIRE 1] ability. Each model can only be selected for this ability or Blessing of the Omnissiah ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "c00cdd3f18889040",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Headtakers",
+          "Blood Claws",
+          "Claws",
+          "Grey Hunters"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Wolfguard Headtakers\n■ Blood Claws\n■ Grey Hunters",
+      "target": null
+    },
+    {
+      "id": "cbb9c2cb7e98596a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit within Engagement Range of one or more friendly ADEPTUS ASTARTES VEHICLE units, you can re-roll the wound roll.",
+      "target": null
+    },
+    {
+      "id": "a475c554c3f467c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "b880260f31511241",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "6321f8d4072a5fa1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fenrisian Wolves"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n\n■ Fenrisian Wolves\n\n",
+      "target": null
+    },
+    {
+      "id": "822083461232e09d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhancements"
+        ]
+      },
+      "source": "This model cannot be your WARLORD and cannot be given Enhancements.",
+      "target": null
+    },
+    {
+      "id": "029ed6c580796a58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent’s turn, if this unit is more than 6\" away from all enemy models, you can remove this unit from the battlefield and place it into\nStrategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "c628eab1e9007851",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly SPACE WOLVES unit is within 6\" of this model, add 1 to Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "5318f6f2128ff2ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Iron Priest hammer"
+        ]
+      },
+      "source": "If a friendly ADEPTUS ASTARTES VEHICLE model is destroyed within 12\" of this model, until the end of the battle, this model’s Iron Priest hammer has an Attacks characteristic of 6.",
+      "target": null
+    },
+    {
+      "id": "3d2f25d17e06d48d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one friendly ADEPTUS ASTARTES VEHICLE model within 3\" of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, each time that VEHICLE model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "fac137d5822a55e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "WOLF PRIEST model only. (Once per battle-round, per army) In your Movement phase, at the start or end of this unit's move, you can:\n\n\n▪ Select one friendly ADEPTUS ASTARTES unit within 6\" of this unit. That unit is no longer battle-shocked.\n▪ Or: Select one friendly GREY HUNTERS unit within 18\" of this unit. That unit is no longer battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "fe3af21fadbdc618",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return 1 model (excluding CHARACTER models) to that unit.",
+      "target": null
+    },
+    {
+      "id": "53cdcd1b0e33b7bb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]",
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "WOLF GUARD BATTLE LEADER model only. This unit's ranged attacks have:\n\n\n▪ [ASSAULT].\n▪ [IGNORES COVER].\n▪ +1 AP.",
+      "target": null
+    },
+    {
+      "id": "04eda475039434a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability and, each time a model in that unit makes an attack that targets an enemy unit within 6\", re-roll a Hit roll of 1",
+      "target": null
+    },
+    {
+      "id": "1386f65fcf90c993",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and then it is removed from play.",
+      "target": null
+    },
+    {
+      "id": "571236d6d935da40",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Wounds characteristic of 6",
+      "target": null
+    },
+    {
+      "id": "5be008195a80079a",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Declare Battle Formations step, split this unit into two units, one containing all of it's HEADTAKERS models and one containing all of its HUNTING WOLVES models, with new Starting Strengths accordingly.",
+      "target": null
+    },
+    {
+      "id": "7f0e41c9768177da",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]",
+          "[PRECISION]"
+        ],
+        "names": [
+          "Weapons",
+          "Transport"
+        ]
+      },
+      "source": "At the start of the battle, select one unit from your opponent's army to be this unit's quarry. Weapons equipped by HEADTAKERS models in this unit have the [DEVASTATING WOUNDS] and [PRECISION] abilities while targeting it's quarry. Each time this unit's quarry is destroyed, select one new enemy unit to be this unit's quarry. This ability can be used even if this unit is embarked within\na Transport",
+      "target": null
+    },
+    {
+      "id": "9d7a67a47fa59730",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is within 6\" of one or more friendly SPACE WOLVES CHARACTER models (excluding WULFEN models), if this unit is not Battle-shocked, HUNTING WOLVES models in it have an Objective Control characteristic of 1",
+      "target": null
+    },
+    {
+      "id": "a8cbf3eb37d1c45c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, after this unit has fought, select one enemy MONSTER or VEHICLE unit hit by one or more of those attacks. Until the end of the next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "4c5f6738f9d6d075",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Space Wolves",
+          "Character",
+          "Wulfen",
+          "Hunting Wolves"
+        ]
+      },
+      "source": "While this unit is within 6\" of one or more friendly ^^**Space Wolves Character**^^ models (excluding ^^**Wulfen**^^ models), if this unit is not Battle-shocked, Hunting Wolves models in this unit have an Objective Control characteristic of 1.",
+      "target": null
+    },
+    {
+      "id": "774dd856e09485a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets an enemy unit, if there are no other units from your opponent’s army within 6\" of that target, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "0fc7913a154fd689",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, you can select one enemy unit within 3\" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a ^^**Vehicle**^^ unit.",
+      "target": null
+    },
+    {
+      "id": "806be0435fc53d39",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Scouts 6\" ability and ranged weapons equipped by models in that unit have the [ASSAULT] ability.",
+      "target": null
+    },
+    {
+      "id": "d165cb911bc496d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this model, if this model’s unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "9ed61de638e970b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Assault Intercessor Squad",
+          "Intercessor Squad",
+          "Bladeguard Veteran Squad",
+          "Company Heroes",
+          "Sternguard Veteran Squad",
+          "Tactical Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Company Heroes\n■ Sternguard Veteran Squad\n■ Tactical Squad",
+      "target": null
+    },
+    {
+      "id": "0531c60f5c3b67b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "ebb1ca6d83812d9f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Assault Squad",
+          "Command Squad",
+          "Sternguard Veteran Squad",
+          "Tactical Squad",
+          "Tyrannic War Veterans",
+          "Vanguard Veteran Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Command Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n■ Tyrannic War Veterans\n■ Vanguard Veteran Squad",
+      "target": null
+    },
+    {
+      "id": "bed526c69ef6ba35",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "ab5e5de143837aad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Melee"
+        ]
+      },
+      "source": "▪ This unit has Stealth.\n▪ Melee attacks that target this unit have ‑1 to hit rolls.\n▪ (Once per battle round, per army) When you target this unit with the Counteroffensive/Fire Overwatch/Heroic Intervention stratagem, that use is ‑1 CP.",
+      "target": null
+    },
+    {
+      "id": "51870a0950ef71c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, DESOLATION SQUAD, DEVASTATOR SQUAD, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, TACTICAL SQUAD, VANGUARD VETERAN SQUAD",
+      "target": null
+    },
+    {
+      "id": "b1ccde242ed14c68",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back.",
+      "target": null
+    },
+    {
+      "id": "6b7681d5d65e1430",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Marneus Calgar"
+        ]
+      },
+      "source": "At the start of your Command phase, if this unit’s Marneus Calgar model is your WARLORD and is on the battlefield, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "7d6813fb9f6fd232",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Victrix Honour Guard",
+          "Honour Guard",
+          "Marneus Calgar",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While this unit contains one or more Victrix Honour Guard models, this unit’s Marneus Calgar model has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "6a6f046243474c92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aggressor Squad",
+          "Assault Intercessor Squad",
+          "Intercessor Squad",
+          "Bladeguard Veteran Squad",
+          "Company Heroes",
+          "Eradicator Squad",
+          "Heavy Intercessor Squad",
+          "Infernus Squad",
+          "Sternguard Veteran Squad",
+          "Tactical Squad"
+        ]
+      },
+      "source": "This unit can be attached to the following units:\n\n■ Aggressor Squad\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Company Heroes\n■ Eradicator Squad\n■ Heavy Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad",
+      "target": null
+    },
+    {
+      "id": "a20d76af457a4d85",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Author of the Codex",
+          "Primarch",
+          "Oath of Moment",
+          "Strategist"
+        ]
+      },
+      "source": "At the Start of your Command phase, select two Author of the Codex abilities (see left). Until the start of your next Command phase, this model has those abilities.’\n\nPrimarch of the XIII (Aura): While a friendly Adeptus Astartes unit is within 6\" of this model, add 1 to the Objective Control characteristic of models in that unit and you can re-roll Battle-shock and Leadership tests taken for that unit.\n\nMaster of Battle: After you have selected an enemy unit using the Oath of Moment ability, select a second enemy unit. Until the start of your next Command phase, if your Oath of Moment target is destroyed, that second enemy unit becomes your Oath of Moment target until you select a new one.\n\nSupreme Strategist: Once per battle round, you can target one friendly ADEPTUS ASTARTES unit within 12\" of this model with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "b1e0377e6cedf61b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly Adeptus Astartes Infantry units, this model has the Lone Operative ability",
+      "target": null
+    },
+    {
+      "id": "2184b4124b471f36",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time this model is destroyed, roll one D6 at the end of the phase: on a 3+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with 6 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "d9c8d91e2be66089",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "If this model is in your army, it must be your Warlord.",
+      "target": null
+    },
+    {
+      "id": "a6a706f9b5ca863b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Ranged weapons",
+          "Sergeant Chronus",
+          "Chronus",
+          "Transport",
+          "Hunter",
+          "Land Raider",
+          "Raider",
+          "Land Raider Crusader",
+          "Crusader",
+          "Land Raider Redeemer",
+          "Predator Annihilator",
+          "Annihilator",
+          "Predator Destructor",
+          "Destructor",
+          "Stalker",
+          "Vindicator",
+          "Whirlwind"
+        ]
+      },
+      "source": "While this model is commanding a Vehicle model (see reverse):\n\n■ Ranged weapons equipped by that Vehicle model have a Ballistic Skill characteristic of 2+.\n■ Each time that Vehicle model is selected to shoot, you can re-roll one Wound roll when resolving those attacks.\n\nIf your army includes one or more of the Vehicle models listed below, Sergeant Chronus must start the battle embarked within one of those models as if it were a Transport. Sergeant Chronus can only disembark from that Vehicle if it is destroyed. While embarked in this way, Sergeant Chronus is said to be commanding that Vehicle.\n\n■ Hunter\n■ Land Raider\n■ Land Raider Crusader\n■ Land Raider Redeemer\n■ Predator Annihilator\n■ Predator Destructor\n■ Stalker\n■ Vindicator\n■ Whirlwind",
+      "target": null
+    },
+    {
+      "id": "2c10332908dc9a24",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Lone Operative"
+        ]
+      },
+      "source": "When this model disembarks from a Vehicle model it was commanding, it has the Lone Operative ability until the end of the battle.",
+      "target": null
+    },
+    {
+      "id": "cbafcb82889adfbb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, improve the Objective Control characteristic of models in that unit by 1 and each time a model in that unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "34eacb92547e34e8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[PRECISION]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time that unit is selected to shoot or fight, select one of the following abilities to apply to weapons equipped by models in that unit until the end of the phase:\n\n\n■ [LETHAL HITS]\n■ [PRECISION]\n■ [SUSTAINED HITS 1]",
+      "target": null
+    },
+    {
+      "id": "77f9f41627ca7c64",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scout Squad",
+          "Scout Sniper Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Scout Squad\n■ Scout Sniper Squad",
+      "target": null
+    },
+    {
+      "id": "bca46520485eccf6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability when targeting Tyranids units.",
+      "target": null
+    },
+    {
+      "id": "0450592cc0c7ef24",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time your opponent targets a unit from their army with a  stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP (this is not cumulative with any other rules that would increase the CP cost of that Stratagem).",
+      "target": null
+    },
+    {
+      "id": "eb32dd4001982226",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Phobos",
+          "Gravis",
+          "Tacticus",
+          "Infantry",
+          "Deep Strike"
+        ]
+      },
+      "source": "During the Declare Battle Formations step, if your army includes this model, select one Phobos, Gravis, or Tacticus Adeptus Astartes Infantry unit from your army.  That unit gains the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "20bc6fc364822c9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, COMMAND SQUAD, COMPANY HEROES, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, TACTICAL SQUAD, VANGUARD VETERAN SQUAD, VICTRIX HONOUR GUARD",
+      "target": null
+    },
+    {
+      "id": "0b180638826ac293",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Captain",
+          "Chapter Master"
+        ]
+      },
+      "source": "While a Captain or Chapter Master model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c8642829826a65dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "MARNEUS CALGAR can be attached to this unit. If a CAPTAIN model from your army with the Leader ability can be attached to a COMMAND SQUAD, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "df586d242d9ba1f7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": ": Weapons equipped by models in this model’s unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "c8215aea6af7f6e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. This model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "b3d352e8885f224d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Assault Intercessor Squad",
+          "Intercessor Squad",
+          "Bladeguard Veteran Squad",
+          "Hellblaster Squad",
+          "Infernus Squad",
+          "Sternguard Veteran Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad",
+      "target": null
+    },
+    {
+      "id": "9f46387491540d9b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Marneus Calgar",
+          "Warlord"
+        ]
+      },
+      "source": "At the start of your Command phase, if this unit’s Marneus Calgar model is your ^^**Warlord**^^ and is on the battlefield, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "ac9f48a5d2c04250",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: AGGRESSOR SQUAD, ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, COMMAND SQUAD, COMPANY HEROES, ERADICATOR SQUAD STERNGUARD VETERAN SQUAD TERMINATOR SQUAD, HEAVY INTERCESSOR SQUAD, INFERNUS SQUAD, INTERCESSOR SQUAD, RELIC TERMINATOR SQUAD, TACTICAL SQUAD, TERMINATOR ASSAULT SQUAD, TERMINATOR SQUAD, VANGUARD VETERAN SQUAD, VICTRIX HONOUR GUARD",
+      "target": null
+    },
+    {
+      "id": "f997911764bf21ac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 8\" of this model’s unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "0e0e6ee0858facae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the Heroic Intervention Stratagem for 0CP, even if you have already used\nthat Stratagem on a different unit this phase.",
+      "target": null
+    },
+    {
+      "id": "a880332cf4582aaf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Marneus Calgar",
+          "Bodyguard",
+          "Leader"
+        ]
+      },
+      "source": "This model can be attached to the following units: \n\n\n■ VICTRIX HONOUR GUARD\n\n\nYou can attach this model to the above unit even if a Marneus Calgar unit has already been attached\nto it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate\nunits, with their original Starting Strengths",
+      "target": null
+    },
+    {
+      "id": "ada2e5d8174b3696",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Captain",
+          "Chapter"
+        ]
+      },
+      "source": "While a Captain or Chapter Master model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll",
+      "target": null
+    },
+    {
+      "id": "ee0713ee2e603fe1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aircraft",
+          "Range"
+        ]
+      },
+      "source": "In your opponent’s Shooting phase, each time an enemy unit has shot, if any models from this unit\nwere destroyed as a result of those attacks, this unit can make a Surge move. To do so, roll one D6: models in this unit move a number of inches up to the result, but this unit must end that move as close as possible to the closest enemy unit (excluding Aircraft). When doing so, those models can be\nmoved within Engagement Range of that enemy unit. This unit cannot make a Surge move while it is Battle‑shocked or within Engagement Range of one or more enemy units, and can only make one Surge move per phase.",
+      "target": null
+    },
+    {
+      "id": "f0ced42afb4d2d27",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Captain",
+          "Chapter Master",
+          "Company Heroes"
+        ]
+      },
+      "source": "If a Captain or Chapter Master unit from your army can be attached to a Company Heroes unit, it can\nbe attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "bc5110c46d849de5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, the bearer can use this ability. If it does, until the end of the phase, add 1 to the Strength and Attacks characteristics of melee weapons equipped by models in the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "d0163af5b11db44b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by models in this model’s unit have the [SUSTAINED HITS 1] ability",
+      "target": null
+    },
+    {
+      "id": "4d61e6007d903966",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. This model can fight after the attacking unit has finished making its attacks. If one or more enemy models are destroyed as a result of those attacks, this model regains D3 lost wounds and is not destroyed; otherwise, it is removed from play.",
+      "target": null
+    }
+  ]
+}

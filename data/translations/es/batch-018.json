@@ -1,0 +1,2974 @@
+{
+  "batch": 18,
+  "units": [
+    {
+      "id": "6fa8fcc61d757b4f",
+      "kind": "characteristic:Description",
+      "occurrences": 6,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic",
+          "Leader",
+          "Bodyguard"
+        ]
+      },
+      "source": "An Attached unit can only use one Psychic Fortitude at a time - while a Leader with one of these traits is attached to a Bodyguard unit with a different one of these traits, only one can be in effect; select which at the Declare Battle Formations step - that trait then applies to the Attached unit until either the Leader unit or the Bodyguard unit is destroyed, at which point the remaining unit's Psychic Fortitude comes into effect.",
+      "target": null
+    },
+    {
+      "id": "6c7eac0511f08581",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Psychic melee weapons equipped by models in this unit have the **[LANCE]** ability.",
+      "target": null
+    },
+    {
+      "id": "adf9550f73fc2a58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "174dedf8b19d7efa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Range",
+          "Psychic"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the **[IGNORES COVER]** ability and the Range characteristic of ranged Psychic weapons equipped by models in this unit is increased by 6\".",
+      "target": null
+    },
+    {
+      "id": "9c61c28086736953",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time a model in this unit makes a Psychic Attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b79f8616be215ca5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Psychic weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "40e28640d3234016",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic",
+          "Fights First"
+        ]
+      },
+      "source": "Once per battle, at the start of the Fight phase, the bearer can use this Crusade Relic. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "da2d33a711fb45c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos Incursion",
+          "Sanctic"
+        ]
+      },
+      "source": "At the end of the battle, if the bearer is wholly within your opponent's deployment zone, roll one D6: on a 5+:\n- If you are not combating a Chaos Incursion, you can select one Vision on your Augurium Vision tracker and change it to the Sanctic state.\n- If you are combating a Chaos Incursion, you gain 1 Banishment point.",
+      "target": null
+    },
+    {
+      "id": "989f9428923169b8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic",
+          "Crusade Relic",
+          "Battle Traits"
+        ]
+      },
+      "source": "At the start of each battle round, select one Psychic Fortitude Battle Trait. Until the end of the battle round, the bearer has that Psychic Fortitude Battle Trait.\n\nThe bearer can use this Crusade Relic to be given a Psychic Fortitude Battle Trait even if this means they would have two Psychic Fortitude Battle Traits. If they do, both apply to the bearer's unit, even though normally only one Psychic Fortitude can be in effect at any time.",
+      "target": null
+    },
+    {
+      "id": "394d344b07513cbb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise",
+          "Range"
+        ]
+      },
+      "source": "The first time the bearer is destroyed, remove it from play without resolving its Deadly Demise ability (if it has this ability). Then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "395f0396bd2cf95d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-CHAOS 4+]"
+        ],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "**^^Infantry^^** model only. Improve the Strength and Damage characteristics of the bearer's melee weapons by 1. The bearer's melee weapons have the **[ANTI-CHAOS 4+]** ability.",
+      "target": null
+    },
+    {
+      "id": "7179c0c4e8ebbb01",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Model with the Battle-ready rank or higher. Once per battle, at the start of any phase, the bearer can use this Battle Honour. If it does, until the end of the phase, the bearer has a 3+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "b75bcfdcfb3c81c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Model with the Heroic rank or higher. If the bearer is in your Crusade army, then at the Select Crusade Blessings step, if you are the Underdog, you can select one additional Crusade Blessing.",
+      "target": null
+    },
+    {
+      "id": "93bc802c10f1c8d4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Model with the Battle-ready rank or higher. If your Crusade army includes the bearer, then at the Determine Attacker and Defender step, do not roll off to determine the Attacker and Defender for that battle. Instead, you choose whether you will be the Attacker. If your opponent has the same or a similar rule to become the Attacker, ignore both rules and instead determine the Attacker and Defender normally.",
+      "target": null
+    },
+    {
+      "id": "11389a21bbd14224",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Model with the Blooded rank or higher. Once per turn, you can target the bearer's unit with the Fire Overwatch or the Heroic Intervention Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "fda331a53781acca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos"
+        ]
+      },
+      "source": "Model with the Blooded rank or higher. At the start of the Fight phase, each enemy unit within 3\" of the bearer must take a Battle-shock test, subtracting 1 from that test if it is a **^^Chaos^^** unit.",
+      "target": null
+    },
+    {
+      "id": "e3b946949577986c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Roll",
+          "Chaos"
+        ]
+      },
+      "source": "Model with the Blooded rank or higher. At the start of your Shooting phase, select one enemy unit within 12\" of and visible to the bearer. Roll one D6, adding 1 to the result if it is a **^^Chaos^^** unit. On a 4+, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "89162bec05b29dbe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Model with the Heroic rank or higher. You can target the bearer's unit with the Rapid Ingress Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "25515848829c5e1a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Epic Hero",
+          "Monster",
+          "Warlord"
+        ]
+      },
+      "source": "Model with the Battle-hardened rank or higher. If the bearer is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 the result if the attacking unit contains an **^^Epic Hero^^**, **^^Monster^^** or **^^Warlord^^** model: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy suffers 3 mortal wounds; on a 6+, that enemy unit suffers D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "ec3c154b750bd7c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Model with the Battle-hardened rank or higher. While the bearer is within range of an objective marker that you control, enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of that objective marker.",
+      "target": null
+    },
+    {
+      "id": "a56418d13fe6dea4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos"
+        ]
+      },
+      "source": "Model with the Heroic rank or higher. Each time your opponent targets a unit from their army with a Stratagem, if that unit is a **^^Chaos^^** unit within 12\" of the bearer, or if that unit is a non-**^^Chaos^^** unit within 9\" of the bearer, increase the cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "4db8e26e39620b73",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Model with the Battle-hardened rank or higher. Each time a melee attack targets the bearer's unit, if the attacking unit made a Charge move this turn, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b2a5c56f0b8a9973",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Model with the Battle-hardened rank or higher. If your army includes one or more models with this ability, after both players have deployed their armies, select up to three **^^Grey Knights^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "74d21bbce7e816b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Model with the Battle-hardened rank or higher. When selecting Agendas for a battle, if the bearer is in your Crusade army, at the Select Agendas step, you can select one additional Grey Knights Agenda.",
+      "target": null
+    },
+    {
+      "id": "10f459740979c301",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Purifier"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Add the **^^Purifier^^** keyword, and add to the list of units this model can be attached to: **^^Purifiers^^**.",
+      "target": null
+    },
+    {
+      "id": "66f49779014fe598",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Fly",
+          "Interceptor Squad"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 12\", and add the **^^Fly^^** keyword. Replace the list of units this model can be attached to: **^^Interceptor Squad^^**.",
+      "target": null
+    },
+    {
+      "id": "bc9271c1d8412fb8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "This model has the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "c0c18537829958cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator",
+          "Brotherhood Terminator Squad",
+          "Terminator Squad",
+          "Paladin Squad"
+        ]
+      },
+      "source": "**^^Infantry^^** only. Change this model's Move characteristic to 5\", its Toughness and Wounds characteristics to 5, and add the **^^Terminator^^** keyword. Replace the list of units this model can be attached to: **^^Brotherhood Terminator Squad^^**, **^^Paladin Squad^^**.",
+      "target": null
+    },
+    {
+      "id": "32c8fecdfd4bce51",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "69cdeaf37817404c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Vehicle"
+        ]
+      },
+      "source": "**^^Infantry^^** only. In your Command phase, you can select one friendly **^^Grey Knights Vehicle^^** model within 3\" of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, each time that model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "e06b3a733ce2946f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "7355546d893a4882",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attack model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "59e9daa2a5a7b395",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 4+ against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "ea42a5eb2ad5005f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**PURGATION SQUAD** unit only. This unit’s ranged attacks have +2 **S**.",
+      "target": null
+    },
+    {
+      "id": "d17f28df0fe9dadd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**PURGATION SQUAD** unit only. This unit’s **snap shooting** attacks hit on unmodified hit rolls of 5+.",
+      "target": null
+    },
+    {
+      "id": "1b65a088ccba02c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**INTERCEPTOR SQUAD** unit only. In your first Movement phase, this unit can make an **ingress move**.",
+      "target": null
+    },
+    {
+      "id": "cf7f197341d02689",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "**INTERCEPTOR SQUAD** unit only. This unit has **Stealth**.",
+      "target": null
+    },
+    {
+      "id": "fe0b4bf9a012c6c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this model's unit, if the Strength characteristic of that attack is greater than or equal to the Toughness characteristic of that unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "92f6537341a1d1cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "45aa97fa49459eab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n\n■ TERMINATOR ASSAULT SQUAD\n■ TERMINATOR SQUAD",
+      "target": null
+    },
+    {
+      "id": "c9a115ed0799fbe4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Terminator",
+          "Assault Squad",
+          "Terminator Squad"
+        ]
+      },
+      "source": "If you include this model in your army, until the end of the battle, non-Character models in Terminator Assault Squad and Terminator Squad units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "8f7bff1881fb21fe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "dc87bf581966bd73",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle",
+          "Fortification"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a Monster, Vehicle, or Fortification unit, improve the Strength, Armour Penetration and Damage characteristics of that attack by 2.",
+      "target": null
+    },
+    {
+      "id": "5a94de0a0d6d1246",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Imperial Fists",
+        "Imperium - Iron Hands"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n\n■ AGGRESSOR SQUAD\n■ ERADICATOR SQUAD\n■ HEAVY INTERCESSOR SQUAD",
+      "target": null
+    },
+    {
+      "id": "cb15dee624cac33f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of either player’s Command phase, this model can use this ability. When it does, until the end of the turn, add 1 to the Attacks characteristic of weapons equipped by models in this model’s unit.",
+      "target": null
+    },
+    {
+      "id": "cab42069cb0a4afa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "0654c5ea37b1c3be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n\n■ BLADEGUARD VETERAN SQUAD\n■ COMPANY HEROES\n■ STERNGUARD VETERAN SQUAD\n■ TACTICAL SQUAD",
+      "target": null
+    },
+    {
+      "id": "3ba3700fc132f266",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Fists"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "If you include this model in your army, until the end of the battle, non-Character models in Sternguard\nVeteran Squad units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "2929f4fc53f19cdd",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deed",
+          "Quality",
+          "Core"
+        ]
+      },
+      "source": "If your Army Faction is **^^Imperial Knights^^**, at the end of the Read Mission Objectives step, you must determine your army's Oath for the coming battle. An Oath consists of two parts - one Deed and one Quality. There are three options for each part.\n\nTo determine your army's Deed, you can either select one Deed or you can randomly select one Deed by rolling a D6 and consulting the relevant table. The selected Deed will describe what needs to be achieved in order to complete that Deed.\n\nTo determine your army's Quality, you can either select one Quality or you can randomly select one Quality by rolling a D6 and consulting the relevant table. Until the end of the battle, the ability described in the Quality selected applies to all models in your army with this ability.\n\nThe first time your selected Deed is completed your Oath is fulfilled and, until the end of the battle, your army becomes Honoured and you gain 2CP, or 3CP if you randomly selected your Deed and/or Quality (CP gained in this way are an exemption to the Core Rules that limit the maximum number of CP you can gain per battle round to 1).",
+      "target": null
+    },
+    {
+      "id": "3146fd9020e15762",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-9 wounds remaining, subtract 5 from this model's Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "24665003e8a3ea4d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-10 wounds remaining, subtract 5 from this model's Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "38e04189796c6aea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Armiger",
+          "Cover"
+        ]
+      },
+      "source": "While a friendly **^^Armiger^^** model is within 6\" of this model, each time a ranged attack targets that model, it has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "9e8aaf333a7d3c37",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bondsman",
+          "Armiger"
+        ]
+      },
+      "source": "Some **^^Imperial Knights^^** models have a Bondsman ability, tagged with the word ‘Bondsman’. In your Command phase, one or more models from your army with a Bondsman ability can use that ability. For each one that does, select one friendly **^^Armiger^^** model within 12\" of that model (you cannot select an **^^Armiger^^** model that is already being affected by a Bondsman ability). Until the start of your next Command phase, that **^^Armiger^^** model is affected by that Bondsman ability.",
+      "target": null
+    },
+    {
+      "id": "925c8b655135ea73",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperium"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly **^^Imperium^^** unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "d9130b700696fc39",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, you can target this model with a Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem in the same phase.",
+      "target": null
+    },
+    {
+      "id": "e19656bde92eaf90",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Canis Rex",
+          "Transport",
+          "Sir Hekhtur",
+          "Core"
+        ]
+      },
+      "source": "If your Canis Rex model is destroyed, this model is treated as a model disembarking from a destroyed **^^Transport^^** and must perform an Emergency Disembarkation. Sir Hekhtur cannot be selected as the target of any of your Stratagems other than Core Stratagems. Your Canis Rex unit is not considered to be destroyed until Sir Hekhtur is also destroyed.",
+      "target": null
+    },
+    {
+      "id": "d2dda13fbb514749",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a charge move, until the end of the turn, add 1 to the Attacks characteristic of this model's reaper chain-cleaver - strike profile, and add 2 to the Attacks characteristic of this model's reaper chain-cleaver - sweep profile.",
+      "target": null
+    },
+    {
+      "id": "0f08cc38155c11dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Armiger autocannon"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**) hit by one or more of those attacks made with an Armiger autocannon. Until the start of your next turn, that enemy unit is suppressed. While that unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "0529a76a07c7467b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[LANCE]"
+        ],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, weapons equipped by that model have the **[LETHAL HITS]** ability, and melee weapons equipped by that model have the **[LANCE]** ability.",
+      "target": null
+    },
+    {
+      "id": "f65d08c221007cde",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "487854cac7706e64",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, you can re-roll Advance rolls made for that model and ranged weapons equipped by that model have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "9427f23d4bf4b5fa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets the closest eligible target, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "c9796d6ad50bb689",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, you can re-roll Charge rolls made for that model and each time that model makes a melee attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "16636f10008de5fc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit Consolidates, models in it can move an additional 3\" provided your unit can end that move within Engagement Range of one or more enemy units.",
+      "target": null
+    },
+    {
+      "id": "f4e10baebc16770b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]",
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, weapons equipped by that model have the **[SUSTAINED HITS 1]** ability, and ranged weapons equipped by that model have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "1b8743bd596bf44e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets an enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**), that attack has the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "cb466686a4f7d160",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, each time that model makes a ranged attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "ea7d02e15a46ad26",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "In your Movement phase, if this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "50859eaee27ad5f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model affected by this ability makes an attack that targets this model's quarry, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "47cf70b22cc00627",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the battle, select one unit from your opponent’s army to be this model's quarry. Each time this model makes an attack that targets its quarry, you can re-roll the Wound roll. Each time this model's quarry is destroyed, you can select a new unit from your opponent's army to be its quarry.",
+      "target": null
+    },
+    {
+      "id": "5f499b7a376f9de0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, each time you select a target for this model's thundercoil harpoon, roll one D6 for the target unit and one D6 for each other enemy unit within 6\" of the target unit. On a 4+, the unit being rolled for is struck by arcing energies; after resolving all of this model's attacks against the target unit, each unit struck by arcing energies suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "c0184588ac2df481",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a VEHICLE, improve the Strength and Damage characteristics of that attack by 1. If that attack targets a FORTIFICATION, improve the Strength and Damage characteristics of that attack by 2 instead.",
+      "target": null
+    },
+    {
+      "id": "3c8a9456e37e3174",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "aa5791f4a2d2e3ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, it is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "81011e69f54f68e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, its ranged weapons have the [SUSTAINED HITS 1] ability and the Armour Penetration characteristic of its ranged weapons is improved by 1.",
+      "target": null
+    },
+    {
+      "id": "680f41a469838534",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one unit (excluding MONSTERS and VEHICLES) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "10b466bc2a7243bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While a model is affected by this ability, at the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test, subtracting 1 from the result when they do.",
+      "target": null
+    },
+    {
+      "id": "7522a4f286ef6a14",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, each time that model makes an attack that targets a TITANIC or TOWERING model, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "3c11830a3723eb34",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll. If that target is TITANIC or TOWERING, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "8f1bb5dc5d07c0fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, each time that model makes a ranged attack that targets the closest eligible target, improve the Strength and Armour Penetration characteristics of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "20382ba8a1fdff6b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, each time that model is selected to shoot or fight, after it has resolved all of its attacks, select one enemy unit hit by one or more of those attacks; that unit must take a Battle-shock test, subtracting one from the test when doing so.",
+      "target": null
+    },
+    {
+      "id": "f04c3c065f9d5953",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, if an enemy INFANTRY unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "38554916a59b42d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n- That use is -1 CP.\n- That use does not prevent any uses of that **stratagem** on other units this phase.",
+      "target": null
+    },
+    {
+      "id": "2bdb65d7ac7d6606",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This deed is completed at the end of the battle round if the number of enemy units destroyed this battle round is greater than the battle round number even if those units are subsequently returned to the battlefield (for example, two destroyed enemy units in the first battle round).",
+      "target": null
+    },
+    {
+      "id": "1cfb305989f452ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This deed is completed at the end of your opponent's turn if you control more objective markers than your opponent.",
+      "target": null
+    },
+    {
+      "id": "e817c14a7821fa6e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Deed"
+        ]
+      },
+      "source": "At the start of the battle, select one **^^Character^^** model in your opponent's army. This Deed is completed at the end of a turn if that **^^Character^^** is destroyed.",
+      "target": null
+    },
+    {
+      "id": "8dcba124ce148e29",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to this model's Move characteristic and add 1 to Advance and Charge rolls made for this model.",
+      "target": null
+    },
+    {
+      "id": "9407be512c12c0ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is selected to shoot or fight, you can re-roll one Hit roll and you can re-roll one Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c4dc602d9e135061",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve this model's Objective Control characteristic by 2 and its Leadership characteristic by 1.",
+      "target": null
+    },
+    {
+      "id": "99bd01da32e855dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a model is affected by this ability, each time an attack is allocated to that model, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "7915ba25225286d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Knight Defender",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to an **^^Imperial Knights^^** model from your army, if that model is not fully visible to every model in the attacking unit because of this Knight Defender model, that model has the Benefit of Cover and a 4+ invulnerable save against that attack.",
+      "target": null
+    },
+    {
+      "id": "799c7ca8035aaec9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is made with this weapon, if the target is more than 18\" from the bearer, an unmodified successful Hit roll of 4+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "6467c45b709f6ffd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-6 wounds remaining, subtract 4 from this model's Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "c60012a3c3faba06",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is equipped with a thundershock spear and a bellatus reaper chainsword, add 2 to the Attacks characteristic of melee weapons equipped by this model.",
+      "target": null
+    },
+    {
+      "id": "344dc0e79032e8d3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is selected to make a Normal or Advance move, until the end of the phase, add D3\" to the Move characteristic of this model.",
+      "target": null
+    },
+    {
+      "id": "2b13eb29b66446a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets a unit within range of one or more objective markers, that attack has the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "99266da0a1bfc492",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. At the end of your Movement phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. That selected model regains up to D3 lost wounds, or up to 3 lost wounds if your army is Honoured.",
+      "target": null
+    },
+    {
+      "id": "c8380ccac7069802",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. At the end of your Movement phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. Until the start of your next Movement phase, that selected model has the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "a23deb3a2783efaf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. At the start of your Shooting phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. Until the end of the phase, ranged weapons equipped by that selected model have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "403543280d11ca52",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. At the start of your Charge phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. Until the end of the phase, you can re-roll Charge rolls made for that selected model.",
+      "target": null
+    },
+    {
+      "id": "2a103c4706c9b685",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. Once per turn, you can target the bearer with the Tank Shock Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "f2d68ff7a410bdd8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bondsman"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. While the bearer is on your defensive line and there are no enemy units on your defensive line, add the bearer's Objective Control characteristic to that of each model affected by the bearer's Bondsman ability.",
+      "target": null
+    },
+    {
+      "id": "11c995802592ef0c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. Each time the bearer makes a melee attack, if the bearer is on your defensive line, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "2744ed939a7568f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. Each time the bearer makes a ranged attack, while the bearer is on your defensive line, weapons equipped by the bearer have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "97351e48af3ee0a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Roll"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. When the bearer is selected to fight, after resolving its attacks, if one or more enemy units were destroyed by those attacks, the bearer can use this Enhancement. If it does, this Enhancement is expended, then select one enemy unit that is not within Engagement Range of any units from your army and is within 12\" of and visible to the bearer. Roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "c8aa561bc5dba4f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. When the bearer ends a Charge move, it can use this Enhancement. If it does, this Enhancement is expended, the each enemy unit within Engagement Range of the bearer must take a Battle-shock test, subtracting 1 from the result.",
+      "target": null
+    },
+    {
+      "id": "64f81f3d294b5702",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. In your Shooting phase, when the bearer is selected to shoot, it can use this Enhancement. If it does, this Enhancement is expended, then until the end of the phase, each time it makes an attack that targets a unit that can **^^Fly^^**, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "fb1c64f1e2320db7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 2]"
+        ],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. When the bearer is selected to fight, it can use this Enhancement. If it does, this Enhancement is expended, then until the end of the phase, melee equipped by the bearer have the **[SUSTAINED HITS 2]** ability.",
+      "target": null
+    },
+    {
+      "id": "836b1d7abbf55937",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Armiger",
+          "Bondsman"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, once per turn, you can target one of those **^^Armiger^^** models with the Counter-offensive Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "f7c89c5051c0810c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Armiger",
+          "Bondsman"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, each time each of those **^^Armiger^^** models makes an attack, you can re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "1f70568358a65813",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Armiger",
+          "Bondsman"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, melee weapons equipped by those **^^Armiger^^** models have the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "17df2c377121980c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Armiger",
+          "Bondsman"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, each time one of those **^^Armiger^^** models makes a melee attack, you can ignore any or all modifiers to the Hit roll and/or the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "7079dfbf0c66173f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. The bearer has a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "faf095c2e60c76f7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. (Once per battle, per army) At the end of your opponent’s turn, if this unit is unengaged, you can use this ability. If you do:\n- Place this unit in **strategic reserves**.\n- This unit has **Deep Strike** until the start of your next Shooting phase.\n- This unit must make an **ingress move** in your next Movement phase (including in your first turn).",
+      "target": null
+    },
+    {
+      "id": "4ca32edc21602c47",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Imperial Knights^^** model only. Improve the Attacks characteristic of melee weapons equipped by the bearer by 2, and each time the bearer makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "69d4824b86bea95b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** model only. Ranged weapons equipped by the bearer have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "d949387b261888e7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**IMPERIAL KNIGHTS DOMINUS** model only. This model has +1 **T**.",
+      "target": null
+    },
+    {
+      "id": "0b779b1fc9eaa4d4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**IMPERIAL KNIGHTS DOMINUS** model only. This unit can re‑roll rolls to determine the **A** of a weapon.",
+      "target": null
+    },
+    {
+      "id": "754e462a9746429c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "Each time an **IMPERIAL KNIGHTS** unit from your army Advances, until the end of the turn, ranged weapons equipped by **IMPERIAL KNIGHTS** models from your army have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "ec39b7bab963247e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one friendly **IMPERIAL KNIGHTS** model within 3\" of this model that has not been selected by this ability this phase. If you do, that model **heals** D3 wounds.",
+      "target": null
+    },
+    {
+      "id": "d3027bae0a4e441b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[HEAVY]"
+        ],
+        "names": []
+      },
+      "source": "While a friendly **ADEPTUS MECHANICUS** unit is within 6\" of this model, that **ADEPTUS MECHANICUS** unit’s ranged attacks have:\n- +1 **BS**.\n- **[HEAVY]**",
+      "target": null
+    },
+    {
+      "id": "0512d3e8c49908cb",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Assisted Targeting (Aura)",
+          "Sacristan Pledge"
+        ]
+      },
+      "source": "Friendly **IMPERIAL KNIGHTS** models have the **Assisted Targeting (Aura)** ability.\n\nFriendly **TECH-PRIEST** models have the **Sacristan Pledge** ability:",
+      "target": null
+    },
+    {
+      "id": "aafa61e79c671b5c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can include **TECH-PRIEST DOMINUS/TECH-PRIEST MANIPULUS/MARSHAL/RANGERS/VANGUARD** units in your army. The combined points value of such units cannot exceed 500 points.",
+      "target": null
+    },
+    {
+      "id": "d19c80c51ee1e224",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a visible enemy unit, you can ignore any or all modifiers to the Hit roll, and weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "30710a3e034de52b",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Against the Horde"
+        ]
+      },
+      "source": "At the start of the first battle round, select two objectives to be your foundations. Place a circular 40mm foundation marker in each one. When you draw a line from any part of one your foundation markers to any part of the other, if any part of a model’s base (or any part of a model’s hull, for a model without a base) crosses that line, that model’s unit is said to be on your defensive line.\n\nWhile an **IMPERIAL KNIGHTS** unit from your army is on your defensive line, that unit has the Against the Horde ability.\n",
+      "target": null
+    },
+    {
+      "id": "d98c5941df17af2f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deed",
+          "Quality",
+          "Code Chivalric"
+        ]
+      },
+      "source": "At the start of your turn, if your current Oath is fulfilled, determine an additional Oath, with the exception that you cannot select a Deed or Quality you have already selected (if you are randomly selecting the Deed and/or Quality and roll any result that you have already selected, select a Deed or Quality you have not already selected instead). If you cannot determine an additional Oath because you have already selected each Deed and each Quality, do not determine an additional Oath.\n\nThe Qualities from Oaths you have fulfilled continue to apply to all models in your army with the Code Chivalric ability. When the Deed for an additional Oath is completed, you instead gain 1CP, regardless of how you selected the Deed or Quality.",
+      "target": null
+    },
+    {
+      "id": "e4753068f67e116e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhancements"
+        ]
+      },
+      "source": "The Enhancements for this detachment can become expended. You cannot use such Enhancements while they are expended. Each time you fulfil your Oath, each expended Enhancement is no longer expended.",
+      "target": null
+    },
+    {
+      "id": "4e384a5d8ec08048",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bondsman",
+          "Armiger"
+        ]
+      },
+      "source": "Each time a model from your army uses its Bondsman ability, if no other model from your army has used that Bondsman ability that turn, you can select up to three friendly **^^Armiger^^** models (instead of one) within 12\" of that model, or within 15\" of that model while your army is Honoured (you still cannot select a model that is already being affected by a Bondsman ability). Until the start of your next Command phase, those models are affected by that Bondsman ability.",
+      "target": null
+    },
+    {
+      "id": "d8c5d9c30554af22",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Armiger",
+          "Battleline"
+        ]
+      },
+      "source": "**^^Armiger^^** models from your army gain the **^^Battleline^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "0891e8c53d142e8f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "**^^Imperial Knights^^** models from your army have the Feel No Pain 6+ ability. In addition, at the start of your Command phase, each **^^Imperial Knights^^** model from your army regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "18796fc68b0cd1a4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **IMPERIAL KNIGHTS DOMINUS** units’ attacks that target a unit in a **terrain area** have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "62b87322f44eabe7",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Bondsman"
+        ]
+      },
+      "source": "While a friendly **ARMIGER** unit is affected by a **Bondsman** ability, that unit’s ranged attacks have **[IGNORES COVER]**.\n\nThis **detachment** has the **ARMIGERS** tag and cannot be taken with another **ARMIGERS detachment**.",
+      "target": null
+    },
+    {
+      "id": "b2cba751b978c3e8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**TECH-PRIEST** model only. When using this model’s **Sacristan Pledge** ability, the selected **IMPERIAL KNIGHTS** model **heals** 2 additional wounds.",
+      "target": null
+    },
+    {
+      "id": "017822a88f84f70c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**IMPERIAL KNIGHTS** model only. While a friendly **ADEPTUS MECHANICUS** unit is within 6\" of this model, that **ADEPTUS MECHANICUS** unit’s melee attacks have +1 **WS** and **AP**.",
+      "target": null
+    },
+    {
+      "id": "0948d51cc31755c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is not Battle-shocked, add 3 to its Objective Control characteristic.",
+      "target": null
+    },
+    {
+      "id": "f5636a0cde53a9d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is not Battle-shocked, add 1 to its Objective Control characteristic.",
+      "target": null
+    },
+    {
+      "id": "c0fb529d872149f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is not Battle-shocked, add 5 to its Objective Control characteristic.",
+      "target": null
+    },
+    {
+      "id": "fb0939712f47d703",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "At the start of the first battle round, select one enemy unit. Until the end of the battle, each time this unit makes an attack that targets that enemy unit, add 1 to the Damage characteristic of that attack and that attack has the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "158a6b8a25b2d68c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the first battle round, select one enemy unit. Until the end of the battle, each time this unit makes an attack that targets that enemy unit, add 1 to the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "55d9dd01bf76e220",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS D3]"
+        ],
+        "names": []
+      },
+      "source": "At the start of the first battle round, select one enemy unit. Until the end of the battle, each time this unit makes an attack that targets that enemy unit, add 1 to the Damage characteristic of that attack and that attack has the **[SUSTAINED HITS D3]** ability.",
+      "target": null
+    },
+    {
+      "id": "d194cfe8d0c52861",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pilot",
+          "Titanic",
+          "Bondsman",
+          "Armiger"
+        ]
+      },
+      "source": "Pilot of a **^^Titanic^^** unit only. Each time this unit its Bondsman ability, it can select a friendly **^^Armiger^^** that is within 24\" of and visible to this unit.",
+      "target": null
+    },
+    {
+      "id": "12eaef15ea352d84",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pilot",
+          "Titanic",
+          "Bondsman",
+          "Armiger"
+        ]
+      },
+      "source": "Pilot of a **^^Titanic^^** unit only. Each time this unit its Bondsman ability, it can select a friendly **^^Armiger^^** that is within 18\" of and visible to this unit.",
+      "target": null
+    },
+    {
+      "id": "3657b340b3a02f02",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pilot",
+          "Titanic",
+          "Bondsman",
+          "Armiger"
+        ]
+      },
+      "source": "Pilot of a **^^Titanic^^** unit only. Each time this unit its Bondsman ability, it can select a friendly **^^Armiger^^** that is anywhere on the battlefield and visible to this unit.",
+      "target": null
+    },
+    {
+      "id": "bfd0d2b2d5ff2261",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of each battle, if this unit gains any XP, you can select up to two other **^^Imperial Knights^^** units from your Crusade army that survived that battle. The selected unit gains 1XP.",
+      "target": null
+    },
+    {
+      "id": "c2137954656f886f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of each battle, if this unit gains any XP, you can select one other **^^Imperial Knights^^** unit from your Crusade army that survived that battle. The selected unit gains 1XP.",
+      "target": null
+    },
+    {
+      "id": "ababafbc4cf98609",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of each battle, if this unit gains any XP, you can select up to three other **^^Imperial Knights^^** units from your Crusade army that survived that battle. The selected unit gains 1XP.",
+      "target": null
+    },
+    {
+      "id": "603f946af4dbe28b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Armiger"
+        ]
+      },
+      "source": "After both players have deployed their armies, you can redeploy this unit and one friendly **^^Imperial Knights Armiger^^** unit.",
+      "target": null
+    },
+    {
+      "id": "a7c8ca402972558e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, you can redeploy this unit.",
+      "target": null
+    },
+    {
+      "id": "fa144393169bd119",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, you can redeploy this unit and one friendly **^^Imperial Knights^^** unit.",
+      "target": null
+    },
+    {
+      "id": "bd37a9945ea83669",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle, at the start of your Shooting phase, select one enemy unit within 18\" of and visible to this unit. Until the end of the phase, each time an **^^Imperial Knights^^** unit from your Crusade army makes an attack that targets that unit, you can re-roll a Hit roll of 1 and you can re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "e86a1f85fa5cbf98",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle, at the start of your Shooting phase, select one enemy unit within 18\" of and visible to this unit. Until the end of the phase, each time an **^^Imperial Knights^^** unit from your Crusade army makes an attack that targets that unit, you can re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "8b90eed60a61fec9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per turn, at the start of your Shooting phase, select one enemy unit within 18\" of and visible to this unit. Until the end of the phase, each time an **^^Imperial Knights^^** unit from your Crusade army makes an attack that targets that unit, you can re-roll a Hit roll of 1 and you can re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "67689eba0464ca00",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to this unit's Move characteristic. This unit is eligible to shoot in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "f3b7192faa94c0a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to this unit's Move characteristic.",
+      "target": null
+    },
+    {
+      "id": "53012ad171c5da5b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to this unit's Move characteristic. This unit is eligible to shoot and declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "9bb1a6134790f5b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one friendly **^^Imperial Knights^^** model within 6\" of this unit. That friendly model regains up to 3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "e2a8a4e2f39e6246",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one friendly **^^Imperial Knights^^** model within 6\" of this unit. That friendly model regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "9d91e828e42e3bd9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one friendly **^^Imperial Knights^^** model within 6\" of this unit. That friendly model regains up to D3+3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "ac74324aa911c5fc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chivalric Quest"
+        ]
+      },
+      "source": "While this Chivalric Quest is active, at the end of each battle, add 1 to its tally for each objective marker you control. For each of those objective markers that is within your opponent's deployment zone, you gain 1 additional tally mark.",
+      "target": null
+    },
+    {
+      "id": "0d7385888735a33c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chivalric Quest",
+          "Crusade"
+        ]
+      },
+      "source": "While this Chivalric Quest is active, at the end of each battle, add 1 to its tally for each of the following conditions you satisfy: one or more **^^Imperial Knights^^** from your Crusade army are within 6\" of the centre of the battlefield; no enemy units are within 6\" of the centre of the battlefield; one or more **^^Imperial Knights^^** units from your Crusade army are wholly within your opponent's deployment zone.",
+      "target": null
+    },
+    {
+      "id": "aa31b18ec16f5730",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chivalric Quest",
+          "Character",
+          "Crusade",
+          "Warlord"
+        ]
+      },
+      "source": "While this Chivalric Quest is active, add 1 to its tally each time a **^^Character^^** unit is destroyed by an attack made by an **^^Imperial Knights^^** model from your Crusade force. For each of those destroyed units that was your opponent's **^^Warlord^^**, you gain 1 additional tally mark.",
+      "target": null
+    },
+    {
+      "id": "fc4eae6ee7cbd8ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chivalric Quest",
+          "Monster",
+          "Vehicle",
+          "Crusade",
+          "Titanic"
+        ]
+      },
+      "source": "While this Chivalric Quest is active, add 1 to its tally each time a **^^Monster^^** or **^^Vehicle^^** unit is destroyed by an attack made by an **^^Imperial Knights^^** model from your Crusade force. For each of those destroyed units that was **^^Titanic^^**, you gain 1 additional tally mark.",
+      "target": null
+    },
+    {
+      "id": "18517fa9a39e13d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is not eligible to Fall Back.",
+      "target": null
+    },
+    {
+      "id": "22accd0ef2645615",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bondsman"
+        ]
+      },
+      "source": "This unit cannot use or be affected by Bondsman abilities.",
+      "target": null
+    },
+    {
+      "id": "cc36c4dbb2e18f5e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Subtract 2 from this unit's Objective Control characteristic and worsen its Leadership characteristic by 1.",
+      "target": null
+    },
+    {
+      "id": "b4645fc5b2bc5442",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a 5+ invulnerable save against melee attacks.",
+      "target": null
+    },
+    {
+      "id": "f6b940946fa9b06d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons equipped by the bearer have the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "b2e05a9fba1089b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]",
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Questoris"
+        ]
+      },
+      "source": "If the bearer is equipped with one or more Questoris heavy stubbers or Questoris multi-lasers, those weapons have the **[PRECISION]** and **[IGNORES COVER]** abilities, and each time an attack is made with one of those weapons, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "ae46b5b61a70e540",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bondsman",
+          "Armiger"
+        ]
+      },
+      "source": "Each time the bearer uses its Bondsman ability, you can select one other friendly **^^Armiger^^** model within 9\" of the **^^Armiger^^** you selected with that ability; that other model is also affected by that Bondsman ability.",
+      "target": null
+    },
+    {
+      "id": "87a75bc8d48e8719",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic"
+        ]
+      },
+      "source": "In your Command phase, the bearer can activate this Crusade Relic. If it does, the bearer suffers D3 mortal wounds, then select one of the following effects (if you select the third effect, you must also select one weapon equipped by the bearer):\n\n\n- Until the start of your next Command phase, add 2\" to the bearer's Move characteristic.\n- Until the start of your next Command phase, add 2 to Advance and Charge rolls made for the bearer.\n- Until the start of your next Command phase, each time the bearer makes an attack with the selected weapon, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "f4ea37aafa66058f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ARMIGER** unit only. This unit has **MOBILE**.",
+      "target": null
+    },
+    {
+      "id": "c1a7c7cf4bf10101",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ARMIGER** unit only. When you target this unit with the **Fire Overwatch/Heroic Intervention stratagem**, that use is ‑1 **CP**.",
+      "target": null
+    },
+    {
+      "id": "5385d1e5e57a7620",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Iron Hands"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly Adeptus Astartes Vehicle units, it has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "f287517d7a1fe1ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Iron Hands"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Blessing of the Omnissiah"
+        ]
+      },
+      "source": "In your Command phase, select one friendly Adeptus Astartes Vehicle model within 3\" of this model. That model regains up to 3 lost wounds and, until the start of your next Command phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. You cannot select a unit for this ability that has already been selected for the Blessing of the Omnissiah ability this phase, and vice versa.",
+      "target": null
+    },
+    {
+      "id": "14cc0fb23fccb601",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Iron Hands"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Heavy",
+          "Intercessor Squad"
+        ]
+      },
+      "source": "If you include this model in your army, until the end of the battle, non-Character models in Heavy\nIntercessor Squad units from your army have an Objective Control characteristic of 3 while they are\nnot Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "2b6d993accba7b88",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Iron Hands"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a model in this model’s unit makes an attack that targets a Monster or Vehicle unit, that\nattack has the [LETHAL HITS] ability. Each time a model in this model’s unit makes an attack that targets any other unit, that attack has the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "b213e7c5585dfbac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Iron Hands"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Scouts 6\""
+        ]
+      },
+      "source": "■ At the start of the Declare Battle Formations step, you can select one Adeptus Astartes Infantry unit from your army. Until the end of the battle, that unit gains the Scouts 6\" ability.\n\n\n■ After both players have deployed their armies, you can select one Adeptus Astartes unit from your army and redeploy it. When doing so, you can set that unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "1d5d399416464558",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Iron Hands"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: \n\n\n■ TERMINATOR ASSAULT SQUAD\n■ TERMINATOR SQUAD",
+      "target": null
+    },
+    {
+      "id": "c1a21dc73f96be40",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Raven Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models  in this unit cannot be targeted by ranged attacks unless the attacking model is within 12\".",
+      "target": null
+    },
+    {
+      "id": "5e4e783c2e96fc82",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Raven Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent’s turn, if this model’s unit is not within Engagement Range of any enemy models, you can remove it from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "a360a892b14119f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Raven Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n\n■ ASSAULT INTERCESSORS WITH JUMP PACKS\n■ VANGUARD VETERAN SQUAD WITH JUMP PACKS",
+      "target": null
+    },
+    {
+      "id": "6d031d68b9fbd8c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Raven Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Assault",
+          "Intercessors"
+        ]
+      },
+      "source": "If you include this model in your army, until the end of the battle, non-Character models in Assault\nIntercessors with Jump Packs units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "c9a310e2f52c18ac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Raven Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aethon Shaan",
+          "Kayvaan Shrike",
+          "Lone Operative",
+          "Chapter Master",
+          "Captain"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, if your army includes Aethon Shaan and Kayvaan\nShrike, until the end of the battle, your Kayvaan Shrike unit loses its Lone Operative ability and it\nreplaces its Chapter Master keyword with Captain.",
+      "target": null
+    },
+    {
+      "id": "9541e541d5b299a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Raven Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one unit from your opponent’s army. Until the start of your next Command phase, each time an Adeptus Astartes unit from your army declares a charge while it is within 12\" of that enemy unit, you can re-roll the Charge roll, but it must declare that enemy unit as a target of that charge (if possible).",
+      "target": null
+    },
+    {
+      "id": "327ab04d82208a18",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Raven Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this model’s unit with the Rapid Ingress and Heroic Intervention Stratagems for 0CP,\neven if you have already used that Stratagem on a different unit this phase.",
+      "target": null
+    },
+    {
+      "id": "b47da1c3aa522bb4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Salamanders"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "67166a153914be87",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Salamanders"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Engagement Range of this model, halve the Objective Control characteristic of models in that enemy unit",
+      "target": null
+    },
+    {
+      "id": "567fcf88dcbfc2cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Salamanders"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n\n■ ASSAULT INTERCESSOR SQUAD\n■ BLADEGUARD VETERAN SQUAD\n■ COMPANY HEROES\n■ INFERNUS SQUAD\n■ INTERCESSOR SQUAD\n■ STERNGUARD VETERAN SQUAD\n■ TACTICAL SQUAD",
+      "target": null
+    },
+    {
+      "id": "5fd1bc0350571c71",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Salamanders"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Torrent",
+          "Melta"
+        ]
+      },
+      "source": "In your Shooting phase, select one enemy unit within 24\" of and visible to this model. Until the end of the phase, each time a friendly Adeptus Astartes model makes a ranged attack with a Torrent or Melta weapon that targets that enemy unit, you can re-roll the Wound roll",
+      "target": null
+    },
+    {
+      "id": "40b86a8520a11cfb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Salamanders"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "The first time this model is set up on the battlefield, select one objective marker on the battlefield. While this model is within range of that objective marker, it has an Objective Control characteristic of 10, a Leadership characteristic of 5+ and the Feel No Pain 4+ ability.",
+      "target": null
+    }
+  ]
+}

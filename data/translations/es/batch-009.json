@@ -1,0 +1,2943 @@
+{
+  "batch": 9,
+  "units": [
+    {
+      "id": "397193b1af54d381",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rubricae",
+          "Battleline",
+          "Infiltrators"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, select either two ^^**Rubricae Battleline^^** units from your army or one other ^^**Rubricae^^** unit from your army; models in the selected units have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "b61e98d82af70e74",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rubricae"
+        ]
+      },
+      "source": "While a friendly ^^**Rubricae^^** unit is within 9\" of the bearer, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "0815a8a607dbf9fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rubricae"
+        ]
+      },
+      "source": "While the bearer is leading a unit, each time a ^^**Rubricae^^** model in that unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "75eaefb4ddfd0de8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits D3]",
+          "[Devastating Wounds]"
+        ],
+        "names": [
+          "Sustained Hits",
+          "Devastating Wounds"
+        ]
+      },
+      "source": "The bearer's melee weapons have the [Sustained Hits D3] and [Devastating Wounds] abilities.",
+      "target": null
+    },
+    {
+      "id": "360e57af625441e8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "While the bearer is within 6\" of one or more friendly ^^**Thousand Sons Vehicle^^** units, each time the bearer Channels the Warp, after you roll that additional D6 but before checking for doubles or triples, the bearer can use this Enhancement. If it does, select one of those ^^**Vehicle^^** units; that ^^**Vehicle^^** unit suffers 1 mortal wound and you can re-roll that additional D6.",
+      "target": null
+    },
+    {
+      "id": "dc068bbf5eb2f09a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Lone Operative"
+        ]
+      },
+      "source": "While the bearer is within 3\" of one or more friendly ^^**Thousand Sons Vehicle^^** units, the bearer has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "de3400a2e470abcd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "In your Command phase, you can select one friendly ^^**Thousand Sons Vehicle^^** model within 6\" of this model. That model regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "3c12235cb36fd76b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "While the bearer is within 6\" of one or more friendly ^^**Thousand Sons Vehicle^^** units, each time the bearer manifests a Ritual, while resolving that Ritual, add 6\" to its range.",
+      "target": null
+    },
+    {
+      "id": "b64e4396e77aa84c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sorcerous Invigoration"
+        ]
+      },
+      "source": "When this model **heals** as a result of the **Sorcerous Invigoration detachment rule**, you can add 3 to the number of wounds **healed**. ",
+      "target": null
+    },
+    {
+      "id": "313bafb86c55fcda",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "(Once per battle, per army) When this model is destroyed, at the end of the phase, roll one D6: \n- On a 2+, set up this model on the battlefield, unengaged and as close as possible to where it was destroyed. This model is not part of an attached unit and its unit has a starting strength of 1. This model has 3 wounds remaining. ",
+      "target": null
+    },
+    {
+      "id": "a31b17ea4ddcb4b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, at the start or end of this unit’s move, you can select one friendly **SEKHETAR ROBOTS** unit within 6\" of this unit. That unit’s ranged attacks have +1 **BS** until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "8ca7b75e61244477",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guardians",
+          "Lone Operative"
+        ]
+      },
+      "source": "This model has the following abilities: \n- Soul Bound: In your Movement phase, at the start or end of this unit’s move, you can select one friendly **SEKHETAR ROBOTS** unit within 3\" of this model. That **SEKHETAR ROBOTS** unit **heals** D3+1 wounds. \n▪ Kine‑shielded Guardians: While this model is within 3\" of a friendly **SEKHETAR ROBOTS** unit, this model has **Lone Operative**.",
+      "target": null
+    },
+    {
+      "id": "4fb1187efa38cd11",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **battle‑shocked MUTANT** unit within 6\" of this model. That unit is no longer **battle‑shocked**.",
+      "target": null
+    },
+    {
+      "id": "98514577f304e691",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord",
+          "Plots and Schemes"
+        ]
+      },
+      "source": "Improve this model's Leadership and Objective Control characteristics by 1 and, if this model is your **^^Warlord^^** and it passes its Plots and Schemes test after the battle, it gains 1 additional Lore point.",
+      "target": null
+    },
+    {
+      "id": "f7a0d22dc1cd7cef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]",
+          "[PRECISION]"
+        ],
+        "names": [
+          "Character",
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select one unit from your opponent's army. Each time a model in this unit makes a melee attack that targets that unit, that attack has the **[SUSTAINED HITS 1]** and **[PRECISION]** abilities and, if that enemy unit is destroyed by a melee attack made by this unit, at the end of the battle, you can select one **^^Thousand Sons Character^^** model from your Crusade army. That model gains 1 Arcana point.",
+      "target": null
+    },
+    {
+      "id": "7e4a5b18a236790c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a Charge move, until the end of the turn, add 1 to the Attacks and Strength characteristics of melee weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "2756208beb80fce2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this Battle Trait must take a Battle-shock test, subtracting 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "e299873e1d9ea595",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Daemon"
+        ]
+      },
+      "source": "**^^Vehicle^^** models in this unit have a 5+ invulnerable save against ranged attacks. **^^Daemon^^** and **^^Sekhetar Robot^^** models in this unit have a 4+ invulnerable save against ranged attacks instead.",
+      "target": null
+    },
+    {
+      "id": "3e5c112aec45b378",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "At the start of your Command phase, one **^^Vehicle^^** model in this unit regains up to D3 lost wounds. In addition, you can re-roll failed Out of Action tests for this unit.",
+      "target": null
+    },
+    {
+      "id": "919d89be71761fb9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this unit is selected to shoot or fight, you can re-roll one Hit roll, one Wound roll or one Damage roll made for an attack made by a **^^Vehicle^^** model in this unit while resolving those attacks.",
+      "target": null
+    },
+    {
+      "id": "43f4922681d7f633",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+",
+          "Character",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 6+ ability against mortal wounds and attacks with an unmodified Damage characteristic of 1. While a **^^Character^^** model is leading this unit, that **^^Character^^** has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "3f07492413bdef24",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "While there are one or more **^^Psyker^^** models in this unit, each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "1178b47726341864",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "While there are one or more **^^Psyker^^** models in this unit, this unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "f7e7894acb30558b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aspiring Sorcerer",
+          "Sorcerer",
+          "Scarab Occult Sorcerer",
+          "Weapon",
+          "Psychic"
+        ]
+      },
+      "source": "Add 1 to the Wounds characteristic of the Aspiring Sorcerer or Scarab Occult Sorcerer model in this unit, and improve the Attacks, Ballistic Skill and Weapon Skill characteristics of Psychic weapons equipped by that model by 1.",
+      "target": null
+    },
+    {
+      "id": "43c4895d44a417b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike",
+          "Terminator"
+        ]
+      },
+      "source": "Models in this unit have the Deep Strike. If this unit has the **^^Terminator^^** keyword, you can target this unit with the Rapid Ingress Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "f34f07ee9a9655bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time this model makes a Psychic Attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "4b8b0498b11162b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch"
+        ]
+      },
+      "source": "Each time this model is Marked for Greatness, it earns 5XP rather than 3XP. In addition, each time this model gains a Boon of Tzeentch, you can re-roll the result when determining which Boon is gained.",
+      "target": null
+    },
+    {
+      "id": "07c0234e25a74a06",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic",
+          "Prism of Echoes",
+          "Rubricae",
+          "Psyker"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, the bearer can use this Crusade Relic. If it does, until the end of the phase, the bearer has the following ability:\n\n**Prism of Echoes (Aura):** While a friendly **^^Rubricae^^** unit is within 6\" of the bearer, add 1 to the Attacks characteristic of weapons equipped by non-**^^Psyker^^** models in that unit.",
+      "target": null
+    },
+    {
+      "id": "61e625882256af43",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "1dfdaac739cb8991",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rituals",
+          "Crusade",
+          "Psychic"
+        ]
+      },
+      "source": "You can select the bearer to attempt up to two Rituals per turn instead of only one, and each time you select the bearer to attempt a Ritual, you can first discard either 1 Lore point or 1 Arcana point the bearer has. If you discard 1 Lore point, until the end of the phase, the bearer can attempt a Ritual even if another model from your Crusade army has already manifested that Ritual this turn. If you discard 1 Arcana point, until the end of the phase, each time you take a Psychic test for the bearer, after rolling all of the dice but before the bearer suffers any mortal wounds, you can re-roll all of those dice.",
+      "target": null
+    },
+    {
+      "id": "8d8e09f6594be3ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Save characteristic of 2+ and a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "fd8660450dc09a6b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic"
+        ]
+      },
+      "source": "Each time the bearer Channels the Warp, before rolling the additional D6, the bearer can use this Crusade Relic. If it does, take a Battle-shock test for the bearer: if that test is passed, the bearer gains 1 Lore point and that additional D6 is automatically an unmodified 6; otherwise the Ritual being attempted fails.",
+      "target": null
+    },
+    {
+      "id": "32978a8b50a9480a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic",
+          "Psyker"
+        ]
+      },
+      "source": "Each time the bearer makes an attack with a Psychic melee weapon, improve the Strength, Armour Penetration and Damage characteristics of that attack by 1. Each time the bearer makes an attack with a Psychic melee weapon that targets a **^^Psyker^^** unit, improve the Strength, Armour Penetration and Damage characteristics of that attack by 2 instead.",
+      "target": null
+    },
+    {
+      "id": "9f86869b2fd87098",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of the battle, this model gains 1XP and 1 Lore or Arcana point (your choice) for each different Agenda your opponent selected at the start of the battle that one or more of their units subsequently gained XP from.",
+      "target": null
+    },
+    {
+      "id": "0f2bec367d627b40",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "In the Determine Victor step, if you are not the victor, roll one D6 for each model from your Crusade army with this reward that is on the battlefield. If one or more of those results are a 4+, you gain that battle's Victor Bonus anyway.",
+      "target": null
+    },
+    {
+      "id": "54dac0bd70f3db43",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Select one enemy unit within 24\" of and visible to the manifesting model. Until the start of your next Shooting phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll. If the Psychic test result for this Ritual was 12+, subtract 1 from the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "9a0ce11b0e564576",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch"
+        ]
+      },
+      "source": "This model gains one Boon of Tzeentch of your choosing, or two randomly determined Boons of Tzeentch.",
+      "target": null
+    },
+    {
+      "id": "ebf550c80fef3c46",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model's unit is selected to fight, select one of the following abilities: **[LETHAL HITS]**; **[SUSTAINED HITS 1]**. Until the end of the phase, this model's melee weapons have the selected ability.",
+      "target": null
+    },
+    {
+      "id": "d4f59a32b3876a09",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Select one **^^Area Terrain^^** feature within 24\" of and visible to the manifesting model, then roll one D6 for every enemy model that is within that **^^Area Terrain^^** feature; for each 6, that model's unit suffers 1 mortal wound. If the Psychic test result for this Ritual was 11+, for each 5+, that model's unit suffers 1 mortal wound instead (to a maximum of 6 mortal wounds in either case).",
+      "target": null
+    },
+    {
+      "id": "b3b1667cdb68d936",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "In the Determine Attacker and Defender step, if your Crusade army includes one or more models with this reward, do not roll off to determine the Attacker and Defender. Instead, you choose whether you will be the Attacker or Defender (if your opponent has a rule to the same effect, roll off as normal).",
+      "target": null
+    },
+    {
+      "id": "72aab88e0715d3bf",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "You gain 1CP. If the Psychic test for this Ritual was 11+, the manifesting model gains 1 Lore point as well.",
+      "target": null
+    },
+    {
+      "id": "cd49c4ae291c1725",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "In the Select Crusade Blessings step, roll one D6 for each model from your Crusade army with this reward: if one or more of those result is a 4+, you can select one additional Crusade Blessing this battle.",
+      "target": null
+    },
+    {
+      "id": "400ec86ecf21c467",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battle Scars"
+        ]
+      },
+      "source": "You can either remove all Battle Scars this model has, or select one other ^^**Thousand Sons**^^ unit on your Order &\nof Battle and remove one Battle Scar from that unit.",
+      "target": null
+    },
+    {
+      "id": "add4fe3d596cfa99",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic",
+          "Range"
+        ]
+      },
+      "source": "Each time this model manifests the Temporal Surge Ritual, if the Psychic test result for that Ritual was 12+, you can select two friendly **^^Thousand Sons^^** units that are not within Engagement Range of one or more enemy units and within 24\" of and visible to this model, instead of one. Each of those units can make a Normal move up to 6\". Until the end of the turn, neither of those units are eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "f23de8f94857c4ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Roll"
+        ]
+      },
+      "source": "Roll one D6: on a 1-3, you gain 1RP;on a 4-6, you gain D3RP.",
+      "target": null
+    },
+    {
+      "id": "a58216b744fdd60b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time your opponent uses a Stratagem, roll one D6: on a 5, you gain 1CP; on a 6, you gain 1CP and this model gains 1 Lore point.",
+      "target": null
+    },
+    {
+      "id": "da09473dc5d42101",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "In the Select Agendas step, roll one D6 for each model from your Crusade army with this reward: if one or more of those results is a 2+, you can select one additional **^^Thousand Sons^^** Agenda this battle; if one or more of those results is a 5+, you can select two additional **^^Thousand Sons^^** Agendas instead, this battle.",
+      "target": null
+    },
+    {
+      "id": "26075ba28da7dba3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can deduct 1 or 2 Lore points from this model: if you deduct 1, this model gains D3 Arcana points; if you deduct 2, this model gains 3 Arcana points.",
+      "target": null
+    },
+    {
+      "id": "24bf26461325f6f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time this model Channels the Warp, add 1 to the result of that Psychic test.",
+      "target": null
+    },
+    {
+      "id": "b6337bfd92b041e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time this model manifests the Doombolt Ritual, if the Psychic test result for that Ritual was 14+, you can select two enemy units that are within 24\" of and visible to this model, instead of one (all other restrictions apply). Both selected units suffer D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "325105c878b41f26",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is Marked for Greatness, roll one D6: on a 1-2, this model gains 1 Lore point; on a 3-5, this model gains D3 Lore points; on a 6, this model gains D3 Lore points and D3XP.",
+      "target": null
+    },
+    {
+      "id": "b870ca430a52b24f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can deduct 1 or 2 Arcana points from this model: if you deduct 1, this model gains D3 Lore points; if you deduct 2, this model gains 3 Lore points.",
+      "target": null
+    },
+    {
+      "id": "25aad0de620c9522",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time this model manifests the Destiny's Ruin Ritual, if the Psychic test result for that Ritual was 13+, you can select two enemy units that are within 24\" of and visible to this model, instead of one. Until the end of the phase, each time a friendly **^^Thousand Sons^^** unit makes an attack that targets one of those units, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3311c72b10396848",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Battle Traits"
+        ]
+      },
+      "source": "Select either this model or one other ^^**Thousand Sons^^** unit (excluding ^^**Characters^^**) from your Crusade army that has one or more Battle Traits, then select one Battle Trait the selected model/unit has and replace it with one new ^^**Thousand Sons^^** Battle Trait (this must be one it can have).",
+      "target": null
+    },
+    {
+      "id": "4d6a89ce921825c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rubricae"
+        ]
+      },
+      "source": "At the end of the Declare Battle Formations step, select one **^^Thousand Sons^^** Battle Trait (this can be a **^^Rubricae^^** Battle Trait, even though this model does not have that keyword, but it must otherwise be a Battle Trait this model can have and cannot be a Battle Trait this model, or the unit it is attached to, already has). Until the end of the battle, this models (and any unit it is attached to) is considered to have that Battle Trait.",
+      "target": null
+    },
+    {
+      "id": "a6ca72d7bff039fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Crusade Relic"
+        ]
+      },
+      "source": "This model can either use the Renowned Heroes Requisition once, for 0RP (even if it has not gained a Crusade rank), or it can gain one Artificer or Antiquity Crusade Relic of your choice.",
+      "target": null
+    },
+    {
+      "id": "427e5377e25505dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After both players have deployed their armies, you can select one **^^Thousand Sons^^** unit from your Crusade army and redeploy it. When doing so, you can set that unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "0f0826dc6a9a03af",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Mounted",
+          "Psychic",
+          "Deep Strike"
+        ]
+      },
+      "source": "Select one friendly **^^Thousand Sons Infantry^^** or **^^Thousand Sons Mounted^^** unit within 24\" of and visible to the manifesting model. That unit is removed from the battlefield and placed into Strategic Reserves. If the Psychic test for this Ritual was 10+, set that unit back up on the battlefield immediately using the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "2d01ee0517517c57",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack is allocated to this model, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks.",
+      "target": null
+    },
+    {
+      "id": "bcb836d8c3b1bbd7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1\" to the Move characteristic of models in this model's unit, and each time a model in this model's unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through models and terrain features. If this model is wholly within your opponent's deployment zone at the end of the battle, roll one D6: on a 4+, this model gains 1 Arcana point.",
+      "target": null
+    },
+    {
+      "id": "0b536cb10d232742",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, when an attack is allocated to the bearer's unit, you can change the Damage characteristic of that attack to 0. If this model is within range of an objective marker that you control at the end of the battle, and that objective marker is not within your deployment zone, roll one D6: on a 4+ this model gains 1 Lore point.",
+      "target": null
+    },
+    {
+      "id": "29eeb22629eff5c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos Spawn",
+          "Spawn",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "This model has the Feel Not Pain 5+ ability (if this model is a **^^Chaos Spawn^^** model, it has the Feel No Pain 4+ ability instead).",
+      "target": null
+    },
+    {
+      "id": "5c9cfbf879eb6ab2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "4fce9db95e16c77c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Strength and Armour Penetration characteristics of this model's melee weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "285e720a00634bbe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "This model's melee weapons have the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "e9ad327abe38c3a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "This model has the Stealth ability, and while this model is leading a unit, each time a ranged attack targets that unit, if the attacking model is not within 12\", subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "775a316ba805bbac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scarab Occult Terminators",
+          "Terminators"
+        ]
+      },
+      "source": "This model can lead the following unit: ^^**Scarab Occult Terminators**^^",
+      "target": null
+    },
+    {
+      "id": "f127b811df3ec511",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Psychic"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy ^^**Infantry**^^ unit hit by one or more of those attacks made with a Psychic weapon. Until the start of your next turn, that unit is ensnared. While a unit is ensnared, subtract 2 from its Move characteristic and subtrsact 2 from Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "6ceeb105281c324c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by models in this unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "873ff4325d864f29",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "b8b5662db55ae2e3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made by a Psychic weapon. Until the end of the phase, each time a friendly ^^**Thousand Sons**^^ unit makes an attack that targets that enemy unit, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "541c25c74fada155",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[CLEAVE 1]"
+        ],
+        "names": []
+      },
+      "source": "This unit’s melee attacks have: \n- +1 AP. \n- [CLEAVE 1].",
+      "target": null
+    },
+    {
+      "id": "5a12d982d67b4c9f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Titanicus Traitoris"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Detachment Rules",
+          "Warlord",
+          "Character",
+          "Take and Hold"
+        ]
+      },
+      "source": "When mustering your army, if your Army Faction is **^^Titanicus Traitoris^^**, ignore the Select Detachment Rules step. In the Select Warlord step, select one **^^Titanicus Traitoris^^** model from your army to be your **^^Warlord^^**, even though that model does not have the **^^Character^^** keyword. Your army has the Take and Hold force disposition.",
+      "target": null
+    },
+    {
+      "id": "567f3cbc408dda4d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Brazen Fury",
+          "Fury"
+        ]
+      },
+      "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit was **destroyed** as a result of those attacks, this unit can make a **surge move** of up to D6\". That **surge move** is a **Brazen Fury move**.",
+      "target": null
+    },
+    {
+      "id": "e7af069f7497b3ba",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Fight phase, you can select one enemy unit **engaged** with this unit. That enemy unit makes a **battle‑shock roll**, with -1 to that **battle‑shock roll**. You cannot select the same enemy unit for this effect more than once per phase.",
+      "target": null
+    },
+    {
+      "id": "ee774864689ed046",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "If your Army Faction is ^^**World Eaters^^**, at the start of the battle round, you can make a Blessings of Khorne roll. To do so, roll eight D6. You can then use those dice to activate up to two Blessings of Khorne. Each Blessing of Khorne specifies the dice results it requires (where a number is specified, a double or triple of that value or higher is required). You can only activate each Blessing of Khorne once per battle round. Any unused dice from the Blessings of Khorne roll are then discarded. Once activated, each Blessing of Khorne applies to all units from your army with this ability until the end of the battle round.\n\nExample: **Ash makes their Blessings of Khorne roll and gets the following dice: 1, 2, 2, 2, 3, 4, 6, 6. First they use the two 6s to activate Warp Blades (which requires a double 5+), leaving the following dice: 1, 2, 2, 2, 3, 4.\nThey then use the two 2s to activate Wrathful Devotion (which requires any double), leaving the following dice: 1, 2, 3, 4.\nHowever, now that they have activated two Blessings of Khorne, they cannot activate any more and the remaining dice are discarded.**",
+      "target": null
+    },
+    {
+      "id": "876580e6edd7b935",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[CLEAVE 1]"
+        ],
+        "names": []
+      },
+      "source": "When a friendly **WORLD EATERS CHARACTER** unit (excluding **EPIC HERO** units) is **selected to fight**, that unit's **CHARACTER** models' melee attacks can have: \n- **[CLEAVE 1]**. \n- Or: +1 **AP**.",
+      "target": null
+    },
+    {
+      "id": "40caa709f676c578",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne",
+          "Deep Strike"
+        ]
+      },
+      "source": "At the start of the battle round, when you make a Blessings of Khorne roll, if this model is destroyed, you can use a triple 6 from that roll to use this ability instead of activating any Blessings of Khorne at the start of that battle round. If you do, this model is no longer destroyed and in the Reinforcements step of your next Movement phase, it is set up anywhere on the battlefield using its Deep Strike ability, with 8 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "0961c4fd181cf0ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wrathful Presence"
+        ]
+      },
+      "source": "At the start of the battle round, select one Wrathful Presence ability. Until the start of the next battle round, this model has that ability.",
+      "target": null
+    },
+    {
+      "id": "9d48d639080d8b4b",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "Each time you make a Blessings of Khorne roll, if this model is on the battlefield, you can re-roll up to 6 of the D6 rolled.",
+      "target": null
+    },
+    {
+      "id": "03bc3d544c0e6106",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "While a friendly ^^**World Eaters^^** unit is within 6\" of this model, you can ignore any or all modifiers to that unit's Move characteristic and to Advance and Charge rolls made for it, and each time a model in that unit makes a melee attack, you can ignore any or all modifiers to that attack's Weapon Skill characteristic and/or any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "1b1192f3fe23fa22",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit within 6\" of this model is selected to Fall Back, that unit must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead.",
+      "target": null
+    },
+    {
+      "id": "cabbc2f3b5076482",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - World Eaters",
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "9d39bb0ad30c2838",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "25fc4435694a4711",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Charge phase, if this unit is on the battlefield, is **unengaged**, and contains a **bodyguard** model, this unit makes a **leadership roll**: \n- If that **leadership roll** is failed, one **bodyguard** model in this unit is **destroyed**.",
+      "target": null
+    },
+    {
+      "id": "b3301bb72522a848",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "d4ad37a5cfab934c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "KHORNE"
+        ]
+      },
+      "source": "This model can be attached to the following unit: KHORNE BERZERKERS",
+      "target": null
+    },
+    {
+      "id": "3442e28ea46016c3",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "KHORNE"
+        ]
+      },
+      "source": "This model can be attached to the following units: EIGHTBOUND, EXALTED EIGHTBOUND, KHORNE BERZERKERS",
+      "target": null
+    },
+    {
+      "id": "060679a1924483a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike",
+          "Range"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Deep Strike ability and each time a model in that unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through models and terrain features. When making a Normal, Advance or Fall Back move, models in that unit can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them and any Desperate Escape test is automatically passed.",
+      "target": null
+    },
+    {
+      "id": "b94dd7809b3bfd0a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model's unit ends a Charge move, select one enemy unit within Engagement Range of this model, then roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "41cb08fb70c67bb4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ^^**World Eaters Infantry**^^ units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "3b0808c3676a39f2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model makes a Charge move, until the end of the turn, its hellforged weapons have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "3bab277ae8e6b426",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one model from your army with this ability can use it when a friendly ^^**World Eaters^^** unit within 12\" of this model is targeted with a Stratagem. If it does, reduce the CP cost of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "1bfbf768ad27536a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of this model must take a Battle-shock test, subtracting 1 if that enemy unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "ac26dfa93a2c7282",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model ends a Normal or Advance move, you can select one enemy unit that it moved over during that move and roll 6 D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "d4d70143996c3495",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models in that unit have a Move characteristic of 10\" and each time a model in that unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally though terrain features.",
+      "target": null
+    },
+    {
+      "id": "a64e73000d0bae85",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model's unit is selected to fight, you can use this ability. When determining which models in this unit are eligible to fight, any models in it that are within 3\" of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3\" of them and within Engagement Range of their unit.",
+      "target": null
+    },
+    {
+      "id": "920f92b33b5afb5e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time this model makes a melee attack that targets a ^^**Character^^** unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's unit destroys a ^^**Character^^** model, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "5cb65af782baeebc",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Surge"
+        ]
+      },
+      "source": "While this model is leading a unit, you can re-roll Advance rolls made for that unit and each time that unit makes a Blood Surge move, you can re-roll the D6 used to determine how far models in that unit move.",
+      "target": null
+    },
+    {
+      "id": "ff9bed74cff7fc33",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit was destroyed as a result of those attacks, this unit can make a surge move of up to D6+2\".",
+      "target": null
+    },
+    {
+      "id": "a749fc7b33c76bcd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne",
+          "Blessings of Khorne"
+        ]
+      },
+      "source": "If the bearer's unit contains 1 or more Icons of Khorne, each time the bearer's unit destroys an enemy unit, you gain one Bloodshed point. Each time you make a Blessings of Khorne roll, roll one additional D6 for each Bloodshed point you have, after which, all your Bloodshed points are lost.",
+      "target": null
+    },
+    {
+      "id": "3db196f9d9f8a8a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- This unit’s ranged attacks that target the closest eligible target can re-roll **hit rolls**.\n- When this unit **declares a charge**, you can use this part of this ability. \nIf you do: \n-- This unit can re-roll that **charge roll**.\n-- This unit must end that **charge move engaged** with the closest **charge target**.",
+      "target": null
+    },
+    {
+      "id": "3142f92b9818ae2a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has +1**OC**.",
+      "target": null
+    },
+    {
+      "id": "2ec7c001448e6c25",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit’s melee attacks have +1 WS.",
+      "target": null
+    },
+    {
+      "id": "aa2db32e255ed3cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly ^^**World Eaters^^** unit is within 6\" of this unit, each time a model in that unit makes a melee attack that targets a unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**), add 1 to the Hit roll. If that attack targets a unit that is Below Half-strength, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "40c349bb23dbea40",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a model in this unit makes a melee attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, until the end of the phase, improve the Damage characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "4bbf762f23645071",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Possessed",
+          "Terminator"
+        ]
+      },
+      "source": "This model has a transport capacity of 14 ^^**World Eaters Infantry^^** models. Each ^^**Possessed^^** and ^^**Terminator^^** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "fb59bd919731f928",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this model makes a ranged attack that targets the closest eligible ^^**Monster^^** or ^^**Vehicle^^** target within 18\", you can re-roll the Wound roll and you can re-roll the Damage roll.",
+      "target": null
+    },
+    {
+      "id": "e1c2db45eb3c7825",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks (excluding ^^**Monsters^^** and ^^**Vehicles^^*). Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "fec230cc0aa22145",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent's Movement phase, you can select one enemy unit that was set up on the battlefield within 12\" of this model; this model can then either:\n- Shoot at that unit, but only if it is an eligible target.\n- Declare a charge against that unit (note that even if this charge is successful, this model does not receive any Charge bonus this turn).",
+      "target": null
+    },
+    {
+      "id": "b383eef109e50c37",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets the closest eligible target within 18\", you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "1e74acbbce4e9d55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "(Once per turn, per unit) In the Fight phase, when an enemy unit targets this unit, after that unit has resolved its attacks, you can use this ability. If you do, this unit is **eligible to fight** (even if it has already fought this phase) and must be **selected to fight** next.",
+      "target": null
+    },
+    {
+      "id": "a464c1bd77942095",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a unit that can ^^**Fly^^**, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "5817d81e783cc2ad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Charge phase, when this unit **declares a charge**: \n- If an enemy unit **below starting strength** is within 9\" of this unit, this unit has +1 to **charge rolls**. \n- Or: If an enemy unit **below half strength** is within 9\" of this unit, this unit has +2 to **charge rolls**.",
+      "target": null
+    },
+    {
+      "id": "6a4cc04773c9fa44",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll and, if that attack targets an enemy unit that is Below Half-Strength, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "6d0c0f848fb3f71c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent's Movement phase, each time an enemy unit is set up or ends a Normal, Advance or Fall Back move within 8\" of this model, any units embarked within it can disembark.",
+      "target": null
+    },
+    {
+      "id": "da36dc02770bd5f9",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Possessed",
+          "Terminator"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 ^^**World Eaters Infantry**^^ models. It cannot transport ^^**Possessed^^** or ^^**Terminator^^** models.",
+      "target": null
+    },
+    {
+      "id": "09a9830b0bfb3355",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "At the start of the battle round, if this unit is on the battlefield, when you make a Blessings of Khorne roll, roll one additional D6.",
+      "target": null
+    },
+    {
+      "id": "1eeb40fedb2b72ad",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ^^**World Eaters^^** unit from your army makes a Charge move, until the end of the turn, add 1 to the Attacks characteristic and add 2 to the Strength characteristic of melee weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "0a79d0758d55e497",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Idols of Khorne",
+          "Khorne",
+          "Titanic",
+          "Monster",
+          "Jakhals",
+          "Goremongers",
+          "Idol of Blessed Blood",
+          "Battleline"
+        ]
+      },
+      "source": "At the start of your Command phase, you can select one of the Idols of Khorne abilities listed below. Until the start of your next Command phase, that ability is active, and its effects apply to all ^^**World Eaters Titanic^^** and ^^**World Eaters Monster^^** units from your army. You can only select each Idols of Khorne ability once per battle.\n\n\n**Idol of Infinite Rage (Aura)**\nWhile a friendly ^^**Jakhals^^** or ^^**Goremongers^^** unit is within 6\" of this model (or within 9\" if this model is ^^**Titanic^^**), each time a model in that unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll.\n\n\n**Idol of Burning Wrath (Aura)**\nWhile a friendly ^^**Jakhals^^** or ^^**Goremongers^^** unit is within 6\" of this model (or within 9\" if this model is ^^**Titanic^^**), add 1\" to the Movement characteristic of models in that unit and add 1 to Advance and Charge rolls made for that unit.\n\n\n**Idol of Blessed Blood (Aura)**\nWhile a friendly ^^**Jakhals^^** or ^^**Goremongers^^** unit is within 6\" of this model (or within 9\" if this model is ^^**Titanic^^**), models in that unit have a 4+ invulnerable save.\n\n\n^^**Jakhals^^** or ^^**Goremongers^^** units from your army have the ^^**Battleline^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "517b3d65ce2d0dd8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[2BTP]",
+          "[3BTP]",
+          "[Lance]",
+          "[4BTP]",
+          "[5BTP]"
+        ],
+        "names": [
+          "Blood Tithe",
+          "Feel No Pain 5+",
+          "Psychic",
+          "Melee weapons",
+          "Lance",
+          "Khorne",
+          "Blessings of Khorne"
+        ]
+      },
+      "source": "Each time a ^^**Blood Legions^^** or ^^**World Eaters^^** unit from your army destroys an enemy unit, roll one D6; on a 3+, you gain 1 Blood Tithe point (BTP). At the start of the Command phase, you can spend 1 or more of your BTP to activate one of the following abilities until the end of the battle.\n\n\n**Enraged Abjuration [2BTP]**\n^^**Blood Legions^^** and ^^**World Eaters^^** models from your army have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.\n\n\n**Daemonic Rage [3BTP]**\nMelee weapons equipped by ^^**Blood Legions^^** units from your army have the [Lance] ability.\n\n\n**Boon of Blood [4BTP]**\n^^**Blood Legions^^** units from your army have a 4+ invulnerable save.\n\n\n**Might of Khorne [5BTP]**\n^^**Blood Legions^^** units from your army gain the Blessings of Khorne ability.",
+      "target": null
+    },
+    {
+      "id": "7947f3d98493e62d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Possessed",
+          "Brazen Fury",
+          "Fury"
+        ]
+      },
+      "source": "^^**World Eaters Possessed^^** units in your army have the following ability:\n\n**Brazen Fury**: In your opponent’s Shooting phase, when an enemy unit has shot, if a model in this unit was **destroyed** as a result of those attacks, this unit can make a **surge move** of up to D6\". That **surge move** is a **Brazen Fury move**.",
+      "target": null
+    },
+    {
+      "id": "5a220069746d65a8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lance]"
+        ],
+        "names": [
+          "Transport",
+          "Lance"
+        ]
+      },
+      "source": "Each time a ^^**World Eaters^^** unit from your army disembarks from a ^^**Transport^^**, until then end of the turn, add 1 to Charge rolls made for that unit and that unit's melee weapons have the [Lance] ability.",
+      "target": null
+    },
+    {
+      "id": "073c1c295419bb58",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Terror of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "Friendly DAEMON VEHICLE units have the following ability: \nTerror of Khorne: At the start of the Fight phase, you can select one enemy unit engaged with this unit. That enemy unit makes a battle‑shock roll, with -1 to that battle‑shock roll. You cannot select the same enemy unit for this effect more than once per phase. \nThis detachment has the ONSLAUGHT tag and cannot be taken with another ONSLAUGHT detachment.",
+      "target": null
+    },
+    {
+      "id": "e1fbf7b709880351",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "At the start of the Fight phase, if a friendly **TERMINATOR SQUAD** unit is **engaged**, make a **Blessings of Khorne** roll and use the results to activate one **Blessing of Khorne**. Until the end of the phase, that **Blessing of Khorne** is active for friendly **TERMINATOR SQUAD** units in addition to any other **Blessings of Khorne** that are currently active.",
+      "target": null
+    },
+    {
+      "id": "3774fa566db01946",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has +1 to charge rolls.",
+      "target": null
+    },
+    {
+      "id": "8ab7d99f59253cbe",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a Pile-In or Consolidation move, it can move up to 6\" instead of up to 3\".",
+      "target": null
+    },
+    {
+      "id": "6d0af977c569188a",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**) within Engagement Range of one or more units from your army with this ability is selected to Fall Back, models in that enemy unit must take Desperate Escape tests. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
+      "target": null
+    },
+    {
+      "id": "bd4cd4f79010dd90",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "d33957bee998f40e",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 5+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
+      "target": null
+    },
+    {
+      "id": "621ca70b26134a87",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of each player's Command phase, each enemy unit that is within Engagement Range of one or more units with this ability must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "8664237d163d707d",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "a7193d2fffe858aa",
+      "kind": "characteristic:Effect",
+      "occurrences": 8,
+      "files": [
+        "Chaos - World Eaters",
+        "Leagues of Votann",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "e5608f3534537bbc",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "c45eeaf961c0e136",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons equipped by models in this unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "9a94bd1b7afd64a9",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "Each time a model in this unit makes a melee attack that targets an ^^**Infantry^^** unit, that attack has the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "99a70cb856fff2dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[Devastating Wounds]"
+        ],
+        "names": [
+          "Devastating Wounds"
+        ]
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [Devastating Wounds] ability.",
+      "target": null
+    },
+    {
+      "id": "0a4a4781fb316ae8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: EIGHTBOUND, EXALTED EIGHTBOUND",
+      "target": null
+    },
+    {
+      "id": "402458035fa33fc1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Possessed",
+          "Deep Strike",
+          "Scouts 6\""
+        ]
+      },
+      "source": "If this model is attached to a ^^**World Eaters Possessed^^** unit during the Declare Battle Formations step, this model has the Deep Strike and Scouts 6\" abilities.",
+      "target": null
+    },
+    {
+      "id": "3748ed6805b2e7c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly ^^Blood Legions^^ unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "7e6a7474fc0c2340",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly ^^Blood Legions^^ unit is within 6\" of this model, each time a model in that unit makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "66e6a18be1cc8346",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Charge rolls made for this model's unit.",
+      "target": null
+    },
+    {
+      "id": "660c15badf6e3c31",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne Berzerkers",
+          "Berzerkers"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Khorne Berzerkers**^^",
+      "target": null
+    },
+    {
+      "id": "e6ddd11dcdf48838",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "0b13c13087e1f99a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in this unit have an invulnerable save characteristic of 5+.",
+      "target": null
+    },
+    {
+      "id": "f2fcde5162b50bcb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Jakhals"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Jakhals**^^",
+      "target": null
+    },
+    {
+      "id": "55a8422156116174",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Extra Attacks"
+        ]
+      },
+      "source": "Add 1 to the Attacks and Damage characteristics of melee weapons (excluding Extra Attacks weapons) equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "689c5b9fc2c374d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bloodlust",
+          "Khorne"
+        ]
+      },
+      "source": "You can re-roll Charge rolls made for the bearer's unit. In addition, while the Unbridled Bloodlust Blessing of Khorne is active for your army, add 1 to Charge rolls made for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "9d3c6da6fa1d31aa",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - World Eaters",
+        "Imperium - Grey Knights",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "53850279fc5b0a1e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "Each time you make a Blessings of Khorne roll, if the bearer is on the battlefield, you can re-roll up to 2 of the D6 rolled.",
+      "target": null
+    },
+    {
+      "id": "14c2d765fe7ebe73",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne"
+        ]
+      },
+      "source": " (Once per battle, per army) In your Command phase, you can use this ability. If you do, every **Blessing of Khorne** is active for this unit until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "f665e35e6d96add6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has: \n- MOBILE. \n- +1 to charge rolls.",
+      "target": null
+    },
+    {
+      "id": "d0a5b91c6cda9f8c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Add 1 to the bearer's Toughness characteristic and the bearer has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "df44615a02b59d4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 3\" to the range of the bearer's Aura abilities.",
+      "target": null
+    },
+    {
+      "id": "4f23ce775b21851b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Jakhals",
+          "Goremongers"
+        ]
+      },
+      "source": "After both players have deployed their armies, select up to 3 ^^**Jakhals^^** and/or ^^**Goremongers^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "a4001b0535188065",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "The bearer has the Deep Strike ability, and it has the BLOOD LEGIONS Faction keyword instead of the WORLD EATERS Faction keyword.",
+      "target": null
+    },
+    {
+      "id": "a4631a1445856707",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Tithe"
+        ]
+      },
+      "source": "The bearer has a Save characteristic of 2+. If the bearer is destroyed, you gain 1 Blood Tithe point.",
+      "target": null
+    },
+    {
+      "id": "7661b06af9616465",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessings of Khorne",
+          "Khorne"
+        ]
+      },
+      "source": "While a friendly ^^**Blood Legions^^** unit is within 6\" of the bearer, that unit has the Blessings of Khorne ability. If the Might of Khorne ability is active for your army, then while a friendly ^^**Blood Legions^^** unit is within 6\" of the bearer, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "9bc47c157fdb0e83",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blood Tithe"
+        ]
+      },
+      "source": "Add 1 to the Attacks, Strength and Damage characteristics of the bearer's melee weapons. Each time the bearer's unit destroys an enemy unit with a melee attack, do not roll to gain a Blood Tithe point, you automatically gain 1 Blood Tithe point instead.",
+      "target": null
+    },
+    {
+      "id": "138d22d05e6bbf7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer's unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only a 6.",
+      "target": null
+    },
+    {
+      "id": "566ee683a593fecd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer's unit destroys an enemy unit, roll one D6: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "8aa1cc7830969fb7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise"
+        ]
+      },
+      "source": "The bearer's Deadly Demise ability inflicts mortal wounds on a D6 roll of 2+ instead of on a 6. In addition, the bearer has the Deadly Demise D3+1 ability, instead of the Deadly Demise D3 ability.",
+      "target": null
+    },
+    {
+      "id": "a15fee502afbed0a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Brazen Fury",
+          "Fury"
+        ]
+      },
+      "source": "Each time the bearer's unit makes a Brazen Fury move, it is treated as having rolled a 6 for the distance the unit can be moved.",
+      "target": null
+    },
+    {
+      "id": "3562ef1bfc944eec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dedicated Transport",
+          "Transport",
+          "Scouts 9\""
+        ]
+      },
+      "source": "In the Declare Battle Formations step, if the bearer starts the battle embarked within a ^^**Dedicated Transport^^**, that ^^**Dedicated Transport^^** has the Scouts 9\" ability.",
+      "target": null
+    },
+    {
+      "id": "4f4dd9dc3818e386",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Transport"
+        ]
+      },
+      "source": "At the start of your Shooting phase, you can select one ^^**Vehicle^^** model within 6\" of the bearer or, if the bearer is embarked within a ^^**Transport^^**, you can select that ^^**Transport^^** model. Until the end of the phase, after the selected model has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "62bbe1042f15da66",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer's unit has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "2ecff6a16b507ca7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "If the bearer's unit disembarked from a ^^**Transport^^** this turn, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "5cab1bf41155f6ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Titanic"
+        ]
+      },
+      "source": "While this unit is within 12\" of one or more friendly **^^World Eaters Character^^** or **^^World Eaters Titanic^^** models, improve the Leadership and Objective Control characteristic of models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "baff56ef2f528b5f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Fight phase, if this unit is below its Starting Strength, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "d97510edc5dbb276",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can gain up to 8 Skull points a battle, rather than a maximum of 5. If this unit gains 1 or more Skull points in a battle, and/or it gains 1 or more Legendary Skull points, it is Marked for Greatness at the end of the battle in addition to any other units from your army.",
+      "target": null
+    },
+    {
+      "id": "0a7506d8419ac118",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to the Move characteristic of models in this unit and you can ignore any or all modifiers to Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "d4a95b29079528d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets the closest eligible target within 12\", add 1 to the Hit roll. Each time this model declares a charge that targets the closest eligible target, add 2 to the Charge roll.",
+      "target": null
+    },
+    {
+      "id": "9ee180e4ff621452",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phases, this model regains D3 lost wounds. In addition, you can re-roll failed Out of Action tests for this model.",
+      "target": null
+    },
+    {
+      "id": "c7853f10e3c7a34f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, re-roll a Hit roll of 1. If this unit made a Charge move this turn then, until the end of the turn, each time a model in this unit makes a melee attack, you can also re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "a16fc5ff53924474",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit gains 2XP from Dealers of Death, instead of just 1XP.",
+      "target": null
+    },
+    {
+      "id": "c66697fcb7600007",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Melee weapons equipped by models in this unit have the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "33f03147438e778f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Each time a melee attack with a Damage characteristic of 1 is allocated to a model in this unit, that model has the Feel No Pain 5+ ability against that attack.",
+      "target": null
+    },
+    {
+      "id": "c87fa03d8f6b25d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne"
+        ]
+      },
+      "source": "Each time the bearer makes an offering to Khorne, you can re-roll the Judgement roll.",
+      "target": null
+    },
+    {
+      "id": "95dd0e410fd2c564",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this unit is selected to fight, you can choose to use this Battle Trait. If you do, until the end of the phase, add 2 to the Attacks characteristic of melee weapons equipped by models in this unit and those weapons have the **[HAZARDOUS]** ability.",
+      "target": null
+    },
+    {
+      "id": "268c5162facb0a97",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is destroyed, it gains 1 Skull point and 1XP. Each time this unit gains a Battle Scar, it gains an additional D3 Skull points and D3XP.",
+      "target": null
+    },
+    {
+      "id": "e07aabde50dbdb5d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "While a friendly **^^World Eaters^^** unit is within 6\" of this model, each time a model in that unit makes a melee attack, if this model's unit (excluding Bodyguard units) has 3 or more Skull points, re-roll a Hit roll of 1. While this model's unit (excluding Bodyguard units) has 1 or more Legendary Skull points, this ability has a range of 9\".",
+      "target": null
+    },
+    {
+      "id": "d37ef93326ccb23a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne",
+          "Blessings of Khorne"
+        ]
+      },
+      "source": "The first Blessing of Khorne activated for your army is active for the bearer's unit until the end of the battle round, and its effects will apply to the bearer's unit in addition to any other Blessings of Khorne active during the battle. Duplicated Blessings of Khorne have no additional effect on the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "60567f082e554388",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "If the bearer is in your Crusade army, then during the Select Crusade Blessings step, roll one D6 if you are not the Underdog: on a 4+, you can select one Crusade Blessing to use in that battle.",
+      "target": null
+    },
+    {
+      "id": "19ee1e124abba680",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Attacks, Strength, Armour Penetration and Damage characteristics of the bearer's melee weapons by 1.",
+      "target": null
+    }
+  ]
+}

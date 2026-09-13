@@ -1,0 +1,2866 @@
+{
+  "batch": 8,
+  "units": [
+    {
+      "id": "83b595a6fd2359aa",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to Charge rolls made for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "c77930be6174368f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding ^^**Monsters**^^ and **^^Vehicles**^^) within Engagement Range of one or more units from your army with this ability Falls Back, models in that unit must take Desperate Escape tests. When doing so, if that enemy unit is also Battle-shocked, subtract 1 from each of those Desperate Escape tests.",
+      "target": null
+    },
+    {
+      "id": "e53fa246f568017d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Add 2\" to the Move characteristic of **^^Emperor's Children^^** units from your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "d88dcc94b36876ee",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Add 1 to the Attacks characteristic of melee weapons equipped by **^^Emperor's Children^^** models from your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "332bf6fea0ae9146",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Improve the Leadership and Objective Control characteristics of **^^Emperor's Children^^** units from your Crusade army by 1.",
+      "target": null
+    },
+    {
+      "id": "cecc765369c92380",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Add 1 to the Toughness characteristic of **^^Emperor's Children^^** units from your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "6390c6d51fbb30a7",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon",
+          "Crusade"
+        ]
+      },
+      "source": "Improve the Ballistic Skill and Weapon Skill characteristics of weapons equipped by **^^Emperor's Children^^** models from your Crusade army by 1.",
+      "target": null
+    },
+    {
+      "id": "f9bfa3511093d670",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Add 1 to the Strength characteristic of melee weapons equipped by **^^Emperor's Children^^** models from your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "1965e93235f761b2",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "The bearer's unit has the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "2f823d0847e74c52",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, when you target the bearer's unit with a Stratagem, reduce the CP cost of that usage of that Stratagem by 1.",
+      "target": null
+    },
+    {
+      "id": "716344e79bedd6ba",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your Shooting phase, after the bearer's unit has shot, if that unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "6e4cd1fc96fe578f",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Battle-shock step of each player's Command phase, each enemy unit that is within 12\" of the bearer and is below its Starting Strength must take a Battle-shock test, subtracting 1 from that test if that unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "52b51934254581a9",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a 2+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "7f2978d8938cc45d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes an attack, a successful Wound roll inflicts 1 mortal wound on the target in addition to any normal damage, or 2 mortal wounds in addition to any normal damage instead if the bearer has lost one or more wounds.",
+      "target": null
+    },
+    {
+      "id": "aee877789d140d59",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infractors",
+          "Noise Marines",
+          "Tormentors"
+        ]
+      },
+      "source": "This unit can be attached to the following units: ^^**Infractors, Noise Marines, Tormentors**^^",
+      "target": null
+    },
+    {
+      "id": "0ca6f4d702bf1c7b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, if an enemy unit was hit by one or more of those attacks, until the end of the turn, add 1 to Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "25e0b51ee3dd0032",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "b50d5c42c5441abe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Flawless Blades"
+        ]
+      },
+      "source": "This unit can be attached to the following units: ^^**Flawless Blades**^^",
+      "target": null
+    },
+    {
+      "id": "9e124ed94fe19427",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[Precision]"
+        ],
+        "names": [
+          "Melee weapons",
+          "Precision"
+        ]
+      },
+      "source": "Melee weapons equipped by this model have the [Precision] ability.",
+      "target": null
+    },
+    {
+      "id": "bd08b45b84c5e6a1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit that is not below Half-strength, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "66c4cfaff2005c1a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Charge rolls made for the bearer's unit. While the bearer's unit is your army's Favoured Champions, add 2\" to the Move characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "fc5c4aaaaa051da7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle",
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding **^^Monster**^^ and ^^**Vehicle**^^ units) within Engagement Range of the bearer's unit Falls Back, models in that enemy unit must take Desperate Escape tests. When doing so, if the bearer's unit is your army's Favoured Champions, subtract 1 from each of those Desperate Escape tests.",
+      "target": null
+    },
+    {
+      "id": "8dc0125249015a69",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Battle-shock and Leadership tests taken for the bearer's unit. While the bearer's unit is your army's Favoured Champions, add 1 to the Objective Control characteristics of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "e28d5bdc7cfe3643",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Precision^^]"
+        ],
+        "names": [
+          "Precision",
+          "Character"
+        ]
+      },
+      "source": "The bearer's melee weapons have the [^^Precision^^] ability, and each time the bearer makes a melee attack that targets a ^^**Character**^^ unit, improve the Strength and Armour Penetration characteristics of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "6712b8800471a7a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that stratagem this phase. If you do: \n- That use is -1 CP. \n- That use does not prevent any uses of that **stratagem** on other units this phase.",
+      "target": null
+    },
+    {
+      "id": "3f20915100fe619b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does so, until the end of the phase, models in the bearer's unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "e9954c6739c0d4bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Attacks and Damage characteristics of melee weapons equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "ffa1a7d8cd8634b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Exquisite Swordsmanship",
+          "Detachment"
+        ]
+      },
+      "source": "Once per battle, at the end of the Fight phase, if the bearer is within Engagement Range of three or more enemy models, it can use this Enhancement. If it does, the bearer can fight one additional time. When doing so, you can select one ability using the Exquisite Swordsmanship Detachment rule to apply to those attacks.",
+      "target": null
+    },
+    {
+      "id": "2e8630970ad86371",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "Once per turn, in your Movement phase, the bearer can use this Enhancement. If it does, select one friendly **^^Emperor's Children Transport**^^ that is in Strategic Reserves. Until the end of the phase, for the purposes of setting up that **^^Transport**^^ on the battlefield, treat the current battle round number as being one higher than it actually is.",
+      "target": null
+    },
+    {
+      "id": "312fad1c68c677f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "Each time the bearer disembarks from a **^^Transport**^^, until the end of the turn, you can re-roll Charge rolls made for the bearer's unit and enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "a2da15ba39575ef4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "Once per turn, in your opponent's Shooting phase, just after an enemy unit has shot, you can select one friendly **^^Emperor's Children**^^ unit within 9\" of the bearer that was hit by one or more of those attacks, then select one friendly **^^Transport**^^ that unit is wholly within 6\" of and is able to embark within. That **^^Emperor's Children**^^ unit can embark in that **^^Transport**^^.",
+      "target": null
+    },
+    {
+      "id": "a410135db835a2a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Once per battle round, when a saving throw is failed for a friendly **^^Emperor's Children Vehicle**^^ model within 6\" of the bearer, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "156132cddb2ec65e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time the bearer is destroyed, take a Leadership test for the bearer at the end of the phase. if that test is passed, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining (up to its Wounds characteristic).",
+      "target": null
+    },
+    {
+      "id": "b3d356cd7bb00a67",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "065d7d2f0ff3f48e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to the bearer. That unit must take a Leadership test, subtracting 2 from the result if it is Battle-shocked: if failed, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "73b15c83208d0690",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, after making a Hit roll, a Wound roll or a saving throw for a model in the bearer's unit, if the bearer is not Battle-shocked, it can use this Enhancement. If it does, treat the result as an unmodified roll of 6 instead.",
+      "target": null
+    },
+    {
+      "id": "7275acef8ae16619",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer's unit makes an attack that targets an enemy unit below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half-Strength, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "3c11830c1dda0b82",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a melee attack targets the bearer's unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d1e7277b97718395",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, select up to two **^^Emperor's Children**^^ units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "100ab67151d14201",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time a model in the bearer's unit makes a Normal, Advance or Fall Back move, it can move through enemy models. When doing so, it can move within Engagement Range of such models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.",
+      "target": null
+    },
+    {
+      "id": "916b6dab1ff2ccd5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When you target this unit with the **Heroic Intervention stratagem**, that use is -1 CP.",
+      "target": null
+    },
+    {
+      "id": "f5c61fba1884a79a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, just after an enemy unit has selected its targets, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has a 3+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "6f3aa6116bfa3662",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Devastating Wounds^^]",
+          "[^^Hazardous^^]"
+        ],
+        "names": [
+          "Devastating Wounds",
+          "Hazardous"
+        ]
+      },
+      "source": "At the start of the battle, select one melee weapon equipped by the bearer; add 1 to the Attacks characteristic of that weapon. In addition, each time the bearer is selected to fight, it can use this Enhancement. If it does, when resolving those attacks add 1 to the Damage characteristic of that weapon and that weapon has the [^^Devastating Wounds^^] and [^^Hazardous^^] abilities.",
+      "target": null
+    },
+    {
+      "id": "18e8944993813502",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time the bearer's unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Movement characteristic of models in that unit. Each time a model in the bearer's unit makes a Normal, Advance or Fall Back move, it can move through enemy models. When doing so, it can move within Engagement Range of such models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.",
+      "target": null
+    },
+    {
+      "id": "79d750f8d0a3a15c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, you can select one enemy unit within Engagement Range of the bearer; that unit must take a Battle‑shock test, subtracting 1 from the result.",
+      "target": null
+    },
+    {
+      "id": "e632c8ff7e6dfcde",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1\" to the Move characteristic of the bearer.\n",
+      "target": null
+    },
+    {
+      "id": "d252a805ea0b1010",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Strength and Attacks characteristics of the bearer’s melee weapons.",
+      "target": null
+    },
+    {
+      "id": "151d785f689d1050",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "Each time a model in the bearer’s unit makes a melee attack, you can ignore any or all modifiers to that attack’s Weapon Skill characteristic and any or all modifiers to the Hit roll and Wound roll.",
+      "target": null
+    },
+    {
+      "id": "2f1e7966b9082c0b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "- This model has Deep Strike. \n- This unit’s ranged attacks have [IGNORES COVER].",
+      "target": null
+    },
+    {
+      "id": "517e7c89ca6abe9b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit’s ranged attacks have +1 AP.",
+      "target": null
+    },
+    {
+      "id": "e6fc323977213b5d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model’s melee attacks have +1 S.",
+      "target": null
+    },
+    {
+      "id": "eb0d19b8e1197b17",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Common",
+          "Rare"
+        ]
+      },
+      "source": "At the end of the battle, for each model from your Crusade army with this Battle Trait that is on the battlefield, roll one D6: for each 3-5, you gain 1 Common ingredient; for each 6, you gain 1 Rare ingredient.",
+      "target": null
+    },
+    {
+      "id": "fadbe14e738bf817",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Chaos - World Eaters",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Armour Penetration characteristic of melee weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "e91b83c49c38da8c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Combat Elixirs"
+        ]
+      },
+      "source": "While this unit is under the effects of one or more Combat Elixirs, each time a model in this unit makes an attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "38a7e8bdddd7f8d4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Smoke",
+          "Grenades"
+        ]
+      },
+      "source": "This unit gains the **^^Smoke^^** and **^^Grenades^^** keywords. If it already has the **^^Grenades^^** keyword, then once per battle, you can target this unit with either the Smokescreen or Grenade Stratagem for 0CP. After resolving the effects of that Stratagem, each enemy unit within 6\" of this unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "5069713d3ee77641",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Each time an attack targets this unit, if that attack has a Damage characteristic of 1 and this unit is below its Starting Strength, it has the Feel No Pain 6+ ability against that attack. If that attack has a Damage characteristic of 1 and this unit is Below Half-strength, it has the Feel No Pain 5+ ability against that attack instead.",
+      "target": null
+    },
+    {
+      "id": "2fcb1d1170b4c260",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Combat Elixirs"
+        ]
+      },
+      "source": "When your Crusade army uses its Combat Elixirs, the effects of those elixirs are active for this unit for one additional battle round.",
+      "target": null
+    },
+    {
+      "id": "a9a7cbcc78bde649",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Aeldari",
+          "Daemon",
+          "Concentrate of Tormented Souls"
+        ]
+      },
+      "source": "At the end of the battle, if this unit destroyed one or more enemy units during the battle, this unit is Marked for Greatness in addition to any other unit that is so marked. At the end of the battle, if one or more units from your Crusade army with this Battle Trait destroyed one or more **^^Aeldari^^** or **^^Daemon^^** units with a melee attack during the battle, you gain 1 Concentrate of Tormented Souls.",
+      "target": null
+    },
+    {
+      "id": "6e5137435f6aedc5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by this model have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "7d638a686a738b0c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1 and each time that unit fails a Battle-shock test, it suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "646c9ea9b98c94f4",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "This model has the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "e0cdeb5c8ecf227e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Genestealer Cults"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "cc6733c366870eb9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a59b97d38cdf1a7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Deathwatch",
+          "Distillate of Hatred"
+        ]
+      },
+      "source": "Each time this model's unit is selected to fight, you and your opponent must secretly choose a number from 1 to 3 on a D6 (we suggest turning a D6 to show the number, but concealing it behind your hand), then reveal your choices simultaneously. If the chosen numbers differ, then until that fight is resolved, add the number you chose to the Attacks characteristic of this model's melee weapons.\n\nAt the end of the battle, if one or more models from your Crusade army with this Battle Trait destroyed on or more **^^Adeptus Astartes^^**, **^^Deathwatch^^** or **^^Grey Knights^^** units with a melee attack during the battle, you gain 1 Distillate of Hatred.",
+      "target": null
+    },
+    {
+      "id": "7d274a5a0542d9da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "When selecting Agendas for a battle, if this model is your **^^Warlord^^**, you can select one additional **^^Emperor's Children^^** Agenda to be used in that battle in addition to any others being used in that battle.",
+      "target": null
+    },
+    {
+      "id": "f746fe4d3ed7e0b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to the bearer. That unit must take a Battle-shock test; if that test is failed, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "9019a340947a6ecb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]",
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Melee weapons",
+          "Character",
+          "Imperium",
+          "Leader",
+          "Crusade Relic",
+          "Dilution of False Hope"
+        ]
+      },
+      "source": "Melee weapons equipped by the bearer have the **[PRECISION]** and **[DEVASTATING WOUNDS]** abilities, and improve the Attacks, Armour Penetration and Damage characteristics of those weapons by 1.\n\nAt the end of the Fight phase, each enemy **^^Character^^** model that had one or more attacks made by the bearer allocated to it this phase but is not destroyed must take a Leadership test; if that test is failed, that **^^Character^^** model's unit suffers 3 mortal wounds, and when allocating those mortal wounds, they must be allocated to that **^^Character^^** model.\n\nAt the end of the battle, if during the battle the bearer's unit destroyed one or more **^^Imperium^^** Leader units or **^^Imperium Character^^** units without the Leader ability with a melee attack or with mortal wounds inflicted by this Crusade Relic (see above), you gain 1 Dilution of False Hope.",
+      "target": null
+    },
+    {
+      "id": "d89381c18629c185",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Thrill Seekers",
+          "Seekers",
+          "Range"
+        ]
+      },
+      "source": "The bearer's unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back, and when dong so, even though that unit has the Thrill Seekers ability, it can target a unit if it was within Engagement Range of that unit at the start of the turn and it can target a unit that was the target of another unit's charge or attack this phase.",
+      "target": null
+    },
+    {
+      "id": "98ea92b9c79db71d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "Each time the bearer fights, after they have finished making their attacks, for each enemy model destroyed by those attacks, the bearer regains 1 lost wound (to a maximum of 3 lost wounds per phase). If this is not possible because the bearer is already at their starting number of Wounds, until the start of the next Fight phase, the bearer has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "766fd6d6c3648dbe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Essence of Fear"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle-shock test, subtracting 1 from that test.\n\nAt the end of the battle, if one or more enemy units failed a Battle-shock test while within Engagement Range of the bearer, you gain 1 Essence of Fear.",
+      "target": null
+    },
+    {
+      "id": "edb44490a29d9292",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rare"
+        ]
+      },
+      "source": "Improve this model's Leadership characteristic by 1 and its Objective Control characteristic by 2. At the end of the battle, if this model is within range of an objective marker you control that is wholly within your opponent's deployment zone, you gain 1 Rare ingredient.",
+      "target": null
+    },
+    {
+      "id": "d2dd0d9466b7d61b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Strength characteristic of melee weapons equipped by this model by 2.",
+      "target": null
+    },
+    {
+      "id": "85366d2dbeb392f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imperium",
+          "Chaos",
+          "Extract of Xeno-matter"
+        ]
+      },
+      "source": "Improve the Armour Penetration characteristic of melee weapons equipped by this model by 1. If this model destroys one or more units with a melee attack during a battle (excluding **^^Imperium^^** and **^^Chaos^^** units), then at the end of that battle you gain 1 Extract of Xeno-matter.",
+      "target": null
+    },
+    {
+      "id": "8b8f956d707f11fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, each time an attack targets this model's unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "cccaa410ff91525a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos",
+          "Infusion of Traitor's Blood"
+        ]
+      },
+      "source": "Add 1 to the Attacks characteristic of melee weapons equipped by this model. If this model destroys one or more **^^Chaos^^** units with a melee attack during a battle, then at the end of that battle you gain 1 Infusion of Traitor's Blood.",
+      "target": null
+    },
+    {
+      "id": "9a318a20e93e944e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Terminator Squad"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Emperor's Children Terminator Squad.**^^",
+      "target": null
+    },
+    {
+      "id": "03f66b3c201a2841",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "In your Shooting phase, after this model's unit has shot, select one enemy ^^**Infantry**^^ unit hit by one or more of those attacks and roll three D6: for each 4+, that enemy unit suffers 1 mortal wound. If an enemy unit suffers one or more mortal wounds as a result of this ability, it must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "95f1ec6c972f3afd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Sustained Hits 1^^]"
+        ],
+        "names": [
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [^^Sustained Hits 1^^] ability.",
+      "target": null
+    },
+    {
+      "id": "d38a12af8a09a934",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Emperor's Children",
+        "Imperium - Adepta Sororitas",
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Lethal Hits^^]"
+        ],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the [^^Lethal Hits^^] ability.",
+      "target": null
+    },
+    {
+      "id": "74ad0ab8441b028b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return one destroyed model (excluding ^^**Character**^^ models) to that unit.",
+      "target": null
+    },
+    {
+      "id": "9b39a78667489778",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scintillating Legion",
+          "Psychic"
+        ]
+      },
+      "source": "Select one enemy unit within 24\" of and visible to the manifesting model. Until the end of the phase, each time a ^^**Thousand Sons^^** or ^^**Scintillating Legion^^** model from your army makes an attack that targets that unit, re-roll a Hit roll of 1. If the Psychic test result for this Ritual was 10+, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "c244448d4f0f6028",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scintillating Legion",
+          "Range",
+          "Psychic"
+        ]
+      },
+      "source": "Select one friendly ^^**Thousand Sons^^** or ^^**Scintillating Legion^^** unit that is not within Engagement Range of one or more enemy units and is within 24\" of and visible to the manifesting model. That unit can make a Normal move of up to D6\". If the Psychic test result for this Ritual was 10+, that model can make a Normal move of up to 6\" instead. In either case, until the end of the turn, that unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "7612010fdb91a311",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative",
+          "Psychic"
+        ]
+      },
+      "source": "Select one enemy unit within 24\" of and visible to the manifesting model (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12\" of the manifesting model); that unit suffers D3 mortal wounds. If the Psychic test result for this Ritual was 11+, that unit suffers D3+3 mortal wounds instead.",
+      "target": null
+    },
+    {
+      "id": "567d4e4c80e72074",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scintillating Legion",
+          "Psychic"
+        ]
+      },
+      "source": "Select one enemy unit within 24\" of and visible to the manifesting model. Until the end of the phase, each time a ^^**Thousand Sons^^** or ^^**Scintillating Legion^^** model from your army makes an attack that targets that unit, improve the Armour Penetration characteristic of that attack by 1. If the Psychic test result for this Ritual was 12+, improve the Armour Penetration characteristic of that attack by 2 instead.",
+      "target": null
+    },
+    {
+      "id": "976574475e227b6f",
+      "kind": "characteristic:Description",
+      "occurrences": 6,
+      "files": [
+        "Chaos - Thousand Sons",
+        "Imperium - Adepta Sororitas",
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "a277ce4501e9c209",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "While a friendly ^^**Thousand Sons Psyker^^** unit is within 6\" of and visible to this unit, models in that unit have a 4+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "e54f053af628053d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Cabal of Sorcerers"
+        ]
+      },
+      "source": "While a friendly ^^**Scintillating Legions Psyker^^** unit from your army is within 6\" of and visible to this unit, that ^^**Scintillating Legions^^** unit has the Cabal of Sorcerers ability.",
+      "target": null
+    },
+    {
+      "id": "48af36f438eb443a",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rituals",
+          "Psychic",
+          "Roll",
+          "Warp Charge"
+        ]
+      },
+      "source": "If your army Faction is ^^**Thousand Sons^^**, at the start of your Shooting phase, one or more models from your army with this ability can attempt Rituals. To do so, select one model from your army with this ability that has not yet attempted a Ritual this turn and select one Ritual no model from your army has attempted to manifest this turn, then take a Psychic test by following the sequence below:\n\n1. Roll 2D6\n2. Optionally, roll one additional D6 (Channel the Warp). Then, if one or more doubles or triples were rolled during this test, that model's unit suffers D3 mortal wounds.\n3. If that model is not destroyed, the combined total of all the dice rolled during this test is the Psychic test result. If this equals or exceeds the Warp Charge value of the Ritual being attempted, that model manifests that Ritual and you resolve its effects.",
+      "target": null
+    },
+    {
+      "id": "f1057a6cee1b02c9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Flow of Magic",
+          "Psychic"
+        ]
+      },
+      "source": "Certain areas of the battlefield are within your army’s Flow of Magic, as follows: \n- Your deployment zone is always within your army’s Flow of Magic.\n- At the start of any phase, if you control at least half of the objective markers within No Man’s Land, until the end of that phase, No Man’s Land is within your army’s Flow of Magic. \n- At the start of any phase, if you control at least half of the objective markers within your opponent’s deployment zone, until the end of that phase, your opponent’s deployment zone is within your army’s Flow of Magic. \n\n\nEach time a Thousand Sons model from your army makes a Psychic Attack, re‑roll a Wound roll of 1. If such a model is wholly within your army’s Flow of Magic, each time it makes a Psychic Attack, add 1 to the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "91e0757d39073775",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[Devastating Wounds]"
+        ],
+        "names": [
+          "Psychic",
+          "Devastating Wounds"
+        ]
+      },
+      "source": "In your Command phase, you can select one of the abilities listed below to take effect until the start of your next Command phase. You can only select each of these abilities once per battle.\n\n\n**Imbued Manifestation**\nAdd 6\" to the range characteristic of ranged Psychic weapons equipped by ^^**Thousand Sons^^** models in your army.\n\n\n**Psychic Maelstrom**\nEach time a ^^**Thousand Sons^^** model from your army makes an attack with a Psychic weapon, add 1 to the Wound roll.\n\n\n**Wrath of the Immaterium**\nPsychic weapons equipped by ^^**Thousand Sons^^** models in your army have the [Devastating Wounds] ability.",
+      "target": null
+    },
+    {
+      "id": "f788762fd372bdf3",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Daemonic Illusions (Aura)",
+          "Psyker",
+          "Mortal Sorcery (Aura)",
+          "Cabal of Sorcerers"
+        ]
+      },
+      "source": "^^**Scintillating Legions^^** units from your army have the following ability:\n\n\n**Daemonic Illusions (Aura)**: While a friendly ^^**Thousand Sons Psyker^^** unit is within 6\" of and visible to this unit, models in that unit have a 4+ invulnerable save against ranged attacks.\n\n\n^^**Thousand Sons^^** units from your army have the following ability:\n\n\n**Mortal Sorcery (Aura)**: While a friendly ^^**Scintillating Legions Psyker^^** unit from your army is within 6\" of and visible to this unit, that ^^**Scintillating Legions^^** unit has the Cabal of Sorcerers ability.",
+      "target": null
+    },
+    {
+      "id": "916e5f0d02d2de4d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch",
+          "Mutant",
+          "Infantry",
+          "Mounted",
+          "Warpmeld Sacrifice",
+          "Tzaangors",
+          "Battleline"
+        ]
+      },
+      "source": "Each time an enemy unit is selected to shoot or fight and one or more ^^**Tzeentch Mutant Infantry^^** or ^^**Tzeentch Mutant Mounted^^** units from your army are selected as a target of one or more of those attacks, each of those ^^**Tzeentch Mutant^^** units can make a Warpmeld Sacrifice. If it does, until the end of the phase, each time an attack targets that unit, subtract 1 from the Wound roll. At the end of the phase, that ^^**Tzeentch Mutant^^** unit suffers D3 mortal wounds.\n\nEach time a ^^**Tzeentch Mutant Infantry^^** or ^^**Tzeentch Mutant Mounted^^*** unit from your army is selected to shoot or fight, before selecting its targets, that unit can make a Warpmeld Sacrifice. If it does, until the end of the phase, each time a model in that unit makes an attack, add 1 to the Wound roll. At the end of the phase, that ^^**Tzeentch Mutant^^** unit suffers D3 mortal wounds.\n\n^^**Tzaangors^^** units from your army have the Battleline keyword, and while such a unit is not Battle-shocked, add 1 to the Objective Control characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "044b43476eff1387",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rubricae"
+        ]
+      },
+      "source": "Each time an attack with an unmodified Damage characteristic of 1 is allocated to a ^^**Rubricae^^** model from your army, add 1 to any armour saving throw made against that attack.",
+      "target": null
+    },
+    {
+      "id": "c07a32246dad4f4a",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Psyker",
+          "Deadly Demise"
+        ]
+      },
+      "source": "Each time a ^^**Thousand Sons Vehicle^^** unit from your army is selected to shoot or fight, apply one of the following when resolving those attacks.\n- If that ^^**Vehicle^^** unit is within 6\" of one or more friendly ^^**Thousand Sons Psyker^^** models, you can re-roll one Hit roll, one Wound roll and one Damage roll.\n- Otherwise, you can re-roll one Hit roll, one Wound roll or one Damage roll.\n\n\nEach time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly Demise ability is destroyed while it is within 6\" of one or more friendly ^^**Thousand Sons Psyker^^** models, that model's Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of only a 6.",
+      "target": null
+    },
+    {
+      "id": "7e662b357fa8a2c9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "(Once per turn, per unit) When a friendly **THOUSAND SONS PSYKER** unit (excluding **MONSTER** units) successfully manifests a **Ritual**, that unit **heals** D3 wounds.",
+      "target": null
+    },
+    {
+      "id": "df02bea7e7ceacc0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": []
+      },
+      "source": "- Friendly **SEKHETAR ROBOTS** units’ attacks have **[PSYCHIC]**. \n- Friendly **THOUSAND SONS PSYKER** units have the following ability: \nInfusion (Aura): While a friendly **SEKHETAR ROBOTS** unit is within 12\" of this unit, that unit’s melee attacks have +1 **WS**.",
+      "target": null
+    },
+    {
+      "id": "37047e34a29d98b0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- Friendly **TZAANGORS** units have **BATTLELINE**. \n- In your Shooting phase, while a friendly **MUTANT** unit is shooting, enemy units have +6\" **detection range**. \nThis **detachment** has the **MUTANT** tag and cannot be taken with another **MUTANT detachment**.",
+      "target": null
+    },
+    {
+      "id": "1ca0c81fe9e4a417",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "if your army includes this model, after both players have deployed their armies, you can select up to 3 ^^**Thousand Sons^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "5920617717817215",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time this model attempts a Ritual, add 1 to the Psychic test result.",
+      "target": null
+    },
+    {
+      "id": "84ea933b9586fb8c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: RUBRIC MARINES, TZAANGOR ENLIGHTENED, TZAANGOR ENLIGHTENED WITH FATECASTER GREATBOWS",
+      "target": null
+    },
+    {
+      "id": "e4db131f306fadc0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "Each time a unit disembarks from this ^^**Transport^^** after it has made a Normal move, that unit is still eligible to declare a charge this turn.",
+      "target": null
+    },
+    {
+      "id": "44e5fc68d8fdc5ad",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 ^^**Thousand Sons Infantry^^** models. Each ^^**Terminator^^** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "4f80fb4f2864ea29",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle",
+          "Psychic",
+          "Psyker"
+        ]
+      },
+      "source": "Each time this model makes a ranged attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit that was hit by one or more Psychic attacks made by a ^^**Thousand Sons Psyker^^** unit from your army this turn, you can re-roll the Hit roll and you can re-roll the Damage roll.",
+      "target": null
+    },
+    {
+      "id": "12686e10e10a3f26",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic",
+          "Psyker"
+        ]
+      },
+      "source": "Each time this model makes a ranged attack that targets a unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) that was hit by one or more Psychic attacks made by a ^^**Thousand Sons Psyker^^** unit from your army this turn, improve the Strength and Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "b5e3d54013fac6cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Psychic"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this ^^**Transport^^** this turn makes a Psychic attack that targets that enemy unit, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "3dc8ba71438fd89b",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Terminator"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 ^^**Thousand Sons Infantry^^** models (excluding ^^**Terminator^^** models).",
+      "target": null
+    },
+    {
+      "id": "0b8f2c3c82d0729e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of each player’s Command phase, one model in this unit regains up to 3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "a9453f51d3db2253",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "In your Command phase, if this model is leading a unit, you can roll one D6: on a 1, that unit suffers D3 mortal wounds; on a 2-5, you can return 1 destroyed Bodyguard model to that unit; on a 6, you can return up to 2 destroyed Bodyguard models to that unit.",
+      "target": null
+    },
+    {
+      "id": "dde4cdc6127663b3",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: RUBRIC MARINES",
+      "target": null
+    },
+    {
+      "id": "6d8635b399441a81",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons",
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "5c8671330bf5cd1e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Arcane Fire"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy ^^**Infantry^^** unit hit by one or more of those attacks made with Arcane Fire. Until the start of your next turn, that unit is ensnared. While a unit is ensnared, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "bbb06b19c9f4dac6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the hit roll.",
+      "target": null
+    },
+    {
+      "id": "4b9c9c53120f8c3b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "In your Shooting phase and the Fight phase, after this model has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test, subtracting 1 if that unit is within 9\" of one or more ^^**Thousand Sons Psyker^^** units from your army.",
+      "target": null
+    },
+    {
+      "id": "ee1fdacc3a998f96",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is equipped with 2 melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristic of those two weapons.",
+      "target": null
+    },
+    {
+      "id": "b23c888ee36c9c58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Each time this model ends a Normal move, select one enemy unit it moved over during that move. Until the end of the turn, models in that unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "b21c10337ea48ece",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons",
+        "Imperium - Dark Angels"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "092282870feabf4f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, you can change the result of one Hit roll, one Wound roll or one saving throw made for this model to an unmodified 6.",
+      "target": null
+    },
+    {
+      "id": "fad3d8b98cb84537",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": ", TZAANGORS",
+      "target": null
+    },
+    {
+      "id": "670210b1260f8d58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crimson King"
+        ]
+      },
+      "source": "At the start of the battle round, select one of the abilities in the Crimson King section. Until the start of the next battle round, this model has that ability.",
+      "target": null
+    },
+    {
+      "id": "3d2583250b58d2cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rituals",
+          "Psychic"
+        ]
+      },
+      "source": "This model can attempt up to 2 Rituals per turn instead of one, and each time this model attempts a Ritual, add 2 to the Psychic test result.",
+      "target": null
+    },
+    {
+      "id": "b8d841c05de420ed",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "Each time an attack is made against this ^^**Psyker^^** (excluding Psychic Attacks), subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "efe3e81c203d831d",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "At the start of your opponent’s Shooting phase, select one enemy unit within 24\" of this ^^**Psyker^^**. Until the end of the phase, ranged weapons equipped by models in that unit have the [HAZARDOUS] ability.",
+      "target": null
+    },
+    {
+      "id": "459530fe29a01289",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "While a friendly ^^**Thousand Sons^^** unit is within 6\" of this ^^**Psyker^^**, add 2\" to the Move characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "6fa77b5affae8d36",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do: \n- That use is ‑1 CP. \n- That use does not prevent any uses of that **stratagem** on other units this phase.\n- When this unit **declares a charge**, if a friendly **engaged PSYKER** unit is within 12\" of this unit, you can use this part of this ability. \nIf you do: \n- This unit can re‑roll that **charge roll**. \n- This unit must end that **charge move engaged** with an enemy unit **engaged** with that friendly PSYKER unit.",
+      "target": null
+    },
+    {
+      "id": "83381f9d9a3c8ae1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, roll one D6 for each enemy unit within 6\" of this model: on a 2-3, that unit suffers 1 mortal wound; on a 4-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers D6 mortal wounds. Each enemy unit within range of this ability must then take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "a6767dd7e3430911",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "While a friendly ^^**Thousand Sons Psyker^^** model is within 6\" of this model, each time that model Channels the Warp, add 1 to the Psychic test result. This is not cumulative with any other modifiers to the Psychic test result.",
+      "target": null
+    },
+    {
+      "id": "524737ff2153b851",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1. If the attack targets a unit within range of an objective marker you do not control, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "6e097f61a43da5bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[Ignores Cover]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Ignores Cover",
+          "Cover"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in the bearer's unit (excluding ^^**Characters^^**) have the [Ignores Cover] ability.",
+      "target": null
+    },
+    {
+      "id": "51e892c9c64d1e8d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "While this unit contains one or more ^^**Psyker^^** models, each time an attack targets this unit, subtract 1 from the\nWound roll.",
+      "target": null
+    },
+    {
+      "id": "c330fda1f738d8fe",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Once per battle, in your Shooting phase or the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristic of Psychic weapons equipped by this model by 3.",
+      "target": null
+    },
+    {
+      "id": "2515f19c8536c38f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: SCARAB OCCULT TERMINATORS",
+      "target": null
+    },
+    {
+      "id": "bb53686d356b99e2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit that is visible to this ^^**Psyker^^** model. Until the end of the phase, each time a model in this unit makes an attack that targets that enemy unit, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "176909d9f1d62404",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Cabal of Sorcerers",
+          "Psychic"
+        ]
+      },
+      "source": "Each time a friendly ^^**Thousand Sons Psyker^^** model with the Cabal of Sorcerers ability is destroyed while within 9\" of one or more models with this ability, select one of those models with this ability: until the end of the battle, each time the selected model attempts a Ritual, add 1 to the Psychic test result (to a maximum of +2).",
+      "target": null
+    },
+    {
+      "id": "6c4a7cf12afc41ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ^^**Thousand Sons Infantry^^** units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "b542dd35f5a88411",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Stealth"
+        ]
+      },
+      "source": "While a friendly ^^**Thousand Sons Infantry^^** unit is within 6\" of this model, models in that unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "05246407d4f94769",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[Sustained Hits D3]"
+        ],
+        "names": [
+          "Deep Strike",
+          "Dark Blessing",
+          "Sustained Hits"
+        ]
+      },
+      "source": "In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can perform an aetherstride. If it does:\n- It can be set up anywhere on the battlefield more than 6\" horizontally away from all enemy units.\n- Until the end of the turn, its Dark Blessing has the [Sustained Hits D3] ability.\n- Until the end of the turn, it is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "2b091481d98358b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Psyker"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a ^^**Character^^** unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1 (if that attack targets a ^^**Psyker Character^^** unit, you can re-roll the Hit roll and you can re-roll the Wound roll instead). Each time this model destroys a ^^**Character^^** unit, this model regains up to D3 lost wounds (if that ^^**Character^^** unit was a ^^**Psyker^^**, this model regains up to 3 lost wounds instead).",
+      "target": null
+    },
+    {
+      "id": "8e37a2bd6d109164",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit makes a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "4975c20fb1b1781b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard",
+          "Psychic"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Shooting phase and the Fight phase, each time that unit is selected to shoot or fight, this model can use this ability. If it does, select one Bodyguard model in that unit; that Bodyguard model is destroyed and, until the end of the phase, add D3 to the Attacks and Strength characteristics of Psychic weapons equipped by this model.",
+      "target": null
+    },
+    {
+      "id": "3b09cb219f64bb83",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: TZAANGOR ENLIGHTENED, TZAANGOR ENLIGHTENED WITH FATECASTER GREATBOWS, TZAANGORS",
+      "target": null
+    },
+    {
+      "id": "8f37653535e2dd5f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent's turn, if this unit is more than 6\" horizontally away from all enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "46aebcfb83cc0088",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Thousand Sons",
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance and Charge rolls made for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "630e8cf3f04a07f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer's unit is within range of one or more objective markers you control, improve the Leadership characteristic of models in the bearer's unit by 1.",
+      "target": null
+    },
+    {
+      "id": "ecba3ddc62be17f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ CHOSEN\n■ LEGIONARIES\n■ RUBRIC MARINES",
+      "target": null
+    },
+    {
+      "id": "d4435adde62f2607",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when you target this unit with the Fire Overwatch/ Heroic Intervention stratagem, that use is ‑1 CP.",
+      "target": null
+    },
+    {
+      "id": "fe4df2ee69573da7",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6\".",
+      "target": null
+    },
+    {
+      "id": "2f12a9e5a63feeb1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when your opponent targets a unit from their army within 12\" of this model with a stratagem, you can use this ability. If you do, increase the CP cost of that use of that stratagem by 1CP",
+      "target": null
+    },
+    {
+      "id": "cf8aef7be0503705",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly ^^**Scintillating Legions^^** unit is within 6\" of this model, each time a model in that unit makes a ranged attack, add 1 to the Strength characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "67c9d84359d02751",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [
+          "[Ignores Cover]",
+          "[Lethal Hits]",
+          "[Sustained Hits D3]"
+        ],
+        "names": [
+          "Ignores Cover",
+          "Cover",
+          "Lethal Hits",
+          "Sustained Hits",
+          "Bolt of Change"
+        ]
+      },
+      "source": "In your Shooting phase, select one of the following abilities: [Ignores Cover], [Lethal Hits], [Sustained Hits D3]. Until the end of the phase, this model's Bolt of Change has that ability.",
+      "target": null
+    },
+    {
+      "id": "ed8f695c195efe21",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, after this unit ends a Normal move, select one enemy unit it moved over during that move and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "a1281bc0a80cd476",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pink Horror",
+          "Blue Horror"
+        ]
+      },
+      "source": "Each time a ^^**Pink Horror^^** or ^^**Blue Horror^^** model in this unit is destroyed, after the attacking unit has finished making its attacks, if this unit is not destroyed, roll one D6 for that model. On a 4+, if it was a ^^**Pink Horror^^**, add 2 ^^**Blue Horror^^** models to this unit and if it was a ^^**Blue Horror^^**, add one ^^**Brimstone Horror^^** model to this unit.",
+      "target": null
+    },
+    {
+      "id": "7c6f68bc0ae16495",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pink Horrors",
+          "Horrors",
+          "Blue Horrors",
+          "Malevolence",
+          "Exploding Horrors"
+        ]
+      },
+      "source": "If, at any point, this unit contains no ^^Pink Horrors^^ models, use the ^^Blue Horrors^^ datasheet for this unit. \n\n_Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models, the Sullen Malevolence and Exploding Horrors abilities from the Blue Horrors datasheet do not apply to this unit._",
+      "target": null
+    },
+    {
+      "id": "4d41d6ec6e3cf00e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in the bearer's unit have a Leadership characteristic of 6+",
+      "target": null
+    },
+    {
+      "id": "a5136d519cb94026",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blue Horror"
+        ]
+      },
+      "source": "While an enemy unit is within 6\" of this unit, if this unit contains one or more ^^**Blue Horror^^** models, worsen the Leadership characteristic of models in that enemy unit by 1.",
+      "target": null
+    },
+    {
+      "id": "42e0bacc463689bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit is selected to fight, you can select one enemy unit within Engagement Range of it, then select one or more ^^**Brimstone Horror^^** models in this unit. For each ^^**Brimstone Horror^^** model you select, roll one D6: on a 4+, that model is destroyed and that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "211b4f62e86312b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "In your Command phase, if this model is leading a unit, you can roll one D6: on a 1, that unit suffers D3 mortal wounds, on a 2+, you can return 1 destroyed Bodyguard model to that unit.",
+      "target": null
+    },
+    {
+      "id": "96f63806c80e5655",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rubric Marines"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Rubric Marines**^^",
+      "target": null
+    },
+    {
+      "id": "411a35629ec5b20f",
+      "kind": "modifier:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rubric Marines",
+          "Tzaangor Enlightened",
+          "Enlightened"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Rubric Marines, Tzaangor Enlightened**^^",
+      "target": null
+    },
+    {
+      "id": "0af913ca20513512",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzaangors"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Tzaangors**^^",
+      "target": null
+    },
+    {
+      "id": "526fb61c0a338757",
+      "kind": "modifier:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzaangors",
+          "Tzaangor Enlightened",
+          "Enlightened"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Tzaangors, Tzaangor Enlightened**^^",
+      "target": null
+    },
+    {
+      "id": "5c0509269c31ee5a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit starts the game in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third turn, regardless of any mission rules. If this unit is in Strategic Reserves, for the purposes of setting up this unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
+      "target": null
+    },
+    {
+      "id": "1be4cdff560ea230",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the Counteroffensive stratagem, regardless of any other uses of that stratagem this phase. If you do: \n- That use is ‑1 CP. \n- That use does not prevent any uses of that stratagem on other units this phase.'",
+      "target": null
+    },
+    {
+      "id": "7ada8196723cb954",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer manifests a Ritual, while resolving the Ritual, add 6\" to its range.",
+      "target": null
+    },
+    {
+      "id": "985696922259b213",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, in your Command phase, if the bearer's unit is not within Engagement Range of one or more enemy units, you can remove that unit from the battlefield and place it into Strategic Reserves. In the Reinforcements step of your next Movement phase, set that unit back up anywhere on the battlefield that is more than 9\" horizontally away from all enemy units.",
+      "target": null
+    },
+    {
+      "id": "66b6f61f318c6493",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Add 1 to the Strength and Damage characteristics of Psychic weapons equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "b131468b6d75e960",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when selecting a Ritual for the bearer to attempt, you can select Doombolt, even if a model from your army has already attempted to manifest that Ritual this phase.",
+      "target": null
+    },
+    {
+      "id": "430e07fa6e1426a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic",
+          "Flow of Magic"
+        ]
+      },
+      "source": "Add 1 to the Strength characteristic of Psychic weapons equipped by models in the bearer’s unit. While the bearer’s unit is wholly within your army’s Flow of Magic, add 2 to the Strength characteristic of Psychic weapons equipped by models in that unit instead.",
+      "target": null
+    },
+    {
+      "id": "e7c3b1508a4299e3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Flow of Magic",
+          "Psychic",
+          "Rituals",
+          "Hazardous"
+        ]
+      },
+      "source": "While the bearer’s unit is wholly within your army’s Flow of Magic, you can add 6\" to the range of Psychic abilities the bearer has that specify a range (including Rituals) and each time a model in the bearer’s unit takes a Hazardous test for a Psychic weapon, you can re‑roll the result.",
+      "target": null
+    },
+    {
+      "id": "7c4570ba8b442904",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Flow of Magic",
+          "Psychic"
+        ]
+      },
+      "source": "While the bearer’s unit is wholly within your army’s Flow of Magic, add 3 to the Attacks characteristic of ranged Psychic weapons equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "a2bf12d7a13af8a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Flow of Magic",
+          "Rituals"
+        ]
+      },
+      "source": "While the bearer’s unit is on the battlefield, it is wholly within your army’s Flow of Magic. Models in that unit cannot be selected to use any Rituals.",
+      "target": null
+    },
+    {
+      "id": "5a1bf759f58d83fe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to the bearer. That unit must take a Battle-shock test; if that test is failed, that unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "35ce8d4eb01e6e8e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scintillating Legion",
+          "Psychic"
+        ]
+      },
+      "source": "While the bearer is within 6\" of one or more friendly ^^**Scintillating Legion^^** units, each time the bearer Channels the Warp, add 1 to the Psychic test result.",
+      "target": null
+    },
+    {
+      "id": "692a9a1273424584",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, select up to three ^^**Thousand Sons^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserve if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "3463bd4c144c5b0a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has a 2+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "c13af36e1dac267b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time the bearer attempts a Ritual, just before determining the Psychic test result, the bearer can use this Enhancement. If it does, the bearer suffers D3 mortal wounds; if it is not destroyed as a result, add 1 to that Psychic test result for each of those mortal wounds suffered.",
+      "target": null
+    },
+    {
+      "id": "e9bbfdc62e21c062",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "1f1cb113fe07673c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "The bearer has the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "fa758486e60b0c0b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 4+ ability and a Wounds characteristic of 5.",
+      "target": null
+    }
+  ]
+}

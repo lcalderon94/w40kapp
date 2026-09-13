@@ -1,0 +1,3287 @@
+{
+  "batch": 11,
+  "units": [
+    {
+      "id": "4736531f6834dfe2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Penitent"
+        ]
+      },
+      "source": "At the start of the battle round, you can select one of the following Vows of Atonement to be active for your army until the start of the next battle round. You can only select each Vow of Atonement once per battle.\n\n\nThe Path of the Penitent: Add 3\" to the Move characteristic of PENITENT model from your army.\n\n\nAbsolution in Battle: Each time a unit from your army is selected to fight, if that units made a Charge move this turn, until the end of the phase, add 1 to the Attacks and Strength characteristics of melee weapons equipped by PENITENT models in that unit.\n\n\nDeath Before Disgrace: Each time a PENITENT model from your army is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "f4a54b360e35c7a7",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by ADEPTA SORORITAS models from your army have the [ASSAULT] ability, and each time an attack made with such a weapon targets a unit within 6\", add 1 to the Strength characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "25f0e411d4ce1a49",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Acts of Faith"
+        ]
+      },
+      "source": "Each Adepta Sororitas unit from your army can perform up to two Acts of Faith per phase, instead of just one.",
+      "target": null
+    },
+    {
+      "id": "9c36ea5b1ef5ed6d",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon",
+          "Battle Sisters Squad",
+          "Celestian Insidiants",
+          "Celestian Sacresants",
+          "Sacresants",
+          "Paragon"
+        ]
+      },
+      "source": "In your Command phase, you can select up to 3 ^^**Adepta Sororitas^^** units from your army (including units that are embarked within ^^**Transports^^**), until the start of your next Command phase, those units are Righteous. While a unit is Righteous:\n■ Add 1\" to the Move characteristic of models in that unit.\n■ Improve the Leadership characteristic of models in that unit by 1.\n■ Improve the Weapon Skill and Ballistic Skill characteristics of weapons equipped by ^^**Battle Sisters Squad^^**, ^^**Celestian Insidiants^^**, ^^**Celestian Sacresants^^** and ^^**Paragon Warsuits^^** models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "6912fe9f7f4d5bec",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Celestian Sacresants",
+          "Sacresants"
+        ]
+      },
+      "source": "While a ^^**Celestian Sacresants^^** unit from your army is not Battle‑shocked, add 1 to the Objective Control characteristic of ^^**Celestian Sacresants^^** models in that unit.",
+      "target": null
+    },
+    {
+      "id": "c0eaba985093dc49",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can be attached to the following units: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD, SISTERS NOVITIATE SQUAD",
+      "target": null
+    },
+    {
+      "id": "8f18b77525125bbf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Aestred Thurga"
+        ]
+      },
+      "source": "While this unit is leading a unit and contains an Aestred Thurga model, weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "58525185747656f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Agathae Dolan"
+        ]
+      },
+      "source": "While this unit is leading a unit and contains an Agathae Dolan model, each time that unit destroys an enemy unit, you gain 1 Miracle dice. When that Agathae Dolan model is destroyed, you gain D3 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "0e039684044c4055",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Condemnatory Psalms"
+        ]
+      },
+      "source": "Friendly **ADEPTA SORORITAS INFANTRY FLY** units have the following ability: **Condemnatory Psalms**: In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **condemned**:\n- While a unit is **condemned**, that unit has +3\" **detection range**. ",
+      "target": null
+    },
+    {
+      "id": "7960dd53e52ffdbf",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **CELESTIAN** units’ attacks have +1 **BS** and **WS**. \n\nThis **detachment** has the **REVEREND** tag and cannot be taken with another **REVEREND detachment**.",
+      "target": null
+    },
+    {
+      "id": "a6b3f097d51e315a",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhancements"
+        ]
+      },
+      "source": "- Enhancements selected from this **detachment** do not count towards the total number of enhancements in your army. \n- Friendly **ADEPTA SORORITAS CHARACTER** units have +1 **Ld**.",
+      "target": null
+    },
+    {
+      "id": "3b97f44ba0be93db",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is selected to fight, you can choose to invoke its extremis trigger word. If you do, then until the end of the phase, arco-flails equipped by models in this unit have an Attacks characteristic of 6 and the HAZARDOUS ability.",
+      "target": null
+    },
+    {
+      "id": "0ae6f7d4bc335f60",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result.",
+      "target": null
+    },
+    {
+      "id": "3fafbfda2c17af3f",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Adeptus Mechanicus"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "57ac853eaa608e75",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "DOMINION SQUAD, REPENTIA SQUAD",
+      "target": null
+    },
+    {
+      "id": "b7155e1bbd0e0f3c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "Models in the bearer’s unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "ecd4e93a09a55f10",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "7acc56b0d4fbe502",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Adepta Sororitas unit makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.",
+      "target": null
+    },
+    {
+      "id": "99f540d288e08831",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sororitas Character",
+          "Character"
+        ]
+      },
+      "source": "While an ^^**Adepta Sororitas Character^^** is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "3f3c54d12bdc2b46",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has +1 OC.",
+      "target": null
+    },
+    {
+      "id": "01f70a2eaa871a8b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ephrael Stern",
+          "Chaos"
+        ]
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to this unit's Ephrael Stern model. That unit must take a Battle-shock test, subtracting 2 from the result if it is a Chaos unit. If the test is failed, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "94e26778114d9e7b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do: \n- That use is ‑1 **CP**. \n- That use does not prevent any uses of that **stratagem** on other units this phase.",
+      "target": null
+    },
+    {
+      "id": "fe3681723821db9d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly Adepta Sororitas unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "a68fa94958c20faa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time that unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 6.",
+      "target": null
+    },
+    {
+      "id": "8207462ea93e0a9e",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD, SISTERS NOVITIATE SQUAD",
+      "target": null
+    },
+    {
+      "id": "2bf314dac744a044",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "8f757d2fbc12e017",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD",
+      "target": null
+    },
+    {
+      "id": "23693b447e79fdbd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader",
+          "Transport",
+          "Scouts 6\""
+        ]
+      },
+      "source": "If this unit has a Leader unit attached to it during the Declare Battle Formations step and this unit starts the battle embarked within a Transport, that Leader unit gains the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "059a0c53c4e7559b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units it can make a Normal move of up to D6”.",
+      "target": null
+    },
+    {
+      "id": "cb7a157310ae7318",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Indirect Fire",
+          "Deadly Demise"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit must take a Battle-shock test. Each time such an attack destroys an enemy model that has the Deadly Demise ability, the model's Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of a 6.",
+      "target": null
+    },
+    {
+      "id": "49537e0ca6e3f64f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can re‑roll rolls to determine the **A** of a weapon.",
+      "target": null
+    },
+    {
+      "id": "844fd662ef4551c0",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Leagues of Votann",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "7403fe82072502b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return up to 1 destroyed model (excluding Character models) to that unit. If you wish, you first discard 1 Miracle dice; if you do, you can return up to D3+1 destroyed models (excluding Character models) to that unit instead.",
+      "target": null
+    },
+    {
+      "id": "26c551f1dae24269",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you gain a Miracle dice as the result of a friendly ADEPTA SORORITAS unit or model being destroyed, if that unit or model was destroyed within 12\" of this model, you can re-roll the result of that Miracle dice before adding it to your Miracle dice pool.",
+      "target": null
+    },
+    {
+      "id": "603b8023b391a5f8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models in that unit have a Save characteristic of 2+ and a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "8b5f8e724ee5d0f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Triumph of Saint Katherine",
+          "Cherub"
+        ]
+      },
+      "source": "This model has a transport capacity of 6 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine.\n\nAt the start of the Declare Battle Formations step, you can select one BATTLE SISTERS SQUAD, DOMINION SQUAD or SISTERS NOVITIATE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units. If you are splitting a unit that has the Cherub ability, only one of the new units can use that ability during the battle – make a note of which of the new units this will be). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit.",
+      "target": null
+    },
+    {
+      "id": "909481e4113e77e7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "735e3b6a681e329a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Melee"
+        ]
+      },
+      "source": "- This unit has Stealth.\n- Melee attacks that target this unit have ‑1 to hit rolls.",
+      "target": null
+    },
+    {
+      "id": "7129cc1e7f280441",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is on the battlefield at the start\nof your Command phase, you can choose one of the following:\n■ Discard 1 Miracle dice and gain 1CP.\n■ Take a Leadership test for this model, if that test is passed, gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "7b5922d223a99e16",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; that destroyed model can fight after attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "5916aaed34565e86",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Move characteristic of 7\" and a Save Characteristic of 3+.",
+      "target": null
+    },
+    {
+      "id": "713a5eb2ae5b6e18",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Paragon Warsuits"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ Paragon Warsuits",
+      "target": null
+    },
+    {
+      "id": "c92ad95dd750f491",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d27dabd5b94e2f94",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fidelis",
+          "Lance of Illumination"
+        ]
+      },
+      "source": "Each time this model's unit is selected to shoot or fight, you can discard 1 Miracle dice. If you do, until the end of the phase, add 3 to the Attacks characteristic of Fidelis and the Lance of Illumination. Each time an enemy unit is destroyed by this model, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "f0333b23d7f88f33",
+      "kind": "rule",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is in your army, it must be your WARLORD.",
+      "target": null
+    },
+    {
+      "id": "4abb74819ac8729f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model’s unit is selected to fight, you can discard 1 Miracle dice. If you do, then until the end of the phase, each time a melee attack made by this model scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage.",
+      "target": null
+    },
+    {
+      "id": "798bdcfbc527f5b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "a7c2b013de4af2e4",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Space Wolves"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to declare a charge in a turn in which it Advanced",
+      "target": null
+    },
+    {
+      "id": "20f4eda0b636e5d9",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "f56438910e99c42e",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of melee weapons equipped by this model by 3.",
+      "target": null
+    },
+    {
+      "id": "3bd4412c1a699360",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dominion Squad",
+          "Scouts 6\"",
+          "Sisters Novitiate Squad",
+          "Infiltrators"
+        ]
+      },
+      "source": "If this model is attached to a Dominion Squad during the Declare Battle Formations step, it gains the Scouts 6\" ability. If this model is attached to a Sisters Novitiate Squad during the Declare Battle Formations step, it gains the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "532a0a420b6a3a3a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: ARCO-FLAGELLANTS, BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CRUSADERS, DOMINION SQUAD, SANCTIFIERS, SISTERS NOVITIATE SQUAD",
+      "target": null
+    },
+    {
+      "id": "11249fd85251bf41",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Repentia Superior"
+        ]
+      },
+      "source": "While this unit contains a Repentia Superior model, each time a Sisters Repentia model in this unit makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "8a48552045a08002",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Twice per battle, after this unit has performed an Act of Faith, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "c47112137fa707e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. If such an attack targets an enemy unit that has destroyed one or more ^^**Adepta Sororitas^^** units from your army during the battle, add 1 to the Hit roll and add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "912a2cd30eeec41f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Geminae Superia"
+        ]
+      },
+      "source": "While this unit contains a Celestine model, in your Command phase, you can return 1 destroyed Geminae Superia model to this unit.",
+      "target": null
+    },
+    {
+      "id": "680430b7795d7108",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Geminae Superia",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While this unit contains one or more Geminae Superia models, Celestine has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "efef087ea2e00c60",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time this unit’s Celestine model is destroyed, roll one D6 at the end of the phase. On a 2+, set that Celestine model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "448e81bd26cea3ab",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can be attached to the following units: SERAPHIM SQUAD, ZEPHYRIM SQUAD",
+      "target": null
+    },
+    {
+      "id": "fe8b1cdc99f632ad",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "c56424d66e93c128",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Impetuous Fervour"
+        ]
+      },
+      "source": "Impetuous Fervour: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "f3810799d4ee62fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the TRIUMPH OF SAINT KATHERINE.",
+      "target": null
+    },
+    {
+      "id": "a78be3711fa55a29",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, this model regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "8f3672dd22ae5643",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Relics of the Matriarchs"
+        ]
+      },
+      "source": "While this model has 1-6 wounds remaining, the Attacks characteristics of all of its weapons are halved, and you can only select one ability when using its Relics of the Matriarchs ability, instead of up to two.",
+      "target": null
+    },
+    {
+      "id": "fcfc184038a5176d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Relics of the Matriarchs"
+        ]
+      },
+      "source": "At the start of the battle round, select up to two of the abilities in the Relics of the Matriarchs section. Until the start of the next battle round, this model has those abilities.",
+      "target": null
+    },
+    {
+      "id": "c6fe18bcf38f055c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, add 2\" to that unit's Move characteristic and add 1 to the Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "41b9d06f99d5de3c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, you can re-roll all Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "dfe560e6768e5682",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Acts of Faith"
+        ]
+      },
+      "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, that unit can perform up to two Acts of Faith per phase, instead of only one.",
+      "target": null
+    },
+    {
+      "id": "1b1fdf89ab2c027b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "9e3a3cccb3d340b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, models in that unit have the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "59497812ae6e0cb1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, improve the Armour Penetration characteristic of melee weapons equipped by model in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "17a65e2e5be0d64b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you gain 1 Miracle dice at the start of the battle round, if this model is on the battlefield, do not roll one D6 to determine the value of that Miracle dice; it has a value of 6.’",
+      "target": null
+    },
+    {
+      "id": "7b9bc6eaee1b43a0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: BATTLE SISTERS SQUAD, CRUSADERS",
+      "target": null
+    },
+    {
+      "id": "793fea0f0402f3dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sustained Hits 1",
+          "Lethal Hits"
+        ]
+      },
+      "source": "Each time this unit is selected to fight, select one of the following abilities to apply to melee weapons equipped by models in this unit until the end of the phase:\n- Sustained Hits 1\n- Lethal Hits\n\nIf this unit made a Charge move this turn, until the end of the phase, select both abilities above to apply to melee weapons equipped by models in this unit instead.",
+      "target": null
+    },
+    {
+      "id": "d8452f1f2b6f6d69",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Triumph of Saint Katherine"
+        ]
+      },
+      "source": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine.",
+      "target": null
+    },
+    {
+      "id": "fe76f2ff1b48161c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per turn, in your opponent’s Charge phase, after an enemy unit has selected targets for its charge but before it makes a Charge move, you can select one ADEPTA SORORITAS unit from your army that was selected as a target of that charge. Provided that unit is not within Engagement Range of any enemy units and every model in that unit is within 3\" of this TRANSPORT, it can embark within this TRANSPORT.",
+      "target": null
+    },
+    {
+      "id": "c20ace062d3fa16a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by the model and those weapons have the [DEVASTATING WOUNDS] ability",
+      "target": null
+    },
+    {
+      "id": "347869baa22b3d76",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a CHARACTER unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "7bb1e3fde0b7b376",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "b735087b93fa95c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If a model from your army with the Leader ability can be attached to a BATTLE SISTERS SQUAD, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "6214e22aa916ee95",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this FORTIFICATION is set up, all parts of it must be set up within 1\" of another part. Friendly ADEPTA SORORITAS INFANTRY models can be set up or end any type of move on top of the floor sections of this FORTIFICATION. While an ADEPTA SORORITAS unit from your army is within 1\" of this FORTIFICATION, that unit can perform one additional Act of Faith per phase.",
+      "target": null
+    },
+    {
+      "id": "dfeec38d64af1538",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "288d792947409137",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a DAEMON unit, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "1377b0edc63fc367",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Ministorum Priest"
+        ]
+      },
+      "source": "While this unit contains a **^^Ministorum Priest**^^, melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "e1b5014110defdd7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ministorum Priest",
+          "Leader",
+          "Battle Sisters Squad",
+          "Scouts 6\""
+        ]
+      },
+      "source": "If a ^^**Ministorum Priest^^** model from your army with the Leader ability can be attached to a ^^**Battle Sisters Squad^^**, it can be attached to this unit instead. If a ^^**Ministorum Priest^^** model from your army is attached to this unit during the Declare Battle Formations step, that model gains the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "99df19f3bcaa47b2",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "In your Command phase, if the bearer is on the battlefield, you can return up to D3 destroyed models (excluding ^^**Character models^^**) to this unit.",
+      "target": null
+    },
+    {
+      "id": "267708f6e854ed58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[Precision]"
+        ],
+        "names": [
+          "Precision",
+          "Transport"
+        ]
+      },
+      "source": "At the start of the battle, select one unit from your opponent’s army to be this unit’s quarry. Each time a model in this unit makes an attack that targets its quarry, that attack has the ^^**[Precision]^^** ability and you can re‑roll the Hit roll. This ability can be used even if this unit is embarked within a ^^**Transport**^^.",
+      "target": null
+    },
+    {
+      "id": "becdb692182c6a14",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Dominion Squad"
+        ]
+      },
+      "source": "If a ^^**Character^^** unit from your army can be attached to a ^^**Dominion Squad^^** unit, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "da684782902ecc00",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer’s unit’s quarry is destroyed, you can select a new unit from your opponent’s army to be its quarry.",
+      "target": null
+    },
+    {
+      "id": "7eb00f6a120f87d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one unit from your army with the ability can be targeted with a Stratagem for 0CP, even if another unit from your army has already been targeted with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "1aa61335991b09bd",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battle Sisters Squad",
+          "Celestian Sacresants",
+          "Sacresants",
+          "Dominion Squad",
+          "Retributor Squad",
+          "Sisters Novitiate Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Battle Sisters Squad, Celestian Sacresants, Dominion Squad, Retributor Squad, Sisters Novitiate Squad**^^",
+      "target": null
+    },
+    {
+      "id": "0bf976614e8c2c1b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 4.",
+      "target": null
+    },
+    {
+      "id": "84fd4d02d33fb584",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Paragon Warsuits"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Paragon Warsuits**^^",
+      "target": null
+    },
+    {
+      "id": "9154b72bfb16f06d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle‑shock test, subtracting 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "3f7a293bfecd1855",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the start of your next Command phase, each time a friendly ^^**Adepta Sororitas**^^ model makes an attack that targets that enemy unit, that attack has the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "f57551f2e5414537",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[Precision]"
+        ],
+        "names": [
+          "Precision"
+        ]
+      },
+      "source": "ADEPTA SORORITAS model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1, and those weapons have the [Precision] ability. In addition, each time the bearer fights, if one or more enemy models is destroyed by those attacks, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "c2217ba77097dab0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTA SORORITAS model only. In your Movement phase, you can select one enemy unit within 12\" of that bearer; that unit must take a Battle-shock test. If that test is failed, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "05205b3045c0afa1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "CANONESS or PALATINE model only. At the start of your Command phase, if the bearer is on the battlefield, take a Leadership test for the bearer. If that test is passed, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "2276ebcfaf8466e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTA SORORITAS model only. Each time the bearer uses an Act of Faith to substitute a saving throw, that saving throw is successful, irrespective of the value of the Miracle dice used.",
+      "target": null
+    },
+    {
+      "id": "50c80c37a1080dc2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Torrent"
+        ]
+      },
+      "source": "**^^Adepta Sororitas^^** model only. While the bearer is leading a unit, add 1 to the Attacks characteristic of Torrent weapons equipped by models in that unit, and all other ranged weapons equipped by models that unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "36635d83574ff490",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "CANONESS or PALATINE model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "35226f1bb0f860b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTA SORORITAS model only. At the start of your Command phase, you can discard up to 2 Miracle dice. Then, add 1 Miracle dice to your Miracle Dice pool showing a value equal to the sum of the two Miracle dice you discarded (to a maximum of 6).",
+      "target": null
+    },
+    {
+      "id": "b9921f0f6a442bd7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adepta Sororitas^^** model only. Each time the bearer is selected to fight, you can first discard up to 3 Miracle dice. For each Miracle dice just discarded, until the end of the phase, add 1 to the Attacks and Strength characteristics of the bearer's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "59209e49fa08704e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "ADEPTA SORORITAS model only. The bearer’s weapons have the [PRECISION] ability. Each time the bearer’s unit destroys an enemy Character model, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "8916f924b4e8d5ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adepta Sororitas^^** model only. Add 1 to the Attacks characteristic of the bearer’s melee weapons. While the bearer’s unit is Righteous, add 2 to the Attacks characteristic and add 1 to the Damage characteristic of the bearer’s melee weapons instead.",
+      "target": null
+    },
+    {
+      "id": "1acdc65a6a5425d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTA SORORITAS model only. Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of the bearer",
+      "target": null
+    },
+    {
+      "id": "64ed01a86e6c1050",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "ADEPTA SORORITAS model only. Each time a model in the bearer’s unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "22133f88574a7c45",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent’s Fight phase, if this unit is **unengaged**, you can place this unit in **strategic reserves**.",
+      "target": null
+    },
+    {
+      "id": "7b7e5397f28b9059",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTA SORORITAS model only. At the end of your Command phase, if the bearer is on the battlefield, you can re-roll one Miracle dice from your Miracle dice pool and return it to your Miracle dice pool with the new result you rolled. When doing so, if the bearer's unit is below its Starting Strength, you can re-roll up to 3 Miracle dice in this way instead.",
+      "target": null
+    },
+    {
+      "id": "62587aab70ce727a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Canoness",
+          "Palatine"
+        ]
+      },
+      "source": "**^^Canoness^^** or **^^Palatine^^** model only. Each time an attack is allocated to the bearer, change the Damage characteristic of that attack to 1.",
+      "target": null
+    },
+    {
+      "id": "98ba13967ef9cb53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTA SORORITAS model only. When the bearer is destroyed, you gain an additional D3 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "b0f05614d9bc6e54",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Adepta Sororitas^^** model only. Add 1 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons. If the bearer has lost one or more wounds, add 2 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons instead.",
+      "target": null
+    },
+    {
+      "id": "06c3286a2c57ceda",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "CANONESS, PALATINE, or MINISTORUM PRIEST model only. The bearer gains the PENITENT keyword.",
+      "target": null
+    },
+    {
+      "id": "3b6a772d87130bb4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "ADEPTA SORORITAS model only. While the bearer is on the battlefield, each time an enemy unit is destroyed by a PENITENT unit from your army, you can discard 1 Miracle dice to gain 1 Miracle dice showing a value of 6.",
+      "target": null
+    },
+    {
+      "id": "44b2807c1bef76f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "PENITENT model only. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "c906d21427a046fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "PENITENT model only. Once per battle, at the start of the battle round, select one Vow of Atonement. Until the start of the next battle round, that Vow of Atonement is active for the bearer's unit in addition to any that is active for your army, even if you have already selected that Vow of Atonement this battle.",
+      "target": null
+    },
+    {
+      "id": "56321d0ac7895101",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Raging Fervour",
+          "Righteous Smiting"
+        ]
+      },
+      "source": "(Once per turn, per unit) At the start of a phase, you can use this ability. If you do, select one of the abilities below: \n- **Rite of Revelation**: While this unit is shooting, enemy units have +6\" detection range. \n- **Sermon of Intolerance**: This unit’s battle‑shock rolls automatically succeed. \n- **Catechism of Raging Fervour**: This unit has +1\" M. \n- **Psalm of Righteous Smiting**: This unit’s attacks have +1 S. \n- **Chorus of Repudiation**: Attacks that target this unit with a S greater than this unit’s T have ‑1 to wound rolls.",
+      "target": null
+    },
+    {
+      "id": "6ef62fe6eeb1fee5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit can perform 1 additional Act of Faith per phase.",
+      "target": null
+    },
+    {
+      "id": "5305ad416c4ba4eb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time a Psychic Attack targets this unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "805a1869d527cb7c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit takes a Battle-shock or Leadership test, you can first discard 1 Miracle dice. If you do, that test is automatically passed.",
+      "target": null
+    },
+    {
+      "id": "0762e2fc99e21fb9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per phase, when this unit is selected as the target of an attack, you can discard 1 Miracle dice. If you do, until the end of the phase, each time an attack targets this unit, worsen the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "f0233e4a378c09e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll failed Out of Action tests taken for this unit, and each time this unit is Marked for Greatness, it gains an additional 2XP.",
+      "target": null
+    },
+    {
+      "id": "13e6741f16240e6c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "This unit has the Feel No Pain 4+ ability against mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "6a43792726a1b794",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "Each time this unit makes a Charge move, until the end of the turn, improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "d33bb75b40b778b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Each time this unit is selected as the target of an attack, if this unit is Below Half-strength, models in this unit have the Feel No Pain 4+ ability against that attack.",
+      "target": null
+    },
+    {
+      "id": "cff00a0d94765dbb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit destroys an enemy unit in the Fight phase, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "d77f7d934edd7dc6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "This model has the Feel No Pain 5+ ability and, at the start of your Command phase, this model regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "ff56794ecad06792",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "At the end of your Command phase, if this model is your **^^Warlord^^** and is on the battlefield, you can spend 1CP. If you do, you gain D3 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "03e5eff2eb8bc8a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly **^^Adepta Sororitas^^** unit is within 6\" of this unit, improve that unit's Leadership characteristic by 1.",
+      "target": null
+    },
+    {
+      "id": "bee349f10e131c00",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit performs an Act of Faith, the result of one of the Miracle dice used in that Act of Faith is first improved by 1 (to a maximum of 6).",
+      "target": null
+    },
+    {
+      "id": "3b33b5135827f3f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When selecting Agendas for a battle, you can select one **^^Adepta Soroitas^^** Agenda to be used in that battle in addition to any others being used in that battle.",
+      "target": null
+    },
+    {
+      "id": "28a53e1161a06f83",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "If the bearer is in your Crusade army, you can use one Crusade Blessing even if you are not the Underdog.",
+      "target": null
+    },
+    {
+      "id": "8c09f5dba19223bd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit selects the bearer's unit as a target of a charge, that enemy unit must take a Battle-shock test; if that test is failed, subtract 2 from the Charge roll made for that charge.",
+      "target": null
+    },
+    {
+      "id": "0a59e40899ebf04c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-CHARACTER 4+]",
+          "[DEVASTATING WOUNDS]",
+          "[PRECISION]"
+        ],
+        "names": [
+          "Living Saint"
+        ]
+      },
+      "source": "**^^Living Saint^^** model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1, and those weapons have the **[ANTI-CHARACTER 4+]**, **[DEVASTATING WOUNDS]** and **[PRECISION]** abilities.",
+      "target": null
+    },
+    {
+      "id": "02e65202e53a7867",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]",
+          "[ANTI-CHAOS 4+]"
+        ],
+        "names": []
+      },
+      "source": "Improve the Attacks, Strength and Damage characteristics of the bearer's ranged weapons by 1, and those weapons have the **[DEVASTATING WOUNDS]** and **[ANTI-CHAOS 4+]** abilities.",
+      "target": null
+    },
+    {
+      "id": "6489120b1f60dde7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the bearer's Wounds, Leadership and Objective Control characteristics by 1.",
+      "target": null
+    },
+    {
+      "id": "bc20895aee6428dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Saint Potentia"
+        ]
+      },
+      "source": "**^^Saint Potentia^^** model only. When the bearer is destroyed, the Miracle dice you gain as a result is automatically a 6. At the end of the battle, the bearer gains 1 Saint point (whether destroyed or not).",
+      "target": null
+    },
+    {
+      "id": "3f1756dffb087795",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a 4+ invulnerable save. Each time the bearer's unit is selected as the target of an attack, you can discard 1 Miracle dice. If you do, until the end of the phase, the bearer has a 3+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "1f388d8edba18673",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Gain 3 Saint points at the end of a battle if this model is wholly within your opponent's deployment zone.",
+      "target": null
+    },
+    {
+      "id": "dbe0cf8002300084",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Gain 2 Saint points at the end of a battle if this model gained more XP than any other unit from your Crusade army during that battle.",
+      "target": null
+    },
+    {
+      "id": "797c6285a6083506",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Gain 1 Saint point at the end of a battle for each Miracle dice remaining in your Miracle Dice pool (to a maximum of 2 Saint points).",
+      "target": null
+    },
+    {
+      "id": "e379cb1614465b4e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Acts of Faith"
+        ]
+      },
+      "source": "Gain 2 Saint points at the end of a battle if this model performed 3 or more Acts of Faith during that battle.",
+      "target": null
+    },
+    {
+      "id": "cdb6331079fb6ffc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Gain 1 Saint point at the end of a battle if this model is below its Starting Strength. Gain 2 Saint points instead if this model was destroyed while within range of an objective marker.",
+      "target": null
+    },
+    {
+      "id": "406855fbf47e968a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Gain 3 Saint points each time this model gains a Martyr point.",
+      "target": null
+    },
+    {
+      "id": "08f95261c305cf2c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Gain 2 Saint points at the end of a battle if this model is within 6\" of the centre of the battlefield.",
+      "target": null
+    },
+    {
+      "id": "c79192b584251d59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Gain 2 Saint points at the end of a battle if this model's unit did not fail a Battle-shock test during that battle.",
+      "target": null
+    },
+    {
+      "id": "6fb27575760a8fda",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Warlord"
+        ]
+      },
+      "source": "Gain 2 Saint points at the end of a battle if this model destroyed one or more enemy **^^Character^^** units during that battle. Gain an additional 2 Saint points if one of those destroyed units contained the enemy **^^Warlord^^**.",
+      "target": null
+    },
+    {
+      "id": "00f29479536a625b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Gain 2 Saint points at the end of a battle if this model destroyed 5 or more enemy models during that battle.",
+      "target": null
+    },
+    {
+      "id": "afd6bd36a78b1f7f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Each this model's unit is selected to fight, you can discard 1 Miracle dice. If you do, until the end of the phase, double the Strength characteristic of this model's melee weapons and those weapons have the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "72b0973c5aba7216",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Battle-shock step of your opponent's Command phase, you can discard 1 Miracle dice. If you do, every enemy unit that is within 12\" of this model and below its Starting Strength must take a Battle-shock test. If such a unit is Below Half-strength, subtract 1 from Battle-shock tests taken for that unit this phase instead.",
+      "target": null
+    },
+    {
+      "id": "7703f778c53eb707",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of any phase, you can discard 1 Miracle dice. If you do, this model regains all of its lost wounds.",
+      "target": null
+    },
+    {
+      "id": "f6b501694f2db7a9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of each player's Command phase, if this model is on the battlefield, you can discard 1 Miracle dice. If you do, you gain 1 Miracle dice showing a value of 6.",
+      "target": null
+    },
+    {
+      "id": "b452337e93457321",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]",
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model's unit is selected to shoot, you can discard 1 Miracle die. If you do, until the end of the phase, ranged weapons equipped by models in that unit have the **[IGNORES COVER]** ability and each time an attack made by such a weapon scores a Critical Wound, that attack has the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "b3248d0bce02526a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sororitas Character",
+          "Character",
+          "Crusade",
+          "Hymns of Battle"
+        ]
+      },
+      "source": "Once per battle, at the start of the battle round, if you have one or more **^^Adepta Sororitas Character^^** units on the battlefield and if your Crusade army was led in prayer before this battle, you can discard two Miracle dice. If you do, you intone the Hymns of Battle that battle round and, until the start of the next battle round, all **^^Adepta Sororitas Character^^** units in your army gain bonus depending on which Hymns of Battle you select. While a unit is Battle-shocked, it loses the bonus of any Hymns that would apply to it (if a rule would cause such a unit to no longer be Battle-shocked, any bonuses from Hymns that would apply to it apply once again).\n\nWhen you intone Hymns of Battle, you can either select one Hymn to apply to units from your army from the list, or you can randomly select two by rolling two D6 and consulting the table (if a double is rolled, roll both dice again until two different results are rolled).",
+      "target": null
+    },
+    {
+      "id": "06f559a43c6c9bae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2\" to the Move characteristic of models in this unit and add 1 to Advance and Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "e8870f6281fb1e20",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit performs an Act of Faith, add 1 to the result of the dice being substituted (to a maximum of 6). Each time a Miracle dice with an unmodified result of a 6 is used when such a unit performs an Act of Faith, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "92cb5941f470778b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Armour Penetration characteristic of ranged weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "886d7c72603ecc53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Attacks and Strength characteristics of melee weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "e044de149a16ef1a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Leadership and Objective Control characteristics of models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "59b4b34dae9d8db5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dialogus"
+        ]
+      },
+      "source": "**^^Dialogus^^** only. Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use if that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "e3c6e64cf18fb5bd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessed Orator"
+        ]
+      },
+      "source": "At the start of the battle, you gain 1 miracle dice. If this model is your **^^Blessed Orator^^**, then you start the battle with 2 Miracle dice instead.",
+      "target": null
+    },
+    {
+      "id": "18360fcf1cae18e7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hymns of Battle"
+        ]
+      },
+      "source": "At the start of each battle round, roll one D6 and consult the Hymns of Battle table. If you wish, you can then choose to discard 1 Miracle dice; if you do, then until the end of the battle round, that Hymn applies to this model's unit (duplicated Hymns of Battle are not cumulative, and have no additional effect).",
+      "target": null
+    },
+    {
+      "id": "d9b0c8b4e49ebe4e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Intoning Hymns of Battle",
+          "Hymns of Battle"
+        ]
+      },
+      "source": "While the bearer is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1. If your army is Intoning Hymns of Battle, then while the bearer is leading a unit, each time a model in that unit makes an attack, you can re-roll a Wound roll of 1 as well.",
+      "target": null
+    },
+    {
+      "id": "95e7f2e1b2cbf384",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this model is on the battlefield, you can re-roll one Miracle dice from your Miracle dice pool and return it to your Miracle dice pool with the new result you rolled.",
+      "target": null
+    },
+    {
+      "id": "514554f8337eda53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Hymns of Battle"
+        ]
+      },
+      "source": "While a friendly **^^Adepta Sororitas^^** unit is within 6\" of this model, that unit is considered to be a **^^Character^^** unit for the purposes of gaining bonuses for the Hymns of Battle rule.",
+      "target": null
+    },
+    {
+      "id": "5da68268db07da9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly **^^Adepta Sororitas^^** unit is within 6\" of this model, each time that unit performs an Act of Faith, roll one D6: one a 6, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "01bee996c81b9591",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Imagifier"
+        ]
+      },
+      "source": "**^^Imagifier^^** only. At the end of the battle, if this model is on the battlefield, you can select one additional **^^Adepta Sororitas^^** unit in your army to be Marked for Greatness.",
+      "target": null
+    },
+    {
+      "id": "da3f712112db1610",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hospitaller"
+        ]
+      },
+      "source": "**^^Hospitaller^^** only. Once per battle, if this model is on the battlefield when an **^^Adepta Sororitas^^** unit from your army fails an Out of Action test, all **^^Adepta Sororitas^^** units from your army that are on the battlefield gain 1XP.",
+      "target": null
+    },
+    {
+      "id": "338a44229e43eb73",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dogmata",
+          "Crusade",
+          "Battle Traits"
+        ]
+      },
+      "source": "**^^Dogmata^^** only. Once per battle, at the end of the battle, if this model is on the battlefield, you can select one other **^^Adepta Sororitas^^** unit from your Crusade army that has one or more Battle Traits and spend 1RP. If you do, select one Battle Trait that the unit has and replace it with a new Adepta Sororitas Battle Trait that the unit could have.",
+      "target": null
+    },
+    {
+      "id": "12ba3d917bbf81e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, models in that unit have a 5+ invulnerable save. Once per phase, when an attack is allocated to a model in the bearer's unit, you can discard 1 Miracle dice; if you do, the Damage characteristic of that attack is changed to 0.",
+      "target": null
+    },
+    {
+      "id": "d8d3f30332fb3f14",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessed Orator",
+          "Hymns of Battle",
+          "Crusade Relic"
+        ]
+      },
+      "source": "If this model is your **^^Blessed Orator^^**, you can intone Hymns of Battle up to twice during the battle, rather than only one (you must discard 2 Miracle dice each time you wish to do so). You cannot intone Hymns of Battle twice at the start of the same battle round using this Crusade Relic.",
+      "target": null
+    },
+    {
+      "id": "2b843fedda7ec622",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blessed Orator",
+          "Hymns of Battle",
+          "Hymn of Battle"
+        ]
+      },
+      "source": "If the bearer is your **^^Blessed Orator^^**, each time your army intones Hymns of Battle, if the bearer is on the battlefield, after selecting which Hymns will apply to your army, you can randomly select one additional Hymn of Battle to apply to your army (if you roll a result that you have already select, roll again until you result you have not rolled).",
+      "target": null
+    },
+    {
+      "id": "3fee59aad0a2248f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ministorum Priest"
+        ]
+      },
+      "source": "**^^Adepta Sororitas^^** model only (excluding **^^Ministorum Priest^^** models). The bearer has a Save characteristic of 2+. The first time the bearer loses one or more Wounds, at the end of the phase in which those wounds were lost, you gain 1 Miracle dice (the value of this Miracle dice is always a 6).",
+      "target": null
+    },
+    {
+      "id": "2825a6330c4c63cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Canoness",
+          "Ministorum Priest",
+          "Dialogus"
+        ]
+      },
+      "source": "**^^Canoness^^**, **^^Ministorum Priest^^** or **^^Dialogus^^** only. The bearer can use the Once per Battle ability listed on their datasheet one additional time during the battle.",
+      "target": null
+    },
+    {
+      "id": "7b0a9127479222a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hymns of Battle"
+        ]
+      },
+      "source": "The bearer's unit is eligible to shoot or declare a charge in a turn in which it Fell Back, If your army is intoning Hymns of Battle this battle round, the bearer's unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "bad9fb01b4b4e35b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Repentia Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Repentia Squad**^^",
+      "target": null
+    },
+    {
+      "id": "bc6b39bf0691d45e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mortifiers"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Mortifiers**^^",
+      "target": null
+    },
+    {
+      "id": "b0a4c85e9f4598f8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, after this model's unit has performed a Act of Faith, you gain 1 Miracle dice.",
+      "target": null
+    },
+    {
+      "id": "b0b51403a5fe15aa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Seraphim Squad",
+          "Zephyrim Squad"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Seraphim Squad, Zephyrim Squad**^^",
+      "target": null
+    },
+    {
+      "id": "0e4c7609c0e1c31d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adepta Sororitas",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "0f8b463455de0dea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Adepta Sororitas**^^ unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "e0bc032198888193",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in this unit have a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "6a431eab0aef5418",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Psychic"
+        ]
+      },
+      "source": "While an ^^**Adeptus Custodes^^** unit is within 6\" of this unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "6adb533157c0f3f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Anathema Psykana"
+        ]
+      },
+      "source": "While an **^^Anathema Psykana^^** unit is within 6\" of this unit, each time a model in that ^^**Anathema Psykana^^** unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "f1fa0afef83c5b86",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Imperium - Adeptus Custodes",
+        "Imperium - Dark Angels"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain",
+          "Psychic"
+        ]
+      },
+      "source": "This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "d3cf8a73dbf3a20c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adeptus Custodes",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the bearer's Wounds characteristic.",
+      "target": null
+    },
+    {
+      "id": "45dfcdf4629c6a92",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adeptus Custodes",
+        "Imperium - Agents of the Imperium"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Objective Control characteristic of models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "9cc327f83ae1da6c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **nulled**: \n- While a unit is **nulled**, that unit has +3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "7fea69579d4a0fe7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain",
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "45890bce44488b86",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]",
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Melee weapons"
+        ]
+      },
+      "source": "Each time a unit with this ability is selected to fight, select one of the Ka'tah stances below. Until that unit has finished making its attacks, the selected Stance is active for it and it gains the relevant ability.\n\n■ DACATARAI STANCE\nMelee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.\n■ RENDAX STANCE\nMelee weapons equipped by models in this unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "45a4d2e4501828fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "eb1970e900a46d82",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: PROSECUTORS, VIGILATORS, WITCHSEEKERS",
+      "target": null
+    },
+    {
+      "id": "42db09bec9c1787c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a model in this unit makes an attack that targets a ^^Character, Monster^^ or ^^Vehicle^^ unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c699aecd32eaadd1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent's turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "9f4add51ee3f2736",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 ANATHEMA PSYKANA INFANTRY models.",
+      "target": null
+    },
+    {
+      "id": "4a57cdc47b3ab998",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: CUSTODIAN GUARD, CUSTODIAN GUARD WITH ADRASITE AND PYRITHITE SPEARS, CUSTODIAN WARDENS, SAGITTARUM CUSTODIANS",
+      "target": null
+    },
+    {
+      "id": "9b383a81fa61d850",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Charge phase, this model's unit is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "8109dfa0739def74",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Imperium - Adeptus Custodes",
+        "Imperium - Grey Knights"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, you can re-roll Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "2b43c5164c7771ac",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. While this unit is within range of an objective marker you control, you can re-roll the Wound roll instead.",
+      "target": null
+    },
+    {
+      "id": "6c8e714dbe819d4d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Shooting phase, after the unit has shot, it can shoot again.",
+      "target": null
+    },
+    {
+      "id": "6aaf4f91fa7003f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, models in this unit have the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "5cb1e83ab4f9e225",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Objective Control characteristic of models in the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "dfab00984bf19424",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Prosecutors",
+          "Vigilators",
+          "Witchseekers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- Prosecutors\n- Vigilators\n- Witchseekers",
+      "target": null
+    },
+    {
+      "id": "f448dbcf4518a8aa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, add 2\" to the Move characteristic of models in that unit and add 2 to Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "2c098375b72ebedd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding MONSTERS and VEHICLES) that is within Engagement Range of this model’s unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
+      "target": null
+    },
+    {
+      "id": "0577e834fd41a71d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]",
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets a Psyker unit, that attack has the [PRECISION] and [DEVASTATING WOUNDS] abilities.",
+      "target": null
+    },
+    {
+      "id": "8ab790e53da9848b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when this model's unit is selected to fight, it can use this ability. If it does, until that fight is resolved, both Ka'tah Stances are active for that unit, instead of only one.",
+      "target": null
+    },
+    {
+      "id": "6eee07d077c90a14",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: ALLARUS CUSTODIANS, AQUILON CUSTODIANS",
+      "target": null
+    },
+    {
+      "id": "e4487b98c0208f7c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, each time an attack is allocated to this model, change the Damage characteristic of that attack to 1.",
+      "target": null
+    },
+    {
+      "id": "1cccb75df4c0d39c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: AGAMATUS CUSTODIANS, VERTUS PRAETORS",
+      "target": null
+    },
+    {
+      "id": "7e8ecef3c3c775b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, at the end of the Fight phase, if this model's unit fought this phase, if it is within Engagement Range of one or more enemy units, it can make a Fall Back move or, if it is not within Engagement Range of one or more enemy units, it can make a Normal move.",
+      "target": null
+    },
+    {
+      "id": "fa676de88a05809b",
+      "kind": "characteristic:Description",
+      "occurrences": 7,
+      "files": [
+        "Imperium - Adeptus Custodes",
+        "Imperium - Dark Angels",
+        "Imperium - Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "5+",
+      "target": null
+    },
+    {
+      "id": "bcb659ae9dad887e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack's Ballistic Skill or Weapon Skill characteristics and/or all modifiers to the Hit roll.",
+      "target": null
+    }
+  ]
+}

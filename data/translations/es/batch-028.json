@@ -1,0 +1,3541 @@
+{
+  "batch": 28,
+  "units": [
+    {
+      "id": "5c534bda95d3a8d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly **^^T’au Empire^^** unit is within 6\" of the bearer, each time you select that unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "dfc47df2761294e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack that targets an enemy unit within 9\", add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d3c02b2a2934b832",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **CRISIS BATTLESUITS**\n- **CRISIS FIREKNIFE BATTLESUITS**\n- **CRISIS STARSCYTHE BATTLESUITS**\n- **CRISIS SUNFORGE BATTLESUITS**",
+      "target": null
+    },
+    {
+      "id": "097ba995ca9735fe",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Commander Farsight",
+          "Ethereal"
+        ]
+      },
+      "source": "If your army includes **^^Commander Farsight^^**, it cannot include any **^^Ethereal^^** units. If your army includes any **^^Ethereal^^** units, it cannot include **^^Commander Farsight^^**.",
+      "target": null
+    },
+    {
+      "id": "24046b3774f15f43",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "5889a3411e9e73f4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a ranged attack targets that unit, worsen the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "ff7723b03fdb3904",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models in that unit have a Move characteristic of 12\" and ranged weapons equipped by models in that unit have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "6a172b293b70afde",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, add 1 to the Attacks characteristic of ranged weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "c56d007aa678718e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack, on a Critical Wound, that attack has an Armour Penetration characteristic of -3.",
+      "target": null
+    },
+    {
+      "id": "d4a09f85d6cdc0ed",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Breacher Team",
+          "Strike Team"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Breacher Team^^**\n- **^^Strike Team^^**",
+      "target": null
+    },
+    {
+      "id": "22a37d065ceab476",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, roll one D6: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "7f7833bf8c5d268b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly"
+        ]
+      },
+      "source": "The bearer can **^^Fly^^** and has a Move characteristic of 10\".",
+      "target": null
+    },
+    {
+      "id": "a4fbf85b4ac03083",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, each time an attack targets this unit, it can use this ability. If it does, until the end of the phase, models in this unit have a 2+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "634f482653dfabfa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this unit, subtract 1 from the Hit roll and subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "8cd4ec38f4b7affe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly T’AU EMPIRE unit is within 6\" of this unit, each time that unit takes a Battle-shock or Leadership test, add 1 to that test.",
+      "target": null
+    },
+    {
+      "id": "f074576cdc04fcbf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **BREACHER TEAM**\n- **KROOT CARNIVORES**\n- **KROOT FARSTALKERS**\n- **STRIKE TEAM**",
+      "target": null
+    },
+    {
+      "id": "948cd3d8d4922492",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]",
+          "[DEVASTATING WOUNDS]",
+          "[SUSTAINED HITS 2]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Grace",
+          "Fidelity"
+        ]
+      },
+      "source": "Each time this model is selected to fight, select one of the following abilities to be active while resolving those attacks:\n- Direct Grace: Fidelity has the [PRECISION] ability.\n- Forceful Strike: Fidelity has the [DEVASTATING WOUNDS] ability.\n- Whirling Stance: Fidelity has the [SUSTAINED HITS 2] ability instead of [SUSTAINED HITS 1].",
+      "target": null
+    },
+    {
+      "id": "3f661c52693e5326",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a ranged attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "61030532cac424d8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pathfinder Team"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Pathfinder Team^^**",
+      "target": null
+    },
+    {
+      "id": "76ebea765544713f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "In your Command phase, you can select one friendly HAMMERHEAD GUNSHIP unit within 12\". Until the start of your next Command phase, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "5eef35d044f46369",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a MONSTER or VEHICLE, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "163f34613612c21f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy INFANTRY unit hit by one or more of those attacks. Until the start of your next turn, while unit is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "8dd2c91d0f3fe481",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Support",
+          "Turret"
+        ]
+      },
+      "source": "In your Movement phase, if this unit Remains Stationary, until the start of your next turn, its Shas’ui model is equipped with the support turret weapon.\n\nDesigner’s Note: Place a Support Turret token next to this unit to remind you.",
+      "target": null
+    },
+    {
+      "id": "eb11dab5f9f516b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets an enemy unit within range of an objective marker, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c57c52353de99c15",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of the your Command phase, if this unit within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.",
+      "target": null
+    },
+    {
+      "id": "63b519f1e7c46e4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader"
+        ]
+      },
+      "source": "If this unit has a Starting Strength of 20, you can attach up to two Leader units to it instead of one, provided those Leaders are not duplicates (e.g. you cannot attach two WAR SHAPERS to this unit). If you do, and this unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths.",
+      "target": null
+    },
+    {
+      "id": "883c1c15e66b4670",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, in your opponent's Shooting phase, when a friendly KROOT INFANTRY unit within 6\" of this unit is selected as the target of an attack, one unit from your army with this ability can use it. If it does, after that enemy unit has finished making its attacks, that unit with this ability can shoot as if it were your Shooting phase, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target).",
+      "target": null
+    },
+    {
+      "id": "b022293c13757e1b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Leader",
+          "Crisis",
+          "Fireknife",
+          "Battlesuit"
+        ]
+      },
+      "source": "If a **^^Character^^** unit from your army with the Leader ability can be attached to a **^^Crisis Fireknife Battlesuit^^** unit, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "8d5f14d2a77acf47",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is an Observer unit, until the end of the phase, each time a ranged attack is made by a model in a Guided unit that targets their Spotted unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "9ae1605b5861d509",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Drone"
+        ]
+      },
+      "source": "Twice per battle, after an attack has been allocated to this model, you can change the Damage characteristic of that attack to 0.\n\nDesigner’s Note: Place two Stealth Drone tokens next to the unit, removing one each time this ability has been used.",
+      "target": null
+    },
+    {
+      "id": "b9b310fd971d4fa4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Smoke"
+        ]
+      },
+      "source": "The bearer is eligible to shoot in a turn in which it Fell Back but it loses the **^^Smoke^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "1f17e5ac8680501c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a Spotted unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "e6ce17257aedadf3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets their Spotted unit, improve the Ballistic Skill characteristic of that attack by 1 and that attack has the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "4a192667d15d85a0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit selects the bearer's unit as the target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other negative modifiers to that Charge roll).",
+      "target": null
+    },
+    {
+      "id": "15c51e0549c0ff0d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Add 6\" to the Range characteristic of pulse carbines equipped by models in the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "4beaac48796616c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "The bearer is equipped with 1 drone burst cannon and the bearer’s unit has the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "20b04ff55222dae9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, select one enemy unit within 12\" of this unit; that enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "55d724305140a7fd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "a8507333fc8d68d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Oversight Drone",
+          "Drone"
+        ]
+      },
+      "source": "Once per battle, when the bearer’s unit is selected to shoot, until the end of the phase, ranged weapons equipped by models in this unit have the [IGNORES COVER] ability.\n\nDesigner’s Note: Place an Oversight Drone token next to the bearer, removing it once this ability has been used.",
+      "target": null
+    },
+    {
+      "id": "7e5a6df1796d54f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Command phase, if this unit is within 6\" of one or more friendly KROOT INFANTRY units, then until the end of the turn, this unit is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "f65b678da8bdd2b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is within 12\" of one or more friendly KROOT CHARACTER models, the Objective Control characteristic of models in this unit is 1.",
+      "target": null
+    },
+    {
+      "id": "e6b97302778e5cde",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 4+ ability against mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "3b9110486b6bb2d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "Once per battle, when this unit is selected to shoot in your Shooting phase, select one ranged weapon equipped by this model. Until the end of the phase, that weapon has the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "e3e4973a0ed9eda2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack with a ranged weapon that targets a unit that can FLY, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "4fe02701ddac1e51",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Units can disembark from this TRANSPORT after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn.",
+      "target": null
+    },
+    {
+      "id": "0676e8f43429b730",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 T’AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models.",
+      "target": null
+    },
+    {
+      "id": "a76c25c19d9b0c2f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets an enemy unit that cannot FLY, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a0328565f72eaf45",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "At the end of your opponent’s Fight phase, select one visible enemy unit (excluding Lone Operative units) within 24\" of this unit, and roll six D6 for that unit: For each 4+, that unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "51f3f404bd955d50",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 11 T’AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models. If this model is equipped with a Tidewall defence platform, it has a transport capacity of 22 T’AU INFANTRY models instead.",
+      "target": null
+    },
+    {
+      "id": "0b4fa0249571281d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If equipped with a Tidewall defence platform, this FORTIFICATION has a Wounds characteristic of 15.",
+      "target": null
+    },
+    {
+      "id": "35977156c89f9617",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this FORTIFICATION is selected to shoot, its drone defenders weapon will target and resolve attacks against every enemy unit that is an eligible target to this FORTIFICATION.",
+      "target": null
+    },
+    {
+      "id": "00aab7e7cb2f49db",
+      "kind": "characteristic:Capacity",
+      "occurrences": 2,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 11 T’AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models.",
+      "target": null
+    },
+    {
+      "id": "fd7cd30421b93e49",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-5 wounds remaining, subtract 3 from this models Objective Control characteristic, and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "129b32df19f7e05f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack, you can ignore any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3045a97b5779be75",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets a TITANIC or TOWERING unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "4735e8c7f05426ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by the bearer’s unit have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "6408da27eaa28835",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when this model is selected as the target of a ranged attack, it can use this ability. If it does, until the end of the phase, each time an attack targets this model, if the Strength characteristic of that attack is greater than the Toughness characteristic of this model, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "99660888ac2898aa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, before this model makes a Normal, Advance or Fall Back move, it can use this ability. If it does, until the end of the phase, it has a Move characteristic of 18\".",
+      "target": null
+    },
+    {
+      "id": "8bc26d31d2077956",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is an Observer unit, until the end of the phase, each time a model in its Guided unit makes an attack that targets their Spotted unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "76075aea4a6aa2d3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, when an enemy unit ends a Normal, Advance or Fall Back move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "f6dd8c8be05f9f21",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is a Guided unit, each time it makes an attack that targets its Spotted unit, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "33e2b50197d401e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks that cannot FLY. That enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "7791be6aebecd2d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has the TRANSPORT keyword and has a transport capacity of 12 TACTICAL DRONES models.",
+      "target": null
+    },
+    {
+      "id": "7baa0d20a3c9a1cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-TITANIC 3+]"
+        ],
+        "names": []
+      },
+      "source": "This model’s twin heavy rail cannon and seeker missiles have the [ANTI-TITANIC 3+] ability while targeting a unit within half range.",
+      "target": null
+    },
+    {
+      "id": "bf66950ffe126d52",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this TRANSPORT this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "3aa5531df548c5d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this model with a Stratagem, you must spend three times that Stratagem’s stated CP cost to do so.",
+      "target": null
+    },
+    {
+      "id": "d349e8bfc2f8ede3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-20 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "fc8b0e40bfd2292c",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of all of the following:\n- 200 T’AU EMPIRE INFANTRY or TACTICAL DRONE models\n- 4 DEVILFISH, SKY RAY GUNSHIP or HAMMERHEAD models\n- 8 BATTLESUIT models with a Wounds characteristic of 9 or less",
+      "target": null
+    },
+    {
+      "id": "02859a3fa60d7be8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "At the end of your opponent’s Movement phase, one or more units embarked within this TRANSPORT can disembark from it, provided every model in each of those disembarking units has the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "564e9f8a82a8749f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-9 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3feeaea9dbe955b1",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 48 T’AU EMPIRE INFANTRY models. This model can also transport up to 6 BATTLESUIT models (these models take up the space of a number of models equal to their Wounds characteristic, e.g. a BATTLESUIT with a Wounds characteristic of 8 would take up the space of 8 models). This model cannot transport KROOT or VESPID STINGWINGS models.",
+      "target": null
+    },
+    {
+      "id": "c1bc2f56a47dcb41",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, in your opponent’s Shooting phase, when a friendly T'AU EMPIRE unit within 6\" of this unit is selected as the target of an attack, one unit from your army with this ability can use it. If it does, after that enemy unit has finished making its attacks, the unit using this ability can shoot as if it were your Shooting phase, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target).",
+      "target": null
+    },
+    {
+      "id": "f33ee3478a1da6b8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of this model.",
+      "target": null
+    },
+    {
+      "id": "df39cf1db86baa3f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer makes an attack with this weapon that targets a MONSTER or VEHICLE unit, if a hit is scored, until the end of the turn, if the bearer selects that unit as a target of a charge, add 2 to Charge rolls made for the bearer and enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer.",
+      "target": null
+    },
+    {
+      "id": "b2b8d0974ba8f338",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While a friendly KROOT unit is within 3\" of the bearer, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "6dbb54630ad96676",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "Knarloc beak and talons"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, until the end of the turn, Knarloc beak and talons equipped by models in this unit have the [LANCE] ability.",
+      "target": null
+    },
+    {
+      "id": "454bcf70dcf8928c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models in that unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "36dfe73843b18b51",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a **^^Character^^** unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "fc77d8e2b783f1d8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "XV9 Hazard Battlesuits"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^XV9 Hazard Battlesuits^^**",
+      "target": null
+    },
+    {
+      "id": "863695eca8b28b4b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Marker Drone",
+          "Drone"
+        ]
+      },
+      "source": "Twice per battle, when this unit is an Observer unit, until the end of the phase, each time a ranged attack is made by a model in their Guided unit that targets their Spotted unit, re-roll a Wound roll of 1.\n**Designer’s Note:** *Place two Blacklight Marker Drone tokens next to this model, removing one each time this ability has been used.*",
+      "target": null
+    },
+    {
+      "id": "02525cfc6c1de4da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, if an enemy **^^Infantry^^** unit was hit by one or more of those attacks, until the end of your opponent’s next turn, that enemy unit is stunned. While a unit is stunned, subtract 2 from that unit’s Move characteristic, and subtract 2 from Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "2355c27b0f007001",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly T'AU EMPIRE unit is within 6\" of this FORTIFICATION, each time you target that unit with a Stratagem, roll one D6: on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "a0d6f8295a691e90",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you select this FORTIFICATION for the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ when resolving that Stratagem.",
+      "target": null
+    },
+    {
+      "id": "7ce6213f398c8cda",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets a **MONSTER** or **VEHICLE** unit, you can re-roll the Wound roll and you can re-roll the Damage roll.",
+      "target": null
+    },
+    {
+      "id": "13d83b5671d7e6be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, re-roll a Hit roll of 1. If that attack targets a unit that is at its Starting Strength, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "6c61a4d05994237e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, you can ignore any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "f3a476a5c7291a9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack (excluding attacks that target MONSTERS and VEHICLES), improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "ee04216043bf00a0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The unit is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "54798df7d7e0b464",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, you can redeploy this model’s unit and one other friendly **KROOT** unit. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "aa8830c5a319e367",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent’s Movement phase, if an enemy unit ends a move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6\".",
+      "target": null
+    },
+    {
+      "id": "e7563077c2c471d2",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot Carnivores",
+          "Carnivores",
+          "Kroot Farstalkers",
+          "Farstalkers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Kroot Carnivores^^**\n- **^^Kroot Farstalkers^^**",
+      "target": null
+    },
+    {
+      "id": "f1b31092a732455d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly KROOT unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "e8c775a6ba970bd7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel Not Pain 6+ ability. If that unit destroys one or more enemy units in the Fight phase, until the end of the battle, models in that unit have the Feel No Pain 5+ ability instead.",
+      "target": null
+    },
+    {
+      "id": "5f5e32e6c9b9a175",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this model is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "05ae1d815ab8fbf9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that hits an enemy unit, until the end of the turn, each time another KROOT model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "498caa06b36663e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers D3 mortal wounds. If one or more enemy models are destroyed as a result of these mortal wounds, that enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "e6b5f8c24ac27b99",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Broadside Battlesuits"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Broadside Battlesuits^^**\n",
+      "target": null
+    },
+    {
+      "id": "099ff11ee82e59b4",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Krootox Rampagers",
+          "Krootox Riders"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Krootox Rampagers^^**\n- **^^Krootox Riders^^**",
+      "target": null
+    },
+    {
+      "id": "5052274914d74a67",
+      "kind": "modifier:Description",
+      "occurrences": 3,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pathfinder Team"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Pathfinder Team^^**",
+      "target": null
+    },
+    {
+      "id": "b22d9b181bcd516c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer's unit is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "0fd4d723e2250b4b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth Battlesuits"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Stealth Battlesuits^^**",
+      "target": null
+    },
+    {
+      "id": "7d5ec8baaf4ce657",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your opponent’s Charge phase, you can select one visible enemy unit (excluding **MONSTER** and **VEHICLE** units) within 12\" of this unit. That unit must take a Battle-shock test and, until the end of the turn, subtract 1 from Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "b412508f141fa7c3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]",
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, that attack has the **[SUSTAINED HITS 1]** and **[IGNORES COVER]** abilities.",
+      "target": null
+    },
+    {
+      "id": "8b49f068b18119f3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of the Fight phase, if this unit was eligible to fight this phase, this unit can either make a Normal move of up to 6\" or a Fall Back move.",
+      "target": null
+    },
+    {
+      "id": "a124a0f4adc77af7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer is equipped with 1 twin pulse blaster.",
+      "target": null
+    },
+    {
+      "id": "913c7794d6c52782",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Homing Beacon"
+        ]
+      },
+      "source": "Once per battle, you can use the Rapid Ingress Stratagem for 0CP. The target must be set up within 3\" of the bearer’s unit and more than 8\" away from all enemy units.\n**Designer’s Note:** *Place a Homing Beacon token next to this unit, removing it once this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "eeccb5f287e36be9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot",
+          "Shaper",
+          "Patient Hunter",
+          "Hunter",
+          "Detachment"
+        ]
+      },
+      "source": "**^^T’au Empire^^** model only (excluding **^^Kroot Shaper^^** models). While the bearer is leading a unit, the Patient Hunter Detachment rule applies to that unit from the second battle round onwards instead of the third.",
+      "target": null
+    },
+    {
+      "id": "f7e22fe69ce81a66",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^T’au Empire^^** model only. Each time the bearer makes a ranged attack, add 1 to the Hit roll. From the third battle round onwards, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "316b5529afceec71",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^T’au Empire^^** model only. After both players have deployed their armies, select up to three **^^T’au Empire^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "90545f5808e5f566",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "**T’AU EMPIRE** model only (excluding **KROOT SHAPER** models). While the bearer is leading a unit, each time that unit is an Observer unit, until the end of the phase, ranged weapons equipped by models in a Guided unit have the **[LETHAL HITS]** ability while targeting their Spotted unit.",
+      "target": null
+    },
+    {
+      "id": "ec775495d01b372a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot",
+          "Shaper",
+          "Killing Blow",
+          "Detachment"
+        ]
+      },
+      "source": "**^^T’au Empire^^** model only (excluding **^^Kroot Shaper^^** models). While the bearer is leading a unit, the Killing Blow Detachment rule applies to that unit during the fourth battle round as well.",
+      "target": null
+    },
+    {
+      "id": "e67c1b1d029ba2df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Abilities",
+          "Scouts",
+          "Scouts 6\""
+        ]
+      },
+      "source": "In the Resolve Pre-battle Abilities step, you can select up to two friendly **T’AU EMPIRE** units within 6\" of this model that do not have the **Scouts** ability. Until the end of the battle, all models in the selected units have the **Scouts 6\"** ability.",
+      "target": null
+    },
+    {
+      "id": "284facede0ab578f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^T’au Empire^^** model only. At the start of the first battle round, before the first turn begins, select one objective marker on the battlefield. While a friendly **^^T’au Empire^^** model is within range of that objective marker and the bearer is on the battlefield, add 1 to that friendly model's Objective Control characteristic.",
+      "target": null
+    },
+    {
+      "id": "e222bbddc0da298c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "**T’AU EMPIRE** model only (excluding **KROOT SHAPER** models). While the bearer is leading a unit, each time that unit is an Observer unit, until the end of the phase, ranged weapons equipped by models in a Guided unit have the **[SUSTAINED HITS 1]** ability while targeting their Spotted unit.",
+      "target": null
+    },
+    {
+      "id": "26deed49c0de0985",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battlesuit",
+          "Range"
+        ]
+      },
+      "source": "**^^T’au Empire Battlesuit^^** model only. At the end of your opponent's turn, if the bearer's unit is not within Engagement Range of one or more enemy units, you can remove that unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "f7cca77a7aa6ae3a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Battlesuit"
+        ]
+      },
+      "source": "**^^T’au Empire Battlesuit^^** model only. Each time the bearer is select to shoot, select either the **[LETHAL HITS]** or **[SUSTAINED HITS 1]** ability. Until those attacks are resolved, ranged weapons equipped by the bearer have the select ability.",
+      "target": null
+    },
+    {
+      "id": "1d5470c4bb75fa18",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battlesuit",
+          "Grenades"
+        ]
+      },
+      "source": "**^^T’au Empire Battlesuit^^** model only. The bearer has the **^^Grenades^^** keyword, and each time the bearer ends a Normal move, you can select one enemy unit that it moved over during that move. If you do, roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "6f4b7fcf29b1f375",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**T’AU EMPIRE BATTLESUIT** model only. Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "64baa3b512238c12",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Kroot Trail Shaper",
+          "Trail Shaper",
+          "Shaper"
+        ]
+      },
+      "source": "**^^Kroot Trail Shaper^^** model only. While the bearer is leading a unit, add 3\" to the Move characteristic of models in that unit and ranged weapons equipped by the models in that unit have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "908bb03396be3ac1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot Flesh Shaper",
+          "Flesh Shaper",
+          "Shaper"
+        ]
+      },
+      "source": "**^^Kroot Flesh Shaper^^** only. While the bearer is leading a unit, each time a model in that unit makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "f70b05343b2a394e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]",
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Kroot War Shaper",
+          "War Shaper",
+          "Shaper"
+        ]
+      },
+      "source": "**^^Kroot War Shaper^^** model only. All weapons equipped by the bearer have the **[PRECISION]** and **[DEVASTATING WOUNDS]** abilities.",
+      "target": null
+    },
+    {
+      "id": "889af089fc84110d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Kroot",
+          "Ranged weapons"
+        ]
+      },
+      "source": "**^^Kroot^^** model only. Ranged weapons equipped by models in the bearer's unit have the **[IGNORES COVER]** ability, and enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" horizontally of the bearer.",
+      "target": null
+    },
+    {
+      "id": "2d637b7644c97d6f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "**KROOT SHAPER** model only. In the Declare Battle Formations step, you can select up to three friendly **KROOT CARNIVORES/FARSTALKERS** units. Those units have **Deep Strike**.",
+      "target": null
+    },
+    {
+      "id": "c626817266f6cdf5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**T’AU EMPIRE** model only (excluding **KROOT** models). In your Command phase, you can select one **KROOT/VESPID STINGWINGS** unit within 12\" of this model. If you do, that unit has +1 **Ld** and **OC** until the start of your next Command phase.",
+      "target": null
+    },
+    {
+      "id": "c67ec571941f2e9d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Flamer"
+        ]
+      },
+      "source": "**BATTLESUIT** model only. In the Declare Battle Formations step, select one of this model’s T’au Flamer weapons. That weapon’s attacks have:\n- +2 **S**\n- +1 **AP** and **D**.",
+      "target": null
+    },
+    {
+      "id": "3ed2563babf3745a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plasma"
+        ]
+      },
+      "source": "**BATTLESUIT** model only. In the Declare Battle Formations step, select one of this model’s Plasma Rifle weapons. That weapon’s attacks have:\n- +2 **S**\n- +1 **A**, **AP** and **D**.",
+      "target": null
+    },
+    {
+      "id": "356c9a4b555ed338",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**BATTLESUIT** model only. In the Declare Battle Formations step, select one of this model’s Airbursting Fragmentation Projector weapons. That weapon’s attacks have:\n- +3 **S**\n- +1 **AP** and **D**.",
+      "target": null
+    },
+    {
+      "id": "4ee449181eb36a77",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot"
+        ]
+      },
+      "source": "At the start of your Charge phase, select one enemy unit within 12\" of the bearer. Until the end of the phase, each time a **^^Kroot^^** unit from your army declares a charge, if it is within 6\" of that enemy unit, it can include that enemy unit as a target of that charge, even if it is not visible to it.",
+      "target": null
+    },
+    {
+      "id": "9b22413ea1d6b454",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot"
+        ]
+      },
+      "source": "At the start of the first battle round, select one enemy unit on the battlefield. Until the end of the battle, each time a **^^Kroot^^** model from your army makes an attack that targets that enemy unit, if the bearer is on the battlefield, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "f63713072c421f32",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cadre Fireblade",
+          "Fire Warrior",
+          "Pathfinder Team"
+        ]
+      },
+      "source": "**^^Cadre Fireblade^^** model only. Once per turn, in your Shooting phase, when a friendly **^^Fire Warrior^^**, **^^Pathfinder Team^^** or **^^Cadre Fireblade^^** unit within 6\" of the bearer is selected to shoot, the bearer use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "59fb44c9dc82a566",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ethereal",
+          "Fire Warrior",
+          "Pathfinder Team"
+        ]
+      },
+      "source": "**^^Ethereal^^** model only. At the end of your Shooting phase, you can select one friendly **^^Fire Warrior^^** or **^^Pathfinder Team^^** unit within 6\" of the bearer. If you do, that unit can make a Normal move of up to 3\" and then counts as having performed the Set Overwatch Tactical Manoeuvre this turn.",
+      "target": null
+    },
+    {
+      "id": "4c7786317aaf2e90",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "During the third, fourth and fifth battle rounds, ranged weapons equipped by **T’AU EMPIRE** models from your army have the **[SUSTAINED HITS 1]** ability. During the third, fourth and fifth battle rounds, while a unit is a Guided unit (see For the Greater Good), each time a ranged attack is made by a model in that unit that targets a Spotted unit, you can ignore any or all modifiers to that attack’s Ballistic skill characteristics and/or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "f4b84e45036355be",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]",
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "During the first, second and third battle rounds, ranged weapons equipped by **T’AU EMPIRE** models from your army have the **[ASSAULT]** ability. During the first, second and third battle rounds, while a unit is a Guided unit (see For the Greater Good), its ranged weapons have the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "92e0f6a5be49897b",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a **T’AU EMPIRE BATTLESUIT** model from your army makes a ranged attack that targets a unit within 12\", improve the Strength characteristic of that attack by 1. If that attack targets a unit within 8\", improve the Armour Penetration characteristic of that attack by 1 as well.",
+      "target": null
+    },
+    {
+      "id": "27d0efd8b9d96d4b",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot"
+        ]
+      },
+      "source": "Each time a **^^Kroot^^** model from your army makes an attack, add 1 to the Hit roll if the target of that attack is below its Starting Strength, and add 1 to the Wound roll as well if the target of that attack is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "c44bd352e42359d0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot"
+        ]
+      },
+      "source": "**^^Kroot^^** models from your army have a 6+ invulnerable save against melee attacks and a 5+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "fcbe5191a1ec1d69",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Harnessed Alien Instincts",
+          "Localised Stealth Projectors (Aura)",
+          "Stealth"
+        ]
+      },
+      "source": "Friendly **KROOT/VESPID STINGWINGS** units have the Harnessed Alien Instincts ability.\n\nFriendly **GHOSTKEEL BATTLESUIT/STEALTH BATTLESUITS** units have the Localised Stealth Projectors (Aura) ability\n\nThis **detachment** has the **AUXILIARIES** tag and cannot be taken with another **AUXILIARIES detachment**.",
+      "target": null
+    },
+    {
+      "id": "d39e935cde78adb2",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **BATTLESUIT CHARACTER** units’ ranged attacks have +6\" **R**.\n\nThis **detachment** has the **BATTLESUIT** tag and cannot be taken with another **BATTLESUIT detachment**.",
+      "target": null
+    },
+    {
+      "id": "78cf7581a077abb6",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot"
+        ]
+      },
+      "source": "Each time an enemy unit is selected to fire Overwatch, roll one D6: on a 4+, until the end of the turn, that unit cannot make Overwatch attacks that target **^^Kroot^^** units from your army.",
+      "target": null
+    },
+    {
+      "id": "12f29a78b04ef257",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot Farstalkers",
+          "Farstalkers"
+        ]
+      },
+      "source": "In the Form Boarding Squads step, a **^^Kroot Farstalkers^^** unit is split into two Boarding Squads, each containing 6 models.",
+      "target": null
+    },
+    {
+      "id": "19a7f425c283920c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot Flesh Shaper",
+          "Flesh Shaper",
+          "Shaper",
+          "Kroot Trail Shaper",
+          "Trail Shaper",
+          "Kroot War Shaper",
+          "War Shaper",
+          "Kroot Carnivores",
+          "Carnivores",
+          "Kroot Farstalkers",
+          "Farstalkers",
+          "Kroot Hounds",
+          "Hounds",
+          "Krootox Riders"
+        ]
+      },
+      "source": "You can include up to two of the following units (duplicates are not allowed):\n- **^^Kroot Flesh Shaper^^**\n- **^^Kroot Trail Shaper^^**\n- **^^Kroot War Shaper^^**\n\nYou can include up to three of the following unit:\n- **^^Kroot Carnivores^^** (10 models)\n\nFor each **^^Kroot Carnivores^^** unit you include, you can include up to one of each of the following units:\n- **^^Kroot Farstalkers^^** (12 models)\n- **^^Kroot Hounds^^** (5 models)\n- **^^Krootox Riders^^** (1 model)",
+      "target": null
+    },
+    {
+      "id": "a8694885294b116e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot Carnivores",
+          "Carnivores",
+          "Battleline",
+          "Kroot Hounds",
+          "Hounds",
+          "Krootox Riders",
+          "Kroot Farstalkers",
+          "Farstalkers",
+          "Kroot Flesh Shaper",
+          "Flesh Shaper",
+          "Shaper",
+          "Rites of Feasting",
+          "Feel No Pain 5+",
+          "Fieldcraft",
+          "Loping Pounce",
+          "Kroot Packmates"
+        ]
+      },
+      "source": "- **^^Kroot Carnivores^^** units can perform the Secure Site Tactical Manoeuvre as if they had the **^^Battleline^^** keyword.\n- Each time you set up a **^^Kroot Carnivores^^** unit in an Entry Zone, you can set up a **^^Kroot Hounds^^** unit and/or a **^^Krootox Riders^^** unit in that same Entry Zone.\n- If a **^^Kroot Carnivores^^** or **^^Kroot Farstalkers^^** unit from your army destroys an enemy unit while receiving the benefits of the **^^Kroot Flesh Shaper^^**'s Rites of Feasting ability, the Feel No Pain 5+ ability they gain stays in effect, even after they stop receiving the benefit of that ability.\n- The **^^Kroot Carnivores^^** unit loses the Fieldcraft ability.\n- The **^^Kroot Hounds^^** unit loses the Loping Pounce ability.\n- The **^^Krootox Riders^^** unit loses the Kroot Packmates ability.",
+      "target": null
+    },
+    {
+      "id": "c87ffe09c5a4f760",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crisis",
+          "Deep Strike",
+          "Kroot Carnivores",
+          "Carnivores",
+          "Fieldcraft",
+          "Stealth Battlesuits",
+          "Homing Beacon",
+          "Vespid Stingwings",
+          "Airborne Agility"
+        ]
+      },
+      "source": "- Rules that refer to Observer, Guided and/or Spotted units have no effect.\n- **^^Crisis Battlesuits^^** units lose the Deep Strike ability.\n- The **^^Kroot Carnivores^^** unit loses the Fieldcraft ability.\n- The **^^Stealth Battlesuits^^** unit loses the Homing Beacon ability.\n- The **^^Vespid Stingwings^^** unit loses the Deep Strike and Airborne Agility abilities.",
+      "target": null
+    },
+    {
+      "id": "eca337eddebc29ee",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cadre Fireblade",
+          "Darkstrider",
+          "Ethereal",
+          "Breacher Team",
+          "Pathfinder Team",
+          "Strike Team",
+          "Kroot Carnivores",
+          "Carnivores",
+          "Stealth Battlesuits",
+          "Vespid Stingwings",
+          "Crisis Fireknife Battlesuits",
+          "Fireknife",
+          "Crisis Starscythe Battlesuits",
+          "Starscythe",
+          "Crisis Sunforge Battlesuits",
+          "Sunforge"
+        ]
+      },
+      "source": "You can include up to two of the following units (duplicates are not allowed):\n- **^^Cadre Fireblade^^**\n- **^^Darkstrider^^**\n- **^^Ethereal^^**\n\nYou can include up to three of each of the following units:\n- **^^Breacher Team^^** (10 models)\n- **^^Pathfinder Team^^** (5 or 10 models)\n- **^^Strike Team^^** (10 models)\n\nYou can include up to one of each of the following units:\n- **^^Kroot Carnivores^^** (10 models)\n- **^^Stealth Battlesuits^^** (3 models)\n- **^^Vespid Stingwings^^** (5 models)\n\nYou can include up to one of the following units:\n- **^^Crisis Fireknife Battlesuits^^** (3 models)\n- **^^Crisis Starscythe Battlesuits^^** (3 models)\n- **^^Crisis Sunforge Battlesuits^^** (3 models)",
+      "target": null
+    },
+    {
+      "id": "27288bbfa40b8484",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fire Warrior",
+          "Fire Warrior Shas'ui",
+          "Breacher Fire Warrior Shas'ui",
+          "Markerlight"
+        ]
+      },
+      "source": "**^^Fire Warrior^^** units that do not contain a Fire Warrior Shas'ui or Breacher Fire Warrior Shas'ui model after you have Boarding Squads lose the **^^Markerlight^^** keyword.",
+      "target": null
+    },
+    {
+      "id": "6080180eaf8d3b61",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "T'au Empire",
+          "Kroot",
+          "Markerlight",
+          "Range"
+        ]
+      },
+      "source": "Each time a **^^T'au Empire^^** unit from your army (excluding **^^Kroot^^** units) is selected to shoot, ranged weapons equipped by models in your unit have their Ballistic Skill characteristic improved by 1 and have the **[SUSTAINED HITS 1]** ability while targeting an enemy unit that is visible to one or more friendly **^^Markerlight^^** units that are not within Engagement Range of one or more enemy models.",
+      "target": null
+    },
+    {
+      "id": "a61d0a02cfde7fad",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when a friendly **PATHFINDER TEAM/STEALTH BATTLESUITS** unit is **selected to shoot**, those ranged attacks do not prevent your unit from being **hidden**.",
+      "target": null
+    },
+    {
+      "id": "cfb9e5ae8a3c1de3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Coordinated Leadership"
+        ]
+      },
+      "source": "When rolling for this model’s Coordinated Leadership ability, add 1 to the result.",
+      "target": null
+    },
+    {
+      "id": "5bcd0566d433bd9e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of the battle, if this model was part of your Crusade army and was not destroyed during the battle, roll one D6: on a 5+, your Crusade force gains 1 Diplomat point.",
+      "target": null
+    },
+    {
+      "id": "0c1cf60e820a8568",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Each time this unit Advances, until the start of your next Movement phase, this unit has the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "952f31f430117ef2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit (excluding support turrets) have the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "98fd12e85ea33c93",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Ballistic Skill characteristic of ranged weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "fdfce7c920379ebf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot"
+        ]
+      },
+      "source": "At the start of the battle, select one unit from your opponent’s army. Until the end of the battle, each time this **^^Kroot^^** unit makes an attack that targets that enemy unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "84d7445e99786713",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, you can target this unit with the Fire Overwatch Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "f995216a05d17bad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, you can target this unit with the Heroic Intervention Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "2d53fc37ffb83084",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is Battle-shocked, change the Objective Control characteristic of models in this unit to 1, instead of 0.",
+      "target": null
+    },
+    {
+      "id": "373bdcc69a747064",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time this unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a862a0090d106172",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this unit declares a charge, if you select a Monster or Vehicle unit as a target of that charge, until the end of the turn, melee weapons equipped by models in this unit have the **[LANCE]** ability.",
+      "target": null
+    },
+    {
+      "id": "a291d58548c18954",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "T'au Empire"
+        ]
+      },
+      "source": "At the end of the battle, if this model was part of your Crusade army and was not destroyed during the battle, you can ignore one failed Out of Action test taken for a **^^T'au Empire^^** unit; that test is treated as having been passed instead.",
+      "target": null
+    },
+    {
+      "id": "2d7e2fc0ab457700",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "T'au Empire",
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "53a69654eed4ef1d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shaper"
+        ]
+      },
+      "source": "While that **^^Shaper^^** model is leading a unit, re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "bff5fb6155a2af5c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shaper"
+        ]
+      },
+      "source": "While that **^^Shaper^^** model is leading a unit, add 2\" to that unit’s Move characteristic.",
+      "target": null
+    },
+    {
+      "id": "e83b1c21a927dd56",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shaper"
+        ]
+      },
+      "source": "While that **^^Shaper^^** model is leading a unit, add 1 to the Strength characteristic of melee weapons equipped by that unit.",
+      "target": null
+    },
+    {
+      "id": "bd9ea1a905de924d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shaper"
+        ]
+      },
+      "source": "While that **^^Shaper^^** model is leading a unit, add 1 to the Toughness characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "3776d2977b4a2f3f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shaper"
+        ]
+      },
+      "source": "While that **^^Shaper^^** model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "00b1669c324336e5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power"
+        ]
+      },
+      "source": "Select one planet and halve its Diplomat Power (rounding up).",
+      "target": null
+    },
+    {
+      "id": "de3b8a533acc5942",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You cannot use the Show of Force Requisition while assimilating this star system.",
+      "target": null
+    },
+    {
+      "id": "8126f5d62e00b459",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power"
+        ]
+      },
+      "source": "Add 1 to the Diplomat Power of each planet in this star system.",
+      "target": null
+    },
+    {
+      "id": "504edee2be9b7f97",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power",
+          "Core World"
+        ]
+      },
+      "source": "Add 2 to the Diplomat Power of this star system’s Core World.",
+      "target": null
+    },
+    {
+      "id": "d0a68503010bb609",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Military Power",
+          "Power"
+        ]
+      },
+      "source": "Add 1 to the Military Power of each planet in this star system.",
+      "target": null
+    },
+    {
+      "id": "8239de404243a320",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Military Power",
+          "Power",
+          "Core World"
+        ]
+      },
+      "source": "Add 2 to the Military Power of this star system’s Core World.",
+      "target": null
+    },
+    {
+      "id": "69a122be93474dc4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "While assimilating your Crusade force’s next star system, each time you perform a diplomatic takeover of a planet, your Crusade force gains 1 Requisition point.",
+      "target": null
+    },
+    {
+      "id": "7058b93c8da6e4af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power"
+        ]
+      },
+      "source": "Select up to three planets; subtract 1 from the Diplomat Power of each of those planets (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "09483838e569da7f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Military Power",
+          "Power"
+        ]
+      },
+      "source": "Add 1 to the Military Power of all planets.",
+      "target": null
+    },
+    {
+      "id": "83bc6514c7bc90b0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can use the Renowned Heroes and Prototype System Requisitions once each without spending any Requisition points.",
+      "target": null
+    },
+    {
+      "id": "e0eb9d7a9f9a566d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Your Crusade force gains 2D3 Requisition points.",
+      "target": null
+    },
+    {
+      "id": "a88ea2ee1c694088",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Order of Battle"
+        ]
+      },
+      "source": "Select up to three units from your Order of Battle with the Battle-ready or Blooded ranks. Each of those units gains 5XP.",
+      "target": null
+    },
+    {
+      "id": "13cadcc70c6d93a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Military Power",
+          "Power",
+          "Civilian World"
+        ]
+      },
+      "source": "Add 1 to the Military Power of other Civilian World planets.",
+      "target": null
+    },
+    {
+      "id": "a4dc1714b0fbc296",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Military",
+          "Power",
+          "Fleet Installation"
+        ]
+      },
+      "source": "Subtract 1 from the Military Power of Fleet Installation and Military Base planets (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "ea8c34567c8af6c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Your Crusade force gains D3+1 Requisition points.",
+      "target": null
+    },
+    {
+      "id": "2a0079ee0f156b6e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Your Crusade force gains D3 Requisition points.",
+      "target": null
+    },
+    {
+      "id": "b080f6fc2bdb470e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Military Power",
+          "Power"
+        ]
+      },
+      "source": "Select up to two planets; subtract 1 from the Military Power of each of those planets (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "1eaded103dbc83f8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Supply Limit"
+        ]
+      },
+      "source": "Increase your Crusade forces Supply Limit by 400 points.",
+      "target": null
+    },
+    {
+      "id": "b2b320baf77214ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power"
+        ]
+      },
+      "source": "Subtract 1 from the Diplomat Power of each other planet (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "69a4fe1f938da90f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can use the Fresh Recruits Requisition once without spending any Requisition points.",
+      "target": null
+    },
+    {
+      "id": "1475269c9ad0dae0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Military Power",
+          "Power"
+        ]
+      },
+      "source": "After you generate your Crusade forces next star system, subtract 1 from the Military Power of all planets in that system (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "b923595162f43a6f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Military",
+          "Power"
+        ]
+      },
+      "source": "Select one planet; halve the Military Power of that planet (rounding up).",
+      "target": null
+    },
+    {
+      "id": "7dc030e18e68a1ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can use the Rearm and Resupply Requisition once without spending any Requisition points.",
+      "target": null
+    },
+    {
+      "id": "75c5e72e7c422482",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Order of Battle"
+        ]
+      },
+      "source": "Select up to two units from your Order of Battle; remove one Battle Scar from each of those units.",
+      "target": null
+    },
+    {
+      "id": "bf9024d3e8be63cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Civilian World",
+          "Military",
+          "Fleet Installation",
+          "Power"
+        ]
+      },
+      "source": "Select up to one Civilian World and up to one Military Base or Fleet Installation; subtract 1 from the Diplomat Power of each of those planets (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "447bb699192f6b8e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can use the Repair and Recuperate Requisition once for a cost of up to 2RP less than usual (to a minimum of 0).",
+      "target": null
+    },
+    {
+      "id": "84d733deb3e8031b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can use the Renowned Heroes Requisition once without spending any Requisition points.",
+      "target": null
+    },
+    {
+      "id": "5f1588ca478625f2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power"
+        ]
+      },
+      "source": "Select one planet; halve the Diplomat Power of that planet (rounding up).",
+      "target": null
+    },
+    {
+      "id": "37a15eb592db5a0b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Power"
+        ]
+      },
+      "source": "After you generate your Crusade forces next star system, subtract 1 from the Diplomat Power of all planets in that system (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "451688c58d3d5770",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Military"
+        ]
+      },
+      "source": "After you generate your Crusade forces next star system, your Crusade force gains 2D3 Diplomat points and D3 Military points.",
+      "target": null
+    },
+    {
+      "id": "39c2566d62243c4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power",
+          "Military Power"
+        ]
+      },
+      "source": "Select one planet; switch the Diplomat Power and Military Power of that planet.",
+      "target": null
+    },
+    {
+      "id": "390be17a4425e0df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "**BATTLESUIT** model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "df46933293ce91c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Roll"
+        ]
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 12\" of the bearer that is not fully visible to the bearer due to intervening terrain or because it is within a terrain feature. Roll one D6, adding 2 to the result if the unit is on or within a RUINS terrain feature: on a 3-5, that unit suffers D3 mortal wounds; on a 6+, that unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "120562ae5a270ea8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ethereal",
+          "T'au Empire"
+        ]
+      },
+      "source": "**^^Ethereal^^** model only. While a friendly **^^T'au Empire^^** unit is within 6\" of this model, add 1 to that unit’s Leadership characteristic.",
+      "target": null
+    },
+    {
+      "id": "67885a323c090202",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "At the start of the first turn, your **^^Warlord^^** suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "3521ebf32330e9cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of this battle, each time a unit from your army takes an Out of Action test, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "44df1447fc5515a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, randomly select one unit from your Crusade army that is not in Reserves. You must place that unit into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "6abf1578652028ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Your opponent can have the following rule:\n**Having Doubts:** Once per battle, at the start of the Command phase, you can use this rule. If you do, select one enemy unit and roll one D6. On a 2+, that unit is Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "967f6feb97a77087",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You cannot set up units from Reserves in the first or second battle round.",
+      "target": null
+    },
+    {
+      "id": "7f29e00c8d10ded5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Your opponent starts the battle with 1CP.",
+      "target": null
+    },
+    {
+      "id": "4062d7babe77e490",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
+      "target": null
+    },
+    {
+      "id": "dc94ebb101086154",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack that targets a unit below Starting Strength, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "99725bb26fc0f587",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Attacks and Strength characteristics of melee weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "22f4a7d9d2dbb1b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic",
+          "Range"
+        ]
+      },
+      "source": "Each time this unit makes a Normal, Advance or Fall Back mode, models in this unit can move through models (excluding **^^Titanic^^** models) and through terrain features that are 4\" or less in height. When doing so, they can move within Engagement Range of enemy models, but they cannot end their move within Engagement Range of them.",
+      "target": null
+    },
+    {
+      "id": "b4cbd0baf55f1518",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "T'au Empire",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "a61157ea97015851",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Extra Attacks"
+        ]
+      },
+      "source": "Add 2 to the Strength characteristic of Extra Attacks melee weapons equipped by models in this unit.",
+      "target": null
+    },
+    {
+      "id": "6f2a76f6573731a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kroot"
+        ]
+      },
+      "source": "At the end of battle, if the bearer's unit destroyed one or more enemy units in the Fight phase, you can re-roll Out of Action tests your **^^Kroot^^** units are required to take, and the first time you use the Repair and Recuperate Requisition after the battle, it costs 0RP if you select a **^^Kroot^^** unit.",
+      "target": null
+    },
+    {
+      "id": "66b0a9d83a01c4cb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer's unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. In addition, the bearer's unit is eligible to shoot in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "67cc9c3b503848f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the bearer's Toughness and Wounds characteristics, and the bearer has a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "065eb2bd06a7d28f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic",
+          "Extra Attacks"
+        ]
+      },
+      "source": "When the bearer gains this Crusade Relic, select one of the bearer's weapons (excluding Extra Attacks weapons). Each time the bearer makes an attack with that weapon, you can re-roll the Hit roll and re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "203d1096d6ddb0f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Leadership and Objective Control characteristics of the bearer by 1.",
+      "target": null
+    },
+    {
+      "id": "67cfee2555784306",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer's unit is below Starting Strength, each time a model in the bearer's unit makes an attack, add 1 to the Hit roll. In addition, while the bearer's unit is Below Half-strength, each time a model in the bearer's unit makes an attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "f86fffed2363a961",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Kinband Champion",
+          "Champion"
+        ]
+      },
+      "source": "**^^Kinband Champion^^** only. While this model is leading a unit, melee weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "7a1a1f6f4377ae3e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kinband Champion",
+          "Champion",
+          "Range"
+        ]
+      },
+      "source": "**^^Kinband Champion^^** only. In your Shooting phase, after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "594b83710757ec95",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "T'au Empire"
+        ]
+      },
+      "source": "After both players have deployed their armies, you can redeploy this model's unit and one other friendly **^^T'au Empire^^** unit. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "5362915753a40a74",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "T'au Empire"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly **^^T'au Empire^^** unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "ca0ed20b40d79632",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit makes a ranged attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "159ad36239f1c209",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Battlesuit Veteran",
+          "Infantry",
+          "Vehicle",
+          "Walker",
+          "Infiltrators",
+          "Stealth",
+          "Broadside Battlesuits"
+        ]
+      },
+      "source": "**^^Battlesuit Veteran^^** only. Change this model's Move characteristic to 5\", its Toughness characteristic to 6, its Save characteristic to 2+, and its Wounds characteristic to 10. Remove the **^^Infantry^^** keyword, add the **^^Vehicle^^** and **^^Walker^^** keywords, and remove the Infiltrators and Stealth abilities. It can be equipped with up to three ranged weapons, and replace the list of units this model can be attached to: **^^Broadside Battlesuits^^**.",
+      "target": null
+    }
+  ]
+}

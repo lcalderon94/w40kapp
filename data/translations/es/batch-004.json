@@ -1,0 +1,3423 @@
+{
+  "batch": 4,
+  "units": [
+    {
+      "id": "68c9aebc79f17f2c",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hazardous",
+          "TZEENTCH",
+          "Fates in Flux",
+          "Detachment"
+        ]
+      },
+      "source": "You start the battle with three Flux tokens (we recommend using a dice to track how many Flux tokens you have). You can spend one Flux token just after an Advance roll, Hit roll, Wound roll, Damage roll, saving throw or Hazardous test is made for a LEGIONES DAEMONICA TZEENTCH model or LEGIONES DAEMONICA TZEENTCH unit from your army to re‑roll the result of that roll, throw or test. Flux tokens can also be spent to enhance the effect of some Stratagems. Each time you spend a Flux token, reduce the number of Flux tokens you have by one and your opponent gains one Flux token. \n\n\n Whenever your opponent has one or more Flux tokens, they can spend one Flux token after an Advance roll, Hit roll, Wound roll or saving throw is made for a model or unit from their army, to re‑roll the result of that roll or throw. If they do, they reduce the number of Flux tokens they have by one and you gain one Flux token. This is ignored if your opponent has the Fates in Flux Detachment rule. \n\n\nIn your Command phase, if your opponent has one or more Flux tokens, you gain one Flux token. \n\n\n**Designer’s Note**: *When using fast dice rolling, this rule can be used to spend any number of Flux tokens (up to the amount you have), to re‑roll a number of dice up to the amount spent, after rolling multiple rolls or saving throws at once.*",
+      "target": null
+    },
+    {
+      "id": "cc7bcb31ffe432ec",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aircraft",
+          "Khorne"
+        ]
+      },
+      "source": "In your opponent’s movement phase, each time an enemy unit (excluding **^^Aircraft^^**) ends a move within 8\" of one or more **^^Legiones Daemonica Khorne^^** units from your army, one of those ^^**Legiones Daemonica Khorne**^^ units can make a surge move of up to D6\".",
+      "target": null
+    },
+    {
+      "id": "9a79a1d04af502e4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne"
+        ]
+      },
+      "source": "At the end of a phase in which a **^^Legiones Daemonica Khorne**^^ unit from your army destroyed an enemy unit that was within range of an objective marker at the start of the phase, if your unit has a higher Level of Control over that objective marker, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.",
+      "target": null
+    },
+    {
+      "id": "d26725c01c3b93a4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE",
+          "Chaos"
+        ]
+      },
+      "source": "While an enemy unit is within 9\" of one or more LEGIONES DAEMONICA NURGLE units from your army, that enemy unit is within your army’s Shadow of Chaos. In each player’s Command phase, select one enemy unit within your army’s Shadow of Chaos. That unit must take a Battle‑shock test.",
+      "target": null
+    },
+    {
+      "id": "79efc3f60c513baf",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Abilities",
+          "Detachment"
+        ]
+      },
+      "source": "Abilities for this Detachment are linked to the relevant units.",
+      "target": null
+    },
+    {
+      "id": "1db28ef35659951a",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If a friendly **LEGIONES DAEMONICA MOUNTED** unit made a **fall‑back move** this turn, that move does not prevent that unit from being **eligible to shoot/eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "d1da1e48e9bac2f0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly LEGIONES DAEMONICA CHARACTER models (excluding MONSTER models) have +1 Ld and OC.",
+      "target": null
+    },
+    {
+      "id": "72e52eb5e558c64f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "When a friendly **LEGIONES DAEMONICA BATTLELINE** unit is selected to make an **advance move**: \n- That unit’s ranged attacks have **[ASSAULT]** until the end of the turn. \n- That move does not prevent that unit from being **eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "411c89e9013658f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne"
+        ]
+      },
+      "source": "While a friendly ^^Khorne Legiones Daemonica^^ unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "4b25ce470f854ee1",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Slaughter and Carnage"
+        ]
+      },
+      "source": "While this model has 1-7 wounds remaining, add 2 to the Attacks characteristic of this model’s Slaughter and Carnage.",
+      "target": null
+    },
+    {
+      "id": "17844d375e564094",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne"
+        ]
+      },
+      "source": "While a friendly ^^Khorne Legiones Daemonica^^ unit is within 6\" of this model, each time a model in that unit makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "686674f3e37a9e89",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of the Fight phase, you can select one enemy unit within Engagement Range of this model and roll eight D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "80af39e3030481f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "776b15a27b10352a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a ^^Character^^ unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model destroys an enemy ^^Character ^^unit, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "5b9081596e44433e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ BLOODLETTERS",
+      "target": null
+    },
+    {
+      "id": "c53d6e87372646b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "6f056cd7c89e4e3b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model’s unit Consolidates, it can move up to 6\" instead of up to 3\".",
+      "target": null
+    },
+    {
+      "id": "896a4a8b65cc87c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Juggernaut"
+        ]
+      },
+      "source": "While this model is leading a unit, each time that unit ends a Charge move, until the end of the turn, Juggernaut’s bladed horns equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "3d4249e8302aa9f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model’s unit ends a Charge move, each enemy unit within Engagement Range of that unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "e92e11fd6a4b643f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n■ BLOODCRUSHERS",
+      "target": null
+    },
+    {
+      "id": "ac051e32061a6fc1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "KHORNE"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within 18\" of and visible to this model. Until the end of the phase, each time a friendly KHORNE LEGIONES DAEMONICA unit makes an attack that targets that unit, improve the Strength, Armour Penetration and Damage characteristics of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "b2a89e2c6d72faa6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a melee attack that targets a CHARACTER or MONSTER unit, you can re-roll the Wound roll. Each time this model destroys an enemy CHARACTER or MONSTER unit, this model regains up to D6 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "8b6bd1f5cf32ecfa",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Chaos Space Marines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "bdf3937931b073c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the first battle round, select one enemy unit to be this model’s prey. Each time a model in this model’s unit makes a melee attack that targets its prey, you can re-roll the Wound roll. Each time this model’s prey is destroyed, select one new enemy unit to be this model’s prey.",
+      "target": null
+    },
+    {
+      "id": "212aa780664f4c8a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ FLESH HOUNDS",
+      "target": null
+    },
+    {
+      "id": "5182183f876621a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain",
+          "Psychic"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "5fab05bf487b66ea",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of one or more units from your army with this ability Falls Back, models in that enemy unit must take Desperate Escape tests. When doing so, if that enemy unit is also Battle-shocked, subtract 1 from each of those Desperate Escape tests.",
+      "target": null
+    },
+    {
+      "id": "4212a82b9b995469",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in the bearer’s unit have a Leadership characteristic of 6+.",
+      "target": null
+    },
+    {
+      "id": "fb340cdad3508051",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to Charge rolls made for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "3194a9e7a1d0c525",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of this unit and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "a02fe3cd151bd695",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "dd155389afcf219f",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain",
+          "Psychic"
+        ]
+      },
+      "source": "The bearer has the Feel No Pain 3+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "3b1574f4e8145fcb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. That unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "9600c81b43693339",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos",
+          "KHORNE",
+          "Fortification"
+        ]
+      },
+      "source": "The area of the battlefield within 6\" of this FORTIFICATION is considered to be within your army’s Shadow of Chaos. In addition, while a friendly KHORNE LEGIONES DAEMONICA unit is within 6\" of this Fortification, each time you take a Battle-shock test for that unit, you can re-roll that test.",
+      "target": null
+    },
+    {
+      "id": "b7b06af7ae1735ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "87c9b0fb49ed7e17",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos"
+        ]
+      },
+      "source": "The area of the battlefield within 6\" of this model is considered to be within your army’s Shadow of Chaos.",
+      "target": null
+    },
+    {
+      "id": "84b6bf4dbf6380a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadow Form"
+        ]
+      },
+      "source": "At the start of the battle round, select one Shadow Form ability. Until the end of the battle round, this model has that ability.",
+      "target": null
+    },
+    {
+      "id": "e9cda1f9194ca235",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadow Legion"
+        ]
+      },
+      "source": "While a friendly ^^Legiones Daemonica^^ unit or ^^Shadow Legion^^ unit is within 6\" of this model, that unit can only be targeted by a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "75eab68da1a9fb91",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Battle-shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 9\" of this model, that unit must take a Battle-shock test. For the purposes of this ability, if a unit has a Starting Strength of 1, it is considered to be below its Starting Strength while it has lost one or more wounds. In addition, for each enemy unit that fails a Battle-shock test within 9\" of this model, this model regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "eff3d0062c876519",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadow Legion"
+        ]
+      },
+      "source": "While a friendly ^^Legiones Daemonica^^ or ^^Shadow Legion^^ unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "f2197bffb65ee736",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "While a friendly LEGIONES DAEMONICA unit is within 6\" of this model, models in that unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "bee73dc9ce504185",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 3+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "15716a08f7601f65",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ^^**Legiones Daemonica^^** Infantry units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "d40d1254dc36a891",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of this model’s hellforged weapons.",
+      "target": null
+    },
+    {
+      "id": "ed8eaf6e7810f5b2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[PRECISION]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model is selected to fight, select one of the following abilities. Until the end of the phase, this model’s hellforged weapons have that ability:\n■ [LETHAL HITS]\n■ [PRECISION]\n■ [SUSTAINED HITS 1]",
+      "target": null
+    },
+    {
+      "id": "c97b79f129348074",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this model is on the battlefield, take a Leadership test for this model; if that test is passed, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "d16121621acb7851",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when your opponent targets a unit from their army within 12\" of this model with a stratagem, you can use this ability. If you do, increase the CP cost of that use of that stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "60f2ab909c8a9dbd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "TZEENTCH"
+        ]
+      },
+      "source": "While a friendly TZEENTCH LEGIONES DAEMONICA unit is within 6\" of this model, each time a model in that unit makes a ranged attack, add 1 to the Strength characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "804620c64a73273e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]",
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS D3]"
+        ],
+        "names": [
+          "Bolt of Change"
+        ]
+      },
+      "source": "In your Shooting phase, select one of the following abilities: [IGNORES COVER]; [LETHAL HITS]; [SUSTAINED HITS D3]. Until the end of the phase, this model’s Bolt of Change has that ability.",
+      "target": null
+    },
+    {
+      "id": "032d8530e092c135",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit wishes to select this model as the target of an attack, that unit must first take a Battle-shock test. If that test is failed, in addition to being Battle-shocked, that enemy unit cannot target this model this phase.",
+      "target": null
+    },
+    {
+      "id": "84baec37435afdaf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your opponent’s Shooting phase, select one enemy unit within 12\" of and visible to this model and roll one D6: on a 2-5, until the end of the phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll; on a 6, that enemy unit is not eligible to shoot this phase",
+      "target": null
+    },
+    {
+      "id": "6f2e8674abf4ee24",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ SCREAMERS",
+      "target": null
+    },
+    {
+      "id": "c0ae7b0a577564bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "8e36fbd502a9d81d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent’s turn, if this model’s unit is not within Engagement Range of one or more enemy units, you can remove that unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "e4c7d90dd91fa3ef",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n■ PINK HORRORS\n■ BLUE HORRORS",
+      "target": null
+    },
+    {
+      "id": "a6c1c0c8d60adbc4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Melee"
+        ]
+      },
+      "source": "- This unit has Stealth. \n- Melee attacks that target this unit have ‑1 to hit rolls.",
+      "target": null
+    },
+    {
+      "id": "6f07fc28e92e74dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, after a Hit roll, a Wound roll or a saving throw is made for this model, you can change the result of that roll to a 6.",
+      "target": null
+    },
+    {
+      "id": "8e65ffa17b60cc55",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "While an enemy unit is within 12\" of this model, each time a model in that unit makes a Psychic Attack, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "7aa98bd32d91b795",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, roll one D6 for each enemy unit within 6\" of this model: on a 2-3, that unit suffers 1 mortal wound; on a 4-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers D6 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "fe3ef3d91ad3dcf5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "d3f5b1687ea51c9a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy Infantry unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "8ee94d4878a80dcc",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blue Horror"
+        ]
+      },
+      "source": "Each time a ^^Blue Horror^^ model in this unit is destroyed, after the attacking unit has finished making its attacks, if this unit is not destroyed, roll one D6 for that model. On a 4+, add one ^^Brimstone Horror^^ model to this unit.",
+      "target": null
+    },
+    {
+      "id": "7679cceb39c483b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Blue Horror"
+        ]
+      },
+      "source": "While an enemy unit is within 6\" of this unit, if this unit contains one or more ^^Blue Horror^^ models, worsen the Leadership characteristic of models in that enemy unit by 1.",
+      "target": null
+    },
+    {
+      "id": "0e3d2f1002136d8b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit is selected to fight, you can select one enemy unit within Engagement Range of it, then select one or more ^^Brimstone Horror^^ models in this unit. For each ^^Brimstone Horror^^ model you select, roll one D6: on a 4+, that model is destroyed and that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "4e43908ec51ea599",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pink Horror",
+          "Blue Horror"
+        ]
+      },
+      "source": "Each time a ^^Pink Horror^^ or ^^Blue Horror^^ model in this unit is destroyed, after the attacking unit has finished making its attacks, if this unit is not destroyed, roll one D6 for that model. On a 4+, if it was a ^^Pink Horror^^, add two ^^Blue Horror^^ models to this unit, and if it was a ^^Blue Horror^^, add one ^^Brimstone Horror^^ model to this unit.",
+      "target": null
+    },
+    {
+      "id": "75a3b3a8e3c2d43a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Pink Horrors",
+          "Horrors",
+          "Blue Horrors",
+          "Exploding Horrors"
+        ]
+      },
+      "source": "If, at any point, this unit contains no ^^Pink Horrors^^ models, use the ^^Blue Horrors^^ datasheet for this unit. \n\n\n_Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models, the Cackling Horrors and Exploding Horrors abilities from the Blue Horrors datasheet do not apply to this unit._",
+      "target": null
+    },
+    {
+      "id": "2b9cd0165f813d79",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ FLAMERS",
+      "target": null
+    },
+    {
+      "id": "2946442f18bc6b49",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability.",
+      "target": null
+    },
+    {
+      "id": "3dc61c33e5e60c89",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit (excluding MONSTERS and VEHICLES) hit by one or more of those attacks, and roll one D6. On a 4+, until the end of your opponent’s next turn, that enemy unit is aflame. While a unit is aflame, subtract 2\" from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "c9d33d4e48365fd5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord",
+          "Enhancements"
+        ]
+      },
+      "source": "This model cannot be your ^^Warlord^^ and cannot be given Enhancements.",
+      "target": null
+    },
+    {
+      "id": "d0b5dda00e4d4941",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, after this unit ends a Normal move, you can select one enemy unit it moved over during that move and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "4831511b238790c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the end of the phase, that unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "a46f3292090e8b13",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "At the start of the Fight phase, you can select one enemy unit within 24\" of and visible to this model. Until the end of the phase, each time an attack made by a NURGLE LEGIONES DAEMONICA model is allocated to a model in that unit, add 1 to the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "b7bf0cd5c63dad9c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, subtract 2 from the Move characteristic and subtract 1 from the Objective Control characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "0decd0cceaf5f01b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Nurgle"
+        ]
+      },
+      "source": "While a friendly ^^Nurgle Legiones Daemonica^^ unit is within 6\" of this model, add 1 to the Toughness characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "7c45d7560772465c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, you can select one enemy unit within 12\" of this model. Until the start of your next Movement phase, subtract 1 from the Toughness characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "73b60f3d15fae943",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plaguebearer"
+        ]
+      },
+      "source": "Each time a model is destroyed by this weapon, you can select one friendly PLAGUEBEARERS unit within 12\" of the bearer and return 1 destroyed Plaguebearer model to that unit.",
+      "target": null
+    },
+    {
+      "id": "c4961412c70f3cf5",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ PLAGUEBEARERS",
+      "target": null
+    },
+    {
+      "id": "0c14624c1b4943c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes an attack, a successful unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "39a48f6293c8ad40",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, each time that unit takes a Battle-shock test, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "eb2f0736ac12364b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ PLAGUE BEARERS",
+      "target": null
+    },
+    {
+      "id": "76fd91737fba0c8e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "03936149d7983838",
+      "kind": "characteristic:Description",
+      "occurrences": 8,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard",
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "133d4e520bea03e2",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, models in that unit have a 4+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "c526ba696fb5d7b5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "Keep a tally of how many enemy models are destroyed by NURGLE LEGIONES DAEMONICA models from your army during the battle. At the start of your Command phase, if this tally is 7 or more, you gain 1CP and the tally is reset to 0.",
+      "target": null
+    },
+    {
+      "id": "a475d055e90132c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, add 1 to the Move characteristic of models in that unit and you can re-roll Advance rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "d46aa1923f20d29e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Fight phase, every enemy unit (excluding ^^Monsters^^ and ^^Vehicles^^) within 6\" of this model must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "7b9746c2f78cc046",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n■ BEASTS OF NURGLE",
+      "target": null
+    },
+    {
+      "id": "84eb487474f1110a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, you can re-roll **charge rolls** made for that unit. In addition, once per battle, you can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do: \n- That use is -1 CP.\n- That use does not prevent any uses of that **stratagem** on other units this phase.",
+      "target": null
+    },
+    {
+      "id": "cae6f594b15fc98b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos"
+        ]
+      },
+      "source": "At the end of your Movement phase, if this model is within one AREA TERRAIN feature, until the end of the battle, that AREA TERRAIN feature is considered to be within your army’s Shadow of Chaos.",
+      "target": null
+    },
+    {
+      "id": "8ab6f257ac730a92",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.",
+      "target": null
+    },
+    {
+      "id": "34e9f9ffd18549a0",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic",
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding ^^Titanic^^ units) within Engagement Range of one or more units with this ability is selected to fight, until the end of the phase, each time a model in that enemy unit makes a melee attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "e6d6a002f21bb02b",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Beasts of Nurgle",
+          "Nurgle"
+        ]
+      },
+      "source": "At the end of each phase, if a Beasts of Nurgle model in this unit has lost any wounds but is not destroyed, that model regains all of its lost wounds.",
+      "target": null
+    },
+    {
+      "id": "ab78b0a1c5e05c10",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly NURGLE LEGIONES DAEMONICA unit makes an attack that targets that unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "ab2397be5aaab798",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE",
+          "Fortification",
+          "Stealth"
+        ]
+      },
+      "source": "While a friendly NURGLE LEGIONES DAEMONICA unit is within 6\" of this Fortification, models in that unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "4d4523061cc69965",
+      "kind": "characteristic:Description",
+      "occurrences": 5,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Imperium - Adepta Sororitas",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "8aae10e86cbdddfa",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Chaos Knights Library",
+        "Chaos - Emperor's Children"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance and Charge rolls made for this model.",
+      "target": null
+    },
+    {
+      "id": "3cf817ed3f03a2c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the first battle round, select one enemy unit to be this model’s quarry. Each time this model makes a melee attack that targets its quarry, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model’s quarry is destroyed, select one new enemy unit to be this model’s quarry.",
+      "target": null
+    },
+    {
+      "id": "ed3f0138b5dd45d0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Slaanesh"
+        ]
+      },
+      "source": "While a friendly ^^Slaanesh Legiones Daemonica^^ unit is within 6\" of this model, improve the Armour Penetration of melee weapons in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "ebad3eb65ce2539c",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Emperor's Children",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this model, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "401ab586b80442df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Save Characteristic of 3+.",
+      "target": null
+    },
+    {
+      "id": "83673edaaf71efa7",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ DAEMONETTES",
+      "target": null
+    },
+    {
+      "id": "c4b9a97a4d34e5cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return D3 destroyed Bodyguard models to that unit.",
+      "target": null
+    },
+    {
+      "id": "ef35d15d6ee5feb0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": [
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "While an enemy ^^Psyker^^ unit is within 12\" of this model, Psychic weapons equipped by models in that unit have the [HAZARDOUS] ability.",
+      "target": null
+    },
+    {
+      "id": "f39be91ce1771582",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within 6\" of this model. Until the end of the phase:\n■ Each time a friendly SLAANESH LEGIONES DAEMONICA model makes a melee attack that targets that enemy unit, add 1 to the Wound roll.\n■ Each time a model in that enemy unit makes a melee attack, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "b302b869a1e20f03",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model is eligible to declare a charge in a turn in which it Advanced or Fell Back.",
+      "target": null
+    },
+    {
+      "id": "a5f86561bbf1c33b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, a successful unmodified Wound roll of 5+ scores a Critical Wound.",
+      "target": null
+    },
+    {
+      "id": "a5f694e66a165286",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "4b8a01901840093e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "1cb886ddfff99ab9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your opponent’s Shooting phase, one PSYKER model from your army with this ability can use it. If it does, select one enemy unit within 12\" of and visible to that PSYKER model and roll one D6: on a 1, that PSYKER model suffers D3 mortal wounds; on a 2-5, until the end of the phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll; on a 6, that enemy unit is not eligible to shoot this phase.",
+      "target": null
+    },
+    {
+      "id": "1b5b2ec22dbb4f25",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^SUSTAINED HITS 1^^]"
+        ],
+        "names": [
+          "Slaanesh"
+        ]
+      },
+      "source": "While a friendly **^^Slaanesh Legions Daemonica**^^ unit is within 6\" of this model, melee weapons in that unit have the [^^SUSTAINED HITS 1^^] ability.",
+      "target": null
+    },
+    {
+      "id": "9ba931c784d4490a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this model’s unit is destroyed, if that model has not fought this phase, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "c47c022605de7db7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hellflayers"
+        ]
+      },
+      "source": "This model can be attached to the following unit: \n- ^^**Hellflayers^^**",
+      "target": null
+    },
+    {
+      "id": "cfbfaeea3f3b9205",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is within range of an objective marker, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "fdc8dd7e61beb60f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "At the end of your Movement phase, you can select one enemy unit that is Battle-shocked and within 12\" of this model. Until the end of the turn, each time a SLAANESH LEGIONES DAEMONICA model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "82bb9fe4721d104f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of one of more units from your army with this ability must take a Battle-shock test, subtracting 1 from the result if that enemy unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "fdd492182c5ce3ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding ^^Monsters^^ and ^^Vehicles^^) within Engagement Range of one or more units from your army with this ability Falls Back, models in that enemy unit must take Desperate Escape tests. When doing so, if that enemy unit is also Battle-shocked, subtract 1 from each of those Desperate Escape tests.",
+      "target": null
+    },
+    {
+      "id": "4f080b8001e30f8f",
+      "kind": "characteristic:Description",
+      "occurrences": 10,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Emperor's Children",
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Advance and Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "1ca4a2fbe4d3f768",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a melee attack, if this unit made a Charge move this turn, improve the Strength and Damage characteristics of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "f080e11aa931267a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-INFANTRY 4+]"
+        ],
+        "names": []
+      },
+      "source": "Each time this unit makes a Charge move, until the end of the phase, melee weapons equipped by models in this unit have the [ANTI-INFANTRY 4+] ability.",
+      "target": null
+    },
+    {
+      "id": "1ccae78b99b5d4c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, after this model has finished making its attacks, if one or more enemy units were destroyed as a result of those attacks, every enemy unit within 6\" of this model must take a Battleshock test.",
+      "target": null
+    },
+    {
+      "id": "441f258ce1d6fbb2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of each player’s Command phase, this model regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "15fa5da87342c022",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader",
+          "NURGLE"
+        ]
+      },
+      "source": "If a model from your army with the Leader ability can be attached to a BEASTS OF NURGLE unit, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "19a5a67210cde4ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "Pox Rider"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, until the end of the turn, Pox Rider plagueswords equipped by models in this unit have the [LANCE] ability.",
+      "target": null
+    },
+    {
+      "id": "e97bdba52ff2be66",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.",
+      "target": null
+    },
+    {
+      "id": "ed8949082eaff5ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "KHORNE"
+        ]
+      },
+      "source": "While a friendly KHORNE LEGIONES DAEMONICA unit is within 6\" of this model, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "5e34f31eb1b43750",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of the Fight phase, you can select one enemy unit within Engagement Range of this model and roll eight D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "1e66ab95b7f620d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "TZEENTCH"
+        ]
+      },
+      "source": "While a friendly TZEENTCH LEGIONES DAEMONICA unit is within 6\" of this model, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "66d01ead3942e3b2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]",
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS D3]"
+        ],
+        "names": []
+      },
+      "source": "In your Shooting phase, select one of the following abilities: [IGNORES COVER]; [LETHAL HITS]; [SUSTAINED HITS D3]. Until the end of the phase, this model’s ranged weapon has that ability.",
+      "target": null
+    },
+    {
+      "id": "cc15e8870238d2b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "While a friendly NURGLE LEGIONES DAEMONICA unit is within 6\" of this model, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "d38f329cfe5fb2c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, you can select one enemy unit within 12\" of this model. Until the start of your next Movement phase, subtract 1 from the Toughness characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "7496811da631cfbf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "While a friendly SLAANESH LEGIONES DAEMONICA unit is within 6\" of this model, you can re-roll Battle-shock tests taken for that unit.",
+      "target": null
+    },
+    {
+      "id": "c8d4d375ed124044",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this model, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "11807e64901eaadf",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Imperium - Blood Angels"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "3f5399847597a230",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "At the end of your Movement phase, you can select one enemy unit that is Battle-shocked and within 12\" of this model. Until the end of the turn, each time a SLAANESH LEGIONES DAEMONICA model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "87b4f642f2e364b9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n■ SEEKERS",
+      "target": null
+    },
+    {
+      "id": "80600fa6e0c13f9b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit that is Battle-shocked, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "ce50203782a3079d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bodyguard",
+          "Battleline"
+        ]
+      },
+      "source": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model, or D3 destroyed models with the ^^**Battleline**^^ keyword, to that unit.",
+      "target": null
+    },
+    {
+      "id": "baa3ed3cc5112f31",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Daemon",
+          "Possessed",
+          "Khorne",
+          "Nurgle",
+          "Slaanesh",
+          "Tzeentch"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Infantry Daemon**^^ units (excluding ^^**Possessed**^^ units) which share one of the following keywords with this model ^^**Khorne, Nurgle, Slaanesh, Tzeentch**^^",
+      "target": null
+    },
+    {
+      "id": "bd2475db24fefa5a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Lance^^]"
+        ],
+        "names": [
+          "Melee weapons",
+          "Lance"
+        ]
+      },
+      "source": "Melee weapons equipped by models in this unit have the [^^Lance^^] ability.",
+      "target": null
+    },
+    {
+      "id": "4896b4195e1d9891",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mounted",
+          "Daemon",
+          "Khorne",
+          "Nurgle",
+          "Slaanesh",
+          "Tzeentch"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Mounted Daemon**^^ units which share one of the following keywords with this model ^^**Khorne, Nurgle, Slaanesh, Tzeentch**^^",
+      "target": null
+    },
+    {
+      "id": "ffa081a66ad50f90",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Daemon",
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more friendly ^^**Daemon Infantry**^^ units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "bd48df899ce1eba1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Daemon"
+        ]
+      },
+      "source": "Each time an attack is allocated to a friendly ^^**Daemon**^^ unit within 3\" of this model, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "bc365dc71179c80b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne",
+          "Chaos"
+        ]
+      },
+      "source": "**^^Khorne Legiones Daemonica^^** model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is within your army’s Shadow of Chaos, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.",
+      "target": null
+    },
+    {
+      "id": "af4260389a673272",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch",
+          "Range",
+          "Chaos"
+        ]
+      },
+      "source": "**^^Tzeentch Legiones Daemonica^^** model only. Add 1 to the Strength characteristic of the bearer’s ranged weapons and increase the Range characteristic of such weapons by 3\". While the bearer is within your army’s Shadow of Chaos, add 2 to the Strength characteristic of the bearer’s ranged weapons and increase the Range characteristic of such weapons by 6\" instead.",
+      "target": null
+    },
+    {
+      "id": "e4f1eac246c5ad7a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "NURGLE LEGIONES DAEMONICA model only. The bearer has the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "f09f7e2a1e9deeb3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH",
+          "Chaos"
+        ]
+      },
+      "source": "SLAANESH LEGIONES DAEMONICA model only. Each time the bearer destroys an enemy model with a melee attack, roll one D6, adding 1 to the result if the bearer is within your army’s Shadow of Chaos. On a 4+, the bearer regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "ed5d7ff7f64021ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA SLAANESH model only. While a friendly LEGIONES DAEMONICA SLAANESH unit (excluding MONSTERS) is within 6\" of the bearer, each time a model in that unit makes a melee attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "7839463619a40190",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA SLAANESH model only. While a friendly LEGIONES DAEMONICA SLAANESH unit (excluding MONSTERS) is within 6\" of the bearer, each time a model in that unit makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "9d513cf6fd3ff142",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch",
+          "Monster",
+          "TZEENTCH"
+        ]
+      },
+      "source": "^^**Legiones Daemonica Tzeentch Monster**^^ model only. In your Shooting phase, when this unit is selected to shoot, while an enemy unit is visible to a friendly LEGIONES DAEMONICA TZEENTCH unit, that enemy unit has +9\" detection range until this unit has shot.",
+      "target": null
+    },
+    {
+      "id": "d909908a3c021ff4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA SLAANESH MONSTER model only. At the end of the Fight phase, if one or more enemy models were destroyed this phase as a result of one or more of the bearer’s attacks, it can use this Enhancement. If it does, it regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "f5b5aeec4612cd36",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA SLAANESH MONSTER model only. At the start of each phase, if there are no other friendly units within 6\" of the bearer, you can: re‑roll Advance rolls made for the bearer; re‑roll Charge rolls made for the bearer; ignore any or all modifiers to its Move characteristic and to any Advance and/or Charge rolls made for the bearer.",
+      "target": null
+    },
+    {
+      "id": "6ea5acdd03be3c91",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "KHORNE"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA KHORNE MONSTER model only. Each time the bearer is selected to fight, it can use this Enhancement. If it does, the bearer suffers D3+1 mortal wounds, and until the end of the phase, each time it makes an attack, you can re‑roll the Hit roll and you can re‑roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d8b34f7190861354",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch"
+        ]
+      },
+      "source": "**^^Legiones Daemonica Tzeentch**^^ model only. In your Command phase, if the bearer is on the battlefield, if your opponent has one or more Flux tokens, you gain one additional Flux token.",
+      "target": null
+    },
+    {
+      "id": "01ee08b332240be0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch",
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Legiones Daemonica Tzeentch^^** model only. While a friendly **^^Legiones Daemonica Tzeentch^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "340e5ffd73d56c8d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tzeentch",
+          "Monster"
+        ]
+      },
+      "source": "**^^Legiones Daemonica Tzeentch Monster^^** model only. Improve the Strength characteristic of melee weapons equipped by the bearer by 2, improve the Attacks and Armour Penetration characteristics of melee weapons equipped by the bearer by 1, and each time the bearer makes a melee attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "ddf43ec07c00d64b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "KHORNE"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA KHORNE model only.  While a friendly LEGIONES DAEMONICA KHORNE unit (excluding MONSTERS) is within 6\" of the bearer, weapons equipped by models in that unit have the [LANCE] ability.",
+      "target": null
+    },
+    {
+      "id": "a270722cd0f2988e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "KHORNE"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA KHORNE model only. Add 2 to Charge rolls made for the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "8f72b25bf4737bbf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "KHORNE",
+          "Deadly Demise"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA KHORNE MONSTER model only. The bearer’s Deadly Demise ability inflicts mortal wounds on a D6 roll of 2+ instead of on a 6. In addition, if the bearer has destroyed one or more enemy units this battle, the bearer has the Deadly Demise D3+3 ability, instead of any other Deadly Demise ability on its datasheet.",
+      "target": null
+    },
+    {
+      "id": "d1e1d65a55d96b85",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA NURGLE model only. In your Shooting phase, select one enemy unit within 6\" of the bearer; that enemy unit must take a Battle‑shock test. Then roll one D6: on a 3+, that enemy unit suffers D3 mortal wounds. Each time the bearer uses this Enhancement, no mortal wounds are inflicted by your army’s Daemonic Terror rule.",
+      "target": null
+    },
+    {
+      "id": "1575a3fde86adb3f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA NURGLE MONSTER model only. While a friendly LEGIONES DAEMONICA NURGLE unit is within 6\" of the bearer, improve the Armour Penetration characteristic of weapons equipped by models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "8a90246fc0ede99e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA NURGLE model only. Each time an enemy unit (excluding MONSTERS and VEHICLES) that is within 6\" of the bearer fails a Battle‑shock test, the bearer can use this Enhancement. If it does, one model in that unit is destroyed (chosen by its controlling player). Each time the bearer uses this Enhancement, no mortal wounds are inflicted by your army’s Daemonic Terror rule.",
+      "target": null
+    },
+    {
+      "id": "f1c77184956f0ad5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA NURGLE MONSTER model only. While a friendly LEGIONES DAEMONICA NURGLE unit is within 6\" of the bearer, that unit can only be targeted by a ranged attack if the attacking model is within 18\".",
+      "target": null
+    },
+    {
+      "id": "785a164e06a3cfd2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 9\""
+        ]
+      },
+      "source": "Models in the bearer's unit have the Scouts 9\" ability.",
+      "target": null
+    },
+    {
+      "id": "2aa813452dc4f08d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Engagement Range of the bearer’s unit, subtract 1 from the Objective Control characteristic of models in that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "0e16debf836fe6a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of the Fight phase, if the bearer’s unit destroyed one or more enemy units this phase and is not within Engagement Range of one or more enemy units, you can remove the bearer’s unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "063bd28e7ec24685",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of the bearer’s unit and roll one D6: on a 2‑5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "5beee493f719e267",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit is **selected to fight**, if this unit made a **charge move** this turn, you can use this ability. If you do, when determining which models in this unit can fight, friendly models that are within 3\" of enemy units **engaged** with this unit can target those enemy units,",
+      "target": null
+    },
+    {
+      "id": "438515c08a3a2c78",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has +2 W.",
+      "target": null
+    },
+    {
+      "id": "826d4a0b9891d92c",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has +1\" M.",
+      "target": null
+    },
+    {
+      "id": "3b47e5209a3e6a3d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets this unit, unless the attacking model is within 18\", subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "74256477bfc63bf6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "BATTLESUIT model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
+      "target": null
+    },
+    {
+      "id": "75fc9b7014be61d1",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle, at the start of your Command phase, if the bearer is on the battlefield, you can do one of the following:\n■ Select one objective marker you do not control. Until the start of your next Command phase, each time a T’au Empire unit from your Crusade army makes a ranged attack that targets a unit within range of that objective marker, that T’au Empire unit is considered to be a Guided unit and that target unit is considered to be that T’au Empire unit’s Spotted unit.\n■ Select one objective marker you control. Until the start of your next Command phase, each time an enemy unit makes an attack that targets a T’au Empire unit from your Crusade army that is within range of that objective marker, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "312669505fcd1f6b",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Extra Attacks"
+        ]
+      },
+      "source": "Once per battle, when the bearers unit destroys an enemy unit, select one melee weapon equipped by the bearer (excluding Extra Attacks weapons). Until the end of the battle, add 1 to the Attacks, Strength, and Armour Penetration characteristics of that weapon.",
+      "target": null
+    },
+    {
+      "id": "7f4424c55374bae1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain",
+          "Psychic"
+        ]
+      },
+      "source": "This model has the Feel No Pain 3+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "c395117ad2855b64",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Bloodcrushers"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Bloodcrushers**^^",
+      "target": null
+    },
+    {
+      "id": "6e6be882697e01ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Nurglings"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Nurglings**^^",
+      "target": null
+    },
+    {
+      "id": "f1f133bf68e237da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Plague Drones"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Plague Drones**^^",
+      "target": null
+    },
+    {
+      "id": "718e38a65460bca4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Seekers"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Seekers**^^",
+      "target": null
+    },
+    {
+      "id": "0e84be42ed85a902",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Screamers"
+        ]
+      },
+      "source": "This model can be attached to the following unit: ^^**Screamers**^^",
+      "target": null
+    },
+    {
+      "id": "b967a11302f8c4fa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "310958991ffd394d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within 18\" of and visible to this model. Until the end of the phase, each time a friendly ^^**Khorne**^^ unit makes an attack which targets that unit, improve the Strength, Armour Penetration and Damage characteristics of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "07b21580c482e819",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c340f0dac96c49b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, add 1\" to the Move characteristic of models in that unit and you can re-roll Advance moves made for it.",
+      "target": null
+    },
+    {
+      "id": "da37caad48053eff",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Sustained Hits 1^^]"
+        ],
+        "names": [
+          "Melee weapons",
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "Melee weapons equipped by models in this unit have the [^^Sustained Hits 1^^] ability.",
+      "target": null
+    },
+    {
+      "id": "e8ebfd31093936d8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model's unit is not Battle-shocked, add 1 to the Objective Control characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "a0b406bc61ae74ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Hazardous^^]"
+        ],
+        "names": [
+          "Psyker",
+          "Psychic",
+          "Hazardous"
+        ]
+      },
+      "source": "While an enemy ^^**Psyker**^^ unit is within 12\" of this model, Psychic weapons equipped by models in that unit have the [^^Hazardous^^] ability.",
+      "target": null
+    },
+    {
+      "id": "54cca70d06728f44",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "a9a84d2d9319e813",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Assault^^]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Assault"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the [^^Assault^^] ability",
+      "target": null
+    },
+    {
+      "id": "f5c65b2300e23bef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is made against this unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "39efee9ec04b5207",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent's turn, if this model's unit is not within Engagement Range of one or more enemy units, you can remove that unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "628dd7d9b443d57b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit’s attacks have +1 S.",
+      "target": null
+    },
+    {
+      "id": "323755c87bf91a60",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When you target this unit with the Heroic Intervention/Fire Overwatch stratagem, that use is -1 CP.",
+      "target": null
+    },
+    {
+      "id": "2bf72eaa864ce192",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Knights Library",
+        "Imperium - Imperial Knights - Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-5 wounds remaining, subtract 3 from this model's Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "af97bd2d1801eecc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3a172fd2ea8cfc71",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Knights Library",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-10 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b3045e7d22f1dfc1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "War Dog"
+        ]
+      },
+      "source": "While a friendly ^^**War Dog^^** model is within 6\" of this model, ranged weapons equipped by that **^^War Dog^^** model have the [ASSAULT] ability.",
+      "target": null
+    },
+    {
+      "id": "08e20e06322846de",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Chaos - Chaos Knights Library",
+        "Imperium - Space Marines",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a 5+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "82357ae21becefcd",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos",
+          "Stealth",
+          "Dominion"
+        ]
+      },
+      "source": "If your Army Faction is ^^**Chaos Knights^^**, each model from your army with this ability gains Dread abilities, depending which are active for your army. The Deathly Terror ability is active for your army from the start of the battle. In addition, at the start of the first, third and fifth battle rounds, you can either select one of the other Dread abilities or randomly select two Dread abilities to apply by rolling two D6 and applying the results rolled, from those numbered 1-6 below.\n\nAny Dread abilities that have been selected are active until the end of the battle. You cannot select the same Dread ability more than once, and any duplicated Dread abilities (as a result of randomly selecting them) have no additional effect.\n\n\n**N/A - Deathly Terror (Aura)**\nWhile an enemy unit is within 9\" of this model, worsen the Leadership characteristic of models in that unit by 1.\n\n**1 - Despair (Aura)**\nWhile an enemy unit is within 9\" of this model, worsen the Leadership characteristic of models in that unit by 1. This is cumulative with the Deathly Terror ability (see above).\n\n**2 - Doom**\nEach time this model makes an attack, if the target is Battle-shocked, add 1 to the Wound roll.\n\n**3 - Darkness**\nThis model has **Stealth**.\n\n**4 - Dismay (Aura)**\nIn the Battle-shock step of your opponent's Command phase, for each enemy unit that is below its Starting Strength and within 9\" of this model, that enemy unit must take a Battle-shock test.\n\n**5 - Delirium (Aura)**\nWhile an enemy unit that is Below Half-strength is within 9\" of this model, each time that model fails a Battle-shock test, it suffers D3 mortal wounds.\n\n**6 - Dominion**\nAdd 3\" to the range of this model's Aura abilities.",
+      "target": null
+    },
+    {
+      "id": "3bc73a020463a5b4",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Knights Library",
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "This unit’s ranged attacks have [IGNORES COVER].",
+      "target": null
+    },
+    {
+      "id": "553c4060babe9535",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a unit Below Half-strength, add 1 to the Hit roll. Each time an enemy unit is destroyed as the result of this model's attacks, before removing the last model in that unit from the battlefield, each other unit from your opponent's army that is within 3\" of it must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "694bbc8fc7129eb0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets an enemy unit, if there are no other units from your opponent’s army within 6\" of that target, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "5dc3c2dcef2169c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Ignores Cover]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Ignores Cover",
+          "Cover"
+        ]
+      },
+      "source": "Ranged weapons equipped by this model have the [Ignores Cover] ability while targeting enemy units in range of one or more objective markers.",
+      "target": null
+    },
+    {
+      "id": "2f4263afe15705e4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit’s ranged attacks have +6\" R.",
+      "target": null
+    },
+    {
+      "id": "203403d82f9cbeab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "c02fc3ea72d8f404",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "War Dog"
+        ]
+      },
+      "source": "While a friendly ^^**War Dog^^** model is within 9\" of this model, improve that ^^**War Dog^^** model's Leadership  and Objective Control characteristics by 1.",
+      "target": null
+    },
+    {
+      "id": "c05e5a2892fbb07d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model is selected to shoot or fight, you can re-roll one Hit roll or you can re-roll one Wound roll when resolving those attacks.",
+      "target": null
+    },
+    {
+      "id": "683f34cec59d3f8f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "War Dog"
+        ]
+      },
+      "source": "While a friendly ^^**War Dog^^** model is within 9\" of this model, each time that ^^**War Dog^^** model makes a ranged attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "148c9f4bdce3bdaa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit’s ranged attacks that target a MONSTER/VEHICLE unit can ignore modifiers to this unit’s: \n- BS. \n- Hit rolls and wound rolls.",
+      "target": null
+    },
+    {
+      "id": "b592abd460f75f15",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "War Dog"
+        ]
+      },
+      "source": "While a friendly ^^**War Dog^^** model is within 9\" of this model, each time that ^^**War Dog^^** model makes a melee attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "03363e9b97ee30d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Devastating Wounds]"
+        ],
+        "names": [
+          "Devastating Wounds"
+        ]
+      },
+      "source": "Each time this model makes a Charge move, until the end of the turn, its melee weapons have the [Devastating Wounds] ability.",
+      "target": null
+    },
+    {
+      "id": "8908605c29a77d35",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Shooting phase, select one enemy unit within 24\" of and visible to this model. That enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "594ac80650fa5a5c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, roll one D6 for each enemy unit within 9\" of one or more models with this ability: on a 3+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "68067fa2b5647dfa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Knights Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "War Dog",
+          "Cover"
+        ]
+      },
+      "source": "While a friendly ^^**War Dog^^** model is within 6\" of this model, that ^^**War Dog^^** model has the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "4bc05f59c625b498",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Chaos - Chaos Knights Library",
+        "Chaos - Death Guard",
+        "Genestealer Cults"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model.",
+      "target": null
+    }
+  ]
+}

@@ -1,0 +1,3473 @@
+{
+  "batch": 3,
+  "units": [
+    {
+      "id": "ebb039030ce6c1a4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When a friendly **RANGERS/SHROUD RUNNERS** unit is **selected to shoot**, enemy units have +6\" **detection range** until that friendly unit has shot.",
+      "target": null
+    },
+    {
+      "id": "373ce785833a01ab",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "Friendly **HARLEQUINS** units have **Stealth**.\n\nThis **detachment** has the **ACROBATIC** tag and cannot be taken with another **ACROBATIC detachment**.",
+      "target": null
+    },
+    {
+      "id": "e371d8680d023a1f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS: non-MONSTER/VEHICLE]"
+        ],
+        "names": []
+      },
+      "source": "Friendly **WYCH CULT** units' melee attacks have **[LETHAL HITS: non-MONSTER/VEHICLE]**.\n\nThis **detachment** has the **WYCH CULT** tag and cannot be taken with another **WYCH CULT detachment**.",
+      "target": null
+    },
+    {
+      "id": "457442c69e91bfc1",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1: non-MONSTER/VEHICLE]"
+        ],
+        "names": []
+      },
+      "source": "Friendly **BLADES FOR HIRE/KABAL** units’ ranged attacks have **[SUSTAINED HITS 1: non-MONSTER/VEHICLE]**.\n\nThis **detachment** has the **KABAL** tag and cannot be taken with another **KABAL detachment**.",
+      "target": null
+    },
+    {
+      "id": "2140bc21b1523069",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Attacks that target friendly **CRONOS/TALOS** units with a **S** greater than that unit’s **T** have ‑1 to **wound rolls**.\n\n\nThis **detachment** has the **COVENS** tag and cannot be taken with another **COVENS detachment**.",
+      "target": null
+    },
+    {
+      "id": "2edea315ccb83e69",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Eviscerating Fly-by",
+          "Fly"
+        ]
+      },
+      "source": "Each time you roll to inflict wounds using this unit’s Eviscerating Fly-by ability, you can re-roll one D6 for each model in this unit equipped with cluster caltrops.",
+      "target": null
+    },
+    {
+      "id": "09a410ce8826c410",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Lethal Hits]"
+        ],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "The bearer’s melee weapons have an Armour Penetration characteristic of -2 and the ^^**[Lethal Hits]**^^ ability.",
+      "target": null
+    },
+    {
+      "id": "598f33f51e44268d",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Blood Angels",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "c9e51ebe4f2d7d0b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons",
+          "Support Weapon",
+          "Weapon"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit (excluding **^^Support Weapon^^** models) have the **[IGNORES COVER]** ability, and each time a model in this unit (excluding **^^Support Weapon^^** models) makes a ranged attack, you can ignore any or all modifiers to that attack's Ballistic Skill characteristic and/or any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "12a2a22ce0384d88",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 2]"
+        ],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Psychic weapons equipped by models in this unit have the **[SUSTAINED HITS 2]** ability.",
+      "target": null
+    },
+    {
+      "id": "1a219394bfbff00e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit is destroyed by a ranged attack, roll one D6: on a 3+, do not remove it from play. The destroyed model can shoot after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "8b48b6238ff211b6",
+      "kind": "characteristic:Description",
+      "occurrences": 7,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Chaos - Thousand Sons",
+        "Genestealer Cults"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "e3412e065a92a634",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Smoke"
+        ]
+      },
+      "source": "This unit has the **^^Smoke^^** keyword, and you can target it with the Smokescreen Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "145f5be0036d499b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem. If this unit, is within range of one or more objective markers, hits are scored on unmodified Hit rolls of 4+ instead.",
+      "target": null
+    },
+    {
+      "id": "49cc70df2c0f3ab1",
+      "kind": "characteristic:Description",
+      "occurrences": 4,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Space Marines",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1 to the Objective Control characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "10a641508a1ee40d",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Astra Militarum - Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[HEAVY]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the **[HEAVY]** ability.",
+      "target": null
+    },
+    {
+      "id": "cc5d36a2ddc505f3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time a melee attack made by a model in this unit is allocated to a **^^Monster^^** or **^^Vehicle^^** model, add 1 to the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "d21421b359bc5613",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 8\""
+        ]
+      },
+      "source": "Models in this unit have the Scouts 8\" ability.",
+      "target": null
+    },
+    {
+      "id": "3b962e189ef91e2b",
+      "kind": "characteristic:Description",
+      "occurrences": 6,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Chaos - Chaos Daemons Library",
+        "Chaos - World Eaters"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "d5e6740690922f8a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[TORRENT]"
+        ],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Add 6\" to the Range characteristic of ranged weapons equipped by models in this unit. For each of those weapons with the **[TORRENT]**, add 3\" to the Range characteristic of that weapon instead.",
+      "target": null
+    },
+    {
+      "id": "b5a06ebb1358f3a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets this unit, if the Strength characteristic of that attack is greater than this unit's Toughness characteristic, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "abc9ae2bd07cbf63",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets an enemy unit within half range, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "10541c6b85121565",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a melee attack targets this unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "ce650638044ee9ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Autarch"
+        ]
+      },
+      "source": "**^^Autarch^^** model only. Each time a ranged attack targets the bearer's unit, subtract 1 from the Hit roll and subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "ee7cffd2dd9453f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Twisted Phantasm (Aura)"
+        ]
+      },
+      "source": "**^^Harlequins^^** model only. The bearer has the Twisted Phantasm (Aura) ability.",
+      "target": null
+    },
+    {
+      "id": "9f298c6d2e9cea78",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, each time your opponent targets that unit with a Stratagem, increase the cost of that usage of that Stratagem to 1CP.",
+      "target": null
+    },
+    {
+      "id": "aedcc647d16da1cd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Harlequins^^** model only. The bearer's unit is eligible to declare a charge in a turn in which it Advanced or Fell Back. In addition, add 2 to Advance and Charge rolls made for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "a35e68d2333b98e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-BEASTS 3+]",
+          "[ANTI-INFANTRY 3+]",
+          "[ANTI-MOUNTED 3+]",
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "**^^Asuryani^^** model only. The bearer's melee weapons have the **[ANTI-BEASTS 3+]]**, **[ANTI-INFANTRY 3+]]**, **[ANTI-MOUNTED 3+]]** and **[DEVASTATING WOUNDS]]** abilities. In addition, at the end of the Fight phase, if the bearer destroyed one or more enemy models that phase (excluding **^^Vehicles^^**), the bearer regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "55f35c7ec34a6792",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Harlequins^^** model only. Each time the bearer is selected to fight, after resolving those attacks, each enemy unit within 6\" of the bearer's unit must take a Battle-shock test, subtracting 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "36f7662eca173a33",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aeldari"
+        ]
+      },
+      "source": "**^^Aeldari^^** model only. At the end of your Movement phase, select one enemy unit within 18\" of and visible to the bearer. Until the end of your next Movement phase, each time a friendly **^^Aeldari^^** model makes an attack that targets that unit, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "47ff65779264d704",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Autarch",
+          "Battle Focus"
+        ]
+      },
+      "source": "**^^Autarch^^** model only. At the start of the battle round, if the bearer is on the battlefield, you gain 1 additional Battle Focus token.",
+      "target": null
+    },
+    {
+      "id": "5cd84b6af17fe85f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**AELDARI PSYKER** model only. At the start of your Shooting phase, select one **visible** friendly **AELDARI VEHICLE** unit within 6\" of this model. That **VEHICLE** unit’s ranged attacks have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "600c8e159ce05529",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "**AELDARI PSYKER** model only.\n- While this model is within 3\" of a friendly **AELDARI VEHICLE** unit, this model has **Lone Operative**.\n- In your Movement phase, at the start or end of this unit’s move, you can select one friendly **AELDARI VEHICLE** model within 3\" of this model. That **VEHICLE** model **heals** D3 wounds.",
+      "target": null
+    },
+    {
+      "id": "349d04ea9c7e9c6e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Autarch",
+          "Autarch Wayleaper"
+        ]
+      },
+      "source": "**^^Autarch^^** or **^^Autarch Wayleaper^^** model only. Add 1 to the Damage characteristics of melee weapons equipped by the bearer, and those weapons have the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "177bc4a6b850f297",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Autarch",
+          "Autarch Wayleaper",
+          "Path of the Warrior",
+          "Detachment"
+        ]
+      },
+      "source": "^^**Autarch^^** or ^^**Autarch Wayleaper^^** model only. While the bearer is leading an ^^**Aspect Warriors^^** unit, each time that unit is selected to shoot or fight, until the end of the phase, models in that unit gain both of the abilities from the Path of the Warrior Detachment rule.",
+      "target": null
+    },
+    {
+      "id": "f398d7827dbeb8c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Autarch",
+          "Autarch Wayleaper"
+        ]
+      },
+      "source": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, each time a ranged attack targets that unit, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "ebeabb17ccc3cb49",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Autarch",
+          "Autarch Wayleaper"
+        ]
+      },
+      "source": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, add 1 to the Objective Control characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "7d9808454c4c4c4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Devastating Wounds]"
+        ],
+        "names": [
+          "Farseer",
+          "Eldritch Storm",
+          "Devastating Wounds"
+        ]
+      },
+      "source": "Farseer model only. The bearer's Eldritch Storm weapon has the [Devastating Wounds] ability.",
+      "target": null
+    },
+    {
+      "id": "aee71d66aed10e89",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlock"
+        ]
+      },
+      "source": "Warlock model only. In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "d3dec5ca8be00b32",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon"
+        ]
+      },
+      "source": "**^^Archon^^** model only. Add 2 to the Attacks characteristic of the bearer's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "dc03a914e0e3a423",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Succubus"
+        ]
+      },
+      "source": "Succubus model only. Each time the bearer makes a melee attack, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "4d64450f7285d114",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Troupe Master",
+          "Range"
+        ]
+      },
+      "source": "Troupe Master model only. Each time the bearer's unit ends a Charge move, select one enemy unit within Engagement Range of the bearer's unit, then roll one D6 for each model in the bearer's unit that is within Engagment Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
+      "target": null
+    },
+    {
+      "id": "b33d04f1b55a2970",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Harlequins model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer's unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
+      "target": null
+    },
+    {
+      "id": "73687aa0396b2d22",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Jester"
+        ]
+      },
+      "source": "Death Jester model only. Each time the bearer makes an attack that targets a unit that is below Half-strength, each successful Hit scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "efbcfdf49019072c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadowseer",
+          "Infiltrators"
+        ]
+      },
+      "source": "Shadowseer model only. While the bearer is leading a unit, models in that unit have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "ef71141b7bef3e37",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Asuryani model only. The bearer has an Objective Control characteristic of 5.",
+      "target": null
+    },
+    {
+      "id": "af07f64b26dc33db",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guardians",
+          "Infiltrators"
+        ]
+      },
+      "source": "Asuryani model only. In the Deploy Armies step, select up to two Guardians units from your army. Models in the selected units have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "fcb29264deb589ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dire Avengers",
+          "Guardians"
+        ]
+      },
+      "source": "Asuryani model only. While the bearer is leading a Dire Avengers or Guardians unit, once per battle round, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP, and while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if the bearer's unit is within range of an objective marker you control.",
+      "target": null
+    },
+    {
+      "id": "41571cb671f3d1e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ASURYANI** model only. While the bearer is leading a **STORM GUARDIANS** unit, each time you roll to determine the number of attacks made with a flamer equipped by a model in that unit, you can re‑roll the result, and each time you make a Damage roll for a model equipped with a fusion gun in that unit, you can re‑roll the result.",
+      "target": null
+    },
+    {
+      "id": "038b48e9a7076c58",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Haemonculus",
+          "Psyker"
+        ]
+      },
+      "source": "**^^Haemonculus^^** model only. Once per battle, in your Shooting phase, the bearer can use this Enhancement. If it does, you can spend 1 Pain token. Then, each enemy unit within 12\" of the bearer must take a Battle-shock test, subtracting 1 from that test if you spent 1 Pain token. Each time a **^^Psyker^^** unit fails that test, it suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "065bea82de396276",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Succubus"
+        ]
+      },
+      "source": "**^^Succubus^^** model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer's unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
+      "target": null
+    },
+    {
+      "id": "72d222cc34ed578a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon",
+          "Roll"
+        ]
+      },
+      "source": "**^^Archon^^** model only. At the start of your Command phase, if the bearer is on the battlefield, you can do one of the following:\nSpend 1 Pain token and gain 1CP.\nRoll one D6: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "9fbd28b887126dae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Drukhari^^** model only. The bearer's unit is always Empowered - you do not need to spend any Pain tokens to activate that unit's Pain abilities",
+      "target": null
+    },
+    {
+      "id": "5735622b250aafc8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dedicated Transport",
+          "Transport",
+          "Scouts 9\""
+        ]
+      },
+      "source": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a ^^**Dedicated Transport**^^, that ^^**Dedicated Transport**^^ has the Scouts 9\" ability.",
+      "target": null
+    },
+    {
+      "id": "2be9c3b7bd75e834",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. Models in the bearer’s unit have the Deep Strike ability. Each time the bearer’s unit is set up on the battlefield using the Deep Strike ability, if that unit is currently losing the wager, until the end of the turn, you can re‑roll Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "249f023025d0776b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth",
+          "Infiltrators"
+        ]
+      },
+      "source": "^^**Harlequins**^^ model only. Models in the bearer’s unit have the Stealth and Infiltrators abilities.",
+      "target": null
+    },
+    {
+      "id": "1fac5d94e2cb9e70",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "^^**Drukhari**^^ model only. In your Command phase, you can do one of the following:\n■ If your ^^**Drukhari**^^ units are currently losing the wager, you can gain 1 Pain token. If you do, ^^**Drukhari**^^ units from your army are now winning the wager.\n■ If your ^^**Drukhari**^^ units are currently winning the wager, you can discard 1 Pain token. If you do, ^^**Harlequins**^^ units from your army are now winning the wager.",
+      "target": null
+    },
+    {
+      "id": "4063a70bed62d9c2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "Asuryani Psyker model only. In your Command phase, you can add 1 to or subtract 1 from the value of one Fate dice in your Fate dice pool.",
+      "target": null
+    },
+    {
+      "id": "18408f22c14f1d92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Psyker",
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "**^^Asuryani Psyker^^** model only. Models in the bearer's unit have the Feel No Pain 4+ ability against mortal wounds, Psychic Attacks and Critical Wounds caused by attacks with the **[DEVASTATING WOUNDS]** ability.",
+      "target": null
+    },
+    {
+      "id": "fd1be6f34f6056d0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Range",
+          "Psychic"
+        ]
+      },
+      "source": "Asuryani Psyker model only. Add 12\" to the Range characteristic of ranged Psychic weapons equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "b27c9584f6959708",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "Asuryani Psyker model only. Once per turn, when your opponent targets a unit from their army within 12\" of the bearer with a Stratagem, the bearer can use this Enhancement. If it does, increase the CP cost of that usage of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "70ce6b2550e3c6fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Stealth",
+          "Cover"
+        ]
+      },
+      "source": "^^**Drukhari**^^ model only. While the bearer’s unit is wholly within 6\" of a friendly ^^**Drukhari Transport**^^:\nModels in the bearer’s unit have the  Stealth ability\nEach time a ranged attack targets the bearer's unit, models in that unit have the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "3762ad24ce592304",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "^^**Drukhari**^^ model only. Each time you spend 1 Pain token to Empower the bearer’s unit in the Shooting phase, select one friendly ^^**Drukhari Transport**^^ within 6\" of the bearer’s unit; until the end of the phase, each time that ^^**Transport**^^ makes an attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "f9483f15dd70603b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "^^**Drukhari**^^ model only. Each time the bearer’s unit destroys an enemy unit in the Fight phase, if that enemy unit was within range of one or more objective markers when the bearer’s unit was selected to fight, you gain 1 additional Pain token.",
+      "target": null
+    },
+    {
+      "id": "0b1f1ae6a41f406f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "^^**Drukhari**^^ model only. Each time the bearer’s unit disembarks from a ^^**Transport**^^, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "59d6fe1a29b7f112",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Spiritseer",
+          "Wraith Construct",
+          "Monster"
+        ]
+      },
+      "source": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, add 1 to the Objective Control characteristic of Infanty models in that unit and add 3 to the Objective Control characteristic of Monster models in that unit.",
+      "target": null
+    },
+    {
+      "id": "522a5baeaf3b5c91",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Precision]"
+        ],
+        "names": [
+          "Spiritseer",
+          "Wraith Construct",
+          "Titanic",
+          "Precision"
+        ]
+      },
+      "source": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer (excluding Titanic units). Until the start of your next Command phase, each time a model in that unit makes an attack, on a Critical Wound, that attack has the [Precision] ability.",
+      "target": null
+    },
+    {
+      "id": "435b3d3ea72974c2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Spiritseer",
+          "Wraith Construct",
+          "Cover"
+        ]
+      },
+      "source": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, each time a ranged attack targets that unit, unless the attacking model is within 18, models in that unit have the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "752abf0c79215d6b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "**SPIRITSEER** model only. In your opponent's Movement phase, if an enemy unit ends a move within 8\" of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to 6\".",
+      "target": null
+    },
+    {
+      "id": "08fe7918d15756e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker",
+          "Psychic"
+        ]
+      },
+      "source": "^^Asuryani^^ ^^Psyker^^ model only. Add 1 to the Damage characteristic of ranged Psychic weapons equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "db9d98d90f06d295",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "^^Asuryani^^ model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one of more enemy units, with its full wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "3c0974d9c2c5839f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "^^Asuryani^^ model only. Once per battle round, you can target the bearer's unit with the Command Re-roll Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "875cda15687d95b0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Battle Focus"
+        ]
+      },
+      "source": "^^Asuryani^^ model only. At the start of the battle round, if the bearer is on the battlefield (or any Transport it is embarked within is on the battlefield), you receive 1 additional Battle Focus token.",
+      "target": null
+    },
+    {
+      "id": "14d7521f5b70f7eb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mounted",
+          "Scouts 9\""
+        ]
+      },
+      "source": "**^^Asuryani Mounted^^** model only. Models in the bearer's unit have the Scouts 9\" ability.",
+      "target": null
+    },
+    {
+      "id": "a2ec33874a320df4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mounted"
+        ]
+      },
+      "source": "Asuryani Mounted model only. Each time an attack targets the bearer's unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "727106048c1e48a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Anti-Monster 2+]",
+          "[Anti-Vehicle 2+]"
+        ],
+        "names": [
+          "Mounted",
+          "Psyker",
+          "Psychic",
+          "Anti",
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Asuryani Mounted Psyker model only. Psychic weapons equipped by the bearer have the [Anti-Monster 2+] and [Anti-Vehicle 2+] abilities.",
+      "target": null
+    },
+    {
+      "id": "362aa30f5db9e7cd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Mounted"
+        ]
+      },
+      "source": "Asuryani Mounted model only. In your Command phase, roll one D6, adding 1 to the result if the bearer is not within your deployment zone, and adding an additional 1 to the result if the bearer is within your opponent's deployment zone: on a 5+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "63af1e1788a4c799",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Haemonculus",
+          "Bodyguard"
+        ]
+      },
+      "source": "^^**Haemonculus**^^ model only. Each time the bearer uses its Fleshcraft ability, you can return up to D3+3 destroyed Bodyguard models to the bearer's unit instead of D3+1.",
+      "target": null
+    },
+    {
+      "id": "4b41b98210ad31d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[Anti-Beast 2+]",
+          "[Anti-Monster 4+]"
+        ],
+        "names": [
+          "Haemonculus",
+          "Anti",
+          "Beast",
+          "Monster"
+        ]
+      },
+      "source": "^^**Haemonculus**^^ model only. The bearer's weapons have the ^^**[Anti-Beast 2+]**^^ and ^^**[Anti-Monster 4+]**^^ abilities.",
+      "target": null
+    },
+    {
+      "id": "28a703c67a8f0418",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Haemonculus"
+        ]
+      },
+      "source": "^^**Haemonculus**^^ model only. Add 1 to the bearer's Wounds characteristic and add 1 to the Toughness characteristic of models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "2dbd582a9ca2b1ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Haemonculus"
+        ]
+      },
+      "source": "^^**Haemonculus**^^ model only. Add 3\" to the range of the bearer's Fear Incarnate ability, and each time a friendly ^^**Drukhari**^^ within 9\" of the bearer fails a Battle-shock test or is destroyed, roll one D6; on a 4+, you gain 1 Pain token.",
+      "target": null
+    },
+    {
+      "id": "049c1f5c8b7adec8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon"
+        ]
+      },
+      "source": "^^**Archon**^^ model only. The bearer has a Save characteristic of 3+. At the start of either player's Command phase, you can spend 1 Pain token; if you do, the bearer regains all of its lost wounds.",
+      "target": null
+    },
+    {
+      "id": "fd1b4fe448f848ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon",
+          "Deep Strike"
+        ]
+      },
+      "source": "^^**Archon**^^ model only. Models in the bearer's unit have the Deep Strike ability, and you can target the bearer's unit with the Rapid Ingress Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "16c0090a5e395358",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon",
+          "Kabalite Warriors",
+          "Hand of the Archon",
+          "Infiltrators"
+        ]
+      },
+      "source": "^^**Archon**^^ model only. At the start of the Declare Battle Formations step, select up to three ^^**Kabalite Warriors**^^ and/or ^^**Hand of the Archon**^^ units from your army; those units gain the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "c369774afed8de22",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon"
+        ]
+      },
+      "source": "^^**Archon**^^ models only. While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "3b97ee82f7c2b5e8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Succubus",
+          "Combat Drugs"
+        ]
+      },
+      "source": "^^**Succubus**^^ model only. At the start of your Command phase, after selecting which Combat Drugs will be active for your army, roll one D6 and consult the Combat Drugs list. The result rolled applies to the bearer's unit until the start of your next Command phase in addition to any other Combat Drugs that are active for your army. If you randomly select one that is already active for your army, it has no additional effect.",
+      "target": null
+    },
+    {
+      "id": "bb072486698abed3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Succubus",
+          "Fights First"
+        ]
+      },
+      "source": "^^** Succubus**^^ model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "0b40dca33eedbaff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Succubus"
+        ]
+      },
+      "source": "^^**Succubus**^^ model only. Enemy units cannot use the Fire Overwatch stratagem to shoot at the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "ef93d4041de3d500",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Succubus"
+        ]
+      },
+      "source": "^^**Succubus**^^ model only. Improve the Armour Penetration and Damage characteristics of the bearer's melee weapons by 1.",
+      "target": null
+    },
+    {
+      "id": "0ed41f13f62666c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Solitaire",
+          "Scouts 6\""
+        ]
+      },
+      "source": "^^**Harlequins**^^ model only (excluding ^^**Solitaire**^^ models). Models in the bearer’s unit have the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "2db2e6f56c5331db",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Death Jester",
+          "Cruel Amusement"
+        ]
+      },
+      "source": "^^**Death Jester**^^ model only. When using the bearer’s Cruel Amusement ability, you can select two of the abilities for its shrieker cannon to gain, instead of one.",
+      "target": null
+    },
+    {
+      "id": "b71c3dd553afc9dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadowseer"
+        ]
+      },
+      "source": "^^**Shadowseer**^^ model only. After both players have deployed their armies, select up to three Harlequins units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "74a416b0c722b345",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Troupe Master"
+        ]
+      },
+      "source": "^^**Troupe Master**^^ model only. Add 3 to the Strength and add 1 to the Attacks characteristics of the bearer’s melee weapons.",
+      "target": null
+    },
+    {
+      "id": "58db799808cad50e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Prince Yriel",
+          "Battle Focus",
+          "Agile"
+        ]
+      },
+      "source": "^^**Prince Yriel**^^ unit only. Each time you spend a Battle Focus token to enable this unit to perform an Agile Manoeuvre, roll one D6: on a 3+, you gain 1 Battle Focus token.",
+      "target": null
+    },
+    {
+      "id": "9b7731617270da57",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LANCE]"
+        ],
+        "names": [
+          "Anhrathe",
+          "Melee weapons"
+        ]
+      },
+      "source": "^^**Anhrathe**^^ unit only. Melee weapons equipped by models in this unit have the ^^**[LANCE]**^^ ability.",
+      "target": null
+    },
+    {
+      "id": "a0f3dc7ca7d743ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI‑MONSTER 5+]",
+          "[ANTI‑VEHICLE 5+]"
+        ],
+        "names": [
+          "Anhrathe",
+          "Ranged weapons"
+        ]
+      },
+      "source": "^^**Anhrathe**^^ unit only. Ranged weapons equipped by models in this unit have the ^^**[ANTI‑MONSTER 5+]**^^ and ^^**[ANTI‑VEHICLE 5+]**^^ abilities.",
+      "target": null
+    },
+    {
+      "id": "1e4c85e7ebb2601b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Anhrathe",
+          "Infantry",
+          "Fade Back",
+          "Agile",
+          "Battle Focus"
+        ]
+      },
+      "source": "^^**Anhrathe Infantry**^^ unit only. This unit can perform the Fade Back Agile Manoeuvre without spending a Battle Focus token to do so. It can do so even if other units have done so in the same phase, and doing so does not prevent other units from performing the same Agile Manoeuvre in the same phase.",
+      "target": null
+    },
+    {
+      "id": "234dc1a7638db9be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Anhrathe"
+        ]
+      },
+      "source": "^^**Anhrathe**^^ unit only. While an enemy unit is within 3” of this unit, subtract 1 from the Objective Control characteristic of models in that unit (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "688643b01e36f92d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Anhrathe",
+          "Deep Strike",
+          "Range"
+        ]
+      },
+      "source": "^^**Anhrathe**^^ unit only. Models in this unit have the Deep Strike ability. In addition, once per battle, at the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, it can use this ability. If it does, remove this unit from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "5ac4c9a88750df59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Anhrathe",
+          "Character",
+          "Lord of Deceit (Aura)"
+        ]
+      },
+      "source": "^^**Anhrathe Character**^^ unit only. At the start of the battle, select one ^^**Character**^^ model in this unit. That model has the following ability: \n\n**Lord of Deceit (Aura):** Once per turn, when your opponent targets a unit from their army within 12\" of this model with a stratagem, you can use this ability. If you do, increase the CP cost of that use of that stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "1ee2aa4dea7f56da",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Anhrathe",
+          "Infantry"
+        ]
+      },
+      "source": "^^**Anhrathe Infantry**^^ unit only. Models in this unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "bc37ac492d498d62",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**TROUPE MASTER** model only. This unit can re‑roll charge rolls.",
+      "target": null
+    },
+    {
+      "id": "83d77dbc36eae456",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "**SHADOWSEER** model only. This unit has **Infiltrators**.",
+      "target": null
+    },
+    {
+      "id": "499a0bb6842eddbb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 6\""
+        ]
+      },
+      "source": "**HARLEQUINS** model only. This unit has **Scouts 6\"**.",
+      "target": null
+    },
+    {
+      "id": "44e38948ace95e8a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**SUCCUBUS** model only. This unit has +1 **T**.",
+      "target": null
+    },
+    {
+      "id": "bd9a4b9ef80f2e94",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**SUCCUBUS** model only. Enemy units cannot target this unit with **snap shooting** attacks.",
+      "target": null
+    },
+    {
+      "id": "065df5559409533a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ARCHON** model only. This unit has:\n- +1 **Ld** and **OC**.",
+      "target": null
+    },
+    {
+      "id": "6ae4366ca24892a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": []
+      },
+      "source": "**ARCHON** model only. This unit’s attacks have **[PRECISION]**.",
+      "target": null
+    },
+    {
+      "id": "6ca5f00ff958ad1d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**HAEMONCULUS** model only. Attacks that target this unit with a **S** greater than your unit’s **T** have ‑1 to **wound rolls**.",
+      "target": null
+    },
+    {
+      "id": "2659933cf0d04d92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "You can re-roll Advance rolls made for this unit and, in your Movement phase, each time a model in it moves, it can move through enemy models (excluding **^^Monsters^^** and **^^Vehicles^^**). When doing so, it can move within Engagement Range of such models but cannot end that move within Engagement Range of them and any Desperate Escape test is automatically passed.",
+      "target": null
+    },
+    {
+      "id": "a775ae0d893cf3a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per turn, at the end of your Movement phase, one unit from your Crusade army with this ability can use it. If it does, roll one D6: on a 1, that unit suffers D3 mortal wounds; on a 2+, remove that unit from the battlefield and set it up again anywhere on the battlefield that is more than 9\" horizontally away from all enemy units. Each unit can only use this ability once per battle.",
+      "target": null
+    },
+    {
+      "id": "a5c1bf5baad12d48",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI-MONSTER 3+]",
+          "[ANTI-VEHICLE 3+]"
+        ],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Psychic weapons equipped by models in this unit unit have the **[ANTI-MONSTER 3+]** and **[ANTI-VEHICLE 3+]** abilities.",
+      "target": null
+    },
+    {
+      "id": "0f92ae6a3c45fbbd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by models in this unit have the **[PRECISION]** ability.",
+      "target": null
+    },
+    {
+      "id": "e8434ec929bfa180",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "Each time an enemy unit within Engagement Range of this unit is selected to Fall Back, roll one D6, subtracting 2 if that unit is a **^^Monster^^** or **^^Vehicle^^**: on a 2+, that unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "21d0559b45b21dcd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack targets this unit, if this unit is within range or one or more objective markers, models in this unit have the Benefit of Cover against this attack.",
+      "target": null
+    },
+    {
+      "id": "865af7c329ffb678",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Genestealer Cults",
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a melee attack targets this unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "dd0fdab1d00adea0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "19df64d8b965b85b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "9e1ccf0e700a5428",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts",
+          "Crusade",
+          "Aeldari",
+          "Infantry",
+          "Scouts 6\""
+        ]
+      },
+      "source": "At the start of the first battle round, before any moves are made using the Scouts ability, one unit from your Crusade army with this ability can use it. If it does, you can select up to two friendly **^^Aeldari Infantry^^** units within 6\" of that unit that do not have the Scouts ability. Until the end of the battle, all models in the selected units have the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "8562013b0d1820a0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, if this unit is within range of one or more objective markers you control and it is not Battle-shocked, roll one D6: on a 3+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "16e8ae3914c34a43",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Aeldari"
+        ]
+      },
+      "source": "After both players have deployed their armies, one unit from your Crusade army with this ability can use it. If it does, select up to two **^^Aeldari^^** units from your Crusade army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "f6439454c39d5a84",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Mounted",
+          "Crusade",
+          "Scouts 6\""
+        ]
+      },
+      "source": "In the Declare Battle Formations step, you can select one **^^Drukhari Vehicle^^** or **^^Drukhari Mounted^^** unit from your Crusade army. Until the end of the battle, that unit has the Scouts 6\" ability.",
+      "target": null
+    },
+    {
+      "id": "d54e5f7fc3276666",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Epic Hero",
+          "Weapon"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, select one **^^Drukhari^^** unit from your Crusade army (you cannot select an **^^Epic Hero^^** or a unit that has the Weapon Modification Battle Honour). Until the end of the battle, one weapon equipped by one model in that unit has the Weapon Modification Battle Honour.",
+      "target": null
+    },
+    {
+      "id": "2153e85320ae0be9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Ascendant Lord",
+          "Lord"
+        ]
+      },
+      "source": "While your **^^Ascendant Lord^^** is leading a unit, weapons equipped by models in that unit have the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "60b6130ea4cba361",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "In the Update Crusade Cards step, if a **^^Drukhari^^** unit from your Crusade army would gain XP from Dealers of Death, it gains 1 additional XP.",
+      "target": null
+    },
+    {
+      "id": "99564c03733086ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Scourges"
+        ]
+      },
+      "source": "In the Update Crusade Cards step, if a **^^Scourges^^** unit from your Crusade army would gain XP from Battle Experience, it gains 1 additional XP.",
+      "target": null
+    },
+    {
+      "id": "21e23ccdc84fae9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ascendant Lord",
+          "Lord",
+          "Incubi",
+          "Archon",
+          "Feel No Pain 5+",
+          "Bodyguard"
+        ]
+      },
+      "source": "In the Declare Battle Formations step, your **^^Ascendant Lord^^** can be attached to an **^^Incubi^^** unit (if your **^^Ascendant Lord^^** is an **^^Archon^^**, while it is leading an **^^Incubi^^** unit, your **^^Ascendant Lord^^** has the Feel No Pain 5+ ability). If your **^^Ascendant Lord^^** is attached to an **^^Incubi^^** unit, at the end of the battle, unless all of those Bodyguard models have been destroyed, you can re-roll all Leadership tests required as the result of Assassination Attempts during that battle's Rival Activities.",
+      "target": null
+    },
+    {
+      "id": "4c2cb4d98d452d30",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each battle, in the Update Crusade Cards step, roll one D6, adding 1 to the result if you were the victor: on a 4+, you gain 1 additional RP.",
+      "target": null
+    },
+    {
+      "id": "3879a582fe82cb2a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the Select Crusade Blessings step, roll one D6, adding 2 to the result if you are the Underdog: on a 6+, you can use one additional Crusade Blessing this battle (even if you are not the Underdog).",
+      "target": null
+    },
+    {
+      "id": "566d37ad5aa4cb56",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Monster",
+          "Crusade"
+        ]
+      },
+      "source": "Once at the end of each battle, you can re-roll one Out of Action test taken for one **^^Drukhari Infantry^^** or **^^Drukhari Monster^^** unit from your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "154dc10f94db3a6a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rival Lord",
+          "Lord"
+        ]
+      },
+      "source": "Each time a Rival Lord makes an Activity roll, you can subtract 1 from the result.",
+      "target": null
+    },
+    {
+      "id": "679ef95a085ec166",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Select Agendas step, roll one D6: on a 4+, you can select one additional Drukhari Agenda to use in that battle.",
+      "target": null
+    },
+    {
+      "id": "4626275f3e5bfe27",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ascendant Lord",
+          "Lord",
+          "Crusade",
+          "Supply Limit"
+        ]
+      },
+      "source": "Each time your **^^Ascendant Lord^^** attempts a Hostile Takeover, add 1 to its D6 result and, if that **^^Ascendant Lord^^** claims a territory as a result, increase your Crusade force's Supply Limit by 50 points.",
+      "target": null
+    },
+    {
+      "id": "e1655bc4e3be1ebe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rival Lord",
+          "Lord",
+          "Power"
+        ]
+      },
+      "source": "This Rival Lord's Power is 1 greater than the number of districts they control.",
+      "target": null
+    },
+    {
+      "id": "2c76700336d017a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rival Lord",
+          "Lord"
+        ]
+      },
+      "source": "Each time you roll an Ominous Plotting result for this Rival Lord on the Rival Activity table, treat that result as Districts Raided instead.",
+      "target": null
+    },
+    {
+      "id": "571d7deb56e560e2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rival Lord",
+          "Lord"
+        ]
+      },
+      "source": "Generate one additional starting territory for this Rival Lord.",
+      "target": null
+    },
+    {
+      "id": "d1b547b478dabba0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ascendant Lord",
+          "Lord",
+          "Rival Lord"
+        ]
+      },
+      "source": "At the end of the battle, if your **^^Ascendant Lord^^** fails an Out of Action test, roll one additional time on the Rival Activity table for this Rival Lord.",
+      "target": null
+    },
+    {
+      "id": "c8737fd8906fc5e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rival Lord",
+          "Lord"
+        ]
+      },
+      "source": "Each time you roll an Ominous Plotting result for this Rival Lord on the Rival Activity table, treat that result as Assassination Attempt instead.",
+      "target": null
+    },
+    {
+      "id": "361658f3507bb8c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rival Lord",
+          "Lord"
+        ]
+      },
+      "source": "Each time you roll an Ominous Plotting result for this Rival Lord on the Rival Activity table, treat that result as Under New Management instead.",
+      "target": null
+    },
+    {
+      "id": "6c686494021fbb14",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Haemonculus",
+          "Range"
+        ]
+      },
+      "source": "**^^Haemonculus^^** model only.\n- The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.\n- You can re-roll Out of Action tests taken for the bearer, but you cannot target the bearer's unit with the Postmortality Stratagem.",
+      "target": null
+    },
+    {
+      "id": "0f318be41b0676cb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Archon"
+        ]
+      },
+      "source": "**^^Archon^^** model only. The bearer has a Save characteristic of 3+ and each time a melee attack targets the bearer's unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "96839966eeb18dec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[TWIN-LINKED]"
+        ],
+        "names": [
+          "Succubus"
+        ]
+      },
+      "source": "**^^Succubus^^** model only. The bearer's melee weapons have the **[TWIN-LINKED]** ability and add 1 to the Damage characteristic of those weapons.",
+      "target": null
+    },
+    {
+      "id": "5229d3bb57935f3b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade Relic",
+          "Archon"
+        ]
+      },
+      "source": "- The bearer has a 4+ invulnerable save. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.\n- Once per battle, in your opponent's Shooting phase or the Fight phase, just after an enemy unit has shot or fought, if the bearer's unit was the target of one or more of those attacks, the bearer can use this Crusade Relic. If it does, remove the bearer's unit from the battlefield and set it back up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units.\n\n**Designer's Note:** *If an **^^Archon^^** has this Crusade Relic, it will have a 4+ invulnerable save after the first time you fail an invulnerable saving throw for it.*",
+      "target": null
+    },
+    {
+      "id": "76a867f5be7d5581",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of the bearer.",
+      "target": null
+    },
+    {
+      "id": "73346b6ee20b3981",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Psychic"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "251975f8f98ae731",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[RAPID FIRE 1]",
+          "[ASSAULT]"
+        ],
+        "names": [
+          "Assault"
+        ]
+      },
+      "source": "Assault weapons equipped by models in this unit have the **[RAPID FIRE 1]** ability. All other ranged weapons equipped by models in this unit have the **[ASSAULT]** ability.",
+      "target": null
+    },
+    {
+      "id": "edfb99285bc668ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kabalite Warriors",
+          "Hand of the Archon",
+          "Archon"
+        ]
+      },
+      "source": "**^^Kabalite Warriors^^** or **^^Hand of the Archon^^** unit only. Improve the Leadership characteristic of models in this unit by 1 and improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "3641d54fc498ee36",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Weapon"
+        ]
+      },
+      "source": "**^^Wychs^^** unit only. Improve the Leadership characteristic of models in this unit by 1 and improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "9726aae584e6a36d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wracks"
+        ]
+      },
+      "source": "**^^Wracks^^** unit only. Improve the Leadership and Save characteristics of models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "b16b8a729c1898a1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this unit, each time that enemy unit fails a Battle-shock test, it suffers D3 mortal wounds (a unit cannot suffer more than 3 mortal wounds per turn as a result of this Battle Trait).",
+      "target": null
+    },
+    {
+      "id": "208c95968b013aed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[HAZARDOUS]"
+        ],
+        "names": []
+      },
+      "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, ranged weapons equipped by models in this unit have the **[HAZARDOUS]** ability and each time an attack is made with such a weapon, add 1 to the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "ae722b277a6837d3",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Imperium - Adepta Sororitas"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack with an unmodified Damage characteristic of 1 is allocated to a model in this unit, add 1 to any armour saving throw made against that attack.",
+      "target": null
+    },
+    {
+      "id": "8a71a292107d5f61",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, after you spend 1 Pain token to Empower this unit, you can this Battle Trait. If you do, you gain 1 Pain token.",
+      "target": null
+    },
+    {
+      "id": "e0d394024e4a51b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, ranged weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "742ed7a23866527b",
+      "kind": "characteristic:Description",
+      "occurrences": 6,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Chaos - World Eaters",
+        "Imperium - Adeptus Custodes"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "31c7e0ca29f88049",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 1\" to the Move characteristic of models in this unit. Add 1 to the Advance and Charge rolls made for this unit.",
+      "target": null
+    },
+    {
+      "id": "5aed3dcb2ddd9976",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase or the Fight phase, when you select this unit to shoot or fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "05b9454ad25bea84",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After both players have deployed their armies, you can redeploy this unit. When doing so, you can set this unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "4db11a90db0456d5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
+      "target": null
+    },
+    {
+      "id": "e03f11ec25fef2b8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": []
+      },
+      "source": "In your Shooting phase, when you select this unit to shoot, you can spend 1 Pain token to Empower this unit. While Empowered, ranged weapons equipped by models in this unit have the **[IGNORES COVER]** ability.",
+      "target": null
+    },
+    {
+      "id": "b0fc43fd99385c7b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\".",
+      "target": null
+    },
+    {
+      "id": "1947f08e4a4b6320",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "In the Fight phase, when you select this unit to fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes a melee attack that targets an **^^Infantry^^** unit, that attack has the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "d0ba3fe6e3b86006",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly",
+          "Mounted"
+        ]
+      },
+      "source": "(^^**ARCHTORMENTOR**^^ only): Change this model’s Move characteristic to 16\", its Toughness characteristic to 4, and its Wounds characteristic to 5. Add the **^^Fly^^** and **^^Mounted^^** keywords, and replace the list of units this model can be attached to: ^^**REAVERS**^^.",
+      "target": null
+    },
+    {
+      "id": "c20f71207a01888d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reavers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n■ Reavers",
+      "target": null
+    },
+    {
+      "id": "0350c9b999c11353",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Wych Cult",
+          "Kabal"
+        ]
+      },
+      "source": "(^^**ARCHTORMENTOR**^^ only): Change this model’s Move characteristic to 7\", and its Leadership characteristic to 6+. Remove the **^^Wych Cult^^** keyword, add the **^^Kabal^^** keyword, and replace the list of units this model can be attached to: ^^**HAND OF THE ARCHON, INCUBI, KABALITE WARRIORS**^^.",
+      "target": null
+    },
+    {
+      "id": "bb151eb422b45baf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly",
+          "Jump Pack",
+          "Deep Strike"
+        ]
+      },
+      "source": "Change this model’s Move characteristic to 14\", add the **^^Fly^^** and **^^Jump Pack^^** keywords, and it gains the Deep Strike ability. Replace the list of units this model can be attached to: ^^**SCOURGES WITH HEAVY WEAPONS, SCOURGES WITH SHARDCARBINES**^^.",
+      "target": null
+    },
+    {
+      "id": "7fee0d366f0cd517",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scourges with Heavy Weapons",
+          "Heavy Weapons",
+          "Weapons",
+          "Scourges with Shardcarbines"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n■ Scourges with Heavy Weapons\n■ Scourges with Shardcarbines",
+      "target": null
+    },
+    {
+      "id": "8a42e5e7fff7245b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fly",
+          "Mounted",
+          "Deep Strike"
+        ]
+      },
+      "source": "(^^**ARCHTORMENTOR**^^ only): Change this model’s Move characteristic to 14\", its Toughness characteristic to 4, and its Wounds characteristic to 5. Add the **^^Fly^^** and **^^Mounted^^** keywords, it gains the Deep Strike ability, and replace the list of units this model can be attached to: ^^**HELLIONS**^^.",
+      "target": null
+    },
+    {
+      "id": "d4bd82b9ad1e60c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hellions"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n■ Hellions",
+      "target": null
+    },
+    {
+      "id": "145d93bf04c65794",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is always Empowered — you do not need to spend any Pain tokens to activate this unit’s Pain abilities.",
+      "target": null
+    },
+    {
+      "id": "b17b4663d47268bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit disembarks from a ^^**TRANSPORT**^^, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.",
+      "target": null
+    },
+    {
+      "id": "b89c43f7ebfe9832",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Aeldari - Aeldari Library",
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent’s Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "798cde16237fccca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is leading a unit, each time a model in that unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\".",
+      "target": null
+    },
+    {
+      "id": "b11b31a275f04a48",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit is destroyed by this model’s unit, gain 1 Pain Token.",
+      "target": null
+    },
+    {
+      "id": "7709361faee40a7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the ^^**[SUSTAINED HITS 1]**^^ ability.",
+      "target": null
+    },
+    {
+      "id": "e9ecb83c9b4a7dd6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that target is Below Half-strength, you can re-roll the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "5f57417f4ed7c8f7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators",
+          "Stealth",
+          "Rangers"
+        ]
+      },
+      "source": "(^^**INFANTRY**^^ only):\nThis model gains the Infiltrators and Stealth abilities, and replace the list of units this model can be attached to:\n• Rangers",
+      "target": null
+    },
+    {
+      "id": "cf26edf80ce2a283",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rangers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n■ Rangers",
+      "target": null
+    },
+    {
+      "id": "7b7fb56fa3657847",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scouts 7\"",
+          "Corsair Voidreavers",
+          "Corsair Voidscarred",
+          "Voidscarred"
+        ]
+      },
+      "source": "(^^**INFANTRY**^^ only):\nThis model gains the Scouts 7\" ability, adds the ^^**ANHRATHE**^^ keyword, and replace the list of units this model can be attached to:\n• Corsair Voidreavers\n• Corsair Voidscarred",
+      "target": null
+    },
+    {
+      "id": "5a06d465d9d95da4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Corsair Voidreavers",
+          "Corsair Voidscarred",
+          "Voidscarred"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n■ Corsair Voidreavers\n■ Corsair Voidscarred",
+      "target": null
+    },
+    {
+      "id": "06020883d1c7ca2d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Reapers",
+          "Dire Avengers",
+          "Fire Dragons",
+          "Howling Banshees",
+          "Striking Scorpions"
+        ]
+      },
+      "source": "(^^**INFANTRY**^^ only):\nChange this model’s Save characteristic to 3+. Add the following units to the list of units this model can be attached to:\n• Dark Reapers\n• Dire Avengers\n• Fire Dragons\n• Howling Banshees\n• Striking Scorpions",
+      "target": null
+    },
+    {
+      "id": "cb8d0caeddfca19c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guardian Defenders",
+          "Defenders",
+          "Storm Guardian",
+          "Warlock Conclave",
+          "Dark Reapers",
+          "Dire Avengers",
+          "Fire Dragons",
+          "Howling Banshees",
+          "Striking Scorpions"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n■ Guardian Defenders\n■ Storm Guardian\n■ Warlock Conclave\n■ Dark Reapers\n■ Dire Avengers\n■ Fire Dragons\n■ Howling Banshees\n■ Striking Scorpions",
+      "target": null
+    },
+    {
+      "id": "c47bdfbc950c5ea8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The model gains the ^^**PSYKER**^^ keyword.",
+      "target": null
+    },
+    {
+      "id": "d323f2aa707e2300",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shining Spears"
+        ]
+      },
+      "source": "(^^**MOUNTED**^^ only):\nChange this model’s Save characteristic to 3+. Add the following unit to the list of units this model can be attached to:\n• Shining Spears",
+      "target": null
+    },
+    {
+      "id": "a3a9504bb44d7122",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike",
+          "Swooping Hawks",
+          "Warp Spiders"
+        ]
+      },
+      "source": "(^^**INFANTRY**^^ only):\nChange this model’s Move characteristic to 14\", its Save characteristic to 3+, it gains the Deep Strike ability, and add the ^^**FLY**^^ and ^^**JUMP PACK**^^ keywords.\nReplace the list of units this model can be attached to:\n• Swooping Hawks\n• Warp Spiders",
+      "target": null
+    },
+    {
+      "id": "530315167f76f13a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Swooping Hawks",
+          "Warp Spiders"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n■ Swooping Hawks\n■ Warp Spiders",
+      "target": null
+    },
+    {
+      "id": "d25d8c5bc772ca1d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "(^^**PSYKER**^^ only):\nEach time a model in this unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "6f06fbf4216d71f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "(^^**INFANTRY**^^ and ^^**MOUNTED **^^ only):\nThis model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "60ab0a035eae85d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Agile"
+        ]
+      },
+      "source": "You can re-roll Advance rolls made for this model’s unit, and you can re-roll any rolls made for that unit while it is performing an Agile Manoeuvre.",
+      "target": null
+    },
+    {
+      "id": "ecc16e281737f18c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "(^^**PSYKER**^^ only):\nEach time a ranged attack targets this unit, models in that unit have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "dfd41151d6e07429",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**RANGERS** unit only. This unit’s ranged attacks do not prevent this unit from being **hidden**.",
+      "target": null
+    },
+    {
+      "id": "12b663616dcb04b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**RANGERS/SHROUD RUNNERS** unit only. This unit’s ranged attacks that target a **CHARACTER** unit have +1 **AP**.",
+      "target": null
+    },
+    {
+      "id": "fabe212ae6d6ed38",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "**TROUPE** unit only. This unit has **Fights First**.",
+      "target": null
+    },
+    {
+      "id": "98e950bff8b33ebf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Aeldari - Aeldari Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "**CRONOS/TALOS** unit only. This unit has **5+ InSv**.",
+      "target": null
+    },
+    {
+      "id": "089ffb0690908411",
+      "kind": "characteristic:Description",
+      "occurrences": 7,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Chaos - Death Guard",
+        "Chaos - Thousand Sons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "69c04b39e993b448",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-8 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "866d7f7d2d140544",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a Normal or Advance move, it can move over friendly MONSTER and VEHICLE models and terrain features that are 4\" or less in height as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "87de0a1f18f6309c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Slaanesh",
+          "Chaos"
+        ]
+      },
+      "source": "While a friendly ^^Slaanesh Legiones Daemonica^^ unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
+      "target": null
+    },
+    {
+      "id": "db4a101c2697bdca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "NURGLE",
+          "Chaos"
+        ]
+      },
+      "source": "While a friendly NURGLE LEGIONES DAEMONICA unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
+      "target": null
+    },
+    {
+      "id": "0d3d3f1ffef0af9a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "TZEENTCH",
+          "Chaos"
+        ]
+      },
+      "source": "While a friendly TZEENTCH LEGIONES DAEMONICA unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
+      "target": null
+    },
+    {
+      "id": "c813cda3436b976a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Khorne",
+          "Chaos"
+        ]
+      },
+      "source": "While a friendly ^^Khorne Legiones Daemonica^^ unit is within 6\" of this model, that unit is within your army’s Shadow of Chaos.",
+      "target": null
+    },
+    {
+      "id": "2b8430520a8574c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Seductive Gambit",
+          "Fights First"
+        ]
+      },
+      "source": "Each time this unit ends a Charge move, you can declare it will perform a Seductive Gambit. If you do, until the end of the turn, this unit does not have the Fights First ability, but instead, each time a model in this unit makes an attack, you can re‑roll the Hit roll and you can re‑roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "2eafecf9343dbfa6",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit is eligible to shoot and declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "5453432636b81e85",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": " This unit has **Stealth**. Each time a melee attack targets this unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "cfca21e7a41d68b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic, subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "254f1443903cd497",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Chaos - Chaos Daemons Library",
+        "T'au Empire"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.",
+      "target": null
+    },
+    {
+      "id": "bd7c48f5abf0ee34",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dark Pacts",
+          "Chaos",
+          "Shadow Legion",
+          "Deep Strike"
+        ]
+      },
+      "source": "- This unit has the Dark Pacts army rule, and can use it as described in _Codex: Chaos Space Marines_, even though your Army Faction is not Heretic Astartes. If this unit is Be’lakor, it automatically passes the Leadership test required for Dark Pacts. \n- Shadow Legion Heretic Astartes models in this unit have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "c329141c2d60db33",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Chaos"
+        ]
+      },
+      "source": "If your Army Faction is LEGIONES DAEMONICA, certain areas of the battlefield are considered to be within your army’s Shadow of Chaos, as follows: \n■ Your deployment zone is always within your army’s Shadow of Chaos.\n■ At the start of any phase, if you control at least half of the objective markers within No Man’s Land, until the end of that phase, No Man’s Land is within your army’s Shadow of Chaos.\n■ At the start of any phase, if you control at least half of the objective markers within your opponent’s deployment zone, until the end of that phase, your opponent’s deployment zone is within your army’s Shadow of Chaos.\n\nDAEMONIC MANIFESTATION\nWhile a friendly LEGIONES DAEMONICA unit is within your army’s Shadow of Chaos, each time that unit makes a battle-shock roll, that unit has +1 to that battle-shock roll and, if that roll is successful, one model in that unit heals D3 wounds (if that unit is a BATTLELINE unit and that roll is successful, up to D3 destroyed models (excluding CHARACTER models) can be returned to that unit instead).\n\nDAEMONIC TERROR\nWhile an enemy unit is within your army’s Shadow of Chaos and/or it is within 6\" of one or more BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE or SKARBRAND units from your army, each time that unit takes a Battle-shock test, subtract 1 from that test and, if that test is failed, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "75540bd719893a54",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike",
+          "Chaos",
+          "KHORNE",
+          "TZEENTCH",
+          "NURGLE",
+          "SLAANESH"
+        ]
+      },
+      "source": "Each time a LEGIONES DAEMONICA unit from your army is set up on the battlefield using the Deep Strike ability, if it is set up wholly within your army’s Shadow of Chaos, and/or if it is set up wholly within 6\" of one or more friendly BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE or SKARBRAND units with which it shares the KHORNE, TZEENTCH, NURGLE or SLAANESH keyword, it can be set up anywhere that is more than 6\" horizontally away from all enemy models, instead of more than 9\".",
+      "target": null
+    },
+    {
+      "id": "559bd3c731228c47",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Chaos - Chaos Daemons Library"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "SLAANESH"
+        ]
+      },
+      "source": "LEGIONES DAEMONICA SLAANESH units from your army are eligible to declare a charge in a turn in which they Fell Back.",
+      "target": null
+    }
+  ]
+}

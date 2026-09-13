@@ -1,0 +1,2844 @@
+{
+  "batch": 23,
+  "units": [
+    {
+      "id": "616e31a134a65f4f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: \n\n■ ASSAULT INTERCESSOR SQUAD\n■ ASSAULT SQUAD\n■ BLADEGUARD VETERAN SQUAD\n■ COMMAND SQUAD\n■ COMPANY HEROES\n■ HELLBLASTER SQUAD\n■ INFERNUS SQUAD\n■ INTERCESSOR SQUAD\n■ STERNGUARD VETERAN SQUAD\n■ VANGUARD VETERAN SQUAD\n■ VICTRIX HONOUR GUARD\n■ WARDENS OF ULTRAMAR",
+      "target": null
+    },
+    {
+      "id": "b54e4d589257814d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ancient",
+          "Ancient Gadriel",
+          "Captain Titus",
+          "Titus"
+        ]
+      },
+      "source": "While this unit contains Ancient Gadriel, add 1 to the Objective Control characteristic of models in this unit. While this unit contains Ancient Gadriel and Captain Titus, improve the Leadership characteristic of models in this unit by 1 as well.",
+      "target": null
+    },
+    {
+      "id": "0f6f778e6d9dcc7d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "After both players have deployed their armies, if this unit is on the battlefield (or any Transport it\nis embarked within is on the battlefield), select up to three Adeptus Astartes units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "52e2d32cfab2b16a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, VANGUARD VETERAN SQUAD",
+      "target": null
+    },
+    {
+      "id": "4ae55df29c0dde7d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - Ultramarines"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a 4+ Invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "308ee24983eab3f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - White Scars"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]",
+          "[LANCE]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and melee weapons equipped by models in that unit have the [LANCE] ability.",
+      "target": null
+    },
+    {
+      "id": "6cc8710d2be0d1b1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - White Scars"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time this model destroys an enemy Character model, you gain 1CP",
+      "target": null
+    },
+    {
+      "id": "ca45d9101251d84f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - White Scars"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: ASSAULT INTERCESSOR SQUAD, ASSAULT SQUAD, BLADEGUARD VETERAN SQUAD, COMMAND SQUAD, COMPANY HEROES, INTERCESSOR SQUAD, STERNGUARD VETERAN SQUAD, TACTICAL SQUAD, VANGUARD VETERAN SQUAD",
+      "target": null
+    },
+    {
+      "id": "aee039b5f5e72ce9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - White Scars"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Outrider Squad"
+        ]
+      },
+      "source": "If you include this model in your army, until the end of the battle, non-Character models in Outrider Squad units from your army have an Objective Control characteristic of 3 while they are not Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "e0d3e2be99d6fab3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - White Scars"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model’s unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back. If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead.",
+      "target": null
+    },
+    {
+      "id": "f72e4bebd7edd05b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Imperium - White Scars"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this model’s unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through terrain features.",
+      "target": null
+    },
+    {
+      "id": "5e815425ea732151",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, after both sides have deployed, but before the first turn begins, you must roll a number of 6 equal to the number of units in your Crusade army that harbouring a grudge against your opponent's Crusade army (each Attached unit harbouring a grudge counts as a single unit).\n\nFor each roll of 6, you can select one enemy unit that is on the battlefield to gain one Grudge token (you can select the same unit more than once).\n\nFor each roll of 1, you must instead select one unit from your Crusade army that is harbouring a grudge against your opponent's Crusade army and does not have a Grudge token to gain one Grudge token. While that unit has a Grudge token, you cannot select it as the target of a Stratagem, After that unit has shot or fought, remove that unit's Grudge token.",
+      "target": null
+    },
+    {
+      "id": "be640b4015766297",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "For each unit in your Crusade army that is harbour a grudge against your opponent's Crusade army, keep a tally of the number of enemy units destroyed by that unit. At the end of the battle, if that unit has a tally of 3 or more, unless that unit was that unit was destroyed during the battle it's grudge has been settled - the Grudge note for your opponent's Crusade army's Faction is remove from its Crusade card.",
+      "target": null
+    },
+    {
+      "id": "3830addded8d17aa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Each time a model (excluding a **^^Cog^^** model) in a unit from your Crusade army makes an attack, if that unit is harbouring a grudge against your opponent's Crusade army, re-roll a Hit roll of 1 if the target has 1-2 Grudge tokens, or you can re-roll the Hit roll instead if the target has 3 Grudge tokens.",
+      "target": null
+    },
+    {
+      "id": "dda9cdb3b20e2f9f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Range"
+        ]
+      },
+      "source": "A unit from your Crusade army that is harbouring a grudge against opponent's Crusade army cannot Fall Back while it is within Engagement Range of one or more enemy units.",
+      "target": null
+    },
+    {
+      "id": "24140421cc5db8a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhancements"
+        ]
+      },
+      "source": "In your Shooting phase, just after this unit is selected to shoot, this unit can use this ability. If it does, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**). Until the end of the phase, attacks made by models in this unit can only attack that enemy unit (and only if it is an eligible target) and, after resolving those attacks, if one or more of those attacks hit that enemy unit, until the start of your next Shooting phase, that enemy unit is assailed (this simply labels that unit for the purposes of this ability and some Enhancements or Stratagems). If that unit is already assailed, until the start of your next Shooting phase, it is also pinned. While a unit is pinned, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "75bd7dd243a16a4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^**sustained hits 1^^**]"
+        ],
+        "names": [
+          "Infantry",
+          "Transport"
+        ]
+      },
+      "source": "While a friendly ^^**Leagues of Votann Infantry^^** unit is wholly within 6\" of this ^^**Transport^^**, ranged weapons equipped by models in that ^^**Infantry^^** unit have the [^^**sustained hits 1^^**] ability.",
+      "target": null
+    },
+    {
+      "id": "7e3c8cec88dc5bee",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Points"
+        ]
+      },
+      "source": "If your Army Faction is ^^**Leagues of Votann^^**, ^^**Leagues of Votann^^** units from your army have one of two abilities: Hostile Acquisition or Fortify Takeover (see below). During the battle, which ability those ^^**Leagues of Votann^^** units have will change depending on how many Yield points (YP) you currently have:\n- At the start of the battle, your units have Hostile Acquisition until the start of your next Command phase.\n\n- At the end of your Command phase, if you have fewer than 7YP, your units have Hostile Acquisition until the start of your next Command phase.\n\n- At the end of your Command phase, if you have 7YP or more, your units have Fortify Takeover until the start of your next Command phase.\n\n**Hostile Acquisition**\n- Each time a model in this unit makes an attack that targets an enemy unit within range of one or more objective markers, add 1 to the Hit roll.\n\n- You can re‑roll Advance and Charge rolls made for this unit.\n\n**Fortify Takeover**\n- Each time a model in this unit makes an attack that targets an enemy unit, if this unit is within range of one or more objective markers you control, add 1 to the Hit roll.\n\n- Each time an attack targets this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic and this unit is not a Vehicle, subtract 1 from the Wound roll.\n\n\n**Yield Points**\nAt the end of each player’s Command phase, you gain 1YP if you control one or more objective markers within your deployment zone, and, from the second battle round onwards, you gain 1 additional YP for each of the following conditions you satisfy:\nYou control one or more objective markers not within your deployment zone.\nYou control two or more objective markers not within your deployment zone.\nYou control more objective markers than your opponent.\n\n\nIn your turn, YP gained in this way are always gained before checking which ability ^^**Leagues of Votann**^^ units from your army have.\n\n\nWhenever a rule allows you to spend YP, reduce the number of YP you have by that amount (your YP cannot go below 0), otherwise you cannot use that rule.",
+      "target": null
+    },
+    {
+      "id": "57194a3f0630ffc6",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack made with this weapon targets an enemy unit that is not within 12\", an unmodified Hit roll of 4+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "358d875ceef2e278",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Kâhl",
+          "Einhyr Hearthguard",
+          "Hearthguard",
+          "Ûthar the Destined"
+        ]
+      },
+      "source": "Each time a ^^**Leagues of Votann^^** model from your army makes an attack with a weapon that targets the closest eligible target or a target that is within Engagement Range of that model’s unit: \n- Re‑roll a Wound roll of 1. \n- If your unit is a ^^**Kâhl, Einhyr Hearthguard^^** or ^^**Ûthar the Destined^^** unit, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "3f722469cc7626c0",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Guerrilla Adepts",
+          "Enhancements"
+        ]
+      },
+      "source": "^^**Leagues of Votann^^** units from your army have the following ability:\n\n**Guerrilla Adepts:** In your Shooting phase, just after this unit is selected to shoot, this unit can use this ability. If it does, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**). Until the end of the phase, attacks made by models in this unit can only attack that enemy unit (and only if it is an eligible target) and, after resolving those attacks, if one or more of those attacks hit that enemy unit, until the start of your next Shooting phase, that enemy unit is assailed (this simply labels that unit for the purposes of this ability and some Enhancements or Stratagems). If that unit is already assailed, until the start of your next Shooting phase, it is also pinned. While a unit is pinned, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "6450bae8e591dedc",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit is destroyed, you gain 1YP.",
+      "target": null
+    },
+    {
+      "id": "85ddf984bf182024",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Memnyr Strategist",
+          "Strategist",
+          "Detachment",
+          "Brôkhyr",
+          "Ironkin Steeljacks",
+          "Arkanyst Evaluator"
+        ]
+      },
+      "source": "At the end of your Command phase, you gain 1YP for each objective marker you control that is not within your deployment zone and has one or more ^^**Iron-Master^^** and/or ^^**Memnyr Strategist^^** models from your army within range of it (to a maximum of 2YP gained from this Detachment rule per turn).\n\nIn your Shooting phase, each time a ^^**Brôkhyr, Ironkin Steeljacks^^** or ^^**Arkanyst Evaluator^^** unit from your army is selected to shoot, you can spend 1YP. If you do, until the end of the phase, each time a model in that unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "60a7d352e8ccad86",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cthonian Beserks",
+          "Beserks",
+          "Deep Strike"
+        ]
+      },
+      "source": "^^**Cthonian Beserks^^** units from your army have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "ca757d506f18a3d9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^**sustained hits 1^^**]"
+        ],
+        "names": [
+          "Transport",
+          "Firebase Control (Aura)",
+          "Infantry"
+        ]
+      },
+      "source": "^^**Leagues of Votann Transport^^** units from your army have the following ability:\n\n**Firebase Control (Aura):** While a friendly ^^**Leagues of Votann Infantry^^** unit is wholly within 6\" of this ^^**Transport^^**, ranged weapons equipped by models in that ^^**Infantry^^** unit have the [^^**sustained hits 1^^**] ability.",
+      "target": null
+    },
+    {
+      "id": "a0f2defe9022511f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Your ^^**Leagues of Votann^^** units do not have the Hostile Acquisition or Fortify Takeover abilities except as described in this rule. At the start of the battle, your ^^**Leagues of Votann^^** units have the Hostile Acquisition ability. At the end of your Command phase, you can spend 3YP. If you do, ^^**Leagues of Votann^^** units from your army lose the Hostile Acquisition ability and gain the Fortify Takeover ability, or vice versa.",
+      "target": null
+    },
+    {
+      "id": "5b2f1dea320c64ac",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Sagitaur",
+          "Scouts 6\""
+        ]
+      },
+      "source": "Friendly **^^Sagitaur^^** units have **Scouts 6\"**.",
+      "target": null
+    },
+    {
+      "id": "799213b8bacd2820",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **HERNKYN** units’ ranged attacks that target a unit within 12\" have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "707a897915420dcc",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **KÂHL/EINHYR CHAMPION/EINHYR HEARTHGUARD/ÛTHAR THE DESTINED** units’ ranged attacks that target a unit within 9\" can re‑roll **wound rolls** of 1.",
+      "target": null
+    },
+    {
+      "id": "20a3caae1ec9883d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, you can spend 1YP to change one Hit roll, one Wound roll or one saving throw made for this model to an unmodified 6.",
+      "target": null
+    },
+    {
+      "id": "daa255f4497d60c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: EINHYR HEARTHGUARD, HEARTHKYN WARRIORS",
+      "target": null
+    },
+    {
+      "id": "3171ea77864155a1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, when a friendly ^^**Leagues of Votann**^^ unit within 12\" of this model is targeted with a Stratagem, this model can use this ability. If it does, reduce the CP cost of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "f28a415ae5f392c5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, until your opponent's Level of Control over that is greater than yours at the end of a phase.",
+      "target": null
+    },
+    {
+      "id": "ee1531c616beba17",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "de54a79788d01c43",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "11a4da43cbb074dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: EINHYR HEARTHGUARD, HEARTHKYN WARRIORS",
+      "target": null
+    },
+    {
+      "id": "474562ecbc10af30",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per phase, one model from your army with this ability can use it when its unit destroys an enemy unit. If it does, gain 1YP.",
+      "target": null
+    },
+    {
+      "id": "8c95c8055662ce9e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "While the bearer is leading a unit, models in that unit have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "55571a9c9b7bf06d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: EINHYR HEARTHGUARD",
+      "target": null
+    },
+    {
+      "id": "1e683cb8e85ff86a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time this model ends a Charge move, you can select one enemy unit within Engagement Range of this model and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "44b703e1ee0baa22",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit: HEARTHKYN WARRIORS",
+      "target": null
+    },
+    {
+      "id": "200697966b2229ce",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grimnyr"
+        ]
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Leagues of Votann**^^ unit that is Battle-shocked and within 12\" of this unit's ^^**Grimnyr**^^ model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "a17835e342ce04eb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grimnyr",
+          "CORV",
+          "Transport"
+        ]
+      },
+      "source": "If this unit’s Grimnyr model is ever destroyed, all of this unit’s remaining CORV models are also destroyed. While embarking within a ^^**Transport^^** and while embarked within a ^^**Transport^^**, each CORV model takes up the space of 0 models.’",
+      "target": null
+    },
+    {
+      "id": "986fb72fef6b2d5e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "16d246e1cb867be8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Ironkin Steeljacks",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this unit is within 3\" of one or more friendly ^^**Leagues of Votann Vehicle**^^ or ^^**Ironkin Steeljacks**^^ units, if this unit is not an attached unit, it has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "20e808daf0c09d2f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:BRÔKHYR THUNDERKYN, HEARTHKYN WARRIORS",
+      "target": null
+    },
+    {
+      "id": "94cfa4fcb900521d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Brôkhyr",
+          "Transport"
+        ]
+      },
+      "source": "If this unit’s Brôkhyr Iron‑master model is ever destroyed, all of this unit’s remaining E‑COG models are also destroyed. While embarking within a ^^**Transport^^** and while embarked within a ^^**Transport^^**, each E‑COG model takes up the space of 0 models.",
+      "target": null
+    },
+    {
+      "id": "584cf87efec8eac8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Exoframe",
+          "Ironkin Steeljacks",
+          "Ironkin Assistant"
+        ]
+      },
+      "source": "At the end of your Movement phase, this model can repair one friendly ^^**Leagues of Votann Vehicle, Exoframe^^** or ^^**Ironkin Steeljacks^^** unit within 3\" of it. One model in that unit regains up to D3 lost wounds, or up to 3 lost wounds if this unit contains an Ironkin Assistant model. Each unit can only be repaired once per turn.",
+      "target": null
+    },
+    {
+      "id": "a16322834c2d1aff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "9f2e3bd6db2017a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6, adding one to the result if units from your army have Fortify Takeover: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "b151eca170b2f467",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit (excluding ^^**Monsters**^^ and ^^**Vehicles^^**) that was hit by one or more of those attacks made with a mole grenade launcher. Until the start of your next Shooting phase, that enemy unit cannot be targeted with the Fire Overwatch Stratagem.",
+      "target": null
+    },
+    {
+      "id": "ca91d08d730916e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent’s turn, if this unit is wholly within 9\" of one or more battlefield edges and not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "27c6f6569ea471c3",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer's unit makes a ranged attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "bda46a204f0d8279",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer's unit makes a ranged attack, you can ignore any or all modifiers to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "401d67b2fa0de3c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, you can select one **visible** enemy unit within 12\" of this unit. That enemy unit is **spotted**: \n- While a unit is spotted, that unit has +3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "9b7ac5eb7ba8e7c4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "Units can disembark from this ^^**Transport^^** after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn.",
+      "target": null
+    },
+    {
+      "id": "317c691768103011",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hearthkyn Warriors",
+          "Transport"
+        ]
+      },
+      "source": "This model has a transport capacity of 6 **LEAGUES OF VOTANN INFANTRY **models. It cannot transport **ARTILLERY, EXOARMOUR, EXOFRAME** or **IRONKIN STEELJACKS** models.\n\nAt the start of the Declare Battle Formations step, you can select one ^^**Hearthkyn Warriors^^** unit from your army that has not been split. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this ^^**Transport^^**; the other can start the battle embarked within another ^^**Transport^^**, or it can be deployed as a separate unit.",
+      "target": null
+    },
+    {
+      "id": "85d91ad177e0505b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has MOBILE.",
+      "target": null
+    },
+    {
+      "id": "3b48f92f4f23affd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, that enemy unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "688ca9151071e5c9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack, you can ignore any or all modifiers to the following: that attack's Ballistic Skill characteristic, the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "74794af0d20be332",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 14 **LEAGUES OF VOTANN INFANTRY **models. Each **EXOARMOUR, EXOFRAME** or **IRONKIN STEELJACKS** model takes up the space of 2 models. It cannot transport **ARTILLERY** models.",
+      "target": null
+    },
+    {
+      "id": "cab6d7894942ebc5",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack made with this weapon targets an enemy unit that is not within 12\", an unmodified successful Hit roll of 4+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "f523b7c5483953ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”.'",
+      "target": null
+    },
+    {
+      "id": "acd6d59d7f9cbb9c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has -3\" **detection range**.",
+      "target": null
+    },
+    {
+      "id": "c98c55dcbb97f717",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with its full wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "a7ee9a8fa9732e07",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent’s Shooting phase, when an enemy unit has shot, if this model lost one or more wounds as a result of those attacks, this unit can make a **surge move** of up to D6+2\".",
+      "target": null
+    },
+    {
+      "id": "cf911becc15a28ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Command phase, before you determine if units from your army have Hostile Acquisition or Fortify Takeover, for each objective marker you control that has one or more models with this ability in range of it, you can spend 1YP or gain 1YP.",
+      "target": null
+    },
+    {
+      "id": "09f7009c1439f6bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, when you target this unit with the **Fire Overwatch/Heroic Intervention** stratagem, you can use this ability. If you do, that use of that stratagem is ‑1 CP.",
+      "target": null
+    },
+    {
+      "id": "8eac9f638f008466",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: IRONKIN STEELJACKS WITH HEAVY VOLKANITE DISINTEGRATORS, IRONKIN STEELJACKS WITH MELEE WEAPONS",
+      "target": null
+    },
+    {
+      "id": "66e943d9fbd5e4e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more other friendly ^^**Leagues of Votann Infantry**^^ units (excluding units with the Lone Operative ability), this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "a6367662abf00f75",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^**Sustained Hits 1**^^]"
+        ],
+        "names": [
+          "Sustained Hits 1"
+        ]
+      },
+      "source": "Once per turn, in your Shooting phase, one model with this ability can choose to use it when it is selected to shoot. If it does, you must spend 1YP and, until the end of the phase, ranged weapons equipped by that model have the [^^**Sustained Hits 1**^^] ability and, after that model has shot this phase, if one or more enemy units were destroyed by those attacks, you can gain up to 2YP.",
+      "target": null
+    },
+    {
+      "id": "fbc5916623f40006",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hazardous"
+        ]
+      },
+      "source": "Each time the bearer takes a Hazardous test for this weapon, subtract 2 from the result.",
+      "target": null
+    },
+    {
+      "id": "d304b7a26d02ae6c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, it can make a Normal Move of up to D6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "b84831eb09101947",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Smoke"
+        ]
+      },
+      "source": "The bearer has the ^^**Smoke**^^ keyword.",
+      "target": null
+    },
+    {
+      "id": "94e56560e74d4dd5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your shooting phase, after this model has shot, select one enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b16ad5ca8e53a991",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hernkyn",
+          "Yaegir",
+          "Transport"
+        ]
+      },
+      "source": "This model has a transport capacity of 5 ^^**Hernkyn Yaegir**^^ models.\n\nAt the start of the Declare Battle Formations step, you can select one ^^**Hernkyn Yaegir^^** unit from your army that has not been split. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this ^^**Transport^^**; the other can start the battle embarked within another ^^**Transport^^**, or it can be deployed as a separate unit.",
+      "target": null
+    },
+    {
+      "id": "61eed6fa6f7d9582",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem. If units from your army have Fortify Takeover, hits are scored on unmodified Hit rolls of 4+ while resolving that Stratagem instead.",
+      "target": null
+    },
+    {
+      "id": "3ef3d44978774882",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) that is within Engagement Range of this unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
+      "target": null
+    },
+    {
+      "id": "7511a805057d5d48",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[Precision]"
+        ],
+        "names": [
+          "Precision"
+        ]
+      },
+      "source": "Each time a model in the bearer's unit makes an attack that targets an enemy unit within range of one or more objective markers, on a Critical Wound, that attack has the [Precision] ability.",
+      "target": null
+    },
+    {
+      "id": "1af527717c83f1e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Up to twice per battle, in your Shooting phase, when this unit is selected to shoot, it can use this ability. If it does, until the end of the phase, each time a model in this unit makes an attack with its breacher ordnance, you can re-roll the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "1f9188667a9fb7df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks made with its tremor shells. That unit must take a Battle-shock test, subtracting 1 from the result.",
+      "target": null
+    },
+    {
+      "id": "4ca3d53853b58d6b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hearthkyn Warriors"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Hearthkyn Warriors**^^",
+      "target": null
+    },
+    {
+      "id": "2404a921fc710436",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Leagues of Votann**^^ unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "d790597823c92f80",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Einhyr Hearthguard",
+          "Hearthguard",
+          "Hearthkyn Warriors"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Einhyr Hearthguard, Hearthkyn Warriors**^^",
+      "target": null
+    },
+    {
+      "id": "86ceb4ec137dcd24",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per phase, one model from your army with this ability can use it when its unit destroys an enemy unit. If it does, you gain 1YP.",
+      "target": null
+    },
+    {
+      "id": "f7ee9d9b025071d3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ironkin Steeljacks with Heavy Volkanite Disintegrators",
+          "Heavy",
+          "Ironkin Steeljacks with Melee Weapons",
+          "Melee Weapons",
+          "Weapons"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Ironkin Steeljacks with Heavy Volkanite Disintegrators, Ironkin Steeljacks with Melee Weapons**^^",
+      "target": null
+    },
+    {
+      "id": "f364723c97c77b0e",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "cc9b5ee62be3838c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this model's unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "dc3c89ad1853e6cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: CTHONIAN BESERKS",
+      "target": null
+    },
+    {
+      "id": "bd6a3b165b3fee5f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets the bearer’s unit, if the attacking model is within 12\" of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1. If you spend 1YP, until the end of the phase, if the attacking model is within 18\" of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1 instead.",
+      "target": null
+    },
+    {
+      "id": "c894e46f00375da3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer’s unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "1b34304bac685b7a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the bearer’s Wounds characteristic.",
+      "target": null
+    },
+    {
+      "id": "0ff21722d840eb40",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after the bearer has shot, select one enemy unit (excluding TITANIC units) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "e638f141d74a2835",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer's unit makes an attack, re-roll a Wound roll of 1. Each time the bearer's unit is selected to shoot or fight, you can spend 3YP. If you do, until the end of the phase, each time a model in the bearer's unit makes an attack, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "84923aa321b4f1d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after the bearer's unit has shot, you gain 1YP for each assailed unit hit by one or more of those attacks (to a maximum of 3YP).",
+      "target": null
+    },
+    {
+      "id": "cfba5478202c8ba4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one ^^**Monster^^** or ^^**Vehicle^^** unit hit by one or more of those attacks; until the start of your next Shooting phase, that model is pinned.",
+      "target": null
+    },
+    {
+      "id": "575c939766ae8ea6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hernkyn",
+          "Range"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent's Fight phase, if the bearer is on the battlefield, it can use this Enhancement. If it does, select one ^^**Hernkyn^^** unit from your army, and, for every 2YP you just spent, select up to one additional ^^**Hernkyn^^** unit from your army. You can remove those units from the battlefield and place them into Strategic Reserves. You cannot select a unit that is within Engagement Range of one or more enemy units (excluding assailed units).",
+      "target": null
+    },
+    {
+      "id": "ee2cb7d399ac9ef5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer's unit makes an attack that targets an assailed unit, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "049029dccf7d2b53",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Leagues of Votann^^** model only. At the end of the turn, if the bearer is on the battlefield and you spent no YP in that turn, you gain 1YP.",
+      "target": null
+    },
+    {
+      "id": "827acba5d3e79e3d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Autoch-pattern combi-bolter"
+        ]
+      },
+      "source": "**^^Leagues of Votann^^** model equipped with an Autoch-pattern combi-bolter only. Once per battle, when the bearer's unit is selected to shoot, the bearer can use this Enhancement. If it does, spend up to 3YP, and, until the end of the phase, add the number of YP you just spent to the Damage characteristic of the bearer's ranged weapons.",
+      "target": null
+    },
+    {
+      "id": "127ec60029bee9ce",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per turn, when you target the bearer's unit with the Command Re-roll Stratagem, the bearer can use this Enhancement. If it does, spend 1YP and reduces the CP cost of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "3f9c6adc0a85e901",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Models in the bearer's unit have the Deep Strike abilty.",
+      "target": null
+    },
+    {
+      "id": "ad4910ae911e4a03",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "In your Shooting phase, after the bearer has shot, and in the Fight phase, after the bearer has fought, select one enemy ^^**Monster^^** or ^^**Vehicle**^^ unit hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "62fc3fa1b0ee9e23",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Optimal Application",
+          "Detachment"
+        ]
+      },
+      "source": "Each time the bearer's unit is selected to shoot, if you spend YP using the Optimal Application Detachment rule when doing so, you can roll one D6: on a 2+, you gain 1YP.",
+      "target": null
+    },
+    {
+      "id": "26fbffb609e42830",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While the bearer is leading a unit, add 1 to the Objective Control characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "26c254c18c8cced9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cthonian Beserks",
+          "Beserks",
+          "Character"
+        ]
+      },
+      "source": "In the Reinforcements step of your Movement phase, the bearer can use this Enhancement. If it does, select one friendly ^^**Cthonian Beserks^^** unit visible to the bearer and then spend any number of YP. Return one destroyed model (excluding ^^**Character**^^ models) to that unit, and then, for every 2YP you just spent, return up to one additional destroyed model (excluding ^^**Character**^^ models) to that unit.",
+      "target": null
+    },
+    {
+      "id": "61420556770904a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Artillery",
+          "Lone Operative"
+        ]
+      },
+      "source": "While the bearer is within 3\" of one or more friendly ^^**Leagues of Votann Artillery^^** units, the bearer has the Lone Operative ability, and each time one of those ^^**Artillery^^** units makes a ranged attack that targets an enemy unit visible to the bearer, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "2e1b15796aead84d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer's unit is selected to fight, the bearer can use this Enhancement. If it does, spend up to 2YP and, until the end of the phase, add the number of YP you just spent to the Damage characteristic of the bearer's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "836c172dfaaa1123",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cthonian"
+        ]
+      },
+      "source": "Once per battle, in your Movement phase, if the bearer is on the battlefield, it can use this Enhancement. If it does, select one friendly ^^**Cthonian^^** unit that is in Reserves. Until the end of the phase, for the purposes of setting up that unit on the battlefield, treat the current battle round number as one higher than it actually is.",
+      "target": null
+    },
+    {
+      "id": "7f88bb5ff01874d0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, if the bearer's unit is in range of one or more objective markers you control that are not in your deployment zone, you can spend 1YP. If you do, roll one D6: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "046aaf0666232f1e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[**^^Sustained Hits 2^^**]"
+        ],
+        "names": [
+          "Transport",
+          "Sustained Hits"
+        ]
+      },
+      "source": "In your Shooting phase, each time the bearer's unit is selected to shoot, if it disembarked from a ^^**Transport^^** this turn, or if you spend 2YP, until the end of the phase, ranged weapons equipped by model in that unit have the [**^^Sustained Hits 2^^**] ability.",
+      "target": null
+    },
+    {
+      "id": "c01e326c9bc4d14c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport"
+        ]
+      },
+      "source": "While the bearer's unit is wholly within 6\" of one or more friendly ^^**Leagues of Votann Transport^^** units, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP and hits are scored on an unmodified Hit roll of 5+ while resolving that Stratagem.",
+      "target": null
+    },
+    {
+      "id": "c75657c74d13416c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Forgewrought Expertise"
+        ]
+      },
+      "source": "Each time a friendly ^^**Leagues of Votann^^** model is repaired using the bearer's Forgewrought Expertise ability, that model regains one additional lost wound.",
+      "target": null
+    },
+    {
+      "id": "9b8fbd9072e2f20e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit is destroyed by the bearer’s unit, gain 2YP.",
+      "target": null
+    },
+    {
+      "id": "fe1ef5e8a2d476f5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your turn, if the bearer is on the battlefield and you gained fewer than 3YP this turn, you gain an amount of YP equal to the difference.",
+      "target": null
+    },
+    {
+      "id": "cb09e039b9905395",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time a model in the bearer’s unit makes an attack, re‑roll a Hit roll of 1. Each time the bearer’s unit is selected to shoot or fight, you can spend 3YP. If you do, until the end of the phase, each time a model in the bearer’s unit makes an attack, that attack has the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "b7c8ab1dd2d981e7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the Command phase, you can spend 3YP. If you do, until the end of the turn, while an enemy unit is within 3” of the bearer, subtract 1 from the Objective Control characteristic of models in that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "f51a906c7d222e80",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has +2**W**.",
+      "target": null
+    },
+    {
+      "id": "91547d0d85c09006",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In the Fight phase, when a model in this unit is **destroyed**, if this unit has not been **selected to fight** this phase, roll one D6: on a 4+, do not remove that model from the battlefield; after this unit has fought, or at the end of the phase (whichever comes first), that model is removed from the battlefield.",
+      "target": null
+    },
+    {
+      "id": "b012dcf4b36a79b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit is select to shoot or fight, you can re-roll one Hit roll and you can re-roll one Wound roll.",
+      "target": null
+    },
+    {
+      "id": "a5f7dee813fb4744",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Improve the Objective Control and Leadership characteristics of models in this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "46247cbc3f670fc6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "**^^Character^^** models in this unit have the Feel No Pain 5+ ability and you can re-roll Out of Action tests taken for this unit.",
+      "target": null
+    },
+    {
+      "id": "67760118a6b5144c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[PRECISION]"
+        ],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, select one unit from your opponent's Crusade army. Each time a model in this unit makes an attack that targets that unit, that attack has the **[LETHAL HITS]** and **[PRECISION]** abilities.",
+      "target": null
+    },
+    {
+      "id": "d60e5ab43d1ed244",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann",
+        "Warhammer 40,000"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Models in this unit have a 5+ invulnerable save.",
+      "target": null
+    },
+    {
+      "id": "619762f33e84317c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "This unit always has Hostile Acquisition, even while units from your Crusade army have Fortify Takeover.",
+      "target": null
+    },
+    {
+      "id": "7e505cefd4a1a3c3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength. In addition, add 1 to the Wound roll if this unit is Below Half-strength.",
+      "target": null
+    },
+    {
+      "id": "7d1c3d575b144184",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the start of the battle, you can select one objective marker on the battlefield. While this unit is within range of that objective marker, it has Fortify Takeover, even while units from your Crusade army have Hostile Acquisition.",
+      "target": null
+    },
+    {
+      "id": "3dbaf4b7ab202c45",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "While units from your Crusade army have Fortify Takeover, each time an attack with an unmodified Damage characteristic of 1 is allocated to a model in this unit, add 1 to any armour saving throw made against that attack.",
+      "target": null
+    },
+    {
+      "id": "3081677acb255057",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "The first time the bearer is destroyed, roll one D6 at the end of the phase: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "a06560d6282f7877",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "While units from your Crusade army have Hostile Acquisition, each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack. While units from your Crusade army have Fortify Takeover, each time an attack is allocated to the bearer, change the Damage characteristic of that attack to 1.",
+      "target": null
+    },
+    {
+      "id": "1683a964270e4258",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Roll"
+        ]
+      },
+      "source": "Each time the bearer makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll. At the end of the Fight phase, you can select one enemy unit within Engagement Range of the bearer and spend up to 4 Yield points. Roll one D6 for each point spent: for each 2+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "29ec1c7f15591b2e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grimnyr"
+        ]
+      },
+      "source": "**^^Grimnyr^^** only. When selecting Agendas for a battle, you can select one additional **^^Leagues of Votann^^** Agenda for that battle.",
+      "target": null
+    },
+    {
+      "id": "84c5f7774c5f5709",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "While units from your Crusade army have Hostile Acquisition, add 2 to the Attacks characteristic of the bearer's melee weapons. While units from your Crusade army have Fortify Takeover, add 1 to the Attacks characteristic of the bearer's melee weapons.",
+      "target": null
+    },
+    {
+      "id": "8a24b941dcba9623",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of each battle, each **^^League of Votann^^** unit from your Crusade army that is on the battlefield (excluding **^^Vehicles^^**) gains 1XP.",
+      "target": null
+    },
+    {
+      "id": "55ff9258004b2d4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After each battle, when your determine which fundamental resource you gain, if it is not biomatter, gain 20 biomatter.",
+      "target": null
+    },
+    {
+      "id": "181a2f914bf0cfd5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you gain any amount of raw minerals, add an additional 10 to the amount you gain (for a total of +30 from this mining outpost).",
+      "target": null
+    },
+    {
+      "id": "934f0b71f604f024",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you gain any amount of raw minerals, add 20 to the amount you gain for each mining outpost you have.",
+      "target": null
+    },
+    {
+      "id": "779c6b6868c53dfe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After each battle, you can use the Guild Patronage Requisition twice.",
+      "target": null
+    },
+    {
+      "id": "5730a27011a5e5f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After each battle, you can use the Guild Patronage Requisition once.",
+      "target": null
+    },
+    {
+      "id": "33c9d8fefb21af6a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each battle, select one additional **^^Leagues of Votann^^** unit from your Crusade army to be Marked for Greatness.",
+      "target": null
+    },
+    {
+      "id": "f8643aec2f2b45b7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Each time a **^^Leagues of Votann^^** unit from your Crusade army is Marked for Greatness, that unit gains an additional 1XP.",
+      "target": null
+    },
+    {
+      "id": "c291b200ac5f9ca3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each battle, if your Crusade force is on an expedition, you can choose to remove 1 rare resource from your Acquisition tracker. If you do, increase the maximum length of the expedition by 1 battle.",
+      "target": null
+    },
+    {
+      "id": "15e6ba615386289d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you roll to randomly determine a type of resource, you can re-roll the dice.",
+      "target": null
+    },
+    {
+      "id": "cf02a68c960de853",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Each time you roll a D6 to see if your Crusade force has gained a rare resource, you can re-roll the dice.",
+      "target": null
+    },
+    {
+      "id": "94ff6ca1fdc5a317",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each battle, you can re-roll failed Out of Action tests for **^^Leagues of Votann^^** units (excluding **^^Vehicles^^**) from your Crusade army.",
+      "target": null
+    },
+    {
+      "id": "4c093789dc0ed44a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the first battle round, you can spend 20 of any fundamental resource. If you do, gain 2 Yield points. These do not count towards the total Yield points you have.",
+      "target": null
+    },
+    {
+      "id": "431be5b9acc75c4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After each battle, randomly determine on fundamental resource. For each Yield point you had at the end of the battle, gain 10 of that resource.",
+      "target": null
+    },
+    {
+      "id": "bdc03abc9e0448dd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Before each battle, you can use the Field Testing Requisition twice for 1RP instead of 2RP.",
+      "target": null
+    },
+    {
+      "id": "9f5ed6fa43d8302d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Before each battle, you can use the Field Testing Requisition once for 1RP instead of 2RP.",
+      "target": null
+    },
+    {
+      "id": "f80cea9d2dd81917",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Supply Limit",
+          "Crusade"
+        ]
+      },
+      "source": "Each time you use the Increase Supply Limit Requisition, your Crusade force's Supply Limit is increased 400 points instead of 200 points.",
+      "target": null
+    },
+    {
+      "id": "c490b0a5df0f786d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Biomatter"
+        ]
+      },
+      "source": "After each battle, you gain an additional D6x5 Biomatter.",
+      "target": null
+    },
+    {
+      "id": "8cba70f0a7465b9d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rare",
+          "Galactic Intel",
+          "Kindred Acquisitions",
+          "Grimnyr",
+          "Crusade"
+        ]
+      },
+      "source": "After each battle, you can choose to remove 1 Rare Galactic Intel from your Kindred Acquisitions Record Sheet. If you do so, select one **^^Grimnyr^^** unit from your Crusade force. That unit gains a Battle Honour (it must be a Battle Honour that unit can have). You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle Honour on that unit's Crusade card.",
+      "target": null
+    },
+    {
+      "id": "e90f92b90b969830",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Galactic Intel"
+        ]
+      },
+      "source": "After each battle, you gain an additional D6x5 Galactic Intel.",
+      "target": null
+    },
+    {
+      "id": "3e182bcd10f2000d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "After each battle, roll one D6, adding 1 to the result if you won that battle. On a 5+, you gain 1 additional Requisition point.",
+      "target": null
+    },
+    {
+      "id": "c7fd766934482bd7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Energy Sources"
+        ]
+      },
+      "source": "After each battle, you gain an additional D6x5 Energy Sources.",
+      "target": null
+    },
+    {
+      "id": "50073d1048a26e7f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rare",
+          "Energy Sources",
+          "Kindred Acquisitions",
+          "Crusade",
+          "Weapon Modifications"
+        ]
+      },
+      "source": "After each battle, you can choose to remove 1 Rare Energy Sources from your Kindred Acquisitions Record Sheet, If you do so, select one **^^Leagues of Votann^^** unit from your Crusade force. That unit gains one Weapon Modifications Battle Honour. You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle on that unit's Crusade card.",
+      "target": null
+    },
+    {
+      "id": "7c75453430de3a78",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The Rearm and Resupply Requisition costs 0RP to use.",
+      "target": null
+    },
+    {
+      "id": "ae2505a00cbdf027",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rare",
+          "Biomatter",
+          "Kindred Acquisitions",
+          "Character",
+          "Crusade",
+          "Crusade Relic"
+        ]
+      },
+      "source": "After each battle, you can choose to remove 1 Rare Biomatter from your Kindred Acquisitions Record Sheet, If you do so, select one **^^Leagues of Votann Character^^** unit from your Crusade force. That unit gains one Crusade Relic Battle Honour. You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle on that unit's Crusade card.",
+      "target": null
+    },
+    {
+      "id": "d2d2f872602cb26a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you roll to randomly determine a type of resource, you can roll two dice and choose one of the results to apply.",
+      "target": null
+    },
+    {
+      "id": "b22220457d8186ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Rare"
+        ]
+      },
+      "source": "Each time you roll a D6 to see if your Crusade force has acquired a Rare Resource, add 1 to the result.",
+      "target": null
+    },
+    {
+      "id": "7b5e8e4abafee7a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Raw Minerals"
+        ]
+      },
+      "source": "After each battle, you gain an additional D6x5 Raw Minerals.",
+      "target": null
+    },
+    {
+      "id": "f214efc75b239f0e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rare",
+          "Raw Minerals",
+          "Kindred Acquisitions",
+          "Crusade"
+        ]
+      },
+      "source": "After each battle, you can choose to remove 1 Rare Raw Minerals from your Kindred Acquisitions Record Sheet, If you do so, select one **^^Leagues of Votann^^** unit from your Crusade force. That unit gains one Battle Trait Battle Honour from the White Dwarf magazine. You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle on that unit's Crusade card.",
+      "target": null
+    },
+    {
+      "id": "71189bfd7fea8804",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The Fresh Recruits Requisition costs 1 less Requisition point to use, to a minimum of 0.",
+      "target": null
+    },
+    {
+      "id": "1858a0510f738467",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "After each battle, when you are determining how many resources are gained by your Crusade force, you can re-roll the dice.",
+      "target": null
+    },
+    {
+      "id": "b4d4a6b172743ae0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Until your Crusade force next completes an expedition, you cannot use the Guild Patronage Requisition, even if you have a trading hub.",
+      "target": null
+    },
+    {
+      "id": "9fce3c81ad96b90d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Until your Crusade force next completes an expedition, you cannot purchase, upgrade or reactivate kindred assets.",
+      "target": null
+    },
+    {
+      "id": "f62b225270597626",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Until your Crusade force next completes an expedition, each time you roll to determine the fundamental resource gained or the amount of resources gained, subtract 1 from the roll, to a minimum of 1.",
+      "target": null
+    },
+    {
+      "id": "1e99c20d82676619",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle round, one unit from your Crusade army with this ability can use this ability when it is selected to Advance. If it does, do not make an Advance roll for that unit. Instead, until the end of the phase, add 12\" to the Move characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "2e2bd25dfb8ce456",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "This unit has the Feel No Pain 5+ ability against mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "77876fa10de516af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when a ranged attack is allocated to this model, change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "a383484535ddcc26",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Brôkhyr"
+        ]
+      },
+      "source": "Each time this unit uses it's Brôkhyr's Guild ability, if this unit contains an Ironkyn Assistant, it can repair up to two **^^Vehicles^^**, instead of 1.",
+      "target": null
+    },
+    {
+      "id": "d30c1c255e659ea0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per turn, one unit from your Crusade army with this ability can use this ability when they are selected to shoot or fight. If it does, until the end of the phase, each time a model in this unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "9745bcc1bee869a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Vehicle"
+        ]
+      },
+      "source": "If this unit is part of your Crusade army, and if it was not destroyed during the battle, then at the end of the battle you can ignore one failed Out of Action test taken for a **^^Leagues of Votann Vehicle^^** unit from your Crusade army - that test is treated as having been passed instead.",
+      "target": null
+    },
+    {
+      "id": "fa43a78e38341b94",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[PSYCHIC]"
+        ],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "Models in this unit have the Feel No Pain 4+ ability against **[PSYCHIC]** attacks and against mortal wounds caused by **[PSYCHIC]** abilities.",
+      "target": null
+    },
+    {
+      "id": "081fda88a896b917",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Rare"
+        ]
+      },
+      "source": "At the end of each battle, for each unit with this Battle Trait that is on the battlefield, increase the amount of the resource that is acquired by 10, to a maximum of an additional 50 resources, ad each time you roll a dice to see if a Rare Resource is acquired, add 1 to the result.",
+      "target": null
+    },
+    {
+      "id": "a3bd53967ba7b8ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Command phase, you can select one enemy unit on the battlefield that has 1 Judgement token to be this unit's 'Allotted Target'. Until the start of your next Command phase, each time a model (excluding a **^^Cog^^** model) in this unit makes an attack that targets its Allotted Target, that enemy unit is considered to have 2 Judgement tokens when determining what bonus applies to the attacking model's attacks.\n***Data Author Note: Judgement tokens were removed with the release of the codex.***",
+      "target": null
+    },
+    {
+      "id": "07b475833f32ac92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "While a friendly **^^Leagues of Votann Character^^** is leading this unit, that **^^Character^^** has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "822fa24bed50342f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, in your Shooting phase, after this unit has shot, it can make a Normal move of up to 6\". If it does until the ned of the turn, this unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "d5d6bf7ed235c5bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "When a unit first gains this Battle Trait, you can immediately use the Directed Hatred Requisition on this unit for 0RP. Each time a model in this unit makes an attack, if this unit is harbouring a Grudge against your opponent's Crusade army, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a58b06ec1a1c80ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can ignore any or all modifiers to the Leadership characteristic of models in this unit, and you can re-roll failed Out of Action tests taken for this unit.",
+      "target": null
+    },
+    {
+      "id": "233b9c8c5b35d773",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack, you can ignore any or all modifiers to that attack's Ballistic Skill characteristic and/or any or all modifiers to that attack's Hit roll.",
+      "target": null
+    },
+    {
+      "id": "80667a4794f554cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, each time this unit is selected to shoot, select one ranged weapon equipped by that unit. Until the end of the phase, improve the Ballistic Skill characteristic of that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "5298c57f2c62cee9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Grenades"
+        ]
+      },
+      "source": "Once per battle, in your Shooting phase, if the bearer's unit has not shot this phase, the bearer can use this relic. If it does, until the end of the phase, the bearer has the **^^Grenades^^** keyword. In addition, until the end of the phase, when you target the bearer's unit with the Grenade Stratagem, add 1 to the dice roll to determine whether the enemy unit suffers a mortal wound for each Judgement token that enemy unit has.\n***Data Author Note: Judgement tokens were removed with the release of the codex.***",
+      "target": null
+    }
+  ]
+}

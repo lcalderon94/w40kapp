@@ -9,8 +9,11 @@ unidades nuevas, se vuelve aquí.
 - **Procedencia completa**: [`SOURCE.json`](SOURCE.json) — commit, fecha y `sha256` de cada fichero
 
 `bsdata/` no se edita nunca a mano. Cualquier cambio se hace regenerándolo desde upstream
-(ver *Actualizar*). La traducción no modifica estos ficheros: el pipeline los lee y escribe
-la salida en español en una carpeta hermana.
+(ver *Actualizar*). La traducción tampoco lo modifica:
+
+- `translations/es/` — los lotes de traducción, que se versionan: son la memoria de traducción
+- `bsdata-es/` — el dataset en español que produce `apply`. Es derivado y no se versiona; se
+  regenera con el pipeline (ver [`pipeline/README.md`](../pipeline/README.md))
 
 ## Inventario
 
@@ -24,7 +27,7 @@ la salida en español en una carpeta hermana.
 
 ## Dónde vive el texto
 
-Dos sitios, y solo dos:
+Tres sitios:
 
 1. **`characteristics[]` con `name: "Description"`** → el texto está en la clave `$text`.
    Es el grueso: habilidades, stratagems, enhancements, efectos de detachment.
@@ -36,19 +39,27 @@ Dos sitios, y solo dos:
      ] }
    ```
 
+   Hay unas pocas characteristics más que también son prosa: `Descriptions`, `Capacity`, `Effect`,
+   `Orders`, `Ability` y `Button Effect`.
+
 2. **`description`** en `sharedRules[]` / `rules[]` → las reglas núcleo del juego, definidas
    una sola vez en `Warhammer 40,000.json` y referenciadas desde cualquier facción.
 
+3. **`modifiers[].value`**, cuando el `field` del modifier apunta a una de esas characteristics de
+   prosa: son reglas que reescriben la descripción de una habilidad, y ese texto también lo ve el
+   jugador. Un modifier que escribe sobre `Keywords` o sobre `hidden`, en cambio, no se traduce.
+
 Las demás `characteristics` (`Range`, `A`, `S`, `AP`, `D`, `BS`, `WS`, `M`, `T`, `Sv`, `W`,
-`LD`, `OC`, `Keywords`) son estadísticas o listas de palabras clave: **no se traducen**.
-Los campos `name` tampoco — son los nombres propios que se quedan en inglés.
+`LD`, `OC`, `InSv`, `Keywords`) son estadísticas o listas de palabras clave: **no se traducen**.
+Los campos `name` tampoco — son los nombres propios que se quedan en inglés. Los `comment` son
+notas internas de los mantenedores de BSData y no llegan al jugador.
 
 ## Volumen medido sobre este snapshot
 
 | Métrica | Valor |
 |---|---|
-| Textos traducibles (con repeticiones entre facciones) | 6.259 |
-| Textos únicos a traducir | 5.446 |
+| Textos traducibles (con repeticiones entre facciones) | 6.528 |
+| Textos únicos a traducir | 5.662 |
 | Nombres propios distintos (campos `name`) a proteger | 13.533 |
 | Reglas núcleo en `sharedRules` del game system | 49 entradas / 37 definiciones únicas |
 

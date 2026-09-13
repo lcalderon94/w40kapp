@@ -1,0 +1,3339 @@
+{
+  "batch": 26,
+  "units": [
+    {
+      "id": "45ce5942f27b919a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that unit cannot have the Benefit of Cover.",
+      "target": null
+    },
+    {
+      "id": "93aa618c1ccdc599",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If your army includes this model, after both players have deployed their armies, select up to three ^^**NECRONS^^** units from your army and redeploy them. When doing so, any of those units can be placed in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "2eb65942f5cb23eb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "364d87f7c0940f18",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of the Fight phase, roll one D6 for each enemy unit within 6\" of this model: on a 4+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "c12db118b5fdabb5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "70afdbe1a0e71b72",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your Shooting phase, select one enemy ^^**VEHICLE^^** unit within 12\" of this model and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds and this model regains up to that many lost wounds.",
+      "target": null
+    },
+    {
+      "id": "1210f0ee85e1b506",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle"
+        ]
+      },
+      "source": "Once per turn, at the start of your opponent’s Shooting phase, select one enemy ^^**Vehicle^^** unit visible to the bearer. That unit must take a Leadership test. Until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll and, if that Leadership test was failed, subtract 1 from the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "8c964ab70b4dfe1c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when this unit is selected to make an advance move, you can use this ability. If you do: \n- That advance move has no maximum distance. \n- This unit can move through all types of model (including enemy models and MONSTER/VEHICLE models). \n- After moving, this unit must be more than 8\" horizontally from all enemy units.",
+      "target": null
+    },
+    {
+      "id": "3c701509048e8ccf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Enhancements"
+        ]
+      },
+      "source": "This model cannot be given Enhancements.",
+      "target": null
+    },
+    {
+      "id": "45df0a2c4689235a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transdimensional Displacement"
+        ]
+      },
+      "source": "In your turn, when this unit makes an ingress/advance move using its Transdimensional Displacement ability, this unit can end that move more than 6\" horizontally from all enemy units (instead of more than 8\"). When this unit ends that move within 8\" of an enemy unit, this unit is not eligible to declare a charge until the end of the turn.",
+      "target": null
+    },
+    {
+      "id": "f5987d7976bb05ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, select one friendly CANOPTEK SCARAB SWARM unit within 6\" of this unit. One destroyed model is returned to that CANOPTEK SCARAB SWARM unit for each SPYDER model in this unit.",
+      "target": null
+    },
+    {
+      "id": "01964c41e801f002",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "While a friendly NECRONS VEHICLE unit is within 6\" of the bearer, models in that unit have the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "6edfdf63b9993280",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, if this unit is within Engagement Range of one or more enemy units, you can select one model in this unit to destroy. If you do, select one enemy unit within Engagement Range of that model and roll one D6, adding 1 to the result if that unit is a VEHICLE. On a 2-5, that unit suffers D3 mortal wounds; on a 6+, that unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "98db504a1f294e95",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Engagement Range of this unit, subtract 1 from the Objective Control  characteristic of models in that enemy unit (to a minimum of 1). While this unit is within 6\" of one or more friendly CRYPTEK models, the Objective Control characteristic of models in this unit is 1.",
+      "target": null
+    },
+    {
+      "id": "0a117a613ee97096",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent’s turn, if this unit is unengaged, you can use this ability. If you do: \n- Place this unit in strategic reserves. \n- This unit must make an ingress move in your next Movement phase (including in your first turn).",
+      "target": null
+    },
+    {
+      "id": "f124477cdc8bf2c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Plasmacyte"
+        ]
+      },
+      "source": "Once per battle for each Plasmacyte this unit has, when this unit is selected to fight, you can use this ability. If you do, until the end of the phase, melee weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "888988644fc84074",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, it can make a Normal Move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "75e865d468996cf3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has a Save characteristic of 3+ and a Move characteristic of 8\".",
+      "target": null
+    },
+    {
+      "id": "9d2f23e6d4706b1a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "The bearer has the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "b79b40ed876c21ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Ranged weapons"
+        ]
+      },
+      "source": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability.",
+      "target": null
+    },
+    {
+      "id": "3d70c5a3bacfc953",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "When this unit activates its Reanimation Protocols, +1 to the roll.",
+      "target": null
+    },
+    {
+      "id": "9186df58332753b9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can re-roll Charge rolls made for this unit, and this unit is eligible to declare a charge in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "7a63d62a9108c247",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit ends a Normal move, you can select one enemy unit it moved over during that move and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "fcf35eacbf82ef7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, each time you select a target for this model’s twin tesla destructor, roll one D6 for the target unit and one D6 for every other enemy unit within 3\" of the target unit. On a 5+, the unit being rolled for is struck by arcing energies; after resolving all of this model’s attacks against the target unit, each unit struck by arcing energies suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "d0d3918b6e7808d9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": []
+      },
+      "source": "In your Movement phase, if this model Remains Stationary, until the end of the turn, its doomsday cannon has the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "ac17735ff129111c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1. If the target of that attack is within range of an objective marker your opponent controls, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "76273389e18481ca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes an attack with an enmitic exterminator that targets a unit (excluding MONSTERS and VEHICLES), re-roll a Wound roll of 1. Each time a model in this unit makes an attack with a gauss destructor against a MONSTER or VEHICLE unit, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "845e8b2c0900b27c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+.",
+      "target": null
+    },
+    {
+      "id": "0465e321ec4ec19a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "Once per turn, just after an enemy unit finishes making its attacks, if one or more friendly NECRON WARRIORS units within 3\" of this model lost one or more wounds as a result of those attacks, this model can use this ability. If it does, select one of those NECRON WARRIORS units; that unit’s Reanimation Protocols activate. The same NECRON WARRIORS unit cannot be selected for this ability more than once per turn.",
+      "target": null
+    },
+    {
+      "id": "705b756bcc3b6f83",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 10 NECRON WARRIOR models and 1 NECRONS INFANTRY CHARACTER model.",
+      "target": null
+    },
+    {
+      "id": "6959dcbeeb3342cb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of the Fight phase, if there are no models currently embarked within this **TRANSPORT**, you can select one friendly **NECRONS INFANTRY** unit wholly within 6\" of this **TRANSPORT**. Unless that unit is within Engagement Range of one or more enemy units, it can embark within this **TRANSPORT**.",
+      "target": null
+    },
+    {
+      "id": "08902bd074714bb0",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 1 NECRONS INFANTRY unit.",
+      "target": null
+    },
+    {
+      "id": "73efddc22967e5fe",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
+      "target": null
+    },
+    {
+      "id": "f21a9f22f3c5fd44",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model targets an enemy unit with its heavy death ray, your opponent must declare if that unit will stand firm or duck for cover:\n■ If it stands firm, when resolving attacks against that unit this phase, a successful unmodified Hit roll of 5+ scores a Critical Hit.\n■ If it ducks for cover, until the start of your next Shooting phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "bcdff027fa8809aa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of your opponent’s Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the end of the turn, halve the Move characteristic of models in that unit and halve Advance and Charge rolls made for that unit. In addition, if that unit can FLY, until the start of your next Movement phase, roll one D6 each time that unit ends any type of move: on a 4+, that unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "b19ad001badf5125",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your opponent’s Battle-shock step, if an enemy unit within 8\" of this unit is below starting strength, that enemy unit makes a battle‑shock roll.",
+      "target": null
+    },
+    {
+      "id": "7316992adf3e7a65",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "C'tan Powers"
+        ]
+      },
+      "source": "While this model has 1-8 wounds remaining, subtract 4 from its Objective Control characteristic and you can only select one of the C'tan Powers weapons in your Shooting phase, instead of two.",
+      "target": null
+    },
+    {
+      "id": "b368b9321d1a8184",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when this model is selected to shoot, first select up to 2 different C’tan Powers weapons. Until the end of the phase, this model is equipped with those weapons in addition to its other weapons (this model cannot make attacks with any other C’tan Powers weapon you did not select in this way this phase).",
+      "target": null
+    },
+    {
+      "id": "6de3cdac0672be39",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your movement phase (excluding the first battle round), you can select one friendly NECRONS INFANTRY unit that is either in strategic reserves or on the battlefield (if you select a unit on the battlefield, remove that unit from the battlefield and place it into strategic reserves). That unit can make an ingress move, and while making that ingress move, that unit must be set up wholly within 6\" of this unit and unengaged (instead of more than 8\" horizontally from all enemy units), even if that is within your opponent’s deployment zone. That unit cannot make a charge move this turn.",
+      "target": null
+    },
+    {
+      "id": "49c33ccf5fe84995",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Szarekh"
+        ]
+      },
+      "source": "While this unit’s Szarekh model has 1-6 wounds remaining, halve the Attacks characteristic of that model’s weapons, and each time this unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "7239fcb8daf47abc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Triarch"
+        ]
+      },
+      "source": "At the start of the battle round, select one Triarch ability. Until the start of the next battle round, this unit has that ability.",
+      "target": null
+    },
+    {
+      "id": "657e4e698c0012a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Szarekh"
+        ]
+      },
+      "source": "While a friendly NECRONS unit is within 6\" of this unit's Szarekh model, improve that unit's Leadership characteristic by 1.",
+      "target": null
+    },
+    {
+      "id": "2e872d0d12eed9e4",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Szarekh"
+        ]
+      },
+      "source": "While a friendly ^^**Necrons**^^ unit (excluding ^^**Monster^^** units) is within 6\" of this unit’s Szarekh model, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "66942032c9836089",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Szarekh"
+        ]
+      },
+      "source": "While a friendly ^^**Necrons^^** (excluding ^^**Monster^^** units) unit is within 6\" of this unit’s Szarekh model, you can re-roll Charge rolls made for that unit and each time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "1b1bac65724af63a",
+      "kind": "characteristic:Effect",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Szarekh"
+        ]
+      },
+      "source": "While a friendly NECRONS unit is within 6\" of this unit’s Szarekh model, add 2\" to the Move characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "7fdf5d4337cde324",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Szarekh",
+          "Triarchal Menhir"
+        ]
+      },
+      "source": "If this unit’s Szarekh model is destroyed, all of this unit’s remaining Triarchal Menhir models are also destroyed.",
+      "target": null
+    },
+    {
+      "id": "9605fc8d1e009c0f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 6+"
+        ]
+      },
+      "source": "While a friendly NECRONS INFANTRY unit is within 6” of this FORTIFICATION, models in that unit have the Feel No Pain 6+ ability.",
+      "target": null
+    },
+    {
+      "id": "fc28c84899b4e013",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "4ab6de9130718863",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Unit"
+        ]
+      },
+      "source": "When this unit is first set up on the battlefield, its models do not have to be set up in Unit Coherency. Instead, each model must be set up wholly within 12\" of one other model from its unit. From that point on, each model in this unit is treated as a separate unit.",
+      "target": null
+    },
+    {
+      "id": "48120854d2dde169",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack targets this model, if this model is within range of an objective marker, worsen the Armour Penetration characteristic of that attack by 1. In addition, each time this model makes an attack that targets a unit within range of an objective marker, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "13155ba4edde99c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Psychic"
+        ]
+      },
+      "source": "While a friendly **^^Necrons^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "6f0c2e24fd9b8e43",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly NECRONS model makes an attack that targets that unit, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "4cbfab68de77acd1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an enemy unit selects this model as the target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other reductions to that Charge roll).",
+      "target": null
+    },
+    {
+      "id": "bd4a364b7f53b46a",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Necrons",
+        "Unaligned Forces"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "954c466734528e51",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic"
+        ]
+      },
+      "source": "Each time this model makes a Normal, Advance or Fall Back move, it can move over models (excluding ^^**Titanic**^^ models) and terrain features that are 4\" or less in height as if they were not there.",
+      "target": null
+    },
+    {
+      "id": "933879672078b337",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification"
+        ]
+      },
+      "source": "While a friendly NECRONS unit is within 3\" of this Fortification, models in that unit have a 5+ invulnerable save against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "dd790ce7da3a4a85",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "efeffece305006a0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent’s turn, if this FORTIFICATION is not within Engagement Range of one or more enemy units, you can remove it from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models. If the battle ends and this FORTIFICATION is not on the battlefield, it is destroyed.",
+      "target": null
+    },
+    {
+      "id": "8936c38bd9ed43ed",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "7013ee92d3612363",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. In addition, each time a model in that unit makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base).",
+      "target": null
+    },
+    {
+      "id": "27cc46234e51cb29",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "While a friendly **^^Necrons^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "8f8dd0118f321d4f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) is within 3\" of this unit, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "848c45ce6d4cef9f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "Once per battle round, when a friendly ^^**Necrons^^** unit within 3\" of the bearer activates its Reanimation Protocols, the bearer can use this ability. If it does, that unit reanimates 1 additional wound.",
+      "target": null
+    },
+    {
+      "id": "510d0067a24d9b33",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Canoptek",
+          "Weapon"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one friendly ^^**Canoptek^^** unit within 3\" of the bearer’s unit. Until the end of the phase, improve the Weapon Skill characteristic of weapons equipped by models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "6278797c88d6c24d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack that targets a unit within 12\", you can ignore any or all modifiers to the following: that attack’s Ballistic Skill characteristic; the Hit roll; the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "2649cbcfca72f7ac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cryptek",
+          "Tomb Crawlers",
+          "Cryptothralls",
+          "Bodyguard"
+        ]
+      },
+      "source": "At the start of the Declare Battle Formations step, this unit can join one other unit from your army that is being led by a ^^**Cryptek^^** model (a unit cannot have more than one ^^**Tomb Crawlers^^** unit joined to it and cannot have both a ^^**Tomb Crawlers^^** and a ^^**Cryptothralls^^** unit joined to it). If it does, until the end of the battle, every model in this unit counts as being part of that Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly.",
+      "target": null
+    },
+    {
+      "id": "95f9d2b899802ee8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the start of your next Movement phase that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for it.",
+      "target": null
+    },
+    {
+      "id": "74b71f19a0117b9d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is within range of an objective marker you control, enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of this model.",
+      "target": null
+    },
+    {
+      "id": "d07e94d0076fca7a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units: CANOPTEK MACROCYTES, IMMORTALS, NECRON WARRIORS\n",
+      "target": null
+    },
+    {
+      "id": "9c4263e4cf8dfcfa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Canoptek Macrocytes",
+          "Macrocytes",
+          "Scouts 8\""
+        ]
+      },
+      "source": "If this model is attached to a ^^**Canoptek Macrocytes^^** unit during the Declare Battle Formations step, this model has the Scouts 8\" ability.",
+      "target": null
+    },
+    {
+      "id": "648470ab37a529c2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Destroyer Cult",
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of one or more other friendly ^^**Destroyer Cult^^** units, this model has the Lone Operative ability.",
+      "target": null
+    },
+    {
+      "id": "9f393c87669778bb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Monster",
+          "Titanic",
+          "Destroyer Cult"
+        ]
+      },
+      "source": "While a friendly ^^**Necrons^^** unit (excluding ^^**Monster**^^ and ^^**Titanic^^** units) is within 6\" of this model, each time a model in that unit makes an attack, if that model has the ^^**Destroyer Cult^^** keyword or that enemy unit is the closest eligible target, that attack has the [SUSTAINED HITS 1] ability.",
+      "target": null
+    },
+    {
+      "id": "075978ed5bedd45e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Destroyer Cult"
+        ]
+      },
+      "source": "Each time this model destroys an enemy unit, select one other friendly ^^**Destroyer Cult^^** unit within 9\" of it. Until the end of the phase, each time a model in that unit makes an attack, re‑roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "703db977b07c76d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Psychic"
+        ]
+      },
+      "source": "While a friendly ^^**Necrons^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "b93edb93233c6ce8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Immortals",
+          "Lychguard",
+          "Necron Warriors"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Immortals, Lychguard, Necron Warriors**^^",
+      "target": null
+    },
+    {
+      "id": "a54d96dd263b0444",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Immortals",
+          "Necron Warriors"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Immortals, Necron Warriors**^^",
+      "target": null
+    },
+    {
+      "id": "4aab5dc85496b1d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[HEAVY]"
+        ],
+        "names": [
+          "Monolith",
+          "Obelisk",
+          "Tesseract Vault",
+          "Sentry Pylon",
+          "Fortification"
+        ]
+      },
+      "source": "One friendly **^^Monolith, Obelisk, Tesseract Vault**^^ or **^^Sentry Pylon**^^ model can start the battle on top of this Fortification’s ziggurat platform. While such a model is on this platform, that model's ranged weapons have the [HEAVY] ability. Any friendly model can be set up or end any type of move on the ramps or platform sections of this **^^Fortification**^^.",
+      "target": null
+    },
+    {
+      "id": "a00c3225251fc96a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fortification",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this ^^**Fortification^^**, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "65311655ea4f2893",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1‑15 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "ed972240d7b4c212",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "NECRONS model only. (Once per battle, per army) At the end of your opponent’s turn, if this unit is unengaged, you can use this ability. If you do: \n- Place this unit in strategic reserves. \n- This unit has Deep Strike until the start of your next Shooting phase. \n- This unit must make an ingress move in your next Movement phase (including in your first turn).",
+      "target": null
+    },
+    {
+      "id": "c2bf78ab207210ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "NECRONS model only. While the bearer is leading a unit, models in that unit have the Stealth ability.",
+      "target": null
+    },
+    {
+      "id": "05b41c5f9ff02a6a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "NECRONS model only. While a friendly NECRONS unit (excluding CHARACTER units) is within 6\" of the bearer, each time a model in that unit makes an attack, add 1 to the hit roll.",
+      "target": null
+    },
+    {
+      "id": "a530027a29d525a0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hyperphasing"
+        ]
+      },
+      "source": "NECRONS model only. While the bearer is on the battlefield or in Strategic Reserves, add 1 to the number of units from your army that you can select for the Hyperphasing rule.",
+      "target": null
+    },
+    {
+      "id": "3bf8e39050818339",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "NECRONS model only. In the Fight phase, each time a model in the bearer's unit is destroyed, if that model had not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "21d73123506a396f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "NECRONS model only. Each time a model in the bearer's unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "2e72e7c4222495d3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "DESTROYER CULT model only. Each time an enemy unit within Engagement Range of the bearer's unit is selected to Fall Back, roll one D6. On a 3+, that unit cannot Fall Back and must Remain Stationary.",
+      "target": null
+    },
+    {
+      "id": "b33dabd5291e94aa",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "DESTROYER CULT model only. At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "582888b028838385",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "CRYPTEK model only. Models in the bearer's unit have the Infiltrators ability.",
+      "target": null
+    },
+    {
+      "id": "8fb0bd6d6dd3be28",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Power Matrix"
+        ]
+      },
+      "source": "CRYPTEK model only. While the bearer is leading a unit, if that unit is wholly within your army's Power Matrix, each time a model in that unit makes an attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "56890a1356ebd6e6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "CRYPTEK model only. Each time your opponent gains a CP as a result of an ability, roll one D6: on a 2+, you also gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "098816968fa7ba7d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "CRYPTEK model only. Once per phase, when an enemy unit selects the bearer's unit as a target of a charge, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds, on a 6, that enemy unit suffers 3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "312b6bbe6ffdc894",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "OVERLORD model only. Each time the bearer's unit destroys an enemy CHARACTER unit, your opponent loses 1CP if they have any.",
+      "target": null
+    },
+    {
+      "id": "0c926d566be6ef19",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]",
+          "[ANTI-INFANTRY 5+]"
+        ],
+        "names": []
+      },
+      "source": "OVERLORD model only. The bearer's melee weapons have the [PRECISION] and [ANTI-INFANTRY 5+] abilities.",
+      "target": null
+    },
+    {
+      "id": "beae5c4cb0bec6f9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "OVERLORD model only. Each time a melee attack targets the bearer's unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "7ecf5c7b1e7f88c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "OVERLORD model only. Each time a model in the bearer's unit makes an attack that targets an enemy unit within range of an objective marker, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "e8fe1c4eddfa5d2a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "NECRONS model only. The bearer has the Feel No Pain 4+ ability.",
+      "target": null
+    },
+    {
+      "id": "cbd596b6ae500bac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "NECRONS model only. Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1. If the bearer's unit was set up on the battlefield this turn, you can re-roll the Hit roll instead.",
+      "target": null
+    },
+    {
+      "id": "a71119f9b91fcf9f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "NECRONS model only. Each time the bearer's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "7a4ffac99fb48a3c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "NECRONS model only. Models in the bearer's unit have the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "9836a45d7278d753",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster"
+        ]
+      },
+      "source": "While a friendly ^^**Necrons**^^ unit (excluding ^^**Monster^^** and ^^**Titianic^^** units) is within 6\" of the bearer, each time a model in that unit makes an attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "55ab937632ca54a2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, select one friendly NECRONS VEHICLE or NECRONS MOUNTED unit (excluding TITANIC units) within 6\" of the bearer. Until the start of your next Command phase, that unit is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "0924ecbf596ea6c6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Mounted",
+          "Titanic"
+        ]
+      },
+      "source": "In your Command phase, select one friendly **^^Necrons Vehicle^^** or **^^Necrons Mounted^^** unit (excluding Titanic units) within 6\" of the bearer. Until the start of your next Command phase, each time an attack is allocated to a model in that unit, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "f7fe8b6f489f7478",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "Add 6\" to the Range characteristic of ranged weapons equipped by models in the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "0e9d9ee455aa27d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[ANTI‑MONSTER 5+]",
+          "[ANTI‑VEHICLE 5+]"
+        ],
+        "names": [
+          "Technosorcerous Augmentations",
+          "Detachment"
+        ]
+      },
+      "source": "In your Shooting phase, each time the bearer’s unit is selected to shoot, when selecting an ability for the Technosorcerous Augmentations Detachment rule, you can also select from the following abilities: [ANTI‑MONSTER 5+], [ANTI‑VEHICLE 5+].",
+      "target": null
+    },
+    {
+      "id": "a3133e8e1d3abbf2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6, adding 1 if it is within range of one or more objectives: on a 4+, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "ca053ae6494b1233",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Titanic"
+        ]
+      },
+      "source": "In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks (excluding ^^**Titanic^^** units); until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for that unit.",
+      "target": null
+    },
+    {
+      "id": "fea619551dae8725",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Destroyer Cult"
+        ]
+      },
+      "source": "The bearer has the ^^**Destroyer Cult^^** keyword. Add 2\" to the Move characteristic of models in the bearer’s unit and add 2 to the Attacks characteristic of melee weapons equipped by the bearer.",
+      "target": null
+    },
+    {
+      "id": "0e77443866ca9799",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer has the **DESTROYER CULT** keyword. Add 3\" to the Move characteristic of the bearer.",
+      "target": null
+    },
+    {
+      "id": "a2cb4ea3003d3fec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in the bearer’s unit makes an attack, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "be5bdd73652daf65",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Aircraft",
+          "Range"
+        ]
+      },
+      "source": "Each time an enemy unit is selected to shoot, after that unit has shot, if any models from the bearer’s unit were destroyed as a result of those attacks, the bearer’s unit can make a Surge move. To do so, roll one D6: the bearer’s unit can be moved a number of inches up to the result, but the bearer’s unit must finish that move as close as possible to the closest enemy unit (excluding ^^**Aircraft^^**). \nWhen doing so, those models can be moved within Engagement Range of that enemy unit. A unit cannot make a Surge move while it is Battle‑shocked.",
+      "target": null
+    },
+    {
+      "id": "a887a59ca14afb95",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Monolith",
+          "Eternity Gate"
+        ]
+      },
+      "source": "When this unit is selected to shoot, if this unit was set up using a Monolith’s Eternity Gate ability this turn, this unit’s ranged attacks have: \n- [LETHAL HITS]. \n- Or: [SUSTAINED HITS 1].",
+      "target": null
+    },
+    {
+      "id": "b8af2e4c94b79646",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the battle, select one objective marker in No Man's Land. While this model is within range of that objective marker, change its Objective Control characteristic to 4.",
+      "target": null
+    },
+    {
+      "id": "71bdf2bb642a853d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "At the end of the battle of the battle, if this model is part of your Crusade army and it gained 3 or more XP (excluding XP gained from Marked for Greatness), you gain 1RP.",
+      "target": null
+    },
+    {
+      "id": "6ecb4205f6557156",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Out of Action tests taken for this unit are automatically passed.",
+      "target": null
+    },
+    {
+      "id": "3ec59de6eeaaa3ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Crusade"
+        ]
+      },
+      "source": "While this unit is within 6\" of one or more **^^Character^^** models from your Crusade army, each time a model in this unit makes an attack, re-roll a Hit roll of 1.",
+      "target": null
+    },
+    {
+      "id": "0389031c6a9f2498",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "Each time you make a Reanimation Protocols roll for this unit, add 1 to the result.",
+      "target": null
+    },
+    {
+      "id": "469546e9ef6b2420",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this unit is Battle-shocked, halve the Objective Control characteristic of models in this unit instead of changing it to 0.",
+      "target": null
+    },
+    {
+      "id": "a7a8ec9c37ad6d00",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "Once per turn, one unit from your Crusade army with this Battle Trait can change the result of its Reanimation Protocols roll to 3.",
+      "target": null
+    },
+    {
+      "id": "bb478dcbae6dd4f6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cryptek"
+        ]
+      },
+      "source": "While a friendly ^^**Cryptek**^^ unit is on the battlefield, each time a model in this unit makes a melee attack, re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "62842be392f548fb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Deadly Demise"
+        ]
+      },
+      "source": "The bearer has the Deadly Demise D3 ability. In addition, select one of the bearer's melee weapons; add 2 to the Strength and Attacks characteristic of that weapon, and that weapon has the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "1c16cb4a42e329bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "While the bearer is leading a unit, each time that unit's Reanimation Protocols activate, it reanimates 3 wounds instead of D3 wounds.",
+      "target": null
+    },
+    {
+      "id": "f0ef1fe1be0ae69e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle, at the start of your Command phase, select one unit of your opponent's army. Until the start of your next Command phase, each time a model from your Crusade army makes an attack that targets that enemy unit, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "51ce9745e8ef0419",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative",
+          "Leader"
+        ]
+      },
+      "source": "- Add 1 to the Strength and Attacks characteristic of melee weapons equipped by this unit.\n- This unit has the Lone Operative ability and loses the Leader ability.",
+      "target": null
+    },
+    {
+      "id": "81ff5f619a9c0c8b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- Each time a model in this unit makes an attack, you can re-roll the Hit roll.\n- Worsen the Leadership and Objective Control characteristics of this unit by 1.",
+      "target": null
+    },
+    {
+      "id": "266a64c1499ee7dc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "- Each time you target this unit with a Stratagem, reduce that Stratagem's cost by 1CP for that usage.\n- This cannot Fall Back or Advance.",
+      "target": null
+    },
+    {
+      "id": "98809167a5e8ef0f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "- Add 1 to the Attacks characteristic of melee weapons equipped by models in this unit.\n- This unit cannot use its Reanimation Protocols ability.",
+      "target": null
+    },
+    {
+      "id": "905f5f372e80228f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "Once per battle round, you can re-roll the roll for one unit in your Crusade army's Reanimation Protocols ability.",
+      "target": null
+    },
+    {
+      "id": "cca4641d9a762861",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "While a unit is Below Half-strength, add 1 to the result of that unit's Reanimation Protocols roll.",
+      "target": null
+    },
+    {
+      "id": "e535da10e04f8156",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade",
+          "Reanimation Protocols"
+        ]
+      },
+      "source": "Once per battle, after an enemy unit has caused a unit from your Crusade army to go below its Starting Strength, that unit can use its Reanimation Protocols ability.",
+      "target": null
+    },
+    {
+      "id": "768ef0cd6caff038",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "At the start of the battle, select one ^^**Character^^** unit and add 1 to the Toughness characteristic of models in that unit until the end of the battle.",
+      "target": null
+    },
+    {
+      "id": "7bad16f6b86d1045",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character",
+          "Bodyguard"
+        ]
+      },
+      "source": "At the start of the battle, select one ^^**Character^^** unit. Each time a Bodyguard model in that unit is destroyed by a melee attack, if that model has not fought that phase, roll one D6: on a 3+, do not remove it from play. The destroyed model can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "9554054b4ee9b059",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Once per battle round, you can target a **^^Necrons Character^^** unit from your army with the Command Re-roll Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "e9a5265edcee63b3",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Once per turn, select one **^^Necrons^^** unit that was set up on the battlefield using the Deep Strike ability this turn. Until the end of the turn, each time a model in that unit makes an attack, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "33c649a74fe6d4ba",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Crusade",
+          "Scouts 6\"",
+          "Fly"
+        ]
+      },
+      "source": "Before the start of the battle, select up to three **^^Necrons Infantry^^** units from your Crusade army. Those units have the Scouts 6\" ability, and while using that ability, they can **^^Fly^^**.",
+      "target": null
+    },
+    {
+      "id": "4c243192e3c36814",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Once per battle, in your Command phase, select one **^^Necrons^^** unit from your Crusade army. Until the end of the turn, add 2 to Advance and Charge roll made for that unit.",
+      "target": null
+    },
+    {
+      "id": "3b9ad0ebcf1478cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deathmarks"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Deathmarks**^^",
+      "target": null
+    },
+    {
+      "id": "8a6cdb528243fa24",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Flayed Ones"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Flayed Ones**^^",
+      "target": null
+    },
+    {
+      "id": "ff9ef875c3c848e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Triarch Praetorians"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Triarch Praetorians**^^",
+      "target": null
+    },
+    {
+      "id": "2fb526dbff1c557a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Ophydian Destroyers",
+          "Destroyers"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Ophydian Destroyers**^^",
+      "target": null
+    },
+    {
+      "id": "dca14a27dc545f9d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, at the start of a phase during your turn, you can select one enemy unit within 18\" of this model. That unit must make a Battle-shock test, subtracting 1 from the test when it does so.",
+      "target": null
+    },
+    {
+      "id": "4e4b204b6d39c7f1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a model in this unit makes a ranged attack, an unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "febad39db6634aec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, select one enemy unit within 18\" of and visible to this model and roll 4 D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+      "target": null
+    },
+    {
+      "id": "1eb7bd039268abf6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Necrons**^^ unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
+      "target": null
+    },
+    {
+      "id": "e674e478a677a77a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one unit from your army with this ability can be targeted with a Stratagem for 0CP, even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "233850ff3d9f490b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[^^Lethal Hits^^]"
+        ],
+        "names": [
+          "Lethal Hits"
+        ]
+      },
+      "source": "While this model is leading a unit, melee weapons equipped by models in that unit have the [^^Lethal Hits^^] ability.",
+      "target": null
+    },
+    {
+      "id": "9d92715851bc2011",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": []
+      },
+      "source": "This unit’s ranged attacks have [ASSAULT].",
+      "target": null
+    },
+    {
+      "id": "47ec78527ac7a330",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[ASSAULT]"
+        ],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "Friendly **ORKS** with this ability can:\n- Re-roll **advance rolls**.\n- Become **riled up**, as stated in other rules.\nWhile a unit is **riled up**:\n    - That unit has 5+ **InSv**.\n    - That unit's ranged attacks have **[ASSAULT]**.\n    - When that unit is selected to make an **advance move**, that **advance move** does not prevent that unit from being **eligible to declare a charge**.",
+      "target": null
+    },
+    {
+      "id": "b2c202f287b3b38e",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Waaagh!"
+        ]
+      },
+      "source": "At the start of the Command phase, you can use this ability. If you do, friendly **ORKS** units with the **Waaagh!** ability are **riled up** until the end of the next turn.",
+      "target": null
+    },
+    {
+      "id": "ea7610f6651a6897",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-7 wounds remaining, subtract 4 from this model’s Objective Control characteristic, and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "b370481fbb266533",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Leader",
+          "Warbikers"
+        ]
+      },
+      "source": "If a model from your army with the Leader ability can be attached to a **^^Warbikers^^** unit, it can be attached to this unit instead.",
+      "target": null
+    },
+    {
+      "id": "861f8a6aa8b311e1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, for each bomb squig this unit has, after this unit ends a Normal move, you can use one Bomb Squig. If you do, select one enemy unit within 12\" and visible to this unit and roll one D6: on a 3+, that enemy unit suffers D3 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "9833096ac77054cc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **ORKS** unit within 6\" of this unit. That unit:\n- Is no longer **battle-shocked**.\n- Is **riled up** until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "6902007da351b002",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]",
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "This unit's ranged attacks have:\n- **[IGNORES COVER]**.\n- If this unit is **riled up**, **[SUSTAINED HITS 1]**.",
+      "target": null
+    },
+    {
+      "id": "bb2ad877a16a2833",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **BEAST SNAGGA** unit within 6\" of this unit. That unit:\n- Is no longer **battle-shocked**.\n- Is **riled up** until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "8c1d0c3bfdbc9625",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when this unit ends a **normal move**, you can select one **visible** enemy unit within 12\" of this unit and roll one D6:\n- On a 3+, that enemy unit suffers D3 **mortal wounds**.\n*Place two Bomb Squig tokens next to the unit, removing one each time this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "8c03f9f289d54d17",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when this unit ends a **normal move**, you can select one **visible** enemy unit within 12\" of this unit and roll one D6:\n- On a 3+, that enemy unit suffers D3 **mortal wounds**.\n*Place one Bomb Squig token next to the unit, removing it after this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "7c71ff3f536acf4a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when this unit ends a **normal move**, units embarked within this unit can make an **assault disembark move**.",
+      "target": null
+    },
+    {
+      "id": "1fc5d2221058c1bd",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Waaagh!",
+          "Void Waaagh!"
+        ]
+      },
+      "source": "Units from your army with the Waaagh! ability retain that ability and gain this one.\n\nOnce per battle, at the start of the battle round, you can call a Void Waaagh!. If you do, until the start of the next battle round, the Void Waaagh! is active for your army and:\n- Add 1 to the Strength and Attacks characteristics of melee weapons equipped by models from your army with this ability.\n- Models from your army with this ability have a 5+ invulnerable save.\n\nA Void Waaagh! counts as a Waaagh! for any datasheet abilities.",
+      "target": null
+    },
+    {
+      "id": "9613eb94492a1266",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of the battle round, if a model with this ability is your **WARLORD**, gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "96dedf6f9dab1fa9",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**ORKS PSYKER** units with this ability have a **psyker level** of 1 or higher, specified in that unit's abilities. Each **psychic ability** has a **psychic level** of 1 or higher, specified in that ability's name.\nIn a battle round, a friendly **ORKS PSYKER** unit can use a number of **psychic abilities** whose total **psychic level** does not exceed that **PSYKER** unit's **psyker level**.",
+      "target": null
+    },
+    {
+      "id": "f7500cb9a2b0ac13",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Ranged attacks that target this unit have -1 **D**.",
+      "target": null
+    },
+    {
+      "id": "35838f47329f0d7c",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 22 **ORKS INFANTRY** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models. Each **GHAZGHKULL THRAKA** model takes up the space of 4 models.",
+      "target": null
+    },
+    {
+      "id": "bab9a919fa0467a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When this unit ends a **charge move**, each enemy **MONSTER/VEHICLE** unit **engaged** with this unit makes a **battle-shock roll**:\n- With -1 to that **battle-shock roll**.\n- <ins>Or:</ins> With -2 to that **battle-shock roll** if this unit has 13+ models.",
+      "target": null
+    },
+    {
+      "id": "d14c9a94dd0a48ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's attacks have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "5348628389b03811",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Beast Snagga Boyz",
+          "Boyz"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Beast Snagga Boyz^^**",
+      "target": null
+    },
+    {
+      "id": "b74b4ba860ad9f0a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Friendly **BEAST SNAGGA** units within 6\" of this unit have +1 to **charge rolls**.",
+      "target": null
+    },
+    {
+      "id": "951ba98958696f5a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "While this unit is within 3\" of a friendly **BEAST SNAGGA** unit (excluding **MONSTER CHARACTER** units), this unit has **Lone Operative**.",
+      "target": null
+    },
+    {
+      "id": "fc4b4683ade31db4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, this unit **heals** 3 wounds.\n*Place a Grot Oiler token next to the unit, removing it when this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "ddb7e288be261f68",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **MEGANOBZ**\n- **MEK GUNZ**",
+      "target": null
+    },
+    {
+      "id": "e9dead84e5ee1454",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "InSv"
+        ]
+      },
+      "source": "This unit has 4+ **InSv** against ranged attacks.",
+      "target": null
+    },
+    {
+      "id": "bd31f0b0b925b510",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "While this model is within 3\" of a friendly **ORKS INFANTRY** unit (excluding **BIG MEK WITH SHOKK ATTACK GUN** units), this model has **Lone Operative**.",
+      "target": null
+    },
+    {
+      "id": "f7b6e5cd92913308",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following units:\n- **BOYZ**\n- **MEK GUNZ**\n- **NOBZ**\n- **TANKBUSTAS**",
+      "target": null
+    },
+    {
+      "id": "6179be607e43d779",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is **engaged** with only **FORTIFICATION** units:\n- That enemy unit can be selected as a target of ranged attacks.\n- When shooting that enemy unit, those ranged attacks have -1 to **hit rolls** (excluding **[CLOSE-QUARTERS** attacks).\n- When that enemy unit is selected to make a **fall-back move**, if that enemy unit if only **engaged** with **FORTIFICATION** units, and that enemy unit is not **battle-shocked**, **hazard rolls** made for that enemy unit are automatically passed.",
+      "target": null
+    },
+    {
+      "id": "d596b9e54a99b646",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model is within range of your **home objective*, add the **OC** of models embarked within this model to this model's **OC**.",
+      "target": null
+    },
+    {
+      "id": "d5b2e7ac3e2b3465",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 11 **ORKS INFANTRY* models. It cannot transport **GHAZGHKULL THRAKA** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "98abca7b0379c83b",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When an attack targets a unit that is not **fully visible** to the attacking model because of this unit, the target has the **benefit of cover** against that attack.",
+      "target": null
+    },
+    {
+      "id": "189a102ba9583b01",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "At the end of your opponent’s Fight phase, select one **visible** enemy unit (excluding **Lone Operative** units) within 24\" of this unit, and roll one D6 for that unit:\n- On a 1-3, that enemy unit suffers D3 **mortal wounds**.\n- On a 4-5, that enemy unit suffers 3 **mortal wounds**.\n- On a 6, that enemy unit suffers D3+3 **mortal wounds**.",
+      "target": null
+    },
+    {
+      "id": "5f3743e7d37bd5e2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent's Movement phase, if this unit is in **strategic reserves**, this unit can make an **ingress move**.",
+      "target": null
+    },
+    {
+      "id": "6b38880be6e4e046",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent's Fight phase, if each model in this unit is **hidden** and **unengaged**, you can place this unit in **strategic reserves**.",
+      "target": null
+    },
+    {
+      "id": "eb4f1d7cf88c6fc5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **KOMMANDOS**",
+      "target": null
+    },
+    {
+      "id": "ec81d0b0d5f7a9e4",
+      "kind": "characteristic:Description",
+      "occurrences": 3,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's melee attacks have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "54ce88cf1a564317",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this unit made an **ingress move** this turn, this unit can re-roll **charge rolls**.",
+      "target": null
+    },
+    {
+      "id": "e5d59b7e05cf38d6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **STORMBOYZ**",
+      "target": null
+    },
+    {
+      "id": "dd501b5ba1ab4193",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Being **engaged** does not prevent this unit from being **eligible to start an action**.",
+      "target": null
+    },
+    {
+      "id": "94866b4a224b822b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, when this unit is **selected to shoot**, you can use this ability. If you do, this unit's ranged attacks have +1 to **hit rolls**.\n*Place any number of Ammo Runts tokens next to the unit, removing them when this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "852a664207cd0dbd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "In the Fight phase, if this unit made a charge move this turn, this unit's melee attacks have **[LETHAL HITS]**.",
+      "target": null
+    },
+    {
+      "id": "63a5c77ec10a8dc9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's attacks that target a unit within 6\" of this unit can re-roll **wound rolls** of 1.",
+      "target": null
+    },
+    {
+      "id": "7f8c98270442c78a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "At the end of your opponent’s Fight phase, you can select one **visible** enemy unit (excluding **Lone Operative** and **MONSTER/VEHICLE** units) within 36\" of this unit, and roll one D6 for that units. On a 2+:\n- That enemy unit suffers D3 **mortal wounds**.\n- That enemy unit cannot be **hidden** until the end of your next turn.\n- Ranged attacks that target that enemy unit have **[IGNORES COVER]** until the end of your next turn.",
+      "target": null
+    },
+    {
+      "id": "43d80dbd40872b05",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, this unit's ranged attacks that target a unit (excluding **FLY** units) have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "fc545aa949adbb02",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Attacks that target this unit have -1 **D**.",
+      "target": null
+    },
+    {
+      "id": "29e981b995252ab2",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **SPEED FREEKS** unit within 6\" of this unit. That unit (and any units embarked within that unit):\n- Is no longer **battle-shocked**.\n- Is **riled up** until the start of your next turn.",
+      "target": null
+    },
+    {
+      "id": "2043f15f23601036",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit has +1 to **advance rolls**.",
+      "target": null
+    },
+    {
+      "id": "7f23ba16cac598bd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **NOBZ ON WARBIKES**\n- **SKORCHAS**\n- **WARBIKERS**\n- **WARBUGGIES**",
+      "target": null
+    },
+    {
+      "id": "34eb933bcf70c2a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your opponent's Fight phase, if this unit is **unengaged**, you can place this unit in **strategic reserves**.",
+      "target": null
+    },
+    {
+      "id": "0de85c2423f0c0a8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, if this unit made an **ingress move** this turn, this unit's ranged attacks have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "d1e4d59b82d54479",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, if any of the following apply, this unit's ranged attacks have +1 **AP**.\n- This unit is within range of an **objective**.\n- The target of that attack is within range of an **objective**.",
+      "target": null
+    },
+    {
+      "id": "d7a99fe29fb3c543",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is in your army, it must be your **WARLORD**.",
+      "target": null
+    },
+    {
+      "id": "bccdde03851df76a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, you can select a number of friendly **ORKS** units equal to or less than the current battle round number. Those units are **riled up** until the start of your next turn.\n*Place one Makari token next to the unit, removing it after this ability is used.*",
+      "target": null
+    },
+    {
+      "id": "b76690498a1ff2ac",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Lone Operative"
+        ]
+      },
+      "source": "While this unit is within 3\" of another friendly **ORKS INFANTRY** unit, this unit has **Lone Operative**.",
+      "target": null
+    },
+    {
+      "id": "b21b4a747b8dd52f",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While a friendly **ORKS** unit is within 6\" of this unit, that unit's melee attacks have:\n- +1 to **hit rolls*.\n- +1 to **wound rolls**.",
+      "target": null
+    },
+    {
+      "id": "1df9274778ce39d1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's melee attacks can re-roll **hit rolls** of 1.",
+      "target": null
+    },
+    {
+      "id": "7e3448a3b1b3f196",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 12 **ORKS INFANTRY** models It cannot transport **GHAZGHKULL THRAKA** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models.",
+      "target": null
+    },
+    {
+      "id": "4fae1188f3e7c5eb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gretchin"
+        ]
+      },
+      "source": "For the purposes of **transport capacity**, each 2 Gretchin models (rounding up) take up the space of 1 model.",
+      "target": null
+    },
+    {
+      "id": "7937e851c8d810c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the end of your Movement phase, if this unit is controlling an **objective**, that **objective** is **secured**.",
+      "target": null
+    },
+    {
+      "id": "c94a847ad5bbd92d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "When you target this unit with the **Crushing Impact stratagem**, that use is -1 CP.",
+      "target": null
+    },
+    {
+      "id": "26ccb65102c50921",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 22 **BEAST SNAGGAS INFANTRY** models.",
+      "target": null
+    },
+    {
+      "id": "711436293763d828",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Butcha Boyz",
+          "Boyz"
+        ]
+      },
+      "source": "This unit's Butcha Boyz weapon has +2 **A** for each model embarked within this unit (to a maximum of +22 **A**).",
+      "target": null
+    },
+    {
+      "id": "93db762fccb7ca71",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's ranged attacks can re-roll **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "deee691ea0b2b653",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Enemy units within 6\" of this model have -1 **T**.",
+      "target": null
+    },
+    {
+      "id": "8f8f40a3582d94a1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model can be attached to the following unit:\n- **FLASH GITZ**",
+      "target": null
+    },
+    {
+      "id": "f69eb15e4cb1bf8e",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a **transport capacity** of 12 **BEAST SNAGGAS INFANTRY** models.",
+      "target": null
+    },
+    {
+      "id": "50856d6c4b087f81",
+      "kind": "characteristic:Descriptions",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]",
+          "[PSYCHIC]"
+        ],
+        "names": []
+      },
+      "source": "In the Fight phase, when this unit is **selected to fight**, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- On a 1, this unit is **battle-shocked**.\n- This unit's melee attacks have **[LETHAL HITS]** and **[PSYCHIC]**.",
+      "target": null
+    },
+    {
+      "id": "4805e5ecb5dc4af0",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic Abilities",
+          "Abilities"
+        ]
+      },
+      "source": "This model has the **psychic abilities** listed in the Psychic Abilities section.",
+      "target": null
+    },
+    {
+      "id": "0ee6f7bf8250f2db",
+      "kind": "characteristic:Descriptions",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Movement phase, when a unit embarked within this unit is selected to make a **disembark move**, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- One a 1, this unit is **battle-shocked*.\n- That disembarking unit's attacks that target a **MONSTER/VEHICLE** unit have +1 to **wound rolls** until the end of the turn.",
+      "target": null
+    },
+    {
+      "id": "69916317dd82eef8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's attacks that target a unit that has no models with a **T** of 7+ have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "81583a24732c81d8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kommando"
+        ]
+      },
+      "source": "In your Movement phase, you can select one enemy unit within 12\" of this unit. That unit has +3\" **detection range** until the end of the turn.\n*Place one Kommando Grot token next to that enemy unit to remind you.*",
+      "target": null
+    },
+    {
+      "id": "c27c940f018c32e0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Found 'Em!"
+        ]
+      },
+      "source": "In the Declare Battle Formations step, you can split this unit into two units, each with a **starting strength** of 5. If you do, select which one of those units will have the **Bomb Squig** ability and which one of those units will have the **Found 'Em!** ability.",
+      "target": null
+    },
+    {
+      "id": "f07d0a768df851af",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Orks"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This unit's attacks that target a **hidden** unit have +1 to **hit rolls**.",
+      "target": null
+    }
+  ]
+}

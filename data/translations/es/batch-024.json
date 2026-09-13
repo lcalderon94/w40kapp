@@ -1,0 +1,2894 @@
+{
+  "batch": 24,
+  "units": [
+    {
+      "id": "d27ab4829540d14e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Biomatter",
+          "Monster",
+          "Vehicle",
+          "Energy Sources"
+        ]
+      },
+      "source": "Each time the bearer's unit destroys an enemy unit, at the end of the battle you gain 10 Biomatter. If that was a **^^Monster^^** unit, you gain 20 Biomatter instead. If that unit was a **^^Vehicle^^** unit, you gain 20 Raw Materials instead. In addition, you gain 20 Energy Sources if that unit was equipped with a Relic.",
+      "target": null
+    },
+    {
+      "id": "6eb7ef0814fd537a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The bearer harbours a grudge against every Faction, and these grudges can never be settled (ignore any rules that would apply when a grudge is settled).",
+      "target": null
+    },
+    {
+      "id": "3ce21c1f380aa9c7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Kâhl",
+          "Grimnyr"
+        ]
+      },
+      "source": "**^^Kâhl^^** or **^^Grimnyr^^** model only. Once per battle, at the start of the Fight phase, the bearer can unveil this Relic. If it does, every enemy unit within 18\" of the bearer gains 1 Judgement token, and until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by models in the bearer's unit.\n***Data Author Note: Judgement tokens were removed with the release of the codex.***",
+      "target": null
+    },
+    {
+      "id": "739b3b045e58add0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "The bearer's ranged weapons (excluding Psychic weapons) have the **[LETHAL HITS]** ability, and each time the bearer makes a ranged attack, a successful unmodified Hit roll of 5+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "8ef3fa84c272281b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Add 2 to the bearer's Wounds characteristic.",
+      "target": null
+    },
+    {
+      "id": "58387a41399430ab",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psychic"
+        ]
+      },
+      "source": "Each time the bearer is selected to shoot, for each ranged weapon equipped by the bearer (excluding Psychic weapons), if that weapon has an Armour Penetration characteristic of 0 or -1, it is improved to -2.",
+      "target": null
+    },
+    {
+      "id": "85126d82cdb01669",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cthonian Beserks",
+          "Beserks"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Cthonian Beserks**^^",
+      "target": null
+    },
+    {
+      "id": "037fb9ce7a0c647a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Einhyr Hearthguard",
+          "Hearthguard"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Einhyr Hearthguard**^^",
+      "target": null
+    },
+    {
+      "id": "f1b0b10cfea10273",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Brôkhyr Thunderkyn",
+          "Thunderkyn"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Brôkhyr Thunderkyn**^^",
+      "target": null
+    },
+    {
+      "id": "fe287b80401b43d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hernkyn Yaegirs",
+          "Yaegirs"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Hernkyn Yaegirs**^^",
+      "target": null
+    },
+    {
+      "id": "1b9e8199a5adba78",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hernkyn Pioneers",
+          "Pioneers"
+        ]
+      },
+      "source": "This model can be attached to the following units: ^^**Hernkyn Pioneers**^^",
+      "target": null
+    },
+    {
+      "id": "dc8b4565a223de8a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a ranged attack targets this unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "947dbf53f6262650",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Leagues of Votann"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vehicle",
+          "Exoframe",
+          "Ironkin Steeljacks"
+        ]
+      },
+      "source": "At the end of your Movement phase, this model can repair one friendly ^^**Leagues of Votann Vehicle, Exoframe**^^ or **^^Ironkin Steeljacks**^^ unit within 3\" of it. One model in that unit regains up to D3 lost wounds. Each unit can only be repaired once per turn.",
+      "target": null
+    },
+    {
+      "id": "e8d5b6c205b59e96",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Blast"
+        ]
+      },
+      "source": "When making ranged attacks, this model can target enemy units within Engagement Range of it with Blast weapons (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units.",
+      "target": null
+    },
+    {
+      "id": "ead166fdbae87625",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deadly Demise",
+          "Range"
+        ]
+      },
+      "source": "The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining.",
+      "target": null
+    },
+    {
+      "id": "576bfb107b2630ef",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Astartes Heresy Legends",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "d1365bf7ced3b56a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "In your Shooting phase, each time this model has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to D6\". If it does, until the end of the turn, this model is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "2cfce1518728b657",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model must start the battle in Reserves, but it is not counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
+      "target": null
+    },
+    {
+      "id": "7d6e7af2c13cd477",
+      "kind": "characteristic:Capacity",
+      "occurrences": 2,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "bda9d8062b77d4d6",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 6 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "0f95bdfbfff02043",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Capacity"
+        ]
+      },
+      "source": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of the bearer, but the bearer must halve its Transport Capacity.",
+      "target": null
+    },
+    {
+      "id": "0fa07de5e7f34e87",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [
+          "[IGNORES COVER]"
+        ],
+        "names": [
+          "Oath of Moment",
+          "Indirect Fire"
+        ]
+      },
+      "source": "Each time this model makes an attack that targets the enemy unit you selected for the Oath of Moment ability, that attack has the [IGNORES COVER] ability and can ignore the penalty to their Hit rolls when making attacks with Indirect Fire weapons against targets that are not visible to them.",
+      "target": null
+    },
+    {
+      "id": "83095e543020ba86",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets the closest eligible MONSTER or VEHICLE unit, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "84d0c9efcef3f07c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Punisher rotary cannon"
+        ]
+      },
+      "source": "This model’s Punisher rotary cannon has the [SUSTAINED HITS 1] ability when targeting INFANTRY units.",
+      "target": null
+    },
+    {
+      "id": "2dad8ac2aea597b6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "target": null
+    },
+    {
+      "id": "d1bcaf846b05948a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [
+          "[HEAVY]",
+          "[LETHAL HITS]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model shoots in your Shooting phase, provided it Remained Stationary this turn, all [HEAVY] weapons equipped by models in this unit have the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "fb8b3bdfee2a3849",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Scorpius multi-launcher"
+        ]
+      },
+      "source": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its Scorpius multi-launcher scored a hit against an enemy INFANTRY unit, that unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "db7b8fe0d95d493a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets a MONSTER or VEHICLE unit, re-roll a Damage roll of 1.",
+      "target": null
+    },
+    {
+      "id": "f6cb413b8276d1bf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately disembark after it has been set up on the battlefield, and they must be set up more than 9\" away from all enemy models. After this model has been set up on the battlefield, no units can embark within it.",
+      "target": null
+    },
+    {
+      "id": "07a44d121bf4182d",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Dreadnought"
+        ]
+      },
+      "source": "This model has a transport capacity of 1 Dreadnought model.",
+      "target": null
+    },
+    {
+      "id": "ba7d0b17be7a6726",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models.",
+      "target": null
+    },
+    {
+      "id": "8422bd7cc938f933",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 <FACTION> INFANTRY models. It cannot transport JUMP PACK, WULFEN, PHOBOS, GRAVIS, CENTURION, TERMINATOR, OBLITERATOR, POSSESSED or TACTICUS models (excluding TACTICUS CHARACTER models that began the battle attached to a non-TACTICUS unit).",
+      "target": null
+    },
+    {
+      "id": "568f96856420af1c",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 22 <FACTION> INFANTRY models and 1 DREADNOUGHT model. Each JUMP PACK, WULFEN, GRAVIS, TERMINATOR or POSSESSED model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "bd92bac21769f9df",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes a ranged attack that targets a unit that cannot FLY, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "eb19af7132a55c4c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model makes an attack that targets a VEHICLE, improve the Strength and Damage characteristic of that attack by 1 (if that attack targets a FORTIFICATION unit, improve the Strength and Damage characteristics of that attack by 2 instead).",
+      "target": null
+    },
+    {
+      "id": "759620e6f3bad0b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Cerberus"
+        ]
+      },
+      "source": "Each time this unit shoots its Cerberus neutron pulse array in your Shooting phase, provided it Remained Stationary this turn, that weapon has the [LETHAL HITS] ability.",
+      "target": null
+    },
+    {
+      "id": "13cb8905cd3a223f",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 28 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, TERMINATOR or POSSESSED model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "bb33415428fac560",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fellblade",
+          "Cover"
+        ]
+      },
+      "source": "Each time a ranged attack is allocated to a model from your army, if that model is not fully visible to every model in the attacking unit because of this Fellblade model, that model has the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "bcdf59fa373ceb3b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [
+          "[DEVASTATING WOUNDS]"
+        ],
+        "names": [
+          "Falchion"
+        ]
+      },
+      "source": "Each time this model makes a ranged attack with its twin Falchion volcano cannon that targets a MONSTER or VEHICLE unit, that attack has the [DEVASTATING WOUNDS] ability.",
+      "target": null
+    },
+    {
+      "id": "2f720c8fef91d7a1",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Astartes Heresy Legends",
+        "Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-10 wounds remaining, subtract 6 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a1c78429a2d9b7b4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0.",
+      "target": null
+    },
+    {
+      "id": "7359beb7d61ea54b",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 45 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models. This model can also transport up to 2 DREADNOUGHT or HELBRUTE models (these models take up the space of a number of models equal to their Wounds characteristic e.g. A DREADNOUGHT with a Wounds characteristic of 8 would take up the space of 8  models).",
+      "target": null
+    },
+    {
+      "id": "ad51fb61c9d7d470",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-13 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "0c7a645d60b703bf",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry"
+        ]
+      },
+      "source": "This model has a transport capacity of 55 <FACTION> Infantry or <FACTION> MOUNTED models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each MOUNTED, CENTURION or OBLITERATOR model takes up the space of 3 models. This model can also transport up to 1 RHINO model (this model – and any models embarked within it – take up the space of 25 models).",
+      "target": null
+    },
+    {
+      "id": "979c575eef625894",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you select this unit for the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem.",
+      "target": null
+    },
+    {
+      "id": "95cb57dadf136c99",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 12 HERETIC ASTARTES INFANTRY models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. This model can instead transport 1 HELBRUTE or DREADNOUGHT model.",
+      "target": null
+    },
+    {
+      "id": "7afaed744c3f52a9",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models.",
+      "target": null
+    },
+    {
+      "id": "b2d7256aeb1dfab2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
+      "target": null
+    },
+    {
+      "id": "0aa660a61c6e1376",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this weapon scores a hit against an enemy MONSTER or VEHICLE unit, until the end of the turn, if the bearer selects that unit as a target of a charge, add 2 to Charge rolls made for the bearer.",
+      "target": null
+    },
+    {
+      "id": "9e8d6a14ccc1045e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 4+",
+          "Psychic"
+        ]
+      },
+      "source": "This model has the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "f39b2e346f69da52",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Astartes Heresy Legends",
+        "Necrons"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "2bcc85c246089102",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-8 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "49044f98e90a8771",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "Each time this model makes a Charge move, until the end of the turn, its melee weapons have the [SUSTAINED HITS 1] ability. In addition, once per battle, this model is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "a07af3ed0e4e3668",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 22 HERETIC ASTARTES INFANTRY models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. This model can instead transport 1 HELBRUTE or DREADNOUGHT model.",
+      "target": null
+    },
+    {
+      "id": "db05c28f6507db64",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 30 <FACTION> INFANTRY or <FACTION> MOUNTED models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. Each MOUNTED model takes up the space of 4 models.",
+      "target": null
+    },
+    {
+      "id": "2c4df7bdb0374841",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Transport",
+          "Fly",
+          "Heavy Transport"
+        ]
+      },
+      "source": "Each time an Adeptus Astartes unit from your army disembarks from a Transport (excluding Fly) that made a Normal or Advance move this phase (excluding those that arrived from Strategic Reserves), that disembarked unit can\nmake a Normal move of up to D6\", or a Normal move of up to D3+3\" instead if that Transport is a Heavy Transport\n(see below).\n\n\nAdeptus Astartes Transport units from your army (excluding FLY) that have a Wounds characteristic of 14+ have the Heavy Transport keyword.",
+      "target": null
+    },
+    {
+      "id": "8523e2e04eced003",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Crusade"
+        ]
+      },
+      "source": "Add 1 to the Attacks characteristic of weapons equipped by the bearer, and each time the bearer makes an attack, you can re-roll the Wound roll. In addition, each time the bearer's unit destroys an enemy unit, if your Crusade force is undertaking an Oathsworn Campaign, you gain 1 Honour point.",
+      "target": null
+    },
+    {
+      "id": "a5beef8a570884bc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.",
+      "target": null
+    },
+    {
+      "id": "32118ae1bd37e0e9",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-8 wounds remaining, subtract 4 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "bd04f6391ce555a6",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time an attack made with this weapon targets a unit more than 12\" from the bearer, an unmodified successful Hit roll of 4+ scores a Critical Hit.",
+      "target": null
+    },
+    {
+      "id": "cd5b516883d9d2dd",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [
+          "[PRECISION]"
+        ],
+        "names": [
+          "Psyker",
+          "Melee weapons",
+          "Infantry"
+        ]
+      },
+      "source": "If your Army Faction is **^^Adeptus Astartes^^**, at the start of the first battle round, select one of the following Vows to be active for **^^Adeptus Astartes^^** units from your army. While a Vow is active for your army, that unit has the associated ability below. \n\n**Abhor the Witch, Destroy the Witch**\n■ Each time this unit declares a charge, if one or more targets of that charge have the **^^Psyker^^** keyword, you can re-roll the Charge roll. Melee weapons equipped by models in this unit have the **[PRECISION]** ability while targeting **^^Psyker^^** units. \n\n**Accept Any Challenge, No Matter the Odds**\n■ Each time a model in this unit makes a melee attack, if the Strength characteristic of that attack is less than or equal to the Toughness characteristic of the target, add 1 to the wound roll\n\n**Suffer Not the Unclean to Live**\n■ This unit is eligible to declare a charge in a turn in which it Fell Back, and each time a model in this unit makes a Pile-in or Consolidation move, it does not need to end that move closer to the closest enemy model, provided it ends that move as close as possible to the nearest enemy unit. \n\n**Uphold the Honour of the Emperor**\nIf this unit has the **^^Infantry^^** keyword:\n■ At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent's level of control over that objective marker is greater than yours at the end of the phase. \n■ If the mission you are playing features Actions, this unit is eligible to start to perform an Action in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "81c7a6f142ccec93",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Astartes Heresy Legends"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Detachment",
+          "Blood Angels",
+          "Dark Angels",
+          "Deathwatch",
+          "Space Wolves"
+        ]
+      },
+      "source": "If your Army Faction is **^^Adeptus Astartes^^**, at the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:\n■ You can reroll the Hit roll\n■ If you are using a Codex: Space Marines Detachment and your army does not include one or more units with the **^^Blood Angels^^**, **^^Dark Angels^^**, **^^Deathwatch^^** or **^^Space Wolves^^** keywords, add 1 to the Wound roll as well.",
+      "target": null
+    },
+    {
+      "id": "823fc46db5c60445",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 8\" to the Move characteristic of this model.",
+      "target": null
+    },
+    {
+      "id": "c1907ff103a46ecb",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-13 wounds remaining, subtract 8 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "3808167ec42ed0f2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this model with a Stratagem, you must spend twice that Stratagem’s stated CP cost to do so.",
+      "target": null
+    },
+    {
+      "id": "aa15e335a6438bb5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-20 wounds remaining, subtract 10 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "692bed84cae3fa32",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this model with a Stratagem, you must spend three times that Stratagem’s stated CP cost to do so.",
+      "target": null
+    },
+    {
+      "id": "b59dfc4a04089c00",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-26 wounds remaining, subtract 10 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "8e8e550872501e41",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly IMPERIUM model makes an attack that targets that enemy unit, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "e95acde5d2346a31",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly CHAOS model makes an attack that targets that enemy unit, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "66f457f45929b16a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While this model has 1-33 wounds remaining, subtract 15 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "2dc53a4c8befde95",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "c4d90452d3b49ecc",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Titans"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time you target this model with a Stratagem, you must spend four times that Stratagem’s stated CP cost to do so.",
+      "target": null
+    },
+    {
+      "id": "c5a7649e52315bc5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, one model from your army with this ability can use it when a friendly **TYRANIDS** unit within 12\" of that model is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.",
+      "target": null
+    },
+    {
+      "id": "1b4115507c670283",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Character"
+        ]
+      },
+      "source": "Each time this model destroys an enemy Character model, you gain 1CP.",
+      "target": null
+    },
+    {
+      "id": "078c29de5f8d6c29",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "While an enemy unit is within Engagement Range of this unit, halve the Objective Control characteristic of models in that enemy unit.",
+      "target": null
+    },
+    {
+      "id": "ff2100d3a4a5b0e5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Singular Purpose"
+        ]
+      },
+      "source": "(Once per battle, per unit) In your Command phase, you can use this ability. If you do, this unit can make a selection for its **Singular Purpose** ability (this replaces the previous selection).",
+      "target": null
+    },
+    {
+      "id": "5d300ec06a9e7de8",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse",
+          "Range"
+        ]
+      },
+      "source": "If your Army Faction is **TYRANIDS**, while a **TYRANIDS** unit from your army is within 6\" of one or more friendly **SYNAPSE** models, that **TYRANIDS** unit is said to be within Synapse Range of that model and of your army. While a **TYRANIDS** unit from your army is within Synapse Range of your army:\n▪ Each time that unit takes a Battle‑shock test, take that test on 3D6 instead of 2D6.\n▪ Each time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack.",
+      "target": null
+    },
+    {
+      "id": "6dfe994384871b04",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadow in the Warp"
+        ]
+      },
+      "source": "If your Army Faction is **TYRANIDS**, once per battle, in either player’s Command phase, if one or more units from your army with this ability are on the battlefield, you can unleash the Shadow in the Warp. When you do, each enemy unit on the battlefield must take a Battle‑shock test. Each time an enemy unit takes such a Battle‑shock test, if it is within 6\" of one or more **SYNAPSE** units from your army, subtract 1 from that test.",
+      "target": null
+    },
+    {
+      "id": "ed96abcea99e4308",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Shadow in the Warp",
+          "Synapse",
+          "Range"
+        ]
+      },
+      "source": "Units from your army with the Shadow in the Warp ability retain that ability.\n\nUnits from your army with the Synapse ability retain that ability and gain this one.\n\nWhen measuring whether a unit from your army is within Synapse Range of a friendly **^^Synapse^^** model, Walls and closed Hatchways are ignored.",
+      "target": null
+    },
+    {
+      "id": "2b76ae8c89f75863",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Cult Ambush",
+          "Genestealer"
+        ]
+      },
+      "source": "Units from your army with the Cult Ambush ability lose that ability and **^^Genestealer Cults^^** units from your army gain this one.\n\n\nIn the Deploy Armies step, your opponent must set up their entire army before you set up any of your units. If both players have a rule that allows them to do this, both players set up their units normally.",
+      "target": null
+    },
+    {
+      "id": "1e3986efec21a95a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "At the start of the Fight phase, you can select one enemy unit within 12\" of and visible to this model and roll one D6: on a 1, this Psyker suffers D3 mortal wounds; on a 2+, until the end of the phase, subtract 1 from the Attacks characteristic of weapons equipped by models in that unit.",
+      "target": null
+    },
+    {
+      "id": "13eb49d5cfc008d1",
+      "kind": "characteristic:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": []
+      },
+      "source": "While this model is leading a unit, weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "efbc080c578e9083",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "83ce265ecf785f67",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gargoyles",
+          "Tyranid Warriors",
+          "Melee",
+          "Weapons"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Gargoyles^^**\n- **^^Tyranid Warriors With Melee Bio-Weapons^^**\n- **^^Tyranid Warriors With Ranged Bio-Weapons^^**",
+      "target": null
+    },
+    {
+      "id": "610e0e1735b68a61",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Warlord"
+        ]
+      },
+      "source": "This model cannot be your Warlord",
+      "target": null
+    },
+    {
+      "id": "28db5380b7bf2f2e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Weapons"
+        ]
+      },
+      "source": "Weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.",
+      "target": null
+    },
+    {
+      "id": "85fd7a07d6062f41",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, you can target this unit with the **Rapid Ingress/Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n- That use is -1 CP.\n- That use does not prevent any uses of that **stratagem** on other units this phase.",
+      "target": null
+    },
+    {
+      "id": "913ad0e18cc36b79",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Raveners"
+        ]
+      },
+      "source": "This unit can be attached to the following units: **^^Raveners^^**",
+      "target": null
+    },
+    {
+      "id": "78f7b6c055f705c1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle round, you can target one model with this ability with the Rapid Ingress Stratagem for 0CP.",
+      "target": null
+    },
+    {
+      "id": "9bfd93365a8c6510",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "Each time this unit is set up on the battlefield using the Deep Strike ability, roll one D6 for each enemy unit within 12\" of this model: on a 2-4, that unit suffers D3 mortal wounds; on a 5+, that unit suffers 3 mortal wounds and must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "0e7aa335cae7a661",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time this model destroys an enemy CHARACTER model, you gain 1CP",
+      "target": null
+    },
+    {
+      "id": "6737a3de122f5f7d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "In your Command phase, select one enemy unit within 12\" of this model. That unit must take a Battle-shock test",
+      "target": null
+    },
+    {
+      "id": "b7b71603437efc8c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "While an enemy unit is with 12\" of this model, if that unit is Battle-shocked:\n\n- Each time a model in that unit makes an attack, subtract 1 from the Hit roll\n- Each time a friendly TYRANIDS model makes an attack that targets that unit, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "f6f7cb7c12a32830",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Ripper Swarms",
+          "Range"
+        ]
+      },
+      "source": "Each time an **^^Infantry^^** model is destroyed by an attack made with this model’s barbed ovipositor, after this model has finished making its attacks, you can add one new **^^Ripper Swarms^^** unit to your army consisting of D3 models and set it up within 3\" of this model. If you do, that **^^Ripper Swarms^^** unit can be set up within Engagement Range of the destroyed model’s unit (but not within Engagement Range of any other enemy units).",
+      "target": null
+    },
+    {
+      "id": "671c3d27345b8592",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. That enemy unit must take a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "175ae6ddfcc072ea",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "7441921ca2a01e59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can use a subterranean tunnel. If it does, this model can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge.",
+      "target": null
+    },
+    {
+      "id": "bd952f0fea95a55c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately disembark after it has been set up on the battlefield, and they must be set up more than 8\" away from all enemy models. After this model has been set up on the battlefield, no units can embark within it.",
+      "target": null
+    },
+    {
+      "id": "470cf12f4b2c427d",
+      "kind": "characteristic:Capacity",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "This model has a transport capacity of 20 TYRANIDS INFANTRY models, or 1 TYRANIDS MONSTER model with a Wounds characteristic of 12 or less. Each INFANTRY model with a Wounds characteristic of more than 1 takes up the space of 3 models.",
+      "target": null
+    },
+    {
+      "id": "255db2b665102702",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n▪ That use is ‑1 CP.\n▪ That use does not prevent any uses of that **stratagem** on other units this phase.",
+      "target": null
+    },
+    {
+      "id": "930447eba87ca3bd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tyranid Warriors with Melee Bio-weapons",
+          "Melee",
+          "Tyranid Warriors with Ranged Bio-weapons"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Tyranid Warriors with Melee Bio-weapons^^**\n- **^^Tyranid Warriors with Ranged Bio-weapons^^**",
+      "target": null
+    },
+    {
+      "id": "ab43bd9ef74af85e",
+      "kind": "modifier:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Raveners"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Raveners^^**",
+      "target": null
+    },
+    {
+      "id": "4baad1f2ef3fd1b2",
+      "kind": "modifier:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Venomthropes",
+          "Zoanthropes"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Venomthropes^^**\n- **^^Zoanthropes^^**",
+      "target": null
+    },
+    {
+      "id": "ff3bb96766ef6661",
+      "kind": "modifier:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Neurogaunts"
+        ]
+      },
+      "source": "- **^^Neurogaunts^^**",
+      "target": null
+    },
+    {
+      "id": "08b34488dc69972b",
+      "kind": "modifier:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Hormagaunts",
+          "Von Ryan's Leapers"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Hormagaunts^^**\n- **^^Von Ryan's Leapers^^**",
+      "target": null
+    },
+    {
+      "id": "38eaf8fbbd318119",
+      "kind": "modifier:Description",
+      "occurrences": 2,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Gargoyles"
+        ]
+      },
+      "source": "This model can be attached to the following unit:\n- **^^Gargoyles^^**",
+      "target": null
+    },
+    {
+      "id": "83f90c30fd487b5a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Carnifexes",
+          "Tyrant Guard"
+        ]
+      },
+      "source": "This model can be attached to the following units:\n- **^^Carnifexes^^**\n- **^^Tyrant Guard^^**",
+      "target": null
+    },
+    {
+      "id": "c228ac5a20c721a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "At the start of each player's Command phase, this model regains up to D3 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "de7a7ee740a216b4",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealers",
+          "Purestrain Genestealers",
+          "Battleline",
+          "Swift and Deadly",
+          "Deep Strike"
+        ]
+      },
+      "source": "- **^^Genestealers^^** and **^^Purestrain Genestealers^^** units can perform the Secure Site Tactical Manoeuvre as if they had the **^^Battleline^^** keyword.\n- The **^^Purestrain Genestealers^^** unit loses the Swift and Deadly ability.\n- All models lose the Deep Strike ability.",
+      "target": null
+    },
+    {
+      "id": "9ae26ef3d33bfb67",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse",
+          "Cult Ambush"
+        ]
+      },
+      "source": "Units from your army with the Synapse or Cult Ambush abilities replace those abilities with this one.\n\nIn the Deploy Armies step, your opponent must set up their entire army before you set up any of your units. If both players have a rule that allows them to do this, both players set up their units normally.",
+      "target": null
+    },
+    {
+      "id": "8f3fb27deb94d90f",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Detachment",
+          "Genestealer",
+          "Broodlord",
+          "Genestealers",
+          "Patriarch",
+          "Purestrain Genestealers"
+        ]
+      },
+      "source": "When selecting this Detachment, you must select either the **^^Tyranids^^** or **^^Genestealer Cults^^** keyword.\n\n----------\n\nIf you selected **^^Tyranids^^**, you can include up to one of the following unit:\n- **^^Broodlord^^**\n\nYou can include up to three of the following unit:\n- **^^Genestealers^^** (5 or 10 models)\n\n----------\n\nIf you selected **^^Genestealer Cults^^**, you can include up to one of the following unit:\n- **^^Patriarch^^**\n\nYou can include up to three of the following unit:\n- **^^Purestrain Genestealers^^** (5 or 10 models)",
+      "target": null
+    },
+    {
+      "id": "8d8281841e9e7411",
+      "kind": "rule",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Great Devourer",
+          "Devourer"
+        ]
+      },
+      "source": "Each time a ranged attack targets a **^^Great Devourer^^** unit from your army, if the attacking model is not within 6\" of that unit, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "96840080e3e44b7b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infantry",
+          "Mounted",
+          "Beasts"
+        ]
+      },
+      "source": "Each time an attack with this model’s gaping maw targets an **^^Infantry^^**, **^^Mounted^^** or **^^Beasts^^** unit, each successful unmodified Wound roll is a Critical Wound. Each time an **^^Infantry^^**, **^^Mounted^^** or **^^Beasts^^** model is destroyed as a result of an attack made by this model’s gaping maw, this model regains up to D3+2 lost wounds.",
+      "target": null
+    },
+    {
+      "id": "788f486a3e9a20d7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "At the end of the Fight phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "f5c61b18bd771d01",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. After both players have deployed their armies, select up to three **^^Tyranids^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "aba525aa6267b859",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. Once per turn, you can re-roll one Hit roll, one Wound roll, one Damage roll, one Advance roll, one Charge roll or one saving throw made for the bearer",
+      "target": null
+    },
+    {
+      "id": "fd1c7925c5fec835",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse",
+          "Range"
+        ]
+      },
+      "source": "**^^Tyranids^^** model only. While a friendly **^^Tyranids^^** unit is within 9\" of the bearer, that unit is within Synapse Range of your army.",
+      "target": null
+    },
+    {
+      "id": "48ff027f66a893d2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Feel No Pain 5+",
+          "Feel No Pain 4+"
+        ]
+      },
+      "source": "**^^Tyranids^^** model only. The bearer has the Feel No Pain 5+ ability. At the start of any turn, if the bearer has fewer than its starting number of wounds remaining, until the end of the battle, it has the Feel No Pain 4+ ability instead.",
+      "target": null
+    },
+    {
+      "id": "43ff3787c62569cf",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Fights First"
+        ]
+      },
+      "source": "**TYRANIDS** model only. While the bearer is within 6\" of one or more friendly **HARVESTER** units, when you target this unit with the **Heroic Intervention stratagem**, that use is ‑1 CP. In addition, while the bearer is within 6\" of one or more friendly **HARVESTER** units, models in the bearer's unit have the Fights First ability.",
+      "target": null
+    },
+    {
+      "id": "828359471dc77490",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Harvester"
+        ]
+      },
+      "source": "**^^Tyranids^^** model only. Add 1 to the Strength characteristic of melee weapons equipped by models in the bearer's unit. The first time the bearer's unit destroys an enemy unit in the Fight phase while the bearer is within 6\" of one or more **^^Harvester^^** units, until the end of battle, add 1 to the Attacks characteristic of melee weapons equipped by models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "8f080675611c1b56",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only (excluding **^^Monsters^^** models) The bearer's unit can be regenerated up to twice per phase, instead of once.",
+      "target": null
+    },
+    {
+      "id": "1a6fa8cbbaa9b358",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Harvester",
+          "Feed the Swarm",
+          "Swarm"
+        ]
+      },
+      "source": "**^^Tyranids^^** model only. While a friendly **^^Harvester^^** model is within 12\" of the bearer, when using the Feed the Swarm ability, that **^^Harvester^^** model can Regenerate one friendly **^^Tyranids^^** unit that is within 9\" instead of one within 6\".",
+      "target": null
+    },
+    {
+      "id": "bff9bcc2e6b45b62",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Vehicle"
+        ]
+      },
+      "source": "**^^Tyranids Monster^^** only. Each time the bearer makes a melee attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "9ef5472dfbd1c57b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster",
+          "Psychic",
+          "Feel No Pain 5+"
+        ]
+      },
+      "source": "**^^Tyranids Monster^^** only. Once per battle, when a Psychic Attack is allocated to the bearer, it can use this ability. If it does, until the end of the phase, the bearer has the Feel No Pain 5+ ability against Psychic Attacks.",
+      "target": null
+    },
+    {
+      "id": "81805a5ded0eaeca",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster"
+        ]
+      },
+      "source": "**^^Tyranids Monster^^** only. Add 3 to the bearer's Objective Control characteristic.",
+      "target": null
+    },
+    {
+      "id": "afbbfd0e651cfa2e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Monster"
+        ]
+      },
+      "source": "**^^Tyranids Monster^^** only. If the bearer is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 3+, do not remove it from play. It can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
+      "target": null
+    },
+    {
+      "id": "0f97ceb5f6df2be0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse"
+        ]
+      },
+      "source": "**^^Tyranids Synapse^^** model only. Enemy units that arrive on the battlefield from Reserves cannot be set up with 12\" of the bearer. In addition, once per battle, during the first or second battle round, when your opponent declares that a unit will arrive on the battlefield from Strategic Reserves, the bearer can use this enhancement. If it does, roll one D6: on a 4+, that enemy cannot arrive on the battlefield this turn.",
+      "target": null
+    },
+    {
+      "id": "e237f91ec8abd2ef",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse"
+        ]
+      },
+      "source": "**^^Tyranids Synapse^^** model only. Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of the attack.",
+      "target": null
+    },
+    {
+      "id": "711ae98b5894ba30",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse"
+        ]
+      },
+      "source": "**^^Tyranids Synapse^^** model only. While an enemy unit is within 9\" of the bearer, worsen that unit's Leadership characteristic by 1.",
+      "target": null
+    },
+    {
+      "id": "ed13bae6899d8be5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psyker"
+        ]
+      },
+      "source": "**^^Tyranids Psyker^^** model only. Improve the Strength and Armour Penetration characteristic of psychic weapons equipped by the wearer of 1.",
+      "target": null
+    },
+    {
+      "id": "09a3fcdcafcfc178",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Endless Multitude",
+          "Cover"
+        ]
+      },
+      "source": "**^^Tyranids^^** model only. At the start of the first battle round, select up to three friendly **^^Endless Multitude^^** units within 9\" of the bearer. Until the end of the battle round, each time a ranged attack targets one of those units, models in that unit have the Benefit of Cover against that attack.",
+      "target": null
+    },
+    {
+      "id": "244e4caa055b71ad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. Each time a model in the Bearer's unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
+      "target": null
+    },
+    {
+      "id": "e29a607acdac99a4",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. Add 2\" to the Move characteristic of models in the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "7727654c8b4f104c",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. Each time the bearer's unit makes a Pile In or Consolidation, models in this unit can move an additional 3\"",
+      "target": null
+    },
+    {
+      "id": "9caf9003cf1c0830",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. While the bearer is on the battlefield, each time your opponent sets up a Reserves unit on the battlefield, roll one D6: on a 2+ that unit must make a Battle-shock test.",
+      "target": null
+    },
+    {
+      "id": "728038c2b6ebf6ee",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**TYRANIDS** model only. After both players have deployed their armies, you can select up to three **VANGUARD INVADER** units from your army and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "bcaeae5f94462b07",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Vanguard Invader"
+        ]
+      },
+      "source": "**^^Vanguard Invader^^** model only. At the start of the battle, select one enemy unit. Each time the bearer makes an attack that targets that enemy unit, add 1 to the Hit roll and Wound roll.",
+      "target": null
+    },
+    {
+      "id": "0729f1856faf2181",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Stealth"
+        ]
+      },
+      "source": "**VANGUARD INVADER** model only. This unit has **Stealth**.",
+      "target": null
+    },
+    {
+      "id": "aae116470175dee2",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**WINGED TYRANID PRIME/TYRANID PRIME WITH LASH WHIP** model only. This model’s melee attacks:\n- Can re‑roll **wound rolls**.\n- Have +1 **AP**.",
+      "target": null
+    },
+    {
+      "id": "dee4e65c5021fe13",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**WINGED TYRANID PRIME/TYRANID PRIME WITH LASH WHIP** model only. This unit’s melee attacks have +1 to **hit rolls**.",
+      "target": null
+    },
+    {
+      "id": "9b0be9b5868a2c98",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Deep Strike"
+        ]
+      },
+      "source": "**^^Tyranids^^** model with the Deep Strike ability only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
+      "target": null
+    },
+    {
+      "id": "bde6134d879cf7ff",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Trygon",
+          "Synapse",
+          "Weapon"
+        ]
+      },
+      "source": "**^^Trygon^^** model only. The bearer gains the **^^Synapse^^** keyword. Improve the Strength and Weapon Skill characteristics of melee weapons equipped by the bearer by 1.",
+      "target": null
+    },
+    {
+      "id": "54d501269bd96e76",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. Once per battle, you can target the bearer’s unit with the Rapid Ingress stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "target": null
+    },
+    {
+      "id": "e2a3500fcc717256",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**^^Tyranids^^** model only. After both players have deployed their armies, select up to three friendly **^^Tyranids^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+      "target": null
+    },
+    {
+      "id": "01cd77c1036679ae",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Infiltrators"
+        ]
+      },
+      "source": "**ABOMINANT**, **BIOPHAGUS** or **PATRIARCH** model only.\n- Models in the bearer's unit have the Infiltrators ability.\n- You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n-- That use is ‑1 CP.\n-- That use does not prevent any uses of that **stratagem** on other units this phase.",
+      "target": null
+    },
+    {
+      "id": "5d01bc5f57b06f3e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Abominant",
+          "Patriarch"
+        ]
+      },
+      "source": "**^^Abominant ^^** or **^^Patriarch^^** model only. Improve the Armour Penetration and Damage characteristics of melee weapons equipped by the bearer by 1.",
+      "target": null
+    },
+    {
+      "id": "10c4cb7149d0cbcd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Abominant",
+          "Biophagus",
+          "Patriarch"
+        ]
+      },
+      "source": "**^^Abominant^^**, **^^Biophagus^^** or **^^Patriarch^^** model only. In each Command phase, one model in the bearer's unit regains 1 lost wound.",
+      "target": null
+    },
+    {
+      "id": "0626e67197ddd4c8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Abominant",
+          "Biophagus",
+          "Patriarch",
+          "Range"
+        ]
+      },
+      "source": "**^^Abominant^^**, **^^Biophagus^^** or **^^Patriarch^^** model only. While an enemy unit is in within Engagement Range of the bearer's unit, subtract 1 from the Objective Control characteristic of models in that enemy unit (to a minimum of 1).",
+      "target": null
+    },
+    {
+      "id": "892f22408c040f32",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Infantry",
+          "Mounted"
+        ]
+      },
+      "source": "**^^Genestealer Cults Infantry^^** model only. Once Per turn, when a friendly **^^Astra Militarum Infantry^^** or **^^Astra Militarum Mounted^^**unit within 9\" of the bearer is selected to shoot, the bearer can use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in that unit by 1.",
+      "target": null
+    },
+    {
+      "id": "05aea2ebb9332fcd",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**GENESTEALER CULTS INFANTRY** model only. When you target this unit with the **Heroic Intervention stratagem**, that use is ‑1 CP.",
+      "target": null
+    },
+    {
+      "id": "741b627b880551ec",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Infantry"
+        ]
+      },
+      "source": "**^^Genestealer Cults Infantry^^** model only. Improve the Leadership and Objective Control characteristic of models in the bearer's unit by 1",
+      "target": null
+    },
+    {
+      "id": "764c06f774cd2db8",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Infantry"
+        ]
+      },
+      "source": "**^^Genestealer Cults Infantry^^** model only. Each time you target the bearer's unit with the Fire Overwatch Stratagem, while resolving that stratagem, hits are successfully scored on a 5+.",
+      "target": null
+    },
+    {
+      "id": "90a14a9e8acda5c0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Psionic Parasitism",
+          "Detachment"
+        ]
+      },
+      "source": "**^^Tyranids^^** model only. Each time the bearer would regain one or more lost wounds from the Psionic Parasitism Detachment rule, it regains up to twice that number of lost wounds instead.",
+      "target": null
+    },
+    {
+      "id": "d1a36e8a0b2a4f59",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Winged Hive Tyrant",
+          "Hive Tyrant"
+        ]
+      },
+      "source": "**^^Winged Hive Tyrant^^** model only. Improve the Strength and Armour Penetration characteristics of melee weapons equipped by the bearer by 1.",
+      "target": null
+    },
+    {
+      "id": "596a32b5e8c04722",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[SUSTAINED HITS 1]"
+        ],
+        "names": [
+          "Genestealer",
+          "Weapons"
+        ]
+      },
+      "source": "**^^Genestealer Cults^^** model only. Weapons equipped by models in the bearer’s unit have the **[SUSTAINED HITS 1]** ability while targeting an enemy unit within 6\" of one or more friendly **^^Tyranids^^**units.",
+      "target": null
+    },
+    {
+      "id": "7093d77843500172",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer"
+        ]
+      },
+      "source": "**^^Genestealer Cults^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
+      "target": null
+    },
+    {
+      "id": "7fb084233fff7fa1",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer"
+        ]
+      },
+      "source": "**^^Genestealer Cults^^** model only. Once per battle, when the bearer's unit declares a charge, the bearer can use the Enhancement. If it does, until the end of the phase, add 2 to Charge rolls made for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "e718b96f15c04834",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [
+          "[LETHAL HITS]"
+        ],
+        "names": [
+          "Genestealer"
+        ]
+      },
+      "source": "**^^Genestealer Cults^^** model only. Each time the bearer is set up on the battlefield as Reinforcements, until the end of your next Fight phase, ranged weapons equipped in the bearer's unit have the **[LETHAL HITS]** ability.",
+      "target": null
+    },
+    {
+      "id": "a5cc8434a942f282",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range"
+        ]
+      },
+      "source": "**GENESTEALER CULTS** model only. In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”.",
+      "target": null
+    },
+    {
+      "id": "44018dfb2e656a60",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Character"
+        ]
+      },
+      "source": "**^^Genestealer Cults^^** model only. Each time a model in the bearer's unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "6840ba17070d3199",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Mounted"
+        ]
+      },
+      "source": "**^^Genestealer Cults Mounted^^** model only. The bearer's unit is eligible to shoot in a turn in which it Fell Back.",
+      "target": null
+    },
+    {
+      "id": "afd4c4c126c6bf65",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Transport",
+          "Firing Deck"
+        ]
+      },
+      "source": "**^^Genestealer Cults^^** model only. While the bearer is embarked within a **^^Transport^^**, each time that **^^Transport^^** is selected to shoot, until end of the phase, improve the Ballistic Skill characteristic of ranged weapons equipped by that **^^Transport^^** as a result of the Firing Deck ability by 1.",
+      "target": null
+    },
+    {
+      "id": "8f0650fe7f77e18b",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Mounted"
+        ]
+      },
+      "source": "**^^Genestealer Cults Mounted^^** model only. In your Shooting phase, after the bearer has shot, select one enemy unit by one or more of those attacks made with a cult sniper rifle. Until the start of your next Shooting phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "05fe44945f4f4820",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Genestealer",
+          "Transport"
+        ]
+      },
+      "source": "**^^Genestealer Cults^^** model only. Each time a model in the bearer's unit makes a ranged attack, if it disembarked from a **^^Transport^^** this turn, you can re-roll the Hit roll.",
+      "target": null
+    },
+    {
+      "id": "a7c7378b60e905f0",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**MAGUS**, **PRIMUS** or **ACOLYTE ICONWARD** model only. You start the battle with 2 additional Resurgence points.",
+      "target": null
+    },
+    {
+      "id": "adf60f6a988f4e2a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Magus",
+          "Primus",
+          "Acolyte Iconward"
+        ]
+      },
+      "source": "**^^Magus, Primus or Acolyte Iconward^^** model only. You can re-roll Battle-shock tests taken for the bearer's unit.",
+      "target": null
+    },
+    {
+      "id": "7e1e3fc8ceb2eb5d",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Magus",
+          "Primus",
+          "Acolyte Iconward"
+        ]
+      },
+      "source": "**^^Magus, Primus or Acolyte Iconward^^** model only. The bearer's unit is eligible to declare a charge in a turn in which it Advanced.",
+      "target": null
+    },
+    {
+      "id": "0a3c11b276d4e3a5",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Magus",
+          "Primus",
+          "Acolyte Iconward",
+          "Character",
+          "Roll"
+        ]
+      },
+      "source": "**^^Magus, Primus or Acolyte Iconward^^** model only. Each time a model in the bearer's unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit Roll and add 1 to the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "d4aee0dccf310597",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tyranid Prime"
+        ]
+      },
+      "source": "Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack (note that if given to a Tyranid Prime model, this only affects that model and not other models in its unit).",
+      "target": null
+    },
+    {
+      "id": "7707f2979144ee4e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Tyranid Warriors with Melee Bio-weapons",
+          "Melee",
+          "Tyranid Warriors with Ranged Bio-weapons"
+        ]
+      },
+      "source": "In your Command phase, select one friendly **^^Tyranid Warriors with Melee Bio-weapons^^** or **^^Tyranid Warriors with Ranged Bio-weapons^^** unit within 6\" of the bearer. Until the end of the turn, add 2\" to the Move characteristic of models in that unit.",
+      "target": null
+    },
+    {
+      "id": "412f5302590c8b7e",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Synapse",
+          "Range"
+        ]
+      },
+      "source": "While a friendly **^^Tyranids^^** unit is within 9\" of the bearer (ignoring Walls and closed Hatchways), that unit is within Synapse Range of the bearer and of your army.",
+      "target": null
+    },
+    {
+      "id": "737e363161d923ad",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, at the end of your opponent's Charge phase, the bearer can use this Enhancement. If it does, it can declare a charge as if it were your Charge phase.",
+      "target": null
+    },
+    {
+      "id": "9944417fe4c731a7",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Once per battle, when an enemy unit opens a closed Hatchway, if the bearer is on the battlefield, it can use this Enhancement. If it does, roll one D6: on a 3-4, that enemy unit suffers 1 mortal wound; on a 5+, that enemy unit suffers 2 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "8c467549280f2660",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "The first time in the battle that your opponent's army Secures an objective marker while the bearer is on the battlefield, roll one D6: on a 3+, that objective marker is not Secured by your opponent's army.",
+      "target": null
+    },
+    {
+      "id": "a135a118baa90d92",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Abominant"
+        ]
+      },
+      "source": "**^^Abominant^^** model only. Each time an enemy unit opens a Hatchway, if the bearer is within 1\" of that Hatchway, roll one D6: one a 3-4, that enemy unit suffers 1 mortal wound; on a 5+, that enemy unit suffers 2 mortal wounds.",
+      "target": null
+    },
+    {
+      "id": "8de2e1f2d17ce768",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Biophagus"
+        ]
+      },
+      "source": "**^^Biophagus^^** model only. Each time an attack targets the bearer, subtract 1 from the Hit roll and subtract 1 from the Wound roll.",
+      "target": null
+    },
+    {
+      "id": "86edd8634e96bb00",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "Each time the bearer declares a charge, it can target enemy units that are not visible to it.",
+      "target": null
+    },
+    {
+      "id": "a7f8f0b1071a55a6",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": [
+          "Range",
+          "Deep Strike"
+        ]
+      },
+      "source": "Once per battle, at the end of your opponent's Fight phase, if the bearer is not within Engagement Range of one or more enemy units, it can use this Enhancement. If it does, remove the bearer from the battlefield and place it into Strategic Reserves. It will arrive back on the battlefield in the Reinforcements step of your next Movement phase as if it had the Deep Strike ability. If this is not possible, the bearer is destroyed. When the bearer is set back up on the battlefield, until the end of the turn, it cannot declare a charge.",
+      "target": null
+    },
+    {
+      "id": "f4bc4ec3f9bf18ce",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**KELERMORPH/REDUCTUS SABOTEUR** model only. This unit’s ranged attacks have +2 **S**.",
+      "target": null
+    },
+    {
+      "id": "ab46530e1b8d7f7a",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**LOCUS/SANCTUS** model only. This model’s attacks have +1 **D**.",
+      "target": null
+    },
+    {
+      "id": "fb3344626503e3be",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**PATRIARCH** model only. This unit’s attacks can re‑roll **wound rolls** of 1.",
+      "target": null
+    },
+    {
+      "id": "9edff355c01ac640",
+      "kind": "characteristic:Description",
+      "occurrences": 1,
+      "files": [
+        "Library - Tyranids"
+      ],
+      "protect": {
+        "keywords": [],
+        "names": []
+      },
+      "source": "**MAGUS/PRIMUS** model only. This unit’s attacks can re‑roll **damage rolls**.",
+      "target": null
+    }
+  ]
+}

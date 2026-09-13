@@ -1,0 +1,14 @@
+spring:
+  main:
+    banner-mode: off
+    web-application-type: none
+
+logging:
+  level:
+    root: warn
+
+warorgan:
+  source-dir: data/bsdata
+  spanish-dir: data/bsdata-es
+  translations-dir: data/translations/es
+  batch-chars: 40000
