@@ -77,7 +77,16 @@ traducen: unidad líder, de apoyo, de guardaespaldas.
 | Toughness | Resistencia |
 | Save characteristic | característica de Salvación |
 | Ballistic Skill / Weapon Skill | Habilidad de Proyectiles / Habilidad de Armas |
-| Psychic attack | ataque psíquico (minúscula: así lo define la regla Psychic) |
+| Psychic attack / Psychic test | ataque psíquico / test psíquico (minúscula) |
+| surge move | movimiento de arremetida |
+| Pile In / Consolidate | movimiento de aproximación / de consolidación |
+| Remain Stationary | permanecer inmóvil |
+| datasheet | hoja de datos |
+| detachment (nombre común) | detachment — se queda en inglés |
+| detection range | alcance de detección |
+| roll off | tirada enfrentada |
+| keyword | palabra clave |
+| nombres de paso (*Declare Battle Formations step*…) | traducidos: «paso Declarar Formaciones de Batalla» |
 | Reinforcements | Refuerzos |
 | Faction keyword | palabra clave de Facción |
 | *X* token (Pain, Flux, Battle Focus…) | ficha de *X* — «ficha», nunca «token», y el nombre de la mecánica en inglés |
@@ -100,6 +109,8 @@ propio palabras que ahí son vocabulario corriente (*Range* dentro de «Engageme
   envuelve, no se mueve ni se añade.
 - Conserva las referencias numéricas de sección: `(10.06)`, `(13.08)`.
 - Conserva las comillas de pulgadas: `6"`, `12"`.
+- **Copia las keywords entre corchetes carácter a carácter.** Algunas traen guion no separable
+  (`[ANTI‑INFANTRY 5+]`); si se sustituye por un guion normal deja de coincidir con el original.
 - Registro impersonal, en presente, tuteando al jugador como hace el original: «cada vez que…»,
   «puedes repetir…», «suma 1 a…».
 - Traducción de reglas, no literal: prima que la regla se entienda y se aplique igual que en

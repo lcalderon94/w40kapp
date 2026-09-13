@@ -15,7 +15,7 @@
         ]
       },
       "source": "At the start of the battle round, you can select one of the following Vows of Atonement to be active for your army until the start of the next battle round. You can only select each Vow of Atonement once per battle.\n\n\nThe Path of the Penitent: Add 3\" to the Move characteristic of PENITENT model from your army.\n\n\nAbsolution in Battle: Each time a unit from your army is selected to fight, if that units made a Charge move this turn, until the end of the phase, add 1 to the Attacks and Strength characteristics of melee weapons equipped by PENITENT models in that unit.\n\n\nDeath Before Disgrace: Each time a PENITENT model from your army is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Al comienzo de la ronda de batalla, puedes seleccionar uno de los siguientes Vows of Atonement para que esté activo para tu ejército hasta el comienzo de la siguiente ronda de batalla. Solo puedes seleccionar cada Vow of Atonement una vez por batalla.\n\n\nThe Path of the Penitent: Suma 3\" a la característica de Movimiento de las miniaturas PENITENT de tu ejército.\n\n\nAbsolution in Battle: Cada vez que una unidad de tu ejército es seleccionada para combatir, si esa unidad ha realizado un movimiento de carga este turno, hasta el final de la fase, suma 1 a las características de Ataques y Fuerza de las armas de cuerpo a cuerpo equipadas por las miniaturas PENITENT de esa unidad.\n\n\nDeath Before Disgrace: Cada vez que una miniatura PENITENT de tu ejército es destruida por un ataque de cuerpo a cuerpo, si esa miniatura no ha combatido esta fase, tira un D6. Con un 2+, no la retires del juego; la miniatura destruida puede combatir después de que la unidad atacante haya terminado de realizar sus ataques, y luego se retira del juego."
     },
     {
       "id": "f4a54b360e35c7a7",
@@ -33,7 +33,7 @@
         ]
       },
       "source": "Ranged weapons equipped by ADEPTA SORORITAS models from your army have the [ASSAULT] ability, and each time an attack made with such a weapon targets a unit within 6\", add 1 to the Strength characteristic of that attack.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas ADEPTA SORORITAS de tu ejército tienen la habilidad [ASSAULT] y, cada vez que un ataque realizado con un arma de ese tipo toma como objetivo a una unidad que esté a 6\" o menos, suma 1 a la característica de Fuerza de ese ataque."
     },
     {
       "id": "25f0e411d4ce1a49",
@@ -49,7 +49,7 @@
         ]
       },
       "source": "Each Adepta Sororitas unit from your army can perform up to two Acts of Faith per phase, instead of just one.",
-      "target": null
+      "target": "Cada unidad Adepta Sororitas de tu ejército puede realizar hasta dos Acts of Faith por fase, en lugar de solo uno."
     },
     {
       "id": "9c36ea5b1ef5ed6d",
@@ -70,7 +70,7 @@
         ]
       },
       "source": "In your Command phase, you can select up to 3 ^^**Adepta Sororitas^^** units from your army (including units that are embarked within ^^**Transports^^**), until the start of your next Command phase, those units are Righteous. While a unit is Righteous:\n■ Add 1\" to the Move characteristic of models in that unit.\n■ Improve the Leadership characteristic of models in that unit by 1.\n■ Improve the Weapon Skill and Ballistic Skill characteristics of weapons equipped by ^^**Battle Sisters Squad^^**, ^^**Celestian Insidiants^^**, ^^**Celestian Sacresants^^** and ^^**Paragon Warsuits^^** models in that unit by 1.",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar hasta 3 unidades ^^**Adepta Sororitas^^** de tu ejército (incluidas las unidades que estén embarcadas en ^^**Transports^^**); hasta el comienzo de tu siguiente fase de Mando, esas unidades son Righteous. Mientras una unidad es Righteous:\n■ Suma 1\" a la característica de Movimiento de las miniaturas de esa unidad.\n■ Mejora en 1 la característica de Leadership de las miniaturas de esa unidad.\n■ Mejora en 1 las características de Habilidad de Armas y Habilidad de Proyectiles de las armas equipadas por las miniaturas ^^**Battle Sisters Squad^^**, ^^**Celestian Insidiants^^**, ^^**Celestian Sacresants^^** y ^^**Paragon Warsuits^^** de esa unidad."
     },
     {
       "id": "6912fe9f7f4d5bec",
@@ -87,7 +87,7 @@
         ]
       },
       "source": "While a ^^**Celestian Sacresants^^** unit from your army is not Battle‑shocked, add 1 to the Objective Control characteristic of ^^**Celestian Sacresants^^** models in that unit.",
-      "target": null
+      "target": "Mientras una unidad ^^**Celestian Sacresants^^** de tu ejército no está Battle-shocked, suma 1 a la característica de Control de Objetivos de las miniaturas ^^**Celestian Sacresants^^** de esa unidad."
     },
     {
       "id": "c0eaba985093dc49",
@@ -101,7 +101,7 @@
         "names": []
       },
       "source": "This unit can be attached to the following units: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD, SISTERS NOVITIATE SQUAD",
-      "target": null
+      "target": "Esta unidad puede adjuntarse a las siguientes unidades: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD, SISTERS NOVITIATE SQUAD"
     },
     {
       "id": "8f18b77525125bbf",
@@ -119,7 +119,7 @@
         ]
       },
       "source": "While this unit is leading a unit and contains an Aestred Thurga model, weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
-      "target": null
+      "target": "Mientras esta unidad lidera una unidad y contiene una miniatura Aestred Thurga, las armas equipadas por las miniaturas de esa unidad tienen la habilidad [DEVASTATING WOUNDS]."
     },
     {
       "id": "58525185747656f6",
@@ -135,7 +135,7 @@
         ]
       },
       "source": "While this unit is leading a unit and contains an Agathae Dolan model, each time that unit destroys an enemy unit, you gain 1 Miracle dice. When that Agathae Dolan model is destroyed, you gain D3 Miracle dice.",
-      "target": null
+      "target": "Mientras esta unidad lidera una unidad y contiene una miniatura Agathae Dolan, cada vez que esa unidad destruye una unidad enemiga, ganas 1 Miracle dice. Cuando esa miniatura Agathae Dolan es destruida, ganas D3 Miracle dice."
     },
     {
       "id": "0e039684044c4055",
@@ -151,7 +151,7 @@
         ]
       },
       "source": "Friendly **ADEPTA SORORITAS INFANTRY FLY** units have the following ability: **Condemnatory Psalms**: In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **condemned**:\n- While a unit is **condemned**, that unit has +3\" **detection range**. ",
-      "target": null
+      "target": "Las unidades **ADEPTA SORORITAS INFANTRY FLY** amigas tienen la siguiente habilidad: **Condemnatory Psalms**: En tu fase de Disparo, esta unidad puede seleccionar una unidad enemiga **visible** a 12\" o menos. Esa unidad enemiga queda **condemned**:\n- Mientras una unidad está **condemned**, esa unidad tiene +3\" de **alcance de detección**. "
     },
     {
       "id": "7960dd53e52ffdbf",
@@ -165,7 +165,7 @@
         "names": []
       },
       "source": "Friendly **CELESTIAN** units’ attacks have +1 **BS** and **WS**. \n\nThis **detachment** has the **REVEREND** tag and cannot be taken with another **REVEREND detachment**.",
-      "target": null
+      "target": "Los ataques de las unidades **CELESTIAN** amigas tienen +1 a **BS** y **WS**. \n\nEste **detachment** tiene la etiqueta **REVEREND** y no puede llevarse junto a otro **detachment REVEREND**."
     },
     {
       "id": "a6b3f097d51e315a",
@@ -181,7 +181,7 @@
         ]
       },
       "source": "- Enhancements selected from this **detachment** do not count towards the total number of enhancements in your army. \n- Friendly **ADEPTA SORORITAS CHARACTER** units have +1 **Ld**.",
-      "target": null
+      "target": "- Los Enhancements seleccionados de este **detachment** no cuentan para el número total de Enhancements de tu ejército. \n- Las unidades **ADEPTA SORORITAS CHARACTER** amigas tienen +1 a **Ld**."
     },
     {
       "id": "3b97f44ba0be93db",
@@ -195,7 +195,7 @@
         "names": []
       },
       "source": "Each time this unit is selected to fight, you can choose to invoke its extremis trigger word. If you do, then until the end of the phase, arco-flails equipped by models in this unit have an Attacks characteristic of 6 and the HAZARDOUS ability.",
-      "target": null
+      "target": "Cada vez que esta unidad es seleccionada para combatir, puedes elegir invocar su palabra de activación extremis. Si lo haces, hasta el final de la fase, los arco-flails equipados por las miniaturas de esta unidad tienen una característica de Ataques de 6 y la habilidad HAZARDOUS."
     },
     {
       "id": "0ae6f7d4bc335f60",
@@ -209,7 +209,7 @@
         "names": []
       },
       "source": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result.",
-      "target": null
+      "target": "Al final de tu fase de Mando, por cada marcador de objetivo que controles que tenga una o más unidades de tu ejército con esta habilidad dentro de su alcance, tira un D6: con un 4+, ganas 1 Miracle dice con un valor igual a ese resultado."
     },
     {
       "id": "3fafbfda2c17af3f",
@@ -224,7 +224,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save.",
-      "target": null
+      "target": "Una vez por batalla, al principio de cualquier fase, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final de la fase, esta miniatura tiene una salvación invulnerable de 2+."
     },
     {
       "id": "57ac853eaa608e75",
@@ -238,7 +238,7 @@
         "names": []
       },
       "source": "DOMINION SQUAD, REPENTIA SQUAD",
-      "target": null
+      "target": "DOMINION SQUAD, REPENTIA SQUAD"
     },
     {
       "id": "b7155e1bbd0e0f3c",
@@ -255,7 +255,7 @@
         ]
       },
       "source": "Models in the bearer’s unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen la habilidad Feel No Pain 4+ contra heridas mortales y ataques psíquicos."
     },
     {
       "id": "ecd4e93a09a55f10",
@@ -269,7 +269,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque, repite una tirada para impactar de 1."
     },
     {
       "id": "7acc56b0d4fbe502",
@@ -283,7 +283,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Adepta Sororitas unit makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final del turno, cada vez que una unidad amiga Adepta Sororitas realiza un ataque a distancia que toma como objetivo a esa unidad enemiga, mejora en 1 la característica de Penetración de Blindaje de ese ataque. La misma unidad enemiga solo puede verse afectada por esta habilidad una vez por turno."
     },
     {
       "id": "99f540d288e08831",
@@ -300,7 +300,7 @@
         ]
       },
       "source": "While an ^^**Adepta Sororitas Character^^** is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Mientras un ^^**Adepta Sororitas Character^^** lidera esta unidad, cada vez que un ataque toma como objetivo a esta unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "3f3c54d12bdc2b46",
@@ -314,7 +314,7 @@
         "names": []
       },
       "source": "This unit has +1 OC.",
-      "target": null
+      "target": "Esta unidad tiene +1 de OC."
     },
     {
       "id": "01f70a2eaa871a8b",
@@ -331,7 +331,7 @@
         ]
       },
       "source": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to this unit's Ephrael Stern model. That unit must take a Battle-shock test, subtracting 2 from the result if it is a Chaos unit. If the test is failed, that enemy unit suffers 3 mortal wounds.",
-      "target": null
+      "target": "Al comienzo de tu fase de Disparo, selecciona una unidad enemiga que esté a 12\" o menos de la miniatura Ephrael Stern de esta unidad y sea visible para ella. Esa unidad debe hacer un test de Battle-shock, restando 2 al resultado si es una unidad Chaos. Si el test se falla, esa unidad enemiga sufre 3 heridas mortales."
     },
     {
       "id": "94e26778114d9e7b",
@@ -345,7 +345,7 @@
         "names": []
       },
       "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do: \n- That use is ‑1 **CP**. \n- That use does not prevent any uses of that **stratagem** on other units this phase.",
-      "target": null
+      "target": "Puedes tomar como objetivo a esta unidad con el **Stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **Stratagem** esta fase. Si lo haces: \n- Ese uso cuesta -1 **CP**. \n- Ese uso no impide ningún otro uso de ese **Stratagem** sobre otras unidades esta fase."
     },
     {
       "id": "fe3681723821db9d",
@@ -359,7 +359,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any phase, you can select one friendly Adepta Sororitas unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase, puedes seleccionar una unidad amiga Adepta Sororitas que esté Battle-shocked y a 12\" o menos de esta miniatura. Esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "a68fa94958c20faa",
@@ -373,7 +373,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time that unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 6.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que esa unidad realiza un Act of Faith, el valor de uno de los Miracle dice usados en ese Act of Faith se cambia primero a 6."
     },
     {
       "id": "8207462ea93e0a9e",
@@ -387,7 +387,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD, SISTERS NOVITIATE SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD, SISTERS NOVITIATE SQUAD"
     },
     {
       "id": "2bf314dac744a044",
@@ -402,7 +402,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1.",
-      "target": null
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, empeora en 1 la característica de Leadership de las miniaturas de esa unidad."
     },
     {
       "id": "8f757d2fbc12e017",
@@ -416,7 +416,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CELESTIAN SACRESANTS, CRUSADERS, DOMINION SQUAD, RETRIBUTOR SQUAD"
     },
     {
       "id": "23693b447e79fdbd",
@@ -434,7 +434,7 @@
         ]
       },
       "source": "If this unit has a Leader unit attached to it during the Declare Battle Formations step and this unit starts the battle embarked within a Transport, that Leader unit gains the Scouts 6\" ability.",
-      "target": null
+      "target": "Si esta unidad tiene una unidad Leader adjunta durante el paso Declarar Formaciones de Batalla y esta unidad empieza la batalla embarcada en un Transport, esa unidad Leader gana la habilidad Scouts 6\"."
     },
     {
       "id": "059a0c53c4e7559b",
@@ -450,7 +450,7 @@
         ]
       },
       "source": "In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units it can make a Normal move of up to D6”.",
-      "target": null
+      "target": "En la fase de Movimiento de tu oponente, si una unidad enemiga termina un movimiento a 8” o menos de esta unidad, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas puede realizar un movimiento normal de hasta D6”."
     },
     {
       "id": "cb7a157310ae7318",
@@ -467,7 +467,7 @@
         ]
       },
       "source": "In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit must take a Battle-shock test. Each time such an attack destroys an enemy model that has the Deadly Demise ability, the model's Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of a 6.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, si uno o más de esos ataques realizados con un arma Indirect Fire han conseguido un impacto contra una unidad enemiga, esa unidad debe hacer un test de Battle-shock. Cada vez que uno de esos ataques destruye una miniatura enemiga que tenga la habilidad Deadly Demise, la habilidad Deadly Demise de esa miniatura inflige heridas mortales con una tirada de D6 de 5+ en lugar de con un 6."
     },
     {
       "id": "49537e0ca6e3f64f",
@@ -481,7 +481,7 @@
         "names": []
       },
       "source": "This unit can re‑roll rolls to determine the **A** of a weapon.",
-      "target": null
+      "target": "Esta unidad puede repetir las tiradas para determinar el valor de **A** de un arma."
     },
     {
       "id": "844fd662ef4551c0",
@@ -499,7 +499,7 @@
         ]
       },
       "source": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 5+."
     },
     {
       "id": "7403fe82072502b5",
@@ -515,7 +515,7 @@
         ]
       },
       "source": "While this model is leading a unit, in your Command phase, you can return up to 1 destroyed model (excluding Character models) to that unit. If you wish, you first discard 1 Miracle dice; if you do, you can return up to D3+1 destroyed models (excluding Character models) to that unit instead.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, en tu fase de Mando, puedes devolver hasta 1 miniatura destruida (excluyendo miniaturas Character) a esa unidad. Si lo deseas, descarta primero 1 Miracle dice; si lo haces, puedes devolver hasta D3+1 miniaturas destruidas (excluyendo miniaturas Character) a esa unidad en su lugar."
     },
     {
       "id": "26c551f1dae24269",
@@ -529,7 +529,7 @@
         "names": []
       },
       "source": "Each time you gain a Miracle dice as the result of a friendly ADEPTA SORORITAS unit or model being destroyed, if that unit or model was destroyed within 12\" of this model, you can re-roll the result of that Miracle dice before adding it to your Miracle dice pool.",
-      "target": null
+      "target": "Cada vez que ganas 1 Miracle dice como resultado de que una unidad o miniatura amiga ADEPTA SORORITAS sea destruida, si esa unidad o miniatura fue destruida a 12\" o menos de esta miniatura, puedes repetir el resultado de ese Miracle dice antes de añadirlo a tu reserva de Miracle dice."
     },
     {
       "id": "603b8023b391a5f8",
@@ -543,7 +543,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, models in that unit have a Save characteristic of 2+ and a 4+ invulnerable save.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen una característica de Salvación de 2+ y una salvación invulnerable de 4+."
     },
     {
       "id": "8b5f8e724ee5d0f1",
@@ -560,7 +560,7 @@
         ]
       },
       "source": "This model has a transport capacity of 6 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine.\n\nAt the start of the Declare Battle Formations step, you can select one BATTLE SISTERS SQUAD, DOMINION SQUAD or SISTERS NOVITIATE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units. If you are splitting a unit that has the Cherub ability, only one of the new units can use that ability during the battle – make a note of which of the new units this will be). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 6 miniaturas ADEPTA SORORITAS INFANTRY. No puede transportar miniaturas JUMP PACK ni el Triumph of Saint Katherine.\n\nAl comienzo del paso Declarar Formaciones de Batalla, puedes seleccionar una BATTLE SISTERS SQUAD, DOMINION SQUAD o SISTERS NOVITIATE SQUAD de tu ejército. Si lo haces, esa unidad se divide en dos unidades, cada una con un número de miniaturas lo más igualado posible (al dividir una unidad de esta forma, anota qué miniaturas forman cada una de las dos nuevas unidades. Si divides una unidad que tenga la habilidad Cherub, solo una de las nuevas unidades puede usar esa habilidad durante la batalla: anota cuál de las nuevas unidades será). Una de estas unidades debe empezar la batalla embarcada en este TRANSPORT; la otra puede empezar la batalla embarcada en otro TRANSPORT, o puede desplegarse como una unidad independiente."
     },
     {
       "id": "909481e4113e77e7",
@@ -576,7 +576,7 @@
         ]
       },
       "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final de la fase, esa unidad enemiga no puede tener el beneficio de cobertura."
     },
     {
       "id": "735e3b6a681e329a",
@@ -593,7 +593,7 @@
         ]
       },
       "source": "- This unit has Stealth.\n- Melee attacks that target this unit have ‑1 to hit rolls.",
-      "target": null
+      "target": "- Esta unidad tiene Stealth.\n- Los ataques de cuerpo a cuerpo que tengan como objetivo esta unidad tienen -1 a las tiradas para impactar."
     },
     {
       "id": "7129cc1e7f280441",
@@ -607,7 +607,7 @@
         "names": []
       },
       "source": "If this model is on the battlefield at the start\nof your Command phase, you can choose one of the following:\n■ Discard 1 Miracle dice and gain 1CP.\n■ Take a Leadership test for this model, if that test is passed, gain 1CP.",
-      "target": null
+      "target": "Si esta miniatura está en el campo de batalla al comienzo\nde tu fase de Mando, puedes elegir una de las siguientes opciones:\n■ Descarta 1 Miracle dice y gana 1CP.\n■ Haz un test de Leadership para esta miniatura; si ese test se supera, ganas 1CP."
     },
     {
       "id": "7b5922d223a99e16",
@@ -621,7 +621,7 @@
         "names": []
       },
       "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; that destroyed model can fight after attacking unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad es destruida por un ataque de cuerpo a cuerpo, si esa miniatura no ha combatido esta fase, tira un D6. Con un 2+, no la retires del juego; esa miniatura destruida puede combatir después de que la unidad atacante haya terminado de realizar sus ataques, y luego se retira del juego."
     },
     {
       "id": "5916aaed34565e86",
@@ -635,7 +635,7 @@
         "names": []
       },
       "source": "The bearer has a Move characteristic of 7\" and a Save Characteristic of 3+.",
-      "target": null
+      "target": "El portador tiene una característica de Movimiento de 7\" y una característica de Salvación de 3+."
     },
     {
       "id": "713a5eb2ae5b6e18",
@@ -651,7 +651,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n■ Paragon Warsuits",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n■ Paragon Warsuits"
     },
     {
       "id": "c92ad95dd750f491",
@@ -665,7 +665,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll and you can re-roll the Wound roll.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque, puedes repetir la tirada para impactar y puedes repetir la tirada para herir."
     },
     {
       "id": "d27dabd5b94e2f94",
@@ -682,7 +682,7 @@
         ]
       },
       "source": "Each time this model's unit is selected to shoot or fight, you can discard 1 Miracle dice. If you do, until the end of the phase, add 3 to the Attacks characteristic of Fidelis and the Lance of Illumination. Each time an enemy unit is destroyed by this model, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura es seleccionada para disparar o para combatir, puedes descartar 1 Miracle dice. Si lo haces, hasta el final de la fase, suma 3 a la característica de Ataques de Fidelis y de la Lance of Illumination. Cada vez que esta miniatura destruye una unidad enemiga, ganas 1 Miracle dice."
     },
     {
       "id": "f0333b23d7f88f33",
@@ -697,7 +697,7 @@
         "names": []
       },
       "source": "If this model is in your army, it must be your WARLORD.",
-      "target": null
+      "target": "Si esta miniatura está en tu ejército, debe ser tu WARLORD."
     },
     {
       "id": "4abb74819ac8729f",
@@ -711,7 +711,7 @@
         "names": []
       },
       "source": "Each time this model’s unit is selected to fight, you can discard 1 Miracle dice. If you do, then until the end of the phase, each time a melee attack made by this model scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura es seleccionada para combatir, puedes descartar 1 Miracle dice. Si lo haces, hasta el final de la fase, cada vez que un ataque de cuerpo a cuerpo realizado por esta miniatura consigue una herida, el objetivo de ese ataque sufre 1 herida mortal además de cualquier daño normal."
     },
     {
       "id": "798bdcfbc527f5b1",
@@ -725,7 +725,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll and add 1 to the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad MONSTER o VEHICLE, suma 1 a la tirada para impactar y suma 1 a la tirada para herir."
     },
     {
       "id": "a7c2b013de4af2e4",
@@ -740,7 +740,7 @@
         "names": []
       },
       "source": "This unit is eligible to declare a charge in a turn in which it Advanced",
-      "target": null
+      "target": "Esta unidad es elegible para declarar una carga en un turno en el que haya avanzado"
     },
     {
       "id": "20f4eda0b636e5d9",
@@ -755,7 +755,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque de cuerpo a cuerpo, suma 1 a la tirada para herir."
     },
     {
       "id": "f56438910e99c42e",
@@ -770,7 +770,7 @@
         "names": []
       },
       "source": "Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of melee weapons equipped by this model by 3.",
-      "target": null
+      "target": "Una vez por batalla, en la fase de Combate, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final de la fase, mejora en 3 las características de Fuerza y Ataques de las armas de cuerpo a cuerpo equipadas por esta miniatura."
     },
     {
       "id": "3bd4412c1a699360",
@@ -789,7 +789,7 @@
         ]
       },
       "source": "If this model is attached to a Dominion Squad during the Declare Battle Formations step, it gains the Scouts 6\" ability. If this model is attached to a Sisters Novitiate Squad during the Declare Battle Formations step, it gains the Infiltrators ability.",
-      "target": null
+      "target": "Si esta miniatura está adjunta a una Dominion Squad durante el paso Declarar Formaciones de Batalla, gana la habilidad Scouts 6\". Si esta miniatura está adjunta a una Sisters Novitiate Squad durante el paso Declarar Formaciones de Batalla, gana la habilidad Infiltrators."
     },
     {
       "id": "532a0a420b6a3a3a",
@@ -803,7 +803,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: ARCO-FLAGELLANTS, BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CRUSADERS, DOMINION SQUAD, SANCTIFIERS, SISTERS NOVITIATE SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ARCO-FLAGELLANTS, BATTLE SISTERS SQUAD, CELESTIAN INSIDIANTS, CRUSADERS, DOMINION SQUAD, SANCTIFIERS, SISTERS NOVITIATE SQUAD"
     },
     {
       "id": "11249fd85251bf41",
@@ -819,7 +819,7 @@
         ]
       },
       "source": "While this unit contains a Repentia Superior model, each time a Sisters Repentia model in this unit makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll.",
-      "target": null
+      "target": "Mientras esta unidad contiene una miniatura Repentia Superior, cada vez que una miniatura Sisters Repentia de esta unidad realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para impactar y puedes repetir la tirada para herir."
     },
     {
       "id": "8a48552045a08002",
@@ -833,7 +833,7 @@
         "names": []
       },
       "source": "Twice per battle, after this unit has performed an Act of Faith, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Dos veces por batalla, después de que esta unidad haya realizado un Act of Faith, ganas 1 Miracle dice."
     },
     {
       "id": "c47112137fa707e0",
@@ -847,7 +847,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. If such an attack targets an enemy unit that has destroyed one or more ^^**Adepta Sororitas^^** units from your army during the battle, add 1 to the Hit roll and add 1 to the Wound roll as well.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia, repite una tirada para impactar de 1 y repite una tirada para herir de 1. Si uno de esos ataques toma como objetivo a una unidad enemiga que haya destruido una o más unidades ^^**Adepta Sororitas^^** de tu ejército durante la batalla, suma también 1 a la tirada para impactar y 1 a la tirada para herir."
     },
     {
       "id": "912a2cd30eeec41f",
@@ -863,7 +863,7 @@
         ]
       },
       "source": "While this unit contains a Celestine model, in your Command phase, you can return 1 destroyed Geminae Superia model to this unit.",
-      "target": null
+      "target": "Mientras esta unidad contiene una miniatura Celestine, en tu fase de Mando, puedes devolver 1 miniatura Geminae Superia destruida a esta unidad."
     },
     {
       "id": "680430b7795d7108",
@@ -880,7 +880,7 @@
         ]
       },
       "source": "While this unit contains one or more Geminae Superia models, Celestine has the Feel No Pain 4+ ability.",
-      "target": null
+      "target": "Mientras esta unidad contiene una o más miniaturas Geminae Superia, Celestine tiene la habilidad Feel No Pain 4+."
     },
     {
       "id": "efef087ea2e00c60",
@@ -896,7 +896,7 @@
         ]
       },
       "source": "The first time this unit’s Celestine model is destroyed, roll one D6 at the end of the phase. On a 2+, set that Celestine model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
-      "target": null
+      "target": "La primera vez que la miniatura Celestine de esta unidad es destruida, tira un D6 al final de la fase. Con un 2+, vuelve a desplegar esa miniatura Celestine en el campo de batalla, lo más cerca posible del lugar donde fue destruida y no dentro del alcance de combate de ninguna unidad enemiga, con todas sus heridas restantes."
     },
     {
       "id": "448e81bd26cea3ab",
@@ -910,7 +910,7 @@
         "names": []
       },
       "source": "This unit can be attached to the following units: SERAPHIM SQUAD, ZEPHYRIM SQUAD",
-      "target": null
+      "target": "Esta unidad puede adjuntarse a las siguientes unidades: SERAPHIM SQUAD, ZEPHYRIM SQUAD"
     },
     {
       "id": "fe8b1cdc99f632ad",
@@ -927,7 +927,7 @@
         ]
       },
       "source": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, si no está dentro del alcance de combate de ninguna unidad enemiga, puede realizar un movimiento normal de hasta 6\". Si lo hace, hasta el final del turno esta unidad no es elegible para declarar una carga."
     },
     {
       "id": "c56424d66e93c128",
@@ -943,7 +943,7 @@
         ]
       },
       "source": "Impetuous Fervour: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead.",
-      "target": null
+      "target": "Impetuous Fervour: Cada vez que una miniatura de esta unidad realiza un ataque, repite una tirada para impactar de 1. Si el objetivo de ese ataque es una unidad enemiga que esté dentro del alcance de un marcador de objetivo, puedes repetir la tirada para impactar en su lugar."
     },
     {
       "id": "f3810799d4ee62fb",
@@ -957,7 +957,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the TRIUMPH OF SAINT KATHERINE.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 12 miniaturas ADEPTA SORORITAS INFANTRY. No puede transportar miniaturas JUMP PACK ni el TRIUMPH OF SAINT KATHERINE."
     },
     {
       "id": "a78be3711fa55a29",
@@ -972,7 +972,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, this model regains 1 lost wound.",
-      "target": null
+      "target": "Al comienzo de tu fase de Mando, esta miniatura recupera 1 herida perdida."
     },
     {
       "id": "8f3672dd22ae5643",
@@ -988,7 +988,7 @@
         ]
       },
       "source": "While this model has 1-6 wounds remaining, the Attacks characteristics of all of its weapons are halved, and you can only select one ability when using its Relics of the Matriarchs ability, instead of up to two.",
-      "target": null
+      "target": "Mientras a esta miniatura le quedan entre 1 y 6 heridas, las características de Ataques de todas sus armas se reducen a la mitad y, al usar su habilidad Relics of the Matriarchs, solo puedes seleccionar una habilidad en lugar de hasta dos."
     },
     {
       "id": "fcfc184038a5176d",
@@ -1004,7 +1004,7 @@
         ]
       },
       "source": "At the start of the battle round, select up to two of the abilities in the Relics of the Matriarchs section. Until the start of the next battle round, this model has those abilities.",
-      "target": null
+      "target": "Al comienzo de la ronda de batalla, selecciona hasta dos de las habilidades de la sección Relics of the Matriarchs. Hasta el comienzo de la siguiente ronda de batalla, esta miniatura tiene esas habilidades."
     },
     {
       "id": "c6fe18bcf38f055c",
@@ -1018,7 +1018,7 @@
         "names": []
       },
       "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, add 2\" to that unit's Move characteristic and add 1 to the Advance and Charge rolls made for that unit.",
-      "target": null
+      "target": "Mientras una unidad amiga Adepta Sororitas está a 6\" o menos de esta miniatura, suma 2\" a la característica de Movimiento de esa unidad y suma 1 a las tiradas de avance y de carga realizadas para esa unidad."
     },
     {
       "id": "41b9d06f99d5de3c",
@@ -1032,7 +1032,7 @@
         "names": []
       },
       "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, you can re-roll all Battle-shock tests taken for that unit.",
-      "target": null
+      "target": "Mientras una unidad amiga Adepta Sororitas está a 6\" o menos de esta miniatura, puedes repetir todos los tests de Battle-shock realizados para esa unidad."
     },
     {
       "id": "dfe560e6768e5682",
@@ -1048,7 +1048,7 @@
         ]
       },
       "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, that unit can perform up to two Acts of Faith per phase, instead of only one.",
-      "target": null
+      "target": "Mientras una unidad amiga Adepta Sororitas está a 6\" o menos de esta miniatura, esa unidad puede realizar hasta dos Acts of Faith por fase, en lugar de solo uno."
     },
     {
       "id": "1b1fdf89ab2c027b",
@@ -1062,7 +1062,7 @@
         "names": []
       },
       "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Mientras una unidad amiga Adepta Sororitas está a 6\" o menos de esta miniatura, cada vez que una miniatura de esa unidad realiza un ataque a distancia, repite una tirada para herir de 1."
     },
     {
       "id": "9e3a3cccb3d340b3",
@@ -1078,7 +1078,7 @@
         ]
       },
       "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, models in that unit have the Feel No Pain 6+ ability.",
-      "target": null
+      "target": "Mientras una unidad amiga Adepta Sororitas está a 6\" o menos de esta miniatura, las miniaturas de esa unidad tienen la habilidad Feel No Pain 6+."
     },
     {
       "id": "59497812ae6e0cb1",
@@ -1092,7 +1092,7 @@
         "names": []
       },
       "source": "While a friendly Adepta Sororitas unit is within 6\" of this model, improve the Armour Penetration characteristic of melee weapons equipped by model in that unit by 1.",
-      "target": null
+      "target": "Mientras una unidad amiga Adepta Sororitas está a 6\" o menos de esta miniatura, mejora en 1 la característica de Penetración de Blindaje de las armas de cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "17a65e2e5be0d64b",
@@ -1106,7 +1106,7 @@
         "names": []
       },
       "source": "Each time you gain 1 Miracle dice at the start of the battle round, if this model is on the battlefield, do not roll one D6 to determine the value of that Miracle dice; it has a value of 6.’",
-      "target": null
+      "target": "Cada vez que ganas 1 Miracle dice al comienzo de la ronda de batalla, si esta miniatura está en el campo de batalla, no tires un D6 para determinar el valor de ese Miracle dice; tiene un valor de 6.’"
     },
     {
       "id": "7b9bc6eaee1b43a0",
@@ -1120,7 +1120,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit: BATTLE SISTERS SQUAD, CRUSADERS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad: BATTLE SISTERS SQUAD, CRUSADERS"
     },
     {
       "id": "793fea0f0402f3dd",
@@ -1137,7 +1137,7 @@
         ]
       },
       "source": "Each time this unit is selected to fight, select one of the following abilities to apply to melee weapons equipped by models in this unit until the end of the phase:\n- Sustained Hits 1\n- Lethal Hits\n\nIf this unit made a Charge move this turn, until the end of the phase, select both abilities above to apply to melee weapons equipped by models in this unit instead.",
-      "target": null
+      "target": "Cada vez que esta unidad es seleccionada para combatir, selecciona una de las siguientes habilidades para aplicarla a las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad hasta el final de la fase:\n- Sustained Hits 1\n- Lethal Hits\n\nSi esta unidad ha realizado un movimiento de carga este turno, hasta el final de la fase, selecciona en su lugar ambas habilidades anteriores para aplicarlas a las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "d8452f1f2b6f6d69",
@@ -1153,7 +1153,7 @@
         ]
       },
       "source": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 12 miniaturas ADEPTA SORORITAS INFANTRY. No puede transportar miniaturas JUMP PACK ni el Triumph of Saint Katherine."
     },
     {
       "id": "fe76f2ff1b48161c",
@@ -1169,7 +1169,7 @@
         ]
       },
       "source": "Once per turn, in your opponent’s Charge phase, after an enemy unit has selected targets for its charge but before it makes a Charge move, you can select one ADEPTA SORORITAS unit from your army that was selected as a target of that charge. Provided that unit is not within Engagement Range of any enemy units and every model in that unit is within 3\" of this TRANSPORT, it can embark within this TRANSPORT.",
-      "target": null
+      "target": "Una vez por turno, en la fase de Carga de tu oponente, después de que una unidad enemiga haya seleccionado objetivos para su carga pero antes de que realice un movimiento de carga, puedes seleccionar una unidad ADEPTA SORORITAS de tu ejército que haya sido seleccionada como objetivo de esa carga. Siempre que esa unidad no esté dentro del alcance de combate de ninguna unidad enemiga y todas las miniaturas de esa unidad estén a 3\" o menos de este TRANSPORT, puede embarcar en este TRANSPORT."
     },
     {
       "id": "c20ace062d3fa16a",
@@ -1185,7 +1185,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by the model and those weapons have the [DEVASTATING WOUNDS] ability",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de la fase de Combate, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final de la fase, suma 3 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por la miniatura y esas armas tienen la habilidad [DEVASTATING WOUNDS]"
     },
     {
       "id": "347869baa22b3d76",
@@ -1199,7 +1199,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack that targets a CHARACTER unit, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad CHARACTER, puedes repetir la tirada para herir."
     },
     {
       "id": "7bb1e3fde0b7b376",
@@ -1216,7 +1216,7 @@
         ]
       },
       "source": "Models in this unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 4+ contra ataques psíquicos y heridas mortales."
     },
     {
       "id": "b735087b93fa95c0",
@@ -1232,7 +1232,7 @@
         ]
       },
       "source": "If a model from your army with the Leader ability can be attached to a BATTLE SISTERS SQUAD, it can be attached to this unit instead.",
-      "target": null
+      "target": "Si una miniatura de tu ejército con la habilidad Leader puede adjuntarse a una BATTLE SISTERS SQUAD, puede adjuntarse a esta unidad en su lugar."
     },
     {
       "id": "6214e22aa916ee95",
@@ -1246,7 +1246,7 @@
         "names": []
       },
       "source": "When this FORTIFICATION is set up, all parts of it must be set up within 1\" of another part. Friendly ADEPTA SORORITAS INFANTRY models can be set up or end any type of move on top of the floor sections of this FORTIFICATION. While an ADEPTA SORORITAS unit from your army is within 1\" of this FORTIFICATION, that unit can perform one additional Act of Faith per phase.",
-      "target": null
+      "target": "Cuando se despliega esta FORTIFICATION, todas sus partes deben desplegarse a 1\" o menos de otra parte. Las miniaturas amigas ADEPTA SORORITAS INFANTRY pueden desplegarse o terminar cualquier tipo de movimiento sobre las secciones de suelo de esta FORTIFICATION. Mientras una unidad ADEPTA SORORITAS de tu ejército está a 1\" o menos de esta FORTIFICATION, esa unidad puede realizar un Act of Faith adicional por fase."
     },
     {
       "id": "dfeec38d64af1538",
@@ -1263,7 +1263,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de la fase de Combate, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final de la fase, suma 3 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por esta miniatura y esas armas tienen la habilidad [DEVASTATING WOUNDS]."
     },
     {
       "id": "288d792947409137",
@@ -1277,7 +1277,7 @@
         "names": []
       },
       "source": "Each time this model makes an attack that targets a DAEMON unit, you can re-roll the Hit roll and you can re-roll the Wound roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque que toma como objetivo a una unidad DAEMON, puedes repetir la tirada para impactar y puedes repetir la tirada para herir."
     },
     {
       "id": "1377b0edc63fc367",
@@ -1295,7 +1295,7 @@
         ]
       },
       "source": "While this unit contains a **^^Ministorum Priest**^^, melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Mientras esta unidad contiene un **^^Ministorum Priest**^^, las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "e1b5014110defdd7",
@@ -1314,7 +1314,7 @@
         ]
       },
       "source": "If a ^^**Ministorum Priest^^** model from your army with the Leader ability can be attached to a ^^**Battle Sisters Squad^^**, it can be attached to this unit instead. If a ^^**Ministorum Priest^^** model from your army is attached to this unit during the Declare Battle Formations step, that model gains the Scouts 6\" ability.",
-      "target": null
+      "target": "Si una miniatura ^^**Ministorum Priest^^** de tu ejército con la habilidad Leader puede adjuntarse a una ^^**Battle Sisters Squad^^**, puede adjuntarse a esta unidad en su lugar. Si una miniatura ^^**Ministorum Priest^^** de tu ejército se adjunta a esta unidad durante el paso Declarar Formaciones de Batalla, esa miniatura gana la habilidad Scouts 6\"."
     },
     {
       "id": "99df19f3bcaa47b2",
@@ -1331,7 +1331,7 @@
         ]
       },
       "source": "In your Command phase, if the bearer is on the battlefield, you can return up to D3 destroyed models (excluding ^^**Character models^^**) to this unit.",
-      "target": null
+      "target": "En tu fase de Mando, si el portador está en el campo de batalla, puedes devolver hasta D3 miniaturas destruidas (excluyendo ^^**miniaturas Character^^**) a esta unidad."
     },
     {
       "id": "267708f6e854ed58",
@@ -1350,7 +1350,7 @@
         ]
       },
       "source": "At the start of the battle, select one unit from your opponent’s army to be this unit’s quarry. Each time a model in this unit makes an attack that targets its quarry, that attack has the ^^**[Precision]^^** ability and you can re‑roll the Hit roll. This ability can be used even if this unit is embarked within a ^^**Transport**^^.",
-      "target": null
+      "target": "Al comienzo de la batalla, selecciona una unidad del ejército de tu oponente como presa de esta unidad. Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a su presa, ese ataque tiene la habilidad ^^**[Precision]^^** y puedes repetir la tirada para impactar. Esta habilidad se puede usar incluso si esta unidad está embarcada en un ^^**Transport^^**."
     },
     {
       "id": "becdb692182c6a14",
@@ -1367,7 +1367,7 @@
         ]
       },
       "source": "If a ^^**Character^^** unit from your army can be attached to a ^^**Dominion Squad^^** unit, it can be attached to this unit instead.",
-      "target": null
+      "target": "Si una unidad ^^**Character^^** de tu ejército puede adjuntarse a una unidad ^^**Dominion Squad^^**, puede adjuntarse a esta unidad en su lugar."
     },
     {
       "id": "da684782902ecc00",
@@ -1381,7 +1381,7 @@
         "names": []
       },
       "source": "Each time the bearer’s unit’s quarry is destroyed, you can select a new unit from your opponent’s army to be its quarry.",
-      "target": null
+      "target": "Cada vez que la presa de la unidad del portador es destruida, puedes seleccionar una nueva unidad del ejército de tu oponente como su presa."
     },
     {
       "id": "7eb00f6a120f87d2",
@@ -1395,7 +1395,7 @@
         "names": []
       },
       "source": "Once per battle round, one unit from your army with the ability can be targeted with a Stratagem for 0CP, even if another unit from your army has already been targeted with that Stratagem this phase.",
-      "target": null
+      "target": "Una vez por ronda de batalla, una unidad de tu ejército con esta habilidad puede ser tomada como objetivo con un Stratagem por 0CP, incluso si otra unidad de tu ejército ya ha sido tomada como objetivo con ese Stratagem esta fase."
     },
     {
       "id": "1aa61335991b09bd",
@@ -1416,7 +1416,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Battle Sisters Squad, Celestian Sacresants, Dominion Squad, Retributor Squad, Sisters Novitiate Squad**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Battle Sisters Squad, Celestian Sacresants, Dominion Squad, Retributor Squad, Sisters Novitiate Squad**^^"
     },
     {
       "id": "0bf976614e8c2c1b",
@@ -1430,7 +1430,7 @@
         "names": []
       },
       "source": "Each time this unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 4.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un Act of Faith, el valor de uno de los Miracle dice usados en ese Act of Faith se cambia primero a 4."
     },
     {
       "id": "84fd4d02d33fb584",
@@ -1446,7 +1446,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Paragon Warsuits**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Paragon Warsuits**^^"
     },
     {
       "id": "9154b72bfb16f06d",
@@ -1460,7 +1460,7 @@
         "names": []
       },
       "source": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle‑shock test, subtracting 1 from that test.",
-      "target": null
+      "target": "Al comienzo de la fase de Combate, cada unidad enemiga que esté a 6\" o menos de esta miniatura debe hacer un test de Battle-shock, restando 1 a ese test."
     },
     {
       "id": "3f7a293bfecd1855",
@@ -1476,7 +1476,7 @@
         "names": []
       },
       "source": "At the end of your Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the start of your next Command phase, each time a friendly ^^**Adepta Sororitas**^^ model makes an attack that targets that enemy unit, that attack has the [LETHAL HITS] ability.",
-      "target": null
+      "target": "Al final de tu fase de Movimiento, puedes seleccionar una unidad enemiga que esté a 18\" o menos de esta miniatura y sea visible para ella. Hasta el comienzo de tu siguiente fase de Mando, cada vez que una miniatura amiga ^^**Adepta Sororitas**^^ realiza un ataque que toma como objetivo a esa unidad enemiga, ese ataque tiene la habilidad [LETHAL HITS]."
     },
     {
       "id": "f57551f2e5414537",
@@ -1494,7 +1494,7 @@
         ]
       },
       "source": "ADEPTA SORORITAS model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1, and those weapons have the [Precision] ability. In addition, each time the bearer fights, if one or more enemy models is destroyed by those attacks, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Mejora en 1 las características de Fuerza y Penetración de Blindaje de las armas de cuerpo a cuerpo del portador, y esas armas tienen la habilidad [Precision]. Además, cada vez que el portador combate, si una o más miniaturas enemigas son destruidas por esos ataques, ganas 1 Miracle dice."
     },
     {
       "id": "c2217ba77097dab0",
@@ -1508,7 +1508,7 @@
         "names": []
       },
       "source": "ADEPTA SORORITAS model only. In your Movement phase, you can select one enemy unit within 12\" of that bearer; that unit must take a Battle-shock test. If that test is failed, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. En tu fase de Movimiento, puedes seleccionar una unidad enemiga que esté a 12\" o menos del portador; esa unidad debe hacer un test de Battle-shock. Si ese test se falla, ganas 1 Miracle dice."
     },
     {
       "id": "05205b3045c0afa1",
@@ -1522,7 +1522,7 @@
         "names": []
       },
       "source": "CANONESS or PALATINE model only. At the start of your Command phase, if the bearer is on the battlefield, take a Leadership test for the bearer. If that test is passed, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Solo miniatura CANONESS o PALATINE. Al comienzo de tu fase de Mando, si el portador está en el campo de batalla, haz un test de Leadership para el portador. Si ese test se supera, ganas 1 Miracle dice."
     },
     {
       "id": "2276ebcfaf8466e6",
@@ -1536,7 +1536,7 @@
         "names": []
       },
       "source": "ADEPTA SORORITAS model only. Each time the bearer uses an Act of Faith to substitute a saving throw, that saving throw is successful, irrespective of the value of the Miracle dice used.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Cada vez que el portador usa un Act of Faith para sustituir una tirada de salvación, esa tirada de salvación se considera superada, independientemente del valor del Miracle dice usado."
     },
     {
       "id": "50c80c37a1080dc2",
@@ -1554,7 +1554,7 @@
         ]
       },
       "source": "**^^Adepta Sororitas^^** model only. While the bearer is leading a unit, add 1 to the Attacks characteristic of Torrent weapons equipped by models in that unit, and all other ranged weapons equipped by models that unit have the **[SUSTAINED HITS 1]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Adepta Sororitas^^**. Mientras el portador lidera una unidad, suma 1 a la característica de Ataques de las armas Torrent equipadas por las miniaturas de esa unidad, y todas las demás armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad **[SUSTAINED HITS 1]**."
     },
     {
       "id": "36635d83574ff490",
@@ -1570,7 +1570,7 @@
         ]
       },
       "source": "CANONESS or PALATINE model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
-      "target": null
+      "target": "Solo miniatura CANONESS o PALATINE. El portador tiene una característica de Salvación de 2+ y la habilidad Feel No Pain 5+."
     },
     {
       "id": "35226f1bb0f860b6",
@@ -1584,7 +1584,7 @@
         "names": []
       },
       "source": "ADEPTA SORORITAS model only. At the start of your Command phase, you can discard up to 2 Miracle dice. Then, add 1 Miracle dice to your Miracle Dice pool showing a value equal to the sum of the two Miracle dice you discarded (to a maximum of 6).",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Al comienzo de tu fase de Mando, puedes descartar hasta 2 Miracle dice. Después, añade 1 Miracle dice a tu reserva de Miracle dice con un valor igual a la suma de los dos Miracle dice que has descartado (hasta un máximo de 6)."
     },
     {
       "id": "b9921f0f6a442bd7",
@@ -1598,7 +1598,7 @@
         "names": []
       },
       "source": "**^^Adepta Sororitas^^** model only. Each time the bearer is selected to fight, you can first discard up to 3 Miracle dice. For each Miracle dice just discarded, until the end of the phase, add 1 to the Attacks and Strength characteristics of the bearer's melee weapons.",
-      "target": null
+      "target": "Solo miniatura **^^Adepta Sororitas^^**. Cada vez que el portador es seleccionado para combatir, puedes descartar primero hasta 3 Miracle dice. Por cada Miracle dice descartado de esta forma, hasta el final de la fase, suma 1 a las características de Ataques y Fuerza de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "59209e49fa08704e",
@@ -1616,7 +1616,7 @@
         ]
       },
       "source": "ADEPTA SORORITAS model only. The bearer’s weapons have the [PRECISION] ability. Each time the bearer’s unit destroys an enemy Character model, you gain 1CP.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Las armas del portador tienen la habilidad [PRECISION]. Cada vez que la unidad del portador destruye una miniatura Character enemiga, ganas 1CP."
     },
     {
       "id": "8916f924b4e8d5ed",
@@ -1630,7 +1630,7 @@
         "names": []
       },
       "source": "**^^Adepta Sororitas^^** model only. Add 1 to the Attacks characteristic of the bearer’s melee weapons. While the bearer’s unit is Righteous, add 2 to the Attacks characteristic and add 1 to the Damage characteristic of the bearer’s melee weapons instead.",
-      "target": null
+      "target": "Solo miniatura **^^Adepta Sororitas^^**. Suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo del portador. Mientras la unidad del portador es Righteous, suma en su lugar 2 a la característica de Ataques y 1 a la característica de Daño de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "1acdc65a6a5425d6",
@@ -1644,7 +1644,7 @@
         "names": []
       },
       "source": "ADEPTA SORORITAS model only. Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of the bearer",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Las unidades enemigas que se desplieguen en el campo de batalla desde las Reservas no pueden desplegarse a 12\" o menos del portador"
     },
     {
       "id": "64ed01a86e6c1050",
@@ -1660,7 +1660,7 @@
         ]
       },
       "source": "ADEPTA SORORITAS model only. Each time a model in the bearer’s unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Cada vez que una miniatura de la unidad del portador realiza un ataque, puedes ignorar cualquiera de los modificadores a las características de Habilidad de Proyectiles o Habilidad de Armas de ese ataque y/o cualquiera de los modificadores a la tirada para impactar, o todos ellos."
     },
     {
       "id": "22133f88574a7c45",
@@ -1674,7 +1674,7 @@
         "names": []
       },
       "source": "At the end of your opponent’s Fight phase, if this unit is **unengaged**, you can place this unit in **strategic reserves**.",
-      "target": null
+      "target": "Al final de la fase de Combate de tu oponente, si esta unidad está **sin trabar**, puedes colocar esta unidad en **reservas estratégicas**."
     },
     {
       "id": "7b7e5397f28b9059",
@@ -1688,7 +1688,7 @@
         "names": []
       },
       "source": "ADEPTA SORORITAS model only. At the end of your Command phase, if the bearer is on the battlefield, you can re-roll one Miracle dice from your Miracle dice pool and return it to your Miracle dice pool with the new result you rolled. When doing so, if the bearer's unit is below its Starting Strength, you can re-roll up to 3 Miracle dice in this way instead.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Al final de tu fase de Mando, si el portador está en el campo de batalla, puedes repetir un Miracle dice de tu reserva de Miracle dice y devolverlo a tu reserva de Miracle dice con el nuevo resultado obtenido. Al hacerlo, si la unidad del portador está por debajo de su Starting Strength, puedes repetir de esta forma hasta 3 Miracle dice en su lugar."
     },
     {
       "id": "62587aab70ce727a",
@@ -1705,7 +1705,7 @@
         ]
       },
       "source": "**^^Canoness^^** or **^^Palatine^^** model only. Each time an attack is allocated to the bearer, change the Damage characteristic of that attack to 1.",
-      "target": null
+      "target": "Solo miniatura **^^Canoness^^** o **^^Palatine^^**. Cada vez que un ataque se asigna al portador, cambia la característica de Daño de ese ataque a 1."
     },
     {
       "id": "98ba13967ef9cb53",
@@ -1719,7 +1719,7 @@
         "names": []
       },
       "source": "ADEPTA SORORITAS model only. When the bearer is destroyed, you gain an additional D3 Miracle dice.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Cuando el portador es destruido, ganas D3 Miracle dice adicionales."
     },
     {
       "id": "b0f05614d9bc6e54",
@@ -1733,7 +1733,7 @@
         "names": []
       },
       "source": "**^^Adepta Sororitas^^** model only. Add 1 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons. If the bearer has lost one or more wounds, add 2 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons instead.",
-      "target": null
+      "target": "Solo miniatura **^^Adepta Sororitas^^**. Suma 1 a las características de Ataques, Fuerza y Daño de las armas de cuerpo a cuerpo del portador. Si el portador ha perdido una o más heridas, suma en su lugar 2 a las características de Ataques, Fuerza y Daño de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "06c3286a2c57ceda",
@@ -1747,7 +1747,7 @@
         "names": []
       },
       "source": "CANONESS, PALATINE, or MINISTORUM PRIEST model only. The bearer gains the PENITENT keyword.",
-      "target": null
+      "target": "Solo miniatura CANONESS, PALATINE o MINISTORUM PRIEST. El portador gana la palabra clave PENITENT."
     },
     {
       "id": "3b6a772d87130bb4",
@@ -1761,7 +1761,7 @@
         "names": []
       },
       "source": "ADEPTA SORORITAS model only. While the bearer is on the battlefield, each time an enemy unit is destroyed by a PENITENT unit from your army, you can discard 1 Miracle dice to gain 1 Miracle dice showing a value of 6.",
-      "target": null
+      "target": "Solo miniatura ADEPTA SORORITAS. Mientras el portador está en el campo de batalla, cada vez que una unidad enemiga es destruida por una unidad PENITENT de tu ejército, puedes descartar 1 Miracle dice para ganar 1 Miracle dice con un valor de 6."
     },
     {
       "id": "44b2807c1bef76f1",
@@ -1775,7 +1775,7 @@
         "names": []
       },
       "source": "PENITENT model only. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Solo miniatura PENITENT. Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen una salvación invulnerable de 5+."
     },
     {
       "id": "c906d21427a046fd",
@@ -1789,7 +1789,7 @@
         "names": []
       },
       "source": "PENITENT model only. Once per battle, at the start of the battle round, select one Vow of Atonement. Until the start of the next battle round, that Vow of Atonement is active for the bearer's unit in addition to any that is active for your army, even if you have already selected that Vow of Atonement this battle.",
-      "target": null
+      "target": "Solo miniatura PENITENT. Una vez por batalla, al comienzo de la ronda de batalla, selecciona un Vow of Atonement. Hasta el comienzo de la siguiente ronda de batalla, ese Vow of Atonement está activo para la unidad del portador además de cualquiera que esté activo para tu ejército, incluso si ya has seleccionado ese Vow of Atonement en esta batalla."
     },
     {
       "id": "56321d0ac7895101",
@@ -1806,7 +1806,7 @@
         ]
       },
       "source": "(Once per turn, per unit) At the start of a phase, you can use this ability. If you do, select one of the abilities below: \n- **Rite of Revelation**: While this unit is shooting, enemy units have +6\" detection range. \n- **Sermon of Intolerance**: This unit’s battle‑shock rolls automatically succeed. \n- **Catechism of Raging Fervour**: This unit has +1\" M. \n- **Psalm of Righteous Smiting**: This unit’s attacks have +1 S. \n- **Chorus of Repudiation**: Attacks that target this unit with a S greater than this unit’s T have ‑1 to wound rolls.",
-      "target": null
+      "target": "(Una vez por turno, por unidad) Al comienzo de una fase, puedes usar esta habilidad. Si lo haces, selecciona una de las habilidades siguientes: \n- **Rite of Revelation**: Mientras esta unidad está disparando, las unidades enemigas tienen +6\" de alcance de detección. \n- **Sermon of Intolerance**: Las tiradas de Battle-shock de esta unidad se superan automáticamente. \n- **Catechism of Raging Fervour**: Esta unidad tiene +1\" de M. \n- **Psalm of Righteous Smiting**: Los ataques de esta unidad tienen +1 a S. \n- **Chorus of Repudiation**: Los ataques que toman como objetivo a esta unidad con una S mayor que la T de esta unidad tienen -1 a las tiradas para herir."
     },
     {
       "id": "6ef62fe6eeb1fee5",
@@ -1820,7 +1820,7 @@
         "names": []
       },
       "source": "This unit can perform 1 additional Act of Faith per phase.",
-      "target": null
+      "target": "Esta unidad puede realizar 1 Act of Faith adicional por fase."
     },
     {
       "id": "5305ad416c4ba4eb",
@@ -1836,7 +1836,7 @@
         ]
       },
       "source": "Each time a Psychic Attack targets this unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Cada vez que un ataque psíquico toma como objetivo a esta unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "805a1869d527cb7c",
@@ -1850,7 +1850,7 @@
         "names": []
       },
       "source": "Each time this unit takes a Battle-shock or Leadership test, you can first discard 1 Miracle dice. If you do, that test is automatically passed.",
-      "target": null
+      "target": "Cada vez que esta unidad hace un test de Battle-shock o de Leadership, puedes descartar primero 1 Miracle dice. Si lo haces, ese test se supera automáticamente."
     },
     {
       "id": "0762e2fc99e21fb9",
@@ -1864,7 +1864,7 @@
         "names": []
       },
       "source": "Once per phase, when this unit is selected as the target of an attack, you can discard 1 Miracle dice. If you do, until the end of the phase, each time an attack targets this unit, worsen the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Una vez por fase, cuando esta unidad es seleccionada como objetivo de un ataque, puedes descartar 1 Miracle dice. Si lo haces, hasta el final de la fase, cada vez que un ataque toma como objetivo a esta unidad, empeora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "f0233e4a378c09e0",
@@ -1878,7 +1878,7 @@
         "names": []
       },
       "source": "You can re-roll failed Out of Action tests taken for this unit, and each time this unit is Marked for Greatness, it gains an additional 2XP.",
-      "target": null
+      "target": "Puedes repetir los tests de Out of Action fallidos realizados para esta unidad y, cada vez que esta unidad es Marked for Greatness, gana 2XP adicionales."
     },
     {
       "id": "13e6741f16240e6c",
@@ -1894,7 +1894,7 @@
         ]
       },
       "source": "This unit has the Feel No Pain 4+ ability against mortal wounds.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Feel No Pain 4+ contra heridas mortales."
     },
     {
       "id": "6a43792726a1b794",
@@ -1910,7 +1910,7 @@
         ]
       },
       "source": "Each time this unit makes a Charge move, until the end of the turn, improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento de carga, hasta el final del turno, mejora en 1 la característica de Habilidad de Armas de las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "d33bb75b40b778b6",
@@ -1926,7 +1926,7 @@
         ]
       },
       "source": "Each time this unit is selected as the target of an attack, if this unit is Below Half-strength, models in this unit have the Feel No Pain 4+ ability against that attack.",
-      "target": null
+      "target": "Cada vez que esta unidad es seleccionada como objetivo de un ataque, si esta unidad está Below Half-strength, las miniaturas de esta unidad tienen la habilidad Feel No Pain 4+ contra ese ataque."
     },
     {
       "id": "cff00a0d94765dbb",
@@ -1940,7 +1940,7 @@
         "names": []
       },
       "source": "Each time this unit destroys an enemy unit in the Fight phase, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Cada vez que esta unidad destruye una unidad enemiga en la fase de Combate, ganas 1 Miracle dice."
     },
     {
       "id": "d77f7d934edd7dc6",
@@ -1956,7 +1956,7 @@
         ]
       },
       "source": "This model has the Feel No Pain 5+ ability and, at the start of your Command phase, this model regains 1 lost wound.",
-      "target": null
+      "target": "Esta miniatura tiene la habilidad Feel No Pain 5+ y, al comienzo de tu fase de Mando, esta miniatura recupera 1 herida perdida."
     },
     {
       "id": "ff56794ecad06792",
@@ -1972,7 +1972,7 @@
         ]
       },
       "source": "At the end of your Command phase, if this model is your **^^Warlord^^** and is on the battlefield, you can spend 1CP. If you do, you gain D3 Miracle dice.",
-      "target": null
+      "target": "Al final de tu fase de Mando, si esta miniatura es tu **^^Warlord^^** y está en el campo de batalla, puedes gastar 1CP. Si lo haces, ganas D3 Miracle dice."
     },
     {
       "id": "03e5eff2eb8bc8a9",
@@ -1986,7 +1986,7 @@
         "names": []
       },
       "source": "While a friendly **^^Adepta Sororitas^^** unit is within 6\" of this unit, improve that unit's Leadership characteristic by 1.",
-      "target": null
+      "target": "Mientras una unidad amiga **^^Adepta Sororitas^^** está a 6\" o menos de esta unidad, mejora en 1 la característica de Leadership de esa unidad."
     },
     {
       "id": "bee349f10e131c00",
@@ -2000,7 +2000,7 @@
         "names": []
       },
       "source": "Each time this unit performs an Act of Faith, the result of one of the Miracle dice used in that Act of Faith is first improved by 1 (to a maximum of 6).",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un Act of Faith, el resultado de uno de los Miracle dice usados en ese Act of Faith se mejora primero en 1 (hasta un máximo de 6)."
     },
     {
       "id": "3b33b5135827f3f6",
@@ -2014,7 +2014,7 @@
         "names": []
       },
       "source": "When selecting Agendas for a battle, you can select one **^^Adepta Soroitas^^** Agenda to be used in that battle in addition to any others being used in that battle.",
-      "target": null
+      "target": "Al seleccionar Agendas para una batalla, puedes seleccionar una Agenda **^^Adepta Soroitas^^** para usarla en esa batalla además de cualquier otra que se use en esa batalla."
     },
     {
       "id": "28a53e1161a06f83",
@@ -2030,7 +2030,7 @@
         ]
       },
       "source": "If the bearer is in your Crusade army, you can use one Crusade Blessing even if you are not the Underdog.",
-      "target": null
+      "target": "Si el portador está en tu ejército de Crusade, puedes usar una Crusade Blessing incluso si no eres el Underdog."
     },
     {
       "id": "8c09f5dba19223bd",
@@ -2044,7 +2044,7 @@
         "names": []
       },
       "source": "Each time an enemy unit selects the bearer's unit as a target of a charge, that enemy unit must take a Battle-shock test; if that test is failed, subtract 2 from the Charge roll made for that charge.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga selecciona la unidad del portador como objetivo de una carga, esa unidad enemiga debe hacer un test de Battle-shock; si ese test se falla, resta 2 a la tirada de carga realizada para esa carga."
     },
     {
       "id": "0a59e40899ebf04c",
@@ -2064,7 +2064,7 @@
         ]
       },
       "source": "**^^Living Saint^^** model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1, and those weapons have the **[ANTI-CHARACTER 4+]**, **[DEVASTATING WOUNDS]** and **[PRECISION]** abilities.",
-      "target": null
+      "target": "Solo miniatura **^^Living Saint^^**. Mejora en 1 las características de Fuerza y Penetración de Blindaje de las armas de cuerpo a cuerpo del portador, y esas armas tienen las habilidades **[ANTI-CHARACTER 4+]**, **[DEVASTATING WOUNDS]** y **[PRECISION]**."
     },
     {
       "id": "02e65202e53a7867",
@@ -2081,7 +2081,7 @@
         "names": []
       },
       "source": "Improve the Attacks, Strength and Damage characteristics of the bearer's ranged weapons by 1, and those weapons have the **[DEVASTATING WOUNDS]** and **[ANTI-CHAOS 4+]** abilities.",
-      "target": null
+      "target": "Mejora en 1 las características de Ataques, Fuerza y Daño de las armas a distancia del portador, y esas armas tienen las habilidades **[DEVASTATING WOUNDS]** y **[ANTI-CHAOS 4+]**."
     },
     {
       "id": "6489120b1f60dde7",
@@ -2095,7 +2095,7 @@
         "names": []
       },
       "source": "Improve the bearer's Wounds, Leadership and Objective Control characteristics by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Heridas, Leadership y Control de Objetivos del portador."
     },
     {
       "id": "bc20895aee6428dd",
@@ -2111,7 +2111,7 @@
         ]
       },
       "source": "**^^Saint Potentia^^** model only. When the bearer is destroyed, the Miracle dice you gain as a result is automatically a 6. At the end of the battle, the bearer gains 1 Saint point (whether destroyed or not).",
-      "target": null
+      "target": "Solo miniatura **^^Saint Potentia^^**. Cuando el portador es destruido, el Miracle dice que ganas como resultado es automáticamente un 6. Al final de la batalla, el portador gana 1 punto de Saint (haya sido destruido o no)."
     },
     {
       "id": "3f1756dffb087795",
@@ -2125,7 +2125,7 @@
         "names": []
       },
       "source": "The bearer has a 4+ invulnerable save. Each time the bearer's unit is selected as the target of an attack, you can discard 1 Miracle dice. If you do, until the end of the phase, the bearer has a 3+ invulnerable save.",
-      "target": null
+      "target": "El portador tiene una salvación invulnerable de 4+. Cada vez que la unidad del portador es seleccionada como objetivo de un ataque, puedes descartar 1 Miracle dice. Si lo haces, hasta el final de la fase, el portador tiene una salvación invulnerable de 3+."
     },
     {
       "id": "1f388d8edba18673",
@@ -2139,7 +2139,7 @@
         "names": []
       },
       "source": "Gain 3 Saint points at the end of a battle if this model is wholly within your opponent's deployment zone.",
-      "target": null
+      "target": "Gana 3 puntos de Saint al final de una batalla si esta miniatura está completamente dentro de la zona de despliegue de tu oponente."
     },
     {
       "id": "dbe0cf8002300084",
@@ -2155,7 +2155,7 @@
         ]
       },
       "source": "Gain 2 Saint points at the end of a battle if this model gained more XP than any other unit from your Crusade army during that battle.",
-      "target": null
+      "target": "Gana 2 puntos de Saint al final de una batalla si esta miniatura ganó más XP que cualquier otra unidad de tu ejército de Crusade durante esa batalla."
     },
     {
       "id": "797c6285a6083506",
@@ -2169,7 +2169,7 @@
         "names": []
       },
       "source": "Gain 1 Saint point at the end of a battle for each Miracle dice remaining in your Miracle Dice pool (to a maximum of 2 Saint points).",
-      "target": null
+      "target": "Gana 1 punto de Saint al final de una batalla por cada Miracle dice que quede en tu reserva de Miracle dice (hasta un máximo de 2 puntos de Saint)."
     },
     {
       "id": "e379cb1614465b4e",
@@ -2185,7 +2185,7 @@
         ]
       },
       "source": "Gain 2 Saint points at the end of a battle if this model performed 3 or more Acts of Faith during that battle.",
-      "target": null
+      "target": "Gana 2 puntos de Saint al final de una batalla si esta miniatura realizó 3 o más Acts of Faith durante esa batalla."
     },
     {
       "id": "cdb6331079fb6ffc",
@@ -2199,7 +2199,7 @@
         "names": []
       },
       "source": "Gain 1 Saint point at the end of a battle if this model is below its Starting Strength. Gain 2 Saint points instead if this model was destroyed while within range of an objective marker.",
-      "target": null
+      "target": "Gana 1 punto de Saint al final de una batalla si esta miniatura está por debajo de su Starting Strength. Gana 2 puntos de Saint en su lugar si esta miniatura fue destruida mientras estaba dentro del alcance de un marcador de objetivo."
     },
     {
       "id": "406855fbf47e968a",
@@ -2213,7 +2213,7 @@
         "names": []
       },
       "source": "Gain 3 Saint points each time this model gains a Martyr point.",
-      "target": null
+      "target": "Gana 3 puntos de Saint cada vez que esta miniatura gana un punto de Martyr."
     },
     {
       "id": "08f95261c305cf2c",
@@ -2227,7 +2227,7 @@
         "names": []
       },
       "source": "Gain 2 Saint points at the end of a battle if this model is within 6\" of the centre of the battlefield.",
-      "target": null
+      "target": "Gana 2 puntos de Saint al final de una batalla si esta miniatura está a 6\" o menos del centro del campo de batalla."
     },
     {
       "id": "c79192b584251d59",
@@ -2241,7 +2241,7 @@
         "names": []
       },
       "source": "Gain 2 Saint points at the end of a battle if this model's unit did not fail a Battle-shock test during that battle.",
-      "target": null
+      "target": "Gana 2 puntos de Saint al final de una batalla si la unidad de esta miniatura no falló ningún test de Battle-shock durante esa batalla."
     },
     {
       "id": "6fb27575760a8fda",
@@ -2258,7 +2258,7 @@
         ]
       },
       "source": "Gain 2 Saint points at the end of a battle if this model destroyed one or more enemy **^^Character^^** units during that battle. Gain an additional 2 Saint points if one of those destroyed units contained the enemy **^^Warlord^^**.",
-      "target": null
+      "target": "Gana 2 puntos de Saint al final de una batalla si esta miniatura destruyó una o más unidades **^^Character^^** enemigas durante esa batalla. Gana 2 puntos de Saint adicionales si una de esas unidades destruidas contenía al **^^Warlord^^** enemigo."
     },
     {
       "id": "00f29479536a625b",
@@ -2272,7 +2272,7 @@
         "names": []
       },
       "source": "Gain 2 Saint points at the end of a battle if this model destroyed 5 or more enemy models during that battle.",
-      "target": null
+      "target": "Gana 2 puntos de Saint al final de una batalla si esta miniatura destruyó 5 o más miniaturas enemigas durante esa batalla."
     },
     {
       "id": "afd6bd36a78b1f7f",
@@ -2288,7 +2288,7 @@
         "names": []
       },
       "source": "Each this model's unit is selected to fight, you can discard 1 Miracle dice. If you do, until the end of the phase, double the Strength characteristic of this model's melee weapons and those weapons have the **[DEVASTATING WOUNDS]** ability.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura es seleccionada para combatir, puedes descartar 1 Miracle dice. Si lo haces, hasta el final de la fase, duplica la característica de Fuerza de las armas de cuerpo a cuerpo de esta miniatura y esas armas tienen la habilidad **[DEVASTATING WOUNDS]**."
     },
     {
       "id": "72b0973c5aba7216",
@@ -2302,7 +2302,7 @@
         "names": []
       },
       "source": "At the start of the Battle-shock step of your opponent's Command phase, you can discard 1 Miracle dice. If you do, every enemy unit that is within 12\" of this model and below its Starting Strength must take a Battle-shock test. If such a unit is Below Half-strength, subtract 1 from Battle-shock tests taken for that unit this phase instead.",
-      "target": null
+      "target": "Al comienzo del paso de Battle-shock de la fase de Mando de tu oponente, puedes descartar 1 Miracle dice. Si lo haces, cada unidad enemiga que esté a 12\" o menos de esta miniatura y por debajo de su Starting Strength debe hacer un test de Battle-shock. Si una de esas unidades está Below Half-strength, resta en su lugar 1 a los tests de Battle-shock realizados para esa unidad esta fase."
     },
     {
       "id": "7703f778c53eb707",
@@ -2316,7 +2316,7 @@
         "names": []
       },
       "source": "At the start of any phase, you can discard 1 Miracle dice. If you do, this model regains all of its lost wounds.",
-      "target": null
+      "target": "Al comienzo de cualquier fase, puedes descartar 1 Miracle dice. Si lo haces, esta miniatura recupera todas sus heridas perdidas."
     },
     {
       "id": "f6b501694f2db7a9",
@@ -2330,7 +2330,7 @@
         "names": []
       },
       "source": "At the end of each player's Command phase, if this model is on the battlefield, you can discard 1 Miracle dice. If you do, you gain 1 Miracle dice showing a value of 6.",
-      "target": null
+      "target": "Al final de la fase de Mando de cada jugador, si esta miniatura está en el campo de batalla, puedes descartar 1 Miracle dice. Si lo haces, ganas 1 Miracle dice con un valor de 6."
     },
     {
       "id": "b452337e93457321",
@@ -2347,7 +2347,7 @@
         "names": []
       },
       "source": "Each time this model's unit is selected to shoot, you can discard 1 Miracle die. If you do, until the end of the phase, ranged weapons equipped by models in that unit have the **[IGNORES COVER]** ability and each time an attack made by such a weapon scores a Critical Wound, that attack has the **[PRECISION]** ability.",
-      "target": null
+      "target": "Cada vez que la unidad de esta miniatura es seleccionada para disparar, puedes descartar 1 Miracle dice. Si lo haces, hasta el final de la fase, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad **[IGNORES COVER]** y, cada vez que un ataque realizado con un arma de ese tipo consigue una herida crítica, ese ataque tiene la habilidad **[PRECISION]**."
     },
     {
       "id": "b3248d0bce02526a",
@@ -2366,7 +2366,7 @@
         ]
       },
       "source": "Once per battle, at the start of the battle round, if you have one or more **^^Adepta Sororitas Character^^** units on the battlefield and if your Crusade army was led in prayer before this battle, you can discard two Miracle dice. If you do, you intone the Hymns of Battle that battle round and, until the start of the next battle round, all **^^Adepta Sororitas Character^^** units in your army gain bonus depending on which Hymns of Battle you select. While a unit is Battle-shocked, it loses the bonus of any Hymns that would apply to it (if a rule would cause such a unit to no longer be Battle-shocked, any bonuses from Hymns that would apply to it apply once again).\n\nWhen you intone Hymns of Battle, you can either select one Hymn to apply to units from your army from the list, or you can randomly select two by rolling two D6 and consulting the table (if a double is rolled, roll both dice again until two different results are rolled).",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de la ronda de batalla, si tienes una o más unidades **^^Adepta Sororitas Character^^** en el campo de batalla y si tu ejército de Crusade fue guiado en oración antes de esta batalla, puedes descartar dos Miracle dice. Si lo haces, entonas los Hymns of Battle en esa ronda de batalla y, hasta el comienzo de la siguiente ronda de batalla, todas las unidades **^^Adepta Sororitas Character^^** de tu ejército ganan un bonificador en función de los Hymns of Battle que selecciones. Mientras una unidad está Battle-shocked, pierde el bonificador de cualquier Hymn que se le aplicaría (si una regla hiciera que esa unidad dejara de estar Battle-shocked, los bonificadores de los Hymns que se le apliquen vuelven a aplicarse).\n\nCuando entonas los Hymns of Battle, puedes seleccionar de la lista un Hymn para aplicarlo a las unidades de tu ejército, o puedes seleccionar dos al azar tirando dos D6 y consultando la tabla (si sacas un doble, vuelve a tirar ambos dados hasta que obtengas dos resultados diferentes)."
     },
     {
       "id": "06f559a43c6c9bae",
@@ -2380,7 +2380,7 @@
         "names": []
       },
       "source": "Add 2\" to the Move characteristic of models in this unit and add 1 to Advance and Charge rolls made for this unit.",
-      "target": null
+      "target": "Suma 2\" a la característica de Movimiento de las miniaturas de esta unidad y suma 1 a las tiradas de avance y de carga realizadas para esta unidad."
     },
     {
       "id": "e8870f6281fb1e20",
@@ -2394,7 +2394,7 @@
         "names": []
       },
       "source": "Each time this unit performs an Act of Faith, add 1 to the result of the dice being substituted (to a maximum of 6). Each time a Miracle dice with an unmodified result of a 6 is used when such a unit performs an Act of Faith, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un Act of Faith, suma 1 al resultado del dado que se sustituye (hasta un máximo de 6). Cada vez que se usa un Miracle dice con un resultado sin modificar de 6 cuando una unidad de ese tipo realiza un Act of Faith, ganas 1 Miracle dice."
     },
     {
       "id": "92cb5941f470778b",
@@ -2408,7 +2408,7 @@
         "names": []
       },
       "source": "Improve the Armour Penetration characteristic of ranged weapons equipped by models in this unit by 1.",
-      "target": null
+      "target": "Mejora en 1 la característica de Penetración de Blindaje de las armas a distancia equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "886d7c72603ecc53",
@@ -2422,7 +2422,7 @@
         "names": []
       },
       "source": "Improve the Attacks and Strength characteristics of melee weapons equipped by models in this unit by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Ataques y Fuerza de las armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "e044de149a16ef1a",
@@ -2436,7 +2436,7 @@
         "names": []
       },
       "source": "Improve the Leadership and Objective Control characteristics of models in this unit by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Leadership y Control de Objetivos de las miniaturas de esta unidad."
     },
     {
       "id": "59b4b34dae9d8db5",
@@ -2452,7 +2452,7 @@
         ]
       },
       "source": "**^^Dialogus^^** only. Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use if that Stratagem by 1CP.",
-      "target": null
+      "target": "Solo **^^Dialogus^^**. Cada vez que tu oponente toma como objetivo a una unidad de su ejército con un Stratagem, si esa unidad está a 12\" o menos de esta miniatura, incrementa en 1CP el coste de ese uso de ese Stratagem."
     },
     {
       "id": "e3c6e64cf18fb5bd",
@@ -2468,7 +2468,7 @@
         ]
       },
       "source": "At the start of the battle, you gain 1 miracle dice. If this model is your **^^Blessed Orator^^**, then you start the battle with 2 Miracle dice instead.",
-      "target": null
+      "target": "Al comienzo de la batalla, ganas 1 Miracle dice. Si esta miniatura es tu **^^Blessed Orator^^**, empiezas la batalla con 2 Miracle dice en su lugar."
     },
     {
       "id": "18360fcf1cae18e7",
@@ -2484,7 +2484,7 @@
         ]
       },
       "source": "At the start of each battle round, roll one D6 and consult the Hymns of Battle table. If you wish, you can then choose to discard 1 Miracle dice; if you do, then until the end of the battle round, that Hymn applies to this model's unit (duplicated Hymns of Battle are not cumulative, and have no additional effect).",
-      "target": null
+      "target": "Al comienzo de cada ronda de batalla, tira un D6 y consulta la tabla de Hymns of Battle. Si lo deseas, puedes elegir después descartar 1 Miracle dice; si lo haces, hasta el final de la ronda de batalla, ese Hymn se aplica a la unidad de esta miniatura (los Hymns of Battle duplicados no son acumulativos y no tienen ningún efecto adicional)."
     },
     {
       "id": "d9b0c8b4e49ebe4e",
@@ -2501,7 +2501,7 @@
         ]
       },
       "source": "While the bearer is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1. If your army is Intoning Hymns of Battle, then while the bearer is leading a unit, each time a model in that unit makes an attack, you can re-roll a Wound roll of 1 as well.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque, repite una tirada para impactar de 1. Si tu ejército está entonando los Hymns of Battle, entonces, mientras el portador lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque, también puedes repetir una tirada para herir de 1."
     },
     {
       "id": "95e7f2e1b2cbf384",
@@ -2515,7 +2515,7 @@
         "names": []
       },
       "source": "At the end of your Command phase, if this model is on the battlefield, you can re-roll one Miracle dice from your Miracle dice pool and return it to your Miracle dice pool with the new result you rolled.",
-      "target": null
+      "target": "Al final de tu fase de Mando, si esta miniatura está en el campo de batalla, puedes repetir un Miracle dice de tu reserva de Miracle dice y devolverlo a tu reserva de Miracle dice con el nuevo resultado obtenido."
     },
     {
       "id": "514554f8337eda53",
@@ -2532,7 +2532,7 @@
         ]
       },
       "source": "While a friendly **^^Adepta Sororitas^^** unit is within 6\" of this model, that unit is considered to be a **^^Character^^** unit for the purposes of gaining bonuses for the Hymns of Battle rule.",
-      "target": null
+      "target": "Mientras una unidad amiga **^^Adepta Sororitas^^** está a 6\" o menos de esta miniatura, esa unidad se considera una unidad **^^Character^^** a efectos de obtener los bonificadores de la regla Hymns of Battle."
     },
     {
       "id": "5da68268db07da9c",
@@ -2546,7 +2546,7 @@
         "names": []
       },
       "source": "While a friendly **^^Adepta Sororitas^^** unit is within 6\" of this model, each time that unit performs an Act of Faith, roll one D6: one a 6, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Mientras una unidad amiga **^^Adepta Sororitas^^** está a 6\" o menos de esta miniatura, cada vez que esa unidad realiza un Act of Faith, tira un D6: con un 6, ganas 1 Miracle dice."
     },
     {
       "id": "01bee996c81b9591",
@@ -2562,7 +2562,7 @@
         ]
       },
       "source": "**^^Imagifier^^** only. At the end of the battle, if this model is on the battlefield, you can select one additional **^^Adepta Sororitas^^** unit in your army to be Marked for Greatness.",
-      "target": null
+      "target": "Solo **^^Imagifier^^**. Al final de la batalla, si esta miniatura está en el campo de batalla, puedes seleccionar una unidad **^^Adepta Sororitas^^** adicional de tu ejército para que sea Marked for Greatness."
     },
     {
       "id": "da3f712112db1610",
@@ -2578,7 +2578,7 @@
         ]
       },
       "source": "**^^Hospitaller^^** only. Once per battle, if this model is on the battlefield when an **^^Adepta Sororitas^^** unit from your army fails an Out of Action test, all **^^Adepta Sororitas^^** units from your army that are on the battlefield gain 1XP.",
-      "target": null
+      "target": "Solo **^^Hospitaller^^**. Una vez por batalla, si esta miniatura está en el campo de batalla cuando una unidad **^^Adepta Sororitas^^** de tu ejército falla un test de Out of Action, todas las unidades **^^Adepta Sororitas^^** de tu ejército que estén en el campo de batalla ganan 1XP."
     },
     {
       "id": "338a44229e43eb73",
@@ -2596,7 +2596,7 @@
         ]
       },
       "source": "**^^Dogmata^^** only. Once per battle, at the end of the battle, if this model is on the battlefield, you can select one other **^^Adepta Sororitas^^** unit from your Crusade army that has one or more Battle Traits and spend 1RP. If you do, select one Battle Trait that the unit has and replace it with a new Adepta Sororitas Battle Trait that the unit could have.",
-      "target": null
+      "target": "Solo **^^Dogmata^^**. Una vez por batalla, al final de la batalla, si esta miniatura está en el campo de batalla, puedes seleccionar otra unidad **^^Adepta Sororitas^^** de tu ejército de Crusade que tenga uno o más Battle Traits y gastar 1RP. Si lo haces, selecciona un Battle Trait que tenga esa unidad y sustitúyelo por un nuevo Battle Trait de Adepta Sororitas que esa unidad pueda tener."
     },
     {
       "id": "12ba3d917bbf81e1",
@@ -2610,7 +2610,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit, models in that unit have a 5+ invulnerable save. Once per phase, when an attack is allocated to a model in the bearer's unit, you can discard 1 Miracle dice; if you do, the Damage characteristic of that attack is changed to 0.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen una salvación invulnerable de 5+. Una vez por fase, cuando un ataque se asigna a una miniatura de la unidad del portador, puedes descartar 1 Miracle dice; si lo haces, la característica de Daño de ese ataque se cambia a 0."
     },
     {
       "id": "d8d3f30332fb3f14",
@@ -2628,7 +2628,7 @@
         ]
       },
       "source": "If this model is your **^^Blessed Orator^^**, you can intone Hymns of Battle up to twice during the battle, rather than only one (you must discard 2 Miracle dice each time you wish to do so). You cannot intone Hymns of Battle twice at the start of the same battle round using this Crusade Relic.",
-      "target": null
+      "target": "Si esta miniatura es tu **^^Blessed Orator^^**, puedes entonar los Hymns of Battle hasta dos veces durante la batalla, en lugar de solo una (debes descartar 2 Miracle dice cada vez que quieras hacerlo). No puedes entonar los Hymns of Battle dos veces al comienzo de la misma ronda de batalla usando esta Crusade Relic."
     },
     {
       "id": "2b843fedda7ec622",
@@ -2646,7 +2646,7 @@
         ]
       },
       "source": "If the bearer is your **^^Blessed Orator^^**, each time your army intones Hymns of Battle, if the bearer is on the battlefield, after selecting which Hymns will apply to your army, you can randomly select one additional Hymn of Battle to apply to your army (if you roll a result that you have already select, roll again until you result you have not rolled).",
-      "target": null
+      "target": "Si el portador es tu **^^Blessed Orator^^**, cada vez que tu ejército entona los Hymns of Battle, si el portador está en el campo de batalla, después de seleccionar qué Hymns se aplicarán a tu ejército, puedes seleccionar al azar un Hymn of Battle adicional para aplicarlo a tu ejército (si sacas un resultado que ya has seleccionado, vuelve a tirar hasta obtener un resultado que no hayas sacado)."
     },
     {
       "id": "3fee59aad0a2248f",
@@ -2662,7 +2662,7 @@
         ]
       },
       "source": "**^^Adepta Sororitas^^** model only (excluding **^^Ministorum Priest^^** models). The bearer has a Save characteristic of 2+. The first time the bearer loses one or more Wounds, at the end of the phase in which those wounds were lost, you gain 1 Miracle dice (the value of this Miracle dice is always a 6).",
-      "target": null
+      "target": "Solo miniatura **^^Adepta Sororitas^^** (excluidas las miniaturas **^^Ministorum Priest^^**). El portador tiene una característica de Salvación de 2+. La primera vez que el portador pierde una o más Heridas, al final de la fase en la que se perdieron esas heridas, ganas 1 Miracle dice (el valor de este Miracle dice siempre es un 6)."
     },
     {
       "id": "2825a6330c4c63cc",
@@ -2680,7 +2680,7 @@
         ]
       },
       "source": "**^^Canoness^^**, **^^Ministorum Priest^^** or **^^Dialogus^^** only. The bearer can use the Once per Battle ability listed on their datasheet one additional time during the battle.",
-      "target": null
+      "target": "Solo **^^Canoness^^**, **^^Ministorum Priest^^** o **^^Dialogus^^**. El portador puede usar la habilidad Once per Battle indicada en su hoja de datos una vez más durante la batalla."
     },
     {
       "id": "7b0a9127479222a5",
@@ -2696,7 +2696,7 @@
         ]
       },
       "source": "The bearer's unit is eligible to shoot or declare a charge in a turn in which it Fell Back, If your army is intoning Hymns of Battle this battle round, the bearer's unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
-      "target": null
+      "target": "La unidad del portador es elegible para disparar o declarar una carga en un turno en el que se haya replegado. Si tu ejército está entonando los Hymns of Battle en esta ronda de batalla, la unidad del portador es elegible para disparar y declarar una carga en un turno en el que se haya replegado."
     },
     {
       "id": "bad9fb01b4b4e35b",
@@ -2712,7 +2712,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Repentia Squad**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Repentia Squad**^^"
     },
     {
       "id": "bc6b39bf0691d45e",
@@ -2728,7 +2728,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Mortifiers**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Mortifiers**^^"
     },
     {
       "id": "b0a4c85e9f4598f8",
@@ -2742,7 +2742,7 @@
         "names": []
       },
       "source": "Once per battle, after this model's unit has performed a Act of Faith, you gain 1 Miracle dice.",
-      "target": null
+      "target": "Una vez por batalla, después de que la unidad de esta miniatura haya realizado un Act of Faith, ganas 1 Miracle dice."
     },
     {
       "id": "b0b51403a5fe15aa",
@@ -2759,7 +2759,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Seraphim Squad, Zephyrim Squad**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Seraphim Squad, Zephyrim Squad**^^"
     },
     {
       "id": "0e4c7609c0e1c31d",
@@ -2788,7 +2788,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any phase, you can select one friendly ^^**Adepta Sororitas**^^ unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase, puedes seleccionar una unidad amiga ^^**Adepta Sororitas**^^ que esté Battle-shocked y a 12\" o menos de esta miniatura. Esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "e0bc032198888193",
@@ -2802,7 +2802,7 @@
         "names": []
       },
       "source": "Models in this unit have a 4+ invulnerable save.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen una salvación invulnerable de 4+."
     },
     {
       "id": "6a431eab0aef5418",
@@ -2819,7 +2819,7 @@
         ]
       },
       "source": "While an ^^**Adeptus Custodes^^** unit is within 6\" of this unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.",
-      "target": null
+      "target": "Mientras una unidad ^^**Adeptus Custodes^^** está a 6\" o menos de esta unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 5+ contra ataques psíquicos y heridas mortales."
     },
     {
       "id": "6adb533157c0f3f6",
@@ -2835,7 +2835,7 @@
         ]
       },
       "source": "While an **^^Anathema Psykana^^** unit is within 6\" of this unit, each time a model in that ^^**Anathema Psykana^^** unit makes an attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Mientras una unidad **^^Anathema Psykana^^** está a 6\" o menos de esta unidad, cada vez que una miniatura de esa unidad ^^**Anathema Psykana**^^ realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "f1fa0afef83c5b86",
@@ -2853,7 +2853,7 @@
         ]
       },
       "source": "This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds.",
-      "target": null
+      "target": "Esta miniatura tiene la habilidad Feel No Pain 3+ contra ataques psíquicos y heridas mortales."
     },
     {
       "id": "d3cf8a73dbf3a20c",
@@ -2868,7 +2868,7 @@
         "names": []
       },
       "source": "Add 1 to the bearer's Wounds characteristic.",
-      "target": null
+      "target": "Suma 1 a la característica de Heridas del portador."
     },
     {
       "id": "45dfcdf4629c6a92",
@@ -2883,7 +2883,7 @@
         "names": []
       },
       "source": "Add 1 to the Objective Control characteristic of models in the bearer's unit.",
-      "target": null
+      "target": "Suma 1 a la característica de Control de Objetivos de las miniaturas de la unidad del portador."
     },
     {
       "id": "9cc327f83ae1da6c",
@@ -2897,7 +2897,7 @@
         "names": []
       },
       "source": "In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **nulled**: \n- While a unit is **nulled**, that unit has +3\" **detection range**.",
-      "target": null
+      "target": "En tu fase de Disparo, esta unidad puede seleccionar una unidad enemiga **visible** a 12\" o menos. Esa unidad enemiga queda **nulled**: \n- Mientras una unidad está **nulled**, esa unidad tiene +3\" de **alcance de detección**."
     },
     {
       "id": "7fea69579d4a0fe7",
@@ -2914,7 +2914,7 @@
         ]
       },
       "source": "Models in this unit have the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 3+ contra ataques psíquicos y heridas mortales."
     },
     {
       "id": "45890bce44488b86",
@@ -2933,7 +2933,7 @@
         ]
       },
       "source": "Each time a unit with this ability is selected to fight, select one of the Ka'tah stances below. Until that unit has finished making its attacks, the selected Stance is active for it and it gains the relevant ability.\n\n■ DACATARAI STANCE\nMelee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.\n■ RENDAX STANCE\nMelee weapons equipped by models in this unit have the [LETHAL HITS] ability.",
-      "target": null
+      "target": "Cada vez que una unidad con esta habilidad es seleccionada para combatir, selecciona una de las Ka'tah Stances de abajo. Hasta que esa unidad haya terminado de realizar sus ataques, la Stance seleccionada está activa para ella y gana la habilidad correspondiente.\n\n■ DACATARAI STANCE\nLas armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad [SUSTAINED HITS 1].\n■ RENDAX STANCE\nLas armas de cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad [LETHAL HITS]."
     },
     {
       "id": "45a4d2e4501828fb",
@@ -2947,7 +2947,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque, suma 1 a la tirada para impactar si esa unidad está por debajo de su Starting Strength, y suma también 1 a la tirada para herir si esa unidad está Below Half-strength."
     },
     {
       "id": "eb1970e900a46d82",
@@ -2961,7 +2961,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: PROSECUTORS, VIGILATORS, WITCHSEEKERS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: PROSECUTORS, VIGILATORS, WITCHSEEKERS"
     },
     {
       "id": "42db09bec9c1787c",
@@ -2979,7 +2979,7 @@
         ]
       },
       "source": "Each time a model in this unit makes an attack that targets a ^^Character, Monster^^ or ^^Vehicle^^ unit, you can re-roll the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad ^^Character, Monster^^ o ^^Vehicle^^, puedes repetir la tirada para herir."
     },
     {
       "id": "c699aecd32eaadd1",
@@ -2995,7 +2995,7 @@
         ]
       },
       "source": "Once per battle, at the end of your opponent's turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
-      "target": null
+      "target": "Una vez por batalla, al final del turno de tu oponente, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, puedes retirarla del campo de batalla y colocarla en las reservas estratégicas."
     },
     {
       "id": "9f4add51ee3f2736",
@@ -3009,7 +3009,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 12 ANATHEMA PSYKANA INFANTRY models.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 12 miniaturas ANATHEMA PSYKANA INFANTRY."
     },
     {
       "id": "4a57cdc47b3ab998",
@@ -3023,7 +3023,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: CUSTODIAN GUARD, CUSTODIAN GUARD WITH ADRASITE AND PYRITHITE SPEARS, CUSTODIAN WARDENS, SAGITTARUM CUSTODIANS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: CUSTODIAN GUARD, CUSTODIAN GUARD WITH ADRASITE AND PYRITHITE SPEARS, CUSTODIAN WARDENS, SAGITTARUM CUSTODIANS"
     },
     {
       "id": "9b383a81fa61d850",
@@ -3037,7 +3037,7 @@
         "names": []
       },
       "source": "Once per battle, in your Charge phase, this model's unit is eligible to declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Carga, la unidad de esta miniatura es elegible para declarar una carga en un turno en el que haya avanzado."
     },
     {
       "id": "8109dfa0739def74",
@@ -3052,7 +3052,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, you can re-roll Charge rolls made for that unit.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, puedes repetir las tiradas de carga realizadas para esa unidad."
     },
     {
       "id": "2b43c5164c7771ac",
@@ -3066,7 +3066,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. While this unit is within range of an objective marker you control, you can re-roll the Wound roll instead.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, repite una tirada para herir de 1. Mientras esta unidad está dentro del alcance de un marcador de objetivo que controlas, puedes repetir la tirada para herir en su lugar."
     },
     {
       "id": "6c8e714dbe819d4d",
@@ -3080,7 +3080,7 @@
         "names": []
       },
       "source": "Once per battle, in your Shooting phase, after the unit has shot, it can shoot again.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Disparo, después de que la unidad haya disparado, puede volver a disparar."
     },
     {
       "id": "6aaf4f91fa7003f0",
@@ -3096,7 +3096,7 @@
         ]
       },
       "source": "Once per battle, at the start of any phase, this unit can use this ability. If it does, until the end of the phase, models in this unit have the Feel No Pain 4+ ability.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de cualquier fase, esta unidad puede usar esta habilidad. Si lo hace, hasta el final de la fase, las miniaturas de esta unidad tienen la habilidad Feel No Pain 4+."
     },
     {
       "id": "5cb1e83ab4f9e225",
@@ -3110,7 +3110,7 @@
         "names": []
       },
       "source": "Add 1 to the Objective Control characteristic of models in the bearer’s unit.",
-      "target": null
+      "target": "Suma 1 a la característica de Control de Objetivos de las miniaturas de la unidad del portador."
     },
     {
       "id": "dfab00984bf19424",
@@ -3128,7 +3128,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n- Prosecutors\n- Vigilators\n- Witchseekers",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- Prosecutors\n- Vigilators\n- Witchseekers"
     },
     {
       "id": "f448dbcf4518a8aa",
@@ -3142,7 +3142,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, add 2\" to the Move characteristic of models in that unit and add 2 to Advance and Charge rolls made for that unit.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, suma 2\" a la característica de Movimiento de las miniaturas de esa unidad y suma 2 a las tiradas de avance y de carga realizadas para esa unidad."
     },
     {
       "id": "2c098375b72ebedd",
@@ -3158,7 +3158,7 @@
         ]
       },
       "source": "Each time an enemy unit (excluding MONSTERS and VEHICLES) that is within Engagement Range of this model’s unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga (excluidos los MONSTERS y los VEHICLES) que esté dentro del alcance de combate de la unidad de esta miniatura se repliega, todas las miniaturas de esa unidad enemiga deben hacer un test de Desperate Escape. Al hacerlo, si esa unidad enemiga está Battle-shocked, resta 1 a cada uno de esos tests."
     },
     {
       "id": "0577e834fd41a71d",
@@ -3177,7 +3177,7 @@
         ]
       },
       "source": "Each time a model in this unit makes a ranged attack that targets a Psyker unit, that attack has the [PRECISION] and [DEVASTATING WOUNDS] abilities.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que toma como objetivo a una unidad Psyker, ese ataque tiene las habilidades [PRECISION] y [DEVASTATING WOUNDS]."
     },
     {
       "id": "8ab790e53da9848b",
@@ -3191,7 +3191,7 @@
         "names": []
       },
       "source": "Once per battle, when this model's unit is selected to fight, it can use this ability. If it does, until that fight is resolved, both Ka'tah Stances are active for that unit, instead of only one.",
-      "target": null
+      "target": "Una vez por batalla, cuando la unidad de esta miniatura es seleccionada para combatir, puede usar esta habilidad. Si lo hace, hasta que ese combate se resuelva, ambas Ka'tah Stances están activas para esa unidad, en lugar de solo una."
     },
     {
       "id": "6eee07d077c90a14",
@@ -3205,7 +3205,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: ALLARUS CUSTODIANS, AQUILON CUSTODIANS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ALLARUS CUSTODIANS, AQUILON CUSTODIANS"
     },
     {
       "id": "e4487b98c0208f7c",
@@ -3219,7 +3219,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, each time an attack is allocated to this model, change the Damage characteristic of that attack to 1.",
-      "target": null
+      "target": "Una vez por batalla, al comienzo de cualquier fase, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final de la fase, cada vez que un ataque se asigna a esta miniatura, cambia la característica de Daño de ese ataque a 1."
     },
     {
       "id": "1cccb75df4c0d39c",
@@ -3233,7 +3233,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: AGAMATUS CUSTODIANS, VERTUS PRAETORS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: AGAMATUS CUSTODIANS, VERTUS PRAETORS"
     },
     {
       "id": "7e8ecef3c3c775b5",
@@ -3249,7 +3249,7 @@
         ]
       },
       "source": "Once per battle, at the end of the Fight phase, if this model's unit fought this phase, if it is within Engagement Range of one or more enemy units, it can make a Fall Back move or, if it is not within Engagement Range of one or more enemy units, it can make a Normal move.",
-      "target": null
+      "target": "Una vez por batalla, al final de la fase de Combate, si la unidad de esta miniatura ha combatido esta fase, si está dentro del alcance de combate de una o más unidades enemigas, puede realizar un movimiento de repliegue o, si no está dentro del alcance de combate de una o más unidades enemigas, puede realizar un movimiento normal."
     },
     {
       "id": "fa676de88a05809b",
@@ -3281,7 +3281,7 @@
         ]
       },
       "source": "While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack's Ballistic Skill or Weapon Skill characteristics and/or all modifiers to the Hit roll.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque, puedes ignorar cualquiera de los modificadores a las características de Habilidad de Proyectiles o Habilidad de Armas de ese ataque, o todos ellos, y/o todos los modificadores a la tirada para impactar."
     }
   ]
 }

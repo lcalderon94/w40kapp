@@ -35,7 +35,7 @@
         ]
       },
       "source": "In your opponent’s movement phase, each time an enemy unit (excluding **^^Aircraft^^**) ends a move within 8\" of one or more **^^Legiones Daemonica Khorne^^** units from your army, one of those ^^**Legiones Daemonica Khorne**^^ units can make a surge move of up to D6\".",
-      "target": "En la fase de movimiento de tu oponente, cada vez que una unidad enemiga (excluyendo **^^Aircraft^^**) termine un movimiento a 8\" o menos de una o más unidades **^^Legiones Daemonica Khorne^^** de tu ejército, una de esas unidades ^^**Legiones Daemonica Khorne**^^ puede hacer un movimiento de oleada de hasta D6\"."
+      "target": "En la fase de movimiento de tu oponente, cada vez que una unidad enemiga (excluyendo **^^Aircraft^^**) termine un movimiento a 8\" o menos de una o más unidades **^^Legiones Daemonica Khorne^^** de tu ejército, una de esas unidades ^^**Legiones Daemonica Khorne**^^ puede hacer un movimiento de arremetida de hasta D6\"."
     },
     {
       "id": "9a79a1d04af502e4",
@@ -884,7 +884,7 @@
         ]
       },
       "source": "- This unit has Stealth. \n- Melee attacks that target this unit have ‑1 to hit rolls.",
-      "target": "- Esta unidad tiene Stealth. \n- Los ataques de cuerpo a cuerpo que tengan como objetivo esta unidad tienen ‑1 a las tiradas para impactar."
+      "target": "- Esta unidad tiene Stealth. \n- Los ataques de cuerpo a cuerpo que tengan como objetivo esta unidad tienen -1 a las tiradas para impactar."
     },
     {
       "id": "6f07fc28e92e74dd",

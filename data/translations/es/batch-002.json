@@ -745,7 +745,7 @@
         "names": []
       },
       "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n- That use is ‑1 CP.\n- That use does not prevent any uses of that **stratagem** on other units this phase.",
-      "target": "Puedes tomar como objetivo a esta unidad con el **Stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **Stratagem** esta fase. Si lo haces:\n- Ese uso cuesta ‑1 CP.\n- Ese uso no impide ningún otro uso de ese **Stratagem** sobre otras unidades esta fase."
+      "target": "Puedes tomar como objetivo a esta unidad con el **Stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **Stratagem** esta fase. Si lo haces:\n- Ese uso cuesta -1 CP.\n- Ese uso no impide ningún otro uso de ese **Stratagem** sobre otras unidades esta fase."
     },
     {
       "id": "a285cfe73515b61d",
@@ -1461,7 +1461,7 @@
         ]
       },
       "source": "■ Trigger: When an eligible unit from your army is selected to fight.\n■ Effect: Until the end of the phase, each time a model in that unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\".",
-      "target": "■ Desencadenante: Cuando una unidad elegible de tu ejército es seleccionada para combatir.\n■ Efecto: Hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un movimiento de acercamiento o de consolidación, puede moverse hasta 6\" en lugar de hasta 3\"."
+      "target": "■ Desencadenante: Cuando una unidad elegible de tu ejército es seleccionada para combatir.\n■ Efecto: Hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un movimiento de aproximación o de consolidación, puede moverse hasta 6\" en lugar de hasta 3\"."
     },
     {
       "id": "1855e0241cba1a5f",
@@ -2030,7 +2030,7 @@
         "names": []
       },
       "source": "In your Shooting phase, when this unit has shot, select one enemy unit (excluding **MONSTER/VEHICLE** units) hit by those attacks. That enemy unit makes a **battle‑shock roll**, with ‑1 to that **battle‑shock roll**.",
-      "target": "En tu fase de Disparo, cuando esta unidad haya disparado, selecciona una unidad enemiga (excluidas las unidades **MONSTER/VEHICLE**) impactada por esos ataques. Esa unidad enemiga realiza una **tirada de Battle-shock**, con ‑1 a esa **tirada de Battle-shock**."
+      "target": "En tu fase de Disparo, cuando esta unidad haya disparado, selecciona una unidad enemiga (excluidas las unidades **MONSTER/VEHICLE**) impactada por esos ataques. Esa unidad enemiga realiza una **tirada de Battle-shock**, con -1 a esa **tirada de Battle-shock**."
     },
     {
       "id": "9aded965a7ef47ad",
@@ -2060,7 +2060,7 @@
         "names": []
       },
       "source": "At the end of your Fight phase, if this unit is not **battle‑shocked**, you can use this ability. If you do, roll one D6:\n- On a 1, this unit is **battle‑shocked**.\n- Select one **visible** enemy **MONSTER/VEHICLE** unit (excluding **TITANIC** units) within 18\" of this unit. That enemy unit is **ensnared** until the start of your next turn:\n    - While a unit is **ensnared**, that unit has ‑2\" **M** and cannot be **pinned**.",
-      "target": "Al final de tu fase de Combate, si esta unidad no está **Battle-shocked**, puedes usar esta habilidad. Si lo haces, tira un D6:\n- Con un 1, esta unidad queda **Battle-shocked**.\n- Selecciona una unidad enemiga **MONSTER/VEHICLE** **visible** (excluidas las unidades **TITANIC**) que esté a 18\" o menos de esta unidad. Esa unidad enemiga queda **atrapada** hasta el comienzo de tu siguiente turno:\n    - Mientras una unidad esté **atrapada**, esa unidad tiene ‑2\" de **M** y no puede quedar **inmovilizada**."
+      "target": "Al final de tu fase de Combate, si esta unidad no está **Battle-shocked**, puedes usar esta habilidad. Si lo haces, tira un D6:\n- Con un 1, esta unidad queda **Battle-shocked**.\n- Selecciona una unidad enemiga **MONSTER/VEHICLE** **visible** (excluidas las unidades **TITANIC**) que esté a 18\" o menos de esta unidad. Esa unidad enemiga queda **atrapada** hasta el comienzo de tu siguiente turno:\n    - Mientras una unidad esté **atrapada**, esa unidad tiene -2\" de **M** y no puede quedar **inmovilizada**."
     },
     {
       "id": "c9ca568bcdcc0a15",
@@ -2088,7 +2088,7 @@
         "names": []
       },
       "source": "When an enemy unit **engaged** with this unit is selected to make a **fall‑back move**, that enemy unit must use the **desperate escape mode**. If that enemy unit is **battle‑shocked**, ‑1 from those **hazard rolls**.",
-      "target": "Cuando una unidad enemiga **trabada** con esta unidad es seleccionada para realizar un **movimiento de repliegue**, esa unidad enemiga debe usar el **modo Desperate Escape**. Si esa unidad enemiga está **Battle-shocked**, ‑1 a esas **tiradas de riesgo**."
+      "target": "Cuando una unidad enemiga **trabada** con esta unidad es seleccionada para realizar un **movimiento de repliegue**, esa unidad enemiga debe usar el **modo Desperate Escape**. Si esa unidad enemiga está **Battle-shocked**, -1 a esas **tiradas de riesgo**."
     },
     {
       "id": "8121b99ed489a00e",
@@ -2351,7 +2351,7 @@
         ]
       },
       "source": "At the start of the first battle round, you generate Fate dice by rolling a number of D6 based on the battle size, as shown below. Keep your Fate dice to one side - this is your Fate dice pool.\n\n\n■ Incursion - 3\n■ Strike Force - 6\n■ Onslaught - 9\n\n\nEach time you use one of the detachment Stratagems, if your Fate dice pool contains one or more Fate dice showing the corresponding value in the table below, you can discard one of those corresponding Fate dice. If you do, reduce the CP cost of that usage of that Stratagem by 1CP.\n\n\n\n\n■ Presentiment of Dread - 1\n■ Forewarned - 2\n■ Unshrouded Truth - 3\n■ Fate Inescapable - 4\n\n■ Isha's Fury - 5\n■ Psychic Shield - 6",
-      "target": "Al comienzo de la primera ronda de batalla, generas Fate dice tirando un número de D6 en función del tamaño de la batalla, como se indica a continuación. Guarda tus Fate dice a un lado: esa es tu reserva de Fate dice.\n\n\n■ Incursion - 3\n■ Strike Force - 6\n■ Onslaught - 9\n\n\nCada vez que uses uno de los Stratagems del destacamento, si tu reserva de Fate dice contiene uno o más Fate dice que muestren el valor correspondiente de la tabla siguiente, puedes descartar uno de esos Fate dice correspondientes. Si lo haces, reduce en 1CP el coste en CP de ese uso de ese Stratagem.\n\n\n\n\n■ Presentiment of Dread - 1\n■ Forewarned - 2\n■ Unshrouded Truth - 3\n■ Fate Inescapable - 4\n\n■ Isha’s Fury - 5\n■ Psychic Shield - 6"
+      "target": "Al comienzo de la primera ronda de batalla, generas Fate dice tirando un número de D6 en función del tamaño de la batalla, como se indica a continuación. Guarda tus Fate dice a un lado: esa es tu reserva de Fate dice.\n\n\n■ Incursion - 3\n■ Strike Force - 6\n■ Onslaught - 9\n\n\nCada vez que uses uno de los Stratagems del detachment, si tu reserva de Fate dice contiene uno o más Fate dice que muestren el valor correspondiente de la tabla siguiente, puedes descartar uno de esos Fate dice correspondientes. Si lo haces, reduce en 1CP el coste en CP de ese uso de ese Stratagem.\n\n\n\n\n■ Presentiment of Dread - 1\n■ Forewarned - 2\n■ Unshrouded Truth - 3\n■ Fate Inescapable - 4\n\n■ Isha’s Fury - 5\n■ Psychic Shield - 6"
     },
     {
       "id": "47c806a8ba869dab",
@@ -2542,7 +2542,7 @@
         "names": []
       },
       "source": "While a friendly **HARLEQUINS** unit is making a **charge move**, that unit can move through enemy models.\n\nThis **detachment** has the **ACROBATIC** tag and cannot be taken with another **ACROBATIC detachment**.",
-      "target": "Mientras una unidad **HARLEQUINS** amiga esté realizando un **movimiento de carga**, esa unidad puede moverse a través de miniaturas enemigas.\n\nEste **destacamento** tiene la etiqueta **ACROBATIC** y no puede tomarse junto a otro **destacamento ACROBATIC**."
+      "target": "Mientras una unidad **HARLEQUINS** amiga esté realizando un **movimiento de carga**, esa unidad puede moverse a través de miniaturas enemigas.\n\nEste **detachment** tiene la etiqueta **ACROBATIC** y no puede tomarse junto a otro **detachment ACROBATIC**."
     }
   ]
 }

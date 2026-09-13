@@ -15,7 +15,7 @@
         ]
       },
       "source": "In your Shooting phase, after the bearer’s unit has shot, if it is not within Engagement Range of one or more enemy units, that unit can make a Normal move of up to 6\". If it does, until the end of the turn, that unit is not eligible to declare a charge.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que la unidad del portador haya disparado, si no está dentro del alcance de combate de una o más unidades enemigas, esa unidad puede realizar un movimiento normal de hasta 6\". Si lo hace, hasta el final del turno, esa unidad no es elegible para declarar una carga."
     },
     {
       "id": "f5939b3be7a5c84a",
@@ -32,7 +32,7 @@
         ]
       },
       "source": "From the second battle round onwards, when resolving the Fallout effect of the Rad-bombardment Detachment rule, if the bearer is on the battlefield, roll one D6 for each enemy unit within 6\" of your opponent’s deployment zone, in addition to those that are within your opponent’s deployment zone.",
-      "target": null
+      "target": "A partir de la segunda ronda de batalla, al resolver el efecto Fallout de la regla de Detachment Rad-bombardment, si el portador está en el campo de batalla, tira un D6 por cada unidad enemiga que esté a 6\" o menos de la zona de despliegue de tu oponente, además de por las que estén dentro de la zona de despliegue de tu oponente."
     },
     {
       "id": "6907ca4461af10c4",
@@ -48,7 +48,7 @@
         ]
       },
       "source": "While the bearer is leading a unit, models in that unit have the Stealth ability.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, las miniaturas de esa unidad tienen la habilidad Stealth."
     },
     {
       "id": "376f05e3525803ee",
@@ -64,7 +64,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "ef43b4c811bd3c7f",
@@ -83,7 +83,7 @@
         ]
       },
       "source": "Ranged weapons equipped by the bearer have the [ANTI-INFANTRY 2+] and [ANTI-MONSTER 4+] abilities.",
-      "target": null
+      "target": "Las armas a distancia equipadas por el portador tienen las habilidades [ANTI-INFANTRY 2+] y [ANTI-MONSTER 4+]."
     },
     {
       "id": "98ad22772b284572",
@@ -97,7 +97,7 @@
         "names": []
       },
       "source": "At the end of your Command phase, if the bearer is within range of your Acquisition objective marker, roll one D6: on a 4+, you gain 1CP.",
-      "target": null
+      "target": "Al final de tu fase de Mando, si el portador está dentro del alcance de tu marcador de objetivo Acquisition, tira un D6: con un 4+, ganas 1CP."
     },
     {
       "id": "16fc8c77d9d731c1",
@@ -111,7 +111,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit that is within range of your Acquisition objective marker, models in that unit have a 4+ invulnerable save.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad que está dentro del alcance de tu marcador de objetivo Acquisition, las miniaturas de esa unidad tienen una salvación invulnerable de 4+."
     },
     {
       "id": "f0c22da0e859d12e",
@@ -125,7 +125,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit, each time a model in that unit makes an attack that targets a unit within range of your Acquisition objective marker, add 1 to the Hit roll.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque que tiene como objetivo una unidad que está dentro del alcance de tu marcador de objetivo Acquisition, suma 1 a la tirada para impactar."
     },
     {
       "id": "0cdd211a78210924",
@@ -139,7 +139,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit that is within range of your Acquisition objective marker, once per phase, you can change the result of one Hit roll, one Wound roll or one saving throw made for that unit to an unmodified 6.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad que está dentro del alcance de tu marcador de objetivo Acquisition, una vez por fase puedes cambiar el resultado de una tirada para impactar, una tirada para herir o una tirada de salvación realizada para esa unidad a un 6 sin modificar."
     },
     {
       "id": "2a5be4df31971c52",
@@ -153,7 +153,7 @@
         "names": []
       },
       "source": "The bearer has a Leadership characteristic of 6+ and, once per battle, at the start of any phase, you can select one friendly CULT MECHANICUS unit that is Battle-shocked and within 12\" of the bearer. That unit is no longer Battle-shocked.",
-      "target": null
+      "target": "El portador tiene una característica de Leadership de 6+ y, una vez por batalla, al inicio de cualquier fase, puedes seleccionar una unidad amiga CULT MECHANICUS que esté Battle-shocked y a 12\" o menos del portador. Esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "67ce16679c6b8f6f",
@@ -169,7 +169,7 @@
         "names": []
       },
       "source": "Each time an attack is allocated to the bearer, change the Damage characteristic of that attack to 1.",
-      "target": null
+      "target": "Cada vez que un ataque se asigna al portador, cambia la característica de Daño de ese ataque a 1."
     },
     {
       "id": "865bd9ac51b6c4ea",
@@ -185,7 +185,7 @@
         ]
       },
       "source": "Once per battle, at the start of your Command phase, you can select the Benediction of the Omnissiah you did not select at the start of the first battle round. Until the start of your next Command phase, that Benediction of the Omnissiah is active for the bearer’s unit in addition to the one that is currently active for your army.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de tu fase de Mando, puedes seleccionar la Benediction of the Omnissiah que no seleccionaste al inicio de la primera ronda de batalla. Hasta el inicio de tu siguiente fase de Mando, esa Benediction of the Omnissiah está activa para la unidad del portador, además de la que esté activa en ese momento para tu ejército."
     },
     {
       "id": "2d9aa704ae528db3",
@@ -201,7 +201,7 @@
         ]
       },
       "source": "The bearer’s unit has the Fights First ability.",
-      "target": null
+      "target": "La unidad del portador tiene la habilidad Fights First."
     },
     {
       "id": "ea20188a7b188fb5",
@@ -218,7 +218,7 @@
         ]
       },
       "source": "Once per battle round, when a saving throw made for a friendly **^^Legio Cybernetica^^** or **^^Adeptus Mechanicus Vehicle^^** model within 12\" of the bearer is failed, the bearer can use this Enhancement. If they do, change the Damage characteristic of that attack to 0.",
-      "target": null
+      "target": "Una vez por ronda de batalla, cuando se falla una tirada de salvación realizada para una miniatura amiga **^^Legio Cybernetica^^** o **^^Adeptus Mechanicus Vehicle^^** que esté a 12\" o menos del portador, el portador puede usar este Enhancement. Si lo hace, cambia la característica de Daño de ese ataque a 0."
     },
     {
       "id": "5d6424c1f179d337",
@@ -234,7 +234,7 @@
         ]
       },
       "source": "Once per turn, at the start of your opponent’s Shooting phase, select one enemy Vehicle unit within 12\" of and visible to the bearer. That unit must take a Leadership test: if that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; if that test is failed, that unit is not eligible to shoot this phase.",
-      "target": null
+      "target": "Una vez por turno, al inicio de la fase de Disparo de tu oponente, selecciona una unidad enemiga Vehicle que esté a 12\" o menos del portador y sea visible para él. Esa unidad debe hacer un test de Leadership: si supera ese test, hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar; si falla ese test, esa unidad no es elegible para disparar esta fase."
     },
     {
       "id": "06a44ff52bc94497",
@@ -250,7 +250,7 @@
         ]
       },
       "source": "Once per turn, when a friendly LEGIO CYBERNETICA or ADEPTUS MECHANICUS VEHICLE model with the Deadly Demise ability that is within 12\" of the bearer is destroyed, the bearer can use this Enhancement. If it does, do not roll to determine whether any mortal wounds are inflicted as a result of that model’s Deadly Demise ability. Instead, mortal wounds are automatically inflicted.",
-      "target": null
+      "target": "Una vez por turno, cuando una miniatura amiga LEGIO CYBERNETICA o ADEPTUS MECHANICUS VEHICLE con la habilidad Deadly Demise que esté a 12\" o menos del portador es destruida, el portador puede usar este Enhancement. Si lo hace, no tires para determinar si se infligen heridas mortales como resultado de la habilidad Deadly Demise de esa miniatura. En su lugar, esas heridas mortales se infligen automáticamente."
     },
     {
       "id": "cdce816c5c63a784",
@@ -268,7 +268,7 @@
         ]
       },
       "source": "Ranged weapons equipped by the bearer have the [ANTI-VEHICLE 4+] ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por el portador tienen la habilidad [ANTI-VEHICLE 4+]."
     },
     {
       "id": "1a3e8f4997a2b500",
@@ -286,7 +286,7 @@
         ]
       },
       "source": "CYBERNETICA DATASMITH model only. When the bearer is attached to a Kastelan Robots unit, until the end of the battle, models in that unit gain the Halo Override keyword. That unit cannot be selected when selecting units as part of the Noospheric Transference Detachment rule.",
-      "target": null
+      "target": "Solo miniatura CYBERNETICA DATASMITH. Cuando el portador está adjunto a una unidad Kastelan Robots, hasta el final de la batalla, las miniaturas de esa unidad ganan la palabra clave Halo Override. Esa unidad no puede ser seleccionada al seleccionar unidades como parte de la regla de Detachment Noospheric Transference."
     },
     {
       "id": "b7c8332c732e6e7e",
@@ -300,7 +300,7 @@
         "names": []
       },
       "source": "ADEPTUS MECHANICUS model only (excluding CYBERNETICA DATASMITH models). The Conqueror Imperative and Protector Imperative are both active for the bearer’s unit.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS MECHANICUS (excluyendo las miniaturas CYBERNETICA DATASMITH). El Conqueror Imperative y el Protector Imperative están ambos activos para la unidad del portador."
     },
     {
       "id": "bab7b2c6eba53e43",
@@ -316,7 +316,7 @@
         ]
       },
       "source": "ADEPTUS MECHANICUS model only. Add 6\" to the range characteristic of ranged weapons equipped by models in the bearer’s unit and, each time a Hazardous test is taken for that unit, you can re‑roll the result.",
-      "target": null
+      "target": "Solo miniatura ADEPTUS MECHANICUS. Suma 6\" a la característica de Alcance de las armas a distancia equipadas por las miniaturas de la unidad del portador y, cada vez que se hace un test de Hazardous para esa unidad, puedes repetir el resultado."
     },
     {
       "id": "914b6f4983f86ec4",
@@ -335,7 +335,7 @@
         ]
       },
       "source": "**^^Tech-Priest Dominus^^** or **^^Tech-Priest Manipulus^^** model only. Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 to the Damage characteristic of the bearer’s melee weapons.",
-      "target": null
+      "target": "Solo miniatura **^^Tech-Priest Dominus^^** o **^^Tech-Priest Manipulus^^**. Suma 3 a la característica de Ataques de las armas cuerpo a cuerpo del portador y suma 1 a la característica de Daño de las armas cuerpo a cuerpo del portador."
     },
     {
       "id": "78616f710a38fc04",
@@ -351,7 +351,7 @@
         ]
       },
       "source": "This unit has Infiltrators.",
-      "target": null
+      "target": "Esta unidad tiene Infiltrators."
     },
     {
       "id": "7d007c9b6a0bc100",
@@ -365,7 +365,7 @@
         "names": []
       },
       "source": "At the start of the first battle round, if this unit is an attached unit, this unit has **MOBILE** until the end of the battle.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, si esta unidad es una unidad adjunta, esta unidad tiene **MOBILE** hasta el final de la batalla."
     },
     {
       "id": "d4983eb67333bb1a",
@@ -381,7 +381,7 @@
         ]
       },
       "source": "This unit has **Stealth**.",
-      "target": null
+      "target": "Esta unidad tiene **Stealth**."
     },
     {
       "id": "f0f3c834e625f7e3",
@@ -398,7 +398,7 @@
         ]
       },
       "source": "**^^Skitarii Marshal^^** model only. The Conqueror Imperative and Protector Imperative are both active for the bearer’s unit.",
-      "target": null
+      "target": "Solo miniatura **^^Skitarii Marshal^^**. El Conqueror Imperative y el Protector Imperative están ambos activos para la unidad del portador."
     },
     {
       "id": "bcb0df61b0f7cf5d",
@@ -414,7 +414,7 @@
         ]
       },
       "source": "**^^Tech‑Priest^^** model only. Models in the bearer’s unit have the **^^Skitarii^^** keyword.",
-      "target": null
+      "target": "Solo miniatura **^^Tech-Priest^^**. Las miniaturas de la unidad del portador tienen la palabra clave **^^Skitarii^^**."
     },
     {
       "id": "3415e75cc2377f20",
@@ -430,7 +430,7 @@
         ]
       },
       "source": "**^^Adeptus Mechanicus^^** model only. Add 6\" to the Range characteristic of ranged weapons equipped by models in the bearer’s unit, and add 1 to the Strength characteristic of those weapons.",
-      "target": null
+      "target": "Solo miniatura **^^Adeptus Mechanicus^^**. Suma 6\" a la característica de Alcance de las armas a distancia equipadas por las miniaturas de la unidad del portador, y suma 1 a la característica de Fuerza de esas armas."
     },
     {
       "id": "a04a13acb3f35982",
@@ -447,7 +447,7 @@
         ]
       },
       "source": "**^^Skitarii Marshal^^** model only. Add 2 to the Attacks characteristic of melee weapons equipped by the bearer, and improve the Armour Penetration and Damage characteristics of those weapons by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Skitarii Marshal^^**. Suma 2 a la característica de Ataques de las armas cuerpo a cuerpo equipadas por el portador, y mejora en 1 las características de Penetración de Blindaje y Daño de esas armas."
     },
     {
       "id": "17fe0257d86059cc",
@@ -464,7 +464,7 @@
         ]
       },
       "source": "At the end of the battle, if this unit was part of your Crusade army and was not destroyed during the battle, you can ignore one failed Out of Action test taken for an **^^Adeptus Mechanicus Vehicle^^** unit from your Crusade army – that test is treated as having been passed.",
-      "target": null
+      "target": "Al final de la batalla, si esta unidad formaba parte de tu ejército de Crusade y no fue destruida durante la batalla, puedes ignorar un test de Out of Action fallado realizado para una unidad **^^Adeptus Mechanicus Vehicle^^** de tu ejército de Crusade – ese test se considera superado."
     },
     {
       "id": "be8602eaf485dd9e",
@@ -478,7 +478,7 @@
         "names": []
       },
       "source": "Once per battle round, in your opponent's Charge phase, just after an enemy unit selects this unit as the target of a charge, roll one D6: on a 3+, that enemy unit suffers D3 mortal wounds and must take a Battle-shock test.",
-      "target": null
+      "target": "Una vez por ronda de batalla, en la fase de Carga de tu oponente, justo después de que una unidad enemiga seleccione a esta unidad como objetivo de una carga, tira un D6: con un 3+, esa unidad enemiga sufre D3 heridas mortales y debe hacer un test de Battle-shock."
     },
     {
       "id": "3433b184b4adb53e",
@@ -495,7 +495,7 @@
         ]
       },
       "source": "At the end of a battle you won, if this unit was in your Crusade army, roll one D6: on a 6, your Crusade force gains 1 Archeotech Part.",
-      "target": null
+      "target": "Al final de una batalla que hayas ganado, si esta unidad estaba en tu ejército de Crusade, tira un D6: con un 6, tu fuerza de Crusade gana 1 Archeotech Part."
     },
     {
       "id": "ec793a719e70e42f",
@@ -511,7 +511,7 @@
         ]
       },
       "source": "This unit has the Feel No Pain 6+ ability.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Feel No Pain 6+."
     },
     {
       "id": "ffc357d0d7ec3cf7",
@@ -525,7 +525,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, you can re-roll Battle-shock tests taken for that unit.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, puedes repetir los tests de Battle-shock realizados para esa unidad."
     },
     {
       "id": "c675ab096eae197f",
@@ -542,7 +542,7 @@
         ]
       },
       "source": "Once per battle round, one **^^Adeptus Mechanicus Smoke^^** unit from your army that is within 12\" of this unit can be targeted with the Smokescreen Stratagem for 0CP, even if a different unit from your Crusade army has already been targeted with that Stratagem this phase.",
-      "target": null
+      "target": "Una vez por ronda de batalla, una unidad **^^Adeptus Mechanicus Smoke^^** de tu ejército que esté a 12\" o menos de esta unidad puede ser seleccionada como objetivo del Stratagem Smokescreen por 0CP, incluso si otra unidad de tu ejército de Crusade ya ha sido seleccionada como objetivo de ese Stratagem esta fase."
     },
     {
       "id": "c412543055a72df4",
@@ -559,7 +559,7 @@
         ]
       },
       "source": "At the end of your Movement phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves. If you do, until the end of your next turn, this unit has the Deep Strike ability.",
-      "target": null
+      "target": "Al final de tu fase de Movimiento, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, puedes retirarla del campo de batalla y colocarla en reservas estratégicas. Si lo haces, hasta el final de tu siguiente turno, esta unidad tiene la habilidad Deep Strike."
     },
     {
       "id": "0937f714860279db",
@@ -573,7 +573,7 @@
         "names": []
       },
       "source": "Each time you target this model's unit with a Stratagem, roll one D6, adding 1 to the result if that unit is equipped with an enhanced data-tether: on a 5+, you gain 1CP.",
-      "target": null
+      "target": "Cada vez que seleccionas a la unidad de esta miniatura como objetivo de un Stratagem, tira un D6, sumando 1 al resultado si esa unidad está equipada con un enhanced data-tether: con un 5+, ganas 1CP."
     },
     {
       "id": "2c939e9a2ad57f15",
@@ -589,7 +589,7 @@
         ]
       },
       "source": "Once per battle round, when an enemy unit ends a Charge move within Engagement Range of this unit, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.",
-      "target": null
+      "target": "Una vez por ronda de batalla, cuando una unidad enemiga termina un movimiento de carga dentro del alcance de combate de esta unidad, tira un D6: con un 2-5, esa unidad enemiga sufre D3 heridas mortales; con un 6, esa unidad enemiga sufre 3 heridas mortales."
     },
     {
       "id": "a5d3c9a49afd42d8",
@@ -606,7 +606,7 @@
         ]
       },
       "source": "This unit has a 4+ invulnerable save. If this unit is a **^^Battleline^^** or **^^Kataphron^^** unit, it has a 5+ invulnerable save instead.",
-      "target": null
+      "target": "Esta unidad tiene una salvación invulnerable de 4+. Si esta unidad es una unidad **^^Battleline^^** o **^^Kataphron^^**, tiene una salvación invulnerable de 5+ en su lugar."
     },
     {
       "id": "0762f8f274fcca3f",
@@ -622,7 +622,7 @@
         "names": []
       },
       "source": "Add 1 to the Strength characteristic of melee weapons equipped by models in this unit.",
-      "target": null
+      "target": "Suma 1 a la característica de Fuerza de las armas cuerpo a cuerpo equipadas por las miniaturas de esta unidad."
     },
     {
       "id": "70288be5d37edc1f",
@@ -636,7 +636,7 @@
         "names": []
       },
       "source": "Add 1 to the Movement characteristic of models in this unit and add 1 to Advance rolls made for it.",
-      "target": null
+      "target": "Suma 1 a la característica de Movimiento de las miniaturas de esta unidad y suma 1 a las tiradas de avance realizadas para ella."
     },
     {
       "id": "753968ee0d850e64",
@@ -650,7 +650,7 @@
         "names": []
       },
       "source": "You can ignore any or all modifiers to this unit's characteristics and/or to any roll or test made for it (excluding modifiers to saving throws).",
-      "target": null
+      "target": "Puedes ignorar cualquiera o todos los modificadores a las características de esta unidad y/o a cualquier tirada o test realizado para ella (excluyendo los modificadores a las tiradas de salvación)."
     },
     {
       "id": "3104bbf08f12bda7",
@@ -666,7 +666,7 @@
         ]
       },
       "source": "**^^Skitarii^^** model only. At the start of the battle, select one enemy unit. Each time a model in the bearer's unit makes an attack that targets that enemy unit, re-roll a Hit roll 1 and re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Solo miniatura **^^Skitarii^^**. Al inicio de la batalla, selecciona una unidad enemiga. Cada vez que una miniatura de la unidad del portador realiza un ataque que tiene como objetivo esa unidad enemiga, repite las tiradas para impactar de 1 y repite las tiradas para herir de 1."
     },
     {
       "id": "81db06b007696195",
@@ -683,7 +683,7 @@
         ]
       },
       "source": "Once per battle, when a different friendly **^^Adeptus Mechanicus^^** model within 6\" of the bearer is destroyed, you can roll one D6 at the end of the phase instead of triggering any rules that are triggered when a model is destroyed (e.g. Deadly Demise). On a 3+, set that model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with up to 6 wounds remaining (this cannot allow a model to return with more wounds than its Wounds characteristic).",
-      "target": null
+      "target": "Una vez por batalla, cuando otra miniatura amiga **^^Adeptus Mechanicus^^** que esté a 6\" o menos del portador es destruida, puedes tirar un D6 al final de la fase en lugar de activar cualquier regla que se active cuando una miniatura es destruida (p. ej. Deadly Demise). Con un 3+, vuelve a desplegar esa miniatura en el campo de batalla lo más cerca posible de donde fue destruida y fuera del alcance de combate de cualquier miniatura enemiga, con hasta 6 heridas restantes (esto no puede permitir que una miniatura vuelva con más heridas que su característica de Heridas)."
     },
     {
       "id": "c69c229a90055e42",
@@ -697,7 +697,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit, add 1 to Advance and Charge rolls made for that unit.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, suma 1 a las tiradas de avance y de carga realizadas para esa unidad."
     },
     {
       "id": "827e6adaa5186c20",
@@ -711,7 +711,7 @@
         "names": []
       },
       "source": "Once per battle round, while the bearer is leading a unit, you can target that unit with the Fire Overwatch Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Una vez por ronda de batalla, mientras el portador lidera una unidad, puedes seleccionar esa unidad como objetivo del Stratagem Fire Overwatch por 0CP, y puedes hacerlo incluso si ya has seleccionado otra unidad como objetivo de ese Stratagem esta fase."
     },
     {
       "id": "62d87ae5cd393230",
@@ -725,7 +725,7 @@
         "names": []
       },
       "source": "Improve the Save and Wounds characteristics of this model by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Salvación y Heridas de esta miniatura."
     },
     {
       "id": "cadb438aee48f5e2",
@@ -742,7 +742,7 @@
         ]
       },
       "source": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model and roll one D6: on a 4+, until the end of the turn, reduce the Weapon Skill characteristic of melee weapons equipped by that enemy unit by 1.",
-      "target": null
+      "target": "Al inicio de la fase de Combate, selecciona una unidad enemiga que esté dentro del alcance de combate de esta miniatura y tira un D6: con un 4+, hasta el final del turno, reduce en 1 la característica de Habilidad de Armas de las armas cuerpo a cuerpo equipadas por esa unidad enemiga."
     },
     {
       "id": "22711802fa26892c",
@@ -756,7 +756,7 @@
         "names": []
       },
       "source": "Once per battle, in your opponent's Charge phase, just after this model's unit has been selected as a target of an enemy unit's charge, this model can use this ability. If it does, until the end of the phase, subtract 2 from Charge rolls made for that enemy unit.",
-      "target": null
+      "target": "Una vez por batalla, en la fase de Carga de tu oponente, justo después de que la unidad de esta miniatura haya sido seleccionada como objetivo de la carga de una unidad enemiga, esta miniatura puede usar esta habilidad. Si lo hace, hasta el final de la fase, resta 2 a las tiradas de carga realizadas para esa unidad enemiga."
     },
     {
       "id": "4594e5402d18d1f9",
@@ -770,7 +770,7 @@
         "names": []
       },
       "source": "Improve the Strength and Armour Penetration characteristics of ranged weapons equipped by this model by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Fuerza y Penetración de Blindaje de las armas a distancia equipadas por esta miniatura."
     },
     {
       "id": "0344ef814b2541bf",
@@ -788,7 +788,7 @@
         ]
       },
       "source": "Melee weapons equipped by this model have the **[DEVASTATING WOUNDS]** ability.",
-      "target": null
+      "target": "Las armas cuerpo a cuerpo equipadas por esta miniatura tienen la habilidad **[DEVASTATING WOUNDS]**."
     },
     {
       "id": "8847454e92a879f6",
@@ -804,7 +804,7 @@
         ]
       },
       "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus^^** units (excluding **^^Vehicles^^**) from your Crusade army. Once per battle per selected unit, you can target that unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona hasta dos unidades **^^Adeptus Mechanicus^^** (excluyendo **^^Vehicles^^**) de tu ejército de Crusade. Una vez por batalla por cada unidad seleccionada, puedes seleccionar esa unidad como objetivo del Stratagem Heroic Intervention por 0CP, y puedes hacerlo incluso si ya has seleccionado otra unidad como objetivo de ese Stratagem esta fase."
     },
     {
       "id": "9529e7166539d21c",
@@ -820,7 +820,7 @@
         ]
       },
       "source": "At the start of the battle, select one enemy unit. Each time an **^^Adeptus Mechanicus^^** unit from your Crusade army makes a ranged attack that targets that enemy unit, you can ignore any or all modifiers to the Hit roll, the Wound roll and the Ballistic Skill characteristic of that attack.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona una unidad enemiga. Cada vez que una unidad **^^Adeptus Mechanicus^^** de tu ejército de Crusade realiza un ataque a distancia que tiene como objetivo esa unidad enemiga, puedes ignorar cualquiera o todos los modificadores a la tirada para impactar, a la tirada para herir y a la característica de Habilidad de Proyectiles de ese ataque."
     },
     {
       "id": "f6532156cd00b676",
@@ -836,7 +836,7 @@
         ]
       },
       "source": "At the start of the battle, select one enemy unit. Each time an **^^Adeptus Mechanicus^^** unit from your Crusade army makes a melee attack that targets that enemy unit, re-roll a Hit roll of 1.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona una unidad enemiga. Cada vez que una unidad **^^Adeptus Mechanicus^^** de tu ejército de Crusade realiza un ataque cuerpo a cuerpo que tiene como objetivo esa unidad enemiga, repite las tiradas para impactar de 1."
     },
     {
       "id": "bbdf06770b01834a",
@@ -852,7 +852,7 @@
         ]
       },
       "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus^^** units from your Crusade army, then select one objective marker that is not in your deployment zone. While a unit you selected for this ability is within range of that objective market, improve the Leadership and Objective Control characteristics of models in that unit by 1.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona hasta dos unidades **^^Adeptus Mechanicus^^** de tu ejército de Crusade y, después, selecciona un marcador de objetivo que no esté en tu zona de despliegue. Mientras una unidad que hayas seleccionado para esta habilidad esté dentro del alcance de ese marcador de objetivo, mejora en 1 las características de Leadership y de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "2d002bb79e0903ca",
@@ -869,7 +869,7 @@
         ]
       },
       "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus Infantry^^** units from your Crusade army. Each time an enemy unit makes a ranged attack that targets one of those units, until the end of the phase, models in the targeted unit have a 5+ invulnerable save against ranged attacks.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona hasta dos unidades **^^Adeptus Mechanicus Infantry^^** de tu ejército de Crusade. Cada vez que una unidad enemiga realiza un ataque a distancia que tiene como objetivo una de esas unidades, hasta el final de la fase, las miniaturas de la unidad objetivo tienen una salvación invulnerable de 5+ contra ataques a distancia."
     },
     {
       "id": "3d6762a25a09e8f4",
@@ -886,7 +886,7 @@
         ]
       },
       "source": "At the start of the battle, select up to two **^^Adeptus Mechanicus Infantry^^** units from your Crusade army. Until the end of the battle, add 1 to Advance and Charge rolls made for those units.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona hasta dos unidades **^^Adeptus Mechanicus Infantry^^** de tu ejército de Crusade. Hasta el final de la batalla, suma 1 a las tiradas de avance y de carga realizadas para esas unidades."
     },
     {
       "id": "590273ae8756cd90",
@@ -903,7 +903,7 @@
         ]
       },
       "source": "Add 2 to the bearer's Objective Control characteristic, and at the end of your Command phase, if the bearer is within range of an objective marker that is not in your deployment zone, you gain 1CP. In addition, at the end of the battle, if the bearer was in your Crusade army and you won that battle, roll one D6: on a 4+, your Crusade force acquires one Archeotech Part.",
-      "target": null
+      "target": "Suma 2 a la característica de Control de Objetivos del portador y, al final de tu fase de Mando, si el portador está dentro del alcance de un marcador de objetivo que no esté en tu zona de despliegue, ganas 1CP. Además, al final de la batalla, si el portador estaba en tu ejército de Crusade y ganaste esa batalla, tira un D6: con un 4+, tu fuerza de Crusade adquiere un Archeotech Part."
     },
     {
       "id": "a86f14688298b885",
@@ -919,7 +919,7 @@
         ]
       },
       "source": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with this weapon. Until the start of your next turn, worsen the Weapon Skill characteristic of melee weapons equipped by models in that unit by 1.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques realizados con esta arma. Hasta el inicio de tu siguiente turno, empeora en 1 la característica de Habilidad de Armas de las armas cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "f46aa726af9c0361",
@@ -935,7 +935,7 @@
         ]
       },
       "source": "Once per battle, at the end of your Movement phase, select one enemy **^^Vehicle^^** unit within 18\" of and visible to the bearer. Until the start of your next Movement phase, subtract 2 from the Attacks characteristic of ranged weapons equipped by models in that unit, and each time that unit ends a Normal, Advance, Fall Back or Charge move, it suffers D6 mortal wounds.",
-      "target": null
+      "target": "Una vez por batalla, al final de tu fase de Movimiento, selecciona una unidad enemiga **^^Vehicle^^** que esté a 18\" o menos del portador y sea visible para él. Hasta el inicio de tu siguiente fase de Movimiento, resta 2 a la característica de Ataques de las armas a distancia equipadas por las miniaturas de esa unidad y, cada vez que esa unidad termina un movimiento normal, de avance, de repliegue o de carga, sufre D6 heridas mortales."
     },
     {
       "id": "76562f3e26d212da",
@@ -953,7 +953,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Serberys Raiders, Serberys Sulphurhounds**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Serberys Raiders, Serberys Sulphurhounds**^^"
     },
     {
       "id": "e171ec6ff074af12",
@@ -974,7 +974,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Kastelan Robots**^^\n\n\nYou can attach this model to a ^^**Kastelan Robots**^^ unit, even if one or more ^^**Cybernetica Datasmith**^^ models have been attached to it. In such cases, if that Bodyguard unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths. While attached to a ^^**Kastelan Robots**^^ unit, this model loses the ^^**Infantry**^^ keyword and models in that unit have the Doctrina Imperatives Faction ability.",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Kastelan Robots**^^\n\n\nPuedes adjuntar esta miniatura a una unidad ^^**Kastelan Robots**^^ aunque ya se le hayan adjuntado una o más miniaturas ^^**Cybernetica Datasmith**^^. En tales casos, si esa unidad Bodyguard es destruida, las unidades Leader adjuntas a ella pasan a ser unidades separadas con sus Starting Strengths originales. Mientras esté adjunta a una unidad ^^**Kastelan Robots**^^, esta miniatura pierde la palabra clave ^^**Infantry**^^ y las miniaturas de esa unidad tienen la habilidad de Facción Doctrina Imperatives."
     },
     {
       "id": "cc0867c92824d42e",
@@ -993,7 +993,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Pteraxii Skystalkers, Pteraxii Sterylizors**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Pteraxii Skystalkers, Pteraxii Sterylizors**^^"
     },
     {
       "id": "cb88629ae8f1b969",
@@ -1012,7 +1012,7 @@
         ]
       },
       "source": "This model can be attached to the following units: ^^**Sicarian Infiltrators, Sicarian Ruststalkers**^^",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: ^^**Sicarian Infiltrators, Sicarian Ruststalkers**^^"
     },
     {
       "id": "a3da00ca35d70757",
@@ -1029,7 +1029,7 @@
         ]
       },
       "source": "In your Command phase, select one friendly ^^**Adeptus Mechanicus**^^ model within 3\" of this model. That model regains up to D3 lost wounds and, if it is a ^^**Vehicle**^^ model, until the start of your next Command phase, that model has the Feel No Pain 5+ ability. Each model can only be selected for this ability once per Command phase.",
-      "target": null
+      "target": "En tu fase de Mando, selecciona una miniatura amiga ^^**Adeptus Mechanicus**^^ que esté a 3\" o menos de esta miniatura. Esa miniatura recupera hasta D3 heridas perdidas y, si es una miniatura ^^**Vehicle**^^, hasta el inicio de tu siguiente fase de Mando, esa miniatura tiene la habilidad Feel No Pain 5+. Cada miniatura solo puede ser seleccionada para esta habilidad una vez por fase de Mando."
     },
     {
       "id": "80dfc5723a98ff04",
@@ -1046,7 +1046,7 @@
         ]
       },
       "source": "BOMBARDMENT\nAt the start of the first battle round, for each enemy unit within your opponent’s deployment zone, your opponent must decide whether that unit will take cover or stand firm. You then roll one D6 for each of those enemy units and apply the relevant result below:\n- Unit Standing Firm: On a 3+, that unit suffers D3 mortal wounds.\n- Unit Taking Cover: That unit is battle-shocked. On a 5+, that unit suffers D3 mortal wounds.\n\nFALLOUT\nAt the start of your Command phase during the second, third, fourth and fifth battle rounds, roll one D6 for each enemy unit within your opponent’s deployment zone. On a 3+, that unit suffers 1 mortal wound and must take a Battle-shock test.",
-      "target": null
+      "target": "BOMBARDMENT\nAl inicio de la primera ronda de batalla, por cada unidad enemiga que esté dentro de la zona de despliegue de tu oponente, tu oponente debe decidir si esa unidad se pone a cubierto o se mantiene firme. Después tiras un D6 por cada una de esas unidades enemigas y aplicas el resultado correspondiente indicado a continuación:\n- Unidad que se mantiene firme: Con un 3+, esa unidad sufre D3 heridas mortales.\n- Unidad que se pone a cubierto: Esa unidad está Battle-shocked. Con un 5+, esa unidad sufre D3 heridas mortales.\n\nFALLOUT\nAl inicio de tu fase de Mando durante las rondas de batalla segunda, tercera, cuarta y quinta, tira un D6 por cada unidad enemiga que esté dentro de la zona de despliegue de tu oponente. Con un 3+, esa unidad sufre 1 herida mortal y debe hacer un test de Battle-shock."
     },
     {
       "id": "d4f91a99ea904c39",
@@ -1062,7 +1062,7 @@
         ]
       },
       "source": "Friendly SKITARII INFANTRY, SKITARII MOUNTED and IRONSTRIDER BALLISTARII units have Stealth.",
-      "target": null
+      "target": "Las unidades amigas SKITARII INFANTRY, SKITARII MOUNTED e IRONSTRIDER BALLISTARII tienen Stealth."
     },
     {
       "id": "3e8bb1dbdbb173d1",
@@ -1076,7 +1076,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, select one objective marker. Until the start of your next Command phase, that objective marker is your Acquisition objective marker. Each time an ADEPTUS MECHANICUS model from your army makes an attack, if that model’s  unit is within range of your Acquisition objective marker, or if the target of that attack is within range of your Acquisition objective marker, re-roll a Wound roll of 1.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, selecciona un marcador de objetivo. Hasta el inicio de tu siguiente fase de Mando, ese marcador de objetivo es tu marcador de objetivo Acquisition. Cada vez que una miniatura ADEPTUS MECHANICUS de tu ejército realiza un ataque, si la unidad de esa miniatura está dentro del alcance de tu marcador de objetivo Acquisition, o si el objetivo de ese ataque está dentro del alcance de tu marcador de objetivo Acquisition, repite las tiradas para herir de 1."
     },
     {
       "id": "449963ceb8dcde85",
@@ -1092,7 +1092,7 @@
         ]
       },
       "source": "At the start of the first battle round, select one of the following Benedictions of the Omnissiah to be active for **^^Cult Mechanicus^^** units from your army until the end of the battle:\n\nPanegyric Procession:\n\nEach time a **^^Cult Mechanicus^^** model from your army makes a ranged attack that targets a unit within half range, improve the Armour Penetration characteristic of that attack by 1.\n\nCitation in Savagery:\n\nEach time a **^^Cult Mechanicus^^** unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Strength and Attacks characteristics of melee weapons equipped by models in that unit.",
-      "target": null
+      "target": "Al inicio de la primera ronda de batalla, selecciona una de las siguientes Benedictions of the Omnissiah para que esté activa para las unidades **^^Cult Mechanicus^^** de tu ejército hasta el final de la batalla:\n\nPanegyric Procession:\n\nCada vez que una miniatura **^^Cult Mechanicus^^** de tu ejército realiza un ataque a distancia que tiene como objetivo una unidad dentro de la mitad del alcance, mejora en 1 la característica de Penetración de Blindaje de ese ataque.\n\nCitation in Savagery:\n\nCada vez que una unidad **^^Cult Mechanicus^^** de tu ejército es seleccionada para combatir, si esa unidad realizó un movimiento de carga este turno, hasta el final de la fase, suma 1 a las características de Fuerza y Ataques de las armas cuerpo a cuerpo equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "1445c40f88d28331",
@@ -1108,7 +1108,7 @@
         ]
       },
       "source": "Add 2\" to the Move characteristic of models in ^^**Legio Cybernetica**^^ units from your army. In addition, unless that unit is Battle‑shocked, add 1 to the Objective Control characteristic of models in that unit.",
-      "target": null
+      "target": "Suma 2\" a la característica de Movimiento de las miniaturas de las unidades ^^**Legio Cybernetica**^^ de tu ejército. Además, a menos que esa unidad esté Battle-shocked, suma 1 a la característica de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "8c8a2c18483991f2",
@@ -1124,7 +1124,7 @@
         ]
       },
       "source": "In your Command phase, select one or more ADEPTUS MECHANICUS units from your army (including units that are embarked within TRANSPORTS). The maximum number of units you can select depends on the battle size, as follows:\n\n\nINCURSION: 1 UNIT\nSTRIKE FORCE: 2 UNITS\nONSLAUGHT: 3 UNITS\n\nUntil the start of your next Command phase, those units gain the HALO OVERRIDE keyword. Then, select one of the Override abilities below. Until the start of your next Command phase, units from your army with the HALO OVERRIDE keyword have the selected Override ability:\n\nElectromotive Energisation\nAdd 2\" to the Move characteristic of models in this unit.\n\nMicroactuator Bracing\nAdd 1 to the Toughness characteristic of models in this unit.\n\nPredation Protocols\nThis unit is eligible to declare a charge in a turn in which it Advanced.\n\nMuted Servomotors\nModels in this unit have the Stealth ability.",
-      "target": null
+      "target": "En tu fase de Mando, selecciona una o más unidades ADEPTUS MECHANICUS de tu ejército (incluidas las unidades que estén embarcadas en TRANSPORTS). El número máximo de unidades que puedes seleccionar depende del tamaño de la partida, como sigue:\n\n\nINCURSION: 1 UNIDAD\nSTRIKE FORCE: 2 UNIDADES\nONSLAUGHT: 3 UNIDADES\n\nHasta el inicio de tu siguiente fase de Mando, esas unidades ganan la palabra clave HALO OVERRIDE. Después, selecciona una de las habilidades Override indicadas abajo. Hasta el inicio de tu siguiente fase de Mando, las unidades de tu ejército con la palabra clave HALO OVERRIDE tienen la habilidad Override seleccionada:\n\nElectromotive Energisation\nSuma 2\" a la característica de Movimiento de las miniaturas de esta unidad.\n\nMicroactuator Bracing\nSuma 1 a la característica de Resistencia de las miniaturas de esta unidad.\n\nPredation Protocols\nEsta unidad es elegible para declarar una carga en un turno en el que haya avanzado.\n\nMuted Servomotors\nLas miniaturas de esta unidad tienen la habilidad Stealth."
     },
     {
       "id": "aad6d45f757a9bb2",
@@ -1140,7 +1140,7 @@
         ]
       },
       "source": "Each time a model in a **^^Skitarii^^** unit from your army makes an attack: \n- If the Protector Imperative is active for that unit, re‑roll a Hit roll of 1.\n- If the Conqueror Imperative is active for that unit, re‑roll a Wound roll of 1.",
-      "target": null
+      "target": "Cada vez que una miniatura de una unidad **^^Skitarii^^** de tu ejército realiza un ataque: \n- Si el Protector Imperative está activo para esa unidad, repite las tiradas para impactar de 1.\n- Si el Conqueror Imperative está activo para esa unidad, repite las tiradas para herir de 1."
     },
     {
       "id": "5228c5e619388ff6",
@@ -1156,7 +1156,7 @@
         ]
       },
       "source": "- Friendly **PTERAXII/INFILTRATORS/RANGERS/SERBERYS RAIDERS/ SERBERYS SULPHURHOUNDS** units have **RECON AUGURY**. \n- Friendly **RECON AUGURY** units have the following ability: **Enhanced Augurs**: In your Shooting phase, this unit can select one **visible** enemy unit within 12\". That enemy unit is **analysed**: \n- While a unit is **analysed**, that unit has +3\" **detection range**.",
-      "target": null
+      "target": "- Las unidades amigas **PTERAXII/INFILTRATORS/RANGERS/SERBERYS RAIDERS/ SERBERYS SULPHURHOUNDS** tienen **RECON AUGURY**. \n- Las unidades amigas **RECON AUGURY** tienen la siguiente habilidad: **Enhanced Augurs**: En tu fase de Disparo, esta unidad puede seleccionar una unidad enemiga **visible** que esté a 12\" o menos. Esa unidad enemiga queda **analizada**: \n- Mientras una unidad está **analizada**, esa unidad tiene +3\" de **alcance de detección**."
     },
     {
       "id": "62352e60cebaabaf",
@@ -1174,7 +1174,7 @@
         ]
       },
       "source": "Friendly TECH-PRIEST models have: \n- 4+ InSv. \n- Feel No Pain 5+. \n\nFriendly TECH-PRIEST models have the following ability:\n**Baffling Data Screed**: In your Shooting phase, when this unit is **selected to shoot**, if this unit is not **battle-shocked**, you can use this ability. If you do, roll one D6: \n- On a 2+, select one enemy **VEHICLE** unit within 12\" of this unit. That enemy unit makes a **battle-shock roll**, with -1 to that **battle-shock roll**. A unit cannot be selected for this ability more than once per turn. \n- Or: On 2+, those ranged attacks do not prevent this unit from being **hidden**.",
-      "target": null
+      "target": "Las miniaturas amigas TECH-PRIEST tienen: \n- 4+ InSv. \n- Feel No Pain 5+. \n\nLas miniaturas amigas TECH-PRIEST tienen la siguiente habilidad:\n**Baffling Data Screed**: En tu fase de Disparo, cuando esta unidad es **seleccionada para disparar**, si esta unidad no está **battle-shocked**, puedes usar esta habilidad. Si lo haces, tira un D6: \n- Con un 2+, selecciona una unidad enemiga **VEHICLE** que esté a 12\" o menos de esta unidad. Esa unidad enemiga hace una **tirada de Battle-shock**, con -1 a esa **tirada de Battle-shock**. Una unidad no puede ser seleccionada para esta habilidad más de una vez por turno. \n- O bien: Con un 2+, esos ataques a distancia no impiden que esta unidad esté **oculta**."
     },
     {
       "id": "34b1bba8cd1b7cd7",
@@ -1190,7 +1190,7 @@
         "names": []
       },
       "source": "- Friendly CORPUSCARII units’ ranged attacks have [LETHAL HITS]. \n- When a friendly FULGURITE unit has fought, that unit heals D3 wounds. \nThis detachment has the DATA-PSALM tag and cannot be taken with another DATA-PSALM detachment.",
-      "target": null
+      "target": "- Los ataques a distancia de las unidades amigas CORPUSCARII tienen [LETHAL HITS]. \n- Cuando una unidad amiga FULGURITE ha combatido, esa unidad recupera D3 heridas. \nEste Detachment tiene la etiqueta DATA-PSALM y no puede llevarse junto con otro Detachment DATA-PSALM."
     },
     {
       "id": "c6577b8dca80ec4c",
@@ -1209,7 +1209,7 @@
         ]
       },
       "source": "When mustering your army, if your Army Faction is **^^Adeptus Titanicus^^**, ignore the Select Detachment Rules step. In the Select Warlord step, select one **^^Adeptus Titanicus^^** model from your army to be your **^^Warlord^^**, even though that model does not have the **^^Character^^** keyword. Your army has the Take and Hold force disposition.",
-      "target": null
+      "target": "Al reclutar tu ejército, si tu Army Faction es **^^Adeptus Titanicus^^**, ignora el paso Seleccionar Reglas de Detachment. En el paso Seleccionar Warlord, selecciona una miniatura **^^Adeptus Titanicus^^** de tu ejército para que sea tu **^^Warlord^^**, aunque esa miniatura no tenga la palabra clave **^^Character^^**. Tu ejército tiene la disposición de fuerzas Take and Hold."
     },
     {
       "id": "5a1265c7ce76597a",
@@ -1225,7 +1225,7 @@
         ]
       },
       "source": "If your army contains one or more models with this ability, during the Declare Battle Formations step, select one of those units. While the selected unit is leading a unit, models in that unit have the Infiltrators ability.",
-      "target": null
+      "target": "Si tu ejército contiene una o más miniaturas con esta habilidad, durante el paso Declarar Formaciones de Batalla, selecciona una de esas unidades. Mientras la unidad seleccionada lidera una unidad, las miniaturas de esa unidad tienen la habilidad Infiltrators."
     },
     {
       "id": "28f81b204f301589",
@@ -1239,7 +1239,7 @@
         "names": []
       },
       "source": "If your army includes one or more units with this ability, after both players have deployed their armies, select up to D3 IMPERIUM BATTLELINE units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Si tu ejército incluye una o más unidades con esta habilidad, después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta D3 unidades IMPERIUM BATTLELINE de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "2b1e3e1008d1311c",
@@ -1256,7 +1256,7 @@
         ]
       },
       "source": "While this model is leading a unit, it can embark within any ^^**Transport^^** that its Bodyguard unit can embark within.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, puede embarcar en cualquier ^^**Transport^^** en el que pueda embarcar su unidad Bodyguard."
     },
     {
       "id": "9de3d4843f85c8bf",
@@ -1270,7 +1270,7 @@
         "names": []
       },
       "source": "Each time you target this model’s unit with a Stratagem, roll one D6: on a 3+, you gain 1CP.",
-      "target": null
+      "target": "Cada vez que seleccionas a la unidad de esta miniatura como objetivo de un Stratagem, tira un D6: con un 3+, ganas 1CP."
     },
     {
       "id": "2aeb097d5b80dad7",
@@ -1284,7 +1284,7 @@
         "names": []
       },
       "source": "This model cannot be selected as your WARLORD. If your army faction is AGENTS OF THE IMPERIUM, then during the Declare Battle Formations step, you can replace this model with a different OFFICIO ASSASSINORUM model, provided that the points value of the new model does not exceed the points value of the model it replaced. Your army cannot include duplicates of the same model (i.e. after replacing this model with this rule, your army cannot have more than 1 VINDICARE ASSASSIN, it cannot have more than 1 CULEXUS ASSASSIN, it cannot have more than 1 EVERSOR ASSASSIN and it cannot have more than 1 CALLIDUS ASSASSIN).",
-      "target": null
+      "target": "Esta miniatura no puede ser seleccionada como tu WARLORD. Si tu Army Faction es AGENTS OF THE IMPERIUM, durante el paso Declarar Formaciones de Batalla puedes sustituir esta miniatura por otra miniatura OFFICIO ASSASSINORUM distinta, siempre que el valor en puntos de la nueva miniatura no supere el valor en puntos de la miniatura a la que sustituye. Tu ejército no puede incluir duplicados de la misma miniatura (es decir, tras sustituir esta miniatura con esta regla, tu ejército no puede tener más de 1 VINDICARE ASSASSIN, no puede tener más de 1 CULEXUS ASSASSIN, no puede tener más de 1 EVERSOR ASSASSIN y no puede tener más de 1 CALLIDUS ASSASSIN)."
     },
     {
       "id": "af738594206fec19",
@@ -1300,7 +1300,7 @@
         ]
       },
       "source": "If your army contains one or more units with this ability, during the Declare Battle Formations step, select one of those units. While the selected unit is leading a unit, models in that unit have the Infiltrators ability.",
-      "target": null
+      "target": "Si tu ejército contiene una o más miniaturas con esta habilidad, durante el paso Declarar Formaciones de Batalla, selecciona una de esas unidades. Mientras la unidad seleccionada lidera una unidad, las miniaturas de esa unidad tienen la habilidad Infiltrators."
     },
     {
       "id": "1f35c2271b102026",
@@ -1317,7 +1317,7 @@
         ]
       },
       "source": "If your army includes one or more units with this ability, after both players have deployed their armies, select up to D3 ^^**Imperium Battleline^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Si tu ejército incluye una o más unidades con esta habilidad, después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta D3 unidades ^^**Imperium Battleline^^** de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "d7efcc2afdae4d83",
@@ -1333,7 +1333,7 @@
         ]
       },
       "source": "If your army Faction is not AGENTS OF THE IMPERIUM, but every model in your army has the IMPERIUM keyword, you can include AGENTS OF THE IMPERIUM units in your army even if they do not have the Faction keyword you selected in the Select Army Faction step. In this case, the maximum number of AGENTS OF THE IMPERIUM units you can include in your army depends on the battle size, as shown below.\n\nIncursion: 1 RETINUE, 1 CHARACTER, 1 REQUISITIONED\nStrike Force: 2 RETINUE, 2 CHARACTER, 1 REQUISITIONED\nOnslaught: 3 RETINUE, 3 CHARACTER, 2 REQUISITIONED\n\n\nNote that you can include AGENTS OF THE IMPERIUM DEDICATED TRANSPORT units in such an army as normal, but each unit must start the battle with one or more units embarked within it, or it cannot be deployed for that battle and will count as having been destroyed during the first battle round.",
-      "target": null
+      "target": "Si tu Army Faction no es AGENTS OF THE IMPERIUM, pero todas las miniaturas de tu ejército tienen la palabra clave IMPERIUM, puedes incluir unidades AGENTS OF THE IMPERIUM en tu ejército aunque no tengan la palabra clave de Facción que seleccionaste en el paso Seleccionar Army Faction. En ese caso, el número máximo de unidades AGENTS OF THE IMPERIUM que puedes incluir en tu ejército depende del tamaño de la partida, como se muestra a continuación.\n\nIncursion: 1 RETINUE, 1 CHARACTER, 1 REQUISITIONED\nStrike Force: 2 RETINUE, 2 CHARACTER, 1 REQUISITIONED\nOnslaught: 3 RETINUE, 3 CHARACTER, 2 REQUISITIONED\n\n\nTen en cuenta que puedes incluir unidades AGENTS OF THE IMPERIUM DEDICATED TRANSPORT en un ejército así con normalidad, pero cada unidad debe empezar la batalla con una o más unidades embarcadas en ella, o no podrá desplegarse en esa batalla y contará como destruida durante la primera ronda de batalla."
     },
     {
       "id": "9be736fcc3f2b0af",
@@ -1358,7 +1358,7 @@
         ]
       },
       "source": "Each time an attack targets this unit, if it contains models with different Toughness characteristics, until the attacking unit has finished making its attacks, use the Toughness characteristic of the majority of the models in that unit when determining what roll is required for that attack to successfully wound. If two or more Toughness characteristics are tied for majority, use the highest value. \nFor the purposes of determining which models in this unit can embark within a TRANSPORT, Kill Team Terminator models, Kill Team Outrider models, Kill Team Biker models and models equipped with a jump pack each take up the space of 2 models, but can otherwise embark within any TRANSPORT their unit can embark within, even though similar models in other units have the TERMINATOR, MOUNTED or JUMP PACK keywords. \nFor the purposes of interacting with terrain features, all models in units with this ability are considered Infantry models, even though similar models in other units may have the Mounted or Jump Pack keywords. \n**Designer’s Note**: *While the abstractions in the above rule cause some models to behave differently to similar models in other units, they are designed to minimise complicated movement, Transport and Benefit of Cover rules.*",
-      "target": null
+      "target": "Cada vez que un ataque tiene como objetivo esta unidad, si contiene miniaturas con características de Resistencia diferentes, hasta que la unidad atacante haya terminado de realizar sus ataques, usa la característica de Resistencia de la mayoría de las miniaturas de esa unidad al determinar qué resultado se necesita para que ese ataque hiera con éxito. Si dos o más características de Resistencia empatan como mayoría, usa el valor más alto. \nA efectos de determinar qué miniaturas de esta unidad pueden embarcar en un TRANSPORT, las miniaturas Kill Team Terminator, las miniaturas Kill Team Outrider, las miniaturas Kill Team Biker y las miniaturas equipadas con un jump pack ocupan cada una el espacio de 2 miniaturas, pero por lo demás pueden embarcar en cualquier TRANSPORT en el que pueda embarcar su unidad, aunque miniaturas similares de otras unidades tengan las palabras clave TERMINATOR, MOUNTED o JUMP PACK. \nA efectos de interactuar con los elementos de escenografía, todas las miniaturas de las unidades con esta habilidad se consideran miniaturas Infantry, aunque miniaturas similares de otras unidades puedan tener las palabras clave Mounted o Jump Pack. \n**Nota del diseñador**: *Aunque las abstracciones de la regla anterior hacen que algunas miniaturas se comporten de forma distinta a miniaturas similares de otras unidades, están diseñadas para minimizar las reglas complicadas de movimiento, de Transport y de beneficio de cobertura.*"
     },
     {
       "id": "5c3a372a2bc0375d",
@@ -1372,7 +1372,7 @@
         "names": []
       },
       "source": "Once per battle, when selecting targets for this model’s exitus rifle, it can fire a shieldbreaker round. If it does, until the end of the phase, each time this model makes an attack with that weapon, add 1 to the Wound roll and any successful Wound roll scores a Critical Wound.",
-      "target": null
+      "target": "Una vez por batalla, al seleccionar objetivos para el exitus rifle de esta miniatura, puede disparar una shieldbreaker round. Si lo hace, hasta el final de la fase, cada vez que esta miniatura realiza un ataque con esa arma, suma 1 a la tirada para herir y cualquier tirada para herir con éxito consigue una herida crítica."
     },
     {
       "id": "070a8f63464a829b",
@@ -1388,7 +1388,7 @@
         ]
       },
       "source": "When this unit is **selected to shoot**, until this unit has shot: \n- Enemy units do not have Lone Operative. \n- Hidden enemy units have +15\" detection range.'",
-      "target": null
+      "target": "Cuando esta unidad es **seleccionada para disparar**, hasta que esta unidad haya disparado: \n- Las unidades enemigas no tienen Lone Operative. \n- Las unidades enemigas ocultas tienen +15\" de alcance de detección.'"
     },
     {
       "id": "51506e84e1368b4e",
@@ -1405,7 +1405,7 @@
         "names": []
       },
       "source": "This model’s exitus rifle has the [ANTI‑MONSTER 4+] and [ANTI‑VEHICLE 4+] abilities.",
-      "target": null
+      "target": "El exitus rifle de esta miniatura tiene las habilidades [ANTI‑MONSTER 4+] y [ANTI‑VEHICLE 4+]."
     },
     {
       "id": "72ec27074c70036e",
@@ -1422,7 +1422,7 @@
         ]
       },
       "source": "This model has the Feel No Pain 2+ ability against Psychic Attacks.",
-      "target": null
+      "target": "Esta miniatura tiene la habilidad Feel No Pain 2+ contra ataques psíquicos."
     },
     {
       "id": "53cccb9643c2033b",
@@ -1436,7 +1436,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any Command phase, this model can use this ability. If it does, each enemy unit within 9\" of this model must take a Battle-shock test, subtracting 1 from that test (or subtracting 2 if that unit is a PSYKER).",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase de Mando, esta miniatura puede usar esta habilidad. Si lo hace, cada unidad enemiga que esté a 9\" o menos de esta miniatura debe hacer un test de Battle-shock, restando 1 a ese test (o restando 2 si esa unidad es un PSYKER)."
     },
     {
       "id": "29d34923b921d9c6",
@@ -1452,7 +1452,7 @@
         ]
       },
       "source": "In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can perform an etheric emergence. If it does, this model can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge.",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando esta miniatura se despliega en el campo de batalla usando la habilidad Deep Strike, puede realizar una etheric emergence. Si lo hace, esta miniatura puede desplegarse en cualquier lugar del campo de batalla que esté a más de 6\" en horizontal de todas las unidades enemigas, pero hasta el final del turno no es elegible para declarar una carga."
     },
     {
       "id": "9219560d72f1d474",
@@ -1468,7 +1468,7 @@
         ]
       },
       "source": "Each time you select a **^^Psyker^^** unit as the target for this weapon, until those attacks are resolved, change the Attacks characteristic of this weapon to 6.",
-      "target": null
+      "target": "Cada vez que seleccionas una unidad **^^Psyker^^** como objetivo de esta arma, hasta que se resuelvan esos ataques, cambia la característica de Ataques de esta arma a 6."
     },
     {
       "id": "6102f6a1ec7f60a6",
@@ -1484,7 +1484,7 @@
         ]
       },
       "source": "Each time this model is targeted with the Grenades Stratagem, 1 mortal wound is inflicted for each D6 roll of 3+ instead of for each 4+",
-      "target": null
+      "target": "Cada vez que esta miniatura es seleccionada como objetivo del Stratagem Grenades, se inflige 1 herida mortal por cada resultado de 3+ en el D6 en lugar de por cada 4+"
     },
     {
       "id": "d8a2c17ebf90bb61",
@@ -1498,7 +1498,7 @@
         "names": []
       },
       "source": "This model is eligible to shoot and declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Esta miniatura es elegible para disparar y para declarar una carga en un turno en el que haya avanzado."
     },
     {
       "id": "fb6cd97d9ea30289",
@@ -1512,7 +1512,7 @@
         "names": []
       },
       "source": "Once per battle, in your Movement phase, this model can use this ability before it makes a Normal move. If it does, until the end of the turn, add 6\" to this model's Movement characteristic and add 3 to the Attacks characteristic of this model's melee weapons.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Movimiento, esta miniatura puede usar esta habilidad antes de realizar un movimiento normal. Si lo hace, hasta el final del turno, suma 6\" a la característica de Movimiento de esta miniatura y suma 3 a la característica de Ataques de las armas cuerpo a cuerpo de esta miniatura."
     },
     {
       "id": "8a2f050de5109e4c",
@@ -1526,7 +1526,7 @@
         "names": []
       },
       "source": "Once per battle round, you can target this model with the Heroic Intervention or Counter‑offensive Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase.",
-      "target": null
+      "target": "Una vez por ronda de batalla, puedes seleccionar esta miniatura como objetivo del Stratagem Heroic Intervention o Counter-offensive por 0CP, y puedes hacerlo incluso si ya has usado ese Stratagem en otra unidad esta fase."
     },
     {
       "id": "7eb23ef9c3aa3a0f",
@@ -1540,7 +1540,7 @@
         "names": []
       },
       "source": "Once per turn, when your opponent targets a unit from their army within 12” of this model with a **stratagem**, this model can use this ability. If you do increase the CP cost of that use of that **stratagem** by 1CP.",
-      "target": null
+      "target": "Una vez por turno, cuando tu oponente selecciona como objetivo de un **stratagem** una unidad de su ejército que esté a 12” o menos de esta miniatura, esta miniatura puede usar esta habilidad. Si lo haces, incrementa en 1CP el coste en CP de ese uso de ese **stratagem**."
     },
     {
       "id": "084a41ca93255f30",
@@ -1554,7 +1554,7 @@
         "names": []
       },
       "source": "- At the end of the Fight phase, if this unit is engaged, this unit can make a fall-back move of up to D6\". \n- At the end of your opponent’s turn, if this unit is more than 3\" from all enemy units, you can use this ability. If you do: \n- Place this unit in strategic reserves. \n- This unit must make an ingress move in your next Movement phase (including in your first turn).",
-      "target": null
+      "target": "- Al final de la fase de Combate, si esta unidad está trabada, esta unidad puede realizar un movimiento de repliegue de hasta D6\". \n- Al final del turno de tu oponente, si esta unidad está a más de 3\" de todas las unidades enemigas, puedes usar esta habilidad. Si lo haces: \n- Coloca esta unidad en reservas estratégicas. \n- Esta unidad debe realizar un movimiento de entrada en tu siguiente fase de Movimiento (incluido en tu primer turno)."
     },
     {
       "id": "146d880091a1a3b5",
@@ -1570,7 +1570,7 @@
         ]
       },
       "source": "Twice per battle, in your Movement phase, you can select one other friendly INFANTRY model that is on the battlefield and not within Engagement Range of one or more enemy units. The selected model is destroyed (ignoring any rules that are triggered when a model is destroyed) and this model is removed from the battlefield and set up again as close as possible to where that destroyed model was and not within Engagement Range of one or more enemy units. This ability cannot be used more than once in the same battle round.",
-      "target": null
+      "target": "Dos veces por batalla, en tu fase de Movimiento, puedes seleccionar otra miniatura amiga INFANTRY que esté en el campo de batalla y no esté dentro del alcance de combate de una o más unidades enemigas. La miniatura seleccionada es destruida (ignorando cualquier regla que se active cuando una miniatura es destruida) y esta miniatura se retira del campo de batalla y se vuelve a desplegar lo más cerca posible de donde estaba esa miniatura destruida y fuera del alcance de combate de una o más unidades enemigas. Esta habilidad no puede usarse más de una vez en la misma ronda de batalla."
     },
     {
       "id": "53c7d8ae245ab61c",
@@ -1584,7 +1584,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS"
     },
     {
       "id": "e21dea2e1cc566f8",
@@ -1598,7 +1598,7 @@
         "names": []
       },
       "source": "If your army contains one or more models with this ability, after both players have deployed their armies, select up to D3 IMPERIUM BATTLELINE units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserve, regardless of how many units are already in Strategic Reserve.",
-      "target": null
+      "target": "Si tu ejército contiene una o más miniaturas con esta habilidad, después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta D3 unidades IMPERIUM BATTLELINE de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "079b0fd046112110",
@@ -1612,7 +1612,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, if the bearer's unit is below its Starting Strength, you can return up to D3 destroyed models (excluding CHARACTERS) to the bearer's unit.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, si la unidad del portador está por debajo de su Starting Strength, puedes devolver hasta D3 miniaturas destruidas (excluyendo las CHARACTERS) a la unidad del portador."
     },
     {
       "id": "61f0c1a8e395f834",
@@ -1628,7 +1628,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, that attack has the [LETHAL HITS] ability.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que tiene como objetivo el objetivo elegible más cercano, ese ataque tiene la habilidad [LETHAL HITS]."
     },
     {
       "id": "df3ac6d25aa718db",
@@ -1642,7 +1642,7 @@
         "names": []
       },
       "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each VOIDFARERS CHARACTER unit you include in your army, you can include one VOIDSMEN-AT-ARMS unit in your army that does not count towards the number of RETINUE units your army can include.",
-      "target": null
+      "target": "Si tu Army Faction no es AGENTS OF THE IMPERIUM, por cada unidad VOIDFARERS CHARACTER que incluyas en tu ejército puedes incluir en tu ejército una unidad VOIDSMEN-AT-ARMS que no cuenta para el número de unidades RETINUE que tu ejército puede incluir."
     },
     {
       "id": "13d63de7c945164b",
@@ -1656,7 +1656,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Wound roll instead.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, repite las tiradas para herir de 1. Si el objetivo de ese ataque es una unidad enemiga que está dentro del alcance de un marcador de objetivo, puedes repetir la tirada para herir en su lugar."
     },
     {
       "id": "48766dd64f5b5e19",
@@ -1672,7 +1672,7 @@
         ]
       },
       "source": "Once per battle, when you select this unit as the target of the Grenade Stratagem, you can target one enemy unit visible to and within 18\" of this unit that is not within Engagement Range of any units from your army, instead of one within 8\".",
-      "target": null
+      "target": "Una vez por batalla, cuando seleccionas esta unidad como objetivo del Stratagem Grenade, puedes seleccionar como objetivo una unidad enemiga que sea visible para esta unidad y esté a 18\" o menos de ella y que no esté dentro del alcance de combate de ninguna unidad de tu ejército, en lugar de una que esté a 8\" o menos."
     },
     {
       "id": "7d748c21b4d65ef1",
@@ -1691,7 +1691,7 @@
         ]
       },
       "source": "Once per battle, when this unit is selected to shoot, until the end of the phase, ranged weapons equipped by this unit gain the [Ignores Cover] ability.",
-      "target": null
+      "target": "Una vez por batalla, cuando esta unidad es seleccionada para disparar, hasta el final de la fase, las armas a distancia equipadas por esta unidad ganan la habilidad [Ignores Cover]."
     },
     {
       "id": "510f622298d6c863",
@@ -1705,7 +1705,7 @@
         "names": []
       },
       "source": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad es destruida por un ataque cuerpo a cuerpo, si esa miniatura no ha combatido esta fase, tira un D6: con un 4+, no la retires del juego. La miniatura destruida puede combatir después de que la unidad de la miniatura atacante haya terminado de realizar sus ataques, y después se retira del juego."
     },
     {
       "id": "dbea4f42388e5fe3",
@@ -1719,7 +1719,7 @@
         "names": []
       },
       "source": "Once per battle, at the start of any Command phase, you can select one objective marker within 6\" of the bearer. All enemy units (excluding MONSTERS and VEHICLES) within range of that objective marker must take a Battle-shock test. Each objective marker can only be targeted by this ability once per turn.",
-      "target": null
+      "target": "Una vez por batalla, al inicio de cualquier fase de Mando, puedes seleccionar un marcador de objetivo que esté a 6\" o menos del portador. Todas las unidades enemigas (excluyendo MONSTERS y VEHICLES) que estén dentro del alcance de ese marcador de objetivo deben hacer un test de Battle-shock. Cada marcador de objetivo solo puede ser seleccionado como objetivo de esta habilidad una vez por turno."
     },
     {
       "id": "0912dbe721aee69a",
@@ -1739,7 +1739,7 @@
         ]
       },
       "source": "At the start of the battle, select one unit from your opponent's army. Each time a model in this unit makes an attack that targets that unit, that attack has the [Lethal Hits] and [Precision] abilities.",
-      "target": null
+      "target": "Al inicio de la batalla, selecciona una unidad del ejército de tu oponente. Cada vez que una miniatura de esta unidad realiza un ataque que tiene como objetivo esa unidad, ese ataque tiene las habilidades [Lethal Hits] y [Precision]."
     },
     {
       "id": "de8f6d02212848a9",
@@ -1753,7 +1753,7 @@
         "names": []
       },
       "source": "At the start of your Command phase, if the bearer's unit is below its Starting Strength, you can return up to D3 destroyed Exaction Vigilants to this unit.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, si la unidad del portador está por debajo de su Starting Strength, puedes devolver hasta D3 Exaction Vigilants destruidos a esta unidad."
     },
     {
       "id": "7eb74cd48c48bc51",
@@ -1771,7 +1771,7 @@
         ]
       },
       "source": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas de la unidad del portador tienen la habilidad [IGNORES COVER]."
     },
     {
       "id": "92bbbaea40b301df",
@@ -1785,7 +1785,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes a ranged attack that targets a unit that is Below Half-strength, add 1 to the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque a distancia que tiene como objetivo una unidad que está Below Half-strength, suma 1 a la tirada para herir."
     },
     {
       "id": "01e2954da9e85e68",
@@ -1799,7 +1799,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes an attack that targets an enemy unit that does not have the IMPERIUM or CHAOS keywords, add 1 to the Hit roll.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque que tiene como objetivo una unidad enemiga que no tiene las palabras clave IMPERIUM o CHAOS, suma 1 a la tirada para impactar."
     },
     {
       "id": "ae215cfdca85406e",
@@ -1813,7 +1813,7 @@
         "names": []
       },
       "source": "In your Command phase, this PSYKER can use this ability. If it does, roll one D6: on a 1, this PSYKER’s unit suffers D3 mortal wounds; on a 2+, until the start of your next Command phase, this PSYKER’s unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
-      "target": null
+      "target": "En tu fase de Mando, este PSYKER puede usar esta habilidad. Si lo hace, tira un D6: con un 1, la unidad de este PSYKER sufre D3 heridas mortales; con un 2+, hasta el inicio de tu siguiente fase de Mando, la unidad de este PSYKER solo puede ser seleccionada como objetivo de un ataque a distancia si la miniatura atacante está a 18\" o menos."
     },
     {
       "id": "82df026effd6a9b4",
@@ -1827,7 +1827,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: AQUILA KILL TEAM,  BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SUBDUCTOR SQUAD, VIGILANT SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: AQUILA KILL TEAM,  BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SUBDUCTOR SQUAD, VIGILANT SQUAD"
     },
     {
       "id": "6a3ff20cd938da6f",
@@ -1843,7 +1843,7 @@
         ]
       },
       "source": "While this model is leading a unit, models in that unit have a 6+ invulnerable save, and 4+ invulnerable save against Psychic Attacks and attacks made by DAEMON models.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen una salvación invulnerable de 6+, y una salvación invulnerable de 4+ contra ataques psíquicos y contra ataques realizados por miniaturas DAEMON."
     },
     {
       "id": "9f00a29684b187f0",
@@ -1857,7 +1857,7 @@
         "names": []
       },
       "source": "Each time your opponent gains a CP as the result of an ability, roll one D6: on a 2+, you also gain 1CP.",
-      "target": null
+      "target": "Cada vez que tu oponente gana un CP como resultado de una habilidad, tira un D6: con un 2+, tú también ganas 1CP."
     },
     {
       "id": "5a7f54c7de82ae68",
@@ -1871,7 +1871,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SUBDUCTOR SQUAD, VIGILANT SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SUBDUCTOR SQUAD, VIGILANT SQUAD"
     },
     {
       "id": "bf832cc259f44570",
@@ -1887,7 +1887,7 @@
         ]
       },
       "source": "In your Command phase, you can select one enemy unit within 18\" of the bearer. Until the start of your next Command phase, that unit cannot have the Benefit of Cover.",
-      "target": null
+      "target": "En tu fase de Mando, puedes seleccionar una unidad enemiga que esté a 18\" o menos del portador. Hasta el inicio de tu siguiente fase de Mando, esa unidad no puede tener el beneficio de cobertura."
     },
     {
       "id": "62829b3ac9d8b30c",
@@ -1903,7 +1903,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ANTI-PSYKER 4+] ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [ANTI-PSYKER 4+]."
     },
     {
       "id": "c0b0a9e2033f715e",
@@ -1917,7 +1917,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, each time a model in that unit makes an attack that targets a unit that is Below Half-strength, add 1 to the Hit roll.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, cada vez que una miniatura de esa unidad realiza un ataque que tiene como objetivo una unidad que está Below Half-strength, suma 1 a la tirada para impactar."
     },
     {
       "id": "13235150e4cf60c8",
@@ -1931,7 +1931,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD"
     },
     {
       "id": "ef90c75cb350a0ad",
@@ -1950,7 +1950,7 @@
         ]
       },
       "source": "At the start of the Declare Battle Formations step, you can select up to 3 ^^**Agents of the Imperium Infantry^^** units from your army, or one ^^**Imperium Battleline^^** unit from your army - those units gain the Scouts 6\" ability.",
-      "target": null
+      "target": "Al inicio del paso Declarar Formaciones de Batalla, puedes seleccionar hasta 3 unidades ^^**Agents of the Imperium Infantry^^** de tu ejército, o una unidad ^^**Imperium Battleline^^** de tu ejército - esas unidades ganan la habilidad Scouts 6\"."
     },
     {
       "id": "3a304abf6f141f69",
@@ -1964,7 +1964,7 @@
         "names": []
       },
       "source": "While a friendly unit is within 6\" of this model, improve the Leadership characteristic of models in that unit by 1. While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1.",
-      "target": null
+      "target": "Mientras una unidad amiga está a 6\" o menos de esta miniatura, mejora en 1 la característica de Leadership de las miniaturas de esa unidad. Mientras una unidad enemiga está a 6\" o menos de esta miniatura, empeora en 1 la característica de Leadership de las miniaturas de esa unidad."
     },
     {
       "id": "640843001a56d6d2",
@@ -1978,7 +1978,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: AQUILA KILL TEAM, BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: AQUILA KILL TEAM, BATTLELINE IMPERIUM INFANTRY, EXACTION SQUAD, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD"
     },
     {
       "id": "b935bc9fe746ec80",
@@ -1992,7 +1992,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, models in that unit have a 6+ invulnerable save.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las miniaturas de esa unidad tienen una salvación invulnerable de 6+."
     },
     {
       "id": "e825f00f58accca9",
@@ -2006,7 +2006,7 @@
         "names": []
       },
       "source": "The bearer has the PSYKER keyword.",
-      "target": null
+      "target": "El portador tiene la palabra clave PSYKER."
     },
     {
       "id": "321222b608a13eb6",
@@ -2020,7 +2020,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: DAEMONHOST, DEATHWATCH KILL TEAM, DEATHWATCH TERMINATOR SQUAD, EXACTION SQUAD, FORTIS KILL TEAM, IMPERIAL NAVY BREACHERS, INDOMITOR KILL TEAM, INQUISITORIAL AGENTS, PROTEUS KILL TEAM, SPECTRUS KILL TEAM, SUBDUCTOR SQUAD, VIGILANT SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: DAEMONHOST, DEATHWATCH KILL TEAM, DEATHWATCH TERMINATOR SQUAD, EXACTION SQUAD, FORTIS KILL TEAM, IMPERIAL NAVY BREACHERS, INDOMITOR KILL TEAM, INQUISITORIAL AGENTS, PROTEUS KILL TEAM, SPECTRUS KILL TEAM, SUBDUCTOR SQUAD, VIGILANT SQUAD"
     },
     {
       "id": "522935daf90fad54",
@@ -2036,7 +2036,7 @@
         ]
       },
       "source": "While this model is leading a unit, double the Attacks characteristic of weapons equipped by Daemonhost models in that unit.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, duplica la característica de Ataques de las armas equipadas por las miniaturas Daemonhost de esa unidad."
     },
     {
       "id": "569a8cee5e4d35ae",
@@ -2050,7 +2050,7 @@
         "names": []
       },
       "source": "At the start of your opponent’s Shooting phase, select one enemy INFANTRY unit that is within 12\" of and visible to this model and roll one D6: on a 1, this model suffers D3 mortal wounds; on a 2-5, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; on a 6, until the end of the phase, that unit is not eligible to shoot.",
-      "target": null
+      "target": "Al inicio de la fase de Disparo de tu oponente, selecciona una unidad enemiga INFANTRY que esté a 12\" o menos de esta miniatura y sea visible para ella, y tira un D6: con un 1, esta miniatura sufre D3 heridas mortales; con un 2-5, hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar; con un 6, hasta el final de la fase, esa unidad no es elegible para disparar."
     },
     {
       "id": "2738546df6e7c8ea",
@@ -2066,7 +2066,7 @@
         ]
       },
       "source": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this model, if this model is not within Engagement Range of one or more enemy units, it can make a Normal move.",
-      "target": null
+      "target": "Una vez por turno, cuando una unidad enemiga termina un movimiento normal, de avance o de repliegue a 9\" o menos de esta miniatura, si esta miniatura no está dentro del alcance de combate de una o más unidades enemigas, puede realizar un movimiento normal."
     },
     {
       "id": "0908832c4a10c0ed",
@@ -2080,7 +2080,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS"
     },
     {
       "id": "f26b8e6ec4470083",
@@ -2094,7 +2094,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test, subtracting 1 from the result when doing so.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta unidad haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Esa unidad enemiga debe hacer un test de Battle-shock, restando 1 al resultado al hacerlo."
     },
     {
       "id": "643878604051e410",
@@ -2108,7 +2108,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: DEATHWATCH KILL TEAM, DEATHWATCH TERMINATOR SQUAD, EXACTION SQUAD, FORTIS KILL TEAM, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INDOMITOR KILL TEAM, INQUISITORIAL AGENTS, PROTEUS KILL TEAM, SISTERS OF BATTLE SQUAD, SPECTRUS KILL TEAM, SUBDUCTOR SQUAD, VIGILANT SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: DEATHWATCH KILL TEAM, DEATHWATCH TERMINATOR SQUAD, EXACTION SQUAD, FORTIS KILL TEAM, GREY KNIGHTS TERMINATOR SQUAD, IMPERIAL NAVY BREACHERS, INDOMITOR KILL TEAM, INQUISITORIAL AGENTS, PROTEUS KILL TEAM, SISTERS OF BATTLE SQUAD, SPECTRUS KILL TEAM, SUBDUCTOR SQUAD, VIGILANT SQUAD"
     },
     {
       "id": "9f210b9768517f54",
@@ -2129,7 +2129,7 @@
         ]
       },
       "source": "At the start of your Command phase, you can select one of the Mission Tactics found below. Until the start of your next Command phase, that Mission Tactic is active and its effects apply to all ^^Deathwatch^^ units in your army. Each Mission Tactic can only be selected once per battle.\n\n\n**Furor Tactics**\nWhile this Mission Tactic is active, weapons equipped by ^^Deathwatch^^ units from your army have the [SUSTAINED HITS 1] ability.\n\n\n**Malleus Tactics**\nWhile this Mission Tactic is active, weapons equipped by ^^Deathwatch^^ units from your army have the [LETHAL HITS] ability.\n\n\n**Purgatus Tactics**\nWhile this Mission Tactic is active, each time a ^^Deathwatch^^ model from your army makes an attack, on a Critical Wound, that attack has the [PRECISION] ability.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, puedes seleccionar una de las Mission Tactics indicadas a continuación. Hasta el inicio de tu siguiente fase de Mando, esa Mission Tactic está activa y sus efectos se aplican a todas las unidades ^^Deathwatch^^ de tu ejército. Cada Mission Tactic solo puede seleccionarse una vez por batalla.\n\n\n**Furor Tactics**\nMientras esta Mission Tactic está activa, las armas equipadas por las unidades ^^Deathwatch^^ de tu ejército tienen la habilidad [SUSTAINED HITS 1].\n\n\n**Malleus Tactics**\nMientras esta Mission Tactic está activa, las armas equipadas por las unidades ^^Deathwatch^^ de tu ejército tienen la habilidad [LETHAL HITS].\n\n\n**Purgatus Tactics**\nMientras esta Mission Tactic está activa, cada vez que una miniatura ^^Deathwatch^^ de tu ejército realiza un ataque, con una herida crítica ese ataque tiene la habilidad [PRECISION]."
     },
     {
       "id": "8445fcf20349213d",
@@ -2153,7 +2153,7 @@
         ]
       },
       "source": "Ranged weapons equipped by ^^Adeptus Arbites, Inquisitor, Inquisitorial Agents^^ and ^^Ordo Hereticus^^ models from your army have the [IGNORES COVER] ability.\n\n\nEach time an ^^Adeptus Arbites, Inquisitor, Inquisitorial Agents^^ or ^^Ordo Hereticus^^ model from your army makes an attack that targets a ^^Chaos^^ unit containing 5 or more models, that attack has the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por las miniaturas ^^Adeptus Arbites, Inquisitor, Inquisitorial Agents^^ y ^^Ordo Hereticus^^ de tu ejército tienen la habilidad [IGNORES COVER].\n\n\nCada vez que una miniatura ^^Adeptus Arbites, Inquisitor, Inquisitorial Agents^^ u ^^Ordo Hereticus^^ de tu ejército realiza un ataque que tiene como objetivo una unidad ^^Chaos^^ que contiene 5 o más miniaturas, ese ataque tiene la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "aef47260a68c5c9d",
@@ -2172,7 +2172,7 @@
         ]
       },
       "source": "Each time an ^^Inquisitor, Inquisitorial Agents^^ or ^^Ordo Malleus^^ model from your army makes an attack, re-roll a Hit roll of 1 and, if the target is a ^^Daemon^^ unit, re-roll a Wound roll of 1 as well.",
-      "target": null
+      "target": "Cada vez que una miniatura ^^Inquisitor, Inquisitorial Agents^^ u ^^Ordo Malleus^^ de tu ejército realiza un ataque, repite las tiradas para impactar de 1 y, si el objetivo es una unidad ^^Daemon^^, repite también las tiradas para herir de 1."
     },
     {
       "id": "c9832ea94541bfb9",
@@ -2189,7 +2189,7 @@
         ]
       },
       "source": "At the start of your Command phase, you can select one of the following to apply:\n\n\n**Eliminate At All Costs**\nSelect one enemy unit on the battlefield. Until the start of your next Command phase, each time an ^^Agents of the Imperium^^ model from your army makes an attack that targets that enemy unit, add 1 to the Hit roll.\n\n\n**Acquire At All Costs**\nSelect one objective marker on the battlefield. Until the start of your next Command phase, while an ^^Agents of the Imperium^^ unit from your army is within range of that objective marker, improve the Leadership and Objective Control characteristics of models in that unit by 1 and models in that unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Al inicio de tu fase de Mando, puedes seleccionar uno de los siguientes efectos para aplicarlo:\n\n\n**Eliminate At All Costs**\nSelecciona una unidad enemiga en el campo de batalla. Hasta el inicio de tu siguiente fase de Mando, cada vez que una miniatura ^^Agents of the Imperium^^ de tu ejército realiza un ataque que tiene como objetivo esa unidad enemiga, suma 1 a la tirada para impactar.\n\n\n**Acquire At All Costs**\nSelecciona un marcador de objetivo en el campo de batalla. Hasta el inicio de tu siguiente fase de Mando, mientras una unidad ^^Agents of the Imperium^^ de tu ejército esté dentro del alcance de ese marcador de objetivo, mejora en 1 las características de Leadership y de Control de Objetivos de las miniaturas de esa unidad y las miniaturas de esa unidad tienen una salvación invulnerable de 5+."
     },
     {
       "id": "7b9332456d55e33e",
@@ -2209,7 +2209,7 @@
         ]
       },
       "source": "^^Officio Assassinorum^^ units from your army can use the Overkill, Soulless Horror and Shieldbreaker abilities twice per battle, instead of once per battle (but cannot use such an ability more than once in the same battle round). \n\nWhen mustering your army, each ^^Officio Assassinorum^^ unit from your army has the relevant Extremis ability, and you must increase the points cost of each of those units by the amount shown. If this causes your army to exceed the points limit for the battle you are playing, you cannot include that unit in your army.",
-      "target": null
+      "target": "Las unidades ^^Officio Assassinorum^^ de tu ejército pueden usar las habilidades Overkill, Soulless Horror y Shieldbreaker dos veces por batalla, en lugar de una vez por batalla (pero no pueden usar una de esas habilidades más de una vez en la misma ronda de batalla). \n\nAl reclutar tu ejército, cada unidad ^^Officio Assassinorum^^ de tu ejército tiene la habilidad Extremis correspondiente, y debes incrementar el coste en puntos de cada una de esas unidades en la cantidad indicada. Si esto hace que tu ejército supere el límite de puntos de la batalla que vas a jugar, no puedes incluir esa unidad en tu ejército."
     },
     {
       "id": "5877897e0b406f6b",
@@ -2223,7 +2223,7 @@
         "names": []
       },
       "source": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to this model. That enemy unit must take a Battle-shock test, subtracting 2 from the result if it is an INFANTRY unit; if the test is failed, that enemy unit suffers 3 mortal wounds.",
-      "target": null
+      "target": "Al inicio de tu fase de Disparo, selecciona una unidad enemiga que esté a 12\" o menos de esta miniatura y sea visible para ella. Esa unidad enemiga debe hacer un test de Battle-shock, restando 2 al resultado si es una unidad INFANTRY; si falla el test, esa unidad enemiga sufre 3 heridas mortales."
     },
     {
       "id": "5af371356b076a98",
@@ -2237,7 +2237,7 @@
         "names": []
       },
       "source": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model.",
-      "target": null
+      "target": "Las unidades enemigas que se desplieguen en el campo de batalla como Refuerzos no se pueden desplegar a 12\" o menos de esta miniatura."
     },
     {
       "id": "fb0d05609898a55c",
@@ -2251,7 +2251,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: IMPERIAL NAVY BREACHERS, VOIDSMEN-AT-ARMS"
     },
     {
       "id": "73d184b9dd1dbd54",
@@ -2267,7 +2267,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, melee weapons equipped by that unit have the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las armas cuerpo a cuerpo equipadas por esa unidad tienen la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "9220f043ce47f7dc",
@@ -2281,7 +2281,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: EXACTION SQUAD, IMPERIAL NAVY BREACHERS, INQUISITORIAL AGENTS, SANCTIFIERS, SISTERS OF BATTLE SQUAD, SUBDUCTOR SQUAD, VIGILANT SQUAD"
     },
     {
       "id": "056d879f7e3a4d17",
@@ -2295,7 +2295,7 @@
         "names": []
       },
       "source": "While an INQUISITOR model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Mientras una miniatura INQUISITOR lidera esta unidad, cada vez que un ataque tiene como objetivo esta unidad, resta 1 a la tirada para herir."
     },
     {
       "id": "5269329b082955cd",
@@ -2309,7 +2309,7 @@
         "names": []
       },
       "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each INQUISITOR unit you include in your army, you can include one INQUISITORIAL AGENTS unit in your army that does not count towards the number of RETINUE units your army can include.",
-      "target": null
+      "target": "Si tu Army Faction no es AGENTS OF THE IMPERIUM, por cada unidad INQUISITOR que incluyas en tu ejército puedes incluir en tu ejército una unidad INQUISITORIAL AGENTS que no cuenta para el número de unidades RETINUE que tu ejército puede incluir."
     },
     {
       "id": "7278ff5a4846a164",
@@ -2325,7 +2325,7 @@
         ]
       },
       "source": "Once per battle for each Tome-skull this unit is equipped with, at the start of any phase, you can select one other friendly AGENTS OF THE IMPERIUM unit that is Battle-shocked and within 6\" of this unit or one enemy unit within 6\" of this unit. If you select a friendly unit, that unit is no longer Battle-shocked. If you select an enemy unit, it must take a Battle-shock test.",
-      "target": null
+      "target": "Una vez por batalla por cada Tome-skull con el que esté equipada esta unidad, al inicio de cualquier fase, puedes seleccionar otra unidad amiga AGENTS OF THE IMPERIUM que esté Battle-shocked y a 6\" o menos de esta unidad, o una unidad enemiga que esté a 6\" o menos de esta unidad. Si seleccionas una unidad amiga, esa unidad deja de estar Battle-shocked. Si seleccionas una unidad enemiga, debe hacer un test de Battle-shock."
     },
     {
       "id": "0c19844190f06d55",
@@ -2341,7 +2341,7 @@
         ]
       },
       "source": "If one or more INQUISITOR units are attached to this unit during the Declare Battle Formations step, models in those units have the Deep Strike ability.",
-      "target": null
+      "target": "Si una o más unidades INQUISITOR se adjuntan a esta unidad durante el paso Declarar Formaciones de Batalla, las miniaturas de esas unidades tienen la habilidad Deep Strike."
     },
     {
       "id": "ab55546d2972b438",
@@ -2357,7 +2357,7 @@
         "names": []
       },
       "source": "Each time this unit makes a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [LETHAL HITS] ability.",
-      "target": null
+      "target": "Cada vez que esta unidad realiza un movimiento de carga, hasta el final del turno, las armas cuerpo a cuerpo equipadas por las miniaturas de esta unidad tienen la habilidad [LETHAL HITS]."
     },
     {
       "id": "9ea6bb07f7250627",
@@ -2371,7 +2371,7 @@
         "names": []
       },
       "source": "In your Command phase, you can return 1 destroyed model (excluding CHARACTERS) to the bearer's unit.",
-      "target": null
+      "target": "En tu fase de Mando, puedes devolver 1 miniatura destruida (excluyendo las CHARACTERS) a la unidad del portador."
     },
     {
       "id": "666117db9ace0b5b",
@@ -2385,7 +2385,7 @@
         "names": []
       },
       "source": "Units can disembark from this TRANSPORT after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally.",
-      "target": null
+      "target": "Las unidades pueden desembarcar de este TRANSPORT después de que haya avanzado. Las unidades que lo hagan cuentan como si hubieran realizado un movimiento normal esa fase, y no pueden declarar una carga en el mismo turno, pero por lo demás pueden actuar con normalidad."
     },
     {
       "id": "5e7a69e0546469dd",
@@ -2399,7 +2399,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 13 INQUISITOR INFANTRY and INQUISITORIAL AGENT models. It cannot transport TERMINATOR models.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 13 miniaturas INQUISITOR INFANTRY e INQUISITORIAL AGENT. No puede transportar miniaturas TERMINATOR."
     },
     {
       "id": "4c04786fc0f140a0",
@@ -2413,7 +2413,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 12 AGENTS OF THE IMPERIUM INFANTRY models. It cannot transport TERMINATOR or OFFICIO ASSASSINORUM models.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 12 miniaturas AGENTS OF THE IMPERIUM INFANTRY. No puede transportar miniaturas TERMINATOR ni OFFICIO ASSASSINORUM."
     },
     {
       "id": "02689717096d5785",
@@ -2427,7 +2427,7 @@
         "names": []
       },
       "source": "If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models in range of it, until your opponent controls it at the start or end of any turn.",
-      "target": null
+      "target": "Si controlas un marcador de objetivo al final de tu fase de Mando y esta unidad está dentro del alcance de ese marcador de objetivo, ese marcador de objetivo permanece bajo tu control, aunque no tengas ninguna miniatura dentro de su alcance, hasta que tu oponente lo controle al inicio o al final de cualquier turno."
     },
     {
       "id": "45cbfea5b2ef4e4c",
@@ -2441,7 +2441,7 @@
         "names": []
       },
       "source": "Once per battle, you can target this unit with the Command Re-roll Stratagem for 0CP and can do so if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Una vez por batalla, puedes seleccionar esta unidad como objetivo del Stratagem Command Re-roll por 0CP, y puedes hacerlo si ya has seleccionado otra unidad como objetivo de ese Stratagem esta fase."
     },
     {
       "id": "c393f1750fd24963",
@@ -2455,7 +2455,7 @@
         "names": []
       },
       "source": "Improve the Leadership characteristic of models in the bearer's unit by 1.",
-      "target": null
+      "target": "Mejora en 1 la característica de Leadership de las miniaturas de la unidad del portador."
     },
     {
       "id": "2a6a839feadd4986",
@@ -2469,7 +2469,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 6 ORDO HERETICUS INFANTRY models.\n\nAt the start of the Declare Battle Formations step, you can select one SISTERS OF BATTLE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 6 miniaturas ORDO HERETICUS INFANTRY.\n\nAl inicio del paso Declarar Formaciones de Batalla, puedes seleccionar una SISTERS OF BATTLE SQUAD de tu ejército. Si lo haces, esa unidad se divide en dos unidades, cada una con un número de miniaturas lo más igualado posible (al dividir una unidad de este modo, anota qué miniaturas forman cada una de las dos nuevas unidades). Una de estas unidades debe empezar la batalla embarcada en este TRANSPORT; la otra puede empezar la batalla embarcada en otro TRANSPORT, o puede desplegarse como una unidad separada."
     },
     {
       "id": "106df7a4d34e0417",
@@ -2485,7 +2485,7 @@
         ]
       },
       "source": "Each time this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
-      "target": null
+      "target": "Cada vez que esta miniatura ha disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques. Hasta el final de la fase, esa unidad enemiga no puede tener el beneficio de cobertura."
     },
     {
       "id": "743c9a3d7eec4acb",
@@ -2499,7 +2499,7 @@
         "names": []
       },
       "source": "While an INQUISITOR model is leading a unit that contains one or more DAEMONHOST models, models in this unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Mientras una miniatura INQUISITOR lidera una unidad que contiene una o más miniaturas DAEMONHOST, las miniaturas de esta unidad tienen una salvación invulnerable de 5+."
     },
     {
       "id": "52f346006e5a5ce5",
@@ -2513,7 +2513,7 @@
         "names": []
       },
       "source": "While an INQUISITOR model is leading a unit that includes one or more DAEMONHOST models, the Objective Control characteristic of DAEMONHOST models in that unit is 1.",
-      "target": null
+      "target": "Mientras una miniatura INQUISITOR lidera una unidad que incluye una o más miniaturas DAEMONHOST, la característica de Control de Objetivos de las miniaturas DAEMONHOST de esa unidad es 1."
     },
     {
       "id": "30d8b959a0f1316a",
@@ -2529,7 +2529,7 @@
         ]
       },
       "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each unique pairing of 1 INQUISITORIAL AGENTS unit and 1 DAEMONHOST unit occuring in your army, increase the maximum number of RETINUE units permitted in your army by 1. At the start of the Declare Battle Formations step, this unit can join one INQUISITORIAL AGENTS unit from your army that is being led by an INQUISITOR model (a unit cannot have more than one DAEMONHOST unit joined to it). If it does, until the end of the battle, every model in this unit counts as being part of that Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly.",
-      "target": null
+      "target": "Si tu Army Faction no es AGENTS OF THE IMPERIUM, por cada pareja única de 1 unidad INQUISITORIAL AGENTS y 1 unidad DAEMONHOST que haya en tu ejército, incrementa en 1 el número máximo de unidades RETINUE permitidas en tu ejército. Al inicio del paso Declarar Formaciones de Batalla, esta unidad puede unirse a una unidad INQUISITORIAL AGENTS de tu ejército que esté siendo liderada por una miniatura INQUISITOR (una unidad no puede tener más de una unidad DAEMONHOST unida a ella). Si lo hace, hasta el final de la batalla, todas las miniaturas de esta unidad cuentan como parte de esa unidad Bodyguard, y la Starting Strength de esa unidad Bodyguard se incrementa en consecuencia."
     },
     {
       "id": "a594cd810f1e0d26",
@@ -2545,7 +2545,7 @@
         "names": []
       },
       "source": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability.",
-      "target": null
+      "target": "Mientras esta miniatura lidera una unidad, las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [LETHAL HITS]."
     },
     {
       "id": "e7985d51634a2dfd",
@@ -2559,7 +2559,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units: INQUISITORIAL AGENTS",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades: INQUISITORIAL AGENTS"
     },
     {
       "id": "b3a043f4082ccf7f",
@@ -2573,7 +2573,7 @@
         "names": []
       },
       "source": "If your Army Faction is not AGENTS OF THE IMPERIUM, then for each unique pairing of 1 INQUISITORIAL AGENTS unit and 1 JOKAERO WEAPONSMITH unit occuring in your army, increase the maximum number of CHARACTER units permitted in your army by 1.",
-      "target": null
+      "target": "Si tu Army Faction no es AGENTS OF THE IMPERIUM, por cada pareja única de 1 unidad INQUISITORIAL AGENTS y 1 unidad JOKAERO WEAPONSMITH que haya en tu ejército, incrementa en 1 el número máximo de unidades CHARACTER permitidas en tu ejército."
     },
     {
       "id": "ce863e709bffa07b",
@@ -2589,7 +2589,7 @@
         ]
       },
       "source": "This model cannot be selected to be your Warlord. While an INQUISITOR model is leading a unit that includes one or more JOKAERO WEAPONSMITH models, the Objective Control characteristic of JOKAERO WEAPONSMITH models in that unit is 1.",
-      "target": null
+      "target": "Esta miniatura no puede ser seleccionada como tu Warlord. Mientras una miniatura INQUISITOR lidera una unidad que incluye una o más miniaturas JOKAERO WEAPONSMITH, la característica de Control de Objetivos de las miniaturas JOKAERO WEAPONSMITH de esa unidad es 1."
     },
     {
       "id": "4de630d3c9489af4",
@@ -2604,7 +2604,7 @@
         "names": []
       },
       "source": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 5+, that unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que esta miniatura termina un movimiento normal, puedes seleccionar una unidad enemiga sobre la que se haya movido durante ese movimiento y tirar seis D6: por cada 5+, esa unidad sufre 1 herida mortal."
     },
     {
       "id": "aa253dcf9a45c9f4",
@@ -2618,7 +2618,7 @@
         "names": []
       },
       "source": "This model has a transport capacity of 12 DEATHWATCH INFANTRY models.",
-      "target": null
+      "target": "Esta miniatura tiene una capacidad de transporte de 12 miniaturas DEATHWATCH INFANTRY."
     },
     {
       "id": "6885a0bef1727126",
@@ -2637,7 +2637,7 @@
         ]
       },
       "source": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability.",
-      "target": null
+      "target": "Las armas a distancia equipadas por el portador tienen la habilidad [IGNORES COVER]."
     },
     {
       "id": "ffbccafe2c6ae2fc",
@@ -2652,7 +2652,7 @@
         "names": []
       },
       "source": "The bearer has the SMOKE keyword.",
-      "target": null
+      "target": "El portador tiene la palabra clave SMOKE."
     }
   ]
 }

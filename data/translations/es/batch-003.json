@@ -75,7 +75,7 @@
         "names": []
       },
       "source": "Attacks that target friendly **CRONOS/TALOS** units with a **S** greater than that unit’s **T** have ‑1 to **wound rolls**.\n\n\nThis **detachment** has the **COVENS** tag and cannot be taken with another **COVENS detachment**.",
-      "target": "Los ataques que tienen como objetivo a unidades **CRONOS/TALOS** amigas y cuya **S** es mayor que la **T** de esa unidad tienen ‑1 a las **tiradas para herir**.\n\n\nEste **detachment** tiene la etiqueta **COVENS** y no puede llevarse junto a otro **detachment COVENS**."
+      "target": "Los ataques que tienen como objetivo a unidades **CRONOS/TALOS** amigas y cuya **S** es mayor que la **T** de esa unidad tienen -1 a las **tiradas para herir**.\n\n\nEste **detachment** tiene la etiqueta **COVENS** y no puede llevarse junto a otro **detachment COVENS**."
     },
     {
       "id": "2edea315ccb83e69",
@@ -1804,7 +1804,7 @@
         "names": []
       },
       "source": "**HAEMONCULUS** model only. Attacks that target this unit with a **S** greater than your unit’s **T** have ‑1 to **wound rolls**.",
-      "target": "Solo miniatura **HAEMONCULUS**. Los ataques que toman como objetivo a esta unidad y cuya **S** es mayor que la **T** de tu unidad tienen ‑1 a las **tiradas para herir**."
+      "target": "Solo miniatura **HAEMONCULUS**. Los ataques que toman como objetivo a esta unidad y cuya **S** es mayor que la **T** de tu unidad tienen -1 a las **tiradas para herir**."
     },
     {
       "id": "2659933cf0d04d92",
@@ -2604,7 +2604,7 @@
         "names": []
       },
       "source": "In your Shooting phase or the Fight phase, when you select this unit to shoot or fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll.",
-      "target": "En tu fase de Disparo o en la fase de Combate, cuando seleccionas esta unidad para disparar o para combatir, puedes gastar 1 ficha de Pain para Empower a esta unidad. Mientras esté Empowered, cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad enemiga que está por debajo de sus efectivos iniciales, suma 1 a la tirada para impactar."
+      "target": "En tu fase de Disparo o en la fase de Combate, cuando seleccionas esta unidad para disparar o para combatir, puedes gastar 1 ficha de Pain para Empower a esta unidad. Mientras esté Empowered, cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a una unidad enemiga que está por debajo de sus Starting Strength, suma 1 a la tirada para impactar."
     },
     {
       "id": "05b9454ad25bea84",
@@ -2846,7 +2846,7 @@
         "names": []
       },
       "source": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent’s Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test.",
-      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, empeora en 1 la característica de Leadership de las miniaturas de esa unidad. Además, en el paso de Battle-shock de la fase de Mando de tu oponente, si una de esas unidades enemigas está por debajo de sus efectivos iniciales, debe hacer un test de Battle-shock."
+      "target": "Mientras una unidad enemiga esté a 6\" o menos de esta miniatura, empeora en 1 la característica de Leadership de las miniaturas de esa unidad. Además, en el paso de Battle-shock de la fase de Mando de tu oponente, si una de esas unidades enemigas está por debajo de sus Starting Strength, debe hacer un test de Battle-shock."
     },
     {
       "id": "798cde16237fccca",
@@ -2904,7 +2904,7 @@
         "names": []
       },
       "source": "Each time this model makes an attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that target is Below Half-strength, you can re-roll the Wound roll as well.",
-      "target": "Cada vez que esta miniatura realiza un ataque que toma como objetivo a una unidad que está por debajo de sus efectivos iniciales, puedes repetir la tirada para impactar. Si ese objetivo está Below Half-strength, también puedes repetir la tirada para herir."
+      "target": "Cada vez que esta miniatura realiza un ataque que toma como objetivo a una unidad que está por debajo de sus Starting Strength, puedes repetir la tirada para impactar. Si ese objetivo está Below Half-strength, también puedes repetir la tirada para herir."
     },
     {
       "id": "5f57417f4ed7c8f7",
@@ -3430,7 +3430,7 @@
         ]
       },
       "source": "If your Army Faction is LEGIONES DAEMONICA, certain areas of the battlefield are considered to be within your army’s Shadow of Chaos, as follows: \n■ Your deployment zone is always within your army’s Shadow of Chaos.\n■ At the start of any phase, if you control at least half of the objective markers within No Man’s Land, until the end of that phase, No Man’s Land is within your army’s Shadow of Chaos.\n■ At the start of any phase, if you control at least half of the objective markers within your opponent’s deployment zone, until the end of that phase, your opponent’s deployment zone is within your army’s Shadow of Chaos.\n\nDAEMONIC MANIFESTATION\nWhile a friendly LEGIONES DAEMONICA unit is within your army’s Shadow of Chaos, each time that unit makes a battle-shock roll, that unit has +1 to that battle-shock roll and, if that roll is successful, one model in that unit heals D3 wounds (if that unit is a BATTLELINE unit and that roll is successful, up to D3 destroyed models (excluding CHARACTER models) can be returned to that unit instead).\n\nDAEMONIC TERROR\nWhile an enemy unit is within your army’s Shadow of Chaos and/or it is within 6\" of one or more BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE or SKARBRAND units from your army, each time that unit takes a Battle-shock test, subtract 1 from that test and, if that test is failed, that enemy unit suffers D3 mortal wounds.",
-      "target": "Si tu Army Faction es LEGIONES DAEMONICA, ciertas zonas del campo de batalla se consideran dentro de la Shadow of Chaos de tu ejército, del siguiente modo: \n■ Tu zona de despliegue siempre está dentro de la Shadow of Chaos de tu ejército.\n■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivo de Tierra de Nadie, hasta el final de esa fase Tierra de Nadie está dentro de la Shadow of Chaos de tu ejército.\n■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivo de la zona de despliegue de tu oponente, hasta el final de esa fase la zona de despliegue de tu oponente está dentro de la Shadow of Chaos de tu ejército.\n\nDAEMONIC MANIFESTATION\nMientras una unidad LEGIONES DAEMONICA amiga esté dentro de la Shadow of Chaos de tu ejército, cada vez que esa unidad hace una tirada de battle-shock, esa unidad tiene +1 a esa tirada de battle-shock y, si esa tirada tiene éxito, una miniatura de esa unidad recupera D3 heridas (si esa unidad es una unidad BATTLELINE y esa tirada tiene éxito, en su lugar pueden devolverse a esa unidad hasta D3 miniaturas destruidas (excluidas las miniaturas CHARACTER)).\n\nDAEMONIC TERROR\nMientras una unidad enemiga esté dentro de la Shadow of Chaos de tu ejército y/o esté a 6\" o menos de una o más unidades BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE o SKARBRAND de tu ejército, cada vez que esa unidad haga un test de Battle-shock, resta 1 a ese test y, si ese test se falla, esa unidad enemiga sufre D3 heridas mortales."
+      "target": "Si tu Army Faction es LEGIONES DAEMONICA, ciertas zonas del campo de batalla se consideran dentro de la Shadow of Chaos de tu ejército, del siguiente modo: \n■ Tu zona de despliegue siempre está dentro de la Shadow of Chaos de tu ejército.\n■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivo de Tierra de Nadie, hasta el final de esa fase Tierra de Nadie está dentro de la Shadow of Chaos de tu ejército.\n■ Al inicio de cualquier fase, si controlas al menos la mitad de los marcadores de objetivo de la zona de despliegue de tu oponente, hasta el final de esa fase la zona de despliegue de tu oponente está dentro de la Shadow of Chaos de tu ejército.\n\nDAEMONIC MANIFESTATION\nMientras una unidad LEGIONES DAEMONICA amiga esté dentro de la Shadow of Chaos de tu ejército, cada vez que esa unidad hace una tirada de Battle-shock, esa unidad tiene +1 a esa tirada de Battle-shock y, si esa tirada tiene éxito, una miniatura de esa unidad recupera D3 heridas (si esa unidad es una unidad BATTLELINE y esa tirada tiene éxito, en su lugar pueden devolverse a esa unidad hasta D3 miniaturas destruidas (excluidas las miniaturas CHARACTER)).\n\nDAEMONIC TERROR\nMientras una unidad enemiga esté dentro de la Shadow of Chaos de tu ejército y/o esté a 6\" o menos de una o más unidades BLOODTHIRSTER, GREAT UNCLEAN ONE, KAIROS FATEWEAVER, KEEPER OF SECRETS, LORD OF CHANGE, ROTIGUS, SHALAXI HELBANE o SKARBRAND de tu ejército, cada vez que esa unidad haga un test de Battle-shock, resta 1 a ese test y, si ese test se falla, esa unidad enemiga sufre D3 heridas mortales."
     },
     {
       "id": "75540bd719893a54",

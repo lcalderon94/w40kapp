@@ -101,7 +101,7 @@
         "names": []
       },
       "source": "In your opponent's Shooting phase, when an enemy unit has shot, if a model from this unit was **destroyed** as a result of those attacks, this unit can make a **surge move** of up to D6\".",
-      "target": "En la fase de Disparo de tu oponente, cuando una unidad enemiga haya disparado, si una miniatura de esta unidad fue **destruida** como resultado de esos ataques, esta unidad puede realizar un **movimiento de irrupción** de hasta D6\"."
+      "target": "En la fase de Disparo de tu oponente, cuando una unidad enemiga haya disparado, si una miniatura de esta unidad fue **destruida** como resultado de esos ataques, esta unidad puede realizar un **movimiento de arremetida** de hasta D6\"."
     },
     {
       "id": "aa3b1d8b225d60f1",
@@ -2402,7 +2402,7 @@
         ]
       },
       "source": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle‑shock test, subtracting 1 from the result.",
-      "target": "Al comienzo de la fase de Combate, cada unidad enemiga que esté dentro del alcance de combate del portador debe hacer un test de Battle‑shock, restando 1 al resultado."
+      "target": "Al comienzo de la fase de Combate, cada unidad enemiga que esté dentro del alcance de combate del portador debe hacer un test de Battle-shock, restando 1 al resultado."
     },
     {
       "id": "7c9d5bee45b8d015",
@@ -2451,7 +2451,7 @@
         ]
       },
       "source": "Each time the bearer’s unit is set up on the battlefield, each enemy unit within 6” of the bearer’s unit (or within 12” if the bearer’s unit was set up using the Deep Strike ability) takes a Battle‑shock test.",
-      "target": "Cada vez que la unidad del portador se despliega en el campo de batalla, cada unidad enemiga que esté a 6” o menos de la unidad del portador (o a 12” o menos si la unidad del portador se desplegó usando la habilidad Deep Strike) hace un test de Battle‑shock."
+      "target": "Cada vez que la unidad del portador se despliega en el campo de batalla, cada unidad enemiga que esté a 6” o menos de la unidad del portador (o a 12” o menos si la unidad del portador se desplegó usando la habilidad Deep Strike) hace un test de Battle-shock."
     },
     {
       "id": "652bff5291b4959f",
