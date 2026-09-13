@@ -59,8 +59,31 @@ como término:
 | Move characteristic | característica de Movimiento |
 | Objective Control characteristic | característica de Control de Objetivos |
 | Armour Penetration characteristic | característica de Penetración de Blindaje |
+| Damage roll | tirada de daño |
+| saving throw | tirada de salvación |
+| test (Battle-shock, Hazardous…) | test de… (nunca «chequeo») |
+| Command / Movement / Shooting / Charge / Fight phase | fase de Mando / Movimiento / Disparo / Carga / Combate |
+| objective marker | marcador de objetivo |
+| melee attack / melee weapon | ataque de cuerpo a cuerpo / arma de cuerpo a cuerpo |
+| Toughness | Resistencia |
+| Save characteristic | característica de Salvación |
+| Ballistic Skill / Weapon Skill | Habilidad de Proyectiles / Habilidad de Armas |
+| Starting Strength | Fuerza Inicial |
+| Below Half-strength | por debajo de media fuerza |
+| Reinforcements | Refuerzos |
+| Faction keyword | palabra clave de Facción |
+| *X* token (Pain, Flux, Battle Focus…) | ficha de *X* — «ficha», nunca «token», y el nombre de la mecánica en inglés |
+| pinned / suppressed | inmovilizada / suprimida |
 | Designer's Note | Nota del diseñador |
 | Example | Ejemplo |
+
+Cuando una palabra del original va en mayúscula solo por estilo editorial (*Wound roll*, *Damage
+roll*), en español va en minúscula: *tirada para herir*, *tirada de daño*. Se conserva la mayúscula
+únicamente en nombres propios y en los nombres de fase y de característica.
+
+La lista `protect` de cada unidad es una ayuda automática y **tiene ruido**: detecta como nombre
+propio palabras que ahí son vocabulario corriente (*Range* dentro de «Engagement Range», *Melee*,
+*Cover*). Manda el glosario, no `protect`.
 
 ## Forma
 
