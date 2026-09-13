@@ -2303,7 +2303,7 @@
         "names": []
       },
       "source": "While a friendly **^^Astra Militarum^^** unit is within 6\" of this model, you can re‑roll Battle‑shock and Leadership tests taken for that unit.",
-      "target": "Mientras una unidad amiga **^^Astra Militarum^^** está a 6\" o menos de esta miniatura, puedes repetir los tests de Battle‑shock y de Leadership hechos para esa unidad."
+      "target": "Mientras una unidad amiga **^^Astra Militarum^^** está a 6\" o menos de esta miniatura, puedes repetir los tests de Battle-shock y de Leadership hechos para esa unidad."
     },
     {
       "id": "e32248cde1f58c9f",
@@ -2337,7 +2337,7 @@
         ]
       },
       "source": "At the end of your opponent’s Movement phase, you can select one enemy unit that was set up or ended a move within 8\" of this model, and one friendly **^^Regiment^^** unit within 6\" of and visible to this model that has not made a Normal move or been targeted with the Fire Overwatch Stratagem this phase. That **^^Regiment^^**unit can then either:\n- Make a Normal move of up to D6\".\n- Shoot at that enemy unit, but only if it is an eligible target. Until the end of the phase, each time a model in that unit makes a ranged attack, an unmodified Hit roll of 6 is required to score a hit, irrespective of the attacking weapon’s Ballistic Skill or any modifiers.\n- Make a Surge move. To do so, roll one D6: models in that unit move a number of inches up to the result, but that unit must end that move as close as possible to the closest enemy unit (excluding **^^Aircraft^^**). When doing so, those models can be moved within Engagement Range of that enemy unit. That unit cannot make a Surge move while it is Battle‑shocked or within Engagement Range of one or more enemy units, and can only make one Surge move per phase.",
-      "target": "Al final de la fase de Movimiento de tu oponente, puedes seleccionar una unidad enemiga que se haya desplegado o haya terminado un movimiento a 8\" o menos de esta miniatura, y una unidad amiga **^^Regiment^^** que esté a 6\" o menos de esta miniatura, le sea visible y no haya realizado un movimiento normal ni haya sido seleccionada como objetivo del Stratagem Fire Overwatch esta fase. Esa unidad **^^Regiment^^** puede entonces:\n- Realizar un movimiento normal de hasta D6\".\n- Disparar a esa unidad enemiga, pero solo si es un objetivo elegible. Hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque a distancia, se necesita una tirada para impactar sin modificar de 6 para conseguir un impacto, independientemente de la Habilidad de Proyectiles del arma atacante o de cualquier modificador.\n- Realizar un movimiento de arremetida. Para ello, tira un D6: las miniaturas de esa unidad se mueven un número de pulgadas de hasta el resultado, pero esa unidad debe terminar ese movimiento lo más cerca posible de la unidad enemiga más cercana (excluidos los **^^Aircraft^^**). Al hacerlo, esas miniaturas pueden moverse dentro del alcance de combate de esa unidad enemiga. Esa unidad no puede realizar un movimiento de arremetida mientras esté Battle‑shocked o dentro del alcance de combate de una o más unidades enemigas, y solo puede realizar un movimiento de arremetida por fase."
+      "target": "Al final de la fase de Movimiento de tu oponente, puedes seleccionar una unidad enemiga que se haya desplegado o haya terminado un movimiento a 8\" o menos de esta miniatura, y una unidad amiga **^^Regiment^^** que esté a 6\" o menos de esta miniatura, le sea visible y no haya realizado un movimiento normal ni haya sido seleccionada como objetivo del Stratagem Fire Overwatch esta fase. Esa unidad **^^Regiment^^** puede entonces:\n- Realizar un movimiento normal de hasta D6\".\n- Disparar a esa unidad enemiga, pero solo si es un objetivo elegible. Hasta el final de la fase, cada vez que una miniatura de esa unidad realiza un ataque a distancia, se necesita una tirada para impactar sin modificar de 6 para conseguir un impacto, independientemente de la Habilidad de Proyectiles del arma atacante o de cualquier modificador.\n- Realizar un movimiento de arremetida. Para ello, tira un D6: las miniaturas de esa unidad se mueven un número de pulgadas de hasta el resultado, pero esa unidad debe terminar ese movimiento lo más cerca posible de la unidad enemiga más cercana (excluidos los **^^Aircraft^^**). Al hacerlo, esas miniaturas pueden moverse dentro del alcance de combate de esa unidad enemiga. Esa unidad no puede realizar un movimiento de arremetida mientras esté Battle-shocked o dentro del alcance de combate de una o más unidades enemigas, y solo puede realizar un movimiento de arremetida por fase."
     },
     {
       "id": "93bb6d57aea237e2",
@@ -2367,7 +2367,7 @@
         ]
       },
       "source": "Once per turn, at the start of any phase, you can select one friendly **^^Astra Militarum Infantry^^** unit (excluding units that only contain one model) that is Battle‑shocked and within 24\" of and visible to this model. If you do, one model in that unit is destroyed, and that unit is no longer Battle‑shocked.",
-      "target": "Una vez por turno, al comienzo de cualquier fase, puedes seleccionar una unidad amiga **^^Astra Militarum Infantry^^** (excluidas las unidades que solo contienen una miniatura) que esté Battle‑shocked, esté a 24\" o menos de esta miniatura y le sea visible. Si lo haces, una miniatura de esa unidad queda destruida y esa unidad deja de estar Battle‑shocked."
+      "target": "Una vez por turno, al comienzo de cualquier fase, puedes seleccionar una unidad amiga **^^Astra Militarum Infantry^^** (excluidas las unidades que solo contienen una miniatura) que esté Battle-shocked, esté a 24\" o menos de esta miniatura y le sea visible. Si lo haces, una miniatura de esa unidad queda destruida y esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "720ef50ffd6664d3",
@@ -2420,7 +2420,7 @@
         ]
       },
       "source": "Each time this unit ends a Charge move, you can select one enemy unit within Engagement Range of it, then roll one D6: on a 2‑3, that enemy unit suffers D3 mortal wounds; on a 4‑5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds.",
-      "target": "Cada vez que esta unidad termina un movimiento de carga, puedes seleccionar una unidad enemiga que esté dentro de su alcance de combate y después tirar un D6: con un 2‑3, esa unidad enemiga sufre D3 heridas mortales; con un 4‑5, esa unidad enemiga sufre 3 heridas mortales; con un 6, esa unidad enemiga sufre D3+3 heridas mortales."
+      "target": "Cada vez que esta unidad termina un movimiento de carga, puedes seleccionar una unidad enemiga que esté dentro de su alcance de combate y después tirar un D6: con un 2-3, esa unidad enemiga sufre D3 heridas mortales; con un 4-5, esa unidad enemiga sufre 3 heridas mortales; con un 6, esa unidad enemiga sufre D3+3 heridas mortales."
     },
     {
       "id": "4baa8b976985ff55",
@@ -2436,7 +2436,7 @@
         ]
       },
       "source": "Once per turn, at the start of any phase, you can select one friendly **^^Astra Militarum Infantry^^** (excluding units that only contain one model) unit that is Battle‑shocked and within 12\" of this model. If you do, one model in that unit is destroyed, and that unit is no longer Battle‑shocked.",
-      "target": "Una vez por turno, al comienzo de cualquier fase, puedes seleccionar una unidad amiga **^^Astra Militarum Infantry^^** (excluidas las unidades que solo contienen una miniatura) que esté Battle‑shocked y a 12\" o menos de esta miniatura. Si lo haces, una miniatura de esa unidad queda destruida y esa unidad deja de estar Battle‑shocked."
+      "target": "Una vez por turno, al comienzo de cualquier fase, puedes seleccionar una unidad amiga **^^Astra Militarum Infantry^^** (excluidas las unidades que solo contienen una miniatura) que esté Battle-shocked y a 12\" o menos de esta miniatura. Si lo haces, una miniatura de esa unidad queda destruida y esa unidad deja de estar Battle-shocked."
     },
     {
       "id": "8af2a8b625e0659d",

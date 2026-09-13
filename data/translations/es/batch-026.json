@@ -2355,7 +2355,7 @@
         "names": []
       },
       "source": "Once per battle, for each bomb squig this unit has, after this unit ends a Normal move, you can use one Bomb Squig. If you do, select one enemy unit within 12\" and visible to this unit and roll one D6: on a 3+, that enemy unit suffers D3 mortal wounds.",
-      "target": null
+      "target": "Una vez por batalla, por cada bomb squig que tenga esta unidad, después de que esta unidad termine un movimiento normal, puedes usar un Bomb Squig. Si lo haces, selecciona una unidad enemiga que esté a 12\" o menos y sea visible para esta unidad y tira un D6: con un 3+, esa unidad enemiga sufre D3 heridas mortales."
     },
     {
       "id": "9833096ac77054cc",
@@ -2369,7 +2369,7 @@
         "names": []
       },
       "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **ORKS** unit within 6\" of this unit. That unit:\n- Is no longer **battle-shocked**.\n- Is **riled up** until the start of your next turn.",
-      "target": null
+      "target": "En tu fase de Movimiento, al inicio o al final del movimiento de esta unidad, puedes seleccionar una unidad amiga **ORKS** que esté a 6\" o menos de esta unidad. Esa unidad:\n- Deja de estar **Battle-shocked**.\n- Está **riled up** hasta el inicio de tu siguiente turno."
     },
     {
       "id": "6902007da351b002",
@@ -2386,7 +2386,7 @@
         "names": []
       },
       "source": "This unit's ranged attacks have:\n- **[IGNORES COVER]**.\n- If this unit is **riled up**, **[SUSTAINED HITS 1]**.",
-      "target": null
+      "target": "Los ataques a distancia de esta unidad tienen:\n- **[IGNORES COVER]**.\n- Si esta unidad está **riled up**, **[SUSTAINED HITS 1]**."
     },
     {
       "id": "bb2ad877a16a2833",
@@ -2400,7 +2400,7 @@
         "names": []
       },
       "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **BEAST SNAGGA** unit within 6\" of this unit. That unit:\n- Is no longer **battle-shocked**.\n- Is **riled up** until the start of your next turn.",
-      "target": null
+      "target": "En tu fase de Movimiento, al inicio o al final del movimiento de esta unidad, puedes seleccionar una unidad amiga **BEAST SNAGGA** que esté a 6\" o menos de esta unidad. Esa unidad:\n- Deja de estar **Battle-shocked**.\n- Está **riled up** hasta el inicio de tu siguiente turno."
     },
     {
       "id": "8c1d0c3bfdbc9625",
@@ -2414,7 +2414,7 @@
         "names": []
       },
       "source": "In your Movement phase, when this unit ends a **normal move**, you can select one **visible** enemy unit within 12\" of this unit and roll one D6:\n- On a 3+, that enemy unit suffers D3 **mortal wounds**.\n*Place two Bomb Squig tokens next to the unit, removing one each time this ability is used.*",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando esta unidad termina un **movimiento normal**, puedes seleccionar una unidad enemiga **visible** que esté a 12\" o menos de esta unidad y tirar un D6:\n- Con un 3+, esa unidad enemiga sufre D3 **heridas mortales**.\n*Coloca dos fichas de Bomb Squig junto a la unidad, y retira una cada vez que se use esta habilidad.*"
     },
     {
       "id": "8c03f9f289d54d17",
@@ -2428,7 +2428,7 @@
         "names": []
       },
       "source": "In your Movement phase, when this unit ends a **normal move**, you can select one **visible** enemy unit within 12\" of this unit and roll one D6:\n- On a 3+, that enemy unit suffers D3 **mortal wounds**.\n*Place one Bomb Squig token next to the unit, removing it after this ability is used.*",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando esta unidad termina un **movimiento normal**, puedes seleccionar una unidad enemiga **visible** que esté a 12\" o menos de esta unidad y tirar un D6:\n- Con un 3+, esa unidad enemiga sufre D3 **heridas mortales**.\n*Coloca una ficha de Bomb Squig junto a la unidad, y retírala después de usar esta habilidad.*"
     },
     {
       "id": "7c71ff3f536acf4a",
@@ -2442,7 +2442,7 @@
         "names": []
       },
       "source": "In your Movement phase, when this unit ends a **normal move**, units embarked within this unit can make an **assault disembark move**.",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando esta unidad termina un **movimiento normal**, las unidades embarcadas en esta unidad pueden realizar un **movimiento de desembarco de asalto**."
     },
     {
       "id": "1fc5d2221058c1bd",
@@ -2459,7 +2459,7 @@
         ]
       },
       "source": "Units from your army with the Waaagh! ability retain that ability and gain this one.\n\nOnce per battle, at the start of the battle round, you can call a Void Waaagh!. If you do, until the start of the next battle round, the Void Waaagh! is active for your army and:\n- Add 1 to the Strength and Attacks characteristics of melee weapons equipped by models from your army with this ability.\n- Models from your army with this ability have a 5+ invulnerable save.\n\nA Void Waaagh! counts as a Waaagh! for any datasheet abilities.",
-      "target": null
+      "target": "Las unidades de tu ejército con la habilidad Waaagh! conservan esa habilidad y ganan esta.\n\nUna vez por batalla, al inicio de la ronda de batalla, puedes convocar un Void Waaagh!. Si lo haces, hasta el inicio de la siguiente ronda de batalla, el Void Waaagh! está activo para tu ejército y:\n- Suma 1 a las características de Fuerza y Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de tu ejército con esta habilidad.\n- Las miniaturas de tu ejército con esta habilidad tienen una salvación invulnerable de 5+.\n\nUn Void Waaagh! cuenta como un Waaagh! a efectos de cualquier habilidad de hoja de datos."
     },
     {
       "id": "9613eb94492a1266",
@@ -2473,7 +2473,7 @@
         "names": []
       },
       "source": "At the start of the battle round, if a model with this ability is your **WARLORD**, gain 1CP.",
-      "target": null
+      "target": "Al inicio de la ronda de batalla, si una miniatura con esta habilidad es tu **WARLORD**, ganas 1CP."
     },
     {
       "id": "96dedf6f9dab1fa9",
@@ -2487,7 +2487,7 @@
         "names": []
       },
       "source": "**ORKS PSYKER** units with this ability have a **psyker level** of 1 or higher, specified in that unit's abilities. Each **psychic ability** has a **psychic level** of 1 or higher, specified in that ability's name.\nIn a battle round, a friendly **ORKS PSYKER** unit can use a number of **psychic abilities** whose total **psychic level** does not exceed that **PSYKER** unit's **psyker level**.",
-      "target": null
+      "target": "Las unidades **ORKS PSYKER** con esta habilidad tienen un **nivel de psyker** de 1 o superior, indicado en las habilidades de esa unidad. Cada **habilidad psíquica** tiene un **nivel psíquico** de 1 o superior, indicado en el nombre de esa habilidad.\nEn una ronda de batalla, una unidad amiga **ORKS PSYKER** puede usar un número de **habilidades psíquicas** cuyo **nivel psíquico** total no supere el **nivel de psyker** de esa unidad **PSYKER**."
     },
     {
       "id": "f7500cb9a2b0ac13",
@@ -2501,7 +2501,7 @@
         "names": []
       },
       "source": "Ranged attacks that target this unit have -1 **D**.",
-      "target": null
+      "target": "Los ataques a distancia que toman como objetivo a esta unidad tienen -1 de **D**."
     },
     {
       "id": "35838f47329f0d7c",
@@ -2515,7 +2515,7 @@
         "names": []
       },
       "source": "This model has a **transport capacity** of 22 **ORKS INFANTRY** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models. Each **GHAZGHKULL THRAKA** model takes up the space of 4 models.",
-      "target": null
+      "target": "Esta miniatura tiene una **capacidad de transporte** de 22 miniaturas **ORKS INFANTRY**. Cada miniatura **MEGA ARMOUR/JUMP PACK** ocupa el espacio de 2 miniaturas. Cada miniatura **GHAZGHKULL THRAKA** ocupa el espacio de 4 miniaturas."
     },
     {
       "id": "bab9a919fa0467a7",
@@ -2529,7 +2529,7 @@
         "names": []
       },
       "source": "When this unit ends a **charge move**, each enemy **MONSTER/VEHICLE** unit **engaged** with this unit makes a **battle-shock roll**:\n- With -1 to that **battle-shock roll**.\n- <ins>Or:</ins> With -2 to that **battle-shock roll** if this unit has 13+ models.",
-      "target": null
+      "target": "Cuando esta unidad termina un **movimiento de carga**, cada unidad enemiga **MONSTER/VEHICLE** **trabada** con esta unidad hace una **tirada de Battle-shock**:\n- Con -1 a esa **tirada de Battle-shock**.\n- <ins>O bien:</ins> Con -2 a esa **tirada de Battle-shock** si esta unidad tiene 13 miniaturas o más."
     },
     {
       "id": "d14c9a94dd0a48ab",
@@ -2543,7 +2543,7 @@
         "names": []
       },
       "source": "This unit's attacks have +1 to **hit rolls**.",
-      "target": null
+      "target": "Los ataques de esta unidad tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "5348628389b03811",
@@ -2560,7 +2560,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n- **^^Beast Snagga Boyz^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **^^Beast Snagga Boyz^^**"
     },
     {
       "id": "b74b4ba860ad9f0a",
@@ -2574,7 +2574,7 @@
         "names": []
       },
       "source": "Friendly **BEAST SNAGGA** units within 6\" of this unit have +1 to **charge rolls**.",
-      "target": null
+      "target": "Las unidades amigas **BEAST SNAGGA** que estén a 6\" o menos de esta unidad tienen +1 a las **tiradas de carga**."
     },
     {
       "id": "951ba98958696f5a",
@@ -2590,7 +2590,7 @@
         ]
       },
       "source": "While this unit is within 3\" of a friendly **BEAST SNAGGA** unit (excluding **MONSTER CHARACTER** units), this unit has **Lone Operative**.",
-      "target": null
+      "target": "Mientras esta unidad está a 3\" o menos de una unidad amiga **BEAST SNAGGA** (excluyendo las unidades **MONSTER CHARACTER**), esta unidad tiene **Lone Operative**."
     },
     {
       "id": "fc4b4683ade31db4",
@@ -2604,7 +2604,7 @@
         "names": []
       },
       "source": "In your Command phase, this unit **heals** 3 wounds.\n*Place a Grot Oiler token next to the unit, removing it when this ability is used.*",
-      "target": null
+      "target": "En tu fase de Mando, esta unidad **recupera** 3 heridas.\n*Coloca una ficha de Grot Oiler junto a la unidad, y retírala cuando se use esta habilidad.*"
     },
     {
       "id": "ddb7e288be261f68",
@@ -2618,7 +2618,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit:\n- **MEGANOBZ**\n- **MEK GUNZ**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **MEGANOBZ**\n- **MEK GUNZ**"
     },
     {
       "id": "e9dead84e5ee1454",
@@ -2634,7 +2634,7 @@
         ]
       },
       "source": "This unit has 4+ **InSv** against ranged attacks.",
-      "target": null
+      "target": "Esta unidad tiene 4+ de **InSv** contra ataques a distancia."
     },
     {
       "id": "bd31f0b0b925b510",
@@ -2650,7 +2650,7 @@
         ]
       },
       "source": "While this model is within 3\" of a friendly **ORKS INFANTRY** unit (excluding **BIG MEK WITH SHOKK ATTACK GUN** units), this model has **Lone Operative**.",
-      "target": null
+      "target": "Mientras esta miniatura está a 3\" o menos de una unidad amiga **ORKS INFANTRY** (excluyendo las unidades **BIG MEK WITH SHOKK ATTACK GUN**), esta miniatura tiene **Lone Operative**."
     },
     {
       "id": "f7b6e5cd92913308",
@@ -2664,7 +2664,7 @@
         "names": []
       },
       "source": "This model can be attached to the following units:\n- **BOYZ**\n- **MEK GUNZ**\n- **NOBZ**\n- **TANKBUSTAS**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- **BOYZ**\n- **MEK GUNZ**\n- **NOBZ**\n- **TANKBUSTAS**"
     },
     {
       "id": "6179be607e43d779",
@@ -2678,7 +2678,7 @@
         "names": []
       },
       "source": "While an enemy unit is **engaged** with only **FORTIFICATION** units:\n- That enemy unit can be selected as a target of ranged attacks.\n- When shooting that enemy unit, those ranged attacks have -1 to **hit rolls** (excluding **[CLOSE-QUARTERS** attacks).\n- When that enemy unit is selected to make a **fall-back move**, if that enemy unit if only **engaged** with **FORTIFICATION** units, and that enemy unit is not **battle-shocked**, **hazard rolls** made for that enemy unit are automatically passed.",
-      "target": null
+      "target": "Mientras una unidad enemiga está **trabada** únicamente con unidades **FORTIFICATION**:\n- Esa unidad enemiga puede ser seleccionada como objetivo de ataques a distancia.\n- Al disparar a esa unidad enemiga, esos ataques a distancia tienen -1 a las **tiradas para impactar** (excluyendo los ataques **[CLOSE-QUARTERS**).\n- Cuando esa unidad enemiga es seleccionada para realizar un **movimiento de repliegue**, si esa unidad enemiga solo está **trabada** con unidades **FORTIFICATION** y esa unidad enemiga no está **Battle-shocked**, las **tiradas de riesgo** realizadas para esa unidad enemiga se superan automáticamente."
     },
     {
       "id": "d596b9e54a99b646",
@@ -2692,7 +2692,7 @@
         "names": []
       },
       "source": "While this model is within range of your **home objective*, add the **OC** of models embarked within this model to this model's **OC**.",
-      "target": null
+      "target": "Mientras esta miniatura está dentro del alcance de tu **objetivo propio*, suma la **OC** de las miniaturas embarcadas en esta miniatura a la **OC** de esta miniatura."
     },
     {
       "id": "d5b2e7ac3e2b3465",
@@ -2706,7 +2706,7 @@
         "names": []
       },
       "source": "This model has a **transport capacity** of 11 **ORKS INFANTRY* models. It cannot transport **GHAZGHKULL THRAKA** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models.",
-      "target": null
+      "target": "Esta miniatura tiene una **capacidad de transporte** de 11 miniaturas **ORKS INFANTRY*. No puede transportar miniaturas **GHAZGHKULL THRAKA**. Cada miniatura **MEGA ARMOUR/JUMP PACK** ocupa el espacio de 2 miniaturas."
     },
     {
       "id": "98abca7b0379c83b",
@@ -2720,7 +2720,7 @@
         "names": []
       },
       "source": "When an attack targets a unit that is not **fully visible** to the attacking model because of this unit, the target has the **benefit of cover** against that attack.",
-      "target": null
+      "target": "Cuando un ataque toma como objetivo a una unidad que no es **completamente visible** para la miniatura atacante a causa de esta unidad, el objetivo tiene el **beneficio de cobertura** contra ese ataque."
     },
     {
       "id": "189a102ba9583b01",
@@ -2736,7 +2736,7 @@
         ]
       },
       "source": "At the end of your opponent’s Fight phase, select one **visible** enemy unit (excluding **Lone Operative** units) within 24\" of this unit, and roll one D6 for that unit:\n- On a 1-3, that enemy unit suffers D3 **mortal wounds**.\n- On a 4-5, that enemy unit suffers 3 **mortal wounds**.\n- On a 6, that enemy unit suffers D3+3 **mortal wounds**.",
-      "target": null
+      "target": "Al final de la fase de Combate de tu oponente, selecciona una unidad enemiga **visible** (excluyendo las unidades **Lone Operative**) que esté a 24\" o menos de esta unidad, y tira un D6 por esa unidad:\n- Con un 1-3, esa unidad enemiga sufre D3 **heridas mortales**.\n- Con un 4-5, esa unidad enemiga sufre 3 **heridas mortales**.\n- Con un 6, esa unidad enemiga sufre D3+3 **heridas mortales**."
     },
     {
       "id": "5f3743e7d37bd5e2",
@@ -2750,7 +2750,7 @@
         "names": []
       },
       "source": "At the end of your opponent's Movement phase, if this unit is in **strategic reserves**, this unit can make an **ingress move**.",
-      "target": null
+      "target": "Al final de la fase de Movimiento de tu oponente, si esta unidad está en **reservas estratégicas**, esta unidad puede realizar un **movimiento de entrada**."
     },
     {
       "id": "6b38880be6e4e046",
@@ -2764,7 +2764,7 @@
         "names": []
       },
       "source": "At the end of your opponent's Fight phase, if each model in this unit is **hidden** and **unengaged**, you can place this unit in **strategic reserves**.",
-      "target": null
+      "target": "Al final de la fase de Combate de tu oponente, si todas las miniaturas de esta unidad están **ocultas** y **sin trabar**, puedes colocar esta unidad en **reservas estratégicas**."
     },
     {
       "id": "eb4f1d7cf88c6fc5",
@@ -2778,7 +2778,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit:\n- **KOMMANDOS**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **KOMMANDOS**"
     },
     {
       "id": "ec81d0b0d5f7a9e4",
@@ -2792,7 +2792,7 @@
         "names": []
       },
       "source": "This unit's melee attacks have +1 to **hit rolls**.",
-      "target": null
+      "target": "Los ataques de cuerpo a cuerpo de esta unidad tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "54ce88cf1a564317",
@@ -2806,7 +2806,7 @@
         "names": []
       },
       "source": "If this unit made an **ingress move** this turn, this unit can re-roll **charge rolls**.",
-      "target": null
+      "target": "Si esta unidad ha realizado un **movimiento de entrada** este turno, esta unidad puede repetir las **tiradas de carga**."
     },
     {
       "id": "e5d59b7e05cf38d6",
@@ -2820,7 +2820,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit:\n- **STORMBOYZ**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **STORMBOYZ**"
     },
     {
       "id": "dd501b5ba1ab4193",
@@ -2834,7 +2834,7 @@
         "names": []
       },
       "source": "Being **engaged** does not prevent this unit from being **eligible to start an action**.",
-      "target": null
+      "target": "Estar **trabada** no impide que esta unidad sea **elegible para iniciar una acción**."
     },
     {
       "id": "94866b4a224b822b",
@@ -2848,7 +2848,7 @@
         "names": []
       },
       "source": "In your Shooting phase, when this unit is **selected to shoot**, you can use this ability. If you do, this unit's ranged attacks have +1 to **hit rolls**.\n*Place any number of Ammo Runts tokens next to the unit, removing them when this ability is used.*",
-      "target": null
+      "target": "En tu fase de Disparo, cuando esta unidad es **seleccionada para disparar**, puedes usar esta habilidad. Si lo haces, los ataques a distancia de esta unidad tienen +1 a las **tiradas para impactar**.\n*Coloca cualquier número de fichas de Ammo Runt junto a la unidad, y retíralas cuando se use esta habilidad.*"
     },
     {
       "id": "852a664207cd0dbd",
@@ -2864,7 +2864,7 @@
         "names": []
       },
       "source": "In the Fight phase, if this unit made a charge move this turn, this unit's melee attacks have **[LETHAL HITS]**.",
-      "target": null
+      "target": "En la fase de Combate, si esta unidad ha realizado un movimiento de carga este turno, los ataques de cuerpo a cuerpo de esta unidad tienen **[LETHAL HITS]**."
     },
     {
       "id": "63a5c77ec10a8dc9",
@@ -2878,7 +2878,7 @@
         "names": []
       },
       "source": "This unit's attacks that target a unit within 6\" of this unit can re-roll **wound rolls** of 1.",
-      "target": null
+      "target": "Los ataques de esta unidad que toman como objetivo a una unidad que esté a 6\" o menos de esta unidad pueden repetir las **tiradas para herir** de 1."
     },
     {
       "id": "7f8c98270442c78a",
@@ -2896,7 +2896,7 @@
         ]
       },
       "source": "At the end of your opponent’s Fight phase, you can select one **visible** enemy unit (excluding **Lone Operative** and **MONSTER/VEHICLE** units) within 36\" of this unit, and roll one D6 for that units. On a 2+:\n- That enemy unit suffers D3 **mortal wounds**.\n- That enemy unit cannot be **hidden** until the end of your next turn.\n- Ranged attacks that target that enemy unit have **[IGNORES COVER]** until the end of your next turn.",
-      "target": null
+      "target": "Al final de la fase de Combate de tu oponente, puedes seleccionar una unidad enemiga **visible** (excluyendo las unidades **Lone Operative** y **MONSTER/VEHICLE**) que esté a 36\" o menos de esta unidad, y tirar un D6 por esa unidad. Con un 2+:\n- Esa unidad enemiga sufre D3 **heridas mortales**.\n- Esa unidad enemiga no puede estar **oculta** hasta el final de tu siguiente turno.\n- Los ataques a distancia que toman como objetivo a esa unidad enemiga tienen **[IGNORES COVER]** hasta el final de tu siguiente turno."
     },
     {
       "id": "43d80dbd40872b05",
@@ -2910,7 +2910,7 @@
         "names": []
       },
       "source": "In your Shooting phase, this unit's ranged attacks that target a unit (excluding **FLY** units) have +1 to **hit rolls**.",
-      "target": null
+      "target": "En tu fase de Disparo, los ataques a distancia de esta unidad que toman como objetivo a una unidad (excluyendo las unidades **FLY**) tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "fc545aa949adbb02",
@@ -2924,7 +2924,7 @@
         "names": []
       },
       "source": "Attacks that target this unit have -1 **D**.",
-      "target": null
+      "target": "Los ataques que toman como objetivo a esta unidad tienen -1 de **D**."
     },
     {
       "id": "29e981b995252ab2",
@@ -2938,7 +2938,7 @@
         "names": []
       },
       "source": "In your Movement phase, at the start or end of this unit's move, you can select one friendly **SPEED FREEKS** unit within 6\" of this unit. That unit (and any units embarked within that unit):\n- Is no longer **battle-shocked**.\n- Is **riled up** until the start of your next turn.",
-      "target": null
+      "target": "En tu fase de Movimiento, al inicio o al final del movimiento de esta unidad, puedes seleccionar una unidad amiga **SPEED FREEKS** que esté a 6\" o menos de esta unidad. Esa unidad (y cualquier unidad embarcada en ella):\n- Deja de estar **Battle-shocked**.\n- Está **riled up** hasta el inicio de tu siguiente turno."
     },
     {
       "id": "2043f15f23601036",
@@ -2952,7 +2952,7 @@
         "names": []
       },
       "source": "This unit has +1 to **advance rolls**.",
-      "target": null
+      "target": "Esta unidad tiene +1 a las **tiradas de avance**."
     },
     {
       "id": "7f23ba16cac598bd",
@@ -2966,7 +2966,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit:\n- **NOBZ ON WARBIKES**\n- **SKORCHAS**\n- **WARBIKERS**\n- **WARBUGGIES**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **NOBZ ON WARBIKES**\n- **SKORCHAS**\n- **WARBIKERS**\n- **WARBUGGIES**"
     },
     {
       "id": "34eb933bcf70c2a6",
@@ -2980,7 +2980,7 @@
         "names": []
       },
       "source": "At the end of your opponent's Fight phase, if this unit is **unengaged**, you can place this unit in **strategic reserves**.",
-      "target": null
+      "target": "Al final de la fase de Combate de tu oponente, si esta unidad está **sin trabar**, puedes colocar esta unidad en **reservas estratégicas**."
     },
     {
       "id": "0de85c2423f0c0a8",
@@ -2994,7 +2994,7 @@
         "names": []
       },
       "source": "In your Shooting phase, if this unit made an **ingress move** this turn, this unit's ranged attacks have +1 to **hit rolls**.",
-      "target": null
+      "target": "En tu fase de Disparo, si esta unidad ha realizado un **movimiento de entrada** este turno, los ataques a distancia de esta unidad tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "d1e4d59b82d54479",
@@ -3008,7 +3008,7 @@
         "names": []
       },
       "source": "In your Shooting phase, if any of the following apply, this unit's ranged attacks have +1 **AP**.\n- This unit is within range of an **objective**.\n- The target of that attack is within range of an **objective**.",
-      "target": null
+      "target": "En tu fase de Disparo, si se cumple alguna de las siguientes condiciones, los ataques a distancia de esta unidad tienen +1 de **AP**.\n- Esta unidad está dentro del alcance de un **objetivo**.\n- El objetivo de ese ataque está dentro del alcance de un **objetivo**."
     },
     {
       "id": "d7a99fe29fb3c543",
@@ -3022,7 +3022,7 @@
         "names": []
       },
       "source": "If this model is in your army, it must be your **WARLORD**.",
-      "target": null
+      "target": "Si esta miniatura está en tu ejército, debe ser tu **WARLORD**."
     },
     {
       "id": "bccdde03851df76a",
@@ -3036,7 +3036,7 @@
         "names": []
       },
       "source": "In your Movement phase, you can select a number of friendly **ORKS** units equal to or less than the current battle round number. Those units are **riled up** until the start of your next turn.\n*Place one Makari token next to the unit, removing it after this ability is used.*",
-      "target": null
+      "target": "En tu fase de Movimiento, puedes seleccionar un número de unidades amigas **ORKS** igual o menor que el número de la ronda de batalla actual. Esas unidades están **riled up** hasta el inicio de tu siguiente turno.\n*Coloca una ficha de Makari junto a la unidad, y retírala después de usar esta habilidad.*"
     },
     {
       "id": "b76690498a1ff2ac",
@@ -3052,7 +3052,7 @@
         ]
       },
       "source": "While this unit is within 3\" of another friendly **ORKS INFANTRY** unit, this unit has **Lone Operative**.",
-      "target": null
+      "target": "Mientras esta unidad está a 3\" o menos de otra unidad amiga **ORKS INFANTRY**, esta unidad tiene **Lone Operative**."
     },
     {
       "id": "b21b4a747b8dd52f",
@@ -3066,7 +3066,7 @@
         "names": []
       },
       "source": "While a friendly **ORKS** unit is within 6\" of this unit, that unit's melee attacks have:\n- +1 to **hit rolls*.\n- +1 to **wound rolls**.",
-      "target": null
+      "target": "Mientras una unidad amiga **ORKS** está a 6\" o menos de esta unidad, los ataques de cuerpo a cuerpo de esa unidad tienen:\n- +1 a las **tiradas para impactar*.\n- +1 a las **tiradas para herir**."
     },
     {
       "id": "1df9274778ce39d1",
@@ -3080,7 +3080,7 @@
         "names": []
       },
       "source": "This unit's melee attacks can re-roll **hit rolls** of 1.",
-      "target": null
+      "target": "Los ataques de cuerpo a cuerpo de esta unidad pueden repetir las **tiradas para impactar** de 1."
     },
     {
       "id": "7e3448a3b1b3f196",
@@ -3094,7 +3094,7 @@
         "names": []
       },
       "source": "This model has a **transport capacity** of 12 **ORKS INFANTRY** models It cannot transport **GHAZGHKULL THRAKA** models. Each **MEGA ARMOUR/JUMP PACK** model takes up the space of 2 models.",
-      "target": null
+      "target": "Esta miniatura tiene una **capacidad de transporte** de 12 miniaturas **ORKS INFANTRY**. No puede transportar miniaturas **GHAZGHKULL THRAKA**. Cada miniatura **MEGA ARMOUR/JUMP PACK** ocupa el espacio de 2 miniaturas."
     },
     {
       "id": "4fae1188f3e7c5eb",
@@ -3110,7 +3110,7 @@
         ]
       },
       "source": "For the purposes of **transport capacity**, each 2 Gretchin models (rounding up) take up the space of 1 model.",
-      "target": null
+      "target": "A efectos de la **capacidad de transporte**, cada 2 miniaturas Gretchin (redondeando hacia arriba) ocupan el espacio de 1 miniatura."
     },
     {
       "id": "7937e851c8d810c1",
@@ -3124,7 +3124,7 @@
         "names": []
       },
       "source": "At the end of your Movement phase, if this unit is controlling an **objective**, that **objective** is **secured**.",
-      "target": null
+      "target": "Al final de tu fase de Movimiento, si esta unidad controla un **objetivo**, ese **objetivo** queda **asegurado**."
     },
     {
       "id": "c94a847ad5bbd92d",
@@ -3138,7 +3138,7 @@
         "names": []
       },
       "source": "When you target this unit with the **Crushing Impact stratagem**, that use is -1 CP.",
-      "target": null
+      "target": "Cuando tomas como objetivo a esta unidad con el **Stratagem Crushing Impact**, ese uso cuesta -1 CP."
     },
     {
       "id": "26ccb65102c50921",
@@ -3152,7 +3152,7 @@
         "names": []
       },
       "source": "This model has a **transport capacity** of 22 **BEAST SNAGGAS INFANTRY** models.",
-      "target": null
+      "target": "Esta miniatura tiene una **capacidad de transporte** de 22 miniaturas **BEAST SNAGGAS INFANTRY**."
     },
     {
       "id": "711436293763d828",
@@ -3169,7 +3169,7 @@
         ]
       },
       "source": "This unit's Butcha Boyz weapon has +2 **A** for each model embarked within this unit (to a maximum of +22 **A**).",
-      "target": null
+      "target": "El arma Butcha Boyz de esta unidad tiene +2 de **A** por cada miniatura embarcada en esta unidad (hasta un máximo de +22 de **A**)."
     },
     {
       "id": "93db762fccb7ca71",
@@ -3183,7 +3183,7 @@
         "names": []
       },
       "source": "This unit's ranged attacks can re-roll **hit rolls**.",
-      "target": null
+      "target": "Los ataques a distancia de esta unidad pueden repetir las **tiradas para impactar**."
     },
     {
       "id": "deee691ea0b2b653",
@@ -3197,7 +3197,7 @@
         "names": []
       },
       "source": "Enemy units within 6\" of this model have -1 **T**.",
-      "target": null
+      "target": "Las unidades enemigas que estén a 6\" o menos de esta miniatura tienen -1 de **T**."
     },
     {
       "id": "8f8f40a3582d94a1",
@@ -3211,7 +3211,7 @@
         "names": []
       },
       "source": "This model can be attached to the following unit:\n- **FLASH GITZ**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **FLASH GITZ**"
     },
     {
       "id": "f69eb15e4cb1bf8e",
@@ -3225,7 +3225,7 @@
         "names": []
       },
       "source": "This model has a **transport capacity** of 12 **BEAST SNAGGAS INFANTRY** models.",
-      "target": null
+      "target": "Esta miniatura tiene una **capacidad de transporte** de 12 miniaturas **BEAST SNAGGAS INFANTRY**."
     },
     {
       "id": "50856d6c4b087f81",
@@ -3242,7 +3242,7 @@
         "names": []
       },
       "source": "In the Fight phase, when this unit is **selected to fight**, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- On a 1, this unit is **battle-shocked**.\n- This unit's melee attacks have **[LETHAL HITS]** and **[PSYCHIC]**.",
-      "target": null
+      "target": "En la fase de Combate, cuando esta unidad es **seleccionada para combatir**, si esta unidad no está **Battle-shocked**, puedes hacer una **tirada psíquica** para esta unidad tirando un D6. Si lo haces:\n- Con un 1, esta unidad queda **Battle-shocked**.\n- Los ataques de cuerpo a cuerpo de esta unidad tienen **[LETHAL HITS]** y **[PSYCHIC]**."
     },
     {
       "id": "4805e5ecb5dc4af0",
@@ -3259,7 +3259,7 @@
         ]
       },
       "source": "This model has the **psychic abilities** listed in the Psychic Abilities section.",
-      "target": null
+      "target": "Esta miniatura tiene las **habilidades psíquicas** que se indican en la sección Psychic Abilities."
     },
     {
       "id": "0ee6f7bf8250f2db",
@@ -3273,7 +3273,7 @@
         "names": []
       },
       "source": "In your Movement phase, when a unit embarked within this unit is selected to make a **disembark move**, if this unit is not **battle-shocked**, you can make a **psychic roll** for this unit by rolling one D6. If you do:\n- One a 1, this unit is **battle-shocked*.\n- That disembarking unit's attacks that target a **MONSTER/VEHICLE** unit have +1 to **wound rolls** until the end of the turn.",
-      "target": null
+      "target": "En tu fase de Movimiento, cuando una unidad embarcada en esta unidad es seleccionada para realizar un **movimiento de desembarco**, si esta unidad no está **Battle-shocked**, puedes hacer una **tirada psíquica** para esta unidad tirando un D6. Si lo haces:\n- Con un 1, esta unidad queda **Battle-shocked*.\n- Los ataques de la unidad que desembarca que tomen como objetivo a una unidad **MONSTER/VEHICLE** tienen +1 a las **tiradas para herir** hasta el final del turno."
     },
     {
       "id": "69916317dd82eef8",
@@ -3287,7 +3287,7 @@
         "names": []
       },
       "source": "This unit's attacks that target a unit that has no models with a **T** of 7+ have +1 to **hit rolls**.",
-      "target": null
+      "target": "Los ataques de esta unidad que toman como objetivo a una unidad que no tenga ninguna miniatura con una **T** de 7+ tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "81583a24732c81d8",
@@ -3303,7 +3303,7 @@
         ]
       },
       "source": "In your Movement phase, you can select one enemy unit within 12\" of this unit. That unit has +3\" **detection range** until the end of the turn.\n*Place one Kommando Grot token next to that enemy unit to remind you.*",
-      "target": null
+      "target": "En tu fase de Movimiento, puedes seleccionar una unidad enemiga que esté a 12\" o menos de esta unidad. Esa unidad tiene +3\" de **alcance de detección** hasta el final del turno.\n*Coloca una ficha de Kommando Grot junto a esa unidad enemiga para recordarlo.*"
     },
     {
       "id": "c27c940f018c32e0",
@@ -3319,7 +3319,7 @@
         ]
       },
       "source": "In the Declare Battle Formations step, you can split this unit into two units, each with a **starting strength** of 5. If you do, select which one of those units will have the **Bomb Squig** ability and which one of those units will have the **Found 'Em!** ability.",
-      "target": null
+      "target": "En el paso Declarar Formaciones de Batalla, puedes dividir esta unidad en dos unidades, cada una con una **Starting Strength** de 5. Si lo haces, selecciona cuál de esas unidades tendrá la habilidad **Bomb Squig** y cuál tendrá la habilidad **Found 'Em!**."
     },
     {
       "id": "f07d0a768df851af",
@@ -3333,7 +3333,7 @@
         "names": []
       },
       "source": "This unit's attacks that target a **hidden** unit have +1 to **hit rolls**.",
-      "target": null
+      "target": "Los ataques de esta unidad que toman como objetivo a una unidad **oculta** tienen +1 a las **tiradas para impactar**."
     }
   ]
 }

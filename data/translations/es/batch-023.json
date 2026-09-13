@@ -1448,7 +1448,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer's unit makes an attack, re-roll a Wound roll of 1. Each time the bearer's unit is selected to shoot or fight, you can spend 3YP. If you do, until the end of the phase, each time a model in the bearer's unit makes an attack, add 1 to the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque, repite una tirada para herir de 1. Cada vez que la unidad del portador es seleccionada para disparar o para combatir, puedes gastar 3YP. Si lo haces, hasta el final de la fase, cada vez que una miniatura de la unidad del portador realiza un ataque, suma 1 a la tirada para herir."
     },
     {
       "id": "84923aa321b4f1d6",
@@ -1462,7 +1462,7 @@
         "names": []
       },
       "source": "In your Shooting phase, after the bearer's unit has shot, you gain 1YP for each assailed unit hit by one or more of those attacks (to a maximum of 3YP).",
-      "target": null
+      "target": "En tu fase de Disparo, después de que la unidad del portador haya disparado, ganas 1YP por cada unidad asaltada impactada por uno o más de esos ataques (hasta un máximo de 3YP)."
     },
     {
       "id": "cfba5478202c8ba4",
@@ -1479,7 +1479,7 @@
         ]
       },
       "source": "In your Shooting phase, after this model has shot, select one ^^**Monster^^** or ^^**Vehicle^^** unit hit by one or more of those attacks; until the start of your next Shooting phase, that model is pinned.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que esta miniatura haya disparado, selecciona una unidad ^^**Monster^^** o ^^**Vehicle^^** impactada por uno o más de esos ataques; hasta el inicio de tu siguiente fase de Disparo, esa miniatura queda inmovilizada."
     },
     {
       "id": "575c939766ae8ea6",
@@ -1496,7 +1496,7 @@
         ]
       },
       "source": "Once per battle, at the end of your opponent's Fight phase, if the bearer is on the battlefield, it can use this Enhancement. If it does, select one ^^**Hernkyn^^** unit from your army, and, for every 2YP you just spent, select up to one additional ^^**Hernkyn^^** unit from your army. You can remove those units from the battlefield and place them into Strategic Reserves. You cannot select a unit that is within Engagement Range of one or more enemy units (excluding assailed units).",
-      "target": null
+      "target": "Una vez por batalla, al final de la fase de Combate de tu oponente, si el portador está en el campo de batalla, puede usar este Enhancement. Si lo hace, selecciona una unidad ^^**Hernkyn^^** de tu ejército y, por cada 2YP que acabes de gastar, selecciona hasta una unidad ^^**Hernkyn^^** adicional de tu ejército. Puedes retirar esas unidades del campo de batalla y colocarlas en reservas estratégicas. No puedes seleccionar una unidad que esté dentro del alcance de combate de una o más unidades enemigas (excluidas las unidades asaltadas)."
     },
     {
       "id": "ee2cb7d399ac9ef5",
@@ -1510,7 +1510,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer's unit makes an attack that targets an assailed unit, add 1 to the Wound roll.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque que toma como objetivo a una unidad asaltada, suma 1 a la tirada para herir."
     },
     {
       "id": "049029dccf7d2b53",
@@ -1524,7 +1524,7 @@
         "names": []
       },
       "source": "**^^Leagues of Votann^^** model only. At the end of the turn, if the bearer is on the battlefield and you spent no YP in that turn, you gain 1YP.",
-      "target": null
+      "target": "Solo miniatura **^^Leagues of Votann^^**. Al final del turno, si el portador está en el campo de batalla y no has gastado ningún YP en ese turno, ganas 1YP."
     },
     {
       "id": "827acba5d3e79e3d",
@@ -1540,7 +1540,7 @@
         ]
       },
       "source": "**^^Leagues of Votann^^** model equipped with an Autoch-pattern combi-bolter only. Once per battle, when the bearer's unit is selected to shoot, the bearer can use this Enhancement. If it does, spend up to 3YP, and, until the end of the phase, add the number of YP you just spent to the Damage characteristic of the bearer's ranged weapons.",
-      "target": null
+      "target": "Solo miniatura **^^Leagues of Votann^^** equipada con un Autoch-pattern combi-bolter. Una vez por batalla, cuando la unidad del portador es seleccionada para disparar, el portador puede usar este Enhancement. Si lo hace, gasta hasta 3YP y, hasta el final de la fase, suma el número de YP que acabas de gastar a la característica de Daño de las armas a distancia del portador."
     },
     {
       "id": "127ec60029bee9ce",
@@ -1554,7 +1554,7 @@
         "names": []
       },
       "source": "Once per turn, when you target the bearer's unit with the Command Re-roll Stratagem, the bearer can use this Enhancement. If it does, spend 1YP and reduces the CP cost of that Stratagem by 1CP.",
-      "target": null
+      "target": "Una vez por turno, cuando tomas como objetivo a la unidad del portador con el Stratagem Command Re-roll, el portador puede usar este Enhancement. Si lo hace, gasta 1YP y reduce en 1CP el coste en CP de ese Stratagem."
     },
     {
       "id": "3f9c6adc0a85e901",
@@ -1570,7 +1570,7 @@
         ]
       },
       "source": "Models in the bearer's unit have the Deep Strike abilty.",
-      "target": null
+      "target": "Las miniaturas de la unidad del portador tienen la habilidad Deep Strike."
     },
     {
       "id": "ad4910ae911e4a03",
@@ -1587,7 +1587,7 @@
         ]
       },
       "source": "In your Shooting phase, after the bearer has shot, and in the Fight phase, after the bearer has fought, select one enemy ^^**Monster^^** or ^^**Vehicle**^^ unit hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "En tu fase de Disparo, después de que el portador haya disparado, y en la fase de Combate, después de que el portador haya combatido, selecciona una unidad enemiga ^^**Monster^^** o ^^**Vehicle**^^ impactada por uno o más de esos ataques. Hasta el inicio de tu siguiente turno, esa unidad enemiga queda suprimida. Mientras una unidad está suprimida, cada vez que una miniatura de esa unidad realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "62fc3fa1b0ee9e23",
@@ -1604,7 +1604,7 @@
         ]
       },
       "source": "Each time the bearer's unit is selected to shoot, if you spend YP using the Optimal Application Detachment rule when doing so, you can roll one D6: on a 2+, you gain 1YP.",
-      "target": null
+      "target": "Cada vez que la unidad del portador es seleccionada para disparar, si al hacerlo gastas YP usando la regla de Detachment Optimal Application, puedes tirar un D6: con un 2+, ganas 1YP."
     },
     {
       "id": "26fbffb609e42830",
@@ -1618,7 +1618,7 @@
         "names": []
       },
       "source": "While the bearer is leading a unit, add 1 to the Objective Control characteristic of models in that unit.",
-      "target": null
+      "target": "Mientras el portador lidera una unidad, suma 1 a la característica de Control de Objetivos de las miniaturas de esa unidad."
     },
     {
       "id": "26c254c18c8cced9",
@@ -1636,7 +1636,7 @@
         ]
       },
       "source": "In the Reinforcements step of your Movement phase, the bearer can use this Enhancement. If it does, select one friendly ^^**Cthonian Beserks^^** unit visible to the bearer and then spend any number of YP. Return one destroyed model (excluding ^^**Character**^^ models) to that unit, and then, for every 2YP you just spent, return up to one additional destroyed model (excluding ^^**Character**^^ models) to that unit.",
-      "target": null
+      "target": "En el paso de Refuerzos de tu fase de Movimiento, el portador puede usar este Enhancement. Si lo hace, selecciona una unidad amiga ^^**Cthonian Beserks^^** visible para el portador y después gasta cualquier número de YP. Devuelve una miniatura destruida (excluidas las miniaturas ^^**Character**^^) a esa unidad y, después, por cada 2YP que acabes de gastar, devuelve hasta una miniatura destruida adicional (excluidas las miniaturas ^^**Character**^^) a esa unidad."
     },
     {
       "id": "61420556770904a4",
@@ -1653,7 +1653,7 @@
         ]
       },
       "source": "While the bearer is within 3\" of one or more friendly ^^**Leagues of Votann Artillery^^** units, the bearer has the Lone Operative ability, and each time one of those ^^**Artillery^^** units makes a ranged attack that targets an enemy unit visible to the bearer, add 1 to the Hit roll.",
-      "target": null
+      "target": "Mientras el portador esté a 3\" o menos de una o más unidades amigas ^^**Leagues of Votann Artillery^^**, el portador tiene la habilidad Lone Operative y, cada vez que una de esas unidades ^^**Artillery^^** realiza un ataque a distancia que toma como objetivo a una unidad enemiga visible para el portador, suma 1 a la tirada para impactar."
     },
     {
       "id": "2e1b15796aead84d",
@@ -1667,7 +1667,7 @@
         "names": []
       },
       "source": "Each time the bearer's unit is selected to fight, the bearer can use this Enhancement. If it does, spend up to 2YP and, until the end of the phase, add the number of YP you just spent to the Damage characteristic of the bearer's melee weapons.",
-      "target": null
+      "target": "Cada vez que la unidad del portador es seleccionada para combatir, el portador puede usar este Enhancement. Si lo hace, gasta hasta 2YP y, hasta el final de la fase, suma el número de YP que acabas de gastar a la característica de Daño de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "836c172dfaaa1123",
@@ -1683,7 +1683,7 @@
         ]
       },
       "source": "Once per battle, in your Movement phase, if the bearer is on the battlefield, it can use this Enhancement. If it does, select one friendly ^^**Cthonian^^** unit that is in Reserves. Until the end of the phase, for the purposes of setting up that unit on the battlefield, treat the current battle round number as one higher than it actually is.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Movimiento, si el portador está en el campo de batalla, puede usar este Enhancement. Si lo hace, selecciona una unidad amiga ^^**Cthonian^^** que esté en Reservas. Hasta el final de la fase, a efectos de desplegar esa unidad en el campo de batalla, considera que el número de la ronda de batalla actual es uno más alto de lo que realmente es."
     },
     {
       "id": "7f88bb5ff01874d0",
@@ -1697,7 +1697,7 @@
         "names": []
       },
       "source": "In your Command phase, if the bearer's unit is in range of one or more objective markers you control that are not in your deployment zone, you can spend 1YP. If you do, roll one D6: on a 4+, you gain 1CP.",
-      "target": null
+      "target": "En tu fase de Mando, si la unidad del portador está dentro del alcance de uno o más marcadores de objetivo que controles y que no estén en tu zona de despliegue, puedes gastar 1YP. Si lo haces, tira un D6: con un 4+, ganas 1CP."
     },
     {
       "id": "046aaf0666232f1e",
@@ -1716,7 +1716,7 @@
         ]
       },
       "source": "In your Shooting phase, each time the bearer's unit is selected to shoot, if it disembarked from a ^^**Transport^^** this turn, or if you spend 2YP, until the end of the phase, ranged weapons equipped by model in that unit have the [**^^Sustained Hits 2^^**] ability.",
-      "target": null
+      "target": "En tu fase de Disparo, cada vez que la unidad del portador es seleccionada para disparar, si desembarcó de un ^^**Transport^^** este turno, o si gastas 2YP, hasta el final de la fase las armas a distancia equipadas por las miniaturas de esa unidad tienen la habilidad [**^^Sustained Hits 2^^**]."
     },
     {
       "id": "c01e326c9bc4d14c",
@@ -1732,7 +1732,7 @@
         ]
       },
       "source": "While the bearer's unit is wholly within 6\" of one or more friendly ^^**Leagues of Votann Transport^^** units, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP and hits are scored on an unmodified Hit roll of 5+ while resolving that Stratagem.",
-      "target": null
+      "target": "Mientras la unidad del portador esté completamente a 6\" o menos de una o más unidades amigas ^^**Leagues of Votann Transport^^**, puedes tomar como objetivo a la unidad del portador con el Stratagem Fire Overwatch por 0CP y, mientras resuelves ese Stratagem, se consiguen impactos con una tirada para impactar sin modificar de 5+."
     },
     {
       "id": "c75657c74d13416c",
@@ -1748,7 +1748,7 @@
         ]
       },
       "source": "Each time a friendly ^^**Leagues of Votann^^** model is repaired using the bearer's Forgewrought Expertise ability, that model regains one additional lost wound.",
-      "target": null
+      "target": "Cada vez que una miniatura amiga ^^**Leagues of Votann^^** es reparada usando la habilidad Forgewrought Expertise del portador, esa miniatura recupera una herida perdida adicional."
     },
     {
       "id": "9b8fbd9072e2f20e",
@@ -1762,7 +1762,7 @@
         "names": []
       },
       "source": "Each time an enemy unit is destroyed by the bearer’s unit, gain 2YP.",
-      "target": null
+      "target": "Cada vez que una unidad enemiga es destruida por la unidad del portador, ganas 2YP."
     },
     {
       "id": "fe1ef5e8a2d476f5",
@@ -1776,7 +1776,7 @@
         "names": []
       },
       "source": "At the end of your turn, if the bearer is on the battlefield and you gained fewer than 3YP this turn, you gain an amount of YP equal to the difference.",
-      "target": null
+      "target": "Al final de tu turno, si el portador está en el campo de batalla y has ganado menos de 3YP este turno, ganas una cantidad de YP igual a la diferencia."
     },
     {
       "id": "cb09e039b9905395",
@@ -1792,7 +1792,7 @@
         "names": []
       },
       "source": "Each time a model in the bearer’s unit makes an attack, re‑roll a Hit roll of 1. Each time the bearer’s unit is selected to shoot or fight, you can spend 3YP. If you do, until the end of the phase, each time a model in the bearer’s unit makes an attack, that attack has the [SUSTAINED HITS 1] ability.",
-      "target": null
+      "target": "Cada vez que una miniatura de la unidad del portador realiza un ataque, repite una tirada para impactar de 1. Cada vez que la unidad del portador es seleccionada para disparar o para combatir, puedes gastar 3YP. Si lo haces, hasta el final de la fase, cada vez que una miniatura de la unidad del portador realiza un ataque, ese ataque tiene la habilidad [SUSTAINED HITS 1]."
     },
     {
       "id": "b7c8ab1dd2d981e7",
@@ -1806,7 +1806,7 @@
         "names": []
       },
       "source": "At the start of the Command phase, you can spend 3YP. If you do, until the end of the turn, while an enemy unit is within 3” of the bearer, subtract 1 from the Objective Control characteristic of models in that enemy unit.",
-      "target": null
+      "target": "Al comienzo de la fase de Mando, puedes gastar 3YP. Si lo haces, hasta el final del turno, mientras una unidad enemiga esté a 3” o menos del portador, resta 1 a la característica de Control de Objetivos de las miniaturas de esa unidad enemiga."
     },
     {
       "id": "f51a906c7d222e80",
@@ -1820,7 +1820,7 @@
         "names": []
       },
       "source": "This model has +2**W**.",
-      "target": null
+      "target": "Esta miniatura tiene +2**W**."
     },
     {
       "id": "91547d0d85c09006",
@@ -1834,7 +1834,7 @@
         "names": []
       },
       "source": "In the Fight phase, when a model in this unit is **destroyed**, if this unit has not been **selected to fight** this phase, roll one D6: on a 4+, do not remove that model from the battlefield; after this unit has fought, or at the end of the phase (whichever comes first), that model is removed from the battlefield.",
-      "target": null
+      "target": "En la fase de Combate, cuando una miniatura de esta unidad es **destruida**, si esta unidad no ha sido **seleccionada para combatir** esta fase, tira un D6: con un 4+, no retires esa miniatura del campo de batalla; después de que esta unidad haya combatido, o al final de la fase (lo que ocurra primero), esa miniatura se retira del campo de batalla."
     },
     {
       "id": "b012dcf4b36a79b7",
@@ -1848,7 +1848,7 @@
         "names": []
       },
       "source": "Each time this unit is select to shoot or fight, you can re-roll one Hit roll and you can re-roll one Wound roll.",
-      "target": null
+      "target": "Cada vez que esta unidad es seleccionada para disparar o para combatir, puedes repetir una tirada para impactar y puedes repetir una tirada para herir."
     },
     {
       "id": "a5f7dee813fb4744",
@@ -1862,7 +1862,7 @@
         "names": []
       },
       "source": "Improve the Objective Control and Leadership characteristics of models in this unit by 1.",
-      "target": null
+      "target": "Mejora en 1 las características de Control de Objetivos y de Leadership de las miniaturas de esta unidad."
     },
     {
       "id": "46247cbc3f670fc6",
@@ -1879,7 +1879,7 @@
         ]
       },
       "source": "**^^Character^^** models in this unit have the Feel No Pain 5+ ability and you can re-roll Out of Action tests taken for this unit.",
-      "target": null
+      "target": "Las miniaturas **^^Character^^** de esta unidad tienen la habilidad Feel No Pain 5+ y puedes repetir los tests de Out of Action realizados para esta unidad."
     },
     {
       "id": "67760118a6b5144c",
@@ -1898,7 +1898,7 @@
         ]
       },
       "source": "At the start of the battle, select one unit from your opponent's Crusade army. Each time a model in this unit makes an attack that targets that unit, that attack has the **[LETHAL HITS]** and **[PRECISION]** abilities.",
-      "target": null
+      "target": "Al comienzo de la batalla, selecciona una unidad del ejército de Crusade de tu oponente. Cada vez que una miniatura de esta unidad realiza un ataque que toma como objetivo a esa unidad, ese ataque tiene las habilidades **[LETHAL HITS]** y **[PRECISION]**."
     },
     {
       "id": "d60e5ab43d1ed244",
@@ -1913,7 +1913,7 @@
         "names": []
       },
       "source": "Models in this unit have a 5+ invulnerable save.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen una salvación invulnerable de 5+."
     },
     {
       "id": "619762f33e84317c",
@@ -1929,7 +1929,7 @@
         ]
       },
       "source": "This unit always has Hostile Acquisition, even while units from your Crusade army have Fortify Takeover.",
-      "target": null
+      "target": "Esta unidad siempre tiene Hostile Acquisition, incluso mientras las unidades de tu ejército de Crusade tienen Fortify Takeover."
     },
     {
       "id": "7e505cefd4a1a3c3",
@@ -1943,7 +1943,7 @@
         "names": []
       },
       "source": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength. In addition, add 1 to the Wound roll if this unit is Below Half-strength.",
-      "target": null
+      "target": "Cada vez que una miniatura de esta unidad realiza un ataque, suma 1 a la tirada para impactar si esta unidad está por debajo de su Starting Strength. Además, suma 1 a la tirada para herir si esta unidad está Below Half-strength."
     },
     {
       "id": "7d1c3d575b144184",
@@ -1959,7 +1959,7 @@
         ]
       },
       "source": "At the start of the battle, you can select one objective marker on the battlefield. While this unit is within range of that objective marker, it has Fortify Takeover, even while units from your Crusade army have Hostile Acquisition.",
-      "target": null
+      "target": "Al comienzo de la batalla, puedes seleccionar un marcador de objetivo del campo de batalla. Mientras esta unidad esté dentro del alcance de ese marcador de objetivo, tiene Fortify Takeover, incluso mientras las unidades de tu ejército de Crusade tienen Hostile Acquisition."
     },
     {
       "id": "3dbaf4b7ab202c45",
@@ -1975,7 +1975,7 @@
         ]
       },
       "source": "While units from your Crusade army have Fortify Takeover, each time an attack with an unmodified Damage characteristic of 1 is allocated to a model in this unit, add 1 to any armour saving throw made against that attack.",
-      "target": null
+      "target": "Mientras las unidades de tu ejército de Crusade tienen Fortify Takeover, cada vez que un ataque con una característica de Daño sin modificar de 1 se asigna a una miniatura de esta unidad, suma 1 a cualquier tirada de salvación por blindaje realizada contra ese ataque."
     },
     {
       "id": "3081677acb255057",
@@ -1991,7 +1991,7 @@
         ]
       },
       "source": "The first time the bearer is destroyed, roll one D6 at the end of the phase: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining.",
-      "target": null
+      "target": "La primera vez que el portador es destruido, tira un D6 al final de la fase: con un 2+, vuelve a desplegar al portador en el campo de batalla lo más cerca posible de donde fue destruido y fuera del alcance de combate de una o más unidades enemigas, con 3 heridas restantes."
     },
     {
       "id": "a06560d6282f7877",
@@ -2007,7 +2007,7 @@
         ]
       },
       "source": "While units from your Crusade army have Hostile Acquisition, each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack. While units from your Crusade army have Fortify Takeover, each time an attack is allocated to the bearer, change the Damage characteristic of that attack to 1.",
-      "target": null
+      "target": "Mientras las unidades de tu ejército de Crusade tienen Hostile Acquisition, cada vez que se asigna un ataque al portador, resta 1 a la característica de Daño de ese ataque. Mientras las unidades de tu ejército de Crusade tienen Fortify Takeover, cada vez que se asigna un ataque al portador, cambia a 1 la característica de Daño de ese ataque."
     },
     {
       "id": "1683a964270e4258",
@@ -2024,7 +2024,7 @@
         ]
       },
       "source": "Each time the bearer makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll. At the end of the Fight phase, you can select one enemy unit within Engagement Range of the bearer and spend up to 4 Yield points. Roll one D6 for each point spent: for each 2+, that enemy unit suffers 1 mortal wound.",
-      "target": null
+      "target": "Cada vez que el portador realiza un ataque de cuerpo a cuerpo, puedes repetir la tirada para impactar y puedes repetir la tirada para herir. Al final de la fase de Combate, puedes seleccionar una unidad enemiga que esté dentro del alcance de combate del portador y gastar hasta 4 puntos de Yield. Tira un D6 por cada punto gastado: por cada 2+, esa unidad enemiga sufre 1 herida mortal."
     },
     {
       "id": "29ec1c7f15591b2e",
@@ -2040,7 +2040,7 @@
         ]
       },
       "source": "**^^Grimnyr^^** only. When selecting Agendas for a battle, you can select one additional **^^Leagues of Votann^^** Agenda for that battle.",
-      "target": null
+      "target": "Solo **^^Grimnyr^^**. Al seleccionar Agendas para una batalla, puedes seleccionar una Agenda **^^Leagues of Votann^^** adicional para esa batalla."
     },
     {
       "id": "84c5f7774c5f5709",
@@ -2056,7 +2056,7 @@
         ]
       },
       "source": "While units from your Crusade army have Hostile Acquisition, add 2 to the Attacks characteristic of the bearer's melee weapons. While units from your Crusade army have Fortify Takeover, add 1 to the Attacks characteristic of the bearer's melee weapons.",
-      "target": null
+      "target": "Mientras las unidades de tu ejército de Crusade tienen Hostile Acquisition, suma 2 a la característica de Ataques de las armas de cuerpo a cuerpo del portador. Mientras las unidades de tu ejército de Crusade tienen Fortify Takeover, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo del portador."
     },
     {
       "id": "8a24b941dcba9623",
@@ -2072,7 +2072,7 @@
         ]
       },
       "source": "At the end of each battle, each **^^League of Votann^^** unit from your Crusade army that is on the battlefield (excluding **^^Vehicles^^**) gains 1XP.",
-      "target": null
+      "target": "Al final de cada batalla, cada unidad **^^League of Votann^^** de tu ejército de Crusade que esté en el campo de batalla (excluidos los **^^Vehicles^^**) gana 1XP."
     },
     {
       "id": "55ff9258004b2d4c",
@@ -2086,7 +2086,7 @@
         "names": []
       },
       "source": "After each battle, when your determine which fundamental resource you gain, if it is not biomatter, gain 20 biomatter.",
-      "target": null
+      "target": "Después de cada batalla, cuando determines qué recurso fundamental ganas, si no es biomatter, gana 20 de biomatter."
     },
     {
       "id": "181a2f914bf0cfd5",
@@ -2100,7 +2100,7 @@
         "names": []
       },
       "source": "Each time you gain any amount of raw minerals, add an additional 10 to the amount you gain (for a total of +30 from this mining outpost).",
-      "target": null
+      "target": "Cada vez que ganas cualquier cantidad de raw minerals, suma 10 adicionales a la cantidad que ganas (para un total de +30 con este puesto minero)."
     },
     {
       "id": "934f0b71f604f024",
@@ -2114,7 +2114,7 @@
         "names": []
       },
       "source": "Each time you gain any amount of raw minerals, add 20 to the amount you gain for each mining outpost you have.",
-      "target": null
+      "target": "Cada vez que ganas cualquier cantidad de raw minerals, suma 20 a la cantidad que ganas por cada puesto minero que tengas."
     },
     {
       "id": "779c6b6868c53dfe",
@@ -2128,7 +2128,7 @@
         "names": []
       },
       "source": "After each battle, you can use the Guild Patronage Requisition twice.",
-      "target": null
+      "target": "Después de cada batalla, puedes usar la Requisition Guild Patronage dos veces."
     },
     {
       "id": "5730a27011a5e5f6",
@@ -2142,7 +2142,7 @@
         "names": []
       },
       "source": "After each battle, you can use the Guild Patronage Requisition once.",
-      "target": null
+      "target": "Después de cada batalla, puedes usar la Requisition Guild Patronage una vez."
     },
     {
       "id": "33c9d8fefb21af6a",
@@ -2158,7 +2158,7 @@
         ]
       },
       "source": "After each battle, select one additional **^^Leagues of Votann^^** unit from your Crusade army to be Marked for Greatness.",
-      "target": null
+      "target": "Después de cada batalla, selecciona una unidad **^^Leagues of Votann^^** adicional de tu ejército de Crusade para que esté Marked for Greatness."
     },
     {
       "id": "f8643aec2f2b45b7",
@@ -2174,7 +2174,7 @@
         ]
       },
       "source": "Each time a **^^Leagues of Votann^^** unit from your Crusade army is Marked for Greatness, that unit gains an additional 1XP.",
-      "target": null
+      "target": "Cada vez que una unidad **^^Leagues of Votann^^** de tu ejército de Crusade es Marked for Greatness, esa unidad gana 1XP adicional."
     },
     {
       "id": "c291b200ac5f9ca3",
@@ -2190,7 +2190,7 @@
         ]
       },
       "source": "After each battle, if your Crusade force is on an expedition, you can choose to remove 1 rare resource from your Acquisition tracker. If you do, increase the maximum length of the expedition by 1 battle.",
-      "target": null
+      "target": "Después de cada batalla, si tu fuerza de Crusade está en una expedición, puedes elegir retirar 1 recurso raro de tu Acquisition tracker. Si lo haces, aumenta en 1 batalla la duración máxima de la expedición."
     },
     {
       "id": "15e6ba615386289d",
@@ -2204,7 +2204,7 @@
         "names": []
       },
       "source": "Each time you roll to randomly determine a type of resource, you can re-roll the dice.",
-      "target": null
+      "target": "Cada vez que tiras para determinar aleatoriamente un tipo de recurso, puedes repetir la tirada."
     },
     {
       "id": "cf02a68c960de853",
@@ -2220,7 +2220,7 @@
         ]
       },
       "source": "Each time you roll a D6 to see if your Crusade force has gained a rare resource, you can re-roll the dice.",
-      "target": null
+      "target": "Cada vez que tiras un D6 para ver si tu fuerza de Crusade ha ganado un recurso raro, puedes repetir la tirada."
     },
     {
       "id": "94ff6ca1fdc5a317",
@@ -2236,7 +2236,7 @@
         ]
       },
       "source": "After each battle, you can re-roll failed Out of Action tests for **^^Leagues of Votann^^** units (excluding **^^Vehicles^^**) from your Crusade army.",
-      "target": null
+      "target": "Después de cada batalla, puedes repetir los tests de Out of Action fallados de las unidades **^^Leagues of Votann^^** (excluidos los **^^Vehicles^^**) de tu ejército de Crusade."
     },
     {
       "id": "4c093789dc0ed44a",
@@ -2250,7 +2250,7 @@
         "names": []
       },
       "source": "At the start of the first battle round, you can spend 20 of any fundamental resource. If you do, gain 2 Yield points. These do not count towards the total Yield points you have.",
-      "target": null
+      "target": "Al comienzo de la primera ronda de batalla, puedes gastar 20 de cualquier recurso fundamental. Si lo haces, ganas 2 puntos de Yield. Estos no cuentan para el total de puntos de Yield que tienes."
     },
     {
       "id": "431be5b9acc75c4a",
@@ -2264,7 +2264,7 @@
         "names": []
       },
       "source": "After each battle, randomly determine on fundamental resource. For each Yield point you had at the end of the battle, gain 10 of that resource.",
-      "target": null
+      "target": "Después de cada batalla, determina aleatoriamente un recurso fundamental. Por cada punto de Yield que tuvieras al final de la batalla, gana 10 de ese recurso."
     },
     {
       "id": "bdc03abc9e0448dd",
@@ -2278,7 +2278,7 @@
         "names": []
       },
       "source": "Before each battle, you can use the Field Testing Requisition twice for 1RP instead of 2RP.",
-      "target": null
+      "target": "Antes de cada batalla, puedes usar la Requisition Field Testing dos veces por 1RP en lugar de 2RP."
     },
     {
       "id": "9f5ed6fa43d8302d",
@@ -2292,7 +2292,7 @@
         "names": []
       },
       "source": "Before each battle, you can use the Field Testing Requisition once for 1RP instead of 2RP.",
-      "target": null
+      "target": "Antes de cada batalla, puedes usar la Requisition Field Testing una vez por 1RP en lugar de 2RP."
     },
     {
       "id": "f80cea9d2dd81917",
@@ -2309,7 +2309,7 @@
         ]
       },
       "source": "Each time you use the Increase Supply Limit Requisition, your Crusade force's Supply Limit is increased 400 points instead of 200 points.",
-      "target": null
+      "target": "Cada vez que usas la Requisition Increase Supply Limit, el Supply Limit de tu fuerza de Crusade aumenta en 400 puntos en lugar de 200 puntos."
     },
     {
       "id": "c490b0a5df0f786d",
@@ -2325,7 +2325,7 @@
         ]
       },
       "source": "After each battle, you gain an additional D6x5 Biomatter.",
-      "target": null
+      "target": "Después de cada batalla, ganas D6x5 Biomatter adicionales."
     },
     {
       "id": "8cba70f0a7465b9d",
@@ -2345,7 +2345,7 @@
         ]
       },
       "source": "After each battle, you can choose to remove 1 Rare Galactic Intel from your Kindred Acquisitions Record Sheet. If you do so, select one **^^Grimnyr^^** unit from your Crusade force. That unit gains a Battle Honour (it must be a Battle Honour that unit can have). You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle Honour on that unit's Crusade card.",
-      "target": null
+      "target": "Después de cada batalla, puedes elegir retirar 1 Rare Galactic Intel de tu Kindred Acquisitions Record Sheet. Si lo haces, selecciona una unidad **^^Grimnyr^^** de tu fuerza de Crusade. Esa unidad gana una Battle Honour (debe ser una Battle Honour que esa unidad pueda tener). Solo puedes dar una Battle Honour de esta forma a cada unidad de tu fuerza de Crusade - anótalo junto a esa Battle Honour en la Crusade card de esa unidad."
     },
     {
       "id": "e90f92b90b969830",
@@ -2361,7 +2361,7 @@
         ]
       },
       "source": "After each battle, you gain an additional D6x5 Galactic Intel.",
-      "target": null
+      "target": "Después de cada batalla, ganas D6x5 Galactic Intel adicionales."
     },
     {
       "id": "3e182bcd10f2000d",
@@ -2375,7 +2375,7 @@
         "names": []
       },
       "source": "After each battle, roll one D6, adding 1 to the result if you won that battle. On a 5+, you gain 1 additional Requisition point.",
-      "target": null
+      "target": "Después de cada batalla, tira un D6, sumando 1 al resultado si ganaste esa batalla. Con un 5+, ganas 1 punto de Requisition adicional."
     },
     {
       "id": "c7fd766934482bd7",
@@ -2391,7 +2391,7 @@
         ]
       },
       "source": "After each battle, you gain an additional D6x5 Energy Sources.",
-      "target": null
+      "target": "Después de cada batalla, ganas D6x5 Energy Sources adicionales."
     },
     {
       "id": "50073d1048a26e7f",
@@ -2411,7 +2411,7 @@
         ]
       },
       "source": "After each battle, you can choose to remove 1 Rare Energy Sources from your Kindred Acquisitions Record Sheet, If you do so, select one **^^Leagues of Votann^^** unit from your Crusade force. That unit gains one Weapon Modifications Battle Honour. You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle on that unit's Crusade card.",
-      "target": null
+      "target": "Después de cada batalla, puedes elegir retirar 1 Rare Energy Sources de tu Kindred Acquisitions Record Sheet. Si lo haces, selecciona una unidad **^^Leagues of Votann^^** de tu fuerza de Crusade. Esa unidad gana una Battle Honour de tipo Weapon Modifications. Solo puedes dar una Battle Honour de esta forma a cada unidad de tu fuerza de Crusade - anótalo junto a esta Battle en la Crusade card de esa unidad."
     },
     {
       "id": "7c75453430de3a78",
@@ -2425,7 +2425,7 @@
         "names": []
       },
       "source": "The Rearm and Resupply Requisition costs 0RP to use.",
-      "target": null
+      "target": "Usar la Requisition Rearm and Resupply cuesta 0RP."
     },
     {
       "id": "ae2505a00cbdf027",
@@ -2446,7 +2446,7 @@
         ]
       },
       "source": "After each battle, you can choose to remove 1 Rare Biomatter from your Kindred Acquisitions Record Sheet, If you do so, select one **^^Leagues of Votann Character^^** unit from your Crusade force. That unit gains one Crusade Relic Battle Honour. You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle on that unit's Crusade card.",
-      "target": null
+      "target": "Después de cada batalla, puedes elegir retirar 1 Rare Biomatter de tu Kindred Acquisitions Record Sheet. Si lo haces, selecciona una unidad **^^Leagues of Votann Character^^** de tu fuerza de Crusade. Esa unidad gana una Battle Honour de tipo Crusade Relic. Solo puedes dar una Battle Honour de esta forma a cada unidad de tu fuerza de Crusade - anótalo junto a esta Battle en la Crusade card de esa unidad."
     },
     {
       "id": "d2d2f872602cb26a",
@@ -2460,7 +2460,7 @@
         "names": []
       },
       "source": "Each time you roll to randomly determine a type of resource, you can roll two dice and choose one of the results to apply.",
-      "target": null
+      "target": "Cada vez que tiras para determinar aleatoriamente un tipo de recurso, puedes tirar dos dados y elegir cuál de los dos resultados se aplica."
     },
     {
       "id": "b22220457d8186ab",
@@ -2477,7 +2477,7 @@
         ]
       },
       "source": "Each time you roll a D6 to see if your Crusade force has acquired a Rare Resource, add 1 to the result.",
-      "target": null
+      "target": "Cada vez que tiras un D6 para ver si tu fuerza de Crusade ha adquirido un recurso raro, suma 1 al resultado."
     },
     {
       "id": "7b5e8e4abafee7a6",
@@ -2493,7 +2493,7 @@
         ]
       },
       "source": "After each battle, you gain an additional D6x5 Raw Minerals.",
-      "target": null
+      "target": "Después de cada batalla, ganas D6x5 Raw Minerals adicionales."
     },
     {
       "id": "f214efc75b239f0e",
@@ -2512,7 +2512,7 @@
         ]
       },
       "source": "After each battle, you can choose to remove 1 Rare Raw Minerals from your Kindred Acquisitions Record Sheet, If you do so, select one **^^Leagues of Votann^^** unit from your Crusade force. That unit gains one Battle Trait Battle Honour from the White Dwarf magazine. You can only give each unit in your Crusade force one Battle Honour in this manner - make a note of this next to this Battle on that unit's Crusade card.",
-      "target": null
+      "target": "Después de cada batalla, puedes elegir retirar 1 Rare Raw Minerals de tu Kindred Acquisitions Record Sheet. Si lo haces, selecciona una unidad **^^Leagues of Votann^^** de tu fuerza de Crusade. Esa unidad gana una Battle Honour de tipo Battle Trait de la revista White Dwarf. Solo puedes dar una Battle Honour de esta forma a cada unidad de tu fuerza de Crusade - anótalo junto a esta Battle en la Crusade card de esa unidad."
     },
     {
       "id": "71189bfd7fea8804",
@@ -2526,7 +2526,7 @@
         "names": []
       },
       "source": "The Fresh Recruits Requisition costs 1 less Requisition point to use, to a minimum of 0.",
-      "target": null
+      "target": "Usar la Requisition Fresh Recruits cuesta 1 punto de Requisition menos, hasta un mínimo de 0."
     },
     {
       "id": "1858a0510f738467",
@@ -2542,7 +2542,7 @@
         ]
       },
       "source": "After each battle, when you are determining how many resources are gained by your Crusade force, you can re-roll the dice.",
-      "target": null
+      "target": "Después de cada batalla, cuando determines cuántos recursos gana tu fuerza de Crusade, puedes repetir la tirada."
     },
     {
       "id": "b4d4a6b172743ae0",
@@ -2558,7 +2558,7 @@
         ]
       },
       "source": "Until your Crusade force next completes an expedition, you cannot use the Guild Patronage Requisition, even if you have a trading hub.",
-      "target": null
+      "target": "Hasta que tu fuerza de Crusade complete su siguiente expedición, no puedes usar la Requisition Guild Patronage, aunque tengas un centro de comercio."
     },
     {
       "id": "9fce3c81ad96b90d",
@@ -2574,7 +2574,7 @@
         ]
       },
       "source": "Until your Crusade force next completes an expedition, you cannot purchase, upgrade or reactivate kindred assets.",
-      "target": null
+      "target": "Hasta que tu fuerza de Crusade complete su siguiente expedición, no puedes comprar, mejorar ni reactivar kindred assets."
     },
     {
       "id": "f62b225270597626",
@@ -2590,7 +2590,7 @@
         ]
       },
       "source": "Until your Crusade force next completes an expedition, each time you roll to determine the fundamental resource gained or the amount of resources gained, subtract 1 from the roll, to a minimum of 1.",
-      "target": null
+      "target": "Hasta que tu fuerza de Crusade complete su siguiente expedición, cada vez que tires para determinar el recurso fundamental ganado o la cantidad de recursos ganados, resta 1 a la tirada, hasta un mínimo de 1."
     },
     {
       "id": "1e99c20d82676619",
@@ -2606,7 +2606,7 @@
         ]
       },
       "source": "Once per battle round, one unit from your Crusade army with this ability can use this ability when it is selected to Advance. If it does, do not make an Advance roll for that unit. Instead, until the end of the phase, add 12\" to the Move characteristic of models in that unit.",
-      "target": null
+      "target": "Una vez por ronda de batalla, una unidad de tu ejército de Crusade con esta habilidad puede usar esta habilidad cuando es seleccionada para avanzar. Si lo hace, no hagas una tirada de avance para esa unidad. En su lugar, hasta el final de la fase, suma 12\" a la característica de Movimiento de las miniaturas de esa unidad."
     },
     {
       "id": "2e2bd25dfb8ce456",
@@ -2622,7 +2622,7 @@
         ]
       },
       "source": "This unit has the Feel No Pain 5+ ability against mortal wounds.",
-      "target": null
+      "target": "Esta unidad tiene la habilidad Feel No Pain 5+ contra las heridas mortales."
     },
     {
       "id": "77876fa10de516af",
@@ -2636,7 +2636,7 @@
         "names": []
       },
       "source": "Once per battle, when a ranged attack is allocated to this model, change the Damage characteristic of that attack to 0.",
-      "target": null
+      "target": "Una vez por batalla, cuando se asigna un ataque a distancia a esta miniatura, cambia a 0 la característica de Daño de ese ataque."
     },
     {
       "id": "a383484535ddcc26",
@@ -2652,7 +2652,7 @@
         ]
       },
       "source": "Each time this unit uses it's Brôkhyr's Guild ability, if this unit contains an Ironkyn Assistant, it can repair up to two **^^Vehicles^^**, instead of 1.",
-      "target": null
+      "target": "Cada vez que esta unidad usa su habilidad Brôkhyr's Guild, si esta unidad contiene un Ironkyn Assistant, puede reparar hasta dos **^^Vehicles^^** en lugar de 1."
     },
     {
       "id": "d30c1c255e659ea0",
@@ -2668,7 +2668,7 @@
         ]
       },
       "source": "Once per turn, one unit from your Crusade army with this ability can use this ability when they are selected to shoot or fight. If it does, until the end of the phase, each time a model in this unit makes an attack, add 1 to the Hit roll.",
-      "target": null
+      "target": "Una vez por turno, una unidad de tu ejército de Crusade con esta habilidad puede usar esta habilidad cuando es seleccionada para disparar o para combatir. Si lo hace, hasta el final de la fase, cada vez que una miniatura de esta unidad realiza un ataque, suma 1 a la tirada para impactar."
     },
     {
       "id": "9745bcc1bee869a5",
@@ -2685,7 +2685,7 @@
         ]
       },
       "source": "If this unit is part of your Crusade army, and if it was not destroyed during the battle, then at the end of the battle you can ignore one failed Out of Action test taken for a **^^Leagues of Votann Vehicle^^** unit from your Crusade army - that test is treated as having been passed instead.",
-      "target": null
+      "target": "Si esta unidad forma parte de tu ejército de Crusade y no fue destruida durante la batalla, al final de la batalla puedes ignorar un test de Out of Action fallado realizado para una unidad **^^Leagues of Votann Vehicle^^** de tu ejército de Crusade - ese test se considera superado en su lugar."
     },
     {
       "id": "fa43a78e38341b94",
@@ -2703,7 +2703,7 @@
         ]
       },
       "source": "Models in this unit have the Feel No Pain 4+ ability against **[PSYCHIC]** attacks and against mortal wounds caused by **[PSYCHIC]** abilities.",
-      "target": null
+      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 4+ contra los ataques **[PSYCHIC]** y contra las heridas mortales causadas por habilidades **[PSYCHIC]**."
     },
     {
       "id": "081fda88a896b917",
@@ -2719,7 +2719,7 @@
         ]
       },
       "source": "At the end of each battle, for each unit with this Battle Trait that is on the battlefield, increase the amount of the resource that is acquired by 10, to a maximum of an additional 50 resources, ad each time you roll a dice to see if a Rare Resource is acquired, add 1 to the result.",
-      "target": null
+      "target": "Al final de cada batalla, por cada unidad con este Battle Trait que esté en el campo de batalla, aumenta en 10 la cantidad del recurso que se adquiere, hasta un máximo de 50 recursos adicionales, y cada vez que tires un dado para ver si se adquiere un recurso raro, suma 1 al resultado."
     },
     {
       "id": "a3bd53967ba7b8ed",
@@ -2733,7 +2733,7 @@
         "names": []
       },
       "source": "Once per battle, in your Command phase, you can select one enemy unit on the battlefield that has 1 Judgement token to be this unit's 'Allotted Target'. Until the start of your next Command phase, each time a model (excluding a **^^Cog^^** model) in this unit makes an attack that targets its Allotted Target, that enemy unit is considered to have 2 Judgement tokens when determining what bonus applies to the attacking model's attacks.\n***Data Author Note: Judgement tokens were removed with the release of the codex.***",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Mando, puedes seleccionar una unidad enemiga del campo de batalla que tenga 1 ficha de Judgement para que sea el 'Allotted Target' de esta unidad. Hasta el inicio de tu siguiente fase de Mando, cada vez que una miniatura (excluidas las miniaturas **^^Cog^^**) de esta unidad realiza un ataque que toma como objetivo a su Allotted Target, se considera que esa unidad enemiga tiene 2 fichas de Judgement al determinar qué bonificación se aplica a los ataques de la miniatura atacante.\n***Nota del autor de los datos: las fichas de Judgement se eliminaron con la publicación del codex.***"
     },
     {
       "id": "07b475833f32ac92",
@@ -2750,7 +2750,7 @@
         ]
       },
       "source": "While a friendly **^^Leagues of Votann Character^^** is leading this unit, that **^^Character^^** has the Feel No Pain 4+ ability.",
-      "target": null
+      "target": "Mientras un **^^Leagues of Votann Character^^** amigo lidera esta unidad, ese **^^Character^^** tiene la habilidad Feel No Pain 4+."
     },
     {
       "id": "822fa24bed50342f",
@@ -2764,7 +2764,7 @@
         "names": []
       },
       "source": "Once per battle, in your Shooting phase, after this unit has shot, it can make a Normal move of up to 6\". If it does until the ned of the turn, this unit is not eligible to declare a charge.",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Disparo, después de que esta unidad haya disparado, puede realizar un movimiento normal de hasta 6\". Si lo hace, hasta el final del turno, esta unidad no es elegible para declarar una carga."
     },
     {
       "id": "d5d6bf7ed235c5bf",
@@ -2780,7 +2780,7 @@
         ]
       },
       "source": "When a unit first gains this Battle Trait, you can immediately use the Directed Hatred Requisition on this unit for 0RP. Each time a model in this unit makes an attack, if this unit is harbouring a Grudge against your opponent's Crusade army, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Cuando una unidad gana por primera vez este Battle Trait, puedes usar inmediatamente la Requisition Directed Hatred en esta unidad por 0RP. Cada vez que una miniatura de esta unidad realiza un ataque, si esta unidad alberga un Grudge contra el ejército de Crusade de tu oponente, puedes repetir la tirada para impactar."
     },
     {
       "id": "a58b06ec1a1c80ef",
@@ -2794,7 +2794,7 @@
         "names": []
       },
       "source": "You can ignore any or all modifiers to the Leadership characteristic of models in this unit, and you can re-roll failed Out of Action tests taken for this unit.",
-      "target": null
+      "target": "Puedes ignorar cualquiera o todos los modificadores a la característica de Leadership de las miniaturas de esta unidad, y puedes repetir los tests de Out of Action fallados realizados para esta unidad."
     },
     {
       "id": "233b9c8c5b35d773",
@@ -2808,7 +2808,7 @@
         "names": []
       },
       "source": "Each time this model makes a ranged attack, you can ignore any or all modifiers to that attack's Ballistic Skill characteristic and/or any or all modifiers to that attack's Hit roll.",
-      "target": null
+      "target": "Cada vez que esta miniatura realiza un ataque a distancia, puedes ignorar cualquiera o todos los modificadores a la característica de Habilidad de Proyectiles de ese ataque y/o cualquiera o todos los modificadores a la tirada para impactar de ese ataque."
     },
     {
       "id": "80667a4794f554cc",
@@ -2822,7 +2822,7 @@
         "names": []
       },
       "source": "In your Shooting phase, each time this unit is selected to shoot, select one ranged weapon equipped by that unit. Until the end of the phase, improve the Ballistic Skill characteristic of that unit by 1.",
-      "target": null
+      "target": "En tu fase de Disparo, cada vez que esta unidad es seleccionada para disparar, selecciona un arma a distancia equipada por esa unidad. Hasta el final de la fase, mejora en 1 la característica de Habilidad de Proyectiles de esa unidad."
     },
     {
       "id": "5298c57f2c62cee9",
@@ -2838,7 +2838,7 @@
         ]
       },
       "source": "Once per battle, in your Shooting phase, if the bearer's unit has not shot this phase, the bearer can use this relic. If it does, until the end of the phase, the bearer has the **^^Grenades^^** keyword. In addition, until the end of the phase, when you target the bearer's unit with the Grenade Stratagem, add 1 to the dice roll to determine whether the enemy unit suffers a mortal wound for each Judgement token that enemy unit has.\n***Data Author Note: Judgement tokens were removed with the release of the codex.***",
-      "target": null
+      "target": "Una vez por batalla, en tu fase de Disparo, si la unidad del portador no ha disparado esta fase, el portador puede usar esta reliquia. Si lo hace, hasta el final de la fase, el portador tiene la palabra clave **^^Grenades^^**. Además, hasta el final de la fase, cuando tomas como objetivo a la unidad del portador con el Stratagem Grenade, suma 1 a la tirada de dado para determinar si la unidad enemiga sufre una herida mortal por cada ficha de Judgement que tenga esa unidad enemiga.\n***Nota del autor de los datos: las fichas de Judgement se eliminaron con la publicación del codex.***"
     }
   ]
 }

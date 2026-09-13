@@ -439,7 +439,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. While an enemy unit (excluding Monsters and Vehicles) is within 6\" of\nthe bearer, each time that unit fails a Battle‑shock test, one model in that unit is destroyed (chosen by\nits controlling player). Once per battle, when such an enemy unit fails a Battle‑shock test, you can choose for D3 models in that unit to be destroyed in this way instead.",
-      "target": "Solo miniatura Adeptus Astartes. Mientras una unidad enemiga (excluidas las unidades Monsters y Vehicles) está a 6\" o menos\ndel portador, cada vez que esa unidad falla un test de Battle‑shock, una miniatura de esa unidad es destruida (la elige\nsu jugador). Una vez por batalla, cuando una unidad enemiga de ese tipo falla un test de Battle‑shock, puedes elegir que D3 miniaturas de esa unidad sean destruidas de este modo en su lugar."
+      "target": "Solo miniatura Adeptus Astartes. Mientras una unidad enemiga (excluidas las unidades Monsters y Vehicles) está a 6\" o menos\ndel portador, cada vez que esa unidad falla un test de Battle-shock, una miniatura de esa unidad es destruida (la elige\nsu jugador). Una vez por batalla, cuando una unidad enemiga de ese tipo falla un test de Battle-shock, puedes elegir que D3 miniaturas de esa unidad sean destruidas de este modo en su lugar."
     },
     {
       "id": "28a4333103e2eee5",
@@ -835,7 +835,7 @@
         "names": []
       },
       "source": "Adeptus Astartes model only. In the Battle‑shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 9\" of the bearer, that enemy unit must take a Battle‑shock test.",
-      "target": "Solo miniatura Adeptus Astartes. En el paso de Battle‑shock de la fase de Mando de tu oponente, si una unidad enemiga que está por debajo de su Starting Strength está a 9\" o menos del portador, esa unidad enemiga debe hacer un test de Battle‑shock."
+      "target": "Solo miniatura Adeptus Astartes. En el paso de Battle-shock de la fase de Mando de tu oponente, si una unidad enemiga que está por debajo de su Starting Strength está a 9\" o menos del portador, esa unidad enemiga debe hacer un test de Battle-shock."
     },
     {
       "id": "109b2f39fcc42978",
@@ -1025,7 +1025,7 @@
         "names": []
       },
       "source": "ADEPTUS ASTARTES model only. This unit has ‑3\" detection range",
-      "target": "Solo miniatura ADEPTUS ASTARTES. Esta unidad tiene ‑3\" de alcance de detección"
+      "target": "Solo miniatura ADEPTUS ASTARTES. Esta unidad tiene -3\" de alcance de detección"
     },
     {
       "id": "594b63456f885308",
@@ -1070,7 +1070,7 @@
         "names": []
       },
       "source": "DEATH COMPANY model only. When you target this unit with the Heroic Intervention stratagem, that use is ‑1 CP.",
-      "target": "Solo miniatura DEATH COMPANY. Cuando tomas como objetivo a esta unidad con el Stratagem Heroic Intervention, ese uso cuesta ‑1 CP."
+      "target": "Solo miniatura DEATH COMPANY. Cuando tomas como objetivo a esta unidad con el Stratagem Heroic Intervention, ese uso cuesta -1 CP."
     },
     {
       "id": "a14425c6be764578",
@@ -1134,7 +1134,7 @@
         ]
       },
       "source": "EMPEROR’S CHAMPION model only. At the start of the first battle round, you can select up to three of the following abilities. This model has those abilities until the end of the battle:\n\n▪ Instrument of the God‑Emperor (Once per battle, per army):\n   In the Fight phase, when this unit is selected to fight, if this unit is engaged with an enemy CHARACTER unit, you can use this ability. If you do, this model’s melee attacks have [DEVASTATING WOUNDS].\n\n▪ Foreseen Paths of the Unholy: This unit has ‑3\" detection range.\n\n▪ Vision of Momentous Brutality: This model’s melee attacks have +2 A.\n\n▪ Augury of Retribution: Melee attacks that target this unit have [HAZARDOUS].\n\n▪ Omen of Sacred Intervention: When you target this unit with the Heroic Intervention stratagem, that use is ‑1 CP.\n\n▪ Harbinger of Judgement: When an enemy unit (excluding MONSTER/VEHICLE units) engaged with this model is selected to make a fall‑back move, roll one D6:\n    ▫ On a 2+, that enemy unit suffers D6 mortal wounds.",
-      "target": "Solo miniatura EMPEROR’S CHAMPION. Al comienzo de la primera ronda de batalla, puedes seleccionar hasta tres de las siguientes habilidades. Esta miniatura tiene esas habilidades hasta el final de la batalla:\n\n▪ Instrument of the God‑Emperor (Una vez por batalla, por ejército):\n   En la fase de Combate, cuando esta unidad es seleccionada para combatir, si esta unidad está trabada con una unidad CHARACTER enemiga, puedes usar esta habilidad. Si lo haces, los ataques de cuerpo a cuerpo de esta miniatura tienen [DEVASTATING WOUNDS].\n\n▪ Foreseen Paths of the Unholy: Esta unidad tiene ‑3\" de alcance de detección.\n\n▪ Vision of Momentous Brutality: Los ataques de cuerpo a cuerpo de esta miniatura tienen +2 de A.\n\n▪ Augury of Retribution: Los ataques de cuerpo a cuerpo que toman como objetivo a esta unidad tienen [HAZARDOUS].\n\n▪ Omen of Sacred Intervention: Cuando tomas como objetivo a esta unidad con el Stratagem Heroic Intervention, ese uso cuesta ‑1 CP.\n\n▪ Harbinger of Judgement: Cuando una unidad enemiga (excluidas las unidades MONSTER/VEHICLE) trabada con esta miniatura es seleccionada para realizar un movimiento de repliegue, tira un D6:\n     ▫ Con un 2+, esa unidad enemiga sufre D6 heridas mortales."
+      "target": "Solo miniatura EMPEROR’S CHAMPION. Al comienzo de la primera ronda de batalla, puedes seleccionar hasta tres de las siguientes habilidades. Esta miniatura tiene esas habilidades hasta el final de la batalla:\n\n▪ Instrument of the God-Emperor (Una vez por batalla, por ejército):\n   En la fase de Combate, cuando esta unidad es seleccionada para combatir, si esta unidad está trabada con una unidad CHARACTER enemiga, puedes usar esta habilidad. Si lo haces, los ataques de cuerpo a cuerpo de esta miniatura tienen [DEVASTATING WOUNDS].\n\n▪ Foreseen Paths of the Unholy: Esta unidad tiene -3\" de alcance de detección.\n\n▪ Vision of Momentous Brutality: Los ataques de cuerpo a cuerpo de esta miniatura tienen +2 de A.\n\n▪ Augury of Retribution: Los ataques de cuerpo a cuerpo que toman como objetivo a esta unidad tienen [HAZARDOUS].\n\n▪ Omen of Sacred Intervention: Cuando tomas como objetivo a esta unidad con el Stratagem Heroic Intervention, ese uso cuesta -1 CP.\n\n▪ Harbinger of Judgement: Cuando una unidad enemiga (excluidas las unidades MONSTER/VEHICLE) trabada con esta miniatura es seleccionada para realizar un movimiento de repliegue, tira un D6:\n     ▫ Con un 2+, esa unidad enemiga sufre D6 heridas mortales."
     },
     {
       "id": "922439ad11b055de",

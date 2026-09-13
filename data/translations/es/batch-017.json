@@ -658,7 +658,7 @@
         "names": []
       },
       "source": "Ranged attacks that target this unit have ‑1 to wound rolls",
-      "target": "Los ataques a distancia que tienen como objetivo esta unidad tienen ‑1 a las tiradas para herir"
+      "target": "Los ataques a distancia que tienen como objetivo esta unidad tienen -1 a las tiradas para herir"
     },
     {
       "id": "06876a3524e9212d",
@@ -924,7 +924,7 @@
         ]
       },
       "source": "▪ This unit has Stealth.\n▪ Melee attacks that target this unit have ‑1 to hit rolls.",
-      "target": "▪ Esta unidad tiene Stealth.\n▪ Los ataques de cuerpo a cuerpo que tienen como objetivo esta unidad tienen ‑1 a las tiradas para impactar."
+      "target": "▪ Esta unidad tiene Stealth.\n▪ Los ataques de cuerpo a cuerpo que tienen como objetivo esta unidad tienen -1 a las tiradas para impactar."
     },
     {
       "id": "55db977a77f772c8",
@@ -2429,7 +2429,7 @@
         "names": []
       },
       "source": "**^^Grey Knights^^** model only. While the bearer’s unit is not Battle‑shocked, add 3 to the bearer’s Objective Control characteristic.",
-      "target": "Solo miniatura **^^Grey Knights^^**. Mientras la unidad del portador no esté Battle‑shocked, suma 3 a la característica de Control de Objetivos del portador."
+      "target": "Solo miniatura **^^Grey Knights^^**. Mientras la unidad del portador no esté Battle-shocked, suma 3 a la característica de Control de Objetivos del portador."
     },
     {
       "id": "859f90a9c98cef46",

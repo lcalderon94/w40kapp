@@ -1559,7 +1559,7 @@
         "names": []
       },
       "source": "You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n▪ That use is ‑1 CP.\n▪ That use does not prevent any uses of that **stratagem** on other units this phase.",
-      "target": null
+      "target": "Puedes seleccionar esta unidad como objetivo del **stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **stratagem** durante esta fase. Si lo haces:\n▪ Ese uso cuesta ‑1 CP.\n▪ Ese uso no impide ningún otro uso de ese **stratagem** en otras unidades durante esta fase."
     },
     {
       "id": "930447eba87ca3bd",
@@ -1577,7 +1577,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n- **^^Tyranid Warriors with Melee Bio-weapons^^**\n- **^^Tyranid Warriors with Ranged Bio-weapons^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- **^^Tyranid Warriors with Melee Bio-weapons^^**\n- **^^Tyranid Warriors with Ranged Bio-weapons^^**"
     },
     {
       "id": "ab43bd9ef74af85e",
@@ -1593,7 +1593,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n- **^^Raveners^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **^^Raveners^^**"
     },
     {
       "id": "4baad1f2ef3fd1b2",
@@ -1610,7 +1610,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n- **^^Venomthropes^^**\n- **^^Zoanthropes^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- **^^Venomthropes^^**\n- **^^Zoanthropes^^**"
     },
     {
       "id": "ff3bb96766ef6661",
@@ -1626,7 +1626,7 @@
         ]
       },
       "source": "- **^^Neurogaunts^^**",
-      "target": null
+      "target": "- **^^Neurogaunts^^**"
     },
     {
       "id": "08b34488dc69972b",
@@ -1643,7 +1643,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n- **^^Hormagaunts^^**\n- **^^Von Ryan's Leapers^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- **^^Hormagaunts^^**\n- **^^Von Ryan's Leapers^^**"
     },
     {
       "id": "38eaf8fbbd318119",
@@ -1659,7 +1659,7 @@
         ]
       },
       "source": "This model can be attached to the following unit:\n- **^^Gargoyles^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a la siguiente unidad:\n- **^^Gargoyles^^**"
     },
     {
       "id": "83f90c30fd487b5a",
@@ -1676,7 +1676,7 @@
         ]
       },
       "source": "This model can be attached to the following units:\n- **^^Carnifexes^^**\n- **^^Tyrant Guard^^**",
-      "target": null
+      "target": "Esta miniatura puede adjuntarse a las siguientes unidades:\n- **^^Carnifexes^^**\n- **^^Tyrant Guard^^**"
     },
     {
       "id": "c228ac5a20c721a4",
@@ -1690,7 +1690,7 @@
         "names": []
       },
       "source": "At the start of each player's Command phase, this model regains up to D3 lost wounds.",
-      "target": null
+      "target": "Al inicio de la fase de Mando de cada jugador, esta miniatura recupera hasta D3 heridas perdidas."
     },
     {
       "id": "de7a7ee740a216b4",
@@ -1710,7 +1710,7 @@
         ]
       },
       "source": "- **^^Genestealers^^** and **^^Purestrain Genestealers^^** units can perform the Secure Site Tactical Manoeuvre as if they had the **^^Battleline^^** keyword.\n- The **^^Purestrain Genestealers^^** unit loses the Swift and Deadly ability.\n- All models lose the Deep Strike ability.",
-      "target": null
+      "target": "- Las unidades **^^Genestealers^^** y **^^Purestrain Genestealers^^** pueden realizar la Tactical Manoeuvre Secure Site como si tuvieran la palabra clave **^^Battleline^^**.\n- La unidad **^^Purestrain Genestealers^^** pierde la habilidad Swift and Deadly.\n- Todas las miniaturas pierden la habilidad Deep Strike."
     },
     {
       "id": "9ae26ef3d33bfb67",
@@ -1727,7 +1727,7 @@
         ]
       },
       "source": "Units from your army with the Synapse or Cult Ambush abilities replace those abilities with this one.\n\nIn the Deploy Armies step, your opponent must set up their entire army before you set up any of your units. If both players have a rule that allows them to do this, both players set up their units normally.",
-      "target": null
+      "target": "Las unidades de tu ejército con las habilidades Synapse o Cult Ambush sustituyen esas habilidades por esta.\n\nEn el paso Desplegar Ejércitos, tu oponente debe desplegar todo su ejército antes de que tú despliegues ninguna de tus unidades. Si ambos jugadores tienen una regla que les permite hacer esto, ambos jugadores despliegan sus unidades con normalidad."
     },
     {
       "id": "8f3fb27deb94d90f",
@@ -1748,7 +1748,7 @@
         ]
       },
       "source": "When selecting this Detachment, you must select either the **^^Tyranids^^** or **^^Genestealer Cults^^** keyword.\n\n----------\n\nIf you selected **^^Tyranids^^**, you can include up to one of the following unit:\n- **^^Broodlord^^**\n\nYou can include up to three of the following unit:\n- **^^Genestealers^^** (5 or 10 models)\n\n----------\n\nIf you selected **^^Genestealer Cults^^**, you can include up to one of the following unit:\n- **^^Patriarch^^**\n\nYou can include up to three of the following unit:\n- **^^Purestrain Genestealers^^** (5 or 10 models)",
-      "target": null
+      "target": "Al seleccionar este Detachment, debes seleccionar la palabra clave **^^Tyranids^^** o la palabra clave **^^Genestealer Cults^^**.\n\n----------\n\nSi has seleccionado **^^Tyranids^^**, puedes incluir hasta una de las siguientes unidades:\n- **^^Broodlord^^**\n\nPuedes incluir hasta tres de las siguientes unidades:\n- **^^Genestealers^^** (5 o 10 miniaturas)\n\n----------\n\nSi has seleccionado **^^Genestealer Cults^^**, puedes incluir hasta una de las siguientes unidades:\n- **^^Patriarch^^**\n\nPuedes incluir hasta tres de las siguientes unidades:\n- **^^Purestrain Genestealers^^** (5 o 10 miniaturas)"
     },
     {
       "id": "8d8281841e9e7411",
@@ -1765,7 +1765,7 @@
         ]
       },
       "source": "Each time a ranged attack targets a **^^Great Devourer^^** unit from your army, if the attacking model is not within 6\" of that unit, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Cada vez que un ataque a distancia toma como objetivo a una unidad **^^Great Devourer^^** de tu ejército, si la miniatura atacante no está a 6\" o menos de esa unidad, resta 1 a la tirada para impactar."
     },
     {
       "id": "96840080e3e44b7b",
@@ -1783,7 +1783,7 @@
         ]
       },
       "source": "Each time an attack with this model’s gaping maw targets an **^^Infantry^^**, **^^Mounted^^** or **^^Beasts^^** unit, each successful unmodified Wound roll is a Critical Wound. Each time an **^^Infantry^^**, **^^Mounted^^** or **^^Beasts^^** model is destroyed as a result of an attack made by this model’s gaping maw, this model regains up to D3+2 lost wounds.",
-      "target": null
+      "target": "Cada vez que un ataque con la gaping maw de esta miniatura toma como objetivo a una unidad **^^Infantry^^**, **^^Mounted^^** o **^^Beasts^^**, cada tirada para herir sin modificar que tenga éxito es una herida crítica. Cada vez que una miniatura **^^Infantry^^**, **^^Mounted^^** o **^^Beasts^^** es destruida como resultado de un ataque realizado con la gaping maw de esta miniatura, esta miniatura recupera hasta D3+2 heridas perdidas."
     },
     {
       "id": "788f486a3e9a20d7",
@@ -1799,7 +1799,7 @@
         ]
       },
       "source": "At the end of the Fight phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
-      "target": null
+      "target": "Al final de la fase de Combate, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, puedes retirarla del campo de batalla y colocarla en las reservas estratégicas."
     },
     {
       "id": "f5c61b18bd771d01",
@@ -1813,7 +1813,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. After both players have deployed their armies, select up to three **^^Tyranids^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades **^^Tyranids^^** de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas si lo deseas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "aba525aa6267b859",
@@ -1827,7 +1827,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. Once per turn, you can re-roll one Hit roll, one Wound roll, one Damage roll, one Advance roll, one Charge roll or one saving throw made for the bearer",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Una vez por turno, puedes repetir una tirada para impactar, una tirada para herir, una tirada de daño, una tirada de avance, una tirada de carga o una tirada de salvación realizada para el portador"
     },
     {
       "id": "fd1c7925c5fec835",
@@ -1844,7 +1844,7 @@
         ]
       },
       "source": "**^^Tyranids^^** model only. While a friendly **^^Tyranids^^** unit is within 9\" of the bearer, that unit is within Synapse Range of your army.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Mientras una unidad **^^Tyranids^^** amiga esté a 9\" o menos del portador, esa unidad está dentro del Synapse Range de tu ejército."
     },
     {
       "id": "48ff027f66a893d2",
@@ -1861,7 +1861,7 @@
         ]
       },
       "source": "**^^Tyranids^^** model only. The bearer has the Feel No Pain 5+ ability. At the start of any turn, if the bearer has fewer than its starting number of wounds remaining, until the end of the battle, it has the Feel No Pain 4+ ability instead.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. El portador tiene la habilidad Feel No Pain 5+. Al inicio de cualquier turno, si al portador le quedan menos heridas que su número inicial, hasta el final de la batalla tiene la habilidad Feel No Pain 4+ en su lugar."
     },
     {
       "id": "43ff3787c62569cf",
@@ -1877,7 +1877,7 @@
         ]
       },
       "source": "**TYRANIDS** model only. While the bearer is within 6\" of one or more friendly **HARVESTER** units, when you target this unit with the **Heroic Intervention stratagem**, that use is ‑1 CP. In addition, while the bearer is within 6\" of one or more friendly **HARVESTER** units, models in the bearer's unit have the Fights First ability.",
-      "target": null
+      "target": "Solo miniatura **TYRANIDS**. Mientras el portador esté a 6\" o menos de una o más unidades **HARVESTER** amigas, cuando selecciones esta unidad como objetivo del **stratagem Heroic Intervention**, ese uso cuesta ‑1 CP. Además, mientras el portador esté a 6\" o menos de una o más unidades **HARVESTER** amigas, las miniaturas de la unidad del portador tienen la habilidad Fights First."
     },
     {
       "id": "828359471dc77490",
@@ -1893,7 +1893,7 @@
         ]
       },
       "source": "**^^Tyranids^^** model only. Add 1 to the Strength characteristic of melee weapons equipped by models in the bearer's unit. The first time the bearer's unit destroys an enemy unit in the Fight phase while the bearer is within 6\" of one or more **^^Harvester^^** units, until the end of battle, add 1 to the Attacks characteristic of melee weapons equipped by models in the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Suma 1 a la característica de Fuerza de las armas de cuerpo a cuerpo equipadas por las miniaturas de la unidad del portador. La primera vez que la unidad del portador destruye una unidad enemiga en la fase de Combate mientras el portador está a 6\" o menos de una o más unidades **^^Harvester^^**, hasta el final de la batalla, suma 1 a la característica de Ataques de las armas de cuerpo a cuerpo equipadas por las miniaturas de la unidad del portador."
     },
     {
       "id": "8f080675611c1b56",
@@ -1907,7 +1907,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only (excluding **^^Monsters^^** models) The bearer's unit can be regenerated up to twice per phase, instead of once.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^** (excluyendo las miniaturas **^^Monsters^^**) La unidad del portador puede regenerarse hasta dos veces por fase, en lugar de una."
     },
     {
       "id": "1a6fa8cbbaa9b358",
@@ -1925,7 +1925,7 @@
         ]
       },
       "source": "**^^Tyranids^^** model only. While a friendly **^^Harvester^^** model is within 12\" of the bearer, when using the Feed the Swarm ability, that **^^Harvester^^** model can Regenerate one friendly **^^Tyranids^^** unit that is within 9\" instead of one within 6\".",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Mientras una miniatura **^^Harvester^^** amiga esté a 12\" o menos del portador, al usar la habilidad Feed the Swarm, esa miniatura **^^Harvester^^** puede Regenerate a una unidad **^^Tyranids^^** amiga que esté a 9\" o menos en lugar de a una que esté a 6\"."
     },
     {
       "id": "bff9bcc2e6b45b62",
@@ -1942,7 +1942,7 @@
         ]
       },
       "source": "**^^Tyranids Monster^^** only. Each time the bearer makes a melee attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, add 1 to the Wound roll.",
-      "target": null
+      "target": "Solo **^^Tyranids Monster^^**. Cada vez que el portador realiza un ataque de cuerpo a cuerpo que toma como objetivo a una unidad **^^Monster^^** o **^^Vehicle^^**, suma 1 a la tirada para herir."
     },
     {
       "id": "9ef5472dfbd1c57b",
@@ -1960,7 +1960,7 @@
         ]
       },
       "source": "**^^Tyranids Monster^^** only. Once per battle, when a Psychic Attack is allocated to the bearer, it can use this ability. If it does, until the end of the phase, the bearer has the Feel No Pain 5+ ability against Psychic Attacks.",
-      "target": null
+      "target": "Solo **^^Tyranids Monster^^**. Una vez por batalla, cuando un ataque psíquico se asigna al portador, este puede usar esta habilidad. Si lo hace, hasta el final de la fase el portador tiene la habilidad Feel No Pain 5+ contra ataques psíquicos."
     },
     {
       "id": "81805a5ded0eaeca",
@@ -1976,7 +1976,7 @@
         ]
       },
       "source": "**^^Tyranids Monster^^** only. Add 3 to the bearer's Objective Control characteristic.",
-      "target": null
+      "target": "Solo **^^Tyranids Monster^^**. Suma 3 a la característica de Control de Objetivos del portador."
     },
     {
       "id": "afbbfd0e651cfa2e",
@@ -1992,7 +1992,7 @@
         ]
       },
       "source": "**^^Tyranids Monster^^** only. If the bearer is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 3+, do not remove it from play. It can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
-      "target": null
+      "target": "Solo **^^Tyranids Monster^^**. Si el portador es destruido por un ataque de cuerpo a cuerpo, si no ha combatido esta fase, tira un D6: con un 3+, no lo retires del juego. Puede combatir después de que la unidad de la miniatura atacante haya terminado de realizar sus ataques, y entonces se retira del juego."
     },
     {
       "id": "0f97ceb5f6df2be0",
@@ -2008,7 +2008,7 @@
         ]
       },
       "source": "**^^Tyranids Synapse^^** model only. Enemy units that arrive on the battlefield from Reserves cannot be set up with 12\" of the bearer. In addition, once per battle, during the first or second battle round, when your opponent declares that a unit will arrive on the battlefield from Strategic Reserves, the bearer can use this enhancement. If it does, roll one D6: on a 4+, that enemy cannot arrive on the battlefield this turn.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids Synapse^^**. Las unidades enemigas que llegan al campo de batalla desde Reservas no pueden desplegarse a 12\" o menos del portador. Además, una vez por batalla, durante la primera o la segunda ronda de batalla, cuando tu oponente declare que una unidad va a llegar al campo de batalla desde las reservas estratégicas, el portador puede usar este enhancement. Si lo hace, tira un D6: con un 4+, ese enemigo no puede llegar al campo de batalla este turno."
     },
     {
       "id": "e237f91ec8abd2ef",
@@ -2024,7 +2024,7 @@
         ]
       },
       "source": "**^^Tyranids Synapse^^** model only. Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of the attack.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids Synapse^^**. Cada vez que un ataque se asigna al portador, resta 1 a la característica de Daño del ataque."
     },
     {
       "id": "711ae98b5894ba30",
@@ -2040,7 +2040,7 @@
         ]
       },
       "source": "**^^Tyranids Synapse^^** model only. While an enemy unit is within 9\" of the bearer, worsen that unit's Leadership characteristic by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids Synapse^^**. Mientras una unidad enemiga esté a 9\" o menos del portador, empeora en 1 la característica de Leadership de esa unidad."
     },
     {
       "id": "ed13bae6899d8be5",
@@ -2056,7 +2056,7 @@
         ]
       },
       "source": "**^^Tyranids Psyker^^** model only. Improve the Strength and Armour Penetration characteristic of psychic weapons equipped by the wearer of 1.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids Psyker^^**. Mejora en 1 las características de Fuerza y Penetración de Blindaje de las armas Psychic equipadas por el portador."
     },
     {
       "id": "09a3fcdcafcfc178",
@@ -2073,7 +2073,7 @@
         ]
       },
       "source": "**^^Tyranids^^** model only. At the start of the first battle round, select up to three friendly **^^Endless Multitude^^** units within 9\" of the bearer. Until the end of the battle round, each time a ranged attack targets one of those units, models in that unit have the Benefit of Cover against that attack.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Al inicio de la primera ronda de batalla, selecciona hasta tres unidades **^^Endless Multitude^^** amigas que estén a 9\" o menos del portador. Hasta el final de la ronda de batalla, cada vez que un ataque a distancia toma como objetivo a una de esas unidades, las miniaturas de esa unidad tienen el beneficio de cobertura contra ese ataque."
     },
     {
       "id": "244e4caa055b71ad",
@@ -2087,7 +2087,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. Each time a model in the Bearer's unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Cada vez que una miniatura de la unidad del portador realiza un ataque, con una herida crítica, mejora en 1 la característica de Penetración de Blindaje de ese ataque."
     },
     {
       "id": "e29a607acdac99a4",
@@ -2101,7 +2101,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. Add 2\" to the Move characteristic of models in the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Suma 2\" a la característica de Movimiento de las miniaturas de la unidad del portador."
     },
     {
       "id": "7727654c8b4f104c",
@@ -2115,7 +2115,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. Each time the bearer's unit makes a Pile In or Consolidation, models in this unit can move an additional 3\"",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Cada vez que la unidad del portador realiza un movimiento de aproximación o de consolidación, las miniaturas de esta unidad pueden moverse 3\" adicionales"
     },
     {
       "id": "9caf9003cf1c0830",
@@ -2129,7 +2129,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. While the bearer is on the battlefield, each time your opponent sets up a Reserves unit on the battlefield, roll one D6: on a 2+ that unit must make a Battle-shock test.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Mientras el portador esté en el campo de batalla, cada vez que tu oponente despliegue una unidad en Reservas en el campo de batalla, tira un D6: con un 2+, esa unidad debe hacer un test de Battle-shock."
     },
     {
       "id": "728038c2b6ebf6ee",
@@ -2143,7 +2143,7 @@
         "names": []
       },
       "source": "**TYRANIDS** model only. After both players have deployed their armies, you can select up to three **VANGUARD INVADER** units from your army and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Solo miniatura **TYRANIDS**. Después de que ambos jugadores hayan desplegado sus ejércitos, puedes seleccionar hasta tres unidades **VANGUARD INVADER** de tu ejército y volver a desplegar todas esas unidades. Al hacerlo, cualquiera de esas unidades puede colocarse en reservas estratégicas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "bcaeae5f94462b07",
@@ -2159,7 +2159,7 @@
         ]
       },
       "source": "**^^Vanguard Invader^^** model only. At the start of the battle, select one enemy unit. Each time the bearer makes an attack that targets that enemy unit, add 1 to the Hit roll and Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Vanguard Invader^^**. Al inicio de la batalla, selecciona una unidad enemiga. Cada vez que el portador realiza un ataque que toma como objetivo a esa unidad enemiga, suma 1 a la tirada para impactar y a la tirada para herir."
     },
     {
       "id": "0729f1856faf2181",
@@ -2175,7 +2175,7 @@
         ]
       },
       "source": "**VANGUARD INVADER** model only. This unit has **Stealth**.",
-      "target": null
+      "target": "Solo miniatura **VANGUARD INVADER**. Esta unidad tiene **Stealth**."
     },
     {
       "id": "aae116470175dee2",
@@ -2189,7 +2189,7 @@
         "names": []
       },
       "source": "**WINGED TYRANID PRIME/TYRANID PRIME WITH LASH WHIP** model only. This model’s melee attacks:\n- Can re‑roll **wound rolls**.\n- Have +1 **AP**.",
-      "target": null
+      "target": "Solo miniatura **WINGED TYRANID PRIME/TYRANID PRIME WITH LASH WHIP**. Los ataques de cuerpo a cuerpo de esta miniatura:\n- Pueden repetir las **tiradas para herir**.\n- Tienen +1 de **AP**."
     },
     {
       "id": "dee4e65c5021fe13",
@@ -2203,7 +2203,7 @@
         "names": []
       },
       "source": "**WINGED TYRANID PRIME/TYRANID PRIME WITH LASH WHIP** model only. This unit’s melee attacks have +1 to **hit rolls**.",
-      "target": null
+      "target": "Solo miniatura **WINGED TYRANID PRIME/TYRANID PRIME WITH LASH WHIP**. Los ataques de cuerpo a cuerpo de esta unidad tienen +1 a las **tiradas para impactar**."
     },
     {
       "id": "9b0be9b5868a2c98",
@@ -2219,7 +2219,7 @@
         ]
       },
       "source": "**^^Tyranids^^** model with the Deep Strike ability only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^** con la habilidad Deep Strike. La unidad del portador puede desplegarse usando la habilidad Deep Strike en el paso de Refuerzos de tu primera, segunda o tercera fase de Movimiento, independientemente de cualquier regla de misión."
     },
     {
       "id": "bde6134d879cf7ff",
@@ -2237,7 +2237,7 @@
         ]
       },
       "source": "**^^Trygon^^** model only. The bearer gains the **^^Synapse^^** keyword. Improve the Strength and Weapon Skill characteristics of melee weapons equipped by the bearer by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Trygon^^**. El portador gana la palabra clave **^^Synapse^^**. Mejora en 1 las características de Fuerza y Habilidad de Armas de las armas de cuerpo a cuerpo equipadas por el portador."
     },
     {
       "id": "54d501269bd96e76",
@@ -2251,7 +2251,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. Once per battle, you can target the bearer’s unit with the Rapid Ingress stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Una vez por batalla, puedes tomar como objetivo a la unidad del portador con el stratagem Rapid Ingress por 0CP, y puedes hacerlo incluso si ya has tomado como objetivo a otra unidad con ese Stratagem esta fase."
     },
     {
       "id": "e2a3500fcc717256",
@@ -2265,7 +2265,7 @@
         "names": []
       },
       "source": "**^^Tyranids^^** model only. After both players have deployed their armies, select up to three friendly **^^Tyranids^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Después de que ambos jugadores hayan desplegado sus ejércitos, selecciona hasta tres unidades **^^Tyranids^^** amigas de tu ejército y vuelve a desplegarlas. Al hacerlo, puedes desplegar esas unidades en reservas estratégicas, independientemente de cuántas unidades haya ya en reservas estratégicas."
     },
     {
       "id": "01cd77c1036679ae",
@@ -2281,7 +2281,7 @@
         ]
       },
       "source": "**ABOMINANT**, **BIOPHAGUS** or **PATRIARCH** model only.\n- Models in the bearer's unit have the Infiltrators ability.\n- You can target this unit with the **Heroic Intervention stratagem**, regardless of any other uses of that **stratagem** this phase. If you do:\n-- That use is ‑1 CP.\n-- That use does not prevent any uses of that **stratagem** on other units this phase.",
-      "target": null
+      "target": "Solo miniatura **ABOMINANT**, **BIOPHAGUS** o **PATRIARCH**.\n- Las miniaturas de la unidad del portador tienen la habilidad Infiltrators.\n- Puedes seleccionar esta unidad como objetivo del **stratagem Heroic Intervention**, independientemente de cualquier otro uso de ese **stratagem** durante esta fase. Si lo haces:\n-- Ese uso cuesta ‑1 CP.\n-- Ese uso no impide ningún otro uso de ese **stratagem** en otras unidades durante esta fase."
     },
     {
       "id": "5d01bc5f57b06f3e",
@@ -2298,7 +2298,7 @@
         ]
       },
       "source": "**^^Abominant ^^** or **^^Patriarch^^** model only. Improve the Armour Penetration and Damage characteristics of melee weapons equipped by the bearer by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Abominant ^^** o **^^Patriarch^^**. Mejora en 1 las características de Penetración de Blindaje y Daño de las armas de cuerpo a cuerpo equipadas por el portador."
     },
     {
       "id": "10c4cb7149d0cbcd",
@@ -2316,7 +2316,7 @@
         ]
       },
       "source": "**^^Abominant^^**, **^^Biophagus^^** or **^^Patriarch^^** model only. In each Command phase, one model in the bearer's unit regains 1 lost wound.",
-      "target": null
+      "target": "Solo miniatura **^^Abominant^^**, **^^Biophagus^^** o **^^Patriarch^^**. En cada fase de Mando, una miniatura de la unidad del portador recupera 1 herida perdida."
     },
     {
       "id": "0626e67197ddd4c8",
@@ -2335,7 +2335,7 @@
         ]
       },
       "source": "**^^Abominant^^**, **^^Biophagus^^** or **^^Patriarch^^** model only. While an enemy unit is in within Engagement Range of the bearer's unit, subtract 1 from the Objective Control characteristic of models in that enemy unit (to a minimum of 1).",
-      "target": null
+      "target": "Solo miniatura **^^Abominant^^**, **^^Biophagus^^** o **^^Patriarch^^**. Mientras una unidad enemiga esté dentro del alcance de combate de la unidad del portador, resta 1 a la característica de Control de Objetivos de las miniaturas de esa unidad enemiga (hasta un mínimo de 1)."
     },
     {
       "id": "892f22408c040f32",
@@ -2353,7 +2353,7 @@
         ]
       },
       "source": "**^^Genestealer Cults Infantry^^** model only. Once Per turn, when a friendly **^^Astra Militarum Infantry^^** or **^^Astra Militarum Mounted^^**unit within 9\" of the bearer is selected to shoot, the bearer can use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in that unit by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults Infantry^^**. Una vez por turno, cuando una unidad **^^Astra Militarum Infantry^^** o **^^Astra Militarum Mounted^^** amiga que esté a 9\" o menos del portador sea seleccionada para disparar, el portador puede usar este Enhancement. Si lo hace, hasta el final de la fase, mejora en 1 la característica de Penetración de Blindaje de las armas a distancia equipadas por las miniaturas de esa unidad."
     },
     {
       "id": "05aea2ebb9332fcd",
@@ -2367,7 +2367,7 @@
         "names": []
       },
       "source": "**GENESTEALER CULTS INFANTRY** model only. When you target this unit with the **Heroic Intervention stratagem**, that use is ‑1 CP.",
-      "target": null
+      "target": "Solo miniatura **GENESTEALER CULTS INFANTRY**. Cuando seleccionas esta unidad como objetivo del **stratagem Heroic Intervention**, ese uso cuesta ‑1 CP."
     },
     {
       "id": "741b627b880551ec",
@@ -2384,7 +2384,7 @@
         ]
       },
       "source": "**^^Genestealer Cults Infantry^^** model only. Improve the Leadership and Objective Control characteristic of models in the bearer's unit by 1",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults Infantry^^**. Mejora en 1 las características de Leadership y de Control de Objetivos de las miniaturas de la unidad del portador"
     },
     {
       "id": "764c06f774cd2db8",
@@ -2401,7 +2401,7 @@
         ]
       },
       "source": "**^^Genestealer Cults Infantry^^** model only. Each time you target the bearer's unit with the Fire Overwatch Stratagem, while resolving that stratagem, hits are successfully scored on a 5+.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults Infantry^^**. Cada vez que seleccionas la unidad del portador como objetivo del Stratagem Fire Overwatch, mientras resuelves ese stratagem se consiguen impactos con un 5+."
     },
     {
       "id": "90a14a9e8acda5c0",
@@ -2418,7 +2418,7 @@
         ]
       },
       "source": "**^^Tyranids^^** model only. Each time the bearer would regain one or more lost wounds from the Psionic Parasitism Detachment rule, it regains up to twice that number of lost wounds instead.",
-      "target": null
+      "target": "Solo miniatura **^^Tyranids^^**. Cada vez que el portador fuera a recuperar una o más heridas perdidas por la regla de Detachment Psionic Parasitism, recupera hasta el doble de esa cantidad de heridas perdidas en su lugar."
     },
     {
       "id": "d1a36e8a0b2a4f59",
@@ -2435,7 +2435,7 @@
         ]
       },
       "source": "**^^Winged Hive Tyrant^^** model only. Improve the Strength and Armour Penetration characteristics of melee weapons equipped by the bearer by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Winged Hive Tyrant^^**. Mejora en 1 las características de Fuerza y Penetración de Blindaje de las armas de cuerpo a cuerpo equipadas por el portador."
     },
     {
       "id": "596a32b5e8c04722",
@@ -2454,7 +2454,7 @@
         ]
       },
       "source": "**^^Genestealer Cults^^** model only. Weapons equipped by models in the bearer’s unit have the **[SUSTAINED HITS 1]** ability while targeting an enemy unit within 6\" of one or more friendly **^^Tyranids^^**units.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults^^**. Las armas equipadas por las miniaturas de la unidad del portador tienen la habilidad **[SUSTAINED HITS 1]** mientras tomen como objetivo a una unidad enemiga que esté a 6\" o menos de una o más unidades **^^Tyranids^^** amigas."
     },
     {
       "id": "7093d77843500172",
@@ -2470,7 +2470,7 @@
         ]
       },
       "source": "**^^Genestealer Cults^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults^^**. Las unidades enemigas no pueden usar el Stratagem Fire Overwatch para disparar a la unidad del portador."
     },
     {
       "id": "7fb084233fff7fa1",
@@ -2486,7 +2486,7 @@
         ]
       },
       "source": "**^^Genestealer Cults^^** model only. Once per battle, when the bearer's unit declares a charge, the bearer can use the Enhancement. If it does, until the end of the phase, add 2 to Charge rolls made for the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults^^**. Una vez por batalla, cuando la unidad del portador declara una carga, el portador puede usar el Enhancement. Si lo hace, hasta el final de la fase, suma 2 a las tiradas de carga realizadas para la unidad del portador."
     },
     {
       "id": "e718b96f15c04834",
@@ -2504,7 +2504,7 @@
         ]
       },
       "source": "**^^Genestealer Cults^^** model only. Each time the bearer is set up on the battlefield as Reinforcements, until the end of your next Fight phase, ranged weapons equipped in the bearer's unit have the **[LETHAL HITS]** ability.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults^^**. Cada vez que el portador se despliega en el campo de batalla como Refuerzos, hasta el final de tu siguiente fase de Combate, las armas a distancia equipadas en la unidad del portador tienen la habilidad **[LETHAL HITS]**."
     },
     {
       "id": "a5cc8434a942f282",
@@ -2520,7 +2520,7 @@
         ]
       },
       "source": "**GENESTEALER CULTS** model only. In your opponent's Movement phase, if an enemy unit ends a move within 8” of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6”.",
-      "target": null
+      "target": "Solo miniatura **GENESTEALER CULTS**. En la fase de Movimiento de tu oponente, si una unidad enemiga termina un movimiento a 8” o menos de esta unidad, si esta unidad no está dentro del alcance de combate de una o más unidades enemigas, esta unidad puede realizar un movimiento normal de hasta D6”."
     },
     {
       "id": "44018dfb2e656a60",
@@ -2537,7 +2537,7 @@
         ]
       },
       "source": "**^^Genestealer Cults^^** model only. Each time a model in the bearer's unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults^^**. Cada vez que una miniatura de la unidad del portador realiza un ataque que toma como objetivo a una unidad **^^Character^^**, suma 1 a la tirada para impactar."
     },
     {
       "id": "6840ba17070d3199",
@@ -2554,7 +2554,7 @@
         ]
       },
       "source": "**^^Genestealer Cults Mounted^^** model only. The bearer's unit is eligible to shoot in a turn in which it Fell Back.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults Mounted^^**. La unidad del portador es elegible para disparar en un turno en el que se haya replegado."
     },
     {
       "id": "afd4c4c126c6bf65",
@@ -2572,7 +2572,7 @@
         ]
       },
       "source": "**^^Genestealer Cults^^** model only. While the bearer is embarked within a **^^Transport^^**, each time that **^^Transport^^** is selected to shoot, until end of the phase, improve the Ballistic Skill characteristic of ranged weapons equipped by that **^^Transport^^** as a result of the Firing Deck ability by 1.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults^^**. Mientras el portador esté embarcado en un **^^Transport^^**, cada vez que ese **^^Transport^^** sea seleccionado para disparar, hasta el final de la fase, mejora en 1 la característica de Habilidad de Proyectiles de las armas a distancia equipadas por ese **^^Transport^^** como resultado de la habilidad Firing Deck."
     },
     {
       "id": "8f0650fe7f77e18b",
@@ -2589,7 +2589,7 @@
         ]
       },
       "source": "**^^Genestealer Cults Mounted^^** model only. In your Shooting phase, after the bearer has shot, select one enemy unit by one or more of those attacks made with a cult sniper rifle. Until the start of your next Shooting phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults Mounted^^**. En tu fase de Disparo, después de que el portador haya disparado, selecciona una unidad enemiga impactada por uno o más de esos ataques realizados con un cult sniper rifle. Hasta el inicio de tu siguiente fase de Disparo, cada vez que una miniatura de esa unidad enemiga realiza un ataque, resta 1 a la tirada para impactar."
     },
     {
       "id": "05fe44945f4f4820",
@@ -2606,7 +2606,7 @@
         ]
       },
       "source": "**^^Genestealer Cults^^** model only. Each time a model in the bearer's unit makes a ranged attack, if it disembarked from a **^^Transport^^** this turn, you can re-roll the Hit roll.",
-      "target": null
+      "target": "Solo miniatura **^^Genestealer Cults^^**. Cada vez que una miniatura de la unidad del portador realiza un ataque a distancia, si ha desembarcado de un **^^Transport^^** este turno, puedes repetir la tirada para impactar."
     },
     {
       "id": "a7c7378b60e905f0",
@@ -2620,7 +2620,7 @@
         "names": []
       },
       "source": "**MAGUS**, **PRIMUS** or **ACOLYTE ICONWARD** model only. You start the battle with 2 additional Resurgence points.",
-      "target": null
+      "target": "Solo miniatura **MAGUS**, **PRIMUS** o **ACOLYTE ICONWARD**. Comienzas la batalla con 2 Resurgence points adicionales."
     },
     {
       "id": "adf60f6a988f4e2a",
@@ -2638,7 +2638,7 @@
         ]
       },
       "source": "**^^Magus, Primus or Acolyte Iconward^^** model only. You can re-roll Battle-shock tests taken for the bearer's unit.",
-      "target": null
+      "target": "Solo miniatura **^^Magus, Primus or Acolyte Iconward^^**. Puedes repetir los tests de Battle-shock realizados para la unidad del portador."
     },
     {
       "id": "7e1e3fc8ceb2eb5d",
@@ -2656,7 +2656,7 @@
         ]
       },
       "source": "**^^Magus, Primus or Acolyte Iconward^^** model only. The bearer's unit is eligible to declare a charge in a turn in which it Advanced.",
-      "target": null
+      "target": "Solo miniatura **^^Magus, Primus or Acolyte Iconward^^**. La unidad del portador es elegible para declarar una carga en un turno en el que haya avanzado."
     },
     {
       "id": "0a3c11b276d4e3a5",
@@ -2676,7 +2676,7 @@
         ]
       },
       "source": "**^^Magus, Primus or Acolyte Iconward^^** model only. Each time a model in the bearer's unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit Roll and add 1 to the Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Magus, Primus or Acolyte Iconward^^**. Cada vez que una miniatura de la unidad del portador realiza un ataque que toma como objetivo a una unidad **^^Character^^**, suma 1 a la tirada para impactar y suma 1 a la tirada para herir."
     },
     {
       "id": "d4aee0dccf310597",
@@ -2692,7 +2692,7 @@
         ]
       },
       "source": "Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack (note that if given to a Tyranid Prime model, this only affects that model and not other models in its unit).",
-      "target": null
+      "target": "Cada vez que un ataque se asigna al portador, resta 1 a la característica de Daño de ese ataque (ten en cuenta que, si se otorga a una miniatura Tyranid Prime, esto solo afecta a esa miniatura y no a las demás miniaturas de su unidad)."
     },
     {
       "id": "7707f2979144ee4e",
@@ -2710,7 +2710,7 @@
         ]
       },
       "source": "In your Command phase, select one friendly **^^Tyranid Warriors with Melee Bio-weapons^^** or **^^Tyranid Warriors with Ranged Bio-weapons^^** unit within 6\" of the bearer. Until the end of the turn, add 2\" to the Move characteristic of models in that unit.",
-      "target": null
+      "target": "En tu fase de Mando, selecciona una unidad amiga **^^Tyranid Warriors with Melee Bio-weapons^^** o **^^Tyranid Warriors with Ranged Bio-weapons^^** que esté a 6\" o menos del portador. Hasta el final del turno, suma 2\" a la característica de Movimiento de las miniaturas de esa unidad."
     },
     {
       "id": "412f5302590c8b7e",
@@ -2727,7 +2727,7 @@
         ]
       },
       "source": "While a friendly **^^Tyranids^^** unit is within 9\" of the bearer (ignoring Walls and closed Hatchways), that unit is within Synapse Range of the bearer and of your army.",
-      "target": null
+      "target": "Mientras una unidad **^^Tyranids^^** amiga esté a 9\" o menos del portador (ignorando los Walls y los Hatchways cerrados), esa unidad está dentro del Synapse Range del portador y de tu ejército."
     },
     {
       "id": "737e363161d923ad",
@@ -2741,7 +2741,7 @@
         "names": []
       },
       "source": "Once per battle, at the end of your opponent's Charge phase, the bearer can use this Enhancement. If it does, it can declare a charge as if it were your Charge phase.",
-      "target": null
+      "target": "Una vez por batalla, al final de la fase de Carga de tu oponente, el portador puede usar este Enhancement. Si lo hace, puede declarar una carga como si fuera tu fase de Carga."
     },
     {
       "id": "9944417fe4c731a7",
@@ -2755,7 +2755,7 @@
         "names": []
       },
       "source": "Once per battle, when an enemy unit opens a closed Hatchway, if the bearer is on the battlefield, it can use this Enhancement. If it does, roll one D6: on a 3-4, that enemy unit suffers 1 mortal wound; on a 5+, that enemy unit suffers 2 mortal wounds.",
-      "target": null
+      "target": "Una vez por batalla, cuando una unidad enemiga abre una Hatchway cerrada, si el portador está en el campo de batalla, puede usar este Enhancement. Si lo hace, tira un D6: con un 3-4, esa unidad enemiga sufre 1 herida mortal; con un 5+, esa unidad enemiga sufre 2 heridas mortales."
     },
     {
       "id": "8c467549280f2660",
@@ -2769,7 +2769,7 @@
         "names": []
       },
       "source": "The first time in the battle that your opponent's army Secures an objective marker while the bearer is on the battlefield, roll one D6: on a 3+, that objective marker is not Secured by your opponent's army.",
-      "target": null
+      "target": "La primera vez en la batalla que el ejército de tu oponente Asegura un marcador de objetivo mientras el portador está en el campo de batalla, tira un D6: con un 3+, ese marcador de objetivo no queda Asegurado por el ejército de tu oponente."
     },
     {
       "id": "a135a118baa90d92",
@@ -2785,7 +2785,7 @@
         ]
       },
       "source": "**^^Abominant^^** model only. Each time an enemy unit opens a Hatchway, if the bearer is within 1\" of that Hatchway, roll one D6: one a 3-4, that enemy unit suffers 1 mortal wound; on a 5+, that enemy unit suffers 2 mortal wounds.",
-      "target": null
+      "target": "Solo miniatura **^^Abominant^^**. Cada vez que una unidad enemiga abre una Hatchway, si el portador está a 1\" o menos de esa Hatchway, tira un D6: con un 3-4, esa unidad enemiga sufre 1 herida mortal; con un 5+, esa unidad enemiga sufre 2 heridas mortales."
     },
     {
       "id": "8de2e1f2d17ce768",
@@ -2801,7 +2801,7 @@
         ]
       },
       "source": "**^^Biophagus^^** model only. Each time an attack targets the bearer, subtract 1 from the Hit roll and subtract 1 from the Wound roll.",
-      "target": null
+      "target": "Solo miniatura **^^Biophagus^^**. Cada vez que un ataque toma como objetivo al portador, resta 1 a la tirada para impactar y resta 1 a la tirada para herir."
     },
     {
       "id": "86edd8634e96bb00",
@@ -2815,7 +2815,7 @@
         "names": []
       },
       "source": "Each time the bearer declares a charge, it can target enemy units that are not visible to it.",
-      "target": null
+      "target": "Cada vez que el portador declara una carga, puede tomar como objetivo unidades enemigas que no le sean visibles."
     },
     {
       "id": "a7f8f0b1071a55a6",
@@ -2832,7 +2832,7 @@
         ]
       },
       "source": "Once per battle, at the end of your opponent's Fight phase, if the bearer is not within Engagement Range of one or more enemy units, it can use this Enhancement. If it does, remove the bearer from the battlefield and place it into Strategic Reserves. It will arrive back on the battlefield in the Reinforcements step of your next Movement phase as if it had the Deep Strike ability. If this is not possible, the bearer is destroyed. When the bearer is set back up on the battlefield, until the end of the turn, it cannot declare a charge.",
-      "target": null
+      "target": "Una vez por batalla, al final de la fase de Combate de tu oponente, si el portador no está dentro del alcance de combate de una o más unidades enemigas, puede usar este Enhancement. Si lo hace, retira al portador del campo de batalla y colócalo en las reservas estratégicas. Volverá a llegar al campo de batalla en el paso de Refuerzos de tu siguiente fase de Movimiento como si tuviera la habilidad Deep Strike. Si esto no es posible, el portador es destruido. Cuando el portador vuelve a desplegarse en el campo de batalla, hasta el final del turno no puede declarar una carga."
     },
     {
       "id": "f4bc4ec3f9bf18ce",
@@ -2846,7 +2846,7 @@
         "names": []
       },
       "source": "**KELERMORPH/REDUCTUS SABOTEUR** model only. This unit’s ranged attacks have +2 **S**.",
-      "target": null
+      "target": "Solo miniatura **KELERMORPH/REDUCTUS SABOTEUR**. Los ataques a distancia de esta unidad tienen +2 de **S**."
     },
     {
       "id": "ab46530e1b8d7f7a",
@@ -2860,7 +2860,7 @@
         "names": []
       },
       "source": "**LOCUS/SANCTUS** model only. This model’s attacks have +1 **D**.",
-      "target": null
+      "target": "Solo miniatura **LOCUS/SANCTUS**. Los ataques de esta miniatura tienen +1 de **D**."
     },
     {
       "id": "fb3344626503e3be",
@@ -2874,7 +2874,7 @@
         "names": []
       },
       "source": "**PATRIARCH** model only. This unit’s attacks can re‑roll **wound rolls** of 1.",
-      "target": null
+      "target": "Solo miniatura **PATRIARCH**. Los ataques de esta unidad pueden repetir las **tiradas para herir** de 1."
     },
     {
       "id": "9edff355c01ac640",
@@ -2888,7 +2888,7 @@
         "names": []
       },
       "source": "**MAGUS/PRIMUS** model only. This unit’s attacks can re‑roll **damage rolls**.",
-      "target": null
+      "target": "Solo miniatura **MAGUS/PRIMUS**. Los ataques de esta unidad pueden repetir las **tiradas de daño**."
     }
   ]
 }

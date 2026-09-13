@@ -407,7 +407,7 @@
         ]
       },
       "source": "The bearer has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds.",
-      "target": "El portador tiene la habilidad Feel No Pain 3+ contra Ataques Psíquicos y heridas mortales."
+      "target": "El portador tiene la habilidad Feel No Pain 3+ contra ataques psíquicos y heridas mortales."
     },
     {
       "id": "5fab05bf487b66ea",
@@ -508,7 +508,7 @@
         ]
       },
       "source": "The bearer has the Feel No Pain 3+ ability against Psychic Attacks.",
-      "target": "El portador tiene la habilidad Feel No Pain 3+ contra Ataques Psíquicos."
+      "target": "El portador tiene la habilidad Feel No Pain 3+ contra ataques psíquicos."
     },
     {
       "id": "3b1574f4e8145fcb",
@@ -914,7 +914,7 @@
         ]
       },
       "source": "While an enemy unit is within 12\" of this model, each time a model in that unit makes a Psychic Attack, subtract 1 from the Wound roll.",
-      "target": "Mientras una unidad enemiga esté a 12\" o menos de esta miniatura, cada vez que una miniatura de esa unidad haga un Ataque Psíquico, resta 1 a la tirada para herir."
+      "target": "Mientras una unidad enemiga esté a 12\" o menos de esta miniatura, cada vez que una miniatura de esa unidad haga un ataque psíquico, resta 1 a la tirada para herir."
     },
     {
       "id": "7aa98bd32d91b795",
@@ -1636,7 +1636,7 @@
         ]
       },
       "source": "While an enemy ^^Psyker^^ unit is within 12\" of this model, Psychic weapons equipped by models in that unit have the [HAZARDOUS] ability.",
-      "target": "Mientras una unidad enemiga ^^Psyker^^ esté a 12\" o menos de esta miniatura, las armas Psíquicas equipadas por las miniaturas de esa unidad tienen la habilidad [HAZARDOUS]."
+      "target": "Mientras una unidad enemiga ^^Psyker^^ esté a 12\" o menos de esta miniatura, las armas Psychic equipadas por las miniaturas de esa unidad tienen la habilidad [HAZARDOUS]."
     },
     {
       "id": "f39be91ce1771582",
@@ -1713,7 +1713,7 @@
         ]
       },
       "source": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
-      "target": "Mientras esta miniatura lidere una unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 4+ contra heridas mortales y Ataques Psíquicos."
+      "target": "Mientras esta miniatura lidere una unidad, las miniaturas de esa unidad tienen la habilidad Feel No Pain 4+ contra heridas mortales y ataques psíquicos."
     },
     {
       "id": "1cb886ddfff99ab9",
@@ -2461,7 +2461,7 @@
         ]
       },
       "source": "**^^Legiones Daemonica Tzeentch^^** model only. While a friendly **^^Legiones Daemonica Tzeentch^^** unit is within 6\" of the bearer, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.",
-      "target": "Solo miniatura **^^Legiones Daemonica Tzeentch^^**. Mientras una unidad amiga **^^Legiones Daemonica Tzeentch^^** esté a 6\" o menos del portador, las miniaturas de esa unidad tienen la habilidad Feel No Pain 4+ contra Ataques Psíquicos y heridas mortales."
+      "target": "Solo miniatura **^^Legiones Daemonica Tzeentch^^**. Mientras una unidad amiga **^^Legiones Daemonica Tzeentch^^** esté a 6\" o menos del portador, las miniaturas de esa unidad tienen la habilidad Feel No Pain 4+ contra ataques psíquicos y heridas mortales."
     },
     {
       "id": "340e5ffd73d56c8d",
@@ -2782,7 +2782,7 @@
         ]
       },
       "source": "This model has the Feel No Pain 3+ ability against Psychic Attacks.",
-      "target": "Esta miniatura tiene la habilidad Feel No Pain 3+ contra Ataques Psíquicos."
+      "target": "Esta miniatura tiene la habilidad Feel No Pain 3+ contra ataques psíquicos."
     },
     {
       "id": "c395117ad2855b64",
@@ -2976,7 +2976,7 @@
         ]
       },
       "source": "While an enemy ^^**Psyker**^^ unit is within 12\" of this model, Psychic weapons equipped by models in that unit have the [^^Hazardous^^] ability.",
-      "target": "Mientras una unidad enemiga ^^**Psyker**^^ esté a 12\" o menos de esta miniatura, las armas Psíquicas equipadas por las miniaturas de esa unidad tienen la habilidad [^^Hazardous^^]."
+      "target": "Mientras una unidad enemiga ^^**Psyker**^^ esté a 12\" o menos de esta miniatura, las armas Psychic equipadas por las miniaturas de esa unidad tienen la habilidad [^^Hazardous^^]."
     },
     {
       "id": "54cca70d06728f44",
@@ -2993,7 +2993,7 @@
         ]
       },
       "source": "Models in this unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks.",
-      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 4+ contra heridas mortales y Ataques Psíquicos."
+      "target": "Las miniaturas de esta unidad tienen la habilidad Feel No Pain 4+ contra heridas mortales y ataques psíquicos."
     },
     {
       "id": "a9a84d2d9319e813",
