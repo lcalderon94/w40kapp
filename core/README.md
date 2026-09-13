@@ -66,16 +66,18 @@ de configuración, en un grupo que unas facciones llevan incrustado y otras enla
 quien no los declara: por eso los capítulos de Space Marines tienen los cinco del codex. Resuelven
 34 de las 36 facciones; Aeldari y Drukhari los declaran de otra forma que aún no se sigue.
 
-`enhancementsOf` da las mejoras que habilita un detachment, con su texto traducido. Una mejora se
-reconoce por llevar coste del tipo Enhancements, no por el nombre de su grupo, que cambia de una
-facción a otra; y se le atribuye a un detachment cuando ella, o el grupo que la contiene, se
-esconden con un modifier que nombra a ese detachment.
+`enhancementsOf` da las mejoras que habilita un detachment, con su texto traducido. Lo que
+identifica a una mejora no es el coste del tipo Enhancements ni el nombre de su grupo —hay
+facciones que no usan ese coste y otras que llaman al grupo de otra manera—, sino **estar atada a
+un detachment**: es una opción con coste en puntos que el dataset esconde salvo que se haya elegido
+ese detachment. El gate puede estar en la propia mejora o en cualquier nodo que la contenga, y las
+mejoras pueden vivir en un catálogo enlazado.
 
+Cubre 900 de los 936 detachments, y 662 dan exactamente las cuatro que corresponden en 11ª edición.
 El criterio se queda corto antes que inventarse nada: **si devuelve una mejora, es de ese
-detachment** —ninguna aparece en dos, y hay un test que lo comprueba—, pero 161 de los 936
-detachments no resuelven ninguna porque el dataset las engancha por la unidad que puede llevarlas.
-De los 775 restantes, 561 dan exactamente las cuatro que corresponden en 11ª edición.
-`enhancementCoverage` dice de cuáles fiarse antes de enseñar una lista vacía.
+detachment** —ninguna aparece en dos, y hay un test que lo comprueba—. Los 36 restantes no atan
+ninguna mejora a su detachment en el dataset; `enhancementCoverage` dice de cuáles fiarse antes de
+enseñar una lista vacía.
 
 `validate` cubre el límite de puntos, que se haya elegido detachment, los mínimos y máximos de cada opción, los de su grupo —«entre
 10 y 20 Poxwalkers», que se comprueban sumando los hermanos que salen del mismo grupo— y los que
@@ -102,8 +104,8 @@ Lo que falta para la paridad con WarOrgan:
 - **`localConditionGroups`**, lo de arriba: implementarlos exige la semántica exacta de `before` e
   `instanceOf`, que conviene sacar de la especificación de BattleScribe y no deducirla.
 - **Modifiers sobre restricciones**, que cambian los límites en vez del coste.
-- **Las mejoras del 17 % de detachments** que el dataset engancha por la unidad que puede llevarlas
-  en vez de por el detachment (ver más arriba).
+- **Las mejoras de 36 detachments** que el dataset no ata a ninguno; habría que mirarlos uno a uno
+  o esperar a que upstream los complete.
 - **Los detachments de Aeldari y Drukhari**, que no cuelgan de la entrada de configuración.
 - **Límites por rol** del destacamento, que viven en las `categoryEntries` de `forceEntries`.
 

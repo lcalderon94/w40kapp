@@ -178,7 +178,7 @@ void main() {
       conMejoras += cobertura.withEnhancements;
       total += cobertura.total;
     }
-    // El resto engancha sus mejoras por la unidad que puede llevarlas, no por el detachment.
-    expect(conMejoras / total, greaterThan(0.8));
+    // Los 36 que faltan no atan ninguna mejora a su detachment en el dataset.
+    expect(conMejoras / total, greaterThan(0.94));
   });
 }

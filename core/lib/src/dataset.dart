@@ -134,13 +134,16 @@ class Dataset {
 
   /// Las mejoras que habilita un detachment, con su texto ya traducido.
   ///
-  /// Una mejora se reconoce por llevar coste del tipo Enhancements, no por el nombre de su grupo,
-  /// que cambia de una facción a otra. Se le atribuye a un detachment cuando ella o el grupo que la
-  /// contiene se esconden con un modifier que nombra a ese detachment.
+  /// Una mejora es una opción con coste en puntos que el dataset esconde salvo que se haya elegido
+  /// ese detachment. No vale reconocerlas por el coste del tipo Enhancements ni por el nombre de su
+  /// grupo: hay facciones que no usan ese coste y otras que llaman al grupo de otra manera, así que
+  /// lo que las identifica es a qué detachment están atadas.
   ///
-  /// Es un criterio que se queda corto antes que inventarse nada: si devuelve una mejora, es de ese
-  /// detachment, pero hay detachments cuyas mejoras no se localizan porque el dataset las engancha
-  /// por la unidad que puede llevarlas en vez de por el detachment. Ver [enhancementCoverage].
+  /// El gate puede estar en la propia mejora o en cualquiera de los nodos que la contienen, y las
+  /// mejoras pueden vivir en un catálogo enlazado, no solo en el de la facción.
+  ///
+  /// Se queda corto antes que inventarse nada: si devuelve una mejora, es de ese detachment. Ver
+  /// [enhancementCoverage].
   List<Enhancement> enhancementsOf(Faction faction, {required String detachmentId}) {
     final enhancements = <Enhancement>[];
     final seen = <String>{};
@@ -181,11 +184,11 @@ class Dataset {
     }
   }
 
-  static const _enhancementCostTypeId = 'f759-1bc4-cb3a-f0d2';
-
   static bool _isEnhancement(Map<String, dynamic> entry) =>
+      entry['type'] == 'upgrade' &&
+      (entry['name'] as String? ?? '').isNotEmpty &&
       (entry['costs'] as List? ?? const []).any((raw) =>
-          (raw as Map<String, dynamic>)['typeId'] == _enhancementCostTypeId &&
+          (raw as Map<String, dynamic>)['typeId'] == pointsCostTypeId &&
           ((raw['value'] as num?) ?? 0) > 0);
 
   /// Los identificadores que un nodo nombra en las condiciones de sus modifiers `hidden`.
