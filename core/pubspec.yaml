@@ -1,0 +1,12 @@
+name: warorgan_core
+description: Modelo de datos de WarOrgan-ES. Lee el dataset de BattleScribe ya traducido y lo
+  resuelve en facciones, unidades y perfiles. Dart puro, sin Flutter, para poder probarlo aparte
+  de la interfaz.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  test: ^1.25.0
