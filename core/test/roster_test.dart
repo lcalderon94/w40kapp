@@ -121,6 +121,18 @@ void main() {
     expect(roster.skippedModifiers, greaterThan(0));
   });
 
+  test('señala qué selección concreta puede quedarse corta de precio', () {
+    final roster = Roster(faction: deathGuard, pointsLimit: 1000)
+      ..add(unitNamed('Foetid Bloat-drone'))
+      ..add(unitNamed('Poxwalkers'));
+    roster.applyModifiers();
+
+    final marcadas = roster.selectionsWithUnresolvedCost.map((s) => s.name).toSet();
+    expect(marcadas, contains('Foetid Bloat-drone'));
+    expect(marcadas, isNot(contains('Poxwalkers')),
+        reason: 'el coste de los Poxwalkers sí se resuelve entero');
+  });
+
   test('cada facción resuelve sus detachments con la regla traducida', () {
     final detachments = dataset.detachmentsOf(deathGuard);
     expect(detachments, hasLength(greaterThan(5)));

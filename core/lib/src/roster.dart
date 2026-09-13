@@ -47,6 +47,12 @@ class Selection {
   /// Puntos de una instancia ya con los modifiers aplicados. Lo recalcula la lista.
   int pointsEach;
 
+  /// Modifiers de coste de esta selección que no se han podido evaluar.
+  ///
+  /// Mayor que cero significa que su precio puede quedarse corto, y la interfaz debería avisar en
+  /// esa unidad en concreto en vez de poner en duda la lista entera.
+  int unresolvedCostModifiers = 0;
+
   int count;
 
   /// Grupo de opciones del que sale esta selección, si sale de uno.
@@ -126,6 +132,7 @@ class Roster {
     skippedModifiers = 0;
     for (final selection in _all) {
       selection.pointsEach = selection.basePointsEach;
+      selection.unresolvedCostModifiers = 0;
     }
     for (final selection in _all) {
       for (final modifier in selection.modifiers) {
@@ -133,6 +140,7 @@ class Roster {
         if (!Modifier.numericTypes.contains(modifier.type)) continue;
         if (!modifier.isEvaluable) {
           skippedModifiers++;
+          selection.unresolvedCostModifiers++;
           continue;
         }
         if (!modifier.appliesWhen((c) => _holds(c, selection))) continue;
@@ -144,8 +152,19 @@ class Roster {
   /// Modifiers de coste que se han dejado sin aplicar por no saber evaluar sus condiciones.
   ///
   /// Se expone en vez de esconderse: si no es cero, el precio puede quedarse corto y conviene
-  /// saberlo. Lo llenan sobre todo los `localConditionGroups`.
+  /// saberlo. Los llenan los `localConditionGroups`, una construcción que el dataset usa pero que
+  /// no aparece en ningún esquema publicado de BattleScribe, ni en el 2.03 que el propio dataset
+  /// declara ni en vNext; su condición interna `before` tampoco está en la lista oficial de tipos.
+  /// Sin especificación no se implementan: un precio mal calculado parece correcto.
+  ///
+  /// En la práctica solo afectan a listas con **copias repetidas de la misma unidad**: todas esas
+  /// condiciones cuentan instancias anteriores, así que con una sola copia no pueden dispararse y
+  /// el precio es exacto.
   int skippedModifiers = 0;
+
+  /// Las selecciones cuyo precio puede quedarse corto, para poder señalarlas en la interfaz.
+  Iterable<Selection> get selectionsWithUnresolvedCost =>
+      _all.where((s) => s.unresolvedCostModifiers > 0);
 
   Iterable<Selection> get _all => units.expand((u) => u.descendantsAndSelf);
 

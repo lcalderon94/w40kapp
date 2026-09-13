@@ -92,17 +92,30 @@ quedarse corto.
 
 Hoy quedan fuera 1.816 modifiers de coste, que afectan al 27,8 % de las unidades. Todos son la
 misma construcción, `localConditionGroups`: cuentan instancias repetidas de la misma unidad dentro
-del padre (`atLeast` 1 a 3) con dos comparaciones propias, `before` e `instanceOf`. Como necesitan
-una instancia previa para dispararse, **el precio de una lista sin unidades repetidas es exacto**;
-la desviación aparece al meter varias copias de la misma unidad en un destacamento.
+del padre (`atLeast` 1 a 3) con dos comparaciones propias, `before` e `instanceOf`.
+
+**No se implementan porque no existe especificación.** `localConditionGroup` no aparece en ningún
+esquema publicado de BattleScribe: ni en el [2.03][esquema] que el propio dataset declara usar, ni
+en `vNext`. Su condición interna `before` tampoco está en la lista oficial de tipos, que es
+`lessThan`, `greaterThan`, `equalTo`, `notEqualTo`, `atLeast`, `atMost`, `instanceOf` y
+`notInstanceOf`. Es una extensión que BSData ya usa y que no está documentada, así que
+implementarla sería deducir su semántica del propio dato, que es justo como se calcula mal un
+precio sin enterarse.
+
+Como todas esas condiciones cuentan instancias anteriores, no pueden dispararse con una sola copia:
+**el precio de una lista sin unidades repetidas es exacto**. Cuando las hay,
+`Roster.selectionsWithUnresolvedCost` dice qué unidades concretas pueden quedarse cortas, para
+avisar en ellas y no sobre la lista entera.
+
+[esquema]: https://github.com/BSData/schemas/blob/master/src/xml/schema/v2_03/Catalogue.xsd
 
 ## Estado
 
 Se lee el dataset, se construyen y validan listas, y se aplican los modifiers de coste evaluables.
 Lo que falta para la paridad con WarOrgan:
 
-- **`localConditionGroups`**, lo de arriba: implementarlos exige la semántica exacta de `before` e
-  `instanceOf`, que conviene sacar de la especificación de BattleScribe y no deducirla.
+- **`localConditionGroups`**, lo de arriba: bloqueado hasta que BSData publique el esquema, o hasta
+  poder contrastar la semántica contra una fuente de puntos fiable.
 - **Modifiers sobre restricciones**, que cambian los límites en vez del coste.
 - **Las mejoras de 36 detachments** que el dataset no ata a ninguno; habría que mirarlos uno a uno
   o esperar a que upstream los complete.
