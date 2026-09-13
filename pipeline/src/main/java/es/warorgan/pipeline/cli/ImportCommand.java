@@ -97,8 +97,12 @@ public class ImportCommand {
         for (String path : paths) {
             Path candidate = Path.of(path);
             if (Files.isDirectory(candidate)) {
-                try (Stream<Path> entries = Files.list(candidate)) {
-                    entries.filter(p -> p.getFileName().toString().endsWith(".json")).sorted().forEach(files::add);
+                // Recursivo: las entregas se acaban organizando en subcarpetas por tanda.
+                try (Stream<Path> entries = Files.walk(candidate)) {
+                    entries.filter(Files::isRegularFile)
+                            .filter(p -> p.getFileName().toString().endsWith(".json"))
+                            .sorted()
+                            .forEach(files::add);
                 } catch (IOException e) {
                     throw new UncheckedIOException(e);
                 }
