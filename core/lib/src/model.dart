@@ -1,4 +1,5 @@
 import 'dataset.dart';
+import 'modifiers.dart';
 
 /// Un perfil del dataset: una habilidad, un arma o la línea de características de una unidad.
 ///
@@ -85,6 +86,7 @@ class UnitEntry {
     required this.points,
     required this.profiles,
     required this.constraints,
+    this.visibility = const [],
   });
 
   final String id;
@@ -108,6 +110,13 @@ class UnitEntry {
 
   final List<Profile> profiles;
   final List<Constraint> constraints;
+
+  /// Los modifiers que deciden si esta unidad se le puede ofrecer a una lista concreta.
+  ///
+  /// El dataset esconde muchísimo con ellos: las unidades Legends, los aliados, los Imperial
+  /// Agents y los demonios que solo entran con según qué detachment. Aquí solo viajan; quien sabe
+  /// evaluarlos es el roster, que es el único que conoce la configuración de la lista.
+  final List<Modifier> visibility;
 
   /// Las habilidades de la unidad, que son los perfiles con texto explicativo.
   Iterable<Profile> get abilities => profiles.where((p) => p.description != null);

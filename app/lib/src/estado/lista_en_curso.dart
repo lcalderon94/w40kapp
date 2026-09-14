@@ -23,6 +23,29 @@ class ListaEnCurso extends ChangeNotifier {
 
   List<Detachment> get detachmentsDisponibles => dataset.detachmentsOf(faccion);
 
+  /// Las unidades que esta lista puede llevar de verdad.
+  ///
+  /// No son todas las del catálogo: el dataset esconde las Legends, los aliados y las que piden un
+  /// detachment concreto —los demonios de Nurgle solo entran con Tallyband Summoners—, y ofrecerlas
+  /// igualmente sería dar por buena una lista ilegal.
+  List<UnitEntry> get unidadesDisponibles => roster.availableUnits;
+
+  /// Los interruptores de contenido que ofrece esta facción, y cuáles están encendidos.
+  List<Rule> get interruptores => dataset.visibilityOptionsOf(faccion);
+
+  bool estaEncendido(String id) => roster.shownOptions.contains(id);
+
+  void cambiarInterruptor(String id, bool encendido) {
+    if (encendido) {
+      roster.shownOptions.add(id);
+    } else {
+      roster.shownOptions.remove(id);
+      // Lo que ya estaba puesto se queda: quitar unidades de la lista sin avisar sería peor que
+      // dejar una visible de más, y la validación sigue siendo la que manda.
+    }
+    notifyListeners();
+  }
+
   void renombrar(String nombre) {
     roster.name = nombre;
     notifyListeners();

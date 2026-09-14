@@ -217,6 +217,101 @@ void main() {
     expect(dataset.battleSizes.first.name, contains('Incursion'));
   });
 
+  group('qué unidades puede ofrecer una lista', () {
+    Roster conDetachment(String nombre) => Roster(faction: deathGuard, pointsLimit: 2000)
+      ..battleSize = sizeOf(2000)
+      ..detachments.add(dataset.detachmentsOf(deathGuard).firstWhere((d) => d.name == nombre));
+
+    test('los demonios de Nurgle solo entran con Tallyband Summoners', () {
+      // El dataset lo dice literalmente: Plaguebearers, Nurglings, Great Unclean One, Rotigus,
+      // Plague Drones y Beasts of Nurgle llevan «hidden si hay menos de un Tallyband Summoners en
+      // la fuerza». Sin evaluarlo, el selector los ofrecía en cualquier lista de Death Guard.
+      const demonios = [
+        'Plaguebearers',
+        'Nurglings',
+        'Great Unclean One',
+        'Rotigus',
+        'Plague Drones',
+        'Beasts of Nurgle',
+      ];
+      final sinTallyband =
+          conDetachment('Virulent Vectorium').availableUnits.map((u) => u.name).toSet();
+      final conTallyband =
+          conDetachment('Tallyband Summoners').availableUnits.map((u) => u.name).toSet();
+
+      for (final demonio in demonios) {
+        expect(deathGuard.units.map((u) => u.name), contains(demonio),
+            reason: 'el catálogo sí lo trae');
+        expect(sinTallyband, isNot(contains(demonio)));
+        expect(conTallyband, contains(demonio));
+      }
+    });
+
+    test('las unidades Legends no se ofrecen hasta encenderlas', () {
+      final roster = conDetachment('Virulent Vectorium');
+      expect(roster.availableUnits.where((u) => u.name.contains('[Legends]')), isEmpty);
+
+      final legends = dataset
+          .visibilityOptionsOf(deathGuard)
+          .firstWhere((o) => o.name == 'Show Legends');
+      roster.shownOptions.add(legends.id);
+      expect(roster.availableUnits.where((u) => u.name.contains('[Legends]')), isNotEmpty);
+    });
+
+    test('cada facción trae sus propios interruptores', () {
+      // Cuelgan del enlace de cada catálogo, no de una lista única: Chaos Daemons añade los cuatro
+      // dioses y Astra Militarum los Imperial Agents. Buscando en un solo sitio se pierden.
+      final daemons = dataset.factionNamed('Chaos - Chaos Daemons');
+      final nombres = dataset.visibilityOptionsOf(daemons).map((o) => o.name);
+      expect(nombres, contains('Show Nurgle Daemons'));
+      expect(nombres, contains('Show Legends'), reason: 'los comunes también');
+      expect(dataset.visibilityOptionsOf(deathGuard).map((o) => o.name),
+          isNot(contains('Show Nurgle Daemons')),
+          reason: 'en Death Guard los demonios no van por interruptor sino por detachment');
+    });
+
+    test('la facción contesta casi todas las condiciones de visibilidad', () {
+      // Las de ámbito `primary-catalogue` son 2.661 y todas se contestan mirando de qué facción es
+      // la lista; antes se daban por no evaluables y no escondían nada. Lo que queda son las que
+      // cuentan **fuerzas**, el hueco de siempre.
+      var sinEvaluar = 0, conProblema = 0;
+      for (final faction in dataset.factions) {
+        final detachments = dataset.detachmentsOf(faction);
+        if (detachments.isEmpty) continue;
+        final roster = Roster(faction: faction, pointsLimit: 2000)
+          ..battleSize = sizeOf(2000)
+          ..detachments.add(detachments.first);
+        roster.availableUnits;
+        sinEvaluar += roster.unresolvedVisibility;
+        if (roster.unresolvedVisibility > 0) conProblema++;
+      }
+      expect(conProblema, lessThanOrEqualTo(4), reason: 'y solo en unas pocas facciones');
+      expect(sinEvaluar, lessThan(150));
+    });
+
+    test('solo se ofrecen las unidades de la facción, no todo el catálogo', () {
+      // Un catálogo trae mucho más que su facción: aliados, Legends y fortificaciones. Un ejército
+      // de Imperial Knights son sus veintitrés Knights, no las ciento tres entradas del fichero.
+      final knights = dataset.factionNamed('Imperium - Imperial Knights');
+      final roster = Roster(faction: knights, pointsLimit: 2000)
+        ..battleSize = sizeOf(2000)
+        ..detachments.add(dataset.detachmentsOf(knights).first);
+      final ofrecidas = roster.availableUnits.map((u) => u.name).toList();
+
+      expect(ofrecidas, contains('Knight Paladin'));
+      expect(ofrecidas, contains('Armiger Warglaive'));
+      expect(ofrecidas, hasLength(lessThan(30)));
+      expect(knights.units, hasLength(greaterThan(90)), reason: 'el fichero trae muchas más');
+
+      final titanes = dataset.factionNamed('Imperium - Adeptus Titanicus');
+      final deTitanes = Roster(faction: titanes, pointsLimit: 2000)
+        ..battleSize = sizeOf(2000)
+        ..detachments.add(dataset.detachmentsOf(titanes).first);
+      expect(deTitanes.availableUnits.map((u) => u.name), contains('Warlord Titan'));
+      expect(deTitanes.availableUnits, hasLength(lessThan(10)));
+    });
+  });
+
   test('un grupo vacío incumple su mínimo, y se dice', () {
     // Los Blightlord Terminators exigen entre 2 y 9 miniaturas de su grupo, y la selección de
     // partida no elige ninguna porque hay siete armas distintas y no se puede decidir por el

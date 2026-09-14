@@ -101,6 +101,30 @@ El mismo grupo mezcla además los dos **modos de juego**, y los reparte igual pe
 `force`: los normales se esconden en Boarding Actions y los quince del modo se esconden fuera de
 él. `detachmentsOf` da los de una partida normal, y con `boardingActions: true` los del modo.
 
+### Qué unidades puede llevar una lista
+
+`Roster.availableUnits`, no `Faction.units`. Un catálogo trae **mucho más que su facción**: un
+ejército de Imperial Knights son sus veintitrés Knights, no las ciento tres entradas del fichero, y
+el resto son aliados, Legends y fortificaciones. Sobre las 6.149 unidades del dataset, una lista
+puede llevar **2.068**.
+
+Lo decide el dataset con modifiers `hidden`, que llevan **el 76,7 % de las unidades**, y de dos
+maneras:
+
+- **Interruptores de contenido.** «Show Legends», «Show Imperial Agents», «Show Nurgle Daemons»…
+  Son entradas de configuración apagadas por defecto, y van **por facción**: cuelgan del enlace de
+  cada catálogo, así que Chaos Daemons trae uno por dios y Astra Militarum los Imperial Agents. Se
+  piden con `visibilityOptionsOf` y se encienden en `Roster.shownOptions`.
+- **Condiciones sobre la propia lista.** El detachment elegido, el tamaño de partida, el tipo de
+  fuerza y la facción. Es lo que dice que los Plaguebearers de una lista de Death Guard piden
+  Tallyband Summoners: sin evaluarlo, el selector los ofrece con cualquier detachment y la lista se
+  da por buena sin serlo.
+
+Cuando una condición no se sabe evaluar **no se esconde** y se cuenta en
+`Roster.unresolvedVisibility`. Aquí se prefiere pecar por exceso: esconder una unidad legal deja al
+jugador sin poder montar su lista, que es peor que dejar una de más a la vista. Quedan 134, todas
+por condiciones que cuentan fuerzas.
+
 `enhancementsOf` da las mejoras que habilita un detachment, con su texto traducido. Lo que
 identifica a una mejora no es el coste del tipo Enhancements ni el nombre de su grupo —hay
 facciones que no usan ese coste y otras que llaman al grupo de otra manera—, sino **estar atada a
@@ -212,9 +236,11 @@ avisar en ellas y no sobre la lista entera.
 
 ```
 facciones 36 · unidades 6.149 (98,3 % con puntos) · detachments 547 · opciones 139.254
+unidades que una lista ofrece     2.068 de 6.149 (33,6 %)
 mejoras                       546 de 547 detachments  ·  377 de 378 de tamaño completo dan 4
-modifiers de coste sin evaluar    1.838, en el 28,2 % de las unidades
-restricciones sin comprobar         542, en el  8,6 % de las unidades
+modifiers de coste sin evaluar    1.414, en el 23,0 % de las unidades
+restricciones sin comprobar         536, en el  8,6 % de las unidades
+visibilidad sin evaluar               134
 piden elegir algo al añadirse     3.019, en el 49,1 % de las unidades
 ```
 
@@ -224,8 +250,9 @@ Lo que falta:
 - **`localConditionGroups`**, lo de arriba: es todo el 28,2 %, y está bloqueado hasta que BSData
   publique el esquema. Solo afecta a listas con **copias repetidas de la misma unidad**; sin
   repetir, el precio es exacto.
-- **Varias fuerzas en un roster.** Es lo que dejaría comprobar 354 de esas 542 restricciones, y lo
-  que hace falta para aliados y para Boarding Actions completo.
+- **Varias fuerzas en un roster.** Es lo que dejaría comprobar 354 de esas 536 restricciones y las
+  134 condiciones de visibilidad que quedan, y lo que hace falta para aliados y para Boarding
+  Actions completo.
 - **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da cuatro,
   y el **Contagion Engines**, el único sin ninguna.
 - **Límites por rol**: en 11ª prácticamente no existen. La fuerza declara uno (mínimo 1 Character)

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:warorgan_core/warorgan_core.dart';
 
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
 
 /// Elegir qué unidad entra en la lista.
 ///
-/// Se separan las que ya no caben en los puntos que quedan: no se esconden —el jugador puede estar
-/// a punto de quitar otra cosa— pero se marcan, que es la diferencia entre ayudar y estorbar.
+/// Solo se ofrecen las que la lista puede llevar. El catálogo trae mucho más —Legends, aliados, y
+/// las que piden un detachment concreto— y ofrecerlo todo es dar por buena una lista ilegal. Lo que
+/// se puede encender se enciende a mano, con el botón de arriba.
+///
+/// Las que ya no caben en los puntos que quedan no se esconden —el jugador puede estar a punto de
+/// quitar otra cosa— pero se marcan, que es la diferencia entre ayudar y estorbar.
 class PantallaDeAnadirUnidad extends StatefulWidget {
   const PantallaDeAnadirUnidad({super.key, required this.lista});
 
@@ -18,21 +21,35 @@ class PantallaDeAnadirUnidad extends StatefulWidget {
 }
 
 class _PantallaDeAnadirUnidadState extends State<PantallaDeAnadirUnidad> {
-  late final List<UnitEntry> _todas = widget.lista.faccion.units
-    ..sort((a, b) => a.name.compareTo(b.name));
   String _busqueda = '';
 
   @override
   Widget build(BuildContext context) {
+    final todas = widget.lista.unidadesDisponibles
+      ..sort((a, b) => a.name.compareTo(b.name));
     final buscado = _busqueda.toLowerCase();
     final visibles = buscado.isEmpty
-        ? _todas
-        : _todas.where((u) => u.name.toLowerCase().contains(buscado)).toList();
+        ? todas
+        : todas.where((u) => u.name.toLowerCase().contains(buscado)).toList();
     final restantes = widget.lista.restantes;
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Añadir unidad'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.tune, size: 20),
+            tooltip: 'Qué contenido se ofrece',
+            onPressed: () async {
+              await showModalBottomSheet<void>(
+                context: context,
+                backgroundColor: Tema.superficie,
+                builder: (_) => _Interruptores(lista: widget.lista),
+              );
+              setState(() {});
+            },
+          ),
+        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(60),
           child: Padding(
@@ -84,6 +101,63 @@ class _PantallaDeAnadirUnidadState extends State<PantallaDeAnadirUnidad> {
             },
           );
         },
+      ),
+    );
+  }
+}
+
+/// Qué contenido del catálogo se ofrece: Legends, aliados, los demonios de cada dios.
+///
+/// El dataset los trae apagados y decide con ellos qué se puede meter en la lista. Son de la
+/// facción, no globales: Chaos Daemons tiene uno por dios y Astra Militarum los Imperial Agents.
+class _Interruptores extends StatefulWidget {
+  const _Interruptores({required this.lista});
+
+  final ListaEnCurso lista;
+
+  @override
+  State<_Interruptores> createState() => _InterruptoresState();
+}
+
+class _InterruptoresState extends State<_Interruptores> {
+  @override
+  Widget build(BuildContext context) {
+    final opciones = widget.lista.interruptores;
+    return SafeArea(
+      child: ListView(
+        shrinkWrap: true,
+        children: [
+          const Padding(
+            padding: EdgeInsets.fromLTRB(20, 18, 20, 4),
+            child: Text('QUÉ CONTENIDO SE OFRECE',
+                style: TextStyle(
+                    color: Tema.acento,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1.4)),
+          ),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(20, 0, 20, 10),
+            child: Text(
+              'El catálogo trae más de lo que una lista puede llevar. Enciende solo lo que vayas '
+              'a jugar.',
+              style: TextStyle(color: Tema.textoTenue, fontSize: 12.5, height: 1.4),
+            ),
+          ),
+          for (final opcion in opciones)
+            SwitchListTile(
+              value: widget.lista.estaEncendido(opcion.id),
+              onChanged: (v) {
+                widget.lista.cambiarInterruptor(opcion.id, v);
+                setState(() {});
+              },
+              activeThumbColor: Tema.acento,
+              title: Text(opcion.name.replaceFirst('Show ', ''),
+                  style: const TextStyle(fontSize: 14.5)),
+              dense: true,
+            ),
+          const SizedBox(height: 8),
+        ],
       ),
     );
   }

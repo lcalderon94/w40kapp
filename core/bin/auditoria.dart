@@ -27,6 +27,7 @@ void main(List<String> args) async {
   var skippedCosts = 0, unitsWithSkippedCosts = 0;
   var uncheckedConstraints = 0, unitsWithUnchecked = 0;
   var needingChoices = 0;
+  var offered = 0, unresolvedVisibility = 0;
   final factionsWithoutDetachments = <String>[];
 
   for (final faction in factions) {
@@ -41,6 +42,14 @@ void main(List<String> args) async {
         fullSized++;
         if (enhancements.length == 4) withFour++;
       }
+    }
+
+    if (ofFaction.isNotEmpty) {
+      final visible = Roster(faction: faction, pointsLimit: 2000)
+        ..battleSize = strikeForce
+        ..detachments.add(ofFaction.first);
+      offered += visible.availableUnits.length;
+      unresolvedVisibility += visible.unresolvedVisibility;
     }
 
     for (final unit in faction.units) {
@@ -71,6 +80,8 @@ void main(List<String> args) async {
   print('  unidades                      $units  ·  con puntos $withPoints '
       '(${percent(withPoints, units)})');
   print('  opciones ofrecidas            $options  (armas, equipo y mejoras elegibles)');
+  print('  unidades que una lista ofrece $offered de $units (${percent(offered, units)})'
+      '  ·  el resto son Legends, aliados o piden otro detachment');
   print('  detachments jugables          $detachments'
       '  ·  de Boarding Actions $boardingActions');
   print('  tamaños de partida            ${battleSizes.map((b) => b.pointsLimit).join(', ')}');
@@ -90,6 +101,8 @@ void main(List<String> args) async {
       '(${percent(unitsWithSkippedCosts, units)})');
   print('  restricciones sin comprobar   $uncheckedConstraints, en $unitsWithUnchecked unidades '
       '(${percent(unitsWithUnchecked, units)})');
+  print('  visibilidad sin evaluar       $unresolvedVisibility'
+      '  ·  puede dejar alguna unidad de más en el selector');
   if (factionsWithoutDetachments.isNotEmpty) {
     print('  facciones sin detachments     ${factionsWithoutDetachments.join(', ')}');
   }

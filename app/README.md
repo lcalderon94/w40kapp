@@ -25,9 +25,14 @@ flutter run                 # en un dispositivo o emulador
 cambia las reglas. En Incursion la mayoría de las unidades solo se pueden repetir dos veces y caben
 dos mejoras en vez de cuatro, así que elegirlo al final obligaría a rehacer la lista.
 
-**El detachment va antes que las unidades**, por lo mismo: es lo que decide qué mejoras existen.
-Por eso la pantalla de elegirlo enseña la regla entera y las mejoras que habilita, que es lo que se
-compara de verdad al decidir.
+**El detachment va antes que las unidades** por lo mismo, y además decide **qué unidades hay**: los
+demonios de Nurgle solo entran en una lista de Death Guard si llevas Tallyband Summoners. Por eso la
+pantalla de elegirlo enseña la regla entera y las mejoras que habilita.
+
+**El selector solo ofrece lo que la lista puede llevar.** Un catálogo trae mucho más que su facción
+—Legends, aliados, fortificaciones—, y de las 6.149 unidades del dataset una lista puede llevar
+2.068. Lo que se puede añadir a mano se enciende con el botón de arriba del selector: son los
+interruptores del propio dataset, apagados por defecto.
 
 **Una unidad recién añadida casi siempre avisa, y está bien.** 3.019 de las 6.149 exigen elegir un
 arma o un tamaño de escuadra, y nadie puede decidirlo por el jugador. La lista marca *en qué unidad*

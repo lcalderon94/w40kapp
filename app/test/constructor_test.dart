@@ -140,6 +140,36 @@ void main() {
       expect(avisos(), isNot(contains('2-9 Blightlord Terminators')));
     });
 
+    test('el selector no ofrece unidades que la lista no puede llevar', () {
+      // Lo que motivó todo esto: los demonios de Nurgle salían en cualquier lista de Death Guard,
+      // y el dataset dice que solo entran con Tallyband Summoners.
+      ListaEnCurso con(String detachment) => nuevaLista()
+        ..elegirDetachment(dataset
+            .detachmentsOf(deathGuard)
+            .firstWhere((d) => d.name == detachment));
+
+      final virulent = con('Virulent Vectorium').unidadesDisponibles.map((u) => u.name);
+      final tallyband = con('Tallyband Summoners').unidadesDisponibles.map((u) => u.name);
+
+      expect(virulent, isNot(contains('Plaguebearers')));
+      expect(tallyband, contains('Plaguebearers'));
+      expect(virulent, contains('Plague Marines'), reason: 'lo suyo sí, claro');
+    });
+
+    test('los interruptores de contenido encienden y apagan lo que se ofrece', () {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first);
+      bool hayLegends() =>
+          lista.unidadesDisponibles.any((u) => u.name.contains('[Legends]'));
+
+      expect(hayLegends(), isFalse, reason: 'apagados por defecto, como en el dataset');
+      final legends = lista.interruptores.firstWhere((o) => o.name == 'Show Legends');
+      lista.cambiarInterruptor(legends.id, true);
+      expect(hayLegends(), isTrue);
+      lista.cambiarInterruptor(legends.id, false);
+      expect(hayLegends(), isFalse);
+    });
+
     test('no se ofrece material de Crusade en una lista de partida normal', () {
       final lista = nuevaLista()
         ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)

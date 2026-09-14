@@ -89,7 +89,7 @@ class Dataset {
       if (target == null) continue;
       if (target['type'] != 'unit' && target['type'] != 'model') continue;
       if (!seen.add(target['id'] as String? ?? '')) continue;
-      units.add(_toUnit(target));
+      units.add(_toUnit(target, link));
     }
     return units;
   }
@@ -209,6 +209,37 @@ class Dataset {
     }
     return rules..sort((a, b) => a.name.compareTo(b.name));
   }();
+
+  /// Los interruptores de «Show/Hide Options», que deciden qué contenido entra en la lista.
+  ///
+  /// El dataset esconde por defecto las unidades Legends, los Imperial Agents, los Knights
+  /// aliados, las fortificaciones y los demonios de cada dios, y los enseña solo si el jugador
+  /// enciende el interruptor correspondiente. Son 18, y afectan al 76,7 % de las unidades: sin
+  /// evaluarlos, el selector de unidades ofrece medio dataset que la lista no puede llevar.
+  /// Son **por facción**: cada catálogo añade los suyos a la entrada «Show/Hide Options», así que
+  /// los cuatro del sistema son solo los comunes y los de demonios llegan con la librería de
+  /// Chaos Daemons. Buscando uno solo se pierden catorce.
+  List<Rule> visibilityOptionsOf(Faction faction) {
+    final options = <String, Rule>{};
+    for (final link in _rootLinks(faction.node)) {
+      final target = node(link['targetId'] as String? ?? '');
+      if (link['name'] != 'Show/Hide Options' && target?['name'] != 'Show/Hide Options') {
+        continue;
+      }
+      // Los del enlace **y** los del destino: cada catálogo cuelga los suyos del enlace, y los
+      // cuatro comunes están en la entrada compartida del sistema. Mirando solo una parte, una
+      // facción se queda sin la mitad de sus interruptores.
+      for (final node_ in [link, if (target != null) target]) {
+        for (final option in _childEntries(node_)) {
+          final id = option['id'] as String? ?? '';
+          options.putIfAbsent(
+              id,
+              () => Rule(id: id, name: option['name'] as String? ?? '', description: ''));
+        }
+      }
+    }
+    return options.values.toList()..sort((a, b) => a.name.compareTo(b.name));
+  }
 
   /// Los tipos de fuerza que declara el sistema de juego.
   ///
@@ -485,7 +516,7 @@ class Dataset {
     }
   }
 
-  UnitEntry _toUnit(Map<String, dynamic> entry) {
+  UnitEntry _toUnit(Map<String, dynamic> entry, [Map<String, dynamic>? link]) {
     String? role;
     final keywords = <String>[];
     for (final raw in (entry['categoryLinks'] as List? ?? const [])) {
@@ -507,6 +538,12 @@ class Dataset {
       constraints: [
         for (final raw in (entry['constraints'] as List? ?? const []))
           Constraint.fromNode(raw as Map<String, dynamic>),
+      ],
+      // También los del enlace: es donde una facción ajusta lo que hereda de un catálogo común.
+      visibility: [
+        for (final node_ in [entry, if (link != null) link])
+          for (final modifier in Modifier.allOf(node_))
+            if (modifier.field == 'hidden') modifier,
       ],
     );
   }

@@ -178,6 +178,12 @@ class Roster {
   /// tamaño esos modifiers no se pueden evaluar y esos límites se quedan sin comprobar.
   BattleSize? battleSize;
 
+  /// Los interruptores de «Show/Hide Options» que el jugador ha encendido.
+  ///
+  /// Vacío por defecto, que es lo que el dataset da por supuesto: sin encender nada, no hay
+  /// unidades Legends, ni aliados, ni Imperial Agents, ni demonios. Ver [Dataset.visibilityOptions].
+  final Set<String> shownOptions = {};
+
   /// El tipo de lista. Por defecto una partida normal, que es lo que asume el constructor.
   ///
   /// Hay reglas que solo valen en algunos: el máximo de Poxwalkers se dobla en Crusade, y las
@@ -185,6 +191,46 @@ class Roster {
   Force? force;
 
   Force get _force => force ?? faction.dataset.standardForce;
+
+  /// Las unidades que esta lista puede ofrecer de verdad.
+  ///
+  /// El dataset esconde el **76,7 %** de las unidades detrás de modifiers `hidden`: las Legends,
+  /// los aliados, los Imperial Agents y los demonios que solo entran con según qué detachment
+  /// —los Plaguebearers de una lista de Death Guard piden Tallyband Summoners—. Sin evaluarlos, el
+  /// selector ofrece unidades que la lista no puede llevar, que es peor que no ofrecerlas: una
+  /// lista se da por buena y no lo es.
+  ///
+  /// Cuando una condición no se sabe evaluar **no se esconde**, y se cuenta en
+  /// [unresolvedVisibility]: esconder una unidad legal deja al jugador sin poder montar su lista,
+  /// que es un daño mayor que dejar una de más a la vista.
+  List<UnitEntry> get availableUnits {
+    unresolvedVisibility = 0;
+    return [
+      for (final unit in faction.units)
+        if (!_isHidden(unit)) unit,
+    ];
+  }
+
+  /// Condiciones de visibilidad que no se han sabido evaluar en la última llamada a
+  /// [availableUnits]. Si no es cero, puede haber unidades de más en el selector.
+  int unresolvedVisibility = 0;
+
+  bool _isHidden(UnitEntry unit) {
+    if (unit.visibility.isEmpty) return false;
+    final candidate = Selection(
+        entryId: unit.id, name: unit.name, type: unit.type, baseCosts: const {});
+    var hidden = false;
+    for (final modifier in unit.visibility) {
+      if (modifier.type != 'set') continue;
+      if (!_canEvaluate(modifier)) {
+        unresolvedVisibility++;
+        continue;
+      }
+      if (!modifier.appliesWhen((c) => _holds(c, candidate))) continue;
+      hidden = modifier.value == true;
+    }
+    return hidden;
+  }
 
   /// Coste de la lista, con los modifiers de coste ya aplicados.
   int get points {
@@ -251,7 +297,7 @@ class Roster {
   /// los modifiers preguntan por ellas: «máximo 2 si la partida es Incursion», «esta unidad solo
   /// con tal detachment». Si no están en el ámbito, esas condiciones cuentan cero y salen falsas.
   List<Selection> get _configuration {
-    final ids = [battleSize?.id, ...detachments.map((d) => d.id)].nonNulls;
+    final ids = [battleSize?.id, ...detachments.map((d) => d.id), ...shownOptions].nonNulls;
     final key = ids.join('|');
     if (_configurationKey == key) return _configurationCache;
     _configurationKey = key;
@@ -266,8 +312,9 @@ class Roster {
 
   /// Si el motor puede evaluar este modifier. Amplía [Modifier.isEvaluable] con lo que sabe la
   /// lista y no puede saber una condición suelta: de qué tipo es la fuerza.
-  bool _canEvaluate(Modifier modifier) => modifier.isEvaluableWith(
-      (c) => (c.isSupported || _isForceTypeQuestion(c)) && !_asksForUnknownBattleSize(c));
+  bool _canEvaluate(Modifier modifier) => modifier.isEvaluableWith((c) =>
+      (c.isSupported || _isForceTypeQuestion(c) || _isCatalogueQuestion(c)) &&
+      !_asksForUnknownBattleSize(c));
 
   /// Si la condición pregunta por el tamaño de la partida y la lista todavía no tiene ninguno.
   ///
@@ -285,7 +332,21 @@ class Roster {
       (condition.type == 'instanceOf' || condition.type == 'notInstanceOf') &&
       faction.dataset.forces.any((f) => f.id == condition.childId);
 
+  /// Si la condición pregunta de qué facción es la lista.
+  ///
+  /// El ámbito `primary-catalogue` no se recorre contando nada: nombra el catálogo principal, y
+  /// una lista tiene uno solo. Es la misma pregunta que separa los detachments de cada capítulo de
+  /// Space Marines, y la que decide si media facción se enseña o se esconde: son 2.661 condiciones
+  /// de visibilidad, la mayoría de las que había sin evaluar.
+  bool _isCatalogueQuestion(Condition condition) =>
+      condition.scope == 'primary-catalogue' &&
+      (condition.type == 'instanceOf' || condition.type == 'notInstanceOf');
+
   bool _holds(Condition condition, Selection target) {
+    if (_isCatalogueQuestion(condition)) {
+      final isThisCatalogue = condition.childId == faction.id;
+      return condition.type == 'instanceOf' ? isThisCatalogue : !isThisCatalogue;
+    }
     if (_isForceTypeQuestion(condition)) {
       final isThisForce = condition.childId == _force.id;
       return condition.type == 'instanceOf' ? isThisForce : !isThisForce;
