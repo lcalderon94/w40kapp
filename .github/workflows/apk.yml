@@ -18,6 +18,17 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+
+      # El pipeline de traducción es Java, y sin él las pruebas leen los JSON originales en inglés
+      # y fallan las que comprueban que el texto llega traducido.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Generar el dataset en español
+        run: ./tool/preparar-datos.sh
+
       - uses: dart-lang/setup-dart@v1
         with:
           sdk: stable
