@@ -65,6 +65,15 @@ un caso aparte sino un grupo más de los que cuelgan de un personaje. Cada opci�
 lista para `addChild`, con sus costes y sus restricciones, así que valida y suma igual que lo que
 salió del mínimo.
 
+Deja fuera el material de **Crusade**, que el dataset mete en todas las unidades sin marcarlo de
+ninguna manera: no lo esconde con un modifier, no lo mete en una categoría propia y no lo ata al
+tipo de fuerza. Como no hay señal que seguir, el criterio lo pone esta capa: se reconoce por su
+coste —hay cuatro tipos de coste que solo existen en Crusade— y, cuando no cuesta nada, por el
+nombre de su sección. Se comprobó sobre el dataset entero antes de aplicarlo: de lo que esconde,
+**nada cuesta puntos y nada es una mejora**. Con `crusade: true` vuelve. El filtro quita el 87 % de
+las opciones ofrecidas, de un millón largo a 139.254, que es la diferencia entre una pantalla de
+equipo legible y una lista de la compra.
+
 ```dart
 final principe = dataset.selectionFor(unidad);
 final mejora = dataset.optionsFor(principe).firstWhere((o) => o.groupName == 'Enhancements');
@@ -112,6 +121,12 @@ de cuáles fiarse antes de enseñar una lista vacía.
 `validate` cubre el límite de puntos, que se haya elegido detachment, los mínimos y máximos de cada
 opción, los de su grupo —«entre 10 y 20 Poxwalkers», que se comprueban sumando los hermanos que
 salen del mismo grupo— y los que limitan cuántas veces puede repetirse una unidad en el ejército.
+
+Los grupos se comprueban **aunque estén vacíos**, que es justo cuando incumplen: mirando solo los
+que ya tienen algo dentro, unos Blightlord Terminators sin ninguna miniatura elegida salían legales
+con su grupo de «entre 2 y 9» a cero. Por eso **3.019 de las 6.149 unidades avisan nada más
+añadirlas**: el dataset exige elegir un arma o un tamaño de escuadra y nadie puede decidirlo por el
+jugador. Cuando el grupo ofrece una sola opción sí se rellena solo, que ahí no hay nada que elegir.
 
 Y los cubre con el **límite efectivo, no con el declarado**, que rara vez son el mismo número. Hay
 2.533 modifiers que cambian una restricción de selecciones, y la mitad larga miran el tamaño de la
@@ -167,9 +182,10 @@ quedarse corto.
 Con las restricciones hace lo mismo: si no sabe calcular el límite efectivo, **no comprueba la
 restricción** en vez de comprobarla contra el número declarado. Dar por ilegal una lista que no lo
 es sería peor que no avisar. Queda contado en `Roster.uncheckedConstraints`, y
-`selectionsWithUncheckedConstraints` dice en qué selecciones. Son pocas: 65 restricciones en el
-1,1 % de las unidades, casi todas por condiciones que cuentan **fuerzas** —cuántos destacamentos de
-tal tipo hay en el roster—, que esta capa no modela porque solo maneja una.
+`selectionsWithUncheckedConstraints` dice en qué selecciones. Son 542, en el 8,6 % de las unidades,
+y **354 de ellas** por condiciones que cuentan **fuerzas** —cuántos destacamentos de tal tipo hay en
+el roster—, que esta capa no modela porque solo maneja una. La cifra subió de 65 al empezar a mirar
+los grupos vacíos: no es que se evalúe peor, es que antes ni se miraban.
 
 En el coste quedan fuera 1.838 modifiers, que afectan al 28,2 % de las unidades. Todos son la misma
 construcción, `localConditionGroups`: cuentan instancias repetidas de la misma unidad dentro del
@@ -195,10 +211,11 @@ avisar en ellas y no sobre la lista entera.
 `dart run bin/auditoria.dart` lo mide contra el dataset entero y es la respuesta corta:
 
 ```
-facciones 36 · unidades 6.149 (98,3 % con puntos) · detachments 547
+facciones 36 · unidades 6.149 (98,3 % con puntos) · detachments 547 · opciones 139.254
 mejoras                       546 de 547 detachments  ·  377 de 378 de tamaño completo dan 4
 modifiers de coste sin evaluar    1.838, en el 28,2 % de las unidades
-restricciones sin comprobar          65, en el  1,1 % de las unidades
+restricciones sin comprobar         542, en el  8,6 % de las unidades
+piden elegir algo al añadirse     3.019, en el 49,1 % de las unidades
 ```
 
 Se lee el dataset, se eligen unidades y opciones, y se validan listas con los límites efectivos.
@@ -207,8 +224,8 @@ Lo que falta:
 - **`localConditionGroups`**, lo de arriba: es todo el 28,2 %, y está bloqueado hasta que BSData
   publique el esquema. Solo afecta a listas con **copias repetidas de la misma unidad**; sin
   repetir, el precio es exacto.
-- **Varias fuerzas en un roster.** Es lo que dejaría comprobar esas 65 restricciones, y lo que hace
-  falta para aliados y para Boarding Actions completo.
+- **Varias fuerzas en un roster.** Es lo que dejaría comprobar 354 de esas 542 restricciones, y lo
+  que hace falta para aliados y para Boarding Actions completo.
 - **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da cuatro,
   y el **Contagion Engines**, el único sin ninguna.
 - **Límites por rol**: en 11ª prácticamente no existen. La fuerza declara uno (mínimo 1 Character)

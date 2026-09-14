@@ -11,6 +11,8 @@ flutter run                 # en un dispositivo o emulador
 
 ## Qué hay
 
+- **Listas** → crear una lista eligiendo facción y tamaño de partida, elegir detachment, añadir
+  unidades y equiparlas. Arriba siempre: puntos, presupuesto de mejoras y si la lista es legal.
 - **Ejércitos** → las 36 facciones agrupadas por bando → sus unidades, buscables → la ficha de cada
   una: línea de características, habilidades y armas con sus perfiles.
 - **Wiki** → el glosario del reglamento básico, las 49 reglas que salen entre corchetes en las
@@ -18,6 +20,23 @@ flutter run                 # en un dispositivo o emulador
   buscar en mitad de una partida. Buscables por nombre y por texto.
 
 ## Decisiones que no se ven
+
+**El tamaño de partida se elige lo primero, con la facción.** No es solo el límite de puntos:
+cambia las reglas. En Incursion la mayoría de las unidades solo se pueden repetir dos veces y caben
+dos mejoras en vez de cuatro, así que elegirlo al final obligaría a rehacer la lista.
+
+**El detachment va antes que las unidades**, por lo mismo: es lo que decide qué mejoras existen.
+Por eso la pantalla de elegirlo enseña la regla entera y las mejoras que habilita, que es lo que se
+compara de verdad al decidir.
+
+**Una unidad recién añadida casi siempre avisa, y está bien.** 3.019 de las 6.149 exigen elegir un
+arma o un tamaño de escuadra, y nadie puede decidirlo por el jugador. La lista marca *en qué unidad*
+está el problema, porque «tu lista tiene 4 avisos» sin decir cuál abrir no sirve de nada.
+
+**Nadie recalcula nada aquí.** `ListaEnCurso` envuelve al `Roster` del `core` y solo traduce «el
+jugador ha tocado algo» a «hay que volver a pintar». El precio, los presupuestos y la legalidad los
+sabe el motor, y todo lo que cambia la lista pasa por un único sitio: no hay forma de mover una
+pieza sin que se recalcule.
 
 **Los datos van dentro.** Son 46 ficheros que se referencian entre ellos, así que se cargan todos
 de golpe al arrancar: no se puede cargar media facción. Tarda un par de segundos largos y por eso
@@ -35,5 +54,13 @@ más abajo, y juntarlas es interpretar el dataset, no pintarlo: lo hace `Dataset
 
 ## Lo que falta
 
-El constructor de listas. El `core` ya lo resuelve entero —elegir detachment, unidades y opciones,
-sumar puntos y validar la lista contra las reglas del ejército—, pero todavía no tiene pantallas.
+**Guardar las listas.** Ahora viven mientras la app está abierta. Cuando se guarden, se guardarán
+las *decisiones* —facción, tamaño, detachment, unidades y opciones—, no el árbol ya resuelto: así
+una lista de hace tres meses se vuelve a montar con los puntos de hoy en vez de quedarse congelada
+con los de entonces.
+
+**Exportar la lista** a texto, para pegarla en un chat o enseñarla en una mesa.
+
+**El arranque.** Son 48 MB y 103.000 nodos que hay que indexar antes de resolver nada, y se hace en
+el hilo de la interfaz. Aquí son un par de segundos; en un móvil de gama media serán más, y el
+siguiente paso es moverlo a un isolate.

@@ -26,6 +26,7 @@ void main(List<String> args) async {
   var detachments = 0, boardingActions = 0, withEnhancements = 0, fullSized = 0, withFour = 0;
   var skippedCosts = 0, unitsWithSkippedCosts = 0;
   var uncheckedConstraints = 0, unitsWithUnchecked = 0;
+  var needingChoices = 0;
   final factionsWithoutDetachments = <String>[];
 
   for (final faction in factions) {
@@ -53,7 +54,7 @@ void main(List<String> args) async {
         ..battleSize = strikeForce
         ..add(selection);
       if (ofFaction.isNotEmpty) roster.detachments.add(ofFaction.first);
-      roster.validate();
+      if (roster.validate().isNotEmpty) needingChoices++;
 
       skippedCosts += roster.skippedModifiers;
       if (roster.skippedModifiers > 0) unitsWithSkippedCosts++;
@@ -80,6 +81,9 @@ void main(List<String> args) async {
       '(${percent(withEnhancements, detachments)})');
   print('  de tamaño completo con 4      $withFour de $fullSized '
       '(${percent(withFour, fullSized)})');
+  print('');
+  print('  piden elegir algo al añadirse   $needingChoices de $units '
+      '(${percent(needingChoices, units)})  ·  un arma, un tamaño de escuadra');
   print('');
   print('LO QUE NO EVALÚA  (se deja sin aplicar, nunca se inventa)');
   print('  modifiers de coste            $skippedCosts, en $unitsWithSkippedCosts unidades '

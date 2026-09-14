@@ -217,6 +217,79 @@ void main() {
     expect(dataset.battleSizes.first.name, contains('Incursion'));
   });
 
+  test('un grupo vacío incumple su mínimo, y se dice', () {
+    // Los Blightlord Terminators exigen entre 2 y 9 miniaturas de su grupo, y la selección de
+    // partida no elige ninguna porque hay siete armas distintas y no se puede decidir por el
+    // jugador. Mirando solo los grupos que ya tienen algo dentro, el que incumple —el vacío— era
+    // justo el que no se comprobaba, y la lista salía legal.
+    final unidad = deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators');
+    final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+      ..battleSize = sizeOf(2000)
+      ..detachments.add(dataset.detachmentsOf(deathGuard).first)
+      ..add(dataset.selectionFor(unidad));
+
+    expect(roster.validate().map((v) => v.message).join(' '), contains('mínimo 2, hay 0'));
+  });
+
+  test('un grupo obligatorio con una sola opción se rellena solo', () {
+    // Si no hay nada que elegir, no se hace elegir: la unidad nacería incumpliendo por algo que el
+    // jugador no podía decidir de otra manera.
+    var conUnaSolaOpcion = 0;
+    for (final unidad in deathGuard.units) {
+      final seleccion = dataset.selectionFor(unidad);
+      for (final grupo in seleccion.groups) {
+        final opciones = dataset
+            .optionsFor(seleccion)
+            .where((o) => o.groupId == grupo.id)
+            .length;
+        final minimo = grupo.constraints
+            .where((c) => c.type == 'min' && c.field == 'selections' && c.value > 0);
+        if (opciones != 1 || minimo.isEmpty) continue;
+        conUnaSolaOpcion++;
+        final puestas = seleccion.children
+            .where((h) => h.groupId == grupo.id)
+            .fold(0, (t, h) => t + h.count);
+        expect(puestas, greaterThanOrEqualTo(minimo.first.value.round()),
+            reason: '${unidad.name} · ${grupo.name}');
+      }
+    }
+    expect(conUnaSolaOpcion, greaterThan(0), reason: 'si no hay casos, el test no prueba nada');
+  });
+
+  test('una lista de partida normal no ofrece nada de Crusade', () {
+    // El dataset mete el material de Crusade en todas las unidades y no lo marca de ninguna
+    // manera: ni lo esconde, ni lo mete en una categoría, ni lo ata al tipo de fuerza. Sin
+    // filtrarlo, equipar una unidad enseña «Battle Tallies» y «Weapon Modifications», y sus
+    // mínimos salen como incumplimientos de una lista que es perfectamente legal.
+    final unidad = deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators');
+    final seleccion = dataset.selectionFor(unidad);
+    final grupos = dataset.optionsFor(seleccion).map((o) => o.groupName).toSet();
+
+    for (final crusade in Dataset.crusadeGroupNames) {
+      expect(grupos, isNot(contains(crusade)));
+    }
+    expect(dataset.optionsFor(seleccion, crusade: true).map((o) => o.groupName).toSet(),
+        contains('Weapon Modifications'),
+        reason: 'con crusade: true vuelven, que el dato sigue estando');
+  });
+
+  test('lo que se esconde de Crusade no cuesta puntos ni es una mejora', () {
+    // Es la comprobación que justifica el criterio: si escondiera algo con precio, estaría
+    // quitando decisiones de una lista de partida normal.
+    for (final faction in dataset.factions.take(8)) {
+      for (final unidad in faction.units) {
+        final seleccion = dataset.selectionFor(unidad);
+        final normales = dataset.optionsFor(seleccion).map((o) => o.entryId).toSet();
+        for (final opcion in dataset.optionsFor(seleccion, crusade: true)) {
+          if (normales.contains(opcion.entryId)) continue;
+          expect(opcion.basePointsEach, 0, reason: '${unidad.name} · ${opcion.name}');
+          expect(opcion.baseCosts.containsKey(enhancementsCostTypeId), isFalse,
+              reason: '${unidad.name} · ${opcion.name}');
+        }
+      }
+    }
+  });
+
   test('cualquier unidad de cualquier facción se puede seleccionar sin romperse', () {
     // Recorre las 36 facciones: es lo que descarta ciclos de enlaces y entradas mal formadas.
     var built = 0;

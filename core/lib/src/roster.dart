@@ -22,6 +22,7 @@ class Selection {
     List<Constraint>? groupConstraints,
     List<Modifier>? modifiers,
     List<Modifier>? groupModifiers,
+    List<OptionGroup>? groups,
     List<String>? categoryIds,
   })  : baseCosts = baseCosts,
         costs = {...baseCosts},
@@ -30,6 +31,7 @@ class Selection {
         groupConstraints = groupConstraints ?? const [],
         modifiers = modifiers ?? const [],
         groupModifiers = groupModifiers ?? const [],
+        groups = groups ?? const [],
         categoryIds = categoryIds ?? const [] {
     for (final child in this.children) {
       child.parent = this;
@@ -84,6 +86,9 @@ class Selection {
   /// Los modifiers del grupo de opciones, que son los que cambian sus restricciones.
   final List<Modifier> groupModifiers;
 
+  /// Los grupos de opciones que ofrece esta selección, se haya elegido algo de ellos o no.
+  final List<OptionGroup> groups;
+
   /// Categorías a las que pertenece. Las condiciones de los modifiers cuentan por categoría.
   final List<String> categoryIds;
 
@@ -109,6 +114,24 @@ class Selection {
       yield* child.descendantsAndSelf;
     }
   }
+}
+
+/// Un grupo de opciones de una selección, con lo que el dataset exige de él.
+///
+/// Se guarda aunque no se haya elegido nada dentro: «entre 2 y 9 Blightlord Terminators» hay que
+/// comprobarlo **también cuando hay cero**, que es justo cuando se incumple.
+class OptionGroup {
+  OptionGroup({
+    required this.id,
+    required this.name,
+    required this.constraints,
+    required this.modifiers,
+  });
+
+  final String id;
+  final String? name;
+  final List<Constraint> constraints;
+  final List<Modifier> modifiers;
 }
 
 /// Un incumplimiento de las reglas de construcción de listas.
@@ -419,19 +442,22 @@ class Roster {
       }
     }
 
-    // Las restricciones del grupo se cumplen entre todos los hermanos que salen de él.
-    final byGroup = <String, List<Selection>>{};
-    for (final child in selection.children) {
-      if (child.groupId != null) {
-        byGroup.putIfAbsent(child.groupId!, () => []).add(child);
-      }
-    }
-    for (final siblings in byGroup.values) {
-      final total = siblings.fold(0, (sum, s) => sum + s.count);
-      for (final constraint in siblings.first.groupConstraints) {
+    // Las restricciones del grupo se cumplen entre todos los hermanos que salen de él, y se
+    // comprueban aunque no haya ninguno: un grupo vacío es justo el que incumple su mínimo.
+    for (final group in selection.groups) {
+      final fromGroup = selection.children.where((c) => c.groupId == group.id).toList();
+      final total = fromGroup.fold(0, (sum, s) => sum + s.count);
+      // Las condiciones de ámbito `parent` cuentan sobre los hermanos, así que hace falta mirar
+      // desde dentro del grupo. Cuando está vacío se usa un hueco colgado de la misma selección.
+      final desde = fromGroup.isNotEmpty
+          ? fromGroup.first
+          : (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = selection);
+      for (final constraint in group.constraints) {
         if (constraint.field != 'selections') continue;
-        _check(siblings.first, total, constraint, siblings.first.groupModifiers, violations,
-            siblings.first.groupName ?? siblings.first.name);
+        // Se evalúa desde dentro del grupo, pero el aviso se le achaca a la unidad: es la que el
+        // jugador tiene que abrir para arreglarlo, y el hueco no está en ninguna lista.
+        _check(desde, total, constraint, group.modifiers, violations,
+            group.name ?? selection.name, blame: selection);
       }
     }
 
@@ -456,7 +482,7 @@ class Roster {
   }
 
   void _check(Selection selection, int actual, Constraint constraint, List<Modifier> modifiers,
-      List<Violation> violations, String subject) {
+      List<Violation> violations, String subject, {Selection? blame}) {
     final limit = _effectiveLimit(constraint, selection, modifiers);
     if (limit == null) return;
     // Un límite negativo es «sin límite»: así lo escribe el dataset en 48 restricciones.
@@ -467,7 +493,7 @@ class Roster {
     // El mensaje del dataset lleva el número declarado escrito. Si el efectivo es otro, no vale.
     final message = (limit == constraint.value ? constraint.message : null) ??
         (constraint.isMax ? 'como máximo $limit, hay $actual' : 'mínimo $limit, hay $actual');
-    violations.add(Violation(selection, '$subject: $message'));
+    violations.add(Violation(blame ?? selection, '$subject: $message'));
   }
 
   /// El límite que de verdad tiene una restricción, con los modifiers que la cambian aplicados.

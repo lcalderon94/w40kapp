@@ -150,6 +150,43 @@ class Dataset {
     return detachments;
   }
 
+  /// Los tipos de coste que solo se usan en Crusade, leídos del propio sistema de juego.
+  late final Set<String> crusadeCostTypeIds = {
+    for (final root in _roots)
+      for (final raw in (root['costTypes'] as List? ?? const []))
+        if (((raw as Map<String, dynamic>)['name'] as String? ?? '').startsWith('Crusade'))
+          raw['id'] as String,
+  };
+
+  /// Secciones que el dataset trae para Crusade y que no pintan nada en una partida normal.
+  ///
+  /// El dataset **no las marca de ninguna manera**: no las esconde con un modifier, no las mete en
+  /// una categoría propia y no las ata al tipo de fuerza, así que no hay señal que seguir y el
+  /// criterio lo pone esta capa. Se reconocen por su coste —hay cuatro tipos de coste que solo
+  /// existen en Crusade— y, cuando no cuestan nada, por el nombre de su sección.
+  ///
+  /// Se comprobó sobre el dataset entero antes de aplicarlo: de las opciones que esto esconde,
+  /// **ninguna cuesta puntos y ninguna es una mejora**, así que no se pierde nada de una lista de
+  /// partida normal. Con `crusade: true` se recuperan.
+  static const crusadeGroupNames = {
+    'Crusade',
+    'Battle Tallies',
+    'Battle Traits',
+    'Weapon Modifications',
+    'Order of Battle',
+  };
+
+  bool _isCrusadeGroup(Map<String, dynamic> group) {
+    if (crusadeGroupNames.contains(group['name'])) return true;
+    final options = _childLinks(group).map((o) => o.entry).toList();
+    if (options.isEmpty) return false;
+    return options.every((option) => (option['costs'] as List? ?? const []).any((raw) {
+          final cost = raw as Map<String, dynamic>;
+          return crusadeCostTypeIds.contains(cost['typeId']) &&
+              ((cost['value'] as num?) ?? 0) > 0;
+        }));
+  }
+
   /// Las reglas del reglamento básico, ya traducidas y ordenadas por nombre.
   ///
   /// Viven en el fichero del sistema de juego, no en los catálogos, porque no son de ninguna
@@ -420,12 +457,14 @@ class Dataset {
   /// El dataset los anida: «Heavy Weapons» no cuelga del tanque sino de su grupo «Wargear». Sin
   /// bajar, ni se despliegan sus mínimos obligatorios ni se pueden ofrecer sus opciones.
   Iterable<({Map<String, dynamic> group, Map<String, dynamic>? link})> _allGroupsOf(
-      Map<String, dynamic> node_, [Set<String>? seen]) sync* {
+      Map<String, dynamic> node_, bool crusade, [Set<String>? seen]) sync* {
     final visited = seen ?? <String>{};
     for (final entry in _groupLinks(node_)) {
       if (!visited.add(entry.group['id'] as String? ?? '')) continue;
+      // Las secciones de Crusade se saltan enteras, con lo que anidan dentro.
+      if (!crusade && _isCrusadeGroup(entry.group)) continue;
       yield entry;
-      yield* _allGroupsOf(entry.group, visited);
+      yield* _allGroupsOf(entry.group, crusade, visited);
     }
   }
 
@@ -531,16 +570,20 @@ class Dataset {
   ///
   /// Vienen con sus costes, sus restricciones y los ajustes de su enlace, así que validan y suman
   /// igual que si hubieran salido de [selectionFor].
-  List<Selection> optionsFor(Selection selection) {
+  List<Selection> optionsFor(Selection selection, {bool crusade = false}) {
     final entry = node(selection.entryId);
     if (entry == null) return const [];
 
     final options = <Selection>[];
     for (final child in _childLinks(entry)) {
       options.add(_selectionFrom(child.entry,
-          groupId: null, groupName: null, groupConstraints: const [], link: child.link));
+          groupId: null,
+          groupName: null,
+          groupConstraints: const [],
+          link: child.link,
+          crusade: crusade));
     }
-    for (final (:group, :link) in _allGroupsOf(entry)) {
+    for (final (:group, :link) in _allGroupsOf(entry, crusade)) {
       final groupRules = [
         for (final node_ in [group, if (link != null) link])
           for (final c in (node_['constraints'] as List? ?? const []))
@@ -555,7 +598,8 @@ class Dataset {
             groupName: group['name'] as String?,
             groupConstraints: groupRules,
             groupModifiers: groupChanges,
-            link: option.link));
+            link: option.link,
+            crusade: crusade));
       }
     }
     return options;
@@ -568,6 +612,7 @@ class Dataset {
     required List<Constraint> groupConstraints,
     Map<String, dynamic>? link,
     List<Modifier> groupModifiers = const [],
+    bool crusade = false,
     int count = 1,
   }) {
     final constraints = [
@@ -587,6 +632,7 @@ class Dataset {
       groupConstraints: groupConstraints,
       modifiers: [Modifier.allOf(entry), if (link != null) Modifier.allOf(link)].expand((m) => m).toList(),
       groupModifiers: groupModifiers,
+      groups: [],
       categoryIds: [
         for (final raw in (entry['categoryLinks'] as List? ?? const []))
           if ((raw as Map<String, dynamic>)['targetId'] is String) raw['targetId'] as String,
@@ -601,11 +647,12 @@ class Dataset {
             groupName: null,
             groupConstraints: const [],
             link: child.link,
+            crusade: crusade,
             count: minimum));
       }
     }
 
-    for (final (:group, :link) in _allGroupsOf(entry)) {
+    for (final (:group, :link) in _allGroupsOf(entry, crusade)) {
       final groupRules = [
         for (final node_ in [group, if (link != null) link])
           for (final c in (node_['constraints'] as List? ?? const []))
@@ -614,17 +661,42 @@ class Dataset {
       final groupChanges = [
         for (final node_ in [group, if (link != null) link]) ...Modifier.allOf(node_),
       ];
-      for (final option in _childLinks(group)) {
+      selection.groups.add(OptionGroup(
+        id: group['id'] as String? ?? '',
+        name: group['name'] as String?,
+        constraints: groupRules,
+        modifiers: groupChanges,
+      ));
+      final options = _childLinks(group).toList();
+      var puestas = 0;
+      for (final option in options) {
         final minimum = _minimumSelections(option.entry);
         if (minimum > 0) {
+          puestas += minimum;
           selection.addChild(_selectionFrom(option.entry,
               groupId: group['id'] as String?,
               groupName: group['name'] as String?,
               groupConstraints: groupRules,
               groupModifiers: groupChanges,
               link: option.link,
+              crusade: crusade,
               count: minimum));
         }
+      }
+
+      // Si el grupo exige un mínimo y solo ofrece una opción, no hay nada que elegir: se pone.
+      // Es la diferencia entre una unidad recién añadida que ya vale y una que nace incumpliendo
+      // por algo que el jugador no podía decidir de otra manera.
+      final required = _minimumOf(groupRules);
+      if (options.length == 1 && puestas < required) {
+        selection.addChild(_selectionFrom(options.single.entry,
+            groupId: group['id'] as String?,
+            groupName: group['name'] as String?,
+            groupConstraints: groupRules,
+            groupModifiers: groupChanges,
+            link: options.single.link,
+            crusade: crusade,
+            count: required - puestas));
       }
     }
 
@@ -653,6 +725,17 @@ class Dataset {
       final target = node(link['targetId'] as String? ?? '');
       if (target != null) yield (entry: target, link: link);
     }
+  }
+
+  /// El mínimo que exige un grupo, mirando solo lo que declara. Sin modifiers: aquí no hay lista
+  /// todavía contra la que evaluarlos, y equivocarse por exceso metería opciones que sobran.
+  static int _minimumOf(List<Constraint> constraints) {
+    for (final constraint in constraints) {
+      if (constraint.type == 'min' && constraint.field == 'selections' && constraint.value > 0) {
+        return constraint.value.round();
+      }
+    }
+    return 0;
   }
 
   int _minimumSelections(Map<String, dynamic> entry) {

@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../tema.dart';
 import 'facciones.dart';
+import 'listas.dart';
 import 'wiki.dart';
 
-/// Las dos patas de la app: construir listas y consultar el reglamento.
+/// Las tres patas de la app: las listas del jugador, el catálogo de unidades y el reglamento.
 ///
 /// La Wiki no es un extra: la mitad de las veces que se abre una app de listas en mitad de una
 /// partida es para mirar qué hace **[SUSTAINED HITS]**, y hasta ahora eso obligaba a salir a buscar
@@ -24,7 +25,7 @@ class _PantallaDeInicioState extends State<PantallaDeInicio> {
     return Scaffold(
       body: IndexedStack(
         index: _pestana,
-        children: const [PantallaDeFacciones(), PantallaDeWiki()],
+        children: const [PantallaDeListas(), PantallaDeFacciones(), PantallaDeWiki()],
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _pestana,
@@ -33,6 +34,11 @@ class _PantallaDeInicioState extends State<PantallaDeInicio> {
         indicatorColor: Tema.acento.withValues(alpha: 0.16),
         surfaceTintColor: Colors.transparent,
         destinations: const [
+          NavigationDestination(
+            icon: Icon(Icons.list_alt_outlined),
+            selectedIcon: Icon(Icons.list_alt, color: Tema.acento),
+            label: 'Listas',
+          ),
           NavigationDestination(
             icon: Icon(Icons.shield_outlined),
             selectedIcon: Icon(Icons.shield, color: Tema.acento),
