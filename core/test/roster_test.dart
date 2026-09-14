@@ -476,6 +476,57 @@ void main() {
     });
   });
 
+  test('ninguna mejora de un detachment se ofrece bajo otro', () {
+    // La garantía que importa, sobre las 36 facciones y los 547 detachments. Al equipar aparecen
+    // también mejoras que **no** son del detachment, y eso es correcto: hay mejoras atadas a una
+    // unidad y no a un detachment —el Pennant of Remembrance lo lleva cualquier Ancient, el Lancet
+    // of the Worldsore solo un Helbrute—. Lo que no puede pasar es que una mejora **con** gate de
+    // detachment salga con otro distinto.
+    final detachmentIds = <String>{};
+    for (final faction in dataset.factions) {
+      for (final d in dataset.detachmentsOf(faction)) {
+        detachmentIds.add(d.id);
+      }
+      for (final d in dataset.detachmentsOf(faction, boardingActions: true)) {
+        detachmentIds.add(d.id);
+      }
+    }
+
+    var comprobadas = 0;
+    final coladas = <String>[];
+    for (final faction in dataset.factions) {
+      for (final detachment in dataset.detachmentsOf(faction)) {
+        final suyas = dataset
+            .enhancementsOf(faction, detachmentId: detachment.id)
+            .map((e) => e.name)
+            .toSet();
+        final roster = Roster(faction: faction, pointsLimit: 2000)
+          ..battleSize = sizeOf(2000)
+          ..detachments.add(detachment);
+        roster.shownOptions
+            .addAll(dataset.visibilityOptionsOf(faction).map((o) => o.id));
+
+        for (final unit in roster.availableUnits) {
+          for (final option in roster.optionsFor(roster.selectionFor(unit))) {
+            if (!option.baseCosts.containsKey(enhancementsCostTypeId)) continue;
+            if (suyas.contains(option.name)) continue;
+            comprobadas++;
+            final node = dataset.node(option.entryId);
+            final atadaAUnDetachment = node != null &&
+                Modifier.allOf(node).any((m) =>
+                    m.field == 'hidden' &&
+                    m.allConditions.any((c) => detachmentIds.contains(c.childId)));
+            if (atadaAUnDetachment && coladas.length < 5) {
+              coladas.add('${faction.name} · ${detachment.name} · ${option.name}');
+            }
+          }
+        }
+      }
+    }
+    expect(comprobadas, greaterThan(1000), reason: 'si baja, el barrido dejó de cubrir casos');
+    expect(coladas, isEmpty);
+  });
+
   test('los gates de las mejoras van todos en el mismo sentido', () {
     // Lo que justifica cómo se atribuyen: `enhancementsOf` recoge los detachments que nombran las
     // condiciones de `hidden` de una mejora y se la da a ese detachment. Eso solo vale si el gate

@@ -153,6 +153,16 @@ La atribución se apoya en un atajo —se le da la mejora al detachment que nomb
 **315** son «lessThan 1» o «equalTo 0», o sea «escondida si NO llevas ese detachment», y no hay
 ninguno al revés. Hay un test que salta si upstream mete uno invertido.
 
+**No todas las mejoras son de un detachment.** Las hay atadas a una **unidad**: el Pennant of
+Remembrance lo lleva cualquier Ancient de Space Marines en cualquier detachment, y el Lancet of the
+Worldsore solo un Helbrute o un Myphitic Blight-hauler. Esas no salen en `enhancementsOf`, que
+contesta «qué da este detachment», y sí salen al equipar la unidad, que contesta «qué puede llevar
+esta». Son dos preguntas distintas y las dos hacen falta.
+
+Lo que no puede pasar es que una mejora **con** gate de detachment aparezca bajo otro. Hay un test
+que lo recorre entero: de las **1.175** mejoras que se ofrecen al equipar fuera del detachment,
+**las 1.175** son de unidad y ninguna de detachment.
+
 Cubre **546 de los 547** detachments jugables; el único que se queda fuera es el Contagion Engines
 de la Death Guard. El dataset los gradúa por Detachment Points, y sobre los de tamaño completo —los
 de 2 y 3 puntos— la resolución es exacta: **377 de 378 dan las cuatro mejoras** que corresponden en
@@ -285,9 +295,6 @@ Lo que falta:
   publique el esquema. Solo afecta a listas con **copias repetidas de la misma unidad**; sin
   repetir, el precio es exacto.
 - **Varias fuerzas en un roster**, para aliados y para Boarding Actions completo.
-- **Localizar las mejoras evaluando en vez de con el atajo.** Ya se puede en los casos que se han
-  mirado, pero las dos vías todavía no dan lo mismo en 339 de los 547 detachments, y hasta
-  entenderlo entero se sigue usando el atajo, que está verificado.
 - **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da cuatro,
   y el **Contagion Engines**, el único sin ninguna.
 - **Límites por rol**: en 11ª prácticamente no existen. La fuerza declara uno (mínimo 1 Character)
