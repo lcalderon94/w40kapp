@@ -43,6 +43,9 @@ jobs:
     # Sin esto, un paso colgado se come seis horas de runner antes de rendirse. La instalación de
     # Flutter se quedó parada en el primer intento y no había forma de enterarse.
     timeout-minutes: 45
+    # Para poder publicar el Release con el APK colgado.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -77,6 +80,25 @@ jobs:
           name: warorgan-apk
           path: app/build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: error
+
+      # Un artefacto está bien para CI, pero para instalar en el móvil es un incordio: hace falta
+      # estar logueado, baja un zip y Android no instala zips. Un Release deja el .apk suelto, con
+      # un enlace que no cambia nunca y no pide login. Se abre en el móvil y se instala.
+      - name: Publicar el APK donde se pueda bajar de un toque
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp app/build/app/outputs/flutter-apk/app-release.apk warorgan.apk
+          # Se borra y se rehace para que la etiqueta apunte siempre al commit recién compilado.
+          gh release delete ultima --yes --cleanup-tag 2>/dev/null || true
+          gh release create ultima warorgan.apk \
+            --title "WarOrgan-ES · última compilación" \
+            --notes "APK instalable, compilado de \`${GITHUB_SHA:0:7}\`.
+
+          Descarga directa: **[warorgan.apk](https://github.com/${GITHUB_REPOSITORY}/releases/download/ultima/warorgan.apk)**
+
+          Ábrelo desde el móvil y acepta instalar de origen desconocido. Este enlace no cambia: siempre apunta a la última compilación."
 
       # Con qué clave ha quedado firmado. Si la huella cambia de una compilación a otra, Android
       # se niega a instalar la nueva encima de la vieja y hay que desinstalar, que se lleva por
