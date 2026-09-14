@@ -834,4 +834,118 @@ void main() {
     expect(completos, greaterThan(300));
     expect(conCuatro / completos, greaterThan(0.99));
   });
+
+  group('montar una unidad entera', () {
+    test('un modelo trae el arma que le exige el enlace, no solo la que exige el destino', () {
+      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      final marines = roster.selectionFor(
+          deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      roster.add(marines);
+
+      // La Plasma gun lleva su `min 1` en el enlace y la Blight launcher en el destino. Mirando
+      // solo el destino, el marine de plasma nacía desarmado y el otro no.
+      for (final (modelo, arma) in [
+        ('Plague Marine w/ plasma gun', 'Plasma gun'),
+        ('Plague Marine w/ blight launcher', 'Blight launcher'),
+      ]) {
+        final puesto = roster.optionsFor(marines).firstWhere((o) => o.name == modelo);
+        expect(puesto.children.map((c) => c.name), contains(arma),
+            reason: '$modelo tiene que nacer con su $arma puesta');
+      }
+    });
+
+    test('ninguna unidad de ninguna facción nace con equipo obligatorio sin poner', () {
+      var sueltas = 0;
+      final culpables = <String>[];
+      for (final faccion in dataset.factions) {
+        final detachments = dataset.detachmentsOf(faccion);
+        if (detachments.isEmpty) continue;
+        final roster = Roster(faction: faccion, pointsLimit: 2000)
+          ..detachments.add(detachments.first);
+        for (final unidad in faccion.units) {
+          final s = roster.selectionFor(unidad);
+          for (final nodo in s.descendantsAndSelf.toList()) {
+            for (final o in roster.optionsFor(nodo)) {
+              final minimo = o.constraints
+                  .where((c) => !c.isMax && c.field == 'selections')
+                  .fold<int>(0, (m, c) => c.value.round() > m ? c.value.round() : m);
+              if (minimo < 1) continue;
+              final puestas = nodo.children
+                  .where((h) => h.entryId == o.entryId)
+                  .fold<int>(0, (t, h) => t + h.count);
+              if (puestas < minimo) {
+                sueltas++;
+                if (culpables.length < 5) culpables.add('\${unidad.name} → \${o.name}');
+              }
+            }
+          }
+        }
+      }
+      expect(sueltas, 0, reason: 'quedan piezas obligatorias sin poner: \$culpables');
+    });
+
+    test('un grupo cuenta también lo que se elige en los subgrupos que anidan en él', () {
+      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      final marines = roster.selectionFor(
+          deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      roster.add(marines);
+      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+
+      // «Wargear» exige exactamente dos armas y no contiene ninguna: las contiene en dos
+      // subgrupos de una opción cada uno. Contando solo los hijos directos ve cero siempre.
+      final wargear = campeon.groups.firstWhere((g) => g.name == 'Wargear');
+      final subgrupos = campeon.groups.where((g) => g.parentId == wargear.id);
+      expect(subgrupos, isNotEmpty, reason: 'Wargear tiene que saber qué grupos anidan en él');
+
+      elegirEnGrupo(roster, campeon, 'Boltgun');
+      expect(roster.validate().map((v) => v.message), isNot(contains(startsWith('Wargear:'))),
+          reason: 'con las dos armas puestas, Wargear ya no incumple');
+    });
+
+    test('la escuadra que pidió el usuario sale legal: 10 miniaturas, 180 puntos, sin avisos', () {
+      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      final marines = roster.selectionFor(
+          deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      roster.add(marines);
+
+      poner(roster, marines, 'Plague Marine w/ blight launcher', 2);
+      poner(roster, marines, 'Plague Marine w/ plasma gun', 2);
+      poner(roster, marines, 'Plague Marine w/ plague spewer', 2);
+      poner(roster, marines, 'Plague Marine w/ heavy plague weapon', 3);
+
+      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+      elegirEnGrupo(roster, campeon, 'Power fist');
+      elegirEnGrupo(roster, campeon, 'Plasma gun');
+
+      final miniaturas = marines.descendantsAndSelf
+          .where((s) => s.type == 'model')
+          .fold<int>(0, (t, s) => t + s.count);
+      expect(miniaturas, 10);
+      expect(roster.points, 180, reason: 'diez Plague Marines valen 180, no el precio de cinco');
+      expect(roster.validate(), isEmpty);
+    });
+  });
+}
+
+/// Pone [veces] copias de una opción, como hace la pantalla.
+void poner(Roster roster, Selection padre, String nombre, int veces) {
+  for (var i = 0; i < veces; i++) {
+    final opcion = roster.optionsFor(padre).firstWhere((o) => o.name == nombre);
+    final puesta = padre.children.where((h) => h.entryId == opcion.entryId).firstOrNull;
+    if (puesta != null) {
+      puesta.count++;
+    } else {
+      padre.addChild(opcion);
+    }
+  }
+}
+
+/// Elige en un grupo que solo deja una: lo nuevo sustituye a lo viejo, no se apila.
+void elegirEnGrupo(Roster roster, Selection padre, String nombre) {
+  final opcion = roster.optionsFor(padre).firstWhere((o) => o.name == nombre);
+  padre.children.removeWhere((h) => h.groupId == opcion.groupId);
+  padre.addChild(opcion);
 }

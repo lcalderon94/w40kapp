@@ -131,12 +131,21 @@ class OptionGroup {
     required this.name,
     required this.constraints,
     required this.modifiers,
+    this.parentId,
   });
 
   final String id;
   final String? name;
   final List<Constraint> constraints;
   final List<Modifier> modifiers;
+
+  /// El grupo que contiene a este, si cuelga de otro.
+  ///
+  /// Los grupos anidan, y lo que se elige dentro de un subgrupo cuenta para el de fuera: el
+  /// Campeón de la Plaga lleva «Wargear» con exactamente dos armas, y esas dos se eligen en dos
+  /// subgrupos de una opción cada uno. Contando solo los hijos directos, «Wargear» ve cero por
+  /// muy armado que esté el Campeón.
+  final String? parentId;
 }
 
 /// Un incumplimiento de las reglas de construcción de listas.
@@ -710,7 +719,12 @@ class Roster {
     // Las restricciones del grupo se cumplen entre todos los hermanos que salen de él, y se
     // comprueban aunque no haya ninguno: un grupo vacío es justo el que incumple su mínimo.
     for (final group in selection.groups) {
-      final fromGroup = selection.children.where((c) => c.groupId == group.id).toList();
+      // Lo elegido en un subgrupo cuenta para el grupo de fuera. Si no, un grupo que solo contiene
+      // subgrupos —«Wargear: exactamente dos armas», repartidas en dos subgrupos de una— se ve
+      // siempre vacío y avisa de un incumplimiento que no existe.
+      final delGrupo = _groupAndNested(selection, group.id);
+      final fromGroup =
+          selection.children.where((c) => delGrupo.contains(c.groupId)).toList();
       final total = fromGroup.fold(0, (sum, s) => sum + s.count);
       // Las condiciones de ámbito `parent` cuentan sobre los hermanos, así que hace falta mirar
       // desde dentro del grupo. Cuando está vacío se usa un hueco colgado de la misma selección.
@@ -729,6 +743,19 @@ class Roster {
     for (final child in selection.children) {
       _validateSelection(child, violations);
     }
+  }
+
+  /// El grupo y todos los que anidan dentro de él, por id.
+  Set<String> _groupAndNested(Selection selection, String groupId) {
+    final ids = {groupId};
+    var crecio = true;
+    while (crecio) {
+      crecio = false;
+      for (final g in selection.groups) {
+        if (g.parentId != null && ids.contains(g.parentId) && ids.add(g.id)) crecio = true;
+      }
+    }
+    return ids;
   }
 
   /// Restricciones que se cuentan sobre el ejército entero, como «máximo 3 de esta unidad».

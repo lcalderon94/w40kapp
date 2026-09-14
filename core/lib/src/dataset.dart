@@ -487,22 +487,33 @@ class Dataset {
   ///
   /// El dataset los anida: «Heavy Weapons» no cuelga del tanque sino de su grupo «Wargear». Sin
   /// bajar, ni se despliegan sus mínimos obligatorios ni se pueden ofrecer sus opciones.
-  Iterable<({Map<String, dynamic> group, Map<String, dynamic>? link, List<Modifier> inherited})>
-      _allGroupsOf(Map<String, dynamic> node_, bool crusade,
-          [Set<String>? seen, List<Modifier> inherited = const []]) sync* {
+  Iterable<
+      ({
+        Map<String, dynamic> group,
+        Map<String, dynamic>? link,
+        List<Modifier> inherited,
+        String? parentId
+      })> _allGroupsOf(Map<String, dynamic> node_, bool crusade,
+          [Set<String>? seen, List<Modifier> inherited = const [], String? parentId]) sync* {
     final visited = seen ?? <String>{};
     for (final entry in _groupLinks(node_)) {
       if (!visited.add(entry.group['id'] as String? ?? '')) continue;
       // Las secciones de Crusade se saltan enteras, con lo que anidan dentro.
       if (!crusade && _isCrusadeGroup(entry.group)) continue;
-      yield (group: entry.group, link: entry.link, inherited: inherited);
+      yield (
+        group: entry.group,
+        link: entry.link,
+        inherited: inherited,
+        parentId: parentId
+      );
       // Lo que el grupo declara vale también para lo que anida: una mejora se esconde por lo que
       // diga el grupo «Enhancements» que la contiene, no por lo que diga ella.
       final propios = [
         for (final node_ in [entry.group, if (entry.link != null) entry.link!])
           ...Modifier.allOf(node_),
       ];
-      yield* _allGroupsOf(entry.group, crusade, visited, [...inherited, ...propios]);
+      yield* _allGroupsOf(entry.group, crusade, visited, [...inherited, ...propios],
+          entry.group['id'] as String?);
     }
   }
 
@@ -627,7 +638,7 @@ class Dataset {
           link: child.link,
           crusade: crusade));
     }
-    for (final (:group, :link, :inherited) in _allGroupsOf(entry, crusade)) {
+    for (final (:group, :link, :inherited, parentId: _) in _allGroupsOf(entry, crusade)) {
       final groupRules = [
         for (final node_ in [group, if (link != null) link])
           for (final c in (node_['constraints'] as List? ?? const []))
@@ -690,7 +701,7 @@ class Dataset {
     );
 
     for (final child in _childLinks(entry)) {
-      final minimum = _minimumSelections(child.entry);
+      final minimum = _minimumSelections(child.entry, child.link);
       if (minimum > 0) {
         selection.addChild(_selectionFrom(child.entry,
             groupId: null,
@@ -702,7 +713,7 @@ class Dataset {
       }
     }
 
-    for (final (:group, :link, :inherited) in _allGroupsOf(entry, crusade)) {
+    for (final (:group, :link, :inherited, :parentId) in _allGroupsOf(entry, crusade)) {
       final groupRules = [
         for (final node_ in [group, if (link != null) link])
           for (final c in (node_['constraints'] as List? ?? const []))
@@ -717,11 +728,12 @@ class Dataset {
         name: group['name'] as String?,
         constraints: groupRules,
         modifiers: groupChanges,
+        parentId: parentId,
       ));
       final options = _childLinks(group).toList();
       var puestas = 0;
       for (final option in options) {
-        final minimum = _minimumSelections(option.entry);
+        final minimum = _minimumSelections(option.entry, option.link);
         if (minimum > 0) {
           puestas += minimum;
           selection.addChild(_selectionFrom(option.entry,
@@ -789,12 +801,20 @@ class Dataset {
     return 0;
   }
 
-  int _minimumSelections(Map<String, dynamic> entry) {
-    for (final raw in (entry['constraints'] as List? ?? const [])) {
-      final constraint = raw as Map<String, dynamic>;
-      if (constraint['type'] == 'min' && constraint['field'] == 'selections') {
-        final value = constraint['value'];
-        if (value is num) return value.round();
+  /// El mínimo que exige una entrada, mirando también el enlace por el que se llega a ella.
+  ///
+  /// El enlace no es un puntero: es donde el dataset ajusta lo compartido a este sitio, y ahí
+  /// escribe mínimos tan a menudo como en el destino. La Plasma gun del Plague Marine con plasma
+  /// lleva su `min 1` en el enlace y la Blight launcher en el destino; mirando solo el destino, el
+  /// marine de plasma nacía desarmado y el de blight launcher no, sin ninguna razón visible.
+  int _minimumSelections(Map<String, dynamic> entry, [Map<String, dynamic>? link]) {
+    for (final node_ in [entry, if (link != null) link]) {
+      for (final raw in (node_['constraints'] as List? ?? const [])) {
+        final constraint = raw as Map<String, dynamic>;
+        if (constraint['type'] == 'min' && constraint['field'] == 'selections') {
+          final value = constraint['value'];
+          if (value is num) return value.round();
+        }
       }
     }
     return 0;
