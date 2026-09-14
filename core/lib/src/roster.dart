@@ -313,7 +313,10 @@ class Roster {
   /// Si el motor puede evaluar este modifier. Amplía [Modifier.isEvaluable] con lo que sabe la
   /// lista y no puede saber una condición suelta: de qué tipo es la fuerza.
   bool _canEvaluate(Modifier modifier) => modifier.isEvaluableWith((c) =>
-      (c.isSupported || _isForceTypeQuestion(c) || _isCatalogueQuestion(c)) &&
+      (c.isSupported ||
+          _isForceTypeQuestion(c) ||
+          _isCatalogueQuestion(c) ||
+          _isForceCountQuestion(c)) &&
       !_asksForUnknownBattleSize(c));
 
   /// Si la condición pregunta por el tamaño de la partida y la lista todavía no tiene ninguno.
@@ -332,6 +335,17 @@ class Roster {
       (condition.type == 'instanceOf' || condition.type == 'notInstanceOf') &&
       faction.dataset.forces.any((f) => f.id == condition.childId);
 
+  /// Si la condición cuenta **fuerzas** de un tipo: «cuántas fuerzas Crusade hay en el roster».
+  ///
+  /// Se contesta sin contar nada: una lista es una fuerza y de un solo tipo, así que la cuenta es
+  /// uno o cero. Darlo por no evaluable tiraba el modifier entero aunque el resto de sus
+  /// condiciones sí se supieran, y con él se caían gates que sí importan: el Dark Commune de los
+  /// Chaos Knights pide Iconoclast Fiefdom **y** no ser Crusade, y al no saber lo segundo se
+  /// ofrecía con cualquier detachment.
+  bool _isForceCountQuestion(Condition condition) =>
+      condition.field == 'forces' &&
+      faction.dataset.forces.any((f) => f.id == condition.childId);
+
   /// Si la condición pregunta de qué facción es la lista.
   ///
   /// El ámbito `primary-catalogue` no se recorre contando nada: nombra el catálogo principal, y
@@ -343,6 +357,14 @@ class Roster {
       (condition.type == 'instanceOf' || condition.type == 'notInstanceOf');
 
   bool _holds(Condition condition, Selection target) {
+    if (_isForceCountQuestion(condition)) {
+      final esta = condition.childId == _force.id ? 1 : 0;
+      return condition.type == 'instanceOf'
+          ? esta == 1
+          : condition.type == 'notInstanceOf'
+              ? esta == 0
+              : condition.holdsFor(esta);
+    }
     if (_isCatalogueQuestion(condition)) {
       final isThisCatalogue = condition.childId == faction.id;
       return condition.type == 'instanceOf' ? isThisCatalogue : !isThisCatalogue;
@@ -405,7 +427,11 @@ class Roster {
       case 'self':
         return expand([target]);
       case 'parent':
-        return expand(target.parent?.children ?? const []);
+        // El padre de una selección de primer nivel es la propia fuerza, no la nada: el dataset
+        // escribe «menos de un Final Day en el padre» para preguntar por el detachment de la
+        // lista, y devolviendo vacío la cuenta salía cero y la unidad se escondía siempre.
+        final siblings = target.parent?.children;
+        return expand(siblings ?? [...units, ..._configuration]);
       case 'force':
       case 'roster':
         // Incluye la configuración: el tamaño de partida y el detachment son selecciones de la

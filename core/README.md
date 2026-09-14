@@ -120,10 +120,15 @@ maneras:
   Tallyband Summoners: sin evaluarlo, el selector los ofrece con cualquier detachment y la lista se
   da por buena sin serlo.
 
+Hay un test que lo comprueba **en las 36 facciones a la vez**, no en una: 29 de ellas atan unidades
+a un detachment y son **301 casos** —los demonios de cada dios en las cuatro legiones del Caos, los
+Ynnari de Aeldari, los Tyránidos aliados de Genestealer Cults, los cultistas de Chaos Knights, los
+Corsarios de Drukhari—. Y no da por hecho la dirección del gate: el dataset lo usa para enseñar
+unidades y también para esconderlas. Lo que exige es que elegir ese detachment cambie lo que se
+ofrece. Pasan los 301.
+
 Cuando una condición no se sabe evaluar **no se esconde** y se cuenta en
-`Roster.unresolvedVisibility`. Aquí se prefiere pecar por exceso: esconder una unidad legal deja al
-jugador sin poder montar su lista, que es peor que dejar una de más a la vista. Quedan 134, todas
-por condiciones que cuentan fuerzas.
+`Roster.unresolvedVisibility`. Hoy es **cero**.
 
 `enhancementsOf` da las mejoras que habilita un detachment, con su texto traducido. Lo que
 identifica a una mejora no es el coste del tipo Enhancements ni el nombre de su grupo —hay
@@ -236,11 +241,11 @@ avisar en ellas y no sobre la lista entera.
 
 ```
 facciones 36 · unidades 6.149 (98,3 % con puntos) · detachments 547 · opciones 139.254
-unidades que una lista ofrece     2.068 de 6.149 (33,6 %)
+unidades que una lista ofrece     2.056 de 6.149 (33,4 %)
 mejoras                       546 de 547 detachments  ·  377 de 378 de tamaño completo dan 4
 modifiers de coste sin evaluar    1.414, en el 23,0 % de las unidades
-restricciones sin comprobar         536, en el  8,6 % de las unidades
-visibilidad sin evaluar               134
+restricciones sin comprobar         118, en el  1,8 % de las unidades
+visibilidad sin evaluar                 0
 piden elegir algo al añadirse     3.019, en el 49,1 % de las unidades
 ```
 
@@ -250,9 +255,9 @@ Lo que falta:
 - **`localConditionGroups`**, lo de arriba: es todo el 28,2 %, y está bloqueado hasta que BSData
   publique el esquema. Solo afecta a listas con **copias repetidas de la misma unidad**; sin
   repetir, el precio es exacto.
-- **Varias fuerzas en un roster.** Es lo que dejaría comprobar 354 de esas 536 restricciones y las
-  134 condiciones de visibilidad que quedan, y lo que hace falta para aliados y para Boarding
-  Actions completo.
+- **Varias fuerzas en un roster**, para aliados y para Boarding Actions completo. Contar fuerzas ya
+  se contesta —una lista es una fuerza de un tipo conocido—, así que lo que falta es poder tener
+  más de una.
 - **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da cuatro,
   y el **Contagion Engines**, el único sin ninguna.
 - **Límites por rol**: en 11ª prácticamente no existen. La fuerza declara uno (mínimo 1 Character)

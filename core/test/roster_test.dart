@@ -222,10 +222,65 @@ void main() {
       ..battleSize = sizeOf(2000)
       ..detachments.add(dataset.detachmentsOf(deathGuard).firstWhere((d) => d.name == nombre));
 
+    test('el detachment decide qué unidades hay, en TODAS las facciones', () {
+      // El barrido que había que hacer desde el principio, en vez de arreglar Death Guard y dar
+      // el resto por bueno. 29 facciones atan unidades a un detachment, y son 301 casos: los
+      // demonios de cada dios en las cuatro legiones del Caos, los Ynnari de Aeldari, los aliados
+      // Tyránidos de Genestealer Cults, los cultistas de Chaos Knights, los Corsarios de Drukhari.
+      //
+      // No se da por hecho en qué dirección va el gate: el dataset lo usa para **enseñar** unidades
+      // (los demonios con Tallyband Summoners) y también para **esconderlas** (los Corsarios con
+      // Reaper's Wager). Lo que se exige es que elegir ese detachment cambie lo que se ofrece.
+      var comprobados = 0;
+      final mudos = <String>[];
+
+      for (final faction in dataset.factions) {
+        final detachments = dataset.detachmentsOf(faction);
+        if (detachments.length < 2) continue;
+        final options = dataset.visibilityOptionsOf(faction).map((o) => o.id).toList();
+        final byId = {for (final d in detachments) d.id: d.name};
+
+        final gated = <String, Set<String>>{};
+        for (final unit in faction.units) {
+          for (final modifier in unit.visibility) {
+            for (final condition in modifier.allConditions) {
+              if (byId.containsKey(condition.childId)) {
+                gated.putIfAbsent(unit.name, () => {}).add(byId[condition.childId]!);
+              }
+            }
+          }
+        }
+        if (gated.isEmpty) continue;
+
+        final visibleWith = <String, Set<String>>{};
+        for (final detachment in detachments) {
+          final roster = Roster(faction: faction, pointsLimit: 2000)
+            ..battleSize = sizeOf(2000)
+            ..detachments.add(detachment);
+          roster.shownOptions.addAll(options);
+          visibleWith[detachment.name] = roster.availableUnits.map((u) => u.name).toSet();
+        }
+
+        gated.forEach((unit, its) {
+          comprobados++;
+          final conEl = its.map((d) => visibleWith[d]!.contains(unit)).toSet();
+          final conOtros = visibleWith.entries
+              .where((e) => !its.contains(e.key))
+              .map((e) => e.value.contains(unit))
+              .toSet();
+          final cambia = conOtros.isEmpty ||
+              conEl.difference(conOtros).isNotEmpty ||
+              conOtros.difference(conEl).isNotEmpty;
+          if (!cambia) mudos.add('${faction.name} · \$unit (${its.join(", ")})');
+        });
+      }
+
+      expect(comprobados, greaterThan(290), reason: 'si baja, el barrido dejó de cubrir casos');
+      expect(mudos, isEmpty, reason: 'gates que no surten ningún efecto');
+    });
+
     test('los demonios de Nurgle solo entran con Tallyband Summoners', () {
-      // El dataset lo dice literalmente: Plaguebearers, Nurglings, Great Unclean One, Rotigus,
-      // Plague Drones y Beasts of Nurgle llevan «hidden si hay menos de un Tallyband Summoners en
-      // la fuerza». Sin evaluarlo, el selector los ofrecía en cualquier lista de Death Guard.
+      // Un caso con nombre del barrido de arriba, para que un fallo se lea de un vistazo.
       const demonios = [
         'Plaguebearers',
         'Nurglings',
