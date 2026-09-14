@@ -59,7 +59,9 @@ class ListaEnCurso extends ChangeNotifier {
   }
 
   void anadirUnidad(UnitEntry unidad) {
-    roster.add(dataset.selectionFor(unidad));
+    // Del roster, no del dataset: así la unidad entra sin el equipo que solo existe con otro
+    // detachment, que si no se cuela y además le cambia las palabras clave.
+    roster.add(roster.selectionFor(unidad));
     notifyListeners();
   }
 

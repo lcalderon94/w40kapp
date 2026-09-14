@@ -60,6 +60,11 @@ for (final incumplimiento in roster.validate()) print(incumplimiento);
 en la unidad y llevan diez miniaturas a 0, y el Myphitic Blight-hauler cuesta 0 en la unidad y 95 en
 la suya; sumando el árbol los dos salen bien.
 
+`Roster.selectionFor` da la selección de partida ya podada: `Dataset.selectionFor` despliega los
+mínimos mirando solo el dataset, y ahí entra equipo que depende del detachment. «Houndpack Lance
+Character» se colaba en cualquier lista de Chaos Knights y convertía a **todos** los War Dogs en
+Character.
+
 `Roster.optionsFor` da lo otro, lo que se elige: las armas, el equipo y también las **mejoras**, que no son
 un caso aparte sino un grupo más de los que cuelgan de un personaje. Cada opción viene construida y
 lista para `addChild`, con sus costes y sus restricciones, así que valida y suma igual que lo que
@@ -195,6 +200,18 @@ Starcannon» o «un no-Battleline de Khorne más por cada Battleline». Son 5.49
 `repeats`; sin ellas el cambio se aplica una sola vez y el límite se queda corto en cuanto la
 unidad crece.
 
+### Las palabras clave no son las que están escritas
+
+`Roster.categoriesOf`, no `Selection.categoryIds`. Hay **1.252 modifiers** que las cambian —804
+añaden, 400 cambian la principal, 38 quitan— y muchos dependen de la lista. Y suben desde lo que
+llevas puesto: «Houndpack Lance Character» es una opción que el jugador le pone al War Dog y es la
+que lo convierte en **Character**, que es de lo que cuelgan las cuatro mejoras de ese detachment.
+Sin aplicarlos, esas mejoras no aparecen en ninguna unidad.
+
+Las condiciones de estos modifiers se evalúan con las categorías declaradas, no con las ya
+calculadas, para no morderse la cola. Se puede: de las 544 condiciones que tienen, solo 7 preguntan
+por una categoría.
+
 ### Las reglas del ejército entero
 
 No son de ninguna unidad: las declara el tipo de fuerza, y se leen del dataset en vez de escribirse
@@ -268,9 +285,9 @@ Lo que falta:
   publique el esquema. Solo afecta a listas con **copias repetidas de la misma unidad**; sin
   repetir, el precio es exacto.
 - **Varias fuerzas en un roster**, para aliados y para Boarding Actions completo.
-- **Los modifiers que cambian categorías** (1.252). Un detachment puede dar una palabra clave a una
-  unidad —Houndpack Lance convierte a los War Dogs en Character—, y de eso dependen algunas mejoras.
-  Sin aplicarlos, esas mejoras no se pueden localizar evaluando; el atajo de arriba sí las coloca.
+- **Localizar las mejoras evaluando en vez de con el atajo.** Ya se puede en los casos que se han
+  mirado, pero las dos vías todavía no dan lo mismo en 339 de los 547 detachments, y hasta
+  entenderlo entero se sigue usando el atajo, que está verificado.
 - **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da cuatro,
   y el **Contagion Engines**, el único sin ninguna.
 - **Límites por rol**: en 11ª prácticamente no existen. La fuerza declara uno (mínimo 1 Character)

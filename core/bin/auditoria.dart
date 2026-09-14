@@ -50,7 +50,7 @@ void main(List<String> args) async {
         ..detachments.add(ofFaction.first);
       for (final unit in visible.availableUnits) {
         offered++;
-        offeredOptions += visible.optionsFor(dataset.selectionFor(unit)).length;
+        offeredOptions += visible.optionsFor(visible.selectionFor(unit)).length;
       }
       unresolvedVisibility += visible.unresolvedVisibility;
     }

@@ -204,11 +204,35 @@ class Roster {
   /// [unresolvedVisibility]: esconder una unidad legal deja al jugador sin poder montar su lista,
   /// que es un daño mayor que dejar una de más a la vista.
   List<UnitEntry> get availableUnits {
+    _forgetCategories();
     unresolvedVisibility = 0;
     return [
       for (final unit in faction.units)
         if (!_isHidden(unit)) unit,
     ];
+  }
+
+  /// La selección de partida de una unidad, ya sin lo que esta lista no puede llevar.
+  ///
+  /// [Dataset.selectionFor] despliega los mínimos mirando solo el dataset, y ahí entra equipo que
+  /// depende del detachment: «Houndpack Lance Character» se colaba en cualquier lista de Chaos
+  /// Knights y convertía a todos los War Dogs en Character, que es justo de lo que cuelgan unas
+  /// mejoras que no tocaban.
+  Selection selectionFor(UnitEntry unit) {
+    _forgetCategories();
+    final selection = faction.dataset.selectionFor(unit);
+    _prune(selection);
+    return selection;
+  }
+
+  void _prune(Selection selection) {
+    selection.children.removeWhere((child) {
+      child.parent = selection;
+      return _applyHidden([...child.groupModifiers, ...child.modifiers], child);
+    });
+    for (final child in selection.children) {
+      _prune(child);
+    }
   }
 
   /// Lo que se le puede poner a una selección de esta lista.
@@ -218,6 +242,7 @@ class Roster {
   /// varias unidades y enseña en cada una solo las suyas. Ofrecerlas todas pone en la ficha de una
   /// unidad el equipo de otra.
   List<Selection> optionsFor(Selection selection) {
+    _forgetCategories();
     final options = faction.dataset.optionsFor(selection);
     return [
       for (final option in options)
@@ -280,6 +305,7 @@ class Roster {
   /// Sin esto una unidad de veinte Poxwalkers costaría lo mismo que una de diez: el dataset da 65
   /// como coste base y deja en un modifier que pase a 130 al superar las diez miniaturas.
   void applyModifiers() {
+    _forgetCategories();
     skippedModifiers = 0;
     for (final selection in _all) {
       selection.costs
@@ -543,8 +569,60 @@ class Roster {
   bool _matches(String childId, Selection selection) => switch (childId) {
         'any' => true,
         'model' || 'unit' || 'upgrade' => selection.type == childId,
-        _ => selection.entryId == childId || selection.categoryIds.contains(childId),
+        _ => selection.entryId == childId || categoriesOf(selection).contains(childId),
       };
+
+  /// Las palabras clave que de verdad tiene una selección en esta lista.
+  ///
+  /// No son las que trae escritas: hay 1.252 modifiers que las cambian, y muchos dependen del
+  /// detachment. Houndpack Lance convierte a los War Dogs en **Character**, y de eso cuelgan las
+  /// mejoras que solo ellos pueden llevar; con las declaradas a secas, esas mejoras no aparecen en
+  /// ninguna unidad.
+  ///
+  /// Las condiciones de estos modifiers se evalúan con las categorías **declaradas**, no con las
+  /// ya calculadas, para no morderse la cola. Se puede: de las 544 condiciones que tienen, solo 7
+  /// preguntan por una categoría.
+  List<String> categoriesOf(Selection selection) {
+    final cached = _categoryCache[selection];
+    if (cached != null) return cached;
+
+    final categories = [...selection.categoryIds];
+    if (!_resolvingCategories) {
+      _resolvingCategories = true;
+      try {
+        // Las suyas, y las que le suben de lo que lleva puesto: hay opciones que existen solo para
+        // dar una palabra clave —«Houndpack Lance Character» convierte al War Dog en Character— y
+        // sin recogerlas la unidad nunca cumple los gates que dependen de ella.
+        for (final node in selection.descendantsAndSelf) {
+          for (final modifier in node.modifiers) {
+            if (modifier.field != 'category') continue;
+            final category = modifier.value;
+            if (category is! String) continue;
+            if (!_canEvaluate(modifier)) continue;
+            if (!modifier.appliesWhen((c) => _holds(c, node))) continue;
+            switch (modifier.type) {
+              case 'add':
+              case 'set-primary':
+                if (!categories.contains(category)) categories.add(category);
+              case 'remove':
+                if (identical(node, selection)) categories.remove(category);
+              // `unset-primary` deja de ser la principal, pero la palabra clave sigue estando.
+            }
+          }
+        }
+      } finally {
+        _resolvingCategories = false;
+      }
+    }
+    return _categoryCache[selection] = categories;
+  }
+
+  final _categoryCache = <Selection, List<String>>{};
+  bool _resolvingCategories = false;
+
+  /// Se vacía al empezar cualquier cálculo: las categorías dependen de la configuración de la
+  /// lista, así que dejarlas cacheadas entre detachments daría respuestas del anterior.
+  void _forgetCategories() => _categoryCache.clear();
 
   /// Comprueba la legalidad de la lista.
   ///
@@ -553,6 +631,7 @@ class Roster {
   /// el ejército. No cubre todavía los modifiers que cambian restricciones en vez de costes, ni los
   /// límites por rol del destacamento.
   List<Violation> validate() {
+    _forgetCategories();
     final violations = <Violation>[];
     uncheckedConstraints = 0;
     for (final selection in _all) {

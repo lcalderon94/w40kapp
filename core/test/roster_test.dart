@@ -385,8 +385,10 @@ void main() {
             .addAll(dataset.visibilityOptionsOf(faction).map((o) => o.id));
 
         for (final unit in roster.availableUnits) {
-          final selection = dataset.selectionFor(unit);
+          final selection = roster.selectionFor(unit);
           final visible = roster.optionsFor(selection).map((o) => o.entryId).toSet();
+          // Las de verdad, no las declaradas: un detachment puede dar palabras clave.
+          final categories = roster.categoriesOf(selection);
           for (final option in dataset.optionsFor(selection)) {
             final required = <String>[];
             for (final modifier in [...option.groupModifiers, ...option.modifiers]) {
@@ -399,8 +401,8 @@ void main() {
             }
             if (required.isEmpty) continue;
             conGate++;
-            final cumple = required
-                .every((id) => unit.id == id || selection.categoryIds.contains(id));
+            final cumple =
+                required.every((id) => unit.id == id || categories.contains(id));
             if (visible.contains(option.entryId) && !cumple && fallos.length < 5) {
               fallos.add('${faction.name} · ${unit.name} · ${option.name}');
             }
@@ -423,6 +425,54 @@ void main() {
       }
       expect(filtradas, lessThan(sinFiltrar));
       expect(deathGuardRoster.unresolvedVisibility, 0);
+    });
+  });
+
+  group('las palabras clave que cambian', () {
+    Roster deChaosKnights(String detachment) {
+      final knights = dataset.factionNamed('Chaos - Chaos Knights');
+      return Roster(faction: knights, pointsLimit: 2000)
+        ..battleSize = sizeOf(2000)
+        ..detachments.add(
+            dataset.detachmentsOf(knights).firstWhere((d) => d.name == detachment));
+    }
+
+    const characterId = '9cfd-1c32-585f-7d5c';
+
+    test('un detachment puede convertir una unidad en Character', () {
+      // Houndpack Lance mete al War Dog una opción que le da la palabra clave Character, y de eso
+      // cuelgan sus cuatro mejoras. Sin aplicar los modifiers de categoría, la unidad nunca es
+      // Character y esas mejoras no aparecen en ninguna parte.
+      final conHoundpack = deChaosKnights('Houndpack Lance');
+      final dog = conHoundpack.selectionFor(
+          conHoundpack.availableUnits.firstWhere((u) => u.name == 'War Dog Brigand'));
+      expect(conHoundpack.categoriesOf(dog), contains(characterId));
+      expect(
+          conHoundpack
+              .optionsFor(dog)
+              .where((o) => o.baseCosts.containsKey(enhancementsCostTypeId)),
+          hasLength(4));
+    });
+
+    test('y con otro detachment no lo es, ni recibe esas mejoras', () {
+      final otro = deChaosKnights('Traitoris Lance');
+      final dog = otro.selectionFor(
+          otro.availableUnits.firstWhere((u) => u.name == 'War Dog Brigand'));
+      expect(otro.categoriesOf(dog), isNot(contains(characterId)));
+      expect(
+          otro.optionsFor(dog).where((o) => o.baseCosts.containsKey(enhancementsCostTypeId)),
+          isEmpty);
+    });
+
+    test('la selección de partida no arrastra equipo de otro detachment', () {
+      // `Dataset.selectionFor` despliega los mínimos mirando solo el dataset, y ahí entra equipo
+      // que depende del detachment. `Roster.selectionFor` lo poda.
+      final otro = deChaosKnights('Traitoris Lance');
+      final unit = otro.availableUnits.firstWhere((u) => u.name == 'War Dog Brigand');
+      expect(dataset.selectionFor(unit).descendantsAndSelf.map((s) => s.name),
+          contains('Houndpack Lance Character'));
+      expect(otro.selectionFor(unit).descendantsAndSelf.map((s) => s.name),
+          isNot(contains('Houndpack Lance Character')));
     });
   });
 
