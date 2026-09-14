@@ -87,8 +87,11 @@ void main() {
     });
 
     test('quitar la última de una opción la borra, no la deja en cero', () {
+      // Con Virulent Vectorium, porque las mejoras del príncipe solo se ofrecen con su detachment.
       final lista = nuevaLista()
-        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..elegirDetachment(dataset
+            .detachmentsOf(deathGuard)
+            .firstWhere((d) => d.name == 'Virulent Vectorium'))
         ..anadirUnidad(
             deathGuard.units.firstWhere((u) => u.name == 'Daemon Prince of Nurgle'));
       final principe = lista.roster.units.first;

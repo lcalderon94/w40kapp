@@ -68,8 +68,11 @@ class ListaEnCurso extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Las opciones que se pueden elegir dentro de una selección, con lo ya elegido a la vista.
-  List<Selection> opcionesDe(Selection seleccion) => dataset.optionsFor(seleccion);
+  /// Las opciones que esta unidad puede elegir de verdad.
+  ///
+  /// El dataset comparte listas de armas entre varias unidades y enseña en cada una solo las
+  /// suyas; ofrecerlas todas pone en la ficha de una unidad el equipo de otra.
+  List<Selection> opcionesDe(Selection seleccion) => roster.optionsFor(seleccion);
 
   /// Cuántas de esa opción hay puestas ahora mismo.
   int cuantasHay(Selection padre, String entryId) => padre.children

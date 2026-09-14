@@ -487,15 +487,22 @@ class Dataset {
   ///
   /// El dataset los anida: «Heavy Weapons» no cuelga del tanque sino de su grupo «Wargear». Sin
   /// bajar, ni se despliegan sus mínimos obligatorios ni se pueden ofrecer sus opciones.
-  Iterable<({Map<String, dynamic> group, Map<String, dynamic>? link})> _allGroupsOf(
-      Map<String, dynamic> node_, bool crusade, [Set<String>? seen]) sync* {
+  Iterable<({Map<String, dynamic> group, Map<String, dynamic>? link, List<Modifier> inherited})>
+      _allGroupsOf(Map<String, dynamic> node_, bool crusade,
+          [Set<String>? seen, List<Modifier> inherited = const []]) sync* {
     final visited = seen ?? <String>{};
     for (final entry in _groupLinks(node_)) {
       if (!visited.add(entry.group['id'] as String? ?? '')) continue;
       // Las secciones de Crusade se saltan enteras, con lo que anidan dentro.
       if (!crusade && _isCrusadeGroup(entry.group)) continue;
-      yield entry;
-      yield* _allGroupsOf(entry.group, crusade, visited);
+      yield (group: entry.group, link: entry.link, inherited: inherited);
+      // Lo que el grupo declara vale también para lo que anida: una mejora se esconde por lo que
+      // diga el grupo «Enhancements» que la contiene, no por lo que diga ella.
+      final propios = [
+        for (final node_ in [entry.group, if (entry.link != null) entry.link!])
+          ...Modifier.allOf(node_),
+      ];
+      yield* _allGroupsOf(entry.group, crusade, visited, [...inherited, ...propios]);
     }
   }
 
@@ -620,13 +627,14 @@ class Dataset {
           link: child.link,
           crusade: crusade));
     }
-    for (final (:group, :link) in _allGroupsOf(entry, crusade)) {
+    for (final (:group, :link, :inherited) in _allGroupsOf(entry, crusade)) {
       final groupRules = [
         for (final node_ in [group, if (link != null) link])
           for (final c in (node_['constraints'] as List? ?? const []))
             Constraint.fromNode(c as Map<String, dynamic>),
       ];
       final groupChanges = [
+        ...inherited,
         for (final node_ in [group, if (link != null) link]) ...Modifier.allOf(node_),
       ];
       for (final option in _childLinks(group)) {
@@ -689,13 +697,14 @@ class Dataset {
       }
     }
 
-    for (final (:group, :link) in _allGroupsOf(entry, crusade)) {
+    for (final (:group, :link, :inherited) in _allGroupsOf(entry, crusade)) {
       final groupRules = [
         for (final node_ in [group, if (link != null) link])
           for (final c in (node_['constraints'] as List? ?? const []))
             Constraint.fromNode(c as Map<String, dynamic>),
       ];
       final groupChanges = [
+        ...inherited,
         for (final node_ in [group, if (link != null) link]) ...Modifier.allOf(node_),
       ];
       selection.groups.add(OptionGroup(

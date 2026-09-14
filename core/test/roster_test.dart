@@ -367,6 +367,106 @@ void main() {
     });
   });
 
+  group('qué opciones puede elegir una unidad', () {
+    test('una opción no se ofrece en una unidad que no cumple su gate', () {
+      // El mismo barrido que con las unidades, un nivel más abajo y sobre las 36 facciones. El
+      // dataset comparte una lista de armas entre varias unidades y enseña en cada una solo las
+      // suyas, con «escondida si ningún ancestro es X». Son 43.846 gates.
+      var conGate = 0;
+      final fallos = <String>[];
+
+      for (final faction in dataset.factions) {
+        final detachments = dataset.detachmentsOf(faction);
+        if (detachments.isEmpty) continue;
+        final roster = Roster(faction: faction, pointsLimit: 2000)
+          ..battleSize = sizeOf(2000)
+          ..detachments.add(detachments.first);
+        roster.shownOptions
+            .addAll(dataset.visibilityOptionsOf(faction).map((o) => o.id));
+
+        for (final unit in roster.availableUnits) {
+          final selection = dataset.selectionFor(unit);
+          final visible = roster.optionsFor(selection).map((o) => o.entryId).toSet();
+          for (final option in dataset.optionsFor(selection)) {
+            final required = <String>[];
+            for (final modifier in [...option.groupModifiers, ...option.modifiers]) {
+              if (modifier.field != 'hidden' || modifier.value != true) continue;
+              for (final condition in modifier.conditions) {
+                if (condition.scope == 'ancestor' && condition.type == 'notInstanceOf') {
+                  required.add(condition.childId);
+                }
+              }
+            }
+            if (required.isEmpty) continue;
+            conGate++;
+            final cumple = required
+                .every((id) => unit.id == id || selection.categoryIds.contains(id));
+            if (visible.contains(option.entryId) && !cumple && fallos.length < 5) {
+              fallos.add('${faction.name} · ${unit.name} · ${option.name}');
+            }
+          }
+        }
+      }
+      expect(conGate, greaterThan(40000), reason: 'si baja, el barrido dejó de cubrir casos');
+      expect(fallos, isEmpty);
+    });
+
+    test('filtrar deja fuera buena parte de lo que el catálogo enchufa', () {
+      final deathGuardRoster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..battleSize = sizeOf(2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      var sinFiltrar = 0, filtradas = 0;
+      for (final unit in deathGuardRoster.availableUnits) {
+        final selection = dataset.selectionFor(unit);
+        sinFiltrar += dataset.optionsFor(selection).length;
+        filtradas += deathGuardRoster.optionsFor(selection).length;
+      }
+      expect(filtradas, lessThan(sinFiltrar));
+      expect(deathGuardRoster.unresolvedVisibility, 0);
+    });
+  });
+
+  test('los gates de las mejoras van todos en el mismo sentido', () {
+    // Lo que justifica cómo se atribuyen: `enhancementsOf` recoge los detachments que nombran las
+    // condiciones de `hidden` de una mejora y se la da a ese detachment. Eso solo vale si el gate
+    // siempre **habilita**. Se comprobó sobre el dataset entero: los 315 son «lessThan 1» o
+    // «equalTo 0», o sea «escondida si NO llevas ese detachment». Ninguno al revés. Si upstream
+    // mete uno invertido, este test salta y hay que dejar de usar el atajo.
+    final detachmentIds = <String>{};
+    for (final faction in dataset.factions) {
+      for (final detachment in dataset.detachmentsOf(faction)) {
+        detachmentIds.add(detachment.id);
+      }
+      for (final detachment in dataset.detachmentsOf(faction, boardingActions: true)) {
+        detachmentIds.add(detachment.id);
+      }
+    }
+
+    var comprobados = 0;
+    final invertidos = <String>[];
+    for (final faction in dataset.factions) {
+      for (final detachment in dataset.detachmentsOf(faction)) {
+        for (final enhancement in dataset.enhancementsOf(faction, detachmentId: detachment.id)) {
+          final node = dataset.node(enhancement.id)!;
+          for (final modifier in Modifier.allOf(node)) {
+            if (modifier.field != 'hidden' || modifier.value != true) continue;
+            for (final condition in modifier.allConditions) {
+              if (!detachmentIds.contains(condition.childId)) continue;
+              comprobados++;
+              final habilita = (condition.type == 'lessThan' && condition.value == 1) ||
+                  (condition.type == 'equalTo' && condition.value == 0);
+              if (!habilita) {
+                invertidos.add('${enhancement.name}: ${condition.type} ${condition.value}');
+              }
+            }
+          }
+        }
+      }
+    }
+    expect(comprobados, greaterThan(100));
+    expect(invertidos, isEmpty);
+  });
+
   test('un grupo vacío incumple su mínimo, y se dice', () {
     // Los Blightlord Terminators exigen entre 2 y 9 miniaturas de su grupo, y la selección de
     // partida no elige ninguna porque hay siete armas distintas y no se puede decidir por el

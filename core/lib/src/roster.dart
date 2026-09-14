@@ -211,22 +211,54 @@ class Roster {
     ];
   }
 
+  /// Lo que se le puede poner a una selección de esta lista.
+  ///
+  /// Lo mismo que [availableUnits] pero un nivel más abajo. El dataset esconde **el 52,8 % de las
+  /// opciones**, casi siempre preguntando por el ancestro: comparte una lista de armas entre
+  /// varias unidades y enseña en cada una solo las suyas. Ofrecerlas todas pone en la ficha de una
+  /// unidad el equipo de otra.
+  List<Selection> optionsFor(Selection selection) {
+    final options = faction.dataset.optionsFor(selection);
+    return [
+      for (final option in options)
+        if (!_isHiddenOption(option, selection)) option,
+    ];
+  }
+
+  bool _isHiddenOption(Selection option, Selection parent) {
+    // La opción todavía no cuelga de nada; para preguntar por el ancestro hay que colocarla.
+    option.parent = parent;
+    // Y cuentan los del grupo que la contiene: una mejora se esconde por lo que diga el grupo
+    // «Enhancements», no por lo que diga ella. Mirando solo la opción, no se esconde ninguna.
+    final hidden = _applyHidden([...option.groupModifiers, ...option.modifiers], option);
+    option.parent = null;
+    return hidden;
+  }
+
   /// Condiciones de visibilidad que no se han sabido evaluar en la última llamada a
-  /// [availableUnits]. Si no es cero, puede haber unidades de más en el selector.
+  /// [availableUnits] o [optionsFor]. Si no es cero, puede haber cosas de más en el selector.
   int unresolvedVisibility = 0;
 
   bool _isHidden(UnitEntry unit) {
     if (unit.visibility.isEmpty) return false;
     final candidate = Selection(
         entryId: unit.id, name: unit.name, type: unit.type, baseCosts: const {});
+    return _applyHidden(unit.visibility, candidate);
+  }
+
+  /// Aplica en orden los modifiers de `hidden` sobre [target] y dice si queda escondido.
+  ///
+  /// Lo que no se sabe evaluar **no esconde**, y se cuenta: esconder algo legal deja al jugador
+  /// sin poder montar su lista, que es peor que dejar una opción de más a la vista.
+  bool _applyHidden(List<Modifier> modifiers, Selection target) {
     var hidden = false;
-    for (final modifier in unit.visibility) {
-      if (modifier.type != 'set') continue;
+    for (final modifier in modifiers) {
+      if (modifier.field != 'hidden' || modifier.type != 'set') continue;
       if (!_canEvaluate(modifier)) {
         unresolvedVisibility++;
         continue;
       }
-      if (!modifier.appliesWhen((c) => _holds(c, candidate))) continue;
+      if (!modifier.appliesWhen((c) => _holds(c, target))) continue;
       hidden = modifier.value == true;
     }
     return hidden;
@@ -314,10 +346,17 @@ class Roster {
   /// lista y no puede saber una condición suelta: de qué tipo es la fuerza.
   bool _canEvaluate(Modifier modifier) => modifier.isEvaluableWith((c) =>
       (c.isSupported ||
+          _isInstanceQuestion(c) ||
           _isForceTypeQuestion(c) ||
           _isCatalogueQuestion(c) ||
           _isForceCountQuestion(c)) &&
       !_asksForUnknownBattleSize(c));
+
+  /// `instanceOf` y `notInstanceOf` sobre un ámbito que sí se sabe recorrer.
+  bool _isInstanceQuestion(Condition condition) =>
+      (condition.type == 'instanceOf' || condition.type == 'notInstanceOf') &&
+      Condition.supportedFields.contains(condition.field) &&
+      !Condition.unsupportedScopes.contains(condition.scope);
 
   /// Si la condición pregunta por el tamaño de la partida y la lista todavía no tiene ninguno.
   ///
@@ -377,6 +416,12 @@ class Roster {
     // Solo se saben contar selecciones y puntos; otros tipos de coste aún no se siguen.
     if (condition.field != 'selections' && condition.field != pointsCostTypeId) return false;
 
+    if (condition.type == 'instanceOf' || condition.type == 'notInstanceOf') {
+      final hay = _instanceScopeOf(condition.scope, target)
+          .any((s) => _matches(condition.childId, s));
+      return condition.type == 'instanceOf' ? hay : !hay;
+    }
+
     return condition.holdsFor(_count(
       field: condition.field,
       scope: condition.scope,
@@ -419,6 +464,41 @@ class Roster {
         : counted.fold<int>(0, (total, s) => total + s.pointsEach * s.count);
   }
 
+  /// A quién se refiere un `instanceOf`, que no es lo mismo que dónde se cuenta.
+  ///
+  /// «¿El padre es un Psyker?» pregunta por el padre; «¿cuántas selecciones hay en el padre?»
+  /// pregunta por sus hijos. Mezclarlas hace que una mejora se esconda porque la unidad que la
+  /// lleva no tiene ningún hijo con la palabra clave —la tiene ella—, y así desaparecen todas.
+  Iterable<Selection> _instanceScopeOf(String scope, Selection target) {
+    switch (scope) {
+      case 'self':
+        return [target];
+      case 'parent':
+        return [if (target.parent != null) target.parent!];
+      case 'ancestor':
+        return _ancestorsOf(target);
+      case 'root-entry':
+        return [_ancestorsOf(target).lastOrNull ?? target];
+      case 'unit':
+      case 'model':
+        return [target, ..._ancestorsOf(target)].where((s) => s.type == scope);
+      case 'force':
+      case 'roster':
+        return [...units.expand((u) => u.descendantsAndSelf), ..._configuration];
+      default:
+        return _scopeOf(scope, true, target);
+    }
+  }
+
+  /// Los padres de una selección, del más cercano al más lejano.
+  Iterable<Selection> _ancestorsOf(Selection selection) sync* {
+    var parent = selection.parent;
+    while (parent != null) {
+      yield parent;
+      parent = parent.parent;
+    }
+  }
+
   Iterable<Selection> _scopeOf(String scope, bool includeChildSelections, Selection target) {
     Iterable<Selection> expand(Iterable<Selection> roots) =>
         includeChildSelections ? roots.expand((s) => s.descendantsAndSelf) : roots;
@@ -437,6 +517,20 @@ class Roster {
         // Incluye la configuración: el tamaño de partida y el detachment son selecciones de la
         // lista, y la mitad de las condiciones de ámbito roster preguntan justo por ellos.
         return expand([...units, ..._configuration]);
+      case 'ancestor':
+        // La cadena de padres, sin contarse a sí misma. Es como el dataset comparte una lista de
+        // opciones entre varias unidades y enseña en cada una solo las suyas: «esta arma se
+        // esconde si ningún ancestro es Howling Banshees».
+        return _ancestorsOf(target);
+      case 'root-entry':
+        final root = _ancestorsOf(target).lastOrNull ?? target;
+        return expand([root]);
+      case 'unit':
+      case 'model':
+        final owner = [target, ..._ancestorsOf(target)]
+            .where((s) => s.type == scope)
+            .firstOrNull;
+        return owner == null ? const [] : expand([owner]);
       default:
         // El ámbito es el id de un grupo de opciones o de otra entrada.
         final inGroup = target.descendantsAndSelf.where((s) => s.groupId == scope);

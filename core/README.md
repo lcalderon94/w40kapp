@@ -60,10 +60,16 @@ for (final incumplimiento in roster.validate()) print(incumplimiento);
 en la unidad y llevan diez miniaturas a 0, y el Myphitic Blight-hauler cuesta 0 en la unidad y 95 en
 la suya; sumando el árbol los dos salen bien.
 
-`optionsFor` da lo otro, lo que se elige: las armas, el equipo y también las **mejoras**, que no son
+`Roster.optionsFor` da lo otro, lo que se elige: las armas, el equipo y también las **mejoras**, que no son
 un caso aparte sino un grupo más de los que cuelgan de un personaje. Cada opción viene construida y
 lista para `addChild`, con sus costes y sus restricciones, así que valida y suma igual que lo que
 salió del mínimo.
+
+Y filtra igual que las unidades: el dataset esconde **el 52,8 % de las opciones**, casi siempre
+preguntando por el ancestro, porque comparte una lista de armas entre varias unidades y enseña en
+cada una solo las suyas. De las 139.254 que enchufa el catálogo, una unidad puede elegir 10.395.
+Hay un test que recorre **43.846 gates** en las 36 facciones y exige que ninguna opción quede
+ofrecida donde su gate no lo permite.
 
 Deja fuera el material de **Crusade**, que el dataset mete en todas las unidades sin marcarlo de
 ninguna manera: no lo esconde con un modifier, no lo mete en una categoría propia y no lo ata al
@@ -136,6 +142,11 @@ facciones que no usan ese coste y otras que llaman al grupo de otra manera—, s
 un detachment**: es una opción con coste en puntos que el dataset esconde salvo que se haya elegido
 ese detachment. El gate puede estar en la propia mejora o en cualquier nodo que la contenga, y las
 mejoras pueden vivir en un catálogo enlazado.
+
+La atribución se apoya en un atajo —se le da la mejora al detachment que nombran sus condiciones de
+`hidden`—, y eso solo vale si el gate siempre **habilita**. Comprobado sobre el dataset entero: los
+**315** son «lessThan 1» o «equalTo 0», o sea «escondida si NO llevas ese detachment», y no hay
+ninguno al revés. Hay un test que salta si upstream mete uno invertido.
 
 Cubre **546 de los 547** detachments jugables; el único que se queda fuera es el Contagion Engines
 de la Death Guard. El dataset los gradúa por Detachment Points, y sobre los de tamaño completo —los
@@ -240,13 +251,14 @@ avisar en ellas y no sobre la lista entera.
 `dart run bin/auditoria.dart` lo mide contra el dataset entero y es la respuesta corta:
 
 ```
-facciones 36 · unidades 6.149 (98,3 % con puntos) · detachments 547 · opciones 139.254
+facciones 36 · unidades 6.149 (98,3 % con puntos) · detachments 547
 unidades que una lista ofrece     2.056 de 6.149 (33,4 %)
+opciones que una unidad ofrece   10.395 de 139.254
 mejoras                       546 de 547 detachments  ·  377 de 378 de tamaño completo dan 4
-modifiers de coste sin evaluar    1.414, en el 23,0 % de las unidades
-restricciones sin comprobar         118, en el  1,8 % de las unidades
-visibilidad sin evaluar                 0
-piden elegir algo al añadirse     3.019, en el 49,1 % de las unidades
+modifiers de coste sin evaluar    1.390, en el 22,6 % de las unidades
+restricciones sin comprobar             0
+visibilidad sin evaluar                 1
+piden elegir algo al añadirse     3.021, en el 49,1 % de las unidades
 ```
 
 Se lee el dataset, se eligen unidades y opciones, y se validan listas con los límites efectivos.
@@ -255,9 +267,10 @@ Lo que falta:
 - **`localConditionGroups`**, lo de arriba: es todo el 28,2 %, y está bloqueado hasta que BSData
   publique el esquema. Solo afecta a listas con **copias repetidas de la misma unidad**; sin
   repetir, el precio es exacto.
-- **Varias fuerzas en un roster**, para aliados y para Boarding Actions completo. Contar fuerzas ya
-  se contesta —una lista es una fuerza de un tipo conocido—, así que lo que falta es poder tener
-  más de una.
+- **Varias fuerzas en un roster**, para aliados y para Boarding Actions completo.
+- **Los modifiers que cambian categorías** (1.252). Un detachment puede dar una palabra clave a una
+  unidad —Houndpack Lance convierte a los War Dogs en Character—, y de eso dependen algunas mejoras.
+  Sin aplicarlos, esas mejoras no se pueden localizar evaluando; el atajo de arriba sí las coloca.
 - **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da cuatro,
   y el **Contagion Engines**, el único sin ninguna.
 - **Límites por rol**: en 11ª prácticamente no existen. La fuerza declara uno (mínimo 1 Character)

@@ -35,11 +35,12 @@ class Condition {
   ///
   /// El esquema reserva unos cuantos nombres y deja que cualquier otro valor sea el id de un grupo
   /// o de una entrada. Los que no están aquí sí se recorren, así que hay que enumerar los que no:
-  /// si no, un ámbito como `ancestor` se tomaría por un identificador, no encontraría nada, contaría
-  /// cero y la condición saldría falsa sin que nadie se entere.
-  static const unsupportedScopes = {
-    'ancestor', 'root-entry', 'unit', 'model', 'model-or-unit', 'primary-catalogue',
-  };
+  /// si no, un ámbito como `model-or-unit` se tomaría por un identificador, no encontraría nada,
+  /// contaría cero y la condición saldría falsa sin que nadie se entere.
+  ///
+  /// `primary-catalogue` no está porque no se recorre: lo contesta el roster mirando de qué
+  /// facción es la lista.
+  static const unsupportedScopes = {'model-or-unit', 'primary-catalogue'};
 
   /// Lo que esta capa sabe contar: selecciones y puntos. Los demás tipos de coste, no.
   static const supportedFields = {'selections', pointsCostTypeId};

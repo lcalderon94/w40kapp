@@ -27,7 +27,7 @@ void main(List<String> args) async {
   var skippedCosts = 0, unitsWithSkippedCosts = 0;
   var uncheckedConstraints = 0, unitsWithUnchecked = 0;
   var needingChoices = 0;
-  var offered = 0, unresolvedVisibility = 0;
+  var offered = 0, offeredOptions = 0, unresolvedVisibility = 0;
   final factionsWithoutDetachments = <String>[];
 
   for (final faction in factions) {
@@ -48,7 +48,10 @@ void main(List<String> args) async {
       final visible = Roster(faction: faction, pointsLimit: 2000)
         ..battleSize = strikeForce
         ..detachments.add(ofFaction.first);
-      offered += visible.availableUnits.length;
+      for (final unit in visible.availableUnits) {
+        offered++;
+        offeredOptions += visible.optionsFor(dataset.selectionFor(unit)).length;
+      }
       unresolvedVisibility += visible.unresolvedVisibility;
     }
 
@@ -79,7 +82,8 @@ void main(List<String> args) async {
   print('  facciones jugables            ${factions.length}');
   print('  unidades                      $units  ·  con puntos $withPoints '
       '(${percent(withPoints, units)})');
-  print('  opciones ofrecidas            $options  (armas, equipo y mejoras elegibles)');
+  print('  opciones que una unidad ofrece $offeredOptions de $options'
+      '  ·  el resto son de otra unidad que comparte la lista');
   print('  unidades que una lista ofrece $offered de $units (${percent(offered, units)})'
       '  ·  el resto son Legends, aliados o piden otro detachment');
   print('  detachments jugables          $detachments'
