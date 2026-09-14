@@ -11,8 +11,27 @@ on:
   workflow_dispatch:
 
 jobs:
+  # El motor es Dart puro y no necesita ni Flutter ni el SDK de Android. Se prueba aparte para que
+  # un fallo suyo se vea en dos minutos en vez de después de instalar medio gigabyte de cosas.
+  motor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - working-directory: core
+        run: |
+          dart pub get
+          dart analyze
+          dart test
+
   apk:
     runs-on: ubuntu-latest
+    # Sin esto, un paso colgado se come seis horas de runner antes de rendirse. La instalación de
+    # Flutter se quedó parada en el primer intento y no había forma de enterarse.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -25,14 +44,6 @@ jobs:
         with:
           flutter-version: 3.35.5
           channel: stable
-          cache: true
-
-      # El motor es Dart puro y se prueba sin Flutter, así que si falla aquí no se sigue.
-      - name: Pruebas del motor
-        working-directory: core
-        run: |
-          dart pub get
-          dart test
 
       - name: Generar el dataset en español
         run: ./tool/preparar-datos.sh
