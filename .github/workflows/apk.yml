@@ -70,6 +70,17 @@ jobs:
         working-directory: app
         run: flutter build apk --release
 
+      # Con qué clave ha quedado firmado. Si la huella cambia de una compilación a otra, Android
+      # se niega a instalar la nueva encima de la vieja y hay que desinstalar, que se lleva por
+      # delante las listas guardadas. Así queda por escrito en cada build en vez de suponerlo.
+      - name: Con qué clave va firmado
+        run: |
+          echo "¿Había keystore de depuración en la imagen del runner?"
+          ls -la ~/.android/ 2>&1 || echo "  no existe ~/.android"
+          echo
+          keytool -printcert -jarfile app/build/app/outputs/flutter-apk/app-release.apk \
+            | grep -E "Propietario|Owner|SHA256|Válido|Valid"
+
       - uses: actions/upload-artifact@v4
         with:
           name: warorgan-apk
