@@ -814,6 +814,34 @@ class Roster {
     return limit;
   }
 
+  /// Cuántas cosas cabe elegir de un grupo, y cuántas hay puestas.
+  ///
+  /// El límite no es el número que trae escrito la restricción: el dataset lo cambia con modifiers
+  /// —«un arma pesada por cada cinco miniaturas»— y pintar el declarado enseña un tope que no es
+  /// el que se aplica. `null` en un tope significa que no lo hay o que no se ha sabido calcular,
+  /// que para la interfaz es lo mismo: no lo enseña en vez de enseñar uno falso.
+  ({int puestas, int? minimo, int? maximo}) groupUsage(Selection owner, OptionGroup group) {
+    final delGrupo = _groupAndNested(owner, group.id);
+    final dentro = owner.children.where((c) => delGrupo.contains(c.groupId)).toList();
+    final puestas = dentro.fold<int>(0, (t, s) => t + s.count);
+    final desde = dentro.isNotEmpty
+        ? dentro.first
+        : (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
+
+    int? minimo, maximo;
+    for (final constraint in group.constraints) {
+      if (constraint.field != 'selections') continue;
+      final limit = _effectiveLimit(constraint, desde, group.modifiers);
+      if (limit == null || limit < 0) continue;
+      if (constraint.isMax) {
+        maximo = maximo == null || limit < maximo ? limit : maximo;
+      } else {
+        minimo = minimo == null || limit > minimo ? limit : minimo;
+      }
+    }
+    return (puestas: puestas, minimo: minimo, maximo: maximo);
+  }
+
   /// Restricciones que [validate] ha dejado sin comprobar por no saber calcular su límite.
   ///
   /// Se cuenta desde cero en cada [validate]. Si no es cero, la lista puede tener incumplimientos

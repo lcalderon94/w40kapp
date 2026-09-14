@@ -89,7 +89,14 @@ class ListaEnCurso extends ChangeNotifier {
       .fold(0, (total, hijo) => total + hijo.count);
 
   /// Pone una opción más. Si ya estaba, sube su cuenta en vez de duplicar la fila.
+  ///
+  /// Cuando el grupo del que sale solo deja elegir una cosa, lo nuevo **sustituye** a lo viejo.
+  /// Apilarlo dejaba la unidad incumpliendo para siempre: el Campeón de la Plaga nace con sus
+  /// Plague knives puestas y elegir el Power fist encima ponía dos armas en un grupo de una.
   void anadirOpcion(Selection padre, Selection opcion) {
+    if (opcion.groupId != null && _soloUna(padre, opcion.groupId!)) {
+      padre.children.removeWhere((hijo) => hijo.groupId == opcion.groupId);
+    }
     final puesta = padre.children.where((hijo) => hijo.entryId == opcion.entryId).firstOrNull;
     if (puesta != null) {
       puesta.count++;
@@ -98,6 +105,17 @@ class ListaEnCurso extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  /// Si de ese grupo solo cabe una cosa, que es lo que lo convierte en un botón de radio.
+  bool _soloUna(Selection padre, String groupId) {
+    final grupo = padre.groups.where((g) => g.id == groupId).firstOrNull;
+    if (grupo == null) return false;
+    return roster.groupUsage(padre, grupo).maximo == 1;
+  }
+
+  /// Cuántas cabe elegir de un grupo y cuántas hay, con los modifiers ya aplicados.
+  ({int puestas, int? minimo, int? maximo}) usoDeGrupo(Selection padre, OptionGroup grupo) =>
+      roster.groupUsage(padre, grupo);
 
   /// Quita una. Al llegar a cero desaparece la fila, que dejarla a cero ensucia la ficha.
   void quitarOpcion(Selection padre, String entryId) {

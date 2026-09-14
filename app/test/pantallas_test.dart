@@ -19,6 +19,10 @@ Directory _datos() {
 }
 
 void main() {
+  // Un toque que cae fuera de la pantalla solo saca un aviso por consola y el test sigue como si
+  // nada. Eso hacía que un test verde no probara nada: tocaba el vacío. Aquí es un fallo.
+  WidgetController.hitTestWarningShouldBeFatal = true;
+
   late Dataset dataset;
 
   setUpAll(() async => dataset = await Dataset.load(_datos()));

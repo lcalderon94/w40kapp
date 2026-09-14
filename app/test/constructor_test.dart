@@ -18,6 +18,10 @@ Directory _datos() {
 }
 
 void main() {
+  // Un toque que cae fuera de la pantalla solo saca un aviso por consola y el test sigue como si
+  // nada. Eso hacía que un test verde no probara nada: tocaba el vacío. Aquí es un fallo.
+  WidgetController.hitTestWarningShouldBeFatal = true;
+
   late Dataset dataset;
   late Faction deathGuard;
 
@@ -87,25 +91,42 @@ void main() {
     });
 
     test('quitar la última de una opción la borra, no la deja en cero', () {
-      // Con Virulent Vectorium, porque las mejoras del príncipe solo se ofrecen con su detachment.
+      // Con miniaturas, que es lo que de verdad admite varias. Una mejora no vale: su grupo deja
+      // elegir una sola y por eso se comporta como un botón de radio, no como un contador.
       final lista = nuevaLista()
-        ..elegirDetachment(dataset
-            .detachmentsOf(deathGuard)
-            .firstWhere((d) => d.name == 'Virulent Vectorium'))
-        ..anadirUnidad(
-            deathGuard.units.firstWhere((u) => u.name == 'Daemon Prince of Nurgle'));
-      final principe = lista.roster.units.first;
-      final opcion = lista.opcionesDe(principe).firstWhere((o) => o.basePointsEach > 0);
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      final marines = lista.roster.units.first;
+      final opcion = lista
+          .opcionesDe(marines)
+          .firstWhere((o) => o.name == 'Plague Marine w/ boltgun');
 
-      lista.anadirOpcion(principe, opcion);
-      lista.anadirOpcion(principe, opcion);
-      expect(lista.cuantasHay(principe, opcion.entryId), 2,
+      lista.anadirOpcion(marines, opcion);
+      lista.anadirOpcion(marines, opcion);
+      expect(lista.cuantasHay(marines, opcion.entryId), 2,
           reason: 'la segunda sube la cuenta, no duplica la fila');
 
-      lista.quitarOpcion(principe, opcion.entryId);
-      lista.quitarOpcion(principe, opcion.entryId);
-      expect(lista.cuantasHay(principe, opcion.entryId), 0);
-      expect(principe.children.where((h) => h.entryId == opcion.entryId), isEmpty);
+      lista.quitarOpcion(marines, opcion.entryId);
+      lista.quitarOpcion(marines, opcion.entryId);
+      expect(lista.cuantasHay(marines, opcion.entryId), 0);
+      expect(marines.children.where((h) => h.entryId == opcion.entryId), isEmpty);
+    });
+
+    test('en un grupo de una sola opción, elegir sustituye en vez de apilar', () {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      final marines = lista.roster.units.first;
+      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+
+      // El Campeón nace con sus Plague knives puestas. Elegir el Power fist tiene que quitarlas:
+      // su grupo deja exactamente un arma, y apilarlas dejaba la unidad incumpliendo para siempre.
+      final punio = lista.opcionesDe(campeon).firstWhere((o) => o.name == 'Power fist');
+      lista.anadirOpcion(campeon, punio);
+
+      final enEseGrupo = campeon.children.where((h) => h.groupId == punio.groupId);
+      expect(enEseGrupo, hasLength(1));
+      expect(enEseGrupo.first.name, 'Power fist');
     });
 
     test('señala en qué unidad está el problema, no solo que lo hay', () {
@@ -266,7 +287,28 @@ void main() {
       expect(lista.roster.units, hasLength(1));
     });
 
-    testWidgets('las opciones de una unidad se suman y se restan', (tester) async {
+    testWidgets('las miniaturas se suman y se restan con el contador', (tester) async {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      final marines = lista.roster.units.first;
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
+
+      await tester.dragUntilVisible(find.text('Plague Marine w/ blight launcher'),
+          find.byType(ListView), const Offset(0, -80));
+      final fila = find.ancestor(
+          of: find.text('Plague Marine w/ blight launcher'), matching: find.byType(Row));
+      await tester.tap(find.descendant(of: fila.first, matching: find.byIcon(Icons.add)));
+      await tester.pumpAndSettle();
+
+      final id = lista
+          .opcionesDe(marines)
+          .firstWhere((o) => o.name == 'Plague Marine w/ blight launcher')
+          .entryId;
+      expect(lista.cuantasHay(marines, id), 1);
+    });
+
+    testWidgets('una mejora se elige marcándola, porque solo cabe una', (tester) async {
       final lista = nuevaLista()
         ..elegirDetachment(dataset
             .detachmentsOf(deathGuard)
@@ -279,15 +321,45 @@ void main() {
       expect(find.text('ENHANCEMENTS'), findsOneWidget);
       await tester.dragUntilVisible(find.text('Daemon Weapon of Nurgle'),
           find.byType(ListView), const Offset(0, -80));
-
-      final fila = find.ancestor(
-          of: find.text('Daemon Weapon of Nurgle'), matching: find.byType(Row));
-      await tester.tap(find.descendant(of: fila.first, matching: find.byIcon(Icons.add)));
+      await tester.tap(find.text('Daemon Weapon of Nurgle'));
       await tester.pumpAndSettle();
-      expect(lista.cuantasHay(principe, lista
+
+      final id = lista
           .opcionesDe(principe)
           .firstWhere((o) => o.name == 'Daemon Weapon of Nurgle')
-          .entryId), 1);
+          .entryId;
+      expect(lista.cuantasHay(principe, id), 1);
+      expect(find.byIcon(Icons.radio_button_checked), findsWidgets);
+    });
+
+    testWidgets('se llega al equipo del campeón, que vive dos niveles más abajo',
+        (tester) async {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      final marines = lista.roster.units.first;
+      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
+
+      // Al Campeón le falta un arma, así que su fila viene abierta: lo que tiene algo pendiente se
+      // abre solo, para no tener que ir tocando filas a ver cuál incumple.
+      expect(lista.incumplimientosDe(campeon), isNotEmpty);
+      expect(find.text('Plague Champion'), findsOneWidget,
+          reason: 'sale una sola vez, no como opción y además como fila aparte');
+
+      // El equipo del Campeón vive dos niveles por debajo de la unidad. La pantalla vieja pintaba
+      // un solo nivel, así que esto no existía en ninguna parte.
+      final punio = lista.opcionesDe(campeon).firstWhere((o) => o.name == 'Power fist');
+      final fila = find.byKey(ValueKey('opcion-${punio.entryId}'));
+      await tester.scrollUntilVisible(fila, 120, scrollable: find.byType(Scrollable).first);
+      await tester.pumpAndSettle();
+      await tester.tap(fila);
+      await tester.pumpAndSettle();
+
+      expect(campeon.children.map((c) => c.name), contains('Power fist'),
+          reason: 'el arma del Campeón tiene que poder elegirse desde la pantalla');
+      expect(campeon.children.map((c) => c.name), isNot(contains('Plague knives')),
+          reason: 'y sustituir a la que traía, que su grupo deja un arma sola');
     });
   });
 }
