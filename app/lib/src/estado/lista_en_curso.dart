@@ -113,6 +113,9 @@ class ListaEnCurso extends ChangeNotifier {
     return roster.groupUsage(padre, grupo).maximo == 1;
   }
 
+  /// Si cabe una más: lo mira el motor, que es quien conoce los techos del dataset.
+  bool cabeOtra(Selection padre, Selection opcion) => roster.canAdd(padre, opcion);
+
   /// Cuántas cabe elegir de un grupo y cuántas hay, con los modifiers ya aplicados.
   ({int puestas, int? minimo, int? maximo}) usoDeGrupo(Selection padre, OptionGroup grupo) =>
       roster.groupUsage(padre, grupo);

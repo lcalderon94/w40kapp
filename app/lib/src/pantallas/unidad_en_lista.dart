@@ -378,7 +378,9 @@ class _Opcion extends StatelessWidget {
         ),
         _Boton(
           icono: Icons.add,
-          activo: true,
+          // El techo lo dice el dataset, en la opción y en su grupo. Sin comprobarlo se puede
+          // pulsar para siempre: veinte Rotwinds en Mortarion, que lleva uno.
+          activo: lista.cabeOtra(dueno, opcion),
           // `opcion` se construye de nuevo en cada build, así que añadirla no reutiliza un nodo
           // que ya cuelgue de la unidad.
           onPressed: () => lista.anadirOpcion(dueno, opcion),

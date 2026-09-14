@@ -842,6 +842,39 @@ class Roster {
     return (puestas: puestas, minimo: minimo, maximo: maximo);
   }
 
+  /// Si cabe una más de esa opción bajo [owner].
+  ///
+  /// El dataset pone techos en dos sitios y hay que mirar los dos: en la propia opción («un
+  /// Rotwind, no veinte») y en el grupo del que sale («como mucho dos armas especiales»). Sin
+  /// esto la interfaz deja pulsar el `+` para siempre y la lista se va a ilegal sin avisar de
+  /// nada hasta el final.
+  ///
+  /// Un grupo que solo deja elegir una cosa es la excepción: ahí elegir **sustituye**, así que
+  /// siempre cabe.
+  bool canAdd(Selection owner, Selection option) {
+    final puestas = owner.children
+        .where((c) => c.entryId == option.entryId)
+        .fold<int>(0, (t, c) => t + c.count);
+
+    final desde = owner.children.where((c) => c.entryId == option.entryId).firstOrNull ??
+        (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
+
+    for (final constraint in option.constraints) {
+      if (constraint.field != 'selections' || !constraint.isMax) continue;
+      if (constraint.scope != 'parent' && constraint.scope != 'self') continue;
+      final limit = _effectiveLimit(constraint, desde, option.modifiers);
+      if (limit != null && limit >= 0 && puestas >= limit) return false;
+    }
+
+    if (option.groupId == null) return true;
+    final grupo = owner.groups.where((g) => g.id == option.groupId).firstOrNull;
+    if (grupo == null) return true;
+    final uso = groupUsage(owner, grupo);
+    if (uso.maximo == null) return true;
+    if (uso.maximo == 1) return true; // se sustituye, no se apila
+    return uso.puestas < uso.maximo!;
+  }
+
   /// Restricciones que [validate] ha dejado sin comprobar por no saber calcular su límite.
   ///
   /// Se cuenta desde cero en cada [validate]. Si no es cero, la lista puede tener incumplimientos

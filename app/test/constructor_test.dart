@@ -101,13 +101,18 @@ void main() {
           .opcionesDe(marines)
           .firstWhere((o) => o.name == 'Plague Marine w/ boltgun');
 
+      // La escuadra ya trae cuatro de serie, así que se cuenta desde ahí.
+      final deSerie = lista.cuantasHay(marines, opcion.entryId);
+      expect(deSerie, 4, reason: 'el dataset marca el marine con bólter como equipo por defecto');
+
       lista.anadirOpcion(marines, opcion);
       lista.anadirOpcion(marines, opcion);
-      expect(lista.cuantasHay(marines, opcion.entryId), 2,
+      expect(lista.cuantasHay(marines, opcion.entryId), deSerie + 2,
           reason: 'la segunda sube la cuenta, no duplica la fila');
 
-      lista.quitarOpcion(marines, opcion.entryId);
-      lista.quitarOpcion(marines, opcion.entryId);
+      for (var i = 0; i < deSerie + 2; i++) {
+        lista.quitarOpcion(marines, opcion.entryId);
+      }
       expect(lista.cuantasHay(marines, opcion.entryId), 0);
       expect(marines.children.where((h) => h.entryId == opcion.entryId), isEmpty);
     });
@@ -131,7 +136,8 @@ void main() {
 
     test('señala en qué unidad está el problema, no solo que lo hay', () {
       // «Tu lista tiene 2 avisos» no sirve de nada si no dice cuál abrir. Los Blightlord
-      // Terminators exigen elegir entre 2 y 9 miniaturas, y nacen sin ninguna elegida.
+      // Terminators exigen entre 2 y 9 miniaturas; llegan con las suyas, y aquí se vacían para
+      // provocar el incumplimiento, que es lo que pasa en cuanto el jugador las quita.
       final lista = nuevaLista()
         ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
         ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Beasts of Nurgle'))
@@ -140,6 +146,9 @@ void main() {
 
       final sinProblema = lista.roster.units.first;
       final conProblema = lista.roster.units.last;
+      final grupo = conProblema.groups
+          .firstWhere((g) => g.name == '2-9 Blightlord Terminators');
+      conProblema.children.removeWhere((c) => c.groupId == grupo.id);
       expect(lista.incumplimientosDe(sinProblema), isEmpty);
       expect(lista.incumplimientosDe(conProblema).map((v) => v.message).join(' '),
           contains('mínimo 2, hay 0'));
@@ -154,6 +163,10 @@ void main() {
             deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators'));
       final unidad = lista.roster.units.single;
       String avisos() => lista.incumplimientosDe(unidad).map((v) => v.message).join(' | ');
+
+      // Se vacía el grupo para tener el aviso que se quiere ver apagarse.
+      final vacio = unidad.groups.firstWhere((g) => g.name == '2-9 Blightlord Terminators');
+      unidad.children.removeWhere((c) => c.groupId == vacio.id);
       expect(avisos(), contains('2-9 Blightlord Terminators'));
 
       final arma = lista
@@ -341,14 +354,19 @@ void main() {
       final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
       await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
 
-      // Al Campeón le falta un arma, así que su fila viene abierta: lo que tiene algo pendiente se
-      // abre solo, para no tener que ir tocando filas a ver cuál incumple.
-      expect(lista.incumplimientosDe(campeon), isNotEmpty);
-      expect(find.text('Plague Champion'), findsOneWidget,
-          reason: 'sale una sola vez, no como opción y además como fila aparte');
+      // Llega con su equipo de serie y sale una sola vez, no como opción y además como fila.
+      expect(campeon.children.map((c) => c.name), containsAll(['Plague knives', 'Boltgun']));
+      expect(find.text('Plague Champion'), findsOneWidget);
 
-      // El equipo del Campeón vive dos niveles por debajo de la unidad. La pantalla vieja pintaba
-      // un solo nivel, así que esto no existía en ninguna parte.
+      // Su equipo vive dos niveles por debajo de la unidad. La pantalla vieja pintaba un solo
+      // nivel, así que esto no existía en ninguna parte y no había forma de cambiar el arma.
+      final cabecera = find.text('Plague Champion');
+      await tester.scrollUntilVisible(cabecera, 120,
+          scrollable: find.byType(Scrollable).first);
+      await tester.pumpAndSettle();
+      await tester.tap(cabecera);
+      await tester.pumpAndSettle();
+
       final punio = lista.opcionesDe(campeon).firstWhere((o) => o.name == 'Power fist');
       final fila = find.byKey(ValueKey('opcion-${punio.entryId}'));
       await tester.scrollUntilVisible(fila, 120, scrollable: find.byType(Scrollable).first);
@@ -357,7 +375,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(campeon.children.map((c) => c.name), contains('Power fist'),
-          reason: 'el arma del Campeón tiene que poder elegirse desde la pantalla');
+          reason: 'el arma del Campeón tiene que poder cambiarse desde la pantalla');
       expect(campeon.children.map((c) => c.name), isNot(contains('Plague knives')),
           reason: 'y sustituir a la que traía, que su grupo deja un arma sola');
     });

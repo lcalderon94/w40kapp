@@ -747,19 +747,33 @@ class Dataset {
         }
       }
 
-      // Si el grupo exige un mínimo y solo ofrece una opción, no hay nada que elegir: se pone.
-      // Es la diferencia entre una unidad recién añadida que ya vale y una que nace incumpliendo
-      // por algo que el jugador no podía decidir de otra manera.
+      // Si el grupo exige un mínimo, se rellena con lo que el dataset marca por defecto. Es el
+      // equipo con el que viene la miniatura en su hoja de datos: el Defiler trae su lanzamisiles,
+      // su cañón Hades y su baleflamer, y los grupos «Replace...» están para cambiarlos, no para
+      // obligarte a elegir de cero. Una escuadra de Plague Marines trae cuatro con bólter.
+      //
+      // Sin esto la unidad nace desnuda e incumpliendo, y hay que armarla entera a mano aunque el
+      // dataset diga exactamente con qué viene.
       final required = _minimumOf(groupRules);
-      if (options.length == 1 && puestas < required) {
-        selection.addChild(_selectionFrom(options.single.entry,
-            groupId: group['id'] as String?,
-            groupName: group['name'] as String?,
-            groupConstraints: groupRules,
-            groupModifiers: groupChanges,
-            link: options.single.link,
-            crusade: crusade,
-            count: required - puestas));
+      if (puestas < required) {
+        final porDefecto = group['defaultSelectionEntryId'] as String?;
+        final elegida = porDefecto != null
+            ? options
+                .where((o) =>
+                    o.entry['id'] == porDefecto || o.link?['id'] == porDefecto)
+                .firstOrNull
+            // Sin defecto declarado, solo se puede poner sola si no hay nada que elegir.
+            : (options.length == 1 ? options.single : null);
+        if (elegida != null) {
+          selection.addChild(_selectionFrom(elegida.entry,
+              groupId: group['id'] as String?,
+              groupName: group['name'] as String?,
+              groupConstraints: groupRules,
+              groupModifiers: groupChanges,
+              link: elegida.link,
+              crusade: crusade,
+              count: required - puestas));
+        }
       }
     }
 

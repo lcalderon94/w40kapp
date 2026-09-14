@@ -569,15 +569,19 @@ void main() {
   });
 
   test('un grupo vacío incumple su mínimo, y se dice', () {
-    // Los Blightlord Terminators exigen entre 2 y 9 miniaturas de su grupo, y la selección de
-    // partida no elige ninguna porque hay siete armas distintas y no se puede decidir por el
-    // jugador. Mirando solo los grupos que ya tienen algo dentro, el que incumple —el vacío— era
-    // justo el que no se comprobaba, y la lista salía legal.
+    // Los Blightlord Terminators exigen entre 2 y 9 miniaturas de su grupo. Ahora la unidad llega
+    // con las suyas puestas, así que para probar el caso hay que vaciarlo a mano: es lo que pasa
+    // en cuanto el jugador quita miniaturas. Mirando solo los grupos que ya tienen algo dentro, el
+    // que incumple —el vacío— era justo el que no se comprobaba, y la lista salía legal.
     final unidad = deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators');
     final roster = Roster(faction: deathGuard, pointsLimit: 2000)
       ..battleSize = sizeOf(2000)
-      ..detachments.add(dataset.detachmentsOf(deathGuard).first)
-      ..add(dataset.selectionFor(unidad));
+      ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+    final puesta = dataset.selectionFor(unidad);
+    roster.add(puesta);
+
+    final grupo = puesta.groups.firstWhere((g) => g.name == '2-9 Blightlord Terminators');
+    puesta.children.removeWhere((c) => c.groupId == grupo.id);
 
     expect(roster.validate().map((v) => v.message).join(' '), contains('mínimo 2, hay 0'));
   });
@@ -904,12 +908,49 @@ void main() {
           reason: 'con las dos armas puestas, Wargear ya no incumple');
     });
 
+    test('una unidad recién añadida llega con el equipo de su hoja de datos', () {
+      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      final marines = roster.selectionFor(
+          deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      roster.add(marines);
+
+      // Cinco miniaturas: el Campeón y cuatro marines con bólter, que es lo que el dataset marca
+      // por defecto. Antes llegaba vacía y había que armarla entera a mano.
+      final miniaturas = marines.descendantsAndSelf
+          .where((s) => s.type == 'model')
+          .fold<int>(0, (t, s) => t + s.count);
+      expect(miniaturas, 5);
+      expect(marines.children.map((c) => c.name), contains('Plague Marine w/ boltgun'));
+
+      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+      expect(campeon.children.map((c) => c.name), containsAll(['Plague knives', 'Boltgun']));
+      expect(roster.validate(), isEmpty, reason: 'y no pide nada, porque ya viene completa');
+    });
+
+    test('no se puede pasar del techo que pone el dataset', () {
+      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      final mortarion =
+          roster.selectionFor(deathGuard.units.firstWhere((u) => u.name == 'Mortarion'));
+      roster.add(mortarion);
+
+      // Mortarion lleva un Rotwind, y lleva puesto el suyo. No caben veinte.
+      final rotwind =
+          roster.optionsFor(mortarion).firstWhere((o) => o.name == 'Rotwind');
+      expect(roster.canAdd(mortarion, rotwind), isFalse);
+    });
+
     test('la escuadra que pidió el usuario sale legal: 10 miniaturas, 180 puntos, sin avisos', () {
       final roster = Roster(faction: deathGuard, pointsLimit: 2000)
         ..detachments.add(dataset.detachmentsOf(deathGuard).first);
       final marines = roster.selectionFor(
           deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
       roster.add(marines);
+
+      // La escuadra llega con cuatro marines de bólter puestos, que es su equipo de serie. Para
+      // montar otra cosa hay que quitarlos, igual que en la pantalla se baja su contador a cero.
+      marines.children.removeWhere((c) => c.name == 'Plague Marine w/ boltgun');
 
       poner(roster, marines, 'Plague Marine w/ blight launcher', 2);
       poner(roster, marines, 'Plague Marine w/ plasma gun', 2);
