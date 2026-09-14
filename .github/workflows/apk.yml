@@ -70,19 +70,34 @@ jobs:
         working-directory: app
         run: flutter build apk --release
 
-      # Con qué clave ha quedado firmado. Si la huella cambia de una compilación a otra, Android
-      # se niega a instalar la nueva encima de la vieja y hay que desinstalar, que se lleva por
-      # delante las listas guardadas. Así queda por escrito en cada build en vez de suponerlo.
-      - name: Con qué clave va firmado
-        run: |
-          echo "¿Había keystore de depuración en la imagen del runner?"
-          ls -la ~/.android/ 2>&1 || echo "  no existe ~/.android"
-          echo
-          keytool -printcert -jarfile app/build/app/outputs/flutter-apk/app-release.apk \
-            | grep -E "Propietario|Owner|SHA256|Válido|Valid"
-
+      # El APK primero, que es lo que se viene a buscar. Lo de abajo es diagnóstico y no debe
+      # poder dejarnos sin artefacto si falla.
       - uses: actions/upload-artifact@v4
         with:
           name: warorgan-apk
           path: app/build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: error
+
+      # Con qué clave ha quedado firmado. Si la huella cambia de una compilación a otra, Android
+      # se niega a instalar la nueva encima de la vieja y hay que desinstalar, que se lleva por
+      # delante las listas guardadas. Así queda por escrito en cada build en vez de suponerlo.
+      #
+      # Con apksigner y no con keytool: keytool -printcert -jarfile solo sabe leer firmas v1, y
+      # un APK de Flutter moderno puede venir firmado solo con v2/v3.
+      - name: Con qué clave va firmado
+        if: always()
+        continue-on-error: true
+        run: |
+          echo "== dónde busca Gradle la clave de depuración =="
+          echo "HOME=$HOME  ANDROID_SDK_HOME=${ANDROID_SDK_HOME:-sin definir}  ANDROID_SDK_ROOT=${ANDROID_SDK_ROOT:-sin definir}"
+          for d in "$HOME/.android" "${ANDROID_SDK_HOME:-/nada}/.android" "${ANDROID_SDK_ROOT:-/nada}/.android"; do
+            echo "-- $d"; ls -la "$d" 2>&1 | sed 's/^/   /' || true
+          done
+          echo
+          echo "== huella de la firma del APK =="
+          firmador=$(ls -d "${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}"/build-tools/*/apksigner 2>/dev/null | sort -V | tail -1)
+          if [ -n "$firmador" ]; then
+            "$firmador" verify --print-certs app/build/app/outputs/flutter-apk/app-release.apk
+          else
+            echo "apksigner no encontrado"
+          fi
