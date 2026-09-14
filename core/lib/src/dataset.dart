@@ -729,6 +729,7 @@ class Dataset {
         constraints: groupRules,
         modifiers: groupChanges,
         parentId: parentId,
+        defaultId: _defectoDe(group),
       ));
       final options = _childLinks(group).toList();
       var puestas = 0;
@@ -762,22 +763,88 @@ class Dataset {
                 .where((o) =>
                     o.entry['id'] == porDefecto || o.link?['id'] == porDefecto)
                 .firstOrNull
-            // Sin defecto declarado, solo se puede poner sola si no hay nada que elegir.
-            : (options.length == 1 ? options.single : null);
+            // Sin defecto declarado: si solo una de las opciones puede cubrir el grupo ella sola
+            // —su techo llega al mínimo que se pide— esa es la básica y las demás son armas
+            // especiales con tope de una o dos. «Nueve Kabalite Warriors» ofrece cinco cosas y
+            // solo el guerrero raso puede ser nueve.
+            : (options.length == 1 ? options.single : _basicaDe(options, required));
         if (elegida != null) {
-          selection.addChild(_selectionFrom(elegida.entry,
-              groupId: group['id'] as String?,
-              groupName: group['name'] as String?,
-              groupConstraints: groupRules,
-              groupModifiers: groupChanges,
-              link: elegida.link,
-              crusade: crusade,
-              count: required - puestas));
+          // Sin pasarse del techo de la propia opción: hay grupos que piden nueve miniaturas y
+          // cuyo defecto es un campeón con un máximo de uno. Multiplicar sin mirar dejaba nueve
+          // campeones donde cabía uno, y la unidad nacía ilegal.
+          final tope = _maximumSelections(elegida.entry, elegida.link);
+          var cuantas = required - puestas;
+          if (tope != null && cuantas > tope) cuantas = tope;
+          // Si ya hay un montón de eso mismo, se le suma en vez de abrir otro. Dos montones del
+          // mismo modelo hacen que una restricción por entrada («mínimo 6 Wyches») se compruebe
+          // contra uno solo de los dos y salte un aviso falso.
+          final yaHay = selection.children
+              .where((c) => c.entryId == elegida.entry['id'])
+              .firstOrNull;
+          if (cuantas > 0 && yaHay != null) {
+            yaHay.count += cuantas;
+          } else if (cuantas > 0) {
+            selection.addChild(_selectionFrom(elegida.entry,
+                groupId: group['id'] as String?,
+                groupName: group['name'] as String?,
+                groupConstraints: groupRules,
+                groupModifiers: groupChanges,
+                link: elegida.link,
+                crusade: crusade,
+                count: cuantas));
+          }
         }
       }
     }
 
     return selection;
+  }
+
+  /// La única opción de un grupo capaz de cubrir su mínimo ella sola, si hay una sola así.
+  ///
+  /// Es como el dataset distingue al soldado raso del arma especial sin decirlo: el raso no lleva
+  /// techo o lo lleva alto, y las especiales lo llevan en una o dos. Si hay más de una candidata
+  /// no se elige por el jugador.
+  ({Map<String, dynamic> entry, Map<String, dynamic>? link})? _basicaDe(
+      List<({Map<String, dynamic> entry, Map<String, dynamic>? link})> options, int required) {
+    if (required < 1) return null;
+    final candidatas = options.where((o) {
+      final tope = _maximumSelections(o.entry, o.link);
+      return tope == null || tope >= required;
+    }).toList();
+    return candidatas.length == 1 ? candidatas.single : null;
+  }
+
+  /// El techo que una entrada declara para sí misma, mirando también su enlace. `null` si no pone.
+  int? _maximumSelections(Map<String, dynamic> entry, [Map<String, dynamic>? link]) {
+    int? tope;
+    for (final node_ in [entry, if (link != null) link]) {
+      for (final raw in (node_['constraints'] as List? ?? const [])) {
+        final constraint = raw as Map<String, dynamic>;
+        if (constraint['type'] != 'max' || constraint['field'] != 'selections') continue;
+        final value = constraint['value'];
+        if (value is num && value >= 0 && (tope == null || value < tope)) {
+          tope = value.round();
+        }
+      }
+    }
+    return tope;
+  }
+
+  /// Cuál es la opción de serie de un grupo, ya resuelta al id con el que se la reconoce luego.
+  ///
+  /// `defaultSelectionEntryId` unas veces apunta a la entrada de destino y otras al enlace por el
+  /// que se llega a ella. Guardar el valor crudo no sirve: al buscarlo entre las opciones, la
+  /// mitad no casan.
+  String? _defectoDe(Map<String, dynamic> group) {
+    final marcado = group['defaultSelectionEntryId'] as String?;
+    if (marcado == null) return null;
+    for (final option in _childLinks(group)) {
+      if (option.entry['id'] == marcado || option.link?['id'] == marcado) {
+        return option.entry['id'] as String?;
+      }
+    }
+    return null;
   }
 
   /// Las entradas hijas de un nodo, estén incrustadas o lleguen por enlace.

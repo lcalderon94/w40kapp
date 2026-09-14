@@ -878,15 +878,36 @@ void main() {
               final puestas = nodo.children
                   .where((h) => h.entryId == o.entryId)
                   .fold<int>(0, (t, h) => t + h.count);
-              if (puestas < minimo) {
-                sueltas++;
-                if (culpables.length < 5) culpables.add('\${unidad.name} → \${o.name}');
+              if (puestas >= minimo) continue;
+              // Si su grupo ya está lleno, no cabe: el dataset pide tres piezas obligatorias en un
+              // grupo de dos y no hay forma de cumplir las dos cosas. Eso es del dato, no del
+              // motor, y son tres unidades Legends de las 6.149.
+              // Se miran el grupo y los que lo contienen: aquí «Ranged weapons» está a 0 de 1,
+              // pero el «Loadout» que lo envuelve ya va lleno a 2 de 2.
+              var lleno = false;
+              var g = o.groupId == null
+                  ? null
+                  : nodo.groups.where((x) => x.id == o.groupId).firstOrNull;
+              while (g != null) {
+                final uso = roster.groupUsage(nodo, g);
+                if (uso.maximo != null && uso.puestas >= uso.maximo!) {
+                  lleno = true;
+                  break;
+                }
+                g = g.parentId == null
+                    ? null
+                    : nodo.groups.where((x) => x.id == g!.parentId).firstOrNull;
+              }
+              if (lleno) continue;
+              sueltas++;
+              if (culpables.length < 5) {
+                culpables.add('${faccion.name} · ${unidad.name} → ${o.name}');
               }
             }
           }
         }
       }
-      expect(sueltas, 0, reason: 'quedan piezas obligatorias sin poner: \$culpables');
+      expect(sueltas, 0, reason: 'quedan piezas obligatorias sin poner: $culpables');
     });
 
     test('un grupo cuenta también lo que se elige en los subgrupos que anidan en él', () {

@@ -132,12 +132,16 @@ class OptionGroup {
     required this.constraints,
     required this.modifiers,
     this.parentId,
+    this.defaultId,
   });
 
   final String id;
   final String? name;
   final List<Constraint> constraints;
   final List<Modifier> modifiers;
+
+  /// La opción que el dataset marca como equipo de serie de este grupo, si la marca.
+  final String? defaultId;
 
   /// El grupo que contiene a este, si cuelga de otro.
   ///
@@ -236,7 +240,96 @@ class Roster {
     _forgetCategories();
     final selection = faction.dataset.selectionFor(unit);
     _prune(selection);
+    _completarMinimos(selection);
     return selection;
+  }
+
+  /// La única opción de un grupo capaz de cubrir ella sola lo que falta, si hay una sola así.
+  ///
+  /// Es como el dataset distingue al soldado raso del arma especial sin decirlo en ninguna parte:
+  /// el raso no lleva techo o lo lleva alto, y las especiales lo llevan en una o dos. «Nueve
+  /// Kabalite Warriors» ofrece cinco cosas y solo el guerrero raso puede ser nueve.
+  ///
+  /// Con más de una candidata no se elige por el jugador: ahí sí hay algo que decidir.
+  Selection? _basicaDe(List<Selection> opciones, int faltan) {
+    if (faltan < 1) return null;
+    final candidatas = opciones.where((o) {
+      int? tope;
+      for (final c in o.constraints) {
+        if (c.field != 'selections' || !c.isMax) continue;
+        final v = c.value.round();
+        if (v >= 0 && (tope == null || v < tope)) tope = v;
+      }
+      return tope == null || tope >= faltan;
+    }).toList();
+    return candidatas.length == 1 ? candidatas.single : null;
+  }
+
+  /// Rellena cada grupo hasta su mínimo **efectivo**, con la opción que el dataset marca de serie.
+  ///
+  /// El dataset ya rellena con el mínimo que trae escrito, pero ese no es el que se valida: los
+  /// modifiers lo cambian —«un arma pesada por cada miniatura»— y el mínimo escrito puede ser 1
+  /// cuando el que se exige son 2. Así la unidad nacía a medio equipar e incumpliendo por algo que
+  /// el jugador no había decidido.
+  ///
+  /// Se pone de una en una y pasando por [canAdd], que es lo que respeta el techo de la propia
+  /// opción: hay defectos con un máximo de 1 en grupos que piden nueve, y multiplicar sin mirar
+  /// dejaba nueve donde cabía una.
+  void _completarMinimos(Selection selection) {
+    for (final group in selection.groups) {
+      if (_groupHidden(selection, group)) continue;
+      // Cuál es la opción de serie se decide una sola vez, con el mínimo entero del grupo. Si se
+      // recalculara en cada vuelta, al faltar una sola valdrían todas —hasta las armas especiales
+      // de tope uno— y dejaría de haber una candidata clara justo en el último hueco.
+      final inicial = groupUsage(selection, group);
+      if (inicial.minimo == null || inicial.puestas >= inicial.minimo!) continue;
+      final delGrupo = optionsFor(selection).where((o) => o.groupId == group.id).toList();
+      final opcion = group.defaultId != null
+          ? delGrupo.where((o) => o.entryId == group.defaultId).firstOrNull
+          : _basicaDe(delGrupo, inicial.minimo! - inicial.puestas);
+      if (opcion == null) continue;
+
+      // Hasta treinta intentos: es más que cualquier mínimo del dataset y evita que un límite mal
+      // calculado deje esto dando vueltas.
+      for (var intento = 0; intento < 30; intento++) {
+        final uso = groupUsage(selection, group);
+        if (uso.minimo == null || uso.puestas >= uso.minimo!) break;
+        if (!canAdd(selection, opcion)) break;
+        final puesta =
+            selection.children.where((c) => c.entryId == opcion.entryId).firstOrNull;
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          selection.addChild(opcion);
+        }
+      }
+    }
+    // Y al revés: recortar lo que el relleno haya dejado por encima del techo efectivo. El
+    // declarado y el efectivo no siempre coinciden —los modifiers bajan el tope según el tamaño de
+    // la unidad— y sin esto la unidad nace pasada de su propio máximo sin que nadie lo haya
+    // pedido. Solo al montarla: lo que ponga luego el jugador es cosa suya.
+    for (final group in selection.groups) {
+      for (var intento = 0; intento < 20; intento++) {
+        final uso = groupUsage(selection, group);
+        if (uso.maximo == null || uso.puestas <= uso.maximo!) break;
+        final delGrupo = _groupAndNested(selection, group.id);
+        final sobra = selection.children
+            .where((c) => delGrupo.contains(c.groupId))
+            .toList()
+            .reversed
+            .firstOrNull;
+        if (sobra == null) break;
+        if (sobra.count > 1) {
+          sobra.count--;
+        } else {
+          selection.children.remove(sobra);
+        }
+      }
+    }
+
+    for (final child in selection.children) {
+      _completarMinimos(child);
+    }
   }
 
   void _prune(Selection selection) {
@@ -719,6 +812,12 @@ class Roster {
     // Las restricciones del grupo se cumplen entre todos los hermanos que salen de él, y se
     // comprueban aunque no haya ninguno: un grupo vacío es justo el que incumple su mínimo.
     for (final group in selection.groups) {
+      // Un grupo escondido no exige nada. El dataset esconde grupos enteros según el detachment
+      // —las Marcas del Caos solo existen con Pactbound Zealots— y entonces esconde también sus
+      // opciones. Validando el grupo igual, la unidad pedía elegir de una lista vacía: un
+      // incumplimiento imposible de arreglar.
+      if (_groupHidden(selection, group)) continue;
+
       // Lo elegido en un subgrupo cuenta para el grupo de fuera. Si no, un grupo que solo contiene
       // subgrupos —«Wargear: exactamente dos armas», repartidas en dos subgrupos de una— se ve
       // siempre vacío y avisa de un incumplimiento que no existe.
@@ -743,6 +842,14 @@ class Roster {
     for (final child in selection.children) {
       _validateSelection(child, violations);
     }
+  }
+
+  /// Si el dataset esconde este grupo en esta lista.
+  bool _groupHidden(Selection owner, OptionGroup group) {
+    final delGrupo = _groupAndNested(owner, group.id);
+    final desde = owner.children.where((c) => delGrupo.contains(c.groupId)).firstOrNull ??
+        (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
+    return _applyHidden(group.modifiers, desde);
   }
 
   /// El grupo y todos los que anidan dentro de él, por id.

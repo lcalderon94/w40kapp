@@ -14,6 +14,7 @@ void main() async {
   final dataset = await Dataset.load(_dir());
   var unidades = 0, limpias = 0, avisos = 0;
   final peores = <String, int>{};
+  final porFaccion = <String, ({int total, int listas})>{};
 
   for (final faccion in dataset.factions) {
     final detachments = dataset.detachmentsOf(faccion);
@@ -24,6 +25,9 @@ void main() async {
       roster.add(roster.selectionFor(unidad));
       unidades++;
       final v = roster.validate();
+      final prev = porFaccion[faccion.name] ?? (total: 0, listas: 0);
+      porFaccion[faccion.name] =
+          (total: prev.total + 1, listas: prev.listas + (v.isEmpty ? 1 : 0));
       if (v.isEmpty) {
         limpias++;
       } else {
@@ -36,8 +40,14 @@ void main() async {
   print('llegan listas, sin nada pendiente: $limpias '
       '(${(limpias * 100 / unidades).toStringAsFixed(1)} %)');
   print('llegan pidiendo algo: ${unidades - limpias}  ($avisos avisos)');
-  final orden = peores.entries.toList()..sort((a, b) => b.value.compareTo(a.value));
-  for (final e in orden.take(6)) {
-    print('   ${e.value.toString().padLeft(4)}  ${e.key}');
+  print('');
+  print('por facción — listas / total:');
+  final tabla = porFaccion.entries.toList()
+    ..sort((a, b) => (a.value.listas / a.value.total)
+        .compareTo(b.value.listas / b.value.total));
+  for (final e in tabla) {
+    final pct = (e.value.listas * 100 / e.value.total).round();
+    print('   ${e.value.listas.toString().padLeft(4)} / ${e.value.total.toString().padLeft(4)}'
+        '  ${pct.toString().padLeft(3)} %   ${e.key}');
   }
 }
