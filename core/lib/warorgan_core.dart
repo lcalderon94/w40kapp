@@ -3,6 +3,8 @@
 library;
 
 export 'src/dataset.dart';
+export 'src/exportar.dart';
+export 'src/guardado.dart';
 export 'src/detachment.dart';
 export 'src/model.dart';
 export 'src/modifiers.dart';

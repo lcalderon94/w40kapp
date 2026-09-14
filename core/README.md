@@ -240,6 +240,24 @@ el presupuesto. Los detachments de partida normal gastan 2 o 3, así que en Onsl
 Cuando el dataset trae su propio mensaje de error se usa ese, salvo si el límite efectivo ha
 cambiado: el mensaje lleva el número declarado escrito dentro y diría otra cosa que el aviso.
 
+## Guardar y exportar
+
+`Guardado` pasa una lista a texto y la vuelve a montar. Se guardan **las decisiones** —facción,
+tamaño, detachments, interruptores, y qué unidades con qué opciones—, nunca los puntos.
+
+Es lo que decide todo lo demás. Guardar el árbol ya calculado congela los puntos del día en que se
+guardó, y Games Workshop los cambia cada pocos meses: una lista de hace tres meses diría 1.985
+puntos cuando hoy son 2.010, y el jugador se presenta a jugar con una lista ilegal creyéndola
+buena. Montándola de nuevo, o sale con los puntos correctos o sale avisando de lo que ya no cuadra.
+
+Al recuperar se concilia con el dataset de hoy: se parte de la selección de partida —cuyos mínimos
+obligatorios pueden haber cambiado— y se ajusta a lo guardado. Que una unidad o una opción ya no
+exista **no es un error**: se monta lo que se pueda y se dice en `Recuperada.perdidas`, porque
+devolver una lista distinta sin avisar es peor que devolverla incompleta diciéndolo.
+
+`Exportar.aTexto` da la lista en texto plano, agrupada por rol y con el equipo indentado, para
+pegarla en un chat. Los **avisos van dentro**: una lista ilegal se manda diciendo que lo es.
+
 ## Qué pasa cuando el motor no entiende una condición
 
 No la aplica, y lo cuenta en `Roster.skippedModifiers`. Es deliberado: un precio calculado con una

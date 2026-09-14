@@ -9,14 +9,21 @@ import 'package:warorgan_core/warorgan_core.dart';
 /// sin que se recalcule.
 class ListaEnCurso extends ChangeNotifier {
   ListaEnCurso({required this.dataset, required Faction faccion, required BattleSize tamano})
-      : roster = Roster(
+      : perdidas = const [],
+        roster = Roster(
           faction: faccion,
           pointsLimit: tamano.pointsLimit,
           name: 'Lista sin nombre',
         )..battleSize = tamano;
 
+  /// Una lista ya montada, recuperada de lo guardado.
+  ListaEnCurso.montada({required this.dataset, required this.roster, this.perdidas = const []});
+
   final Dataset dataset;
   final Roster roster;
+
+  /// Lo que estaba guardado y hoy ya no se puede montar. Se enseña una vez, al abrirla.
+  final List<String> perdidas;
 
   Faction get faccion => roster.faction;
   BattleSize get tamano => roster.battleSize!;
@@ -103,6 +110,12 @@ class ListaEnCurso extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  /// La lista en texto plano, para pegarla donde sea.
+  String get comoTexto => Exportar.aTexto(roster);
+
+  /// Lo que hay que guardar para poder volver a montarla.
+  String get paraGuardar => Guardado.aTexto(roster);
 
   int get puntos => roster.points;
   int get restantes => roster.pointsRemaining;

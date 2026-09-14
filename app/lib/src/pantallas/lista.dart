@@ -5,6 +5,7 @@ import '../estado/lista_en_curso.dart';
 import '../tema.dart';
 import 'anadir_unidad.dart';
 import 'elegir_detachment.dart';
+import 'exportar.dart';
 import 'unidad_en_lista.dart';
 
 /// La lista que se está montando.
@@ -27,6 +28,13 @@ class PantallaDeLista extends StatelessWidget {
           appBar: AppBar(
             title: Text(lista.roster.name),
             actions: [
+              IconButton(
+                icon: const Icon(Icons.ios_share, size: 20),
+                tooltip: 'Exportar',
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => PantallaDeExportar(lista: lista),
+                )),
+              ),
               IconButton(
                 icon: const Icon(Icons.drive_file_rename_outline, size: 20),
                 tooltip: 'Renombrar',

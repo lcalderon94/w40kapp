@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:warorgan_core/warorgan_core.dart';
 
+import '../datos/almacen.dart';
 import '../datos/repositorio.dart';
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
 import 'lista.dart';
 
-/// Las listas del jugador.
+/// Las listas del jugador, guardadas en el teléfono.
 ///
-/// De momento viven mientras la app está abierta. Guardarlas en el teléfono es lo siguiente, y se
-/// guardarán las **decisiones** —facción, tamaño, detachment, unidades y opciones—, no el árbol
+/// Se guardan las **decisiones** —facción, tamaño, detachment, unidades y opciones—, no el árbol
 /// resuelto: así una lista de hace tres meses se vuelve a montar con los puntos de hoy en vez de
-/// quedarse congelada con los de entonces.
+/// quedarse congelada con los de entonces, que es como uno se presenta a jugar con una lista
+/// ilegal creyéndola buena.
+///
+/// Se guarda en cuanto algo cambia, no con un botón: una app de listas que te pierde el trabajo
+/// por no haber pulsado «guardar» no la usa nadie dos veces.
 class PantallaDeListas extends StatefulWidget {
   const PantallaDeListas({super.key});
 
@@ -21,19 +25,81 @@ class PantallaDeListas extends StatefulWidget {
 
 class _PantallaDeListasState extends State<PantallaDeListas> {
   final _listas = <ListaEnCurso>[];
+  Almacen? _almacen;
+  bool _cargando = true;
+  int _ilegibles = 0;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_almacen == null) _cargar();
+  }
+
+  Future<void> _cargar() async {
+    final dataset = Datos.de(context);
+    final almacen = await Almacen.abrir();
+    final recuperadas = almacen.recuperar(dataset);
+    if (!mounted) return;
+    setState(() {
+      _almacen = almacen;
+      _cargando = false;
+      _ilegibles = recuperadas.ilegibles;
+      for (final r in recuperadas.listas) {
+        final lista =
+            ListaEnCurso.montada(dataset: dataset, roster: r.roster, perdidas: r.perdidas);
+        _vigilar(lista);
+        _listas.add(lista);
+      }
+    });
+  }
+
+  Future<void> _guardar() async {
+    await _almacen?.escribir([for (final lista in _listas) lista.paraGuardar]);
+  }
+
+  /// Guarda en cuanto la lista cambia, esté donde esté el jugador. Una app de listas que te pierde
+  /// el trabajo por no haber pulsado «guardar» no la usa nadie dos veces.
+  void _vigilar(ListaEnCurso lista) => lista.addListener(_guardar);
+
+  @override
+  void dispose() {
+    for (final lista in _listas) {
+      lista.removeListener(_guardar);
+    }
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
+    if (_cargando) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator(color: Tema.acento)),
+      );
+    }
     return Scaffold(
       appBar: AppBar(title: const Text('Mis listas')),
       body: _listas.isEmpty
-          ? const Center(
+          ? Center(
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 40),
-                child: Text(
-                  'Todavía no hay ninguna lista.\nEmpieza eligiendo facción y tamaño de partida.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Tema.textoTenue, height: 1.5),
+                padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Text(
+                      'Todavía no hay ninguna lista.\nEmpieza eligiendo facción y tamaño de '
+                      'partida.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Tema.textoTenue, height: 1.5),
+                    ),
+                    if (_ilegibles > 0)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16),
+                        child: Text(
+                          '\$_ilegibles guardadas no se han podido leer.',
+                          style: const TextStyle(color: Tema.aviso, fontSize: 12.5),
+                        ),
+                      ),
+                  ],
                 ),
               ),
             )
@@ -42,8 +108,15 @@ class _PantallaDeListasState extends State<PantallaDeListas> {
               separatorBuilder: (_, __) => const Divider(indent: 16, endIndent: 16),
               itemBuilder: (context, i) => _Lista(
                 lista: _listas[i],
-                alBorrar: () => setState(() => _listas.removeAt(i)),
-                alVolver: () => setState(() {}),
+                alBorrar: () {
+                  _listas[i].removeListener(_guardar);
+                  setState(() => _listas.removeAt(i));
+                  _guardar();
+                },
+                alVolver: () {
+                  setState(() {});
+                  _guardar();
+                },
               ),
             ),
       floatingActionButton: FloatingActionButton.extended(
@@ -62,11 +135,16 @@ class _PantallaDeListasState extends State<PantallaDeListas> {
       MaterialPageRoute(builder: (_) => PantallaDeNuevaLista(dataset: dataset)),
     );
     if (creada == null || !mounted) return;
+    _vigilar(creada);
     setState(() => _listas.add(creada));
+    await _guardar();
+    if (!mounted) return;
     await Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => PantallaDeLista(lista: creada)),
     );
-    if (mounted) setState(() {});
+    if (!mounted) return;
+    setState(() {});
+    await _guardar();
   }
 }
 

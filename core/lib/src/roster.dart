@@ -24,6 +24,7 @@ class Selection {
     List<Modifier>? groupModifiers,
     List<OptionGroup>? groups,
     List<String>? categoryIds,
+    this.primaryCategoryId,
   })  : baseCosts = baseCosts,
         costs = {...baseCosts},
         children = children ?? [],
@@ -91,6 +92,10 @@ class Selection {
 
   /// Categorías a las que pertenece. Las condiciones de los modifiers cuentan por categoría.
   final List<String> categoryIds;
+
+  /// La categoría marcada como principal, que es el rol con el que se agrupa en la hoja de
+  /// ejército. Las demás son palabras clave.
+  final String? primaryCategoryId;
 
   Selection? parent;
 

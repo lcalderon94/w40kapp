@@ -682,6 +682,11 @@ class Dataset {
         for (final raw in (entry['categoryLinks'] as List? ?? const []))
           if ((raw as Map<String, dynamic>)['targetId'] is String) raw['targetId'] as String,
       ],
+      primaryCategoryId: (entry['categoryLinks'] as List? ?? const [])
+          .cast<Map<String, dynamic>>()
+          .where((link) => link['primary'] == true && link['targetId'] is String)
+          .map((link) => link['targetId'] as String)
+          .firstOrNull,
     );
 
     for (final child in _childLinks(entry)) {

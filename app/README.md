@@ -13,6 +13,7 @@ flutter run                 # en un dispositivo o emulador
 
 - **Listas** → crear una lista eligiendo facción y tamaño de partida, elegir detachment, añadir
   unidades y equiparlas. Arriba siempre: puntos, presupuesto de mejoras y si la lista es legal.
+  Se guardan solas en el teléfono y se exportan a texto plano para pegarlas en un chat.
 - **Ejércitos** → las 36 facciones agrupadas por bando → sus unidades, buscables → la ficha de cada
   una: línea de características, habilidades y armas con sus perfiles.
 - **Wiki** → el glosario del reglamento básico, las 49 reglas que salen entre corchetes en las
@@ -38,6 +39,11 @@ interruptores del propio dataset, apagados por defecto.
 arma o un tamaño de escuadra, y nadie puede decidirlo por el jugador. La lista marca *en qué unidad*
 está el problema, porque «tu lista tiene 4 avisos» sin decir cuál abrir no sirve de nada.
 
+**Se guarda solo, sin botón.** Una app de listas que te pierde el trabajo por no haber pulsado
+«guardar» no la usa nadie dos veces, así que `ListaEnCurso` avisa de cada cambio y eso escribe. Y se
+guardan las *decisiones*, no el árbol: al abrir la app la lista se vuelve a montar contra el
+dataset, así que sale con los puntos de hoy en vez de con los de cuando se guardó.
+
 **Nadie recalcula nada aquí.** `ListaEnCurso` envuelve al `Roster` del `core` y solo traduce «el
 jugador ha tocado algo» a «hay que volver a pintar». El precio, los presupuestos y la legalidad los
 sabe el motor, y todo lo que cambia la lista pasa por un único sitio: no hay forma de mover una
@@ -58,13 +64,6 @@ más abajo, y juntarlas es interpretar el dataset, no pintarlo: lo hace `Dataset
 `core`, donde se puede probar sin levantar una interfaz.
 
 ## Lo que falta
-
-**Guardar las listas.** Ahora viven mientras la app está abierta. Cuando se guarden, se guardarán
-las *decisiones* —facción, tamaño, detachment, unidades y opciones—, no el árbol ya resuelto: así
-una lista de hace tres meses se vuelve a montar con los puntos de hoy en vez de quedarse congelada
-con los de entonces.
-
-**Exportar la lista** a texto, para pegarla en un chat o enseñarla en una mesa.
 
 **El arranque.** Son 48 MB y 103.000 nodos que hay que indexar antes de resolver nada, y se hace en
 el hilo de la interfaz. Aquí son un par de segundos; en un móvil de gama media serán más, y el
