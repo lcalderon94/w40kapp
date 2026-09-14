@@ -9,6 +9,7 @@ dependerá de este paquete.
 ```bash
 cd core
 dart test                                  # pruebas contra el dataset real
+dart run bin/auditoria.dart                # cuánto del dataset entiende el motor
 dart run bin/resumen.dart                  # vuelca lo que resuelve, sin interfaz
 dart run bin/resumen.dart ../data/bsdata-es "Imperium - Adeptus Astartes - White Scars"
 ```
@@ -58,6 +59,17 @@ for (final incumplimiento in roster.validate()) print(incumplimiento);
 `selectionFor` no añade la unidad suelta: despliega los mínimos que exige. Los Poxwalkers cuestan 65
 en la unidad y llevan diez miniaturas a 0, y el Myphitic Blight-hauler cuesta 0 en la unidad y 95 en
 la suya; sumando el árbol los dos salen bien.
+
+`optionsFor` da lo otro, lo que se elige: las armas, el equipo y también las **mejoras**, que no son
+un caso aparte sino un grupo más de los que cuelgan de un personaje. Cada opción viene construida y
+lista para `addChild`, con sus costes y sus restricciones, así que valida y suma igual que lo que
+salió del mínimo.
+
+```dart
+final principe = dataset.selectionFor(unidad);
+final mejora = dataset.optionsFor(principe).firstWhere((o) => o.groupName == 'Enhancements');
+principe.addChild(mejora);   // +10 pts y una Enhancement gastada del presupuesto
+```
 
 Los **modifiers de coste** se aplican al recalcular: el dataset da 65 puntos a los Poxwalkers y deja
 en un modifier que pasen a 130 al superar las diez miniaturas, así que sin evaluarlos una unidad de
@@ -120,7 +132,28 @@ Por eso el roster necesita saber **de qué partida se trata**:
 
 También cuentan los ajustes que vienen **por el enlace**. Una entrada compartida no se usa igual en
 todas partes, y el enlace es donde el dataset la ajusta a su sitio: trae sus propias restricciones y
-sus propios modifiers. Resolviendo solo el destino, la opción se valida con los límites genéricos.
+sus propios modifiers. Vale para las entradas y para los grupos: «Heavy Weapons» es un grupo que
+comparten varios tanques, y cuántas armas caben en cada uno lo dice su enlace.
+
+Y cuentan las **proporciones**, que es como el dataset escribe «una Bright Lance menos por cada
+Starcannon» o «un no-Battleline de Khorne más por cada Battleline». Son 5.499 modifiers con
+`repeats`; sin ellas el cambio se aplica una sola vez y el límite se queda corto en cuanto la
+unidad crece.
+
+### Las reglas del ejército entero
+
+No son de ninguna unidad: las declara el tipo de fuerza, y se leen del dataset en vez de escribirse
+a mano, así que un cambio de upstream se sigue solo.
+
+| Regla | Incursion | Strike Force | Onslaught |
+|---|---|---|---|
+| Límite de puntos | 1000 | 2000 | 3000 |
+| Detachment Points | 2 | 3 | 4 |
+| Enhancements | 2 | 4 | 4 |
+
+Los **Detachment Points** son el presupuesto de detachments, y por eso `Roster.detachments` es una
+lista y no uno solo: el dataset deja el grupo en «mínimo 1, sin máximo» y lo que de verdad limita es
+el presupuesto. Los detachments de partida normal gastan 2 o 3, así que en Onslaught caben dos.
 
 Cuando el dataset trae su propio mensaje de error se usa ese, salvo si el límite efectivo ha
 cambiado: el mensaje lleva el número declarado escrito dentro y diría otra cosa que el aviso.
@@ -134,8 +167,8 @@ quedarse corto.
 Con las restricciones hace lo mismo: si no sabe calcular el límite efectivo, **no comprueba la
 restricción** en vez de comprobarla contra el número declarado. Dar por ilegal una lista que no lo
 es sería peor que no avisar. Queda contado en `Roster.uncheckedConstraints`, y
-`selectionsWithUncheckedConstraints` dice en qué selecciones. Son pocas: 76 restricciones en 72 de
-las 6.149 unidades, y casi todas por condiciones que cuentan **fuerzas** —cuántos destacamentos de
+`selectionsWithUncheckedConstraints` dice en qué selecciones. Son pocas: 65 restricciones en el
+1,1 % de las unidades, casi todas por condiciones que cuentan **fuerzas** —cuántos destacamentos de
 tal tipo hay en el roster—, que esta capa no modela porque solo maneja una.
 
 En el coste quedan fuera 1.838 modifiers, que afectan al 28,2 % de las unidades. Todos son la misma
@@ -159,18 +192,28 @@ avisar en ellas y no sobre la lista entera.
 
 ## Estado
 
-Se lee el dataset, se construyen y validan listas, y se aplican los modifiers evaluables: los de
-coste y los que cambian las restricciones. Lo que falta para la paridad con WarOrgan:
+`dart run bin/auditoria.dart` lo mide contra el dataset entero y es la respuesta corta:
 
-- **`localConditionGroups`**, lo de arriba: bloqueado hasta que BSData publique el esquema, o hasta
-  poder contrastar la semántica contra una fuente de puntos fiable.
-- **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da
-  exactamente cuatro.
-- **Boarding Actions**: los detachments ya se separan, pero el resto del modo (fuerzas, límites,
-  unidades propias) no está.
-- **Límites por rol** del destacamento, que viven en las `categoryEntries` de `forceEntries`.
-- **Varias fuerzas en un roster**, que es lo que dejaría comprobar las 76 restricciones que hoy se
-  quedan sin mirar.
+```
+facciones 36 · unidades 6.149 (98,3 % con puntos) · detachments 547
+mejoras                       546 de 547 detachments  ·  377 de 378 de tamaño completo dan 4
+modifiers de coste sin evaluar    1.838, en el 28,2 % de las unidades
+restricciones sin comprobar          65, en el  1,1 % de las unidades
+```
+
+Se lee el dataset, se eligen unidades y opciones, y se validan listas con los límites efectivos.
+Lo que falta:
+
+- **`localConditionGroups`**, lo de arriba: es todo el 28,2 %, y está bloqueado hasta que BSData
+  publique el esquema. Solo afecta a listas con **copias repetidas de la misma unidad**; sin
+  repetir, el precio es exacto.
+- **Varias fuerzas en un roster.** Es lo que dejaría comprobar esas 65 restricciones, y lo que hace
+  falta para aliados y para Boarding Actions completo.
+- **Las seis mejoras del Lords of Dread**, el único detachment de tamaño completo que no da cuatro,
+  y el **Contagion Engines**, el único sin ninguna.
+- **Límites por rol**: en 11ª prácticamente no existen. La fuerza declara uno (mínimo 1 Character)
+  y el propio dataset lo desactiva con un modifier. Lo que sí existe son las reglas de ejército de
+  arriba, que sí se comprueban.
 
 ## Entorno
 

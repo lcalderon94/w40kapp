@@ -116,21 +116,100 @@ void main() {
     expect(normal.validate(), isNotEmpty);
   });
 
-  test('el enlace aporta sus propias restricciones a la selección', () {
-    // Una entrada compartida se ajusta en el sitio donde se usa, y el ajuste vive en el enlace:
-    // sus restricciones y sus modifiers. Resolviendo solo el destino se pierde y la opción se
-    // valida con los límites genéricos.
+  test('el enlace aporta sus propias reglas al grupo compartido', () {
+    // «Heavy Weapons [Legends]» es un grupo compartido que usan varios tanques, y cada uno lo
+    // ajusta desde su enlace: cuántas armas caben aquí. Resolviendo solo el grupo, todos los
+    // tanques se validarían con los mismos límites genéricos.
     final aeldari = dataset.factionNamed('Xenos - Aeldari');
     final scorpion = aeldari.units.firstWhere((u) => u.name == 'Scorpion [Legends]');
     final armas = dataset
-        .selectionFor(scorpion)
-        .descendantsAndSelf
-        .firstWhere((s) => s.name == 'Heavy Weapons [Legends]');
+        .optionsFor(dataset.selectionFor(scorpion))
+        .where((o) => o.groupName == 'Heavy Weapons [Legends]')
+        .toList();
+    expect(armas, isNotEmpty, reason: 'el grupo llega por enlace, no incrustado');
 
-    final propias = (dataset.node(armas.entryId)!['constraints'] as List).length;
-    expect(armas.constraints, hasLength(greaterThan(propias)));
-    expect(armas.modifiers.any((m) => armas.constraints.any((c) => c.id == m.field)), isTrue,
+    final delGrupo = (dataset.node(armas.first.groupId!)!['constraints'] as List).length;
+    expect(armas.first.groupConstraints, hasLength(greaterThan(delGrupo)),
+        reason: 'las del grupo más las que pone el enlace');
+    expect(armas.first.groupModifiers.any((m) =>
+        armas.first.groupConstraints.any((c) => c.id == m.field)), isTrue,
         reason: 'y los modifiers que las cambian');
+  });
+
+  test('optionsFor ofrece lo que se puede elegir, incluidas las mejoras', () {
+    // Una mejora no es un caso aparte: es un grupo más de los que cuelgan de un personaje, y
+    // llega por enlace. Sin recorrer los grupos enlazados no habría forma de ofrecerlas.
+    final prince = dataset.selectionFor(
+        deathGuard.units.firstWhere((u) => u.name == 'Daemon Prince of Nurgle'));
+    final opciones = dataset.optionsFor(prince);
+    final mejoras = opciones.where((o) => o.groupName == 'Enhancements');
+    expect(mejoras, isNotEmpty);
+    expect(mejoras.map((o) => o.name), contains('Daemon Weapon of Nurgle'));
+    expect(opciones.every((o) => o.name.isNotEmpty), isTrue,
+        reason: 'un grupo no es una opción: no debe colarse como tal');
+  });
+
+  test('una mejora elegida suma sus puntos y gasta presupuesto de Enhancements', () {
+    final prince = dataset.selectionFor(
+        deathGuard.units.firstWhere((u) => u.name == 'Daemon Prince of Nurgle'));
+    final base = prince.points;
+    final mejora = dataset
+        .optionsFor(prince)
+        .firstWhere((o) => o.name == 'Daemon Weapon of Nurgle');
+    prince.addChild(mejora);
+
+    final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+      ..battleSize = sizeOf(2000)
+      ..detachments.add(dataset.detachmentsOf(deathGuard).first)
+      ..add(prince);
+    expect(roster.points, base + 10);
+    expect(prince.costOf(enhancementsCostTypeId), 1);
+  });
+
+  test('el ejército no puede pasarse del presupuesto de Enhancements', () {
+    final detachment = dataset
+        .detachmentsOf(deathGuard)
+        .firstWhere((d) => d.name == 'Virulent Vectorium');
+    final mejoras = dataset.enhancementsOf(deathGuard, detachmentId: detachment.id);
+
+    Roster conMejoras(int cuantas, BattleSize size) {
+      final roster = Roster(faction: deathGuard, pointsLimit: 3000)..battleSize = size;
+      roster.detachments.add(detachment);
+      for (var i = 0; i < cuantas; i++) {
+        final prince = dataset.selectionFor(
+            deathGuard.units.firstWhere((u) => u.name == 'Daemon Prince of Nurgle'));
+        prince.addChild(dataset
+            .optionsFor(prince)
+            .firstWhere((o) => o.name == mejoras[i % mejoras.length].name));
+        roster.add(prince);
+      }
+      return roster;
+    }
+
+    bool sePasa(Roster r) =>
+        r.validate().any((v) => v.message.toLowerCase().contains('enhancement'));
+
+    // Cuatro fuera de Incursion, dos dentro: lo dice la propia fuerza, no está escrito aquí.
+    expect(sePasa(conMejoras(4, sizeOf(3000))), isFalse);
+    expect(sePasa(conMejoras(5, sizeOf(3000))), isTrue);
+    expect(sePasa(conMejoras(2, sizeOf(1000))), isFalse);
+    expect(sePasa(conMejoras(3, sizeOf(1000))), isTrue);
+  });
+
+  test('el presupuesto de Detachment Points crece con el tamaño de la partida', () {
+    final dos = dataset.detachmentsOf(deathGuard).where((d) => d.detachmentPoints == 2).toList();
+    expect(dos, hasLength(greaterThan(1)), reason: 'hacen falta dos de 2 DP para sumar 4');
+
+    bool cabe(BattleSize size) {
+      final roster = Roster(faction: deathGuard, pointsLimit: size.pointsLimit)
+        ..battleSize = size;
+      roster.detachments.addAll(dos.take(2));
+      return !roster.validate().any((v) => v.message.contains('hay 4'));
+    }
+
+    expect(cabe(sizeOf(3000)), isTrue, reason: 'Onslaught da 4 DP');
+    expect(cabe(sizeOf(2000)), isFalse, reason: 'Strike Force da 3');
+    expect(cabe(sizeOf(1000)), isFalse, reason: 'Incursion da 2');
   });
 
   test('los tres tamaños de partida traen su límite de puntos', () {

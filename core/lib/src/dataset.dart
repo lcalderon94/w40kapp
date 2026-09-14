@@ -134,6 +134,7 @@ class Dataset {
             ruleName: rule?['name'] as String?,
             rule: rule?['description'] as String?,
             points: _points(option) ?? 0,
+            detachmentPoints: _costsOf(option)[detachmentPointsCostTypeId] ?? 0,
           ));
         }
       }
@@ -146,17 +147,25 @@ class Dataset {
   /// Son cuatro y una lista es de uno solo, así que saber cuál es contesta por sí mismo las
   /// condiciones `instanceOf` que preguntan por ellos, que si no habría que dejar sin evaluar.
   late final List<Force> forces = [
-    for (final root in _roots)
-      for (final raw in (root['forceEntries'] as List? ?? const []))
-        Force(
-          id: (raw as Map<String, dynamic>)['id'] as String? ?? '',
-          name: raw['name'] as String? ?? '',
-        ),
+    for (final root in _roots) ..._forcesIn(root),
   ];
+
+  /// Las fuerzas de un nodo y las que anidan dentro: Crusade Army cuelga de Crusade Force.
+  Iterable<Force> _forcesIn(Map<String, dynamic> node_) sync* {
+    for (final raw in (node_['forceEntries'] as List? ?? const [])) {
+      final entry = raw as Map<String, dynamic>;
+      yield Force(
+        id: entry['id'] as String? ?? '',
+        name: entry['name'] as String? ?? '',
+        node: entry,
+      );
+      yield* _forcesIn(entry);
+    }
+  }
 
   /// La fuerza de una partida normal, que es la que se asume mientras no se diga otra cosa.
   late final Force standardForce = forces.firstWhere((f) => f.name == 'Army Roster',
-      orElse: () => Force(id: '', name: 'Army Roster'));
+      orElse: () => Force(id: '', name: 'Army Roster', node: const {}));
 
   /// Los tamaños de partida que ofrece el sistema de juego, con su límite de puntos.
   ///
@@ -314,6 +323,9 @@ class Dataset {
     return name == 'Detachment' || name == 'Detachments';
   }
 
+  /// El tipo de coste con el que 11ª gradúa los detachments y presupuesta el ejército.
+  static const detachmentPointsCostTypeId = '82ae-1066-5107-6ae0';
+
   /// La categoría que marca una fuerza de Boarding Actions, el modo de juego a bordo de una nave.
   ///
   /// El identificador está fijo aquí porque lo está en el dataset, igual que el del coste en
@@ -369,15 +381,37 @@ class Dataset {
           (raw as Map<String, dynamic>)['primary'] == true && raw['name'] == 'Configuration');
 
   /// Los grupos de opciones de un nodo, estén incrustados o lleguen por enlace.
-  Iterable<Map<String, dynamic>> _groupsOf(Map<String, dynamic> node_) sync* {
+  Iterable<Map<String, dynamic>> _groupsOf(Map<String, dynamic> node_) =>
+      _groupLinks(node_).map((group) => group.group);
+
+  /// Todos los grupos que cuelgan de un nodo, incluidos los que anidan otros grupos.
+  ///
+  /// El dataset los anida: «Heavy Weapons» no cuelga del tanque sino de su grupo «Wargear». Sin
+  /// bajar, ni se despliegan sus mínimos obligatorios ni se pueden ofrecer sus opciones.
+  Iterable<({Map<String, dynamic> group, Map<String, dynamic>? link})> _allGroupsOf(
+      Map<String, dynamic> node_, [Set<String>? seen]) sync* {
+    final visited = seen ?? <String>{};
+    for (final entry in _groupLinks(node_)) {
+      if (!visited.add(entry.group['id'] as String? ?? '')) continue;
+      yield entry;
+      yield* _allGroupsOf(entry.group, visited);
+    }
+  }
+
+  /// Igual, pero conservando el enlace por el que se llega a cada grupo.
+  ///
+  /// Importa tanto como en las entradas: un grupo compartido se ajusta donde se usa, y el ajuste
+  /// —«aquí solo un arma pesada, no dos»— vive en las restricciones del enlace, no en el grupo.
+  Iterable<({Map<String, dynamic> group, Map<String, dynamic>? link})> _groupLinks(
+      Map<String, dynamic> node_) sync* {
     for (final raw in (node_['selectionEntryGroups'] as List? ?? const [])) {
-      yield raw as Map<String, dynamic>;
+      yield (group: raw as Map<String, dynamic>, link: null);
     }
     for (final raw in (node_['entryLinks'] as List? ?? const [])) {
       final link = raw as Map<String, dynamic>;
       if (link['type'] != 'selectionEntryGroup') continue;
       final target = node(link['targetId'] as String? ?? '');
-      if (target != null) yield target;
+      if (target != null) yield (group: target, link: link);
     }
   }
 
@@ -423,6 +457,18 @@ class Dataset {
     return null;
   }
 
+  /// Todo lo que declara costar una entrada, por tipo de coste, quitando los ceros.
+  static Map<String, int> _costsOf(Map<String, dynamic> entry) {
+    final costs = <String, int>{};
+    for (final raw in (entry['costs'] as List? ?? const [])) {
+      final cost = raw as Map<String, dynamic>;
+      final typeId = cost['typeId'] as String?;
+      final value = cost['value'];
+      if (typeId != null && value is num && value != 0) costs[typeId] = value.round();
+    }
+    return costs;
+  }
+
   int? _points(Map<String, dynamic> node) {
     for (final raw in (node['costs'] as List? ?? const [])) {
       final cost = raw as Map<String, dynamic>;
@@ -445,6 +491,45 @@ class Dataset {
     return _selectionFrom(entry, groupId: null, groupName: null, groupConstraints: const []);
   }
 
+  /// Todo lo que el jugador puede añadir a una selección: las opciones de sus grupos y sus
+  /// entradas hijas, cada una ya construida y lista para `addChild`.
+  ///
+  /// [selectionFor] solo despliega lo obligatorio, que es lo que hace falta para dar un precio.
+  /// Esto es lo otro: lo que se elige. Las armas, el equipo y también las **mejoras**, que no son
+  /// un caso aparte sino un grupo más de los que cuelgan de un personaje.
+  ///
+  /// Vienen con sus costes, sus restricciones y los ajustes de su enlace, así que validan y suman
+  /// igual que si hubieran salido de [selectionFor].
+  List<Selection> optionsFor(Selection selection) {
+    final entry = node(selection.entryId);
+    if (entry == null) return const [];
+
+    final options = <Selection>[];
+    for (final child in _childLinks(entry)) {
+      options.add(_selectionFrom(child.entry,
+          groupId: null, groupName: null, groupConstraints: const [], link: child.link));
+    }
+    for (final (:group, :link) in _allGroupsOf(entry)) {
+      final groupRules = [
+        for (final node_ in [group, if (link != null) link])
+          for (final c in (node_['constraints'] as List? ?? const []))
+            Constraint.fromNode(c as Map<String, dynamic>),
+      ];
+      final groupChanges = [
+        for (final node_ in [group, if (link != null) link]) ...Modifier.allOf(node_),
+      ];
+      for (final option in _childLinks(group)) {
+        options.add(_selectionFrom(option.entry,
+            groupId: group['id'] as String?,
+            groupName: group['name'] as String?,
+            groupConstraints: groupRules,
+            groupModifiers: groupChanges,
+            link: option.link));
+      }
+    }
+    return options;
+  }
+
   Selection _selectionFrom(
     Map<String, dynamic> entry, {
     required String? groupId,
@@ -463,7 +548,7 @@ class Dataset {
       entryId: entry['id'] as String? ?? '',
       name: entry['name'] as String? ?? '',
       type: entry['type'] as String? ?? '',
-      basePointsEach: _points(entry) ?? 0,
+      baseCosts: _costsOf(entry),
       count: count,
       groupId: groupId,
       groupName: groupName,
@@ -489,13 +574,15 @@ class Dataset {
       }
     }
 
-    for (final raw in (entry['selectionEntryGroups'] as List? ?? const [])) {
-      final group = raw as Map<String, dynamic>;
+    for (final (:group, :link) in _allGroupsOf(entry)) {
       final groupRules = [
-        for (final c in (group['constraints'] as List? ?? const []))
-          Constraint.fromNode(c as Map<String, dynamic>),
+        for (final node_ in [group, if (link != null) link])
+          for (final c in (node_['constraints'] as List? ?? const []))
+            Constraint.fromNode(c as Map<String, dynamic>),
       ];
-      final groupChanges = Modifier.allOf(group);
+      final groupChanges = [
+        for (final node_ in [group, if (link != null) link]) ...Modifier.allOf(node_),
+      ];
       for (final option in _childLinks(group)) {
         final minimum = _minimumSelections(option.entry);
         if (minimum > 0) {
@@ -530,6 +617,8 @@ class Dataset {
     }
     for (final raw in (node_['entryLinks'] as List? ?? const [])) {
       final link = raw as Map<String, dynamic>;
+      // Un enlace a un grupo trae un grupo de opciones, no una opción: lo recoge `_groupsOf`.
+      if (link['type'] == 'selectionEntryGroup') continue;
       final target = node(link['targetId'] as String? ?? '');
       if (target != null) yield (entry: target, link: link);
     }

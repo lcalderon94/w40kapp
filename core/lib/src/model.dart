@@ -119,10 +119,19 @@ class UnitEntry {
 /// lista es de uno y solo uno. Importa porque hay reglas que solo valen en algunos: los Poxwalkers
 /// se pueden repetir tres veces en una lista normal y seis en una de Crusade.
 class Force {
-  Force({required this.id, required this.name});
+  Force({required this.id, required this.name, required this.node});
 
   final String id;
   final String name;
+
+  /// El nodo del dataset. Lleva las reglas de ejército: el límite de puntos, el presupuesto de
+  /// Detachment Points y cuántas Enhancements caben.
+  final Map<String, dynamic> node;
+
+  List<Constraint> get constraints => [
+        for (final raw in (node['constraints'] as List? ?? const []))
+          Constraint.fromNode(raw as Map<String, dynamic>),
+      ];
 }
 
 /// El tamaño de la partida, que el dataset llama Battle Size.

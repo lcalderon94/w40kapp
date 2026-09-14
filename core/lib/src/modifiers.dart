@@ -1,5 +1,10 @@
+import 'dart:math' as math;
+
 /// Identificador del tipo de coste en puntos, declarado en el fichero del sistema de juego.
 const pointsCostTypeId = '51b2-306e-1021-d207';
+
+/// Tipo de coste con el que el ejército paga sus mejoras. Cada mejora gasta una.
+const enhancementsCostTypeId = 'f759-1bc4-cb3a-f0d2';
 
 /// Una condición para que un modifier se aplique.
 ///
@@ -76,6 +81,57 @@ class Condition {
       };
 }
 
+/// Cuántas veces se repite un modifier, en función de lo que haya en la lista.
+///
+/// Es como el dataset escribe las proporciones: «una Bright Lance menos por cada Starcannon»,
+/// «un no-Battleline de Khorne más por cada Battleline de Khorne». Sin esto el cambio se aplica
+/// una sola vez y el límite sale mal en cuanto la unidad crece.
+class Repeat {
+  Repeat({
+    required this.field,
+    required this.scope,
+    required this.childId,
+    required this.value,
+    required this.times,
+    required this.roundUp,
+    required this.includeChildSelections,
+  });
+
+  /// Qué se cuenta, igual que en una condición: `selections` o el id de un tipo de coste.
+  final String field;
+  final String scope;
+  final String childId;
+
+  /// Por cada cuántos. Contar 9 miniaturas con `value` 5 da una repetición, no dos.
+  final num value;
+
+  /// Cuántas veces se aplica el modifier por cada [value] que se cuenten.
+  final int times;
+
+  final bool roundUp;
+  final bool includeChildSelections;
+
+  factory Repeat.fromNode(Map<String, dynamic> node) => Repeat(
+        field: node['field'] as String? ?? '',
+        scope: node['scope'] as String? ?? '',
+        childId: node['childId'] as String? ?? '',
+        value: node['value'] as num? ?? 1,
+        times: (node['repeats'] as num?)?.round() ?? 1,
+        roundUp: node['roundUp'] as bool? ?? false,
+        includeChildSelections: node['includeChildSelections'] as bool? ?? false,
+      );
+
+  /// Cuántas veces aplicar el modifier habiendo contado [actual].
+  int timesFor(num actual) {
+    if (value == 0) return 0;
+    final groups = roundUp ? (actual / value).ceil() : (actual / value).floor();
+    return groups * times;
+  }
+
+  bool get isSupported =>
+      Condition.supportedFields.contains(field) && !Condition.unsupportedScopes.contains(scope);
+}
+
 /// Un conjunto de condiciones que se cumplen todas (`and`) o alguna (`or`). Puede anidarse.
 class ConditionGroup {
   ConditionGroup({
@@ -148,6 +204,7 @@ class Modifier {
     required this.value,
     required this.conditions,
     required this.conditionGroups,
+    this.repeats = const [],
   });
 
   /// `set`, `increment`, `decrement`, `multiply`, y otros que esta capa aún no aplica.
@@ -160,6 +217,9 @@ class Modifier {
   final List<Condition> conditions;
   final List<ConditionGroup> conditionGroups;
 
+  /// Las proporciones que multiplican este cambio. Ver [Repeat].
+  final List<Repeat> repeats;
+
   factory Modifier.fromNode(Map<String, dynamic> node) => Modifier(
         type: node['type'] as String? ?? '',
         field: node['field'] as String? ?? '',
@@ -171,6 +231,10 @@ class Modifier {
         conditionGroups: [
           for (final raw in (node['conditionGroups'] as List? ?? const []))
             ConditionGroup.fromNode(raw as Map<String, dynamic>),
+        ],
+        repeats: [
+          for (final raw in (node['repeats'] as List? ?? const []))
+            Repeat.fromNode(raw as Map<String, dynamic>),
         ],
       );
 
@@ -194,6 +258,7 @@ class Modifier {
           value: modifier.value,
           conditions: modifier.conditions,
           conditionGroups: [...modifier.conditionGroups, gate],
+          repeats: modifier.repeats,
         ));
       }
     }
@@ -213,22 +278,27 @@ class Modifier {
 
   /// Igual, pero preguntando a [supports] por cada condición. Ver [ConditionGroup.isSupportedWith].
   bool isEvaluableWith(bool Function(Condition) supports) =>
-      conditions.every(supports) && conditionGroups.every((g) => g.isSupportedWith(supports));
+      conditions.every(supports) &&
+      conditionGroups.every((g) => g.isSupportedWith(supports)) &&
+      repeats.every((r) => r.isSupported);
 
   bool appliesWhen(bool Function(Condition) test) {
     if (!conditions.every(test)) return false;
     return conditionGroups.every((g) => g.evaluate(test));
   }
 
-  /// Aplica el cambio sobre un valor numérico. Devuelve el valor original si no sabe hacerlo.
-  int applyTo(int current) {
+  /// Aplica el cambio sobre un valor numérico, [times] veces.
+  ///
+  /// Repetir importa en los incrementos y en las multiplicaciones; un `set` deja el mismo número
+  /// se aplique una vez o siete, y con cero repeticiones no se aplica nada.
+  int applyTo(int current, {int times = 1}) {
     final amount = value;
-    if (amount is! num) return current;
+    if (amount is! num || times <= 0) return current;
     return switch (type) {
       'set' => amount.round(),
-      'increment' => current + amount.round(),
-      'decrement' => current - amount.round(),
-      'multiply' => (current * amount).round(),
+      'increment' => current + amount.round() * times,
+      'decrement' => current - amount.round() * times,
+      'multiply' => (current * math.pow(amount, times)).round(),
       _ => current,
     };
   }

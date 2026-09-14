@@ -1,3 +1,4 @@
+import 'dataset.dart';
 import 'detachment.dart';
 import 'model.dart';
 import 'modifiers.dart';
@@ -12,7 +13,7 @@ class Selection {
     required this.entryId,
     required this.name,
     required this.type,
-    required this.basePointsEach,
+    required Map<String, int> baseCosts,
     this.count = 1,
     this.groupId,
     this.groupName,
@@ -22,7 +23,8 @@ class Selection {
     List<Modifier>? modifiers,
     List<Modifier>? groupModifiers,
     List<String>? categoryIds,
-  })  : pointsEach = basePointsEach,
+  })  : baseCosts = baseCosts,
+        costs = {...baseCosts},
         children = children ?? [],
         constraints = constraints ?? const [],
         groupConstraints = groupConstraints ?? const [],
@@ -40,11 +42,18 @@ class Selection {
   /// `unit`, `model` o `upgrade`.
   final String type;
 
-  /// Puntos que declara el dataset para una instancia, antes de aplicar modifiers.
-  final int basePointsEach;
+  /// Lo que declara el dataset que cuesta una instancia, por tipo de coste.
+  ///
+  /// No solo puntos: también Enhancements y Detachment Points, que son los que gasta la lista
+  /// contra los presupuestos del ejército.
+  final Map<String, int> baseCosts;
 
-  /// Puntos de una instancia ya con los modifiers aplicados. Lo recalcula la lista.
-  int pointsEach;
+  /// Lo que cuesta de verdad una instancia, con los modifiers aplicados. Lo recalcula la lista.
+  final Map<String, int> costs;
+
+  int get basePointsEach => baseCosts[pointsCostTypeId] ?? 0;
+
+  int get pointsEach => costs[pointsCostTypeId] ?? 0;
 
   /// Modifiers de coste de esta selección que no se han podido evaluar.
   ///
@@ -86,8 +95,12 @@ class Selection {
   }
 
   /// Puntos de esta selección y de todo lo que cuelga de ella.
-  int get points =>
-      pointsEach * count + children.fold(0, (total, child) => total + child.points);
+  int get points => costOf(pointsCostTypeId);
+
+  /// Lo que esta selección y su descendencia gastan de un tipo de coste.
+  int costOf(String typeId) =>
+      (costs[typeId] ?? 0) * count +
+      children.fold(0, (total, child) => total + child.costOf(typeId));
 
   /// Esta selección y toda su descendencia.
   Iterable<Selection> get descendantsAndSelf sync* {
@@ -119,8 +132,20 @@ class Roster {
   String name;
   final List<Selection> units = [];
 
-  /// El detachment elegido. Un ejército necesita uno, y es lo que decide sus reglas.
-  Detachment? detachment;
+  /// Los detachments elegidos, que son los que deciden las reglas del ejército.
+  ///
+  /// Son varios y no uno: el dataset deja el grupo en «mínimo 1, sin máximo» y lo que los limita
+  /// es el presupuesto de Detachment Points, que en Onslaught da para dos.
+  final List<Detachment> detachments = [];
+
+  /// El primero de [detachments], que en casi todas las listas es el único.
+  Detachment? get detachment => detachments.isEmpty ? null : detachments.first;
+
+  set detachment(Detachment? value) {
+    detachments
+      ..clear()
+      ..addAll([if (value != null) value]);
+  }
 
   /// El tamaño de la partida.
   ///
@@ -141,7 +166,8 @@ class Roster {
   /// Coste de la lista, con los modifiers de coste ya aplicados.
   int get points {
     applyModifiers();
-    return units.fold(detachment?.points ?? 0, (total, unit) => total + unit.points);
+    final detachmentCost = detachments.fold(0, (total, d) => total + d.points);
+    return units.fold(detachmentCost, (total, unit) => total + unit.points);
   }
 
   int get pointsRemaining => pointsLimit - points;
@@ -155,12 +181,14 @@ class Roster {
   void applyModifiers() {
     skippedModifiers = 0;
     for (final selection in _all) {
-      selection.pointsEach = selection.basePointsEach;
+      selection.costs
+        ..clear()
+        ..addAll(selection.baseCosts);
       selection.unresolvedCostModifiers = 0;
     }
     for (final selection in _all) {
       for (final modifier in selection.modifiers) {
-        if (modifier.field != pointsCostTypeId) continue;
+        if (!selection.baseCosts.containsKey(modifier.field)) continue;
         if (!Modifier.numericTypes.contains(modifier.type)) continue;
         if (!_canEvaluate(modifier)) {
           skippedModifiers++;
@@ -168,7 +196,9 @@ class Roster {
           continue;
         }
         if (!modifier.appliesWhen((c) => _holds(c, selection))) continue;
-        selection.pointsEach = modifier.applyTo(selection.pointsEach);
+        selection.costs[modifier.field] = modifier.applyTo(
+            selection.costs[modifier.field] ?? 0,
+            times: _timesFor(modifier, selection));
       }
     }
   }
@@ -198,13 +228,13 @@ class Roster {
   /// los modifiers preguntan por ellas: «máximo 2 si la partida es Incursion», «esta unidad solo
   /// con tal detachment». Si no están en el ámbito, esas condiciones cuentan cero y salen falsas.
   List<Selection> get _configuration {
-    final key = '\${battleSize?.id}|\${detachment?.id}';
+    final ids = [battleSize?.id, ...detachments.map((d) => d.id)].nonNulls;
+    final key = ids.join('|');
     if (_configurationKey == key) return _configurationCache;
     _configurationKey = key;
     return _configurationCache = [
-      for (final id in [battleSize?.id, detachment?.id])
-        if (id != null)
-          Selection(entryId: id, name: '', type: 'upgrade', basePointsEach: 0),
+      for (final id in ids)
+        Selection(entryId: id, name: '', type: 'upgrade', baseCosts: const {}),
     ];
   }
 
@@ -241,19 +271,53 @@ class Roster {
     // Solo se saben contar selecciones y puntos; otros tipos de coste aún no se siguen.
     if (condition.field != 'selections' && condition.field != pointsCostTypeId) return false;
 
-    final scope = _scopeOf(condition, target).where((s) => _matches(condition.childId, s));
-    final actual = condition.field == 'selections'
-        ? scope.fold<int>(0, (total, s) => total + s.count)
-        : scope.fold<int>(0, (total, s) => total + s.pointsEach * s.count);
-    return condition.holdsFor(actual);
+    return condition.holdsFor(_count(
+      field: condition.field,
+      scope: condition.scope,
+      childId: condition.childId,
+      includeChildSelections: condition.includeChildSelections,
+      target: target,
+    ));
   }
 
-  Iterable<Selection> _scopeOf(Condition condition, Selection target) {
-    Iterable<Selection> expand(Iterable<Selection> roots) => condition.includeChildSelections
-        ? roots.expand((s) => s.descendantsAndSelf)
-        : roots;
+  /// Cuántas veces hay que aplicar un modifier, según sus proporciones.
+  ///
+  /// Sin `repeats` va una vez. Con ellas, tantas como digan: «una menos por cada Starcannon».
+  int _timesFor(Modifier modifier, Selection target) {
+    if (modifier.repeats.isEmpty) return 1;
+    var times = 0;
+    for (final repeat in modifier.repeats) {
+      times += repeat.timesFor(_count(
+        field: repeat.field,
+        scope: repeat.scope,
+        childId: repeat.childId,
+        includeChildSelections: repeat.includeChildSelections,
+        target: target,
+      ));
+    }
+    return times;
+  }
 
-    switch (condition.scope) {
+  /// Lo que hay en un ámbito: número de selecciones, o puntos que suman.
+  int _count({
+    required String field,
+    required String scope,
+    required String childId,
+    required bool includeChildSelections,
+    required Selection target,
+  }) {
+    final counted = _scopeOf(scope, includeChildSelections, target)
+        .where((s) => _matches(childId, s));
+    return field == 'selections'
+        ? counted.fold<int>(0, (total, s) => total + s.count)
+        : counted.fold<int>(0, (total, s) => total + s.pointsEach * s.count);
+  }
+
+  Iterable<Selection> _scopeOf(String scope, bool includeChildSelections, Selection target) {
+    Iterable<Selection> expand(Iterable<Selection> roots) =>
+        includeChildSelections ? roots.expand((s) => s.descendantsAndSelf) : roots;
+
+    switch (scope) {
       case 'self':
         return expand([target]);
       case 'parent':
@@ -265,9 +329,9 @@ class Roster {
         return expand([...units, ..._configuration]);
       default:
         // El ámbito es el id de un grupo de opciones o de otra entrada.
-        final inGroup = target.descendantsAndSelf.where((s) => s.groupId == condition.scope);
+        final inGroup = target.descendantsAndSelf.where((s) => s.groupId == scope);
         if (inGroup.isNotEmpty) return expand(inGroup);
-        final entry = _all.where((s) => s.entryId == condition.scope);
+        final entry = _all.where((s) => s.entryId == scope);
         return entry.isEmpty ? const [] : expand(entry.first.children);
     }
   }
@@ -295,7 +359,7 @@ class Roster {
     if (total > pointsLimit) {
       violations.add(Violation(null, 'La lista suma $total puntos y el límite es $pointsLimit'));
     }
-    if (detachment == null) {
+    if (detachments.isEmpty) {
       violations.add(Violation(null, 'Falta elegir un detachment'));
     }
 
@@ -303,7 +367,47 @@ class Roster {
       _validateSelection(unit, violations);
     }
     _validateArmyWide(violations);
+    _validateForce(violations);
     return violations;
+  }
+
+  /// Las reglas que la propia fuerza pone al ejército entero.
+  ///
+  /// No son de ninguna unidad: las declara el tipo de lista, y en 11ª son tres. El presupuesto de
+  /// **Detachment Points** —2 por defecto, 3 en Strike Force, 4 en Onslaught—, cuántas
+  /// **Enhancements** caben —2 en Incursion, 4 en el resto— y el límite de puntos, que aquí se
+  /// deja fuera porque ya lo comprueba [pointsLimit] con un mensaje mejor.
+  ///
+  /// Se leen del dataset en vez de escribirlas a mano, así que si upstream cambia un presupuesto
+  /// esto lo sigue sin tocar nada.
+  void _validateForce(List<Violation> violations) {
+    final node = _force.node;
+    if (node.isEmpty) return;
+    final modifiers = Modifier.allOf(node);
+    // Un ámbito de la fuerza necesita algo a lo que referirse; la configuración vale, porque las
+    // condiciones de estas reglas preguntan justo por ella (qué tamaño de partida se ha elegido).
+    final reference = _configuration.isEmpty
+        ? Selection(entryId: '', name: '', type: 'upgrade', baseCosts: const {})
+        : _configuration.first;
+
+    for (final constraint in _force.constraints) {
+      if (constraint.field == 'selections' || constraint.field == pointsCostTypeId) continue;
+      final limit = _effectiveLimit(constraint, reference, modifiers);
+      if (limit == null || limit < 0) continue;
+
+      final actual = units.fold(0, (total, unit) => total + unit.costOf(constraint.field)) +
+          (constraint.field == Dataset.detachmentPointsCostTypeId
+              ? detachments.fold(0, (total, d) => total + d.detachmentPoints)
+              : 0);
+      final broken = constraint.isMax ? actual > limit : actual < limit;
+      if (!broken) continue;
+      violations.add(Violation(
+          null,
+          constraint.message?.replaceAll('{value}', '$limit') ??
+              (constraint.isMax
+                  ? 'como máximo $limit, hay $actual'
+                  : 'mínimo $limit, hay $actual')));
+    }
   }
 
   void _validateSelection(Selection selection, List<Violation> violations) {
@@ -355,6 +459,8 @@ class Roster {
       List<Violation> violations, String subject) {
     final limit = _effectiveLimit(constraint, selection, modifiers);
     if (limit == null) return;
+    // Un límite negativo es «sin límite»: así lo escribe el dataset en 48 restricciones.
+    if (limit < 0) return;
 
     final broken = constraint.isMax ? actual > limit : actual < limit;
     if (!broken) return;
@@ -385,7 +491,7 @@ class Roster {
         return null;
       }
       if (!modifier.appliesWhen((c) => _holds(c, target))) continue;
-      limit = modifier.applyTo(limit);
+      limit = modifier.applyTo(limit, times: _timesFor(modifier, target));
     }
     return limit;
   }

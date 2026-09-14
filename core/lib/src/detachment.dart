@@ -9,6 +9,7 @@ class Detachment {
     required this.ruleName,
     required this.rule,
     required this.points,
+    required this.detachmentPoints,
   });
 
   final String id;
@@ -21,6 +22,12 @@ class Detachment {
 
   /// Coste en puntos, si lo tiene. La mayoría son gratuitos.
   final int points;
+
+  /// Lo que gasta del presupuesto de Detachment Points del ejército.
+  ///
+  /// Es como 11ª gradúa los detachments: los de 2 y 3 son los de una partida normal, los de 1 son
+  /// pequeños. El presupuesto lo pone el tamaño de partida, así que en Onslaught caben dos.
+  final int detachmentPoints;
 }
 
 /// Una mejora que se asigna a un personaje del ejército.
