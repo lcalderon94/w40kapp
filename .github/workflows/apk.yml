@@ -1,0 +1,55 @@
+# Construye el APK instalable.
+#
+# Va aquí y no en la máquina de desarrollo porque los datos que la app empaqueta se generan: el
+# repositorio guarda los JSON originales de BSData y las traducciones, y el pipeline los junta.
+# Así el APK que sale de aquí siempre lleva la traducción del commit que lo produjo.
+name: APK
+
+on:
+  push:
+    branches: ['**']
+  workflow_dispatch:
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.35.5
+          channel: stable
+          cache: true
+
+      # El motor es Dart puro y se prueba sin Flutter, así que si falla aquí no se sigue.
+      - name: Pruebas del motor
+        working-directory: core
+        run: |
+          dart pub get
+          dart test
+
+      - name: Generar el dataset en español
+        run: ./tool/preparar-datos.sh
+
+      - name: Pruebas de la app
+        working-directory: app
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test
+
+      - name: Construir el APK
+        working-directory: app
+        run: flutter build apk --release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: warorgan-apk
+          path: app/build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error

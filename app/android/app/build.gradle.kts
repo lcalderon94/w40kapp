@@ -20,7 +20,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "es.warorgan.warorgan"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
@@ -32,8 +31,9 @@ android {
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
+            // Se firma con la clave de depuración a propósito: esto se instala a mano, no va a
+            // ninguna tienda, y una clave de verdad obligaría a guardar un secreto para compilar.
+            // El día que haya que publicar, aquí es donde se cambia.
             signingConfig = signingConfigs.getByName("debug")
         }
     }

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Modify this file to customize your launch splash screen -->
+<!-- El fondo que pinta Android hasta que Flutter dibuja. Va en el color de la app: con el blanco
+     que trae Flutter por defecto, cada arranque empieza con un fogonazo blanco, y la carga del
+     dataset dura lo suficiente como para que se note. -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@android:color/white" />
-
-    <!-- You can insert your own image assets here -->
-    <!-- <item>
-        <bitmap
-            android:gravity="center"
-            android:src="@mipmap/launch_image" />
-    </item> -->
+    <item android:drawable="@color/fondo" />
 </layer-list>
