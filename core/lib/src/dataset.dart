@@ -28,15 +28,23 @@ class Dataset {
     if (files.isEmpty) {
       throw ArgumentError('El directorio no contiene ficheros del dataset: ${directory.path}');
     }
+    return fromJson([for (final file in files) await file.readAsString()]);
+  }
 
+  /// Igual, pero a partir del texto de los ficheros en vez de del disco.
+  ///
+  /// Es la puerta que usa la app, donde el dataset viene empaquetado en los assets y no hay
+  /// sistema de ficheros que recorrer. Espera el dataset completo: los ficheros se referencian
+  /// entre ellos, así que con un subconjunto no se resuelve nada.
+  static Dataset fromJson(Iterable<String> contents) {
     final nodesById = <String, Map<String, dynamic>>{};
     final roots = <Map<String, dynamic>>[];
-    for (final file in files) {
-      final decoded = jsonDecode(await file.readAsString()) as Map<String, dynamic>;
-      final root = decoded.values.first as Map<String, dynamic>;
-      roots.add(root);
+    for (final content in contents) {
+      final decoded = jsonDecode(content) as Map<String, dynamic>;
+      roots.add(decoded.values.first as Map<String, dynamic>);
       _index(decoded, nodesById);
     }
+    if (roots.isEmpty) throw ArgumentError('El dataset está vacío');
     return Dataset._(nodesById, roots);
   }
 
@@ -141,6 +149,29 @@ class Dataset {
     }
     return detachments;
   }
+
+  /// Las reglas del reglamento básico, ya traducidas y ordenadas por nombre.
+  ///
+  /// Viven en el fichero del sistema de juego, no en los catálogos, porque no son de ninguna
+  /// facción: son las palabras clave que el jugador se encuentra entre corchetes y tiene que ir a
+  /// buscar. Tenerlas dentro es lo que permite explicarlas sin salir de la app.
+  late final List<Rule> coreRules = () {
+    final rules = <Rule>[];
+    for (final root in _roots) {
+      if (root['type'] != 'gameSystem') continue;
+      for (final raw in (root['sharedRules'] as List? ?? const [])) {
+        final rule = raw as Map<String, dynamic>;
+        final description = rule['description'] as String?;
+        if (description == null || description.isEmpty) continue;
+        rules.add(Rule(
+          id: rule['id'] as String? ?? '',
+          name: rule['name'] as String? ?? '',
+          description: description,
+        ));
+      }
+    }
+    return rules..sort((a, b) => a.name.compareTo(b.name));
+  }();
 
   /// Los tipos de fuerza que declara el sistema de juego.
   ///
@@ -633,6 +664,41 @@ class Dataset {
       }
     }
     return 0;
+  }
+
+  /// Todos los perfiles que hacen falta para la ficha de una unidad.
+  ///
+  /// No basta con los suyos. La línea de características y las habilidades sí cuelgan de la
+  /// unidad, pero **las armas no**: viven en las opciones de sus miniaturas, un par de niveles más
+  /// abajo. Una ficha que solo mire la entrada sale sin armas.
+  ///
+  /// Vienen sin repetir y en el orden en que se encuentran, que deja la línea de la unidad la
+  /// primera. La interfaz los agrupa por [Profile.typeName].
+  List<Profile> sheetOf(UnitEntry unit) {
+    final entry = node(unit.id);
+    if (entry == null) return const [];
+
+    final profiles = <String, Profile>{};
+    final visited = <String>{};
+
+    void collect(Map<String, dynamic> node_, int depth) {
+      if (depth > 4) return;
+      if (!visited.add(node_['id'] as String? ?? '')) return;
+      for (final profile in profilesOf(node_)) {
+        profiles.putIfAbsent('${profile.typeName}|${profile.name}', () => profile);
+      }
+      for (final child in _childLinks(node_)) {
+        collect(child.entry, depth + 1);
+      }
+      for (final group in _groupsOf(node_)) {
+        for (final option in _childLinks(group)) {
+          collect(option.entry, depth + 1);
+        }
+      }
+    }
+
+    collect(entry, 0);
+    return profiles.values.toList();
   }
 
   /// Los perfiles de una entrada, incluidos los que llegan por enlace.

@@ -3,3 +3,5 @@ data/bsdata-es/
 .entregas/
 core/.dart_tool/
 core/pubspec.lock
+app/assets/datos/
+app/pubspec.lock

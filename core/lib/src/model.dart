@@ -113,6 +113,19 @@ class UnitEntry {
   Iterable<Profile> get abilities => profiles.where((p) => p.description != null);
 }
 
+/// Una regla del reglamento básico, ya traducida.
+///
+/// Son las que explican las palabras clave que aparecen entre corchetes en las armas y en las
+/// habilidades —[SUSTAINED HITS], [DEVASTATING WOUNDS], [ANTI-INFANTRY 4+]— y que el jugador tiene
+/// que buscar en el reglamento. Es lo que alimenta la pestaña Wiki.
+class Rule {
+  Rule({required this.id, required this.name, required this.description});
+
+  final String id;
+  final String name;
+  final String description;
+}
+
 /// Un tipo de fuerza: la clase de lista que se está construyendo.
 ///
 /// El sistema declara cuatro —Army Roster, Boarding Actions, Crusade Force y Crusade Army— y una
