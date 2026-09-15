@@ -140,6 +140,25 @@ class ListaEnCurso extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Pone la opción si no está y la quita si ya está.
+  ///
+  /// Es lo que se espera de una casilla: se pulsa para marcar y se vuelve a pulsar para
+  /// desmarcar. Solo añadir deja atrapado al jugador, que no puede deshacer una mejora ni volver a
+  /// dejar un grupo vacío cuando el dataset lo permite.
+  void alternarOpcion(Selection padre, Selection opcion) {
+    final puesta = padre.children.where((h) => h.entryId == opcion.entryId).firstOrNull;
+    if (puesta != null) {
+      padre.children.remove(puesta);
+      notifyListeners();
+      return;
+    }
+    anadirOpcion(padre, opcion);
+  }
+
+  /// La entrada de catálogo de una selección, para poder pintar su hoja de datos.
+  UnitEntry? entradaDe(Selection seleccion) =>
+      faccion.units.where((u) => u.id == seleccion.entryId).firstOrNull;
+
   /// Si de ese grupo solo cabe una cosa, que es lo que lo convierte en un botón de radio.
   bool _soloUna(Selection padre, String groupId) {
     final grupo = padre.groups.where((g) => g.id == groupId).firstOrNull;

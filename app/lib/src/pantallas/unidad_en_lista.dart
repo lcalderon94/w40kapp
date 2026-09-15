@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:warorgan_core/warorgan_core.dart';
 
+import '../datos/repositorio.dart';
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
+import '../widgets/hoja_de_datos.dart';
 
 /// Equipar una unidad de la lista.
 ///
@@ -25,6 +27,7 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
       animation: lista,
       builder: (context, _) {
         final avisos = lista.incumplimientosDe(unidad);
+        final entrada = lista.entradaDe(unidad);
         return Scaffold(
           appBar: AppBar(
             title: Text(unidad.name),
@@ -43,11 +46,44 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 40),
             children: [
               if (avisos.isNotEmpty) _Avisos(avisos: avisos),
+              const _Titulo('Composición y equipo'),
               _Nodo(lista: lista, nodo: unidad, profundidad: 0),
+              // Ver y editar en la misma pantalla: al equipar hace falta saber qué hace el arma
+              // que se elige, y tener que salir a la ficha para averiguarlo es perder el sitio.
+              if (entrada != null)
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                  child: HojaDeDatos(
+                    perfiles: Datos.de(context).sheetOf(entrada),
+                    palabrasClave: entrada.keywords,
+                  ),
+                ),
             ],
           ),
         );
       },
+    );
+  }
+}
+
+class _Titulo extends StatelessWidget {
+  const _Titulo(this.texto);
+
+  final String texto;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      color: Tema.superficieAlta,
+      padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
+      margin: const EdgeInsets.only(top: 8),
+      child: Text(texto.toUpperCase(),
+          style: const TextStyle(
+              color: Tema.acento,
+              fontSize: 11.5,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 1.3)),
     );
   }
 }
@@ -344,7 +380,8 @@ class _Opcion extends StatelessWidget {
     if (radio) {
       return InkWell(
         key: clave,
-        onTap: () => lista.anadirOpcion(dueno, opcion),
+        // Se pulsa para marcar y se vuelve a pulsar para desmarcar.
+        onTap: () => lista.alternarOpcion(dueno, opcion),
         child: Padding(
           padding: margen.add(const EdgeInsets.symmetric(vertical: 8)),
           child: Row(children: [

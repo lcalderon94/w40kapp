@@ -346,8 +346,9 @@ void main() {
       final marines = lista.roster.units.first;
       await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
 
+      // El ListView de fuera: la hoja de datos que va debajo trae los suyos para las tablas.
       await tester.dragUntilVisible(find.text('Plague Marine w/ blight launcher'),
-          find.byType(ListView), const Offset(0, -80));
+          find.byType(ListView).first, const Offset(0, -80));
       final fila = find.ancestor(
           of: find.text('Plague Marine w/ blight launcher'), matching: find.byType(Row));
       await tester.tap(find.descendant(of: fila.first, matching: find.byIcon(Icons.add)));
@@ -371,9 +372,11 @@ void main() {
       await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: principe));
 
       expect(find.text('ENHANCEMENTS'), findsOneWidget);
-      await tester.dragUntilVisible(find.text('Daemon Weapon of Nurgle'),
-          find.byType(ListView), const Offset(0, -80));
-      await tester.tap(find.text('Daemon Weapon of Nurgle'));
+      // El nombre sale dos veces: en el editor y, más abajo, en la hoja de datos. Se toca el del
+      // editor, que es el primero.
+      await tester.dragUntilVisible(find.text('Daemon Weapon of Nurgle').first,
+          find.byType(ListView).first, const Offset(0, -80));
+      await tester.tap(find.text('Daemon Weapon of Nurgle').first);
       await tester.pumpAndSettle();
 
       final id = lista
@@ -382,6 +385,28 @@ void main() {
           .entryId;
       expect(lista.cuantasHay(principe, id), 1);
       expect(find.byIcon(Icons.radio_button_checked), findsWidgets);
+
+      // Y se vuelve a pulsar para quitarla: una casilla que solo sabe marcar deja atrapado al
+      // jugador, que no puede deshacer una mejora que eligió sin querer.
+      await tester.tap(find.text('Daemon Weapon of Nurgle').first);
+      await tester.pumpAndSettle();
+      expect(lista.cuantasHay(principe, id), 0);
+    });
+
+    testWidgets('el editor de una unidad enseña también su hoja de datos', (tester) async {
+      // Ver y editar en la misma pantalla: al elegir un arma hace falta saber qué hace, y salir a
+      // otra pantalla a mirarlo es perder el sitio.
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      final marines = lista.roster.units.first;
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
+
+      expect(find.text('COMPOSICIÓN Y EQUIPO'), findsOneWidget);
+      await tester.dragUntilVisible(find.text('ARMAS A DISTANCIA'),
+          find.byType(ListView).first, const Offset(0, -200));
+      expect(find.text('HABILIDADES'), findsOneWidget);
+      expect(find.text('PALABRAS CLAVE'), findsOneWidget);
     });
 
     testWidgets('se llega al equipo del campeón, que vive dos niveles más abajo',

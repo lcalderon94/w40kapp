@@ -78,7 +78,9 @@ void main() {
     expect(find.text('100 pts'), findsOneWidget);
     expect(find.text('HABILIDADES'), findsOneWidget);
 
-    await tester.scrollUntilVisible(find.text('ARMAS DE CUERPO A CUERPO'), 300);
+    // El de fuera: las tablas de armas traen el suyo propio para poder desplazarse en horizontal.
+    await tester.scrollUntilVisible(find.text('ARMAS DE CUERPO A CUERPO'), 300,
+        scrollable: find.byType(Scrollable).first);
     expect(find.textContaining('Lakrimae'), findsWidgets);
   });
 
@@ -86,7 +88,9 @@ void main() {
     final deathGuard = dataset.factionNamed('Chaos - Death Guard');
     final typhus = deathGuard.units.firstWhere((u) => u.name == 'Typhus');
     await mostrar(tester, PantallaDeUnidad(unidad: typhus, faccion: deathGuard));
-    await tester.scrollUntilVisible(find.text('ARMAS DE CUERPO A CUERPO'), 300);
+    // El de fuera: las tablas de armas traen el suyo propio para poder desplazarse en horizontal.
+    await tester.scrollUntilVisible(find.text('ARMAS DE CUERPO A CUERPO'), 300,
+        scrollable: find.byType(Scrollable).first);
     expect(find.textContaining('➤'), findsNothing);
     expect(find.textContaining('Lakrimae'), findsWidgets);
   });
