@@ -877,6 +877,62 @@ void main() {
     expect(conCuatro / completos, greaterThan(0.99));
   });
 
+  group('unir líderes a unidades', () {
+    test('un líder solo se une a las unidades que dice su hoja de datos', () {
+      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      Selection poner(String nombre) {
+        final s = roster.selectionFor(
+            deathGuard.units.firstWhere((u) => u.name == nombre));
+        roster.add(s);
+        return s;
+      }
+
+      final marines = poner('Plague Marines');
+      final lord = poner('Lord of Virulence');
+      // Su texto nombra Blightlord y Deathshroud Terminators, no Plague Marines.
+      expect(roster.hostsFor(lord), isNot(contains(marines)));
+
+      final blight = poner('Blightlord Terminators');
+      expect(roster.hostsFor(lord), contains(blight));
+
+      roster.attach(lord, blight);
+      expect(roster.leadersOn(blight), contains(lord));
+      // Y ya no cabe otro: la regla deja un líder por unidad.
+      expect(roster.hostsFor(lord), isEmpty);
+    });
+
+    test('quitar la unidad anfitriona separa a su líder en vez de dejarlo colgando', () {
+      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      final blight = roster.selectionFor(
+          deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators'));
+      final lord = roster.selectionFor(
+          deathGuard.units.firstWhere((u) => u.name == 'Lord of Virulence'));
+      roster..add(blight)..add(lord);
+      roster.attach(lord, blight);
+
+      roster.remove(blight);
+      expect(lord.attachedTo, isNull);
+    });
+
+    test('los líderes resuelven objetivos en todas las facciones, no en una', () {
+      var conObjetivos = 0, uniones = 0;
+      for (final faccion in dataset.factions) {
+        for (final u in faccion.units) {
+          if (!dataset.isLeader(u)) continue;
+          final objetivos = dataset.leaderTargets(faccion, u);
+          if (objetivos.isEmpty) continue;
+          conObjetivos++;
+          uniones += objetivos.length;
+        }
+      }
+      expect(conObjetivos, greaterThan(500));
+      expect(uniones, greaterThan(3000),
+          reason: 'si esto se desploma, el texto de la habilidad ha cambiado de forma');
+    });
+  });
+
   group('montar una unidad entera', () {
     test('un modelo trae el arma que le exige el enlace, no solo la que exige el destino', () {
       final roster = Roster(faction: deathGuard, pointsLimit: 2000)

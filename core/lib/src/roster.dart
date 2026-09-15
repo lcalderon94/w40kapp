@@ -99,6 +99,12 @@ class Selection {
 
   Selection? parent;
 
+  /// La unidad a la que este líder se ha unido, si se ha unido a alguna.
+  ///
+  /// No cuelga de ella —cada una sigue pagando sus puntos y llevando su equipo— pero se juega y se
+  /// enseña como una sola cosa, que es lo que dice la regla Leader.
+  Selection? attachedTo;
+
   void addChild(Selection child) {
     child.parent = this;
     children.add(child);
@@ -406,6 +412,14 @@ class Roster {
   int get pointsRemaining => pointsLimit - points;
 
   void add(Selection unit) => units.add(unit);
+
+  /// Quita una unidad y separa lo que estuviera unido a ella, para no dejar huérfanos.
+  void remove(Selection unit) {
+    for (final otra in units) {
+      if (otra.attachedTo == unit) otra.attachedTo = null;
+    }
+    units.remove(unit);
+  }
 
   /// Recalcula el coste de cada selección aplicando los modifiers cuyas condiciones se cumplen.
   ///
@@ -785,6 +799,32 @@ class Roster {
     _validateForce(violations);
     return violations;
   }
+
+  /// Las unidades a las que este líder puede unirse **y que están en la lista**.
+  ///
+  /// Una que ya lleve líder no vale: la regla deja uno por unidad.
+  List<Selection> hostsFor(Selection leader) {
+    final entrada = faction.units.where((u) => u.id == leader.entryId).firstOrNull;
+    if (entrada == null) return const [];
+    final permitidos =
+        faction.dataset.leaderTargets(faction, entrada).map((u) => u.id).toSet();
+    if (permitidos.isEmpty) return const [];
+    return [
+      for (final u in units)
+        if (u != leader &&
+            permitidos.contains(u.entryId) &&
+            !units.any((o) => o.attachedTo == u)) u,
+    ];
+  }
+
+  /// Une un líder a una unidad, o lo separa si [host] es nulo.
+  void attach(Selection leader, Selection? host) {
+    leader.attachedTo = host;
+  }
+
+  /// Los líderes unidos a esta unidad.
+  Iterable<Selection> leadersOn(Selection host) =>
+      units.where((u) => u.attachedTo == host);
 
   /// Cuántos Detachment Points permite el tamaño de partida, o `null` si no se sabe.
   ///

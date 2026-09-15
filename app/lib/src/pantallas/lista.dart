@@ -319,35 +319,67 @@ class _Unidades extends StatelessWidget {
       );
     }
 
+    // Por rol de batalla y en el orden de la hoja de ejército, que es como se lee una lista.
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const Padding(
-          padding: EdgeInsets.fromLTRB(16, 22, 16, 6),
-          child: Text('UNIDADES',
-              style: TextStyle(
-                  color: Tema.acento,
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 1.4)),
-        ),
-        for (final unidad in lista.roster.units) _Unidad(lista: lista, unidad: unidad),
+        for (final grupo in lista.unidadesPorRol) ...[
+          _Rol(grupo.rol, grupo.unidades.length),
+          for (final unidad in grupo.unidades)
+            _Unidad(lista: lista, unidad: unidad),
+        ],
       ],
     );
   }
 }
 
+class _Rol extends StatelessWidget {
+  const _Rol(this.nombre, this.cuantas);
+
+  final String nombre;
+  final int cuantas;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Tema.superficieAlta,
+      padding: const EdgeInsets.fromLTRB(16, 9, 16, 9),
+      margin: const EdgeInsets.only(top: 14),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(nombre.toUpperCase(),
+                style: const TextStyle(
+                    color: Tema.acento,
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1.3)),
+          ),
+          Text('$cuantas',
+              style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
+        ],
+      ),
+    );
+  }
+}
+
 class _Unidad extends StatelessWidget {
-  const _Unidad({required this.lista, required this.unidad});
+  const _Unidad({required this.lista, required this.unidad, this.unida = false});
 
   final ListaEnCurso lista;
   final Selection unidad;
+
+  /// Si va anidada bajo la unidad a la que se ha unido.
+  final bool unida;
 
   @override
   Widget build(BuildContext context) {
     final equipo = unidad.children.where((h) => h.name.isNotEmpty).toList();
     final avisos = lista.incumplimientosDe(unidad);
-    return Dismissible(
+    final lideres = unida ? const <Selection>[] : lista.lideresDe(unidad);
+    final puedeUnirse = !unida && lista.anfitrionesDe(unidad).isNotEmpty;
+
+    final fila = Dismissible(
       key: ObjectKey(unidad),
       direction: DismissDirection.endToStart,
       background: Container(
@@ -358,7 +390,18 @@ class _Unidad extends StatelessWidget {
       ),
       onDismissed: (_) => lista.quitarUnidad(unidad),
       child: ListTile(
-        title: Text(unidad.name, style: const TextStyle(fontSize: 15)),
+        contentPadding: EdgeInsets.only(left: unida ? 34 : 16, right: 8),
+        title: Row(
+          children: [
+            if (unida)
+              const Padding(
+                padding: EdgeInsets.only(right: 6),
+                child: Icon(Icons.subdirectory_arrow_right,
+                    size: 15, color: Tema.textoTenue),
+              ),
+            Expanded(child: Text(unidad.name, style: const TextStyle(fontSize: 15))),
+          ],
+        ),
         subtitle: equipo.isEmpty
             ? null
             : Text(
@@ -376,13 +419,17 @@ class _Unidad extends StatelessWidget {
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            if (unidad.unresolvedCostModifiers > 0)
-              const Padding(
-                padding: EdgeInsets.only(right: 6),
-                child: Tooltip(
-                  message: 'El precio puede quedarse corto: hay un modifier que no se sabe evaluar',
-                  child: Icon(Icons.help_outline, color: Tema.textoTenue, size: 16),
-                ),
+            if (puedeUnirse)
+              IconButton(
+                tooltip: 'Unir a una unidad',
+                icon: const Icon(Icons.link, size: 19, color: Tema.textoTenue),
+                onPressed: () => _elegirAnfitrion(context),
+              ),
+            if (unida)
+              IconButton(
+                tooltip: 'Separar',
+                icon: const Icon(Icons.link_off, size: 19, color: Tema.textoTenue),
+                onPressed: () => lista.unir(unidad, null),
               ),
             Text('${unidad.points} pts',
                 style: const TextStyle(
@@ -395,6 +442,45 @@ class _Unidad extends StatelessWidget {
         )),
       ),
     );
+
+    if (lideres.isEmpty) return fila;
+    // El líder va debajo de su unidad y sangrado: se juegan como una sola cosa.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        fila,
+        for (final lider in lideres)
+          _Unidad(lista: lista, unidad: lider, unida: true),
+      ],
+    );
+  }
+
+  Future<void> _elegirAnfitrion(BuildContext context) async {
+    final candidatos = lista.anfitrionesDe(unidad);
+    final elegido = await showModalBottomSheet<Selection>(
+      context: context,
+      backgroundColor: Tema.superficie,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Text('Unir ${unidad.name} a',
+                  style: const TextStyle(
+                      color: Tema.acento, fontSize: 13, fontWeight: FontWeight.w700)),
+            ),
+            for (final c in candidatos)
+              ListTile(
+                title: Text(c.name),
+                onTap: () => Navigator.of(context).pop(c),
+              ),
+          ],
+        ),
+      ),
+    );
+    if (elegido != null) lista.unir(unidad, elegido);
   }
 }
 

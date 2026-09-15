@@ -1041,3 +1041,52 @@ class Dataset {
     return profiles;
   }
 }
+
+/// A qué unidades puede unirse un líder, leído de su propia hoja de datos.
+///
+/// El dataset no lo modela: lo deja escrito en el texto de la habilidad «Leader», en mayúsculas y
+/// separado por comas o por viñetas. De los 523 nombres que citan los 282 líderes del dataset,
+/// **casan 517 con una unidad real, el 98 %**; los que no, o citan palabras clave en vez de una
+/// unidad concreta («BATTLELINE IMPERIUM INFANTRY») o son erratas de upstream.
+extension Lideres on Dataset {
+  /// Los nombres de unidad que cita la habilidad «Leader» de esta entrada.
+  List<String> leaderTargetNames(UnitEntry unit) {
+    // Con la hoja entera y no solo con los perfiles de la entrada: la habilidad «Leader» cuelga
+    // muchas veces de la miniatura y no de la unidad, un nivel más abajo.
+    for (final perfil in sheetOf(unit)) {
+      if (perfil.name != 'Leader') continue;
+      for (final valor in perfil.characteristics.values) {
+        final cuerpo = valor.contains(':') ? valor.split(':').last : valor;
+        return [
+          for (final trozo in cuerpo.split(RegExp(r'[■•,\n]')))
+            if (_pareceNombre(trozo.trim())) trozo.trim(),
+        ];
+      }
+    }
+    return const [];
+  }
+
+  /// Las unidades de la facción a las que este líder se puede unir.
+  List<UnitEntry> leaderTargets(Faction faction, UnitEntry leader) {
+    final nombres = leaderTargetNames(leader).map(_plano).toSet();
+    if (nombres.isEmpty) return const [];
+    return [
+      for (final u in faction.units)
+        if (nombres.contains(_plano(u.name))) u,
+    ];
+  }
+
+  /// Si es un líder: lo dice su palabra clave, no el texto.
+  bool isLeader(UnitEntry unit) => unit.keywords.contains('Leader');
+}
+
+/// El texto marca los nombres en mayúsculas; lo demás es prosa.
+bool _pareceNombre(String t) =>
+    t.length > 3 && RegExp(r"^[A-ZÁÉÍÓÚÜÑ0-9'’\- ()/]+$").hasMatch(t);
+
+String _plano(String x) {
+  const tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ü': 'u', 'ñ': 'n'};
+  final sinTildes = x.toLowerCase().split('').map((c) => tildes[c] ?? c).join();
+  return sinTildes.replaceAll(RegExp(r'\[(legends|crucible)\]'), '')
+      .replaceAll(RegExp(r'[^a-z0-9]'), '');
+}

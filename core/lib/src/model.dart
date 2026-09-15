@@ -154,6 +154,19 @@ class Force {
         for (final raw in (node['constraints'] as List? ?? const []))
           Constraint.fromNode(raw as Map<String, dynamic>),
       ];
+
+  /// Los roles de batalla, en el orden en que la fuerza los declara.
+  ///
+  /// Es el orden de la hoja de ejército —Epic Hero, Character, Battleline, Infantry…— y no hace
+  /// falta escribirlo a mano: lo dice el dataset. Agrupar por aquí es lo que evita tener que
+  /// buscar una unidad en una lista plana de cientos.
+  List<({String id, String name})> get roles => [
+        for (final raw in (node['categoryLinks'] as List? ?? const []))
+          if ((raw as Map<String, dynamic>)['targetId'] is String &&
+              raw['name'] is String &&
+              raw['name'] != 'Configuration')
+            (id: raw['targetId'] as String, name: raw['name'] as String),
+      ];
 }
 
 /// El tamaño de la partida, que el dataset llama Battle Size.

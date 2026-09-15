@@ -107,7 +107,7 @@ class ListaEnCurso extends ChangeNotifier {
   }
 
   void quitarUnidad(Selection unidad) {
-    roster.units.remove(unidad);
+    roster.remove(unidad);
     notifyListeners();
   }
 
@@ -153,6 +153,38 @@ class ListaEnCurso extends ChangeNotifier {
       return;
     }
     anadirOpcion(padre, opcion);
+  }
+
+  /// Las unidades de la lista agrupadas por rol de batalla, en el orden de la hoja de ejército.
+  ///
+  /// Los líderes unidos a otra unidad no salen por su cuenta: van anidados bajo ella, que es como
+  /// se juegan. El orden lo declara la propia fuerza, no está escrito a mano aquí.
+  List<({String rol, List<Selection> unidades})> get unidadesPorRol {
+    final sueltas = roster.units.where((u) => u.attachedTo == null).toList();
+    final salida = <({String rol, List<Selection> unidades})>[];
+    final puestas = <Selection>{};
+    for (final rol in dataset.standardForce.roles) {
+      final suyas = sueltas
+          .where((u) => !puestas.contains(u) && u.primaryCategoryId == rol.id)
+          .toList();
+      if (suyas.isEmpty) continue;
+      puestas.addAll(suyas);
+      salida.add((rol: rol.name, unidades: suyas));
+    }
+    final resto = sueltas.where((u) => !puestas.contains(u)).toList();
+    if (resto.isNotEmpty) salida.add((rol: 'Otras', unidades: resto));
+    return salida;
+  }
+
+  /// Los líderes unidos a una unidad.
+  List<Selection> lideresDe(Selection unidad) => roster.leadersOn(unidad).toList();
+
+  /// A qué unidades de la lista se puede unir este líder ahora mismo.
+  List<Selection> anfitrionesDe(Selection lider) => roster.hostsFor(lider);
+
+  void unir(Selection lider, Selection? anfitrion) {
+    roster.attach(lider, anfitrion);
+    notifyListeners();
   }
 
   /// La entrada de catálogo de una selección, para poder pintar su hoja de datos.
