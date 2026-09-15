@@ -124,31 +124,121 @@ class Dataset {
     final catalogueId = faction.node['id'] as String? ?? '';
     final detachments = <Detachment>[];
     final seen = <String>{};
-    for (final link in _rootLinks(faction.node)) {
-      final entry = node(link['targetId'] as String? ?? '');
-      if (entry == null || !_isConfiguration(entry)) continue;
-      for (final group in _groupsOf(entry)) {
-        if (!_isDetachmentGroup(group)) continue;
-        for (final option in _childEntries(group)) {
+
+    for (final group in _gruposDeDetachment(faction.node)) {
+      for (final option in _entradasDeDetachment(group)) {
           if (_hiddenForCatalogue(option, catalogueId)) continue;
           if (_isBoardingActions(option) != boardingActions) continue;
           if (!seen.add(option['id'] as String? ?? '')) continue;
           final rule = (option['rules'] as List? ?? const []).isEmpty
               ? null
               : (option['rules'] as List).first as Map<String, dynamic>;
-          detachments.add(Detachment(
-            id: option['id'] as String? ?? '',
-            name: option['name'] as String? ?? '',
-            ruleName: rule?['name'] as String?,
-            rule: rule?['description'] as String?,
-            points: _points(option) ?? 0,
-            detachmentPoints: _costsOf(option)[detachmentPointsCostTypeId] ?? 0,
-          ));
-        }
+        detachments.add(Detachment(
+          id: option['id'] as String? ?? '',
+          name: option['name'] as String? ?? '',
+          ruleName: rule?['name'] as String?,
+          rule: rule?['description'] as String?,
+          points: _points(option) ?? 0,
+          detachmentPoints: _costsOf(option)[detachmentPointsCostTypeId] ?? 0,
+        ));
       }
     }
     return detachments;
   }
+
+  /// El grupo de detachments del que come una facción.
+  ///
+  /// Cada catálogo lista los suyos en su propio grupo «Detachment», y cuando los comparte con
+  /// otra facción no los copia: **enlaza el grupo de su librería**. Tyranids y Genestealer Cults
+  /// enlazan los dos el de Library - Tyranids, y las condiciones de `primary-catalogue` reparten
+  /// cuáles ve cada uno.
+  ///
+  /// Partir del catálogo entero en vez de este grupo era lo que colaba detachments ajenos: un
+  /// ejército de Custodes enlaza Agents of the Imperium para poder llevar sus unidades como
+  /// aliadas, y con ello aparecían los del Ordo Xenos como detachment elegible.
+  ///
+  /// Solo hereda quien no tiene grupo propio: los capítulos de Space Marines no declaran ni uno y
+  /// los suyos viven en el catálogo de Space Marines. Entre varios candidatos se coge el que más
+  /// declare, que es del que cuelga de verdad; el aliado que también se enlaza aporta cinco y
+  /// nunca gana.
+  Iterable<Map<String, dynamic>> _gruposDeDetachment(Map<String, dynamic> catalogue) {
+    final propios = _gruposDetachmentEn(catalogue).toList();
+    if (propios.isNotEmpty) return propios;
+
+    // Solo los que el catálogo enlaza **directamente**. Siguiendo la cadena se llega a catálogos
+    // que la facción ni menciona: Chaos Knights acababa en Chaos Space Marines y enseñaba los
+    // diecisiete suyos en vez de los ocho de su librería.
+    final candidatos = <({Map<String, dynamic> catalogo, List<Map<String, dynamic>> grupos})>[];
+    for (final raw in (catalogue['catalogueLinks'] as List? ?? const [])) {
+      final target = node((raw as Map<String, dynamic>)['targetId'] as String? ?? '');
+      if (target == null) continue;
+      final suyos = _gruposDetachmentEn(target).toList();
+      if (suyos.isNotEmpty) candidatos.add((catalogo: target, grupos: suyos));
+    }
+    if (candidatos.isEmpty) return const [];
+
+    // De quién cuelga se nota en el nombre: «Chaos Knights» tira de «Chaos Knights Library» y no
+    // de «Chaos Daemons Library». Cuando no hay parecido —los capítulos de Space Marines no se
+    // llaman como su catálogo— decide quién declara más: el aliado que también se enlaza aporta
+    // un puñado y nunca gana.
+    final mias = _palabrasDe(catalogue['name'] as String? ?? '');
+    candidatos.sort((a, b) {
+      final ca = _palabrasDe(a.catalogo['name'] as String? ?? '').intersection(mias).length;
+      final cb = _palabrasDe(b.catalogo['name'] as String? ?? '').intersection(mias).length;
+      if (ca != cb) return cb.compareTo(ca);
+      return _cuantosEn(b.grupos).compareTo(_cuantosEn(a.grupos));
+    });
+    return candidatos.first.grupos;
+  }
+
+  /// Las palabras con las que se reconoce un catálogo, sin el bando ni la coletilla de librería.
+  static Set<String> _palabrasDe(String nombre) {
+    final ultimo = nombre.split(' - ').last.replaceAll('Library', '');
+    return {
+      for (final palabra in ultimo.split(RegExp(r'\s+')))
+        if (palabra.length > 3) palabra,
+    };
+  }
+
+  int _cuantosEn(List<Map<String, dynamic>> grupos) =>
+      grupos.fold(0, (total, g) => total + _entradasDeDetachment(g).length);
+
+  /// Los grupos «Detachment» declarados dentro de un catálogo, sin salirse de él.
+  Iterable<Map<String, dynamic>> _gruposDetachmentEn(Map<String, dynamic> catalogue) sync* {
+    for (final nodo in _todoDe(catalogue)) {
+      if (_isDetachmentGroup(nodo)) yield nodo;
+    }
+  }
+
+  /// Los detachments de un grupo: los suyos y los de los grupos que enlaza.
+  ///
+  /// El enlace a otro grupo es como una facción toma prestada la lista de su librería sin
+  /// copiarla, así que sin seguirlo Tyranids y Genestealer Cults se quedan sin ninguno.
+  Iterable<Map<String, dynamic>> _entradasDeDetachment(Map<String, dynamic> group,
+      [Set<String>? seen]) sync* {
+    final visited = seen ?? <String>{};
+    if (!visited.add(group['id'] as String? ?? '')) return;
+    yield* _childEntries(group);
+    for (final enlazado in _groupLinks(group)) {
+      yield* _entradasDeDetachment(enlazado.group, visited);
+    }
+  }
+
+  /// Todo lo que cuelga de un catálogo, sin salirse de él.
+  Iterable<Map<String, dynamic>> _todoDe(Map<String, dynamic> nodo) sync* {
+    yield nodo;
+    for (final clave in const [
+      'selectionEntries',
+      'selectionEntryGroups',
+      'sharedSelectionEntries',
+      'sharedSelectionEntryGroups',
+    ]) {
+      for (final raw in (nodo[clave] as List? ?? const [])) {
+        yield* _todoDe(raw as Map<String, dynamic>);
+      }
+    }
+  }
+
 
   /// Los tipos de coste que solo se usan en Crusade, leídos del propio sistema de juego.
   late final Set<String> crusadeCostTypeIds = {
@@ -474,10 +564,6 @@ class Dataset {
     }
     return false;
   }
-
-  static bool _isConfiguration(Map<String, dynamic> entry) =>
-      (entry['categoryLinks'] as List? ?? const []).any((raw) =>
-          (raw as Map<String, dynamic>)['primary'] == true && raw['name'] == 'Configuration');
 
   /// Los grupos de opciones de un nodo, estén incrustados o lleguen por enlace.
   Iterable<Map<String, dynamic>> _groupsOf(Map<String, dynamic> node_) =>

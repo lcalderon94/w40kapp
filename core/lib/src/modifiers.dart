@@ -134,25 +134,87 @@ class Repeat {
 }
 
 /// Un conjunto de condiciones que se cumplen todas (`and`) o alguna (`or`). Puede anidarse.
+/// Un grupo de condiciones que mira a los **hermanos** de una selección, y en qué orden están.
+///
+/// Es como el dataset sube el precio de las copias repetidas de una misma hoja de datos, que en
+/// 11ª es una regla de verdad: el primer Plagueburst Crawler vale 170 y el segundo 200, el primer
+/// Great Unclean One 265 y el tercero 280. Se escribe como «cuenta las selecciones que estén
+/// **antes** que yo y sean un Plagueburst Crawler; si hay al menos una, suma 30».
+///
+/// La condición `before` no compara nada: marca que solo cuentan las que van delante, que es lo
+/// que convierte la cuenta en «cuál copia soy».
+class LocalConditionGroup {
+  LocalConditionGroup({
+    required this.type,
+    required this.field,
+    required this.scope,
+    required this.value,
+    required this.matches,
+    required this.ordered,
+  });
+
+  final String type;
+  final String field;
+  final String scope;
+  final num value;
+
+  /// Qué cuenta como una de las que se cuentan: los `instanceOf` del grupo.
+  final List<String> matches;
+
+  /// Si solo cuentan las que van delante de esta.
+  final bool ordered;
+
+  static const supportedScopes = {'parent', 'force', 'roster'};
+
+  bool get isSupported =>
+      Condition.supportedTypes.contains(type) &&
+      field == 'selections' &&
+      supportedScopes.contains(scope) &&
+      matches.isNotEmpty;
+
+  bool holdsFor(num actual) => switch (type) {
+        'atLeast' => actual >= value,
+        'atMost' => actual <= value,
+        'equalTo' => actual == value,
+        'notEqualTo' => actual != value,
+        'greaterThan' => actual > value,
+        'lessThan' => actual < value,
+        _ => false,
+      };
+
+  factory LocalConditionGroup.fromNode(Map<String, dynamic> node) {
+    final dentro = [
+      for (final raw in (node['conditions'] as List? ?? const []))
+        raw as Map<String, dynamic>,
+    ];
+    return LocalConditionGroup(
+      type: node['type'] as String? ?? '',
+      field: node['field'] as String? ?? '',
+      scope: node['scope'] as String? ?? '',
+      value: node['value'] as num? ?? 0,
+      matches: [
+        for (final c in dentro)
+          if (c['type'] == 'instanceOf' && c['childId'] is String) c['childId'] as String,
+      ],
+      ordered: dentro.any((c) => c['type'] == 'before'),
+    );
+  }
+}
+
 class ConditionGroup {
   ConditionGroup({
     required this.type,
     required this.conditions,
     required this.groups,
-    this.hasLocalGroups = false,
+    this.localGroups = const [],
   });
 
   final String type; // and | or
   final List<Condition> conditions;
   final List<ConditionGroup> groups;
 
-  /// El grupo contiene `localConditionGroups`, que esta capa todavía no sabe evaluar.
-  ///
-  /// Cuentan cuántas selecciones hermanas cumplen algo («si es el segundo Foetid Bloat-drone del
-  /// destacamento, +10 puntos») usando comparaciones propias como `before` e `instanceOf`. Mientras
-  /// no se implementen, un grupo así se da por no evaluable y su modifier no se aplica: es
-  /// preferible dejar el precio base a inventarse uno.
-  final bool hasLocalGroups;
+  /// Los grupos que miran a los hermanos y su orden. Ver [LocalConditionGroup].
+  final List<LocalConditionGroup> localGroups;
 
   bool get isSupported => isSupportedWith((c) => c.isSupported);
 
@@ -161,11 +223,16 @@ class ConditionGroup {
   /// Sirve para que quien evalúa pueda añadir lo que sepa contestar por su cuenta sin que esta
   /// clase tenga que saberlo: el roster, por ejemplo, sabe de qué tipo es la fuerza.
   bool isSupportedWith(bool Function(Condition) supports) =>
-      !hasLocalGroups && conditions.every(supports) && groups.every((g) => g.isSupportedWith(supports));
+      localGroups.every((g) => g.isSupported) &&
+      conditions.every(supports) &&
+      groups.every((g) => g.isSupportedWith(supports));
 
   factory ConditionGroup.fromNode(Map<String, dynamic> node) => ConditionGroup(
         type: node['type'] as String? ?? 'and',
-        hasLocalGroups: (node['localConditionGroups'] as List? ?? const []).isNotEmpty,
+        localGroups: [
+          for (final raw in (node['localConditionGroups'] as List? ?? const []))
+            LocalConditionGroup.fromNode(raw as Map<String, dynamic>),
+        ],
         conditions: [
           for (final raw in (node['conditions'] as List? ?? const []))
             Condition.fromNode(raw as Map<String, dynamic>),
@@ -184,10 +251,12 @@ class ConditionGroup {
     }
   }
 
-  bool evaluate(bool Function(Condition) test) {
+  bool evaluate(bool Function(Condition) test,
+      [bool Function(LocalConditionGroup)? testLocal]) {
     final results = [
       ...conditions.map(test),
-      ...groups.map((g) => g.evaluate(test)),
+      ...groups.map((g) => g.evaluate(test, testLocal)),
+      ...localGroups.map((g) => testLocal == null ? false : testLocal(g)),
     ];
     if (results.isEmpty) return true;
     return type == 'or' ? results.any((r) => r) : results.every((r) => r);
@@ -283,9 +352,10 @@ class Modifier {
       conditionGroups.every((g) => g.isSupportedWith(supports)) &&
       repeats.every((r) => r.isSupported);
 
-  bool appliesWhen(bool Function(Condition) test) {
+  bool appliesWhen(bool Function(Condition) test,
+      [bool Function(LocalConditionGroup)? testLocal]) {
     if (!conditions.every(test)) return false;
-    return conditionGroups.every((g) => g.evaluate(test));
+    return conditionGroups.every((g) => g.evaluate(test, testLocal));
   }
 
   /// Aplica el cambio sobre un valor numérico, [times] veces.

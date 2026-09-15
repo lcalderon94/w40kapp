@@ -429,7 +429,8 @@ class Roster {
           selection.unresolvedCostModifiers++;
           continue;
         }
-        if (!modifier.appliesWhen((c) => _holds(c, selection))) continue;
+        if (!modifier.appliesWhen(
+            (c) => _holds(c, selection), (g) => _holdsLocal(g, selection))) continue;
         selection.costs[modifier.field] = modifier.applyTo(
             selection.costs[modifier.field] ?? 0,
             times: _timesFor(modifier, selection));
@@ -562,6 +563,30 @@ class Roster {
       includeChildSelections: condition.includeChildSelections,
       target: target,
     ));
+  }
+
+  /// Si se cumple un grupo que mira a los hermanos y a su orden.
+  ///
+  /// Cuenta cuántas selecciones del ámbito van **antes** que esta y son de la misma hoja de datos,
+  /// que es como el dataset sube el precio de las copias repetidas: el segundo Plagueburst Crawler
+  /// vale 30 puntos más que el primero, y el tercer Great Unclean One 15 más que el segundo.
+  bool _holdsLocal(LocalConditionGroup group, Selection target) {
+    final hermanos = switch (group.scope) {
+      'parent' => target.parent?.children ?? units,
+      _ => units,
+    };
+    final donde = hermanos.indexOf(target);
+    // Si no está en la lista todavía —una opción que aún no se ha puesto— cuentan todos.
+    final hasta = donde < 0 || !group.ordered ? hermanos.length : donde;
+
+    var cuantos = 0;
+    for (var i = 0; i < hasta; i++) {
+      final otro = hermanos[i];
+      if (identical(otro, target)) continue;
+      final pega = otro.descendantsAndSelf.any((s) => group.matches.contains(s.entryId));
+      if (pega) cuantos += otro.count;
+    }
+    return group.holdsFor(cuantos);
   }
 
   /// Cuántas veces hay que aplicar un modifier, según sus proporciones.

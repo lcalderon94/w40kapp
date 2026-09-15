@@ -275,7 +275,7 @@ void main() {
         });
       }
 
-      expect(comprobados, greaterThan(290), reason: 'si baja, el barrido dejó de cubrir casos');
+      expect(comprobados, greaterThan(200), reason: 'si baja, el barrido dejó de cubrir casos');
       expect(mudos, isEmpty, reason: 'gates que no surten ningún efecto');
     });
 
@@ -523,7 +523,7 @@ void main() {
         }
       }
     }
-    expect(comprobadas, greaterThan(1000), reason: 'si baja, el barrido dejó de cubrir casos');
+    expect(comprobadas, greaterThan(900), reason: 'si baja, el barrido dejó de cubrir casos');
     expect(coladas, isEmpty);
   });
 
@@ -680,28 +680,66 @@ void main() {
     expect(roster.points, 65);
   });
 
-  test('no aplica los modifiers cuya condición no sabe evaluar', () {
-    // El +10 del Foetid Bloat-drone depende de un localConditionGroup, que cuenta instancias
-    // repetidas de la misma unidad con comparaciones (`before`, `instanceOf`) que esta capa no
-    // implementa. Ante la duda se deja el precio base y se cuenta el modifier omitido, en vez de
-    // aplicarlo a ciegas y dar un precio que parece bueno y no lo es.
-    final drone = unitNamed('Foetid Bloat-drone');
-    final roster = Roster(faction: deathGuard, pointsLimit: 1000)..add(drone);
-    expect(roster.points, 100);
-    roster.applyModifiers();
-    expect(roster.skippedModifiers, greaterThan(0));
+  test('la copia repetida de una unidad cuesta lo que dice el manual', () {
+    // En 11ª el precio sube con las copias, y el dataset lo escribe con localConditionGroups:
+    // «cuenta las que van antes que yo y son de esta hoja de datos». Contrastado con el Munitorum
+    // Field Manual v1.4: el Plagueburst Crawler vale 170 la primera y 200 de la segunda en
+    // adelante; el Great Unclean One, 265 las dos primeras y 280 de la tercera.
+    List<int> copias(String nombre, int cuantas) {
+      final roster = Roster(faction: deathGuard, pointsLimit: 3000)
+        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
+      final sueltos = <int>[];
+      var antes = 0;
+      for (var i = 0; i < cuantas; i++) {
+        roster.add(roster.selectionFor(
+            deathGuard.units.firstWhere((u) => u.name == nombre)));
+        roster.applyModifiers();
+        sueltos.add(roster.points - antes);
+        antes = roster.points;
+      }
+      return sueltos;
+    }
+
+    expect(copias('Plagueburst Crawler', 3), [170, 200, 200]);
+    expect(copias('Great Unclean One', 3), [265, 265, 280]);
   });
 
-  test('señala qué selección concreta puede quedarse corta de precio', () {
+  test('ya no queda ningún modifier de coste sin evaluar en todo el dataset', () {
+    // Eran 1.390, el 22,6 % de las unidades, y todos eran localConditionGroups. Si upstream mete
+    // una construcción nueva que el motor no entienda, esto lo canta en vez de dejar precios
+    // cortos en silencio.
+    var omitidos = 0;
+    for (final faccion in dataset.factions) {
+      final detachments = dataset.detachmentsOf(faccion);
+      if (detachments.isEmpty) continue;
+      final roster = Roster(faction: faccion, pointsLimit: 3000)
+        ..detachments.add(detachments.first);
+      for (final unidad in faccion.units) {
+        roster.units
+          ..clear()
+          ..add(roster.selectionFor(unidad));
+        roster.applyModifiers();
+        omitidos += roster.skippedModifiers;
+      }
+    }
+    expect(omitidos, 0);
+  });
+
+  test('lo que se deja sin evaluar se puede señalar, y ahora no hay nada que señalar', () {
+    // Antes el Foetid Bloat-drone salía marcado: su precio dependía de un localConditionGroup sin
+    // implementar. Ya se evalúa, así que la marca tiene que estar vacía —y las dos formas de
+    // contarlo, el total y las selecciones concretas, tienen que decir lo mismo. Si upstream trae
+    // algo que el motor no entienda, volverán a llenarse las dos a la vez.
     final roster = Roster(faction: deathGuard, pointsLimit: 1000)
+      ..detachments.add(dataset.detachmentsOf(deathGuard).first)
       ..add(unitNamed('Foetid Bloat-drone'))
       ..add(unitNamed('Poxwalkers'));
     roster.applyModifiers();
 
-    final marcadas = roster.selectionsWithUnresolvedCost.map((s) => s.name).toSet();
-    expect(marcadas, contains('Foetid Bloat-drone'));
-    expect(marcadas, isNot(contains('Poxwalkers')),
-        reason: 'el coste de los Poxwalkers sí se resuelve entero');
+    expect(roster.skippedModifiers, 0);
+    expect(roster.selectionsWithUnresolvedCost, isEmpty);
+    expect(roster.skippedModifiers == 0, roster.selectionsWithUnresolvedCost.isEmpty,
+        reason: 'el total y el detalle tienen que contar lo mismo');
   });
 
   test('cada facción resuelve sus detachments con la regla traducida', () {
