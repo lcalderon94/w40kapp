@@ -28,11 +28,18 @@ abstract final class Guardado {
         'limite': roster.pointsLimit,
         'detachments': [for (final d in roster.detachments) d.id],
         'interruptores': roster.shownOptions.toList(),
+        // El índice de la unidad a la que se ha unido cada líder. Guardarlo por posición y no por
+        // id es lo que permite tener dos escuadras iguales y que cada líder vuelva con la suya.
         'unidades': [for (final unit in roster.units) _seleccionAJson(unit)],
+        'uniones': [
+          for (final unit in roster.units)
+            unit.attachedTo == null ? -1 : roster.units.indexOf(unit.attachedTo!),
+        ],
       };
 
   static Map<String, dynamic> _seleccionAJson(Selection selection) => {
         'id': selection.entryId,
+        if (selection.customName != null) 'nombre': selection.customName,
         if (selection.groupId != null) 'grupo': selection.groupId,
         if (selection.count != 1) 'n': selection.count,
         if (selection.children.isNotEmpty)
@@ -95,6 +102,15 @@ abstract final class Guardado {
       }
       roster.add(_montar(roster, unit, guardada, perdidas));
     }
+
+    // Las uniones, ya con todas las unidades puestas. Se guardaron por posición, así que hay que
+    // contar también las que no se han podido montar para no desfasar los índices.
+    final uniones = json['uniones'] as List? ?? const [];
+    for (var i = 0; i < uniones.length && i < roster.units.length; i++) {
+      final donde = (uniones[i] as num?)?.round() ?? -1;
+      if (donde < 0 || donde >= roster.units.length || donde == i) continue;
+      roster.units[i].attachedTo = roster.units[donde];
+    }
     return Recuperada(roster, perdidas);
   }
 
@@ -106,6 +122,7 @@ abstract final class Guardado {
       Roster roster, UnitEntry unit, Map<String, dynamic> guardada, List<String> perdidas) {
     final selection = roster.selectionFor(unit);
     selection.count = (guardada['n'] as num?)?.round() ?? 1;
+    selection.customName = guardada['nombre'] as String?;
     _conciliar(roster, selection, guardada, perdidas);
     return selection;
   }

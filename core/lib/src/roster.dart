@@ -99,6 +99,15 @@ class Selection {
 
   Selection? parent;
 
+  /// El nombre que le ha puesto el jugador, si le ha puesto alguno.
+  ///
+  /// «La Guardia Podrida» en vez de «Blightlord Terminators»: en una lista con tres escuadras
+  /// iguales es la única forma de saber cuál es cuál.
+  String? customName;
+
+  /// Cómo se llama en la lista: el suyo propio si lo tiene, y si no el de su hoja de datos.
+  String get displayName => customName?.isNotEmpty == true ? customName! : name;
+
   /// La unidad a la que este líder se ha unido, si se ha unido a alguna.
   ///
   /// No cuelga de ella —cada una sigue pagando sus puntos y llevando su equipo— pero se juega y se

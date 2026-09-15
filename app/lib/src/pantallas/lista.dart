@@ -28,6 +28,18 @@ class PantallaDeLista extends StatelessWidget {
           appBar: AppBar(
             title: Text(lista.roster.name),
             actions: [
+              // Deshacer y rehacer: quitar una unidad por error y tener que rehacerla a mano es
+              // lo que hace que montar una lista canse.
+              IconButton(
+                icon: const Icon(Icons.undo, size: 20),
+                tooltip: 'Deshacer',
+                onPressed: lista.sePuedeDeshacer ? lista.deshacer : null,
+              ),
+              IconButton(
+                icon: const Icon(Icons.redo, size: 20),
+                tooltip: 'Rehacer',
+                onPressed: lista.sePuedeRehacer ? lista.rehacer : null,
+              ),
               IconButton(
                 icon: const Icon(Icons.ios_share, size: 20),
                 tooltip: 'Exportar',
@@ -399,7 +411,17 @@ class _Unidad extends StatelessWidget {
                 child: Icon(Icons.subdirectory_arrow_right,
                     size: 15, color: Tema.textoTenue),
               ),
-            Expanded(child: Text(unidad.name, style: const TextStyle(fontSize: 15))),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(unidad.displayName, style: const TextStyle(fontSize: 15)),
+                  if (unidad.customName != null)
+                    Text(unidad.name,
+                        style: const TextStyle(color: Tema.textoTenue, fontSize: 11.5)),
+                ],
+              ),
+            ),
           ],
         ),
         subtitle: equipo.isEmpty
@@ -419,6 +441,12 @@ class _Unidad extends StatelessWidget {
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
+            IconButton(
+              tooltip: 'Ponerle nombre',
+              icon: const Icon(Icons.drive_file_rename_outline,
+                  size: 18, color: Tema.textoTenue),
+              onPressed: () => _renombrarUnidad(context),
+            ),
             if (puedeUnirse)
               IconButton(
                 tooltip: 'Unir a una unidad',
@@ -453,6 +481,30 @@ class _Unidad extends StatelessWidget {
           _Unidad(lista: lista, unidad: lider, unida: true),
       ],
     );
+  }
+
+  Future<void> _renombrarUnidad(BuildContext context) async {
+    final control = TextEditingController(text: unidad.customName ?? '');
+    final nuevo = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Tema.superficie,
+        title: Text(unidad.name),
+        content: TextField(
+          controller: control,
+          autofocus: true,
+          decoration: const InputDecoration(hintText: 'La Guardia Podrida'),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.of(context).pop(), child: const Text('Cancelar')),
+          TextButton(
+              onPressed: () => Navigator.of(context).pop(control.text),
+              child: const Text('Guardar')),
+        ],
+      ),
+    );
+    if (nuevo != null) lista.renombrarUnidad(unidad, nuevo);
   }
 
   Future<void> _elegirAnfitrion(BuildContext context) async {

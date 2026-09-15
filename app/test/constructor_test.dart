@@ -177,6 +177,72 @@ void main() {
       expect(avisos(), isNot(contains('2-9 Blightlord Terminators')));
     });
 
+    test('deshacer devuelve la lista a como estaba, y rehacer la trae de vuelta', () {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first);
+      expect(lista.sePuedeDeshacer, isTrue);
+
+      lista.anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Poxwalkers'));
+      final conUnidad = lista.puntos;
+      expect(lista.roster.units, hasLength(1));
+
+      lista.deshacer();
+      expect(lista.roster.units, isEmpty);
+      expect(lista.sePuedeRehacer, isTrue);
+
+      lista.rehacer();
+      expect(lista.roster.units, hasLength(1));
+      expect(lista.puntos, conUnidad);
+    });
+
+    test('una unidad puede llevar nombre propio, y se guarda con la lista', () {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(
+            deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators'));
+      final unidad = lista.roster.units.single;
+      lista.renombrarUnidad(unidad, 'La Guardia Podrida');
+
+      expect(unidad.displayName, 'La Guardia Podrida');
+      expect(unidad.name, 'Blightlord Terminators', reason: 'el de la hoja no se pierde');
+
+      final vuelta = Guardado.deTexto(dataset, lista.paraGuardar).roster;
+      expect(vuelta.units.single.customName, 'La Guardia Podrida');
+    });
+
+    test('las uniones sobreviven al guardado', () {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(
+            deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators'))
+        ..anadirUnidad(
+            deathGuard.units.firstWhere((u) => u.name == 'Lord of Virulence'));
+      final blight = lista.roster.units.first;
+      final lord = lista.roster.units.last;
+      lista.unir(lord, blight);
+
+      final vuelta = Guardado.deTexto(dataset, lista.paraGuardar).roster;
+      final lordVuelto = vuelta.units.firstWhere((u) => u.name == 'Lord of Virulence');
+      expect(lordVuelto.attachedTo?.name, 'Blightlord Terminators');
+    });
+
+    test('el catálogo se agrupa por rol y se puede filtrar por lo que cabe', () {
+      final lista = nuevaLista(puntos: 1000)
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first);
+      final porRol = lista.catalogoPorRol();
+      expect(porRol, isNotEmpty);
+      expect(porRol.map((g) => g.rol), contains('Character'));
+
+      // Con casi nada de presupuesto, el filtro deja fuera lo caro.
+      lista.anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Mortarion'));
+      final caben = lista.catalogoPorRol(soloLasQueCaben: true)
+          .expand((g) => g.unidades)
+          .toList();
+      final todas = lista.catalogoPorRol().expand((g) => g.unidades).toList();
+      expect(caben.length, lessThan(todas.length));
+      expect(caben.every((u) => (u.points ?? 0) <= lista.restantes), isTrue);
+    });
+
     test('el selector no ofrece unidades que la lista no puede llevar', () {
       // Lo que motivó todo esto: los demonios de Nurgle salían en cualquier lista de Death Guard,
       // y el dataset dice que solo entran con Tallyband Summoners.

@@ -20,7 +20,48 @@ class ListaEnCurso extends ChangeNotifier {
   ListaEnCurso.montada({required this.dataset, required this.roster, this.perdidas = const []});
 
   final Dataset dataset;
-  final Roster roster;
+  Roster roster;
+
+  /// Las instantáneas de antes de cada cambio, y las que se deshicieron.
+  ///
+  /// Se guarda el mismo JSON que usa [Guardado], así que deshacer es volver a montar la lista con
+  /// lo que había: no hay una segunda forma de representarla que pueda quedarse desincronizada.
+  final List<Map<String, dynamic>> _antes = [];
+  final List<Map<String, dynamic>> _despues = [];
+
+  bool get sePuedeDeshacer => _antes.isNotEmpty;
+  bool get sePuedeRehacer => _despues.isNotEmpty;
+
+  /// Apunta el estado actual antes de cambiarlo.
+  void _apunta() {
+    _antes.add(Guardado.aJson(roster));
+    if (_antes.length > 50) _antes.removeAt(0);
+    _despues.clear();
+  }
+
+  void _restaurar(Map<String, dynamic> instantanea) {
+    roster = Guardado.deJson(dataset, instantanea).roster;
+    notifyListeners();
+  }
+
+  void deshacer() {
+    if (_antes.isEmpty) return;
+    _despues.add(Guardado.aJson(roster));
+    _restaurar(_antes.removeLast());
+  }
+
+  void rehacer() {
+    if (_despues.isEmpty) return;
+    _antes.add(Guardado.aJson(roster));
+    _restaurar(_despues.removeLast());
+  }
+
+  /// Le pone nombre propio a una unidad de la lista.
+  void renombrarUnidad(Selection unidad, String nombre) {
+    _apunta();
+    unidad.customName = nombre.trim().isEmpty ? null : nombre.trim();
+    notifyListeners();
+  }
 
   /// Lo que estaba guardado y hoy ya no se puede montar. Se enseña una vez, al abrirla.
   final List<String> perdidas;
@@ -43,6 +84,7 @@ class ListaEnCurso extends ChangeNotifier {
   bool estaEncendido(String id) => roster.shownOptions.contains(id);
 
   void cambiarInterruptor(String id, bool encendido) {
+    _apunta();
     if (encendido) {
       roster.shownOptions.add(id);
     } else {
@@ -60,6 +102,7 @@ class ListaEnCurso extends ChangeNotifier {
 
   /// Deja un único detachment puesto. Se usa al elegir el primero.
   void elegirDetachment(Detachment detachment) {
+    _apunta();
     roster.detachments
       ..clear()
       ..add(detachment);
@@ -72,6 +115,7 @@ class ListaEnCurso extends ChangeNotifier {
   /// presupuesto de Detachment Points, que a 2000 puntos son tres. Tallyband Summoners cuesta dos,
   /// así que queda uno por gastar y hay que poder gastarlo.
   void alternarDetachment(Detachment detachment) {
+    _apunta();
     final puesto = roster.detachments.where((d) => d.id == detachment.id).firstOrNull;
     if (puesto != null) {
       roster.detachments.remove(puesto);
@@ -100,6 +144,7 @@ class ListaEnCurso extends ChangeNotifier {
   }
 
   void anadirUnidad(UnitEntry unidad) {
+    _apunta();
     // Del roster, no del dataset: así la unidad entra sin el equipo que solo existe con otro
     // detachment, que si no se cuela y además le cambia las palabras clave.
     roster.add(roster.selectionFor(unidad));
@@ -107,6 +152,7 @@ class ListaEnCurso extends ChangeNotifier {
   }
 
   void quitarUnidad(Selection unidad) {
+    _apunta();
     roster.remove(unidad);
     notifyListeners();
   }
@@ -128,6 +174,7 @@ class ListaEnCurso extends ChangeNotifier {
   /// Apilarlo dejaba la unidad incumpliendo para siempre: el Campeón de la Plaga nace con sus
   /// Plague knives puestas y elegir el Power fist encima ponía dos armas en un grupo de una.
   void anadirOpcion(Selection padre, Selection opcion) {
+    _apunta();
     if (opcion.groupId != null && _soloUna(padre, opcion.groupId!)) {
       padre.children.removeWhere((hijo) => hijo.groupId == opcion.groupId);
     }
@@ -148,6 +195,7 @@ class ListaEnCurso extends ChangeNotifier {
   void alternarOpcion(Selection padre, Selection opcion) {
     final puesta = padre.children.where((h) => h.entryId == opcion.entryId).firstOrNull;
     if (puesta != null) {
+      _apunta();
       padre.children.remove(puesta);
       notifyListeners();
       return;
@@ -221,6 +269,7 @@ class ListaEnCurso extends ChangeNotifier {
   List<Selection> anfitrionesDe(Selection lider) => roster.hostsFor(lider);
 
   void unir(Selection lider, Selection? anfitrion) {
+    _apunta();
     roster.attach(lider, anfitrion);
     notifyListeners();
   }
@@ -245,6 +294,7 @@ class ListaEnCurso extends ChangeNotifier {
 
   /// Quita una. Al llegar a cero desaparece la fila, que dejarla a cero ensucia la ficha.
   void quitarOpcion(Selection padre, String entryId) {
+    _apunta();
     final puesta = padre.children.where((hijo) => hijo.entryId == entryId).firstOrNull;
     if (puesta == null) return;
     if (puesta.count > 1) {
