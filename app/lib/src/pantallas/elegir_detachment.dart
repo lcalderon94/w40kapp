@@ -16,18 +16,43 @@ class PantallaDeElegirDetachment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final detachments = lista.detachmentsDisponibles;
-    return Scaffold(
-      appBar: AppBar(title: const Text('Detachment')),
-      body: detachments.isEmpty
-          ? const Center(
-              child: Text('Esta facción no declara detachments',
-                  style: TextStyle(color: Tema.textoTenue)))
-          : ListView.separated(
-              itemCount: detachments.length,
-              separatorBuilder: (_, __) => const Divider(indent: 16, endIndent: 16),
-              itemBuilder: (context, i) => _Detachment(lista: lista, detachment: detachments[i]),
-            ),
+    return AnimatedBuilder(
+      animation: lista,
+      builder: (context, _) {
+        final detachments = lista.detachmentsDisponibles;
+        final uso = lista.puntosDeDetachment;
+        return Scaffold(
+          appBar: AppBar(
+            title: const Text('Detachment'),
+            actions: [
+              if (uso.presupuesto != null)
+                Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: Center(
+                    child: Text('${uso.gastados}/${uso.presupuesto} DP',
+                        style: TextStyle(
+                            color: uso.gastados > uso.presupuesto!
+                                ? Tema.aviso
+                                : Tema.acento,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700)),
+                  ),
+                ),
+            ],
+          ),
+          body: detachments.isEmpty
+              ? const Center(
+                  child: Text('Esta facción no declara detachments',
+                      style: TextStyle(color: Tema.textoTenue)))
+              : ListView.separated(
+                  itemCount: detachments.length,
+                  separatorBuilder: (_, __) =>
+                      const Divider(indent: 16, endIndent: 16),
+                  itemBuilder: (context, i) =>
+                      _Detachment(lista: lista, detachment: detachments[i]),
+                ),
+        );
+      },
     );
   }
 }
@@ -40,7 +65,8 @@ class _Detachment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final elegido = lista.roster.detachment?.id == detachment.id;
+    final elegido = lista.tieneDetachment(detachment);
+    final cabe = lista.cabeDetachment(detachment);
     final mejoras = lista.dataset
         .enhancementsOf(lista.faccion, detachmentId: detachment.id);
 
@@ -88,20 +114,26 @@ class _Detachment extends StatelessWidget {
               ),
           ],
           const SizedBox(height: 14),
+          // En 11ª caben varios detachments: lo que los limita es el presupuesto de Detachment
+          // Points, no un «elige uno». A 2000 puntos son tres, y Tallyband Summoners cuesta dos,
+          // así que queda uno por gastar y hay que poder gastarlo.
           SizedBox(
             width: double.infinity,
             child: FilledButton(
               style: FilledButton.styleFrom(
                 backgroundColor: elegido ? Tema.superficieAlta : Tema.acento,
-                foregroundColor: elegido ? Tema.textoTenue : Tema.fondo,
+                foregroundColor: elegido ? Tema.texto : Tema.fondo,
+                disabledBackgroundColor: Tema.superficieAlta,
+                disabledForegroundColor: Tema.textoTenue,
               ),
-              onPressed: elegido
+              onPressed: !elegido && !cabe
                   ? null
-                  : () {
-                      lista.elegirDetachment(detachment);
-                      Navigator.of(context).pop();
-                    },
-              child: Text(elegido ? 'Elegido' : 'Elegir este detachment'),
+                  : () => lista.alternarDetachment(detachment),
+              child: Text(elegido
+                  ? 'Quitar'
+                  : cabe
+                      ? 'Añadir'
+                      : 'No caben sus ${detachment.detachmentPoints} DP'),
             ),
           ),
         ],

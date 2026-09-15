@@ -786,6 +786,25 @@ class Roster {
     return violations;
   }
 
+  /// Cuántos Detachment Points permite el tamaño de partida, o `null` si no se sabe.
+  ///
+  /// Son 2 por defecto, 3 en Strike Force y 4 en Onslaught, y no está escrito a mano: lo declara
+  /// la fuerza y lo cambian modifiers según el tamaño elegido.
+  int? get detachmentPointsBudget {
+    final node = _force.node;
+    if (node.isEmpty) return null;
+    final modifiers = Modifier.allOf(node);
+    final reference = _configuration.isEmpty
+        ? Selection(entryId: '', name: '', type: 'upgrade', baseCosts: const {})
+        : _configuration.first;
+    for (final constraint in _force.constraints) {
+      if (constraint.field != Dataset.detachmentPointsCostTypeId || !constraint.isMax) continue;
+      final limit = _effectiveLimit(constraint, reference, modifiers);
+      if (limit != null && limit >= 0) return limit;
+    }
+    return null;
+  }
+
   /// Las reglas que la propia fuerza pone al ejército entero.
   ///
   /// No son de ninguna unidad: las declara el tipo de lista, y en 11ª son tres. El presupuesto de

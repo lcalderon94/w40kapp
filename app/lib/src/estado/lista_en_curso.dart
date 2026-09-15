@@ -58,11 +58,45 @@ class ListaEnCurso extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Deja un único detachment puesto. Se usa al elegir el primero.
   void elegirDetachment(Detachment detachment) {
     roster.detachments
       ..clear()
       ..add(detachment);
     notifyListeners();
+  }
+
+  /// Pone o quita un detachment.
+  ///
+  /// En 11ª un ejército puede llevar más de uno: lo que los limita no es un «elige uno» sino el
+  /// presupuesto de Detachment Points, que a 2000 puntos son tres. Tallyband Summoners cuesta dos,
+  /// así que queda uno por gastar y hay que poder gastarlo.
+  void alternarDetachment(Detachment detachment) {
+    final puesto = roster.detachments.where((d) => d.id == detachment.id).firstOrNull;
+    if (puesto != null) {
+      roster.detachments.remove(puesto);
+    } else {
+      roster.detachments.add(detachment);
+    }
+    notifyListeners();
+  }
+
+  bool tieneDetachment(Detachment detachment) =>
+      roster.detachments.any((d) => d.id == detachment.id);
+
+  /// Cuántos Detachment Points gasta la lista y cuántos permite el tamaño de partida.
+  ({int gastados, int? presupuesto}) get puntosDeDetachment {
+    final gastados = roster.detachments
+        .fold<int>(0, (t, d) => t + d.detachmentPoints);
+    return (gastados: gastados, presupuesto: roster.detachmentPointsBudget);
+  }
+
+  /// Si añadir ese detachment cabe en el presupuesto.
+  bool cabeDetachment(Detachment detachment) {
+    if (tieneDetachment(detachment)) return true;
+    final uso = puntosDeDetachment;
+    if (uso.presupuesto == null) return true;
+    return uso.gastados + detachment.detachmentPoints <= uso.presupuesto!;
   }
 
   void anadirUnidad(UnitEntry unidad) {

@@ -281,9 +281,48 @@ void main() {
       expect(find.text('MEJORAS'), findsOneWidget);
       expect(find.textContaining('Daemon Weapon of Nurgle'), findsOneWidget);
 
-      await tester.tap(find.text('Elegir este detachment'));
+      await tester.tap(find.text('Añadir'));
       await tester.pumpAndSettle();
       expect(lista.roster.detachment!.name, 'Virulent Vectorium');
+    });
+
+    testWidgets('caben varios detachments mientras quepan sus Detachment Points',
+        (tester) async {
+      // A 2000 puntos el presupuesto es de 3 DP. Tallyband Summoners cuesta 2, así que queda uno
+      // por gastar y tiene que poder gastarse; lo que no cabe es un tercero.
+      final lista = nuevaLista(puntos: 2000);
+      await mostrar(tester, PantallaDeElegirDetachment(lista: lista));
+      expect(find.text('0/3 DP'), findsOneWidget);
+
+      Future<void> anadir(String nombre) async {
+        await tester.ensureVisible(find.text(nombre));
+        await tester.pumpAndSettle();
+        await tester.tap(find.text(nombre));
+        await tester.pumpAndSettle();
+        final boton = find.descendant(
+            of: find.ancestor(
+                of: find.text(nombre), matching: find.byType(ExpansionTile)),
+            matching: find.widgetWithText(FilledButton, 'Añadir'));
+        await tester.ensureVisible(boton);
+        await tester.pumpAndSettle();
+        await tester.tap(boton);
+        await tester.pumpAndSettle();
+      }
+
+      await anadir('Tallyband Summoners');
+      expect(lista.puntosDeDetachment.gastados, 2);
+      expect(find.text('2/3 DP'), findsOneWidget);
+
+      await anadir('Contagion Engines');
+      expect(lista.roster.detachments, hasLength(2));
+      expect(find.text('3/3 DP'), findsOneWidget);
+      expect(lista.incumplimientos.map((v) => v.message).join(' '),
+          isNot(contains('máximo')));
+
+      // El siguiente ya no cabe: su botón lo dice y no hace nada.
+      expect(lista.cabeDetachment(
+          lista.detachmentsDisponibles.firstWhere((d) => d.name == 'Flyblown Host')),
+          isFalse);
     });
 
     testWidgets('al añadir unidades se avisa de las que ya no caben', (tester) async {
