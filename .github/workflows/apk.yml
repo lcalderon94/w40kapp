@@ -76,13 +76,20 @@ jobs:
       #
       # Si el secreto no está puesta, el APK sale igual y se firma como antes; lo que no tendrá es
       # continuidad entre versiones.
+      # La comprobación va dentro del shell y no en un `if:`: GitHub no deja leer `secrets` en la
+      # condición de un paso, y ponerlo ahí no falla el paso — falla el fichero entero, así que el
+      # flujo no llega ni a arrancar y no sale ningún APK.
       - name: Poner la clave de firma
-        if: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
         env:
           KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
           CLAVE: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
         run: |
+          if [ -z "$KEYSTORE" ]; then
+            echo "Sin ANDROID_KEYSTORE_BASE64: se firmará con la clave de depuración, que cambia"
+            echo "en cada compilación. Android pedirá desinstalar antes de actualizar."
+            exit 0
+          fi
           echo "$KEYSTORE" | base64 -d > app/android/warorgan.jks
           cat > app/android/key.properties <<FIN
           storeFile=warorgan.jks
