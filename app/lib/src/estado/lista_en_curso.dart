@@ -155,6 +155,44 @@ class ListaEnCurso extends ChangeNotifier {
     anadirOpcion(padre, opcion);
   }
 
+  /// El catálogo agrupado por rol de batalla, en el orden de la hoja de ejército.
+  ///
+  /// Con [soloLasQueCaben] se dejan fuera las que no entran en los puntos que quedan, que es lo
+  /// que evita perder el tiempo mirando lo que no te puedes permitir.
+  List<({String rol, List<UnitEntry> unidades})> catalogoPorRol({
+    String busqueda = '',
+    bool soloLasQueCaben = false,
+  }) {
+    final texto = _sinTildes(busqueda);
+    var todas = unidadesDisponibles;
+    if (texto.isNotEmpty) {
+      todas = todas.where((u) => _sinTildes(u.name).contains(texto)).toList();
+    }
+    if (soloLasQueCaben) {
+      todas = todas.where((u) => (u.points ?? 0) <= restantes).toList();
+    }
+    todas.sort((a, b) => a.name.compareTo(b.name));
+
+    final salida = <({String rol, List<UnitEntry> unidades})>[];
+    final puestas = <String>{};
+    for (final rol in dataset.standardForce.roles) {
+      final suyas = todas
+          .where((u) => !puestas.contains(u.id) && u.role == rol.name)
+          .toList();
+      if (suyas.isEmpty) continue;
+      puestas.addAll(suyas.map((u) => u.id));
+      salida.add((rol: rol.name, unidades: suyas));
+    }
+    final resto = todas.where((u) => !puestas.contains(u.id)).toList();
+    if (resto.isNotEmpty) salida.add((rol: 'Otras', unidades: resto));
+    return salida;
+  }
+
+  static String _sinTildes(String x) {
+    const tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ü': 'u', 'ñ': 'n'};
+    return x.toLowerCase().split('').map((c) => tildes[c] ?? c).join();
+  }
+
   /// Las unidades de la lista agrupadas por rol de batalla, en el orden de la hoja de ejército.
   ///
   /// Los líderes unidos a otra unidad no salen por su cuenta: van anidados bajo ella, que es como

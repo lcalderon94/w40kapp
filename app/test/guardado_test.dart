@@ -93,8 +93,11 @@ void main() {
       });
       await mostrar(tester, const PantallaDeListas());
 
+      // La tarjeta enseña lo que se mira al elegir qué lista abrir: nombre, facción, detachment
+      // y puntos.
       expect(find.text('Los Segadores'), findsOneWidget);
-      expect(find.textContaining('1 unidades'), findsOneWidget);
+      expect(find.text('Death Guard'), findsOneWidget);
+      expect(find.textContaining('/2000 pts'), findsOneWidget);
     });
 
     testWidgets('exportar enseña la lista en texto plano, con sus avisos', (tester) async {

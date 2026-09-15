@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:warorgan_core/warorgan_core.dart';
 
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
@@ -22,21 +23,24 @@ class PantallaDeAnadirUnidad extends StatefulWidget {
 
 class _PantallaDeAnadirUnidadState extends State<PantallaDeAnadirUnidad> {
   String _busqueda = '';
+  bool _soloLasQueCaben = false;
 
   @override
   Widget build(BuildContext context) {
-    final todas = widget.lista.unidadesDisponibles
-      ..sort((a, b) => a.name.compareTo(b.name));
-    final buscado = _busqueda.toLowerCase();
-    final visibles = buscado.isEmpty
-        ? todas
-        : todas.where((u) => u.name.toLowerCase().contains(buscado)).toList();
+    final porRol = widget.lista.catalogoPorRol(
+        busqueda: _busqueda, soloLasQueCaben: _soloLasQueCaben);
     final restantes = widget.lista.restantes;
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Añadir unidad'),
         actions: [
+          IconButton(
+            icon: Icon(Icons.filter_alt_outlined,
+                size: 20, color: _soloLasQueCaben ? Tema.acento : null),
+            tooltip: 'Solo las que caben en $restantes pts',
+            onPressed: () => setState(() => _soloLasQueCaben = !_soloLasQueCaben),
+          ),
           IconButton(
             icon: const Icon(Icons.tune, size: 20),
             tooltip: 'Qué contenido se ofrece',
@@ -64,44 +68,135 @@ class _PantallaDeAnadirUnidadState extends State<PantallaDeAnadirUnidad> {
           ),
         ),
       ),
-      body: ListView.separated(
-        itemCount: visibles.length,
-        separatorBuilder: (_, __) => const Divider(indent: 16, endIndent: 16),
-        itemBuilder: (context, i) {
-          final unidad = visibles[i];
-          final cabe = (unidad.points ?? 0) <= restantes;
-          return ListTile(
-            title: Text(unidad.name,
-                style: TextStyle(fontSize: 15, color: cabe ? Tema.texto : Tema.textoTenue)),
-            subtitle: unidad.role == null
-                ? null
-                : Text(unidad.role!,
-                    style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
-            trailing: Row(
-              mainAxisSize: MainAxisSize.min,
+      body: porRol.isEmpty
+          ? Center(
+              child: Padding(
+                padding: const EdgeInsets.all(32),
+                child: Text(
+                  _soloLasQueCaben
+                      ? 'Nada cabe en los $restantes pts que quedan.'
+                      : 'No hay unidades que ofrecer.',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: Tema.textoTenue),
+                ),
+              ),
+            )
+          // Por rol de batalla, en el orden de la hoja de ejército: buscar entre cientos de
+          // unidades en una lista plana es lo que obliga a usar el buscador para todo.
+          : ListView(
               children: [
-                if (!cabe)
-                  const Padding(
-                    padding: EdgeInsets.only(right: 6),
-                    child: Tooltip(
-                      message: 'No cabe en los puntos que quedan',
-                      child: Icon(Icons.warning_amber_rounded, color: Tema.aviso, size: 15),
-                    ),
+                for (final grupo in porRol)
+                  _GrupoDeRol(
+                    rol: grupo.rol,
+                    unidades: grupo.unidades,
+                    restantes: restantes,
+                    alElegir: (u) {
+                      widget.lista.anadirUnidad(u);
+                      Navigator.of(context).pop();
+                    },
                   ),
-                Text(unidad.points == null ? '—' : '${unidad.points} pts',
-                    style: TextStyle(
-                        color: cabe ? Tema.acento : Tema.textoTenue,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600)),
               ],
             ),
-            onTap: () {
-              widget.lista.anadirUnidad(unidad);
-              Navigator.of(context).pop();
-            },
-          );
-        },
+    );
+  }
+}
+
+/// Un rol de batalla, desplegable, con sus unidades dentro.
+class _GrupoDeRol extends StatefulWidget {
+  const _GrupoDeRol({
+    required this.rol,
+    required this.unidades,
+    required this.restantes,
+    required this.alElegir,
+  });
+
+  final String rol;
+  final List<UnitEntry> unidades;
+  final int restantes;
+  final void Function(UnitEntry) alElegir;
+
+  @override
+  State<_GrupoDeRol> createState() => _GrupoDeRolState();
+}
+
+class _GrupoDeRolState extends State<_GrupoDeRol> {
+  bool _abierto = true;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        InkWell(
+          onTap: () => setState(() => _abierto = !_abierto),
+          child: Container(
+            color: Tema.superficieAlta,
+            padding: const EdgeInsets.fromLTRB(16, 10, 12, 10),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Text(widget.rol.toUpperCase(),
+                      style: const TextStyle(
+                          color: Tema.acento,
+                          fontSize: 11.5,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 1.3)),
+                ),
+                Text('${widget.unidades.length}',
+                    style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
+                Icon(_abierto ? Icons.expand_less : Icons.expand_more,
+                    size: 20, color: Tema.textoTenue),
+              ],
+            ),
+          ),
+        ),
+        if (_abierto)
+          for (final unidad in widget.unidades)
+            _FilaDeUnidad(
+              unidad: unidad,
+              cabe: (unidad.points ?? 0) <= widget.restantes,
+              alElegir: () => widget.alElegir(unidad),
+            ),
+      ],
+    );
+  }
+}
+
+class _FilaDeUnidad extends StatelessWidget {
+  const _FilaDeUnidad(
+      {required this.unidad, required this.cabe, required this.alElegir});
+
+  final UnitEntry unidad;
+  final bool cabe;
+  final VoidCallback alElegir;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      dense: true,
+      title: Text(unidad.name,
+          style: TextStyle(fontSize: 14.5, color: cabe ? Tema.texto : Tema.textoTenue)),
+      trailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (!cabe)
+            const Padding(
+              padding: EdgeInsets.only(right: 6),
+              child: Tooltip(
+                message: 'No cabe en los puntos que quedan',
+                child: Icon(Icons.warning_amber_rounded, color: Tema.aviso, size: 15),
+              ),
+            ),
+          Text(unidad.points == null ? '—' : '${unidad.points} pts',
+              style: TextStyle(
+                  color: cabe ? Tema.acento : Tema.textoTenue,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600)),
+          const SizedBox(width: 4),
+          const Icon(Icons.add, size: 18, color: Tema.textoTenue),
+        ],
       ),
+      onTap: alElegir,
     );
   }
 }

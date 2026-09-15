@@ -103,9 +103,17 @@ class _PantallaDeListasState extends State<PantallaDeListas> {
                 ),
               ),
             )
-          : ListView.separated(
+          // Rejilla de tarjetas: de un vistazo se ve facción, detachment y puntos de cada lista,
+          // que es lo que se mira al elegir cuál abrir.
+          : GridView.builder(
+              padding: const EdgeInsets.fromLTRB(12, 12, 12, 96),
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 260,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                childAspectRatio: 1.15,
+              ),
               itemCount: _listas.length,
-              separatorBuilder: (_, __) => const Divider(indent: 16, endIndent: 16),
               itemBuilder: (context, i) => _Lista(
                 lista: _listas[i],
                 alBorrar: () {
@@ -158,40 +166,120 @@ class _Lista extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final legal = lista.incumplimientos.isEmpty;
-    return Dismissible(
-      key: ObjectKey(lista),
-      direction: DismissDirection.endToStart,
-      background: Container(
-        alignment: Alignment.centerRight,
-        padding: const EdgeInsets.only(right: 24),
-        color: Tema.aviso.withValues(alpha: 0.22),
-        child: const Icon(Icons.delete_outline, color: Tema.aviso),
-      ),
-      onDismissed: (_) => alBorrar(),
-      child: ListTile(
-        title: Text(lista.roster.name, style: const TextStyle(fontSize: 15)),
-        subtitle: Text(
-          '${lista.faccion.name.split(' - ').last} · ${lista.roster.units.length} unidades',
-          style: const TextStyle(color: Tema.textoTenue, fontSize: 12),
-        ),
-        trailing: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(legal ? Icons.check_circle_outline : Icons.error_outline,
-                color: legal ? Tema.acento : Tema.aviso, size: 17),
-            const SizedBox(width: 8),
-            Text('${lista.puntos}/${lista.roster.pointsLimit}',
-                style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600)),
-          ],
-        ),
+    final detachment = lista.roster.detachments.isEmpty
+        ? 'Sin detachment'
+        : lista.roster.detachments.map((d) => d.name).join(' · ');
+
+    return Material(
+      color: Tema.superficieAlta,
+      borderRadius: BorderRadius.circular(6),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(6),
         onTap: () async {
           await Navigator.of(context).push(
             MaterialPageRoute(builder: (_) => PantallaDeLista(lista: lista)),
           );
           alVolver();
         },
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(12, 10, 6, 10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Text(lista.roster.name,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            fontSize: 15.5, fontWeight: FontWeight.w700, height: 1.15)),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.more_horiz, size: 19),
+                    color: Tema.textoTenue,
+                    visualDensity: VisualDensity.compact,
+                    onPressed: () => _menu(context),
+                  ),
+                ],
+              ),
+              const Spacer(),
+              Text(lista.faccion.name.split(' - ').last,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 12.5, color: Tema.texto)),
+              Padding(
+                padding: const EdgeInsets.only(right: 6, top: 1),
+                child: Text(detachment,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontSize: 12, color: Tema.textoTenue)),
+              ),
+              const SizedBox(height: 4),
+              Row(
+                children: [
+                  Icon(legal ? Icons.check_circle_outline : Icons.error_outline,
+                      color: legal ? Tema.acento : Tema.aviso, size: 15),
+                  const SizedBox(width: 5),
+                  Text('${lista.puntos}/${lista.roster.pointsLimit} pts',
+                      style: TextStyle(
+                          fontSize: 12.5,
+                          fontWeight: FontWeight.w600,
+                          color: legal ? Tema.texto : Tema.aviso)),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
+  }
+
+  Future<void> _menu(BuildContext context) async {
+    final accion = await showModalBottomSheet<String>(
+      context: context,
+      backgroundColor: Tema.superficie,
+      builder: (context) => SafeArea(
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          ListTile(
+            leading: const Icon(Icons.drive_file_rename_outline),
+            title: const Text('Renombrar'),
+            onTap: () => Navigator.of(context).pop('renombrar'),
+          ),
+          ListTile(
+            leading: const Icon(Icons.delete_outline, color: Tema.aviso),
+            title: const Text('Borrar', style: TextStyle(color: Tema.aviso)),
+            onTap: () => Navigator.of(context).pop('borrar'),
+          ),
+        ]),
+      ),
+    );
+    if (accion == 'borrar') alBorrar();
+    if (accion == 'renombrar' && context.mounted) await _renombrar(context);
+  }
+
+  Future<void> _renombrar(BuildContext context) async {
+    final control = TextEditingController(text: lista.roster.name);
+    final nuevo = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Tema.superficie,
+        title: const Text('Nombre de la lista'),
+        content: TextField(controller: control, autofocus: true),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.of(context).pop(), child: const Text('Cancelar')),
+          TextButton(
+              onPressed: () => Navigator.of(context).pop(control.text.trim()),
+              child: const Text('Guardar')),
+        ],
+      ),
+    );
+    if (nuevo != null && nuevo.isNotEmpty) {
+      lista.renombrar(nuevo);
+      alVolver();
+    }
   }
 }
 
