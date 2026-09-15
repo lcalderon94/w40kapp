@@ -69,6 +69,29 @@ jobs:
           flutter analyze
           flutter test
 
+      # La clave con la que se firma. Sin ella Gradle usa una de depuración que se genera nueva en
+      # cada runner, así que dos compilaciones firman distinto y Android se niega a instalar la
+      # segunda encima de la primera: «conflicto con un paquete», hay que desinstalar, y
+      # desinstalar se lleva las listas guardadas.
+      #
+      # Si el secreto no está puesta, el APK sale igual y se firma como antes; lo que no tendrá es
+      # continuidad entre versiones.
+      - name: Poner la clave de firma
+        if: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
+        env:
+          KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          CLAVE: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          echo "$KEYSTORE" | base64 -d > app/android/warorgan.jks
+          cat > app/android/key.properties <<FIN
+          storeFile=warorgan.jks
+          storePassword=$CLAVE
+          keyAlias=$ALIAS
+          keyPassword=$CLAVE
+          FIN
+          echo "clave puesta"
+
       - name: Construir el APK
         working-directory: app
         run: flutter build apk --release

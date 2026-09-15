@@ -5,3 +5,8 @@ core/.dart_tool/
 core/pubspec.lock
 app/assets/datos/
 app/pubspec.lock
+
+# La clave de firma nunca va al repositorio.
+app/android/key.properties
+*.jks
+*.keystore
