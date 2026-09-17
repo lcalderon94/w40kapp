@@ -45,6 +45,14 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
           body: ListView(
             padding: const EdgeInsets.only(bottom: 40),
             children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(12, 10, 12, 0),
+                child: BandaDeUnidad(
+                  nombre: unidad.displayName,
+                  subtitulo: unidad.customName != null ? unidad.name : null,
+                  puntos: unidad.points,
+                ),
+              ),
               if (avisos.isNotEmpty) _Avisos(avisos: avisos),
               const _Titulo('Composición y equipo'),
               _Nodo(lista: lista, nodo: unidad, profundidad: 0),

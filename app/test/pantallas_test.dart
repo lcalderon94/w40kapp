@@ -70,11 +70,16 @@ void main() {
     final typhus = deathGuard.units.firstWhere((u) => u.name == 'Typhus');
     await mostrar(tester, PantallaDeUnidad(unidad: typhus, faccion: deathGuard));
 
-    // La línea de características, que es lo que se consulta cada turno.
+    // La línea de características, que es lo que se consulta cada turno. Las etiquetas van en
+    // mayúsculas, como en la hoja impresa.
     expect(find.text('M'), findsOneWidget);
     expect(find.text('T'), findsOneWidget);
-    expect(find.text('Sv'), findsOneWidget);
+    expect(find.text('SV'), findsOneWidget);
+    expect(find.text('OC'), findsOneWidget);
 
+    // El nombre va en la banda de cabecera, en mayúsculas. Sale más de una vez porque «Typhus»
+    // es además una de sus palabras clave.
+    expect(find.text('TYPHUS'), findsWidgets);
     expect(find.text('100 pts'), findsOneWidget);
     expect(find.text('HABILIDADES'), findsOneWidget);
 

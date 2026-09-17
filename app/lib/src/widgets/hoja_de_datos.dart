@@ -4,6 +4,78 @@ import 'package:warorgan_core/warorgan_core.dart';
 import '../tema.dart';
 import 'texto_reglas.dart';
 
+/// La banda con el nombre de la unidad, como el encabezado de la hoja impresa.
+class BandaDeUnidad extends StatelessWidget {
+  const BandaDeUnidad({
+    super.key,
+    required this.nombre,
+    this.rol,
+    this.puntos,
+    this.subtitulo,
+  });
+
+  final String nombre;
+  final String? rol;
+  final int? puntos;
+
+  /// El nombre de la hoja de datos cuando la unidad lleva uno propio.
+  final String? subtitulo;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+      decoration: BoxDecoration(
+        color: Tema.acento.withValues(alpha: 0.16),
+        borderRadius: BorderRadius.circular(6),
+        border: Border(left: BorderSide(color: Tema.acento, width: 4)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(nombre.toUpperCase(),
+                    style: const TextStyle(
+                        fontSize: 21,
+                        fontWeight: FontWeight.w800,
+                        height: 1.1,
+                        letterSpacing: 0.3)),
+              ),
+              if (puntos != null)
+                Padding(
+                  padding: const EdgeInsets.only(left: 10, top: 2),
+                  child: Text('$puntos pts',
+                      style: const TextStyle(
+                          color: Tema.acento, fontSize: 17, fontWeight: FontWeight.w700)),
+                ),
+            ],
+          ),
+          if (subtitulo != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: Text(subtitulo!,
+                  style: const TextStyle(color: Tema.textoTenue, fontSize: 13)),
+            ),
+          if (rol != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: Text(rol!.toUpperCase(),
+                  style: const TextStyle(
+                      color: Tema.textoTenue,
+                      fontSize: 11.5,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 1.2)),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
 /// La hoja de datos de una unidad, tal y como está impresa en el juego.
 ///
 /// El orden es el de la hoja real, porque es el que el jugador ya tiene aprendido: la línea de
@@ -72,31 +144,44 @@ class _LineaDeCaracteristicas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(vertical: 12),
-      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
-      decoration: BoxDecoration(
-        color: Tema.superficie,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          for (final caracteristica in perfil.characteristics.entries)
-            Column(
-              children: [
-                Text(caracteristica.key,
-                    style: const TextStyle(
-                        color: Tema.textoTenue,
-                        fontSize: 10,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 0.8)),
-                const SizedBox(height: 3),
-                Text(caracteristica.value,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
-              ],
-            ),
-        ],
+    // Como en la hoja impresa: la etiqueta pequeña encima y el número grande dentro de su
+    // recuadro. Es lo que se mira en mitad de una partida, así que se lee de lejos.
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            for (final caracteristica in perfil.characteristics.entries)
+              Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: Column(
+                  children: [
+                    Text(caracteristica.key.toUpperCase(),
+                        style: const TextStyle(
+                            color: Tema.textoTenue,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 1)),
+                    const SizedBox(height: 4),
+                    Container(
+                      constraints: const BoxConstraints(minWidth: 52, minHeight: 52),
+                      alignment: Alignment.center,
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      decoration: BoxDecoration(
+                        color: Tema.fondo,
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(color: Tema.superficieAlta, width: 1.5),
+                      ),
+                      child: Text(caracteristica.value,
+                          style: const TextStyle(
+                              fontSize: 22, fontWeight: FontWeight.w700, height: 1)),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
@@ -116,9 +201,9 @@ class _Habilidad extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(perfil.name,
-              style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w700)),
-          const SizedBox(height: 3),
-          TextoDeRegla(texto),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+          const SizedBox(height: 4),
+          TextoDeRegla(texto, estilo: const TextStyle(fontSize: 15, height: 1.4)),
         ],
       ),
     );
@@ -146,7 +231,7 @@ class _TablaDeArmas extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(_sinFlecha(arma.name),
-                    style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w700)),
+                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
                 const SizedBox(height: 4),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -186,20 +271,28 @@ class _Celda extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(right: 6),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      decoration: BoxDecoration(
-        color: Tema.superficie,
-        borderRadius: BorderRadius.circular(7),
-      ),
+    return Padding(
+      padding: const EdgeInsets.only(right: 6),
       child: Column(
         children: [
-          Text(nombre,
+          Text(nombre.toUpperCase(),
               style: const TextStyle(
-                  color: Tema.textoTenue, fontSize: 9.5, fontWeight: FontWeight.w700)),
-          const SizedBox(height: 2),
-          Text(valor, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
+                  color: Tema.textoTenue,
+                  fontSize: 10.5,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0.8)),
+          const SizedBox(height: 3),
+          Container(
+            constraints: const BoxConstraints(minWidth: 46, minHeight: 38),
+            alignment: Alignment.center,
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            decoration: BoxDecoration(
+              color: Tema.superficie,
+              borderRadius: BorderRadius.circular(5),
+            ),
+            child: Text(valor,
+                style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600, height: 1)),
+          ),
         ],
       ),
     );
@@ -240,14 +333,23 @@ class _Seccion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 18, bottom: 10),
+    // Barra llena de lado a lado, como los encabezados de la hoja impresa: separan de un vistazo
+    // las armas de las habilidades sin tener que leer.
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(top: 16, bottom: 8),
+      padding: const EdgeInsets.symmetric(vertical: 9, horizontal: 12),
+      decoration: BoxDecoration(
+        color: Tema.acento.withValues(alpha: 0.14),
+        borderRadius: BorderRadius.circular(4),
+        border: Border(left: BorderSide(color: Tema.acento, width: 3)),
+      ),
       child: Text(titulo.toUpperCase(),
           style: const TextStyle(
               color: Tema.acento,
-              fontSize: 11,
-              fontWeight: FontWeight.w700,
-              letterSpacing: 1.4)),
+              fontSize: 13,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 1.2)),
     );
   }
 }
