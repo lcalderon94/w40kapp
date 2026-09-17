@@ -299,9 +299,16 @@ class Roster {
       final inicial = groupUsage(selection, group);
       if (inicial.minimo == null || inicial.puestas >= inicial.minimo!) continue;
       final delGrupo = optionsFor(selection).where((o) => o.groupId == group.id).toList();
+      // Qué se pone: lo que el dataset marca de serie; si no marca nada, la única opción capaz de
+      // cubrir el grupo ella sola; y si tampoco hay una clara, la primera que ofrezca.
+      //
+      // Esa última es una decisión y conviene decirla: un hueco obligatorio vacío deja la unidad
+      // ilegal desde que entra y obliga a ir a buscarlo, mientras que una elección puesta se ve y
+      // se cambia de un toque. Entre las dos, poner algo es lo que se espera de un constructor.
       final opcion = group.defaultId != null
           ? delGrupo.where((o) => o.entryId == group.defaultId).firstOrNull
-          : _basicaDe(delGrupo, inicial.minimo! - inicial.puestas);
+          : _basicaDe(delGrupo, inicial.minimo! - inicial.puestas) ??
+              delGrupo.firstOrNull;
       if (opcion == null) continue;
 
       // Hasta treinta intentos: es más que cualquier mínimo del dataset y evita que un límite mal

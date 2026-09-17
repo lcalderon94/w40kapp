@@ -1055,6 +1055,60 @@ void main() {
           reason: 'con las dos armas puestas, Wargear ya no incumple');
     });
 
+    test('las unidades llegan con su escuadra completa, en todas las facciones', () {
+      // Lo que se espera de un constructor: una escuadra de cinco entra con cinco, y con su
+      // equipo puesto. Lo que el dataset no marca de serie se rellena con algo legal —el jugador
+      // lo cambia de un toque— porque un hueco obligatorio vacío deja la unidad ilegal desde que
+      // entra y obliga a ir a buscarlo.
+      for (final (faccion, unidad, minis) in [
+        ('Chaos - Death Guard', 'Plague Marines', 5),
+        ('Chaos - Death Guard', 'Poxwalkers', 10),
+        ('Chaos - Death Guard', 'Blightlord Terminators', 3),
+        ('Xenos - Necrons', 'Necron Warriors', 10),
+        ('Xenos - Orks', 'Boyz', 10),
+        ('Xenos - Tyranids', 'Termagants', 10),
+        ('Imperium - Astra Militarum', 'Cadian Shock Troops', 10),
+      ]) {
+        final f = dataset.factionNamed(faccion);
+        final roster = Roster(faction: f, pointsLimit: 3000)
+          ..detachments.add(dataset.detachmentsOf(f).first);
+        final s = roster.selectionFor(f.units.firstWhere((u) => u.name == unidad));
+        roster
+          ..units.clear()
+          ..add(s);
+        final puestas = s.descendantsAndSelf
+            .where((x) => x.type == 'model')
+            .fold<int>(0, (t, x) => t + x.count);
+        expect(puestas, minis, reason: '$unidad debería entrar con $minis miniaturas');
+        expect(roster.validate(), isEmpty, reason: '$unidad entra pidiendo algo');
+      }
+    });
+
+    test('casi ninguna unidad del dataset nace por debajo de un mínimo', () {
+      var cortas = 0;
+      for (final faccion in dataset.factions) {
+        final dets = dataset.detachmentsOf(faccion);
+        if (dets.isEmpty) continue;
+        final roster = Roster(faction: faccion, pointsLimit: 3000)
+          ..detachments.add(dets.first);
+        for (final unidad in faccion.units) {
+          final s = roster.selectionFor(unidad);
+          for (final nodo in s.descendantsAndSelf.toList()) {
+            for (final g in nodo.groups) {
+              final uso = roster.groupUsage(nodo, g);
+              if (uso.minimo != null && uso.puestas < uso.minimo!) {
+                cortas++;
+                break;
+              }
+            }
+          }
+        }
+      }
+      // Eran 728. Las que quedan son grupos cuyas opciones están todas escondidas en ese
+      // detachment, así que no hay nada que poner.
+      expect(cortas, lessThan(80));
+    });
+
     test('una unidad recién añadida llega con el equipo de su hoja de datos', () {
       final roster = Roster(faction: deathGuard, pointsLimit: 2000)
         ..detachments.add(dataset.detachmentsOf(deathGuard).first);
