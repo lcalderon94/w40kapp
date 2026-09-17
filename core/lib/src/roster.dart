@@ -818,12 +818,22 @@ class Roster {
     final permitidos =
         faction.dataset.leaderTargets(faction, entrada).map((u) => u.id).toSet();
     if (permitidos.isEmpty) return const [];
+
+    // Una anfitriona puede llevar un líder **y** una unidad de apoyo, no uno de los dos: lo dice
+    // la regla 19.01 del reglamento. Así que solo estorba lo que ya lleve de la misma clase.
+    final clase = faction.dataset.attachKind(entrada);
     return [
       for (final u in units)
         if (u != leader &&
             permitidos.contains(u.entryId) &&
-            !units.any((o) => o.attachedTo == u)) u,
+            !units.any((o) =>
+                o.attachedTo == u && o != leader && _claseDe(o) == clase)) u,
     ];
+  }
+
+  String? _claseDe(Selection s) {
+    final entrada = faction.units.where((u) => u.id == s.entryId).firstOrNull;
+    return entrada == null ? null : faction.dataset.attachKind(entrada);
   }
 
   /// Une un líder a una unidad, o lo separa si [host] es nulo.

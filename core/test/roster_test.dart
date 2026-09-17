@@ -898,8 +898,40 @@ void main() {
 
       roster.attach(lord, blight);
       expect(roster.leadersOn(blight), contains(lord));
-      // Y ya no cabe otro: la regla deja un líder por unidad.
-      expect(roster.hostsFor(lord), isEmpty);
+
+      // Y ya no cabe un segundo líder ahí: la regla deja uno por unidad anfitriona.
+      final otro = poner('Lord of Contagion');
+      expect(roster.hostsFor(otro), isNot(contains(blight)));
+    });
+
+    test('una unidad puede llevar un líder y una unidad de apoyo a la vez', () {
+      // Regla 19.01 del reglamento: «each bodyguard unit can only have one leader unit and one
+      // support unit attached to it». Son dos clases distintas y no se estorban; contarlas juntas
+      // dejaba fuera la mitad de las uniones legales.
+      final sororitas = dataset.factionNamed('Imperium - Adepta Sororitas');
+      final roster = Roster(faction: sororitas, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(sororitas).first);
+      Selection poner(String nombre) {
+        final s = roster.selectionFor(
+            sororitas.units.firstWhere((u) => u.name == nombre));
+        roster.add(s);
+        return s;
+      }
+
+      final escuadra = poner('Battle Sisters Squad');
+      final canoness = poner('Canoness');        // Leader
+      final hospitaller = poner('Hospitaller');  // Support
+
+      expect(dataset.attachKind(
+          sororitas.units.firstWhere((u) => u.name == 'Canoness')), 'Leader');
+      expect(dataset.attachKind(
+          sororitas.units.firstWhere((u) => u.name == 'Hospitaller')), 'Support');
+
+      roster.attach(canoness, escuadra);
+      // El apoyo sigue cabiendo aunque ya haya un líder.
+      expect(roster.hostsFor(hospitaller), contains(escuadra));
+      roster.attach(hospitaller, escuadra);
+      expect(roster.leadersOn(escuadra), hasLength(2));
     });
 
     test('quitar la unidad anfitriona separa a su líder en vez de dejarlo colgando', () {
@@ -927,8 +959,8 @@ void main() {
           uniones += objetivos.length;
         }
       }
-      expect(conObjetivos, greaterThan(500));
-      expect(uniones, greaterThan(3000),
+      expect(conObjetivos, greaterThan(700));
+      expect(uniones, greaterThan(4000),
           reason: 'si esto se desploma, el texto de la habilidad ha cambiado de forma');
     });
   });

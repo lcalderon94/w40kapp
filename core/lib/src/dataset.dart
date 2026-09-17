@@ -1042,24 +1042,39 @@ class Dataset {
   }
 }
 
-/// A qué unidades puede unirse un líder, leído de su propia hoja de datos.
+/// A qué unidades puede unirse un líder o una unidad de apoyo, leído de su hoja de datos.
 ///
-/// El dataset no lo modela: lo deja escrito en el texto de la habilidad «Leader», en mayúsculas y
-/// separado por comas o por viñetas. De los 523 nombres que citan los 282 líderes del dataset,
-/// **casan 517 con una unidad real, el 98 %**; los que no, o citan palabras clave en vez de una
-/// unidad concreta («BATTLELINE IMPERIUM INFANTRY») o son erratas de upstream.
+/// El dataset no lo modela: lo deja escrito en el texto de la habilidad «Leader» o «Support», y
+/// de dos formas —seguidos por comas y en mayúsculas, o en viñetas con el nombre tal cual—. De los
+/// 523 nombres que citan los 282 líderes, casan 517 con una unidad real, el 98 %.
+///
+/// Las dos clases son distintas y no se estorban: la regla 19.01 del reglamento dice que cada
+/// unidad anfitriona puede llevar **un líder y una unidad de apoyo**, no uno de los dos.
 extension Lideres on Dataset {
-  /// Los nombres de unidad que cita la habilidad «Leader» de esta entrada.
+  static const _clases = ['Leader', 'Support'];
+
+  /// `Leader`, `Support`, o `null` si no se une a nada.
+  String? attachKind(UnitEntry unit) {
+    for (final clase in _clases) {
+      if (unit.keywords.contains(clase)) return clase;
+    }
+    return null;
+  }
+
+  /// Los nombres de unidad que cita su habilidad de unión.
   List<String> leaderTargetNames(UnitEntry unit) {
-    // Con la hoja entera y no solo con los perfiles de la entrada: la habilidad «Leader» cuelga
-    // muchas veces de la miniatura y no de la unidad, un nivel más abajo.
+    // Con la hoja entera y no solo con los perfiles de la entrada: la habilidad cuelga muchas
+    // veces de la miniatura y no de la unidad, un nivel más abajo.
     for (final perfil in sheetOf(unit)) {
-      if (perfil.name != 'Leader') continue;
+      if (!_clases.contains(perfil.name)) continue;
       for (final valor in perfil.characteristics.values) {
         final cuerpo = valor.contains(':') ? valor.split(':').last : valor;
+        // Con viñetas, cada viñeta es un nombre y va tal cual. Sin ellas, los nombres vienen en
+        // mayúsculas y lo demás es prosa.
+        final porVinetas = cuerpo.contains('■') || cuerpo.contains('•');
         return [
           for (final trozo in cuerpo.split(RegExp(r'[■•,\n]')))
-            if (_pareceNombre(trozo.trim())) trozo.trim(),
+            if (_pareceNombre(trozo.trim(), sueltoEnVineta: porVinetas)) trozo.trim(),
         ];
       }
     }
@@ -1076,13 +1091,16 @@ extension Lideres on Dataset {
     ];
   }
 
-  /// Si es un líder: lo dice su palabra clave, no el texto.
-  bool isLeader(UnitEntry unit) => unit.keywords.contains('Leader');
+  /// Si se une a algo: lo dice su palabra clave, no el texto.
+  bool isLeader(UnitEntry unit) => attachKind(unit) != null;
 }
 
-/// El texto marca los nombres en mayúsculas; lo demás es prosa.
-bool _pareceNombre(String t) =>
-    t.length > 3 && RegExp(r"^[A-ZÁÉÍÓÚÜÑ0-9'’\- ()/]+$").hasMatch(t);
+/// Sin viñetas el texto marca los nombres en mayúsculas; con viñetas, cada viñeta ya es un nombre.
+bool _pareceNombre(String t, {required bool sueltoEnVineta}) {
+  if (t.length < 4) return false;
+  if (sueltoEnVineta) return !t.contains(RegExp(r'[.:]'));
+  return RegExp(r"^[A-ZÁÉÍÓÚÜÑ0-9'’\- ()/]+$").hasMatch(t);
+}
 
 String _plano(String x) {
   const tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ü': 'u', 'ñ': 'n'};
