@@ -252,27 +252,25 @@ class _Grupo extends StatelessWidget {
     final incumple = (uso.minimo != null && uso.puestas < uso.minimo!) ||
         (uso.maximo != null && uso.puestas > uso.maximo!);
 
-    // Un grupo cuyas opciones son **miniaturas** es el tamaño de la unidad, no una elección de
-    // equipo: lleva su propio contador arriba, uno solo y para toda la escuadra. Repartirlo entre
-    // las armas —«4 con bólter, 0 con plasma»— obliga a sumar de cabeza para saber si la escuadra
-    // son cinco o son diez, que es lo primero que se decide.
-    final deMiniaturas = mias.isNotEmpty && mias.every((o) => o.type == 'model');
-    final variable = (uso.minimo ?? 0) != (uso.maximo ?? -1);
+    // Un grupo cuyas opciones son **miniaturas** es una escuadra, y eso se edita de otra manera:
+    // arriba cuántas hay, y debajo a cuántas de ellas les cambias el arma. Ver [_Escuadra].
+    if (lista.esGrupoDeMiniaturas(dueno, grupo)) {
+      return _Escuadra(
+        lista: lista,
+        dueno: dueno,
+        grupo: grupo,
+        ofrecidas: ofrecidas,
+        uso: uso,
+        incumple: incumple,
+      );
+    }
 
     return _Caja(
       titulo: grupo.name ?? 'Opciones',
       contador: _contador(uso),
-      pista: deMiniaturas ? _pistaDeMiniaturas(uso) : _pista(uso),
+      pista: _pista(uso),
       incumple: incumple,
       hijos: [
-        if (deMiniaturas)
-          _BarraDeMiniaturas(
-            lista: lista,
-            dueno: dueno,
-            grupo: grupo,
-            uso: uso,
-            fija: !variable,
-          ),
         if (unaSola && mias.isNotEmpty)
           Padding(
             padding: const EdgeInsets.fromLTRB(10, 2, 10, 10),
@@ -317,8 +315,100 @@ class _Grupo extends StatelessWidget {
     return '${uso.puestas} de ${uso.minimo ?? 0}-$tope';
   }
 
-  /// Lo que el dataset pide del tamaño de la escuadra, dicho como lo dice la hoja.
-  String? _pistaDeMiniaturas(({int puestas, int? minimo, int? maximo}) uso) {
+  /// Lo que el dataset pide, dicho en castellano, como en la hoja: «elige una de estas».
+  String? _pista(({int puestas, int? minimo, int? maximo}) uso) {
+    if (uso.maximo == 1) return uso.minimo == 1 ? 'Elige una de estas' : 'Puedes elegir una';
+    if (uso.minimo != null && uso.minimo == uso.maximo) return 'Exactamente ${uso.minimo}';
+    if (uso.maximo != null) return 'Hasta ${uso.maximo}';
+    if (uso.minimo != null) return 'Mínimo ${uso.minimo}';
+    return null;
+  }
+}
+
+/// Una escuadra: cuántas miniaturas tiene y a cuántas de ellas les cambias el arma.
+///
+/// Son dos decisiones distintas y el dataset las mezcla en el mismo montón, que es de donde venía
+/// el lío. Una escuadra de Plague Marines son «9 miniaturas», y aparte «a 2 de ellas les quitas el
+/// bólter y les pones un plasma». Pintándolo todo junto pasaban dos cosas: no se sabía cuántas
+/// miniaturas había sin sumar de cabeza, y al llegar al máximo **no se podía asignar ni un arma**,
+/// porque el hueco ya lo ocupaba la propia miniatura a la que había que cambiársela.
+///
+/// Aquí arriba va el tamaño y debajo los cambios de arma, cada uno empezando en cero. Poner uno no
+/// hace crecer la escuadra: se lo quita al relleno. El techo de cada arma es el **efectivo**, así
+/// que sube solo al crecer la escuadra, que es como el dataset escribe «una por cada cinco
+/// miniaturas»: no con esa frase, sino con un modifier que cambia el techo según cuántas haya.
+class _Escuadra extends StatelessWidget {
+  const _Escuadra({
+    required this.lista,
+    required this.dueno,
+    required this.grupo,
+    required this.ofrecidas,
+    required this.uso,
+    required this.incumple,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final OptionGroup grupo;
+  final List<Selection> ofrecidas;
+  final ({int puestas, int? minimo, int? maximo}) uso;
+  final bool incumple;
+
+  @override
+  Widget build(BuildContext context) {
+    final relleno = lista.rellenoDe(dueno, grupo);
+    // Todo lo que sale de esta escuadra, esté en el grupo o en un subgrupo suyo: las armas
+    // especiales cuelgan de «Special weapons» pero las llevan las mismas miniaturas.
+    final suyas = ofrecidas
+        .where((o) => o.type == 'model')
+        .where((o) => lista.grupoDeMiniaturasDe(dueno, o)?.id == grupo.id)
+        .toList();
+    final cambios = suyas.where((o) => o.entryId != relleno?.entryId).toList();
+
+    // Por subgrupo, que es donde el dataset pone los topes compartidos: «Special weapons, 2».
+    final porSubgrupo = <String?, List<Selection>>{};
+    for (final o in cambios) {
+      porSubgrupo.putIfAbsent(o.groupId == grupo.id ? null : o.groupId, () => []).add(o);
+    }
+
+    return _Caja(
+      titulo: grupo.name ?? 'Escuadra',
+      contador: _contador(),
+      pista: _pista(),
+      incumple: incumple,
+      hijos: [
+        _BarraDeMiniaturas(
+          lista: lista,
+          dueno: dueno,
+          grupo: grupo,
+          uso: uso,
+          fija: (uso.minimo ?? 0) == (uso.maximo ?? -1),
+        ),
+        _Composicion(lista: lista, dueno: dueno, grupo: grupo),
+        for (final entrada in porSubgrupo.entries) ...[
+          _CabeceraDeCambios(
+            lista: lista,
+            dueno: dueno,
+            grupo: grupo,
+            subgrupo: entrada.key == null
+                ? null
+                : dueno.groups.where((g) => g.id == entrada.key).firstOrNull,
+            armas: entrada.value,
+          ),
+          for (final arma in entrada.value)
+            _CambioDeArma(lista: lista, dueno: dueno, opcion: arma),
+        ],
+      ],
+    );
+  }
+
+  String? _contador() {
+    if (uso.minimo == null && uso.maximo == null) return null;
+    if (uso.minimo == uso.maximo) return '${uso.puestas} de ${uso.maximo}';
+    return '${uso.puestas} de ${uso.minimo ?? 0}-${uso.maximo?.toString() ?? "∞"}';
+  }
+
+  String? _pista() {
     if (uso.minimo != null && uso.minimo == uso.maximo) {
       return 'Escuadra fija de ${uso.minimo} miniaturas';
     }
@@ -329,15 +419,174 @@ class _Grupo extends StatelessWidget {
     if (uso.minimo != null) return 'Mínimo ${uso.minimo} miniaturas';
     return null;
   }
+}
 
-  /// Lo que el dataset pide, dicho en castellano, como en la hoja: «elige una de estas».
-  String? _pista(({int puestas, int? minimo, int? maximo}) uso) {
-    if (uso.maximo == 1) return uso.minimo == 1 ? 'Elige una de estas' : 'Puedes elegir una';
-    if (uso.minimo != null && uso.minimo == uso.maximo) return 'Exactamente ${uso.minimo}';
-    if (uso.maximo != null) return 'Hasta ${uso.maximo}';
-    if (uso.minimo != null) return 'Mínimo ${uso.minimo}';
-    return null;
+/// Con qué va la escuadra ahora mismo, miniatura a miniatura.
+///
+/// «9 Plague Marines con Boltgun y Plague knives» mientras no se toque nada, y en cuanto se
+/// reparten armas, una línea por cada grupo distinto: es lo que hay que leer para saber si la
+/// escuadra está montada como se quería.
+class _Composicion extends StatelessWidget {
+  const _Composicion({required this.lista, required this.dueno, required this.grupo});
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final OptionGroup grupo;
+
+  @override
+  Widget build(BuildContext context) {
+    final puestas = dueno.children
+        .where((c) => c.type == 'model')
+        .where((c) => lista.grupoDeMiniaturasDe(dueno, c)?.id == grupo.id)
+        .where((c) => c.count > 0)
+        .toList();
+    if (puestas.isEmpty) return const SizedBox.shrink();
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 6, 12, 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          for (final c in puestas)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 2),
+              child: Text('${c.count} × ${c.name}',
+                  style: const TextStyle(fontSize: 13.5, height: 1.35)),
+            ),
+        ],
+      ),
+    );
   }
+}
+
+/// La frase que dice qué se puede cambiar y a cuántas miniaturas.
+///
+/// El número es el **efectivo de ahora**, no el que trae escrito el dataset: la hoja dice «una por
+/// cada cinco miniaturas» y el dataset lo escribe como un techo que sube solo al crecer la
+/// escuadra. Enseñar la cuenta ya hecha es lo que evita tener que hacerla.
+class _CabeceraDeCambios extends StatelessWidget {
+  const _CabeceraDeCambios({
+    required this.lista,
+    required this.dueno,
+    required this.grupo,
+    required this.subgrupo,
+    required this.armas,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final OptionGroup grupo;
+  final OptionGroup? subgrupo;
+  final List<Selection> armas;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final tope = subgrupo != null
+        ? lista.usoDeGrupo(dueno, subgrupo!).maximo
+        : armas
+            .map((a) => lista.topeDeArma(dueno, a))
+            .whereType<int>()
+            .fold<int?>(null, (t, v) => t == null || v > t ? v : t);
+
+    final texto = tope == null
+        ? 'Cambia el arma de las miniaturas que quieras'
+        : tope == 1
+            ? 'Cambia el arma de 1 miniatura'
+            : 'Cambia el arma de hasta $tope miniaturas';
+
+    return Container(
+      width: double.infinity,
+      color: acento.withValues(alpha: 0.22),
+      padding: const EdgeInsets.fromLTRB(12, 7, 12, 7),
+      child: Text(
+          subgrupo?.name == null ? texto : '${subgrupo!.name} · $texto',
+          style: const TextStyle(fontSize: 12.5, color: Tema.texto, height: 1.3)),
+    );
+  }
+}
+
+/// Una fila de cambio de arma: «0 × Plasma gun», con menos y más.
+class _CambioDeArma extends StatelessWidget {
+  const _CambioDeArma(
+      {required this.lista, required this.dueno, required this.opcion});
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final Selection opcion;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final cuantas = dueno.cuantasDe(opcion);
+    final tope = lista.topeDeArma(dueno, opcion);
+    final puntos = opcion.basePointsEach;
+
+    return Padding(
+      key: ValueKey('arma-${opcion.entryId}'),
+      padding: const EdgeInsets.fromLTRB(8, 4, 8, 4),
+      child: Row(
+        children: [
+          _BotonGrande(
+            icono: Icons.remove,
+            color: acento,
+            activo: cuantas > 0,
+            onPressed: () => lista.devolverArma(dueno, opcion),
+          ),
+          Expanded(
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 6),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+              decoration: BoxDecoration(
+                color: Tema.fondo,
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                children: [
+                  Text('$cuantas × ',
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w800,
+                          color: cuantas > 0 ? acento : Tema.textoTenue)),
+                  Expanded(
+                    child: Text(_sinPrefijo(opcion.name),
+                        style: TextStyle(
+                            fontSize: 14,
+                            height: 1.2,
+                            color: cuantas > 0 ? Tema.texto : Tema.textoTenue)),
+                  ),
+                  if (puntos > 0)
+                    Text('+$puntos',
+                        style: TextStyle(color: acento, fontSize: 12)),
+                  if (tope != null)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8),
+                      child: Text('máx $tope',
+                          style: const TextStyle(color: Tema.textoTenue, fontSize: 11)),
+                    ),
+                ],
+              ),
+            ),
+          ),
+          _BotonGrande(
+            icono: Icons.add,
+            color: acento,
+            activo: lista.sePuedeAsignar(dueno, opcion),
+            onPressed: () => lista.asignarArma(dueno, opcion),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// El dataset llama a las miniaturas «Plague Marine w/ plasma gun»; en una lista de cambios de
+/// arma lo que importa es el arma, y repetir el nombre de la unidad en cada fila es ruido.
+String _sinPrefijo(String nombre) {
+  final corte = nombre.indexOf(RegExp(r'\bw/\s*'));
+  if (corte < 0) return nombre;
+  final arma = nombre.substring(corte).replaceFirst(RegExp(r'^w/\s*'), '').trim();
+  return arma.isEmpty ? nombre : '${arma[0].toUpperCase()}${arma.substring(1)}';
 }
 
 /// El contador de miniaturas de una escuadra: cuántas hay, y menos y más.

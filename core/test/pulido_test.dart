@@ -422,6 +422,141 @@ void main() {
     });
   });
 
+  group('cambiar el arma de una miniatura', () {
+    test('no hace crecer la escuadra: se la quita a una de las que ya hay', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      roster.add(marines);
+      final escuadra =
+          marines.groups.firstWhere((g) => roster.isModelGroup(marines, g));
+
+      // Llena, que es donde antes se atascaba del todo.
+      while (true) {
+        final relleno = roster.defaultOptionFor(marines, escuadra);
+        final uso = roster.groupUsage(marines, escuadra);
+        if (relleno == null ||
+            (uso.maximo != null && uso.puestas >= uso.maximo!) ||
+            !roster.canAdd(marines, relleno)) {
+          break;
+        }
+        final puesta = marines.puestaDe(relleno);
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          marines.addChild(relleno);
+        }
+      }
+      expect(roster.groupUsage(marines, escuadra).puestas, 9);
+      final puntos = roster.points;
+
+      final plasma = roster
+          .optionsFor(marines)
+          .firstWhere((o) => o.name == 'Plague Marine w/ plasma gun');
+      expect(roster.canAssign(marines, plasma), isTrue,
+          reason: 'con la escuadra llena se le sigue pudiendo cambiar el arma a una');
+
+      roster.assign(marines, plasma);
+      expect(marines.cuantasDe(plasma), 1);
+      expect(roster.groupUsage(marines, escuadra).puestas, 9,
+          reason: 'sigue siendo de nueve: no se ha añadido una miniatura');
+      expect(roster.points, puntos, reason: 'y cuesta lo mismo');
+      expect(roster.validate().where((v) => v.selection != null), isEmpty);
+
+      roster.unassign(marines, plasma);
+      expect(marines.cuantasDe(plasma), 0);
+      expect(roster.groupUsage(marines, escuadra).puestas, 9);
+    });
+
+    test('respeta el techo del arma y el de su subgrupo', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      roster.add(marines);
+      final especiales =
+          marines.groups.firstWhere((g) => g.name == 'Special weapons');
+      final tope = roster.groupUsage(marines, especiales).maximo;
+      expect(tope, isNotNull);
+
+      final plasma = roster
+          .optionsFor(marines)
+          .firstWhere((o) => o.name == 'Plague Marine w/ plasma gun');
+      var puestas = 0;
+      while (roster.canAssign(marines, plasma) && puestas < 20) {
+        roster.assign(marines, plasma);
+        puestas++;
+      }
+      expect(roster.groupUsage(marines, especiales).puestas, lessThanOrEqualTo(tope!));
+      expect(roster.validate().where((v) => v.selection != null), isEmpty);
+    });
+
+    test('y deja de atascarse en casi todo el dataset, no solo aquí', () {
+      // Con la escuadra llena, el arma y la miniatura competían por el mismo hueco: en 896 de las
+      // 930 unidades con cambios de arma no se podía asignar ninguno. Las que quedan son las que
+      // ya tienen todas sus armas al tope, que es otra cosa.
+      var conCambios = 0;
+      var atascadas = 0;
+      for (final faccion in dataset.factions) {
+        final roster = Roster(faction: faccion, pointsLimit: 5000)
+          ..battleSize = dataset.battleSizes.firstWhere((b) => b.pointsLimit == 2000);
+        final suyos = dataset.detachmentsOf(faccion);
+        if (suyos.isNotEmpty) roster.detachments.add(suyos.first);
+        for (final entrada in faccion.units) {
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.units
+            ..clear()
+            ..add(unidad);
+          final escuadras =
+              unidad.groups.where((g) => roster.isModelGroup(unidad, g)).toList();
+          if (escuadras.isEmpty) continue;
+          for (final g in escuadras) {
+            var vueltas = 0;
+            while (vueltas++ < 40) {
+              final relleno = roster.defaultOptionFor(unidad, g);
+              final uso = roster.groupUsage(unidad, g);
+              if (relleno == null ||
+                  (uso.maximo != null && uso.puestas >= uso.maximo!) ||
+                  !roster.canAdd(unidad, relleno)) {
+                break;
+              }
+              final puesta = unidad.puestaDe(relleno);
+              if (puesta != null) {
+                puesta.count++;
+              } else {
+                unidad.addChild(relleno);
+              }
+            }
+          }
+          final cambios = roster
+              .optionsFor(unidad)
+              .where((o) => o.type == 'model' && !roster.isFiller(unidad, o))
+              .where((o) => escuadras.any((g) => roster.modelGroupOf(unidad, o)?.id == g.id))
+              .toList();
+          if (cambios.isEmpty) continue;
+          conCambios++;
+          // Atascada de verdad: ni se puede asignar ni está todo al tope. «Al tope» es el suyo
+          // propio —«hasta 2 lanzaplagas»— o el del subgrupo que las comparte, que es donde el
+          // dataset escribe «hasta 3 armas especiales en toda la escuadra».
+          final sinSitio = cambios.every((o) {
+            final tope = roster.effectiveMaxOf(unidad, o);
+            if (tope != null && unidad.cuantasDe(o) >= tope) return true;
+            final suyo = unidad.groups.where((g) => g.id == o.groupId).firstOrNull;
+            if (suyo == null) return false;
+            final uso = roster.groupUsage(unidad, suyo);
+            return uso.maximo != null && uso.puestas >= uso.maximo!;
+          });
+          if (!cambios.any((o) => roster.canAssign(unidad, o)) && !sinSitio) atascadas++;
+        }
+      }
+      expect(conCambios, greaterThan(800));
+      expect(atascadas, 0,
+          reason: 'lo único que impide cambiar un arma es su propio techo');
+    });
+  });
+
   group('ruido del dataset', () {
     test('«Precise» no es una habilidad de la unidad y se va de todas', () {
       // Su texto es «cada vez que se consigue una herida crítica **con esta arma**…», que es la

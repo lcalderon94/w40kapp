@@ -1204,6 +1204,136 @@ class Roster {
     return delGrupo.where((o) => canAdd(owner, o)).firstOrNull ?? delGrupo.first;
   }
 
+  /// Si un grupo es el que decide **cuántas miniaturas** tiene la unidad.
+  ///
+  /// Lo es cuando todo lo que ofrece son miniaturas. Es la diferencia entre las dos formas que
+  /// tiene una hoja de datos de dejarte elegir: una miniatura suelta —el Defiler— elige entre
+  /// varias armas, y una escuadra elige **a cuántas de sus miniaturas** les cambia el arma.
+  bool isModelGroup(Selection owner, OptionGroup group) {
+    final suyas = optionsFor(owner).where((o) => o.groupId == group.id).toList();
+    return suyas.isNotEmpty && suyas.every((o) => o.type == 'model');
+  }
+
+  /// El grupo de miniaturas del que depende una opción: el suyo, o el que lo contiene.
+  ///
+  /// Las armas especiales cuelgan de un subgrupo con su propio techo —«Special weapons, máximo
+  /// 2»— pero las miniaturas que las llevan salen del mismo montón que las demás. Sin subir al
+  /// grupo de fuera no se sabe a quién se le quita el bólter.
+  OptionGroup? modelGroupOf(Selection owner, Selection option) {
+    final cadena = <OptionGroup>[];
+    var grupo = owner.groups.where((g) => g.id == option.groupId).firstOrNull;
+    while (grupo != null) {
+      if (isModelGroup(owner, grupo)) cadena.add(grupo);
+      grupo = owner.groups.where((g) => g.id == grupo!.parentId).firstOrNull;
+    }
+    if (cadena.isEmpty) return null;
+    // El de fuera primero: es donde está el montón de miniaturas. «Special weapons» también es un
+    // grupo de miniaturas, pero las que llevan el plasma salen del mismo sitio que las demás, así
+    // que quedándose en él no habría a quién quitarle el bólter.
+    for (final candidato in cadena.reversed) {
+      final relleno = defaultOptionFor(owner, candidato);
+      if (relleno != null && owner.cuantasDe(relleno) > 0) return candidato;
+    }
+    return cadena.last;
+  }
+
+  /// Si esta opción es el relleno de su escuadra: la miniatura sin nada especial.
+  bool isFiller(Selection owner, Selection option) {
+    final grupo = modelGroupOf(owner, option);
+    if (grupo == null) return false;
+    return defaultOptionFor(owner, grupo)?.entryId == option.entryId;
+  }
+
+  /// Si se le puede cambiar el arma a una miniatura más.
+  ///
+  /// Cambiar un arma **no hace crecer la escuadra**: le quita el bólter a una de las que ya hay.
+  /// Contarlo como una miniatura más era lo que dejaba la unidad bloqueada al llegar al máximo:
+  /// con nueve Plague Marines no se podía poner ni un plasma, porque el hueco ya estaba ocupado
+  /// por el propio marine al que había que quitárselo.
+  ///
+  /// Lo que sí manda es el techo del arma —«hasta 2 lanzaplagas»— y el de su subgrupo, que es
+  /// donde el dataset escribe «por cada 5 miniaturas».
+  bool canAssign(Selection owner, Selection option) {
+    final grupo = modelGroupOf(owner, option);
+    if (grupo == null) return false;
+    final relleno = defaultOptionFor(owner, grupo);
+    if (relleno == null || relleno.entryId == option.entryId) return false;
+    if (owner.cuantasDe(relleno) < 1) return false;
+
+    final puestas = owner.cuantasDe(option);
+    final tope = effectiveMaxOf(owner, option);
+    if (tope != null && puestas >= tope) return false;
+
+    // Y el techo del subgrupo, si sale de uno: «Special weapons, máximo 2».
+    if (option.groupId != null && option.groupId != grupo.id) {
+      final suyo = owner.groups.where((g) => g.id == option.groupId).firstOrNull;
+      if (suyo != null) {
+        final uso = groupUsage(owner, suyo);
+        if (uso.maximo != null && uso.puestas >= uso.maximo!) return false;
+      }
+    }
+    return true;
+  }
+
+  /// Le cambia el arma a una miniatura: una menos de relleno, una más de esta.
+  void assign(Selection owner, Selection option) {
+    if (!canAssign(owner, option)) return;
+    final grupo = modelGroupOf(owner, option)!;
+    final relleno = defaultOptionFor(owner, grupo)!;
+    _quitarUna(owner, relleno);
+    final puesta = owner.puestaDe(option);
+    if (puesta != null) {
+      puesta.count++;
+    } else {
+      owner.addChild(option);
+    }
+  }
+
+  /// Le devuelve el arma de serie: una menos de esta, una más de relleno.
+  void unassign(Selection owner, Selection option) {
+    final grupo = modelGroupOf(owner, option);
+    if (grupo == null) return;
+    if (owner.cuantasDe(option) < 1) return;
+    final relleno = defaultOptionFor(owner, grupo);
+    if (relleno == null || relleno.entryId == option.entryId) return;
+    _quitarUna(owner, option);
+    final puesta = owner.puestaDe(relleno);
+    if (puesta != null) {
+      puesta.count++;
+    } else {
+      owner.addChild(relleno);
+    }
+  }
+
+  void _quitarUna(Selection owner, Selection option) {
+    final puesta = owner.puestaDe(option);
+    if (puesta == null) return;
+    if (puesta.count > 1) {
+      puesta.count--;
+    } else {
+      owner.children.remove(puesta);
+    }
+  }
+
+  /// El techo efectivo de una opción, con los modifiers que lo cambian ya aplicados.
+  ///
+  /// Es el número que hay que enseñar: el dataset escribe «hasta 1 arma pesada» y luego un
+  /// modifier lo sube a 2 cuando la escuadra pasa de cinco, que es como dice «una por cada cinco
+  /// miniaturas». El declarado, a secas, miente en cuanto la escuadra crece.
+  int? effectiveMaxOf(Selection owner, Selection option) {
+    final desde = owner.puestaDe(option) ??
+        (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
+    int? tope;
+    for (final constraint in option.constraints) {
+      if (constraint.field != 'selections' || !constraint.isMax) continue;
+      if (constraint.scope != 'parent' && constraint.scope != 'self') continue;
+      final limit = _effectiveLimit(constraint, desde, option.modifiers);
+      if (limit == null || limit < 0) continue;
+      if (tope == null || limit < tope) tope = limit;
+    }
+    return tope;
+  }
+
   /// Si se puede quitar una de esa opción de debajo de [owner].
   ///
   /// El dataset escribe equipo fijo como un mínimo en la propia opción: las Shearing claws del

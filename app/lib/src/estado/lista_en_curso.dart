@@ -374,6 +374,41 @@ class ListaEnCurso extends ChangeNotifier {
   /// La hoja de datos de lo que esta unidad lleva puesto, no de todo lo que podría llevar.
   List<Profile> hojaDe(Selection unidad) => dataset.sheetOfSelection(unidad);
 
+  /// Si ese grupo decide cuántas miniaturas tiene la unidad.
+  bool esGrupoDeMiniaturas(Selection unidad, OptionGroup grupo) =>
+      roster.isModelGroup(unidad, grupo);
+
+  /// La miniatura de relleno de un grupo: la que hace bulto y a la que se le cambia el arma.
+  Selection? rellenoDe(Selection unidad, OptionGroup grupo) =>
+      roster.defaultOptionFor(unidad, grupo);
+
+  bool esRelleno(Selection unidad, Selection opcion) => roster.isFiller(unidad, opcion);
+
+  /// De qué escuadra sale una opción: su grupo, o el que lo contiene.
+  OptionGroup? grupoDeMiniaturasDe(Selection unidad, Selection opcion) =>
+      roster.modelGroupOf(unidad, opcion);
+
+  /// Le cambia el arma a una miniatura. No hace crecer la escuadra: le quita el bólter a una.
+  void asignarArma(Selection unidad, Selection opcion) {
+    _apunta();
+    roster.assign(unidad, opcion);
+    notifyListeners();
+  }
+
+  /// Le devuelve el arma de serie a una miniatura.
+  void devolverArma(Selection unidad, Selection opcion) {
+    _apunta();
+    roster.unassign(unidad, opcion);
+    notifyListeners();
+  }
+
+  bool sePuedeAsignar(Selection unidad, Selection opcion) =>
+      roster.canAssign(unidad, opcion);
+
+  /// A cuántas miniaturas se les puede poner esa arma como mucho, ahora mismo.
+  int? topeDeArma(Selection unidad, Selection opcion) =>
+      roster.effectiveMaxOf(unidad, opcion);
+
   /// Mete una miniatura más en la escuadra: el soldado raso, no el sargento.
   void anadirMiniatura(Selection unidad, OptionGroup grupo) {
     final opcion = roster.defaultOptionFor(unidad, grupo);
@@ -406,13 +441,18 @@ class ListaEnCurso extends ChangeNotifier {
   }
 
   Selection? _miniaturaQueSobra(Selection unidad, OptionGroup grupo) {
-    final candidatas = roster
+    final delGrupo = roster
         .optionsFor(unidad)
-        .where((o) => o.groupId == grupo.id && unidad.cuantasDe(o) > 0)
+        .where((o) => roster.modelGroupOf(unidad, o)?.id == grupo.id)
+        .where((o) => unidad.cuantasDe(o) > 0)
         .where((o) => roster.canRemove(unidad, o, hayAlternativas: true))
-        .toList()
-      ..sort((a, b) => unidad.cuantasDe(b).compareTo(unidad.cuantasDe(a)));
-    return candidatas.firstOrNull;
+        .toList();
+    // Se quita primero del relleno: es la miniatura sin nada especial, y quitar antes la que
+    // lleva el plasma sería deshacer una elección del jugador para hacer sitio.
+    final relleno = delGrupo.where((o) => roster.isFiller(unidad, o)).firstOrNull;
+    if (relleno != null) return relleno;
+    delGrupo.sort((a, b) => unidad.cuantasDe(b).compareTo(unidad.cuantasDe(a)));
+    return delGrupo.firstOrNull;
   }
 
   /// Cuántas cabe elegir de un grupo y cuántas hay, con los modifiers ya aplicados.

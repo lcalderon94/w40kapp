@@ -438,25 +438,61 @@ void main() {
       expect(find.text('POXWALKERS'), findsWidgets, reason: 'se ha abierto su hoja');
     });
 
-    testWidgets('las miniaturas se suman y se restan con el contador', (tester) async {
+    testWidgets('cambiar un arma no hace crecer la escuadra: se la quita a una',
+        (tester) async {
+      // Era el fallo de fondo: el arma y la miniatura competían por el mismo hueco, así que con
+      // la escuadra llena no se podía asignar ni un arma especial.
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+      final marines = lista.roster.units.first;
+      final escuadra =
+          marines.groups.firstWhere((g) => lista.esGrupoDeMiniaturas(marines, g));
+
+      // Se llena hasta el tope antes de tocar nada, que es donde antes se atascaba.
+      while (lista.cabeOtraMiniatura(marines, escuadra)) {
+        lista.anadirMiniatura(marines, escuadra);
+      }
+      final miniaturas = lista.usoDeGrupo(marines, escuadra).puestas;
+      final puntos = lista.puntos;
+      expect(miniaturas, 9);
+
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
+
+      final lanzador = lista
+          .opcionesDe(marines)
+          .firstWhere((o) => o.name == 'Plague Marine w/ blight launcher');
+      final fila = find.byKey(ValueKey('arma-${lanzador.entryId}'));
+      await tester.dragUntilVisible(fila, find.byType(ListView).first, const Offset(0, -80));
+      await tester.ensureVisible(fila);
+      await tester.pumpAndSettle();
+      await tester.tap(find.descendant(of: fila, matching: find.byIcon(Icons.add)));
+      await tester.pumpAndSettle();
+
+      expect(lista.cuantasHay(marines, lanzador), 1);
+      expect(lista.usoDeGrupo(marines, escuadra).puestas, miniaturas,
+          reason: 'la escuadra sigue siendo de nueve');
+      expect(lista.puntos, puntos, reason: 'y cuesta lo mismo: no hay una miniatura más');
+
+      // Y el «−» le devuelve el bólter.
+      await tester.tap(find.descendant(of: fila, matching: find.byIcon(Icons.remove)));
+      await tester.pumpAndSettle();
+      expect(lista.cuantasHay(marines, lanzador), 0);
+      expect(lista.usoDeGrupo(marines, escuadra).puestas, miniaturas);
+    });
+
+    testWidgets('y la pantalla dice a cuántas miniaturas se les puede cambiar',
+        (tester) async {
       final lista = nuevaLista()
         ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
         ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
       final marines = lista.roster.units.first;
       await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
 
-      // El ListView de fuera: la hoja de datos que va debajo trae los suyos para las tablas.
-      await tester.dragUntilVisible(find.text('Plague Marine w/ blight launcher'),
-          find.byType(ListView).first, const Offset(0, -80));
-      final fila = find.ancestor(
-          of: find.text('Plague Marine w/ blight launcher'), matching: find.byType(Row));
-      await tester.tap(find.descendant(of: fila.first, matching: find.byIcon(Icons.add)));
-      await tester.pumpAndSettle();
-
-      final lanzador = lista
-          .opcionesDe(marines)
-          .firstWhere((o) => o.name == 'Plague Marine w/ blight launcher');
-      expect(lista.cuantasHay(marines, lanzador), 1);
+      // El número es el efectivo de ahora, no el declarado: el dataset escribe «una por cada
+      // cinco miniaturas» como un techo que sube al crecer la escuadra.
+      expect(find.textContaining('Cambia el arma de'), findsWidgets);
+      expect(find.textContaining('miniaturas'), findsWidgets);
     });
 
     testWidgets('una mejora se elige marcándola, porque solo cabe una', (tester) async {
