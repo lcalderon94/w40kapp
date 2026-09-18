@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../tema.dart';
+import 'buscar.dart';
 import 'facciones.dart';
 import 'listas.dart';
 import 'wiki.dart';
@@ -25,7 +26,12 @@ class _PantallaDeInicioState extends State<PantallaDeInicio> {
     return Scaffold(
       body: IndexedStack(
         index: _pestana,
-        children: const [PantallaDeListas(), PantallaDeFacciones(), PantallaDeWiki()],
+        children: const [
+          PantallaDeListas(),
+          PantallaDeFacciones(),
+          PantallaDeBuscar(),
+          PantallaDeWiki(),
+        ],
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _pestana,
@@ -43,6 +49,11 @@ class _PantallaDeInicioState extends State<PantallaDeInicio> {
             icon: Icon(Icons.shield_outlined),
             selectedIcon: Icon(Icons.shield, color: Tema.acento),
             label: 'Ejércitos',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.search_outlined),
+            selectedIcon: Icon(Icons.search, color: Tema.acento),
+            label: 'Buscar',
           ),
           NavigationDestination(
             icon: Icon(Icons.menu_book_outlined),

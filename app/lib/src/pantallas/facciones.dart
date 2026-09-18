@@ -5,18 +5,20 @@ import '../datos/repositorio.dart';
 import '../tema.dart';
 import 'unidades.dart';
 
-/// Las 36 facciones jugables, por familia y con buscador.
+/// Elegir ejército: por familia y de un vistazo.
 ///
-/// El dataset las nombra «Imperium - Adeptus Astartes - White Scars», que es exacto y se lee fatal
-/// en una lista. Se parte por el guion: la familia queda de cabecera y la facción se queda con su
-/// nombre corto, que es el que el jugador tiene en la cabeza.
+/// Son 36 y en una lista plana hay que recorrerla entera. Aquí van en cuatro bloques —Chaos,
+/// Imperium, Space Marines y Xenos— y cada uno como botones que caben en dos o tres filas, así que
+/// se ve todo sin desplazar y se elige de un toque.
 ///
-/// La familia son **los dos primeros tramos cuando hay tres**, no solo el primero. Así los doce
-/// capítulos de Space Marines quedan juntos bajo Adeptus Astartes en vez de repartidos entre las
-/// dieciséis facciones del Imperium, que es lo que obligaba a recorrer la lista entera para dar
-/// con los Ultramarines. Sale del propio nombre, no de una tabla escrita a mano.
+/// La familia sale del propio nombre del dataset: «Imperium - Adeptus Astartes - Ultramarines» es
+/// de Space Marines y «Chaos - Death Guard» de Chaos. No hay ninguna tabla que mantener.
 class PantallaDeFacciones extends StatefulWidget {
-  const PantallaDeFacciones({super.key});
+  const PantallaDeFacciones({super.key, this.alElegir, this.titulo = 'Ejércitos'});
+
+  /// Qué hacer al elegir. Sin esto se abre el catálogo de la facción.
+  final void Function(BuildContext, Faction)? alElegir;
+  final String titulo;
 
   @override
   State<PantallaDeFacciones> createState() => _PantallaDeFaccionesState();
@@ -29,9 +31,9 @@ class _PantallaDeFaccionesState extends State<PantallaDeFacciones> {
   Widget build(BuildContext context) {
     var facciones = Datos.de(context).factions;
     if (_busqueda.trim().isNotEmpty) {
-      final texto = _sinTildes(_busqueda);
+      final texto = sinTildes(_busqueda);
       facciones =
-          facciones.where((f) => _sinTildes(f.name).contains(texto)).toList();
+          facciones.where((f) => sinTildes(f.name).contains(texto)).toList();
     }
 
     final porFamilia = <String, List<Faction>>{};
@@ -41,11 +43,11 @@ class _PantallaDeFaccionesState extends State<PantallaDeFacciones> {
     final familias = porFamilia.keys.toList()..sort(_ordenDeFamilia);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Ejércitos')),
+      appBar: AppBar(title: Text(widget.titulo)),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
             child: TextField(
               key: const ValueKey('buscar-faccion'),
               onChanged: (texto) => setState(() => _busqueda = texto),
@@ -54,7 +56,6 @@ class _PantallaDeFaccionesState extends State<PantallaDeFacciones> {
                 hintText: 'Buscar ejército',
                 prefixIcon: Icon(Icons.search, size: 20),
                 isDense: true,
-                border: OutlineInputBorder(),
               ),
             ),
           ),
@@ -63,100 +64,172 @@ class _PantallaDeFaccionesState extends State<PantallaDeFacciones> {
                 ? const Center(
                     child: Text('Ningún ejército con ese nombre',
                         style: TextStyle(color: Tema.textoTenue)))
-                : ListView.builder(
-                    itemCount: familias.length,
-                    itemBuilder: (context, i) {
-                      final nombre = familias[i];
-                      final suyas = porFamilia[nombre]!
-                        ..sort((a, b) => corto(a.name).compareTo(corto(b.name)));
-                      return _Familia(
-                          nombre: nombre,
-                          facciones: suyas,
-                          abierta: _busqueda.trim().isNotEmpty);
-                    },
+                : ListView(
+                    padding: const EdgeInsets.only(bottom: 24),
+                    children: [
+                      for (final nombre in familias) ...[
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                          child: Text(nombre.toUpperCase(),
+                              style: const TextStyle(
+                                  color: Tema.textoTenue,
+                                  fontSize: 11.5,
+                                  fontWeight: FontWeight.w800,
+                                  letterSpacing: 1.4)),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 12),
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: Tema.superficie,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: [
+                              for (final faccion in porFamilia[nombre]!
+                                ..sort((a, b) => corto(a.name).compareTo(corto(b.name))))
+                                _Chip(
+                                  faccion: faccion,
+                                  alElegir: widget.alElegir ?? _abrirCatalogo,
+                                ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ],
                   ),
           ),
         ],
       ),
     );
   }
+
+  void _abrirCatalogo(BuildContext context, Faction faccion) =>
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (_) => PantallaDeUnidades(faccion: faccion),
+      ));
 }
 
-/// Una familia, plegable. Empieza cerrada y se abre sola al buscar.
-///
-/// Cerradas caben las cinco de golpe en la pantalla y se elige en dos toques. Abiertas son
-/// treinta y seis filas por las que hay que bajar, que es lo que había.
-class _Familia extends StatelessWidget {
-  const _Familia({required this.nombre, required this.facciones, required this.abierta});
+class _Chip extends StatelessWidget {
+  const _Chip({required this.faccion, required this.alElegir});
 
-  final String nombre;
-  final List<Faction> facciones;
-  final bool abierta;
+  final Faction faccion;
+  final void Function(BuildContext, Faction) alElegir;
 
   @override
   Widget build(BuildContext context) {
-    return Theme(
-      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-      child: ExpansionTile(
-        key: PageStorageKey('familia-$nombre-$abierta'),
-        initiallyExpanded: abierta,
-        title: Text(nombre.toUpperCase(),
-            style: const TextStyle(
-                color: Tema.acento,
-                fontSize: 12.5,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 1.4)),
-        subtitle: Text('${facciones.length} ejércitos',
-            style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
-        iconColor: Tema.acento,
-        collapsedIconColor: Tema.textoTenue,
-        children: [for (final faccion in facciones) _Faccion(faccion)],
+    final nombre = corto(faccion.name);
+    final color = colorDeFaccion(nombre);
+    return SizedBox(
+      width: 150,
+      child: Material(
+        color: color,
+        borderRadius: BorderRadius.circular(6),
+        child: InkWell(
+          key: ValueKey('faccion-$nombre'),
+          borderRadius: BorderRadius.circular(6),
+          onTap: () => alElegir(context, faccion),
+          child: Container(
+            height: 54,
+            alignment: Alignment.center,
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Text(nombre,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: _legible(color),
+                    fontSize: 13.5,
+                    height: 1.15,
+                    fontWeight: FontWeight.w600)),
+          ),
+        ),
       ),
     );
   }
 }
 
-class _Faccion extends StatelessWidget {
-  const _Faccion(this.faccion);
+/// Texto claro u oscuro según lo claro que sea el fondo, para que se lea siempre.
+Color _legible(Color fondo) =>
+    fondo.computeLuminance() > 0.5 ? const Color(0xFF14120F) : Colors.white;
 
-  final Faction faccion;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: const EdgeInsets.only(left: 32, right: 16),
-      title: Text(corto(faccion.name), style: const TextStyle(fontSize: 15.5)),
-      trailing: const Icon(Icons.chevron_right, color: Tema.textoTenue, size: 20),
-      onTap: () => Navigator.of(context).push(MaterialPageRoute(
-        builder: (_) => PantallaDeUnidades(faccion: faccion),
-      )),
-    );
-  }
-}
-
-/// La familia de una facción: los dos primeros tramos del nombre si hay tres, y si no el primero.
+/// El color con el que el juego identifica a cada ejército.
 ///
-/// «Imperium - Adeptus Astartes - Ultramarines» es de Adeptus Astartes; «Chaos - Death Guard» y
+/// Son 36 y no cambian, así que van escritos: un color por hash daría botones distintos cada vez
+/// que upstream renombrase algo, y aquí el color es justo lo que se reconoce sin leer.
+Color colorDeFaccion(String nombre) =>
+    _colores[nombre] ?? const Color(0xFF4A4642);
+
+const _colores = <String, Color>{
+  // Chaos
+  'Chaos Daemons': Color(0xFF6B6577),
+  'Chaos Knights': Color(0xFF4E7470),
+  'Chaos Space Marines': Color(0xFF2E5C6E),
+  'Death Guard': Color(0xFF7E8B3A),
+  "Emperor's Children": Color(0xFFA85BA8),
+  'Thousand Sons': Color(0xFF158C99),
+  'World Eaters': Color(0xFF9B2226),
+  'Titanicus Traitoris': Color(0xFF6E3A3A),
+  // Imperium
+  'Adepta Sororitas': Color(0xFFA51C21),
+  'Adeptus Custodes': Color(0xFFBE9A63),
+  'Adeptus Mechanicus': Color(0xFFB03A2E),
+  'Adeptus Titanicus': Color(0xFF1F6FC4),
+  'Astra Militarum': Color(0xFF5B7F5B),
+  'Grey Knights': Color(0xFF6E8794),
+  'Agents of the Imperium': Color(0xFF1F6E8C),
+  'Imperial Knights': Color(0xFF7E938F),
+  // Space Marines
+  'Black Templars': Color(0xFF1E4E63),
+  'Blood Angels': Color(0xFF9B1B22),
+  'Dark Angels': Color(0xFF14522A),
+  'Deathwatch': Color(0xFF7B8188),
+  'Imperial Fists': Color(0xFFC79A15),
+  'Iron Hands': Color(0xFF3A3A3A),
+  'Raven Guard': Color(0xFF1B2733),
+  'Salamanders': Color(0xFF18915C),
+  'Space Marines': Color(0xFF7B8E93),
+  'Space Wolves': Color(0xFF4E8794),
+  'Ultramarines': Color(0xFF1668C7),
+  'White Scars': Color(0xFF9A9A93),
+  // Xenos
+  'Aeldari': Color(0xFF1F8B93),
+  'Drukhari': Color(0xFF1B6B83),
+  'Genestealer Cults': Color(0xFF8B2C63),
+  'Leagues of Votann': Color(0xFF7E8B85),
+  'Necrons': Color(0xFF14874A),
+  'Orks': Color(0xFF7E8B2A),
+  "T'au Empire": Color(0xFF1F7E9B),
+  'Tyranids': Color(0xFF8B3A9B),
+};
+
+/// La familia de una facción: Space Marines cuando el nombre lo dice, y si no el bando.
+///
+/// «Imperium - Adeptus Astartes - Ultramarines» es de Space Marines; «Chaos - Death Guard» y
 /// «Xenos - Orks», de Chaos y de Xenos.
 String familia(String nombre) {
   final tramos = nombre.split(' - ');
-  if (tramos.length >= 3) return '${tramos[0]} · ${tramos[1]}';
+  if (tramos.length >= 3 && tramos[1] == 'Adeptus Astartes') return 'Space Marines';
+  if (tramos.length >= 3) return tramos[1];
   return tramos.first;
 }
 
 /// El nombre corto: lo que va después del último guion.
 String corto(String nombre) => nombre.split(' - ').last;
 
-/// Imperium, Chaos y Xenos primero y en ese orden; las subfamilias, detrás de la suya.
+/// Chaos, Imperium, Space Marines y Xenos en ese orden, que es el que tiene el jugador en la
+/// cabeza; lo que no encaje, detrás y por orden alfabético.
 int _ordenDeFamilia(String a, String b) {
-  const bandos = ['Imperium', 'Chaos', 'Xenos'];
-  final ba = bandos.indexOf(a.split(' · ').first);
-  final bb = bandos.indexOf(b.split(' · ').first);
-  if (ba != bb) return (ba < 0 ? bandos.length : ba).compareTo(bb < 0 ? bandos.length : bb);
+  const orden = ['Chaos', 'Imperium', 'Space Marines', 'Xenos'];
+  final ia = orden.indexOf(a);
+  final ib = orden.indexOf(b);
+  if (ia != ib) {
+    return (ia < 0 ? orden.length : ia).compareTo(ib < 0 ? orden.length : ib);
+  }
   return a.compareTo(b);
 }
 
-String _sinTildes(String x) {
+String sinTildes(String x) {
   const tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ü': 'u', 'ñ': 'n'};
   return x.toLowerCase().split('').map((c) => tildes[c] ?? c).join();
 }

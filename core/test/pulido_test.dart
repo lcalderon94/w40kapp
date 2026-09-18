@@ -99,6 +99,41 @@ void main() {
       expect(roster.canAdd(defiler, garras), isFalse);
     });
 
+    test('pero con alternativas en el grupo no hay nada fijo: es lo que hay puesto', () {
+      // Mirando solo el mínimo y el máximo se bloqueaban 15.273 opciones de 17.505 que sí eran
+      // una elección. Un arma con `min 1, max 1` dentro de un grupo que ofrece otras tres no es
+      // equipo fijo: el grupo existe justo para cambiarla.
+      var conAlternativaYBloqueada = 0;
+      for (final faccion in dataset.factions) {
+        final roster = Roster(faction: faccion, pointsLimit: 2000)
+          ..battleSize = dataset.battleSizes.firstWhere((b) => b.pointsLimit == 2000);
+        final suyos = dataset.detachmentsOf(faccion);
+        if (suyos.isNotEmpty) roster.detachments.add(suyos.first);
+        for (final entrada in faccion.units) {
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          for (final nodo in unidad.descendantsAndSelf) {
+            final ofrecidas = roster.optionsFor(nodo);
+            for (final o in ofrecidas) {
+              if (o.groupId == null) continue;
+              final hermanas = ofrecidas
+                  .where((x) => x.groupId == o.groupId && x.entryId != o.entryId)
+                  .length;
+              if (hermanas == 0) continue;
+              if (roster.isFixed(nodo, o, hayAlternativas: true)) {
+                conAlternativaYBloqueada++;
+              }
+            }
+          }
+        }
+      }
+      expect(conAlternativaYBloqueada, 0);
+    });
+
     test('lo que sí se elige se sigue pudiendo quitar', () {
       final roster = listaDe('Chaos - Death Guard');
       final marines = unidadDe(roster, 'Plague Marines');
@@ -279,6 +314,57 @@ void main() {
     });
   });
 
+  group('habilidades de reglamento', () {
+    test('las líneas CORE y FACTION salen, que no salían en ninguna parte', () {
+      // El dataset las enlaza con `infoLinks` de tipo `rule`, que no son perfiles. Wazdakka
+      // Gutsmek salía sin Deep Strike, sin Lone Operative y sin Deadly Demise D3.
+      final orks = dataset.factionNamed('Xenos - Orks');
+      final wazdakka = orks.units.firstWhere((u) => u.name == 'Wazdakka Gutsmek');
+      final suyas = dataset.abilitiesOf(wazdakka);
+
+      expect(suyas.where((a) => a.isCore).map((a) => a.name),
+          ['Deadly Demise D3', 'Deep Strike', 'Lone Operative']);
+      expect(suyas.where((a) => a.isFaction).map((a) => a.name), ['Waaagh!']);
+      // La X de «Deadly Demise X» la pone el enlace, no la regla: la regla es una para todos.
+      expect(suyas.firstWhere((a) => a.name.startsWith('Deadly')).description,
+          isNotEmpty);
+    });
+
+    test('y las tiene casi todo el dataset, no solo la unidad que se probó', () {
+      var con = 0;
+      final vistas = <String>{};
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          if (!vistas.add(unidad.id)) continue;
+          if (dataset.abilitiesOf(unidad).isNotEmpty) con++;
+        }
+      }
+      expect(con, greaterThan(1200));
+    });
+
+    test('una palabra clave de arma se resuelve a su regla, con número o sin él', () {
+      expect(dataset.ruleNamed('[SUSTAINED HITS 1]')?.name, 'Sustained Hits');
+      expect(dataset.ruleNamed('LETHAL HITS: non-MONSTER/VEHICLE')?.name, 'Lethal Hits');
+      expect(dataset.ruleNamed('ANTI-INFANTRY 4+')?.name, 'Anti');
+      expect(dataset.ruleNamed('CLEAVE 2')?.name, 'Cleave');
+      expect(dataset.ruleNamed('una cosa que no existe'), isNull);
+    });
+  });
+
+  group('cuántas miniaturas llevan cada arma', () {
+    test('la cuenta es la de quien la lleva, no la de veces que está puesta', () {
+      final custodes = listaDe('Imperium - Adeptus Custodes');
+      expect(dataset.weaponCountsOf(unidadDe(custodes, 'Custodian Guard'))['Guardian Spear'],
+          4);
+
+      final dg = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(dg, 'Plague Marines');
+      // Cinco: cuatro rasos y el Campeón, cada uno con el suyo.
+      expect(dataset.weaponCountsOf(marines)['Boltgun'], 5);
+      expect(dataset.weaponCountsOf(unidadDe(dg, 'Poxwalkers'))['Improvised weapons'], 10);
+    });
+  });
+
   group('líderes', () {
     test('la hoja que trae su excepción escrita se une aunque ya haya otro', () {
       // «Puedes adjuntar esta miniatura a una de las unidades anteriores aunque ya se le haya
@@ -291,6 +377,25 @@ void main() {
       final marines = blood.units.firstWhere((u) => u.name == 'Plague Marines',
           orElse: () => blood.units.firstWhere((u) => u.name == 'Intercessor Squad'));
       expect(dataset.aceptaOtroLider(marines), isFalse);
+    });
+
+    test('una anfitriona que ya lleve líder se ofrece igual, avisando', () {
+      // Hay más excepciones en el juego que en el dataset: el Biologus Putrifier puede ser el
+      // segundo y BSData no lo dice ni en inglés ni traducido. Esconder la unión dejaría al
+      // jugador sin poder montar su lista y sin saber por qué.
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      final biologus = unidadDe(roster, 'Biologus Putrifier');
+      final tallyman = unidadDe(roster, 'Tallyman');
+      roster..add(marines)..add(biologus)..add(tallyman);
+
+      expect(roster.hostsFor(tallyman), contains(marines));
+      roster.attach(tallyman, marines);
+
+      expect(roster.hostsFor(biologus), contains(marines),
+          reason: 'se sigue ofreciendo aunque ya lleve uno');
+      expect(roster.hostAlreadyLed(biologus, marines), isTrue,
+          reason: 'y se avisa de que ya lleva uno');
     });
 
     test('y son pocas, así que la regla general sigue siendo una y una', () {

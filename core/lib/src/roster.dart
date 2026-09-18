@@ -884,30 +884,36 @@ class Roster {
         faction.dataset.leaderTargets(faction, entrada).map((u) => u.id).toSet();
     if (permitidos.isEmpty) return const [];
 
-    // Una anfitriona puede llevar un líder **y** una unidad de apoyo, no uno de los dos: lo dice
-    // la regla 19.01 del reglamento. Así que solo estorba lo que ya lleve de la misma clase.
+    // Se ofrecen **todas** las que su hoja nombra, lleven ya líder o no.
     //
-    // Salvo que la hoja traiga su excepción escrita: el Sanguinary Priest, el Castellan, el
-    // Crusade Ancient, Cato Sicarius, The Visarch, el Warlock y dos más dicen «puedes adjuntar
-    // esta miniatura aunque ya se le haya adjuntado una miniatura Captain o Chapter Master». Esos
-    // se unen a cualquiera de sus objetivos esté como esté.
-    final clase = faction.dataset.attachKind(entrada);
-    if (faction.dataset.aceptaOtroLider(entrada)) {
-      return [
-        for (final u in units)
-          if (u != leader && permitidos.contains(u.entryId)) u,
-      ];
-    }
+    // La regla 19.01 deja un líder y un apoyo por unidad, y hay ocho hojas que traen su excepción
+    // escrita —Cato Sicarius, el Castellan, el Sanguinary Priest, Eldrad, el Warlock…—. Pero hay
+    // más excepciones en el juego que en el dataset: el Biologus Putrifier puede ser el segundo y
+    // BSData no lo dice en ninguna parte, ni en inglés ni traducido. Buscadas las dos formas en
+    // los dos idiomas, las que lo dicen son ocho y esa no está.
+    //
+    // Entre esconder una unión que el juego permite y ofrecerla avisando, se ofrece avisando: lo
+    // primero deja al jugador sin poder montar su lista y sin saber por qué; lo segundo le da el
+    // dato y la decisión. Ver [hostAlreadyLed].
     return [
       for (final u in units)
-        if (u != leader &&
-            permitidos.contains(u.entryId) &&
-            !units.any((o) =>
-                o.attachedTo == u &&
-                o != leader &&
-                _claseDe(o) == clase &&
-                !_aceptaOtro(o))) u,
+        if (u != leader && permitidos.contains(u.entryId)) u,
     ];
+  }
+
+  /// Si esa unidad ya lleva algo de la misma clase que este líder, y el líder no trae excepción.
+  ///
+  /// No impide unirlo: lo señala, que es lo que el jugador necesita para decidir.
+  bool hostAlreadyLed(Selection leader, Selection host) {
+    final entrada = faction.units.where((u) => u.id == leader.entryId).firstOrNull;
+    if (entrada == null) return false;
+    if (faction.dataset.aceptaOtroLider(entrada)) return false;
+    final clase = faction.dataset.attachKind(entrada);
+    return units.any((o) =>
+        o.attachedTo == host &&
+        o != leader &&
+        _claseDe(o) == clase &&
+        !_aceptaOtro(o));
   }
 
   /// Si el que ya está unido trae la excepción, no estorba al siguiente.
@@ -1178,9 +1184,12 @@ class Roster {
   ///
   /// Un grupo que solo deja elegir una cosa no pasa por aquí: ahí lo que hay es un botón de radio
   /// y quitar significa elegir otra.
-  bool canRemove(Selection owner, Selection option) {
+  bool canRemove(Selection owner, Selection option, {bool hayAlternativas = false}) {
     final puestas = owner.cuantasDe(option);
     if (puestas <= 0) return false;
+    // Con alternativas en el grupo, el mínimo que manda es el del grupo y no el de la opción:
+    // quitar esta para poner otra es legal, y es justo para lo que está el grupo.
+    if (hayAlternativas) return true;
 
     final desde = owner.puestaDe(option) ??
         (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
@@ -1194,11 +1203,26 @@ class Roster {
     return true;
   }
 
-  /// Si esa opción es equipo fijo: el dataset la exige y no deja poner más de una.
+  /// Si esa opción es equipo fijo: el dataset la exige, no deja poner más de una y **no hay otra
+  /// que ponerle en su lugar**.
   ///
   /// Es lo que separa «esto lo lleva la miniatura» de «esto lo eliges tú», y no hay bandera que lo
   /// diga: se deduce de que el mínimo y el máximo efectivos coincidan.
-  bool isFixed(Selection owner, Selection option) {
+  ///
+  /// Lo tercero es lo que faltaba y no es un detalle: mirando solo el mínimo y el máximo se
+  /// bloqueaban **15.273 opciones de 17.505** que sí eran una elección. Un arma con `min 1, max 1`
+  /// dentro de un grupo que ofrece otras tres no es equipo fijo: es la que está puesta ahora, y el
+  /// grupo existe justo para cambiarla. Fijo de verdad es lo que no tiene alternativa: las
+  /// Shearing claws del Defiler, o las dos armas de Asurmen, que no cuelgan de ningún grupo.
+  ///
+  /// Quien sabe si hay alternativas es quien tiene delante la lista de opciones del grupo, así que
+  /// se le pregunta en vez de recalcularla aquí para cada fila.
+  bool isFixed(Selection owner, Selection option, {bool hayAlternativas = false}) {
+    if (hayAlternativas) return false;
+    return _minimoIgualAlMaximo(owner, option);
+  }
+
+  bool _minimoIgualAlMaximo(Selection owner, Selection option) {
     final desde = owner.puestaDe(option) ??
         (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
     int? minimo, maximo;

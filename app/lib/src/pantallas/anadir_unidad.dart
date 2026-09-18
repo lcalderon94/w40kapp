@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:warorgan_core/warorgan_core.dart';
 
+import '../datos/repositorio.dart';
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
+import '../widgets/hoja_de_datos.dart';
 
 /// Elegir qué unidad entra en la lista.
 ///
@@ -90,10 +92,20 @@ class _PantallaDeAnadirUnidadState extends State<PantallaDeAnadirUnidad> {
                     rol: grupo.rol,
                     unidades: grupo.unidades,
                     restantes: restantes,
-                    alElegir: (u) {
+                    // Añadir no cierra la pantalla. Cerrarla obligaba a volver a entrar por cada
+                    // unidad, y una lista se monta de diez en diez, no de una en una.
+                    alAnadir: (u) {
                       widget.lista.anadirUnidad(u);
-                      Navigator.of(context).pop();
+                      setState(() {});
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text('${u.name} añadida'),
+                        duration: const Duration(milliseconds: 900),
+                        behavior: SnackBarBehavior.floating,
+                      ));
                     },
+                    alMirar: (u) => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (_) => _FichaRapida(lista: widget.lista, unidad: u),
+                    )),
                   ),
               ],
             ),
@@ -107,13 +119,15 @@ class _GrupoDeRol extends StatefulWidget {
     required this.rol,
     required this.unidades,
     required this.restantes,
-    required this.alElegir,
+    required this.alAnadir,
+    required this.alMirar,
   });
 
   final String rol;
   final List<UnitEntry> unidades;
   final int restantes;
-  final void Function(UnitEntry) alElegir;
+  final void Function(UnitEntry) alAnadir;
+  final void Function(UnitEntry) alMirar;
 
   @override
   State<_GrupoDeRol> createState() => _GrupoDeRolState();
@@ -155,27 +169,40 @@ class _GrupoDeRolState extends State<_GrupoDeRol> {
             _FilaDeUnidad(
               unidad: unidad,
               cabe: (unidad.points ?? 0) <= widget.restantes,
-              alElegir: () => widget.alElegir(unidad),
+              alAnadir: () => widget.alAnadir(unidad),
+              alMirar: () => widget.alMirar(unidad),
             ),
       ],
     );
   }
 }
 
+/// Una unidad del catálogo: tocarla enseña su hoja, y el «+» la mete en la lista.
+///
+/// Eran la misma cosa y no lo son: se toca para saber qué es una unidad mucho más a menudo que
+/// para meterla, y tocar por error metía una unidad en la lista sin haberla visto siquiera.
 class _FilaDeUnidad extends StatelessWidget {
-  const _FilaDeUnidad(
-      {required this.unidad, required this.cabe, required this.alElegir});
+  const _FilaDeUnidad({
+    required this.unidad,
+    required this.cabe,
+    required this.alAnadir,
+    required this.alMirar,
+  });
 
   final UnitEntry unidad;
   final bool cabe;
-  final VoidCallback alElegir;
+  final VoidCallback alAnadir;
+  final VoidCallback alMirar;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      key: ValueKey('unidad-${unidad.id}'),
       dense: true,
       title: Text(unidad.name,
           style: TextStyle(fontSize: 14.5, color: cabe ? Tema.texto : Tema.textoTenue)),
+      subtitle: Text(unidad.role ?? '',
+          style: const TextStyle(color: Tema.textoTenue, fontSize: 11.5)),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -192,11 +219,60 @@ class _FilaDeUnidad extends StatelessWidget {
                   color: cabe ? Tema.acento : Tema.textoTenue,
                   fontSize: 13,
                   fontWeight: FontWeight.w600)),
-          const SizedBox(width: 4),
-          const Icon(Icons.add, size: 18, color: Tema.textoTenue),
+          const SizedBox(width: 2),
+          IconButton(
+            key: ValueKey('anadir-${unidad.id}'),
+            onPressed: alAnadir,
+            icon: const Icon(Icons.add_circle_outline, size: 24),
+            color: Tema.acento,
+            tooltip: 'Añadir a la lista',
+            visualDensity: VisualDensity.compact,
+          ),
         ],
       ),
-      onTap: alElegir,
+      onTap: alMirar,
+    );
+  }
+}
+
+/// La hoja de datos de una unidad antes de meterla, con su botón de añadir.
+class _FichaRapida extends StatelessWidget {
+  const _FichaRapida({required this.lista, required this.unidad});
+
+  final ListaEnCurso lista;
+  final UnitEntry unidad;
+
+  @override
+  Widget build(BuildContext context) {
+    final dataset = Datos.de(context);
+    return Scaffold(
+      appBar: AppBar(title: Text(unidad.name)),
+      body: ListView(
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 100),
+        children: [
+          HojaDeDatos(
+            perfiles: dataset.sheetOf(unidad),
+            habilidades: dataset.abilitiesOf(unidad),
+            palabrasClave: unidad.keywords,
+            encabezado: BandaDeUnidad(
+              nombre: unidad.name,
+              rol: unidad.role,
+              puntos: unidad.points,
+            ),
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        key: const ValueKey('anadir-desde-ficha'),
+        backgroundColor: Tema.acento,
+        foregroundColor: Tema.fondo,
+        onPressed: () {
+          lista.anadirUnidad(unidad);
+          Navigator.of(context).pop();
+        },
+        icon: const Icon(Icons.add),
+        label: const Text('Añadir a la lista'),
+      ),
     );
   }
 }

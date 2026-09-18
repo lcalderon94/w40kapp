@@ -5,6 +5,7 @@ import '../datos/almacen.dart';
 import '../datos/repositorio.dart';
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
+import 'facciones.dart';
 import 'lista.dart';
 
 /// Las listas del jugador, guardadas en el teléfono.
@@ -304,7 +305,12 @@ class _PantallaDeNuevaListaState extends State<PantallaDeNuevaLista> {
 
   @override
   Widget build(BuildContext context) {
-    final facciones = widget.dataset.factions..sort((a, b) => a.name.compareTo(b.name));
+    final porFamilia = <String, List<Faction>>{};
+    for (final faccion in widget.dataset.factions) {
+      porFamilia.putIfAbsent(familia(faccion.name), () => []).add(faccion);
+    }
+    final familias = porFamilia.keys.toList()
+      ..sort((a, b) => _ordenDeFamilia(a).compareTo(_ordenDeFamilia(b)));
     return Scaffold(
       appBar: AppBar(title: const Text('Nueva lista')),
       body: Column(
@@ -327,34 +333,45 @@ class _PantallaDeNuevaListaState extends State<PantallaDeNuevaLista> {
               ],
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.fromLTRB(16, 12, 16, 4),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text('FACCIÓN',
-                  style: TextStyle(
-                      color: Tema.acento,
-                      fontSize: 11,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 1.4)),
-            ),
-          ),
+          // Por familia y como botones: son 36 y en una lista plana hay que recorrerla entera.
+          // Así caben las cuatro familias en la pantalla y se elige de un toque.
           Expanded(
-            child: ListView.separated(
-              itemCount: facciones.length,
-              separatorBuilder: (_, __) => const Divider(indent: 16, endIndent: 16),
-              itemBuilder: (context, i) {
-                final faccion = facciones[i];
-                return ListTile(
-                  title: Text(faccion.name.split(' - ').last,
-                      style: const TextStyle(fontSize: 15)),
-                  subtitle: Text(faccion.name.split(' - ').first,
-                      style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
-                  selected: _faccion?.id == faccion.id,
-                  selectedColor: Tema.acento,
-                  onTap: () => setState(() => _faccion = faccion),
-                );
-              },
+            child: ListView(
+              padding: const EdgeInsets.only(bottom: 8),
+              children: [
+                for (final nombre in familias) ...[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 14, 16, 8),
+                    child: Text(nombre.toUpperCase(),
+                        style: const TextStyle(
+                            color: Tema.textoTenue,
+                            fontSize: 11.5,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 1.4)),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Tema.superficie,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        for (final faccion in porFamilia[nombre]!
+                          ..sort((a, b) => corto(a.name).compareTo(corto(b.name))))
+                          _BotonDeFaccion(
+                            faccion: faccion,
+                            elegida: _faccion?.id == faccion.id,
+                            onTap: () => setState(() => _faccion = faccion),
+                          ),
+                      ],
+                    ),
+                  ),
+                ],
+              ],
             ),
           ),
           SafeArea(
@@ -385,6 +402,58 @@ class _PantallaDeNuevaListaState extends State<PantallaDeNuevaLista> {
       ),
     );
   }
+}
+
+/// Un ejército, con su color, dentro del bloque de su familia.
+class _BotonDeFaccion extends StatelessWidget {
+  const _BotonDeFaccion(
+      {required this.faccion, required this.elegida, required this.onTap});
+
+  final Faction faccion;
+  final bool elegida;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final nombre = corto(faccion.name);
+    final color = colorDeFaccion(nombre);
+    return SizedBox(
+      width: 150,
+      child: Material(
+        color: elegida ? color : color.withValues(alpha: 0.55),
+        borderRadius: BorderRadius.circular(6),
+        child: InkWell(
+          key: ValueKey('faccion-$nombre'),
+          borderRadius: BorderRadius.circular(6),
+          onTap: onTap,
+          child: Container(
+            height: 54,
+            alignment: Alignment.center,
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(6),
+              border: elegida ? Border.all(color: Tema.texto, width: 2) : null,
+            ),
+            child: Text(nombre,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: color.computeLuminance() > 0.5
+                        ? const Color(0xFF14120F)
+                        : Colors.white,
+                    fontSize: 13.5,
+                    height: 1.15,
+                    fontWeight: FontWeight.w600)),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+int _ordenDeFamilia(String nombre) {
+  const orden = ['Chaos', 'Imperium', 'Space Marines', 'Xenos'];
+  final i = orden.indexOf(nombre);
+  return i < 0 ? orden.length : i;
 }
 
 class _Tamano extends StatelessWidget {

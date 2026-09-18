@@ -20,6 +20,7 @@ class PantallaDeUnidad extends StatelessWidget {
         children: [
           HojaDeDatos(
             perfiles: Datos.de(context).sheetOf(unidad),
+            habilidades: Datos.de(context).abilitiesOf(unidad),
             palabrasClave: unidad.keywords,
             encabezado: BandaDeUnidad(
               nombre: unidad.name,
@@ -32,5 +33,3 @@ class PantallaDeUnidad extends StatelessWidget {
     );
   }
 }
-
-/// M, T, Sv, W, LD, OC: la línea que se consulta cada turno.

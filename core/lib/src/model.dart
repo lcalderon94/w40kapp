@@ -258,3 +258,26 @@ class Invulnerable {
     return null;
   }
 }
+
+/// Una habilidad de una unidad que no es un perfil sino una **regla** del reglamento.
+///
+/// El dataset las enlaza con `infoLinks` de tipo `rule`, que es una cosa distinta de los perfiles
+/// y por eso no salían en ninguna parte: Deep Strike, Lone Operative, Deadly Demise, Waaagh!. Son
+/// las que la hoja impresa pone arriba del todo en una línea, y sin ellas no se sabe si una
+/// unidad puede hacer despliegue rápido ni qué pasa cuando un tanque explota.
+///
+/// [kind] dice en qué línea va, y sale de dónde vive la regla: las que declara el sistema de juego
+/// son CORE y las que declara el catálogo de la facción son FACTION. No hay que escribir ninguna
+/// lista: es la misma separación que hace la hoja impresa.
+class Ability {
+  Ability({required this.name, required this.description, required this.kind});
+
+  final String name;
+  final String description;
+
+  /// `core`, `faction` o `unit`.
+  final String kind;
+
+  bool get isCore => kind == 'core';
+  bool get isFaction => kind == 'faction';
+}

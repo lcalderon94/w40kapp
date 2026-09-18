@@ -899,9 +899,14 @@ void main() {
       roster.attach(lord, blight);
       expect(roster.leadersOn(blight), contains(lord));
 
-      // Y ya no cabe un segundo líder ahí: la regla deja uno por unidad anfitriona.
+      // Un segundo líder ahí se sigue ofreciendo, pero señalado: la regla 19.01 deja uno por
+      // unidad anfitriona y hay hojas que traen su excepción, unas escritas en el dataset y otras
+      // no. Esconder la unión dejaría al jugador sin poder montar su lista y sin saber por qué.
       final otro = poner('Lord of Contagion');
-      expect(roster.hostsFor(otro), isNot(contains(blight)));
+      expect(roster.hostsFor(otro), contains(blight));
+      expect(roster.hostAlreadyLed(otro, blight), isTrue);
+      expect(roster.hostAlreadyLed(otro, marines), isFalse,
+          reason: 'la que no lleva ninguno no se señala');
     });
 
     test('una unidad puede llevar un líder y una unidad de apoyo a la vez', () {

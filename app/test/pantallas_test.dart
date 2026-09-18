@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:warorgan/src/datos/repositorio.dart';
+import 'package:warorgan/src/pantallas/buscar.dart';
 import 'package:warorgan/src/pantallas/facciones.dart';
 import 'package:warorgan/src/pantallas/unidad.dart';
 import 'package:warorgan/src/pantallas/unidades.dart';
@@ -38,19 +39,19 @@ void main() {
   testWidgets('las facciones salen por familia, y los capítulos juntos', (tester) async {
     await mostrar(tester, const PantallaDeFacciones());
 
-    // Cerradas, las familias caben de golpe en la pantalla: se elige en dos toques en vez de
-    // bajar por treinta y seis filas. Y los doce capítulos de Space Marines van bajo Adeptus
-    // Astartes, no sueltos entre las dieciséis facciones del Imperium.
-    expect(find.text('IMPERIUM'), findsOneWidget);
-    expect(find.text('IMPERIUM · ADEPTUS ASTARTES'), findsOneWidget);
+    // Cuatro bloques y dentro los botones: se ve todo de golpe y se elige de un toque, en vez de
+    // recorrer treinta y seis filas. Los doce capítulos de Space Marines van en su propio bloque,
+    // no sueltos entre las dieciséis facciones del Imperium.
     expect(find.text('CHAOS'), findsOneWidget);
-    expect(find.text('XENOS'), findsOneWidget);
-    expect(find.text('Death Guard'), findsNothing, reason: 'empiezan cerradas');
-
-    await tester.tap(find.text('CHAOS'));
-    await tester.pumpAndSettle();
+    expect(find.text('IMPERIUM'), findsOneWidget);
+    expect(find.text('SPACE MARINES'), findsOneWidget);
     expect(find.text('Death Guard'), findsOneWidget,
         reason: 'se enseña el nombre corto, no «Chaos - Death Guard»');
+
+    await tester.dragUntilVisible(
+        find.text('XENOS'), find.byType(ListView).first, const Offset(0, -200));
+    await tester.pumpAndSettle();
+    expect(find.text('XENOS'), findsOneWidget);
   });
 
   testWidgets('se busca un ejército por nombre en vez de bajar a mano', (tester) async {
@@ -101,7 +102,7 @@ void main() {
     // El nombre va en la banda de cabecera, en mayúsculas. Sale más de una vez porque «Typhus»
     // es además una de sus palabras clave.
     expect(find.text('TYPHUS'), findsWidgets);
-    expect(find.text('100 pts'), findsOneWidget);
+    expect(find.text('100'), findsWidgets, reason: 'los puntos, en la chapa de la cabecera');
     expect(find.text('HABILIDADES'), findsOneWidget);
 
     // El de fuera: las tablas de armas traen el suyo propio para poder desplazarse en horizontal.
@@ -119,6 +120,65 @@ void main() {
         scrollable: find.byType(Scrollable).first);
     expect(find.textContaining('➤'), findsNothing);
     expect(find.textContaining('Lakrimae'), findsWidgets);
+  });
+
+  testWidgets('una palabra clave del arma se toca y se explica sin salir de la ficha',
+      (tester) async {
+    // Es la pregunta que más se hace en mitad de una partida: «¿qué hace [SUSTAINED HITS]?».
+    final orks = dataset.factionNamed('Xenos - Orks');
+    final wazdakka = orks.units.firstWhere((u) => u.name == 'Wazdakka Gutsmek');
+    await mostrar(tester, PantallaDeUnidad(unidad: wazdakka, faccion: orks));
+
+    final clave = find.byKey(const ValueKey('clave-SUSTAINED HITS 1'));
+    await tester.dragUntilVisible(
+        clave, find.byType(ListView).first, const Offset(0, -120));
+    await tester.pumpAndSettle();
+    await tester.tap(clave);
+    await tester.pumpAndSettle();
+
+    expect(find.byType(AlertDialog), findsOneWidget);
+    expect(find.text('Sustained Hits'), findsOneWidget);
+  });
+
+  testWidgets('las habilidades CORE y FACTION salen en la ficha y se explican',
+      (tester) async {
+    final orks = dataset.factionNamed('Xenos - Orks');
+    final wazdakka = orks.units.firstWhere((u) => u.name == 'Wazdakka Gutsmek');
+    await mostrar(tester, PantallaDeUnidad(unidad: wazdakka, faccion: orks));
+
+    await tester.dragUntilVisible(
+        find.text('CORE:'), find.byType(ListView).first, const Offset(0, -120));
+    await tester.pumpAndSettle();
+    expect(find.text('CORE:'), findsOneWidget);
+    expect(find.text('FACTION:'), findsOneWidget);
+    expect(find.text('DEEP STRIKE'), findsOneWidget);
+    expect(find.text('WAAAGH!'), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('clave-Deep Strike')));
+    await tester.pumpAndSettle();
+    expect(find.byType(AlertDialog), findsOneWidget);
+  });
+
+  testWidgets('la salvación invulnerable sale con su nombre, no escondida en la línea',
+      (tester) async {
+    final orks = dataset.factionNamed('Xenos - Orks');
+    final wazdakka = orks.units.firstWhere((u) => u.name == 'Wazdakka Gutsmek');
+    await mostrar(tester, PantallaDeUnidad(unidad: wazdakka, faccion: orks));
+
+    expect(find.text('SALVACIÓN INVULNERABLE'), findsOneWidget);
+    expect(find.text('4+'), findsWidgets);
+    // Y no como una casilla más llamada «InSv», que no la reconoce nadie.
+    expect(find.text('INSV'), findsNothing);
+  });
+
+  testWidgets('se busca una unidad en las 36 facciones a la vez', (tester) async {
+    await mostrar(tester, const PantallaDeBuscar());
+
+    await tester.enterText(find.byKey(const ValueKey('buscar-unidad')), 'poxwalkers');
+    await tester.pumpAndSettle();
+    expect(find.text('Poxwalkers'), findsOneWidget);
+    expect(find.text('DEATH GUARD'), findsOneWidget,
+        reason: 'y dice de qué facción es, que es lo que no se sabía');
   });
 
   testWidgets('la wiki trae el glosario y se puede buscar', (tester) async {

@@ -407,9 +407,35 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byIcon(Icons.warning_amber_rounded), findsNothing);
 
-      await tester.tap(find.text('Poxwalkers'));
+      // Tocar la fila abre la hoja de datos; lo que añade es el «+». Eran la misma cosa y no lo
+      // son: se toca para saber qué es una unidad mucho más a menudo que para meterla.
+      final poxwalkers =
+          lista.unidadesDisponibles.firstWhere((u) => u.name == 'Poxwalkers');
+      await tester.tap(find.byKey(ValueKey('anadir-${poxwalkers.id}')));
       await tester.pumpAndSettle();
       expect(lista.roster.units, hasLength(1));
+
+      // Y la pantalla sigue abierta: una lista se monta de diez en diez, no de una en una.
+      expect(find.byType(PantallaDeAnadirUnidad), findsOneWidget);
+
+      await tester.tap(find.byKey(ValueKey('anadir-${poxwalkers.id}')));
+      await tester.pumpAndSettle();
+      expect(lista.roster.units, hasLength(2));
+    });
+
+    testWidgets('tocar una unidad del catálogo enseña su hoja, no la añade', (tester) async {
+      final lista = nuevaLista(puntos: 1000)
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first);
+      await mostrar(tester, PantallaDeAnadirUnidad(lista: lista));
+
+      await tester.enterText(find.byType(TextField), 'poxwalkers');
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Poxwalkers'));
+      await tester.pumpAndSettle();
+
+      expect(lista.roster.units, isEmpty, reason: 'mirar no es añadir');
+      expect(find.text('CARACTERÍSTICAS'.toUpperCase()), findsNothing);
+      expect(find.text('POXWALKERS'), findsWidgets, reason: 'se ha abierto su hoja');
     });
 
     testWidgets('las miniaturas se suman y se restan con el contador', (tester) async {
@@ -455,7 +481,6 @@ void main() {
           .opcionesDe(principe)
           .firstWhere((o) => o.name == 'Daemon Weapon of Nurgle');
       expect(lista.cuantasHay(principe, arma), 1);
-      expect(find.byIcon(Icons.radio_button_checked), findsWidgets);
 
       // Y se vuelve a pulsar para quitarla: una casilla que solo sabe marcar deja atrapado al
       // jugador, que no puede deshacer una mejora que eligió sin querer.

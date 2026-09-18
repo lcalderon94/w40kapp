@@ -1061,6 +1061,9 @@ class Dataset {
   /// la ficha, al buscar a quién se une un líder y al mirar si acepta a otro. Resolverla una vez.
   final Map<String, List<Profile>> _sheetCache = {};
 
+  /// Si una hoja trae escrita su excepción de líder. Se pregunta por cada anfitriona posible.
+  final Map<String, bool> _excepcionCache = {};
+
   /// Todas las mejoras del dataset, por identificador.
   ///
   /// Una mejora es una opción con coste en puntos que el dataset esconde salvo que se haya elegido
@@ -1142,6 +1145,167 @@ class Dataset {
     return profiles.values.toList();
   }
 
+  /// Las habilidades de reglamento de una unidad: las líneas CORE y FACTION de la hoja impresa.
+  ///
+  /// El dataset las enlaza con `infoLinks` de tipo `rule`, que no son perfiles y por eso no
+  /// aparecían en ninguna parte: Wazdakka Gutsmek salía sin Deep Strike, sin Lone Operative y sin
+  /// Deadly Demise D3, que es lo que pasa cuando su moto explota.
+  ///
+  /// La X de «Deadly Demise X» la pone el enlace con un modifier sobre el nombre, no la regla: la
+  /// regla es la misma para todos y cada unidad dice la suya.
+  ///
+  /// CORE o FACTION se decide por dónde vive la regla —el sistema de juego o el catálogo de la
+  /// facción—, que es la misma separación que hace la hoja impresa y no hace falta escribirla.
+  List<Ability> abilitiesOf(UnitEntry unit) {
+    final cached = _abilityCache[unit.id];
+    if (cached != null) return cached;
+    final entry = node(unit.id);
+    if (entry == null) return const [];
+
+    final abilities = <String, Ability>{};
+    final visited = <String>{};
+
+    void collect(Map<String, dynamic> node_, int depth) {
+      if (depth > 2) return;
+      if (!visited.add(node_['id'] as String? ?? '')) return;
+      if (enhancementIds.contains(node_['id'])) return;
+      for (final raw in (node_['infoLinks'] as List? ?? const [])) {
+        final link = raw as Map<String, dynamic>;
+        if (link['type'] != 'rule') continue;
+        final target = node(link['targetId'] as String? ?? '');
+        if (target == null) continue;
+        var name = target['name'] as String? ?? link['name'] as String? ?? '';
+        // «Deadly Demise» + «D3». El valor va pegado con un espacio, como en la hoja.
+        for (final modifier in Modifier.allOf(link)) {
+          if (modifier.field == 'name' && modifier.type == 'append') {
+            name = '$name ${modifier.value}'.trim();
+          }
+        }
+        if (name.isEmpty) continue;
+        abilities.putIfAbsent(
+            name,
+            () => Ability(
+                  name: name,
+                  description: target['description'] as String? ?? '',
+                  kind: _esDelSistema(target['id'] as String? ?? '') ? 'core' : 'faction',
+                ));
+      }
+      // Las de las miniaturas también: hay hojas que cuelgan Deep Strike de la miniatura.
+      for (final child in _childLinks(node_)) {
+        if (child.entry['type'] == 'model') collect(child.entry, depth + 1);
+      }
+    }
+
+    collect(entry, 0);
+    return _abilityCache[unit.id] = abilities.values.toList();
+  }
+
+  final Map<String, List<Ability>> _abilityCache = {};
+
+  /// Si una regla la declara el sistema de juego, que es lo que la hace CORE.
+  bool _esDelSistema(String id) => _idsDelSistema.contains(id);
+
+  late final Set<String> _idsDelSistema = () {
+    final ids = <String>{};
+    for (final root in _roots) {
+      if (root['type'] == 'catalogue') continue;
+      for (final node_ in _descendants(root)) {
+        final id = node_['id'];
+        if (id is String) ids.add(id);
+      }
+    }
+    return ids;
+  }();
+
+  /// La regla del reglamento que explica una palabra clave, si la hay.
+  ///
+  /// Las armas traen sus palabras entre corchetes —[SUSTAINED HITS 1], [LETHAL HITS], [BLAST]— y
+  /// el jugador tiene que ir a buscarlas al reglamento. El número sobra para buscarla: la regla se
+  /// llama «Sustained Hits» y el 1 es de esa arma.
+  Rule? ruleNamed(String keyword) {
+    final clave = _claveDeRegla(keyword);
+    if (clave.isEmpty) return null;
+    final exacta = _reglasPorClave[clave];
+    if (exacta != null) return exacta;
+    // Y si no casa entera, la regla cuyo nombre es el principio: «ANTI-INFANTRY 4+» es la regla
+    // «Anti», y el resto es de esa arma. Se coge la más larga que encaje, para que «Feel No Pain»
+    // no gane a «Feel No Pain 5+».
+    Rule? mejor;
+    var largo = 0;
+    for (final entrada in _reglasPorClave.entries) {
+      if (entrada.key.length <= largo) continue;
+      if (!clave.startsWith(entrada.key)) continue;
+      mejor = entrada.value;
+      largo = entrada.key.length;
+    }
+    return mejor;
+  }
+
+  late final Map<String, Rule> _reglasPorClave = {
+    for (final regla in coreRules) _claveDeRegla(regla.name): regla,
+  };
+
+  /// La clave con la que se casan «[SUSTAINED HITS 1]», «Sustained Hits» y «SUSTAINED HITS».
+  ///
+  /// Se quitan los corchetes, lo que va detrás de dos puntos —«LETHAL HITS: non-MONSTER» sigue
+  /// siendo Lethal Hits— y todo lo que no sea una letra, que es donde viven el número del arma y
+  /// el asterisco.
+  static String _claveDeRegla(String texto) => texto
+      .replaceAll(RegExp(r'[\[\]]'), '')
+      .split(':')
+      .first
+      .toLowerCase()
+      .replaceAll(RegExp(r'[^a-z]'), '');
+
+  /// Cuántas miniaturas de la selección llevan cada perfil de arma.
+  ///
+  /// Es el número que la hoja impresa pone a la izquierda del arma: «4 Guardian spear». Sin él, una
+  /// escuadra de cinco con dos armas distintas se lee como si todas llevaran las dos.
+  ///
+  /// La cuenta es la de la miniatura que la lleva, no la del arma: cuatro Custodian Guard con una
+  /// lanza cada uno son cuatro lanzas, aunque cada arma esté puesta una sola vez.
+  Map<String, int> weaponCountsOf(Selection selection) {
+    final counts = <String, int>{};
+
+    /// Las armas que hay en un nodo y en lo que cuelga de él, **sin repetir**.
+    ///
+    /// Sin lo de no repetir salen el doble: la miniatura enlaza el perfil del arma y además la
+    /// lleva puesta como opción, así que el mismo Guardian Spear aparece en los dos sitios.
+    Set<String> armasDe(Selection node_) {
+      final nombres = <String>{};
+      final entry = node(node_.entryId);
+      if (entry != null) {
+        for (final profile in profilesOf(entry)) {
+          if (profile.typeName.contains('Weapons')) nombres.add(profile.name);
+        }
+      }
+      for (final child in node_.children) {
+        if (child.type == 'model') continue;
+        nombres.addAll(armasDe(child));
+      }
+      return nombres;
+    }
+
+    void recorre(Selection node_, int portadores) {
+      final cuantos = portadores * node_.count;
+      final tieneMiniaturas = node_.children.any((c) => c.type == 'model');
+      // Quien lleva el arma es la miniatura. Una unidad que se compone de miniaturas no lleva
+      // nada ella: reparte. Una que no tiene ninguna —un vehículo— es ella la que lleva.
+      if (!tieneMiniaturas) {
+        for (final nombre in armasDe(node_)) {
+          counts.update(nombre, (n) => n + cuantos, ifAbsent: () => cuantos);
+        }
+        return;
+      }
+      for (final child in node_.children) {
+        if (child.type == 'model') recorre(child, cuantos);
+      }
+    }
+
+    recorre(selection, 1);
+    return counts;
+  }
+
   /// Los perfiles de una entrada, incluidos los que llegan por enlace.
   ///
   /// La mayoría de las habilidades no están incrustadas en la unidad: son perfiles compartidos a
@@ -1172,6 +1336,7 @@ class Dataset {
 /// unidad anfitriona puede llevar **un líder y una unidad de apoyo**, no uno de los dos.
 extension Lideres on Dataset {
   static const _clases = ['Leader', 'Support'];
+
 
   /// `Leader`, `Support`, o `null` si no se une a nada.
   String? attachKind(UnitEntry unit) {
@@ -1225,17 +1390,20 @@ extension Lideres on Dataset {
   /// se une. Se reconoce por la frase entera, no por «aunque» suelto, que aparece en habilidades
   /// que no hablan de esto.
   bool aceptaOtroLider(UnitEntry unit) {
+    final cached = _excepcionCache[unit.id];
+    if (cached != null) return cached;
+    // En cualquier perfil, no solo en el de Leader o Support: hay hojas que lo dejan escrito en
+    // una habilidad aparte. Y en los dos idiomas, porque la traducción no llega a todas.
     for (final perfil in sheetOf(unit)) {
-      if (!_clases.contains(perfil.name)) continue;
       for (final valor in perfil.characteristics.values) {
         final texto = valor.toLowerCase();
         if (texto.contains('ya se le haya adjuntado') ||
-            texto.contains('already has') && texto.contains('attached')) {
-          return true;
+            texto.contains('already been attached')) {
+          return _excepcionCache[unit.id] = true;
         }
       }
     }
-    return false;
+    return _excepcionCache[unit.id] = false;
   }
 }
 

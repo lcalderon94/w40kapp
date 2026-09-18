@@ -345,10 +345,25 @@ class ListaEnCurso extends ChangeNotifier {
   bool cabeOtra(Selection padre, Selection opcion) => roster.canAdd(padre, opcion);
 
   /// Si se puede quitar una: el dataset marca el equipo fijo con un mínimo en la propia opción.
-  bool sePuedeQuitar(Selection padre, Selection opcion) => roster.canRemove(padre, opcion);
+  bool sePuedeQuitar(Selection padre, Selection opcion, {bool hayAlternativas = false}) =>
+      roster.canRemove(padre, opcion, hayAlternativas: hayAlternativas);
 
   /// Si esa opción es equipo de serie que no se elige, y por tanto no lleva contador.
-  bool esFija(Selection padre, Selection opcion) => roster.isFixed(padre, opcion);
+  bool esFija(Selection padre, Selection opcion, {bool hayAlternativas = false}) =>
+      roster.isFixed(padre, opcion, hayAlternativas: hayAlternativas);
+
+  /// Las habilidades de reglamento —CORE y FACTION— de una unidad de la lista.
+  List<Ability> habilidadesDe(Selection unidad) {
+    final entrada = entradaDe(unidad);
+    return entrada == null ? const [] : dataset.abilitiesOf(entrada);
+  }
+
+  /// Cuántas miniaturas llevan cada arma, para el número de la hoja.
+  Map<String, int> armasDe(Selection unidad) => dataset.weaponCountsOf(unidad);
+
+  /// Si esa anfitriona ya lleva otro de la misma clase. No lo impide: lo avisa.
+  bool anfitrionOcupado(Selection lider, Selection anfitrion) =>
+      roster.hostAlreadyLed(lider, anfitrion);
 
   /// Si de ese grupo hay que elegir algo sí o sí, que es lo que impide dejarlo vacío.
   bool esObligatorio(Selection padre, OptionGroup grupo) {

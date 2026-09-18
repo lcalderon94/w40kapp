@@ -38,3 +38,34 @@ class Almacen {
     return (listas: listas, ilegibles: ilegibles);
   }
 }
+
+/// El historial de búsquedas de unidades, para volver a lo último sin escribirlo otra vez.
+///
+/// Guarda el identificador de la unidad y el de su facción, no el nombre: los nombres cambian de
+/// una revisión del dataset a otra y el historial se quedaría apuntando a nada.
+class Historial {
+  Historial(this._preferencias);
+
+  static const _clave = 'historial';
+  static const _maximo = 40;
+
+  final SharedPreferences _preferencias;
+
+  static Future<Historial> abrir() async => Historial(await SharedPreferences.getInstance());
+
+  List<({String faccion, String unidad})> get entradas => [
+        for (final linea in _preferencias.getStringList(_clave) ?? const <String>[])
+          if (linea.contains('|'))
+            (faccion: linea.split('|').first, unidad: linea.split('|').last),
+      ];
+
+  /// Apunta una consulta. Lo más reciente primero, y sin repetir.
+  Future<void> apuntar({required String faccion, required String unidad}) async {
+    final lineas = (_preferencias.getStringList(_clave) ?? const <String>[]).toList()
+      ..removeWhere((l) => l == '$faccion|$unidad')
+      ..insert(0, '$faccion|$unidad');
+    await _preferencias.setStringList(_clave, lineas.take(_maximo).toList());
+  }
+
+  Future<void> vaciar() => _preferencias.remove(_clave);
+}
