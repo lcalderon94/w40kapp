@@ -1189,4 +1189,104 @@ void main() {
       expect(aCero, 0);
     });
   });
+
+  group('dos armas iguales que preguntan son dos miniaturas', () {
+    test('cada una elige la suya', () {
+      // «2 × Terminator w/ Heavy Weapon» con un solo desplegable dentro obligaba a que las dos
+      // llevaran lo mismo. La hoja dice lo contrario: una puede llevar cyclone y otra assault
+      // cannon.
+      final roster = listaDe('Imperium - Adeptus Astartes - Ultramarines');
+      final escuadra = unidadDe(roster, 'Terminator Squad');
+      roster.add(escuadra);
+      roster.applyModifiers();
+      final grupo = roster.mainModelGroup(escuadra)!;
+      for (var i = 0; i < 20; i++) {
+        final uso = roster.groupUsage(escuadra, grupo);
+        if (uso.maximo != null && uso.puestas >= uso.maximo!) break;
+        final relleno = roster.defaultOptionFor(escuadra, grupo);
+        if (relleno == null || !roster.canAdd(escuadra, relleno)) break;
+        final puesta = escuadra.puestaDe(relleno);
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          escuadra.addChild(relleno);
+        }
+        roster.applyModifiers();
+      }
+
+      Selection pesada() => roster
+          .optionsFor(escuadra)
+          .firstWhere((o) => o.name.contains('Heavy Weapon'));
+
+      roster.assign(escuadra, pesada());
+      roster.applyModifiers();
+      roster.assign(escuadra, pesada());
+      roster.applyModifiers();
+
+      final instancias = roster.instanciasDe(escuadra, pesada());
+      expect(instancias.length, 2, reason: 'dos miniaturas, no un contador con un «×2»');
+
+      // Y a la segunda se le cambia el arma sin tocar la primera.
+      final segunda = instancias[1];
+      final otra = roster
+          .optionsFor(segunda)
+          .firstWhere((o) => segunda.children.every((c) => c.entryId != o.entryId));
+      segunda.children.removeWhere((c) => c.groupId == otra.groupId);
+      segunda.addChild(otra);
+      roster.applyModifiers();
+
+      expect(instancias[0].children.map((c) => c.name),
+          isNot(equals(instancias[1].children.map((c) => c.name))));
+      expect(roster.validate(), isEmpty);
+    });
+  });
+
+  group('el Warlord', () {
+    test('es uno y solo uno en todo el ejército', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final typhus = unidadDe(roster, 'Typhus');
+      final tallyman = unidadDe(roster, 'Tallyman');
+      roster..add(typhus)..add(tallyman);
+
+      roster.setWarlord(typhus);
+      expect(roster.isWarlord(typhus), isTrue);
+
+      roster.setWarlord(tallyman);
+      expect(roster.isWarlord(tallyman), isTrue);
+      expect(roster.isWarlord(typhus), isFalse);
+      expect(roster.warlord, tallyman);
+    });
+
+    test('y en los Supreme Commander no se elige: lo son', () {
+      // «Si esta miniatura está en tu ejército, debe ser tu WARLORD». Lo llevan nueve unidades del
+      // dataset, y ofrecerlo como casilla es ofrecer una elección que la regla no da.
+      final roster = listaDe('Imperium - Adeptus Astartes - Ultramarines');
+      final guilliman = unidadDe(roster, 'Roboute Guilliman');
+      final otro = roster.faction.units
+          .where((u) => u.name == 'Terminator Squad')
+          .map(roster.selectionFor)
+          .first;
+      roster..add(guilliman)..add(otro);
+
+      expect(roster.mustBeWarlord(guilliman), isTrue);
+      roster.ajustarWarlord();
+      expect(roster.isWarlord(guilliman), isTrue);
+
+      // Y no se le puede quitar.
+      roster.clearWarlord(guilliman);
+      expect(roster.isWarlord(guilliman), isTrue);
+    });
+
+    test('son nueve en todo el dataset, no una regla inventada', () {
+      var supremos = 0;
+      final vistos = <String>{};
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          if (!vistos.add(unidad.id)) continue;
+          if (dataset.debeSerWarlord(unidad)) supremos++;
+        }
+      }
+      expect(supremos, inInclusiveRange(5, 30));
+    });
+  });
 }

@@ -43,6 +43,92 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
   }
 }
 
+/// La unidad **mirada**, no editada: la hoja de datos de lo que le has puesto.
+///
+/// Es la otra mitad del interruptor de la lista. Aquí no hay contadores, ni botones de más y
+/// menos, ni casillas: el Defiler enseña las armas que le has elegido y el Príncipe Demonio su
+/// mejora, igual que una hoja impresa. Es la pantalla de la mesa, donde lo único que se quiere es
+/// leer, y donde un toque en un contador estropearía lo que costó montar.
+class PantallaDeUnidadEnVisor extends StatelessWidget {
+  const PantallaDeUnidadEnVisor({super.key, required this.lista, required this.unidad});
+
+  final ListaEnCurso lista;
+  final Selection unidad;
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: lista,
+      builder: (context, _) {
+        final entrada = lista.entradaDe(unidad);
+        // Lo que lleva puesto, dicho de corrido: es la línea de «unit composition» de la hoja.
+        final lleva = unidad.children
+            .where((h) => h.name.isNotEmpty && h.name != 'Warlord')
+            .map((h) => h.count > 1 ? '${h.count} × ${h.name}' : h.name)
+            .toSet()
+            .toList();
+
+        return ColorDeEjercito(
+          color: colorDeFaccion(corto(lista.faccion.name)),
+          child: Builder(
+            builder: (context) => Scaffold(
+              appBar: AppBar(
+                title: Text(unidad.displayName),
+                actions: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Center(
+                      child: Text('${unidad.points} pts',
+                          style: TextStyle(
+                              color: ColorDeEjercito.de(context),
+                              fontSize: 15,
+                              fontWeight: FontWeight.w700)),
+                    ),
+                  ),
+                ],
+              ),
+              body: ListView(
+                padding: const EdgeInsets.only(bottom: 40),
+                children: [
+                  if (lista.esWarlord(unidad))
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.military_tech,
+                              size: 20, color: ColorDeEjercito.de(context)),
+                          const SizedBox(width: 8),
+                          Text('WARLORD',
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.8,
+                                  color: ColorDeEjercito.de(context))),
+                        ],
+                      ),
+                    ),
+                  if (lleva.isNotEmpty)
+                    _LoQueLleva(nombre: unidad.displayName, piezas: const [], texto: lleva),
+                  if (entrada != null)
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                      child: HojaDeDatos(
+                        perfiles: lista.hojaDe(unidad),
+                        habilidades: lista.habilidadesDe(unidad),
+                        cuantas: lista.armasDe(unidad),
+                        palabrasClave: entrada.keywords,
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
 class _Pantalla extends StatelessWidget {
   const _Pantalla({
     required this.lista,
@@ -63,15 +149,20 @@ class _Pantalla extends StatelessWidget {
           appBar: AppBar(
             title: Text(unidad.name),
             actions: [
-              Padding(
-                padding: const EdgeInsets.only(right: 16),
-                child: Center(
-                  child: Text('${unidad.points} pts',
-                      style: TextStyle(
-                          color: ColorDeEjercito.de(context),
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700)),
-                ),
+              Center(
+                child: Text('${unidad.points} pts',
+                    style: TextStyle(
+                        color: ColorDeEjercito.de(context),
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700)),
+              ),
+              // Se añade una unidad desde aquí; quitarla tiene que poder hacerse desde aquí.
+              // Estaba solo en el deslizar de la lista, que no se ve y no se descubre.
+              IconButton(
+                key: const ValueKey('borrar-unidad'),
+                tooltip: 'Quitar de la lista',
+                icon: const Icon(Icons.delete_outline),
+                onPressed: () => _confirmarBorrado(context, lista, unidad),
               ),
             ],
           ),
@@ -87,6 +178,8 @@ class _Pantalla extends StatelessWidget {
                 ),
               ),
               if (avisos.isNotEmpty) _Avisos(avisos: avisos),
+              if (lista.puedeSerWarlord(unidad))
+                _InterruptorDeWarlord(lista: lista, unidad: unidad),
               const _Titulo('Composición y equipo'),
               _NotasDeLaHoja(notas: lista.notasDeEquipoDe(unidad)),
               Padding(
@@ -110,6 +203,92 @@ class _Pantalla extends StatelessWidget {
                 ),
             ],
           ),
+    );
+  }
+}
+
+Future<void> _confirmarBorrado(
+    BuildContext context, ListaEnCurso lista, Selection unidad) async {
+  final seguro = await showDialog<bool>(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      backgroundColor: Tema.superficie,
+      title: const Text('¿Quitar la unidad?'),
+      content: Text('${unidad.displayName} saldrá de la lista.'),
+      actions: [
+        TextButton(
+            onPressed: () => Navigator.pop(ctx, false), child: const Text('No')),
+        TextButton(
+            onPressed: () => Navigator.pop(ctx, true), child: const Text('Quitar')),
+      ],
+    ),
+  );
+  if (seguro != true || !context.mounted) return;
+  lista.quitarUnidad(unidad);
+  if (context.mounted) Navigator.of(context).pop();
+}
+
+/// El Warlord: un interruptor, no un contador.
+///
+/// El dataset lo escribe como una mejora suelta más y por eso salía con su «menos» y su «más»,
+/// como si se pudieran tener dos. El ejército tiene uno: se pulsa y se pone aquí, quitándoselo a
+/// quien lo tuviera.
+///
+/// Y hay miniaturas donde ni eso: «Si esta miniatura está en tu ejército, debe ser tu WARLORD» no
+/// admite otra respuesta, así que ahí no hay interruptor sino un aviso de que ya lo es.
+class _InterruptorDeWarlord extends StatelessWidget {
+  const _InterruptorDeWarlord({required this.lista, required this.unidad});
+
+  final ListaEnCurso lista;
+  final Selection unidad;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final esWarlord = lista.esWarlord(unidad);
+    final obligado = lista.warlordObligado(unidad);
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 0),
+      child: Material(
+        color: esWarlord ? acento : Tema.superficie,
+        borderRadius: BorderRadius.circular(6),
+        child: InkWell(
+          key: const ValueKey('interruptor-warlord'),
+          borderRadius: BorderRadius.circular(6),
+          onTap: obligado ? null : () => lista.alternarWarlord(unidad),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(color: acento.withValues(alpha: 0.6)),
+            ),
+            child: Row(
+              children: [
+                Icon(esWarlord ? Icons.military_tech : Icons.military_tech_outlined,
+                    size: 22, color: esWarlord ? Tema.fondo : acento),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    obligado
+                        ? 'WARLORD · lo es por su regla, no se puede cambiar'
+                        : esWarlord
+                            ? 'WARLORD de este ejército'
+                            : 'Hacer Warlord',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
+                        color: esWarlord ? Tema.fondo : Tema.texto),
+                  ),
+                ),
+                if (obligado)
+                  Icon(Icons.lock_outline,
+                      size: 17, color: esWarlord ? Tema.fondo : Tema.textoTenue),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
@@ -241,14 +420,38 @@ class _Nodo extends StatelessWidget {
   Widget build(BuildContext context) {
     final ofrecidas = lista.opcionesDe(nodo);
     final raiz = nodo.groups.where((g) => g.parentId == null).toList();
-    final sueltas = ofrecidas.where((o) => o.groupId == null).toList();
+    final todasSueltas = ofrecidas.where((o) => o.groupId == null).toList();
 
-    // Puesto y ya no ofrecido: equipo de serie que no se puede cambiar. Se enseña igual, porque
-    // forma parte de la miniatura y el jugador tiene que verlo.
+    // Puesto y ya no ofrecido: equipo de serie que no se puede cambiar.
     final ofrecidosIds = ofrecidas.map((o) => '${o.entryId}|${o.groupId}').toSet();
     final fijos = nodo.children
         .where((h) => !ofrecidosIds.contains('${h.entryId}|${h.groupId}'))
         .toList();
+
+    // El Warlord no es una cantidad: el ejército tiene uno. Sale aparte, como interruptor.
+    final sueltas = todasSueltas.where((o) => o.name != 'Warlord').toList();
+
+    // Y el equipo que no se puede cambiar tampoco es una cantidad. Mortarion lleva Lantern,
+    // Rotwind y Silence y no hay nada más; un contador ahí —aunque esté bloqueado— ofrece una
+    // decisión que no existe. Va como una frase, igual que en la hoja.
+    // Solo las que no llevan nada dentro: una pieza fija que a su vez pregunta algo tiene que
+    // seguir abriéndose, o se pierde una elección de verdad.
+    bool lisa(Selection o) {
+      final puesta = nodo.puestaDe(o) ?? o;
+      return puesta.groups.isEmpty && lista.opcionesDe(puesta).isEmpty;
+    }
+
+    bool clavada(Selection o) =>
+        lista.esFija(nodo, o, hayAlternativas: false) && lisa(o);
+
+    final bloqueadas = <Selection>[
+      ...sueltas.where(clavada),
+      ...fijos.where(lisa),
+    ];
+    final elegibles = [
+      ...sueltas.where((o) => !clavada(o)),
+      ...fijos.where((f) => !lisa(f)),
+    ];
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -260,30 +463,89 @@ class _Nodo extends StatelessWidget {
               grupo: grupo,
               ofrecidas: ofrecidas,
               profundidad: profundidad),
-        if (sueltas.isNotEmpty || fijos.isNotEmpty)
+        if (bloqueadas.isNotEmpty)
+          _LoQueLleva(nombre: nodo.name, piezas: bloqueadas),
+        if (elegibles.isNotEmpty)
           _Caja(
             titulo: profundidad == 0 ? 'Equipo' : null,
             hijos: [
-              for (final o in sueltas)
+              for (final o in elegibles)
                 _Fila(
                     lista: lista,
                     dueno: nodo,
                     opcion: o,
                     // Sin grupo cada pieza va por su cuenta: no hay nada que ponerle en su lugar.
                     hayAlternativas: false,
-                    profundidad: profundidad),
-              for (final f in fijos)
-                _Fila(
-                    lista: lista,
-                    dueno: nodo,
-                    opcion: f,
-                    hayAlternativas: false,
                     profundidad: profundidad,
-                    fijo: true),
+                    fijo: !ofrecidosIds.contains('${o.entryId}|${o.groupId}')),
             ],
           ),
       ],
     );
+  }
+}
+
+/// Lo que la miniatura lleva y no se puede cambiar, dicho como lo dice la hoja.
+///
+/// «Mortarion equipped with: Lantern, Rotwind and Silence». Eso no es una decisión: es lo que hay,
+/// y pintarlo con un contador —aunque esté bloqueado y con su candado— ofrece algo que no existe.
+/// Va como una frase, que es además donde el jugador la busca.
+class _LoQueLleva extends StatelessWidget {
+  const _LoQueLleva({required this.nombre, required this.piezas, this.texto});
+
+  final String nombre;
+  final List<Selection> piezas;
+
+  /// Los nombres ya hechos, cuando quien llama los tiene y no las selecciones.
+  final List<String>? texto;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final nombres = <String>[];
+    for (final n in texto ?? const <String>[]) {
+      if (!nombres.contains(n)) nombres.add(n);
+    }
+    for (final p in piezas) {
+      final suyo = p.count > 1 ? '${p.count} × ${p.name}' : p.name;
+      if (!nombres.contains(suyo)) nombres.add(suyo);
+    }
+    if (nombres.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      margin: const EdgeInsets.fromLTRB(8, 8, 8, 4),
+      decoration: BoxDecoration(
+        color: Tema.superficie,
+        borderRadius: BorderRadius.circular(6),
+        border: Border.all(color: acento.withValues(alpha: 0.35)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            width: double.infinity,
+            color: acento.withValues(alpha: 0.22),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+            child: Text('EQUIPO',
+                style: TextStyle(
+                    fontSize: 12.5,
+                    fontWeight: FontWeight.w900,
+                    letterSpacing: 0.6,
+                    color: acento)),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 8, 10, 10),
+            child: Text('$nombre va con: ${_enumera(nombres)}',
+                style: const TextStyle(fontSize: 14.5, height: 1.35, color: Tema.texto)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  static String _enumera(List<String> nombres) {
+    if (nombres.length == 1) return nombres.first;
+    return '${nombres.sublist(0, nombres.length - 1).join(', ')} y ${nombres.last}';
   }
 }
 
@@ -598,31 +860,28 @@ class _CambioDeArma extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final puesta = dueno.puestaDe(opcion);
-    final pregunta = puesta != null &&
-        (puesta.groups.isNotEmpty || lista.opcionesDe(puesta).isNotEmpty);
+    final instancias = lista.instanciasDe(dueno, opcion);
+    final pregunta =
+        instancias.isNotEmpty && lista.preguntaQueArma(instancias.first);
     final fila = _fila(context);
     if (!pregunta) return fila;
 
-    final avisos = lista.incumplimientosDe(puesta).length;
-    return Theme(
-      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-      child: ExpansionTile(
-        key: ValueKey('rama-${opcion.entryId}'),
-        initiallyExpanded: true,
-        tilePadding: EdgeInsets.zero,
-        childrenPadding: const EdgeInsets.fromLTRB(8, 0, 4, 8),
-        title: fila,
-        subtitle: avisos == 0
-            ? null
-            : Padding(
-                padding: const EdgeInsets.only(left: 12, bottom: 6),
-                child: Text(
-                    avisos == 1 ? 'falta algo por elegir' : '$avisos cosas por elegir',
-                    style: const TextStyle(color: Tema.aviso, fontSize: 11.5)),
-              ),
-        children: [_Nodo(lista: lista, nodo: puesta, profundidad: 1)],
-      ),
+    // Un cuadro por miniatura, no uno con un «×2». Dos armas pesadas son dos Terminators, y cada
+    // uno elige la suya: una puede llevar cyclone y el otro assault cannon. Con un solo cuadro la
+    // elección era una y valía para los dos.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        fila,
+        for (var i = 0; i < instancias.length; i++)
+          _MiniaturaQueElige(
+            lista: lista,
+            dueno: dueno,
+            instancia: instancias[i],
+            numero: i + 1,
+            deCuantas: instancias.length,
+          ),
+      ],
     );
   }
 
@@ -697,6 +956,93 @@ String _sinPrefijo(String nombre) {
   if (corte < 0) return nombre;
   final arma = nombre.substring(corte).replaceFirst(RegExp(r'^w/\s*'), '').trim();
   return arma.isEmpty ? nombre : '${arma[0].toUpperCase()}${arma.substring(1)}';
+}
+
+/// Una de las miniaturas que llevan un arma que hay que elegir, con su elección dentro.
+///
+/// Cuando una escuadra puede cambiar dos armas, son **dos miniaturas** y cada una elige la suya.
+/// Enseñarlo como «2 × Terminator w/ Heavy Weapon» con un solo desplegable dentro obligaba a que
+/// las dos llevaran lo mismo, que es justo lo contrario de lo que dice la hoja.
+class _MiniaturaQueElige extends StatelessWidget {
+  const _MiniaturaQueElige({
+    required this.lista,
+    required this.dueno,
+    required this.instancia,
+    required this.numero,
+    required this.deCuantas,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final Selection instancia;
+  final int numero;
+  final int deCuantas;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final avisos = lista.incumplimientosDe(instancia).length;
+    // Lo que lleva ahora mismo, que es lo que hay que leer de un vistazo para saber cuál es cuál.
+    final lleva = instancia.children
+        .where((c) => c.groupId != null)
+        .map((c) => _sinPrefijo(c.name))
+        .join(', ');
+
+    return Container(
+      margin: const EdgeInsets.fromLTRB(20, 2, 8, 6),
+      decoration: BoxDecoration(
+        color: Tema.superficie,
+        borderRadius: BorderRadius.circular(6),
+        border: Border(left: BorderSide(color: acento.withValues(alpha: 0.6), width: 3)),
+      ),
+      child: Theme(
+        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+        child: ExpansionTile(
+          key: ValueKey('miniatura-${instancia.entryId}-$numero'),
+          initiallyExpanded: true,
+          tilePadding: const EdgeInsets.symmetric(horizontal: 10),
+          childrenPadding: const EdgeInsets.fromLTRB(4, 0, 4, 8),
+          title: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                decoration: BoxDecoration(
+                  color: acento.withValues(alpha: 0.22),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Text(deCuantas > 1 ? 'Miniatura $numero' : 'Esta miniatura',
+                    style: TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.w800, color: acento)),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(lleva.isEmpty ? 'sin elegir' : lleva,
+                    style: TextStyle(
+                        fontSize: 13.5,
+                        height: 1.2,
+                        color: lleva.isEmpty ? Tema.aviso : Tema.texto)),
+              ),
+              _BotonGrande(
+                icono: Icons.close,
+                color: acento,
+                activo: true,
+                onPressed: () => lista.devolverArmaDe(dueno, instancia),
+              ),
+            ],
+          ),
+          subtitle: avisos == 0
+              ? null
+              : Padding(
+                  padding: const EdgeInsets.only(top: 4, bottom: 4),
+                  child: Text(
+                      avisos == 1 ? 'falta algo por elegir' : '$avisos cosas por elegir',
+                      style: const TextStyle(color: Tema.aviso, fontSize: 11.5)),
+                ),
+          children: [_Nodo(lista: lista, nodo: instancia, profundidad: 1)],
+        ),
+      ),
+    );
+  }
 }
 
 /// El contador de miniaturas de una escuadra: cuántas hay, y menos y más.

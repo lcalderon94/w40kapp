@@ -32,6 +32,23 @@ class ListaEnCurso extends ChangeNotifier {
   bool get sePuedeDeshacer => _antes.isNotEmpty;
   bool get sePuedeRehacer => _despues.isNotEmpty;
 
+  /// Si la lista está en modo edición o en modo visor.
+  ///
+  /// Editando se añaden unidades y se reparte el equipo; en el visor la lista es lo que ya has
+  /// montado, leído como se lee una hoja de datos: las armas que le has puesto al Defiler y la
+  /// mejora que lleva el Príncipe Demonio, sin un solo botón que las cambie. Es la pantalla que se
+  /// mira en la mesa, donde un toque de más estropea la lista.
+  bool get modoEdicion => _modoEdicion;
+  bool _modoEdicion = true;
+
+  set modoEdicion(bool valor) {
+    if (_modoEdicion == valor) return;
+    _modoEdicion = valor;
+    notifyListeners();
+  }
+
+  void alternarModo() => modoEdicion = !_modoEdicion;
+
   /// Apunta el estado actual antes de cambiarlo.
   void _apunta() {
     _antes.add(Guardado.aJson(roster));
@@ -148,12 +165,36 @@ class ListaEnCurso extends ChangeNotifier {
     // Del roster, no del dataset: así la unidad entra sin el equipo que solo existe con otro
     // detachment, que si no se cuela y además le cambia las palabras clave.
     roster.add(roster.selectionFor(unidad));
+    // «Si esta miniatura está en tu ejército, debe ser tu WARLORD» no admite otra respuesta.
+    roster.ajustarWarlord();
     notifyListeners();
   }
 
   void quitarUnidad(Selection unidad) {
     _apunta();
     roster.remove(unidad);
+    roster.ajustarWarlord();
+    notifyListeners();
+  }
+
+  /// Si esta unidad es el Warlord del ejército.
+  bool esWarlord(Selection unidad) => roster.isWarlord(unidad);
+
+  /// Si la regla no deja elegir: un Supreme Commander manda y no hay interruptor que valga.
+  bool warlordObligado(Selection unidad) => roster.mustBeWarlord(unidad);
+
+  /// La unidad ofrece ser Warlord.
+  bool puedeSerWarlord(Selection unidad) => roster.warlordOptionOf(unidad) != null;
+
+  /// El interruptor: una pulsación lo pone aquí —y se lo quita a quien lo tuviera—, otra lo quita.
+  void alternarWarlord(Selection unidad) {
+    _apunta();
+    if (roster.isWarlord(unidad)) {
+      roster.clearWarlord(unidad);
+    } else {
+      roster.setWarlord(unidad);
+    }
+    roster.applyModifiers();
     notifyListeners();
   }
 
@@ -417,6 +458,21 @@ class ListaEnCurso extends ChangeNotifier {
 
   bool sePuedeAsignar(Selection unidad, Selection opcion) =>
       roster.canAssign(unidad, opcion);
+
+  /// Cada miniatura puesta de esa opción, por separado. Ver [Roster.instanciasDe].
+  List<Selection> instanciasDe(Selection unidad, Selection opcion) =>
+      roster.instanciasDe(unidad, opcion);
+
+  /// Si esa miniatura, ya puesta, pregunta con qué arma va.
+  bool preguntaQueArma(Selection puesta) => roster.pideEleccion(puesta);
+
+  /// Le devuelve el arma de serie a esa miniatura en concreto.
+  void devolverArmaDe(Selection unidad, Selection instancia) {
+    _apunta();
+    roster.unassignInstance(unidad, instancia);
+    roster.applyModifiers();
+    notifyListeners();
+  }
 
   /// A cuántas miniaturas se les puede poner esa arma como mucho, ahora mismo.
   int? topeDeArma(Selection unidad, Selection opcion) =>

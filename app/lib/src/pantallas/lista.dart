@@ -36,18 +36,23 @@ class PantallaDeLista extends StatelessWidget {
           appBar: AppBar(
             title: Text(lista.roster.name),
             actions: [
-              // Deshacer y rehacer: quitar una unidad por error y tener que rehacerla a mano es
-              // lo que hace que montar una lista canse.
-              IconButton(
-                icon: const Icon(Icons.undo, size: 20),
-                tooltip: 'Deshacer',
-                onPressed: lista.sePuedeDeshacer ? lista.deshacer : null,
-              ),
-              IconButton(
-                icon: const Icon(Icons.redo, size: 20),
-                tooltip: 'Rehacer',
-                onPressed: lista.sePuedeRehacer ? lista.rehacer : null,
-              ),
+              // El interruptor entre montar la lista y mirarla. En la mesa se mira, y ahí un
+              // toque de más en un contador estropea lo que costó montar.
+              _BotonDeModo(lista: lista),
+              if (lista.modoEdicion) ...[
+                // Deshacer y rehacer: quitar una unidad por error y tener que rehacerla a mano es
+                // lo que hace que montar una lista canse.
+                IconButton(
+                  icon: const Icon(Icons.undo, size: 20),
+                  tooltip: 'Deshacer',
+                  onPressed: lista.sePuedeDeshacer ? lista.deshacer : null,
+                ),
+                IconButton(
+                  icon: const Icon(Icons.redo, size: 20),
+                  tooltip: 'Rehacer',
+                  onPressed: lista.sePuedeRehacer ? lista.rehacer : null,
+                ),
+              ],
               IconButton(
                 icon: const Icon(Icons.ios_share, size: 20),
                 tooltip: 'Exportar',
@@ -71,15 +76,17 @@ class PantallaDeLista extends StatelessWidget {
               _Unidades(lista: lista),
             ],
           ),
-          floatingActionButton: FloatingActionButton.extended(
-            backgroundColor: ColorDeEjercito.de(context),
-            foregroundColor: Tema.fondo,
-            icon: const Icon(Icons.add),
-            label: const Text('Añadir unidad'),
-            onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (_) => PantallaDeAnadirUnidad(lista: lista),
-            )),
-          ),
+          floatingActionButton: !lista.modoEdicion
+              ? null
+              : FloatingActionButton.extended(
+                  backgroundColor: ColorDeEjercito.de(context),
+                  foregroundColor: Tema.fondo,
+                  icon: const Icon(Icons.add),
+                  label: const Text('Añadir unidad'),
+                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (_) => PantallaDeAnadirUnidad(lista: lista),
+                  )),
+                ),
           )),
         );
       },
@@ -104,6 +111,55 @@ class PantallaDeLista extends StatelessWidget {
       ),
     );
     if (nombre != null && nombre.trim().isNotEmpty) lista.renombrar(nombre.trim());
+  }
+}
+
+/// El interruptor entre montar la lista y mirarla.
+///
+/// En WarOrgan son dos pantallas distintas y por algo: montando hacen falta contadores, botones y
+/// avisos; en la mesa lo que hace falta es leer lo que llevas, y cualquiera de esos botones es un
+/// toque que estropea la lista sin querer.
+class _BotonDeModo extends StatelessWidget {
+  const _BotonDeModo({required this.lista});
+
+  final ListaEnCurso lista;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final editando = lista.modoEdicion;
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+      child: Material(
+        color: editando ? acento : Colors.transparent,
+        borderRadius: BorderRadius.circular(5),
+        child: InkWell(
+          key: const ValueKey('boton-modo'),
+          borderRadius: BorderRadius.circular(5),
+          onTap: lista.alternarModo,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              border: Border.all(color: acento.withValues(alpha: 0.7)),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(editando ? Icons.edit : Icons.visibility,
+                    size: 16, color: editando ? Tema.fondo : acento),
+                const SizedBox(width: 6),
+                Text(editando ? 'Editando' : 'Viendo',
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w800,
+                        color: editando ? Tema.fondo : acento)),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -403,17 +459,8 @@ class _Unidad extends StatelessWidget {
     final lideres = unida ? const <Selection>[] : lista.lideresDe(unidad);
     final puedeUnirse = !unida && lista.anfitrionesDe(unidad).isNotEmpty;
 
-    final fila = Dismissible(
-      key: ObjectKey(unidad),
-      direction: DismissDirection.endToStart,
-      background: Container(
-        alignment: Alignment.centerRight,
-        padding: const EdgeInsets.only(right: 24),
-        color: Tema.aviso.withValues(alpha: 0.22),
-        child: const Icon(Icons.delete_outline, color: Tema.aviso),
-      ),
-      onDismissed: (_) => lista.quitarUnidad(unidad),
-      child: ListTile(
+    final editando = lista.modoEdicion;
+    final tarjeta = ListTile(
         contentPadding: EdgeInsets.only(left: unida ? 34 : 16, right: 8),
         title: Row(
           children: [
@@ -453,19 +500,27 @@ class _Unidad extends StatelessWidget {
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            IconButton(
-              tooltip: 'Ponerle nombre',
-              icon: const Icon(Icons.drive_file_rename_outline,
-                  size: 18, color: Tema.textoTenue),
-              onPressed: () => _renombrarUnidad(context),
-            ),
-            if (puedeUnirse)
+            if (editando)
+              IconButton(
+                tooltip: 'Ponerle nombre',
+                icon: const Icon(Icons.drive_file_rename_outline,
+                    size: 18, color: Tema.textoTenue),
+                onPressed: () => _renombrarUnidad(context),
+              ),
+            if (editando)
+              IconButton(
+                key: const ValueKey('quitar-de-la-lista'),
+                tooltip: 'Quitar de la lista',
+                icon: const Icon(Icons.delete_outline, size: 18, color: Tema.textoTenue),
+                onPressed: () => lista.quitarUnidad(unidad),
+              ),
+            if (editando && puedeUnirse)
               IconButton(
                 tooltip: 'Unir a una unidad',
                 icon: const Icon(Icons.link, size: 19, color: Tema.textoTenue),
                 onPressed: () => _elegirAnfitrion(context),
               ),
-            if (unida)
+            if (editando && unida)
               IconButton(
                 tooltip: 'Separar',
                 icon: const Icon(Icons.link_off, size: 19, color: Tema.textoTenue),
@@ -478,10 +533,27 @@ class _Unidad extends StatelessWidget {
           ],
         ),
         onTap: () => Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => PantallaDeUnidadEnLista(lista: lista, unidad: unidad),
+          // Viendo, la unidad se abre como hoja de datos: lo que le has puesto, y nada que tocar.
+          builder: (_) => editando
+              ? PantallaDeUnidadEnLista(lista: lista, unidad: unidad)
+              : PantallaDeUnidadEnVisor(lista: lista, unidad: unidad),
         )),
-      ),
     );
+
+    final fila = !editando
+        ? tarjeta
+        : Dismissible(
+            key: ObjectKey(unidad),
+            direction: DismissDirection.endToStart,
+            background: Container(
+              alignment: Alignment.centerRight,
+              padding: const EdgeInsets.only(right: 24),
+              color: Tema.aviso.withValues(alpha: 0.22),
+              child: const Icon(Icons.delete_outline, color: Tema.aviso),
+            ),
+            onDismissed: (_) => lista.quitarUnidad(unidad),
+            child: tarjeta,
+          );
 
     if (lideres.isEmpty) return fila;
     // El líder va debajo de su unidad y sangrado: se juegan como una sola cosa.

@@ -1199,6 +1199,24 @@ class Dataset {
 
   NotasDeEquipo _notasDeEquipo = const NotasDeEquipo.vacia();
 
+  /// Si esta miniatura **tiene** que ser el Warlord del ejército.
+  ///
+  /// Es la habilidad «Supreme Commander»: «Si esta miniatura está en tu ejército, debe ser tu
+  /// WARLORD». La llevan nueve unidades del dataset —Guilliman, Ghazghkull, Shadowsun, Fulgrim…—
+  /// y ahí no hay nada que decidir: ofrecerlo como una casilla que se marca y se desmarca es
+  /// ofrecer una elección que la regla no da.
+  bool debeSerWarlord(UnitEntry unit) {
+    final cacheado = _supremos[unit.id];
+    if (cacheado != null) return cacheado;
+    final manda = sheetOf(unit).any((p) =>
+        p.name.toLowerCase().contains('supreme commander') ||
+        (p.description ?? '').toLowerCase().contains('debe ser tu warlord') ||
+        (p.description ?? '').toLowerCase().contains('must be your warlord'));
+    return _supremos[unit.id] = manda;
+  }
+
+  final Map<String, bool> _supremos = {};
+
   /// Lo que la hoja dice que se puede cambiar en esta unidad, **si sigue valiendo**.
   ///
   /// El texto es de las index cards de 10ª y hay hojas que han cambiado entera: el Defiler de

@@ -1428,8 +1428,13 @@ class Roster {
     final grupo = modelGroupOf(owner, option)!;
     final relleno = defaultOptionFor(owner, grupo)!;
     _quitarUna(owner, relleno);
+    // Dos armas pesadas son **dos miniaturas**, y cada una elige la suya. Si lo que se pone
+    // pregunta algo —el «Terminator w/ Heavy Weapon» no dice cuál: assault cannon, heavy flamer o
+    // cyclone— se mete una selección aparte por cada una, no un contador con un «×2». Con el
+    // contador, la elección era una sola y valía para las dos, que es justo lo contrario de lo que
+    // dice la hoja.
     final puesta = owner.puestaDe(option);
-    if (puesta != null) {
+    if (puesta != null && !pideEleccion(puesta)) {
       puesta.count++;
     } else {
       owner.addChild(option);
@@ -1445,6 +1450,104 @@ class Roster {
       if (uso.maximo == null || uso.puestas <= uso.maximo!) break;
       if (owner.cuantasDe(relleno) < 1) break;
       _quitarUna(owner, relleno);
+    }
+  }
+
+  /// Si esta miniatura, una vez puesta, **pregunta** algo: con qué arma va.
+  ///
+  /// Es lo que decide si dos de lo mismo son un contador —«2 × Blight launcher», que son dos
+  /// miniaturas idénticas— o dos cuadros separados —«2 × Terminator w/ Heavy Weapon», donde una
+  /// puede llevar cyclone y la otra assault cannon—.
+  bool pideEleccion(Selection puesta) {
+    final cacheado = _pregunta[puesta.entryId];
+    if (cacheado != null) return cacheado;
+    final pide = puesta.groups.isNotEmpty && optionsFor(puesta).isNotEmpty;
+    return _pregunta[puesta.entryId] = pide;
+  }
+
+  final Map<String, bool> _pregunta = {};
+
+  /// Cada una de las miniaturas puestas de esa opción, por separado.
+  ///
+  /// Normalmente es una sola con su contador; cuando la opción pregunta con qué arma va, son
+  /// varias, y cada una lleva su respuesta dentro.
+  List<Selection> instanciasDe(Selection owner, Selection option) => owner.children
+      .where((c) => c.entryId == option.entryId && c.groupId == option.groupId)
+      .toList();
+
+  /// Le devuelve el arma de serie a **esa** miniatura, no a una cualquiera de las iguales.
+  void unassignInstance(Selection owner, Selection instancia) {
+    final grupo = modelGroupOf(owner, instancia);
+    if (grupo == null) return;
+    final relleno = defaultOptionFor(owner, grupo);
+    if (relleno == null || relleno.entryId == instancia.entryId) return;
+    if (instancia.count > 1) {
+      instancia.count--;
+    } else {
+      owner.children.remove(instancia);
+    }
+    final puesta = owner.puestaDe(relleno);
+    if (puesta != null) {
+      puesta.count++;
+    } else {
+      owner.addChild(relleno);
+    }
+  }
+
+  /// La opción «Warlord» de una unidad, si la ofrece.
+  ///
+  /// El dataset la escribe como una mejora suelta más, y pintada como tal salía con un contador de
+  /// menos y más. No es una cantidad: el ejército tiene **un** Warlord y esto es el interruptor.
+  Selection? warlordOptionOf(Selection unit) =>
+      optionsFor(unit).where((o) => o.name == 'Warlord').firstOrNull;
+
+  bool isWarlord(Selection unit) =>
+      unit.children.any((c) => c.name == 'Warlord' && c.count > 0);
+
+  /// Si esta unidad tiene que ser el Warlord y no se puede elegir otra cosa.
+  bool mustBeWarlord(Selection unit) {
+    final entrada = unitEntryOf(unit);
+    return entrada != null && faction.dataset.debeSerWarlord(entrada);
+  }
+
+  /// Pone el Warlord aquí y se lo quita a quien lo tuviera: solo puede haber uno.
+  void setWarlord(Selection unit) {
+    for (final otra in units) {
+      if (identical(otra, unit)) continue;
+      otra.children.removeWhere((c) => c.name == 'Warlord');
+    }
+    if (isWarlord(unit)) return;
+    final opcion = warlordOptionOf(unit);
+    if (opcion != null) unit.addChild(opcion);
+  }
+
+  void clearWarlord(Selection unit) {
+    if (mustBeWarlord(unit)) return;
+    unit.children.removeWhere((c) => c.name == 'Warlord');
+  }
+
+  /// El Warlord de la lista, si ya hay uno.
+  Selection? get warlord => units.where(isWarlord).firstOrNull;
+
+  /// Deja el Warlord donde manda la regla: si hay un Supreme Commander en la lista, es él.
+  ///
+  /// «Si esta miniatura está en tu ejército, debe ser tu WARLORD» no admite otra respuesta, así
+  /// que la app la da sola en vez de dejar una casilla que solo se puede marcar de una manera.
+  void ajustarWarlord() {
+    final obligado = units.where(mustBeWarlord).firstOrNull;
+    if (obligado != null) {
+      setWarlord(obligado);
+      return;
+    }
+    // Y nunca dos: si dos unidades acabaron con la marca, se queda la primera.
+    var visto = false;
+    for (final unidad in units) {
+      if (!isWarlord(unidad)) continue;
+      if (visto) {
+        unidad.children.removeWhere((c) => c.name == 'Warlord');
+      } else {
+        visto = true;
+      }
     }
   }
 
@@ -1475,7 +1578,11 @@ class Roster {
   }
 
   void _quitarUna(Selection owner, Selection option) {
-    final puesta = owner.puestaDe(option);
+    // La última, que es la que se acaba de poner: con varias miniaturas separadas, quitar la
+    // primera se llevaría por delante una elección vieja que el jugador no ha tocado.
+    final puesta = owner.children
+        .where((c) => c.entryId == option.entryId && c.groupId == option.groupId)
+        .lastOrNull;
     if (puesta == null) return;
     if (puesta.count > 1) {
       puesta.count--;

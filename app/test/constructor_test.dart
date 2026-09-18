@@ -814,4 +814,169 @@ void main() {
       }
     });
   });
+
+  group('lo que no es una decisión no lleva contador', () {
+    testWidgets('un personaje con un solo equipo lo enseña como frase, sin contadores',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        // Rotigus lleva lo que lleva y no hay nada que elegir. Un contador ahí —aunque esté
+        // bloqueado y con su candado— ofrece una decisión que no existe.
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Rotigus'));
+        final rotigus = lista.roster.units.first;
+        await mostrar(tester,
+            PantallaDeUnidadEnLista(lista: lista, unidad: rotigus));
+
+        expect(find.text('EQUIPO'), findsOneWidget);
+        expect(find.textContaining('Rotigus va con:'), findsOneWidget);
+        expect(find.textContaining('Gnarlrod'), findsWidgets);
+        expect(find.byIcon(Icons.lock_outline), findsNothing,
+            reason: 'ni candados ni contadores para lo que no se puede cambiar');
+      });
+    });
+
+    testWidgets('el Warlord es un interruptor, no un contador', (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Typhus'));
+        final rotigus = lista.roster.units.first;
+        await mostrar(tester,
+            PantallaDeUnidadEnLista(lista: lista, unidad: rotigus));
+
+        expect(find.text('Hacer Warlord'), findsOneWidget);
+        expect(lista.esWarlord(rotigus), isFalse);
+
+        await tester.tap(find.byKey(const ValueKey('interruptor-warlord')));
+        await tester.pumpAndSettle();
+        expect(lista.esWarlord(rotigus), isTrue);
+        expect(find.text('WARLORD de este ejército'), findsOneWidget);
+
+        // Y se apaga con otra pulsación: una casilla que solo sabe marcar deja atrapado al jugador.
+        await tester.tap(find.byKey(const ValueKey('interruptor-warlord')));
+        await tester.pumpAndSettle();
+        expect(lista.esWarlord(rotigus), isFalse);
+      });
+    });
+
+    testWidgets('y solo puede haber uno en todo el ejército', (tester) async {
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Typhus'))
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Tallyman'));
+      final rotigus = lista.roster.units.first;
+      final tallyman = lista.roster.units[1];
+
+      lista.alternarWarlord(rotigus);
+      expect(lista.esWarlord(rotigus), isTrue);
+
+      lista.alternarWarlord(tallyman);
+      expect(lista.esWarlord(tallyman), isTrue);
+      expect(lista.esWarlord(rotigus), isFalse,
+          reason: 'el ejército tiene un Warlord, no dos');
+    });
+  });
+
+  group('quitar una unidad', () {
+    testWidgets('hay un botón para quitarla desde la propia unidad', (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Rotigus'));
+        await mostrar(tester,
+            PantallaDeUnidadEnLista(lista: lista, unidad: lista.roster.units.first));
+
+        // Estaba solo en el deslizar de la lista, que no se ve y no se descubre.
+        expect(find.byKey(const ValueKey('borrar-unidad')), findsOneWidget);
+      });
+    });
+
+    testWidgets('y otro en la fila de la lista', (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Rotigus'));
+        await mostrar(tester, PantallaDeLista(lista: lista));
+
+        expect(find.byKey(const ValueKey('quitar-de-la-lista')), findsOneWidget);
+        await tester.tap(find.byKey(const ValueKey('quitar-de-la-lista')));
+        await tester.pumpAndSettle();
+        expect(lista.roster.units, isEmpty);
+      });
+    });
+  });
+
+  group('modo edición y modo visor', () {
+    testWidgets('viendo no hay botones de editar ni de añadir', (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Rotigus'));
+        await mostrar(tester, PantallaDeLista(lista: lista));
+
+        expect(find.text('Añadir unidad'), findsOneWidget);
+        expect(find.byKey(const ValueKey('quitar-de-la-lista')), findsOneWidget);
+
+        await tester.tap(find.byKey(const ValueKey('boton-modo')));
+        await tester.pumpAndSettle();
+
+        expect(lista.modoEdicion, isFalse);
+        expect(find.text('Viendo'), findsOneWidget);
+        expect(find.text('Añadir unidad'), findsNothing);
+        expect(find.byKey(const ValueKey('quitar-de-la-lista')), findsNothing);
+      });
+    });
+
+    testWidgets('y la unidad se abre como hoja de datos, sin nada que tocar',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+        await mostrar(tester,
+            PantallaDeUnidadEnVisor(lista: lista, unidad: lista.roster.units.first));
+
+        expect(find.textContaining('Plague Marines va con:'), findsOneWidget);
+        // Ni contadores de escuadra ni de arma.
+        expect(find.byKey(const ValueKey('anadir-miniatura')), findsNothing);
+        expect(find.byKey(const ValueKey('quitar-miniatura')), findsNothing);
+      });
+    });
+  });
+
+  group('dos armas pesadas son dos miniaturas', () {
+    testWidgets('cada una con su propio cuadro y su propia elección', (tester) async {
+      await conPantallaAlta(tester, () async {
+        final ultramarines =
+            dataset.factionNamed('Imperium - Adeptus Astartes - Ultramarines');
+        final lista = ListaEnCurso(
+            dataset: dataset, faccion: ultramarines, tamano: tamano(2000))
+          ..elegirDetachment(dataset.detachmentsOf(ultramarines).first)
+          ..anadirUnidad(
+              ultramarines.units.firstWhere((u) => u.name == 'Terminator Squad'));
+        final escuadra = lista.roster.units.first;
+
+        // Diez Terminators, que es cuando caben dos armas pesadas.
+        final grupo = lista.roster.mainModelGroup(escuadra)!;
+        while (lista.cabeOtraMiniatura(escuadra, grupo)) {
+          lista.anadirMiniatura(escuadra, grupo);
+        }
+
+        final pesada = lista
+            .opcionesDe(escuadra)
+            .firstWhere((o) => o.name.contains('Heavy Weapon'));
+        lista.asignarArma(escuadra, pesada);
+        lista.asignarArma(escuadra, pesada);
+
+        expect(lista.instanciasDe(escuadra, pesada).length, 2,
+            reason: 'dos miniaturas, no un contador con un «×2»');
+
+        await mostrar(tester,
+            PantallaDeUnidadEnLista(lista: lista, unidad: escuadra));
+        expect(find.text('Miniatura 1'), findsOneWidget);
+        expect(find.text('Miniatura 2'), findsOneWidget);
+      });
+    });
+  });
 }
