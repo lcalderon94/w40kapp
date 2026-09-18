@@ -15,7 +15,7 @@ Directory _datasetDirectory() {
 void main() {
   late Dataset dataset;
 
-  setUpAll(() async => dataset = await Dataset.load(_datasetDirectory()));
+  setUpAll(() async => dataset = await Dataset.load(_datasetDirectory(), notas: File('../data/wargear/notas-de-equipo.json')));
 
   Roster listaDe(String faccion, {String? detachment}) {
     final f = dataset.factionNamed(faccion);
@@ -554,6 +554,80 @@ void main() {
       expect(conCambios, greaterThan(800));
       expect(atascadas, 0,
           reason: 'lo único que impide cambiar un arma es su propio techo');
+    });
+  });
+
+  group('las opciones de equipo de la hoja', () {
+    test('salen con las palabras de la hoja, que es lo que BSData no trae', () {
+      final ultra = dataset.factionNamed('Imperium - Adeptus Astartes - Ultramarines');
+      final termis = ultra.units.firstWhere((u) => u.name == 'Terminator Squad');
+      final notas = dataset.wargearNotesOf(termis);
+
+      expect(notas, isNotEmpty);
+      expect(notas.first, contains('For every 5 models in this unit'));
+      expect(notas.first, contains('storm bolter can be replaced'));
+      expect(notas.join(' '), contains('assault cannon'));
+    });
+
+    test('y en otra facción igual, con las suyas', () {
+      final dg = dataset.factionNamed('Chaos - Death Guard');
+      final marines = dg.units.firstWhere((u) => u.name == 'Plague Marines');
+      final notas = dataset.wargearNotesOf(marines);
+
+      expect(notas, hasLength(7));
+      expect(notas.join(' '), contains('For every 5 models in this unit'));
+      expect(notas.join(' '), contains('blight launcher'));
+
+      final custodes = dataset.factionNamed('Imperium - Adeptus Custodes');
+      final guardia = custodes.units.firstWhere((u) => u.name == 'Custodian Guard');
+      expect(dataset.wargearNotesOf(guardia).join(' '), contains('guardian spear'));
+    });
+
+    test('pero la frase que ya no vale no se enseña', () {
+      // El texto es de las index cards de 10ª. El Defiler de entonces llevaba un twin heavy
+      // flamer y un reaper autocannon; el de ahora, un baleflamer y un cañón Hades. Enseñar esa
+      // frase sería peor que no enseñar ninguna.
+      final dg = dataset.factionNamed('Chaos - Death Guard');
+      final defiler = dg.units.firstWhere((u) => u.name == 'Defiler');
+      expect(dataset.wargearNotesOf(defiler), isEmpty);
+    });
+
+    test('llegan a cientos de unidades, no a un puñado', () {
+      var con = 0;
+      final vistas = <String>{};
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          if (!vistas.add(unidad.id)) continue;
+          if (dataset.wargearNotesOf(unidad).isNotEmpty) con++;
+        }
+      }
+      expect(con, greaterThan(400));
+    });
+
+    test('y no deciden nada: sin ellas la lista sale igual', () {
+      // Es texto de otra edición, así que no puede tocar ni los topes ni el precio. Lo único que
+      // cambia al quitarlas es que no hay frase que leer.
+      final dg = dataset.factionNamed('Chaos - Death Guard');
+      final entrada = dg.units.firstWhere((u) => u.name == 'Plague Marines');
+
+      final conNotas = Roster(faction: dg, pointsLimit: 2000)
+        ..detachments.add(dataset.detachmentsOf(dg).first);
+      conNotas.add(conNotas.selectionFor(entrada));
+      final puntos = conNotas.points;
+      final avisos = conNotas.validate().length;
+
+      final guardadas = dataset.notasDeEquipo;
+      dataset.notasDeEquipo = const NotasDeEquipo.vacia();
+      try {
+        final sinNotas = Roster(faction: dg, pointsLimit: 2000)
+          ..detachments.add(dataset.detachmentsOf(dg).first);
+        sinNotas.add(sinNotas.selectionFor(entrada));
+        expect(sinNotas.points, puntos);
+        expect(sinNotas.validate(), hasLength(avisos));
+        expect(dataset.wargearNotesOf(entrada), isEmpty);
+      } finally {
+        dataset.notasDeEquipo = guardadas;
+      }
     });
   });
 

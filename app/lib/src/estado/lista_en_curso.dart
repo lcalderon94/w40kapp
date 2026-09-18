@@ -352,6 +352,16 @@ class ListaEnCurso extends ChangeNotifier {
   bool esFija(Selection padre, Selection opcion, {bool hayAlternativas = false}) =>
       roster.isFixed(padre, opcion, hayAlternativas: hayAlternativas);
 
+  /// Lo que la hoja impresa dice que se puede cambiar en esta unidad.
+  ///
+  /// Es texto, no regla: los topes y el precio siguen saliendo del dataset. Está para saber qué se
+  /// está eligiendo —«por cada 5 miniaturas, 1 puede cambiar el bólter»—, que es justo lo que los
+  /// números solos no dicen.
+  List<String> notasDeEquipoDe(Selection unidad) {
+    final entrada = entradaDe(unidad);
+    return entrada == null ? const [] : dataset.wargearNotesOf(entrada);
+  }
+
   /// Las habilidades de reglamento —CORE y FACTION— de una unidad de la lista.
   List<Ability> habilidadesDe(Selection unidad) {
     final entrada = entradaDe(unidad);

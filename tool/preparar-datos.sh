@@ -15,4 +15,11 @@ fi
 mkdir -p "$raiz/app/assets/datos"
 rm -f "$raiz/app/assets/datos"/*.json
 cp "$raiz/data/bsdata-es"/*.json "$raiz/app/assets/datos/"
+
+# Las opciones de equipo tal y como las dice la hoja impresa. Esto sí está en el repositorio —son
+# 200 KB de texto que no cambian con cada refresco de upstream— y va aparte de los catálogos
+# porque no es un catálogo: no se resuelve ni se valida, solo se lee.
+mkdir -p "$raiz/app/assets/notas"
+cp "$raiz/data/wargear/notas-de-equipo.json" "$raiz/app/assets/notas/"
+
 echo "Listo: $(ls "$raiz/app/assets/datos" | wc -l) ficheros en app/assets/datos"

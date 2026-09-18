@@ -23,7 +23,24 @@ abstract final class RepositorioDatos {
         'app/assets/datos (ver README).',
       );
     }
-    return Dataset.fromJson([for (final ruta in rutas) await rootBundle.loadString(ruta)]);
+    final dataset =
+        Dataset.fromJson([for (final ruta in rutas) await rootBundle.loadString(ruta)]);
+    dataset.notasDeEquipo = await _notas();
+    return dataset;
+  }
+
+  /// Las opciones de equipo dichas como las dice la hoja impresa.
+  ///
+  /// Van aparte de los catálogos porque no son un catálogo: no se resuelven, no se validan y no
+  /// cuestan puntos. Son la frase que explica qué se está eligiendo, que BSData no trae. Si el
+  /// fichero no está, la app funciona igual y enseña solo los números: ver [NotasDeEquipo].
+  static Future<NotasDeEquipo> _notas() async {
+    try {
+      return NotasDeEquipo.desdeJson(
+          await rootBundle.loadString('assets/notas/notas-de-equipo.json'));
+    } catch (_) {
+      return const NotasDeEquipo.vacia();
+    }
   }
 }
 

@@ -17,7 +17,7 @@ void main() {
 
   setUpAll(() async {
     if (!directory.existsSync()) return;
-    dataset = await Dataset.load(directory);
+    dataset = await Dataset.load(directory, notas: File('../data/wargear/notas-de-equipo.json'));
   });
 
   test('indexa los identificadores de todos los ficheros a la vez', () {

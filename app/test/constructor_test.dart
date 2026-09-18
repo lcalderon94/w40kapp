@@ -26,7 +26,7 @@ void main() {
   late Faction deathGuard;
 
   setUpAll(() async {
-    dataset = await Dataset.load(_datos());
+    dataset = await Dataset.load(_datos(), notas: File('../data/wargear/notas-de-equipo.json'));
     deathGuard = dataset.factionNamed('Chaos - Death Guard');
   });
 
@@ -42,6 +42,18 @@ void main() {
       child: MaterialApp(theme: Tema.oscuro, home: pantalla),
     ));
     await tester.pumpAndSettle();
+  }
+
+  /// Con la ventana alta, para lo que hay que ver de una vez.
+  ///
+  /// La ventana de prueba son 600 píxeles de alto y la lista es perezosa: lo que queda debajo ni
+  /// se construye, así que no se puede buscar. Agrandarla comprueba lo que se quiere comprobar
+  /// —que la pantalla lo enseña— en vez de ir arrastrando a ciegas.
+  Future<void> conPantallaAlta(WidgetTester tester, Future<void> Function() prueba) async {
+    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.reset);
+    await prueba();
   }
 
   group('el estado de la lista', () {
@@ -481,18 +493,48 @@ void main() {
       expect(lista.usoDeGrupo(marines, escuadra).puestas, miniaturas);
     });
 
-    testWidgets('y la pantalla dice a cuántas miniaturas se les puede cambiar',
+    testWidgets('la pantalla enseña las opciones con las palabras de la hoja',
         (tester) async {
+      // «For every 5 models in this unit, 1 Plague Marine's plague boltgun can be replaced…».
+      // BSData no trae esa frase: escribe la misma regla como un techo que sube al crecer la
+      // escuadra. Las dos cosas hacen falta y hacen cosas distintas.
       final lista = nuevaLista()
         ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
         ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
       final marines = lista.roster.units.first;
       await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
 
-      // El número es el efectivo de ahora, no el declarado: el dataset escribe «una por cada
-      // cinco miniaturas» como un techo que sube al crecer la escuadra.
-      expect(find.textContaining('Cambia el arma de'), findsWidgets);
-      expect(find.textContaining('miniaturas'), findsWidgets);
+      expect(find.text('OPCIONES DE EQUIPO DE LA HOJA'), findsOneWidget);
+      expect(find.textContaining('For every 5 models in this unit'), findsWidgets);
+      expect(find.textContaining('blight launcher'), findsWidgets);
+    });
+
+    testWidgets('y no la enseña donde el texto ya no vale', (tester) async {
+      // El Defiler de las index cards de 10ª llevaba otras armas; ahí solo se enseñan los topes.
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Defiler'));
+      await mostrar(tester,
+          PantallaDeUnidadEnLista(lista: lista, unidad: lista.roster.units.first));
+
+      expect(find.text('OPCIONES DE EQUIPO DE LA HOJA'), findsNothing);
+    });
+
+    testWidgets('y dice a cuántas miniaturas se les puede cambiar el arma',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+        final marines = lista.roster.units.first;
+        await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
+
+        // El número es el efectivo de ahora, no el declarado: el dataset escribe «una por cada
+        // cinco miniaturas» como un techo que sube al crecer la escuadra.
+        expect(find.textContaining('Cambia el arma de'), findsWidgets);
+        expect(find.text('4 Plague Marines'), findsOneWidget,
+            reason: 'y el contador dice cuántas hay, sin el «4-9» del nombre del grupo');
+      });
     });
 
     testWidgets('una mejora se elige marcándola, porque solo cabe una', (tester) async {
@@ -543,37 +585,35 @@ void main() {
 
     testWidgets('se llega al equipo del campeón, que vive dos niveles más abajo',
         (tester) async {
-      final lista = nuevaLista()
-        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
-        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
-      final marines = lista.roster.units.first;
-      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
-      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'));
+        final marines = lista.roster.units.first;
+        final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+        await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: marines));
 
-      // Llega con su equipo de serie y sale una sola vez, no como opción y además como fila.
-      expect(campeon.children.map((c) => c.name), containsAll(['Plague knives', 'Boltgun']));
-      expect(find.text('Plague Champion'), findsOneWidget);
+        // Llega con su equipo de serie y sale una sola vez, no como opción y además como fila.
+        expect(campeon.children.map((c) => c.name), containsAll(['Plague knives', 'Boltgun']));
+        expect(find.text('Plague Champion'), findsOneWidget);
 
-      // Su equipo vive dos niveles por debajo de la unidad. La pantalla vieja pintaba un solo
-      // nivel, así que esto no existía en ninguna parte y no había forma de cambiar el arma.
-      final cabecera = find.text('Plague Champion');
-      await tester.scrollUntilVisible(cabecera, 120,
-          scrollable: find.byType(Scrollable).first);
-      await tester.pumpAndSettle();
-      await tester.tap(cabecera);
-      await tester.pumpAndSettle();
+        // Su equipo vive dos niveles por debajo de la unidad. La pantalla vieja pintaba un solo
+        // nivel, así que esto no existía en ninguna parte y no había forma de cambiar el arma.
+        await tester.tap(find.text('Plague Champion'));
+        await tester.pumpAndSettle();
 
-      final punio = lista.opcionesDe(campeon).firstWhere((o) => o.name == 'Power fist');
-      final fila = find.byKey(ValueKey('opcion-${punio.entryId}-${punio.groupId}'));
-      await tester.scrollUntilVisible(fila, 120, scrollable: find.byType(Scrollable).first);
-      await tester.pumpAndSettle();
-      await tester.tap(fila);
-      await tester.pumpAndSettle();
+        final punio = lista.opcionesDe(campeon).firstWhere((o) => o.name == 'Power fist');
+        final fila = find.byKey(ValueKey('opcion-${punio.entryId}-${punio.groupId}'));
+        await tester.ensureVisible(fila);
+        await tester.pumpAndSettle();
+        await tester.tap(fila);
+        await tester.pumpAndSettle();
 
-      expect(campeon.children.map((c) => c.name), contains('Power fist'),
-          reason: 'el arma del Campeón tiene que poder cambiarse desde la pantalla');
-      expect(campeon.children.map((c) => c.name), isNot(contains('Plague knives')),
-          reason: 'y sustituir a la que traía, que su grupo deja un arma sola');
+        expect(campeon.children.map((c) => c.name), contains('Power fist'),
+            reason: 'el arma del Campeón tiene que poder cambiarse desde la pantalla');
+        expect(campeon.children.map((c) => c.name), isNot(contains('Plague knives')),
+            reason: 'y sustituir a la que traía, que su grupo deja un arma sola');
+      });
     });
 
     testWidgets('la misma arma en dos grupos marca una casilla, no dos', (tester) async {

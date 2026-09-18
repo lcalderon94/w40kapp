@@ -88,6 +88,7 @@ class _Pantalla extends StatelessWidget {
               ),
               if (avisos.isNotEmpty) _Avisos(avisos: avisos),
               const _Titulo('Composición y equipo'),
+              _NotasDeLaHoja(notas: lista.notasDeEquipoDe(unidad)),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12),
                 child: _Nodo(lista: lista, nodo: unidad, profundidad: 0),
@@ -131,6 +132,69 @@ class _Titulo extends StatelessWidget {
               fontSize: 11.5,
               fontWeight: FontWeight.w700,
               letterSpacing: 1.3)),
+    );
+  }
+}
+
+/// Lo que la hoja de datos dice que se puede cambiar, con sus palabras.
+///
+/// «For every 5 models in this unit, 1 Terminator's storm bolter can be replaced with one of the
+/// following: 1 assault cannon ; 1 heavy flamer ; 1 cyclone missile launcher and 1 storm bolter.»
+///
+/// Los números de abajo son los que cuentan —salen del dataset, validan y cobran— pero no dicen
+/// **qué** se está eligiendo. Esto sí, y es lo que el jugador tiene en la cabeza de leer la hoja.
+///
+/// No sale en todas: son 493 unidades de las que hay texto que siga valiendo hoy. Donde no lo hay,
+/// queda el tope calculado, que es exacto y se actualiza solo. Ver [Dataset.wargearNotesOf].
+class _NotasDeLaHoja extends StatelessWidget {
+  const _NotasDeLaHoja({required this.notas});
+
+  final List<String> notas;
+
+  @override
+  Widget build(BuildContext context) {
+    if (notas.isEmpty) return const SizedBox.shrink();
+    return Container(
+      margin: const EdgeInsets.fromLTRB(12, 0, 12, 10),
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+      decoration: BoxDecoration(
+        color: Tema.superficie,
+        borderRadius: BorderRadius.circular(8),
+        border: Border(
+            left: BorderSide(color: ColorDeEjercito.de(context), width: 3)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 6),
+            child: Text('OPCIONES DE EQUIPO DE LA HOJA',
+                style: TextStyle(
+                    color: ColorDeEjercito.de(context),
+                    fontSize: 10.5,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 1.1)),
+          ),
+          for (final nota in notas)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(top: 6, right: 8),
+                    child: Icon(Icons.circle, size: 5, color: Tema.textoTenue),
+                  ),
+                  Expanded(
+                    child: Text(nota,
+                        style: const TextStyle(
+                            fontSize: 13, height: 1.4, color: Tema.texto)),
+                  ),
+                ],
+              ),
+            ),
+        ],
+      ),
     );
   }
 }

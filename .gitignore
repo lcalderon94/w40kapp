@@ -4,6 +4,8 @@ data/bsdata-es/
 core/.dart_tool/
 core/pubspec.lock
 app/assets/datos/
+# Se copia desde data/wargear con tool/preparar-datos.sh; el original va en el repositorio.
+app/assets/notas/
 app/pubspec.lock
 
 # La clave de firma nunca va al repositorio.

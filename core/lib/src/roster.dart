@@ -1210,9 +1210,18 @@ class Roster {
   /// tiene una hoja de datos de dejarte elegir: una miniatura suelta —el Defiler— elige entre
   /// varias armas, y una escuadra elige **a cuántas de sus miniaturas** les cambia el arma.
   bool isModelGroup(Selection owner, OptionGroup group) {
+    // Con memoria: esto lo pregunta la interfaz una vez por fila y resolver las opciones de una
+    // unidad entera para contestarlo dejaba la pantalla colgada. La respuesta no depende de lo que
+    // haya puesto —depende de qué **ofrece** el grupo—, así que vale para toda la partida.
+    final clave = '${owner.entryId}|${group.id}';
+    final recordado = _gruposDeMiniaturas[clave];
+    if (recordado != null) return recordado;
     final suyas = optionsFor(owner).where((o) => o.groupId == group.id).toList();
-    return suyas.isNotEmpty && suyas.every((o) => o.type == 'model');
+    return _gruposDeMiniaturas[clave] =
+        suyas.isNotEmpty && suyas.every((o) => o.type == 'model');
   }
+
+  final Map<String, bool> _gruposDeMiniaturas = {};
 
   /// El grupo de miniaturas del que depende una opción: el suyo, o el que lo contiene.
   ///
@@ -1230,9 +1239,13 @@ class Roster {
     // El de fuera primero: es donde está el montón de miniaturas. «Special weapons» también es un
     // grupo de miniaturas, pero las que llevan el plasma salen del mismo sitio que las demás, así
     // que quedándose en él no habría a quién quitarle el bólter.
+    //
+    // «Donde está el montón» se mira en el árbol y no resolviendo opciones: esto se pregunta una
+    // vez por fila y por miniatura puesta, y resolverlas cada vez colgaba la pantalla.
     for (final candidato in cadena.reversed) {
-      final relleno = defaultOptionFor(owner, candidato);
-      if (relleno != null && owner.cuantasDe(relleno) > 0) return candidato;
+      if (owner.children.any((c) => c.groupId == candidato.id && c.count > 0)) {
+        return candidato;
+      }
     }
     return cadena.last;
   }

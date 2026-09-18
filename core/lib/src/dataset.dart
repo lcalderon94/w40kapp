@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'detachment.dart';
 import 'model.dart';
+import 'notas.dart';
 import 'modifiers.dart';
 import 'roster.dart';
 
@@ -17,8 +18,13 @@ class Dataset {
   final Map<String, Map<String, dynamic>> _nodesById;
   final List<Map<String, dynamic>> _roots;
 
-  /// Carga los ficheros JSON de [directory]. Espera el dataset completo, no un fichero suelto.
-  static Future<Dataset> load(Directory directory) async {
+  /// Carga los ficheros JSON de [directory], y con [notas] las opciones de equipo de la hoja.
+  ///
+  /// Espera el dataset completo, no un fichero suelto: los ficheros se referencian entre ellos.
+  ///
+  /// Las notas van aparte y son opcionales: no son un catálogo —no se resuelven ni se validan— y
+  /// sin ellas la app funciona igual, solo que enseñando los topes calculados y no la frase.
+  static Future<Dataset> load(Directory directory, {File? notas}) async {
     final files = directory
         .listSync()
         .whereType<File>()
@@ -28,7 +34,11 @@ class Dataset {
     if (files.isEmpty) {
       throw ArgumentError('El directorio no contiene ficheros del dataset: ${directory.path}');
     }
-    return fromJson([for (final file in files) await file.readAsString()]);
+    final dataset = fromJson([for (final file in files) await file.readAsString()]);
+    if (notas != null && notas.existsSync()) {
+      dataset.notasDeEquipo = NotasDeEquipo.desdeJson(await notas.readAsString());
+    }
+    return dataset;
   }
 
   /// Igual, pero a partir del texto de los ficheros en vez de del disco.
@@ -1165,6 +1175,119 @@ class Dataset {
     }
     return profiles.values.toList();
   }
+
+  /// Las opciones de equipo tal y como las dice la hoja impresa, si se han cargado.
+  ///
+  /// No decide nada: los topes, la validación y el precio siguen saliendo del dataset. Esto es la
+  /// frase que explica qué se está eligiendo, que BSData no trae. Ver [NotasDeEquipo].
+  NotasDeEquipo get notasDeEquipo => _notasDeEquipo;
+
+  set notasDeEquipo(NotasDeEquipo notas) {
+    _notasDeEquipo = notas;
+    // Lo ya contrastado deja de valer: se contrastó contra otras notas.
+    _notasCache.clear();
+  }
+
+  NotasDeEquipo _notasDeEquipo = const NotasDeEquipo.vacia();
+
+  /// Lo que la hoja dice que se puede cambiar en esta unidad, **si sigue valiendo**.
+  ///
+  /// El texto es de las index cards de 10ª y hay hojas que han cambiado entera: el Defiler de
+  /// entonces llevaba un twin heavy flamer y un reaper autocannon, y el de ahora un baleflamer y
+  /// un cañón Hades. Enseñar esa frase sería peor que no enseñar ninguna, porque el jugador la
+  /// creería y no encontraría ni una de las armas que nombra.
+  ///
+  /// Así que cada frase se contrasta con lo que la unidad tiene hoy: si las armas que nombra no
+  /// están entre sus opciones ni entre sus perfiles, se cae. Lo que queda es lo que sigue siendo
+  /// verdad, y lo que se cae lo suple el tope calculado, que sale del dataset y siempre está al día.
+  List<String> wargearNotesOf(UnitEntry unit) {
+    final cached = _notasCache[unit.id];
+    if (cached != null) return cached;
+    final todas = notasDeEquipo.of(unit);
+    if (todas.isEmpty) return _notasCache[unit.id] = const [];
+
+    final vocabulario = _vocabularioDe(unit);
+    final buenas = [
+      for (final nota in todas)
+        if (_sigueValiendo(nota, vocabulario)) nota,
+    ];
+    return _notasCache[unit.id] = buenas;
+  }
+
+  final Map<String, List<String>> _notasCache = {};
+
+  /// Todo lo que esta unidad puede llamar suyo, palabra a palabra: sus armas, sus opciones, sus
+  /// miniaturas y los nombres de sus grupos de equipo.
+  Set<String> _vocabularioDe(UnitEntry unit) {
+    final palabras = <String>{};
+    void anota(String? texto) {
+      if (texto == null) return;
+      for (final palabra in texto.toLowerCase().split(RegExp(r'[^a-z]+'))) {
+        if (palabra.length >= 4) palabras.add(palabra);
+      }
+    }
+
+    for (final profile in sheetOf(unit)) {
+      anota(profile.name);
+    }
+    final entry = node(unit.id);
+    if (entry == null) return palabras;
+    final visto = <String>{};
+    void recorre(Map<String, dynamic> node_, int depth) {
+      if (depth > 4 || !visto.add(node_['id'] as String? ?? '')) return;
+      anota(node_['name'] as String?);
+      for (final child in _childLinks(node_)) {
+        recorre(child.entry, depth + 1);
+      }
+      for (final (:group, link: _, inherited: _, parentId: _) in _allGroupsOf(node_, false)) {
+        anota(group['name'] as String?);
+        for (final option in _childLinks(group)) {
+          recorre(option.entry, depth + 1);
+        }
+      }
+    }
+
+    recorre(entry, 0);
+    return palabras;
+  }
+
+  /// Si lo que nombra una frase sigue estando en la unidad.
+  ///
+  /// Se compara **por palabras enteras**, no por trozos: buscando trozos, el «scourge» del Defiler
+  /// de 10ª casaba con el «Electroscourge» de 11ª y el «flamer» con el «baleflamer», y la frase
+  /// vieja se daba por buena. Por palabras, esa frase saca 3 de 7 y se cae, que es lo que tiene
+  /// que pasar.
+  ///
+  /// Se piden **más de dos tercios**, no el pleno: el texto nombra armas que en el dataset viven
+  /// dentro del nombre de la miniatura que las lleva, y alguna palabra se pierde siempre. Con dos
+  /// tercios cae la frase del Defiler —nombra un twin heavy bolter que ya no existe y saca 4 de
+  /// 6— y se quedan las de los Plague Marines y los Terminators, que sacan el pleno.
+  ///
+  /// El corte no es delicado: entre pedir la mitad y pedir el 80 % solo se mueve un 12 % de las
+  /// frases, así que el sitio exacto del listón cambia poco y lo que decide es el criterio.
+  static bool _sigueValiendo(String nota, Set<String> vocabulario) {
+    final suyas = _palabrasDeContenido(nota);
+    if (suyas.isEmpty) return true;
+    final encontradas = suyas.where(vocabulario.contains).length;
+    return encontradas * 3 > suyas.length * 2;
+  }
+
+  /// Las palabras de una frase que dicen algo: fuera la gramática y fuera los números.
+  static Set<String> _palabrasDeContenido(String texto) => {
+        for (final palabra in texto.toLowerCase().split(RegExp(r"[^a-z]+")))
+          if (palabra.length >= 4 && !_gramatica.contains(palabra)) palabra,
+      };
+
+  /// Lo que aparece en todas las frases y no distingue una hoja de otra.
+  static const _gramatica = {
+    'this', 'that', 'with', 'their', 'them', 'they', 'have', 'each', 'from',
+    'model', 'models', 'unit', 'units', 'これ',
+    'replaced', 'replace', 'equipped', 'equip', 'following', 'every', 'number',
+    'been', 'also', 'must', 'only', 'more', 'than', 'when', 'which', 'same',
+    'above', 'below', 'both', 'either', 'other', 'another', 'additional',
+    'maximum', 'cannot', 'card', 'profile', 'found', 'armoury', 'weapon',
+    'weapons', 'these', 'those', 'taken', 'times', 'time', 'does', 'into',
+  };
 
   /// Las habilidades de reglamento de una unidad: las líneas CORE y FACTION de la hoja impresa.
   ///

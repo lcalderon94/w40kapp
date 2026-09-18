@@ -13,7 +13,7 @@ void main() {
   late Faction deathGuard;
 
   setUpAll(() async {
-    dataset = await Dataset.load(_datasetDirectory());
+    dataset = await Dataset.load(_datasetDirectory(), notas: File('../data/wargear/notas-de-equipo.json'));
     deathGuard = dataset.factionNamed('Chaos - Death Guard');
   });
 

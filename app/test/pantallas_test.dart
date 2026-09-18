@@ -26,7 +26,7 @@ void main() {
 
   late Dataset dataset;
 
-  setUpAll(() async => dataset = await Dataset.load(_datos()));
+  setUpAll(() async => dataset = await Dataset.load(_datos(), notas: File('../data/wargear/notas-de-equipo.json')));
 
   Future<void> mostrar(WidgetTester tester, Widget pantalla) async {
     await tester.pumpWidget(Datos(
