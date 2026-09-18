@@ -119,6 +119,22 @@ class Selection {
     children.add(child);
   }
 
+  /// Lo que hay puesto de esa opción, **en su grupo**.
+  ///
+  /// La misma arma aparece en dos grupos distintos de la misma unidad: el Defiler ofrece el
+  /// Electroscourge tanto para sustituir el lanzamisiles como para sustituir el baleflamer, y es
+  /// la misma entrada. Buscando solo por entrada, marcar una marcaba las dos —dos casillas de una
+  /// sola pulsación— y quitar una dejaba al otro grupo sin nada. Pasa en 295 unidades del dataset,
+  /// con 764 opciones repartidas así.
+  Selection? puestaDe(Selection option) => children
+      .where((c) => c.entryId == option.entryId && c.groupId == option.groupId)
+      .firstOrNull;
+
+  /// Cuántas hay puestas de esa opción, en su grupo.
+  int cuantasDe(Selection option) => children
+      .where((c) => c.entryId == option.entryId && c.groupId == option.groupId)
+      .fold(0, (total, c) => total + c.count);
+
   /// Puntos de esta selección y de todo lo que cuelga de ella.
   int get points => costOf(pointsCostTypeId);
 
@@ -317,8 +333,7 @@ class Roster {
         final uso = groupUsage(selection, group);
         if (uso.minimo == null || uso.puestas >= uso.minimo!) break;
         if (!canAdd(selection, opcion)) break;
-        final puesta =
-            selection.children.where((c) => c.entryId == opcion.entryId).firstOrNull;
+        final puesta = selection.puestaDe(opcion);
         if (puesta != null) {
           puesta.count++;
         } else {
@@ -392,6 +407,49 @@ class Roster {
   /// Condiciones de visibilidad que no se han sabido evaluar en la última llamada a
   /// [availableUnits] o [optionsFor]. Si no es cero, puede haber cosas de más en el selector.
   int unresolvedVisibility = 0;
+
+  /// De qué facción aliada es esta unidad, o `null` si es de la propia.
+  ///
+  /// Los Chaos Knights no son de la Death Guard, ni los Imperial Knights ni los inquisidores de
+  /// Agents of the Imperium son de nadie más: son **aliados**, y meterlos en Personajes o Vehículos
+  /// junto a los propios es mezclar dos cosas distintas. El dataset ya lo dice y no hacía falta
+  /// inventarlo: cada unidad de un catálogo aliado lleva un `set-primary` a una categoría
+  /// «Allies: …» condicionado a que el catálogo principal **no** sea el suyo. En una lista de
+  /// Chaos Knights ese modifier no se cumple y los War Dogs vuelven a ser Character, que es lo
+  /// correcto: allí son la facción.
+  String? allyOf(UnitEntry unit) {
+    // Unas lo traen declarado sin necesidad de modifier —las fortificaciones y los vehículos de
+    // Unaligned Forces, que no son de nadie— y otras se lo ponen con un modifier según de quién
+    // sea la lista. Hay que mirar las dos cosas.
+    for (final keyword in unit.keywords) {
+      if (keyword.startsWith('Allies:')) {
+        return keyword.substring('Allies:'.length).trim();
+      }
+    }
+    if (unit.categoryModifiers.isEmpty) return null;
+    final candidate = Selection(
+        entryId: unit.id,
+        name: unit.name,
+        type: unit.type,
+        baseCosts: const {});
+    String? ally;
+    for (final modifier in unit.categoryModifiers) {
+      final category = modifier.value;
+      if (category is! String) continue;
+      final name = faction.dataset.allyCategories[category];
+      if (name == null) continue;
+      if (!_canEvaluate(modifier)) continue;
+      if (!modifier.appliesWhen((c) => _holds(c, candidate))) continue;
+      switch (modifier.type) {
+        case 'add':
+        case 'set-primary':
+          ally = name;
+        case 'remove':
+          if (ally == name) ally = null;
+      }
+    }
+    return ally;
+  }
 
   bool _isHidden(UnitEntry unit) {
     if (unit.visibility.isEmpty) return false;
@@ -828,14 +886,34 @@ class Roster {
 
     // Una anfitriona puede llevar un líder **y** una unidad de apoyo, no uno de los dos: lo dice
     // la regla 19.01 del reglamento. Así que solo estorba lo que ya lleve de la misma clase.
+    //
+    // Salvo que la hoja traiga su excepción escrita: el Sanguinary Priest, el Castellan, el
+    // Crusade Ancient, Cato Sicarius, The Visarch, el Warlock y dos más dicen «puedes adjuntar
+    // esta miniatura aunque ya se le haya adjuntado una miniatura Captain o Chapter Master». Esos
+    // se unen a cualquiera de sus objetivos esté como esté.
     final clase = faction.dataset.attachKind(entrada);
+    if (faction.dataset.aceptaOtroLider(entrada)) {
+      return [
+        for (final u in units)
+          if (u != leader && permitidos.contains(u.entryId)) u,
+      ];
+    }
     return [
       for (final u in units)
         if (u != leader &&
             permitidos.contains(u.entryId) &&
             !units.any((o) =>
-                o.attachedTo == u && o != leader && _claseDe(o) == clase)) u,
+                o.attachedTo == u &&
+                o != leader &&
+                _claseDe(o) == clase &&
+                !_aceptaOtro(o))) u,
     ];
+  }
+
+  /// Si el que ya está unido trae la excepción, no estorba al siguiente.
+  bool _aceptaOtro(Selection s) {
+    final entrada = faction.units.where((u) => u.id == s.entryId).firstOrNull;
+    return entrada != null && faction.dataset.aceptaOtroLider(entrada);
   }
 
   String? _claseDe(Selection s) {
@@ -1069,11 +1147,9 @@ class Roster {
   /// Un grupo que solo deja elegir una cosa es la excepción: ahí elegir **sustituye**, así que
   /// siempre cabe.
   bool canAdd(Selection owner, Selection option) {
-    final puestas = owner.children
-        .where((c) => c.entryId == option.entryId)
-        .fold<int>(0, (t, c) => t + c.count);
+    final puestas = owner.cuantasDe(option);
 
-    final desde = owner.children.where((c) => c.entryId == option.entryId).firstOrNull ??
+    final desde = owner.puestaDe(option) ??
         (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
 
     for (final constraint in option.constraints) {
@@ -1090,6 +1166,54 @@ class Roster {
     if (uso.maximo == null) return true;
     if (uso.maximo == 1) return true; // se sustituye, no se apila
     return uso.puestas < uso.maximo!;
+  }
+
+  /// Si se puede quitar una de esa opción de debajo de [owner].
+  ///
+  /// El dataset escribe equipo fijo como un mínimo en la propia opción: las Shearing claws del
+  /// Defiler son `min 1, max 1`, o sea que las lleva y punto, no es una elección. Pintar ahí un
+  /// contador con su botón de quitar es ofrecer algo que no existe: se baja a cero, la unidad se
+  /// queda ilegal y el aviso que sale no dice cómo arreglarlo. Lo mismo con las miniaturas que
+  /// vienen de serie en una escuadra.
+  ///
+  /// Un grupo que solo deja elegir una cosa no pasa por aquí: ahí lo que hay es un botón de radio
+  /// y quitar significa elegir otra.
+  bool canRemove(Selection owner, Selection option) {
+    final puestas = owner.cuantasDe(option);
+    if (puestas <= 0) return false;
+
+    final desde = owner.puestaDe(option) ??
+        (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
+
+    for (final constraint in option.constraints) {
+      if (constraint.field != 'selections' || constraint.isMax) continue;
+      if (constraint.scope != 'parent' && constraint.scope != 'self') continue;
+      final limit = _effectiveLimit(constraint, desde, option.modifiers);
+      if (limit != null && limit > 0 && puestas <= limit) return false;
+    }
+    return true;
+  }
+
+  /// Si esa opción es equipo fijo: el dataset la exige y no deja poner más de una.
+  ///
+  /// Es lo que separa «esto lo lleva la miniatura» de «esto lo eliges tú», y no hay bandera que lo
+  /// diga: se deduce de que el mínimo y el máximo efectivos coincidan.
+  bool isFixed(Selection owner, Selection option) {
+    final desde = owner.puestaDe(option) ??
+        (Selection(entryId: '', name: '', type: '', baseCosts: const {})..parent = owner);
+    int? minimo, maximo;
+    for (final constraint in option.constraints) {
+      if (constraint.field != 'selections') continue;
+      if (constraint.scope != 'parent' && constraint.scope != 'self') continue;
+      final limit = _effectiveLimit(constraint, desde, option.modifiers);
+      if (limit == null || limit < 0) continue;
+      if (constraint.isMax) {
+        maximo = maximo == null || limit < maximo ? limit : maximo;
+      } else {
+        minimo = minimo == null || limit > minimo ? limit : minimo;
+      }
+    }
+    return minimo != null && minimo > 0 && minimo == maximo;
   }
 
   /// Restricciones que [validate] ha dejado sin comprobar por no saber calcular su límite.

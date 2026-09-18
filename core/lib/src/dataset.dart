@@ -507,6 +507,29 @@ class Dataset {
     return catalogues;
   }
 
+  /// Las categorías con las que el dataset marca a un aliado, por identificador.
+  ///
+  /// El sistema de juego declara nueve —«Allies: Chaos Knights», «Allies: Imperial Agents»…— y
+  /// cada unidad del catálogo aliado lleva un modifier `set-primary` a la suya, condicionado a que
+  /// el catálogo principal **no** sea el propio. Es decir: el dataset ya dice que en una lista
+  /// ajena su rol no es Character ni Vehicle, sino aliado. Leerlas de aquí en vez de escribirlas a
+  /// mano es lo que hace que valga para las 36 facciones y siga valiendo si upstream añade otra.
+  late final Map<String, String> allyCategories = () {
+    final categories = <String, String>{};
+    for (final root in _roots) {
+      for (final key in const ['categoryEntries', 'sharedCategoryEntries']) {
+        for (final raw in (root[key] as List? ?? const [])) {
+          final entry = raw as Map<String, dynamic>;
+          final name = entry['name'] as String? ?? '';
+          if (!name.startsWith('Allies:')) continue;
+          final id = entry['id'] as String?;
+          if (id != null) categories[id] = name.substring('Allies:'.length).trim();
+        }
+      }
+    }
+    return categories;
+  }();
+
   static bool _isDetachmentGroup(Map<String, dynamic> group) {
     final name = group['name'];
     return name == 'Detachment' || name == 'Detachments';
@@ -648,6 +671,11 @@ class Dataset {
         for (final node_ in [entry, if (link != null) link])
           for (final modifier in Modifier.allOf(node_))
             if (modifier.field == 'hidden') modifier,
+      ],
+      categoryModifiers: [
+        for (final node_ in [entry, if (link != null) link])
+          for (final modifier in Modifier.allOf(node_))
+            if (modifier.field == 'category') modifier,
       ],
     );
   }
@@ -996,6 +1024,8 @@ class Dataset {
   /// Vienen sin repetir y en el orden en que se encuentran, que deja la línea de la unidad la
   /// primera. La interfaz los agrupa por [Profile.typeName].
   List<Profile> sheetOf(UnitEntry unit) {
+    final cached = _sheetCache[unit.id];
+    if (cached != null) return cached;
     final entry = node(unit.id);
     if (entry == null) return const [];
 
@@ -1005,6 +1035,11 @@ class Dataset {
     void collect(Map<String, dynamic> node_, int depth) {
       if (depth > 4) return;
       if (!visited.add(node_['id'] as String? ?? '')) return;
+      // Las mejoras no son de la unidad: son del detachment, y cualquier personaje puede llevar
+      // una. Metiéndolas aquí, la hoja del Daemon Prince of Nurgle salía con 26 de sus 33
+      // perfiles ocupados por mejoras que no lleva puestas, y había que bajar ocho pantallas para
+      // encontrar sus habilidades. En todo el dataset son 7.565 perfiles colados en 717 unidades.
+      if (enhancementIds.contains(node_['id'])) return;
       for (final profile in profilesOf(node_)) {
         profiles.putIfAbsent('${profile.typeName}|${profile.name}', () => profile);
       }
@@ -1019,6 +1054,91 @@ class Dataset {
     }
 
     collect(entry, 0);
+    return _sheetCache[unit.id] = profiles.values.toList();
+  }
+
+  /// La hoja de una unidad se arma recorriendo su árbol entero y se pide muchas veces: al pintar
+  /// la ficha, al buscar a quién se une un líder y al mirar si acepta a otro. Resolverla una vez.
+  final Map<String, List<Profile>> _sheetCache = {};
+
+  /// Todas las mejoras del dataset, por identificador.
+  ///
+  /// Una mejora es una opción con coste en puntos que el dataset esconde salvo que se haya elegido
+  /// un detachment; es la misma definición que usa [enhancementsOf], solo que sin preguntar por
+  /// cuál. Se calcula de una vez recorriendo cada catálogo, que es lo que permite quitarlas de la
+  /// hoja de datos sin tener que resolver antes las mejoras de las 36 facciones.
+  late final Set<String> enhancementIds = () {
+    final ids = <String>{};
+    for (final root in _roots) {
+      _collectEnhancements(root, const {}, (entry, gates) {
+        if (gates.isEmpty) return;
+        // Un arma de pago atada a un detachment cumple la misma definición —opción con puntos y
+        // escondida— y no es una mejora: es un arma. Se distinguen por su perfil, que en un arma
+        // es una línea de características y en una mejora un texto de habilidad. Son 21 en el
+        // dataset: el Dark Lance, el Psycannon, el Thunder Hammer, la Ballistus Lascannon…
+        //
+        // Y también cuando el arma cuelga de la opción en vez de estar en ella, que es como se
+        // arman los personajes [Crucible]: la opción se paga y el perfil está un nivel más abajo.
+        if (_traeArma(entry, 0)) return;
+        final id = entry['id'] as String?;
+        if (id != null) ids.add(id);
+      });
+    }
+    return ids;
+  }();
+
+  /// Si una entrada trae un arma, en ella o justo debajo.
+  bool _traeArma(Map<String, dynamic> entry, int depth) {
+    if (profilesOf(entry).any((p) => p.typeName.contains('Weapons'))) return true;
+    if (depth >= 2) return false;
+    for (final child in _childLinks(entry)) {
+      if (_traeArma(child.entry, depth + 1)) return true;
+    }
+    for (final group in _groupsOf(entry)) {
+      for (final option in _childLinks(group)) {
+        if (_traeArma(option.entry, depth + 1)) return true;
+      }
+    }
+    return false;
+  }
+
+  /// La hoja de datos de lo que una unidad lleva puesto **ahora mismo**, no de todo lo que podría.
+  ///
+  /// [sheetOf] enseña el catálogo entero de la unidad, que es lo que hace falta al mirarla antes de
+  /// meterla en la lista: ahí se comparan las armas que puede llevar. Dentro de la lista es al
+  /// revés y estorba: si a los Plague Marines les he quitado todos los bólters, el bólter no pinta
+  /// nada en su hoja, y el Caladius Grav-tank tiene que enseñar el cañón que le he puesto y no los
+  /// tres que no.
+  ///
+  /// La línea de características y las habilidades siempre salen de la entrada de la unidad,
+  /// estén o no entre lo elegido: no se eligen, se tienen.
+  List<Profile> sheetOfSelection(Selection selection) {
+    final profiles = <String, Profile>{};
+    final entry = node(selection.entryId);
+
+    void anota(Map<String, dynamic> node_, {bool armas = true}) {
+      for (final profile in profilesOf(node_)) {
+        // Las armas solo entran por lo elegido. Una miniatura de la entrada trae colgadas las
+        // suyas de serie, y recogerlas aquí devolvía el bólter a la hoja de unos Plague Marines a
+        // los que se lo había quitado, que es justo lo que se quiere evitar.
+        if (!armas && profile.typeName.contains('Weapons')) continue;
+        profiles.putIfAbsent('${profile.typeName}|${profile.name}', () => profile);
+      }
+    }
+
+    // Lo que la unidad es: su línea de características y sus habilidades. Cuelgan de la entrada y
+    // de las miniaturas que la componen, y esas no se eligen, se tienen.
+    if (entry != null) {
+      anota(entry, armas: false);
+      for (final child in _childLinks(entry)) {
+        if (child.entry['type'] == 'model') anota(child.entry, armas: false);
+      }
+    }
+    // Y lo que lleva puesto, sea un arma, una miniatura o una mejora.
+    for (final node_ in selection.descendantsAndSelf) {
+      final suyo = node(node_.entryId);
+      if (suyo != null) anota(suyo);
+    }
     return profiles.values.toList();
   }
 
@@ -1093,6 +1213,30 @@ extension Lideres on Dataset {
 
   /// Si se une a algo: lo dice su palabra clave, no el texto.
   bool isLeader(UnitEntry unit) => attachKind(unit) != null;
+
+  /// Si puede unirse a una unidad que **ya lleve** otro de su clase.
+  ///
+  /// La regla general deja un líder y un apoyo por unidad, pero hay hojas que traen su excepción
+  /// escrita: «puedes adjuntar esta miniatura a una de las unidades anteriores aunque ya se le
+  /// haya adjuntado una miniatura Captain o Chapter Master». El Sanguinary Priest, el Castellan,
+  /// el Crusade Ancient, Cato Sicarius, The Visarch, el Warlock y dos más lo dicen así.
+  ///
+  /// El dataset no lo modela en ninguna parte: está en el texto de la habilidad, igual que a quién
+  /// se une. Se reconoce por la frase entera, no por «aunque» suelto, que aparece en habilidades
+  /// que no hablan de esto.
+  bool aceptaOtroLider(UnitEntry unit) {
+    for (final perfil in sheetOf(unit)) {
+      if (!_clases.contains(perfil.name)) continue;
+      for (final valor in perfil.characteristics.values) {
+        final texto = valor.toLowerCase();
+        if (texto.contains('ya se le haya adjuntado') ||
+            texto.contains('already has') && texto.contains('attached')) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
 }
 
 /// Sin viñetas el texto marca los nombres en mayúsculas; con viñetas, cada viñeta ya es un nombre.

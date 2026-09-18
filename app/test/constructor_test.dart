@@ -87,7 +87,7 @@ void main() {
 
       expect(lista.puntos, base + 10);
       expect(lista.gastoDe(enhancementsCostTypeId), 1);
-      expect(lista.cuantasHay(principe, mejora.entryId), 1);
+      expect(lista.cuantasHay(principe, mejora), 1);
     });
 
     test('quitar la última de una opción la borra, no la deja en cero', () {
@@ -102,18 +102,18 @@ void main() {
           .firstWhere((o) => o.name == 'Plague Marine w/ boltgun');
 
       // La escuadra ya trae cuatro de serie, así que se cuenta desde ahí.
-      final deSerie = lista.cuantasHay(marines, opcion.entryId);
+      final deSerie = lista.cuantasHay(marines, opcion);
       expect(deSerie, 4, reason: 'el dataset marca el marine con bólter como equipo por defecto');
 
       lista.anadirOpcion(marines, opcion);
       lista.anadirOpcion(marines, opcion);
-      expect(lista.cuantasHay(marines, opcion.entryId), deSerie + 2,
+      expect(lista.cuantasHay(marines, opcion), deSerie + 2,
           reason: 'la segunda sube la cuenta, no duplica la fila');
 
       for (var i = 0; i < deSerie + 2; i++) {
-        lista.quitarOpcion(marines, opcion.entryId);
+        lista.quitarOpcion(marines, opcion);
       }
-      expect(lista.cuantasHay(marines, opcion.entryId), 0);
+      expect(lista.cuantasHay(marines, opcion), 0);
       expect(marines.children.where((h) => h.entryId == opcion.entryId), isEmpty);
     });
 
@@ -342,14 +342,29 @@ void main() {
       final lista = nuevaLista();
       await mostrar(tester, PantallaDeElegirDetachment(lista: lista));
 
-      await tester.tap(find.text('Virulent Vectorium'));
+      // La regla y las mejoras siguen a un toque, detrás de la flecha, para comparar antes de
+      // decidir; pero ya no hay que desplegarlas para poder elegir.
+      final ficha = find.ancestor(
+          of: find.text('Virulent Vectorium'), matching: find.byType(ExpansionTile));
+      await tester.tap(find.descendant(of: ficha, matching: find.byIcon(Icons.expand_more)));
       await tester.pumpAndSettle();
       expect(find.text('MEJORAS'), findsOneWidget);
       expect(find.textContaining('Daemon Weapon of Nurgle'), findsOneWidget);
+    });
 
-      await tester.tap(find.text('Añadir'));
+    testWidgets('un detachment se elige de un toque, sin desplegar ni buscar un botón',
+        (tester) async {
+      final lista = nuevaLista();
+      await mostrar(tester, PantallaDeElegirDetachment(lista: lista));
+
+      await tester.tap(find.text('Virulent Vectorium'));
       await tester.pumpAndSettle();
       expect(lista.roster.detachment!.name, 'Virulent Vectorium');
+
+      // Y se quita igual, volviendo a tocarlo.
+      await tester.tap(find.text('Virulent Vectorium'));
+      await tester.pumpAndSettle();
+      expect(lista.roster.detachments, isEmpty);
     });
 
     testWidgets('caben varios detachments mientras quepan sus Detachment Points',
@@ -364,14 +379,6 @@ void main() {
         await tester.ensureVisible(find.text(nombre));
         await tester.pumpAndSettle();
         await tester.tap(find.text(nombre));
-        await tester.pumpAndSettle();
-        final boton = find.descendant(
-            of: find.ancestor(
-                of: find.text(nombre), matching: find.byType(ExpansionTile)),
-            matching: find.widgetWithText(FilledButton, 'Añadir'));
-        await tester.ensureVisible(boton);
-        await tester.pumpAndSettle();
-        await tester.tap(boton);
         await tester.pumpAndSettle();
       }
 
@@ -420,11 +427,10 @@ void main() {
       await tester.tap(find.descendant(of: fila.first, matching: find.byIcon(Icons.add)));
       await tester.pumpAndSettle();
 
-      final id = lista
+      final lanzador = lista
           .opcionesDe(marines)
-          .firstWhere((o) => o.name == 'Plague Marine w/ blight launcher')
-          .entryId;
-      expect(lista.cuantasHay(marines, id), 1);
+          .firstWhere((o) => o.name == 'Plague Marine w/ blight launcher');
+      expect(lista.cuantasHay(marines, lanzador), 1);
     });
 
     testWidgets('una mejora se elige marcándola, porque solo cabe una', (tester) async {
@@ -445,18 +451,17 @@ void main() {
       await tester.tap(find.text('Daemon Weapon of Nurgle').first);
       await tester.pumpAndSettle();
 
-      final id = lista
+      final arma = lista
           .opcionesDe(principe)
-          .firstWhere((o) => o.name == 'Daemon Weapon of Nurgle')
-          .entryId;
-      expect(lista.cuantasHay(principe, id), 1);
+          .firstWhere((o) => o.name == 'Daemon Weapon of Nurgle');
+      expect(lista.cuantasHay(principe, arma), 1);
       expect(find.byIcon(Icons.radio_button_checked), findsWidgets);
 
       // Y se vuelve a pulsar para quitarla: una casilla que solo sabe marcar deja atrapado al
       // jugador, que no puede deshacer una mejora que eligió sin querer.
       await tester.tap(find.text('Daemon Weapon of Nurgle').first);
       await tester.pumpAndSettle();
-      expect(lista.cuantasHay(principe, id), 0);
+      expect(lista.cuantasHay(principe, arma), 0);
     });
 
     testWidgets('el editor de una unidad enseña también su hoja de datos', (tester) async {
@@ -498,7 +503,7 @@ void main() {
       await tester.pumpAndSettle();
 
       final punio = lista.opcionesDe(campeon).firstWhere((o) => o.name == 'Power fist');
-      final fila = find.byKey(ValueKey('opcion-${punio.entryId}'));
+      final fila = find.byKey(ValueKey('opcion-${punio.entryId}-${punio.groupId}'));
       await tester.scrollUntilVisible(fila, 120, scrollable: find.byType(Scrollable).first);
       await tester.pumpAndSettle();
       await tester.tap(fila);
@@ -508,6 +513,109 @@ void main() {
           reason: 'el arma del Campeón tiene que poder cambiarse desde la pantalla');
       expect(campeon.children.map((c) => c.name), isNot(contains('Plague knives')),
           reason: 'y sustituir a la que traía, que su grupo deja un arma sola');
+    });
+
+    testWidgets('la misma arma en dos grupos marca una casilla, no dos', (tester) async {
+      // El Defiler ofrece el Electroscourge dos veces: para sustituir el lanzamisiles y para
+      // sustituir el baleflamer, y es la misma entrada del dataset. Pasa en 295 unidades.
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Defiler'));
+      final defiler = lista.roster.units.first;
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: defiler));
+
+      final dosVeces = lista
+          .opcionesDe(defiler)
+          .where((o) => o.name == 'Electroscourge')
+          .toList();
+      expect(dosVeces, hasLength(2));
+
+      final fila = find
+          .byKey(ValueKey('opcion-${dosVeces.first.entryId}-${dosVeces.first.groupId}'));
+      await tester.scrollUntilVisible(fila, 100,
+          scrollable: find.byType(Scrollable).first);
+      await tester.ensureVisible(fila);
+      await tester.pumpAndSettle();
+      await tester.tap(fila);
+      await tester.pumpAndSettle();
+
+      expect(lista.cuantasHay(defiler, dosVeces.first), 1);
+      expect(lista.cuantasHay(defiler, dosVeces.last), 0,
+          reason: 'el otro grupo sigue con lo suyo');
+    });
+
+    testWidgets('un arma obligatoria no se puede desmarcar y dejar el hueco vacío',
+        (tester) async {
+      // Era lo que ponía «el baleflamer es obligatorio» en el Defiler: se desmarcaba el arma que
+      // el dataset exige y salía el aviso de un hueco que el jugador no sabía que había abierto.
+      // Un arma no es obligatoria; elegir una de las cuatro, sí.
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Defiler'));
+      final defiler = lista.roster.units.first;
+      expect(lista.incumplimientosDe(defiler), isEmpty, reason: 'entra legal');
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: defiler));
+
+      final baleflamer = lista
+          .opcionesDe(defiler)
+          .firstWhere((o) => o.name == 'Heavy baleflamer');
+      final fila = find
+          .byKey(ValueKey('opcion-${baleflamer.entryId}-${baleflamer.groupId}'));
+      await tester.scrollUntilVisible(fila, 100,
+          scrollable: find.byType(Scrollable).first);
+      await tester.ensureVisible(fila);
+      await tester.pumpAndSettle();
+      await tester.tap(fila);
+      await tester.pumpAndSettle();
+
+      expect(lista.cuantasHay(defiler, baleflamer), 1,
+          reason: 'sigue puesta: pulsar elige, no desmarca');
+      expect(lista.incumplimientosDe(defiler), isEmpty,
+          reason: 'y no aparece ningún aviso de arma obligatoria');
+    });
+
+    testWidgets('el equipo fijo se enseña bloqueado, sin contador que baje a cero',
+        (tester) async {
+      // Las Shearing claws del Defiler son `min 1, max 1`: las lleva y punto.
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Defiler'));
+      final defiler = lista.roster.units.first;
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: defiler));
+
+      final garras =
+          lista.opcionesDe(defiler).firstWhere((o) => o.name == 'Shearing claws');
+      final fila = find.byKey(ValueKey('opcion-${garras.entryId}-${garras.groupId}'));
+      await tester.scrollUntilVisible(fila, 100,
+          scrollable: find.byType(Scrollable).first);
+      await tester.ensureVisible(fila);
+      await tester.pumpAndSettle();
+
+      expect(find.descendant(of: fila, matching: find.byIcon(Icons.lock_outline)),
+          findsOneWidget);
+      expect(find.descendant(of: fila, matching: find.byIcon(Icons.remove)), findsNothing,
+          reason: 'no hay nada que quitar: no es una elección');
+    });
+
+    testWidgets('los aliados salen en su sección, no entre los personajes propios',
+        (tester) async {
+      // Los Chaos Knights no son de la Death Guard. Mezclarlos en Personajes y Vehículos junto a
+      // los propios es meter dos cosas distintas en el mismo cajón.
+      final lista = nuevaLista()
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first);
+      await mostrar(tester, PantallaDeAnadirUnidad(lista: lista));
+
+      final secciones = lista.catalogoPorRol();
+      expect(secciones.map((s) => s.rol), contains('Aliados · Chaos Knights'));
+
+      final aliados =
+          secciones.firstWhere((s) => s.rol == 'Aliados · Chaos Knights').unidades;
+      expect(aliados.map((u) => u.name), contains('Knight Abominant'));
+
+      // Y no está además entre los propios.
+      for (final seccion in secciones.where((s) => !s.rol.startsWith('Aliados'))) {
+        expect(seccion.unidades.map((u) => u.name), isNot(contains('Knight Abominant')));
+      }
     });
   });
 }

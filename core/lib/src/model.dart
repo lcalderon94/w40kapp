@@ -87,6 +87,7 @@ class UnitEntry {
     required this.profiles,
     required this.constraints,
     this.visibility = const [],
+    this.categoryModifiers = const [],
   });
 
   final String id;
@@ -117,6 +118,14 @@ class UnitEntry {
   /// Agents y los demonios que solo entran con según qué detachment. Aquí solo viajan; quien sabe
   /// evaluarlos es el roster, que es el único que conoce la configuración de la lista.
   final List<Modifier> visibility;
+
+  /// Los modifiers que le cambian las categorías, y con ellas el rol con el que se agrupa.
+  ///
+  /// Es como el dataset marca a los aliados: un War Dog lleva un `set-primary` a la categoría
+  /// «Allies: Chaos Knights» condicionado a que el catálogo principal **no** sea el suyo. En una
+  /// lista de Death Guard ese modifier se cumple y su rol deja de ser Character. Aquí solo viajan;
+  /// quien sabe evaluarlos es el roster, que es el que conoce de qué facción es la lista.
+  final List<Modifier> categoryModifiers;
 
   /// Las habilidades de la unidad, que son los perfiles con texto explicativo.
   Iterable<Profile> get abilities => profiles.where((p) => p.description != null);
@@ -199,4 +208,53 @@ class Faction {
   /// Incluye las que la facción hereda de los catálogos que enlaza: sin eso, los capítulos de
   /// Space Marines no tendrían ninguna unidad propia.
   List<UnitEntry> get units => dataset.unitsOf(this);
+}
+
+/// La salvación invulnerable de una unidad, y contra qué vale.
+///
+/// No es una característica más de la línea: el dataset la deja como una habilidad con el número
+/// en el nombre —«Invulnerable Save (5+\*)»— o solo en el texto, y **no siempre vale contra todo**.
+/// Los Rangers la tienen de 5+ solo contra ataques a distancia y las Howling Banshees de 4+ solo
+/// en cuerpo a cuerpo; los Knights, de uno y otro bando, están llenos de estas. El asterisco del
+/// nombre es justo lo que avisa de que hay una condición, y sin leer el texto no se sabe cuál.
+///
+/// Enseñarla como un número suelto al lado de la salvación normal sería mentir en 521 de las 632
+/// unidades que la tienen.
+class Invulnerable {
+  Invulnerable({required this.value, this.scope});
+
+  /// El número, tal y como se tira: «4+».
+  final String value;
+
+  /// Contra qué vale, si no vale contra todo: `distancia` o `cuerpo a cuerpo`.
+  final String? scope;
+
+  bool get isConditional => scope != null;
+
+  static final _number = RegExp(r'(\d\+)');
+
+  /// La salvación invulnerable que declaran estos perfiles, si declaran alguna.
+  static Invulnerable? of(Iterable<Profile> profiles) {
+    for (final profile in profiles) {
+      if (!profile.name.toLowerCase().contains('invulnerable')) continue;
+      final text = profile.description ?? profile.characteristics.values.join(' ');
+      final value = _number.firstMatch(profile.name)?.group(1) ??
+          _number.firstMatch(text)?.group(1);
+      if (value == null) continue;
+      final lower = text.toLowerCase();
+      // El texto ya viene traducido, así que se busca en español; el inglés queda por si el
+      // dataset llega sin traducir, que es como corren los tests contra el original.
+      final ranged = lower.contains('a distancia') || lower.contains('ranged attacks');
+      final melee = lower.contains('cuerpo a cuerpo') || lower.contains('melee attacks');
+      return Invulnerable(
+        value: value,
+        scope: ranged && !melee
+            ? 'ataques a distancia'
+            : melee && !ranged
+                ? 'ataques de cuerpo a cuerpo'
+                : null,
+      );
+    }
+    return null;
+  }
 }

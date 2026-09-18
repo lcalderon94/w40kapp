@@ -107,11 +107,17 @@ class HojaDeDatos extends StatelessWidget {
     final aDistancia = porTipo.remove('Ranged Weapons') ?? const <Profile>[];
     final cuerpoACuerpo = porTipo.remove('Melee Weapons') ?? const <Profile>[];
 
+    // La salvación invulnerable no es una característica más: el dataset la escribe con asterisco
+    // —«5+*»— cuando solo vale contra unos ataques y deja la condición en una habilidad suelta.
+    // Son 44 unidades con asterisco en la línea y otras 19 que ni siquiera la traen en ella.
+    final invulnerable = Invulnerable.of(perfiles);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         if (encabezado != null) encabezado!,
-        for (final perfil in caracteristicas) _LineaDeCaracteristicas(perfil),
+        for (final perfil in caracteristicas)
+          _LineaDeCaracteristicas(perfil, invulnerable: invulnerable),
         if (habilidades.isNotEmpty) ...[
           const _Seccion('Habilidades'),
           for (final habilidad in habilidades) _Habilidad(habilidad),
@@ -138,50 +144,95 @@ class HojaDeDatos extends StatelessWidget {
 }
 
 class _LineaDeCaracteristicas extends StatelessWidget {
-  const _LineaDeCaracteristicas(this.perfil);
+  const _LineaDeCaracteristicas(this.perfil, {this.invulnerable});
 
   final Profile perfil;
+  final Invulnerable? invulnerable;
 
   @override
   Widget build(BuildContext context) {
+    final valores = {...perfil.characteristics};
+    // El dataset la llama «InSv», que no la reconoce nadie. Y si la unidad la tiene solo en una
+    // habilidad y no en la línea —19 en todo el dataset, entre ellas el Emperor's Champion—, se
+    // pone igual: el jugador la necesita en el mismo sitio que las demás.
+    final enLinea = valores.remove('InSv');
+    final invSv = enLinea ?? invulnerable?.value;
+
     // Como en la hoja impresa: la etiqueta pequeña encima y el número grande dentro de su
     // recuadro. Es lo que se mira en mitad de una partida, así que se lee de lejos.
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          children: [
-            for (final caracteristica in perfil.characteristics.entries)
-              Padding(
-                padding: const EdgeInsets.only(right: 8),
-                child: Column(
-                  children: [
-                    Text(caracteristica.key.toUpperCase(),
-                        style: const TextStyle(
-                            color: Tema.textoTenue,
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 1)),
-                    const SizedBox(height: 4),
-                    Container(
-                      constraints: const BoxConstraints(minWidth: 52, minHeight: 52),
-                      alignment: Alignment.center,
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      decoration: BoxDecoration(
-                        color: Tema.fondo,
-                        borderRadius: BorderRadius.circular(6),
-                        border: Border.all(color: Tema.superficieAlta, width: 1.5),
-                      ),
-                      child: Text(caracteristica.value,
-                          style: const TextStyle(
-                              fontSize: 22, fontWeight: FontWeight.w700, height: 1)),
-                    ),
-                  ],
-                ),
-              ),
-          ],
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                for (final caracteristica in valores.entries)
+                  _Caja(etiqueta: caracteristica.key, valor: caracteristica.value),
+                if (invSv != null && invSv.trim().isNotEmpty && invSv.trim() != '-')
+                  _Caja(
+                      etiqueta: 'INV',
+                      valor: invSv,
+                      destacada: invulnerable?.isConditional ?? invSv.contains('*')),
+              ],
+            ),
+          ),
         ),
+        // Y la condición escrita, que es lo que el asterisco esconde: los Rangers la tienen solo
+        // contra ataques a distancia y las Howling Banshees solo en cuerpo a cuerpo. Sin esto hay
+        // que bajar a buscar la habilidad para saber si la salvación vale en este ataque o no.
+        if (invulnerable != null && invulnerable!.isConditional)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Text(
+                'Salvación invulnerable de ${invulnerable!.value} '
+                'solo contra ${invulnerable!.scope}',
+                style: const TextStyle(
+                    color: Tema.acento, fontSize: 13.5, fontWeight: FontWeight.w600)),
+          ),
+      ],
+    );
+  }
+}
+
+class _Caja extends StatelessWidget {
+  const _Caja({required this.etiqueta, required this.valor, this.destacada = false});
+
+  final String etiqueta;
+  final String valor;
+
+  /// Una salvación invulnerable que no vale contra todo se marca, para que no se lea como si sí.
+  final bool destacada;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: Column(
+        children: [
+          Text(etiqueta.toUpperCase(),
+              style: TextStyle(
+                  color: destacada ? Tema.acento : Tema.textoTenue,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 1)),
+          const SizedBox(height: 4),
+          Container(
+            constraints: const BoxConstraints(minWidth: 52, minHeight: 52),
+            alignment: Alignment.center,
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(
+              color: Tema.fondo,
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(
+                  color: destacada ? Tema.acento : Tema.superficieAlta, width: 1.5),
+            ),
+            child: Text(valor.trim(),
+                style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700, height: 1)),
+          ),
+        ],
       ),
     );
   }

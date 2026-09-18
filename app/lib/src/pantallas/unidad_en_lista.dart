@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:warorgan_core/warorgan_core.dart';
 
-import '../datos/repositorio.dart';
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
 import '../widgets/hoja_de_datos.dart';
@@ -58,11 +57,16 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
               _Nodo(lista: lista, nodo: unidad, profundidad: 0),
               // Ver y editar en la misma pantalla: al equipar hace falta saber qué hace el arma
               // que se elige, y tener que salir a la ficha para averiguarlo es perder el sitio.
+              //
+              // Y con lo que lleva puesto, no con todo lo que podría llevar: si a los Plague
+              // Marines les he quitado los bólters, el bólter no pinta nada en su hoja, y el
+              // Caladius Grav-tank tiene que enseñar el cañón que le he puesto y no los tres que
+              // no. Eso solo vale aquí; en el catálogo se enseña todo, que es donde se compara.
               if (entrada != null)
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                   child: HojaDeDatos(
-                    perfiles: Datos.de(context).sheetOf(entrada),
+                    perfiles: lista.hojaDe(unidad),
                     palabrasClave: entrada.keywords,
                   ),
                 ),
@@ -145,8 +149,11 @@ class _Nodo extends StatelessWidget {
 
     // Puesto y ya no ofrecido: equipo que el dataset da de serie y no se puede cambiar. Se enseña
     // igual, porque forma parte de la miniatura y el jugador tiene que verlo.
-    final ofrecidosIds = ofrecidas.map((o) => o.entryId).toSet();
-    final fijos = nodo.children.where((h) => !ofrecidosIds.contains(h.entryId)).toList();
+    final ofrecidosIds =
+        ofrecidas.map((o) => '${o.entryId}|${o.groupId}').toSet();
+    final fijos = nodo.children
+        .where((h) => !ofrecidosIds.contains('${h.entryId}|${h.groupId}'))
+        .toList();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -208,6 +215,8 @@ class _Grupo extends StatelessWidget {
     final anidados = dueno.groups.where((g) => g.parentId == grupo.id).toList();
     // Un grupo que solo deja elegir una cosa es un botón de radio, no un contador.
     final radio = uso.maximo == 1;
+    // Y si además exige una, no se puede dejar vacío: pulsar elige, nunca desmarca.
+    final obligatorio = (uso.minimo ?? 0) > 0;
 
     return _Seccion(
       titulo: grupo.name ?? 'Opciones',
@@ -216,7 +225,13 @@ class _Grupo extends StatelessWidget {
       sangria: sangria,
       hijos: [
         for (final o in mias)
-          _Opcion(lista: lista, dueno: dueno, opcion: o, radio: radio, sangria: sangria),
+          _Opcion(
+              lista: lista,
+              dueno: dueno,
+              opcion: o,
+              radio: radio,
+              obligatorio: obligatorio,
+              sangria: sangria),
         for (final sub in anidados)
           _Grupo(
               lista: lista,
@@ -299,6 +314,7 @@ class _Opcion extends StatelessWidget {
     required this.opcion,
     required this.radio,
     required this.sangria,
+    this.obligatorio = false,
     this.fijo = false,
   });
 
@@ -308,13 +324,15 @@ class _Opcion extends StatelessWidget {
   final bool radio;
   final int sangria;
 
+  /// Si el grupo del que sale exige elegir algo, y por tanto no se puede dejar vacío.
+  final bool obligatorio;
+
   /// Equipo que el dataset da de serie: se enseña, pero no se toca.
   final bool fijo;
 
   @override
   Widget build(BuildContext context) {
-    final puesta =
-        dueno.children.where((h) => h.entryId == opcion.entryId).firstOrNull;
+    final puesta = dueno.puestaDe(opcion);
     final dentro = puesta != null &&
         (puesta.groups.isNotEmpty || lista.opcionesDe(puesta).isNotEmpty);
 
@@ -343,9 +361,13 @@ class _Opcion extends StatelessWidget {
   }
 
   Widget _fila(BuildContext context, int cuantas) {
-    // Clave estable: sin ella, para tocar una fila hay que adivinar por el árbol de widgets, y la
-    // cabecera que despliega tiene su propia zona tocable justo encima.
-    final clave = ValueKey('opcion-${opcion.entryId}');
+    // Clave estable, y con el grupo dentro: la misma arma sale en dos grupos del Defiler, así que
+    // con la entrada sola las dos filas compartían clave y no se podían distinguir al tocarlas.
+    final clave = ValueKey('opcion-${opcion.entryId}-${opcion.groupId}');
+    // Equipo de serie que el dataset no deja cambiar: mínimo y máximo iguales. Las Shearing claws
+    // del Defiler son `min 1, max 1`, o sea que las lleva y punto. Un contador ahí ofrece bajarlas
+    // a cero, que deja la unidad ilegal por algo que no era una elección.
+    final bloqueada = fijo || (!radio && lista.esFija(dueno, opcion));
     final puntos = opcion.basePointsEach;
     final mejora = opcion.baseCosts.containsKey(enhancementsCostTypeId);
 
@@ -355,7 +377,7 @@ class _Opcion extends StatelessWidget {
         Text(opcion.name,
             style: TextStyle(
                 fontSize: 14,
-                color: cuantas > 0 || fijo ? Tema.texto : Tema.textoTenue,
+                color: cuantas > 0 || bloqueada ? Tema.texto : Tema.textoTenue,
                 fontWeight: cuantas > 0 ? FontWeight.w600 : FontWeight.w400)),
         if (puntos > 0 || mejora)
           Padding(
@@ -370,7 +392,7 @@ class _Opcion extends StatelessWidget {
 
     final margen = EdgeInsets.only(left: 16.0 + sangria * 12, right: 16);
 
-    if (fijo) {
+    if (bloqueada) {
       return Padding(
         key: clave,
         padding: margen.add(const EdgeInsets.symmetric(vertical: 6)),
@@ -388,8 +410,13 @@ class _Opcion extends StatelessWidget {
     if (radio) {
       return InkWell(
         key: clave,
-        // Se pulsa para marcar y se vuelve a pulsar para desmarcar.
-        onTap: () => lista.alternarOpcion(dueno, opcion),
+        // Si el grupo exige elegir algo, pulsar **elige**: sustituye a lo que hubiera y no deja
+        // desmarcar. Dejarlo desmarcar era lo que ponía «el baleflamer es obligatorio» en el
+        // Defiler; un arma no es obligatoria, lo es elegir una de las cuatro. Si el grupo admite
+        // el vacío, sí alterna: una mejora se pone y se quita.
+        onTap: () => obligatorio
+            ? lista.elegirOpcion(dueno, opcion)
+            : lista.alternarOpcion(dueno, opcion),
         child: Padding(
           padding: margen.add(const EdgeInsets.symmetric(vertical: 8)),
           child: Row(children: [
@@ -409,8 +436,10 @@ class _Opcion extends StatelessWidget {
         Expanded(child: etiqueta),
         _Boton(
           icono: Icons.remove,
-          activo: cuantas > 0,
-          onPressed: () => lista.quitarOpcion(dueno, opcion.entryId),
+          // Hasta el suelo que pone el dataset, no hasta cero: hay opciones con un mínimo propio
+          // —«una escuadra lleva cuatro con bólter»— y bajarlas de ahí deja la unidad ilegal.
+          activo: cuantas > 0 && lista.sePuedeQuitar(dueno, opcion),
+          onPressed: () => lista.quitarOpcion(dueno, opcion),
         ),
         SizedBox(
           width: 28,

@@ -1,0 +1,308 @@
+import 'dart:io';
+
+import 'package:test/test.dart';
+import 'package:warorgan_core/warorgan_core.dart';
+
+Directory _datasetDirectory() {
+  final spanish = Directory('../data/bsdata-es');
+  return spanish.existsSync() ? spanish : Directory('../data/bsdata');
+}
+
+/// Lo que se arregló después de probar la app de verdad, fijado para que no se vuelva a romper.
+///
+/// Cada una de estas mide sobre el dataset entero, no sobre una facción: casi todos estos fallos
+/// parecían de una unidad concreta y eran del motor, y con un caso suelto no se ve.
+void main() {
+  late Dataset dataset;
+
+  setUpAll(() async => dataset = await Dataset.load(_datasetDirectory()));
+
+  Roster listaDe(String faccion, {String? detachment}) {
+    final f = dataset.factionNamed(faccion);
+    final roster = Roster(faction: f, pointsLimit: 2000)
+      ..battleSize = dataset.battleSizes.firstWhere((b) => b.pointsLimit == 2000);
+    final suyos = dataset.detachmentsOf(f);
+    if (suyos.isNotEmpty) {
+      roster.detachments.add(detachment == null
+          ? suyos.first
+          : suyos.firstWhere((d) => d.name == detachment));
+    }
+    return roster;
+  }
+
+  Selection unidadDe(Roster roster, String nombre) =>
+      roster.selectionFor(roster.faction.units.firstWhere((u) => u.name == nombre));
+
+  group('la misma opción en dos grupos', () {
+    test('marcar una no marca la otra, en las 295 unidades donde pasa', () {
+      // El Defiler ofrece el Electroscourge dos veces: para sustituir el lanzamisiles y para
+      // sustituir el baleflamer, y es la misma entrada. Contando por entrada a secas, una sola
+      // pulsación marcaba las dos casillas.
+      final roster = listaDe('Chaos - Death Guard');
+      final defiler = unidadDe(roster, 'Defiler');
+      final electro = roster
+          .optionsFor(defiler)
+          .where((o) => o.name == 'Electroscourge')
+          .toList();
+      expect(electro, hasLength(2), reason: 'la misma entrada en dos grupos');
+      expect(electro.first.entryId, electro.last.entryId);
+      expect(electro.first.groupId, isNot(electro.last.groupId));
+
+      defiler.children.removeWhere((c) => c.groupId == electro.first.groupId);
+      defiler.addChild(electro.first);
+
+      expect(defiler.cuantasDe(electro.first), 1);
+      expect(defiler.cuantasDe(electro.last), 0,
+          reason: 'el otro grupo sigue con lo suyo, no se marca solo');
+    });
+
+    test('pasa en cientos de unidades, así que no vale arreglarlo a mano', () {
+      var unidades = 0;
+      for (final faccion in dataset.factions) {
+        final roster = Roster(faction: faccion, pointsLimit: 2000);
+        final suyos = dataset.detachmentsOf(faccion);
+        if (suyos.isNotEmpty) roster.detachments.add(suyos.first);
+        for (final entrada in faccion.units) {
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          final repetida = unidad.descendantsAndSelf.any((nodo) {
+            final grupos = <String, Set<String?>>{};
+            for (final o in roster.optionsFor(nodo)) {
+              grupos.putIfAbsent(o.entryId, () => {}).add(o.groupId);
+            }
+            return grupos.values.any((g) => g.length > 1);
+          });
+          if (repetida) unidades++;
+        }
+      }
+      expect(unidades, greaterThan(200),
+          reason: 'si baja de aquí, upstream ha cambiado y conviene volver a medir');
+    });
+  });
+
+  group('equipo fijo', () {
+    test('lo que el dataset exige y no deja repetir no se puede quitar', () {
+      // Las Shearing claws del Defiler son `min 1, max 1`: las lleva y punto, no es una elección.
+      // Un contador ahí ofrece bajarlas a cero y dejar la unidad ilegal sin haber elegido nada.
+      final roster = listaDe('Chaos - Death Guard');
+      final defiler = unidadDe(roster, 'Defiler');
+      final garras =
+          roster.optionsFor(defiler).firstWhere((o) => o.name == 'Shearing claws');
+
+      expect(defiler.cuantasDe(garras), 1);
+      expect(roster.isFixed(defiler, garras), isTrue);
+      expect(roster.canRemove(defiler, garras), isFalse);
+      expect(roster.canAdd(defiler, garras), isFalse);
+    });
+
+    test('lo que sí se elige se sigue pudiendo quitar', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      final lanzador = roster
+          .optionsFor(marines)
+          .firstWhere((o) => o.name == 'Plague Marine w/ blight launcher');
+      marines.addChild(lanzador);
+      expect(roster.canRemove(marines, lanzador), isTrue);
+    });
+  });
+
+  group('aliados', () {
+    test('los Chaos Knights no son de la Death Guard', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final warDog = roster.faction.units
+          .firstWhere((u) => u.name == 'Chaos Cerastus Knight Acheron');
+      expect(roster.allyOf(warDog), 'Chaos Knights');
+
+      final plagueMarines =
+          roster.faction.units.firstWhere((u) => u.name == 'Plague Marines');
+      expect(roster.allyOf(plagueMarines), isNull);
+    });
+
+    test('pero en una lista de Chaos Knights sí son la facción', () {
+      final roster = listaDe('Chaos - Chaos Knights');
+      final knight = roster.faction.units
+          .firstWhere((u) => u.name == 'Chaos Cerastus Knight Acheron');
+      expect(roster.allyOf(knight), isNull,
+          reason: 'allí no son aliados: son el ejército');
+    });
+
+    test('se reconocen en las 36 facciones, no solo en la que se probó', () {
+      var conAliados = 0;
+      var unidadesAliadas = 0;
+      for (final faccion in dataset.factions) {
+        final roster = Roster(faction: faccion, pointsLimit: 2000);
+        final suyas = faccion.units.where((u) => roster.allyOf(u) != null).length;
+        if (suyas > 0) conAliados++;
+        unidadesAliadas += suyas;
+      }
+      // Todas menos Drukhari, que es la única que no enlaza ningún catálogo ajeno: no tiene
+      // aliados que ofrecer y no es que no se reconozcan.
+      expect(conAliados, dataset.factions.length - 1);
+      expect(
+          dataset.factions
+              .where((f) => f.units.every((u) =>
+                  Roster(faction: f, pointsLimit: 2000).allyOf(u) == null))
+              .map((f) => f.name),
+          ['Xenos - Drukhari']);
+      expect(unidadesAliadas, greaterThan(1500));
+    });
+
+    test('las categorías de aliado salen del dataset, no de una lista escrita a mano', () {
+      expect(dataset.allyCategories.values,
+          containsAll(['Chaos Knights', 'Imperial Agents', 'Imperial Knights']));
+    });
+  });
+
+  group('la hoja de datos', () {
+    test('no lleva las mejoras del detachment, que no son de la unidad', () {
+      // Eran 7.565 perfiles de mejora repartidos por 717 unidades: el Daemon Prince of Nurgle
+      // tenía 26 de sus 33 perfiles ocupados por mejoras que no llevaba puestas.
+      var coladas = 0;
+      for (final faccion in dataset.factions) {
+        final mejoras = <String>{};
+        for (final d in dataset.detachmentsOf(faccion)) {
+          for (final m in dataset.enhancementsOf(faccion, detachmentId: d.id)) {
+            mejoras.add(m.name);
+          }
+        }
+        for (final unidad in faccion.units) {
+          coladas +=
+              dataset.sheetOf(unidad).where((p) => mejoras.contains(p.name)).length;
+        }
+      }
+      expect(coladas, lessThan(100), reason: 'antes eran 7.565');
+    });
+
+    test('y sigue trayendo las armas: ninguna se ha ido con las mejoras', () {
+      var sinArmas = 0;
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          final hoja = dataset.sheetOf(unidad);
+          if (hoja.isNotEmpty &&
+              hoja.every((p) => !p.typeName.contains('Weapons'))) {
+            sinArmas++;
+          }
+        }
+      }
+      expect(sinArmas, lessThanOrEqualTo(522),
+          reason: 'las que no tienen armas son las que nunca las tuvieron');
+    });
+
+    test('dentro de la lista enseña lo que lleva puesto, no todo lo que podría', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      List<String> armas() => dataset
+          .sheetOfSelection(marines)
+          .where((p) => p.typeName.contains('Weapons'))
+          .map((p) => p.name)
+          .toList();
+
+      expect(armas(), contains('Boltgun'), reason: 'entra con bólters puestos');
+
+      // Todos: los cuatro marines rasos y el del Campeón, que va un nivel más abajo.
+      marines.children.removeWhere((c) => c.name.contains('boltgun'));
+      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+      campeon.children.removeWhere((c) => c.name == 'Boltgun');
+
+      expect(armas(), isNot(contains('Boltgun')),
+          reason: 'si los he quitado todos, el bólter no pinta nada en su hoja');
+      expect(armas(), contains('Plague knives'), reason: 'lo que sí lleva, sigue');
+
+      // Y la línea de características y las habilidades no dependen de lo elegido.
+      expect(dataset.sheetOfSelection(marines).map((p) => p.typeName), contains('Unit'));
+    });
+
+    test('lo mismo con un arma que se elige entre varias, en otra facción', () {
+      // El ejemplo de los Custodes: el Caladius Grav-tank elige su cañón, y en la hoja tiene que
+      // salir el que se ha puesto y no los otros dos.
+      final roster = listaDe('Imperium - Adeptus Custodes');
+      final tanque = unidadDe(roster, 'Caladius Grav-tank');
+      final opciones = roster
+          .optionsFor(tanque)
+          .where((o) => o.name.toLowerCase().contains('cannon'))
+          .toList();
+      expect(opciones, isNotEmpty);
+
+      List<String> armas() => dataset
+          .sheetOfSelection(tanque)
+          .where((p) => p.typeName.contains('Weapons'))
+          .map((p) => p.name)
+          .toList();
+
+      final elegido = opciones.first;
+      tanque.children.removeWhere((c) => c.groupId == elegido.groupId);
+      tanque.addChild(elegido);
+
+      final sobrantes = opciones
+          .where((o) => o.groupId == elegido.groupId && o.entryId != elegido.entryId)
+          .map((o) => o.name);
+      for (final otro in sobrantes) {
+        expect(armas(), isNot(contains(otro)),
+            reason: 'el cañón que no se ha puesto no está en la hoja');
+      }
+    });
+  });
+
+  group('la salvación invulnerable', () {
+    test('se lee, y se lee contra qué vale', () {
+      Invulnerable? de(String faccion, String unidad) => Invulnerable.of(dataset.sheetOf(
+          dataset.factionNamed(faccion).units.firstWhere((u) => u.name == unidad)));
+
+      final rangers = de('Xenos - Aeldari', 'Rangers')!;
+      expect(rangers.value, '5+');
+      expect(rangers.scope, 'ataques a distancia');
+
+      final banshees = de('Xenos - Aeldari', 'Howling Banshees')!;
+      expect(banshees.value, '4+');
+      expect(banshees.scope, 'ataques de cuerpo a cuerpo');
+
+      final asterius = de('Chaos - Chaos Knights', 'Chaos Acastus Knight Asterius')!;
+      expect(asterius.isConditional, isTrue);
+    });
+
+    test('la condicionada no se confunde con la que vale contra todo', () {
+      var condicionadas = 0;
+      final vistas = <String>{};
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          if (!vistas.add(unidad.id)) continue;
+          final inv = Invulnerable.of(dataset.sheetOf(unidad));
+          if (inv != null && inv.isConditional) condicionadas++;
+        }
+      }
+      expect(condicionadas, greaterThan(30),
+          reason: 'Knights de los dos bandos, Rangers, Banshees y compañía');
+    });
+  });
+
+  group('líderes', () {
+    test('la hoja que trae su excepción escrita se une aunque ya haya otro', () {
+      // «Puedes adjuntar esta miniatura a una de las unidades anteriores aunque ya se le haya
+      // adjuntado una miniatura Captain o Chapter Master.» Lo dicen ocho hojas del dataset.
+      final blood = dataset.factionNamed('Imperium - Adeptus Astartes - Blood Angels');
+      final sacerdote =
+          blood.units.firstWhere((u) => u.name == 'Sanguinary Priest');
+      expect(dataset.aceptaOtroLider(sacerdote), isTrue);
+
+      final marines = blood.units.firstWhere((u) => u.name == 'Plague Marines',
+          orElse: () => blood.units.firstWhere((u) => u.name == 'Intercessor Squad'));
+      expect(dataset.aceptaOtroLider(marines), isFalse);
+    });
+
+    test('y son pocas, así que la regla general sigue siendo una y una', () {
+      var conExcepcion = 0;
+      final vistas = <String>{};
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          if (!vistas.add(unidad.id)) continue;
+          if (dataset.aceptaOtroLider(unidad)) conExcepcion++;
+        }
+      }
+      expect(conExcepcion, inInclusiveRange(5, 40));
+    });
+  });
+}

@@ -70,27 +70,53 @@ class _Detachment extends StatelessWidget {
     final mejoras = lista.dataset
         .enhancementsOf(lista.faccion, detachmentId: detachment.id);
 
+    // Se elige tocando la fila. Antes había que desplegarla, leer y buscar un botón «Añadir» al
+    // final: tres gestos para lo que es una elección de una. La regla y las mejoras siguen ahí,
+    // detrás de la flecha, para cuando se quiera comparar antes de decidir.
     return Theme(
       data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
       child: ExpansionTile(
-        title: Row(
-          children: [
-            Expanded(
-              child: Text(detachment.name,
-                  style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600,
-                      color: elegido ? Tema.acento : Tema.texto)),
-            ),
-            if (detachment.detachmentPoints > 0)
-              Text('${detachment.detachmentPoints} DP',
-                  style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
-          ],
+        key: ValueKey('detachment-${detachment.id}'),
+        tilePadding: const EdgeInsets.only(left: 8, right: 12),
+        leading: IconButton(
+          key: ValueKey('elegir-${detachment.id}'),
+          onPressed: !elegido && !cabe ? null : () => lista.alternarDetachment(detachment),
+          icon: Icon(
+              elegido ? Icons.check_circle : Icons.radio_button_unchecked,
+              size: 26),
+          color: Tema.acento,
+          disabledColor: Tema.textoTenue.withValues(alpha: 0.35),
+          tooltip: elegido
+              ? 'Quitar'
+              : cabe
+                  ? 'Elegir'
+                  : 'No caben sus ${detachment.detachmentPoints} DP',
+        ),
+        title: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: !elegido && !cabe ? null : () => lista.alternarDetachment(detachment),
+          child: Row(
+            children: [
+              Expanded(
+                child: Text(detachment.name,
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        color: elegido ? Tema.acento : Tema.texto)),
+              ),
+              if (detachment.detachmentPoints > 0)
+                Text('${detachment.detachmentPoints} DP',
+                    style: TextStyle(
+                        color: !elegido && !cabe ? Tema.aviso : Tema.textoTenue,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600)),
+            ],
+          ),
         ),
         subtitle: detachment.ruleName == null
             ? null
             : Text(detachment.ruleName!,
-                style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
+                style: const TextStyle(color: Tema.textoTenue, fontSize: 13)),
         iconColor: Tema.acento,
         collapsedIconColor: Tema.textoTenue,
         childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
@@ -113,29 +139,13 @@ class _Detachment extends StatelessWidget {
                     style: const TextStyle(fontSize: 13, color: Tema.textoTenue)),
               ),
           ],
-          const SizedBox(height: 14),
-          // En 11ª caben varios detachments: lo que los limita es el presupuesto de Detachment
-          // Points, no un «elige uno». A 2000 puntos son tres, y Tallyband Summoners cuesta dos,
-          // así que queda uno por gastar y hay que poder gastarlo.
-          SizedBox(
-            width: double.infinity,
-            child: FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: elegido ? Tema.superficieAlta : Tema.acento,
-                foregroundColor: elegido ? Tema.texto : Tema.fondo,
-                disabledBackgroundColor: Tema.superficieAlta,
-                disabledForegroundColor: Tema.textoTenue,
-              ),
-              onPressed: !elegido && !cabe
-                  ? null
-                  : () => lista.alternarDetachment(detachment),
-              child: Text(elegido
-                  ? 'Quitar'
-                  : cabe
-                      ? 'Añadir'
-                      : 'No caben sus ${detachment.detachmentPoints} DP'),
+          if (!elegido && !cabe)
+            Padding(
+              padding: const EdgeInsets.only(top: 12),
+              child: Text(
+                  'No caben sus ${detachment.detachmentPoints} DP en lo que queda',
+                  style: const TextStyle(color: Tema.aviso, fontSize: 13)),
             ),
-          ),
         ],
       ),
     );

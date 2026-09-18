@@ -163,10 +163,12 @@ class ListaEnCurso extends ChangeNotifier {
   /// suyas; ofrecerlas todas pone en la ficha de una unidad el equipo de otra.
   List<Selection> opcionesDe(Selection seleccion) => roster.optionsFor(seleccion);
 
-  /// Cuántas de esa opción hay puestas ahora mismo.
-  int cuantasHay(Selection padre, String entryId) => padre.children
-      .where((hijo) => hijo.entryId == entryId)
-      .fold(0, (total, hijo) => total + hijo.count);
+  /// Cuántas de esa opción hay puestas ahora mismo, **en su grupo**.
+  ///
+  /// La misma arma sale en dos grupos de la misma unidad —el Electroscourge del Defiler sustituye
+  /// al lanzamisiles o al baleflamer, y es la misma entrada—, así que contarla por entrada a secas
+  /// marcaba las dos casillas de una sola pulsación. Pasa en 295 unidades del dataset.
+  int cuantasHay(Selection padre, Selection opcion) => padre.cuantasDe(opcion);
 
   /// Pone una opción más. Si ya estaba, sube su cuenta en vez de duplicar la fila.
   ///
@@ -178,7 +180,7 @@ class ListaEnCurso extends ChangeNotifier {
     if (opcion.groupId != null && _soloUna(padre, opcion.groupId!)) {
       padre.children.removeWhere((hijo) => hijo.groupId == opcion.groupId);
     }
-    final puesta = padre.children.where((hijo) => hijo.entryId == opcion.entryId).firstOrNull;
+    final puesta = padre.puestaDe(opcion);
     if (puesta != null) {
       puesta.count++;
     } else {
@@ -187,13 +189,24 @@ class ListaEnCurso extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Elige esta opción dentro de un grupo que solo admite una: la pone y quita la que hubiera.
+  ///
+  /// No alterna. Un grupo de «elige exactamente un arma principal» no se puede dejar vacío, y
+  /// dejar que se desmarque era lo que ponía «el baleflamer es obligatorio» en el Defiler: se
+  /// quitaba el arma que el dataset exige y salía el aviso de un hueco que el jugador no sabía
+  /// que había abierto. Un arma no es obligatoria; elegir una de las cuatro, sí.
+  void elegirOpcion(Selection padre, Selection opcion) {
+    if (padre.puestaDe(opcion) != null) return;
+    anadirOpcion(padre, opcion);
+  }
+
   /// Pone la opción si no está y la quita si ya está.
   ///
   /// Es lo que se espera de una casilla: se pulsa para marcar y se vuelve a pulsar para
   /// desmarcar. Solo añadir deja atrapado al jugador, que no puede deshacer una mejora ni volver a
   /// dejar un grupo vacío cuando el dataset lo permite.
   void alternarOpcion(Selection padre, Selection opcion) {
-    final puesta = padre.children.where((h) => h.entryId == opcion.entryId).firstOrNull;
+    final puesta = padre.puestaDe(opcion);
     if (puesta != null) {
       _apunta();
       padre.children.remove(puesta);
@@ -221,20 +234,43 @@ class ListaEnCurso extends ChangeNotifier {
     }
     todas.sort((a, b) => a.name.compareTo(b.name));
 
+    // Los aliados van aparte y al final. Los Chaos Knights no son de la Death Guard, ni los
+    // inquisidores de Agents of the Imperium son de nadie: mezclarlos en Personajes y Vehículos
+    // junto a los propios es meter dos cosas distintas en el mismo cajón. Quien lo dice es el
+    // dataset, que a cada uno le pone su categoría «Allies: …» cuando la lista no es la suya.
+    final propias = <UnitEntry>[];
+    final aliadas = <String, List<UnitEntry>>{};
+    for (final u in todas) {
+      final aliado = roster.allyOf(u);
+      if (aliado == null) {
+        propias.add(u);
+      } else {
+        aliadas.putIfAbsent(aliado, () => []).add(u);
+      }
+    }
+
     final salida = <({String rol, List<UnitEntry> unidades})>[];
     final puestas = <String>{};
     for (final rol in dataset.standardForce.roles) {
-      final suyas = todas
+      final suyas = propias
           .where((u) => !puestas.contains(u.id) && u.role == rol.name)
           .toList();
       if (suyas.isEmpty) continue;
       puestas.addAll(suyas.map((u) => u.id));
       salida.add((rol: rol.name, unidades: suyas));
     }
-    final resto = todas.where((u) => !puestas.contains(u.id)).toList();
+    final resto = propias.where((u) => !puestas.contains(u.id)).toList();
     if (resto.isNotEmpty) salida.add((rol: 'Otras', unidades: resto));
+
+    final nombres = aliadas.keys.toList()..sort();
+    for (final nombre in nombres) {
+      salida.add((rol: 'Aliados · $nombre', unidades: aliadas[nombre]!));
+    }
     return salida;
   }
+
+  /// De qué facción aliada es una unidad, o `null` si es de la propia.
+  String? aliadoDe(UnitEntry unidad) => roster.allyOf(unidad);
 
   static String _sinTildes(String x) {
     const tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ü': 'u', 'ñ': 'n'};
@@ -247,18 +283,38 @@ class ListaEnCurso extends ChangeNotifier {
   /// se juegan. El orden lo declara la propia fuerza, no está escrito a mano aquí.
   List<({String rol, List<Selection> unidades})> get unidadesPorRol {
     final sueltas = roster.units.where((u) => u.attachedTo == null).toList();
+
+    // Como en el catálogo: los aliados en su propia sección, no repartidos entre los roles de la
+    // facción. Una lista de Death Guard con dos War Dogs tiene que enseñarlos como lo que son.
+    final propias = <Selection>[];
+    final aliadas = <String, List<Selection>>{};
+    for (final u in sueltas) {
+      final entrada = entradaDe(u);
+      final aliado = entrada == null ? null : roster.allyOf(entrada);
+      if (aliado == null) {
+        propias.add(u);
+      } else {
+        aliadas.putIfAbsent(aliado, () => []).add(u);
+      }
+    }
+
     final salida = <({String rol, List<Selection> unidades})>[];
     final puestas = <Selection>{};
     for (final rol in dataset.standardForce.roles) {
-      final suyas = sueltas
+      final suyas = propias
           .where((u) => !puestas.contains(u) && u.primaryCategoryId == rol.id)
           .toList();
       if (suyas.isEmpty) continue;
       puestas.addAll(suyas);
       salida.add((rol: rol.name, unidades: suyas));
     }
-    final resto = sueltas.where((u) => !puestas.contains(u)).toList();
+    final resto = propias.where((u) => !puestas.contains(u)).toList();
     if (resto.isNotEmpty) salida.add((rol: 'Otras', unidades: resto));
+
+    final nombres = aliadas.keys.toList()..sort();
+    for (final nombre in nombres) {
+      salida.add((rol: 'Aliados · $nombre', unidades: aliadas[nombre]!));
+    }
     return salida;
   }
 
@@ -288,14 +344,29 @@ class ListaEnCurso extends ChangeNotifier {
   /// Si cabe una más: lo mira el motor, que es quien conoce los techos del dataset.
   bool cabeOtra(Selection padre, Selection opcion) => roster.canAdd(padre, opcion);
 
+  /// Si se puede quitar una: el dataset marca el equipo fijo con un mínimo en la propia opción.
+  bool sePuedeQuitar(Selection padre, Selection opcion) => roster.canRemove(padre, opcion);
+
+  /// Si esa opción es equipo de serie que no se elige, y por tanto no lleva contador.
+  bool esFija(Selection padre, Selection opcion) => roster.isFixed(padre, opcion);
+
+  /// Si de ese grupo hay que elegir algo sí o sí, que es lo que impide dejarlo vacío.
+  bool esObligatorio(Selection padre, OptionGroup grupo) {
+    final uso = roster.groupUsage(padre, grupo);
+    return (uso.minimo ?? 0) > 0;
+  }
+
+  /// La hoja de datos de lo que esta unidad lleva puesto, no de todo lo que podría llevar.
+  List<Profile> hojaDe(Selection unidad) => dataset.sheetOfSelection(unidad);
+
   /// Cuántas cabe elegir de un grupo y cuántas hay, con los modifiers ya aplicados.
   ({int puestas, int? minimo, int? maximo}) usoDeGrupo(Selection padre, OptionGroup grupo) =>
       roster.groupUsage(padre, grupo);
 
   /// Quita una. Al llegar a cero desaparece la fila, que dejarla a cero ensucia la ficha.
-  void quitarOpcion(Selection padre, String entryId) {
+  void quitarOpcion(Selection padre, Selection opcion) {
     _apunta();
-    final puesta = padre.children.where((hijo) => hijo.entryId == entryId).firstOrNull;
+    final puesta = padre.puestaDe(opcion);
     if (puesta == null) return;
     if (puesta.count > 1) {
       puesta.count--;

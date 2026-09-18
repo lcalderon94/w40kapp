@@ -35,11 +35,32 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  testWidgets('las facciones salen agrupadas por bando', (tester) async {
+  testWidgets('las facciones salen por familia, y los capítulos juntos', (tester) async {
     await mostrar(tester, const PantallaDeFacciones());
+
+    // Cerradas, las familias caben de golpe en la pantalla: se elige en dos toques en vez de
+    // bajar por treinta y seis filas. Y los doce capítulos de Space Marines van bajo Adeptus
+    // Astartes, no sueltos entre las dieciséis facciones del Imperium.
     expect(find.text('IMPERIUM'), findsOneWidget);
+    expect(find.text('IMPERIUM · ADEPTUS ASTARTES'), findsOneWidget);
+    expect(find.text('CHAOS'), findsOneWidget);
+    expect(find.text('XENOS'), findsOneWidget);
+    expect(find.text('Death Guard'), findsNothing, reason: 'empiezan cerradas');
+
+    await tester.tap(find.text('CHAOS'));
+    await tester.pumpAndSettle();
     expect(find.text('Death Guard'), findsOneWidget,
         reason: 'se enseña el nombre corto, no «Chaos - Death Guard»');
+  });
+
+  testWidgets('se busca un ejército por nombre en vez de bajar a mano', (tester) async {
+    await mostrar(tester, const PantallaDeFacciones());
+
+    await tester.enterText(find.byKey(const ValueKey('buscar-faccion')), 'death');
+    await tester.pumpAndSettle();
+    expect(find.text('Death Guard'), findsOneWidget,
+        reason: 'se enseña el nombre corto, no «Chaos - Death Guard»');
+    expect(find.text('Orks'), findsNothing);
   });
 
   testWidgets('de una facción se llega a sus unidades y se pueden buscar', (tester) async {
