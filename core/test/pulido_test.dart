@@ -196,20 +196,41 @@ void main() {
     test('no lleva las mejoras del detachment, que no son de la unidad', () {
       // Eran 7.565 perfiles de mejora repartidos por 717 unidades: el Daemon Prince of Nurgle
       // tenía 26 de sus 33 perfiles ocupados por mejoras que no llevaba puestas.
-      var coladas = 0;
-      for (final faccion in dataset.factions) {
-        final mejoras = <String>{};
-        for (final d in dataset.detachmentsOf(faccion)) {
-          for (final m in dataset.enhancementsOf(faccion, detachmentId: d.id)) {
-            mejoras.add(m.name);
-          }
-        }
-        for (final unidad in faccion.units) {
-          coladas +=
-              dataset.sheetOf(unidad).where((p) => mejoras.contains(p.name)).length;
+      //
+      // Se cuenta lo que **solo** existe en una mejora, no lo que comparte nombre con una: hay
+      // habilidades de unidad que se llaman igual que una mejora —«Storm of Whispers» de Yvraine—
+      // y armas también —el TL-409 de Adeptus Mechanicus—. Contando por nombre salían 883
+      // «coladas» que eran contenido legítimo de la hoja.
+      final soloDeMejoras = <String>{};
+      for (final id in dataset.enhancementIds) {
+        final entrada = dataset.node(id);
+        if (entrada == null) continue;
+        for (final p in dataset.profilesOf(entrada)) {
+          soloDeMejoras.add('${p.typeName}|${p.name}');
         }
       }
-      expect(coladas, lessThan(100), reason: 'antes eran 7.565');
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          final entrada = dataset.node(unidad.id);
+          if (entrada == null) continue;
+          for (final p in dataset.profilesOf(entrada)) {
+            soloDeMejoras.remove('${p.typeName}|${p.name}');
+          }
+        }
+      }
+
+      var coladas = 0;
+      final vistas = <String>{};
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          if (!vistas.add(unidad.id)) continue;
+          coladas += dataset
+              .sheetOf(unidad)
+              .where((p) => soloDeMejoras.contains('${p.typeName}|${p.name}'))
+              .length;
+        }
+      }
+      expect(coladas, lessThan(5), reason: 'antes eran 7.565');
     });
 
     test('y sigue trayendo las armas: ninguna se ha ido con las mejoras', () {
@@ -537,23 +558,180 @@ void main() {
               .toList();
           if (cambios.isEmpty) continue;
           conCambios++;
-          // Atascada de verdad: ni se puede asignar ni está todo al tope. «Al tope» es el suyo
-          // propio —«hasta 2 lanzaplagas»— o el del subgrupo que las comparte, que es donde el
-          // dataset escribe «hasta 3 armas especiales en toda la escuadra».
-          final sinSitio = cambios.every((o) {
-            final tope = roster.effectiveMaxOf(unidad, o);
-            if (tope != null && unidad.cuantasDe(o) >= tope) return true;
-            final suyo = unidad.groups.where((g) => g.id == o.groupId).firstOrNull;
-            if (suyo == null) return false;
-            final uso = roster.groupUsage(unidad, suyo);
-            return uso.maximo != null && uso.puestas >= uso.maximo!;
+          // Atascada de verdad: ni se puede asignar, ni está todo al tope, ni la escuadra está
+          // en su suelo. «Al tope» es el suyo propio —«hasta 2 lanzaplagas»— o el del subgrupo que
+          // las comparte, que es donde el dataset escribe «hasta 3 armas especiales en toda la
+          // escuadra»; y «en su suelo» es que no quede a quién quitarle el arma sin bajar de un
+          // mínimo, como el Spectrus Kill Team con sus cinco Infiltrators.
+          final enElSuelo = escuadras.every((g) {
+            final relleno = roster.defaultOptionFor(unidad, g);
+            return relleno == null || !roster.canRemove(unidad, relleno);
           });
+          final sinSitio = enElSuelo ||
+              cambios.every((o) {
+                final tope = roster.effectiveMaxOf(unidad, o);
+                if (tope != null && unidad.cuantasDe(o) >= tope) return true;
+                final suyo = unidad.groups.where((g) => g.id == o.groupId).firstOrNull;
+                if (suyo == null) return false;
+                final uso = roster.groupUsage(unidad, suyo);
+                return uso.maximo != null && uso.puestas >= uso.maximo!;
+              });
           if (!cambios.any((o) => roster.canAssign(unidad, o)) && !sinSitio) atascadas++;
         }
       }
       expect(conCambios, greaterThan(800));
       expect(atascadas, 0,
           reason: 'lo único que impide cambiar un arma es su propio techo');
+    });
+  });
+
+  group('una miniatura que a su vez pregunta', () {
+    test('entra con su elección puesta, no con el hueco abierto', () {
+      // El «Terminator w/ Heavy Weapon» no dice cuál: pregunta entre assault cannon, heavy flamer
+      // y cyclone. Entraba con ese hueco vacío, la unidad quedaba ilegal y no había pantalla desde
+      // la que rellenarlo.
+      final roster = listaDe('Imperium - Adeptus Astartes - Ultramarines');
+      final termis = unidadDe(roster, 'Terminator Squad');
+      roster.add(termis);
+
+      final pesado = roster
+          .optionsFor(termis)
+          .firstWhere((o) => o.name == 'Terminator w/ Heavy Weapon');
+      expect(roster.canAssign(termis, pesado), isTrue);
+      roster.assign(termis, pesado);
+
+      final puesto = termis.puestaDe(pesado)!;
+      expect(puesto.groups.map((g) => g.name), contains('Ranged Weapon Option'));
+      expect(puesto.children, isNotEmpty,
+          reason: 'entra con un arma puesta, que se cambia de un toque');
+      expect(roster.validate().where((v) => v.selection != null), isEmpty,
+          reason: 'y sin dejar la unidad ilegal');
+
+      // Y la elección sigue estando: es un grupo con sus opciones, no una fila muerta.
+      expect(roster.optionsFor(puesto).map((o) => o.name),
+          containsAll(['Heavy Flamer', 'Assault Cannon']));
+    });
+
+    test('y una escuadra con suelo propio no se le baja para hacer sitio', () {
+      // El Spectrus Kill Team exige cinco Infiltrators. Cambiarle el arma a uno los dejaba en
+      // cuatro y la unidad ilegal: ahí primero se crece la escuadra y luego se cambia.
+      final sororitas = listaDe('Imperium - Adepta Sororitas');
+      final entrada = sororitas.faction.units
+          .firstWhere((u) => u.name == 'Spectrus Kill Team [Legends]');
+      final equipo = sororitas.selectionFor(entrada);
+      sororitas.add(equipo);
+
+      final conMochila = sororitas
+          .optionsFor(equipo)
+          .firstWhere((o) => o.name == 'Kill Team Infiltrator w/ jump pack');
+      expect(sororitas.canAssign(equipo, conMochila), isFalse,
+          reason: 'la escuadra está justo en su mínimo');
+      expect(sororitas.validate().where((v) => v.selection != null), isEmpty);
+    });
+
+    test('y lo que ocupa dos huecos se lleva dos, que es lo que dice el dataset', () {
+      // El Heavy Weapons Team son dos soldados: al ponerlo, el techo de la escuadra baja de nueve
+      // a ocho. Quitando solo uno la unidad quedaba pasada de su propio máximo.
+      final guardia = listaDe('Imperium - Astra Militarum');
+      final entrada = guardia.faction.units
+          .firstWhere((u) => u.name == 'Death Korps Grenadier Squad [Legends]');
+      final escuadra = guardia.selectionFor(entrada);
+      guardia.add(escuadra);
+      expect(guardia.validate().where((v) => v.selection != null), isEmpty);
+
+      final pesado = guardia
+          .optionsFor(escuadra)
+          .firstWhere((o) => o.name == 'Heavy Weapons Team');
+      guardia.assign(escuadra, pesado);
+
+      expect(escuadra.cuantasDe(pesado), 1);
+      expect(guardia.validate().where((v) => v.selection != null), isEmpty,
+          reason: 'la escuadra vuelve a caber en su techo');
+    });
+
+    test('y ninguna unidad del dataset queda con un hueco así al cambiarle un arma', () {
+      var probadas = 0;
+      var ilegales = 0;
+      for (final faccion in dataset.factions) {
+        final roster = Roster(faction: faccion, pointsLimit: 5000)
+          ..battleSize = dataset.battleSizes.firstWhere((b) => b.pointsLimit == 2000);
+        final suyos = dataset.detachmentsOf(faccion);
+        if (suyos.isNotEmpty) roster.detachments.add(suyos.first);
+        for (final entrada in faccion.units) {
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.units
+            ..clear()
+            ..add(unidad);
+          if (roster.validate().where((v) => v.selection != null).isNotEmpty) continue;
+          final cambios = roster
+              .optionsFor(unidad)
+              .where((o) => o.type == 'model' && roster.canAssign(unidad, o))
+              .toList();
+          if (cambios.isEmpty) continue;
+          probadas++;
+          roster.assign(unidad, cambios.first);
+          if (roster.validate().where((v) => v.selection != null).isNotEmpty) ilegales++;
+        }
+      }
+      expect(probadas, greaterThan(500));
+      expect(ilegales, 0, reason: 'cambiar un arma nunca deja un hueco sin rellenar');
+    });
+  });
+
+  group('la hoja del catálogo', () {
+    test('trae todas las armas que la unidad puede llevar', () {
+      // El dataset mete las armas en subgrupos —«Wargear» contiene «Ranged Weapon Option»— y
+      // mirando solo los grupos de primer nivel no se llegaba a ninguna: eran 4.484 perfiles sin
+      // enseñar en 686 de las 1.485 unidades. El Autarch salía sin una sola arma.
+      final aeldari = dataset.factionNamed('Xenos - Aeldari');
+      final autarch = aeldari.units.firstWhere((u) => u.name == 'Autarch');
+      final hoja = dataset.sheetOf(autarch);
+
+      expect(hoja.where((p) => p.typeName.contains('Weapons')), isNotEmpty);
+      expect(hoja.map((p) => p.name),
+          containsAll(['Scorpion Chainsword', 'Banshee Blade', 'Star Glaive']));
+    });
+
+    test('y ninguna unidad del dataset se queda sin las suyas', () {
+      var sinArmas = 0;
+      final vistas = <String>{};
+      for (final faccion in dataset.factions) {
+        final roster = Roster(faction: faccion, pointsLimit: 3000);
+        final suyos = dataset.detachmentsOf(faccion);
+        if (suyos.isNotEmpty) roster.detachments.add(suyos.first);
+        for (final entrada in faccion.units) {
+          if (!vistas.add(entrada.id)) continue;
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          // Si el árbol de la unidad ofrece un arma, la hoja tiene que enseñarla.
+          final enLaHoja = dataset
+              .sheetOf(entrada)
+              .where((p) => p.typeName.contains('Weapons'))
+              .map((p) => p.name)
+              .toSet();
+          final ofrecidas = <String>{};
+          for (final nodo in unidad.descendantsAndSelf) {
+            for (final opcion in roster.optionsFor(nodo)) {
+              final entry = dataset.node(opcion.entryId);
+              if (entry == null) continue;
+              for (final p in dataset.profilesOf(entry)) {
+                if (p.typeName.contains('Weapons')) ofrecidas.add(p.name);
+              }
+            }
+          }
+          if (ofrecidas.difference(enLaHoja).isNotEmpty) sinArmas++;
+        }
+      }
+      expect(sinArmas, 0);
     });
   });
 

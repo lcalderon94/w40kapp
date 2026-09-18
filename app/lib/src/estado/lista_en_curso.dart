@@ -185,6 +185,9 @@ class ListaEnCurso extends ChangeNotifier {
       puesta.count++;
     } else {
       padre.addChild(opcion);
+      // Lo que entra llega con lo suyo puesto: hay opciones que a su vez preguntan algo, y sin
+      // rellenarlas la unidad se queda ilegal por un hueco que el jugador no ha abierto.
+      roster.completeMinimums(opcion);
     }
     notifyListeners();
   }

@@ -571,6 +571,11 @@ class _CabeceraDeCambios extends StatelessWidget {
 }
 
 /// Una fila de cambio de arma: «0 × Plasma gun», con menos y más.
+///
+/// Y si lo que se pone **pregunta a su vez** —el «Terminator w/ Heavy Weapon» no dice cuál, hay
+/// que elegir entre assault cannon, heavy flamer y cyclone—, la fila se despliega y enseña esa
+/// elección dentro. Sin eso, poner uno dejaba la unidad con un hueco obligatorio que no había
+/// forma de rellenar desde ninguna pantalla.
 class _CambioDeArma extends StatelessWidget {
   const _CambioDeArma(
       {required this.lista, required this.dueno, required this.opcion});
@@ -581,6 +586,35 @@ class _CambioDeArma extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final puesta = dueno.puestaDe(opcion);
+    final pregunta = puesta != null &&
+        (puesta.groups.isNotEmpty || lista.opcionesDe(puesta).isNotEmpty);
+    final fila = _fila(context);
+    if (!pregunta) return fila;
+
+    final avisos = lista.incumplimientosDe(puesta).length;
+    return Theme(
+      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+      child: ExpansionTile(
+        key: ValueKey('rama-${opcion.entryId}'),
+        initiallyExpanded: true,
+        tilePadding: EdgeInsets.zero,
+        childrenPadding: const EdgeInsets.fromLTRB(8, 0, 4, 8),
+        title: fila,
+        subtitle: avisos == 0
+            ? null
+            : Padding(
+                padding: const EdgeInsets.only(left: 12, bottom: 6),
+                child: Text(
+                    avisos == 1 ? 'falta algo por elegir' : '$avisos cosas por elegir',
+                    style: const TextStyle(color: Tema.aviso, fontSize: 11.5)),
+              ),
+        children: [_Nodo(lista: lista, nodo: puesta, profundidad: 1)],
+      ),
+    );
+  }
+
+  Widget _fila(BuildContext context) {
     final acento = ColorDeEjercito.de(context);
     final cuantas = dueno.cuantasDe(opcion);
     final tope = lista.topeDeArma(dueno, opcion);

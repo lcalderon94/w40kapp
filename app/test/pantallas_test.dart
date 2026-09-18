@@ -111,6 +111,21 @@ void main() {
     expect(find.textContaining('Lakrimae'), findsWidgets);
   });
 
+  testWidgets('la ficha del catálogo trae todas las armas de la unidad', (tester) async {
+    // Es la hoja principal del modelo: lo que se mira antes de meterlo en la lista y lo que sale
+    // al buscarlo. El dataset mete las armas en subgrupos y, mirando solo los de primer nivel, el
+    // Autarch salía sin una sola: eran 4.484 perfiles sin enseñar en 686 de las 1.485 unidades.
+    final aeldari = dataset.factionNamed('Xenos - Aeldari');
+    final autarch = aeldari.units.firstWhere((u) => u.name == 'Autarch');
+    await mostrar(tester, PantallaDeUnidad(unidad: autarch, faccion: aeldari));
+
+    await tester.dragUntilVisible(find.text('ARMAS DE CUERPO A CUERPO'),
+        find.byType(ListView).first, const Offset(0, -200));
+    await tester.pumpAndSettle();
+    expect(find.text('ARMAS DE CUERPO A CUERPO'), findsOneWidget);
+    expect(find.text('Scorpion Chainsword'), findsOneWidget);
+  });
+
   testWidgets('las armas pierden la flecha con que las marca el dataset', (tester) async {
     final deathGuard = dataset.factionNamed('Chaos - Death Guard');
     final typhus = deathGuard.units.firstWhere((u) => u.name == 'Typhus');

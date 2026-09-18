@@ -1272,6 +1272,10 @@ class Roster {
     final relleno = defaultOptionFor(owner, grupo);
     if (relleno == null || relleno.entryId == option.entryId) return false;
     if (owner.cuantasDe(relleno) < 1) return false;
+    // Y sin bajar al relleno de su propio suelo: el Spectrus Kill Team exige cinco Infiltrators, y
+    // cambiarle el arma a uno los dejaba en cuatro y la unidad ilegal. Ahí primero se crece la
+    // escuadra y luego se cambia.
+    if (!canRemove(owner, relleno)) return false;
 
     final puestas = owner.cuantasDe(option);
     final tope = effectiveMaxOf(owner, option);
@@ -1289,6 +1293,11 @@ class Roster {
   }
 
   /// Le cambia el arma a una miniatura: una menos de relleno, una más de esta.
+  ///
+  /// Y la que entra llega con lo suyo puesto. Hay miniaturas que no son un arma sino una **rama**:
+  /// el «Terminator w/ Heavy Weapon» no dice cuál, lo pregunta —assault cannon, heavy flamer o
+  /// cyclone— y entra con ese hueco vacío y la unidad ilegal. Se rellena igual que al añadir la
+  /// unidad, así que entra con algo puesto y se cambia de un toque.
   void assign(Selection owner, Selection option) {
     if (!canAssign(owner, option)) return;
     final grupo = modelGroupOf(owner, option)!;
@@ -1299,7 +1308,29 @@ class Roster {
       puesta.count++;
     } else {
       owner.addChild(option);
+      completeMinimums(option);
     }
+
+    // Hay cosas que ocupan más de un hueco, y el dataset lo dice bajando el techo del grupo: un
+    // Heavy Weapons Team son dos soldados, así que al ponerlo la escuadra pasa de admitir nueve a
+    // admitir ocho. Se le quita al relleno lo que haga falta para que vuelva a caber; quitar de
+    // más es lo que evita dejar la unidad ilegal por una cuenta que el jugador no ha hecho.
+    for (var intento = 0; intento < 10; intento++) {
+      final uso = groupUsage(owner, grupo);
+      if (uso.maximo == null || uso.puestas <= uso.maximo!) break;
+      if (owner.cuantasDe(relleno) < 1) break;
+      _quitarUna(owner, relleno);
+    }
+  }
+
+  /// Rellena lo que una selección recién puesta exige y no trae.
+  ///
+  /// Es lo mismo que se hace al meter una unidad en la lista, pero para una pieza suelta: una
+  /// opción que a su vez pregunta algo entra con el hueco abierto, y ese hueco deja la unidad
+  /// ilegal por algo que el jugador no ha decidido.
+  void completeMinimums(Selection selection) {
+    _prune(selection);
+    _completarMinimos(selection);
   }
 
   /// Le devuelve el arma de serie: una menos de esta, una más de relleno.

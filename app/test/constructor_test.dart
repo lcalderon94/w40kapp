@@ -493,6 +493,41 @@ void main() {
       expect(lista.usoDeGrupo(marines, escuadra).puestas, miniaturas);
     });
 
+    testWidgets('una miniatura que pregunta qué arma se despliega y se elige',
+        (tester) async {
+      // El «Terminator w/ Heavy Weapon» no dice cuál: pregunta entre assault cannon, heavy flamer
+      // y cyclone. Sin poder desplegarlo, ponerlo dejaba la unidad con un hueco obligatorio que
+      // no había forma de rellenar desde ninguna pantalla.
+      final ultra =
+          dataset.factionNamed('Imperium - Adeptus Astartes - Ultramarines');
+      final lista = ListaEnCurso(
+          dataset: dataset, faccion: ultra, tamano: tamano(2000))
+        ..elegirDetachment(dataset.detachmentsOf(ultra).first)
+        ..anadirUnidad(ultra.units.firstWhere((u) => u.name == 'Terminator Squad'));
+      final termis = lista.roster.units.first;
+
+      await conPantallaAlta(tester, () async {
+        await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: termis));
+
+        final pesado = lista
+            .opcionesDe(termis)
+            .firstWhere((o) => o.name == 'Terminator w/ Heavy Weapon');
+        final fila = find.byKey(ValueKey('arma-${pesado.entryId}'));
+        await tester.ensureVisible(fila);
+        await tester.pumpAndSettle();
+        await tester.tap(find.descendant(of: fila, matching: find.byIcon(Icons.add)));
+        await tester.pumpAndSettle();
+
+        // Entra con un arma puesta, así que la unidad no queda ilegal…
+        expect(lista.cuantasHay(termis, pesado), 1);
+        expect(lista.incumplimientosDe(termis), isEmpty);
+
+        // …y la elección está a la vista para cambiarla.
+        expect(find.text('Assault Cannon'), findsWidgets);
+        expect(find.text('Heavy Flamer'), findsWidgets);
+      });
+    });
+
     testWidgets('la pantalla enseña las opciones con las palabras de la hoja',
         (tester) async {
       // «For every 5 models in this unit, 1 Plague Marine's plague boltgun can be replaced…».

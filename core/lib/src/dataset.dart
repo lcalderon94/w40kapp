@@ -1042,29 +1042,38 @@ class Dataset {
     final profiles = <String, Profile>{};
     final visited = <String>{};
 
-    void collect(Map<String, dynamic> node_, int depth) {
-      if (depth > 4) return;
-      if (!visited.add(node_['id'] as String? ?? '')) return;
-      // Las mejoras no son de la unidad: son del detachment, y cualquier personaje puede llevar
-      // una. Metiéndolas aquí, la hoja del Daemon Prince of Nurgle salía con 26 de sus 33
-      // perfiles ocupados por mejoras que no lleva puestas, y había que bajar ocho pantallas para
-      // encontrar sus habilidades. En todo el dataset son 7.565 perfiles colados en 717 unidades.
-      if (enhancementIds.contains(node_['id'])) return;
+    void anota(Map<String, dynamic> node_) {
       for (final profile in profilesOf(node_)) {
         if (_esGlosarioDeArma(profile)) continue;
         profiles.putIfAbsent('${profile.typeName}|${profile.name}', () => profile);
       }
-      for (final child in _childLinks(node_)) {
-        collect(child.entry, depth + 1);
+    }
+
+    // Se recorre **el árbol de la unidad**, no el catálogo: lo que la unidad trae puesto y lo que
+    // sus grupos le ofrecen, un nivel a la vez. Bajar por el catálogo a ojo no vale ni corto ni
+    // largo: cortando pronto el Autarch salía sin una sola arma, y siguiendo hasta el fondo se
+    // colaban las armerías compartidas y la hoja del Daemon Prince pasaba de 33 perfiles a 191.
+    void recorre(Selection nodo, int depth) {
+      if (depth > 6) return;
+      if (!visited.add(nodo.entryId)) return;
+      // Las mejoras no son de la unidad: son del detachment, y cualquier personaje puede llevar
+      // una. Se cortan **con lo que cuelga de ellas**, no solo sus propios perfiles: una mejora
+      // que da un arma la traía igual por debajo. En todo el dataset eran 7.565 perfiles colados
+      // en 717 unidades; la hoja del Daemon Prince tenía 26 de sus 33 ocupados por mejoras.
+      if (enhancementIds.contains(nodo.entryId)) return;
+      final suyo = node(nodo.entryId);
+      if (suyo != null) anota(suyo);
+      for (final hijo in nodo.children) {
+        recorre(hijo, depth + 1);
       }
-      for (final group in _groupsOf(node_)) {
-        for (final option in _childLinks(group)) {
-          collect(option.entry, depth + 1);
-        }
+      // Sin las secciones de Crusade: son 186 rasgos de batalla que no son de la unidad y que en
+      // una partida normal no pintan nada. La hoja del Daemon Prince pasaba de 33 a 191 perfiles.
+      for (final opcion in optionsFor(nodo)) {
+        recorre(opcion, depth + 1);
       }
     }
 
-    collect(entry, 0);
+    recorre(selectionFor(unit), 0);
     return _sheetCache[unit.id] = profiles.values.toList();
   }
 
