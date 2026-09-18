@@ -4,6 +4,7 @@ import 'package:warorgan_core/warorgan_core.dart';
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
 import '../widgets/hoja_de_datos.dart';
+import 'facciones.dart';
 
 /// Equipar una unidad de la lista.
 ///
@@ -28,7 +29,37 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
       builder: (context, _) {
         final avisos = lista.incumplimientosDe(unidad);
         final entrada = lista.entradaDe(unidad);
-        return Scaffold(
+        return ColorDeEjercito(
+          color: colorDeFaccion(corto(lista.faccion.name)),
+          child: _Pantalla(
+            lista: lista,
+            unidad: unidad,
+            avisos: avisos,
+            entrada: entrada,
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _Pantalla extends StatelessWidget {
+  const _Pantalla({
+    required this.lista,
+    required this.unidad,
+    required this.avisos,
+    required this.entrada,
+  });
+
+  final ListaEnCurso lista;
+  final Selection unidad;
+  final List<Violation> avisos;
+  final UnitEntry? entrada;
+
+  @override
+  Widget build(BuildContext context) {
+    final hoja = entrada;
+    return Scaffold(
           appBar: AppBar(
             title: Text(unidad.name),
             actions: [
@@ -36,8 +67,10 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 16),
                 child: Center(
                   child: Text('${unidad.points} pts',
-                      style: const TextStyle(
-                          color: Tema.acento, fontSize: 15, fontWeight: FontWeight.w700)),
+                      style: TextStyle(
+                          color: ColorDeEjercito.de(context),
+                          fontSize: 15,
+                          fontWeight: FontWeight.w700)),
                 ),
               ),
             ],
@@ -64,20 +97,18 @@ class PantallaDeUnidadEnLista extends StatelessWidget {
               // Y debajo, lo que ha quedado: la hoja de datos de lo que lleva puesto, no de todo
               // lo que podría llevar. El Caladius enseña el cañón que le he puesto y no los tres
               // que no; los Plague Marines sin bólters no enseñan el bólter.
-              if (entrada != null)
+              if (hoja != null)
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                   child: HojaDeDatos(
                     perfiles: lista.hojaDe(unidad),
                     habilidades: lista.habilidadesDe(unidad),
                     cuantas: lista.armasDe(unidad),
-                    palabrasClave: entrada.keywords,
+                    palabrasClave: hoja.keywords,
                   ),
                 ),
             ],
           ),
-        );
-      },
     );
   }
 }
@@ -95,8 +126,8 @@ class _Titulo extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
       margin: const EdgeInsets.only(top: 14, bottom: 8),
       child: Text(texto.toUpperCase(),
-          style: const TextStyle(
-              color: Tema.acento,
+          style: TextStyle(
+              color: ColorDeEjercito.de(context),
               fontSize: 11.5,
               fontWeight: FontWeight.w700,
               letterSpacing: 1.3)),
@@ -221,12 +252,27 @@ class _Grupo extends StatelessWidget {
     final incumple = (uso.minimo != null && uso.puestas < uso.minimo!) ||
         (uso.maximo != null && uso.puestas > uso.maximo!);
 
+    // Un grupo cuyas opciones son **miniaturas** es el tamaño de la unidad, no una elección de
+    // equipo: lleva su propio contador arriba, uno solo y para toda la escuadra. Repartirlo entre
+    // las armas —«4 con bólter, 0 con plasma»— obliga a sumar de cabeza para saber si la escuadra
+    // son cinco o son diez, que es lo primero que se decide.
+    final deMiniaturas = mias.isNotEmpty && mias.every((o) => o.type == 'model');
+    final variable = (uso.minimo ?? 0) != (uso.maximo ?? -1);
+
     return _Caja(
       titulo: grupo.name ?? 'Opciones',
       contador: _contador(uso),
-      pista: _pista(uso),
+      pista: deMiniaturas ? _pistaDeMiniaturas(uso) : _pista(uso),
       incumple: incumple,
       hijos: [
+        if (deMiniaturas)
+          _BarraDeMiniaturas(
+            lista: lista,
+            dueno: dueno,
+            grupo: grupo,
+            uso: uso,
+            fija: !variable,
+          ),
         if (unaSola && mias.isNotEmpty)
           Padding(
             padding: const EdgeInsets.fromLTRB(10, 2, 10, 10),
@@ -271,6 +317,19 @@ class _Grupo extends StatelessWidget {
     return '${uso.puestas} de ${uso.minimo ?? 0}-$tope';
   }
 
+  /// Lo que el dataset pide del tamaño de la escuadra, dicho como lo dice la hoja.
+  String? _pistaDeMiniaturas(({int puestas, int? minimo, int? maximo}) uso) {
+    if (uso.minimo != null && uso.minimo == uso.maximo) {
+      return 'Escuadra fija de ${uso.minimo} miniaturas';
+    }
+    if (uso.minimo != null && uso.maximo != null) {
+      return 'De ${uso.minimo} a ${uso.maximo} miniaturas';
+    }
+    if (uso.maximo != null) return 'Hasta ${uso.maximo} miniaturas';
+    if (uso.minimo != null) return 'Mínimo ${uso.minimo} miniaturas';
+    return null;
+  }
+
   /// Lo que el dataset pide, dicho en castellano, como en la hoja: «elige una de estas».
   String? _pista(({int puestas, int? minimo, int? maximo}) uso) {
     if (uso.maximo == 1) return uso.minimo == 1 ? 'Elige una de estas' : 'Puedes elegir una';
@@ -278,6 +337,115 @@ class _Grupo extends StatelessWidget {
     if (uso.maximo != null) return 'Hasta ${uso.maximo}';
     if (uso.minimo != null) return 'Mínimo ${uso.minimo}';
     return null;
+  }
+}
+
+/// El contador de miniaturas de una escuadra: cuántas hay, y menos y más.
+///
+/// Uno solo para toda la unidad, como en la hoja: primero se decide si son cinco o diez y después
+/// con qué van. El «+» mete un soldado raso —no el sargento ni el arma especial—, que es quien de
+/// verdad hace crecer una escuadra; el «−» quita del montón más grande que se pueda tocar.
+///
+/// Cuando el dataset no deja elegir el tamaño —«90 puntos son 10 miniaturas y punto»— no hay
+/// botones: se enseña el número y ya, porque ahí no hay nada que decidir.
+class _BarraDeMiniaturas extends StatelessWidget {
+  const _BarraDeMiniaturas({
+    required this.lista,
+    required this.dueno,
+    required this.grupo,
+    required this.uso,
+    required this.fija,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final OptionGroup grupo;
+  final ({int puestas, int? minimo, int? maximo}) uso;
+  final bool fija;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    // El nombre del grupo, sin el «4-5» con que el dataset lo encabeza: el número lo pone el
+    // contador y repetirlo despista. Queda «9 Terminators», como en la hoja.
+    final nombre = (grupo.name ?? 'miniaturas')
+        .replaceFirst(RegExp(r'^\d+\s*-\s*\d+\s*'), '')
+        .trim();
+    return Container(
+      margin: const EdgeInsets.fromLTRB(8, 8, 8, 4),
+      decoration: BoxDecoration(
+        color: Tema.fondo,
+        borderRadius: BorderRadius.circular(6),
+        border: Border.all(color: acento.withValues(alpha: 0.5)),
+      ),
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+      child: Row(
+        children: [
+          if (!fija)
+            _BotonGrande(
+              key: const ValueKey('quitar-miniatura'),
+              icono: Icons.remove,
+              color: acento,
+              activo: lista.sePuedeQuitarMiniatura(dueno, grupo),
+              onPressed: () => lista.quitarMiniatura(dueno, grupo),
+            ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Text('${uso.puestas} $nombre',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800)),
+            ),
+          ),
+          if (!fija)
+            _BotonGrande(
+              key: const ValueKey('anadir-miniatura'),
+              icono: Icons.add,
+              color: acento,
+              activo: lista.cabeOtraMiniatura(dueno, grupo),
+              onPressed: () => lista.anadirMiniatura(dueno, grupo),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BotonGrande extends StatelessWidget {
+  const _BotonGrande({
+    super.key,
+    required this.icono,
+    required this.color,
+    required this.activo,
+    required this.onPressed,
+  });
+
+  final IconData icono;
+  final Color color;
+  final bool activo;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: activo ? color : Tema.superficieAlta,
+      borderRadius: BorderRadius.circular(5),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(5),
+        onTap: activo ? onPressed : null,
+        child: SizedBox(
+          width: 46,
+          height: 38,
+          child: Icon(icono,
+              size: 22,
+              color: activo
+                  ? (color.computeLuminance() > 0.45
+                      ? const Color(0xFF14120F)
+                      : Colors.white)
+                  : Tema.textoTenue.withValues(alpha: 0.4)),
+        ),
+      ),
+    );
   }
 }
 
@@ -299,6 +467,7 @@ class _Caja extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
@@ -314,7 +483,7 @@ class _Caja extends StatelessWidget {
             Container(
               padding: const EdgeInsets.fromLTRB(12, 9, 12, 9),
               decoration: BoxDecoration(
-                color: Tema.superficieAlta,
+                color: acento.withValues(alpha: 0.9),
                 borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
               ),
               child: Row(
@@ -325,7 +494,7 @@ class _Caja extends StatelessWidget {
                       children: [
                         Text(titulo!.toUpperCase(),
                             style: TextStyle(
-                                color: incumple ? Tema.aviso : Tema.acento,
+                                color: incumple ? Tema.aviso : _sobre(acento),
                                 fontSize: 11.5,
                                 fontWeight: FontWeight.w800,
                                 letterSpacing: 1.1)),
@@ -333,8 +502,9 @@ class _Caja extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(top: 2),
                             child: Text(pista!,
-                                style: const TextStyle(
-                                    color: Tema.textoTenue, fontSize: 11.5)),
+                                style: TextStyle(
+                                    color: _sobre(acento).withValues(alpha: 0.85),
+                                    fontSize: 11.5)),
                           ),
                       ],
                     ),
@@ -342,9 +512,9 @@ class _Caja extends StatelessWidget {
                   if (contador != null)
                     Text(contador!,
                         style: TextStyle(
-                            color: incumple ? Tema.aviso : Tema.textoTenue,
+                            color: incumple ? Tema.aviso : _sobre(acento),
                             fontSize: 12.5,
-                            fontWeight: FontWeight.w600)),
+                            fontWeight: FontWeight.w700)),
                 ],
               ),
             ),
@@ -374,12 +544,13 @@ class _BotonDeOpcion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
     final puesta = dueno.puestaDe(opcion) != null;
     final puntos = opcion.basePointsEach;
     final mejora = opcion.baseCosts.containsKey(enhancementsCostTypeId);
 
     return Material(
-      color: puesta ? Tema.acento.withValues(alpha: 0.22) : Tema.superficieAlta,
+      color: puesta ? acento.withValues(alpha: 0.26) : Tema.superficieAlta,
       borderRadius: BorderRadius.circular(6),
       child: InkWell(
         key: ValueKey('opcion-${opcion.entryId}-${opcion.groupId}'),
@@ -392,8 +563,8 @@ class _BotonDeOpcion extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(6),
-            border: Border.all(
-                color: puesta ? Tema.acento : Tema.superficieAlta, width: 1.5),
+            border:
+                Border.all(color: puesta ? acento : Tema.superficieAlta, width: 1.5),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -410,7 +581,7 @@ class _BotonDeOpcion extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 2),
                   child: Text(
                       [if (puntos > 0) '+$puntos pts', if (mejora) 'mejora'].join(' · '),
-                      style: const TextStyle(color: Tema.acento, fontSize: 11)),
+                      style: TextStyle(color: acento, fontSize: 11)),
                 ),
             ],
           ),
@@ -498,7 +669,7 @@ class _Fila extends StatelessWidget {
             padding: const EdgeInsets.only(top: 1),
             child: Text(
               [if (puntos > 0) '+$puntos pts', if (mejora) 'mejora'].join(' · '),
-              style: const TextStyle(color: Tema.acento, fontSize: 11),
+              style: TextStyle(color: ColorDeEjercito.de(context), fontSize: 11),
             ),
           ),
       ],
@@ -539,7 +710,7 @@ class _Fila extends StatelessWidget {
               style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w700,
-                  color: cuantas > 0 ? Tema.acento : Tema.textoTenue)),
+                  color: cuantas > 0 ? ColorDeEjercito.de(context) : Tema.textoTenue)),
         ),
         _Boton(
           icono: Icons.add,
@@ -572,6 +743,10 @@ class _Boton extends StatelessWidget {
   }
 }
 
+/// El color de texto que se lee sobre una barra de ese tono.
+Color _sobre(Color fondo) =>
+    fondo.computeLuminance() > 0.45 ? const Color(0xFF14120F) : Colors.white;
+
 /// A qué unidad se une este líder, o qué líderes lleva esta unidad.
 class _Union extends StatelessWidget {
   const _Union({required this.lista, required this.unidad});
@@ -598,7 +773,7 @@ class _Union extends StatelessWidget {
               for (final lider in lideres)
                 ListTile(
                   dense: true,
-                  leading: const Icon(Icons.link, size: 18, color: Tema.acento),
+                  leading: Icon(Icons.link, size: 18, color: ColorDeEjercito.de(context)),
                   title: Text(lider.displayName, style: const TextStyle(fontSize: 14)),
                   trailing: IconButton(
                     icon: const Icon(Icons.link_off, size: 18),
@@ -640,13 +815,14 @@ class _BotonDeAnfitrion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
     final unido = lider.attachedTo == anfitrion;
     // Ya lleva otro de la misma clase. No se impide —hay hojas que lo permiten y el dataset no lo
     // dice— pero se avisa, que es lo que el jugador necesita para decidir.
     final ocupado = lista.anfitrionOcupado(lider, anfitrion);
 
     return Material(
-      color: unido ? Tema.acento.withValues(alpha: 0.22) : Tema.superficieAlta,
+      color: unido ? acento.withValues(alpha: 0.26) : Tema.superficieAlta,
       borderRadius: BorderRadius.circular(6),
       child: InkWell(
         key: ValueKey('anfitrion-${anfitrion.entryId}'),
@@ -657,8 +833,7 @@ class _BotonDeAnfitrion extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(6),
-            border:
-                Border.all(color: unido ? Tema.acento : Tema.superficieAlta, width: 1.5),
+            border: Border.all(color: unido ? acento : Tema.superficieAlta, width: 1.5),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,

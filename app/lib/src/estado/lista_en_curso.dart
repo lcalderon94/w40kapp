@@ -374,6 +374,47 @@ class ListaEnCurso extends ChangeNotifier {
   /// La hoja de datos de lo que esta unidad lleva puesto, no de todo lo que podría llevar.
   List<Profile> hojaDe(Selection unidad) => dataset.sheetOfSelection(unidad);
 
+  /// Mete una miniatura más en la escuadra: el soldado raso, no el sargento.
+  void anadirMiniatura(Selection unidad, OptionGroup grupo) {
+    final opcion = roster.defaultOptionFor(unidad, grupo);
+    if (opcion == null || !roster.canAdd(unidad, opcion)) return;
+    anadirOpcion(unidad, opcion);
+  }
+
+  /// Si cabe otra miniatura: lo dice el techo del grupo, no el de una opción suelta.
+  bool cabeOtraMiniatura(Selection unidad, OptionGroup grupo) {
+    final uso = roster.groupUsage(unidad, grupo);
+    if (uso.maximo != null && uso.puestas >= uso.maximo!) return false;
+    final opcion = roster.defaultOptionFor(unidad, grupo);
+    return opcion != null && roster.canAdd(unidad, opcion);
+  }
+
+  /// Quita una miniatura, del montón más grande que se pueda tocar.
+  ///
+  /// Del más grande y no del primero: quitando del primero se llevaría por delante al sargento,
+  /// que es justo el que no se toca, o el arma especial que el jugador acaba de elegir.
+  void quitarMiniatura(Selection unidad, OptionGroup grupo) {
+    final victima = _miniaturaQueSobra(unidad, grupo);
+    if (victima == null) return;
+    quitarOpcion(unidad, victima);
+  }
+
+  bool sePuedeQuitarMiniatura(Selection unidad, OptionGroup grupo) {
+    final uso = roster.groupUsage(unidad, grupo);
+    if (uso.minimo != null && uso.puestas <= uso.minimo!) return false;
+    return _miniaturaQueSobra(unidad, grupo) != null;
+  }
+
+  Selection? _miniaturaQueSobra(Selection unidad, OptionGroup grupo) {
+    final candidatas = roster
+        .optionsFor(unidad)
+        .where((o) => o.groupId == grupo.id && unidad.cuantasDe(o) > 0)
+        .where((o) => roster.canRemove(unidad, o, hayAlternativas: true))
+        .toList()
+      ..sort((a, b) => unidad.cuantasDe(b).compareTo(unidad.cuantasDe(a)));
+    return candidatas.firstOrNull;
+  }
+
   /// Cuántas cabe elegir de un grupo y cuántas hay, con los modifiers ya aplicados.
   ({int puestas, int? minimo, int? maximo}) usoDeGrupo(Selection padre, OptionGroup grupo) =>
       roster.groupUsage(padre, grupo);

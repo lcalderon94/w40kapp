@@ -57,3 +57,32 @@ abstract final class Tema {
     letterSpacing: 0.4,
   );
 }
+
+/// El color del ejército que se está mirando, para que la pantalla no sea siempre la misma.
+///
+/// Cada facción tiene el suyo en el juego y el jugador lo reconoce sin leer: la Death Guard es
+/// verde podrido y los Blood Angels rojos. Se cuelga por encima de la pantalla y lo recogen la
+/// cabecera, las barras de sección y las palabras clave; donde no haya ninguno se usa el acento de
+/// la app, así que nada depende de que esté puesto.
+class ColorDeEjercito extends InheritedWidget {
+  const ColorDeEjercito({super.key, required this.color, required super.child});
+
+  final Color color;
+
+  /// El color con el que pintar acentos sobre el fondo oscuro.
+  ///
+  /// Los colores del juego son de miniatura, no de pantalla: algunos —Raven Guard, Iron Hands— son
+  /// casi negros y sobre este fondo no se verían. Se aclaran hasta que se leen, y los que ya se
+  /// leen se dejan como están.
+  static Color de(BuildContext context) {
+    final propio =
+        context.dependOnInheritedWidgetOfExactType<ColorDeEjercito>()?.color;
+    if (propio == null) return Tema.acento;
+    final hsl = HSLColor.fromColor(propio);
+    if (hsl.lightness >= 0.5) return propio;
+    return hsl.withLightness(0.62).withSaturation((hsl.saturation + 0.1).clamp(0.0, 1.0)).toColor();
+  }
+
+  @override
+  bool updateShouldNotify(ColorDeEjercito anterior) => anterior.color != color;
+}

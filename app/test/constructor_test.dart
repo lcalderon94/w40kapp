@@ -622,6 +622,64 @@ void main() {
           reason: 'no hay nada que quitar: no es una elección');
     });
 
+    testWidgets('la escuadra tiene un contador de miniaturas, no uno por arma',
+        (tester) async {
+      // Primero se decide si son cinco o diez y después con qué van. Repartir el tamaño entre las
+      // armas obliga a sumar de cabeza para saber cuántas miniaturas hay.
+      final lista = nuevaLista(puntos: 2000)
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+        ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Poxwalkers'));
+      final pox = lista.roster.units.first;
+      final grupo = pox.groups.firstWhere((g) => g.name!.contains('Poxwalkers'));
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: pox));
+
+      expect(find.text('10 Poxwalkers'), findsOneWidget,
+          reason: 'sin el «10-20» del nombre del grupo, que ya lo dice el contador');
+      expect(lista.puntos, 65);
+
+      await tester.tap(find.byKey(const ValueKey('anadir-miniatura')));
+      await tester.pumpAndSettle();
+      expect(lista.usoDeGrupo(pox, grupo).puestas, 11);
+      expect(find.text('11 Poxwalkers'), findsOneWidget);
+
+      await tester.tap(find.byKey(const ValueKey('quitar-miniatura')));
+      await tester.pumpAndSettle();
+      expect(lista.usoDeGrupo(pox, grupo).puestas, 10);
+    });
+
+    testWidgets('una escuadra de tamaño fijo no ofrece botones que no hacen nada',
+        (tester) async {
+      // «90 puntos son 5 miniaturas y punto»: ahí no hay nada que decidir, así que no hay botones.
+      final lista = nuevaLista(puntos: 2000)
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first);
+      final defiler = deathGuard.units.firstWhere((u) => u.name == 'Defiler');
+      lista.anadirUnidad(defiler);
+      await mostrar(tester,
+          PantallaDeUnidadEnLista(lista: lista, unidad: lista.roster.units.first));
+
+      expect(find.byKey(const ValueKey('anadir-miniatura')), findsNothing,
+          reason: 'el Defiler es una sola miniatura');
+    });
+
+    testWidgets('el botón de Legends enciende y apaga el contenido retirado',
+        (tester) async {
+      final lista = nuevaLista(puntos: 2000)
+        ..elegirDetachment(dataset.detachmentsOf(deathGuard).first);
+      await mostrar(tester, PantallaDeAnadirUnidad(lista: lista));
+
+      final antes = lista.unidadesDisponibles.length;
+      expect(lista.unidadesDisponibles.where((u) => u.name.contains('[Legends]')),
+          isEmpty,
+          reason: 'de serie no se ofrecen: son hojas retiradas');
+
+      await tester.tap(find.byKey(const ValueKey('boton-legends')));
+      await tester.pumpAndSettle();
+
+      expect(lista.unidadesDisponibles.length, greaterThan(antes));
+      expect(lista.unidadesDisponibles.where((u) => u.name.contains('[Legends]')),
+          isNotEmpty);
+    });
+
     testWidgets('los aliados salen en su sección, no entre los personajes propios',
         (tester) async {
       // Los Chaos Knights no son de la Death Guard. Mezclarlos en Personajes y Vehículos junto a

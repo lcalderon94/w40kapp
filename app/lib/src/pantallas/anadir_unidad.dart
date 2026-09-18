@@ -5,6 +5,7 @@ import '../datos/repositorio.dart';
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
 import '../widgets/hoja_de_datos.dart';
+import 'facciones.dart';
 
 /// Elegir qué unidad entra en la lista.
 ///
@@ -33,13 +34,35 @@ class _PantallaDeAnadirUnidadState extends State<PantallaDeAnadirUnidad> {
         busqueda: _busqueda, soloLasQueCaben: _soloLasQueCaben);
     final restantes = widget.lista.restantes;
 
-    return Scaffold(
+    // El interruptor que el dataset usa para las Legends: es el mismo que decide si entran en la
+    // lista, así que el botón enciende **eso** y no un filtro aparte que diría otra cosa.
+    final legends = widget.lista.interruptores
+        .where((r) => r.name == 'Show Legends')
+        .firstOrNull;
+
+    return ColorDeEjercito(
+      color: colorDeFaccion(corto(widget.lista.faccion.name)),
+      child: Builder(builder: (context) => Scaffold(
       appBar: AppBar(
         title: const Text('Añadir unidad'),
         actions: [
+          if (legends != null)
+            Padding(
+              padding: const EdgeInsets.only(right: 4),
+              child: Center(
+                child: BotonDeLegends(
+                  encendido: widget.lista.estaEncendido(legends.id),
+                  onChanged: (v) {
+                    widget.lista.cambiarInterruptor(legends.id, v);
+                    setState(() {});
+                  },
+                ),
+              ),
+            ),
           IconButton(
             icon: Icon(Icons.filter_alt_outlined,
-                size: 20, color: _soloLasQueCaben ? Tema.acento : null),
+                size: 20,
+                color: _soloLasQueCaben ? ColorDeEjercito.de(context) : null),
             tooltip: 'Solo las que caben en $restantes pts',
             onPressed: () => setState(() => _soloLasQueCaben = !_soloLasQueCaben),
           ),
@@ -109,6 +132,7 @@ class _PantallaDeAnadirUnidadState extends State<PantallaDeAnadirUnidad> {
                   ),
               ],
             ),
+      )),
     );
   }
 }
@@ -144,14 +168,16 @@ class _GrupoDeRolState extends State<_GrupoDeRol> {
         InkWell(
           onTap: () => setState(() => _abierto = !_abierto),
           child: Container(
-            color: Tema.superficieAlta,
+            color: ColorDeEjercito.de(context).withValues(alpha: 0.85),
             padding: const EdgeInsets.fromLTRB(16, 10, 12, 10),
             child: Row(
               children: [
                 Expanded(
                   child: Text(widget.rol.toUpperCase(),
-                      style: const TextStyle(
-                          color: Tema.acento,
+                      style: TextStyle(
+                          color: ColorDeEjercito.de(context).computeLuminance() > 0.45
+                              ? const Color(0xFF14120F)
+                              : Colors.white,
                           fontSize: 11.5,
                           fontWeight: FontWeight.w700,
                           letterSpacing: 1.3)),
@@ -264,7 +290,7 @@ class _FichaRapida extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         key: const ValueKey('anadir-desde-ficha'),
-        backgroundColor: Tema.acento,
+        backgroundColor: ColorDeEjercito.de(context),
         foregroundColor: Tema.fondo,
         onPressed: () {
           lista.anadirUnidad(unidad);

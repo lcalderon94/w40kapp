@@ -3,6 +3,7 @@ import 'package:warorgan_core/warorgan_core.dart';
 
 import '../estado/lista_en_curso.dart';
 import '../tema.dart';
+import 'facciones.dart';
 import 'anadir_unidad.dart';
 import 'elegir_detachment.dart';
 import 'exportar.dart';
@@ -24,7 +25,14 @@ class PantallaDeLista extends StatelessWidget {
       animation: lista,
       builder: (context, _) {
         final incumplimientos = lista.incumplimientos;
-        return Scaffold(
+        // El color del ejército por toda la pantalla: la Death Guard es verde podrido y los Blood
+        // Angels rojos, y el jugador lo reconoce sin leer. Un único acento para las 36 hacía que
+        // todas las listas se vieran igual.
+        return ColorDeEjercito(
+          color: colorDeFaccion(corto(lista.faccion.name)),
+          // Builder para que lo de dentro vea el color: un InheritedWidget solo lo ven sus
+          // descendientes, y sin esto el mismo `build` seguiría leyendo el acento de la app.
+          child: Builder(builder: (context) => Scaffold(
           appBar: AppBar(
             title: Text(lista.roster.name),
             actions: [
@@ -64,7 +72,7 @@ class PantallaDeLista extends StatelessWidget {
             ],
           ),
           floatingActionButton: FloatingActionButton.extended(
-            backgroundColor: Tema.acento,
+            backgroundColor: ColorDeEjercito.de(context),
             foregroundColor: Tema.fondo,
             icon: const Icon(Icons.add),
             label: const Text('Añadir unidad'),
@@ -72,6 +80,7 @@ class PantallaDeLista extends StatelessWidget {
               builder: (_) => PantallaDeAnadirUnidad(lista: lista),
             )),
           ),
+          )),
         );
       },
     );
@@ -148,7 +157,7 @@ class _Marcador extends StatelessWidget {
             child: LinearProgressIndicator(
               value: limite == 0 ? 0 : (puntos / limite).clamp(0.0, 1.0),
               minHeight: 5,
-              color: pasado ? Tema.aviso : Tema.acento,
+              color: pasado ? Tema.aviso : ColorDeEjercito.de(context),
               backgroundColor: Tema.superficieAlta,
             ),
           ),
@@ -174,7 +183,7 @@ class _Sello extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = legal ? Tema.acento : Tema.aviso;
+    final color = legal ? ColorDeEjercito.de(context) : Tema.aviso;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       decoration: BoxDecoration(
@@ -353,22 +362,25 @@ class _Rol extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final sobre =
+        acento.computeLuminance() > 0.45 ? const Color(0xFF14120F) : Colors.white;
     return Container(
-      color: Tema.superficieAlta,
+      color: acento.withValues(alpha: 0.85),
       padding: const EdgeInsets.fromLTRB(16, 9, 16, 9),
       margin: const EdgeInsets.only(top: 14),
       child: Row(
         children: [
           Expanded(
             child: Text(nombre.toUpperCase(),
-                style: const TextStyle(
-                    color: Tema.acento,
+                style: TextStyle(
+                    color: sobre,
                     fontSize: 11.5,
                     fontWeight: FontWeight.w700,
                     letterSpacing: 1.3)),
           ),
           Text('$cuantas',
-              style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
+              style: TextStyle(color: sobre.withValues(alpha: 0.8), fontSize: 12)),
         ],
       ),
     );

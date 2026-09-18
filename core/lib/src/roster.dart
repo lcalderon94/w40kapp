@@ -786,10 +786,19 @@ class Roster {
     }
   }
 
+  /// Si una selección es «de las que cuenta» una condición.
+  ///
+  /// El `childId` de una condición puede nombrar tres cosas y hay que reconocer las tres: una
+  /// entrada, una categoría **o un grupo de opciones**. Lo tercero faltaba, y es como el dataset
+  /// cuenta el tamaño de una escuadra: «si hay 6 o más selecciones del grupo Terminators, esta
+  /// unidad cuesta 320 en vez de 160». Sin reconocerlo, una escuadra de diez Terminators se
+  /// cobraba como una de cinco.
   bool _matches(String childId, Selection selection) => switch (childId) {
         'any' => true,
         'model' || 'unit' || 'upgrade' => selection.type == childId,
-        _ => selection.entryId == childId || categoriesOf(selection).contains(childId),
+        _ => selection.entryId == childId ||
+            selection.groupId == childId ||
+            categoriesOf(selection).contains(childId),
       };
 
   /// Las palabras clave que de verdad tiene una selección en esta lista.
@@ -1172,6 +1181,27 @@ class Roster {
     if (uso.maximo == null) return true;
     if (uso.maximo == 1) return true; // se sustituye, no se apila
     return uso.puestas < uso.maximo!;
+  }
+
+  /// La opción con la que crece un grupo: la de serie, y si no la básica.
+  ///
+  /// Es la que pone el botón «+» de un contador de miniaturas: al subir una escuadra de cinco a
+  /// seis, la que entra es un soldado raso, no el arma especial ni el sargento. Quién es el raso lo
+  /// dice el dataset sin decirlo: es el único cuyo techo llega al tamaño del grupo.
+  Selection? defaultOptionFor(Selection owner, OptionGroup group) {
+    final delGrupo = optionsFor(owner).where((o) => o.groupId == group.id).toList();
+    if (delGrupo.isEmpty) return null;
+    if (group.defaultId != null) {
+      final marcada =
+          delGrupo.where((o) => o.entryId == group.defaultId).firstOrNull;
+      if (marcada != null) return marcada;
+    }
+    final uso = groupUsage(owner, group);
+    final basica = _basicaDe(delGrupo, uso.maximo ?? uso.minimo ?? 1);
+    if (basica != null) return basica;
+    // Y si tampoco destaca ninguna, la primera en la que quepa una más: así el «+» no se queda
+    // muerto cuando la que encabeza el grupo es el sargento y ya está puesto.
+    return delGrupo.where((o) => canAdd(owner, o)).firstOrNull ?? delGrupo.first;
   }
 
   /// Si se puede quitar una de esa opción de debajo de [owner].

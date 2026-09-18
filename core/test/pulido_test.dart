@@ -365,6 +365,87 @@ void main() {
     });
   });
 
+  group('el tamaño de la escuadra', () {
+    test('crece con el soldado raso, no con el sargento ni el arma especial', () {
+      final roster = listaDe('Imperium - Adeptus Astartes - Ultramarines');
+      final termis = unidadDe(roster, 'Terminator Squad');
+      final grupo = termis.groups.firstWhere((g) => g.name == 'Terminators');
+
+      expect(roster.groupUsage(termis, grupo).puestas, 5);
+      expect(roster.defaultOptionFor(termis, grupo)?.name, 'Terminator w/ Power Fist',
+          reason: 'el sargento ya está puesto y lleva tope de uno');
+    });
+
+    test('y el precio sube con ella: el dataset lo cuenta por grupo, no por entrada', () {
+      // «Si hay 6 o más selecciones del grupo Terminators, esta unidad cuesta 320 en vez de 160».
+      // El `childId` de una condición puede nombrar una entrada, una categoría **o un grupo**, y
+      // lo tercero no se reconocía: una escuadra de diez se cobraba como una de cinco.
+      final roster = listaDe('Imperium - Adeptus Astartes - Ultramarines');
+      final termis = unidadDe(roster, 'Terminator Squad');
+      roster.add(termis);
+      expect(roster.points, 160);
+
+      final grupo = termis.groups.firstWhere((g) => g.name == 'Terminators');
+      while (roster.groupUsage(termis, grupo).puestas < 10) {
+        final raso = roster.defaultOptionFor(termis, grupo)!;
+        final puesta = termis.puestaDe(raso);
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          termis.addChild(raso);
+        }
+      }
+      expect(roster.points, 320);
+      expect(roster.validate().where((v) => v.selection != null), isEmpty);
+    });
+
+    test('lo mismo en otra facción, y con una escuadra sin tope declarado', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final pox = unidadDe(roster, 'Poxwalkers');
+      roster.add(pox);
+      expect(roster.points, 65);
+
+      final grupo = pox.groups.firstWhere((g) => g.name!.contains('Poxwalkers'));
+      var vueltas = 0;
+      while (vueltas++ < 40) {
+        final raso = roster.defaultOptionFor(pox, grupo);
+        if (raso == null || !roster.canAdd(pox, raso)) break;
+        final puesta = pox.puestaDe(raso);
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          pox.addChild(raso);
+        }
+      }
+      expect(roster.groupUsage(pox, grupo).puestas, 20, reason: 'el techo lo pone la opción');
+      expect(roster.points, 130);
+    });
+  });
+
+  group('ruido del dataset', () {
+    test('«Precise» no es una habilidad de la unidad y se va de todas', () {
+      // Su texto es «cada vez que se consigue una herida crítica **con esta arma**…», que es la
+      // explicación de [PRECISION]: habla de un arma, no de la unidad. Estaba en 594 unidades,
+      // muchas de ellas vehículos y titánicas.
+      var cuantas = 0;
+      final vistas = <String>{};
+      for (final faccion in dataset.factions) {
+        for (final unidad in faccion.units) {
+          if (!vistas.add(unidad.id)) continue;
+          if (dataset.sheetOf(unidad).any((p) => p.name == 'Precise')) cuantas++;
+        }
+      }
+      expect(cuantas, 0);
+    });
+
+    test('pero las habilidades de verdad siguen ahí', () {
+      final dg = dataset.factionNamed('Chaos - Death Guard');
+      final blightlord = dg.units.firstWhere((u) => u.name == 'Blightlord Terminators');
+      expect(dataset.sheetOf(blightlord).map((p) => p.name),
+          contains('Blistering Fusillade'));
+    });
+  });
+
   group('líderes', () {
     test('la hoja que trae su excepción escrita se une aunque ya haya otro', () {
       // «Puedes adjuntar esta miniatura a una de las unidades anteriores aunque ya se le haya

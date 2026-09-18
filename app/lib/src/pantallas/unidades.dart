@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:warorgan_core/warorgan_core.dart';
 
 import '../tema.dart';
+import 'facciones.dart';
 import 'unidad.dart';
 
 /// Las unidades de una facción, buscables.
@@ -22,18 +23,38 @@ class _PantallaDeUnidadesState extends State<PantallaDeUnidades> {
     ..sort((a, b) => a.name.compareTo(b.name));
   String _busqueda = '';
 
+  /// Las Legends se esconden de serie: son hojas retiradas que ya no se juegan, y en algunas
+  /// facciones son casi la mitad del catálogo —116 de las 275 de los Ultramarines—.
+  bool _legends = false;
+
   List<UnitEntry> get _visibles {
-    if (_busqueda.isEmpty) return _todas;
+    var salida = _todas;
+    if (!_legends) salida = salida.where((u) => !esLegends(u)).toList();
+    if (_busqueda.isEmpty) return salida;
     final buscado = _normalizar(_busqueda);
-    return _todas.where((u) => _normalizar(u.name).contains(buscado)).toList();
+    return salida.where((u) => _normalizar(u.name).contains(buscado)).toList();
   }
 
   @override
   Widget build(BuildContext context) {
     final visibles = _visibles;
-    return Scaffold(
+    final legends = _todas.where(esLegends).length;
+    return ColorDeEjercito(
+      color: colorDeFaccion(corto(widget.faccion.name)),
+      child: Builder(builder: (context) => Scaffold(
       appBar: AppBar(
         title: Text(widget.faccion.name.split(' - ').last),
+        actions: [
+          if (legends > 0)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: BotonDeLegends(
+                encendido: _legends,
+                cuantas: legends,
+                onChanged: (v) => setState(() => _legends = v),
+              ),
+            ),
+        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(60),
           child: Padding(
@@ -57,6 +78,7 @@ class _PantallaDeUnidadesState extends State<PantallaDeUnidades> {
               separatorBuilder: (_, __) => const Divider(indent: 16, endIndent: 16),
               itemBuilder: (context, i) => _Unidad(unidad: visibles[i], faccion: widget.faccion),
             ),
+      )),
     );
   }
 }

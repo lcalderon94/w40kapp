@@ -233,3 +233,67 @@ String sinTildes(String x) {
   const tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ü': 'u', 'ñ': 'n'};
   return x.toLowerCase().split('').map((c) => tildes[c] ?? c).join();
 }
+
+/// Si una unidad es contenido Legends: hojas retiradas que ya no se juegan.
+///
+/// El dataset las marca en el nombre —«Wolf Guard Battle Leader [Legends]»— y son 2.393 de las
+/// 6.149 del catálogo, así que enseñarlas mezcladas con las que sí se juegan es enterrar estas
+/// últimas. En el constructor de listas quien las esconde es el propio dataset, con un
+/// interruptor; en el catálogo no hay lista contra la que evaluarlo y se mira el nombre.
+bool esLegends(UnitEntry unidad) => unidad.name.contains('[Legends]');
+
+/// El interruptor de Legends, visible y a mano en vez de escondido en un menú.
+class BotonDeLegends extends StatelessWidget {
+  const BotonDeLegends({
+    super.key,
+    required this.encendido,
+    required this.onChanged,
+    this.cuantas,
+  });
+
+  final bool encendido;
+  final ValueChanged<bool> onChanged;
+
+  /// Cuántas hay, para que se vea qué se está escondiendo.
+  final int? cuantas;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    return Material(
+      color: encendido ? acento.withValues(alpha: 0.85) : Tema.superficieAlta,
+      borderRadius: BorderRadius.circular(6),
+      child: InkWell(
+        key: const ValueKey('boton-legends'),
+        borderRadius: BorderRadius.circular(6),
+        onTap: () => onChanged(!encendido),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(encendido ? Icons.visibility : Icons.visibility_off,
+                  size: 16,
+                  color: encendido
+                      ? (acento.computeLuminance() > 0.45
+                          ? const Color(0xFF14120F)
+                          : Colors.white)
+                      : Tema.textoTenue),
+              const SizedBox(width: 6),
+              Text(
+                  cuantas == null ? 'Legends' : 'Legends${encendido ? "" : " ($cuantas)"}',
+                  style: TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w700,
+                      color: encendido
+                          ? (acento.computeLuminance() > 0.45
+                              ? const Color(0xFF14120F)
+                              : Colors.white)
+                          : Tema.textoTenue)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

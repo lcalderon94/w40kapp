@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:warorgan_core/warorgan_core.dart';
 
 import '../datos/repositorio.dart';
+import '../tema.dart';
 import '../widgets/hoja_de_datos.dart';
+import 'facciones.dart';
 
 /// La ficha de una unidad del catálogo.
 class PantallaDeUnidad extends StatelessWidget {
@@ -13,7 +15,9 @@ class PantallaDeUnidad extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ColorDeEjercito(
+      color: colorDeFaccion(corto(faccion.name)),
+      child: Builder(builder: (context) => Scaffold(
       appBar: AppBar(title: Text(unidad.name)),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
@@ -30,6 +34,7 @@ class PantallaDeUnidad extends StatelessWidget {
           ),
         ],
       ),
+      )),
     );
   }
 }

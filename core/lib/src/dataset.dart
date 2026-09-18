@@ -1041,6 +1041,7 @@ class Dataset {
       // encontrar sus habilidades. En todo el dataset son 7.565 perfiles colados en 717 unidades.
       if (enhancementIds.contains(node_['id'])) return;
       for (final profile in profilesOf(node_)) {
+        if (_esGlosarioDeArma(profile)) continue;
         profiles.putIfAbsent('${profile.typeName}|${profile.name}', () => profile);
       }
       for (final child in _childLinks(node_)) {
@@ -1063,6 +1064,26 @@ class Dataset {
 
   /// Si una hoja trae escrita su excepción de líder. Se pregunta por cada anfitriona posible.
   final Map<String, bool> _excepcionCache = {};
+
+  /// Si un perfil de habilidad es en realidad la explicación de una palabra clave de arma.
+  ///
+  /// El dataset cuelga de la unidad un perfil llamado «Precise» cuyo texto es «cada vez que se
+  /// consigue una herida crítica **con esta arma**…», que es la explicación de [PRECISION]. Eso no
+  /// es una habilidad de la unidad: lo dice el propio texto, que habla de un arma y no de ella.
+  /// Son 594 unidades con esa línea de más en su hoja, muchas de ellas vehículos y titánicas, que
+  /// es donde más canta.
+  ///
+  /// Se reconoce por eso mismo —una habilidad de unidad no habla de «esta arma»— y no por el
+  /// nombre: así vale para cualquier otra que upstream cuelgue igual. Hoy solo cae esa.
+  static bool _esGlosarioDeArma(Profile profile) {
+    if (profile.typeName != 'Abilities') return false;
+    final texto = (profile.description ?? '').toLowerCase();
+    return texto.contains('con esta arma') ||
+        texto.contains('de esta arma') ||
+        texto.contains('esta arma tiene') ||
+        texto.contains('with this weapon') ||
+        texto.contains('this weapon has');
+  }
 
   /// Todas las mejoras del dataset, por identificador.
   ///

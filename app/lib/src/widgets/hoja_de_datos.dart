@@ -24,13 +24,14 @@ class BandaDeUnidad extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
       decoration: BoxDecoration(
-        color: Tema.acento.withValues(alpha: 0.16),
+        color: acento.withValues(alpha: 0.18),
         borderRadius: BorderRadius.circular(6),
-        border: Border(left: BorderSide(color: Tema.acento, width: 4)),
+        border: Border(left: BorderSide(color: acento, width: 4)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,11 +54,11 @@ class BandaDeUnidad extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Tema.fondo,
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Tema.acento, width: 1.5),
+                    border: Border.all(color: acento, width: 1.5),
                   ),
                   child: Text('$puntos',
-                      style: const TextStyle(
-                          color: Tema.acento, fontSize: 17, fontWeight: FontWeight.w800)),
+                      style: TextStyle(
+                          color: acento, fontSize: 17, fontWeight: FontWeight.w800)),
                 ),
             ],
           ),
@@ -214,6 +215,7 @@ class ClaveTocable extends StatelessWidget {
   Widget build(BuildContext context) {
     final hay = Datos.de(context).ruleNamed(texto) != null ||
         (descripcion != null && descripcion!.trim().isNotEmpty);
+    final acento = ColorDeEjercito.de(context);
     return InkWell(
       key: ValueKey('clave-$texto'),
       onTap: hay ? () => mostrarRegla(context, texto, texto: descripcion) : null,
@@ -221,7 +223,7 @@ class ClaveTocable extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
         decoration: BoxDecoration(
-          color: Tema.acento.withValues(alpha: hay ? 0.14 : 0.06),
+          color: acento.withValues(alpha: hay ? 0.18 : 0.07),
           borderRadius: BorderRadius.circular(4),
         ),
         child: Row(
@@ -229,15 +231,15 @@ class ClaveTocable extends StatelessWidget {
           children: [
             Text(texto.toUpperCase(),
                 style: estilo ??
-                    const TextStyle(
-                        color: Tema.acento,
+                    TextStyle(
+                        color: acento,
                         fontSize: 11.5,
                         fontWeight: FontWeight.w700,
                         letterSpacing: 0.5)),
             if (hay)
-              const Padding(
-                padding: EdgeInsets.only(left: 4),
-                child: Icon(Icons.help_outline, size: 12, color: Tema.acento),
+              Padding(
+                padding: const EdgeInsets.only(left: 4),
+                child: Icon(Icons.help_outline, size: 12, color: acento),
               ),
           ],
         ),
@@ -327,7 +329,7 @@ class _LineaDeCaracteristicas extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Tema.fondo,
                     borderRadius: const BorderRadius.horizontal(left: Radius.circular(6)),
-                    border: Border.all(color: Tema.acento, width: 1.5),
+                    border: Border.all(color: ColorDeEjercito.de(context), width: 1.5),
                   ),
                   child: Text(invSv.trim(),
                       style: const TextStyle(
@@ -339,7 +341,7 @@ class _LineaDeCaracteristicas extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
-                      color: Tema.acento.withValues(alpha: 0.14),
+                      color: ColorDeEjercito.de(context).withValues(alpha: 0.18),
                       borderRadius:
                           const BorderRadius.horizontal(right: Radius.circular(6)),
                     ),
@@ -347,8 +349,8 @@ class _LineaDeCaracteristicas extends StatelessWidget {
                         condicionada && invulnerable != null
                             ? 'SALVACIÓN INVULNERABLE · solo contra ${invulnerable!.scope}'
                             : 'SALVACIÓN INVULNERABLE',
-                        style: const TextStyle(
-                            color: Tema.acento,
+                        style: TextStyle(
+                            color: ColorDeEjercito.de(context),
                             fontSize: 11.5,
                             fontWeight: FontWeight.w800,
                             letterSpacing: 0.8)),
@@ -452,8 +454,8 @@ class _TablaDeArmas extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(right: 8, top: 1),
                         child: Text('${cuantas[arma.name]}',
-                            style: const TextStyle(
-                                color: Tema.acento,
+                            style: TextStyle(
+                                color: ColorDeEjercito.de(context),
                                 fontSize: 16,
                                 fontWeight: FontWeight.w800)),
                       ),
@@ -568,18 +570,20 @@ class _Seccion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.only(top: 16, bottom: 8),
       padding: const EdgeInsets.symmetric(vertical: 9, horizontal: 12),
       decoration: BoxDecoration(
-        color: Tema.acento.withValues(alpha: 0.14),
+        color: acento.withValues(alpha: 0.9),
         borderRadius: BorderRadius.circular(4),
-        border: Border(left: BorderSide(color: Tema.acento, width: 3)),
       ),
       child: Text(titulo.toUpperCase(),
-          style: const TextStyle(
-              color: Tema.acento,
+          style: TextStyle(
+              color: acento.computeLuminance() > 0.45
+                  ? const Color(0xFF14120F)
+                  : Colors.white,
               fontSize: 13,
               fontWeight: FontWeight.w800,
               letterSpacing: 1.2)),
