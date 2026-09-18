@@ -325,6 +325,7 @@ class _Grupo extends StatelessWidget {
         grupo: grupo,
         ofrecidas: ofrecidas,
         uso: uso,
+        miniaturas: lista.miniaturasDe(dueno, grupo),
         incumple: incumple,
       );
     }
@@ -408,6 +409,7 @@ class _Escuadra extends StatelessWidget {
     required this.grupo,
     required this.ofrecidas,
     required this.uso,
+    required this.miniaturas,
     required this.incumple,
   });
 
@@ -415,7 +417,12 @@ class _Escuadra extends StatelessWidget {
   final Selection dueno;
   final OptionGroup grupo;
   final List<Selection> ofrecidas;
+
+  /// Lo que se puede tocar: el grupo. Manda en los botones.
   final ({int puestas, int? minimo, int? maximo}) uso;
+
+  /// Lo que hay: el grupo más el sargento. Manda en el número que se lee.
+  final ({int puestas, int? minimo, int? maximo}) miniaturas;
   final bool incumple;
 
   @override
@@ -441,13 +448,16 @@ class _Escuadra extends StatelessWidget {
       pista: _pista(),
       incumple: incumple,
       hijos: [
-        _BarraDeMiniaturas(
-          lista: lista,
-          dueno: dueno,
-          grupo: grupo,
-          uso: uso,
-          fija: (uso.minimo ?? 0) == (uso.maximo ?? -1),
-        ),
+        // El grupo del sargento no lleva contador propio: sus miniaturas ya las cuenta la barra de
+        // la escuadra, y pintar dos contadores era leer una escuadra de diez como «9» y «1».
+        if (!lista.seCuentaEnLaEscuadra(dueno, grupo))
+          _BarraDeMiniaturas(
+            lista: lista,
+            dueno: dueno,
+            grupo: grupo,
+            uso: miniaturas,
+            fija: (uso.minimo ?? 0) == (uso.maximo ?? -1),
+          ),
         _Composicion(lista: lista, dueno: dueno, grupo: grupo),
         for (final entrada in porSubgrupo.entries) ...[
           _CabeceraDeCambios(
@@ -467,20 +477,22 @@ class _Escuadra extends StatelessWidget {
   }
 
   String? _contador() {
-    if (uso.minimo == null && uso.maximo == null) return null;
-    if (uso.minimo == uso.maximo) return '${uso.puestas} de ${uso.maximo}';
-    return '${uso.puestas} de ${uso.minimo ?? 0}-${uso.maximo?.toString() ?? "∞"}';
+    final m = miniaturas;
+    if (m.minimo == null && m.maximo == null) return null;
+    if (m.minimo == m.maximo) return '${m.puestas} de ${m.maximo}';
+    return '${m.puestas} de ${m.minimo ?? 0}-${m.maximo?.toString() ?? "∞"}';
   }
 
   String? _pista() {
-    if (uso.minimo != null && uso.minimo == uso.maximo) {
-      return 'Escuadra fija de ${uso.minimo} miniaturas';
+    final m = miniaturas;
+    if (m.minimo != null && m.minimo == m.maximo) {
+      return 'Escuadra fija de ${m.minimo} miniaturas';
     }
-    if (uso.minimo != null && uso.maximo != null) {
-      return 'De ${uso.minimo} a ${uso.maximo} miniaturas';
+    if (m.minimo != null && m.maximo != null) {
+      return 'De ${m.minimo} a ${m.maximo} miniaturas';
     }
-    if (uso.maximo != null) return 'Hasta ${uso.maximo} miniaturas';
-    if (uso.minimo != null) return 'Mínimo ${uso.minimo} miniaturas';
+    if (m.maximo != null) return 'Hasta ${m.maximo} miniaturas';
+    if (m.minimo != null) return 'Mínimo ${m.minimo} miniaturas';
     return null;
   }
 }

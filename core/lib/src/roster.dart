@@ -1152,6 +1152,117 @@ class Roster {
     return (puestas: puestas, minimo: minimo, maximo: maximo);
   }
 
+  /// Cuántas miniaturas tiene de verdad la escuadra, y entre qué números puede moverse.
+  ///
+  /// No es lo mismo que [groupUsage]. El dataset saca al sargento del grupo: una escuadra de
+  /// Plague Marines es «Plague Champion» —hijo suelto, uno y solo uno— más el grupo «Plague
+  /// Marines», que va de cuatro a nueve. Enseñar las puestas del grupo a secas decía **9** en una
+  /// escuadra de diez, y es el número que el jugador compara con la hoja. Pasaba en **223 de las
+  /// 1.085 unidades con escuadra**.
+  ///
+  /// Los botones siguen trabajando sobre el grupo, que es lo único que se puede tocar; lo que
+  /// cambia es el número que se lee.
+  ({int puestas, int? minimo, int? maximo}) squadTally(Selection owner, OptionGroup group) {
+    final uso = groupUsage(owner, group);
+    if (mainModelGroup(owner)?.id != group.id) return uso;
+
+    // Todo lo que es una miniatura y no lo cuenta ya nadie: el sargento, esté suelto —Blightlord
+    // Champion— o metido en un grupo suyo de uno —Terminator Champion—. Las dos formas las usa el
+    // dataset y las dos son la misma escuadra.
+    //
+    // Fuera quedan dos cosas, que contarlas aquí sería contarlas dos veces: lo que ya entra en el
+    // recuento del propio grupo —sus subgrupos, como el «Special Weapon» de los Kroot— y lo que
+    // tiene barra propia porque el jugador lo dimensiona aparte —los Neophytes de una Crusader
+    // Squad—.
+    final yaContado = _groupAndNested(owner, group.id);
+    final aparte = <String>{};
+    for (final g in owner.groups) {
+      if (yaContado.contains(g.id)) continue;
+      if (!isModelGroup(owner, g)) continue;
+      if (_sePuedeRedimensionar(owner, g)) aparte.add(g.id);
+    }
+    var fijas = 0;
+    for (final hijo in owner.children) {
+      if (hijo.groupId != null &&
+          (yaContado.contains(hijo.groupId) || aparte.contains(hijo.groupId))) {
+        continue;
+      }
+      if (hijo.type != 'model') continue;
+      fijas += hijo.count;
+    }
+    return (
+      puestas: uso.puestas + fijas,
+      minimo: uso.minimo == null ? null : uso.minimo! + fijas,
+      maximo: uso.maximo == null ? null : uso.maximo! + fijas,
+    );
+  }
+
+  /// El grupo que **es** la escuadra, cuando hay varios de miniaturas: el que el jugador dimensiona.
+  ///
+  /// El del sargento también es un grupo de miniaturas y también lleva una, así que hace falta un
+  /// criterio fijo para no contar dos veces. Manda el que más miniaturas tiene puestas —la tropa
+  /// es la escuadra y el sargento es uno—, y a igualdad el que declara techo de más de uno.
+  OptionGroup? mainModelGroup(Selection owner) {
+    OptionGroup? mejor;
+    var suyas = -1;
+    var suTecho = 0;
+    for (final g in owner.groups) {
+      if (!isModelGroup(owner, g)) continue;
+      final uso = groupUsage(owner, g);
+      final techo = uso.maximo ?? 1 << 20;
+      if (uso.puestas > suyas || (uso.puestas == suyas && techo > suTecho)) {
+        mejor = g;
+        suyas = uso.puestas;
+        suTecho = techo;
+      }
+    }
+    return mejor;
+  }
+
+  /// Si las miniaturas de este grupo ya las cuenta la barra de la escuadra principal.
+  ///
+  /// El grupo sigue pintándose —ahí están las armas del sargento— pero sin su propio contador, que
+  /// es lo que hacía que una escuadra de diez se leyera como «9 Terminators» y «1 Champion» en dos
+  /// cajas, en vez de «10 Chaos Terminators» como pone la hoja.
+  bool foldedIntoMainSquad(Selection owner, OptionGroup group) {
+    if (!isModelGroup(owner, group)) return false;
+    if (mainModelGroup(owner)?.id == group.id) return false;
+    return !_sePuedeRedimensionar(owner, group);
+  }
+
+  bool _sePuedeRedimensionar(Selection owner, OptionGroup group) {
+    if (shrinkTarget(owner, group) != null) return true;
+    final uso = groupUsage(owner, group);
+    if (uso.maximo != null && uso.puestas >= uso.maximo!) return false;
+    final relleno = defaultOptionFor(owner, group);
+    return relleno != null && canAdd(owner, relleno);
+  }
+
+  /// De qué miniatura se quita una al pulsar el «−», o `null` si no se puede quitar ninguna.
+  ///
+  /// Del montón más grande y no del primero: quitando del primero se llevaría por delante al
+  /// sargento, o el arma especial que el jugador acaba de elegir.
+  ///
+  /// Y respetando el suelo de **cada opción**, no solo el del grupo. El dataset escribe algunos
+  /// mínimos en la propia miniatura —«Spindle Drone: mínimo 4»— y el grupo no dice nada; mirando
+  /// solo el grupo, el «−» se dejaba pulsar y la unidad quedaba ilegal sin que el jugador hubiera
+  /// elegido nada raro. Pasaba en **134 grupos**.
+  Selection? shrinkTarget(Selection owner, OptionGroup group) {
+    final uso = groupUsage(owner, group);
+    if (uso.minimo != null && uso.puestas <= uso.minimo!) return null;
+    final delGrupo = optionsFor(owner)
+        .where((o) => modelGroupOf(owner, o)?.id == group.id)
+        .where((o) => owner.cuantasDe(o) > 0)
+        .where((o) => canRemove(owner, o))
+        .toList();
+    // Se quita primero del relleno: es la miniatura sin nada especial, y quitar antes la que lleva
+    // el plasma sería deshacer una elección del jugador para hacer sitio.
+    final relleno = delGrupo.where((o) => isFiller(owner, o)).firstOrNull;
+    if (relleno != null) return relleno;
+    delGrupo.sort((a, b) => owner.cuantasDe(b).compareTo(owner.cuantasDe(a)));
+    return delGrupo.firstOrNull;
+  }
+
   /// Si cabe una más de esa opción bajo [owner].
   ///
   /// El dataset pone techos en dos sitios y hay que mirar los dos: en la propia opción («un

@@ -437,36 +437,23 @@ class ListaEnCurso extends ChangeNotifier {
     return opcion != null && roster.canAdd(unidad, opcion);
   }
 
-  /// Quita una miniatura, del montón más grande que se pueda tocar.
-  ///
-  /// Del más grande y no del primero: quitando del primero se llevaría por delante al sargento,
-  /// que es justo el que no se toca, o el arma especial que el jugador acaba de elegir.
+  /// Quita una miniatura, del montón más grande que se pueda tocar. Ver [Roster.shrinkTarget].
   void quitarMiniatura(Selection unidad, OptionGroup grupo) {
-    final victima = _miniaturaQueSobra(unidad, grupo);
+    final victima = roster.shrinkTarget(unidad, grupo);
     if (victima == null) return;
     quitarOpcion(unidad, victima);
   }
 
-  bool sePuedeQuitarMiniatura(Selection unidad, OptionGroup grupo) {
-    final uso = roster.groupUsage(unidad, grupo);
-    if (uso.minimo != null && uso.puestas <= uso.minimo!) return false;
-    return _miniaturaQueSobra(unidad, grupo) != null;
-  }
+  bool sePuedeQuitarMiniatura(Selection unidad, OptionGroup grupo) =>
+      roster.shrinkTarget(unidad, grupo) != null;
 
-  Selection? _miniaturaQueSobra(Selection unidad, OptionGroup grupo) {
-    final delGrupo = roster
-        .optionsFor(unidad)
-        .where((o) => roster.modelGroupOf(unidad, o)?.id == grupo.id)
-        .where((o) => unidad.cuantasDe(o) > 0)
-        .where((o) => roster.canRemove(unidad, o, hayAlternativas: true))
-        .toList();
-    // Se quita primero del relleno: es la miniatura sin nada especial, y quitar antes la que
-    // lleva el plasma sería deshacer una elección del jugador para hacer sitio.
-    final relleno = delGrupo.where((o) => roster.isFiller(unidad, o)).firstOrNull;
-    if (relleno != null) return relleno;
-    delGrupo.sort((a, b) => unidad.cuantasDe(b).compareTo(unidad.cuantasDe(a)));
-    return delGrupo.firstOrNull;
-  }
+  /// Si este grupo ya lo cuenta la barra de la escuadra. Ver [Roster.foldedIntoMainSquad].
+  bool seCuentaEnLaEscuadra(Selection padre, OptionGroup grupo) =>
+      roster.foldedIntoMainSquad(padre, grupo);
+
+  /// Las miniaturas que tiene la escuadra de verdad, sargento incluido. Ver [Roster.squadTally].
+  ({int puestas, int? minimo, int? maximo}) miniaturasDe(Selection padre, OptionGroup grupo) =>
+      roster.squadTally(padre, grupo);
 
   /// Cuántas cabe elegir de un grupo y cuántas hay, con los modifiers ya aplicados.
   ({int puestas, int? minimo, int? maximo}) usoDeGrupo(Selection padre, OptionGroup grupo) =>

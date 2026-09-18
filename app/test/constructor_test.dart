@@ -567,7 +567,9 @@ void main() {
         // El número es el efectivo de ahora, no el declarado: el dataset escribe «una por cada
         // cinco miniaturas» como un techo que sube al crecer la escuadra.
         expect(find.textContaining('Cambia el arma de'), findsWidgets);
-        expect(find.text('4 Plague Marines'), findsOneWidget,
+        // Cinco, no cuatro: el Plague Champion es una miniatura más y el dataset lo saca del
+        // grupo, así que contando solo el grupo una escuadra de cinco se leía «4».
+        expect(find.text('5 Plague Marines'), findsOneWidget,
             reason: 'y el contador dice cuántas hay, sin el «4-9» del nombre del grupo');
       });
     });

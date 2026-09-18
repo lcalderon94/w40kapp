@@ -878,4 +878,134 @@ void main() {
       expect(conExcepcion, inInclusiveRange(5, 40));
     });
   });
+
+  group('cuántas miniaturas dice que hay', () {
+    /// Crece la escuadra hasta donde deje.
+    int alMaximo(Roster r, Selection u, OptionGroup esc) {
+      for (var i = 0; i < 40; i++) {
+        final uso = r.groupUsage(u, esc);
+        if (uso.maximo != null && uso.puestas >= uso.maximo!) break;
+        final o = r.defaultOptionFor(u, esc);
+        if (o == null || !r.canAdd(u, o)) break;
+        final puesta = u.puestaDe(o);
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          u.addChild(o);
+          r.completeMinimums(o);
+        }
+        r.applyModifiers();
+      }
+      return r.squadTally(u, esc).puestas;
+    }
+
+    test('el sargento también cuenta, esté suelto o en un grupo suyo', () {
+      // Una escuadra de diez Plague Marines se leía «9»: el dataset saca al Plague Champion del
+      // grupo y la barra enseñaba las puestas del grupo a secas. Y hay dos formas de sacarlo —hijo
+      // suelto, o grupo propio de uno—, así que hacían falta las dos.
+      for (final caso in [
+        ('Chaos - Death Guard', 'Plague Marines', 10),
+        ('Chaos - Death Guard', 'Blightlord Terminators', 10),
+        ('Chaos - Chaos Space Marines', 'Chaos Terminator Squad', 10),
+        ('Chaos - Chaos Space Marines', 'Chosen', 10),
+      ]) {
+        final roster = listaDe(caso.$1);
+        final unidad = unidadDe(roster, caso.$2);
+        roster.add(unidad);
+        roster.applyModifiers();
+        final escuadra = roster.mainModelGroup(unidad)!;
+        expect(alMaximo(roster, unidad, escuadra), caso.$3, reason: caso.$2);
+      }
+    });
+
+    test('y en todo el dataset la barra dice las miniaturas que hay', () {
+      var conEscuadra = 0, cuadran = 0;
+      for (final faccion in dataset.factions) {
+        for (final entrada in faccion.units) {
+          final roster = listaDe(faccion.name);
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.add(unidad);
+          roster.applyModifiers();
+          final principal = roster.mainModelGroup(unidad);
+          if (principal == null) continue;
+          conEscuadra++;
+          final miniaturas = unidad.children
+              .where((c) => c.type == 'model')
+              .fold<int>(0, (t, c) => t + c.count);
+          if (roster.squadTally(unidad, principal).puestas == miniaturas) cuadran++;
+        }
+      }
+      expect(conEscuadra, greaterThan(1000));
+      // Las que faltan son unidades con dos escuadras que se dimensionan por separado —los
+      // Inquisitorial Agents son Acolytes y Gun Servitors—, y ahí dos barras es lo correcto.
+      expect(cuadran, greaterThan(conEscuadra - 30),
+          reason: 'la barra de la escuadra dice las miniaturas que hay');
+    });
+
+    test('el «−» nunca deja la unidad ilegal', () {
+      // El dataset escribe algunos mínimos en la propia miniatura —«Spindle Drone: mínimo 4»— y el
+      // grupo no dice nada. Mirando solo el grupo, el botón se dejaba pulsar y la unidad quedaba
+      // ilegal: pasaba en 134 grupos.
+      var mirados = 0, rompen = 0;
+      for (final faccion in dataset.factions) {
+        for (final entrada in faccion.units) {
+          final roster = listaDe(faccion.name);
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.add(unidad);
+          roster.applyModifiers();
+          if (roster.validate().isNotEmpty) continue;
+          for (final grupo in unidad.groups.where((g) => roster.isModelGroup(unidad, g))) {
+            final victima = roster.shrinkTarget(unidad, grupo);
+            if (victima == null) continue;
+            mirados++;
+            final puesta = unidad.puestaDe(victima);
+            if (puesta == null) continue;
+            if (puesta.count > 1) {
+              puesta.count--;
+            } else {
+              unidad.children.remove(puesta);
+            }
+            roster.applyModifiers();
+            final mal = roster
+                .validate()
+                .where((v) => v.selection == unidad || v.selection?.parent == unidad);
+            if (mal.isNotEmpty) rompen++;
+            final otra = unidad.puestaDe(victima);
+            if (otra != null) {
+              otra.count++;
+            } else {
+              unidad.addChild(victima);
+            }
+            roster.applyModifiers();
+          }
+        }
+      }
+      expect(rompen, 0, reason: 'de $mirados quitadas que la app ofrece');
+    });
+
+    test('pero se sigue pudiendo encoger una escuadra que ha crecido', () {
+      // El arreglo anterior es un candado, y un candado de más es el otro fallo: hay que poder
+      // deshacer lo que se acaba de añadir.
+      final roster = listaDe('Chaos - Death Guard');
+      final unidad = unidadDe(roster, 'Plague Marines');
+      roster.add(unidad);
+      roster.applyModifiers();
+      final escuadra = roster.mainModelGroup(unidad)!;
+      final antes = roster.squadTally(unidad, escuadra).puestas;
+      alMaximo(roster, unidad, escuadra);
+      expect(roster.squadTally(unidad, escuadra).puestas, greaterThan(antes));
+      expect(roster.shrinkTarget(unidad, escuadra), isNotNull,
+          reason: 'lo que se ha añadido se puede quitar');
+    });
+  });
 }
