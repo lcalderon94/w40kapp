@@ -1,5 +1,6 @@
 import 'dataset.dart';
 import 'modifiers.dart';
+import 'topes.dart';
 
 /// Un perfil del dataset: una habilidad, un arma o la línea de características de una unidad.
 ///
@@ -129,6 +130,14 @@ class UnitEntry {
 
   /// Las habilidades de la unidad, que son los perfiles con texto explicativo.
   Iterable<Profile> get abilities => profiles.where((p) => p.description != null);
+
+  /// «Por cada 5 miniaturas, 1 arma», leído de la frase impresa de la hoja.
+  ///
+  /// Lo rellena el dataset al cargar, porque es lo único que sabe leer las notas. El roster lo usa
+  /// para calcular el techo de verdad de cada arma: BSData deja muchos techos puestos al valor de
+  /// la escuadra llena, y con media escuadra decía que cabían el doble de armas especiales de las
+  /// que caben. Ver `topes.dart`.
+  List<TopePorMiniaturas> topesImpresos = const [];
 }
 
 /// Una regla del reglamento básico, ya traducida.

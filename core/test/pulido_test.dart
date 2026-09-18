@@ -1021,6 +1021,24 @@ void main() {
       final lanza = roster
           .optionsFor(unidad)
           .firstWhere((o) => o.name.toLowerCase().contains('goad'));
+      // Uno con cinco jinetes, que es lo que dice la hoja —«una por cada cinco»—, y dos al
+      // llenar la escuadra. El techo del dataset, 2, es el de la escuadra llena.
+      expect(roster.effectiveMaxOf(unidad, lanza), 1);
+
+      final escuadra = roster.mainModelGroup(unidad)!;
+      for (var i = 0; i < 20; i++) {
+        final uso = roster.groupUsage(unidad, escuadra);
+        if (uso.maximo != null && uso.puestas >= uso.maximo!) break;
+        final relleno = roster.defaultOptionFor(unidad, escuadra);
+        if (relleno == null || !roster.canAdd(unidad, relleno)) break;
+        final puesta = unidad.puestaDe(relleno);
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          unidad.addChild(relleno);
+        }
+        roster.applyModifiers();
+      }
       expect(roster.effectiveMaxOf(unidad, lanza), 2);
     });
 
@@ -1083,6 +1101,92 @@ void main() {
       // Las que quedan son sobre todo unidades [Crucible], donde el grupo obligatorio no ofrece
       // ninguna opción: ahí no hay nada que poner y no se va a inventar.
       expect(malas.length, lessThan(40), reason: 'eran 45: ${malas.toSet()}');
+    });
+  });
+
+  group('por cada 5 miniaturas, 1 arma', () {
+    test('con media escuadra caben la mitad de armas', () {
+      // BSData deja el techo del blight launcher en 2 —el de una escuadra de diez— y mete el «uno
+      // por cada cinco» en un modifier de tipo `error`, que solo pinta un aviso. Con cinco Plague
+      // Marines la app dejaba poner dos blight launchers y dos plague spewers: cuatro armas
+      // especiales en una escuadra de cinco.
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      roster.add(marines);
+      roster.applyModifiers();
+
+      Selection opcion(String nombre) =>
+          roster.optionsFor(marines).firstWhere((o) => o.name.contains(nombre));
+
+      expect(roster.effectiveMaxOf(marines, opcion('blight launcher')), 1);
+      expect(roster.effectiveMaxOf(marines, opcion('plague spewer')), 1);
+      expect(roster.effectiveMaxOf(marines, opcion('bubotic weapons')), 2);
+      expect(roster.effectiveMaxOf(marines, opcion('heavy plague weapon')), 2);
+
+      // Y al crecer a diez, el doble.
+      final escuadra = roster.mainModelGroup(marines)!;
+      for (var i = 0; i < 20; i++) {
+        final uso = roster.groupUsage(marines, escuadra);
+        if (uso.maximo != null && uso.puestas >= uso.maximo!) break;
+        final relleno = roster.defaultOptionFor(marines, escuadra);
+        if (relleno == null || !roster.canAdd(marines, relleno)) break;
+        final puesta = marines.puestaDe(relleno);
+        if (puesta != null) {
+          puesta.count++;
+        } else {
+          marines.addChild(relleno);
+        }
+        roster.applyModifiers();
+      }
+      expect(roster.effectiveMaxOf(marines, opcion('blight launcher')), 2);
+      expect(roster.effectiveMaxOf(marines, opcion('bubotic weapons')), 4);
+    });
+
+    test('«una de las siguientes» es una miniatura eligiendo, no una por arma', () {
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      roster.add(marines);
+      roster.applyModifiers();
+      Selection opcion(String nombre) =>
+          roster.optionsFor(marines).firstWhere((o) => o.name.contains(nombre));
+
+      roster.assign(marines, opcion('meltagun'));
+      roster.applyModifiers();
+      expect(roster.canAssign(marines, opcion('plasma gun')), isFalse);
+      expect(roster.canAssign(marines, opcion('plague belcher')), isFalse);
+      expect(roster.canAssign(marines, opcion('blight launcher')), isTrue,
+          reason: 'esa es otra frase y tiene su propio hueco');
+      expect(roster.validate(), isEmpty);
+    });
+
+    test('la frase se lee bien en las 36 facciones y nunca deja un arma en cero', () {
+      var conReglas = 0, conTope = 0, aCero = 0;
+      for (final faccion in dataset.factions) {
+        for (final entrada in faccion.units) {
+          final roster = listaDe(faccion.name);
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.add(unidad);
+          roster.applyModifiers();
+          if (roster.reglasDeTopeDe(unidad).isEmpty) continue;
+          conReglas++;
+          for (final opcion in roster.optionsFor(unidad)) {
+            if (roster.modelGroupOf(unidad, opcion) == null) continue;
+            final impreso = roster.topeImpresoDe(unidad, opcion);
+            if (impreso == null) continue;
+            conTope++;
+            if (impreso < 1) aCero++;
+          }
+        }
+      }
+      expect(conReglas, greaterThan(150));
+      expect(conTope, greaterThan(140));
+      // Un cero escondería todas las opciones de la unidad por una cuenta que no es del jugador.
+      expect(aCero, 0);
     });
   });
 }

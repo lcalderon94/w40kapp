@@ -2,6 +2,7 @@ import 'dataset.dart';
 import 'detachment.dart';
 import 'model.dart';
 import 'modifiers.dart';
+import 'topes.dart';
 
 /// Una selección dentro de una lista: una unidad, una de sus miniaturas o una opción de equipo.
 ///
@@ -1397,6 +1398,14 @@ class Roster {
     final tope = effectiveMaxOf(owner, option);
     if (tope != null && puestas >= tope) return false;
 
+    // Y lo que quede de la frase que la nombra, si nombra varias armas: «una de las siguientes»
+    // es una miniatura eligiendo entre tres, no tres armas.
+    for (final regla in reglasDeTopeDe(owner)) {
+      if (regla.armas.length < 2) continue;
+      if (!regla.hablaDe(option.name)) continue;
+      if (librePorLaRegla(owner, regla) <= 0) return false;
+    }
+
     // Y el techo del subgrupo, si sale de uno: «Special weapons, máximo 2».
     if (option.groupId != null && option.groupId != grupo.id) {
       final suyo = owner.groups.where((g) => g.id == option.groupId).firstOrNull;
@@ -1491,7 +1500,105 @@ class Roster {
       if (limit == null || limit < 0) continue;
       if (tope == null || limit < tope) tope = limit;
     }
+
+    // Y el que dice la frase impresa, que manda cuando es más bajo: BSData deja muchos techos
+    // puestos al valor de la escuadra llena y con media escuadra decía que cabía el doble.
+    final impreso = topeImpresoDe(owner, option);
+    if (impreso != null && (tope == null || impreso < tope)) tope = impreso;
     return tope;
+  }
+
+  /// El techo que dice la **frase impresa** de la hoja, con la escuadra que hay ahora mismo.
+  ///
+  /// Es lo que el dataset no siempre sabe decir. BSData deja el techo del blight launcher en 2
+  /// —el de una escuadra de diez— y mete el «uno por cada cinco» en un modifier de tipo `error`,
+  /// que solo sirve para pintar un aviso. Con cinco Plague Marines la app dejaba poner dos blight
+  /// launchers y dos plague spewers: cuatro armas especiales en una escuadra de cinco.
+  ///
+  /// El relleno nunca pasa por aquí. La frase habla de **reemplazos** —«1 Terminator's storm
+  /// bolter can be replaced with…»— y nombra de paso armas que la miniatura de serie ya lleva; sin
+  /// esta salvaguarda, «storm bolter» recortaría la escuadra entera a una miniatura.
+  int? topeImpresoDe(Selection owner, Selection option) {
+    final reglas = reglasDeTopeDe(owner);
+    if (reglas.isEmpty) return null;
+    if (isFiller(owner, option)) return null;
+    final miniaturas = _miniaturasDe(owner);
+    if (miniaturas == null) return null;
+    int? tope;
+    for (final regla in reglas) {
+      if (!regla.hablaDe(option.name)) continue;
+      final suyo = regla.enUnidadDe(miniaturas);
+      if (tope == null || suyo < tope) tope = suyo;
+    }
+    // Nunca a cero. La frase dice cómo **escala** el tope, no si el arma existe; eso lo dice el
+    // dataset. Y hay escuadras cuyo mínimo en BSData queda por debajo del de la hoja —el Blightlord
+    // arranca en tres donde la hoja dice cinco—, así que un cero aquí sería esconder todas las
+    // opciones de la unidad por una cuenta que no es del jugador.
+    return tope == null ? null : (tope < 1 ? 1 : tope);
+  }
+
+  /// Cuántas quedan por repartir de una regla que nombra varias armas.
+  ///
+  /// «1 Plague Marine's plague boltgun can be replaced with one of the following: 1 meltagun ; 1
+  /// plague belcher ; 1 plasma gun» es **una** miniatura eligiendo entre tres, no una por arma.
+  /// Contando cada arma por su cuenta salían tres armas especiales donde cabe una.
+  int librePorLaRegla(Selection owner, TopePorMiniaturas regla) {
+    final miniaturas = _miniaturasDe(owner);
+    if (miniaturas == null) return 0;
+    final relleno = _rellenoDe(owner);
+    var puestas = 0;
+    for (final hijo in owner.children) {
+      if (relleno != null && hijo.entryId == relleno.entryId) continue;
+      if (regla.hablaDe(hijo.name)) puestas += hijo.count;
+    }
+    return regla.enUnidadDe(miniaturas) - puestas;
+  }
+
+  /// Las reglas impresas de la unidad a la que pertenece [selection].
+  List<TopePorMiniaturas> reglasDeTopeDe(Selection selection) {
+    final entrada = unitEntryOf(selection);
+    if (entrada == null) return const [];
+    final cacheada = _reglas[entrada.id];
+    if (cacheada != null) return cacheada;
+    final leidas = topesDe(faction.dataset.wargearNotesOf(entrada));
+    entrada.topesImpresos = leidas;
+    return _reglas[entrada.id] = leidas;
+  }
+
+  final Map<String, List<TopePorMiniaturas>> _reglas = {};
+
+  /// La entrada de catálogo de la unidad de la que cuelga [selection].
+  UnitEntry? unitEntryOf(Selection selection) {
+    var raiz = selection;
+    while (raiz.parent != null) {
+      raiz = raiz.parent!;
+    }
+    if (_porId.isEmpty) {
+      for (final u in faction.units) {
+        _porId[u.id] = u;
+      }
+    }
+    return _porId[raiz.entryId];
+  }
+
+  final Map<String, UnitEntry> _porId = {};
+
+  /// Las miniaturas de la unidad entera, que es de lo que habla la frase.
+  ///
+  /// «For every 10 models **in this unit**» son todas: los nueve Boyz y el Nob, aunque el dataset
+  /// los tenga en dos grupos y el Nob se dimensione aparte. Contando solo el grupo principal, una
+  /// escuadra de diez Boyz daba nueve y la frase se quedaba en cero armas.
+  int? _miniaturasDe(Selection owner) {
+    var cuantas = 0;
+    for (final hijo in owner.children) {
+      if (hijo.type == 'model') cuantas += hijo.count;
+    }
+    return cuantas > 0 ? cuantas : null;
+  }
+
+  Selection? _rellenoDe(Selection owner) {
+    final grupo = mainModelGroup(owner);
+    return grupo == null ? null : defaultOptionFor(owner, grupo);
   }
 
   /// Si un tope escrito con ese ámbito habla de esta unidad.
