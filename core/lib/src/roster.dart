@@ -321,10 +321,15 @@ class Roster {
       // Esa última es una decisión y conviene decirla: un hueco obligatorio vacío deja la unidad
       // ilegal desde que entra y obliga a ir a buscarlo, mientras que una elección puesta se ve y
       // se cambia de un toque. Entre las dos, poner algo es lo que se espera de un constructor.
-      final opcion = group.defaultId != null
-          ? delGrupo.where((o) => o.entryId == group.defaultId).firstOrNull
-          : _basicaDe(delGrupo, inicial.minimo! - inicial.puestas) ??
-              delGrupo.firstOrNull;
+      //
+      // Y si lo que marca de serie no está entre lo que ofrece, se elige igual: el Desolation
+      // Sergeant apunta a un id que no es ninguna de sus dos opciones, y dándolo por imposible la
+      // unidad entraba en la lista ya ilegal —«Weapon Option: mínimo 1, hay 0»— nada más añadirla.
+      final opcion = (group.defaultId != null
+              ? delGrupo.where((o) => o.entryId == group.defaultId).firstOrNull
+              : null) ??
+          _basicaDe(delGrupo, inicial.minimo! - inicial.puestas) ??
+          delGrupo.firstOrNull;
       if (opcion == null) continue;
 
       // Hasta treinta intentos: es más que cualquier mínimo del dataset y evita que un límite mal
@@ -1280,7 +1285,7 @@ class Roster {
 
     for (final constraint in option.constraints) {
       if (constraint.field != 'selections' || !constraint.isMax) continue;
-      if (constraint.scope != 'parent' && constraint.scope != 'self') continue;
+      if (!_topeDeLaUnidad(owner, constraint.scope)) continue;
       final limit = _effectiveLimit(constraint, desde, option.modifiers);
       if (limit != null && limit >= 0 && puestas >= limit) return false;
     }
@@ -1481,12 +1486,34 @@ class Roster {
     int? tope;
     for (final constraint in option.constraints) {
       if (constraint.field != 'selections' || !constraint.isMax) continue;
-      if (constraint.scope != 'parent' && constraint.scope != 'self') continue;
+      if (!_topeDeLaUnidad(owner, constraint.scope)) continue;
       final limit = _effectiveLimit(constraint, desde, option.modifiers);
       if (limit == null || limit < 0) continue;
       if (tope == null || limit < tope) tope = limit;
     }
     return tope;
+  }
+
+  /// Si un tope escrito con ese ámbito habla de esta unidad.
+  ///
+  /// El dataset no escribe todos los techos contra el padre. El «Rough Rider w/ Goad lance» lleva
+  /// el suyo contra **el id de su grupo**, y otras armas lo escriben contra `unit`, que es la
+  /// unidad entera. Mirando solo `parent` y `self` esos techos no existían, y la app dejaba poner
+  /// diez lanzas donde la hoja pone «una por cada cinco miniaturas».
+  ///
+  /// Lo que queda fuera es `roster` y `force`: eso no es el techo de esta unidad sino el del
+  /// ejército —«dos en toda la lista»—, y aplicarlo aquí sería recortar una unidad por lo que
+  /// lleven las demás.
+  bool _topeDeLaUnidad(Selection owner, String? scope) {
+    if (scope == null) return false;
+    if (scope == 'parent' || scope == 'self' || scope == 'unit') return true;
+    if (owner.groups.any((g) => g.id == scope)) return true;
+    // O el id de la propia unidad, que es como el dataset escribe «dos en esta unidad»: el techo
+    // del Goad lance apunta a la entrada «Attilan Rough Riders», no a `parent`.
+    for (Selection? nodo = owner; nodo != null; nodo = nodo.parent) {
+      if (nodo.entryId == scope) return true;
+    }
+    return false;
   }
 
   /// Si se puede quitar una de esa opción de debajo de [owner].

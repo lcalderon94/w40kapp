@@ -1008,4 +1008,81 @@ void main() {
           reason: 'lo que se ha añadido se puede quitar');
     });
   });
+
+  group('los topes que el dataset no escribe contra el padre', () {
+    test('«dos en esta unidad» también es un tope', () {
+      // El «Rough Rider w/ Goad lance» lleva su techo contra el id de la propia unidad, no contra
+      // `parent`. Mirando solo `parent` y `self` no había techo ninguno y la app dejaba poner una
+      // lanza en cada miniatura, donde la hoja pone «una por cada cinco».
+      final roster = listaDe('Imperium - Astra Militarum');
+      final unidad = unidadDe(roster, 'Attilan Rough Riders');
+      roster.add(unidad);
+      roster.applyModifiers();
+      final lanza = roster
+          .optionsFor(unidad)
+          .firstWhere((o) => o.name.toLowerCase().contains('goad'));
+      expect(roster.effectiveMaxOf(unidad, lanza), 2);
+    });
+
+    test('y con eso hay techo conocido en casi todas las opciones de arma', () {
+      var opciones = 0, conTecho = 0;
+      for (final faccion in dataset.factions) {
+        for (final entrada in faccion.units) {
+          final roster = listaDe(faccion.name);
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.add(unidad);
+          roster.applyModifiers();
+          for (final opcion in roster.optionsFor(unidad)) {
+            if (roster.modelGroupOf(unidad, opcion) == null) continue;
+            opciones++;
+            if (roster.effectiveMaxOf(unidad, opcion) != null) conTecho++;
+          }
+        }
+      }
+      expect(opciones, greaterThan(3500));
+      expect(conTecho, greaterThan(3840), reason: 'eran 3.818 de $opciones');
+    });
+  });
+
+  group('una unidad recién metida no puede estar ya ilegal', () {
+    test('el hueco obligatorio se rellena aunque el dataset señale a un id que no ofrece', () {
+      // El Desolation Sergeant marca de serie un id que no es ninguna de sus dos opciones, y
+      // dándolo por imposible la unidad entraba en la lista con «Weapon Option: mínimo 1, hay 0»
+      // nada más añadirla, en catorce facciones.
+      final roster = listaDe('Imperium - Adeptus Astartes - Space Marines');
+      final unidad = unidadDe(roster, 'Desolation Squad');
+      roster.add(unidad);
+      roster.applyModifiers();
+      expect(roster.validate().where((v) => v.selection?.parent == unidad), isEmpty);
+    });
+
+    test('y en todo el dataset son pocas y se sabe cuáles', () {
+      final malas = <String>[];
+      for (final faccion in dataset.factions) {
+        for (final entrada in faccion.units) {
+          final roster = listaDe(faccion.name);
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.add(unidad);
+          roster.applyModifiers();
+          final suyas = roster
+              .validate()
+              .where((v) => v.selection == unidad || v.selection?.parent == unidad);
+          if (suyas.isNotEmpty) malas.add(entrada.name);
+        }
+      }
+      // Las que quedan son sobre todo unidades [Crucible], donde el grupo obligatorio no ofrece
+      // ninguna opción: ahí no hay nada que poner y no se va a inventar.
+      expect(malas.length, lessThan(40), reason: 'eran 45: ${malas.toSet()}');
+    });
+  });
 }
