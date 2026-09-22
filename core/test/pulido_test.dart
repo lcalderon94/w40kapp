@@ -1289,4 +1289,88 @@ void main() {
       expect(supremos, inInclusiveRange(5, 30));
     });
   });
+
+  group('los puntos de una unidad, tras un cambio', () {
+    test('crecer la escuadra suma lo que toca, no se queda clavado', () {
+      // El motor de precios ya estaba bien —lo que fallaba era que la app no volvía a llamar a
+      // `applyModifiers` tras cada cambio, así que el número se quedaba con el de antes hasta que
+      // algo distinto forzaba el recálculo. Parecía que los puntos se doblaban; estaban congelados
+      // y saltaban tarde, a un valor de otro momento.
+      final roster = listaDe('Imperium - Adeptus Custodes');
+      final guardia = unidadDe(roster, 'Custodian Guard');
+      roster.add(guardia);
+      roster.applyModifiers();
+      expect(guardia.points, 170);
+
+      final grupo = roster.mainModelGroup(guardia)!;
+      final relleno = roster.defaultOptionFor(guardia, grupo)!;
+      final puesta = guardia.puestaDe(relleno);
+      if (puesta != null) {
+        puesta.count++;
+      } else {
+        guardia.addChild(relleno);
+      }
+      roster.applyModifiers();
+      expect(guardia.points, 215, reason: 'cinco Guardias Custodios, no el doble de cuatro');
+    });
+
+    test('un grupo de armas especiales vacío no es la escuadra principal', () {
+      // Los Skitarii Rangers llevan su equipo de serie suelto, sin grupo: «Skitarii Ranger w/
+      // galvanic rifle» no vive dentro de «Skitarii Rangers Options», que solo ofrece las
+      // alternativas. Contando ese grupo vacío como la escuadra principal, el «+» no crecía nada
+      // y el precio se quedaba clavado en 85 por más veces que se pulsara.
+      final roster = listaDe('Imperium - Adeptus Mechanicus');
+      final rangers = unidadDe(roster, 'Skitarii Rangers');
+      roster.add(rangers);
+      roster.applyModifiers();
+      expect(roster.mainModelGroup(rangers), isNull,
+          reason: 'diez Skitarii Rangers es un número fijo, no hay grupo que lo decida');
+    });
+
+    test('y en todo el dataset, crecer una escuadra nunca deja el precio igual o lo dobla', () {
+      var conEscuadra = 0, sanos = 0;
+      final rotos = <String>[];
+      for (final faccion in dataset.factions) {
+        for (final entrada in faccion.units) {
+          final roster = listaDe(faccion.name);
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.add(unidad);
+          roster.applyModifiers();
+          final grupo = roster.mainModelGroup(unidad);
+          if (grupo == null) continue;
+          final uso = roster.groupUsage(unidad, grupo);
+          if (uso.maximo != null && uso.puestas >= uso.maximo!) continue;
+          final relleno = roster.defaultOptionFor(unidad, grupo);
+          if (relleno == null || !roster.canAdd(unidad, relleno)) continue;
+          conEscuadra++;
+
+          final antes = unidad.points;
+          final puesta = unidad.puestaDe(relleno);
+          if (puesta != null) {
+            puesta.count++;
+          } else {
+            unidad.addChild(relleno);
+            roster.completeMinimums(relleno);
+          }
+          roster.applyModifiers();
+          final despues = unidad.points;
+          final sano = despues > antes && despues < antes * 3;
+          if (sano) {
+            sanos++;
+          } else if (rotos.length < 15) {
+            rotos.add('[${faccion.name}] ${entrada.name}: $antes -> $despues');
+          }
+        }
+      }
+      expect(conEscuadra, greaterThan(700));
+      // Lo que queda son formaciones de precio plano de verdad —Inquisitorial Agents lleva un
+      // `set` incondicional a 60— y una unidad que ya nace ilegal, documentada aparte.
+      expect(sanos, greaterThan(conEscuadra - 35), reason: rotos.join('; '));
+    });
+  });
 }

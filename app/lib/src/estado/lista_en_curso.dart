@@ -32,6 +32,24 @@ class ListaEnCurso extends ChangeNotifier {
   bool get sePuedeDeshacer => _antes.isNotEmpty;
   bool get sePuedeRehacer => _despues.isNotEmpty;
 
+  /// Recalcula el precio antes de avisar a la pantalla, siempre y en un solo sitio.
+  ///
+  /// `Roster.applyModifiers` es lo que pone al día `costs` a partir de `baseCosts` —sin eso, una
+  /// escuadra que crece de 4 a 5 Guardias Custodios sigue enseñando el precio de 4 hasta que algo
+  /// **distinto** fuerce un recálculo, y ese recálculo tardío aterriza en un número que no tiene
+  /// relación con lo que se acaba de hacer. Parecía que los puntos se doblaban; lo que pasaba era
+  /// que estaban congelados y saltaban tarde, a un valor de otro momento.
+  ///
+  /// Parchear cada método que cambia algo —había quince, y solo dos lo hacían— es la forma segura
+  /// de que se quede alguno sin el parche, que es justo lo que pasó. Así no hay manera de tocar la
+  /// lista sin que se recalcule: todo cambio de estado termina en `notifyListeners()`, y aquí es
+  /// donde se intercepta.
+  @override
+  void notifyListeners() {
+    roster.applyModifiers();
+    super.notifyListeners();
+  }
+
   /// Si la lista está en modo edición o en modo visor.
   ///
   /// Editando se añaden unidades y se reparte el equipo; en el visor la lista es lo que ya has
@@ -194,7 +212,6 @@ class ListaEnCurso extends ChangeNotifier {
     } else {
       roster.setWarlord(unidad);
     }
-    roster.applyModifiers();
     notifyListeners();
   }
 
@@ -470,7 +487,6 @@ class ListaEnCurso extends ChangeNotifier {
   void devolverArmaDe(Selection unidad, Selection instancia) {
     _apunta();
     roster.unassignInstance(unidad, instancia);
-    roster.applyModifiers();
     notifyListeners();
   }
 

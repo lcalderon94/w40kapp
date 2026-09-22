@@ -1210,13 +1210,18 @@ class Roster {
   /// es la escuadra y el sargento es uno—, y a igualdad el que declara techo de más de uno.
   OptionGroup? mainModelGroup(Selection owner) {
     OptionGroup? mejor;
-    var suyas = -1;
+    var suyas = 0;
     var suTecho = 0;
     for (final g in owner.groups) {
       if (!isModelGroup(owner, g)) continue;
       final uso = groupUsage(owner, g);
+      // Sin nada puesto y sin mínimo no es una escuadra, es un grupo de armas especiales cuyo
+      // relleno de serie vive fuera —los Skitarii Rangers llevan «w/ galvanic rifle» suelto, sin
+      // grupo, y «Skitarii Rangers Options» solo ofrece las alternativas—. Contándolo como
+      // principal salía un «+» que no crecía nada y el precio se quedaba clavado: 85 y 85.
+      if (uso.puestas <= 0 && (uso.minimo ?? 0) <= 0) continue;
       final techo = uso.maximo ?? 1 << 20;
-      if (uso.puestas > suyas || (uso.puestas == suyas && techo > suTecho)) {
+      if (uso.puestas > suyas || (mejor == null) || (uso.puestas == suyas && techo > suTecho)) {
         mejor = g;
         suyas = uso.puestas;
         suTecho = techo;
