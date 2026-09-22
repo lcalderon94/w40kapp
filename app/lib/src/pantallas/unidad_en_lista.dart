@@ -647,7 +647,12 @@ class _Grupo extends StatelessWidget {
                 lista: lista,
                 dueno: dueno,
                 opcion: o,
-                hayAlternativas: mias.length > 1,
+                // Alternativas de verdad, no solo «hay más de una en el grupo»: el Biologus
+                // Putrifier lleva Hyper blight grenades, Injector pistol y Plague knives a la
+                // vez, en el mismo grupo «Wargear», sin techo que las haga competir entre sí.
+                // Contando «más de una opción» como alternativas, el «−» las dejaba bajar a
+                // cero como si sobrase elegir entre ellas, cuando las tres son fijas.
+                hayAlternativas: uso.maximo != null,
                 profundidad: profundidad),
         for (final sub in anidados)
           _Grupo(

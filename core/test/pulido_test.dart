@@ -1373,4 +1373,65 @@ void main() {
       expect(sanos, greaterThan(conEscuadra - 35), reason: rotos.join('; '));
     });
   });
+
+  group('«hay alternativas» solo cuando de verdad las hay', () {
+    test('el Biologus Putrifier no puede bajar su equipo de serie a cero', () {
+      // El Biologus lleva Hyper blight grenades, Injector pistol y Plague knives a la vez, los
+      // tres en el mismo grupo «Wargear», y ese grupo no tiene techo: no compiten entre sí, las
+      // lleva todas. Contando «hay más de una opción en el grupo» como alternativas, el «−» las
+      // dejaba bajar a cero como si sobrase elegir.
+      final roster = listaDe('Chaos - Death Guard');
+      final biologus = unidadDe(roster, 'Biologus Putrifier');
+      roster.add(biologus);
+      roster.applyModifiers();
+      for (final nombre in ['Hyper blight grenades', 'Injector pistol', 'Plague knives']) {
+        final opcion =
+            roster.optionsFor(biologus).firstWhere((o) => o.name == nombre);
+        expect(roster.canRemove(biologus, opcion, hayAlternativas: false), isFalse,
+            reason: '$nombre es equipo de serie');
+      }
+    });
+
+    test('y en todo el dataset, un grupo sin techo con varias puestas nunca deja vaciarlas', () {
+      var grupos = 0, sanos = 0;
+      for (final faccion in dataset.factions) {
+        for (final entrada in faccion.units) {
+          final roster = listaDe(faccion.name);
+          Selection unidad;
+          try {
+            unidad = roster.selectionFor(entrada);
+          } catch (_) {
+            continue;
+          }
+          roster.add(unidad);
+          roster.applyModifiers();
+
+          void mirar(Selection nodo, int profundidad) {
+            if (profundidad > 4) return;
+            for (final grupo in nodo.groups) {
+              if (roster.isModelGroup(nodo, grupo)) continue;
+              final mias =
+                  roster.optionsFor(nodo).where((o) => o.groupId == grupo.id).toList();
+              if (mias.length < 2) continue;
+              final uso = roster.groupUsage(nodo, grupo);
+              if (uso.maximo != null) continue;
+              final puestas = nodo.children.where((c) => c.groupId == grupo.id).toList();
+              if (puestas.length < 2) continue;
+              grupos++;
+              final todasFijas = puestas.every(
+                  (p) => !roster.canRemove(nodo, p, hayAlternativas: false));
+              if (todasFijas) sanos++;
+            }
+            for (final hijo in nodo.children) {
+              mirar(hijo, profundidad + 1);
+            }
+          }
+
+          mirar(unidad, 0);
+        }
+      }
+      expect(grupos, greaterThan(2000));
+      expect(sanos, grupos);
+    });
+  });
 }

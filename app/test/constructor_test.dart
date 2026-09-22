@@ -1030,4 +1030,34 @@ void main() {
       });
     });
   });
+
+  group('el equipo de serie con varias piezas no se puede vaciar', () {
+    testWidgets('el Biologus Putrifier lleva sus tres piezas fijas, sin poder quitarlas',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        // Las tres —Hyper blight grenades, Injector pistol, Plague knives— viven en el mismo
+        // grupo «Wargear», sin techo. No compiten entre sí: se llevan las tres a la vez, y antes
+        // se dejaban quitar como si sobrara elegir entre ellas.
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(
+              deathGuard.units.firstWhere((u) => u.name == 'Biologus Putrifier'));
+        final biologus = lista.roster.units.first;
+        await mostrar(tester,
+            PantallaDeUnidadEnLista(lista: lista, unidad: biologus));
+
+        for (final nombre in [
+          'Hyper blight grenades',
+          'Injector pistol',
+          'Plague knives',
+        ]) {
+          final opcion =
+              lista.opcionesDe(biologus).firstWhere((o) => o.name == nombre);
+          expect(lista.sePuedeQuitar(biologus, opcion, hayAlternativas: false), isFalse,
+              reason: '$nombre es equipo de serie, no se puede quitar');
+        }
+        expect(find.byIcon(Icons.lock_outline), findsWidgets);
+      });
+    });
+  });
 }
