@@ -97,6 +97,7 @@ class HojaDeDatos extends StatelessWidget {
     this.habilidades = const [],
     this.cuantas = const {},
     this.encabezado,
+    this.mejora,
   });
 
   final List<Profile> perfiles;
@@ -104,6 +105,10 @@ class HojaDeDatos extends StatelessWidget {
 
   /// Las líneas CORE y FACTION: las habilidades que son reglas del reglamento.
   final List<Ability> habilidades;
+
+  /// La mejora que lleva puesta, si lleva alguna. Va en su propia caja, no mezclada con las
+  /// habilidades: es lo que el jugador ha elegido, como en la hoja impresa.
+  final Profile? mejora;
 
   /// Cuántas miniaturas llevan cada arma, para el número de la izquierda.
   final Map<String, int> cuantas;
@@ -118,7 +123,12 @@ class HojaDeDatos extends StatelessWidget {
       porTipo.putIfAbsent(perfil.typeName, () => []).add(perfil);
     }
     final caracteristicas = porTipo.remove('Unit') ?? const <Profile>[];
-    final propias = porTipo.remove('Abilities') ?? const <Profile>[];
+    // La mejora también cuelga del árbol de selección y sale entre los perfiles de tipo
+    // «Abilities»; se saca de ahí para que no se lea dos veces, una en su caja y otra suelta
+    // entre las habilidades de la unidad.
+    final propias = (porTipo.remove('Abilities') ?? const <Profile>[])
+        .where((p) => mejora == null || p.name != mejora!.name)
+        .toList();
     final aDistancia = porTipo.remove('Ranged Weapons') ?? const <Profile>[];
     final cuerpoACuerpo = porTipo.remove('Melee Weapons') ?? const <Profile>[];
 
@@ -132,6 +142,7 @@ class HojaDeDatos extends StatelessWidget {
         if (encabezado != null) encabezado!,
         for (final perfil in caracteristicas)
           _LineaDeCaracteristicas(perfil, invulnerable: invulnerable),
+        if (mejora != null) _CajaDeMejora(mejora!),
         if (aDistancia.isNotEmpty) ...[
           const _Seccion('Armas a distancia'),
           _TablaDeArmas(aDistancia, columnaDeHabilidad: 'BS', cuantas: cuantas),
@@ -558,6 +569,49 @@ class _Palabras extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: 10.5, fontWeight: FontWeight.w600, letterSpacing: 0.6)),
           ),
+      ],
+    );
+  }
+}
+
+/// La mejora que lleva puesta, en su propia caja, como en la hoja impresa: «ENHANCEMENTS» antes
+/// que las armas y las habilidades, con su nombre y su texto, nada más.
+class _CajaDeMejora extends StatelessWidget {
+  const _CajaDeMejora(this.mejora);
+
+  final Profile mejora;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const _Seccion('Enhancements'),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Tema.superficie,
+              borderRadius: BorderRadius.circular(6),
+              border: Border(left: BorderSide(color: acento, width: 3)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(mejora.name,
+                    style: const TextStyle(
+                        fontSize: 15, fontWeight: FontWeight.w800, color: Tema.texto)),
+                if (mejora.description != null) ...[
+                  const SizedBox(height: 4),
+                  TextoDeRegla(mejora.description!,
+                      estilo: const TextStyle(fontSize: 13.5, height: 1.4, color: Tema.texto)),
+                ],
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }

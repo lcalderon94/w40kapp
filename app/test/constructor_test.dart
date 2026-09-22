@@ -979,4 +979,55 @@ void main() {
       });
     });
   });
+
+  group('las mejoras del destacamento', () {
+    testWidgets('solo se enseña el grupo del destacamento elegido, no los otros veinte',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        final ultramarines =
+            dataset.factionNamed('Imperium - Adeptus Astartes - Ultramarines');
+        final detachments = dataset.detachmentsOf(ultramarines);
+        final lista = ListaEnCurso(
+            dataset: dataset, faccion: ultramarines, tamano: tamano(2000))
+          ..elegirDetachment(detachments.first)
+          ..anadirUnidad(ultramarines.units.firstWhere((u) => u.name == 'Captain'));
+        await mostrar(tester,
+            PantallaDeUnidadEnLista(lista: lista, unidad: lista.roster.units.first));
+
+        // Cuántas cajas «X ENHANCEMENTS» hay en pantalla —los títulos salen en mayúsculas—:
+        // antes salían las cuarenta y ocho del catálogo, una por destacamento, vacías todas
+        // menos la del elegido. Ahora solo debe estar esa.
+        final cajas = find.textContaining(' ENHANCEMENTS');
+        expect(cajas, findsOneWidget);
+        expect(find.text('GLADIUS TASK FORCE ENHANCEMENTS'), findsOneWidget);
+      });
+    });
+
+    testWidgets('la mejora sale en su propia caja, no repetida entre las habilidades',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset
+              .detachmentsOf(deathGuard)
+              .firstWhere((d) => d.name == 'Virulent Vectorium'))
+          ..anadirUnidad(
+              deathGuard.units.firstWhere((u) => u.name == 'Daemon Prince of Nurgle'));
+        final principe = lista.roster.units.first;
+        await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: principe));
+
+        await tester.dragUntilVisible(find.text('Daemon Weapon of Nurgle').first,
+            find.byType(ListView).first, const Offset(0, -80));
+        await tester.tap(find.text('Daemon Weapon of Nurgle').first);
+        await tester.pumpAndSettle();
+
+        // El nombre sale dos veces y las dos con sentido: el botón del editor, con el que se
+        // marca y desmarca, y la caja de la hoja. Lo que no puede pasar es una tercera, suelta
+        // entre las habilidades de la unidad —mezclada con CORE y FACTION—, que es donde vivía
+        // antes de tener su propia caja.
+        expect(find.text('Daemon Weapon of Nurgle'), findsNWidgets(2));
+        expect(find.text('ENHANCEMENTS'), findsWidgets,
+            reason: 'la caja de la mejora en la hoja, con su propio título');
+      });
+    });
+  });
 }

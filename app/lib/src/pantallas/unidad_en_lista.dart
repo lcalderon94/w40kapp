@@ -117,6 +117,7 @@ class PantallaDeUnidadEnVisor extends StatelessWidget {
                         habilidades: lista.habilidadesDe(unidad),
                         cuantas: lista.armasDe(unidad),
                         palabrasClave: entrada.keywords,
+                        mejora: lista.mejoraDe(unidad),
                       ),
                     ),
                 ],
@@ -127,6 +128,24 @@ class PantallaDeUnidadEnVisor extends StatelessWidget {
       },
     );
   }
+}
+
+/// Si merece la pena pintar este grupo: algo que elegir, o algo ya puesto.
+///
+/// Cada detachment declara su propio grupo de mejoras —«Gladius Task Force Enhancements»,
+/// «Liberator Assault Group Enhancements»…— y el dataset esconde las opciones de los que no están
+/// elegidos, pero el GRUPO seguía apareciendo igual: veinte cajas «0 de 0-1» vacías por cada
+/// personaje, de las que solo una —la del destacamento puesto— tenía algo dentro de verdad.
+bool _mereceEnsenarse(
+    ListaEnCurso lista, Selection dueno, OptionGroup grupo, List<Selection> ofrecidas) {
+  if (lista.roster.isModelGroup(dueno, grupo)) return true;
+  if (ofrecidas.any((o) => o.groupId == grupo.id)) return true;
+  if (dueno.children.any((c) => c.groupId == grupo.id)) return true;
+  // Y por si el vacío está más abajo: un grupo sin nada propio pero con un subgrupo que sí
+  // ofrece algo —sucede con «Enhancements» de paraguas y sus detachments anidados— se queda.
+  return dueno.groups
+      .where((g) => g.parentId == grupo.id)
+      .any((g) => _mereceEnsenarse(lista, dueno, g, ofrecidas));
 }
 
 class _Pantalla extends StatelessWidget {
@@ -199,6 +218,7 @@ class _Pantalla extends StatelessWidget {
                     habilidades: lista.habilidadesDe(unidad),
                     cuantas: lista.armasDe(unidad),
                     palabrasClave: hoja.keywords,
+                    mejora: lista.mejoraDe(unidad),
                   ),
                 ),
             ],
@@ -419,7 +439,10 @@ class _Nodo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ofrecidas = lista.opcionesDe(nodo);
-    final raiz = nodo.groups.where((g) => g.parentId == null).toList();
+    final raiz = nodo.groups
+        .where((g) => g.parentId == null)
+        .where((g) => _mereceEnsenarse(lista, nodo, g, ofrecidas))
+        .toList();
     final todasSueltas = ofrecidas.where((o) => o.groupId == null).toList();
 
     // Puesto y ya no ofrecido: equipo de serie que no se puede cambiar.
@@ -572,7 +595,10 @@ class _Grupo extends StatelessWidget {
   Widget build(BuildContext context) {
     final uso = lista.usoDeGrupo(dueno, grupo);
     final mias = ofrecidas.where((o) => o.groupId == grupo.id).toList();
-    final anidados = dueno.groups.where((g) => g.parentId == grupo.id).toList();
+    final anidados = dueno.groups
+        .where((g) => g.parentId == grupo.id)
+        .where((g) => _mereceEnsenarse(lista, dueno, g, ofrecidas))
+        .toList();
     final unaSola = uso.maximo == 1;
     final obligatorio = (uso.minimo ?? 0) > 0;
     final incumple = (uso.minimo != null && uso.puestas < uso.minimo!) ||

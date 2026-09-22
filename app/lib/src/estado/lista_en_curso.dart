@@ -429,6 +429,25 @@ class ListaEnCurso extends ChangeNotifier {
     return entrada == null ? const [] : dataset.abilitiesOf(entrada);
   }
 
+  /// La mejora que lleva puesta, con su texto, si lleva alguna.
+  ///
+  /// La mejora vive en el árbol de selección, no en el catálogo, así que no la trae
+  /// [habilidadesDe]. Y no es una habilidad más de la unidad: es lo que el jugador ha elegido, y
+  /// va aparte, como en la hoja impresa —«ENHANCEMENTS» antes que «ABILITIES»—.
+  Profile? mejoraDe(Selection unidad) {
+    for (final nodo in unidad.descendantsAndSelf) {
+      if (!dataset.enhancementIds.contains(nodo.entryId)) continue;
+      final propio = dataset.node(nodo.entryId);
+      if (propio == null) continue;
+      final perfil = dataset
+          .profilesOf(propio)
+          .where((p) => p.typeName == 'Abilities')
+          .firstOrNull;
+      if (perfil != null) return perfil;
+    }
+    return null;
+  }
+
   /// Cuántas miniaturas llevan cada arma, para el número de la hoja.
   Map<String, int> armasDe(Selection unidad) => dataset.weaponCountsOf(unidad);
 
