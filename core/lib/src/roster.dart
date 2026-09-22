@@ -899,20 +899,13 @@ class Roster {
         faction.dataset.leaderTargets(faction, entrada).map((u) => u.id).toSet();
     if (permitidos.isEmpty) return const [];
 
-    // Se ofrecen **todas** las que su hoja nombra, lleven ya líder o no.
-    //
-    // La regla 19.01 deja un líder y un apoyo por unidad, y hay ocho hojas que traen su excepción
-    // escrita —Cato Sicarius, el Castellan, el Sanguinary Priest, Eldrad, el Warlock…—. Pero hay
-    // más excepciones en el juego que en el dataset: el Biologus Putrifier puede ser el segundo y
-    // BSData no lo dice en ninguna parte, ni en inglés ni traducido. Buscadas las dos formas en
-    // los dos idiomas, las que lo dicen son ocho y esa no está.
-    //
-    // Entre esconder una unión que el juego permite y ofrecerla avisando, se ofrece avisando: lo
-    // primero deja al jugador sin poder montar su lista y sin saber por qué; lo segundo le da el
-    // dato y la decisión. Ver [hostAlreadyLed].
+    // Una unidad lleva un líder de cada clase —Leader y Support—, no los que se le pongan. La
+    // regla 19.01 lo dice así, y ocho hojas traen su propia excepción escrita para llevar dos del
+    // mismo: Cato Sicarius, el Castellan, el Sanguinary Priest, el Warlock… Sin este filtro se
+    // podían encadenar cuatro, veinte, los que hubiera en la lista, uno detrás de otro.
     return [
       for (final u in units)
-        if (u != leader && permitidos.contains(u.entryId)) u,
+        if (u != leader && permitidos.contains(u.entryId) && !hostAlreadyLed(leader, u)) u,
     ];
   }
 
@@ -922,6 +915,14 @@ class Roster {
   bool hostAlreadyLed(Selection leader, Selection host) {
     final entrada = faction.units.where((u) => u.id == leader.entryId).firstOrNull;
     if (entrada == null) return false;
+
+    // El techo de verdad, y por delante de cualquier excepción: en ninguna hoja del juego van
+    // tres líderes sobre la misma unidad. Sin esto, dos excepciones distintas se colaban juntas
+    // —cada una se justifica con la suya propia, sin mirar cuántas hay ya— y una Crusader Squad
+    // terminaba con cuatro encima: el Chaplain, el Castellan, el Crusade Ancient y el Apothecary.
+    final yaTiene = units.where((o) => o.attachedTo == host && o != leader).length;
+    if (yaTiene >= 2) return true;
+
     if (faction.dataset.aceptaOtroLider(entrada)) return false;
     final clase = faction.dataset.attachKind(entrada);
     return units.any((o) =>
@@ -943,7 +944,11 @@ class Roster {
   }
 
   /// Une un líder a una unidad, o lo separa si [host] es nulo.
+  ///
+  /// Con el mismo candado que [hostsFor]: por si algo llega a llamarlo sin pasar por la lista ya
+  /// filtrada, aquí no se deja la unión igual.
   void attach(Selection leader, Selection? host) {
+    if (host != null && hostAlreadyLed(leader, host)) return;
     leader.attachedTo = host;
   }
 

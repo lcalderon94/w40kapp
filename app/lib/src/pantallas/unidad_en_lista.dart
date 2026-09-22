@@ -618,6 +618,34 @@ class _Grupo extends StatelessWidget {
       );
     }
 
+    // Y un grupo con techo de más de uno cuyas opciones son **equipo**, no miniaturas, es una
+    // sola miniatura repartiendo sus propios acoplamientos: el Dreadnought con dos brazos, el
+    // Wraithlord con dos armas pesadas. No son cinco Marines a los que reparto un plasma cada
+    // uno —eso sí es un contador—; es UNA miniatura eligiendo qué lleva en cada uno de los suyos,
+    // y eso se elige, no se cuenta.
+    if (!unaSola &&
+        uso.maximo != null &&
+        uso.maximo! > 1 &&
+        mias.isNotEmpty &&
+        mias.every((o) => o.type == 'upgrade')) {
+      return _Caja(
+        titulo: grupo.name ?? 'Opciones',
+        contador: _contador(uso),
+        pista: _pista(uso),
+        incumple: incumple,
+        hijos: [
+          _RanurasDeEquipo(lista: lista, dueno: dueno, opciones: mias, uso: uso),
+          for (final sub in anidados)
+            _Grupo(
+                lista: lista,
+                dueno: dueno,
+                grupo: sub,
+                ofrecidas: ofrecidas,
+                profundidad: profundidad + 1),
+        ],
+      );
+    }
+
     return _Caja(
       titulo: grupo.name ?? 'Opciones',
       contador: _contador(uso),
@@ -695,6 +723,184 @@ class _Grupo extends StatelessWidget {
 /// hace crecer la escuadra: se lo quita al relleno. El techo de cada arma es el **efectivo**, así
 /// que sube solo al crecer la escuadra, que es como el dataset escribe «una por cada cinco
 /// miniaturas»: no con esa frase, sino con un modifier que cambia el techo según cuántas haya.
+/// Lo que lleva una sola miniatura en sus propios acoplamientos, elegido y no contado.
+///
+/// El Contemptor-Achillus lleva «exactamente 2» de entre tres armas: dos Infernus incinerator,
+/// dos Lastrum storm bolter, una de cada… BSData lo escribe como un techo de grupo —«máximo 2»,
+/// y cada arma con su propio «máximo 2»—, y contado a lo bruto eso sale como tres contadores con
+/// más y menos, que es justo cómo se ve una escuadra repartiendo armas especiales. Pero aquí no
+/// hay cinco miniaturas: hay una, con dos sitios donde poner un arma. Cada acoplamiento se pinta
+/// aparte, y en cada uno se elige, no se suma.
+class _RanurasDeEquipo extends StatelessWidget {
+  const _RanurasDeEquipo({
+    required this.lista,
+    required this.dueno,
+    required this.opciones,
+    required this.uso,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final List<Selection> opciones;
+  final ({int puestas, int? minimo, int? maximo}) uso;
+
+  @override
+  Widget build(BuildContext context) {
+    // Lo puesto ahora, aplanado: cada copia de cada arma es una ranura ocupada. El orden es el
+    // de la lista de opciones, así que es estable de una pulsación a la siguiente.
+    final ocupadas = <Selection>[
+      for (final o in opciones)
+        for (var i = 0; i < dueno.cuantasDe(o); i++) o,
+    ];
+    final total = uso.maximo!;
+    final obligatorias = uso.minimo ?? 0;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (var i = 0; i < total; i++)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: _UnaRanura(
+              lista: lista,
+              dueno: dueno,
+              opciones: opciones,
+              actual: i < ocupadas.length ? ocupadas[i] : null,
+              numero: i + 1,
+              deCuantas: total,
+              // Se puede dejar vacía si esta ranura pasa del mínimo exigido.
+              vaciable: i >= obligatorias,
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+/// Un acoplamiento: lo que lleva ahora y con qué se puede cambiar.
+class _UnaRanura extends StatelessWidget {
+  const _UnaRanura({
+    required this.lista,
+    required this.dueno,
+    required this.opciones,
+    required this.actual,
+    required this.numero,
+    required this.deCuantas,
+    required this.vaciable,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final List<Selection> opciones;
+  final Selection? actual;
+  final int numero;
+  final int deCuantas;
+  final bool vaciable;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    return Container(
+      decoration: BoxDecoration(
+        color: Tema.fondo,
+        borderRadius: BorderRadius.circular(6),
+      ),
+      padding: const EdgeInsets.all(8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 4, bottom: 6),
+            child: Text(deCuantas > 1 ? 'Acoplamiento $numero' : 'Equipo',
+                style: TextStyle(
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.6,
+                    color: acento)),
+          ),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final o in opciones)
+                _BotonDeRanura(
+                  lista: lista,
+                  dueno: dueno,
+                  opcion: o,
+                  elegida: actual?.entryId == o.entryId,
+                  onPulsar: () {
+                    if (actual?.entryId == o.entryId) {
+                      if (vaciable) lista.vaciarRanura(dueno, o);
+                    } else {
+                      lista.cambiarRanura(dueno, actual, o);
+                    }
+                  },
+                ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BotonDeRanura extends StatelessWidget {
+  const _BotonDeRanura({
+    required this.lista,
+    required this.dueno,
+    required this.opcion,
+    required this.elegida,
+    required this.onPulsar,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final Selection opcion;
+  final bool elegida;
+  final VoidCallback onPulsar;
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = ColorDeEjercito.de(context);
+    final puntos = opcion.basePointsEach;
+    return Material(
+      color: elegida ? acento.withValues(alpha: 0.26) : Tema.superficieAlta,
+      borderRadius: BorderRadius.circular(6),
+      child: InkWell(
+        key: ValueKey('ranura-${opcion.entryId}-${opcion.groupId}'),
+        borderRadius: BorderRadius.circular(6),
+        onTap: onPulsar,
+        child: Container(
+          constraints: const BoxConstraints(minHeight: 44, minWidth: 100),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(6),
+            border: Border.all(color: elegida ? acento : Tema.superficieAlta, width: 1.5),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(opcion.name,
+                  style: TextStyle(
+                      fontSize: 13.5,
+                      height: 1.2,
+                      color: elegida ? Tema.texto : Tema.textoTenue,
+                      fontWeight: elegida ? FontWeight.w700 : FontWeight.w400)),
+              if (puntos > 0)
+                Padding(
+                  padding: const EdgeInsets.only(top: 2),
+                  child:
+                      Text('+$puntos pts', style: TextStyle(color: acento, fontSize: 11)),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _Escuadra extends StatelessWidget {
   const _Escuadra({
     required this.lista,

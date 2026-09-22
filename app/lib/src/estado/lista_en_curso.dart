@@ -233,6 +233,41 @@ class ListaEnCurso extends ChangeNotifier {
   /// Cuando el grupo del que sale solo deja elegir una cosa, lo nuevo **sustituye** a lo viejo.
   /// Apilarlo dejaba la unidad incumpliendo para siempre: el Campeón de la Plaga nace con sus
   /// Plague knives puestas y elegir el Power fist encima ponía dos armas en un grupo de una.
+  /// Cambia lo que hay en una ranura de equipo de una sola miniatura: quita lo que había —si
+  /// había algo— y pone lo nuevo, como un solo cambio y no dos, para que deshacer no lo parta.
+  ///
+  /// Es para el Dreadnought con dos acoplamientos, el Wraithlord con sus dos brazos: una
+  /// miniatura, no una escuadra, eligiendo lo que lleva puesto en cada uno de los suyos.
+  void cambiarRanura(Selection padre, Selection? anterior, Selection nueva) {
+    if (anterior != null &&
+        anterior.entryId == nueva.entryId &&
+        anterior.groupId == nueva.groupId) {
+      return;
+    }
+    _apunta();
+    if (anterior != null) {
+      final puesta = padre.puestaDe(anterior);
+      if (puesta != null) {
+        if (puesta.count > 1) {
+          puesta.count--;
+        } else {
+          padre.children.remove(puesta);
+        }
+      }
+    }
+    final puestaNueva = padre.puestaDe(nueva);
+    if (puestaNueva != null) {
+      puestaNueva.count++;
+    } else {
+      padre.addChild(nueva);
+      roster.completeMinimums(nueva);
+    }
+    notifyListeners();
+  }
+
+  /// Deja una ranura sin nada, cuando el grupo admite menos del máximo.
+  void vaciarRanura(Selection padre, Selection actual) => quitarOpcion(padre, actual);
+
   void anadirOpcion(Selection padre, Selection opcion) {
     _apunta();
     if (opcion.groupId != null && _soloUna(padre, opcion.groupId!)) {

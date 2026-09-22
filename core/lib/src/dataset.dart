@@ -1574,8 +1574,16 @@ extension Lideres on Dataset {
         }
       }
     }
+    // Y las que la regla de verdad permite y BSData no escribe en ningún idioma. El Biologus
+    // Putrifier puede ser el segundo líder de una unidad de Death Guard: es la regla del juego,
+    // no una lectura del texto, así que no hay frase que buscar.
+    if (_excepcionesSinTexto.contains(unit.name)) {
+      return _excepcionCache[unit.id] = true;
+    }
     return _excepcionCache[unit.id] = false;
   }
+
+  static const _excepcionesSinTexto = {'Biologus Putrifier'};
 }
 
 /// Sin viñetas el texto marca los nombres en mayúsculas; con viñetas, cada viñeta ya es un nombre.

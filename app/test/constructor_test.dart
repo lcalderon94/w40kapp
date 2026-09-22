@@ -1060,4 +1060,48 @@ void main() {
       });
     });
   });
+
+  group('una sola miniatura con varios acoplamientos', () {
+    testWidgets('el Contemptor-Achillus se elige por acoplamiento, no con contadores',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        // El Contemptor-Achillus lleva «exactamente 2» de entre tres armas, y BSData lo escribe
+        // como un techo de grupo. Contado a lo bruto son tres contadores con más y menos, que es
+        // justo cómo se ve una escuadra repartiendo armas especiales. Pero es una miniatura, no
+        // una escuadra: dos acoplamientos, cada uno eligiendo lo suyo.
+        final custodes = dataset.factionNamed('Imperium - Adeptus Custodes');
+        final lista = ListaEnCurso(
+            dataset: dataset, faccion: custodes, tamano: tamano(2000))
+          ..elegirDetachment(dataset.detachmentsOf(custodes).first)
+          ..anadirUnidad(custodes.units
+              .firstWhere((u) => u.name == 'Contemptor-Achillus Dreadnought'));
+        final dread = lista.roster.units.first;
+
+        await mostrar(tester,
+            PantallaDeUnidadEnLista(lista: lista, unidad: dread));
+
+        expect(find.text('Acoplamiento 1'), findsOneWidget);
+        expect(find.text('Acoplamiento 2'), findsOneWidget);
+        expect(find.byKey(const ValueKey('anadir-miniatura')), findsNothing);
+
+        final infernus = lista
+            .opcionesDe(dread)
+            .where((o) => o.name == 'Infernus incinerator')
+            .first;
+        final lastrum = lista
+            .opcionesDe(dread)
+            .where((o) => o.name == 'Lastrum storm bolter')
+            .first;
+        expect(dread.cuantasDe(lastrum), 2, reason: 'viene de serie con los dos Lastrum');
+
+        await tester.tap(
+            find.byKey(ValueKey('ranura-${infernus.entryId}-${infernus.groupId}')).first);
+        await tester.pumpAndSettle();
+
+        expect(dread.cuantasDe(lastrum), 1);
+        expect(dread.cuantasDe(infernus), 1);
+        expect(lista.roster.validate(), isEmpty);
+      });
+    });
+  });
 }

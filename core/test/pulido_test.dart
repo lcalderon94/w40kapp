@@ -847,23 +847,30 @@ void main() {
       expect(dataset.aceptaOtroLider(marines), isFalse);
     });
 
-    test('una anfitriona que ya lleve líder se ofrece igual, avisando', () {
+    test('una anfitriona que ya lleve líder solo acepta un segundo con excepción', () {
       // Hay más excepciones en el juego que en el dataset: el Biologus Putrifier puede ser el
-      // segundo y BSData no lo dice ni en inglés ni traducido. Esconder la unión dejaría al
-      // jugador sin poder montar su lista y sin saber por qué.
+      // segundo y BSData no lo dice ni en inglés ni traducido. Se reconoce a mano —ver
+      // [Dataset.aceptaOtroLider]— y se ofrece limpio, sin candado y sin aviso, porque es una
+      // unión que el juego permite de verdad. Un tercero, en cambio, ya no cabe.
       final roster = listaDe('Chaos - Death Guard');
       final marines = unidadDe(roster, 'Plague Marines');
       final biologus = unidadDe(roster, 'Biologus Putrifier');
       final tallyman = unidadDe(roster, 'Tallyman');
-      roster..add(marines)..add(biologus)..add(tallyman);
+      final otroTallyman = unidadDe(roster, 'Tallyman');
+      roster..add(marines)..add(biologus)..add(tallyman)..add(otroTallyman);
 
       expect(roster.hostsFor(tallyman), contains(marines));
       roster.attach(tallyman, marines);
 
       expect(roster.hostsFor(biologus), contains(marines),
           reason: 'se sigue ofreciendo aunque ya lleve uno');
-      expect(roster.hostAlreadyLed(biologus, marines), isTrue,
-          reason: 'y se avisa de que ya lleva uno');
+      expect(roster.hostAlreadyLed(biologus, marines), isFalse,
+          reason: 'es una excepción real, no hay nada que avisar');
+      roster.attach(biologus, marines);
+      expect(roster.leadersOn(marines).length, 2);
+
+      // Y un tercer líder normal ya no entra: el techo es dos, aunque el que ya está acepte otro.
+      expect(roster.hostsFor(otroTallyman), isNot(contains(marines)));
     });
 
     test('y son pocas, así que la regla general sigue siendo una y una', () {
@@ -1432,6 +1439,105 @@ void main() {
       }
       expect(grupos, greaterThan(2000));
       expect(sanos, grupos);
+    });
+  });
+
+  group('nunca más de dos líderes sobre la misma unidad', () {
+    test('el tercero ya no se ofrece', () {
+      // Cuatro Tallyman distintos, intentando unirse todos a la misma escuadra.
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      roster.add(marines);
+      final instancias = <Selection>[
+        for (var i = 0; i < 4; i++) unidadDe(roster, 'Tallyman'),
+      ];
+      for (final l in instancias) {
+        roster.add(l);
+      }
+      var unidos = 0;
+      for (final l in instancias) {
+        if (roster.hostsFor(l).contains(marines)) {
+          roster.attach(l, marines);
+          unidos++;
+        }
+      }
+      expect(unidos, 1);
+      expect(roster.leadersOn(marines).length, 1);
+    });
+
+    test('dos excepciones que se aceptan entre sí no se encadenan sin límite', () {
+      // El Chaplain Grimaldus no acepta otro; el Castellan y el Crusade Ancient sí, cada uno con
+      // su propia excepción escrita. Antes eso los dejaba apilar sin freno: cada uno se
+      // justificaba solo con la suya, sin mirar cuántos había ya, y una Crusader Squad terminaba
+      // con cuatro líderes encima.
+      final roster = listaDe('Imperium - Adeptus Astartes - Black Templars');
+      final crusader = unidadDe(roster, 'Crusader Squad');
+      roster.add(crusader);
+      final nombres = ['Chaplain Grimaldus', 'Castellan', 'Crusade Ancient', 'Apothecary'];
+      var unidos = 0;
+      for (final nombre in nombres) {
+        final entrada =
+            roster.faction.units.where((u) => u.name == nombre).firstOrNull;
+        if (entrada == null) continue;
+        final l = roster.selectionFor(entrada);
+        roster.add(l);
+        if (roster.hostsFor(l).contains(crusader)) {
+          roster.attach(l, crusader);
+          unidos++;
+        }
+      }
+      expect(roster.leadersOn(crusader).length, lessThanOrEqualTo(2));
+      expect(unidos, lessThanOrEqualTo(2));
+    });
+
+    test('el Biologus Putrifier sigue pudiendo ser el segundo', () {
+      // Es una excepción real del juego que BSData no escribe en ningún idioma.
+      final roster = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(roster, 'Plague Marines');
+      final tallyman = unidadDe(roster, 'Tallyman');
+      final biologus = unidadDe(roster, 'Biologus Putrifier');
+      roster..add(marines)..add(tallyman)..add(biologus);
+      roster.attach(tallyman, marines);
+      expect(roster.hostsFor(biologus), contains(marines));
+      roster.attach(biologus, marines);
+      expect(roster.leadersOn(marines).length, 2);
+    });
+
+    test('y en todo el dataset, ningún anfitrión termina con más de dos', () {
+      var facciones = 0, rotos = 0;
+      for (final faccion in dataset.factions) {
+        final roster = listaDe(faccion.name);
+        final lideres = faccion.units.where(dataset.isLeader).take(15).toList();
+        if (lideres.isEmpty) continue;
+        facciones++;
+        final anfitriones = <Selection>[];
+        for (final u in faccion.units.take(30)) {
+          Selection s;
+          try {
+            s = roster.selectionFor(u);
+          } catch (_) {
+            continue;
+          }
+          roster.add(s);
+          anfitriones.add(s);
+        }
+        for (final l in lideres) {
+          Selection sl;
+          try {
+            sl = roster.selectionFor(l);
+          } catch (_) {
+            continue;
+          }
+          roster.add(sl);
+          final ofrecidos = roster.hostsFor(sl);
+          if (ofrecidos.isNotEmpty) roster.attach(sl, ofrecidos.first);
+        }
+        for (final host in anfitriones) {
+          if (roster.leadersOn(host).length > 2) rotos++;
+        }
+      }
+      expect(facciones, greaterThan(20));
+      expect(rotos, 0);
     });
   });
 }
