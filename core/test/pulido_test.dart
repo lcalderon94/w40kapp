@@ -1540,4 +1540,31 @@ void main() {
       expect(rotos, 0);
     });
   });
+
+  group('la disposición de fuerza de cada detachment', () {
+    test('sale del dataset, no de la regla', () {
+      final ultramarines =
+          dataset.factionNamed('Imperium - Adeptus Astartes - Ultramarines');
+      final porNombre = {
+        for (final d in dataset.detachmentsOf(ultramarines)) d.name: d.disposiciones
+      };
+      expect(porNombre['Gladius Task Force'], ['Priority Assets']);
+      expect(porNombre['Anvil Siege Force'], ['Take and Hold']);
+      expect(porNombre['Stormlance Task Force'], ['Disruption']);
+      expect(porNombre['Vanguard Spearhead'], ['Reconnaissance']);
+    });
+
+    test('y la tienen todos los detachments de las 36 facciones', () {
+      final vistos = <String>{};
+      final sin = <String>[];
+      for (final faccion in dataset.factions) {
+        for (final d in dataset.detachmentsOf(faccion)) {
+          if (!vistos.add(d.id)) continue;
+          if (d.disposiciones.isEmpty) sin.add('${faccion.name} · ${d.name}');
+        }
+      }
+      expect(vistos.length, greaterThan(250));
+      expect(sin, isEmpty);
+    });
+  });
 }

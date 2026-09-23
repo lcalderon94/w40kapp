@@ -113,15 +113,27 @@ class _Detachment extends StatelessWidget {
             ],
           ),
         ),
-        subtitle: detachment.ruleName == null
+        // Debajo del nombre, la disposición de fuerza: Take and Hold, Purge the Foe… Es lo que
+        // se compara al elegir. El nombre de la regla va dentro, con su texto.
+        subtitle: detachment.disposiciones.isEmpty
             ? null
-            : Text(detachment.ruleName!,
+            : Text(detachment.disposiciones.join(' · '),
                 style: const TextStyle(color: Tema.textoTenue, fontSize: 13)),
         iconColor: Tema.acento,
         collapsedIconColor: Tema.textoTenue,
         childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
         expandedCrossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (detachment.ruleName != null)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: Text(detachment.ruleName!.toUpperCase(),
+                  style: const TextStyle(
+                      color: Tema.acento,
+                      fontSize: 11,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 1.1)),
+            ),
           if (detachment.rule != null) TextoDeRegla(detachment.rule!),
           if (mejoras.isNotEmpty) ...[
             const SizedBox(height: 14),

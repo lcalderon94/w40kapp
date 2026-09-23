@@ -120,6 +120,80 @@ class Dataset {
     return links;
   }
 
+  /// Las disposiciones de fuerza que declara el sistema: las opciones del grupo «Force
+  /// Disposition», cada una con la categoría del mismo nombre que llevan los detachments.
+  late final Map<String, String> _categoriasDeDisposicion = () {
+    final nombres = <String>{};
+    for (final root in _roots) {
+      void busca(Object? n) {
+        if (n is Map<String, dynamic>) {
+          if (n['name'] == 'Force Disposition' && n['selectionEntries'] is List) {
+            for (final e in n['selectionEntries'] as List) {
+              final nombre = (e as Map<String, dynamic>)['name'];
+              if (nombre is String) nombres.add(nombre);
+            }
+          }
+          n.values.forEach(busca);
+        } else if (n is List) {
+          n.forEach(busca);
+        }
+      }
+
+      busca(root);
+    }
+    final porId = <String, String>{};
+    for (final root in _roots) {
+      for (final c in (root['categoryEntries'] as List? ?? const [])) {
+        final m = c as Map<String, dynamic>;
+        if (nombres.contains(m['name'])) porId[m['id'] as String] = m['name'] as String;
+      }
+    }
+    return porId;
+  }();
+
+  List<String> _disposicionesDe(Map<String, dynamic> option) {
+    final propias = _disposicionesPropias(option);
+    if (propias.isNotEmpty) return propias;
+    // Un capítulo enlaza el detachment de Space Marines y la disposición va en el enlace del
+    // catálogo base, no en la entrada: se busca por el destino y, si no, por el nombre.
+    return _disposicionPorDestino[option['targetId']] ??
+        _disposicionPorDestino[option['id']] ??
+        _disposicionPorNombre[option['name']] ??
+        const [];
+  }
+
+  List<String> _disposicionesPropias(Map<String, dynamic> nodo) => [
+        for (final l in (nodo['categoryLinks'] as List? ?? const []))
+          if (_categoriasDeDisposicion[(l as Map<String, dynamic>)['targetId']] != null)
+            _categoriasDeDisposicion[l['targetId']]!,
+      ];
+
+  late final _indiceDisposiciones = _indiceDeDisposiciones();
+  Map<String, List<String>> get _disposicionPorDestino => _indiceDisposiciones.$1;
+  Map<String, List<String>> get _disposicionPorNombre => _indiceDisposiciones.$2;
+
+  (Map<String, List<String>>, Map<String, List<String>>) _indiceDeDisposiciones() {
+    final porDestino = <String, List<String>>{};
+    final porNombre = <String, List<String>>{};
+    void busca(Object? n) {
+      if (n is Map<String, dynamic>) {
+        final d = _disposicionesPropias(n);
+        if (d.isNotEmpty) {
+          final destino = n['targetId'];
+          if (destino is String) porDestino[destino] = d;
+          if (n['id'] is String) porDestino[n['id'] as String] = d;
+          if (n['name'] is String) porNombre[n['name'] as String] = d;
+        }
+        n.values.forEach(busca);
+      } else if (n is List) {
+        n.forEach(busca);
+      }
+    }
+
+    _roots.forEach(busca);
+    return (porDestino, porNombre);
+  }
+
   /// Los detachments de una facción, con su regla ya traducida.
   ///
   /// Cuelgan de la entrada de configuración, en un grupo que unas facciones llevan incrustado y
@@ -150,6 +224,7 @@ class Dataset {
           rule: rule?['description'] as String?,
           points: _points(option) ?? 0,
           detachmentPoints: _costsOf(option)[detachmentPointsCostTypeId] ?? 0,
+          disposiciones: _disposicionesDe(option),
         ));
       }
     }

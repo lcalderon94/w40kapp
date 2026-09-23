@@ -10,6 +10,7 @@ class Detachment {
     required this.rule,
     required this.points,
     required this.detachmentPoints,
+    this.disposiciones = const [],
   });
 
   final String id;
@@ -28,6 +29,11 @@ class Detachment {
   /// Es como 11ª gradúa los detachments: los de 2 y 3 son los de una partida normal, los de 1 son
   /// pequeños. El presupuesto lo pone el tamaño de partida, así que en Onslaught caben dos.
   final int detachmentPoints;
+
+  /// La disposición de fuerza del detachment: Take and Hold, Purge the Foe, Disruption, Priority
+  /// Assets o Reconnaissance. Es lo que decide qué misiones juega el ejército, y lo que el
+  /// jugador mira al elegir; el nombre de la regla del detachment va dentro, al desplegarlo.
+  final List<String> disposiciones;
 }
 
 /// Una mejora que se asigna a un personaje del ejército.

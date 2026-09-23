@@ -320,10 +320,11 @@ class _Detachment extends StatelessWidget {
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
                             color: elegido == null ? Tema.aviso : Tema.texto)),
-                    if (elegido?.ruleName != null)
+                    // La disposición de fuerza, que es lo que decide qué misiones juega el ejército.
+                    if (elegido != null && elegido.disposiciones.isNotEmpty)
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
-                        child: Text(elegido!.ruleName!,
+                        child: Text(elegido.disposiciones.join(' · '),
                             style: const TextStyle(color: Tema.textoTenue, fontSize: 12)),
                       ),
                   ],
