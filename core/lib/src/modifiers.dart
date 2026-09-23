@@ -18,6 +18,8 @@ class Condition {
     required this.childId,
     required this.value,
     required this.includeChildSelections,
+    this.queryFromSelf = false,
+    this.traverseAssociationGroup = false,
   });
 
   /// `atLeast`, `atMost`, `equalTo`, `notEqualTo`, `greaterThan`, `lessThan`.
@@ -42,8 +44,12 @@ class Condition {
   /// facción es la lista.
   static const unsupportedScopes = {'model-or-unit', 'primary-catalogue'};
 
-  /// Lo que esta capa sabe contar: selecciones y puntos. Los demás tipos de coste, no.
-  static const supportedFields = {'selections', pointsCostTypeId};
+  /// Lo que esta capa sabe contar: selecciones, puntos y **uniones**. Los demás tipos de coste, no.
+  ///
+  /// `associations` cuenta las unidades unidas a una selección —el líder que lleva una escuadra, o
+  /// la escuadra a la que va unido un líder—. Es como BSData escribe cuántos líderes caben en una
+  /// unidad y sus excepciones: «Plague Marines lleva 1 Leader; 2 si uno de ellos es un Biologus».
+  static const supportedFields = {'selections', pointsCostTypeId, 'associations'};
 
   bool get isSupported =>
       supportedTypes.contains(type) &&
@@ -62,6 +68,14 @@ class Condition {
   final num value;
   final bool includeChildSelections;
 
+  /// En las condiciones de una asociación, que se pregunta al **personaje** y no a la unidad a la
+  /// que se une: «si lleva el Catechism of Divine Penitence», «si su detachment es este».
+  final bool queryFromSelf;
+
+  /// Que la pregunta se hace a la **unidad unida** entera y no a la selección sola: «si esta
+  /// escuadra lleva ya un Tech-Priest Enginseer unido», «si con ella va The Visarch».
+  final bool traverseAssociationGroup;
+
   factory Condition.fromNode(Map<String, dynamic> node) => Condition(
         type: node['type'] as String? ?? '',
         field: node['field'] as String? ?? '',
@@ -69,6 +83,8 @@ class Condition {
         childId: node['childId'] as String? ?? '',
         value: node['value'] as num? ?? 0,
         includeChildSelections: node['includeChildSelections'] as bool? ?? false,
+        queryFromSelf: node['queryFromSelf'] as bool? ?? false,
+        traverseAssociationGroup: node['traverseAssociationGroup'] as bool? ?? false,
       );
 
   bool holdsFor(num actual) => switch (type) {

@@ -49,10 +49,20 @@ class Constraint {
     required this.value,
     required this.includeChildSelections,
     this.message,
+    this.childId,
+    this.traverseAssociationGroup = false,
   });
 
   /// Identificador de la restricción. Es lo que apunta un modifier que la cambia.
   final String id;
+
+  /// Qué se cuenta, cuando la restricción no cuenta la propia opción: en las de `associations`,
+  /// la categoría de lo que se une —Leader, Support—, o nada, que es «cualquier unión».
+  final String? childId;
+
+  /// Si se cuenta sobre la **unidad unida** entera —la anfitriona y sus líderes— y no sobre la
+  /// selección sola. Es como BSData dice «una unidad unida solo puede llevar 1 mejora».
+  final bool traverseAssociationGroup;
 
   final String type; // min | max
   final String field;
@@ -73,6 +83,67 @@ class Constraint {
         value: node['value'] as num? ?? 0,
         includeChildSelections: node['includeChildSelections'] as bool? ?? false,
         message: node['message'] as String?,
+        childId: node['childId'] as String?,
+        traverseAssociationGroup: node['traverseAssociationGroup'] as bool? ?? false,
+      );
+}
+
+/// A qué se puede unir un personaje, tal como lo escribe BSData.
+///
+/// «Leading» o «Supporting», con `action: group`: el personaje se une a una unidad y juegan como
+/// una sola. Las condiciones se preguntan a la unidad candidata —«¿eres Plague Marines?»—, salvo
+/// las que llevan `queryFromSelf`, que se preguntan al personaje.
+class Association {
+  Association({
+    required this.id,
+    required this.name,
+    required this.childId,
+    required this.min,
+    required this.max,
+    required this.conditions,
+    required this.conditionGroups,
+  });
+
+  final String id;
+
+  /// `Leading`, `Supporting`, `Support Weapon`…
+  final String name;
+
+  /// Qué se puede unir: `unit` o `model`.
+  final String childId;
+
+  /// Con `min` 1 el personaje **tiene** que ir unido a algo.
+  final int min;
+
+  /// A cuántas unidades puede unirse. En todo el dataset es una.
+  final int max;
+  final List<Condition> conditions;
+  final List<ConditionGroup> conditionGroups;
+
+  bool get isSupporting => name == 'Supporting';
+
+  /// Si la unidad candidata cumple las condiciones, contestando cada una con [test].
+  bool acceptsWith(bool Function(Condition) test) =>
+      conditions.every(test) && conditionGroups.every((g) => g.evaluate(test));
+
+  /// Si se saben contestar todas sus condiciones.
+  bool isSupportedWith(bool Function(Condition) supports) =>
+      conditions.every(supports) && conditionGroups.every((g) => g.isSupportedWith(supports));
+
+  factory Association.fromNode(Map<String, dynamic> node) => Association(
+        id: node['id'] as String? ?? '',
+        name: node['name'] as String? ?? '',
+        childId: node['childId'] as String? ?? 'unit',
+        min: (node['min'] as num?)?.round() ?? 0,
+        max: (node['max'] as num?)?.round() ?? 1,
+        conditions: [
+          for (final raw in (node['conditions'] as List? ?? const []))
+            Condition.fromNode(raw as Map<String, dynamic>),
+        ],
+        conditionGroups: [
+          for (final raw in (node['conditionGroups'] as List? ?? const []))
+            ConditionGroup.fromNode(raw as Map<String, dynamic>),
+        ],
       );
 }
 

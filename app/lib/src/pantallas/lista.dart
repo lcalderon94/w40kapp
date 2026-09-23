@@ -608,11 +608,19 @@ class _Unidad extends StatelessWidget {
                   style: const TextStyle(
                       color: Tema.acento, fontSize: 13, fontWeight: FontWeight.w700)),
             ),
+            // Todas las que admite, y las que ahora no caben deshabilitadas con el motivo.
             for (final c in candidatos)
-              ListTile(
-                title: Text(c.name),
-                onTap: () => Navigator.of(context).pop(c),
-              ),
+              Builder(builder: (context) {
+                final motivo = lista.motivoParaUnir(unidad, c);
+                return ListTile(
+                  title: Text(c.displayName),
+                  subtitle: motivo == null
+                      ? null
+                      : Text(motivo, style: const TextStyle(color: Tema.aviso, fontSize: 12)),
+                  enabled: motivo == null,
+                  onTap: motivo == null ? () => Navigator.of(context).pop(c) : null,
+                );
+              }),
           ],
         ),
       ),

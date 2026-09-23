@@ -417,13 +417,21 @@ class ListaEnCurso extends ChangeNotifier {
   /// Los líderes unidos a una unidad.
   List<Selection> lideresDe(Selection unidad) => roster.leadersOn(unidad).toList();
 
-  /// A qué unidades de la lista se puede unir este líder ahora mismo.
+  /// A qué unidades de la lista puede unirse este personaje según sus asociaciones, quepa ahora
+  /// o no. Las que no caben las explica [motivoParaUnir].
   List<Selection> anfitrionesDe(Selection lider) => roster.hostsFor(lider);
 
-  void unir(Selection lider, Selection? anfitrion) {
+  /// Une un personaje a una unidad, o lo separa con `null`. Devuelve el motivo si no se puede, y
+  /// entonces no cambia nada.
+  String? unir(Selection lider, Selection? anfitrion) {
+    if (anfitrion != null) {
+      final motivo = roster.motivoParaUnir(lider, anfitrion);
+      if (motivo != null) return motivo;
+    }
     _apunta();
-    roster.attach(lider, anfitrion);
+    final motivo = roster.attach(lider, anfitrion);
     notifyListeners();
+    return motivo;
   }
 
   /// La entrada de catálogo de una selección, para poder pintar su hoja de datos.
@@ -486,9 +494,10 @@ class ListaEnCurso extends ChangeNotifier {
   /// Cuántas miniaturas llevan cada arma, para el número de la hoja.
   Map<String, int> armasDe(Selection unidad) => dataset.weaponCountsOf(unidad);
 
-  /// Si esa anfitriona ya lleva otro de la misma clase. No lo impide: lo avisa.
-  bool anfitrionOcupado(Selection lider, Selection anfitrion) =>
-      roster.hostAlreadyLed(lider, anfitrion);
+  /// Por qué este personaje no puede unirse a esa unidad —«Plague Marines ya lleva 2 de 2
+  /// Leader», «Una unidad adjunta solo puede llevar 1 mejora»—, o `null` si puede.
+  String? motivoParaUnir(Selection lider, Selection anfitrion) =>
+      lider.attachedTo == anfitrion ? null : roster.motivoParaUnir(lider, anfitrion);
 
   /// Si de ese grupo hay que elegir algo sí o sí, que es lo que impide dejarlo vacío.
   bool esObligatorio(Selection padre, OptionGroup grupo) {
@@ -500,6 +509,9 @@ class ListaEnCurso extends ChangeNotifier {
   List<Profile> hojaDe(Selection unidad) => dataset.sheetOfSelection(unidad);
 
   /// Si ese grupo decide cuántas miniaturas tiene la unidad.
+  /// Si lo que cuelga de aquí lo lleva una sola miniatura: entonces se marca, no se cuenta.
+  bool esUnaMiniatura(Selection dueno) => roster.esUnaSolaMiniatura(dueno);
+
   bool esGrupoDeMiniaturas(Selection unidad, OptionGroup grupo) =>
       roster.isModelGroup(unidad, grupo);
 

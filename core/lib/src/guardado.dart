@@ -35,6 +35,9 @@ abstract final class Guardado {
           for (final unit in roster.units)
             unit.attachedTo == null ? -1 : roster.units.indexOf(unit.attachedTo!),
         ],
+        // Por cuál de sus uniones va cada uno —Leading, Supporting—, que en el Judiciar decide si
+        // cuenta como Leader o como Support.
+        'vias': [for (final unit in roster.units) unit.attachedVia],
       };
 
   static Map<String, dynamic> _seleccionAJson(Selection selection) => {
@@ -105,11 +108,14 @@ abstract final class Guardado {
 
     // Las uniones, ya con todas las unidades puestas. Se guardaron por posición, así que hay que
     // contar también las que no se han podido montar para no desfasar los índices.
+    // Las listas de antes de guardar la unión usada vuelven con la primera que la admita.
     final uniones = json['uniones'] as List? ?? const [];
+    final vias = json['vias'] as List? ?? const [];
     for (var i = 0; i < uniones.length && i < roster.units.length; i++) {
       final donde = (uniones[i] as num?)?.round() ?? -1;
       if (donde < 0 || donde >= roster.units.length || donde == i) continue;
-      roster.units[i].attachedTo = roster.units[donde];
+      roster.restoreAttachment(
+          roster.units[i], roster.units[donde], i < vias.length ? vias[i] as String? : null);
     }
     return Recuperada(roster, perdidas);
   }

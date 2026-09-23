@@ -115,6 +115,11 @@ class Selection {
   /// enseña como una sola cosa, que es lo que dice la regla Leader.
   Selection? attachedTo;
 
+  /// Con qué unión de las suyas va unido: el id de la asociación de BSData —«Leading»,
+  /// «Supporting»—. Importa en los personajes que pueden entrar de las dos formas, como el
+  /// Judiciar: según por cuál entre cuenta como Leader o como Support, y ocupa un hueco u otro.
+  String? attachedVia;
+
   void addChild(Selection child) {
     child.parent = this;
     children.add(child);
@@ -496,7 +501,11 @@ class Roster {
   /// Quita una unidad y separa lo que estuviera unido a ella, para no dejar huérfanos.
   void remove(Selection unit) {
     for (final otra in units) {
-      if (otra.attachedTo == unit) otra.attachedTo = null;
+      if (otra.attachedTo == unit) {
+        otra
+          ..attachedTo = null
+          ..attachedVia = null;
+      }
     }
     units.remove(unit);
   }
@@ -641,12 +650,22 @@ class Roster {
       return condition.type == 'instanceOf' ? isThisForce : !isThisForce;
     }
 
+    // Las uniones se cuentan sobre la unidad de primer nivel, que es la que se une o recibe: «si
+    // a estos Plague Marines va unido un Biologus», «si este Judiciar entra como Supporting».
+    if (condition.field == 'associations') {
+      return condition.holdsFor(_cuentaUniones(
+          _raiz(target), condition.childId, condition.traverseAssociationGroup));
+    }
+
     // Solo se saben contar selecciones y puntos; otros tipos de coste aún no se siguen.
     if (condition.field != 'selections' && condition.field != pointsCostTypeId) return false;
 
     if (condition.type == 'instanceOf' || condition.type == 'notInstanceOf') {
-      final hay = _instanceScopeOf(condition.scope, target)
-          .any((s) => _matches(condition.childId, s));
+      // Con `traverseAssociationGroup` la pregunta es a la unidad unida entera: «si esta escuadra
+      // lleva ya un Tech-Priest Enginseer», que es como se une un séquito de servidores.
+      final desde = condition.traverseAssociationGroup ? _grupoDe(_raiz(target)) : [target];
+      final hay = desde.any((d) =>
+          _instanceScopeOf(condition.scope, d).any((s) => _matches(condition.childId, s)));
       return condition.type == 'instanceOf' ? hay : !hay;
     }
 
@@ -787,6 +806,11 @@ class Roster {
         // El ámbito es el id de un grupo de opciones o de otra entrada.
         final inGroup = target.descendantsAndSelf.where((s) => s.groupId == scope);
         if (inGroup.isNotEmpty) return expand(inGroup);
+        // Primero la propia selección o uno de sus padres: «lo que lleva **este** personaje», no
+        // lo que lleve el primero de su clase en la lista. Con dos Plaguecasters, cada uno pregunta
+        // por su equipo.
+        final propia = [target, ..._ancestorsOf(target)].where((s) => s.entryId == scope);
+        if (propia.isNotEmpty) return expand(propia.first.children);
         final entry = _all.where((s) => s.entryId == scope);
         return entry.isEmpty ? const [] : expand(entry.first.children);
     }
@@ -804,7 +828,8 @@ class Roster {
         'model' || 'unit' || 'upgrade' => selection.type == childId,
         _ => selection.entryId == childId ||
             selection.groupId == childId ||
-            categoriesOf(selection).contains(childId),
+            categoriesOf(selection).contains(childId) ||
+            faction.dataset.linkIdsTo(selection.entryId).contains(childId),
       };
 
   /// Las palabras clave que de verdad tiene una selección en esta lista.
@@ -822,32 +847,33 @@ class Roster {
     if (cached != null) return cached;
 
     final categories = [...selection.categoryIds];
-    if (!_resolvingCategories) {
-      _resolvingCategories = true;
-      try {
-        // Las suyas, y las que le suben de lo que lleva puesto: hay opciones que existen solo para
-        // dar una palabra clave —«Houndpack Lance Character» convierte al War Dog en Character— y
-        // sin recogerlas la unidad nunca cumple los gates que dependen de ella.
-        for (final node in selection.descendantsAndSelf) {
-          for (final modifier in node.modifiers) {
-            if (modifier.field != 'category') continue;
-            final category = modifier.value;
-            if (category is! String) continue;
-            if (!_canEvaluate(modifier)) continue;
-            if (!modifier.appliesWhen((c) => _holds(c, node))) continue;
-            switch (modifier.type) {
-              case 'add':
-              case 'set-primary':
-                if (!categories.contains(category)) categories.add(category);
-              case 'remove':
-                if (identical(node, selection)) categories.remove(category);
-              // `unset-primary` deja de ser la principal, pero la palabra clave sigue estando.
-            }
+    // Dentro de otro cálculo de categorías solo valen las declaradas, y esas no se guardan: si no,
+    // la respuesta a medias se quedaba para siempre como la buena.
+    if (_resolvingCategories) return categories;
+    _resolvingCategories = true;
+    try {
+      // Las suyas, y las que le suben de lo que lleva puesto: hay opciones que existen solo para
+      // dar una palabra clave —«Houndpack Lance Character» convierte al War Dog en Character— y
+      // sin recogerlas la unidad nunca cumple los gates que dependen de ella.
+      for (final node in selection.descendantsAndSelf) {
+        for (final modifier in node.modifiers) {
+          if (modifier.field != 'category') continue;
+          final category = modifier.value;
+          if (category is! String) continue;
+          if (!_canEvaluate(modifier)) continue;
+          if (!modifier.appliesWhen((c) => _holds(c, node))) continue;
+          switch (modifier.type) {
+            case 'add':
+            case 'set-primary':
+              if (!categories.contains(category)) categories.add(category);
+            case 'remove':
+              if (identical(node, selection)) categories.remove(category);
+            // `unset-primary` deja de ser la principal, pero la palabra clave sigue estando.
           }
         }
-      } finally {
-        _resolvingCategories = false;
       }
+    } finally {
+      _resolvingCategories = false;
     }
     return _categoryCache[selection] = categories;
   }
@@ -886,75 +912,315 @@ class Roster {
     }
     _validateArmyWide(violations);
     _validateForce(violations);
+    _validateAttachments(violations);
     return violations;
   }
 
-  /// Las unidades a las que este líder puede unirse **y que están en la lista**.
-  ///
-  /// Una que ya lleve líder no vale: la regla deja uno por unidad.
-  List<Selection> hostsFor(Selection leader) {
-    final entrada = faction.units.where((u) => u.id == leader.entryId).firstOrNull;
-    if (entrada == null) return const [];
-    final permitidos =
-        faction.dataset.leaderTargets(faction, entrada).map((u) => u.id).toSet();
-    if (permitidos.isEmpty) return const [];
+  // Uniones de líderes y apoyos.
+  //
+  // Todo sale de BSData, no del texto de las hojas. El personaje declara a qué puede unirse con
+  // sus `associations` —«Leading», «Supporting»— y la unidad que lo recibe dice cuántos caben con
+  // restricciones de campo `associations`: «máximo 1 Leader». Las excepciones son modifiers sobre
+  // esas restricciones —«2 si uno de ellos es un Biologus Putrifier»— y se evalúan como cualquier
+  // otro. Para saber si una unión es legal se hace y se mira: si algún límite se rompe, se deshace.
 
-    // Una unidad lleva un líder de cada clase —Leader y Support—, no los que se le pongan. La
-    // regla 19.01 lo dice así, y ocho hojas traen su propia excepción escrita para llevar dos del
-    // mismo: Cato Sicarius, el Castellan, el Sanguinary Priest, el Warlock… Sin este filtro se
-    // podían encadenar cuatro, veinte, los que hubiera en la lista, uno detrás de otro.
+  /// Las unidades de la lista a las que este personaje **puede** unirse según sus uniones.
+  ///
+  /// Estén libres o no: si unirse rompería un límite lo dice [motivoParaUnir], y la interfaz la
+  /// enseña deshabilitada con el motivo, que es lo que el jugador necesita para decidir.
+  List<Selection> hostsFor(Selection leader) {
+    final uniones = _unionesDe(leader);
+    if (uniones.isEmpty) return const [];
+    _forgetCategories();
     return [
       for (final u in units)
-        if (u != leader && permitidos.contains(u.entryId) && !hostAlreadyLed(leader, u)) u,
+        if (!identical(u, leader) &&
+            !_cuelgaDe(u, leader) &&
+            uniones.any((x) => _acepta(x.association, x.declarer, u)))
+          u,
     ];
   }
 
-  /// Si esa unidad ya lleva algo de la misma clase que este líder, y el líder no trae excepción.
+  /// Las uniones que trae este personaje: las de su entrada y las de lo que lleva puesto.
+  List<({Association association, Selection declarer})> _unionesDe(Selection leader) => [
+        for (final s in leader.descendantsAndSelf)
+          for (final a in faction.dataset.associationsFor(s.entryId))
+            (association: a, declarer: s),
+      ];
+
+  /// Si la unión [association] de [declarer] admite a [host].
   ///
-  /// No impide unirlo: lo señala, que es lo que el jugador necesita para decidir.
-  bool hostAlreadyLed(Selection leader, Selection host) {
-    final entrada = faction.units.where((u) => u.id == leader.entryId).firstOrNull;
-    if (entrada == null) return false;
-
-    // El techo de verdad, y por delante de cualquier excepción: en ninguna hoja del juego van
-    // tres líderes sobre la misma unidad. Sin esto, dos excepciones distintas se colaban juntas
-    // —cada una se justifica con la suya propia, sin mirar cuántas hay ya— y una Crusader Squad
-    // terminaba con cuatro encima: el Chaplain, el Castellan, el Crusade Ancient y el Apothecary.
-    final yaTiene = units.where((o) => o.attachedTo == host && o != leader).length;
-    if (yaTiene >= 2) return true;
-
-    if (faction.dataset.aceptaOtroLider(entrada)) return false;
-    final clase = faction.dataset.attachKind(entrada);
-    return units.any((o) =>
-        o.attachedTo == host &&
-        o != leader &&
-        _claseDe(o) == clase &&
-        !_aceptaOtro(o));
+  /// Las condiciones se preguntan a la candidata —«¿eres Plague Marines?»—, salvo las marcadas
+  /// `queryFromSelf`, que se preguntan al personaje: «si lleva tal mejora», «si su detachment es
+  /// este».
+  bool _acepta(Association association, Selection declarer, Selection host) {
+    if (association.childId == 'model' && host.type != 'model') return false;
+    return association.acceptsWith(
+        (c) => _holds(c, c.queryFromSelf ? declarer : host));
   }
 
-  /// Si el que ya está unido trae la excepción, no estorba al siguiente.
-  bool _aceptaOtro(Selection s) {
-    final entrada = faction.units.where((u) => u.id == s.entryId).firstOrNull;
-    return entrada != null && faction.dataset.aceptaOtroLider(entrada);
+  /// Las uniones de [leader] que admiten a [host], en el orden en que las declara.
+  List<Association> _viasPara(Selection leader, Selection host) {
+    _forgetCategories();
+    return [
+      for (final x in _unionesDe(leader))
+        if (_acepta(x.association, x.declarer, host)) x.association,
+    ];
   }
 
-  String? _claseDe(Selection s) {
-    final entrada = faction.units.where((u) => u.id == s.entryId).firstOrNull;
-    return entrada == null ? null : faction.dataset.attachKind(entrada);
+  /// Si [unit] ya va colgada de [leader], directa o indirectamente. Unirlos al revés haría un
+  /// círculo.
+  bool _cuelgaDe(Selection unit, Selection leader) {
+    final vistos = <Selection>{};
+    for (Selection? s = unit.attachedTo; s != null && vistos.add(s); s = s.attachedTo) {
+      if (identical(s, leader)) return true;
+    }
+    return false;
   }
 
-  /// Une un líder a una unidad, o lo separa si [host] es nulo.
+  /// Por qué [leader] no puede unirse a [host], o `null` si puede.
   ///
-  /// Con el mismo candado que [hostsFor]: por si algo llega a llamarlo sin pasar por la lista ya
-  /// filtrada, aquí no se deja la unión igual.
-  void attach(Selection leader, Selection? host) {
-    if (host != null && hostAlreadyLed(leader, host)) return;
-    leader.attachedTo = host;
+  /// Se simula primero y se comprueba después: se une, se miran los límites de todas las unidades
+  /// que quedan juntas y se deshace. Una unión es ilegal si deja algún límite roto que antes no lo
+  /// estaba. Con varias uniones posibles —el Judiciar puede liderar o apoyar— vale la primera que
+  /// sea legal.
+  String? motivoParaUnir(Selection leader, Selection host) {
+    final vias = _viasPara(leader, host);
+    if (vias.isEmpty) return '${leader.displayName} no puede unirse a ${host.displayName}';
+    String? primero;
+    for (final via in vias) {
+      final motivo = _probarUnion(leader, host, via.id, deshacer: true);
+      if (motivo == null) return null;
+      primero ??= motivo;
+    }
+    return primero;
   }
 
-  /// Los líderes unidos a esta unidad.
+  /// Une un personaje a una unidad, o lo separa si [host] es nulo.
+  ///
+  /// Solo si la unión es legal: devuelve el motivo si no lo es, y entonces no cambia nada.
+  String? attach(Selection leader, Selection? host) {
+    if (host == null) {
+      leader
+        ..attachedTo = null
+        ..attachedVia = null;
+      _forgetCategories();
+      return null;
+    }
+    final vias = _viasPara(leader, host);
+    if (vias.isEmpty) return '${leader.displayName} no puede unirse a ${host.displayName}';
+    String? primero;
+    for (final via in vias) {
+      final motivo = _probarUnion(leader, host, via.id, deshacer: false);
+      if (motivo == null) return null;
+      primero ??= motivo;
+    }
+    return primero;
+  }
+
+  /// Vuelve a poner una unión guardada, sin comprobar límites.
+  ///
+  /// Es lo que hace falta al abrir una lista: si el dataset ha cambiado y ya no es legal, se
+  /// monta igual y lo avisa [validate], en vez de perder la unión sin decir nada. Si la unión
+  /// guardada ya no existe, o la lista es de antes de guardarlas, vale la primera que la admita.
+  void restoreAttachment(Selection leader, Selection host, String? via) {
+    final vias = _viasPara(leader, host);
+    leader
+      ..attachedTo = host
+      ..attachedVia = vias.any((v) => v.id == via) ? via : vias.firstOrNull?.id;
+    _forgetCategories();
+  }
+
+  /// Une, mira los límites y, si alguno se rompe o [deshacer] lo pide, deja la unión como estaba.
+  String? _probarUnion(Selection leader, Selection host, String via, {required bool deshacer}) {
+    final antes = {
+      for (final l in _limitesDeUnion({..._grupoDe(host), ..._grupoDe(leader)}))
+        (l.selection, l.constraint.id): l.actual,
+    };
+    final (previa, viaPrevia) = (leader.attachedTo, leader.attachedVia);
+    leader
+      ..attachedTo = host
+      ..attachedVia = via;
+    _forgetCategories();
+
+    String? motivo;
+    for (final l in _limitesDeUnion(_grupoDe(host))) {
+      final limite = l.limite;
+      if (limite == null || limite < 0 || !l.constraint.isMax || l.actual <= limite) continue;
+      final previo = antes[(l.selection, l.constraint.id)];
+      if (previo != null && l.actual <= previo) continue;
+      motivo = _motivoDeLimite(l.selection, l.constraint, previo ?? 0, limite);
+      break;
+    }
+
+    if (motivo != null || deshacer) {
+      leader
+        ..attachedTo = previa
+        ..attachedVia = viaPrevia;
+      _forgetCategories();
+    }
+    return motivo;
+  }
+
+  /// Lo que cuentan los límites de unión de estas unidades: cuántos personajes llevan de cada
+  /// clase y cuántas mejoras suma la unidad unida.
+  List<({Selection selection, Constraint constraint, int actual, int? limite})> _limitesDeUnion(
+      Iterable<Selection> miembros) {
+    final limites =
+        <({Selection selection, Constraint constraint, int actual, int? limite})>[];
+    for (final miembro in miembros) {
+      for (final s in miembro.descendantsAndSelf) {
+        for (final c in s.constraints) {
+          final int actual;
+          if (c.field == 'associations') {
+            actual = _cuentaUniones(miembro, c.childId ?? 'any', c.traverseAssociationGroup);
+          } else if (c.traverseAssociationGroup && c.field != 'selections') {
+            // «Una unidad unida solo puede llevar 1 mejora»: se suma sobre todas las que la forman.
+            actual = _grupoDe(miembro).fold(0, (t, m) => t + m.costOf(c.field));
+          } else {
+            continue;
+          }
+          limites.add((
+            selection: s,
+            constraint: c,
+            actual: actual,
+            limite: _effectiveLimit(c, s, s.modifiers),
+          ));
+        }
+      }
+    }
+    return limites;
+  }
+
+  /// El motivo, en palabras, de que una unión rompa un límite.
+  String _motivoDeLimite(Selection s, Constraint c, int lleva, int limite) {
+    final unidad = _raiz(s).displayName;
+    if (c.field == enhancementsCostTypeId) {
+      return 'Una unidad adjunta solo puede llevar $limite '
+          '${limite == 1 ? 'mejora' : 'mejoras'}';
+    }
+    if (c.field != 'associations') {
+      return c.message?.replaceAll('{value}', '$limite') ??
+          '$unidad: como máximo $limite en la unidad adjunta';
+    }
+    final que = _nombreDeUnion(c.childId);
+    return lleva >= limite
+        ? '$unidad ya lleva $lleva de $limite $que'
+        : '$unidad solo admite $limite $que';
+  }
+
+  /// Cómo se llama lo que cuenta una restricción de uniones: «Leader», «Support», «Flesh Shaper».
+  String _nombreDeUnion(String? childId) {
+    if (childId == null || childId == 'any') return 'unidades unidas';
+    return faction.dataset.node(childId)?['name'] as String? ?? childId;
+  }
+
+  /// La selección de primer nivel de la que cuelga esta: la unidad.
+  Selection _raiz(Selection s) => _ancestorsOf(s).lastOrNull ?? s;
+
+  /// Las uniones de la lista: quién va unido a quién y por cuál de sus uniones.
+  Iterable<({Selection lider, Selection anfitriona, String? via})> get _uniones sync* {
+    for (final u in units) {
+      final a = u.attachedTo;
+      if (a != null && units.contains(a)) yield (lider: u, anfitriona: a, via: u.attachedVia);
+    }
+  }
+
+  /// La unidad unida entera a la que pertenece [unit]: ella, lo que lleva unido y aquello a lo
+  /// que va unida, siguiendo las uniones hasta el final. Es lo que BSData llama el grupo de
+  /// asociación, y lo que recorre `traverseAssociationGroup`.
+  List<Selection> _grupoDe(Selection unit) {
+    final grupo = <Selection>[unit];
+    final uniones = _uniones.toList();
+    for (var i = 0; i < grupo.length; i++) {
+      final actual = grupo[i];
+      for (final u in uniones) {
+        final otra = identical(u.lider, actual)
+            ? u.anfitriona
+            : identical(u.anfitriona, actual)
+                ? u.lider
+                : null;
+        if (otra != null && !grupo.any((g) => identical(g, otra))) grupo.add(otra);
+      }
+    }
+    return grupo;
+  }
+
+  /// Cuántas uniones de [unit] casan con [childId]: por lo que es la otra unidad —su entrada o
+  /// una de sus categorías, «Leader», «Biologus Putrifier»— o por la unión usada —«Leading»—.
+  ///
+  /// Con [traverse] se cuentan todas las unidades de su grupo, no solo las unidas directamente.
+  int _cuentaUniones(Selection unit, String childId, bool traverse) {
+    var n = 0;
+    if (traverse) {
+      for (final otra in _grupoDe(unit)) {
+        if (identical(otra, unit)) continue;
+        if (otra.attachedVia == childId || _matches(childId, otra)) n++;
+      }
+      return n;
+    }
+    for (final u in _uniones) {
+      final otra = identical(u.lider, unit)
+          ? u.anfitriona
+          : identical(u.anfitriona, unit)
+              ? u.lider
+              : null;
+      if (otra == null) continue;
+      if (u.via == childId || _matches(childId, otra)) n++;
+    }
+    return n;
+  }
+
+  /// Si lo que cuelga de [owner] lo lleva **una sola miniatura**.
+  ///
+  /// Una miniatura suelta no reparte equipo entre varias: lleva el Havoc launcher o no lo lleva.
+  /// Ahí un contador «0 / 1» ofrece una cantidad que no existe, y lo que toca es marcarlo o no,
+  /// como se elige el cañón del Defiler. En una escuadra sí se cuenta: «a cuántas de las cinco».
+  bool esUnaSolaMiniatura(Selection owner) {
+    switch (owner.type) {
+      case 'model':
+        return owner.count == 1;
+      case 'unit':
+        if (owner.groups.any((g) => isModelGroup(owner, g))) return false;
+        final modelos = owner.descendantsAndSelf
+            .where((s) => s.type == 'model')
+            .fold(0, (t, s) => t + s.count);
+        return modelos <= 1;
+      default:
+        // Lo que cuelga de un arma o de una pieza —sus mejoras— es de quien la lleva.
+        final padre = owner.parent;
+        return owner.count == 1 && padre != null && esUnaSolaMiniatura(padre);
+    }
+  }
+
+  /// Los personajes unidos a esta unidad.
   Iterable<Selection> leadersOn(Selection host) =>
       units.where((u) => u.attachedTo == host);
+
+  /// Los avisos de las uniones: límites de personajes rotos, más de una mejora en una unidad
+  /// unida y personajes que tienen que ir unidos y van sueltos.
+  void _validateAttachments(List<Violation> violations) {
+    for (final l in _limitesDeUnion(units)) {
+      final limite = l.limite;
+      if (limite == null || limite < 0) continue;
+      final roto = l.constraint.isMax ? l.actual > limite : l.actual < limite;
+      if (!roto) continue;
+      final unidad = _raiz(l.selection);
+      final mensaje = l.constraint.isMax
+          ? _motivoDeLimite(l.selection, l.constraint, l.actual, limite)
+              .replaceFirst(' ya lleva ${l.actual} de ', ' lleva ${l.actual} y admite ')
+          : '${unidad.displayName} tiene que ir unido a una unidad';
+      violations.add(Violation(unidad, mensaje));
+    }
+    for (final u in units) {
+      if (u.attachedTo != null) continue;
+      final obligatoria = _unionesDe(u).where((x) => x.association.min >= 1).firstOrNull;
+      if (obligatoria == null) continue;
+      // Si la propia hoja ya lo exige con una restricción, ese aviso basta.
+      if (u.constraints.any((c) => c.field == 'associations' && !c.isMax)) continue;
+      violations.add(Violation(u, '${u.displayName} tiene que ir unido a una unidad'));
+    }
+  }
 
   /// Cuántos Detachment Points permite el tamaño de partida, o `null` si no se sabe.
   ///

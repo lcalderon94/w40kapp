@@ -834,24 +834,9 @@ void main() {
   });
 
   group('líderes', () {
-    test('la hoja que trae su excepción escrita se une aunque ya haya otro', () {
-      // «Puedes adjuntar esta miniatura a una de las unidades anteriores aunque ya se le haya
-      // adjuntado una miniatura Captain o Chapter Master.» Lo dicen ocho hojas del dataset.
-      final blood = dataset.factionNamed('Imperium - Adeptus Astartes - Blood Angels');
-      final sacerdote =
-          blood.units.firstWhere((u) => u.name == 'Sanguinary Priest');
-      expect(dataset.aceptaOtroLider(sacerdote), isTrue);
-
-      final marines = blood.units.firstWhere((u) => u.name == 'Plague Marines',
-          orElse: () => blood.units.firstWhere((u) => u.name == 'Intercessor Squad'));
-      expect(dataset.aceptaOtroLider(marines), isFalse);
-    });
-
-    test('una anfitriona que ya lleve líder solo acepta un segundo con excepción', () {
-      // Hay más excepciones en el juego que en el dataset: el Biologus Putrifier puede ser el
-      // segundo y BSData no lo dice ni en inglés ni traducido. Se reconoce a mano —ver
-      // [Dataset.aceptaOtroLider]— y se ofrece limpio, sin candado y sin aviso, porque es una
-      // unión que el juego permite de verdad. Un tercero, en cambio, ya no cabe.
+    test('la excepción del Biologus la escribe la propia escuadra, no una lista a mano', () {
+      // Plague Marines declara «máximo 1 Leader» y un modifier que lo sube a 2 si uno de los
+      // unidos es un Biologus Putrifier, un Tallyman, un Foul Blightspawn… Se evalúa tal cual.
       final roster = listaDe('Chaos - Death Guard');
       final marines = unidadDe(roster, 'Plague Marines');
       final biologus = unidadDe(roster, 'Biologus Putrifier');
@@ -859,30 +844,29 @@ void main() {
       final otroTallyman = unidadDe(roster, 'Tallyman');
       roster..add(marines)..add(biologus)..add(tallyman)..add(otroTallyman);
 
-      expect(roster.hostsFor(tallyman), contains(marines));
-      roster.attach(tallyman, marines);
-
-      expect(roster.hostsFor(biologus), contains(marines),
-          reason: 'se sigue ofreciendo aunque ya lleve uno');
-      expect(roster.hostAlreadyLed(biologus, marines), isFalse,
-          reason: 'es una excepción real, no hay nada que avisar');
-      roster.attach(biologus, marines);
+      expect(roster.attach(tallyman, marines), isNull);
+      expect(roster.motivoParaUnir(biologus, marines), isNull);
+      expect(roster.attach(biologus, marines), isNull);
       expect(roster.leadersOn(marines).length, 2);
 
-      // Y un tercer líder normal ya no entra: el techo es dos, aunque el que ya está acepte otro.
-      expect(roster.hostsFor(otroTallyman), isNot(contains(marines)));
+      // Un tercero se sigue ofreciendo, pero deshabilitado y con el motivo.
+      expect(roster.hostsFor(otroTallyman), contains(marines));
+      expect(roster.motivoParaUnir(otroTallyman, marines),
+          'Plague Marines ya lleva 2 de 2 Leader');
+      expect(roster.attach(otroTallyman, marines), isNotNull);
+      expect(otroTallyman.attachedTo, isNull);
     });
 
-    test('y son pocas, así que la regla general sigue siendo una y una', () {
-      var conExcepcion = 0;
+    test('a quién se une cada personaje sale de sus asociaciones en todo el dataset', () {
+      var lideres = 0;
       final vistas = <String>{};
       for (final faccion in dataset.factions) {
         for (final unidad in faccion.units) {
           if (!vistas.add(unidad.id)) continue;
-          if (dataset.aceptaOtroLider(unidad)) conExcepcion++;
+          if (dataset.isLeader(unidad)) lideres++;
         }
       }
-      expect(conExcepcion, inInclusiveRange(5, 40));
+      expect(lideres, greaterThan(400));
     });
   });
 
@@ -1456,8 +1440,7 @@ void main() {
       }
       var unidos = 0;
       for (final l in instancias) {
-        if (roster.hostsFor(l).contains(marines)) {
-          roster.attach(l, marines);
+        if (roster.hostsFor(l).contains(marines) && roster.attach(l, marines) == null) {
           unidos++;
         }
       }
@@ -1481,8 +1464,7 @@ void main() {
         if (entrada == null) continue;
         final l = roster.selectionFor(entrada);
         roster.add(l);
-        if (roster.hostsFor(l).contains(crusader)) {
-          roster.attach(l, crusader);
+        if (roster.hostsFor(l).contains(crusader) && roster.attach(l, crusader) == null) {
           unidos++;
         }
       }
@@ -1491,7 +1473,7 @@ void main() {
     });
 
     test('el Biologus Putrifier sigue pudiendo ser el segundo', () {
-      // Es una excepción real del juego que BSData no escribe en ningún idioma.
+      // Lo dice un modifier de Plague Marines sobre su límite de Leader.
       final roster = listaDe('Chaos - Death Guard');
       final marines = unidadDe(roster, 'Plague Marines');
       final tallyman = unidadDe(roster, 'Tallyman');
@@ -1499,11 +1481,11 @@ void main() {
       roster..add(marines)..add(tallyman)..add(biologus);
       roster.attach(tallyman, marines);
       expect(roster.hostsFor(biologus), contains(marines));
-      roster.attach(biologus, marines);
+      expect(roster.attach(biologus, marines), isNull);
       expect(roster.leadersOn(marines).length, 2);
     });
 
-    test('y en todo el dataset, ningún anfitrión termina con más de dos', () {
+    test('y en todo el dataset, ningún anfitrión termina con más de dos Leader', () {
       var facciones = 0, rotos = 0;
       for (final faccion in dataset.factions) {
         final roster = listaDe(faccion.name);
@@ -1533,7 +1515,9 @@ void main() {
           if (ofrecidos.isNotEmpty) roster.attach(sl, ofrecidos.first);
         }
         for (final host in anfitriones) {
-          if (roster.leadersOn(host).length > 2) rotos++;
+          final lideres = roster.leadersOn(host)
+              .where((l) => roster.categoriesOf(l).contains('1556-9b56-fba6-4370'));
+          if (lideres.length > 2) rotos++;
         }
       }
       expect(facciones, greaterThan(20));
@@ -1565,6 +1549,32 @@ void main() {
       }
       expect(vistos.length, greaterThan(250));
       expect(sin, isEmpty);
+    });
+  });
+
+  group('una miniatura suelta marca su equipo, no lo cuenta', () {
+    test('un vehículo o un personaje es una miniatura; una escuadra no', () {
+      final csm = listaDe('Chaos - Chaos Space Marines');
+      final rhino = unidadDe(csm, 'Chaos Rhino');
+      csm.add(rhino);
+      expect(csm.esUnaSolaMiniatura(rhino), isTrue);
+
+      final dg = listaDe('Chaos - Death Guard');
+      final marines = unidadDe(dg, 'Plague Marines');
+      dg.add(marines);
+      expect(dg.esUnaSolaMiniatura(marines), isFalse);
+      // El campeón sí: lo que cuelga de él lo lleva él solo.
+      final campeon = marines.children.firstWhere((c) => c.name == 'Plague Champion');
+      expect(dg.esUnaSolaMiniatura(campeon), isTrue);
+    });
+
+    test('y lo que ofrece es «lo lleva o no»: techo de uno', () {
+      final csm = listaDe('Chaos - Chaos Space Marines');
+      final rhino = unidadDe(csm, 'Chaos Rhino');
+      csm.add(rhino);
+      final havoc = csm.optionsFor(rhino).firstWhere((o) => o.name == 'Havoc launcher');
+      expect(csm.effectiveMaxOf(rhino, havoc), 1);
+      expect(csm.canAdd(rhino, havoc), isTrue);
     });
   });
 }

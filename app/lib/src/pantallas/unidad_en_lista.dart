@@ -475,6 +475,8 @@ class _Nodo extends StatelessWidget {
       ...sueltas.where((o) => !clavada(o)),
       ...fijos.where((f) => !lisa(f)),
     ];
+    final marcables =
+        _marcables(lista, nodo, sueltas.where((o) => !clavada(o)).toList(), hayAlternativas: false);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -492,15 +494,19 @@ class _Nodo extends StatelessWidget {
           _Caja(
             titulo: profundidad == 0 ? 'Equipo' : null,
             hijos: [
+              if (marcables.isNotEmpty)
+                _Interruptores(
+                    lista: lista, dueno: nodo, opciones: marcables, profundidad: profundidad),
               for (final o in elegibles)
-                _Fila(
-                    lista: lista,
-                    dueno: nodo,
-                    opcion: o,
-                    // Sin grupo cada pieza va por su cuenta: no hay nada que ponerle en su lugar.
-                    hayAlternativas: false,
-                    profundidad: profundidad,
-                    fijo: !ofrecidosIds.contains('${o.entryId}|${o.groupId}')),
+                if (!marcables.contains(o))
+                  _Fila(
+                      lista: lista,
+                      dueno: nodo,
+                      opcion: o,
+                      // Sin grupo cada pieza va por su cuenta: no hay nada que ponerle en su lugar.
+                      hayAlternativas: false,
+                      profundidad: profundidad,
+                      fijo: !ofrecidosIds.contains('${o.entryId}|${o.groupId}')),
             ],
           ),
       ],
@@ -646,6 +652,10 @@ class _Grupo extends StatelessWidget {
       );
     }
 
+    final marcables = unaSola
+        ? const <Selection>[]
+        : _marcables(lista, dueno, mias, hayAlternativas: uso.maximo != null);
+
     return _Caja(
       titulo: grupo.name ?? 'Opciones',
       contador: _contador(uso),
@@ -669,19 +679,27 @@ class _Grupo extends StatelessWidget {
               ],
             ),
           )
-        else
+        else ...[
+          // Una miniatura suelta no cuenta lo que lleva: lo marca. El Havoc launcher del Rhino,
+          // el misil del Land Raider, la Ghostglaive del Wraithlord son «lo lleva o no», como
+          // el cañón del Defiler, y no un «0 / 1» con más y menos.
+          if (marcables.isNotEmpty)
+            _Interruptores(
+                lista: lista, dueno: dueno, opciones: marcables, profundidad: profundidad),
           for (final o in mias)
-            _Fila(
-                lista: lista,
-                dueno: dueno,
-                opcion: o,
-                // Alternativas de verdad, no solo «hay más de una en el grupo»: el Biologus
-                // Putrifier lleva Hyper blight grenades, Injector pistol y Plague knives a la
-                // vez, en el mismo grupo «Wargear», sin techo que las haga competir entre sí.
-                // Contando «más de una opción» como alternativas, el «−» las dejaba bajar a
-                // cero como si sobrase elegir entre ellas, cuando las tres son fijas.
-                hayAlternativas: uso.maximo != null,
-                profundidad: profundidad),
+            if (!marcables.contains(o))
+              _Fila(
+                  lista: lista,
+                  dueno: dueno,
+                  opcion: o,
+                  // Alternativas de verdad, no solo «hay más de una en el grupo»: el Biologus
+                  // Putrifier lleva Hyper blight grenades, Injector pistol y Plague knives a la
+                  // vez, en el mismo grupo «Wargear», sin techo que las haga competir entre sí.
+                  // Contando «más de una opción» como alternativas, el «−» las dejaba bajar a
+                  // cero como si sobrase elegir entre ellas, cuando las tres son fijas.
+                  hayAlternativas: uso.maximo != null,
+                  profundidad: profundidad),
+        ],
         for (final sub in anidados)
           _Grupo(
               lista: lista,
@@ -1471,18 +1489,92 @@ class _Caja extends StatelessWidget {
 ///
 /// Pulsar **elige**: pone esta y quita la que hubiera. Si el grupo admite quedarse vacío —una
 /// mejora—, volver a pulsar la quita; si el dataset exige una, no se puede dejar el hueco.
+/// Las opciones que en esta miniatura se marcan en vez de contarse.
+///
+/// Solo en una miniatura suelta, solo lo que se puede quitar y poner, y solo lo que como mucho
+/// cabe una vez: si el dataset deja llevar dos de lo mismo, eso sí es una cantidad.
+List<Selection> _marcables(ListaEnCurso lista, Selection dueno, List<Selection> opciones,
+    {required bool hayAlternativas}) {
+  if (!lista.esUnaMiniatura(dueno)) return const [];
+  return [
+    for (final o in opciones)
+      if (!lista.esFija(dueno, o, hayAlternativas: hayAlternativas) &&
+          (lista.topeDeArma(dueno, o) ?? 1) <= 1)
+        o,
+  ];
+}
+
+/// Lo que una miniatura suelta puede llevar o no, como botones que se marcan.
+///
+/// Lo marcado que a su vez pregunta algo —un arma con sus mejoras— se abre debajo.
+class _Interruptores extends StatelessWidget {
+  const _Interruptores({
+    required this.lista,
+    required this.dueno,
+    required this.opciones,
+    required this.profundidad,
+  });
+
+  final ListaEnCurso lista;
+  final Selection dueno;
+  final List<Selection> opciones;
+  final int profundidad;
+
+  @override
+  Widget build(BuildContext context) {
+    final conDentro = [
+      for (final o in opciones)
+        if (dueno.puestaDe(o) case final puesta?)
+          if (puesta.groups.isNotEmpty || lista.opcionesDe(puesta).isNotEmpty) puesta,
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(10, 2, 10, 10),
+          child: Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final o in opciones)
+                _BotonDeOpcion(
+                  lista: lista,
+                  dueno: dueno,
+                  opcion: o,
+                  obligatorio: false,
+                  activo: dueno.puestaDe(o) != null
+                      ? lista.sePuedeQuitar(dueno, o)
+                      : lista.cabeOtra(dueno, o),
+                ),
+            ],
+          ),
+        ),
+        for (final puesta in conDentro)
+          Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: _Nodo(lista: lista, nodo: puesta, profundidad: profundidad + 1),
+          ),
+      ],
+    );
+  }
+}
+
 class _BotonDeOpcion extends StatelessWidget {
   const _BotonDeOpcion({
     required this.lista,
     required this.dueno,
     required this.opcion,
     required this.obligatorio,
+    this.activo = true,
   });
 
   final ListaEnCurso lista;
   final Selection dueno;
   final Selection opcion;
   final bool obligatorio;
+
+  /// Si se puede tocar: poner lo que ya no cabe, o quitar lo que el dataset exige, no.
+  final bool activo;
 
   @override
   Widget build(BuildContext context) {
@@ -1497,9 +1589,11 @@ class _BotonDeOpcion extends StatelessWidget {
       child: InkWell(
         key: ValueKey('opcion-${opcion.entryId}-${opcion.groupId}'),
         borderRadius: BorderRadius.circular(6),
-        onTap: () => obligatorio
-            ? lista.elegirOpcion(dueno, opcion)
-            : lista.alternarOpcion(dueno, opcion),
+        onTap: !activo
+            ? null
+            : () => obligatorio
+                ? lista.elegirOpcion(dueno, opcion)
+                : lista.alternarOpcion(dueno, opcion),
         child: Container(
           constraints: const BoxConstraints(minHeight: 46, minWidth: 120),
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -1516,7 +1610,11 @@ class _BotonDeOpcion extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 14,
                       height: 1.2,
-                      color: puesta ? Tema.texto : Tema.textoTenue,
+                      color: puesta
+                          ? Tema.texto
+                          : activo
+                              ? Tema.textoTenue
+                              : Tema.textoTenue.withValues(alpha: 0.45),
                       fontWeight: puesta ? FontWeight.w700 : FontWeight.w400)),
               if (puntos > 0 || mejora)
                 Padding(
@@ -1759,9 +1857,10 @@ class _BotonDeAnfitrion extends StatelessWidget {
   Widget build(BuildContext context) {
     final acento = ColorDeEjercito.de(context);
     final unido = lider.attachedTo == anfitrion;
-    // Ya lleva otro de la misma clase. No se impide —hay hojas que lo permiten y el dataset no lo
-    // dice— pero se avisa, que es lo que el jugador necesita para decidir.
-    final ocupado = lista.anfitrionOcupado(lider, anfitrion);
+    // Si unirse rompería un límite de la unidad —cuántos Leader caben, una sola mejora— se enseña
+    // igual, deshabilitada y con el motivo: es lo que el jugador necesita para decidir.
+    final motivo = lista.motivoParaUnir(lider, anfitrion);
+    final bloqueado = motivo != null;
 
     return Material(
       color: unido ? acento.withValues(alpha: 0.26) : Tema.superficieAlta,
@@ -1769,7 +1868,7 @@ class _BotonDeAnfitrion extends StatelessWidget {
       child: InkWell(
         key: ValueKey('anfitrion-${anfitrion.entryId}'),
         borderRadius: BorderRadius.circular(6),
-        onTap: () => lista.unir(lider, unido ? null : anfitrion),
+        onTap: bloqueado ? null : () => lista.unir(lider, unido ? null : anfitrion),
         child: Container(
           constraints: const BoxConstraints(minHeight: 46, minWidth: 140),
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -1784,13 +1883,20 @@ class _BotonDeAnfitrion extends StatelessWidget {
               Text(anfitrion.displayName,
                   style: TextStyle(
                       fontSize: 14,
-                      color: unido ? Tema.texto : Tema.textoTenue,
+                      color: unido
+                          ? Tema.texto
+                          : bloqueado
+                              ? Tema.textoTenue.withValues(alpha: 0.5)
+                              : Tema.textoTenue,
                       fontWeight: unido ? FontWeight.w700 : FontWeight.w400)),
-              if (ocupado)
-                const Padding(
-                  padding: EdgeInsets.only(top: 2),
-                  child: Text('ya lleva líder',
-                      style: TextStyle(color: Tema.aviso, fontSize: 11)),
+              if (motivo != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 2),
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 220),
+                    child: Text(motivo,
+                        style: const TextStyle(color: Tema.aviso, fontSize: 11)),
+                  ),
                 ),
             ],
           ),

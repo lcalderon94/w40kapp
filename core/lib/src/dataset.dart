@@ -75,6 +75,27 @@ class Dataset {
   /// El nodo con ese identificador, de cualquiera de los ficheros.
   Map<String, dynamic>? node(String id) => _nodesById[id];
 
+  /// Los ids de los enlaces que llevan a esta entrada.
+  ///
+  /// Las condiciones de BSData nombran unas veces la entrada y otras **el enlace** por el que se
+  /// llega a ella: el Watch Master de Agents of the Imperium lidera «Deathwatch Kill Team» por el
+  /// id de su enlace en el catálogo, no por el de la unidad. Sin reconocerlo, esa unión no salía.
+  Set<String> linkIdsTo(String entryId) {
+    final indice = _enlacesPorDestino ??= () {
+      final mapa = <String, Set<String>>{};
+      for (final nodo in _nodesById.values) {
+        if (nodo['type'] != 'selectionEntry') continue;
+        final destino = nodo['targetId'];
+        final id = nodo['id'];
+        if (destino is String && id is String) (mapa[destino] ??= {}).add(id);
+      }
+      return mapa;
+    }();
+    return indice[entryId] ?? const {};
+  }
+
+  Map<String, Set<String>>? _enlacesPorDestino;
+
   int get nodeCount => _nodesById.length;
 
   /// Las facciones jugables. Quedan fuera las librerías, que solo aportan contenido compartido.
@@ -971,15 +992,21 @@ class Dataset {
           // Sin pasarse del techo de la propia opción: hay grupos que piden nueve miniaturas y
           // cuyo defecto es un campeón con un máximo de uno. Multiplicar sin mirar dejaba nueve
           // campeones donde cabía uno, y la unidad nacía ilegal.
-          final tope = _maximumSelections(elegida.entry, elegida.link);
-          var cuantas = required - puestas;
-          if (tope != null && cuantas > tope) cuantas = tope;
           // Si ya hay un montón de eso mismo, se le suma en vez de abrir otro. Dos montones del
           // mismo modelo hacen que una restricción por entrada («mínimo 6 Wyches») se compruebe
           // contra uno solo de los dos y salte un aviso falso.
           final yaHay = selection.children
               .where((c) => c.entryId == elegida.entry['id'])
               .firstOrNull;
+          // Y el techo cuenta lo que ya está puesto: el Sword Brother de la Crusader Squad entra
+          // por su propio mínimo y luego era también el relleno del grupo, y salía con dos donde
+          // cabe uno.
+          final tope = _maximumSelections(elegida.entry, elegida.link);
+          var cuantas = required - puestas;
+          if (tope != null) {
+            final libres = tope - (yaHay?.count ?? 0);
+            if (cuantas > libres) cuantas = libres;
+          }
           if (cuantas > 0 && yaHay != null) {
             yaHay.count += cuantas;
           } else if (cuantas > 0) {
@@ -1152,12 +1179,12 @@ class Dataset {
     return _sheetCache[unit.id] = profiles.values.toList();
   }
 
-  /// La hoja de una unidad se arma recorriendo su árbol entero y se pide muchas veces: al pintar
-  /// la ficha, al buscar a quién se une un líder y al mirar si acepta a otro. Resolverla una vez.
+  /// La hoja de una unidad se arma recorriendo su árbol entero y se pide muchas veces, cada vez
+  /// que se pinta la ficha. Resolverla una vez.
   final Map<String, List<Profile>> _sheetCache = {};
 
-  /// Si una hoja trae escrita su excepción de líder. Se pregunta por cada anfitriona posible.
-  final Map<String, bool> _excepcionCache = {};
+  /// Las uniones de cada entrada, que se preguntan por cada candidata posible.
+  final Map<String, List<Association>> _asociaciones = {};
 
   /// Si un perfil de habilidad es en realidad la explicación de una palabra clave de arma.
   ///
@@ -1572,105 +1599,46 @@ class Dataset {
   }
 }
 
-/// A qué unidades puede unirse un líder o una unidad de apoyo, leído de su hoja de datos.
+/// A qué se puede unir un personaje, tal como lo escribe BSData y no como lo cuenta su texto.
 ///
-/// El dataset no lo modela: lo deja escrito en el texto de la habilidad «Leader» o «Support», y
-/// de dos formas —seguidos por comas y en mayúsculas, o en viñetas con el nombre tal cual—. De los
-/// 523 nombres que citan los 282 líderes, casan 517 con una unidad real, el 98 %.
-///
-/// Las dos clases son distintas y no se estorban: la regla 19.01 del reglamento dice que cada
-/// unidad anfitriona puede llevar **un líder y una unidad de apoyo**, no uno de los dos.
+/// Cada personaje declara sus uniones en `associations` —o las enlaza con `associationLinks` a
+/// unas compartidas del catálogo—, con `action: group`: «Leading» si lidera, «Supporting» si
+/// apoya, y sus condiciones dicen a qué unidades. Lo que cabe en cada unidad lo dice la propia
+/// unidad con restricciones de campo `associations`; eso lo evalúa [Roster], no esto.
 extension Lideres on Dataset {
-  static const _clases = ['Leader', 'Support'];
-
-
-  /// `Leader`, `Support`, o `null` si no se une a nada.
-  String? attachKind(UnitEntry unit) {
-    for (final clase in _clases) {
-      if (unit.keywords.contains(clase)) return clase;
-    }
-    return null;
-  }
-
-  /// Los nombres de unidad que cita su habilidad de unión.
-  List<String> leaderTargetNames(UnitEntry unit) {
-    // Con la hoja entera y no solo con los perfiles de la entrada: la habilidad cuelga muchas
-    // veces de la miniatura y no de la unidad, un nivel más abajo.
-    for (final perfil in sheetOf(unit)) {
-      if (!_clases.contains(perfil.name)) continue;
-      for (final valor in perfil.characteristics.values) {
-        final cuerpo = valor.contains(':') ? valor.split(':').last : valor;
-        // Con viñetas, cada viñeta es un nombre y va tal cual. Sin ellas, los nombres vienen en
-        // mayúsculas y lo demás es prosa.
-        final porVinetas = cuerpo.contains('■') || cuerpo.contains('•');
-        return [
-          for (final trozo in cuerpo.split(RegExp(r'[■•,\n]')))
-            if (_pareceNombre(trozo.trim(), sueltoEnVineta: porVinetas)) trozo.trim(),
+  /// Las uniones que declara esta entrada, ya resueltos los enlaces.
+  ///
+  /// Solo las de `action: group`, que son las que juntan dos unidades en una. Las demás
+  /// asociaciones del dataset —iconos, instrumentos— no unen nada.
+  List<Association> associationsFor(String entryId) =>
+      _asociaciones.putIfAbsent(entryId, () {
+        final entry = node(entryId);
+        if (entry == null) return const [];
+        final crudas = <Map<String, dynamic>>[
+          for (final raw in (entry['associations'] as List? ?? const []))
+            raw as Map<String, dynamic>,
+          for (final raw in (entry['associationLinks'] as List? ?? const []))
+            if ((raw as Map<String, dynamic>)['hidden'] != true)
+              if (node(raw['targetId'] as String? ?? '') case final destino?) destino,
         ];
-      }
-    }
-    return const [];
-  }
+        return [
+          for (final cruda in crudas)
+            if (cruda['action'] == 'group') Association.fromNode(cruda),
+        ];
+      });
 
-  /// Las unidades de la facción a las que este líder se puede unir.
-  List<UnitEntry> leaderTargets(Faction faction, UnitEntry leader) {
-    final nombres = leaderTargetNames(leader).map(_plano).toSet();
-    if (nombres.isEmpty) return const [];
+  /// Si esta unidad se une a otras: si ella, o algo que lleva de serie, declara una unión.
+  bool isLeader(UnitEntry unit) => joinAssociationsOf(unit).isNotEmpty;
+
+  /// Las uniones de la hoja: las de la unidad y las de sus miniaturas, que es donde las pone
+  /// BSData cuando el personaje va dentro de una unidad.
+  List<Association> joinAssociationsOf(UnitEntry unit) {
+    final entry = node(unit.id);
+    if (entry == null) return const [];
     return [
-      for (final u in faction.units)
-        if (nombres.contains(_plano(u.name))) u,
+      ...associationsFor(unit.id),
+      for (final raw in (entry['selectionEntries'] as List? ?? const []))
+        ...associationsFor((raw as Map<String, dynamic>)['id'] as String? ?? ''),
     ];
   }
-
-  /// Si se une a algo: lo dice su palabra clave, no el texto.
-  bool isLeader(UnitEntry unit) => attachKind(unit) != null;
-
-  /// Si puede unirse a una unidad que **ya lleve** otro de su clase.
-  ///
-  /// La regla general deja un líder y un apoyo por unidad, pero hay hojas que traen su excepción
-  /// escrita: «puedes adjuntar esta miniatura a una de las unidades anteriores aunque ya se le
-  /// haya adjuntado una miniatura Captain o Chapter Master». El Sanguinary Priest, el Castellan,
-  /// el Crusade Ancient, Cato Sicarius, The Visarch, el Warlock y dos más lo dicen así.
-  ///
-  /// El dataset no lo modela en ninguna parte: está en el texto de la habilidad, igual que a quién
-  /// se une. Se reconoce por la frase entera, no por «aunque» suelto, que aparece en habilidades
-  /// que no hablan de esto.
-  bool aceptaOtroLider(UnitEntry unit) {
-    final cached = _excepcionCache[unit.id];
-    if (cached != null) return cached;
-    // En cualquier perfil, no solo en el de Leader o Support: hay hojas que lo dejan escrito en
-    // una habilidad aparte. Y en los dos idiomas, porque la traducción no llega a todas.
-    for (final perfil in sheetOf(unit)) {
-      for (final valor in perfil.characteristics.values) {
-        final texto = valor.toLowerCase();
-        if (texto.contains('ya se le haya adjuntado') ||
-            texto.contains('already been attached')) {
-          return _excepcionCache[unit.id] = true;
-        }
-      }
-    }
-    // Y las que la regla de verdad permite y BSData no escribe en ningún idioma. El Biologus
-    // Putrifier puede ser el segundo líder de una unidad de Death Guard: es la regla del juego,
-    // no una lectura del texto, así que no hay frase que buscar.
-    if (_excepcionesSinTexto.contains(unit.name)) {
-      return _excepcionCache[unit.id] = true;
-    }
-    return _excepcionCache[unit.id] = false;
-  }
-
-  static const _excepcionesSinTexto = {'Biologus Putrifier'};
-}
-
-/// Sin viñetas el texto marca los nombres en mayúsculas; con viñetas, cada viñeta ya es un nombre.
-bool _pareceNombre(String t, {required bool sueltoEnVineta}) {
-  if (t.length < 4) return false;
-  if (sueltoEnVineta) return !t.contains(RegExp(r'[.:]'));
-  return RegExp(r"^[A-ZÁÉÍÓÚÜÑ0-9'’\- ()/]+$").hasMatch(t);
-}
-
-String _plano(String x) {
-  const tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ü': 'u', 'ñ': 'n'};
-  final sinTildes = x.toLowerCase().split('').map((c) => tildes[c] ?? c).join();
-  return sinTildes.replaceAll(RegExp(r'\[(legends|crucible)\]'), '')
-      .replaceAll(RegExp(r'[^a-z0-9]'), '');
 }

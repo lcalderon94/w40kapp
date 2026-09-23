@@ -735,6 +735,53 @@ void main() {
           reason: 'no hay nada que quitar: no es una elección');
     });
 
+    testWidgets('una miniatura suelta marca su equipo opcional, no lo cuenta', (tester) async {
+      // El Havoc launcher del Rhino lo lleva o no: un botón que se marca, como el cañón del
+      // Defiler, y no un «0 / 1» con más y menos.
+      final csm = dataset.factionNamed('Chaos - Chaos Space Marines');
+      final lista = ListaEnCurso(dataset: dataset, faccion: csm, tamano: tamano(2000))
+        ..elegirDetachment(dataset.detachmentsOf(csm).first)
+        ..anadirUnidad(csm.units.firstWhere((u) => u.name == 'Chaos Rhino'));
+      final rhino = lista.roster.units.first;
+      await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: rhino));
+
+      final havoc = lista.opcionesDe(rhino).firstWhere((o) => o.name == 'Havoc launcher');
+      final boton = find.byKey(ValueKey('opcion-${havoc.entryId}-${havoc.groupId}'));
+      await tester.scrollUntilVisible(boton, 100, scrollable: find.byType(Scrollable).first);
+      await tester.pumpAndSettle();
+      expect(find.descendant(of: boton, matching: find.byIcon(Icons.add)), findsNothing);
+
+      await tester.tap(boton);
+      await tester.pumpAndSettle();
+      expect(lista.cuantasHay(rhino, havoc), 1);
+      await tester.tap(boton);
+      await tester.pumpAndSettle();
+      expect(lista.cuantasHay(rhino, havoc), 0);
+    });
+
+    testWidgets('la anfitriona que ya no admite otro líder sale deshabilitada y dice por qué',
+        (tester) async {
+      await conPantallaAlta(tester, () async {
+        final lista = nuevaLista()
+          ..elegirDetachment(dataset.detachmentsOf(deathGuard).first)
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Plague Marines'))
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Malignant Plaguecaster'))
+          ..anadirUnidad(deathGuard.units.firstWhere((u) => u.name == 'Malignant Plaguecaster'));
+        final marines = lista.roster.units[0];
+        final otro = lista.roster.units[2];
+        expect(lista.unir(lista.roster.units[1], marines), isNull);
+        await mostrar(tester, PantallaDeUnidadEnLista(lista: lista, unidad: otro));
+
+        final boton = find.byKey(ValueKey('anfitrion-${marines.entryId}'));
+        await tester.scrollUntilVisible(boton, 100, scrollable: find.byType(Scrollable).first);
+        await tester.pumpAndSettle();
+        expect(find.text('Plague Marines ya lleva 1 de 1 Leader'), findsOneWidget);
+        await tester.tap(boton);
+        await tester.pumpAndSettle();
+        expect(otro.attachedTo, isNull);
+      });
+    });
+
     testWidgets('la escuadra tiene un contador de miniaturas, no uno por arma',
         (tester) async {
       // Primero se decide si son cinco o diez y después con qué van. Repartir el tamaño entre las

@@ -878,96 +878,196 @@ void main() {
   });
 
   group('unir líderes a unidades', () {
-    test('un líder solo se une a las unidades que dice su hoja de datos', () {
-      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
-        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
-      Selection poner(String nombre) {
-        final s = roster.selectionFor(
-            deathGuard.units.firstWhere((u) => u.name == nombre));
-        roster.add(s);
-        return s;
-      }
+    // Todo sale de las asociaciones de BSData: a quién se une cada personaje lo dicen sus
+    // `associations`, y cuántos caben en cada unidad sus restricciones de campo `associations`
+    // con los modifiers que las cambian. Nada se lee del texto de las hojas.
+    Roster lista(String faccion, [List<String> detachments = const []]) {
+      final f = dataset.factionNamed(faccion);
+      final todos = dataset.detachmentsOf(f);
+      return Roster(faction: f, pointsLimit: 2000)
+        ..detachments.addAll(detachments.isEmpty
+            ? [todos.first]
+            : [for (final d in detachments) todos.firstWhere((x) => x.name == d)]);
+    }
 
-      final marines = poner('Plague Marines');
-      final lord = poner('Lord of Virulence');
-      // Su texto nombra Blightlord y Deathshroud Terminators, no Plague Marines.
+    Selection poner(Roster roster, String nombre) {
+      final s = roster.selectionFor(roster.faction.units.firstWhere((u) => u.name == nombre));
+      roster.add(s);
+      return s;
+    }
+
+    test('un líder solo se une a las unidades que declaran sus asociaciones', () {
+      final roster = lista('Chaos - Death Guard');
+      final marines = poner(roster, 'Plague Marines');
+      final lord = poner(roster, 'Lord of Virulence');
       expect(roster.hostsFor(lord), isNot(contains(marines)));
 
-      final blight = poner('Blightlord Terminators');
+      final blight = poner(roster, 'Blightlord Terminators');
       expect(roster.hostsFor(lord), contains(blight));
-
-      roster.attach(lord, blight);
+      expect(roster.attach(lord, blight), isNull);
       expect(roster.leadersOn(blight), contains(lord));
 
-      // Un segundo líder de la misma clase, sin excepción por ninguno de los dos lados, ya no
-      // se ofrece: la regla 19.01 deja uno por unidad anfitriona, y ni el Lord of Virulence ni el
-      // Lord of Contagion traen escrita ninguna excepción para llevar dos.
-      final otro = poner('Lord of Contagion');
-      expect(roster.hostsFor(otro), isNot(contains(blight)));
-      expect(roster.hostAlreadyLed(otro, blight), isTrue);
-      expect(roster.hostAlreadyLed(otro, marines), isFalse,
-          reason: 'la que no lleva ninguno no se señala');
+      // Un segundo Leader ya no cabe: Blightlord Terminators declara «máximo 1 Leader». Se sigue
+      // ofreciendo, con el motivo, para que el jugador sepa por qué no.
+      final otro = poner(roster, 'Lord of Contagion');
+      expect(roster.hostsFor(otro), contains(blight));
+      expect(roster.motivoParaUnir(otro, blight), 'Blightlord Terminators ya lleva 1 de 1 Leader');
+      expect(roster.attach(otro, blight), isNotNull);
+      expect(otro.attachedTo, isNull);
+    });
+
+    test('Plague Marines: Plaguecaster sí, Biologus de segundo sí, Foul Blightspawn de tercero no',
+        () {
+      final roster = lista('Chaos - Death Guard');
+      final marines = poner(roster, 'Plague Marines');
+      final plaguecaster = poner(roster, 'Malignant Plaguecaster');
+      final biologus = poner(roster, 'Biologus Putrifier');
+      final blightspawn = poner(roster, 'Foul Blightspawn');
+
+      expect(roster.attach(plaguecaster, marines), isNull);
+      // El modifier de la escuadra sube su límite de 1 a 2 porque el que entra es un Biologus.
+      expect(roster.attach(biologus, marines), isNull);
+      expect(roster.motivoParaUnir(blightspawn, marines), 'Plague Marines ya lleva 2 de 2 Leader');
+      expect(roster.validate().where((v) => v.selection == marines), isEmpty);
+    });
+
+    test('dos Plaguecasters en la misma escuadra no', () {
+      final roster = lista('Chaos - Death Guard');
+      final marines = poner(roster, 'Plague Marines');
+      final uno = poner(roster, 'Malignant Plaguecaster');
+      final otro = poner(roster, 'Malignant Plaguecaster');
+      expect(roster.attach(uno, marines), isNull);
+      expect(roster.motivoParaUnir(otro, marines), 'Plague Marines ya lleva 1 de 1 Leader');
+    });
+
+    test('el Biologus no lidera Poxwalkers y el Plaguecaster sí', () {
+      final roster = lista('Chaos - Death Guard');
+      final pox = poner(roster, 'Poxwalkers');
+      final biologus = poner(roster, 'Biologus Putrifier');
+      final plaguecaster = poner(roster, 'Malignant Plaguecaster');
+      expect(roster.hostsFor(biologus), isNot(contains(pox)));
+      expect(roster.hostsFor(plaguecaster), contains(pox));
+    });
+
+    test('una unidad unida solo lleva una mejora, contando las de todos sus personajes', () {
+      final roster = lista('Chaos - Death Guard', ['Paragons of Putrescence']);
+      final marines = poner(roster, 'Plague Marines');
+      final plaguecaster = poner(roster, 'Malignant Plaguecaster');
+      final biologus = poner(roster, 'Biologus Putrifier');
+      void mejora(Selection s, String nombre) =>
+          s.addChild(roster.optionsFor(s).firstWhere((o) => o.name == nombre));
+      mejora(plaguecaster, 'Host of the Hybridised Pox');
+      mejora(biologus, 'Rejuvenating Swarm');
+
+      expect(roster.attach(plaguecaster, marines), isNull);
+      expect(roster.motivoParaUnir(biologus, marines),
+          'Una unidad adjunta solo puede llevar 1 mejora');
+    });
+
+    test('Black Templars: el Castellan apoya y un segundo apoyo ya no cabe', () {
+      final roster = lista('Imperium - Adeptus Astartes - Black Templars');
+      final escuadra = poner(roster, 'Crusader Squad');
+      final castellan = poner(roster, 'Castellan');
+      final ancient = poner(roster, 'Crusade Ancient');
+      expect(roster.attach(castellan, escuadra), isNull);
+      expect(roster.motivoParaUnir(ancient, escuadra), 'Crusader Squad ya lleva 1 de 1 Support');
+      expect(roster.validate().where((v) => v.selection == escuadra), isEmpty,
+          reason: 'la Crusader Squad nace legal: un Sword Brother, no dos');
+    });
+
+    test('un apoyo con min 1 que va suelto se avisa', () {
+      final roster = lista('Imperium - Adeptus Astartes - Black Templars');
+      final ancient = poner(roster, 'Crusade Ancient');
+      expect(roster.validate().where((v) => v.selection == ancient).map((v) => v.message),
+          contains('Crusade Ancient tiene que ir unido a una unidad'));
     });
 
     test('una unidad puede llevar un líder y una unidad de apoyo a la vez', () {
-      // Regla 19.01 del reglamento: «each bodyguard unit can only have one leader unit and one
-      // support unit attached to it». Son dos clases distintas y no se estorban; contarlas juntas
-      // dejaba fuera la mitad de las uniones legales.
-      final sororitas = dataset.factionNamed('Imperium - Adepta Sororitas');
-      final roster = Roster(faction: sororitas, pointsLimit: 2000)
-        ..detachments.add(dataset.detachmentsOf(sororitas).first);
-      Selection poner(String nombre) {
-        final s = roster.selectionFor(
-            sororitas.units.firstWhere((u) => u.name == nombre));
-        roster.add(s);
-        return s;
-      }
-
-      final escuadra = poner('Battle Sisters Squad');
-      final canoness = poner('Canoness');        // Leader
-      final hospitaller = poner('Hospitaller');  // Support
-
-      expect(dataset.attachKind(
-          sororitas.units.firstWhere((u) => u.name == 'Canoness')), 'Leader');
-      expect(dataset.attachKind(
-          sororitas.units.firstWhere((u) => u.name == 'Hospitaller')), 'Support');
-
-      roster.attach(canoness, escuadra);
-      // El apoyo sigue cabiendo aunque ya haya un líder.
-      expect(roster.hostsFor(hospitaller), contains(escuadra));
-      roster.attach(hospitaller, escuadra);
+      final roster = lista('Imperium - Adepta Sororitas');
+      final escuadra = poner(roster, 'Battle Sisters Squad');
+      final canoness = poner(roster, 'Canoness');
+      final hospitaller = poner(roster, 'Hospitaller');
+      expect(roster.attach(canoness, escuadra), isNull);
+      expect(roster.attach(hospitaller, escuadra), isNull);
       expect(roster.leadersOn(escuadra), hasLength(2));
     });
 
-    test('quitar la unidad anfitriona separa a su líder en vez de dejarlo colgando', () {
-      final roster = Roster(faction: deathGuard, pointsLimit: 2000)
-        ..detachments.add(dataset.detachmentsOf(deathGuard).first);
-      final blight = roster.selectionFor(
-          deathGuard.units.firstWhere((u) => u.name == 'Blightlord Terminators'));
-      final lord = roster.selectionFor(
-          deathGuard.units.firstWhere((u) => u.name == 'Lord of Virulence'));
-      roster..add(blight)..add(lord);
-      roster.attach(lord, blight);
+    test('el Judiciar entra como Supporting si el hueco de Leader ya está ocupado', () {
+      final roster = lista('Imperium - Adeptus Astartes - Space Marines');
+      final escuadra = poner(roster, 'Intercessor Squad');
+      final capitan = poner(roster, 'Captain');
+      final judiciar = poner(roster, 'Judiciar');
+      expect(roster.attach(capitan, escuadra), isNull);
+      expect(roster.attach(judiciar, escuadra), isNull);
+      final via = dataset
+          .joinAssociationsOf(roster.faction.units.firstWhere((u) => u.name == 'Judiciar'))
+          .firstWhere((a) => a.id == judiciar.attachedVia);
+      expect(via.name, 'Supporting');
+      // Y como entra por Supporting, cuenta como Support, no como Leader.
+      expect(roster.categoriesOf(judiciar), contains('7dcd-7f61-69a7-0294'));
+      expect(roster.validate().where((v) => v.selection == escuadra), isEmpty);
+    });
 
+    test('Kroot Carnivores: un Leader con diez, dos con veinte', () {
+      final roster = lista("Xenos - T'au Empire");
+      final kroot = poner(roster, 'Kroot Carnivores');
+      final uno = poner(roster, 'Kroot Flesh Shaper');
+      final otro = poner(roster, 'Kroot War Shaper');
+      expect(roster.attach(uno, kroot), isNull);
+      expect(roster.motivoParaUnir(otro, kroot), 'Kroot Carnivores ya lleva 1 de 1 Leader');
+
+      final grupo = roster.mainModelGroup(kroot)!;
+      kroot.puestaDe(roster.defaultOptionFor(kroot, grupo)!)!.count += 10;
+      expect(roster.squadTally(kroot, grupo).puestas, 20);
+      expect(roster.attach(otro, kroot), isNull);
+
+      // Y si la escuadra vuelve a diez, la lista lo avisa.
+      kroot.puestaDe(roster.defaultOptionFor(kroot, grupo)!)!.count -= 10;
+      expect(roster.validate().where((v) => v.selection == kroot), isNotEmpty);
+    });
+
+    test('quitar la unidad anfitriona separa a su líder en vez de dejarlo colgando', () {
+      final roster = lista('Chaos - Death Guard');
+      final blight = poner(roster, 'Blightlord Terminators');
+      final lord = poner(roster, 'Lord of Virulence');
+      roster.attach(lord, blight);
       roster.remove(blight);
       expect(lord.attachedTo, isNull);
+      expect(lord.attachedVia, isNull);
     });
 
-    test('los líderes resuelven objetivos en todas las facciones, no en una', () {
-      var conObjetivos = 0, uniones = 0;
+    test('la unión guardada vuelve con la asociación por la que entró', () {
+      final roster = lista('Imperium - Adeptus Astartes - Space Marines');
+      final escuadra = poner(roster, 'Intercessor Squad');
+      final capitan = poner(roster, 'Captain');
+      final judiciar = poner(roster, 'Judiciar');
+      roster..attach(capitan, escuadra)..attach(judiciar, escuadra);
+
+      final vuelta = Guardado.deTexto(dataset, Guardado.aTexto(roster)).roster;
+      expect(vuelta.units[2].attachedTo, same(vuelta.units[0]));
+      expect(vuelta.units[2].attachedVia, judiciar.attachedVia);
+    });
+
+    test('los personajes resuelven a quién unirse en todas las facciones', () {
+      var conAnfitriona = 0;
       for (final faccion in dataset.factions) {
+        final roster = Roster(faction: faccion, pointsLimit: 5000)
+          ..detachments.add(dataset.detachmentsOf(faccion).first);
+        final nombres = <String>{};
+        final puestas = <Selection>[];
         for (final u in faccion.units) {
-          if (!dataset.isLeader(u)) continue;
-          final objetivos = dataset.leaderTargets(faccion, u);
-          if (objetivos.isEmpty) continue;
-          conObjetivos++;
-          uniones += objetivos.length;
+          if (!nombres.add(u.name)) continue;
+          final s = roster.selectionFor(u);
+          roster.add(s);
+          puestas.add(s);
+        }
+        for (final s in puestas) {
+          if (roster.hostsFor(s).isNotEmpty) conAnfitriona++;
         }
       }
-      expect(conObjetivos, greaterThan(700));
-      expect(uniones, greaterThan(4000),
-          reason: 'si esto se desploma, el texto de la habilidad ha cambiado de forma');
-    });
+      expect(conAnfitriona, greaterThan(1000),
+          reason: 'si esto se desploma, BSData ha cambiado cómo escribe las asociaciones');
+    }, timeout: const Timeout(Duration(minutes: 5)));
   });
 
   group('montar una unidad entera', () {
