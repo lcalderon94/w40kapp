@@ -1069,8 +1069,15 @@ class Roster {
     final limites =
         <({Selection selection, Constraint constraint, int actual, int? limite})>[];
     for (final miembro in miembros) {
+      final propias = miembro.descendantsAndSelf.expand((s) => s.constraints);
+      final sinLimites = !propias.any((c) => c.field == 'associations');
       for (final s in miembro.descendantsAndSelf) {
-        for (final c in s.constraints) {
+        // La que no declara ningún límite de uniones —Victrix Honour Guard, varias Legends— se
+        // queda con la regla básica, tal como BSData la escribe en todas las demás.
+        final restricciones = identical(s, miembro) && sinLimites
+            ? [...s.constraints, ..._reglaBasicaDeUnion]
+            : s.constraints;
+        for (final c in restricciones) {
           final int actual;
           if (c.field == 'associations') {
             actual = _cuentaUniones(miembro, c.childId ?? 'any', c.traverseAssociationGroup);
@@ -1091,6 +1098,25 @@ class Roster {
     }
     return limites;
   }
+
+  /// «Un Leader y un Support por unidad», la regla básica. Es la restricción que BSData pone en
+  /// casi todas las unidades; esta es para las pocas que no traen ninguna, que sin ella admitían
+  /// cuantos personajes se les pusieran encima.
+  static final _reglaBasicaDeUnion = [
+    for (final (id, categoria) in [
+      ('regla-basica-leader', '1556-9b56-fba6-4370'),
+      ('regla-basica-support', '7dcd-7f61-69a7-0294'),
+    ])
+      Constraint(
+        id: id,
+        type: 'max',
+        field: 'associations',
+        scope: 'self',
+        value: 1,
+        includeChildSelections: false,
+        childId: categoria,
+      ),
+  ];
 
   /// El motivo, en palabras, de que una unión rompa un límite.
   String _motivoDeLimite(Selection s, Constraint c, int lleva, int limite) {

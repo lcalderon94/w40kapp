@@ -1083,9 +1083,11 @@ void main() {
           }
           roster.add(unidad);
           roster.applyModifiers();
-          final suyas = roster
-              .validate()
-              .where((v) => v.selection == unidad || v.selection?.parent == unidad);
+          // Sin contar el aviso de un apoyo que tiene que ir unido: con la unidad sola en la
+          // lista todavía no hay a quién unirlo, y no es un fallo de cómo entra.
+          final suyas = roster.validate().where((v) =>
+              (v.selection == unidad || v.selection?.parent == unidad) &&
+              !v.message.endsWith('tiene que ir unido a una unidad'));
           if (suyas.isNotEmpty) malas.add(entrada.name);
         }
       }
@@ -1428,7 +1430,8 @@ void main() {
 
   group('nunca más de dos líderes sobre la misma unidad', () {
     test('el tercero ya no se ofrece', () {
-      // Cuatro Tallyman distintos, intentando unirse todos a la misma escuadra.
+      // Cuatro Tallyman distintos, intentando unirse todos a la misma escuadra. Plague Marines
+      // admite dos Leader si uno es un Tallyman —su modifier lo dice—, y ni uno más.
       final roster = listaDe('Chaos - Death Guard');
       final marines = unidadDe(roster, 'Plague Marines');
       roster.add(marines);
@@ -1444,8 +1447,8 @@ void main() {
           unidos++;
         }
       }
-      expect(unidos, 1);
-      expect(roster.leadersOn(marines).length, 1);
+      expect(unidos, 2);
+      expect(roster.leadersOn(marines).length, 2);
     });
 
     test('dos excepciones que se aceptan entre sí no se encadenan sin límite', () {
